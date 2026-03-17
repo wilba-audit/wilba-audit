@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+outputs/audit/leads.csv
+.DS_Store
+credentials/

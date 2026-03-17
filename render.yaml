@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: wilba-audit-responder
+    runtime: python
+    buildCommand: pip install -r scripts/requirements-audit.txt
+    startCommand: gunicorn scripts.audit_email_responder:app
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: SENDGRID_API_KEY
+        sync: false
+      - key: FROM_EMAIL
+        value: hello@wilba.ai
+      - key: CALENDLY_URL
+        value: https://calendly.com/hello-wilba
+      - key: TEST_EMAIL
+        value: jess@wilba.ai
