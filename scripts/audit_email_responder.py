@@ -64,8 +64,14 @@ THE EMAIL MUST:
 2. Show the working (how you got the number) in 3-4 bullet points — builds credibility
 3. Identify their TOP 3 specific gaps based on their actual answers (not generic)
 4. Paint a picture of what changes with an AI receptionist (outcomes, not features)
-5. End with ONE clear CTA — book a 20-minute call via the Calendly link
-6. Include a P.S. that creates urgency or curiosity
+5. End with ONE clear CTA — a button or bold linked text to the Calendly URL. The CTA copy must be punchy and specific to their situation. Examples of good CTA copy (pick the best fit, don't copy word-for-word):
+   - "Let's map your 30-day fix →"
+   - "Claim your free implementation call →"
+   - "Show me the money (I'm in) →"
+   - "Let's turn that $X,XXX leak into a system →"
+   - "Book my free 20-min strategy call →"
+   The surrounding sentence should frame it as easy, fast, and valuable — not salesy. e.g. "If you want to see exactly how this looks for [their business type], I've kept 20 minutes free this week. No pitch, just a plan."
+6. Include a P.S. that creates urgency or curiosity — hint at what's possible or what others like them have done
 
 TONE:
 - Confident but not aggressive. Think trusted advisor, not used car salesman.
@@ -76,6 +82,13 @@ TONE:
 - Bold the key numbers and insights
 
 CRITICAL: The email should make the prospect think "holy shit, I need to fix this" — not through fear, but through clarity. Show them the opportunity they're missing.
+
+IMPORTANT FORMATTING RULES FOR THE HTML EMAIL:
+- Use ONLY plain ASCII characters. No Unicode arrows, bullets, dashes, or smart quotes.
+- For bullet points use <li> tags inside <ul> or <ol> — NOT Unicode bullets or arrow characters.
+- For emphasis use <strong> tags — NOT Unicode dashes or special characters.
+- The email_html must start with: <div style="font-family: Arial, sans-serif; max-width: 600px;">
+- Do NOT include Unicode characters like →, •, —, ", ", ', ' in the HTML. Use HTML entities (&bull;, &rarr;, &mdash;, &ldquo;, &rdquo;) or plain ASCII equivalents (-, >, --) instead.
 
 OUTPUT FORMAT — return valid JSON only, no markdown fences:
 {
@@ -229,7 +242,7 @@ def send_email(to_email: str, to_name: str, subject: str, html_body: str) -> boo
         from_email=Email(FROM_EMAIL, "Jess from WILBA"),
         to_emails=To(to_email, to_name),
         subject=subject,
-        html_content=Content("text/html", html_body)
+        html_content=Content("text/html; charset=utf-8", html_body)
     )
 
     try:
@@ -383,7 +396,7 @@ def test_audit():
         # Don't actually send email in test — just show the result
         return f"""
         <html>
-        <head><title>WILBA Audit Test</title></head>
+        <head><meta charset="utf-8"><title>WILBA Audit Test</title></head>
         <body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px;">
             <h1>Audit Email Preview</h1>
             <p><strong>Recipient:</strong> {sample_data['first_name']} ({sample_data['email']})</p>
