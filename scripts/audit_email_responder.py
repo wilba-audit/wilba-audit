@@ -769,13 +769,22 @@ def test_audit():
                 print(f"PDF generation failed (non-fatal): {pdf_err}")
                 pdf_bytes = None
 
-        email_sent = send_email(
-            to_email=test_email,
-            to_name=sample_data["first_name"],
-            subject=email_result["email_subject"],
-            html_body=email_result["email_html"],
-            pdf_bytes=pdf_bytes
-        )
+        email_error_detail = ""
+        try:
+            sg_api_key = os.environ.get("SENDGRID_API_KEY", "")
+            sg_debug = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+            debug_msg = Mail(
+                from_email=Email(FROM_EMAIL, "Jess from WILBA"),
+                to_emails=To(test_email, sample_data["first_name"]),
+                subject=email_result["email_subject"],
+                html_content=Content("text/html", email_result["email_html"])
+            )
+            debug_resp = sg_debug.send(debug_msg)
+            email_sent = debug_resp.status_code in [200, 201, 202]
+            email_error_detail = f"Status: {debug_resp.status_code}"
+        except Exception as eg:
+            email_sent = False
+            email_error_detail = f"{type(eg).__name__}: {eg} | body={getattr(eg,'body','n/a')}"
 
         gaps_html = ''.join(f'<li>{g}</li>' for g in email_result.get('top_gaps', []))
         roadmap_html = ''.join(
@@ -788,7 +797,7 @@ def test_audit():
         <html><head><meta charset="utf-8"><title>WILBA Audit Test</title></head>
         <body style="font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:20px;">
             <h1 style="color:#394F6A;">Audit Test Result</h1>
-            <p><strong>Email sent to:</strong> {test_email} &mdash; <strong style="color:{'green' if email_sent else 'red'}">{'SENT' if email_sent else 'FAILED'}</strong></p>
+            <p><strong>Email sent to:</strong> {test_email} &mdash; <strong style="color:{'green' if email_sent else 'red'}">{'SENT' if email_sent else 'FAILED'}</strong> <small style="color:#666">{email_error_detail}</small></p>
             <p><strong>PDF generated:</strong> {pdf_status}</p>
             <p><strong>Revenue Loss:</strong> ${email_result['revenue_loss_low']:,} &ndash; ${email_result['revenue_loss_high']:,}/month</p>
             <p><strong>Subject:</strong> {email_result['email_subject']}</p>
