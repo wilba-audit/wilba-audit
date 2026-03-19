@@ -3,7 +3,7 @@ services:
     name: wilba-audit-responder
     runtime: python
     buildCommand: pip install -r scripts/requirements-audit.txt
-    startCommand: python scripts/serve.py
+    startCommand: python scripts/audit_email_responder.py
     envVars:
       - key: ANTHROPIC_API_KEY
         sync: false

@@ -768,4 +768,6 @@ if __name__ == "__main__":
     print(f"Webhook: http://localhost:{port}/audit-webhook")
     print(f"Test: http://localhost:{port}/test-audit")
     print(f"Health: http://localhost:{port}/health\n")
-    app.run(host="0.0.0.0", port=port, debug=True)
+    from waitress import serve as waitress_serve
+    print("Server: waitress (production)")
+    waitress_serve(app, host="0.0.0.0", port=port, threads=4, channel_timeout=300)

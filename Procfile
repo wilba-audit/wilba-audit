@@ -1,1 +1,1 @@
-web: python scripts/serve.py
+web: python scripts/audit_email_responder.py
