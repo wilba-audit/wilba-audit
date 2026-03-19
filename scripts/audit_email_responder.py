@@ -496,7 +496,7 @@ def send_email(to_email: str, to_name: str, subject: str, html_body: str,
         from_email=Email(FROM_EMAIL, "Jess from WILBA"),
         to_emails=To(to_email, to_name),
         subject=subject,
-        html_content=Content("text/html; charset=utf-8", html_body)
+        html_content=Content("text/html", html_body)
     )
 
     if pdf_bytes:
