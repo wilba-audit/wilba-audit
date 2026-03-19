@@ -333,43 +333,51 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
     high     = email_result.get('revenue_loss_high', 0)
     date     = datetime.now().strftime('%B %d, %Y')
 
-    # Calculation breakdown
+    # Calculation breakdown (table layout — WeasyPrint-safe)
     breakdown_html = ""
     for item in email_result.get('calculation_breakdown', []):
         breakdown_html += f"""
-        <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #E0E9F4;">
-          <span style="font-size:13px;color:#394F6A;">{item.get('label','')}</span>
-          <span style="font-size:13px;font-weight:bold;color:#2D3E52;">{item.get('value','')}</span>
-        </div>"""
+        <table width="100%" style="border-bottom:1px solid #E0E9F4;padding:9px 0;" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="font-size:13px;color:#394F6A;">{item.get('label','')}</td>
+            <td style="font-size:13px;font-weight:bold;color:#2D3E52;text-align:right;">{item.get('value','')}</td>
+          </tr>
+        </table>"""
 
-    # Gaps
+    # Gaps (table layout)
     gaps_html = ""
     for i, gap in enumerate(email_result.get('top_gaps', []), 1):
         parts = re.split(r'\s*[—\-]{1,2}\s*', gap, maxsplit=1)
         title = parts[0]
         desc  = parts[1] if len(parts) > 1 else ""
         gaps_html += f"""
-        <div style="display:flex;align-items:flex-start;margin-bottom:12px;background:white;border-left:4px solid #87ABDD;padding:14px;border-radius:0 6px 6px 0;">
-          <div style="font-size:28px;font-weight:bold;color:#87ABDD;width:36px;flex-shrink:0;line-height:1;">{i}</div>
-          <div style="flex:1;">
-            <div style="font-size:13px;font-weight:bold;color:#394F6A;">{title}</div>
-            {f'<div style="font-size:12px;color:#5E7998;margin-top:4px;line-height:1.5;">{desc}</div>' if desc else ''}
-          </div>
-        </div>"""
+        <table width="100%" style="margin-bottom:12px;background:white;border-left:4px solid #87ABDD;padding:14px;" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="36" style="font-size:26px;font-weight:bold;color:#87ABDD;vertical-align:top;padding-right:10px;">{i}</td>
+            <td style="vertical-align:top;">
+              <div style="font-size:13px;font-weight:bold;color:#394F6A;">{title}</div>
+              {f'<div style="font-size:12px;color:#5E7998;margin-top:4px;line-height:1.5;">{desc}</div>' if desc else ''}
+            </td>
+          </tr>
+        </table>"""
 
-    # Roadmap
+    # Roadmap (table layout)
     roadmap_html = ""
     for step in email_result.get('roadmap', []):
         roadmap_html += f"""
-        <div style="display:flex;align-items:flex-start;margin-bottom:18px;">
-          <div style="background:#394F6A;color:white;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;flex-shrink:0;margin-right:14px;margin-top:2px;">{step.get('step','')}</div>
-          <div style="flex:1;">
-            <div style="font-size:14px;font-weight:bold;color:#394F6A;">{step.get('title','')}</div>
-            <span style="display:inline-block;font-size:10px;color:#5E7998;background:#E0E9F4;padding:2px 8px;border-radius:10px;margin:4px 0;">{step.get('timeline','')}</span>
-            <div style="font-size:12px;color:#555;line-height:1.5;margin-top:4px;">{step.get('description','')}</div>
-            <div style="font-size:12px;color:#394F6A;font-weight:bold;margin-top:5px;">&#10003; {step.get('impact','')}</div>
-          </div>
-        </div>"""
+        <table width="100%" style="margin-bottom:18px;" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="40" style="vertical-align:top;padding-right:14px;padding-top:2px;">
+              <div style="background:#394F6A;color:white;width:30px;height:30px;text-align:center;font-weight:bold;font-size:13px;line-height:30px;">{step.get('step','')}</div>
+            </td>
+            <td style="vertical-align:top;">
+              <div style="font-size:14px;font-weight:bold;color:#394F6A;">{step.get('title','')}</div>
+              <div style="font-size:10px;color:#5E7998;background:#E0E9F4;padding:2px 8px;margin:4px 0;display:inline;">{step.get('timeline','')}</div>
+              <div style="font-size:12px;color:#555;line-height:1.5;margin-top:4px;">{step.get('description','')}</div>
+              <div style="font-size:12px;color:#394F6A;font-weight:bold;margin-top:5px;">&#10003; {step.get('impact','')}</div>
+            </td>
+          </tr>
+        </table>"""
 
     logo_html = _get_logo_html()
 
@@ -386,27 +394,31 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
 <body>
 
 <!-- HEADER -->
-<div style="background:#394F6A;color:white;padding:35px 45px;display:flex;justify-content:space-between;align-items:center;">
-  <div>{logo_html}</div>
-  <div style="text-align:right;">
-    <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#C7D7EA;">AI Receptionist Audit</div>
-    <div style="font-size:11px;color:#87ABDD;margin-top:4px;">Prepared exclusively for {name}</div>
-  </div>
-</div>
+<table width="100%" style="background:#394F6A;color:white;padding:35px 45px;" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="vertical-align:middle;">{logo_html}</td>
+    <td style="vertical-align:middle;text-align:right;">
+      <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#C7D7EA;">AI Receptionist Audit</div>
+      <div style="font-size:11px;color:#87ABDD;margin-top:4px;">Prepared exclusively for {name}</div>
+    </td>
+  </tr>
+</table>
 
 <!-- META BAR -->
-<div style="background:#2D3E52;padding:11px 45px;display:flex;justify-content:space-between;">
-  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Business: </strong>{business}</span>
-  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Date: </strong>{date}</span>
-  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Analyst: </strong>Jess Morrell, wilba.ai</span>
-</div>
+<table width="100%" style="background:#2D3E52;padding:11px 45px;" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Business: </strong>{business}</td>
+    <td style="font-size:11px;color:#C7D7EA;text-align:center;"><strong style="color:#87ABDD;">Date: </strong>{date}</td>
+    <td style="font-size:11px;color:#C7D7EA;text-align:right;"><strong style="color:#87ABDD;">Analyst: </strong>Jess Morrell, wilba.ai</td>
+  </tr>
+</table>
 
 <!-- HERO -->
-<div style="background:linear-gradient(135deg,#2D3E52 0%,#394F6A 100%);padding:42px 45px;text-align:center;">
+<div style="background:#394F6A;padding:42px 45px;text-align:center;">
   <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#C7D7EA;margin-bottom:10px;">Estimated Monthly Revenue Loss</div>
   <div style="font-size:56px;font-weight:bold;color:#87ABDD;line-height:1;">${low:,} &ndash; ${high:,}</div>
   <div style="font-size:18px;color:#C7D7EA;margin-top:8px;">per month</div>
-  <div style="font-size:12px;color:#87ABDD;margin-top:12px;opacity:0.85;">Based on your audit responses &mdash; this is what is currently walking out the door.</div>
+  <div style="font-size:12px;color:#87ABDD;margin-top:12px;">Based on your audit responses &mdash; this is what is currently walking out the door.</div>
 </div>
 
 <!-- HOW WE GOT THIS NUMBER -->
@@ -431,7 +443,7 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
 <div style="background:#394F6A;color:white;padding:30px 45px;text-align:center;">
   <div style="font-size:16px;color:white;margin-bottom:8px;">Ready to plug the leak? Let&rsquo;s map your 30-day fix.</div>
   <div style="font-size:13px;color:#87ABDD;margin-bottom:18px;">{CALENDLY_URL}</div>
-  <div style="border-top:1px solid rgba(135,171,221,0.3);padding-top:16px;font-size:10px;color:#C7D7EA;">
+  <div style="border-top:1px solid #5E7998;padding-top:16px;font-size:10px;color:#C7D7EA;">
     wilba.ai &bull; hello@wilba.ai &bull; Surf Coast, Victoria, Australia
   </div>
 </div>
@@ -554,9 +566,13 @@ def handle_audit_submission():
         # Generate PDF
         pdf_bytes = None
         if WEASYPRINT_AVAILABLE:
-            print("Generating PDF...")
-            pdf_bytes = generate_pdf(audit_data, email_result)
-            print(f"PDF generated: {len(pdf_bytes):,} bytes" if pdf_bytes else "PDF generation failed")
+            try:
+                print("Generating PDF...")
+                pdf_bytes = generate_pdf(audit_data, email_result)
+                print(f"PDF generated: {len(pdf_bytes):,} bytes" if pdf_bytes else "PDF generation failed")
+            except Exception as pdf_err:
+                print(f"PDF generation failed (non-fatal): {pdf_err}")
+                pdf_bytes = None
 
         # Send email with PDF attached
         email_sent = send_email(
@@ -642,7 +658,11 @@ def test_audit():
         print("\n--- TEST AUDIT RUNNING ---")
         website_text = fetch_website_text(sample_data.get("website_url", ""))
         email_result = calculate_and_write_email(sample_data, website_text)
-        pdf_bytes = generate_pdf(sample_data, email_result) if WEASYPRINT_AVAILABLE else None
+        try:
+            pdf_bytes = generate_pdf(sample_data, email_result) if WEASYPRINT_AVAILABLE else None
+        except Exception as pdf_err:
+            print(f"PDF generation failed (non-fatal): {pdf_err}")
+            pdf_bytes = None
 
         email_sent = send_email(
             to_email=test_email,
