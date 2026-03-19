@@ -3,7 +3,7 @@ services:
     name: wilba-audit-responder
     runtime: python
     buildCommand: apt-get install -y libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info && pip install -r scripts/requirements-audit.txt
-    startCommand: gunicorn --timeout 120 --workers 1 scripts.audit_email_responder:app
+    startCommand: gunicorn --timeout 300 --workers 1 scripts.audit_email_responder:app
     envVars:
       - key: ANTHROPIC_API_KEY
         sync: false

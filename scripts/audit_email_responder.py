@@ -291,7 +291,7 @@ The email should mention: "I've attached your full audit report and roadmap as a
 """
 
     message = client.messages.create(
-        model="claude-opus-4-6",
+        model="claude-sonnet-4-6",
         max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}]
@@ -637,7 +637,7 @@ def health_check():
         "status": "healthy",
         "service": "WILBA Audit Email Responder v2",
         "weasyprint_available": WEASYPRINT_AVAILABLE,
-        "model": "claude-opus-4-6",
+        "model": "claude-sonnet-4-6",
         "timestamp": datetime.now().isoformat()
     }), 200
 
@@ -763,7 +763,7 @@ def test_audit():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     print(f"\nWILBA Audit Email Responder v2 starting on port {port}")
-    print(f"Model: claude-opus-4-6")
+    print(f"Model: claude-sonnet-4-6")
     print(f"WeasyPrint: {'available' if WEASYPRINT_AVAILABLE else 'NOT available'}")
     print(f"Webhook: http://localhost:{port}/audit-webhook")
     print(f"Test: http://localhost:{port}/test-audit")
