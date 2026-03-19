@@ -511,9 +511,15 @@ def send_email(to_email: str, to_name: str, subject: str, html_body: str,
     try:
         response = sg.send(message)
         print(f"Email sent to {to_email} — Status: {response.status_code}")
+        if response.status_code not in [200, 201, 202]:
+            print(f"Email send failed — Body: {response.body}")
         return response.status_code in [200, 201, 202]
     except Exception as e:
-        print(f"Email send error: {e}")
+        print(f"Email send error: {type(e).__name__}: {e}")
+        if hasattr(e, 'body'):
+            print(f"SendGrid error body: {e.body}")
+        if hasattr(e, 'status_code'):
+            print(f"SendGrid status code: {e.status_code}")
         return False
 
 
@@ -627,6 +633,33 @@ def handle_audit_submission():
         print(f"Error: {e}")
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
+
+
+# ---------------------------------------------------------------------------
+# Email Debug — shows raw SendGrid response in browser
+# ---------------------------------------------------------------------------
+
+@app.route("/test-email", methods=["GET"])
+def test_email_direct():
+    """Send a minimal test email and show the raw SendGrid result."""
+    sg_api_key = os.environ.get("SENDGRID_API_KEY")
+    if not sg_api_key:
+        return "<pre>ERROR: SENDGRID_API_KEY not set</pre>", 500
+
+    sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+    message = Mail(
+        from_email=Email(FROM_EMAIL, "Jess from WILBA"),
+        to_emails=To(FROM_EMAIL, "Jess"),
+        subject="WILBA Email Test",
+        html_content=Content("text/html", "<p>SendGrid test email. If you see this, email is working!</p>")
+    )
+    try:
+        response = sg.send(message)
+        return f"<pre>Status: {response.status_code}\nHeaders: {dict(response.headers)}\nBody: {response.body}</pre>", 200
+    except Exception as e:
+        error_body = getattr(e, 'body', 'no body')
+        error_status = getattr(e, 'status_code', 'no status')
+        return f"<pre>ERROR: {type(e).__name__}: {e}\nStatus: {error_status}\nBody: {error_body}</pre>", 500
 
 
 # ---------------------------------------------------------------------------
