@@ -666,6 +666,51 @@ def test_email_direct():
 
 
 # ---------------------------------------------------------------------------
+# Claude + Full Pipeline Debug — synchronous, shows result in browser
+# ---------------------------------------------------------------------------
+
+@app.route("/test-full", methods=["GET"])
+def test_full():
+    """Run the FULL pipeline synchronously: Claude → email → show result."""
+    test_email = os.environ.get("TEST_EMAIL", FROM_EMAIL)
+    sample_data = {
+        "first_name": "Sarah", "email": test_email, "website_url": "",
+        "q1_business_type": "Physiotherapy clinic", "q2_weekly_calls": "50-100",
+        "q3_hours": "Weekdays 9am-5pm", "q4_receptionist": "Part time",
+        "q5_staff_count": "2", "q6_missed_calls": "5-15",
+        "q7_missed_handling": "Voicemail", "q8_response_time": "Same day",
+        "q9_total_enquiries": "20-50", "q10_conversion": "25-50%",
+        "q11_avg_value": "$100-$300", "q12_after_hours": "Voicemail only",
+        "q13_contact_channels": "Phone, web form", "q14_automation": "Manual",
+        "q15_lost_clients": "Yes", "q16_frustration": "Miss calls after 2pm",
+        "q17_value_perception": "Game changer"
+    }
+    steps = []
+    try:
+        steps.append("1. Calling Claude API...")
+        email_result = calculate_and_write_email(sample_data, "")
+        steps.append(f"2. Claude OK — subject: {email_result.get('email_subject','?')[:60]}")
+        steps.append(f"3. Revenue: ${email_result.get('revenue_loss_low','?'):,}–${email_result.get('revenue_loss_high','?'):,}/month")
+
+        sg_api_key = os.environ.get("SENDGRID_API_KEY", "")
+        sg_c = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+        msg = Mail(
+            from_email=Email(FROM_EMAIL, "Jess from WILBA"),
+            to_emails=To(test_email, "Sarah"),
+            subject=email_result["email_subject"],
+            html_content=Content("text/html", email_result["email_html"])
+        )
+        resp = sg_c.send(msg)
+        steps.append(f"4. Email → Status {resp.status_code} {'✓ SENT' if resp.status_code in [200,201,202] else '✗ FAILED'}")
+    except Exception as e:
+        import traceback
+        steps.append(f"ERROR: {type(e).__name__}: {e}")
+        steps.append(traceback.format_exc())
+
+    return "<pre>" + "\n".join(steps) + "</pre>", 200
+
+
+# ---------------------------------------------------------------------------
 # Health Check
 # ---------------------------------------------------------------------------
 
