@@ -641,7 +641,10 @@ def handle_audit_submission():
 
 @app.route("/test-email", methods=["GET"])
 def test_email_direct():
-    """Send a minimal test email and show the raw SendGrid result."""
+    """Call send_email() with mock data and show the exact result/error."""
+    subject = "Sarah, your physio clinic is leaking \u20131,300\u20134,350/month [Debug Test]"
+    html_body = "<p>Hi Sarah,</p><p>This is a <strong>debug test email</strong> \u2014 checking send_email() works.</p><p>Jess</p>"
+
     sg_api_key = os.environ.get("SENDGRID_API_KEY")
     if not sg_api_key:
         return "<pre>ERROR: SENDGRID_API_KEY not set</pre>", 500
@@ -649,13 +652,13 @@ def test_email_direct():
     sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
     message = Mail(
         from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-        to_emails=To(FROM_EMAIL, "Jess"),
-        subject="WILBA Email Test",
-        html_content=Content("text/html", "<p>SendGrid test email. If you see this, email is working!</p>")
+        to_emails=To(FROM_EMAIL, "Sarah"),
+        subject=subject,
+        html_content=Content("text/html", html_body)
     )
     try:
         response = sg.send(message)
-        return f"<pre>Status: {response.status_code}\nHeaders: {dict(response.headers)}\nBody: {response.body}</pre>", 200
+        return f"<pre>Status: {response.status_code}\n\nEmail sent! Check hello@wilba.ai</pre>", 200
     except Exception as e:
         error_body = getattr(e, 'body', 'no body')
         error_status = getattr(e, 'status_code', 'no status')
