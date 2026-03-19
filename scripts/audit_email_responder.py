@@ -1,33 +1,50 @@
 """
-WILBA AI Receptionist Audit — Email Responder
+WILBA AI Receptionist Audit — Email Responder v2
 
 What this does:
-1. Listens for form submissions from Wix (webhook POST to /audit-webhook)
-2. Parses the audit answers from the 18-question form
-3. Sends to Claude with a revenue calculation + email writing prompt
-4. Sends the personalised audit email to the respondent
-5. Logs the lead to outputs/audit/leads.csv
-
-How to run locally: python scripts/audit_email_responder.py
-How to deploy: Deploy to Render/Railway, set env vars, point Wix webhook at the URL
+1. Receives Wix form webhook (POST /audit-webhook)
+2. Parses form data including optional website URL
+3. Fetches and analyses prospect's website if provided
+4. Sends to Claude Opus for deep analysis:
+   - Revenue loss calculation with breakdown
+   - Top 3 specific gaps
+   - 5-step implementation roadmap
+   - Personalised email body
+5. Generates branded WILBA PDF audit report (WeasyPrint)
+6. Sends personalised email with PDF attached
+7. Logs lead to CSV
 
 Required env vars:
   ANTHROPIC_API_KEY  — Claude API key
-  SENDGRID_API_KEY   — SendGrid API key for sending emails
+  SENDGRID_API_KEY   — SendGrid API key
   FROM_EMAIL         — e.g. hello@wilba.ai
   CALENDLY_URL       — e.g. https://calendly.com/hello-wilba
+  TEST_EMAIL         — email to receive test audits (defaults to FROM_EMAIL)
 """
 
 import os
 import json
 import csv
 import re
+import base64
+import urllib.request
 from datetime import datetime
+from html.parser import HTMLParser
 from flask import Flask, request, jsonify
 import anthropic
 import sendgrid
-from sendgrid.helpers.mail import Mail, Email, To, Content
+from sendgrid.helpers.mail import (
+    Mail, Email, To, Content,
+    Attachment, FileContent, FileName, FileType, Disposition
+)
 from dotenv import load_dotenv
+
+try:
+    import weasyprint
+    WEASYPRINT_AVAILABLE = True
+except ImportError:
+    WEASYPRINT_AVAILABLE = False
+    print("WeasyPrint not available — PDF generation disabled")
 
 load_dotenv()
 
@@ -38,91 +55,149 @@ CALENDLY_URL = os.environ.get("CALENDLY_URL", "https://calendly.com/hello-wilba"
 FROM_EMAIL = os.environ.get("FROM_EMAIL", "hello@wilba.ai")
 
 # ---------------------------------------------------------------------------
-# Claude System Prompt — this is the brain of the audit
+# WILBA Brand
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are an AI analyst for WILBA.ai, an AI automation agency run by Jess Morrell on the Surf Coast, Australia.
+BRAND_DARK      = "#394F6A"
+BRAND_DARKER    = "#2D3E52"
+BRAND_BLUE      = "#87ABDD"
+BRAND_LIGHT     = "#C7D7EA"
+BRAND_STEEL     = "#5E7998"
+BRAND_BG        = "#F0F4F8"
+BRAND_TEXT      = "#1A1A2E"
 
-Your job: analyse a completed AI Receptionist Audit from a service business owner and produce a personalised audit email that makes the opportunity crystal clear.
+# ---------------------------------------------------------------------------
+# System Prompt — Claude Opus
+# ---------------------------------------------------------------------------
 
-The email must feel like Jess personally reviewed their answers. It should be warm, confident, direct — like a smart friend who happens to know exactly how much money they're leaving on the table.
+SYSTEM_PROMPT = """You are an AI analyst for WILBA.ai — an AI automation agency run by Jess Morrell on the Surf Coast, Australia.
+
+Your job: Analyse a completed AI Receptionist Audit from a service business owner. Produce:
+1. A revenue loss estimate with calculation breakdown
+2. Top 3 specific gaps (based on their actual answers)
+3. A 5-step personalised implementation roadmap
+4. A personalised audit email
 
 REVENUE LOSS FORMULA:
   weekly_enquiries x missed_rate x conversion_rate x avg_booking_value x 4.33 = monthly_loss
-
   - weekly_enquiries: from Q2 and Q9 (use the higher signal)
-  - missed_rate: derive from Q6 + Q7 (if they miss 5-15 calls AND rarely call back, that's 60-80% loss rate)
-  - conversion_rate: from Q10 (use midpoint of their range)
-  - avg_booking_value: from Q11 (use midpoint of their range)
+  - missed_rate: derive from Q6 and Q7 (missing 5-15 calls + voicemail = 60-80% loss rate)
+  - conversion_rate: from Q10 (use midpoint)
+  - avg_booking_value: from Q11 (use midpoint)
+  - Provide LOW (conservative) and HIGH (realistic worst case) rounded to nearest $50
+  - Include calculation_breakdown: exactly 4 bullet points showing the key numbers used
 
-  Provide a LOW estimate (conservative — best case) and HIGH estimate (realistic worst case).
-  Round to nearest $50. Never say "exactly" — say "somewhere between".
-  Make the number FEEL real by connecting it to their specific business type.
+ROADMAP: Generate exactly 5 steps from diagnosis to full AI implementation:
+  - Step 1: Immediate win (Days 1-7)
+  - Step 2: Core AI setup (Week 2)
+  - Step 3: Automation layer (Weeks 3-4)
+  - Step 4: Optimise and learn (Month 2)
+  - Step 5: Scale (Month 3+)
+  Each step: title, description (2 sentences max), timeline, impact (one punchy outcome line)
 
-THE EMAIL MUST:
-1. Open with their name and a bold revenue loss number — this is what gets attention
-2. Show the working (how you got the number) in 3-4 bullet points — builds credibility
-3. Identify their TOP 3 specific gaps based on their actual answers (not generic)
-4. Paint a picture of what changes with an AI receptionist (outcomes, not features)
-5. End with ONE clear CTA — a button or bold linked text to the Calendly URL. The CTA copy must be punchy and specific to their situation. Examples of good CTA copy (pick the best fit, don't copy word-for-word):
-   - "Let's map your 30-day fix →"
-   - "Claim your free implementation call →"
-   - "Show me the money (I'm in) →"
-   - "Let's turn that $X,XXX leak into a system →"
-   - "Book my free 20-min strategy call →"
-   The surrounding sentence should frame it as easy, fast, and valuable — not salesy. e.g. "If you want to see exactly how this looks for [their business type], I've kept 20 minutes free this week. No pitch, just a plan."
-6. Include a P.S. that creates urgency or curiosity — hint at what's possible or what others like them have done
+EMAIL RULES:
+1. Open with their name + bold revenue loss number — make it land
+2. Show the working (3-4 bullet points) — builds credibility
+3. Name their TOP 3 gaps from their actual answers — no generic filler
+4. Paint the picture of what changes with AI receptionist (outcomes, not features)
+5. ONE CTA — bold linked text to Calendly, punchy and specific to their situation
+6. P.S. line with urgency or a curiosity hook
 
-TONE:
-- Confident but not aggressive. Think trusted advisor, not used car salesman.
-- Short paragraphs. Scannable. No walls of text.
-- Use their business type to make examples specific ("For a physio clinic like yours...")
-- Australian English (enquiries not inquiries, organise not organize)
-- Don't over-explain the tech — explain the outcome
-- Bold the key numbers and insights
+Tone: Confident trusted advisor. Australian English (enquiries not inquiries). Short paragraphs. Scannable.
+Think: smart friend who reviewed their business and genuinely wants to help — not a salesperson.
 
-CRITICAL: The email should make the prospect think "holy shit, I need to fix this" — not through fear, but through clarity. Show them the opportunity they're missing.
+CRITICAL — HTML EMAIL FORMATTING:
+- Use ONLY plain HTML with inline styles. NO Unicode special characters whatsoever.
+- For bullets use &bull; or HTML list tags. For dashes use &mdash; or plain hyphens.
+- For bold use <strong> tags. For emphasis use <em> tags.
+- The email_html field must start with: <div style="font-family: Arial, sans-serif; max-width: 600px; color: #1a1a2e; line-height: 1.6;">
+- Do NOT use: arrows (->), Unicode bullets (•), smart quotes, em dashes (—) as raw characters.
+- Use HTML entities only: &bull; &mdash; &ldquo; &rdquo; &rarr;
 
-IMPORTANT FORMATTING RULES FOR THE HTML EMAIL:
-- Use ONLY plain ASCII characters. No Unicode arrows, bullets, dashes, or smart quotes.
-- For bullet points use <li> tags inside <ul> or <ol> — NOT Unicode bullets or arrow characters.
-- For emphasis use <strong> tags — NOT Unicode dashes or special characters.
-- The email_html must start with: <div style="font-family: Arial, sans-serif; max-width: 600px;">
-- Do NOT include Unicode characters like →, •, —, ", ", ', ' in the HTML. Use HTML entities (&bull;, &rarr;, &mdash;, &ldquo;, &rdquo;) or plain ASCII equivalents (-, >, --) instead.
-
-OUTPUT FORMAT — return valid JSON only, no markdown fences:
+OUTPUT FORMAT — return ONLY valid JSON, no markdown fences, no explanation:
 {
   "revenue_loss_low": 1200,
   "revenue_loss_high": 3800,
-  "top_gaps": [
-    "Gap 1 — specific to their answers (1-2 sentences)",
-    "Gap 2 — specific to their answers",
-    "Gap 3 — specific to their answers"
+  "calculation_breakdown": [
+    {"label": "Weekly enquiries", "value": "50+"},
+    {"label": "Estimated missed rate", "value": "65%"},
+    {"label": "Your conversion rate", "value": "37%"},
+    {"label": "Average booking value", "value": "$200"}
   ],
-  "email_subject": "Subject line — personal, curiosity-driven, includes their name",
-  "email_html": "Full HTML email body with inline styling for bold text, bullet points, and clean formatting"
-}
-"""
+  "top_gaps": [
+    "Gap title — 1-2 sentence description specific to their answers",
+    "Gap title — description",
+    "Gap title — description"
+  ],
+  "roadmap": [
+    {"step": 1, "title": "Deploy AI Receptionist", "description": "Two sentence description.", "timeline": "Days 1-7", "impact": "Zero missed calls from day one"},
+    {"step": 2, "title": "...", "description": "...", "timeline": "Week 2", "impact": "..."},
+    {"step": 3, "title": "...", "description": "...", "timeline": "Weeks 3-4", "impact": "..."},
+    {"step": 4, "title": "...", "description": "...", "timeline": "Month 2", "impact": "..."},
+    {"step": 5, "title": "...", "description": "...", "timeline": "Month 3+", "impact": "..."}
+  ],
+  "email_subject": "Subject line — personal, curiosity-driven, includes their first name",
+  "email_html": "Full HTML email body starting with <div style=...>"
+}"""
 
 
 # ---------------------------------------------------------------------------
-# Core Functions
+# Website Fetcher
+# ---------------------------------------------------------------------------
+
+class _TextExtractor(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self._parts = []
+        self._skip = False
+        self._skip_tags = {'script', 'style', 'nav', 'footer', 'head', 'noscript'}
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self._skip_tags:
+            self._skip = True
+
+    def handle_endtag(self, tag):
+        if tag in self._skip_tags:
+            self._skip = False
+
+    def handle_data(self, data):
+        if not self._skip:
+            t = data.strip()
+            if t:
+                self._parts.append(t)
+
+    def get_text(self):
+        return ' '.join(self._parts)
+
+
+def fetch_website_text(url: str, max_chars: int = 3000) -> str:
+    """Fetch a website and return its readable text content."""
+    if not url:
+        return ""
+    if not url.startswith(('http://', 'https://')):
+        url = 'https://' + url
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            html = resp.read().decode('utf-8', errors='ignore')
+        parser = _TextExtractor()
+        parser.feed(html)
+        text = re.sub(r'\s+', ' ', parser.get_text()).strip()
+        return text[:max_chars]
+    except Exception as e:
+        print(f"Website fetch error ({url}): {e}")
+        return ""
+
+
+# ---------------------------------------------------------------------------
+# Form Parser
 # ---------------------------------------------------------------------------
 
 def parse_wix_form_data(raw_data: dict) -> dict:
-    """
-    Parse incoming Wix form webhook data into our standard format.
-
-    Wix Forms sends data in a specific structure. The field names
-    depend on how the form was built — we handle both standard
-    Wix field names and our custom field titles.
-    """
-    # Wix webhook payload can come in different formats
-    # Try to extract from common structures
+    """Parse incoming Wix form webhook payload into standard keys."""
 
     fields = raw_data.get("formData", raw_data.get("data", raw_data))
 
-    # If Wix sends fields as a list of {label, value} pairs
     if isinstance(fields, list):
         field_map = {}
         for field in fields:
@@ -131,45 +206,41 @@ def parse_wix_form_data(raw_data: dict) -> dict:
             field_map[label] = value
         fields = field_map
 
-    # Map from Wix field titles to our internal keys
-    # This mapping handles variations in how Wix sends field names
     mapping = {
-        "first name": "first_name",
-        "first_name": "first_name",
-        "name": "first_name",
-        "email": "email",
-        "email*": "email",
-        "what type of service business do you run": "q1_business_type",
+        "first name":                                       "first_name",
+        "first_name":                                       "first_name",
+        "name":                                             "first_name",
+        "email":                                            "email",
+        "email*":                                           "email",
+        "what is the link to your website":                 "website_url",
+        "website":                                          "website_url",
+        "website url":                                      "website_url",
+        "what type of service business do you run":         "q1_business_type",
         "how many calls does your business receive per week": "q2_weekly_calls",
-        "what are your business hours": "q3_hours",
-        "do you have a dedicated receptionist": "q4_receptionist",
-        "how many staff members handle incoming calls": "q5_staff_count",
-        "how many calls per week go unanswered": "q6_missed_calls",
-        "what typically happens when a call is missed": "q7_missed_handling",
-        "how quickly do you respond to website enquiries": "q8_response_time",
-        "how many new enquiries or leads": "q9_total_enquiries",
-        "what percentage of enquiries convert": "q10_conversion",
-        "what is the average value of a new client": "q11_avg_value",
-        "do you have any system for handling after-hours": "q12_after_hours",
-        "how do most clients contact you": "q13_contact_channels",
-        "do you currently use any automated follow-up": "q14_automation",
-        "have you ever knowingly lost a client": "q15_lost_clients",
-        "what is your biggest frustration": "q16_frustration",
-        "if an ai could answer every call": "q17_value_perception",
+        "what are your business hours":                     "q3_hours",
+        "do you have a dedicated receptionist":             "q4_receptionist",
+        "how many staff members handle incoming calls":     "q5_staff_count",
+        "how many calls per week go unanswered":            "q6_missed_calls",
+        "what typically happens when a call is missed":     "q7_missed_handling",
+        "how quickly do you respond to website enquiries":  "q8_response_time",
+        "how many new enquiries or leads":                  "q9_total_enquiries",
+        "what percentage of enquiries convert":             "q10_conversion",
+        "what is the average value of a new client":        "q11_avg_value",
+        "do you have any system for handling after-hours":  "q12_after_hours",
+        "how do most clients contact you":                  "q13_contact_channels",
+        "do you currently use any automated follow-up":     "q14_automation",
+        "have you ever knowingly lost a client":            "q15_lost_clients",
+        "what is your biggest frustration":                 "q16_frustration",
+        "if an ai could answer every call":                 "q17_value_perception",
     }
 
     audit_data = {}
-
     if isinstance(fields, dict):
         for wix_key, value in fields.items():
             wix_key_lower = wix_key.lower().strip("?*. ")
-
-            # Direct match
             if wix_key_lower in mapping:
                 audit_data[mapping[wix_key_lower]] = value
                 continue
-
-            # Partial match — check if any mapping key is contained in the field name
             for map_key, our_key in mapping.items():
                 if map_key in wix_key_lower or wix_key_lower in map_key:
                     audit_data[our_key] = value
@@ -178,22 +249,31 @@ def parse_wix_form_data(raw_data: dict) -> dict:
     return audit_data
 
 
-def calculate_and_write_email(audit_data: dict) -> dict:
-    """Send audit data to Claude, get back revenue estimate + personalised email."""
+# ---------------------------------------------------------------------------
+# Claude Analysis
+# ---------------------------------------------------------------------------
 
-    user_prompt = f"""Here are the completed audit answers. Analyse them and produce the revenue estimate and email.
+def calculate_and_write_email(audit_data: dict, website_text: str = "") -> dict:
+    """Send audit data to Claude Opus. Returns analysis + email content."""
+
+    website_section = ""
+    if website_text:
+        url = audit_data.get('website_url', 'their website')
+        website_section = f"\nWEBSITE CONTENT (scraped from {url}):\n{website_text}\nUse this to make the analysis even more specific to their actual business.\n"
+
+    user_prompt = f"""Analyse this completed audit and produce the full response.
 
 RESPONDENT: {audit_data.get('first_name', 'there')}
 BUSINESS TYPE: {audit_data.get('q1_business_type', 'Service business')}
 CALENDLY URL FOR CTA: {CALENDLY_URL}
-
+{website_section}
 AUDIT ANSWERS:
 Q1  Business type: {audit_data.get('q1_business_type', 'Not specified')}
-Q2  Weekly calls: {audit_data.get('q2_weekly_calls', 'Not specified')}
+Q2  Weekly calls received: {audit_data.get('q2_weekly_calls', 'Not specified')}
 Q3  Business hours: {audit_data.get('q3_hours', 'Not specified')}
 Q4  Receptionist setup: {audit_data.get('q4_receptionist', 'Not specified')}
 Q5  Staff handling calls: {audit_data.get('q5_staff_count', 'Not specified')}
-Q6  Missed calls/week: {audit_data.get('q6_missed_calls', 'Not specified')}
+Q6  Missed calls per week: {audit_data.get('q6_missed_calls', 'Not specified')}
 Q7  What happens when missed: {audit_data.get('q7_missed_handling', 'Not specified')}
 Q8  Response time to web enquiries: {audit_data.get('q8_response_time', 'Not specified')}
 Q9  Total weekly enquiries: {audit_data.get('q9_total_enquiries', 'Not specified')}
@@ -206,19 +286,18 @@ Q15 Lost clients from slow response: {audit_data.get('q15_lost_clients', 'Not sp
 Q16 Biggest frustration: {audit_data.get('q16_frustration', 'Not specified')}
 Q17 Value of AI receptionist: {audit_data.get('q17_value_perception', 'Not specified')}
 
-Remember: Return ONLY valid JSON. Make the email feel like Jess personally reviewed this. The opportunity should be massive and clear — show them the money they're leaving on the table and exactly how to fix it."""
+Return ONLY valid JSON. Make this feel like Jess personally reviewed their business.
+The email should mention: "I've attached your full audit report and roadmap as a PDF."
+"""
 
     message = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=3000,
+        model="claude-opus-4-6",
+        max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}]
     )
 
-    response_text = message.content[0].text
-
-    # Clean up response — sometimes Claude wraps JSON in markdown fences
-    response_text = response_text.strip()
+    response_text = message.content[0].text.strip()
     if response_text.startswith("```"):
         response_text = re.sub(r'^```(?:json)?\s*', '', response_text)
         response_text = re.sub(r'\s*```$', '', response_text)
@@ -226,14 +305,154 @@ Remember: Return ONLY valid JSON. Make the email feel like Jess personally revie
     return json.loads(response_text)
 
 
-def send_email(to_email: str, to_name: str, subject: str, html_body: str) -> bool:
-    """Send the personalised audit email via SendGrid."""
+# ---------------------------------------------------------------------------
+# PDF Generator
+# ---------------------------------------------------------------------------
+
+def _get_logo_html() -> str:
+    """Return either an embedded logo image or styled text fallback."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    logo_path = os.path.join(project_root, 'reference', 'brand', 'logo.png')
+    if os.path.exists(logo_path):
+        with open(logo_path, 'rb') as f:
+            b64 = base64.b64encode(f.read()).decode()
+        return f'<img src="data:image/png;base64,{b64}" style="height:38px;" alt="wilba.ai">'
+    return '<span style="font-size:26px;font-weight:bold;color:#ffffff;letter-spacing:-0.5px;">wilba<span style="color:#87ABDD;">.ai</span></span>'
+
+
+def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
+    """Generate a branded WILBA audit report PDF using WeasyPrint."""
+
+    if not WEASYPRINT_AVAILABLE:
+        return None
+
+    name     = audit_data.get('first_name', 'Business Owner')
+    business = audit_data.get('q1_business_type', 'Your Business')
+    low      = email_result.get('revenue_loss_low', 0)
+    high     = email_result.get('revenue_loss_high', 0)
+    date     = datetime.now().strftime('%B %d, %Y')
+
+    # Calculation breakdown
+    breakdown_html = ""
+    for item in email_result.get('calculation_breakdown', []):
+        breakdown_html += f"""
+        <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #E0E9F4;">
+          <span style="font-size:13px;color:#394F6A;">{item.get('label','')}</span>
+          <span style="font-size:13px;font-weight:bold;color:#2D3E52;">{item.get('value','')}</span>
+        </div>"""
+
+    # Gaps
+    gaps_html = ""
+    for i, gap in enumerate(email_result.get('top_gaps', []), 1):
+        parts = re.split(r'\s*[—\-]{1,2}\s*', gap, maxsplit=1)
+        title = parts[0]
+        desc  = parts[1] if len(parts) > 1 else ""
+        gaps_html += f"""
+        <div style="display:flex;align-items:flex-start;margin-bottom:12px;background:white;border-left:4px solid #87ABDD;padding:14px;border-radius:0 6px 6px 0;">
+          <div style="font-size:28px;font-weight:bold;color:#87ABDD;width:36px;flex-shrink:0;line-height:1;">{i}</div>
+          <div style="flex:1;">
+            <div style="font-size:13px;font-weight:bold;color:#394F6A;">{title}</div>
+            {f'<div style="font-size:12px;color:#5E7998;margin-top:4px;line-height:1.5;">{desc}</div>' if desc else ''}
+          </div>
+        </div>"""
+
+    # Roadmap
+    roadmap_html = ""
+    for step in email_result.get('roadmap', []):
+        roadmap_html += f"""
+        <div style="display:flex;align-items:flex-start;margin-bottom:18px;">
+          <div style="background:#394F6A;color:white;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;flex-shrink:0;margin-right:14px;margin-top:2px;">{step.get('step','')}</div>
+          <div style="flex:1;">
+            <div style="font-size:14px;font-weight:bold;color:#394F6A;">{step.get('title','')}</div>
+            <span style="display:inline-block;font-size:10px;color:#5E7998;background:#E0E9F4;padding:2px 8px;border-radius:10px;margin:4px 0;">{step.get('timeline','')}</span>
+            <div style="font-size:12px;color:#555;line-height:1.5;margin-top:4px;">{step.get('description','')}</div>
+            <div style="font-size:12px;color:#394F6A;font-weight:bold;margin-top:5px;">&#10003; {step.get('impact','')}</div>
+          </div>
+        </div>"""
+
+    logo_html = _get_logo_html()
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page {{ size: A4; margin: 0; }}
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{ font-family: Arial, Helvetica, sans-serif; color: #1a1a2e; background: white; }}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div style="background:#394F6A;color:white;padding:35px 45px;display:flex;justify-content:space-between;align-items:center;">
+  <div>{logo_html}</div>
+  <div style="text-align:right;">
+    <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#C7D7EA;">AI Receptionist Audit</div>
+    <div style="font-size:11px;color:#87ABDD;margin-top:4px;">Prepared exclusively for {name}</div>
+  </div>
+</div>
+
+<!-- META BAR -->
+<div style="background:#2D3E52;padding:11px 45px;display:flex;justify-content:space-between;">
+  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Business: </strong>{business}</span>
+  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Date: </strong>{date}</span>
+  <span style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Analyst: </strong>Jess Morrell, wilba.ai</span>
+</div>
+
+<!-- HERO -->
+<div style="background:linear-gradient(135deg,#2D3E52 0%,#394F6A 100%);padding:42px 45px;text-align:center;">
+  <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#C7D7EA;margin-bottom:10px;">Estimated Monthly Revenue Loss</div>
+  <div style="font-size:56px;font-weight:bold;color:#87ABDD;line-height:1;">${low:,} &ndash; ${high:,}</div>
+  <div style="font-size:18px;color:#C7D7EA;margin-top:8px;">per month</div>
+  <div style="font-size:12px;color:#87ABDD;margin-top:12px;opacity:0.85;">Based on your audit responses &mdash; this is what is currently walking out the door.</div>
+</div>
+
+<!-- HOW WE GOT THIS NUMBER -->
+<div style="padding:28px 45px;">
+  <div style="font-size:13px;font-weight:bold;color:#394F6A;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #87ABDD;padding-bottom:8px;margin-bottom:16px;">How We Got This Number</div>
+  {breakdown_html}
+</div>
+
+<!-- TOP 3 GAPS -->
+<div style="padding:28px 45px;background:#F0F4F8;">
+  <div style="font-size:13px;font-weight:bold;color:#394F6A;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #87ABDD;padding-bottom:8px;margin-bottom:16px;">Your 3 Biggest Gaps</div>
+  {gaps_html}
+</div>
+
+<!-- ROADMAP -->
+<div style="padding:28px 45px;">
+  <div style="font-size:13px;font-weight:bold;color:#394F6A;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #87ABDD;padding-bottom:8px;margin-bottom:20px;">Your AI Receptionist Roadmap</div>
+  {roadmap_html}
+</div>
+
+<!-- FOOTER -->
+<div style="background:#394F6A;color:white;padding:30px 45px;text-align:center;">
+  <div style="font-size:16px;color:white;margin-bottom:8px;">Ready to plug the leak? Let&rsquo;s map your 30-day fix.</div>
+  <div style="font-size:13px;color:#87ABDD;margin-bottom:18px;">{CALENDLY_URL}</div>
+  <div style="border-top:1px solid rgba(135,171,221,0.3);padding-top:16px;font-size:10px;color:#C7D7EA;">
+    wilba.ai &bull; hello@wilba.ai &bull; Surf Coast, Victoria, Australia
+  </div>
+</div>
+
+</body>
+</html>"""
+
+    return weasyprint.HTML(string=html).write_pdf()
+
+
+# ---------------------------------------------------------------------------
+# Email Sender
+# ---------------------------------------------------------------------------
+
+def send_email(to_email: str, to_name: str, subject: str, html_body: str,
+               pdf_bytes: bytes = None) -> bool:
+    """Send the personalised audit email via SendGrid with optional PDF attachment."""
 
     sg_api_key = os.environ.get("SENDGRID_API_KEY")
     if not sg_api_key:
         print("WARNING: No SENDGRID_API_KEY set. Email not sent.")
-        print(f"Would have sent to: {to_email}")
-        print(f"Subject: {subject}")
         return False
 
     sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
@@ -245,6 +464,15 @@ def send_email(to_email: str, to_name: str, subject: str, html_body: str) -> boo
         html_content=Content("text/html; charset=utf-8", html_body)
     )
 
+    if pdf_bytes:
+        attachment = Attachment()
+        attachment.file_content = FileContent(base64.b64encode(pdf_bytes).decode())
+        attachment.file_name = FileName(f"WILBA-AI-Audit-{to_name.replace(' ', '-')}.pdf")
+        attachment.file_type = FileType('application/pdf')
+        attachment.disposition = Disposition('attachment')
+        message.add_attachment(attachment)
+        print(f"PDF attached — {len(pdf_bytes):,} bytes")
+
     try:
         response = sg.send(message)
         print(f"Email sent to {to_email} — Status: {response.status_code}")
@@ -254,41 +482,42 @@ def send_email(to_email: str, to_name: str, subject: str, html_body: str) -> boo
         return False
 
 
-def log_lead(audit_data: dict, email_result: dict, email_sent: bool):
-    """Save lead to CSV for Jess's lead tracking dashboard."""
+# ---------------------------------------------------------------------------
+# Lead Logger
+# ---------------------------------------------------------------------------
 
-    # Use project root (works both locally and on Render)
-    project_root = os.environ.get("PROJECT_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+def log_lead(audit_data: dict, email_result: dict, email_sent: bool):
+    """Append lead to outputs/audit/leads.csv"""
+    project_root = os.environ.get(
+        "PROJECT_ROOT",
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    )
     log_dir = os.path.join(project_root, "outputs", "audit")
     os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, "leads.csv")
 
     file_exists = os.path.isfile(log_file)
-
     with open(log_file, "a", newline="") as f:
         writer = csv.writer(f)
         if not file_exists:
             writer.writerow([
-                "timestamp", "name", "email", "business_type",
+                "timestamp", "name", "email", "business_type", "website",
                 "weekly_calls", "missed_calls", "avg_value",
-                "revenue_loss_low", "revenue_loss_high",
-                "value_perception", "frustration", "email_sent"
+                "revenue_loss_low", "revenue_loss_high", "email_sent"
             ])
         writer.writerow([
             datetime.now().isoformat(),
             audit_data.get("first_name", ""),
             audit_data.get("email", ""),
             audit_data.get("q1_business_type", ""),
+            audit_data.get("website_url", ""),
             audit_data.get("q2_weekly_calls", ""),
             audit_data.get("q6_missed_calls", ""),
             audit_data.get("q11_avg_value", ""),
             email_result.get("revenue_loss_low", ""),
             email_result.get("revenue_loss_high", ""),
-            audit_data.get("q17_value_perception", ""),
-            audit_data.get("q16_frustration", ""),
             "yes" if email_sent else "no"
         ])
-
     print(f"Lead logged: {audit_data.get('first_name')} ({audit_data.get('email')})")
 
 
@@ -298,46 +527,54 @@ def log_lead(audit_data: dict, email_result: dict, email_sent: bool):
 
 @app.route("/audit-webhook", methods=["POST"])
 def handle_audit_submission():
-    """Main webhook — receives Wix form data, generates & sends audit email."""
-
+    """Main webhook — receives Wix form, generates analysis, sends email + PDF."""
     try:
         raw_data = request.json
         print(f"\n{'='*60}")
-        print(f"New audit submission received at {datetime.now().isoformat()}")
-        print(f"Raw data keys: {list(raw_data.keys()) if raw_data else 'None'}")
+        print(f"Audit submission at {datetime.now().isoformat()}")
 
-        # Parse the Wix form data
         audit_data = parse_wix_form_data(raw_data)
-
-        print(f"Parsed: {audit_data.get('first_name', 'Unknown')} — {audit_data.get('q1_business_type', 'Unknown business')}")
+        print(f"Parsed: {audit_data.get('first_name','?')} — {audit_data.get('q1_business_type','?')}")
 
         if not audit_data.get("email"):
-            return jsonify({"error": "No email address provided"}), 400
+            return jsonify({"error": "No email address found in submission"}), 400
 
-        # Get Claude to analyse and write the email
-        print("Sending to Claude for analysis...")
-        email_result = calculate_and_write_email(audit_data)
+        # Fetch website if provided
+        website_text = ""
+        if audit_data.get("website_url"):
+            print(f"Fetching website: {audit_data['website_url']}")
+            website_text = fetch_website_text(audit_data["website_url"])
+            print(f"Website text: {len(website_text)} chars")
 
-        print(f"Revenue estimate: ${email_result.get('revenue_loss_low', '?')}–${email_result.get('revenue_loss_high', '?')}/month")
-        print(f"Top gaps: {len(email_result.get('top_gaps', []))}")
+        # Claude Opus analysis
+        print("Sending to Claude Opus for analysis...")
+        email_result = calculate_and_write_email(audit_data, website_text)
+        print(f"Revenue estimate: ${email_result.get('revenue_loss_low','?'):,} - ${email_result.get('revenue_loss_high','?'):,}/month")
 
-        # Send the email
+        # Generate PDF
+        pdf_bytes = None
+        if WEASYPRINT_AVAILABLE:
+            print("Generating PDF...")
+            pdf_bytes = generate_pdf(audit_data, email_result)
+            print(f"PDF generated: {len(pdf_bytes):,} bytes" if pdf_bytes else "PDF generation failed")
+
+        # Send email with PDF attached
         email_sent = send_email(
             to_email=audit_data["email"],
             to_name=audit_data.get("first_name", "there"),
             subject=email_result["email_subject"],
-            html_body=email_result["email_html"]
+            html_body=email_result["email_html"],
+            pdf_bytes=pdf_bytes
         )
 
-        # Log the lead
         log_lead(audit_data, email_result, email_sent)
-
         print(f"{'='*60}\n")
 
         return jsonify({
             "status": "success",
             "email_sent": email_sent,
-            "revenue_loss_estimate": f"${email_result['revenue_loss_low']}–${email_result['revenue_loss_high']}/month",
+            "pdf_generated": pdf_bytes is not None,
+            "revenue_loss_estimate": f"${email_result['revenue_loss_low']:,}-${email_result['revenue_loss_high']:,}/month",
             "gaps_identified": len(email_result.get("top_gaps", []))
         }), 200
 
@@ -345,72 +582,99 @@ def handle_audit_submission():
         print(f"JSON parse error from Claude: {e}")
         return jsonify({"error": "Failed to parse Claude response"}), 500
     except Exception as e:
-        print(f"Error processing audit: {e}")
         import traceback
+        print(f"Error: {e}")
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
 
+# ---------------------------------------------------------------------------
+# Health Check
+# ---------------------------------------------------------------------------
+
 @app.route("/health", methods=["GET"])
 def health_check():
-    """Health check endpoint for monitoring."""
     return jsonify({
         "status": "healthy",
-        "service": "WILBA Audit Email Responder",
+        "service": "WILBA Audit Email Responder v2",
+        "weasyprint_available": WEASYPRINT_AVAILABLE,
+        "model": "claude-opus-4-6",
         "timestamp": datetime.now().isoformat()
     }), 200
 
 
+# ---------------------------------------------------------------------------
+# Test Endpoint — fires the FULL pipeline including sending real email
+# ---------------------------------------------------------------------------
+
 @app.route("/test-audit", methods=["GET"])
 def test_audit():
     """
-    Test endpoint — simulates a form submission with sample data.
-    Visit /test-audit in your browser to test the full flow.
+    Full pipeline test — generates analysis, PDF, and sends real email to TEST_EMAIL.
+    Visit /test-audit in your browser to test.
     """
+    test_email = os.environ.get("TEST_EMAIL", FROM_EMAIL)
+
     sample_data = {
         "first_name": "Sarah",
-        "email": os.environ.get("TEST_EMAIL", "jess@wilba.ai"),
-        "q1_business_type": "Physiotherapy",
+        "email": test_email,
+        "website_url": "",
+        "q1_business_type": "Physiotherapy clinic",
         "q2_weekly_calls": "50-100",
-        "q3_hours": "Weekdays 9am-5pm, Saturdays",
-        "q4_receptionist": "Yes — part time",
+        "q3_hours": "Weekdays 9am-5pm, Saturdays until 1pm",
+        "q4_receptionist": "Yes — part time (leaves at 2pm)",
         "q5_staff_count": "2",
         "q6_missed_calls": "5-15",
-        "q7_missed_handling": "We rely on voicemail — most people leave a message",
-        "q8_response_time": "Same day",
+        "q7_missed_handling": "Voicemail — most people don't leave a message",
+        "q8_response_time": "Same day if we remember",
         "q9_total_enquiries": "20-50",
         "q10_conversion": "25-50%",
         "q11_avg_value": "$100-$300",
         "q12_after_hours": "Voicemail only",
-        "q13_contact_channels": "Phone call, Website contact form, Instagram / Facebook DM",
+        "q13_contact_channels": "Phone, website form, Instagram DMs",
         "q14_automation": "We do it manually when we remember",
         "q15_lost_clients": "Yes — at least once that I know of",
-        "q16_frustration": "We know we're missing calls but don't have the bandwidth to answer them all. The receptionist is part time and after 2pm it all goes to voicemail.",
-        "q17_value_perception": "It would be a game-changer"
+        "q16_frustration": "We miss calls after 2pm when the receptionist leaves. We know it costs us but don't have the bandwidth.",
+        "q17_value_perception": "It would be a complete game changer"
     }
 
     try:
         print("\n--- TEST AUDIT RUNNING ---")
-        email_result = calculate_and_write_email(sample_data)
+        website_text = fetch_website_text(sample_data.get("website_url", ""))
+        email_result = calculate_and_write_email(sample_data, website_text)
+        pdf_bytes = generate_pdf(sample_data, email_result) if WEASYPRINT_AVAILABLE else None
 
-        # Don't actually send email in test — just show the result
+        email_sent = send_email(
+            to_email=test_email,
+            to_name=sample_data["first_name"],
+            subject=email_result["email_subject"],
+            html_body=email_result["email_html"],
+            pdf_bytes=pdf_bytes
+        )
+
+        gaps_html = ''.join(f'<li>{g}</li>' for g in email_result.get('top_gaps', []))
+        roadmap_html = ''.join(
+            f'<li><strong>Step {r["step"]}: {r["title"]}</strong> ({r["timeline"]}) &mdash; {r["impact"]}</li>'
+            for r in email_result.get('roadmap', [])
+        )
+        pdf_status = f"YES ({len(pdf_bytes):,} bytes)" if pdf_bytes else "NO (WeasyPrint not installed)"
+
         return f"""
-        <html>
-        <head><meta charset="utf-8"><title>WILBA Audit Test</title></head>
-        <body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px;">
-            <h1>Audit Email Preview</h1>
-            <p><strong>Recipient:</strong> {sample_data['first_name']} ({sample_data['email']})</p>
-            <p><strong>Revenue Loss:</strong> ${email_result['revenue_loss_low']}–${email_result['revenue_loss_high']}/month</p>
+        <html><head><meta charset="utf-8"><title>WILBA Audit Test</title></head>
+        <body style="font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:20px;">
+            <h1 style="color:#394F6A;">Audit Test Result</h1>
+            <p><strong>Email sent to:</strong> {test_email} &mdash; <strong style="color:{'green' if email_sent else 'red'}">{'SENT' if email_sent else 'FAILED'}</strong></p>
+            <p><strong>PDF generated:</strong> {pdf_status}</p>
+            <p><strong>Revenue Loss:</strong> ${email_result['revenue_loss_low']:,} &ndash; ${email_result['revenue_loss_high']:,}/month</p>
             <p><strong>Subject:</strong> {email_result['email_subject']}</p>
-            <h2>Top Gaps:</h2>
-            <ol>{''.join(f'<li>{gap}</li>' for gap in email_result.get('top_gaps', []))}</ol>
+            <h2 style="color:#394F6A;">Top Gaps:</h2><ol>{gaps_html}</ol>
+            <h2 style="color:#394F6A;">Roadmap:</h2><ol>{roadmap_html}</ol>
             <hr>
-            <h2>Email Preview:</h2>
-            <div style="border: 2px solid #ccc; padding: 30px; border-radius: 8px; background: #fafafa;">
+            <h2 style="color:#394F6A;">Email Preview:</h2>
+            <div style="border:2px solid #394F6A;padding:30px;border-radius:8px;background:#fafafa;">
                 {email_result['email_html']}
             </div>
-        </body>
-        </html>
+        </body></html>
         """, 200
 
     except Exception as e:
@@ -424,11 +688,10 @@ def test_audit():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    print(f"\nWILBA Audit Email Responder starting on port {port}")
-    print(f"Webhook URL: http://localhost:{port}/audit-webhook")
-    print(f"Test URL: http://localhost:{port}/test-audit")
-    print(f"Health: http://localhost:{port}/health")
-    print(f"Calendly CTA: {CALENDLY_URL}")
-    print(f"From email: {FROM_EMAIL}\n")
-
+    print(f"\nWILBA Audit Email Responder v2 starting on port {port}")
+    print(f"Model: claude-opus-4-6")
+    print(f"WeasyPrint: {'available' if WEASYPRINT_AVAILABLE else 'NOT available'}")
+    print(f"Webhook: http://localhost:{port}/audit-webhook")
+    print(f"Test: http://localhost:{port}/test-audit")
+    print(f"Health: http://localhost:{port}/health\n")
     app.run(host="0.0.0.0", port=port, debug=True)

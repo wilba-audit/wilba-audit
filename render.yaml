@@ -2,7 +2,7 @@ services:
   - type: web
     name: wilba-audit-responder
     runtime: python
-    buildCommand: pip install -r scripts/requirements-audit.txt
+    buildCommand: apt-get install -y libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info && pip install -r scripts/requirements-audit.txt
     startCommand: gunicorn scripts.audit_email_responder:app
     envVars:
       - key: ANTHROPIC_API_KEY
@@ -14,4 +14,4 @@ services:
       - key: CALENDLY_URL
         value: https://calendly.com/hello-wilba
       - key: TEST_EMAIL
-        value: jess@wilba.ai
+        value: hello@wilba.ai
