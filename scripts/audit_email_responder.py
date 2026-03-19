@@ -678,11 +678,38 @@ def test_audit():
     }
 
     skip_pdf = request.args.get("skip_pdf", "0") == "1"
+    mock_claude = request.args.get("mock_claude", "0") == "1"
 
     try:
-        print(f"\n--- TEST AUDIT RUNNING (skip_pdf={skip_pdf}) ---")
+        print(f"\n--- TEST AUDIT RUNNING (skip_pdf={skip_pdf}, mock_claude={mock_claude}) ---")
         website_text = fetch_website_text(sample_data.get("website_url", ""))
-        email_result = calculate_and_write_email(sample_data, website_text)
+
+        if mock_claude:
+            print("Using mock Claude response (mock_claude=1)")
+            email_result = {
+                "revenue_loss_low": 1300,
+                "revenue_loss_high": 4350,
+                "calculation_breakdown": [
+                    {"label": "Missed calls per week × avg booking value", "value": "$1,300–$2,600"},
+                    {"label": "Slow follow-up lead decay", "value": "$0–$1,750"},
+                ],
+                "top_gaps": [
+                    "After-hours coverage — calls go to voicemail and most people don't leave messages",
+                    "Slow web enquiry response — leads go cold within 5 minutes",
+                    "No automated follow-up — manual process means leads fall through the cracks",
+                ],
+                "roadmap": [
+                    {"step": 1, "title": "AI Phone Receptionist", "timeline": "Week 1", "impact": "Capture every call 24/7", "description": "Deploy an AI that answers every call, qualifies leads, and books appointments."},
+                    {"step": 2, "title": "Instant Web Enquiry Response", "timeline": "Week 2", "impact": "5-minute response rate", "description": "Automated reply within 5 minutes of any form submission."},
+                    {"step": 3, "title": "Follow-up Sequences", "timeline": "Week 3", "impact": "30% more conversions", "description": "Automated SMS/email follow-up for unclosed leads."},
+                    {"step": 4, "title": "Appointment Reminders", "timeline": "Week 4", "impact": "Reduce no-shows by 40%", "description": "Automated reminders 24h and 1h before appointments."},
+                    {"step": 5, "title": "Review Collection", "timeline": "Week 5-6", "impact": "5-star Google reviews", "description": "Automated post-visit review requests."},
+                ],
+                "email_subject": "Sarah, your physio clinic is leaking $1,300–$4,350/month [Mock Test]",
+                "email_html": "<p>Hi Sarah,</p><p>This is a <strong>mock test email</strong> — Claude API was bypassed.</p><p>If you received this, the email pipeline works!</p><p>Jess</p>",
+            }
+        else:
+            email_result = calculate_and_write_email(sample_data, website_text)
         pdf_bytes = None
         if WEASYPRINT_AVAILABLE and not skip_pdf:
             try:
@@ -724,9 +751,9 @@ def test_audit():
         </body></html>
         """, 200
 
-    except Exception as e:
+    except BaseException as e:
         import traceback
-        return f"<pre>Error: {e}\n\n{traceback.format_exc()}</pre>", 500
+        return f"<pre>Error ({type(e).__name__}): {e}\n\n{traceback.format_exc()}</pre>", 500
 
 
 # ---------------------------------------------------------------------------
