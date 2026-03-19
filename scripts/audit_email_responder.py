@@ -451,7 +451,30 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
 </body>
 </html>"""
 
-    return weasyprint.HTML(string=html).write_pdf()
+    # Run WeasyPrint in a subprocess to isolate C library crashes (segfaults)
+    # from the gunicorn worker process.
+    import subprocess, sys, tempfile, json as _json
+    script = (
+        "import sys, weasyprint, json\n"
+        "html = sys.stdin.read()\n"
+        "pdf = weasyprint.HTML(string=html).write_pdf()\n"
+        "sys.stdout.buffer.write(pdf)\n"
+    )
+    try:
+        result = subprocess.run(
+            [sys.executable, "-c", script],
+            input=html.encode("utf-8"),
+            capture_output=True,
+            timeout=60
+        )
+        if result.returncode == 0 and result.stdout:
+            return result.stdout
+        else:
+            print(f"WeasyPrint subprocess failed (rc={result.returncode}): {result.stderr.decode()[:500]}")
+            return None
+    except subprocess.TimeoutExpired:
+        print("WeasyPrint subprocess timed out")
+        return None
 
 
 # ---------------------------------------------------------------------------
