@@ -291,7 +291,7 @@ The email should mention: "I've attached your full audit report and roadmap as a
 """
 
     message = client.messages.create(
-        model="claude-sonnet-4-6",
+        model="claude-3-5-haiku-20241022",
         max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}]
@@ -560,9 +560,43 @@ def log_lead(audit_data: dict, email_result: dict, email_sent: bool):
 # Webhook Endpoint
 # ---------------------------------------------------------------------------
 
+def process_audit_in_background(audit_data, website_text):
+    """Run the full audit pipeline in a background thread so the webhook returns instantly."""
+    try:
+        print("BG: Starting Claude analysis...")
+        email_result = calculate_and_write_email(audit_data, website_text)
+        print(f"BG: Revenue estimate: ${email_result.get('revenue_loss_low','?'):,} - ${email_result.get('revenue_loss_high','?'):,}/month")
+
+        pdf_bytes = None
+        if WEASYPRINT_AVAILABLE:
+            try:
+                print("BG: Generating PDF...")
+                pdf_bytes = generate_pdf(audit_data, email_result)
+                print(f"BG: PDF generated: {len(pdf_bytes):,} bytes" if pdf_bytes else "BG: PDF generation failed")
+            except Exception as pdf_err:
+                print(f"BG: PDF generation failed (non-fatal): {pdf_err}")
+
+        email_sent = send_email(
+            to_email=audit_data["email"],
+            to_name=audit_data.get("first_name", "there"),
+            subject=email_result["email_subject"],
+            html_body=email_result["email_html"],
+            pdf_bytes=pdf_bytes
+        )
+
+        log_lead(audit_data, email_result, email_sent)
+        print(f"BG: Done — email_sent={email_sent}")
+        print(f"{'='*60}\n")
+
+    except Exception as e:
+        import traceback
+        print(f"BG ERROR: {e}")
+        traceback.print_exc()
+
+
 @app.route("/audit-webhook", methods=["POST"])
 def handle_audit_submission():
-    """Main webhook — receives Wix form, generates analysis, sends email + PDF."""
+    """Main webhook — receives Wix form, kicks off background processing, returns 200 immediately."""
     try:
         raw_data = request.json
         print(f"\n{'='*60}")
@@ -574,52 +608,20 @@ def handle_audit_submission():
         if not audit_data.get("email"):
             return jsonify({"error": "No email address found in submission"}), 400
 
-        # Fetch website if provided
+        # Fetch website synchronously (fast, just HTTP)
         website_text = ""
         if audit_data.get("website_url"):
             print(f"Fetching website: {audit_data['website_url']}")
             website_text = fetch_website_text(audit_data["website_url"])
             print(f"Website text: {len(website_text)} chars")
 
-        # Claude Opus analysis
-        print("Sending to Claude Opus for analysis...")
-        email_result = calculate_and_write_email(audit_data, website_text)
-        print(f"Revenue estimate: ${email_result.get('revenue_loss_low','?'):,} - ${email_result.get('revenue_loss_high','?'):,}/month")
+        # Process Claude + email in background thread so we return 200 immediately
+        import threading
+        t = threading.Thread(target=process_audit_in_background, args=(audit_data, website_text), daemon=True)
+        t.start()
 
-        # Generate PDF
-        pdf_bytes = None
-        if WEASYPRINT_AVAILABLE:
-            try:
-                print("Generating PDF...")
-                pdf_bytes = generate_pdf(audit_data, email_result)
-                print(f"PDF generated: {len(pdf_bytes):,} bytes" if pdf_bytes else "PDF generation failed")
-            except Exception as pdf_err:
-                print(f"PDF generation failed (non-fatal): {pdf_err}")
-                pdf_bytes = None
+        return jsonify({"status": "received", "message": "Audit processing started"}), 200
 
-        # Send email with PDF attached
-        email_sent = send_email(
-            to_email=audit_data["email"],
-            to_name=audit_data.get("first_name", "there"),
-            subject=email_result["email_subject"],
-            html_body=email_result["email_html"],
-            pdf_bytes=pdf_bytes
-        )
-
-        log_lead(audit_data, email_result, email_sent)
-        print(f"{'='*60}\n")
-
-        return jsonify({
-            "status": "success",
-            "email_sent": email_sent,
-            "pdf_generated": pdf_bytes is not None,
-            "revenue_loss_estimate": f"${email_result['revenue_loss_low']:,}-${email_result['revenue_loss_high']:,}/month",
-            "gaps_identified": len(email_result.get("top_gaps", []))
-        }), 200
-
-    except json.JSONDecodeError as e:
-        print(f"JSON parse error from Claude: {e}")
-        return jsonify({"error": "Failed to parse Claude response"}), 500
     except Exception as e:
         import traceback
         print(f"Error: {e}")
@@ -637,7 +639,7 @@ def health_check():
         "status": "healthy",
         "service": "WILBA Audit Email Responder v2",
         "weasyprint_available": WEASYPRINT_AVAILABLE,
-        "model": "claude-sonnet-4-6",
+        "model": "claude-3-5-haiku-20241022",
         "timestamp": datetime.now().isoformat()
     }), 200
 
@@ -709,7 +711,20 @@ def test_audit():
                 "email_html": "<p>Hi Sarah,</p><p>This is a <strong>mock test email</strong> — Claude API was bypassed.</p><p>If you received this, the email pipeline works!</p><p>Jess</p>",
             }
         else:
-            email_result = calculate_and_write_email(sample_data, website_text)
+            # Run Claude + email in background, return confirmation immediately
+            import threading
+            t = threading.Thread(target=process_audit_in_background, args=(sample_data, website_text), daemon=True)
+            t.start()
+            return f"""
+            <html><head><meta charset="utf-8"><title>WILBA Audit Test</title></head>
+            <body style="font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:20px;">
+                <h1 style="color:#394F6A;">&#10003; Test Started</h1>
+                <p>Claude is generating the audit and sending the email to <strong>{test_email}</strong>.</p>
+                <p>Check your inbox in <strong>15–30 seconds</strong>.</p>
+                <p style="color:#888;font-size:14px;">Check Render Logs for progress. Model: claude-3-5-haiku-20241022</p>
+            </body></html>
+            """, 200
+
         pdf_bytes = None
         if WEASYPRINT_AVAILABLE and not skip_pdf:
             try:
@@ -763,7 +778,7 @@ def test_audit():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     print(f"\nWILBA Audit Email Responder v2 starting on port {port}")
-    print(f"Model: claude-sonnet-4-6")
+    print(f"Model: claude-3-5-haiku-20241022")
     print(f"WeasyPrint: {'available' if WEASYPRINT_AVAILABLE else 'NOT available'}")
     print(f"Webhook: http://localhost:{port}/audit-webhook")
     print(f"Test: http://localhost:{port}/test-audit")
