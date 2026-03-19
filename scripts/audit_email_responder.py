@@ -677,15 +677,19 @@ def test_audit():
         "q17_value_perception": "It would be a complete game changer"
     }
 
+    skip_pdf = request.args.get("skip_pdf", "0") == "1"
+
     try:
-        print("\n--- TEST AUDIT RUNNING ---")
+        print(f"\n--- TEST AUDIT RUNNING (skip_pdf={skip_pdf}) ---")
         website_text = fetch_website_text(sample_data.get("website_url", ""))
         email_result = calculate_and_write_email(sample_data, website_text)
-        try:
-            pdf_bytes = generate_pdf(sample_data, email_result) if WEASYPRINT_AVAILABLE else None
-        except Exception as pdf_err:
-            print(f"PDF generation failed (non-fatal): {pdf_err}")
-            pdf_bytes = None
+        pdf_bytes = None
+        if WEASYPRINT_AVAILABLE and not skip_pdf:
+            try:
+                pdf_bytes = generate_pdf(sample_data, email_result)
+            except Exception as pdf_err:
+                print(f"PDF generation failed (non-fatal): {pdf_err}")
+                pdf_bytes = None
 
         email_sent = send_email(
             to_email=test_email,
