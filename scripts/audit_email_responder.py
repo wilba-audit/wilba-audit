@@ -95,6 +95,13 @@ ROADMAP: Generate exactly 5 steps from diagnosis to full AI implementation:
   - Step 5: Scale (Month 3+)
   Each step: title, description (2 sentences max), timeline, impact (one punchy outcome line)
 
+AI USE CASES: Generate exactly 4 specific AI use cases for this exact type of business.
+  - Tailor to their business type, hours, contact channels, and frustrations from the audit
+  - Each use case: title (short, punchy, specific) + description (1-2 sentences, concrete outcome)
+  - Order by impact: biggest revenue/time win first
+  - Examples for a physio clinic: "24/7 Appointment Booking AI", "Missed Call Text-Back Bot", "Post-Visit Follow-Up Sequences", "New Patient Intake Pre-Screening"
+  - Do NOT use generic titles like "AI Chatbot" or "Automation" — name the specific use case for their industry
+
 EMAIL RULES:
 1. Open with their name + bold revenue loss number — make it land
 2. Show the working (3-4 bullet points) — builds credibility
@@ -135,6 +142,12 @@ OUTPUT FORMAT — return ONLY valid JSON, no markdown fences, no explanation:
     {"step": 3, "title": "...", "description": "...", "timeline": "Weeks 3-4", "impact": "..."},
     {"step": 4, "title": "...", "description": "...", "timeline": "Month 2", "impact": "..."},
     {"step": 5, "title": "...", "description": "...", "timeline": "Month 3+", "impact": "..."}
+  ],
+  "ai_use_cases": [
+    {"title": "24/7 Appointment Booking AI", "description": "Patients book, reschedule and cancel via SMS or web without calling — your calendar fills itself."},
+    {"title": "Missed Call Text-Back Bot", "description": "Every missed call triggers an instant SMS — captures the lead before they call your competitor."},
+    {"title": "Post-Visit Follow-Up Sequences", "description": "Automated check-ins at 24hrs, 1 week, and 1 month drive rebookings without any manual effort."},
+    {"title": "New Patient Intake Pre-Screening", "description": "AI collects history, symptoms and insurance before the first appointment — saving 15 minutes per consult."}
   ],
   "email_subject": "Subject line — personal, curiosity-driven, includes their first name",
   "email_html": "Full HTML email body starting with <div style=...>"
@@ -287,7 +300,7 @@ Q16 Biggest frustration: {audit_data.get('q16_frustration', 'Not specified')}
 Q17 Value of AI receptionist: {audit_data.get('q17_value_perception', 'Not specified')}
 
 Return ONLY valid JSON. Make this feel like Jess personally reviewed their business.
-The email should mention: "I've attached your full audit report and roadmap as a PDF."
+The email should mention: "I've mapped out your top AI opportunities and attached your full personalised report as a PDF — it covers your revenue leaks, your best AI use cases, and your 30-day roadmap."
 """
 
     message = client.messages.create(
@@ -332,6 +345,7 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
     low      = email_result.get('revenue_loss_low', 0)
     high     = email_result.get('revenue_loss_high', 0)
     date     = datetime.now().strftime('%B %d, %Y')
+    hero_name = f"{name}&rsquo;s {business}"
 
     # Calculation breakdown (table layout — WeasyPrint-safe)
     breakdown_html = ""
@@ -357,6 +371,19 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
             <td style="vertical-align:top;">
               <div style="font-size:13px;font-weight:bold;color:#394F6A;">{title}</div>
               {f'<div style="font-size:12px;color:#5E7998;margin-top:4px;line-height:1.5;">{desc}</div>' if desc else ''}
+            </td>
+          </tr>
+        </table>"""
+
+    # AI Use Cases (table layout)
+    use_cases_html = ""
+    for uc in email_result.get('ai_use_cases', []):
+        use_cases_html += f"""
+        <table width="100%" style="margin-bottom:10px;background:white;border-left:4px solid #87ABDD;" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:12px 16px;">
+              <div style="font-size:13px;font-weight:bold;color:#394F6A;">{uc.get('title','')}</div>
+              <div style="font-size:12px;color:#5E7998;margin-top:4px;line-height:1.5;">{uc.get('description','')}</div>
             </td>
           </tr>
         </table>"""
@@ -394,21 +421,27 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
 <body>
 
 <!-- HEADER -->
-<table width="100%" style="background:#394F6A;color:white;padding:35px 45px;" cellpadding="0" cellspacing="0">
+<table width="100%" style="background:#394F6A;color:white;padding:28px 45px 16px 45px;" cellpadding="0" cellspacing="0">
   <tr>
     <td style="vertical-align:middle;">{logo_html}</td>
     <td style="vertical-align:middle;text-align:right;">
-      <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#C7D7EA;">AI Receptionist Audit</div>
-      <div style="font-size:11px;color:#87ABDD;margin-top:4px;">Prepared exclusively for {name}</div>
+      <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#C7D7EA;">AI Receptionist Audit</div>
+      <div style="font-size:10px;color:#87ABDD;margin-top:3px;">{date}</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding-top:18px;padding-bottom:4px;border-top:1px solid #5E7998;">
+      <div style="font-size:22px;font-weight:bold;color:#ffffff;line-height:1.2;">{hero_name}</div>
+      <div style="font-size:12px;color:#87ABDD;margin-top:5px;letter-spacing:0.5px;">Personalised AI Opportunity Report &mdash; prepared by Jess Morrell, wilba.ai</div>
     </td>
   </tr>
 </table>
 
 <!-- META BAR -->
-<table width="100%" style="background:#2D3E52;padding:11px 45px;" cellpadding="0" cellspacing="0">
+<table width="100%" style="background:#2D3E52;padding:10px 45px;" cellpadding="0" cellspacing="0">
   <tr>
-    <td style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Business: </strong>{business}</td>
-    <td style="font-size:11px;color:#C7D7EA;text-align:center;"><strong style="color:#87ABDD;">Date: </strong>{date}</td>
+    <td style="font-size:11px;color:#C7D7EA;"><strong style="color:#87ABDD;">Business type: </strong>{business}</td>
+    <td style="font-size:11px;color:#C7D7EA;text-align:center;"><strong style="color:#87ABDD;">Prepared for: </strong>{name}</td>
     <td style="font-size:11px;color:#C7D7EA;text-align:right;"><strong style="color:#87ABDD;">Analyst: </strong>Jess Morrell, wilba.ai</td>
   </tr>
 </table>
@@ -419,6 +452,13 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
   <div style="font-size:56px;font-weight:bold;color:#87ABDD;line-height:1;">${low:,} &ndash; ${high:,}</div>
   <div style="font-size:18px;color:#C7D7EA;margin-top:8px;">per month</div>
   <div style="font-size:12px;color:#87ABDD;margin-top:12px;">Based on your audit responses &mdash; this is what is currently walking out the door.</div>
+</div>
+
+<!-- AI USE CASES -->
+<div style="padding:28px 45px;background:#F0F4F8;">
+  <div style="font-size:13px;font-weight:bold;color:#394F6A;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #87ABDD;padding-bottom:8px;margin-bottom:16px;">Your Best AI Opportunities</div>
+  <div style="font-size:12px;color:#5E7998;margin-bottom:16px;">Based on your audit answers, here are the 4 highest-impact AI wins for a {business}.</div>
+  {use_cases_html}
 </div>
 
 <!-- HOW WE GOT THIS NUMBER -->
