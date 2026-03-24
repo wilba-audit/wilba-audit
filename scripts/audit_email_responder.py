@@ -16,7 +16,7 @@ What this does:
 
 Required env vars:
   ANTHROPIC_API_KEY  — Claude API key
-  SENDGRID_API_KEY   — SendGrid API key
+  RESEND_API_KEY     — Resend API key
   FROM_EMAIL         — e.g. hello@wilba.ai
   CALENDLY_URL       — e.g. https://calendly.com/hello-wilba
   TEST_EMAIL         — email to receive test audits (defaults to FROM_EMAIL)
@@ -32,11 +32,7 @@ from datetime import datetime
 from html.parser import HTMLParser
 from flask import Flask, request, jsonify
 import anthropic
-import sendgrid
-from sendgrid.helpers.mail import (
-    Mail, Email, To, Content,
-    Attachment, FileContent, FileName, FileType, Disposition
-)
+import resend
 from dotenv import load_dotenv
 
 try:
@@ -588,43 +584,38 @@ def generate_pdf(audit_data: dict, email_result: dict) -> bytes | None:
 
 def send_email(to_email: str, to_name: str, subject: str, html_body: str,
                pdf_bytes: bytes = None) -> bool:
-    """Send the personalised audit email via SendGrid with optional PDF attachment."""
+    """Send the personalised audit email via Resend with optional PDF attachment."""
 
-    sg_api_key = os.environ.get("SENDGRID_API_KEY")
-    if not sg_api_key:
-        print("WARNING: No SENDGRID_API_KEY set. Email not sent.")
+    api_key = os.environ.get("RESEND_API_KEY")
+    if not api_key:
+        print("WARNING: No RESEND_API_KEY set. Email not sent.")
         return False
 
-    sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+    resend.api_key = api_key
 
-    message = Mail(
-        from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-        to_emails=To(to_email, to_name),
-        subject=subject,
-        html_content=Content("text/html", html_body)
-    )
+    params: resend.Emails.SendParams = {
+        "from": f"Jess from WILBA <{FROM_EMAIL}>",
+        "to": [to_email],
+        "subject": subject,
+        "html": html_body,
+    }
 
     if pdf_bytes:
-        attachment = Attachment()
-        attachment.file_content = FileContent(base64.b64encode(pdf_bytes).decode())
-        attachment.file_name = FileName(f"WILBA-AI-Audit-{to_name.replace(' ', '-')}.pdf")
-        attachment.file_type = FileType('application/pdf')
-        attachment.disposition = Disposition('attachment')
-        message.add_attachment(attachment)
+        params["attachments"] = [
+            {
+                "filename": f"WILBA-AI-Audit-{to_name.replace(' ', '-')}.pdf",
+                "content": base64.b64encode(pdf_bytes).decode(),
+            }
+        ]
         print(f"PDF attached — {len(pdf_bytes):,} bytes")
 
     try:
-        response = sg.send(message)
-        print(f"Email sent to {to_email} — Status: {response.status_code}")
-        if response.status_code not in [200, 201, 202]:
-            print(f"Email send failed — Body: {response.body}")
-        return response.status_code in [200, 201, 202]
+        result = resend.Emails.send(params)
+        email_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+        print(f"Email sent to {to_email} — Resend ID: {email_id}")
+        return bool(email_id)
     except Exception as e:
         print(f"Email send error: {type(e).__name__}: {e}")
-        if hasattr(e, 'body'):
-            print(f"SendGrid error body: {e.body}")
-        if hasattr(e, 'status_code'):
-            print(f"SendGrid status code: {e.status_code}")
         return False
 
 
@@ -805,7 +796,7 @@ def debug_webhook():
 
 
 # ---------------------------------------------------------------------------
-# Email Debug — shows raw SendGrid response in browser
+# Email Debug — test Resend delivery in browser
 # ---------------------------------------------------------------------------
 
 @app.route("/test-send", methods=["GET"])
@@ -813,26 +804,25 @@ def test_send_external():
     """Send a test email to any address: /test-send?to=you@example.com"""
     to_addr = request.args.get("to", "").strip()
     if not to_addr or "@" not in to_addr:
-        return "<pre>Usage: /test-send?to=your@email.com\n\nThis tests if SendGrid can deliver to an EXTERNAL email address.</pre>", 400
+        return "<pre>Usage: /test-send?to=your@email.com\n\nThis tests if Resend can deliver to an EXTERNAL email address.</pre>", 400
 
-    sg_api_key = os.environ.get("SENDGRID_API_KEY")
-    if not sg_api_key:
-        return "<pre>ERROR: SENDGRID_API_KEY not set</pre>", 500
+    api_key = os.environ.get("RESEND_API_KEY")
+    if not api_key:
+        return "<pre>ERROR: RESEND_API_KEY not set</pre>", 500
 
-    sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
-    msg = Mail(
-        from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-        to_emails=To(to_addr, "Test"),
-        subject="WILBA Audit — External Email Test",
-        html_content=Content("text/html", f"<p>If you received this, SendGrid can deliver from <strong>{FROM_EMAIL}</strong> to external addresses.</p><p>The audit email pipeline should work.</p>")
-    )
+    resend.api_key = api_key
     try:
-        resp = sg.send(msg)
-        return f"<pre>Status: {resp.status_code}\n\n{'SUCCESS — email sent to ' + to_addr if resp.status_code in [200,201,202] else 'FAILED — check domain auth'}\n\nCheck your inbox (and spam folder) at {to_addr}</pre>", 200
+        result = resend.Emails.send({
+            "from": f"Jess from WILBA <{FROM_EMAIL}>",
+            "to": [to_addr],
+            "subject": "WILBA Audit — External Email Test",
+            "html": f"<p>If you received this, Resend can deliver from <strong>{FROM_EMAIL}</strong> to external addresses.</p><p>The audit email pipeline should work.</p>",
+        })
+        email_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+        status = f"SUCCESS — email sent to {to_addr}\nResend ID: {email_id}" if email_id else "FAILED — no ID returned"
+        return f"<pre>{status}\n\nCheck your inbox (and spam folder) at {to_addr}</pre>", 200
     except Exception as e:
-        error_body = getattr(e, 'body', 'no body')
-        error_status = getattr(e, 'status_code', 'no status')
-        return f"<pre>FAILED\nError: {type(e).__name__}: {e}\nStatus: {error_status}\nBody: {error_body}</pre>", 500
+        return f"<pre>FAILED\nError: {type(e).__name__}: {e}</pre>", 500
 
 
 @app.route("/test-email", methods=["GET"])
@@ -841,24 +831,22 @@ def test_email_direct():
     subject = "Sarah, your physio clinic is leaking \u20131,300\u20134,350/month [Debug Test]"
     html_body = "<p>Hi Sarah,</p><p>This is a <strong>debug test email</strong> \u2014 checking send_email() works.</p><p>Jess</p>"
 
-    sg_api_key = os.environ.get("SENDGRID_API_KEY")
-    if not sg_api_key:
-        return "<pre>ERROR: SENDGRID_API_KEY not set</pre>", 500
+    api_key = os.environ.get("RESEND_API_KEY")
+    if not api_key:
+        return "<pre>ERROR: RESEND_API_KEY not set</pre>", 500
 
-    sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
-    message = Mail(
-        from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-        to_emails=To(FROM_EMAIL, "Sarah"),
-        subject=subject,
-        html_content=Content("text/html", html_body)
-    )
+    resend.api_key = api_key
     try:
-        response = sg.send(message)
-        return f"<pre>Status: {response.status_code}\n\nEmail sent! Check hello@wilba.ai</pre>", 200
+        result = resend.Emails.send({
+            "from": f"Jess from WILBA <{FROM_EMAIL}>",
+            "to": [FROM_EMAIL],
+            "subject": subject,
+            "html": html_body,
+        })
+        email_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+        return f"<pre>Resend ID: {email_id}\n\nEmail sent! Check hello@wilba.ai</pre>", 200
     except Exception as e:
-        error_body = getattr(e, 'body', 'no body')
-        error_status = getattr(e, 'status_code', 'no status')
-        return f"<pre>ERROR: {type(e).__name__}: {e}\nStatus: {error_status}\nBody: {error_body}</pre>", 500
+        return f"<pre>ERROR: {type(e).__name__}: {e}</pre>", 500
 
 
 # ---------------------------------------------------------------------------
@@ -888,16 +876,15 @@ def test_full():
         steps.append(f"2. Claude OK — subject: {email_result.get('email_subject','?')[:60]}")
         steps.append(f"3. Revenue: ${email_result.get('revenue_loss_low','?'):,}–${email_result.get('revenue_loss_high','?'):,}/month")
 
-        sg_api_key = os.environ.get("SENDGRID_API_KEY", "")
-        sg_c = sendgrid.SendGridAPIClient(api_key=sg_api_key)
-        msg = Mail(
-            from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-            to_emails=To(test_email, "Sarah"),
-            subject=email_result["email_subject"],
-            html_content=Content("text/html", email_result["email_html"])
-        )
-        resp = sg_c.send(msg)
-        steps.append(f"4. Email → Status {resp.status_code} {'✓ SENT' if resp.status_code in [200,201,202] else '✗ FAILED'}")
+        resend.api_key = os.environ.get("RESEND_API_KEY", "")
+        result = resend.Emails.send({
+            "from": f"Jess from WILBA <{FROM_EMAIL}>",
+            "to": [test_email],
+            "subject": email_result["email_subject"],
+            "html": email_result["email_html"],
+        })
+        email_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+        steps.append(f"4. Email → Resend ID: {email_id} {'✓ SENT' if email_id else '✗ FAILED'}")
     except Exception as e:
         import traceback
         steps.append(f"ERROR: {type(e).__name__}: {e}")
@@ -915,6 +902,7 @@ def health_check():
     return jsonify({
         "status": "healthy",
         "service": "WILBA Audit Email Responder v2",
+        "email_provider": "Resend",
         "weasyprint_available": WEASYPRINT_AVAILABLE,
         "model": "claude-opus-4-6",
         "timestamp": datetime.now().isoformat()
@@ -1012,20 +1000,19 @@ def test_audit():
 
         email_error_detail = ""
         try:
-            sg_api_key = os.environ.get("SENDGRID_API_KEY", "")
-            sg_debug = sendgrid.SendGridAPIClient(api_key=sg_api_key)
-            debug_msg = Mail(
-                from_email=Email(FROM_EMAIL, "Jess from WILBA"),
-                to_emails=To(test_email, sample_data["first_name"]),
-                subject=email_result["email_subject"],
-                html_content=Content("text/html", email_result["email_html"])
-            )
-            debug_resp = sg_debug.send(debug_msg)
-            email_sent = debug_resp.status_code in [200, 201, 202]
-            email_error_detail = f"Status: {debug_resp.status_code}"
+            resend.api_key = os.environ.get("RESEND_API_KEY", "")
+            result = resend.Emails.send({
+                "from": f"Jess from WILBA <{FROM_EMAIL}>",
+                "to": [test_email],
+                "subject": email_result["email_subject"],
+                "html": email_result["email_html"],
+            })
+            email_id = result.get("id") if isinstance(result, dict) else getattr(result, "id", None)
+            email_sent = bool(email_id)
+            email_error_detail = f"Resend ID: {email_id}"
         except Exception as eg:
             email_sent = False
-            email_error_detail = f"{type(eg).__name__}: {eg} | body={getattr(eg,'body','n/a')}"
+            email_error_detail = f"{type(eg).__name__}: {eg}"
 
         gaps_html = ''.join(f'<li>{g}</li>' for g in email_result.get('top_gaps', []))
         roadmap_html = ''.join(
