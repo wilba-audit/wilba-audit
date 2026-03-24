@@ -115,7 +115,7 @@ An automated lead generation pipeline for WILBA's AI Receptionist service:
 1. Prospect fills out the 18-question "Free AI Audit" form on wilba.ai
 2. Wix Automation sends form data to the webhook (`/audit-webhook`)
 3. Claude analyses the answers, calculates revenue loss, writes a personalised email
-4. SendGrid delivers the email to the prospect's inbox
+4. Resend delivers the email to the prospect's inbox
 5. Lead is logged to `outputs/audit/leads.csv`
 
 **Files:**
@@ -129,17 +129,51 @@ An automated lead generation pipeline for WILBA's AI Receptionist service:
 
 ---
 
+### Baha Baha Villas — AI Receptionist & Daily Ops Brief (Client Project)
+
+WILBA's first hospitality client. Two automations for Sean's surf/accommodation property in West Sumbawa, Indonesia:
+
+**Phase 1 — Daily Morning Brief:**
+1. Pulls all bookings from Booking Layer API (PMS) + World Surfaris (manual sheet)
+2. Normalises data across OTA sources via Channex channel manager
+3. Claude formats a readable ops brief (check-ins, check-outs, transfers, in-house, upcoming)
+4. Sends to owner + team Gmail inboxes at 6am WITA every morning
+
+**Phase 2 — Multi-Language Email Responder:**
+1. Monitors bookings Gmail inbox every 15 minutes
+2. Claude detects language and classifies intent (availability, pricing, FAQ, booking request, etc.)
+3. Drafts a reply in the guest's language (any language — auto-detected)
+4. Saves to Gmail Drafts for owner review (or auto-sends for simple FAQs)
+
+**Client tech stack:** Squarespace (website) · Booking Layer (PMS) · Channex (channel manager) · Gmail · World Surfaris (surf vendor) · Mockapos (POS) · Jurnal.co.id (accounting) · Google Drive
+
+**Files:**
+- `scripts/baha_baha_daily_brief.py` — Morning brief generator script
+- `scripts/baha_baha_email_responder.py` — Multi-language email responder script
+- `scripts/requirements-baha-baha.txt` — Python dependencies
+- `outputs/baha-baha/discovery-notes.md` — Call notes and tech stack
+- `outputs/baha-baha/system-design.md` — Full technical architecture
+- `outputs/baha-baha/proposal.md` — Client-facing proposal
+- `outputs/baha-baha/booking-data-model.md` — Unified booking schema
+- `plans/2026-03-23-baha-baha-ai-receptionist-booking-agent.md` — Implementation plan
+
+**Status:** Scripts built. Proposal ready to send. Needs: Booking Layer API key from Sean + Gmail OAuth setup + World Surfaris sample email + room/package name confirmation. Deploy to Render once API access confirmed.
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
 
 **Role:** Jess is founder, face, and sales/strategy lead. Non-technical — she designs systems and directs projects; her US-based developer builds them.
 
-**Current focus:** Get WILBA's first paying client by April 2026. Finalize the Content Generation Machine. Build personal brand on Instagram/YouTube. Wind down IHF role (ends March 2026).
+**Current focus:** Close Baha Baha Villas as WILBA's first hospitality client. Get WILBA's first paying client by April 2026. Finalize the Content Generation Machine. Build personal brand on Instagram/YouTube. Wind down IHF role (ends March 2026).
 
-**Key metric to watch:** WILBA monthly revenue — currently $0, needs to replace ~USD $1,500/month from IHF ASAP.
+**Key metric to watch:** WILBA monthly revenue — currently $0, needs to replace ~USD $1,500/month from IHF ASAP. Baha Baha deal = $1,800 USD setup + $300/month retainer.
 
 **Active retainer:** Danielle Colley podcast management — AUD $1,500/month, ~2 hrs/day. Temporary bridge income.
+
+**Live prospect:** Sean (Baha Baha Villas, West Sumbawa) — discovery call done 2026-03-23, proposal ready to send.
 
 ---
 

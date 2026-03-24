@@ -1,0 +1,26 @@
+# Baha Baha Villas — Python dependencies
+# Install with: pip install -r requirements-baha-baha.txt
+
+# Core AI
+anthropic>=0.40.0
+
+# Email delivery
+sendgrid>=6.11.0
+
+# HTTP requests (Booking Layer API)
+requests>=2.31.0
+
+# Google APIs (Gmail)
+google-auth>=2.27.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+google-api-python-client>=2.118.0
+
+# Timezone support (built-in for Python 3.9+ via zoneinfo)
+# If using Python < 3.9, uncomment:
+# backports.zoneinfo>=0.2.1
+# tzdata>=2024.1
+
+# Optional: Google Sheets (for World Surfaris manual bookings)
+# Uncomment when Google Sheets integration is added:
+# gspread>=6.0.0
