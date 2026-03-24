@@ -207,15 +207,63 @@ def fetch_website_text(url: str, max_chars: int = 3000) -> str:
 # ---------------------------------------------------------------------------
 
 def parse_wix_form_data(raw_data: dict) -> dict:
-    """Parse incoming Wix form webhook payload into standard keys."""
+    """Parse incoming Wix form webhook payload into standard keys.
 
-    fields = raw_data.get("formData", raw_data.get("data", raw_data))
+    Handles multiple Wix payload formats:
+    - { formData: {...} }
+    - { data: {...} }
+    - { data: { submissions: {...} } }
+    - { actionEvent: { body: { submission: { submissions: {...} } } } }
+    - { submissions: {...} }
+    - flat dict at root
+    - list of { label, value } or { fieldName, fieldValue } objects
+    """
+
+    # Try all known Wix payload paths, most specific first
+    def _extract_fields(d):
+        # Wix Automations webhook: actionEvent.body.submission.submissions
+        ae = d.get("actionEvent", {})
+        if ae:
+            body = ae.get("body", {})
+            sub = body.get("submission", {})
+            if sub.get("submissions"):
+                return sub["submissions"]
+
+        # Wix form: data.submissions
+        data = d.get("data", {})
+        if isinstance(data, dict) and data.get("submissions"):
+            return data["submissions"]
+
+        # data.formData
+        if isinstance(data, dict) and data.get("formData"):
+            return data["formData"]
+
+        # Top-level formData
+        if d.get("formData"):
+            return d["formData"]
+
+        # Top-level submissions
+        if d.get("submissions"):
+            return d["submissions"]
+
+        # data is a list of field objects
+        if isinstance(data, list):
+            return data
+
+        # data as fields directly
+        if isinstance(data, dict) and data:
+            return data
+
+        # Fallback: raw dict
+        return d
+
+    fields = _extract_fields(raw_data)
 
     if isinstance(fields, list):
         field_map = {}
         for field in fields:
-            label = field.get("label", field.get("fieldName", "")).lower()
-            value = field.get("value", field.get("fieldValue", ""))
+            label = field.get("label", field.get("fieldName", field.get("name", ""))).lower()
+            value = field.get("value", field.get("fieldValue", field.get("answer", "")))
             field_map[label] = value
         fields = field_map
 
@@ -258,6 +306,23 @@ def parse_wix_form_data(raw_data: dict) -> dict:
                 if map_key in wix_key_lower or wix_key_lower in map_key:
                     audit_data[our_key] = value
                     break
+
+    # Fallback: if email still not found, scan all values for an email pattern
+    if not audit_data.get("email") and isinstance(fields, dict):
+        email_pattern = re.compile(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+        for key, value in fields.items():
+            if isinstance(value, str) and email_pattern.match(value.strip()):
+                audit_data["email"] = value.strip()
+                print(f"Email found via value scan (key='{key}'): {value.strip()}")
+                break
+
+    # Fallback: if first_name still not found, use the first short string value
+    if not audit_data.get("first_name") and isinstance(fields, dict):
+        for key, value in fields.items():
+            k = key.lower()
+            if isinstance(value, str) and len(value) < 40 and ("name" in k or k in ("first", "firstname")):
+                audit_data["first_name"] = value.strip()
+                break
 
     return audit_data
 
@@ -647,9 +712,13 @@ def handle_audit_submission():
         raw_data = request.json
         print(f"\n{'='*60}")
         print(f"Audit submission at {datetime.now().isoformat()}")
+        # Log raw payload (truncated) so we can debug field name mismatches in Render logs
+        raw_preview = json.dumps(raw_data)[:800] if raw_data else "None"
+        print(f"RAW PAYLOAD: {raw_preview}")
 
         audit_data = parse_wix_form_data(raw_data)
-        print(f"Parsed: {audit_data.get('first_name','?')} — {audit_data.get('q1_business_type','?')}")
+        print(f"PARSED KEYS: {list(audit_data.keys())}")
+        print(f"Parsed: {audit_data.get('first_name','?')} — {audit_data.get('email','NO EMAIL')} — {audit_data.get('q1_business_type','?')}")
 
         if not audit_data.get("email"):
             return jsonify({"error": "No email address found in submission"}), 400
@@ -673,6 +742,52 @@ def handle_audit_submission():
         print(f"Error: {e}")
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
+
+
+# ---------------------------------------------------------------------------
+# Debug Webhook — capture raw Wix payload to diagnose field name mismatches
+# ---------------------------------------------------------------------------
+
+@app.route("/debug-webhook", methods=["GET", "POST"])
+def debug_webhook():
+    """
+    POST: Shows raw incoming JSON + what parse_wix_form_data() extracts.
+    GET: Returns instructions on how to point Wix at this endpoint for testing.
+    Use this to diagnose why the email field isn't being found.
+    """
+    if request.method == "GET":
+        return """<pre>
+WILBA Audit — Debug Webhook
+
+To capture what Wix actually sends:
+1. In Wix Automations, temporarily change the webhook URL to:
+   https://wilba-audit.onrender.com/debug-webhook
+2. Submit the form
+3. Check this page (POST /debug-webhook) response — it shows raw payload + parsed result
+4. Change webhook URL back to /audit-webhook when done
+
+Or POST any JSON here to test parsing:
+curl -X POST https://wilba-audit.onrender.com/debug-webhook \
+  -H "Content-Type: application/json" \
+  -d '{"email":"test@test.com","first name":"Jane"}'
+</pre>""", 200
+
+    raw_data = request.json or {}
+    print(f"\n{'='*60}")
+    print(f"DEBUG WEBHOOK at {datetime.now().isoformat()}")
+    print(f"FULL RAW PAYLOAD: {json.dumps(raw_data, indent=2)[:2000]}")
+
+    audit_data = parse_wix_form_data(raw_data)
+    print(f"PARSED RESULT: {audit_data}")
+
+    return jsonify({
+        "raw_payload": raw_data,
+        "parsed_audit_data": audit_data,
+        "email_found": bool(audit_data.get("email")),
+        "first_name_found": bool(audit_data.get("first_name")),
+        "keys_parsed": list(audit_data.keys()),
+        "note": "Submit your Wix form with this as the webhook URL to see the exact payload"
+    }), 200
 
 
 # ---------------------------------------------------------------------------
