@@ -794,6 +794,33 @@ curl -X POST https://wilba-audit.onrender.com/debug-webhook \
 # Email Debug — shows raw SendGrid response in browser
 # ---------------------------------------------------------------------------
 
+@app.route("/test-send", methods=["GET"])
+def test_send_external():
+    """Send a test email to any address: /test-send?to=you@example.com"""
+    to_addr = request.args.get("to", "").strip()
+    if not to_addr or "@" not in to_addr:
+        return "<pre>Usage: /test-send?to=your@email.com\n\nThis tests if SendGrid can deliver to an EXTERNAL email address.</pre>", 400
+
+    sg_api_key = os.environ.get("SENDGRID_API_KEY")
+    if not sg_api_key:
+        return "<pre>ERROR: SENDGRID_API_KEY not set</pre>", 500
+
+    sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+    msg = Mail(
+        from_email=Email(FROM_EMAIL, "Jess from WILBA"),
+        to_emails=To(to_addr, "Test"),
+        subject="WILBA Audit — External Email Test",
+        html_content=Content("text/html", f"<p>If you received this, SendGrid can deliver from <strong>{FROM_EMAIL}</strong> to external addresses.</p><p>The audit email pipeline should work.</p>")
+    )
+    try:
+        resp = sg.send(msg)
+        return f"<pre>Status: {resp.status_code}\n\n{'SUCCESS — email sent to ' + to_addr if resp.status_code in [200,201,202] else 'FAILED — check domain auth'}\n\nCheck your inbox (and spam folder) at {to_addr}</pre>", 200
+    except Exception as e:
+        error_body = getattr(e, 'body', 'no body')
+        error_status = getattr(e, 'status_code', 'no status')
+        return f"<pre>FAILED\nError: {type(e).__name__}: {e}\nStatus: {error_status}\nBody: {error_body}</pre>", 500
+
+
 @app.route("/test-email", methods=["GET"])
 def test_email_direct():
     """Call send_email() with mock data and show the exact result/error."""
