@@ -292,13 +292,23 @@ def parse_wix_form_data(raw_data: dict) -> dict:
     }
 
     audit_data = {}
+    exact_matched = set()  # Track keys set by exact match — fuzzy can't overwrite
     if isinstance(fields, dict):
+        # Pass 1: exact matches only
         for wix_key, value in fields.items():
             wix_key_lower = wix_key.lower().strip("?*. ")
             if wix_key_lower in mapping:
                 audit_data[mapping[wix_key_lower]] = value
-                continue
+                exact_matched.add(mapping[wix_key_lower])
+
+        # Pass 2: fuzzy matches for remaining fields (never overwrite exact matches)
+        for wix_key, value in fields.items():
+            wix_key_lower = wix_key.lower().strip("?*. ")
+            if wix_key_lower in mapping:
+                continue  # Already handled in pass 1
             for map_key, our_key in mapping.items():
+                if our_key in exact_matched:
+                    continue  # Never overwrite an exact match
                 if map_key in wix_key_lower or wix_key_lower in map_key:
                     audit_data[our_key] = value
                     break
