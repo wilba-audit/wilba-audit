@@ -748,46 +748,60 @@ def handle_audit_submission():
 # Debug Webhook — capture raw Wix payload to diagnose field name mismatches
 # ---------------------------------------------------------------------------
 
+_last_debug_payload = {}
+
 @app.route("/debug-webhook", methods=["GET", "POST"])
 def debug_webhook():
     """
-    POST: Shows raw incoming JSON + what parse_wix_form_data() extracts.
-    GET: Returns instructions on how to point Wix at this endpoint for testing.
-    Use this to diagnose why the email field isn't being found.
+    POST: Captures raw Wix payload + parsed result. View at GET /debug-webhook.
+    GET: Shows the last captured payload.
     """
-    if request.method == "GET":
-        return """<pre>
-WILBA Audit — Debug Webhook
+    global _last_debug_payload
 
-To capture what Wix actually sends:
-1. In Wix Automations, temporarily change the webhook URL to:
+    if request.method == "POST":
+        raw_data = request.json or {}
+        print(f"\n{'='*60}")
+        print(f"DEBUG WEBHOOK at {datetime.now().isoformat()}")
+        print(f"FULL RAW PAYLOAD: {json.dumps(raw_data, indent=2)[:2000]}")
+
+        audit_data = parse_wix_form_data(raw_data)
+        print(f"PARSED RESULT: {audit_data}")
+
+        _last_debug_payload = {
+            "captured_at": datetime.now().isoformat(),
+            "raw_payload": raw_data,
+            "parsed_audit_data": audit_data,
+            "email_found": bool(audit_data.get("email")),
+            "first_name_found": bool(audit_data.get("first_name")),
+            "keys_parsed": list(audit_data.keys()),
+        }
+        return jsonify({"status": "captured"}), 200
+
+    # GET — show the last captured payload
+    if not _last_debug_payload:
+        return """<pre>No payload captured yet.
+
+1. Make sure your Wix webhook URL is set to:
    https://wilba-audit.onrender.com/debug-webhook
-2. Submit the form
-3. Check this page (POST /debug-webhook) response — it shows raw payload + parsed result
-4. Change webhook URL back to /audit-webhook when done
 
-Or POST any JSON here to test parsing:
-curl -X POST https://wilba-audit.onrender.com/debug-webhook \
-  -H "Content-Type: application/json" \
-  -d '{"email":"test@test.com","first name":"Jane"}'
+2. Submit your Wix form
+
+3. Refresh this page to see what Wix sent
 </pre>""", 200
 
-    raw_data = request.json or {}
-    print(f"\n{'='*60}")
-    print(f"DEBUG WEBHOOK at {datetime.now().isoformat()}")
-    print(f"FULL RAW PAYLOAD: {json.dumps(raw_data, indent=2)[:2000]}")
-
-    audit_data = parse_wix_form_data(raw_data)
-    print(f"PARSED RESULT: {audit_data}")
-
-    return jsonify({
-        "raw_payload": raw_data,
-        "parsed_audit_data": audit_data,
-        "email_found": bool(audit_data.get("email")),
-        "first_name_found": bool(audit_data.get("first_name")),
-        "keys_parsed": list(audit_data.keys()),
-        "note": "Submit your Wix form with this as the webhook URL to see the exact payload"
-    }), 200
+    return f"""<html><head><meta charset="utf-8"><title>WILBA Debug</title></head>
+<body style="font-family:monospace;padding:20px;background:#f5f5f5;">
+<h2>Last Wix Payload — captured at {_last_debug_payload.get('captured_at','?')}</h2>
+<h3 style="color:{'green' if _last_debug_payload.get('email_found') else 'red'}">
+  Email found: {_last_debug_payload.get('email_found')} |
+  Name found: {_last_debug_payload.get('first_name_found')}
+</h3>
+<h3>Keys parsed: {_last_debug_payload.get('keys_parsed')}</h3>
+<h3>Parsed audit data:</h3>
+<pre style="background:white;padding:15px;border-radius:4px;">{json.dumps(_last_debug_payload.get('parsed_audit_data',{{}}), indent=2)}</pre>
+<h3>Raw payload from Wix:</h3>
+<pre style="background:white;padding:15px;border-radius:4px;">{json.dumps(_last_debug_payload.get('raw_payload',{{}}), indent=2)[:3000]}</pre>
+</body></html>""", 200
 
 
 # ---------------------------------------------------------------------------
