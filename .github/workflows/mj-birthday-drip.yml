@@ -1,0 +1,41 @@
+name: MJ Birthday Drip (daily)
+
+on:
+  schedule:
+    # Daily 15:00 UTC = 8am PT / 11am ET — advance each enrolled contact's sequence
+    - cron: "0 15 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mj-birthday-drip
+  cancel-in-progress: false
+
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install python-dotenv
+
+      - name: Run daily birthday drip
+        env:
+          GHL_API_KEY_POL: ${{ secrets.GHL_API_KEY_POL }}
+          GHL_LOCATION_ID_POL: ${{ secrets.GHL_LOCATION_ID_POL }}
+          GHL_API_KEY_WP: ${{ secrets.GHL_API_KEY_WP }}
+          GHL_LOCATION_ID_WP: ${{ secrets.GHL_LOCATION_ID_WP }}
+        run: |
+          python scripts/mj_birthday_sequence.py run --execute
