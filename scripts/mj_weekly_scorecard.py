@@ -31,15 +31,23 @@ FROM = "MJ Operator <hello@wilba.ai>"
 
 
 def refresh_data() -> dict:
-    """Re-pull consolidated reporting; fall back to last file if the pull errors."""
+    """Re-pull consolidated reporting; degrade gracefully if unavailable.
+
+    Uses the current interpreter (sys.executable) so it works in the cloud
+    runner as well as the local venv. Never crashes on a missing data file.
+    """
+    CONSOLIDATED.parent.mkdir(parents=True, exist_ok=True)
     try:
         subprocess.run(
-            [str(ROOT / ".venv/bin/python3"), str(ROOT / "scripts/fetch_consolidated_reporting.py"), "--days", "30"],
+            [sys.executable, str(ROOT / "scripts/fetch_consolidated_reporting.py"), "--days", "30"],
             cwd=ROOT, check=True, capture_output=True, timeout=180,
         )
-    except Exception as e:  # noqa: BLE001 — best-effort refresh; use cached data on failure
-        print(f"⚠ refresh failed, using cached data: {e}", file=sys.stderr)
-    return json.loads(CONSOLIDATED.read_text())
+    except Exception as e:  # noqa: BLE001 — best-effort refresh; carry on with whatever we have
+        print(f"⚠ refresh failed: {e}", file=sys.stderr)
+    if CONSOLIDATED.exists():
+        return json.loads(CONSOLIDATED.read_text())
+    print("⚠ no consolidated.json — sending minimal scorecard", file=sys.stderr)
+    return {"ghl": {"locations": {}}, "blended_30d": {}, "meta": {}, "google_ads": {}}
 
 
 def kpi(label: str, value: str, sub: str = "") -> str:
