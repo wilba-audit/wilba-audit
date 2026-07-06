@@ -125,7 +125,7 @@ def ghl_post(path: str, api_key: str, payload: dict, version: str = GHL_VERSION)
             "Version": version,
             "Content-Type": "application/json",
             "Accept": "*/*",
-            "User-Agent": "curl/8.0.0",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         },
     )
     try:
