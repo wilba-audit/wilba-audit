@@ -1,0 +1,45 @@
+name: MJ Weekly Scorecard
+
+on:
+  schedule:
+    # Monday 15:00 UTC = 8am PT / 11am ET — weekly scorecard to Jess
+    - cron: "0 15 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mj-weekly-scorecard
+  cancel-in-progress: false
+
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install python-dotenv markdown
+
+      - name: Send weekly scorecard
+        env:
+          GHL_API_KEY_POL: ${{ secrets.GHL_API_KEY_POL }}
+          GHL_LOCATION_ID_POL: ${{ secrets.GHL_LOCATION_ID_POL }}
+          GHL_API_KEY_WP: ${{ secrets.GHL_API_KEY_WP }}
+          GHL_LOCATION_ID_WP: ${{ secrets.GHL_LOCATION_ID_WP }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_POL: ${{ secrets.META_AD_ACCOUNT_POL }}
+          META_AD_ACCOUNT_WP: ${{ secrets.META_AD_ACCOUNT_WP }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          python scripts/mj_weekly_scorecard.py
