@@ -1,0 +1,788 @@
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+P R O P O S A L
+
+
+The Schoeman Clinic
+
+
+Centralised Patient Communications, Recall Automation,
+
+and After-Hours Voice — built for Dr. Gina Schoeman.
+
+Prepared for  Mati Simarro · RobinHoodSolutions AI
+
+Prepared by  Jess Morrell · WILBA
+
+Date  27 April 2026
+
+Contact  hello@wilba.ai · wilba.ai
+
+
+The Situation
+
+Dr. Gina is a premium-tier longevity and functional-medicine doctor, charging £500 per 
+consultation, with an internationally distributed patient base and a clinic she launched only 
+seven months ago. The signal is strong, she is already busy enough that she's bringing on a 
+second doctor in June, and one new doctor every six months after that.
+
+Operations have not kept pace with that growth. Three remote admin staff work different days 
+and share patient WhatsApp messages by forwarding screenshots. Fifty-ﬁve patients are 
+overdue for a follow-up, but no one has sent. Patient comms are fragmented across email, 
+PDF, WhatsApp, and phone. Payments are slower than they should be. Dr. Gina has new 
+products, education, and recall sequences she wants to push to her existing base, and no 
+working way to do it at scale.
+
+Currently Semble handles the clinical side cleanly, notes, prescriptions, pathology, the Heidi 
+AI scribe, and will keep doing so. What Semble was never built to do is run the operational 
+and marketing side of a growing premium practice: a shared inbox for distributed admins, 
+automated nurture, recall, payment chasing, newsletters, and an after-hours voice agent. That 
+is the gap this build closes.
+
+The marketing agency's website + Google Ads relaunch is targeted for June. Three months 
+from now, operational throughput needs to roughly double. Without the systems below in 
+place, the gap between what current operations can handle and what the clinic will need to 
+handle widens every week.
+
+What We're Proposing
+
+A Phase 1 build that centralises everything operational into GoHighLevel while leaving Dr. 
+Gina's clinical workﬂow in Semble, where it belongs. The build covers six features in priority 
+order:
+
+
+● 1. Uniﬁed WhatsApp patient communication - a shared inbox for the three admin staff, 
+
+replacing the current screenshot-and-forward chaos. 
+
+● 2. Recall, nurture, and newsletter automation - the 55-patient backlog cleared, plus 
+
+ongoing 3- and 6-month recall, payment chasing, blood-test chasing, reminders, and 
+the broadcast capability Dr. Gina has been missing. 
+
+● 3. After-hours voice agent - operational queries only, with a hard escalation rule for 
+
+anything medical. 
+
+1
+
+
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+● 4. Strategic patient journey redesign - short interim inquiry page, automated long-form 
+
+intake dispatch, blood test order ﬂow, payment, consultation, post-consultation 
+summary, follow-up loop. 
+
+● 5. Dr. Gina's daily-brief agent - a short morning summary of today's schedule, overdue 
+items, and new enquiries, delivered to her WhatsApp before she sees her ﬁrst patient. 
+Originally Phase 2, moved into Phase 1 as a bonus. 
+
+● 6. Replicable doctor-onboarding stack - every system above templated so the next 
+
+doctor (and the one after) plugs in for zero additional build cost.
+
+Lead generation, custom landing pages, and the Wilba Social product line sit in Phase 2 — 
+scoped after Phase 1 is running and we have real numbers to work from. Website and core 
+Google Ads stay with the existing marketing agency. We will, however, audit their roadmap as 
+part of Phase 1. 
+What Stays in Semble, What Moves to 
+GoHighLevel
+
+One point to state up front: clinical records stay in Semble. They are not migrating to 
+GoHighLevel.
+
+This is an architectural constraint, not a preference. GoHighLevel is a marketing CRM with a 
+HIPAA-tier add-on; it was never built as a clinical record system. 
+
+Custom objects cap at 10 ﬁelds; no UK is e-prescribing with Advanced Electronic Signature 
+(legally required for UK private scripts); no pathology or pharmacy network; no Heidi AI scribe 
+integration; no clinical-grade audit trail CQC inspectors can search against; and GoHighLevel 
+hosts customer data on US servers with no UK/EEA residency option. 
+
+Using GoHighLevel as Dr. Gina's clinical record system would breach CQC Regulation 17 
+from day one and collapse her existing Heidi transcription workﬂow, which is her actual day-
+to-day clinical productivity tool.
+
+What moves to GoHighLevel is everything operational: the three-admin WhatsApp inbox, the 
+nurture/recall/newsletter engine, forms, payment ﬂow, patient journey automation, the voice 
+agent. Semble and GoHighLevel talk to each other via webhook. 
+
+The two systems do different jobs and stay out of each other's way. 
+
+Phase 1 — Detailed Scope 
+Feature 1 — Uniﬁed WhatsApp Patient Communication 
+
+● Shared inbox: Shared inbox for three remote admin staff on GoHighLevel's HIPAA-
+tier Conversations module. All three see the same patient thread in real time, assign 
+conversations to each other, leave internal notes invisible to the patient, and pick up 
+from one another across different working days. Native — no add-ons. 
+
+● WhatsApp channel: WhatsApp Business channel (+44 7426 494321, already set up) 
+
+migrated from the consumer WhatsApp Business app to WhatsApp Business API via 
+Meta Cloud API with Local Storage Region set to GB. Content stays on UK servers. 
+
+● Outbound automation: Automated outbound for: post-consultation advice, payment 
+links (Stripe), registration and onboarding forms, booking links for consultation calls. 
+
+● Post-consult summary: Composed from Semble consultation data, prescription 
+
+details, pharmacy, supply length, follow-up blood test requirements, next steps, sent 
+within minutes of Dr. Gina closing the consultation. 
+
+2
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+● Inbound FAQ handling: Common operational questions (blood test prep, fasting 
+
+rules, address, parking) answered from a scripted response library approved by Dr. 
+Gina, not freely generated. Anything clinical or outside the approved set routes directly 
+to an admin, not the AI. 
+
+● Human-in-the-loop for sensitive content: Any patient message touching mental 
+
+health, safeguarding, or clinically sensitive categories routes to an admin for human 
+review before any reply is sent and before any content ﬂows into the patient record. 
+Dr. Gina's explicit GDPR concern on mental-health content drove this — the review 
+gate is built in, not retroﬁtted. 
+
+● Audit logging: All inbound/outbound messages logged for audit under the clinic's 
+
+CQC obligations. 
+
+Feature 2 — Recall, Nurture, and Newsletter Automation 
+
+● 55-patient overdue backlog: One-time recall in the clinic's voice inviting each 
+
+overdue patient to rebook. Drafted by us, approved by Dr. Gina, sent in a single batch. 
+
+● 3-month and 6-month recall: Dr. Gina tags the interval at consultation; the tag drives 
+the schedule. Reminders are personalised based on the original consultation context. 
+
+● Pre-appointment reminders: 48h + 24h nudges with intake-form and blood-test 
+
+completion checks. No-shows trigger a separate ﬂow. 
+
+● Payment and blood-test chase sequences: For enquiries that haven't paid or 
+haven't completed the blood test required before the consultation can go ahead. 
+
+● Newsletter and broadcast capability: Dr. Gina sends new-product announcements, 
+patient education, and clinic updates to her patient base from a single compose view. 
+Segmentable by patient tag, consent status, or custom ﬁeld. 
+
+● Onboarding ﬂow: New patient says "register" → automated link to the long intake 
+form → reminder sequence if incomplete → blood test order → payment link → 
+consultation booking handoff. 
+
+Feature 3 — After-Hours Voice Agent 
+
+● Number setup: Twilio UK number. Dr. Gina's existing line (+44 20 3006 3224) stays 
+
+published; calls divert to the AI number on no-answer outside business hours. 
+
+● Operational scope: Natural-voice AI handles operational queries: appointment times 
+
+for existing bookings, pharmacy locations, prescription pickup info, clinic hours, 
+directions. Knowledge base assembled from the website and 2–3 PDFs Dr. Gina 
+supplies. 
+
+● What it does NOT do: New booking requests are routed to the registration form or to 
+
+an admin for callback. The agent does not book new appointments in Phase 1. 
+
+● Hard escalation rule: The agent does not offer medical advice or triage. Anything 
+resembling a medical question triggers one of two scripted responses: "if this is 
+urgent, hang up and call 999" or "I'll have someone from the team call you back 
+tomorrow between 9 and 5." Call is logged with a callback request to Lisa. 
+
+● AI disclosure: Opening script includes a short AI disclosure required by ICO and 
+
+CQC guidance. 
+
+● Cost displacement: Replaces the after-hours portion of Moneypenny (~£190/month). 
+Daytime Moneypenny can stay for overﬂow or wind down entirely — Dr. Gina's call. 
+
+Feature 4 — Strategic Patient Journey Redesign 
+This is the piece that's been missing from the conversation so far, and it's the highest-
+leverage piece in the build. 
+
+The current journey forces every prospective patient to ﬁll out a 20-ﬁeld intake form before 
+they've committed any money — including ID upload, full medical history, allergies, and 
+consent. People drop out before they ever see a calendar. 
+
+The redesigned journey is paid ﬁrst, qualiﬁed second: 
+
+3
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+● Step 1: Short interim inquiry page (built on existing WordPress so it's live in Week 2, 
+
+not waiting on the agency's June redesign). 6 ﬁelds max: name, email, phone, gender, 
+primary concern (drop-down only — no free text), referral source. 
+
+● Step 2: Inquiry hits GoHighLevel as a lead. Auto-conﬁrmation email + WhatsApp sent 
+
+within 60 seconds. 
+
+● Step 3: Long intake form sent on a separate link. Reminders every 2 days if 
+
+incomplete. 
+
+● Step 4: Once intake is complete, automated blood-test order, home kit (most patients) 
+
+or London clinic (UK-based, prefer in-person) and the payment link for the test. 
+
+● Step 5: Once blood test is paid + booked, consultation calendar opens. Patient pays 
+
+£500 and books. 
+
+● Step 6: Post-consultation: summary message → prescription pickup info → 3- or 6-
+
+month recall tag set by Dr. Gina at consultation → recall ﬁres automatically when the 
+time comes.
+
+This is the entire Schoeman Clinic patient lifecycle on one rail, and it solves the dropout 
+problem the current 20-ﬁeld form is causing right now. 
+
+Feature 5 — Dr. Gina's Daily-Brief Agent (Bonus) 
+Originally scoped for Phase 2, moved into Phase 1 at no extra cost. A short morning brief 
+delivered to Dr. Gina's WhatsApp at 7am UK time: 
+
+● Today's conﬁrmed appointments (count + ﬁrst/last) 
+
+● New enquiries from the last 24 hours 
+
+● Overdue items (intake forms, blood tests, payments) 
+
+● Anything human-in-the-loop is sitting in the admin queue 
+
+● Yesterday's revenue / this-week-to-date 
+
+She wakes up already knowing where the clinic stands. No more chasing the PA to ask "have 
+you called X back yet?" — the brief tells her. 
+
+Feature 6 — Replicable Doctor-Onboarding Stack 
+Every workﬂow, template, scripted response, voice-agent prompt, and form is built as a 
+reusable template with documented variables. When Dr. Gina onboards her second doctor in 
+June, we duplicate the template, swap a handful of variables (name, calendar, fee, intake 
+nuances), and the new doctor goes live. No new build engagement required. 
+
+This is the structural difference between buying an automation and buying an automation 
+platform. At one new doctor every six months, this saves the clinic somewhere between 
+£15K–£40K in build fees over the next two years, included in this engagement at no additional 
+cost. 
+
+WordPress Inquiry Page (Interim) 
+A short form on the existing website so the June Google Ads have somewhere to land before 
+the marketing agency's redesign ships. Our team handles the WordPress side. Designed to 
+be drop-in-replaceable when the agency's new site goes live. 
+
+Compliance Pack — Delivered Alongside the Build 
+
+● Data-ﬂow diagram — Every piece of patient data: where it lives, how it moves, 
+
+transfer mechanisms. 
+
+● DPIA support pack — Pre-ﬁlled sections on the ICO template, ready for Dr. Gina's 
+
+data person to ﬁnalise and sign off. 
+
+● Patient-facing AI disclosure copy — Website privacy notice insert, WhatsApp ﬁrst-
+
+contact message, voice-agent opening line. 
+
+● Voice-agent escalation policy — Escalation policy document for the voice agent. 
+
+4
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+● Sub-processor register — Every vendor, what data they touch, where they host. 
+
+● Human-in-the-loop SOP — Speciﬁcally covering the mental-health/sensitive-content 
+
+review gate. 
+
+Build Stages — Hours Breakdown 
+Transparency on where the build hours go. This is the actual work, stage by stage. 
+
+Stage
+
+Deliverable
+
+Hours
+
+0 — Discovery
+
+1 — Foundation
+
+2 — WhatsApp 
+Shared Inbox
+
+3 — Recall + Nurture 
+Engine
+
+4 — After-Hours 
+Voice Agent
+
+5 — Inquiry Funnel 
++ Patient Journey
+
+6 — Daily-Brief 
+Agent (bonus)
+
+7 — Compliance 
+Pack
+
+8 — Training + 
+Handover
+
+9 — Hypercare
+
+Magic-wand workshop with Dr. Gina, marketing 
+agency audit, patient-journey mapping, 
+requirements consolidation
+
+GHL HIPAA tier setup, sub-account, contact model, 
+custom ﬁelds, WABA migration, Twilio UK 
+provisioning, Stripe, Semble webhook scaffold
+
+3-admin shared inbox conﬁg, message templates 
+submitted for Meta approval, scripted response 
+library drafted (50–80 approved replies), human-in-
+the-loop sensitive-content gate
+
+55-patient backlog campaign drafted + approved, 3-
+month and 6-month recall workﬂows, pre-
+appointment reminders, payment chase, blood-test 
+chase, newsletter compose view, onboarding ﬂow
+
+VAPI orchestration, ElevenLabs voice, Bedrock 
+Claude reasoning, knowledge base from website + 
+PDFs, escalation logic, AI disclosure script, full call-
+through testing with Dr. Gina + admin team
+
+Short interim WordPress inquiry page, GHL intake 
+automation, long-form intake dispatch, blood test 
+order ﬂow, payment links, consultation booking 
+handoff, post-consult summary message
+
+Morning summary agent for Dr. Gina — schedule, 
+overdue items, new enquiries, revenue, pending 
+HITL queue. Originally Phase 2, included free.
+
+DPIA pre-ﬁll, data-ﬂow diagram, sub-processor 
+register, AI-disclosure copy, escalation policy, HITL 
+SOP
+3 Loom-recorded training videos for the admin team 
+(shared inbox, recall + nurture ﬂows, voice-agent 
+escalation handling), written SOPs, 30-min live 
+handover call
+
+10
+
+12
+
+14
+
+18
+
+15
+
+8
+
+4
+
+6
+
+4
+
+Four weeks of active monitoring, ﬁxes, prompt and 
+workﬂow adjustments as the clinic learns what's 
+working (Grifﬁn's original draft was 2 weeks — 
+doubled here)
+
+12
+
+5
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+Stage
+
+Total
+
+Deliverable
+
+All stages combined
+
+Hours
+
+103 hours
+
+At $10,000 USD across 103 hours, that's roughly $97/hour for a senior automation build in a 
+clinical-compliance environment. Defensible, transparent, and obviously good value at 
+premium-clinic level. 
+
+Timeline 
+
+Milestone
+
+Kickoff call + access provisioning (Meta Business Manager, 
+WABA, Semble test token, GoHighLevel HIPAA subaccount)
+
+Target
+
+Week 0 — early next week
+
+Magic-wand discovery workshop with Dr. Gina (90 min)
+
+Week 0–1
+
+Marketing agency roadmap audit delivered to Mati
+
+Meta Business Veriﬁcation + WABA migration from consumer 
+WhatsApp Business app (critical path — Meta controls this)
+
+GoHighLevel setup, shared inbox conﬁgured, contact model, 
+custom ﬁelds, Stripe integration
+
+Week 1
+
+Week 1
+
+Week 1
+
+WhatsApp message templates submitted for Meta approval, 
+voice-agent knowledge base built
+
+Week 1–2
+
+Scripted WhatsApp response library + voice-agent scripts drafted Week 1–2
+
+Interim WordPress inquiry page live; nurture / recall / newsletter 
+workﬂows built; 55-patient backlog campaign drafted for approval
+
+Week 2
+
+Compliance pack delivered for data-person review
+
+Dr. Gina reviews + approves scripted library, consent copy, 
+backlog campaign
+
+Week 2
+
+Week 2–3
+
+Voice agent call-through testing with Dr. Gina + admin team
+
+Week 2–3
+
+Go-live: shared WhatsApp inbox live, recall campaign sent, voice 
+agent live, daily-brief agent live, Moneypenny after-hours wound 
+down
+
+Week 3
+
+Loom training videos delivered + 30-min live handover call with 
+admin team
+
+Week 3–4
+
+Four-week hypercare — active monitoring, ﬁxes, prompt 
+adjustments
+
+Week 3–7
+
+Three weeks to go-live, seven weeks to full hand-off. Critical path sits with Meta Business 
+Veriﬁcation and the consumer-app-to-WABA migration — not with our build. If Meta 
+veriﬁcation is already green on the account, the build ships on time. 
+Investment 
+One-time build: $10,000 USD 
+
+6
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+Split 50% on kickoff, 50% on go-live.  
+Includes everything in the 9 stages above (103 hours of build). 
+
+If for some reason Dr Gina is not satisﬁed with the build, we will completely refund. 
+
+Monthly retainer: $1,000 USD / month 
+
+Inclusive of everything you need to keep the system working and improving: 
+
+● All platform pass-through costs (GoHighLevel HIPAA tier, Twilio UK, VAPI, ElevenLabs 
+
+Enterprise EU, AWS Bedrock Claude, WhatsApp Cloud API, Stripe, Supabase) 
+
+● Active monitoring, issue response, prompt and workﬂow iteration as the clinic learns 
+
+what's working 
+
+● Live KPI dashboard for Mati + Dr. Gina — bookings, recall conversion, voice-agent 
+
+call volume, message response times, revenue attribution — refreshed daily 
+
+● Monthly 30-min strategy call with Mati + Dr. Gina to review numbers and prioritise the 
+
+next iteration 
+
+● Minor scope adjustments (under 2 hours / month) included — typical small requests 
+
+like new email templates, tag tweaks, copy changes 
+
+● Priority WhatsApp access to Jess directly. No agency layer, no support ticket queue. 
+
+Why This Number 
+At 55 overdue follow-ups alone: if the recall campaign converts even 10 patients at £500 
+each, the build pays for itself inside six weeks. Moneypenny after-hours replacement saves 
+roughly £1,800/year on top. Onboarding the second doctor in June with the replicable stack 
+saves ~£8,000 in build fees that would otherwise need to be spent. 
+
+The real operational value is what the three admins get back, one shared inbox, no more 
+PDF/email/phone/WhatsApp fragmentation, no manual summary-and-reply cycle. That's 
+hours per week back, every week, forever. We are constantly up to date with the ongoing 
+updates from the technical side and can make amendments based on feedback and process.  
+
+Tech Stack 
+
+Component
+
+Role
+
+Residency
+
+GoHighLevel (HIPAA 
+tier)
+
+Shared inbox, CRM, workﬂows, forms, 
+nurture/newsletter automation, payment 
+links, WhatsApp routing
+
+US — DPF-certiﬁed + UK 
+IDTA in DPA + HIPAA-grade 
+technical controls
+
+Meta WhatsApp 
+Cloud API
+
+Patient WhatsApp channel
+
+UK (Local Storage Region = 
+GB)
+
+Twilio UK
+
+Voice agent phone number + call routing UK
+
+VAPI
+
+Voice agent orchestration
+
+US (managed service)
+
+Voice synthesis
+
+EU residency
+
+LLM for voice + WhatsApp scripted logic
+
+UK (London)
+
+Payment links
+
+EHR — clinical records, prescriptions, 
+pathology, Heidi scribe (unchanged)
+
+UK
+
+UK
+
+ElevenLabs 
+Enterprise EU
+
+AWS Bedrock 
+Claude (eu-west-2)
+
+Stripe
+
+Semble
+
+7
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+Component
+
+Role
+
+Residency
+
+Supabase (eu-
+west-2)
+
+Conversation audit log storage
+
+UK (London)
+
+Not Included in Phase 1 
+Stating these explicitly so there are no surprises: 
+
+● Migration of clinical records out of Semble, not possible without breaching CQC Reg 
+
+17. Semble stays as clinical system of record. 
+
+● Website redesign, core Google Ads, or landing-page architecture - as it’s now with the 
+
+existing marketing agency. 
+
+● Lead generation, niche-keyword landing pages, paid campaign management, Phase 
+
+2. 
+
+● Autonomous AI booking (voice agent books new appointments directly with Semble 
+
+availability), Phase 2 after Semble bidirectional integration. 
+
+● Semble bidirectional integration (pushing records back into Semble, pulling 
+
+consultation notes for richer context), Phase 2. 
+
+● WhatsApp-to-Semble patient note sync (admin copy-paste for now, per Dr. Gina's 
+
+acceptance), Phase 2. 
+
+● Wilba Social product line, Phase 2, once Dr. Gina's new Facebook account is live. 
+
+● Webinar automation, Phase 2 or later. 
+
+● ADHD medication daily reminders, deferred at Mati's request. 
+
+● Legal sign-off on DPIA and consent copy, we deliver the drafts; the clinic's data person 
+
+or external counsel signs. 
+
+● Internal change management beyond the training pack, Mati and the admin team 
+
+handle rollout.
+
+Open Questions to Resolve at Kickoff 
+
+● Meta Business Veriﬁcation status. Critical-path gate as everything WhatsApp-
+
+related depends on this. We need to conﬁrm on kickoff whether veriﬁcation is green, 
+pending, or not yet started. 
+
+● Consumer WhatsApp Business app on +44 7426 494321. The number has to be 
+removed from the consumer WhatsApp Business app before Meta will allow the 
+WABA Cloud API migration. Quick to do on kickoff — most common mistake at this 
+stage. 
+
+● Semble API access on Dr. Gina's plan. 15-minute call with her Semble admin on 
+kickoff to conﬁrm API access is enabled and to generate a test token. If the plan 
+doesn't include API access, a Semble upgrade may be required (1–2 week process). 
+
+● CQC registered location scope. Dr. Gina's CQC registration (Provider 
+
+1-21485506718) lists Oyster Wharf as the registered location. If consultations also 
+happen elsewhere, worth conﬁrming the scope covers both — matters for the DPIA 
+and audit logs. 
+
+● Dr. Gina's sign-off on the scripted library. Every approved answer needs her 
+
+explicit OK before it goes live. Estimate 30–60 minutes of her time to review once the 
+draft is ready in Week 2. 
+
+● Data person availability for DPIA review. We deliver the pre-ﬁlled pack; they ﬁnalise 
+
+and sign before go-live. Ideally lined up now so they're ready at Week 2. 
+
+8
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+● GoHighLevel HIPAA subscription. Architecture requires the HIPAA tier ($297/month) 
+rather than the starter plan originally discussed ($97). Not included in the monthly 
+retainer above. 
+
+● Existing clinic line, BT or VoIP PBX? Determines how we conﬁgure the after-hours 
+
+forwarding. 
+
+Phase 2 — Scoped After Phase 1 Review 
+Not priced here in this document, but this included so you can see what comes next: 
+
+● Semble bidirectional integration — Lead records pushed from GoHighLevel into 
+
+Semble, consultation tags pulled out for richer follow-up logic, WhatsApp-to-Semble 
+note sync replacing the current manual copy-paste. 
+
+● AI-driven appointment booking — Once Semble integration is live, extend the voice 
+and WhatsApp agents to handle new bookings directly, with doctor availability, blood-
+test status, and payment conﬁrmation. 
+
+● Lead generation + custom landing pages — Niche-keyword approach, custom 
+
+landing pages running in parallel to the agency's broad Google Ads — driving qualiﬁed 
+leads at lower CAC. 
+
+● Additional doctor onboarding — Replicating the stack as each new doctor comes 
+
+on (now zero-cost thanks to the Phase 1 templated build). 
+
+● Social media automation — Wilba Social product line when Dr. Gina's new 
+
+Facebook account is set up. 
+
+● Webinar automation — Automated webinar funnels for patient education and lead 
+
+generation.
+
+Scoped properly after Phase 1 is live, with actual numbers from the clinic in hand.
+
+About Wilba.ai 
+Wilba.ai builds custom AI systems for service businesses, communication agents, automation 
+workﬂows, and the operational infrastructure that keeps them running. We build on current AI 
+models connected to the tools businesses already use, rather than asking clients to change 
+how they operate. 
+
+We work with lean teams where the owner is the bottleneck, and we build to remove that 
+bottleneck permanently. UK GDPR and CQC obligations are built into the architecture from 
+day one, not retroﬁtted.  
+
+Next Steps 
+The next step is a 30-minute kickoff call early next week. On the call we: 
+
+● Conﬁrm Meta Business Veriﬁcation status and the WABA migration path 
+
+● Conﬁrm Semble API access path 
+
+● Conﬁrm clinic-line forwarding setup 
+
+● Lock in the go-live target date 
+
+● Schedule the 90-min magic-wand discovery workshop with Dr. Gina 
+
+● Collect inputs for the scripted library + voice-agent knowledge base: typical WhatsApp 
+message examples from Lisa, Dr. Gina's magic-wand voice note on her ideal patient 
+journey, and any FAQ / consultation-prep PDFs she has 
+
+9
+
+Wilba.ai  ·  Proposal for The Schoeman Clinic
+
+Standard terms: 50% deposit on kickoff, 50% on go-live. 
+
+Work starts as soon as the deposit lands. 
+
+Prepared by Jess Morrell · Wilba.ai · hello@wilba.ai  ·  25 April 2026
+
+10
+
+

@@ -161,6 +161,18 @@ WILBA's first hospitality client. Two automations for Sean's surf/accommodation 
 
 ---
 
+### The Schoeman Clinic — GoHighLevel Ops Build (Client Project)
+
+Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WILBA's biggest paid build, brought in via **Mati Simarro (RobinHoodSolutions AI)**, who owns the client relationship, knowledge base, patient-journey copy, Semble, and compliance. **Jess owns the GoHighLevel + WhatsApp workstream and team training; Griffin builds.**
+
+**Deal:** $10,000 USD one-time (50/50 kickoff/go-live) + $1,000/mo retainer (min 3 months). Gina also pays GHL HIPAA tier ($297/mo). Phase 1 = 6 features: WhatsApp shared inbox, recall/nurture/newsletter automation, after-hours voice agent, paid-first patient-journey funnel, Dr Gina daily brief, replicable doctor-onboarding stack. **Clinical records stay in Semble (EHR); GHL is operational only, connected via webhook.**
+
+**Files:** `outputs/schoeman-clinic/CONTEXT.md` (full catch-up), `outputs/schoeman-clinic/tonight-team-training-runsheet.md` (PA training run sheet), `outputs/schoeman-clinic/source-notes/` (proposal v3 + filled knowledge base).
+
+**Status (13 Jul 2026):** GHL + WhatsApp connected; **shared inbox live for the PA team** (Lisa/Zoey/Isabell + new 4th admin). Knowledge base + AI suggestive-reply mode + voice agent still being built. Open: WhatsApp number mismatch (inbox +44 7426 494321 vs website +44 7426 292 321), Semble admin access for Griffin, Twilio number pending Gina GHL top-up, marketing/GDPR consent wording.
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
