@@ -33,6 +33,7 @@ Work backwards from $10k. Here's the offer stack and what it takes:
 | Offer | Setup (one-off) | Retainer (MRR) | Delivery load | Role |
 |---|---|---|---|---|
 | **AI Receptionist** (spearhead) | $2,000 | $400/mo | Low (dev builds, template exists) | Fast cash + MRR |
+| **Hospitality Stack** (accommodation) | $2,500 | $600-900/mo | Medium (assets already exist) | Fattest retainer, stickiest |
 | **Content Machine** (coaches) | $2,000 | $750/mo | Medium | Higher MRR |
 | **Done-for-you marketing** (whale) | $1,500+ | $1,500/mo | High | Big tickets, fewer needed |
 | **Free Audit** | $0 | — | Automated (already live) | The hook that opens all doors |
@@ -75,6 +76,24 @@ You said "whatever's fastest." Here's the reasoning so you trust it:
 4. **It self-proves.** "Want to see it? I'll call my own AI receptionist right now." Objection dead on the spot.
 
 Content Machine rides in behind it as the retainer upsell to coaches (your IHF/Danielle network). Done-for-you marketing (the Monkey Joe's model) is the whale — one or two of those alone move the needle hard, so we keep a line in that water.
+
+---
+
+## 3b. Accommodation — your secret weapon vein
+
+Don't sleep on accommodation (surf villas, retreats, boutique hotels, yoga stays). It's the segment you can **deliver better than anyone else in your space** — and it carries the **fattest, stickiest retainer** in the stack. Three reasons it's special:
+
+1. **You have a live case study: Baha Baha.** Nobody selling AI to a retreat operator can say "here's what I built for a surf villa in Sumbawa." You can. That's instant trust with a relationship-driven segment (they buy *you*, not a product — see Segment C in the intelligence doc).
+2. **You already have the delivery assets.** Per Jess: a **WhatsApp agent that schedules + searches Drive folders for social-media posting.** That means accommodation clients don't just get an AI receptionist — they get a whole **Hospitality Stack**:
+   - **AI Receptionist** — multi-language booking/inquiry handling (email, WhatsApp, Instagram DM)
+   - **Daily Ops Brief** — the morning check-in/out/transfer brief (built for Baha Baha)
+   - **Social posting on autopilot** — the WhatsApp agent pulls content from their Drive folders and schedules/posts it, with owner approval over WhatsApp
+   That's a $2,500 setup + $600-900/mo retainer offer, not a $400 one. Same client, 2x the recurring.
+3. **They're aesthetic-led and Instagram-native.** They already value content and already live on social — so the social-posting piece sells itself, and your own Content Engine content doubles as proof you walk the talk.
+
+**Warm doors:** Baha Baha's Sean (referral + testimonial), the surf/yoga/retreat world you already move in, Indonesia/Bali-adjacent operators, and Australian retreat/wellness venues. This vein alone could carry 2-3 of your 5 sprint closes — at the highest retainer in the plan.
+
+> ⚠️ One thing I need to make this real in the workspace: the WhatsApp scheduler + Drive-posting agent isn't documented here yet (only listed as "future Phase 3" in the Baha Baha files). Point me at it — where it lives, how it's triggered — and I'll document it in the AIOS and wire it into both client delivery *and* your own content posting.
 
 ---
 
