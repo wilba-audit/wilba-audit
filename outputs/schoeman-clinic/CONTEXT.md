@@ -81,7 +81,7 @@
 
 ## 7. Open items / watch-outs
 
-- **☎️ WhatsApp number mismatch — UNRESOLVED.** Inbox/kickoff use **+44 7426 494321** (Griffin says this is correct). The **website FAQ + footer show +44 7426 292 321**. One of these is wrong and patients could be confused. Needs Gina/Mati to confirm and fix the site.
+- **☎️ WhatsApp number — CONFIRMED +44 7426 494321.** Griffin confirmed this is the correct inbox number ("Yes that is the correct number. No idea where u or Jess saw the other one"). ⚠️ The **website FAQ + footer still show +44 7426 292 321** — the *site* needs correcting so patients aren't sent to the wrong number. Not a training blocker.
 - Semble limits: 3-day calendar view, weak consent fields, no native WhatsApp consent flag.
 - Gina is trust-sensitive → **prove it works first, keep it simple, no tech overwhelm.** Marketing/social is parked until she can scale delivery.
 - Time zones: Jess (Bali +8), Gina/PAs (UK +1), Mati (Spain), Griffin (US) → expect ~1-day round-trips.

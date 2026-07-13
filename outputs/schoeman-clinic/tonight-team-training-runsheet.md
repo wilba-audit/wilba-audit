@@ -11,7 +11,7 @@
 - [ ] Log in and open **Conversations**. Confirm you can see real WhatsApp threads flowing in.
 - [ ] Send yourself a test WhatsApp to the clinic number and **reply from GHL** so you've done every click once.
 - [ ] Find the **internal note** control and confirm it does NOT go to the patient (see §3 — get Griffin to confirm the exact button in this sub-account if unsure).
-- [ ] Confirm which **number** is correct: **+44 7426 494321** (Griffin's) vs the website's **+44 7426 292 321**. Don't teach the team the wrong one. *(Flag to Mati/Gina regardless — the site may need fixing.)*
+- [ ] **Number is confirmed: +44 7426 494321** (Griffin confirmed). No action needed for the team — just know the website still shows the wrong one (+44 7426 292 321) and flag to Mati/Gina to fix the *site*.
 - [ ] Have everyone's logins confirmed working.
 
 ---
@@ -67,7 +67,7 @@
 | "Why won't my message send?" | The 24-hour WhatsApp window has closed — use an approved template. |
 | "What if two of us reply at once?" | Assign it to yourself when you pick it up; that's the whole point of the shared inbox. |
 | "Can it answer patients automatically?" | Not yet — that's a later phase and a human will always approve every AI reply. |
-| "Which number is this?" | **Confirm before the call** — +44 7426 494321 per Griffin; the website shows a different one we're getting fixed. |
+| "Which number is this?" | **+44 7426 494321** (confirmed). The website still shows an old one — we're getting the site fixed. |
 | "What about phone calls / after-hours?" | Coming later (voice agent) — needs Gina to top up GHL first. Not part of today. |
 | "Where do I book appointments?" | In **Semble**, exactly as now — nothing about booking changes today. Tonight is only the WhatsApp inbox. |
 | "Do we still use WhatsApp on our phones?" | No — from now the clinic inbox lives here so everyone shares it. |

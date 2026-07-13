@@ -169,7 +169,7 @@ Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WIL
 
 **Files:** `outputs/schoeman-clinic/CONTEXT.md` (full catch-up), `outputs/schoeman-clinic/tonight-team-training-runsheet.md` (PA training run sheet), `outputs/schoeman-clinic/source-notes/` (proposal v3 + filled knowledge base).
 
-**Status (13 Jul 2026):** GHL + WhatsApp connected; **shared inbox live for the PA team** (Lisa/Zoey/Isabell + new 4th admin). Knowledge base + AI suggestive-reply mode + voice agent still being built. Open: WhatsApp number mismatch (inbox +44 7426 494321 vs website +44 7426 292 321), Semble admin access for Griffin, Twilio number pending Gina GHL top-up, marketing/GDPR consent wording.
+**Status (13 Jul 2026):** GHL + WhatsApp connected; **shared inbox live for the PA team** (Lisa/Zoey/Isabell + new 4th admin). Knowledge base + AI suggestive-reply mode + voice agent still being built. Open: website still shows an old WhatsApp number (inbox number confirmed +44 7426 494321; site shows +44 7426 292 321 — needs fixing), Semble admin access for Griffin, Twilio number pending Gina GHL top-up, marketing/GDPR consent wording.
 
 ---
 
