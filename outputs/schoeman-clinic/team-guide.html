@@ -1,0 +1,273 @@
+<title>Your New Shared Inbox — Schoeman Clinic Team Guide</title>
+<style>
+  :root{
+    --paper:#F5F6F5; --card:#FFFFFF; --ink:#1B2A2E; --muted:#586A6D;
+    --line:#DCE4E1; --accent:#0E6E68; --accent-ink:#0B534E; --accent-soft:#E4F0ED;
+    --amber:#8A5A0C; --amber-soft:#F6ECD6; --amber-line:#E4CF9E;
+    --danger:#A33A2C; --danger-soft:#F6E2DD; --danger-line:#E5B7AC;
+    --good:#2E6B4F; --good-soft:#E1EFE7;
+    --display:Georgia,"Times New Roman",serif;
+    --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0F1618; --card:#16211F; --ink:#E9EEEC; --muted:#9BAEAB;
+      --line:#283A38; --accent:#41B8AF; --accent-ink:#8FD9D2; --accent-soft:#12302C;
+      --amber:#D8A94E; --amber-soft:#2A2313; --amber-line:#4A3C1C;
+      --danger:#E58976; --danger-soft:#2E1B16; --danger-line:#4C2A22;
+      --good:#72C199; --good-soft:#15271E;
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#F5F6F5; --card:#FFFFFF; --ink:#1B2A2E; --muted:#586A6D;
+    --line:#DCE4E1; --accent:#0E6E68; --accent-ink:#0B534E; --accent-soft:#E4F0ED;
+    --amber:#8A5A0C; --amber-soft:#F6ECD6; --amber-line:#E4CF9E;
+    --danger:#A33A2C; --danger-soft:#F6E2DD; --danger-line:#E5B7AC;
+    --good:#2E6B4F; --good-soft:#E1EFE7;
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1618; --card:#16211F; --ink:#E9EEEC; --muted:#9BAEAB;
+    --line:#283A38; --accent:#41B8AF; --accent-ink:#8FD9D2; --accent-soft:#12302C;
+    --amber:#D8A94E; --amber-soft:#2A2313; --amber-line:#4A3C1C;
+    --danger:#E58976; --danger-soft:#2E1B16; --danger-line:#4C2A22;
+    --good:#72C199; --good-soft:#15271E;
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;
+    -webkit-font-smoothing:antialiased;margin:0;font-size:16px;}
+  .wrap{max-width:52rem;margin:0 auto;padding:2.6rem 1.6rem 4rem;}
+
+  .bar{display:flex;justify-content:flex-end;gap:.5rem;margin-bottom:1.2rem;}
+  .btn{font:600 .82rem/1 var(--body);color:var(--accent-ink);background:var(--accent-soft);
+    border:1px solid var(--line);border-radius:.5rem;padding:.55rem .85rem;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);}
+  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  header{border-bottom:2px solid var(--accent);padding-bottom:1.3rem;margin-bottom:1.6rem;}
+  .eyebrow{font:600 .74rem/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 .6rem;}
+  h1{font-family:var(--display);font-weight:600;font-size:2.4rem;line-height:1.06;
+    text-wrap:balance;margin:0 0 .5rem;letter-spacing:-.01em;}
+  .lede{font-size:1.08rem;color:var(--muted);margin:.2rem 0 0;max-width:40rem;}
+
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:.8rem;
+    padding:1.1rem 1.3rem;margin:1.8rem 0 2.4rem;}
+  .toc h3{margin:0 0 .6rem;font:700 .74rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);}
+  .toc ol{margin:0;padding-left:1.3rem;columns:2;column-gap:2rem;}
+  @media (max-width:520px){.toc ol{columns:1}}
+  .toc li{margin:.24rem 0;font-size:.95rem;}
+
+  section{margin:0 0 2rem;}
+  h2{font-family:var(--display);font-weight:600;font-size:1.55rem;margin:2.4rem 0 .3rem;
+    text-wrap:balance;display:flex;align-items:baseline;gap:.6rem;}
+  h2 .n{font:700 1rem/1 var(--mono);color:var(--accent);
+    background:var(--accent-soft);border-radius:.45rem;padding:.32rem .5rem;flex:none;}
+  .sec-sub{color:var(--muted);margin:.1rem 0 1rem;font-size:1rem;}
+  p{margin:.7rem 0;}
+  ul,ol.steps{margin:.6rem 0;padding-left:1.3rem;}
+  li{margin:.35rem 0;}
+  b,strong{font-weight:700;}
+  .pill{display:inline-block;font:600 .78rem/1 var(--mono);letter-spacing:.03em;
+    background:var(--accent-soft);color:var(--accent-ink);border-radius:.4rem;padding:.28rem .5rem;}
+
+  .steps{list-style:none;counter-reset:st;padding:0;}
+  .steps>li{counter-increment:st;position:relative;padding:.15rem 0 .15rem 2.2rem;margin:.5rem 0;}
+  .steps>li::before{content:counter(st);position:absolute;left:0;top:.05rem;width:1.5rem;height:1.5rem;
+    border-radius:50%;background:var(--accent);color:#fff;font:700 .82rem/1.5rem var(--mono);text-align:center;}
+  :root[data-theme="dark"] .steps>li::before{color:#08201E;}
+  @media (prefers-color-scheme:dark){.steps>li::before{color:#08201E;}}
+
+  .call{border-radius:.75rem;padding:1.05rem 1.2rem;margin:1rem 0;}
+  .call .lab{font:700 .74rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.5rem;}
+  .call.accent{background:var(--accent-soft);border:1px solid var(--line);}
+  .call.accent .lab{color:var(--accent-ink);}
+  .call.amber{background:var(--amber-soft);border:1px solid var(--amber-line);}
+  .call.amber .lab{color:var(--amber);}
+  .call.danger{background:var(--danger-soft);border:1px solid var(--danger-line);}
+  .call.danger .lab{color:var(--danger);}
+  .call p:first-of-type{margin-top:0;}
+  .call p:last-child{margin-bottom:0;}
+
+  .tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0;}
+  .tag{font:600 .8rem/1 var(--mono);letter-spacing:.03em;border-radius:.4rem;padding:.35rem .55rem;
+    background:var(--card);border:1px solid var(--line);color:var(--ink);}
+  .example{font-family:var(--mono);font-size:.9rem;background:var(--card);border:1px dashed var(--line);
+    border-radius:.5rem;padding:.6rem .8rem;color:var(--ink);}
+  .example .t{color:var(--accent-ink);font-weight:700;}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:.75rem;background:var(--card);margin:1rem 0;}
+  table{border-collapse:collapse;width:100%;font-size:.95rem;}
+  th,td{text-align:left;padding:.65rem .9rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--accent);color:#fff;font:600 .78rem/1.2 var(--mono);letter-spacing:.05em;}
+  :root[data-theme="dark"] thead th{color:#08201E;}
+  @media (prefers-color-scheme:dark){thead th{color:#08201E;}}
+  tbody tr:last-child td{border-bottom:0;}
+  .qa td:first-child{font-weight:600;width:40%;}
+
+  .rule{display:flex;gap:.6rem;align-items:flex-start;font-size:1.05rem;font-weight:600;}
+  .rule .ic{color:var(--accent);flex:none;font-size:1.2rem;line-height:1.3;}
+
+  footer{margin-top:3rem;padding-top:1.1rem;border-top:1px solid var(--line);
+    font-size:.9rem;color:var(--muted);}
+  footer b{color:var(--ink);}
+
+  @media print{.bar{display:none;} body{background:#fff;} .wrap{max-width:none;padding:0;}
+    section,.call,.tablewrap,.toc{break-inside:avoid;} h2{break-after:avoid;}}
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <button class="btn" onclick="document.documentElement.setAttribute('data-theme',(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'))">Toggle theme</button>
+    <button class="btn" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <header>
+    <p class="eyebrow">The Schoeman Clinic · Team Guide</p>
+    <h1>Your new shared inbox</h1>
+    <p class="lede">From today, every patient WhatsApp lands in one place inside GoHighLevel — so you all see the same conversation, pick up from each other, and never forward a screenshot again. Here's everything you need.</p>
+  </header>
+
+  <div class="toc">
+    <h3>What we'll cover</h3>
+    <ol>
+      <li>What's changing</li>
+      <li>Finding your messages</li>
+      <li>Replying to a patient</li>
+      <li>Leaving internal notes</li>
+      <li>The best way to write a note</li>
+      <li>Working as a team</li>
+      <li>Keeping your calendar current</li>
+      <li>When to escalate</li>
+      <li>What's <em>not</em> changing</li>
+      <li>Common questions</li>
+    </ol>
+  </div>
+
+  <section>
+    <h2><span class="n">1</span> What's changing</h2>
+    <p>All patient WhatsApp messages now come into <b>one shared inbox</b> in GoHighLevel (GHL), in the <b>Conversations</b> tab. Everyone works from the same place, in real time. No more one person holding the phone, no more forwarding screenshots between you.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span> Finding your messages</h2>
+    <p class="sec-sub">Open the <b>Conversations</b> tab — that's where you'll live.</p>
+    <ul>
+      <li><b>Left</b> — the list of conversations, newest and unread at the top.</li>
+      <li><b>Middle</b> — the message thread you're reading.</li>
+      <li><b>Right</b> — the patient's details and history.</li>
+      <li><b>Filters</b> at the top: <span class="pill">Unread</span> <span class="pill">Assigned to me</span> <span class="pill">All</span> — spend your time in <b>Unread</b> and <b>Assigned to me</b>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span> Replying to a patient</h2>
+    <ol class="steps">
+      <li>Click the conversation to open it.</li>
+      <li>Type your reply in the box at the bottom.</li>
+      <li>Press <b>Send</b> — it goes straight to the patient on WhatsApp.</li>
+    </ol>
+    <div class="call amber">
+      <span class="lab">If your message won't send</span>
+      <p>WhatsApp only lets us free-type for <b>24 hours after the patient's last message</b>. If it's been longer, your reply may be blocked — you'll need to send an approved <b>template</b> message to reopen the conversation. That's normal, not a fault.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span> Leaving internal notes</h2>
+    <p>You can leave a note that <b>only the team sees</b> — the patient never does. Use it to say what you've done or what's needed: chased Dr Gina, waiting on payment, escalated a clinical question.</p>
+    <div class="call danger">
+      <span class="lab">The golden rule</span>
+      <p class="rule"><span class="ic">✓</span><span>Before you send, always check: <b>am I replying to the patient, or leaving a note for my team?</b> A reply and a note look different on screen — take the half-second to be sure.</span></p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span> The best way to write a note</h2>
+    <p class="sec-sub">A few simple habits keep notes useful instead of noisy.</p>
+    <ul>
+      <li><b>Start with a status tag</b> so anyone can scan the thread at a glance:</li>
+    </ul>
+    <div class="tags">
+      <span class="tag">ESCALATED</span>
+      <span class="tag">WAITING ON PAYMENT</span>
+      <span class="tag">BLOODS</span>
+      <span class="tag">BOOKED</span>
+      <span class="tag">CHASING</span>
+      <span class="tag">DONE</span>
+    </div>
+    <ul>
+      <li><b>@mention a teammate</b> when you're handing it over, so they know it's theirs.</li>
+      <li><b>Keep it short and factual</b> — GHL already records who wrote it and when, so you don't need to sign it.</li>
+      <li><b>Always leave a note before you close a conversation</b>, so the next person has the full picture.</li>
+    </ul>
+    <div class="call accent">
+      <span class="lab">Example note</span>
+      <p class="example"><span class="t">ESCALATED</span> — patient asked about blood results. Emailed Dr Gina + saved to Semble file. @Zoey to follow up if she books.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span> Working as a team</h2>
+    <ul>
+      <li><b>Assign a conversation to yourself</b> when you pick it up — so two people don't reply to the same patient.</li>
+      <li><b>Mark it unread</b> to hand it back to the team.</li>
+      <li>The rhythm: <b>assign to yourself → note what you did → mark unread if it needs someone else.</b></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span> Keeping your calendar current</h2>
+    <p>WILBA sets up the clinic calendars — you don't need to build or configure anything. Each of you is linked in with your own connected calendar, and when a patient books they simply get whoever's free.</p>
+    <div class="call amber">
+      <span class="lab">Your one job</span>
+      <p>Keep your <b>own linked calendar up to date</b> — connect it, and block out any time off or when you're unavailable. As long as it's current, your availability updates automatically. Nothing to manage by hand.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">8</span> When to escalate</h2>
+    <div class="call danger">
+      <span class="lab">Never answer anything clinical</span>
+      <p>No results, no medication or dosing, no symptoms, no "is this safe". These always go to a human.</p>
+    </div>
+    <ul>
+      <li><b>To escalate:</b> copy the message to Dr Gina by email <b>and</b> paste it onto the patient's Semble file, then leave an <b>internal note</b> (tag it <span class="tag" style="padding:.2rem .4rem">ESCALATED</span>).</li>
+      <li><b>Blood results</b> are discussed at an appointment — never sent over WhatsApp.</li>
+      <li><b>The 2-email rule:</b> a patient gets two short email replies; anything longer or complex becomes a paid consultation.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">9</span> What's <em>not</em> changing</h2>
+    <ul>
+      <li><b>Appointments and follow-ups are still booked in Semble</b>, exactly as now — and Semble still sends the reminders.</li>
+      <li>AI-suggested replies and the knowledge base are coming later, with their own training. For now, every reply is written by you.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span> Common questions</h2>
+    <div class="tablewrap">
+      <table class="qa">
+        <thead><tr><th>Question</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>Does the patient see my note?</td><td>No — internal notes are team-only. Replies go to the patient. Always check which one you're in.</td></tr>
+          <tr><td>Why won't my message send?</td><td>The 24-hour WhatsApp window has closed — send an approved template to reconnect.</td></tr>
+          <tr><td>What if two of us reply at once?</td><td>Assign it to yourself when you pick it up — that's the whole point of the shared inbox.</td></tr>
+          <tr><td>Do I need to manage the calendar?</td><td>No — just keep your own linked calendar up to date and block out time off. Availability updates on its own.</td></tr>
+          <tr><td>Where do I book appointments?</td><td>In Semble, exactly as now. Nothing about booking changes today.</td></tr>
+          <tr><td>A patient sent their blood results — what do I do?</td><td>Don't interpret them. Escalate: email Dr Gina, save to the Semble file, and leave an internal note. Results are discussed at an appointment.</td></tr>
+          <tr><td>Which number is this?</td><td>+44 7426 494321 — the clinic's WhatsApp inbox.</td></tr>
+          <tr><td>Do we still use WhatsApp on our phones?</td><td>No — from now the clinic inbox lives in GHL so everyone shares it.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>That's it — you're ready.</b> Take your time, use internal notes generously, and when in doubt on anything clinical, escalate. Any "how do I…" question, message Jess and we'll sort it.</p>
+    <p style="margin-top:.6rem;font-size:.8rem;font-style:italic;">The Schoeman Clinic · WhatsApp shared inbox · prepared by WILBA · 13 July 2026</p>
+  </footer>
+</div>
