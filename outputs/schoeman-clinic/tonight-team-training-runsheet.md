@@ -50,6 +50,10 @@
 - Blood results are **discussed at an appointment** — never sent over WhatsApp.
 - Reminder of Gina's rule: **2 short emails max**, then it's a paid consult.
 
+### 6b. What is NOT changing tonight (2 min)
+- **Consultations and follow-ups are still booked in Semble, exactly as now** — and Semble still sends the appointment reminders. GHL does nothing on booking tonight.
+- The GHL **discovery-call calendar** and AI-suggested replies are coming later, each with its own walkthrough. Don't teach booking tonight — it only muddies the inbox go-live.
+
 ### 7. Wrap (2 min)
 - "This is deliberately simple for now. As you get comfortable, we'll layer in AI-suggested replies (a PA still approves every one) and the knowledge base — but not today."
 - Tell them a **Loom walkthrough** will follow so they can rewatch, and they can WhatsApp you questions.
@@ -65,6 +69,7 @@
 | "Can it answer patients automatically?" | Not yet — that's a later phase and a human will always approve every AI reply. |
 | "Which number is this?" | **Confirm before the call** — +44 7426 494321 per Griffin; the website shows a different one we're getting fixed. |
 | "What about phone calls / after-hours?" | Coming later (voice agent) — needs Gina to top up GHL first. Not part of today. |
+| "Where do I book appointments?" | In **Semble**, exactly as now — nothing about booking changes today. Tonight is only the WhatsApp inbox. |
 | "Do we still use WhatsApp on our phones?" | No — from now the clinic inbox lives here so everyone shares it. |
 
 ## After the call
