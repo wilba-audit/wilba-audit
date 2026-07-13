@@ -1,6 +1,29 @@
 # The Schoeman Clinic — Client Context
 
-**Last updated:** 2026-07-13 · Built from Proposal v3, 5 meeting transcripts (Jun–Jul 2026), the knowledge-base pack, and the WhatsApp thread with Griffin/Mati.
+**Last updated:** 2026-07-13 · Built from Proposal v3, 6 meeting transcripts (Jun–Jul 2026, incl. the 13 Jul team training), the knowledge-base pack, and the WhatsApp thread with Griffin/Mati.
+
+---
+
+## ⭐ Tonight's team training — outcome (13 Jul 2026)
+
+**Attended:** Zoey van Huyssteen, Isabell Drake, Lisa (joined under Zoom name "Megan Fensom-Turner"). Went well — team engaged and keen. Ran on Google Meet.
+
+**Covered:** connected each PA's calendar + set their working hours; toured the Conversations tab (reply, mark read, assign, tasks, notes); confirmed WhatsApp messages flow in; appointments/payments stay in Semble for now.
+
+**Staff questions raised (need Mati/Gina):**
+- **⭐ Semble notes / double-entry (biggest one):** team currently copy important WhatsApp/email into the patient's Semble notes so Gina sees them. They asked if that stops now or continues. **Correct interim answer: KEEP copying to Semble** — WhatsApp→Semble sync is Phase 2 and the daily brief isn't live, so dropping it would leave Gina blind. ⚠️ *On the call Jess said they'd "move away from Semble entirely for notes" — needs gently resetting in the team follow-up.*
+- Email sender identity — replies default to **info@**, with option to switch to personal (answered).
+- "Do we book appointments in GHL now?" — **No, Semble** for now (answered, repeatedly).
+- "From today do we use GHL not WhatsApp?" — get comfortable with the GHL inbox from today (answered).
+
+**Action items (WILBA side):**
+- **Dr Gina's calendar shows empty/unconnected** in GHL — Jess to fix.
+- **Calendar display glitch** Lisa sees (text rendering vertically) — investigate.
+- **Email list import + phone↔email matching** — in progress.
+- **Holiday date-range blocking** — GHL changed the UI (one date at a time); Jess to set **Isabell's 4-week leave (from Mon 20 Jul → back 16 Aug)** on the backend; Isabell's workdays change on return (Mon–Fri → Tue–Fri, covering Lisa first week).
+- Send team follow-up summary + set up WhatsApp group.
+
+**Deliverables in this folder:** `mati-update-post-training.md` (message to Mati), `Schoeman-Clinic-Team-FollowUp.docx` (team hand-out), `team-guide.html` / `.docx` (fuller reference), `training-agenda.html` / `Schoeman-Clinic-GHL-Team-Training-Agenda.docx` (presenter run sheet), `Schoeman-Clinic-GoLive-Payment-Milestones.docx` (Mati payment note).
 
 ---
 
