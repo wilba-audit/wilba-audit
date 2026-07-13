@@ -161,6 +161,27 @@ WILBA's first hospitality client. Two automations for Sean's surf/accommodation 
 
 ---
 
+### The WILBA Content Engine (Personal Brand — Instagram + YouTube)
+
+Jess's organic content weapon. Turns daily AI news into finished, on-brand content for her personal brand. Fuel: **The Rundown AI** (Gmail, `news@daily.therundown.ai`). Voice: the Brand Bible. Studio: **Higgsfield** (connected, Plus plan). Jess stays the face + director.
+
+**The loop:** Rundown AI email → angles reframed for WILBA's audience → copy in Jess's voice → visuals made in Higgsfield → daily brief, ready to shoot.
+
+**Agents** (`.claude/agents/`): `trend-scout` (reads Rundown, surfaces angles) · `hook-writer` (angle → on-brand copy) · `visual-producer` (Higgsfield images/video/thumbnails + virality prediction) · `repurposer` (one piece → six).
+
+**Commands** (`.claude/commands/`):
+- `/content` — flagship daily loop (Rundown → reel + visuals → daily brief)
+- `/rundown` — just today's angles from The Rundown AI
+- `/make-reel [topic]` · `/make-carousel [topic]` · `/thumbnail [title]`
+- `/content-week` — batch a whole week · `/repurpose [video/script]` — one → six · `/post-check [draft]` — brand + virality check
+
+**Reads from:** `outputs/brand/brand-positioning.md` (voice) + `outputs/brand/social-media-intelligence.md` (segments, pillars, hooks, 30-day calendar).
+**Saves to:** `outputs/content/` (daily briefs, reels, carousels, thumbnails, weeks, logs). Index: `outputs/content/README.md`.
+
+**Status:** Built and live. Next: run `/content` on today's Rundown to test end-to-end; optionally auto-run every morning via a scheduled trigger.
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
