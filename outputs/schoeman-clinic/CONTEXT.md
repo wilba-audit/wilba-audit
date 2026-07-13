@@ -89,8 +89,10 @@
 - **AI suggested-reply mode + knowledge-base connection in the inbox** — NOT part of tonight. Comes when Jess + Mati are ready.
 - **Voice agent + Twilio calling number** — pending Gina **topping up GHL**; involves spending money → left to Jess's side. Not urgent.
 - **Meta Business Verification / WABA migration** — critical path, Meta-controlled.
-- **Semble admin access** for Griffin — needed to build webhooks/patient export.
 - **Discovery-call calendar** in GHL — Jess's team to set up; loom for PAs on setting their hours.
+
+**✅ Resolved dependencies**
+- **Semble admin access — Griffin HAS it** (confirmed by Jess, 13 Jul). No longer a blocker; Griffin is pulling the patient list for the email/phone contact matching. *(Note: the go-live/milestone doc still lists this as a blocker — correct it before sending.)*
 
 ---
 
