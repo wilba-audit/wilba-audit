@@ -50,6 +50,13 @@
 - Blood results are **discussed at an appointment** — never sent over WhatsApp.
 - Reminder of Gina's rule: **2 short emails max**, then it's a paid consult.
 
+### 5b. Calendars — the 60-second version (4 min)
+Keep this **high-level**. You are *not* teaching them to build or configure calendars — WILBA sets those up. They only need the one thing that's on them.
+- WILBA builds the clinic calendar (e.g. discovery calls) with the clinic's set hours. **The team doesn't configure that.**
+- Each person is **linked into it with their own connected calendar**. When a patient books, they don't pick a person — the system offers whoever's free.
+- **Your only job:** keep your linked calendar up to date — connect it and block out time off / anything you're unavailable for.
+- 🟡 **The one takeaway:** *as long as your linked calendar is up to date, availability stays accurate on its own* — nothing to manage by hand. Block time off and the booking slots update automatically.
+
 ### 6b. What is NOT changing tonight (2 min)
 - **Consultations and follow-ups are still booked in Semble, exactly as now** — and Semble still sends the appointment reminders. GHL does nothing on booking tonight.
 - The GHL **discovery-call calendar** and AI-suggested replies are coming later, each with its own walkthrough. Don't teach booking tonight — it only muddies the inbox go-live.
@@ -69,6 +76,7 @@
 | "Can it answer patients automatically?" | Not yet — that's a later phase and a human will always approve every AI reply. |
 | "Which number is this?" | **+44 7426 494321** (confirmed). The website still shows an old one — we're getting the site fixed. |
 | "What about phone calls / after-hours?" | Coming later (voice agent) — needs Gina to top up GHL first. Not part of today. |
+| "Do I need to manage the calendar?" | No — just keep your own linked calendar up to date and block out time off. Availability updates on its own. |
 | "Where do I book appointments?" | In **Semble**, exactly as now — nothing about booking changes today. Tonight is only the WhatsApp inbox. |
 | "Do we still use WhatsApp on our phones?" | No — from now the clinic inbox lives here so everyone shares it. |
 
