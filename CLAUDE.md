@@ -100,6 +100,8 @@ These are how you know your AIOS is working:
 | `plans/`           | Detailed implementation plans. Created by `/create-plan`, executed by `/implement`.    |
 | `outputs/`         | Deliverables, analyses, reports, and work products.                                    |
 | `outputs/audit/`   | AI Receptionist Audit lead log and setup checklist.                                    |
+| `outputs/schoeman/`| Dr Gina Schoeman social media audit + proposal (Social Media Audit service).           |
+| `.claude/skills/`  | Reusable skills (e.g. `social-media-audit`). Invoked automatically or by name.         |
 | `reference/`       | Helpful docs, templates and patterns to assist in various workflows.                   |
 | `scripts/`         | Automation scripts — added by modules as you install them.                             |
 | `shares/`          | Packaged systems for sharing. Created by `/share`, ready to hand off.                  |
@@ -158,6 +160,33 @@ WILBA's first hospitality client. Two automations for Sean's surf/accommodation 
 - `plans/2026-03-23-baha-baha-ai-receptionist-booking-agent.md` — Implementation plan
 
 **Status:** Scripts built. Proposal ready to send. Needs: Booking Layer API key from Sean + Gmail OAuth setup + World Surfaris sample email + room/package name confirmation. Deploy to Render once API access confirmed.
+
+---
+
+### Social Media Audit Service (Reusable Skill + Client Work)
+
+A repeatable WILBA offer: audit any prospect's social presence, diagnose why
+content isn't getting traction, and produce an honest, tiered proposal. Powered
+by a dedicated skill so every audit is expert-level and consistent.
+
+**The skill:** `.claude/skills/social-media-audit/` — a senior-strategist skill.
+Invoke it for any social review / "spent money on content, no traction" / content
+proposal request. Contains an 8-dimension scoring rubric, 2026 platform playbooks
+(IG/YouTube/TikTok/LinkedIn/X), a 12-item failure-pattern library, a data-
+collection checklist, and a tiered proposal template. Core belief: *reach is
+rented, authority is owned* — judge authority clients on saves/shares/enquiries,
+never vanity views. Produces `00-data-request.md`, `audit.md`, `proposal.md` per
+client in `outputs/<client-slug>/`.
+
+**First client — Dr Gina Schoeman (The Schoeman Clinic):** functional/longevity
+medicine, bioidentical hormones, premium London market. Goal: authority/thought
+leadership. Audit complete (preliminary score ~48% — "real potential, leaking at
+three points": production-value fallacy + peer-not-patient content + no
+distribution). Honest tiered proposal drafted (recommend starting Tier 1 —
+Audit & Strategy Sprint). Files in `outputs/schoeman/`.
+**Status:** Deliverables drafted. Needs: confirm this is the right Dr Schoeman +
+her 90-day analytics (see `outputs/schoeman/00-data-request.md`) to lock numbers
+and pricing, then a client-facing proposal can be finalised.
 
 ---
 
