@@ -55,6 +55,6 @@ Thank you for asking Gina about the calendar/discovery calls, prescriptions and 
 
 **On the Twilio number** — I'm with you, Option 1 is the nicest for patients (seeing the familiar clinic number). Only flag: Griffin already ran into that exact bOnline verification issue when we set up WhatsApp, so it's worth looping him in with you and Lisa so we're not hitting the same wall blind — and Option 2 is a totally solid fallback if it won't verify. Whatever Gina prefers works for us.
 
-**On the knowledge base sign-off** — I haven't sent Gina anything separately; the KB is the doc you've been building with Claude (the one we've been filling in together). For sign-off, simplest is: once the answers are all in, we send Gina the finished version, she has a read and gives her OK — honestly a quick call walking through it works better for her than typing — and we lock that as the approved replies. It only really matters just before we switch on the AI suggested-reply mode, so no rush at all — but I'm happy to help get it over the line whenever you want to.
+**On the knowledge base** — she's already got it. On our last call (the 4th) I left the remaining questions with her to finish in her own time, so I'm following those up with her now. Once she's filled them in, that completed set *is* the sign-off really — she's approving the answers as she goes — and we just lock it in before we switch on the AI suggested replies. So nothing extra to send her, and no rush — I'll chase the last few gently.
 
 Thanks Mati, have a lovely day out! x

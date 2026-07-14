@@ -30,7 +30,7 @@
 - **Semble notes** ✅ Mati **confirmed Phase 2** — "keep copying to Semble for now" is the agreed interim.
 - **Gina's decisions** — Mati is asking Gina about (1) her calendar/discovery calls, (2) prescriptions, (3) clinical escalations. In motion.
 - **Twilio number** — Mati gave Gina 3 caller-ID options: **Opt 1 (preferred)** use clinic's existing number **020 3006 3224** as caller ID (background Twilio number places the call; risk = verification needs an automated call to the bOnline landline, which failed during WhatsApp setup — may hit same wall; try first, work with Lisa); **Opt 2** new London number redirecting back to the clinic (reliable, but patients see an unfamiliar number); **Opt 3** new number, no callback (poor UX). **Can proceed even without the GHL top-up.** Awaiting Gina's pick. → *Loop Griffin in: he knows the bOnline routing history from WhatsApp.*
-- **Knowledge base sign-off** — Mati asked how Gina signs off. Clarified: KB is Mati's draft (the blue-fill doc); sign-off = Gina reviews the finished answers and OKs them (a quick call suits her better than typing), then WILBA/Mati lock that version as the approved replies — only needed before switching on AI suggestive mode, so not urgent.
+- **Knowledge base sign-off** — Mati asked how Gina signs off. Clarified with call context: on the **4 Jul (Knowledge base 2)** call, Jess told Gina she could **finish the remaining KB questions in her own time** — so Gina already has it and is completing the open answers herself. Sign-off is effectively built into her filling it in; once complete, lock it as the approved replies before switching on AI suggestive mode. **Jess's follow-up = gently chase the last few answers from Gina.** No separate doc, not urgent.
 
 ---
 
