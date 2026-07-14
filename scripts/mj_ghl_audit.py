@@ -1,25 +1,17 @@
-"""Monkey Joe's — read-only GHL account audit (runs server-side in GitHub Actions).
+"""Monkey Joe's — comprehensive read-only GHL account audit (runs in GitHub Actions).
 
-This is the "live access via GitHub Actions" path: this session's network policy
-blocks GHL directly, but a GitHub Actions runner reaches it fine. The
-`mj-audit.yml` workflow runs this and commits the results back to the repo so
-they can be read from any session.
-
-For each location (POL + WP) it reports, using only READ calls:
-  - audience counts by key tag (voucher-delivered, unsubscribed, lead + redemption tags)
-  - the custom-field list, and specifically the child-birthday field id
-    (this is the value that belongs in the CHILD_BDAY_FIELD_ID secret)
+The dev session's network blocks GHL, so `mj-audit.yml` runs this server-side and
+commits results back. This version pulls EVERY contact and tallies EVERY tag, so
+we can see the real picture: audience, redemptions by code, campaign sends (incl.
+the weekend BANANAS / 4th-of-July blast), birthday funnel, and custom fields.
 
 Writes:
-  outputs/monkey-joes/reporting/ghl-audit.json   (machine-readable)
+  outputs/monkey-joes/reporting/ghl-audit.json   (full tag histogram + metrics)
   outputs/monkey-joes/reporting/ghl-audit.md     (human-readable summary)
 
 Required env (secrets in Actions, or .env locally):
   GHL_API_KEY_POL, GHL_LOCATION_ID_POL
   GHL_API_KEY_WP,  GHL_LOCATION_ID_WP
-
-Run:
-  python3 scripts/mj_ghl_audit.py
 """
 from __future__ import annotations
 
@@ -27,9 +19,10 @@ import json
 import os
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib import error, parse, request
+from urllib import error, request
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "outputs" / "monkey-joes" / "reporting"
@@ -42,16 +35,6 @@ THROTTLE = 0.3
 LOCS = [
     ("POL", "GHL_API_KEY_POL", "GHL_LOCATION_ID_POL"),
     ("WP", "GHL_API_KEY_WP", "GHL_LOCATION_ID_WP"),
-]
-
-# Tags worth counting. Keep in sync with the campaign scheme.
-COUNT_TAGS = [
-    "voucher-delivered",
-    "unsubscribed",
-    "birthday-{loc}-lead",
-    "birthday-{loc}-booked",
-    "redeemed-{loc}",
-    "promo-redeemed-{loc}",
 ]
 
 
@@ -70,7 +53,7 @@ def _headers(api_key: str) -> dict:
         "Version": GHL_VERSION,
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "User-Agent": "mj-ghl-audit/1.0",
+        "User-Agent": "wilba-mj/1.0",
     }
 
 
@@ -79,7 +62,7 @@ def _req(method: str, url: str, api_key: str, payload: dict | None = None) -> tu
     data = json.dumps(payload).encode() if payload is not None else None
     req = request.Request(url, data=data, method=method, headers=_headers(api_key))
     try:
-        with request.urlopen(req, timeout=30) as r:
+        with request.urlopen(req, timeout=40) as r:
             return r.status, json.loads(r.read() or b"{}")
     except error.HTTPError as e:
         return e.code, {"_error": e.read().decode("utf-8", "replace")[:300]}
@@ -87,13 +70,25 @@ def _req(method: str, url: str, api_key: str, payload: dict | None = None) -> tu
         return 0, {"_error": str(e)[:200]}
 
 
-def count_tag(api_key: str, location_id: str, tag: str) -> int:
-    status, data = _req(
-        "POST", f"{GHL_BASE}/contacts/search", api_key,
-        {"locationId": location_id, "pageLimit": 1,
-         "filters": [{"field": "tags", "operator": "contains", "value": tag}]},
-    )
-    return int(data.get("total", 0)) if status in (200, 201) else -1
+def fetch_all_contacts(api_key: str, location_id: str) -> list[dict]:
+    """Pull every contact (paginated) so we can tally all tags client-side."""
+    out, page = [], 1
+    while True:
+        status, data = _req("POST", f"{GHL_BASE}/contacts/search", api_key,
+                            {"locationId": location_id, "pageLimit": 100, "page": page})
+        if status not in (200, 201):
+            break
+        batch = data.get("contacts", [])
+        if not batch:
+            break
+        out.extend(batch)
+        total = data.get("total")
+        if len(batch) < 100 or (total and len(out) >= total):
+            break
+        page += 1
+        if page > 60:  # safety
+            break
+    return out
 
 
 def custom_fields(api_key: str, location_id: str) -> list[dict]:
@@ -105,53 +100,87 @@ def custom_fields(api_key: str, location_id: str) -> list[dict]:
 
 def find_child_birthday_field(fields: list[dict]) -> dict | None:
     for f in fields:
-        name = (f.get("name") or "").lower()
-        if "birth" in name and ("child" in name or "kid" in name or "dob" in name or "birth" in name):
-            return {"id": f.get("id"), "name": f.get("name"), "dataType": f.get("dataType")}
-    # fallback: any field mentioning birthday
-    for f in fields:
         if "birth" in (f.get("name") or "").lower():
             return {"id": f.get("id"), "name": f.get("name"), "dataType": f.get("dataType")}
     return None
 
 
 def audit_location(loc: str, api_key: str, location_id: str) -> dict:
-    result: dict = {"location_id": location_id, "connection": "unknown", "tags": {}, "custom_fields": {}}
-    # connection test
-    status, _ = _req("POST", f"{GHL_BASE}/contacts/search", api_key,
+    lc = loc.lower()
+    res: dict = {"location_id": location_id, "connection": "unknown"}
+    contacts = fetch_all_contacts(api_key, location_id)
+    if not contacts:
+        # distinguish auth failure from a truly empty account
+        st, _ = _req("POST", f"{GHL_BASE}/contacts/search", api_key,
                      {"locationId": location_id, "pageLimit": 1})
-    result["connection"] = "ok" if status in (200, 201) else f"FAILED ({status})"
-    if result["connection"] != "ok":
-        return result
-    for tmpl in COUNT_TAGS:
-        tag = tmpl.format(loc=loc.lower())
-        result["tags"][tag] = count_tag(api_key, location_id, tag)
+        res["connection"] = "ok (empty)" if st in (200, 201) else f"FAILED ({st})"
+        return res
+    res["connection"] = "ok"
+    res["total_contacts"] = len(contacts)
+
+    # Full tag histogram
+    hist = Counter()
+    with_email = with_phone = 0
+    for c in contacts:
+        for t in (c.get("tags") or []):
+            hist[t] += 1
+        if c.get("email"):
+            with_email += 1
+        if c.get("phone"):
+            with_phone += 1
+    res["with_email"] = with_email
+    res["with_phone"] = with_phone
+    res["all_tags"] = dict(hist.most_common())
+
+    # Grouped views
+    def match(*subs):
+        return {t: n for t, n in hist.items() if any(s in t.lower() for s in subs)}
+
+    res["redemption_tags"] = match("redeem", "redeemed", "used", "promo-redeemed")
+    res["campaign_tags"] = match("weekend-stars", "bananas", "stars", "blast", "4th", "july")
+    res["offer_lead_tags"] = match("bogo", "50off", "half", "welcome", "voucher-delivered", "fjp", "fj-")
+    res["birthday_tags"] = match("bday", "birthday")
+
+    # Headline metrics
+    res["metrics"] = {
+        "voucher_delivered": hist.get("voucher-delivered", 0),
+        "unsubscribed": hist.get("unsubscribed", 0),
+        "redemptions_total": sum(res["redemption_tags"].values()),
+        "birthday_leads": hist.get(f"birthday-{lc}-lead", 0),
+        "birthday_booked": hist.get(f"birthday-{lc}-booked", 0),
+    }
+
     fields = custom_fields(api_key, location_id)
-    result["custom_fields"]["count"] = len(fields)
-    result["custom_fields"]["all"] = [{"id": f.get("id"), "name": f.get("name")} for f in fields]
-    result["custom_fields"]["child_birthday"] = find_child_birthday_field(fields)
-    return result
+    res["custom_fields_count"] = len(fields)
+    res["child_birthday_field"] = find_child_birthday_field(fields)
+    return res
 
 
 def render_md(report: dict) -> str:
-    lines = ["# Monkey Joe's — GHL Account Audit", "",
-             f"_Generated {report['generated_at']} (server-side via GitHub Actions)_", ""]
-    for loc, data in report["locations"].items():
-        lines.append(f"## {loc}")
-        lines.append(f"- Connection: **{data['connection']}**")
-        if data["connection"] == "ok":
-            for tag, n in data["tags"].items():
-                lines.append(f"- `{tag}`: {n if n >= 0 else 'error'}")
-            cb = data["custom_fields"].get("child_birthday")
-            if cb:
-                lines.append(f"- **Child-birthday field:** `{cb['id']}` ({cb['name']}) "
-                             f"→ set this as the `CHILD_BDAY_FIELD_ID` secret")
-            else:
-                lines.append("- **Child-birthday field:** not found — Radar can't anchor to the "
-                             "child's birthday until this field exists + is populated")
-            lines.append(f"- Custom fields total: {data['custom_fields'].get('count', 0)}")
-        lines.append("")
-    return "\n".join(lines)
+    L = ["# Monkey Joe's — GHL Account Audit (comprehensive)", "",
+         f"_Generated {report['generated_at']} (live, server-side via GitHub Actions)_", ""]
+    for loc, d in report["locations"].items():
+        L.append(f"## {loc}")
+        if d.get("connection") != "ok":
+            L.append(f"- Connection: **{d.get('connection')}**"); L.append(""); continue
+        m = d["metrics"]
+        L += [
+            f"- Connection: **ok** · {d['total_contacts']} contacts ({d['with_email']} email · {d['with_phone']} phone)",
+            f"- Opted-in (`voucher-delivered`): **{m['voucher_delivered']}** · unsubscribed: {m['unsubscribed']}",
+            f"- **Redemptions tracked: {m['redemptions_total']}**  → {d['redemption_tags'] or 'none found'}",
+            f"- Birthday: {m['birthday_leads']} leads · {m['birthday_booked']} booked",
+        ]
+        cb = d.get("child_birthday_field")
+        L.append(f"- Child-birthday field: `{cb['id']}` ({cb['name']}, {cb['dataType']})" if cb
+                 else "- Child-birthday field: not found")
+        L.append(f"- **Campaign sends (incl. BANANAS/4th-of-July):** {d['campaign_tags'] or 'none found'}")
+        L.append(f"- Offer/lead tags: {d['offer_lead_tags'] or 'none'}")
+        L.append("")
+        L.append("<details><summary>All tags</summary>\n")
+        for t, n in d["all_tags"].items():
+            L.append(f"  - `{t}`: {n}")
+        L.append("\n</details>\n")
+    return "\n".join(L)
 
 
 def main() -> int:
@@ -165,7 +194,7 @@ def main() -> int:
             continue
         print(f"→ auditing {loc}...")
         report["locations"][loc] = audit_location(loc, key, lid)
-        print(f"   {loc}: {report['locations'][loc]['connection']}")
+        print(f"   {loc}: {report['locations'][loc].get('connection')}")
     (OUT_DIR / "ghl-audit.json").write_text(json.dumps(report, indent=2))
     (OUT_DIR / "ghl-audit.md").write_text(render_md(report))
     print(f"\n✓ wrote {OUT_DIR/'ghl-audit.json'} and ghl-audit.md")
