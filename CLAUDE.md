@@ -180,14 +180,26 @@ reporting (pending dev-token approval). Everything keys off two audiences: `vouc
 - `scripts/mj_meta_manage.py` — Meta ads write control (list / pause / enable / budget, $60/day guardrail)
 - `scripts/fetch_consolidated_reporting.py` — joins GHL + Meta + Google into `outputs/monkey-joes/reporting/consolidated.json`
 
-**Docs:** `outputs/monkey-joes/` (note: strategy docs are from March and describe the pre-migration
-Aluvii/Constant Contact plan — GHL is the current reality; reconcile before trusting them).
+**Docs:** `outputs/monkey-joes/`. The dated July docs are current: `ADS-AUDIT-2026-07.md`,
+`BIRTHDAY-ACQUISITION-STRATEGY-2026-07.md`, and the rewritten `promo-codes.md` (v2). The other
+(March) docs describe the pre-migration Aluvii/Constant Contact plan — GHL is the current reality.
 
-**Commands:** `/mj-ghl` · `/mj-redemptions` · `/mj-birthday` · `/mj-ads` (see Commands section).
+**Real codes (July 2026):** `WELCOME` ($25 opt-in voucher) · `BOGO/` (Wacky Wednesday) · `50% off`
+(best Google performer) · `FJP/` (Frequent Jumper, not for parties) · `BDAY25` ($25 off a party,
+redeemed in **Aluvii**). The old `WACKY-*`/`COMEBACK` scheme is dead.
 
-**Status:** Meta ads live. Birthday funnel running (reconcile with a GHL-native workflow to avoid
-double-sends). Open items: confirm the GHL redemption-tracking mechanism, wire `CHILD_BDAY_FIELD_ID`
-into Radar, and Google Ads API approval.
+**Redemption tracking:** codes are redeemed **in-store on William's external verification page**,
+and **party sales via `BDAY25` in Aluvii** (no API) — **NOT via GHL tags by default**. Reporting
+redemptions needs an export from William + an Aluvii count until William tags redeemed back to GHL.
+
+**Commands:** `/mj-ghl` · `/mj-redemptions` · `/mj-birthday` · `/mj-ads` · `/mj-report` (see Commands section).
+
+**Status:** Meta ads live (~$1,071 spend, ~298 leads @ ~$3.50); Google live (~$2,950 spend). Ads
+audit done. Open items: (1) **birthday scripts hard-code unconfirmed `$234/$194` party prices — fix
+or remove**; (2) reconcile our birthday drip with William's GHL-native workflow (double-send risk);
+(3) confirm how redemptions export from William/Aluvii; (4) WP has no birthday data yet; (5) this
+cloud session's **network policy blocks GHL/Meta/Google APIs** — live pulls run via GitHub Actions
+or from CSV exports.
 
 ---
 
@@ -260,7 +272,8 @@ execute** for anything that sends or changes live data.
 - **`/mj-ghl`** — GHL account health check & operations (audience counts, tag/custom-field audit, blasts)
 - **`/mj-redemptions`** — promo-code redemption tracking & channel attribution (reconciles the code scheme)
 - **`/mj-birthday`** — birthday-party funnel status & controls (drip + radar; reconciles the GHL-native workflow)
-- **`/mj-ads`** — Google + Facebook ads status, spend, and Meta controls (pause/enable/budget)
+- **`/mj-ads`** — Google + Facebook ads status, spend, audit, and Meta controls (pause/enable/budget)
+- **`/mj-report`** — weekly ops report + monthly on-brand corporate report (codes, redemptions, ads, parties)
 
 ---
 
