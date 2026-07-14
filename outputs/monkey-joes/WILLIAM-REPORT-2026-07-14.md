@@ -42,6 +42,36 @@ we're launching a party push now (see end).
 
 ---
 
+## 1b. Live GHL data (pulled from both sub-accounts, 2026-07-14)
+
+Both accounts connected fine. Live snapshot:
+
+| Metric | Pointe Orlando | Winter Park |
+|---|---:|---:|
+| Opted-in audience (`voucher-delivered`) | 112 | 146 |
+| Unsubscribed | 0 | 0 |
+| New opt-ins — last 30 days | 74 | 92 |
+| New opt-ins — last 7 days | **57** | 18 |
+| Birthday leads tagged | 110 | 145 |
+| Parties booked (GHL tag) | 0 | 0 |
+| Redemptions tracked (`promo-redeemed`) | 12 | 6 |
+| Child-birthday field | "Child Birthday **Date**" | "Child Birthday **Month**" |
+
+**What this tells us:**
+- **Opted-in audience is ~258 total, not 20k.** The 20k is the raw waiver DB; only ~258 have opted
+  in. Our paid retargeting for parties should target the **full list + site-visitor pixel
+  audiences**, not just these 258.
+- **POL is surging** — 57 of its 74 last-30-day opt-ins came in the **last 7 days**.
+- **18 redemptions are tracked in GHL** (`promo-redeemed`: 12 + 6). Good — that's real proof. But the
+  `redeemed-{loc}` tag is empty and the windowed count reads 0 (the reporting filters on contact
+  *creation* date, not when the redeemed tag was applied). **Q for you: which tag/field marks a
+  redemption, and can it carry a redemption date?**
+- **The two locations store the child's birthday differently** — POL a full **Date**, WP only a
+  **Month** — with different field IDs. The birthday radar can only key off one field, and WP's
+  month-only data can't anchor a precise 30-day reminder. Worth aligning.
+
+---
+
 ## 2. What I need from you (William) to complete Michael's report
 
 The ad numbers above are only half the funnel. The number Michael needs for corporate is
