@@ -128,12 +128,35 @@ def audit_location(loc: str, api_key: str, location_id: str) -> dict:
     redemption = grp("redeem")
     by_code = {}
     for code in ("bogo", "half", "welcome", "fjp", "bday25"):
-        vals = [c for t, c in redemption.items() if code in t.lower()]
+        vals = [c for t, c in redemption.items() if code in t.lower() and "promo-redeemed" not in t.lower()]
         if vals:
             by_code[code] = max(vals)  # the pair should match; max guards against one being stale
     res["redemptions_by_code"] = by_code
-    res["redemptions_total"] = sum(by_code.values())
+    res["redemptions_by_code_total"] = sum(by_code.values())
     res["redemption_tags_raw"] = redemption
+
+    # Resolve the TRUE unique redeemer count: union the contact IDs across every redemption tag,
+    # so the generic `promo-redeemed` tag and the by-code tags don't double-count or get dropped.
+    def ids_for(tag: str) -> set:
+        ids, page = set(), 1
+        while True:
+            st, data = _req("POST", f"{GHL_BASE}/contacts/search", api_key,
+                            {"locationId": location_id, "pageLimit": 100, "page": page,
+                             "filters": [{"field": "tags", "operator": "contains", "value": tag}]})
+            batch = data.get("contacts", []) if st in (200, 201) else []
+            if not batch:
+                break
+            ids |= {c.get("id") for c in batch if c.get("id")}
+            if len(batch) < 100:
+                break
+            page += 1
+        return ids
+    bycode_ids, promo_ids = set(), set()
+    for t in redemption:
+        got = ids_for(t)
+        (promo_ids if "promo-redeemed" in t.lower() else bycode_ids).update(got)
+    res["unique_redeemers"] = len(bycode_ids | promo_ids)
+    res["promo_redeemed_not_in_bycode"] = len(promo_ids - bycode_ids)
 
     res["campaign_sends"] = grp("weekend-stars", "bananas", "nudge", "blast")
     res["offer_leads"] = grp("-lead", "offer-", "voucher-delivered", "promo-issued")
@@ -160,7 +183,8 @@ def render_md(rep: dict) -> str:
         L += [
             f"- Connection: **ok** · {d['total_contacts']} total contacts in the account",
             f"- Opted-in (`voucher-delivered`): **{d['metrics']['voucher_delivered']}** · unsubscribed: {d['metrics']['unsubscribed']}",
-            f"- **Redemptions by code:** {d['redemptions_by_code'] or 'none'}  →  **total {d['redemptions_total']}**",
+            f"- **Redemptions by code:** {d['redemptions_by_code'] or 'none'}  →  by-code total {d.get('redemptions_by_code_total', 0)}",
+            f"- **Unique redeemers (all redemption tags): {d.get('unique_redeemers', 0)}**  (promo-redeemed not in by-code: {d.get('promo_redeemed_not_in_bycode', 0)})",
             f"- **BANANAS / nudge campaign sends:** {d['campaign_sends'] or 'none'}",
             f"- Birthday: {d['birthday'] or 'none'}",
             f"- Voice/inbound: {d['voice_inbound'] or 'none'}",
