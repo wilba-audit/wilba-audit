@@ -59,12 +59,30 @@ The ad numbers above are only half the funnel. The number Michael needs for corp
 
 ---
 
-## 3. Data gaps on my side (being resolved)
+## 3. By period (month 1 / month 2 / last week)
 
-- The Google + Meta exports I currently have are **pilot-cumulative ("all time")** — they don't
-  carry clean **last-30-day** and **last-7-day** splits. I'm re-pulling those dated windows so the
-  weekly + monthly view is exact. *(Once done, the "last 30d / last 7d" spend + CPA table drops
-  straight in here.)*
+**Honesty note on the source data:** the Google and Facebook exports are **"All time" aggregates —
+no date column**, so **spend and CPA cannot be split by month or week from them.** The only dated
+file is a daily **impressions** series, and it's **Pointe Orlando's Google account only**
+(its 26,016 total matches the POL Google report). So the by-period view below is **POL Google
+impressions**; the spend/CPA-by-period cells need a dated re-export (see the ask below).
+
+**Ads live from ~Apr 27, 2026** (kickoff was March; ramp took a few weeks).
+
+| Period | POL Google impressions | Spend | Conv. | CPA |
+|---|---:|---:|---:|---:|
+| Month 1 (Apr 27–May 26) | 11,234 | _pending dated export_ | _pending_ | _pending_ |
+| Month 2 (May 27–Jun 25) | 8,468 | _pending_ | _pending_ | _pending_ |
+| Month 3 (Jun 26–Jul 13, partial) | 6,314 | _pending_ | _pending_ | _pending_ |
+| Last 7 days (Jul 7–13) | 2,224 | _pending_ | _pending_ | _pending_ |
+
+*Read: POL Google reach peaked in Month 1 and has tapered — partly the partial current month, partly
+choppy delivery (62 of 88 days had impressions). Worth checking budget pacing.*
+
+**To fill the spend / conv / CPA columns** (2 min each in the platform UIs): re-export **Google Ads**
+and **Meta** with the date range set to each window — or run the live pull
+(`fetch_consolidated_reporting.py` already computes today / 7d / 30d / MTD). Drop those in and this
+table becomes exact for both locations and both platforms.
 
 ---
 
