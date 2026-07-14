@@ -63,11 +63,17 @@ deposit** over the phone.
 
 - **Party offer:** `BDAY25` — **$25 off** a party. Must be live + redeemable in Aluvii and named in
   every party touchpoint.
-- **Package(s):** `[CONFIRM]` — package names, tiers, prices, what's included, min/max kids, age
-  limits, deposit amount, cancellation policy. *None of this is in the source docs.* The FAQ shows
-  these were still to be gathered from **Nicole**. **⚠️ Our birthday scripts currently reference
-  "Jungle Experience from $234" and "weekday from $194" — those figures are NOT confirmed anywhere
-  and must be verified or removed before any more sends.**
+- **Packages (verified from monkeyjoes.com, July 2026):** all include a 2-hr private party suite, a
+  dedicated party pro, unlimited play, online invites, themed plates/napkins, a gift for the
+  birthday child, a Monkey Joe visit, and pizza + drinks.
+  - **Jungle Experience** — from **$314** (8 kids) · $374 (16) · $414 (24) · +$19/extra child
+  - **Island Excursion** — from **$394** (8) · $464 (16) · $524 (24) · +$22/extra · +ice cream + $5 game card/child
+  - **Extreme Safari** — top tier (~$500 range) · +$26/extra · +$10 arcade card + ice cream + goodie bag/child
+  - *Confirm any POL vs WP variance and whether these exact figures hold per location (the calls
+    noted WP is cheaper on admission/frequent-jumper — party packages are usually corporate-standard).*
+  - **✅ Fixed:** the scripts' old "$234 / $194" figures were wrong and have been corrected to the
+    real published price ($314, up to 8 kids); the invented "weekday $194" touchpoint was replaced
+    with an inclusions-focused message (no fabricated number).
 - **Winning message themes** (Michael's past winners + review mining):
   - *"Active kids = happy hearts ❤️"* (his best-ever performer)
   - *"Get the kids off the screen"*
