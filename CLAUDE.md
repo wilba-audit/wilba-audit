@@ -161,6 +161,36 @@ WILBA's first hospitality client. Two automations for Sean's surf/accommodation 
 
 ---
 
+### Monkey Joe's — Growth Operator (Client Pilot: POL + WP)
+
+WILBA's marketing-execution pilot for Michael Carter's two Orlando Monkey Joe's locations —
+**Pointe Orlando (POL)** and **Winter Park (WP)** — via William Milner / Lanyu. The stack runs on
+**GoHighLevel (GHL / LeadConnector)** as the CRM (one sub-account per location, driven entirely by
+contact tags), **Meta Marketing API** for Facebook/Instagram ads, and **Google Ads API** for
+reporting (pending dev-token approval). Everything keys off two audiences: `voucher-delivered`
+(opted-in) and `unsubscribed` (excluded).
+
+**Live automations (GitHub Actions — creds in repo Secrets, not `.env`):**
+- `mj-birthday-drip.yml` (daily) → `scripts/mj_birthday_sequence.py` — 180-day, 10-touchpoint birthday nurture from enrollment date
+- `mj-birthday-radar.yml` (weekly) → `scripts/mj_birthday_radar.py` — 90/60/30-day reminders before the child's actual birthday (needs `CHILD_BDAY_FIELD_ID`)
+- `mj-weekly-scorecard.yml` (Mon) → `scripts/mj_weekly_scorecard.py` — emails Jess a GHL+ads scorecard via Resend
+
+**Other scripts:**
+- `scripts/mj_weekend_bananas_blast.py` — the core GHL helper (fetch_audience / send_message / apply_cohort_tag) + one-off blasts
+- `scripts/mj_meta_manage.py` — Meta ads write control (list / pause / enable / budget, $60/day guardrail)
+- `scripts/fetch_consolidated_reporting.py` — joins GHL + Meta + Google into `outputs/monkey-joes/reporting/consolidated.json`
+
+**Docs:** `outputs/monkey-joes/` (note: strategy docs are from March and describe the pre-migration
+Aluvii/Constant Contact plan — GHL is the current reality; reconcile before trusting them).
+
+**Commands:** `/mj-ghl` · `/mj-redemptions` · `/mj-birthday` · `/mj-ads` (see Commands section).
+
+**Status:** Meta ads live. Birthday funnel running (reconcile with a GHL-native workflow to avoid
+double-sends). Open items: confirm the GHL redemption-tracking mechanism, wire `CHILD_BDAY_FIELD_ID`
+into Radar, and Google Ads API approval.
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
@@ -220,6 +250,17 @@ Example: `/implement plans/2026-01-28-competitor-analysis-command.md`
 Deep-dives the code first to fully understand it, then produces a self-contained, beginner-friendly package with a Claude-guided installer (INSTALL.md + README.md + scripts). The recipient gives the folder to Claude Code and says "read INSTALL.md and set this up" — Claude walks them through everything step by step. Runs a 6-stage interactive flow: Research → Scope → Frame → Write → Validate → Deliver. Outputs to `shares/`.
 
 Example: `/share the daily brief system`
+
+### Monkey Joe's commands
+
+Four operator commands for the Monkey Joe's pilot. Each runs a repeatable procedure so Jess can
+check or operate the account without needing the developer. All follow **dry-run → confirm →
+execute** for anything that sends or changes live data.
+
+- **`/mj-ghl`** — GHL account health check & operations (audience counts, tag/custom-field audit, blasts)
+- **`/mj-redemptions`** — promo-code redemption tracking & channel attribution (reconciles the code scheme)
+- **`/mj-birthday`** — birthday-party funnel status & controls (drip + radar; reconciles the GHL-native workflow)
+- **`/mj-ads`** — Google + Facebook ads status, spend, and Meta controls (pause/enable/budget)
 
 ---
 
