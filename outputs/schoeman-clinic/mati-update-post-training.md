@@ -43,7 +43,30 @@ Thanks so much Mati — really happy with how today landed. I'll get the team su
 - Twilio: asked Gina to choose the caller ID / callback behaviour — **Opt 1 (preferred)** clinic's own number 020 3006 3224 as caller ID (verification risk via bOnline landline, as with WhatsApp); **Opt 2** new London number redirecting to the clinic (reliable, unfamiliar number); **Opt 3** new number, no callback. Can proceed without the GHL top-up; already asked Gina last Friday.
 - KB sign-off: "Did you send her this? How does she sign it off?"
 
-## Jess's response (drafted)
+## FINAL — one combined message to the group (Mati + Griffin)
+
+Hey both! 😊 Quick update after tonight's team training — it went really well, Zoey, Isabell and Lisa were all lovely and keen. (Heads up: Isabell's off for 4 weeks from Monday, so we'll be a touch short-handed while everyone settles in.)
+
+**Mati —**
+- Number's sorted, thanks — it was just the FAQ page (contact page was always right).
+- Semble notes = Phase 2, perfect. I'll keep the team copying the important bits into Semble for now and let them know when it becomes automatic.
+- Thanks for asking Gina about the calendar/discovery calls, prescriptions and escalations — no rush at all.
+- Twilio: I'm with you, Option 1 (clinic's own number as caller ID) is the nicest for patients; Option 2's a solid fallback. Whatever Gina prefers.
+- Knowledge base — she's already got it; I left the last questions with her to finish in her own time on our last call, so I'm just chasing those gently. Nothing extra to send.
+- One little thing — a couple of the team mentioned they were expecting you and weren't quite sure who I was, so might be worth you dropping them and Gina a quick line on who does what, just so they're comfortable coming to me for the GHL/WhatsApp side. 😊
+
+**Griffin —**
+- On Twilio Option 1: it needs the clinic landline (020 3006 3224) to verify via an automated call — which is the exact bOnline routing that tripped us up on the WhatsApp setup. Before Gina commits to Option 1, can you sanity-check whether it'll actually verify this time? If it won't, we steer her to Option 2.
+- Quick flow check: the clinically important bits (prescription requests etc.) that land in GHL — they get onto the patient's Semble record manually for now, then the Phase 2 sync automates it, right? Just want to make sure I'm describing it correctly to the team.
+- And roughly when do you reckon that WhatsApp→Semble sync (Phase 2) lands? No pressure — just want a ballpark so I set expectations right.
+
+Still waiting on from Gina/Mati's side: Gina topping up GHL for the phone number, her decisions above, and the FAQ number fix. Everything else is moving nicely.
+
+Thanks team — really happy with how today landed! x
+
+---
+
+## (earlier) Mati-only draft — superseded by the combined group message above
 
 No worries at all, enjoy being out! Quick replies, no rush 😊
 
