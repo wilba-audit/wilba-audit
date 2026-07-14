@@ -23,7 +23,14 @@
 - **Holiday date-range blocking** — GHL changed the UI (one date at a time); Jess to set **Isabell's 4-week leave (from Mon 20 Jul → back 16 Aug)** on the backend; Isabell's workdays change on return (Mon–Fri → Tue–Fri, covering Lisa first week).
 - Send team follow-up summary + set up WhatsApp group.
 
-**Deliverables in this folder:** `mati-update-post-training.md` (message to Mati), `Schoeman-Clinic-Team-FollowUp.docx` (team hand-out), `team-guide.html` / `.docx` (fuller reference), `training-agenda.html` / `Schoeman-Clinic-GHL-Team-Training-Agenda.docx` (presenter run sheet), `Schoeman-Clinic-GoLive-Payment-Milestones.docx` (Mati payment note).
+**Deliverables in this folder:** `mati-update-post-training.md` (message to Mati + his reply + Jess's response), `Schoeman-Clinic-Team-FollowUp.docx` (team hand-out), `team-guide.html` / `.docx` (fuller reference), `training-agenda.html` / `Schoeman-Clinic-GHL-Team-Training-Agenda.docx` (presenter run sheet), `Schoeman-Clinic-GoLive-Payment-Milestones.docx` (Mati payment note).
+
+### Mati's reply (13 Jul) — status updates
+- **Website number** ✅ Mati confirmed contact page was always correct; the wrong number was on the **FAQ page** — he's asking them to fix it. Closed on our side.
+- **Semble notes** ✅ Mati **confirmed Phase 2** — "keep copying to Semble for now" is the agreed interim.
+- **Gina's decisions** — Mati is asking Gina about (1) her calendar/discovery calls, (2) prescriptions, (3) clinical escalations. In motion.
+- **Twilio number** — Mati gave Gina 3 caller-ID options: **Opt 1 (preferred)** use clinic's existing number **020 3006 3224** as caller ID (background Twilio number places the call; risk = verification needs an automated call to the bOnline landline, which failed during WhatsApp setup — may hit same wall; try first, work with Lisa); **Opt 2** new London number redirecting back to the clinic (reliable, but patients see an unfamiliar number); **Opt 3** new number, no callback (poor UX). **Can proceed even without the GHL top-up.** Awaiting Gina's pick. → *Loop Griffin in: he knows the bOnline routing history from WhatsApp.*
+- **Knowledge base sign-off** — Mati asked how Gina signs off. Clarified: KB is Mati's draft (the blue-fill doc); sign-off = Gina reviews the finished answers and OKs them (a quick call suits her better than typing), then WILBA/Mati lock that version as the approved replies — only needed before switching on AI suggestive mode, so not urgent.
 
 ---
 

@@ -31,3 +31,30 @@ Okay — your questions, and a few things that came out of today:
 **And the bits we're still waiting on from your/Gina's end:** Gina topping up GHL for the phone number, sign-off on the knowledge base + replies, the marketing/GDPR consent wording, and that website number update.
 
 Thanks so much Mati — really happy with how today landed. I'll get the team summary and a WhatsApp group set up with them now. x
+
+---
+
+## Mati's reply (13 Jul, out and about)
+
+- All clear now.
+- Number: contact page is correct; the wrong one was on the FAQ page — he'll ask them to correct it.
+- Semble notes = **Phase 2** (confirmed).
+- Will ask Gina: (1) her calendar & discovery calls, (2) prescriptions, (3) clinical escalations.
+- Twilio: asked Gina to choose the caller ID / callback behaviour — **Opt 1 (preferred)** clinic's own number 020 3006 3224 as caller ID (verification risk via bOnline landline, as with WhatsApp); **Opt 2** new London number redirecting to the clinic (reliable, unfamiliar number); **Opt 3** new number, no callback. Can proceed without the GHL top-up; already asked Gina last Friday.
+- KB sign-off: "Did you send her this? How does she sign it off?"
+
+## Jess's response (drafted)
+
+No worries at all, enjoy being out! Quick replies, no rush 😊
+
+**Number** — perfect, thank you! It was just the FAQ page we'd spotted (contact page was always right), so glad that's getting sorted.
+
+**Semble notes** — great, exactly what I thought. I'll make sure the team keep putting the important bits into Semble for now, and let them know when it becomes automatic.
+
+Thank you for asking Gina about the calendar/discovery calls, prescriptions and escalations — no rush on those at all.
+
+**On the Twilio number** — I'm with you, Option 1 is the nicest for patients (seeing the familiar clinic number). Only flag: Griffin already ran into that exact bOnline verification issue when we set up WhatsApp, so it's worth looping him in with you and Lisa so we're not hitting the same wall blind — and Option 2 is a totally solid fallback if it won't verify. Whatever Gina prefers works for us.
+
+**On the knowledge base sign-off** — I haven't sent Gina anything separately; the KB is the doc you've been building with Claude (the one we've been filling in together). For sign-off, simplest is: once the answers are all in, we send Gina the finished version, she has a read and gives her OK — honestly a quick call walking through it works better for her than typing — and we lock that as the approved replies. It only really matters just before we switch on the AI suggested-reply mode, so no rush at all — but I'm happy to help get it over the line whenever you want to.
+
+Thanks Mati, have a lovely day out! x
