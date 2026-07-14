@@ -1,1220 +1,163 @@
 {
-  "generated_at": "2026-07-14T03:43:13+00:00",
+  "generated_at": "2026-07-14T04:01:23+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
       "connection": "ok",
-      "tags": {
-        "voucher-delivered": 112,
-        "unsubscribed": 0,
-        "birthday-pol-lead": 110,
-        "birthday-pol-booked": 0,
-        "redeemed-pol": 0,
-        "promo-redeemed-pol": 12
+      "total_contacts": 6000,
+      "with_email": 5986,
+      "with_phone": 241,
+      "all_tags": {
+        "pol": 152,
+        "promo-issued": 152,
+        "offer-half": 126,
+        "half-pol-lead": 125,
+        "weekly-list": 96,
+        "voucher-optin-pending": 61,
+        "voucher-delivered": 60,
+        "bday-start-2026-07-06": 60,
+        "weekend-stars-email-pol-2026-06-30": 59,
+        "birthday-pol-lead": 59,
+        "nudge-sms-may2026": 53,
+        "nudge-email-may2026": 52,
+        "bogo-pol-lead": 33,
+        "voice-agent-sms": 12,
+        "inbound-call-po": 12,
+        "topic-party": 12,
+        "wp": 9,
+        "bogo-wp-lead": 8,
+        "half-redeemed": 5,
+        "redeemed-half": 5,
+        "sms-unsub": 3,
+        "unsubscribed-sms": 3,
+        "no sms": 3,
+        "no-sms-consent": 3,
+        "welcome-redeemed": 3,
+        "redeemed-welcome": 3,
+        "bogo-redeemed": 2,
+        "redeemed-bogo": 2,
+        "birthday-inquiry": 2,
+        "promo-redeemed-pol": 2,
+        "half-wp-pol": 1,
+        "fjp-po": 1,
+        "claude-final-test": 1,
+        "voucher-optin-requested": 1,
+        "voucher-delivered-resend": 1
       },
-      "custom_fields": {
-        "count": 147,
-        "all": [
-          {
-            "id": "0Q4M7prUBGBm2mlMfcio",
-            "name": "Chat-GPT"
-          },
-          {
-            "id": "0fc38AyhV5uQkMrhUiPA",
-            "name": "Do you offer leather repair? If so, how much do you charge?"
-          },
-          {
-            "id": "0lliKUwVMXKLLQaK1N7H",
-            "name": "Should incomming calls from leads be forwarded to you?"
-          },
-          {
-            "id": "1ut1qMdV0NKy5PN4fmyP",
-            "name": "General + Detailed Info about your leads for initial touchpoint"
-          },
-          {
-            "id": "2J4Bjc9pwrRW9rlGj7bm",
-            "name": "How did you acquire your leads?"
-          },
-          {
-            "id": "2pehiKxhcnBDHKeQAO7n",
-            "name": "Legal Business Name"
-          },
-          {
-            "id": "3DtOeJKpXqXGgs8AcHAr",
-            "name": "Do you have a shop? Or are you fully mobile? "
-          },
-          {
-            "id": "3HJ8vgLostGQV9mVBml1",
-            "name": "What is the headcount of your company?"
-          },
-          {
-            "id": "3OfjxCTx1n0o6CSxQDoj",
-            "name": "What products do you use?"
-          },
-          {
-            "id": "3SARHOoeKi1atiHqvmDR",
-            "name": "half-pol-claimed"
-          },
-          {
-            "id": "3lwSedQDiyNSmqxFcM6w",
-            "name": "Ease of use - how easy is our product to utilize?"
-          },
-          {
-            "id": "4RjL8r2RskE7BKksKT1a",
-            "name": "Code Expires At"
-          },
-          {
-            "id": "4dW6Ni9njQByJweCW8ip",
-            "name": "Child Birthday Date"
-          },
-          {
-            "id": "5DroASkZeeVGPlOL37xp",
-            "name": "What do you charge for paint correction? "
-          },
-          {
-            "id": "5FdSusSwfYhYwunsXJRO",
-            "name": "I agree to receive SMS messages from Shiney"
-          },
-          {
-            "id": "5guNKz4HxQkVt5bJfhs7",
-            "name": "Do you do PPF?"
-          },
-          {
-            "id": "5lkBoBYDjbSSntnAePAZ",
-            "name": "Redeemed Date"
-          },
-          {
-            "id": "6B08PwaExTv3XMW7v5Sb",
-            "name": "bogo-wp-claimed-at"
-          },
-          {
-            "id": "6Ut3VgguHovPG3x8wH1U",
-            "name": "What is your availability?"
-          },
-          {
-            "id": "6nIDAOouLXvftXioLiSN",
-            "name": "Do you want us to follow up on your feedback or do you have specific concerns that require attention?"
-          },
-          {
-            "id": "6sXKGDhREbCRUNASp6HO",
-            "name": "What is included in your exterior detail?"
-          },
-          {
-            "id": "7SJgv22BFkaWglyJcwPW",
-            "name": "What company are you with?"
-          },
-          {
-            "id": "7WQv8nkf6x28rI3L0cEJ",
-            "name": " What is your Tax number (for your A2P Application)? You need a phone number to be A2P compliant which the Ai will use."
-          },
-          {
-            "id": "7ZiBelfvUdeWG9Cs9lLi",
-            "name": "What problems/objections do you most face when selling your services?"
-          },
-          {
-            "id": "8LVcWxBjk0MzbBt42MRV",
-            "name": "BOGO WP Code"
-          },
-          {
-            "id": "8xdUme7v5ueBpCLlQrrQ",
-            "name": "HALF WP Code"
-          },
-          {
-            "id": "9q1rrvu86y5xOLya1Zus",
-            "name": "Password to use for CRM login"
-          },
-          {
-            "id": "AF4m9NVPlNZw6N5oJXAC",
-            "name": "What is your company headcount?"
-          },
-          {
-            "id": "AHdk70O5v1HLrCtB0Sgi",
-            "name": "SMS Optin Code"
-          },
-          {
-            "id": "BCCw8UtSUoKuH9SW1jtG",
-            "name": "Have you encountered any challenges or issues while using our AI product? If so, please describe them in detail:"
-          },
-          {
-            "id": "BE5fg1jDJ4huQGRiXbkP",
-            "name": "What are your opening hours? And do you work weekends?"
-          },
-          {
-            "id": "BV4O4OSyQg5ARWbZFBab",
-            "name": "Do you install batteries?"
-          },
-          {
-            "id": "CVies5wop3HzCAXJkO40",
-            "name": "How many aged leads do you have access to?"
-          },
-          {
-            "id": "CmcoO38dn8YRFd80Gaxz",
-            "name": "bogo-pol-claimed"
-          },
-          {
-            "id": "Cv0tdkmvkHK7FFuPQ50Q",
-            "name": "Email to use for CRM login"
-          },
-          {
-            "id": "Dw2rMf29Yb06e6ZKTTtk",
-            "name": "google_click_id"
-          },
-          {
-            "id": "E8uUogQ0PbcNBNIUTIwe",
-            "name": "Is there anything else you would like to share with us about your experience with our AI product or any other feedback you believe would be helpful?"
-          },
-          {
-            "id": "EM55DEP0ab7xUODhkqm4",
-            "name": "How many aged leads does your company have access to?"
-          },
-          {
-            "id": "Es1H0m4uT4kQyhkHOyZS",
-            "name": "Location"
-          },
-          {
-            "id": "FIXOVv2VlJrH3G5dI1mI",
-            "name": "What legal business type do you have?"
-          },
-          {
-            "id": "FT5QZ56EdCy9PcBlFDRN",
-            "name": "bogo-pol-claimed-by"
-          },
-          {
-            "id": "FnASHB4E4Zsbovs6zlcF",
-            "name": "product_purchased"
-          },
-          {
-            "id": "G8sxl78Z37J2jTuplUf5",
-            "name": "Explain your exact process in detail"
-          },
-          {
-            "id": "GVQEkxKmRWFOADkitMiw",
-            "name": "sms-optin-claimed"
-          },
-          {
-            "id": "HLQRFGaDzzOILXiKlj0U",
-            "name": "What are specifc value propositions your company offers?"
-          },
-          {
-            "id": "HsbhZKxgoPO64G2EN7Ki",
-            "name": "Redeemed Code"
-          },
-          {
-            "id": "Ia9dSxxZrHgXhePlbhXU",
-            "name": "How Long Have you been in Business?"
-          },
-          {
-            "id": "IfGYTX71hwflcagr2kEz",
-            "name": "What is the name of the Sales Rep that will be taking the appointments?"
-          },
-          {
-            "id": "JFIayyYnkjvqDZbyzQ6X",
-            "name": "Do you do ceramic coatings?"
-          },
-          {
-            "id": "JbNzeWmPeKeHeBhbaIhK",
-            "name": "Time saving capabilities - are you saving time?"
-          },
-          {
-            "id": "JpWpgRAnZOdeBPdDZG4d",
-            "name": "Do you provide cars for loan?"
-          },
-          {
-            "id": "K17HIECALnNPpgdOohJz",
-            "name": "How many leads do you have coming in every month?"
-          },
-          {
-            "id": "K2XfKilM3dmqAWcHY6tg",
-            "name": "Review Response"
-          },
-          {
-            "id": "K40FnakcVnxGMMPeSZKC",
-            "name": "Any additional comments or suggestions regarding AI features and functionality:"
-          },
-          {
-            "id": "KE8ugRAKsv5XIA0lbkj0",
-            "name": "fjp-po-code"
-          },
-          {
-            "id": "KsAT1UadPOpdZq5TLqQE",
-            "name": "How old are the leads?"
-          },
-          {
-            "id": "LWYiDAnYn08jicDavXcC",
-            "name": "What is your Business Adress (for A2P Application)?"
-          },
-          {
-            "id": "LiBEIw8uVZjAufO7RQ7T",
-            "name": "Inquiry Source Page"
-          },
-          {
-            "id": "ML8ClkeyiAko5ZKfEXt7",
-            "name": "utm_term"
-          },
-          {
-            "id": "N0JugoYr1Wd0ljwGJfmN",
-            "name": "What area are you servicing (area if mobile, address if you have shop)"
-          },
-          {
-            "id": "N5q1CmMbnX6ZMHnTH6GY",
-            "name": "utm"
-          },
-          {
-            "id": "NCdxtLL1tHGHLYlSez2k",
-            "name": "Do you offer engine bay cleanings If so, how much do you charge?"
-          },
-          {
-            "id": "NebmQU5CnpKSTrTd77fS",
-            "name": "What is included in your interior detail?"
-          },
-          {
-            "id": "Nv1vraMjXp8DzKCxz0hA",
-            "name": "Do you do polishing/paint corrections?"
-          },
-          {
-            "id": "NzazVxAeCYHfqH8aExBl",
-            "name": "waiver_status"
-          },
-          {
-            "id": "OBaXCTSuEapSMKhf1Cqb",
-            "name": "What is your role in the company?"
-          },
-          {
-            "id": "OoAHubIP90HfVIKx4htB",
-            "name": "sms-optin-claimed-by"
-          },
-          {
-            "id": "OuAzBMWuiOFeAbYVB55t",
-            "name": "What is your google my business page? (Link)"
-          },
-          {
-            "id": "OynBBrLzB6id4WLNlToy",
-            "name": "Staff FJC Entry"
-          },
-          {
-            "id": "P34TClSC0LbgT3LjmeS8",
-            "name": " How many calls can be scheduled every 30 minutes?"
-          },
-          {
-            "id": "PLzMFLpMmo8yUzsCtyaB",
-            "name": "Lead Response"
-          },
-          {
-            "id": "PUvcSinjhRFW16zRg4nX",
-            "name": "What is the size of your team?"
-          },
-          {
-            "id": "PxKAGcFa9OVYzgkMolT1",
-            "name": "We have a variety of scripts and educational guides. Do you wish to use these? SKIP THIS PAGE IF (NO)"
-          },
-          {
-            "id": "QDacpi1LBlX5vJ4OISiA",
-            "name": "Is there anyone else besides you, that needs to be on the call, who needs the information? (Significant Other, Business Partner, etc.)"
-          },
-          {
-            "id": "QINYVqZqCbPmty7iSH1t",
-            "name": "Do you take prepaid deposits? "
-          },
-          {
-            "id": "QqNPEhgeMFi0AhWnKrlB",
-            "name": "Child Birthday (MM-DD)"
-          },
-          {
-            "id": "R5POR2KvMHeIeRSPf6Oz",
-            "name": "What is your website? (link)"
-          },
-          {
-            "id": "S9BbYm9LdC5CURsLlhoi",
-            "name": "half-pol-claimed-by"
-          },
-          {
-            "id": "SPXYGizOGAYHMQrOykVN",
-            "name": "Legal Business Address"
-          },
-          {
-            "id": "TbFrv8Ezdh1i0ICn7Apj",
-            "name": "sms-optin-claimed-at"
-          },
-          {
-            "id": "TdPLNaLevA9ihDSe2QXO",
-            "name": "How likely are you to recommend our AI product to others? (On a scale of 0 to 10)"
-          },
-          {
-            "id": "TiE3GkVX86Ot1KgTDi1E",
-            "name": "half-wp-claimed"
-          },
-          {
-            "id": "UQ3ibgl7BBUslyHVGjq8",
-            "name": "I agree to receive SMS messages from Shiney"
-          },
-          {
-            "id": "UzqXyVCX834arD5cpDlB",
-            "name": "utm_source"
-          },
-          {
-            "id": "VjDjqRxjoUV7huw1GJwK",
-            "name": "bogo-wp-claimed-by"
-          },
-          {
-            "id": "WIlnyU1oSsuPfPTILGhd",
-            "name": "Wants To Schedule?"
-          },
-          {
-            "id": "WjCLxlBVtsAsfFQsceU9",
-            "name": "SMS Consent"
-          },
-          {
-            "id": "WkYJaM32btSCGYmLZ07J",
-            "name": "On a scale of 1 to 5, how would you rate your overall satisfaction with our AI product?"
-          },
-          {
-            "id": "YPJmOxyous5mvFsc8iXT",
-            "name": "utm_content"
-          },
-          {
-            "id": "Z13tyPpzJsdSWgSHKmON",
-            "name": "Any special value proposition or promotion you can offer these leads?"
-          },
-          {
-            "id": "ZBoo4hz7t5lfjx1W7XpU",
-            "name": "Review Feedback"
-          },
-          {
-            "id": "ZL7f1X5kuPdQLqQmr5fw",
-            "name": "On a scale of 1 to 5, with 5 being highly satisfied and 1 being highly dissatisfied, how would you rate your overall satisfaction with our AI product?"
-          },
-          {
-            "id": "ZRNQnzIiIial4VIUfXRb",
-            "name": "Do you offer waxing? If so, how much do you charge? "
-          },
-          {
-            "id": "ZiRfzihau5c0ADmFuunS",
-            "name": "BOGO POL Code"
-          },
-          {
-            "id": "ZpwkfjOtATJR1wXBB1CK",
-            "name": "Please share any specific feedback or comments about your experience with us"
-          },
-          {
-            "id": "aD0jirdxGsjjYTXtQ4Fc",
-            "name": "Inquiry Submitted At"
-          },
-          {
-            "id": "bquQIO3H1y890bvSVjR0",
-            "name": "How satisfied are you with out customer support? (On a scale of 1-5)"
-          },
-          {
-            "id": "cU1VWcgBf7fn9UUBpJuy",
-            "name": "What information / data do you have on your leads?"
-          },
-          {
-            "id": "cjTZbMpoXBc48aWgV6LO",
-            "name": "Unique Prompt"
-          },
-          {
-            "id": "dHezkcylqip85fkFIEjU",
-            "name": "I agree and give consent to receive SMS messages from Shiney"
-          },
-          {
-            "id": "dgU2Zd39UrWTdtj6cBCO",
-            "name": "What number do you want customers to contact you at?"
-          },
-          {
-            "id": "diSt05OM6I37ORp3gntQ",
-            "name": "Staff Name"
-          },
-          {
-            "id": "eRa58SHUbtYxVjP9neRG",
-            "name": "Which area code (phone number) would you prefer the AI reaching out from? Please state multiple options."
-          },
-          {
-            "id": "hUY0VTLArkjxhzTI80iq",
-            "name": "When we run a Reactivation Campaign do you already now have an idea what offer you want to run?"
-          },
-          {
-            "id": "hXwAn3pU9tC3jQreoi00",
-            "name": "Additional lead information / data not listed above"
-          },
-          {
-            "id": "hfdMlwuYn0UfMpGT9bew",
-            "name": "What is the name of your business?"
-          },
-          {
-            "id": "hiYkrc4f8nE97seXpW9J",
-            "name": "Redeemed Location"
-          },
-          {
-            "id": "hlSDJ3eDwlHM5T48UDIq",
-            "name": "Sales rep(s) name and phone number(s) - (We need the phone number they will call leads from)"
-          },
-          {
-            "id": "hvwBrHGIr3tpKSPmh3Rh",
-            "name": "half-wp-claimed-by"
-          },
-          {
-            "id": "j0GDV2UO2Br97rPAYgrL",
-            "name": "Child Birthday Month"
-          },
-          {
-            "id": "j6KNgChNUjo0mqXHSgLc",
-            "name": "What is your Facebook Page (link)"
-          },
-          {
-            "id": "jSOZ1CxFxnEwMTUUPG3F",
-            "name": "Child Age"
-          },
-          {
-            "id": "jW18PDTBwX5t5OMPwVxz",
-            "name": "How much do you charge for interior+exterior detail (For sedans, Trucks, SUVs)"
-          },
-          {
-            "id": "kuBEt1lxlv0Xn9hWUKdC",
-            "name": "bogo-pol-claimed-at"
-          },
-          {
-            "id": "l3K7qUe5mBrMpiqtiNQV",
-            "name": "Last Message"
-          },
-          {
-            "id": "lIj7hOtpYwlBHFRNA5F2",
-            "name": "fjp-po-claimed-at"
-          },
-          {
-            "id": "lOVHBNZVWbmSqGSjHY1e",
-            "name": "What timezone are you in? (rep)"
-          },
-          {
-            "id": "lVYpKQVbXUtsOm7Gtc7B",
-            "name": "waiver_signed"
-          },
-          {
-            "id": "lpIZhBYjQ868Y9nUOgSh",
-            "name": "How long do you need the vehicle? "
-          },
-          {
-            "id": "luEHZpeuKproUBC0uFqf",
-            "name": "Additional company information"
-          },
-          {
-            "id": "lweNt4HlkWwmilFt21HB",
-            "name": "bogo-wp-claimed"
-          },
-          {
-            "id": "m5janTDUt8VCwQpSMhkg",
-            "name": "Thread"
-          },
-          {
-            "id": "mGiYsDiOFBE1Oj07anwN",
-            "name": "Referral:"
-          },
-          {
-            "id": "mt0d2WGDWB3T0Zn8OTcE",
-            "name": "Opening hours for your sales team (When is your sales team available?)"
-          },
-          {
-            "id": "nKWjDx7ZLc1GLmsQc51Y",
-            "name": "How much do you charge for an interior/exterior detail?"
-          },
-          {
-            "id": "ne9WqLqbXWjo7aUa1kBo",
-            "name": "HALF POL Code"
-          },
-          {
-            "id": "nqFJcOpXk7WRxuMQ1wl7",
-            "name": "half-wp-claimed-at"
-          },
-          {
-            "id": "o2jBS2iX81GNhk7IQhWh",
-            "name": "sHow likely are you to recommend our AI product to others (On a scale of 0 to 10)?"
-          },
-          {
-            "id": "ocld0aTUOqaHHOm9uupx",
-            "name": "utm_medium"
-          },
-          {
-            "id": "pCFcRkfxA9oaokn7zO8H",
-            "name": "What's your role in the company?"
-          },
-          {
-            "id": "qM5HnN3BbS8LakLM3eFe",
-            "name": "Do you offer any negotiation options to make your services more appealing or affordable?"
-          },
-          {
-            "id": "qSmWQObukyqn3zfWjd8M",
-            "name": "Multi Dropdown 3azi"
-          },
-          {
-            "id": "qZAAXq1Szpyflp4GJ9Ft",
-            "name": "Offer Type"
-          },
-          {
-            "id": "rZMv9nuNDoVhUGTUEbQE",
-            "name": "verify-outcome"
-          },
-          {
-            "id": "sOmfTPAWmcwhJV5DCiR7",
-            "name": "Efficiency in automating revenue for you"
-          },
-          {
-            "id": "sYKtvoljwf2Ngm260ygB",
-            "name": "utm_campaign"
-          },
-          {
-            "id": "tsFNsHdoWBiwTENHknBz",
-            "name": "AI Response"
-          },
-          {
-            "id": "tsZPlpo7cxM4v5Ip9wW3",
-            "name": "User Response"
-          },
-          {
-            "id": "v3Mu7cuN5tOjpPTyk1GF",
-            "name": "What number do you use for WhatsApp (If you don't have it, please download it and make user)"
-          },
-          {
-            "id": "vIVP5pxGRt4HYVS8GMRA",
-            "name": "fjp-po-claimed"
-          },
-          {
-            "id": "xCIGaH8eDIJHf61s0CXG",
-            "name": "half-pol-claimed-at"
-          },
-          {
-            "id": "xoa6fWSR0cHwaC0eJQY5",
-            "name": "What is your Instagram (link)"
-          },
-          {
-            "id": "xy7lD0jrho7ab3Oewmxy",
-            "name": "How long does an interior+exterior detail take you? "
-          },
-          {
-            "id": "yXdTp5WOOH28YDLO1iK0",
-            "name": "FJP Code"
-          },
-          {
-            "id": "yh43Kd8Jrt6m7VqtSsdn",
-            "name": "Memory"
-          },
-          {
-            "id": "zLquwUdwYXJ4f09LxUZI",
-            "name": "Preferred Party Date"
-          },
-          {
-            "id": "znH1TKcDeyp4EcFct0vK",
-            "name": "fjp-po-claimed-by"
-          }
-        ],
-        "child_birthday": {
-          "id": "4dW6Ni9njQByJweCW8ip",
-          "name": "Child Birthday Date",
-          "dataType": "DATE"
-        }
+      "redemption_tags": {
+        "bogo-redeemed": 2,
+        "redeemed-bogo": 2,
+        "half-redeemed": 5,
+        "redeemed-half": 5,
+        "welcome-redeemed": 3,
+        "redeemed-welcome": 3,
+        "promo-redeemed-pol": 2
+      },
+      "campaign_tags": {
+        "weekend-stars-email-pol-2026-06-30": 59
+      },
+      "offer_lead_tags": {
+        "half-pol-lead": 125,
+        "offer-half": 126,
+        "bogo-pol-lead": 33,
+        "bogo-redeemed": 2,
+        "redeemed-bogo": 2,
+        "half-redeemed": 5,
+        "redeemed-half": 5,
+        "voucher-delivered": 60,
+        "welcome-redeemed": 3,
+        "redeemed-welcome": 3,
+        "bogo-wp-lead": 8,
+        "half-wp-pol": 1,
+        "fjp-po": 1,
+        "voucher-delivered-resend": 1
+      },
+      "birthday_tags": {
+        "birthday-pol-lead": 59,
+        "bday-start-2026-07-06": 60,
+        "birthday-inquiry": 2
+      },
+      "metrics": {
+        "voucher_delivered": 60,
+        "unsubscribed": 0,
+        "redemptions_total": 22,
+        "birthday_leads": 59,
+        "birthday_booked": 0
+      },
+      "custom_fields_count": 147,
+      "child_birthday_field": {
+        "id": "4dW6Ni9njQByJweCW8ip",
+        "name": "Child Birthday Date",
+        "dataType": "DATE"
       }
     },
     "WP": {
       "location_id": "yaRfypmZfcGDtpGEz3Gz",
       "connection": "ok",
-      "tags": {
-        "voucher-delivered": 146,
-        "unsubscribed": 0,
-        "birthday-wp-lead": 145,
-        "birthday-wp-booked": 0,
-        "redeemed-wp": 0,
-        "promo-redeemed-wp": 6
+      "total_contacts": 6000,
+      "with_email": 5988,
+      "with_phone": 5997,
+      "all_tags": {
+        "wp": 196,
+        "promo-issued": 196,
+        "offer-half": 186,
+        "half-wp-lead": 186,
+        "weekly-list": 185,
+        "nudge-email-may2026": 30,
+        "voucher-optin-pending": 21,
+        "voucher-delivered": 21,
+        "weekend-stars-email-wp-2026-06-30": 21,
+        "birthday-wp-lead": 21,
+        "bday-start-2026-07-06": 21,
+        "nudge-sms-may2026": 17,
+        "half-redeemed": 13,
+        "redeemed-half": 13,
+        "voice-agent-sms": 12,
+        "inbound-call-wp": 12,
+        "topic-party": 12,
+        "bogo-wp-lead": 11,
+        "sms-unsub": 7,
+        "unsubscribed-sms": 7,
+        "no sms": 7,
+        "no-sms-consent": 7,
+        "welcome-redeemed": 2,
+        "redeemed-welcome": 2
       },
-      "custom_fields": {
-        "count": 146,
-        "all": [
-          {
-            "id": "07NAUpdsoNMgVYt85f8w",
-            "name": "What is your website? (link)"
-          },
-          {
-            "id": "17ypcp7Z8cdF6H23YVx0",
-            "name": "How long do you need the vehicle? "
-          },
-          {
-            "id": "1HQYuVtxEPpUh0hgGT3R",
-            "name": "Location"
-          },
-          {
-            "id": "1avNSBynErBln233a9Da",
-            "name": "What area are you servicing (area if mobile, address if you have shop)"
-          },
-          {
-            "id": "27ZHoIECyuyLM6ACYMeH",
-            "name": " What is your Tax number (for your A2P Application)? You need a phone number to be A2P compliant which the Ai will use."
-          },
-          {
-            "id": "2Oc7bBQi6Cdel1wyMxoF",
-            "name": "How Long Have you been in Business?"
-          },
-          {
-            "id": "2RA5EKEDsYdHet7jz2Bo",
-            "name": "Inquiry Source Page"
-          },
-          {
-            "id": "2skvncsYb13c0K9GwUWf",
-            "name": "product_purchased"
-          },
-          {
-            "id": "3e58Kc7bkZlQyRdUelLI",
-            "name": "I agree and give consent to receive SMS messages from Shiney"
-          },
-          {
-            "id": "3fa31sG2J5UGvSY12RaY",
-            "name": "Redeemed Date"
-          },
-          {
-            "id": "3o5ksm4l5w12ky95w0fM",
-            "name": "Wants To Schedule?"
-          },
-          {
-            "id": "4Gyt8wBRv3wHkorlEVIp",
-            "name": "SMS Optin Code"
-          },
-          {
-            "id": "4NTvX4WX7eitBfMlCY4R",
-            "name": "Do you take prepaid deposits? "
-          },
-          {
-            "id": "5NHdHTq3ZeRNa0VR1yhS",
-            "name": "What products do you use?"
-          },
-          {
-            "id": "5bEUhah2XVO9XJv2qxxo",
-            "name": "What problems/objections do you most face when selling your services?"
-          },
-          {
-            "id": "6HlLv7t4lI4p7Zp7comm",
-            "name": "What is the headcount of your company?"
-          },
-          {
-            "id": "6W9qZeh1bV3l6X2mMlIp",
-            "name": "Inquiry Submitted At"
-          },
-          {
-            "id": "72sgkxGOzT0P2pNZeyfQ",
-            "name": "Opening hours for your sales team (When is your sales team available?)"
-          },
-          {
-            "id": "73bGiPvxZhrAswc5dMeT",
-            "name": "Child Age"
-          },
-          {
-            "id": "7WSnLYTHdJm8VeuNXssx",
-            "name": "half-pol-claimed-at"
-          },
-          {
-            "id": "7clDcQ3op5efP1prDYUw",
-            "name": "bogo-wp-claimed"
-          },
-          {
-            "id": "7hXKV1hdmXxN9LZ121tX",
-            "name": "Review Response"
-          },
-          {
-            "id": "7lAhmqXgAHChWnhd9LV2",
-            "name": "How many aged leads do you have access to?"
-          },
-          {
-            "id": "8koZqzVDPIQudcVxbZg9",
-            "name": "bogo-pol-claimed-at"
-          },
-          {
-            "id": "94lnGG2RbfO8S4RNkJIU",
-            "name": "fjp-po-claimed-at"
-          },
-          {
-            "id": "AQyT4XOfL15FMYJe05pm",
-            "name": "AI Response"
-          },
-          {
-            "id": "Arj1T7OeowT1gzqQS9Sy",
-            "name": "BOGO POL Code"
-          },
-          {
-            "id": "B0huOFHfhyC0WijDxS7x",
-            "name": "Additional company information"
-          },
-          {
-            "id": "BY4qmZOiQEwyLiPf0Fuz",
-            "name": "sms-optin-claimed-by"
-          },
-          {
-            "id": "C1h8Nc2fzSBoXTdyt5aw",
-            "name": "Code Expires At"
-          },
-          {
-            "id": "Cjtu9RQoKq1rHqbBkTzY",
-            "name": "Do you install batteries?"
-          },
-          {
-            "id": "DSAPqrpvsCjC5JXlcr4r",
-            "name": "Redeemed Code"
-          },
-          {
-            "id": "Deejj39hpBeQ0Wl6yNYH",
-            "name": "What is the name of the Sales Rep that will be taking the appointments?"
-          },
-          {
-            "id": "DnPTSP9NNxfXHMUvqXYv",
-            "name": "Time saving capabilities - are you saving time?"
-          },
-          {
-            "id": "EnTlyX6y4KpPoIjLcQRR",
-            "name": "What do you charge for paint correction? "
-          },
-          {
-            "id": "FeegUtAz99AoToL6w4WI",
-            "name": "Explain your exact process in detail"
-          },
-          {
-            "id": "FzKuOdXKGIj0H59fNX7D",
-            "name": "Do you do PPF?"
-          },
-          {
-            "id": "G0VVUBu2TYD81eCf3JM7",
-            "name": "Ease of use - how easy is our product to utilize?"
-          },
-          {
-            "id": "G9xRaZTJcZY2XsPZycjy",
-            "name": "half-wp-claimed"
-          },
-          {
-            "id": "GUpO1wZcVukPrIN3vrGe",
-            "name": "fjp-po-claimed-by"
-          },
-          {
-            "id": "I9bRXY97ZiKqmKW0cKF1",
-            "name": "Lead Response"
-          },
-          {
-            "id": "IGIEsUK0rgzhNd5hf8na",
-            "name": "Any additional comments or suggestions regarding AI features and functionality:"
-          },
-          {
-            "id": "IdBZ359UK4drupkWST35",
-            "name": "When we run a Reactivation Campaign do you already now have an idea what offer you want to run?"
-          },
-          {
-            "id": "IwSdMWHAcEqOPgU30tJg",
-            "name": "How satisfied are you with out customer support? (On a scale of 1-5)"
-          },
-          {
-            "id": "JehYLb71kGigmrvQ9GkY",
-            "name": "utm_campaign"
-          },
-          {
-            "id": "JmRnS5nX9rb4WVPrElHg",
-            "name": "Legal Business Name"
-          },
-          {
-            "id": "KfyIIrAh3ljd1qkcDYCw",
-            "name": "What is your availability?"
-          },
-          {
-            "id": "Lfo3ez2ArNWTh3KL1pEm",
-            "name": "bogo-wp-claimed-by"
-          },
-          {
-            "id": "MOrtaOL280Mog7nZ7BtB",
-            "name": "What is included in your interior detail?"
-          },
-          {
-            "id": "NH1KAisi4DFfVmG8IRaG",
-            "name": "fjp-po-claimed"
-          },
-          {
-            "id": "NPf13zCnkrDdAfl3nBUc",
-            "name": "waiver_signed"
-          },
-          {
-            "id": "NvsPogMGsutHVDMLc81h",
-            "name": "Do you do polishing/paint corrections?"
-          },
-          {
-            "id": "OWG7JtdpoPAUQctN48xw",
-            "name": "bogo-pol-claimed-by"
-          },
-          {
-            "id": "Ous8s8ih0IkhffHGHwzW",
-            "name": "Any special value proposition or promotion you can offer these leads?"
-          },
-          {
-            "id": "Ovr5xNco5lOXfvJp39Rs",
-            "name": "What legal business type do you have?"
-          },
-          {
-            "id": "P4vOo1qTC4RPQqIFwMSV",
-            "name": " How many calls can be scheduled every 30 minutes?"
-          },
-          {
-            "id": "PHwxi5jLkEfzZIDHv7zL",
-            "name": "Efficiency in automating revenue for you"
-          },
-          {
-            "id": "QGNBWm4M3SSdEMvo3dbJ",
-            "name": "Legal Business Address"
-          },
-          {
-            "id": "QORfoA7zASfvdCqE9BuT",
-            "name": "Preferred Party Date"
-          },
-          {
-            "id": "QeCT6JcIBr0c56mPIsRM",
-            "name": "What is your Business Adress (for A2P Application)?"
-          },
-          {
-            "id": "R6Cb5WIHWsWFulCEQqYW",
-            "name": "What are your opening hours? And do you work weekends?"
-          },
-          {
-            "id": "RKfXleod2PwFYwpWqrho",
-            "name": "Unique Prompt"
-          },
-          {
-            "id": "S68FlWw50mAGOpJwjIUz",
-            "name": "Thread"
-          },
-          {
-            "id": "S7JKxQBlf5Ox9XlfUUOH",
-            "name": "How many leads do you have coming in every month?"
-          },
-          {
-            "id": "SWEIscGsFHBPuPdLhVop",
-            "name": "On a scale of 1 to 5, how would you rate your overall satisfaction with our AI product?"
-          },
-          {
-            "id": "T7B6dcJPyOzqyT8DT9xU",
-            "name": "User Response"
-          },
-          {
-            "id": "TUpYu4Gvyzz9IbWEMGfQ",
-            "name": "What are specifc value propositions your company offers?"
-          },
-          {
-            "id": "U1HiMixVAZ9ZQ1ItLROl",
-            "name": "Child Birthday Month"
-          },
-          {
-            "id": "U3miA8QFy08PqG2ejbWH",
-            "name": "Last Message"
-          },
-          {
-            "id": "UNohPVfFtR1UKsgZaTBE",
-            "name": "Additional lead information / data not listed above"
-          },
-          {
-            "id": "UomtIwIQ0hDiCgFzdtv6",
-            "name": "Do you offer leather repair? If so, how much do you charge?"
-          },
-          {
-            "id": "VGb81VBqVu5MR6mYEEfS",
-            "name": "Review Feedback"
-          },
-          {
-            "id": "Vd8XQWmNwEkKAs6uFLU8",
-            "name": "What is your google my business page? (Link)"
-          },
-          {
-            "id": "Vx9bm2n9iKTw3YEdTIhj",
-            "name": "half-pol-claimed"
-          },
-          {
-            "id": "WBkd8r2fORCAkxUX8pfq",
-            "name": "Multi Dropdown 3azi"
-          },
-          {
-            "id": "WLPH3DceXGZVyizpUYyM",
-            "name": "Do you offer engine bay cleanings If so, how much do you charge?"
-          },
-          {
-            "id": "WSs46pIymeST3QL6Xvqj",
-            "name": "utm_medium"
-          },
-          {
-            "id": "Wn4aNvYA1QfaJoB6oDpS",
-            "name": "HALF POL Code"
-          },
-          {
-            "id": "WtvqWrn0SBR9cN0F0RiL",
-            "name": "waiver_status"
-          },
-          {
-            "id": "XF4ZDhJeZ4ICcJuQokHC",
-            "name": "Do you want us to follow up on your feedback or do you have specific concerns that require attention?"
-          },
-          {
-            "id": "XOVwbcR1pwwUqfpJjRcs",
-            "name": "How likely are you to recommend our AI product to others? (On a scale of 0 to 10)"
-          },
-          {
-            "id": "XeX7aIBVskBlqjczDIvP",
-            "name": "What is your company headcount?"
-          },
-          {
-            "id": "YaojXpB2PYb18BqVlYvr",
-            "name": "FJP Code"
-          },
-          {
-            "id": "ZLffjTxYsiuCx3ucagao",
-            "name": "Child Birthday (MM-DD)"
-          },
-          {
-            "id": "ZTOuCjVLeiLvJH6NXN03",
-            "name": "Referral:"
-          },
-          {
-            "id": "ZhjNekbyHpv24vjfHIw3",
-            "name": "half-pol-claimed-by"
-          },
-          {
-            "id": "aBC3ku2FGNsYm9TnIgyA",
-            "name": "What information / data do you have on your leads?"
-          },
-          {
-            "id": "aZOJYgqS55psluvbZbTx",
-            "name": "Is there anything else you would like to share with us about your experience with our AI product or any other feedback you believe would be helpful?"
-          },
-          {
-            "id": "auzaTt4UbLfkaZ3TvqCo",
-            "name": "How much do you charge for interior+exterior detail (For sedans, Trucks, SUVs)"
-          },
-          {
-            "id": "ayXP0VaVXzDGhVirzE1z",
-            "name": "Email to use for CRM login"
-          },
-          {
-            "id": "bI7UbODKwKmwJlHpF2hk",
-            "name": "Sales rep(s) name and phone number(s) - (We need the phone number they will call leads from)"
-          },
-          {
-            "id": "bKf62eQDNGr796Dem6Pa",
-            "name": "What is included in your exterior detail?"
-          },
-          {
-            "id": "bLkG4T0vmhVJCJLPBQlA",
-            "name": "bogo-wp-claimed-at"
-          },
-          {
-            "id": "bt0yUbT4UEWXD9EK7ViX",
-            "name": "bogo-pol-claimed"
-          },
-          {
-            "id": "c3pNP5iMLNmcjlztDNtR",
-            "name": "sHow likely are you to recommend our AI product to others (On a scale of 0 to 10)?"
-          },
-          {
-            "id": "cJUJCaHA5Nh1fB1UyWxr",
-            "name": "sms-optin-claimed"
-          },
-          {
-            "id": "e43glCnRxHYWXFmehZBX",
-            "name": "Staff FJC Entry"
-          },
-          {
-            "id": "eoJy66XTjBH2XHBHo1zY",
-            "name": "What is your Facebook Page (link)"
-          },
-          {
-            "id": "eqg5b2Nce6YeogFoRmII",
-            "name": "What number do you want customers to contact you at?"
-          },
-          {
-            "id": "fwcXS9ZYC6CHmMO2JH1j",
-            "name": "Should incomming calls from leads be forwarded to you?"
-          },
-          {
-            "id": "g92YaVm2pcJCDVZtJYgZ",
-            "name": "Please share any specific feedback or comments about your experience with us"
-          },
-          {
-            "id": "gcoagD8Z37276yoEH8rJ",
-            "name": "Do you do ceramic coatings?"
-          },
-          {
-            "id": "h7tkHojyMNm5D9gBNhX0",
-            "name": "Do you offer waxing? If so, how much do you charge? "
-          },
-          {
-            "id": "hDoqYcohHU4gsWy0qvZy",
-            "name": "Do you have a shop? Or are you fully mobile? "
-          },
-          {
-            "id": "hZj4LcA8VsF1ZZjo7owK",
-            "name": "What is your Instagram (link)"
-          },
-          {
-            "id": "huu9a3FI2w2XARcRmKqE",
-            "name": "HALF WP Code"
-          },
-          {
-            "id": "i25GjwstJBMLQEPr8KcE",
-            "name": "How old are the leads?"
-          },
-          {
-            "id": "iYIlmBrTRh3rkXiJQz8K",
-            "name": "google_click_id"
-          },
-          {
-            "id": "iedlXDROa8qGnOca0VOc",
-            "name": "Chat-GPT"
-          },
-          {
-            "id": "jYXnpidQVTF7J7LbwhIo",
-            "name": "utm_term"
-          },
-          {
-            "id": "jnXCEcTd4FArAn5X9QMJ",
-            "name": "Offer Type"
-          },
-          {
-            "id": "jzj79ZvMtwXEXUEXbHOR",
-            "name": "Which area code (phone number) would you prefer the AI reaching out from? Please state multiple options."
-          },
-          {
-            "id": "k311OHoOyNhJfgVp4gUs",
-            "name": "Have you encountered any challenges or issues while using our AI product? If so, please describe them in detail:"
-          },
-          {
-            "id": "lfX8l8QUYouiY3xVsFdK",
-            "name": "What timezone are you in? (rep)"
-          },
-          {
-            "id": "ljhD03WvWRRgoywZUOoU",
-            "name": "General + Detailed Info about your leads for initial touchpoint"
-          },
-          {
-            "id": "mItjrPCo8WJpkqK2Dzeb",
-            "name": "What is the name of your business?"
-          },
-          {
-            "id": "ms3LVeqGbK8a0N1RlrLv",
-            "name": "What is the size of your team?"
-          },
-          {
-            "id": "nOyHnRHKJu8U1LhL1bZS",
-            "name": "How long does an interior+exterior detail take you? "
-          },
-          {
-            "id": "nQTgUeEMm55pDjQqTgoi",
-            "name": "half-wp-claimed-by"
-          },
-          {
-            "id": "p1Ongxgc4tcBI7BkJiCy",
-            "name": "BOGO WP Code"
-          },
-          {
-            "id": "poqlltDhbhml6wifD7VC",
-            "name": "Staff Name"
-          },
-          {
-            "id": "qdio6pGhfao5Gu05x55o",
-            "name": "I agree to receive SMS messages from Shiney"
-          },
-          {
-            "id": "rfVL2ni21wNdbNd2TeMk",
-            "name": "sms-optin-claimed-at"
-          },
-          {
-            "id": "rhEumgD8FEMc5PABzdc9",
-            "name": "Redeemed Location"
-          },
-          {
-            "id": "rtZ5rI1WjdsgiEtbCNE0",
-            "name": "How did you acquire your leads?"
-          },
-          {
-            "id": "sIo1jAtG6pxYBmlyaHXr",
-            "name": "What company are you with?"
-          },
-          {
-            "id": "t61w0a5k2VR9uDHSQt60",
-            "name": "utm_source"
-          },
-          {
-            "id": "u2Cd18sjShKRAgguZ9QB",
-            "name": "half-wp-claimed-at"
-          },
-          {
-            "id": "urJL01SlcMAPdBbjttfU",
-            "name": "Is there anyone else besides you, that needs to be on the call, who needs the information? (Significant Other, Business Partner, etc.)"
-          },
-          {
-            "id": "vNXE671QUVUDFmZKoFSb",
-            "name": "What number do you use for WhatsApp (If you don't have it, please download it and make user)"
-          },
-          {
-            "id": "vVKvNgCJ4sBppWJMfoRG",
-            "name": "Child Birthday Date"
-          },
-          {
-            "id": "wGZ5mFQgabw6Drw4FoAT",
-            "name": "Do you offer any negotiation options to make your services more appealing or affordable?"
-          },
-          {
-            "id": "whsArHAZjuvIPB3FrFX3",
-            "name": "Password to use for CRM login"
-          },
-          {
-            "id": "wqzjtmhwzRZtgtFpoiaR",
-            "name": "What is your role in the company?"
-          },
-          {
-            "id": "wvBI6faWIcyuN2eAoX8A",
-            "name": "utm_content"
-          },
-          {
-            "id": "xD3XB1wEA8UaYWK3pHyd",
-            "name": "How many aged leads does your company have access to?"
-          },
-          {
-            "id": "xXAJ52eEpJqdmG0Zx0bz",
-            "name": "We have a variety of scripts and educational guides. Do you wish to use these? SKIP THIS PAGE IF (NO)"
-          },
-          {
-            "id": "y1r7rYGVjgumVG0XlOqi",
-            "name": "I agree to receive SMS messages from Shiney"
-          },
-          {
-            "id": "y6Y1xKKZf6cQuuT7bPWe",
-            "name": "SMS Consent"
-          },
-          {
-            "id": "ympGT1yPge6jhcJBIZQu",
-            "name": "verify-outcome"
-          },
-          {
-            "id": "ypgHRHW0daLsOpWIw6M2",
-            "name": "Memory"
-          },
-          {
-            "id": "ystc18jJAXi0NXbs7ciz",
-            "name": "Do you provide cars for loan?"
-          },
-          {
-            "id": "z3YERVWWUaGWe3Qk99EN",
-            "name": "How much do you charge for an interior/exterior detail?"
-          },
-          {
-            "id": "zIIDf9liI4lLTwYmytGD",
-            "name": "What's your role in the company?"
-          },
-          {
-            "id": "zP11uTAyYXej1PftbbxU",
-            "name": "fjp-po-code"
-          },
-          {
-            "id": "zRRCIUx83laRa8CEgawF",
-            "name": "On a scale of 1 to 5, with 5 being highly satisfied and 1 being highly dissatisfied, how would you rate your overall satisfaction with our AI product?"
-          }
-        ],
-        "child_birthday": {
-          "id": "U1HiMixVAZ9ZQ1ItLROl",
-          "name": "Child Birthday Month",
-          "dataType": "NUMERICAL"
-        }
+      "redemption_tags": {
+        "half-redeemed": 13,
+        "redeemed-half": 13,
+        "welcome-redeemed": 2,
+        "redeemed-welcome": 2
+      },
+      "campaign_tags": {
+        "weekend-stars-email-wp-2026-06-30": 21
+      },
+      "offer_lead_tags": {
+        "half-redeemed": 13,
+        "redeemed-half": 13,
+        "offer-half": 186,
+        "half-wp-lead": 186,
+        "bogo-wp-lead": 11,
+        "voucher-delivered": 21,
+        "welcome-redeemed": 2,
+        "redeemed-welcome": 2
+      },
+      "birthday_tags": {
+        "birthday-wp-lead": 21,
+        "bday-start-2026-07-06": 21
+      },
+      "metrics": {
+        "voucher_delivered": 21,
+        "unsubscribed": 0,
+        "redemptions_total": 30,
+        "birthday_leads": 21,
+        "birthday_booked": 0
+      },
+      "custom_fields_count": 146,
+      "child_birthday_field": {
+        "id": "U1HiMixVAZ9ZQ1ItLROl",
+        "name": "Child Birthday Month",
+        "dataType": "NUMERICAL"
       }
     }
   }
