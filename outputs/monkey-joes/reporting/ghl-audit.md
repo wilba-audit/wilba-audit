@@ -1,90 +1,113 @@
-# Monkey Joe's — GHL Account Audit (comprehensive)
+# Monkey Joe's — GHL Account Audit (authoritative tag counts)
 
-_Generated 2026-07-14T04:01:23+00:00 (live, server-side via GitHub Actions)_
+_Generated 2026-07-14T04:06:38+00:00 (live, server-side via GitHub Actions)_
 
 ## POL
-- Connection: **ok** · 6000 contacts (5986 email · 241 phone)
-- Opted-in (`voucher-delivered`): **60** · unsubscribed: 0
-- **Redemptions tracked: 22**  → {'bogo-redeemed': 2, 'redeemed-bogo': 2, 'half-redeemed': 5, 'redeemed-half': 5, 'welcome-redeemed': 3, 'redeemed-welcome': 3, 'promo-redeemed-pol': 2}
-- Birthday: 59 leads · 0 booked
+- Connection: **ok** · 13208 total contacts in the account
+- Opted-in (`voucher-delivered`): **112** · unsubscribed: 0
+- **Redemptions by code:** {'bogo': 2, 'half': 5, 'welcome': 7}  →  **total 14**
+- **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 54, 'nudge-sms-may2026': 101, 'weekend-stars-email-pol-2026-06-30': 111}
+- Birthday: {'bday-start-2026-07-06': 112, 'birthday-inquiry': 2, 'birthday-pol-lead': 110}
+- Voice/inbound: {'birthday-inquiry': 2, 'inbound-call-po': 12, 'topic-party': 12, 'voice-agent-sms': 12}
 - Child-birthday field: `4dW6Ni9njQByJweCW8ip` (Child Birthday Date, DATE)
-- **Campaign sends (incl. BANANAS/4th-of-July):** {'weekend-stars-email-pol-2026-06-30': 59}
-- Offer/lead tags: {'half-pol-lead': 125, 'offer-half': 126, 'bogo-pol-lead': 33, 'bogo-redeemed': 2, 'redeemed-bogo': 2, 'half-redeemed': 5, 'redeemed-half': 5, 'voucher-delivered': 60, 'welcome-redeemed': 3, 'redeemed-welcome': 3, 'bogo-wp-lead': 8, 'half-wp-pol': 1, 'fjp-po': 1, 'voucher-delivered-resend': 1}
 
-<details><summary>All tags</summary>
+<details><summary>All tag counts</summary>
 
-  - `pol`: 152
-  - `promo-issued`: 152
-  - `offer-half`: 126
-  - `half-pol-lead`: 125
-  - `weekly-list`: 96
-  - `voucher-optin-pending`: 61
-  - `voucher-delivered`: 60
-  - `bday-start-2026-07-06`: 60
-  - `weekend-stars-email-pol-2026-06-30`: 59
-  - `birthday-pol-lead`: 59
-  - `nudge-sms-may2026`: 53
-  - `nudge-email-may2026`: 52
+  - `reactivate-wk1-mon`: 500
+  - `reactivate-wk1-thu`: 500
+  - `reactivate-wk1-tue`: 500
+  - `reactivate-wk1-wed`: 500
+  - `reactivate-wk1-sun`: 499
+  - `pol`: 158
+  - `promo-issued`: 158
+  - `offer-half`: 132
+  - `half-pol-lead`: 131
+  - `bday-start-2026-07-06`: 112
+  - `voucher-delivered`: 112
+  - `weekend-stars-email-pol-2026-06-30`: 111
+  - `birthday-pol-lead`: 110
+  - `voucher-optin-pending`: 107
+  - `nudge-sms-may2026`: 101
+  - `weekly-list`: 99
+  - `nudge-email-may2026`: 54
   - `bogo-pol-lead`: 33
-  - `voice-agent-sms`: 12
+  - `openlink`: 14
   - `inbound-call-po`: 12
+  - `promo-redeemed-pol`: 12
   - `topic-party`: 12
+  - `voice-agent-sms`: 12
   - `wp`: 9
   - `bogo-wp-lead`: 8
+  - `redeemed-welcome`: 7
+  - `welcome-redeemed`: 7
   - `half-redeemed`: 5
   - `redeemed-half`: 5
-  - `sms-unsub`: 3
-  - `unsubscribed-sms`: 3
+  - `follow-up`: 4
+  - `voucher-delivered-resend`: 4
   - `no sms`: 3
   - `no-sms-consent`: 3
-  - `welcome-redeemed`: 3
-  - `redeemed-welcome`: 3
-  - `bogo-redeemed`: 2
-  - `redeemed-bogo`: 2
+  - `sms-unsub`: 3
+  - `unsubscribed-sms`: 3
   - `birthday-inquiry`: 2
-  - `promo-redeemed-pol`: 2
-  - `half-wp-pol`: 1
-  - `fjp-po`: 1
+  - `bogo-redeemed`: 2
+  - `high priority`: 2
+  - `redeemed-bogo`: 2
   - `claude-final-test`: 1
+  - `fjp-po`: 1
+  - `half-wp-pol`: 1
   - `voucher-optin-requested`: 1
-  - `voucher-delivered-resend`: 1
+  - `warm lead`: 1
 
 </details>
 
 ## WP
-- Connection: **ok** · 6000 contacts (5988 email · 5997 phone)
-- Opted-in (`voucher-delivered`): **21** · unsubscribed: 0
-- **Redemptions tracked: 30**  → {'half-redeemed': 13, 'redeemed-half': 13, 'welcome-redeemed': 2, 'redeemed-welcome': 2}
-- Birthday: 21 leads · 0 booked
+- Connection: **ok** · 37052 total contacts in the account
+- Opted-in (`voucher-delivered`): **146** · unsubscribed: 0
+- **Redemptions by code:** {'half': 20, 'welcome': 40}  →  **total 60**
+- **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 38, 'nudge-sms-may2026': 126, 'weekend-stars-email-wp-2026-06-30': 142}
+- Birthday: {'bday-start-2026-07-06': 145, 'birthday-wp-lead': 145}
+- Voice/inbound: {'inbound-call-wp': 13, 'topic-party': 13, 'voice-agent-sms': 13}
 - Child-birthday field: `U1HiMixVAZ9ZQ1ItLROl` (Child Birthday Month, NUMERICAL)
-- **Campaign sends (incl. BANANAS/4th-of-July):** {'weekend-stars-email-wp-2026-06-30': 21}
-- Offer/lead tags: {'half-redeemed': 13, 'redeemed-half': 13, 'offer-half': 186, 'half-wp-lead': 186, 'bogo-wp-lead': 11, 'voucher-delivered': 21, 'welcome-redeemed': 2, 'redeemed-welcome': 2}
 
-<details><summary>All tags</summary>
+<details><summary>All tag counts</summary>
 
-  - `wp`: 196
-  - `promo-issued`: 196
-  - `offer-half`: 186
-  - `half-wp-lead`: 186
-  - `weekly-list`: 185
-  - `nudge-email-may2026`: 30
-  - `voucher-optin-pending`: 21
-  - `voucher-delivered`: 21
-  - `weekend-stars-email-wp-2026-06-30`: 21
-  - `birthday-wp-lead`: 21
-  - `bday-start-2026-07-06`: 21
-  - `nudge-sms-may2026`: 17
-  - `half-redeemed`: 13
-  - `redeemed-half`: 13
-  - `voice-agent-sms`: 12
-  - `inbound-call-wp`: 12
-  - `topic-party`: 12
-  - `bogo-wp-lead`: 11
-  - `sms-unsub`: 7
-  - `unsubscribed-sms`: 7
+  - `reactivate-wk1-tue`: 500
+  - `reactivate-wk1-sun`: 499
+  - `reactivate-wk1-thu`: 499
+  - `reactivate-wk1-wed`: 499
+  - `reactivate-wk1-mon`: 494
+  - `wp`: 238
+  - `promo-issued`: 236
+  - `offer-half`: 227
+  - `weekly-list`: 226
+  - `half-wp-lead`: 225
+  - `voucher-delivered`: 146
+  - `voucher-optin-pending`: 146
+  - `bday-start-2026-07-06`: 145
+  - `birthday-wp-lead`: 145
+  - `weekend-stars-email-wp-2026-06-30`: 142
+  - `nudge-sms-may2026`: 126
+  - `redeemed-welcome`: 40
+  - `welcome-redeemed`: 40
+  - `nudge-email-may2026`: 38
+  - `half-redeemed`: 20
+  - `redeemed-half`: 20
+  - `inbound-call-wp`: 13
+  - `topic-party`: 13
+  - `voice-agent-sms`: 13
+  - `bogo-wp-lead`: 12
   - `no sms`: 7
   - `no-sms-consent`: 7
-  - `welcome-redeemed`: 2
-  - `redeemed-welcome`: 2
+  - `sms-unsub`: 7
+  - `unsubscribed-sms`: 7
+  - `voucher-delivered-resend`: 7
+  - `promo-redeemed-wp`: 6
+  - `sms-consent`: 6
+  - `follow-up`: 4
+  - `claude-test-contact`: 2
+  - `half-wp-pol`: 2
+  - `high priority`: 2
+  - `openlink`: 2
+  - `warm lead`: 1
 
 </details>
