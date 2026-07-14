@@ -1,54 +1,26 @@
-# Email to William — 2026-07-14
+# Email to William — 2026-07-14 (friendly check-in version)
 
 **To:** william@lanyu.ai
-**Subject:** Monkey Joe's — pilot update, results so far + the parties push
+**Subject:** Quick MJ check-in — proposal + where the ads are at
 
 ---
 
-Hi William,
+Hey William,
 
-Pulling together a full update so we're aligned heading into the corporate review — where we are on ads, what I need from your side to complete the results picture, and the plan to push parties over the next 30 days (Michael flagged parties aren't beating last year yet).
+I've been going back over the original proposal to make sure I've got our split clear in my head before the corporate review. My read is that **my main lane is the ad accounts (Google + Facebook) plus the reporting**, and you've got the AI/automation side — the voice agent, the birthday database automation, and the party confirmation calls. Let me know if I've got that right or if I've missed anything.
 
-**Ad performance — pilot to date**
+Quick snapshot of where the ads are at so far:
+- **Google:** Pointe Orlando ~$1,630 spend / 51 conversions (~$32 each); Winter Park ~$1,320 / 51 (~$26 each). 50%-off is outperforming BOGO at both, so I'm shifting POL's budget onto the winner.
+- **Facebook:** leads are coming in around $3.25–$3.75 each — much cheaper than search, which is handy for what's next.
+- Total ad spend to date ~$4,020.
 
-Google Ads:
-- **Pointe Orlando:** $1,632 spend · 1,406 clicks · $1.16 CPC · 51 conv · **$32.01/conv**
-- **Winter Park:** $1,318 spend · 2,900 clicks · $0.45 CPC · 51 conv · **$25.84/conv**
-- 50%-off is beating BOGO at both locations; WP is the efficient account and is budget-limited. I'm re-weighting POL budget to 50%-off (its winner was capped below BOGO).
+On Michael's parties push: since "birthday parties Orlando" is $25–40 a click on Google, I'm planning to run the **$25-off (`BDAY25`) offer as a Facebook retargeting campaign** to our warm audiences instead, plus a post-visit "book a party" nudge on email/SMS. Before I switch it on — is `BDAY25` all set up and redeemable in Aluvii?
 
-Facebook/Instagram:
-- **WP:** $663 spend · 204 leads · **$3.25/lead**
-- **PO:** $351 spend · 94 leads · **$3.73/lead**
-- FB leads are ~8× cheaper per action than Google search — which is the basis for the parties plan below.
+The one thing I can't see on my side is the **redemption data**, since that flows through your verification page + Aluvii. Whenever you get a sec, could you send me the codes redeemed (and `BDAY25` party bookings) for the last month and last week? That's the piece that turns the ad numbers into the ROI story for corporate.
 
-Total ad spend to date ~**$4,021** (Google $2,950 · FB $1,071).
+And just so we don't double up on the birthday side — is your birthday automation live and running (I had ~180/60/30 days before the birthday in my notes)? I'll keep my sends clear of it.
 
-**What I need from you to complete Michael's numbers**
+No rush on any of this — mostly just want to make sure I've got the lanes right and I'm not missing anything.
 
-The ad side is only half the funnel — the number Michael needs for corporate is provable **in-store redemptions + parties booked**, and that lives in your systems:
-
-1. **Code redemptions** from the verification page — generated vs redeemed in-store, split by code (`WELCOME` / `BOGO/` / `50% off` / `FJP/`) and location, for **last 30 days** and **last 7 days**.
-2. **`BDAY25` redemptions in Aluvii** (our only party attribution) — last 30d + 7d, plus total booked parties if you can pull it.
-3. **Confirmation the GHL form-tracking bug is resolved** — it was showing 0 redemptions, and I don't want to report cost-per-redemption until we know it's firing.
-
-**Parties push — next 7 & 30 days (my scope: lead reactivation / retargeting)**
-
-Original focus was weekday walk-ins, so we haven't advertised parties — and "birthday parties Orlando" is $25–40 CPC on Google, so paid search is out. The efficient play is a **$25-off (`BDAY25`) offer to warm retargeting audiences on Facebook/IG** (site visitors + email/SMS engagers), plus a **post-visit "book a party" upsell** on email/SMS. Everything drives to the booking + `BDAY25` so parties are trackable.
-- **Can you confirm `BDAY25` is live and redeemable in Aluvii** before I launch? That's the only thing gating go-live.
-
-**Birthday automation — let's not double up**
-
-The birthday DB automation is your deliverable (the waiver-triggered SMS/email + the Party Confirmation Agent). I want to make sure my email/upsell sends don't collide with your birthday triggers. Can you confirm:
-- Is the birthday automation live, and what's the cadence (I had noted ~180/60/30 days before the child's birthday)?
-- Is it POL-only for now given WP's waiver export is missing birthdays — any update on getting WP's data?
-
-That way I keep my party retargeting + post-visit upsell clear of your birthday triggers.
-
-**One data note on my side**
-
-The Google + FB exports I have are "all-time" totals with no date column, so I can't split spend/CPA by month or week from them. I'm re-pulling the dated windows (last 30d / last 7d) so the report is exact — will send the by-period table once that's in.
-
-Let me know on `BDAY25` and the redemption export and I'll get the party campaign live this week.
-
-Thanks,
+Thanks!
 Jess
