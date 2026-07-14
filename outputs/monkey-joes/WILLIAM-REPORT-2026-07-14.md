@@ -1,15 +1,40 @@
-# Monkey Joe's — Pilot Results Report (for William)
+# Monkey Joe's — Pilot Results Report
 
-**From:** Jess / WILBA · **Date:** 2026-07-14
-**Purpose:** Compile marketing results for Michael's corporate presentation, and pull together the
-full funnel (ad spend → codes → redemptions). Michael wants to show parties beating last year;
-we're launching a party push now (see end).
+**From:** Jess / WILBA · **Date:** 2026-07-14 · **For:** William (Lanyu) → corporate review
+**Locations:** Pointe Orlando (POL) · Winter Park (WP)
 
 ---
 
-## 1. Ad performance — pilot to date (from platform exports)
+## Executive summary
 
-### Google Ads (Search)
+- **Total ad spend to date: $4,021** (Google $2,950 · Facebook $1,071).
+- **Google:** ~51 conversions per location at **$25.84 (WP)** / **$32.01 (POL)** cost-per-conversion.
+  50%-off beats BOGO at both locations; **POL's budget is on the weaker campaign** — quick fix.
+- **Facebook:** **298 leads** and **3,313 landing-page views** at ~**$3.25–$3.73 / lead** — roughly
+  8× cheaper per action than Google search. Retargeting is barely switched on = biggest upside.
+- **Live GHL (pulled today):** opted-in audience **258** (POL 112 · WP 146); **166 new offer-leads
+  in the last 30 days**; **18 redemptions tracked** in GHL. POL is surging (57 new leads in 7 days).
+- **The gap for the corporate story:** provable **in-store redemptions** and **booked parties**.
+  GHL shows 18 tracked redemptions and 0 parties; the full, dated numbers live in William's
+  verification backend + Aluvii and are the last piece needed (see §5).
+
+---
+
+## 1. Data sources & confidence (so every number is backable)
+
+| Data | Source | Confidence |
+|---|---|---|
+| Google/Facebook spend, clicks, conv, CPL | Platform CSV exports (all-time) | **High** (exact) |
+| Ad spend/CPA split by month/week | — not in the exports (no date column) | **Pending** dated re-export |
+| GHL audience, tags, leads-by-window, custom fields | Live API pull, 2026-07-14 03:43 UTC | **High** (live) |
+| In-store redemptions (by code, dated) | William's verification backend | **Pending** from William |
+| Party bookings (`BDAY25`) | Aluvii (no API) | **Pending** manual count |
+
+---
+
+## 2. Ad performance to date
+
+### Google Ads (Search) — all-time / pilot
 
 | Location | Campaign | Daily budget | Spend | Clicks | CPC | Conv. | Cost/conv. |
 |---|---|---:|---:|---:|---:|---:|---:|
@@ -17,119 +42,130 @@ we're launching a party push now (see end).
 | POL | BOGO — Pointe Orlando | $10 | $760.51 | 615 | $1.24 | 20.33 | $37.40 |
 | WP | 50% Off — Winter Park | $10 | $803.63 | 2,152 | $0.37 | 38.17 | **$21.06** |
 | WP | BOGO — Winter Park | $7 | $514.36 | 748 | $0.69 | 12.83 | $40.08 |
-| **POL total** | | | **$1,632.26** | 1,406 | $1.16 | 51.0 | $32.01 |
-| **WP total** | | | **$1,317.99** | 2,900 | $0.45 | 51.0 | $25.84 |
+| **POL total** | | | **$1,632.26** | 1,406 | $1.16 | 51.00 | $32.01 |
+| **WP total** | | | **$1,317.99** | 2,900 | $0.45 | 51.00 | $25.84 |
 
-### Facebook / Instagram
+*Note: both accounts report exactly 51.00 conversions — an unlikely coincidence, and a known GHL
+form-tracking bug under-fired the conversion event. Treat Google "conversions" as directional. They
+are **not** the same as GHL leads (§3), which aggregate every channel.*
 
-| Campaign | Status | Spend | Impr. | Reach | Clicks | LPV | Leads | CPL |
+### Facebook / Instagram — all-time / pilot
+
+| Campaign | Status | Spend | Impr. | Reach | Clicks | LP views | Leads | Cost/lead |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | MJ WP — Spring 2026 | active | $662.90 | 81,480 | 49,434 | 3,627 | 1,814 | 204 | $3.25 |
 | MJ PO — Spring 2026 | active | $350.66 | 59,691 | 33,990 | 2,337 | 1,292 | 94 | $3.73 |
 | MJ - POL Spring 2026 | inactive | $57.21 | 8,501 | 7,098 | 338 | 207 | 0 | — |
-| **FB total** | | **$1,070.77** | 149,672 | ~90,522 | 6,302 | 3,313 | 298 | ~$3.59 |
+| **Total** | | **$1,070.77** | 149,672 | ~90,522 | 6,302 | 3,313 | 298 | ~$3.59 |
+
+*FB campaigns were optimised for landing-page views (3,313) with leads (298) as a secondary result.
+Archive the dead "MJ - POL Spring 2026" line so it stops muddying reporting.*
 
 ### Totals
-- **Total ad spend (pilot): $4,021.02** — Google $2,950.25 · Facebook $1,070.77
-- **Google:** 102 conversions @ ~$28.9 blended cost/conv
-- **Facebook:** 298 leads + 3,313 landing-page views @ ~$3.59/lead
+**Ad spend $4,021.02** — Google $2,950.25 · Facebook $1,070.77.
 
-### Read on the data
-- **50%-off outperforms BOGO on Google at both locations** — but **POL's budget is on the wrong
-  campaign** (winner 50%-off capped at $7, weaker BOGO at $10). Recommend flipping.
-- **WP is the efficient account** (CPC $0.45 vs POL $1.16) and is **budget-limited** → room to scale.
-- **FB leads are ~8× cheaper per action than Google** — retargeting is the underused lever.
+### What to change (priority)
+1. **POL Google:** shift budget to 50%-off (its winner is capped at $7 while the weaker BOGO gets $10).
+2. **WP Google:** raise budget — it's the efficient account ($0.45 CPC) and flagged "limited by budget".
+3. **Facebook:** scale retargeting (warm audiences); weight prospecting to WP; archive the dead campaign.
+4. **Verify the GHL conversion event fires** before trusting Google cost-per-conversion.
 
 ---
 
-## 1b. Live GHL data (pulled from both sub-accounts, 2026-07-14)
+## 3. Live GHL account data (both sub-accounts, pulled 2026-07-14)
 
-Both accounts connected fine. Live snapshot:
+Both accounts connected successfully.
 
 | Metric | Pointe Orlando | Winter Park |
 |---|---:|---:|
-| Opted-in audience (`voucher-delivered`) | 112 | 146 |
+| Opted-in audience — `voucher-delivered` (all-time) | 112 | 146 |
 | Unsubscribed | 0 | 0 |
-| New opt-ins — last 30 days | 74 | 92 |
-| New opt-ins — last 7 days | **57** | 18 |
+| New offer-leads — last 30 days¹ | 74 | 92 |
+| New offer-leads — last 7 days¹ | **57** | 18 |
 | Birthday leads tagged | 110 | 145 |
 | Parties booked (GHL tag) | 0 | 0 |
-| Redemptions tracked (`promo-redeemed`) | 12 | 6 |
-| Child-birthday field | "Child Birthday **Date**" | "Child Birthday **Month**" |
+| Redemptions tracked — `promo-redeemed` (all-time) | 12 | 6 |
+| Child-birthday field type | DATE (full date) | NUMERICAL (month only) |
 
-**What this tells us:**
-- **Opted-in audience is ~258 total, not 20k.** The 20k is the raw waiver DB; only ~258 have opted
-  in. Our paid retargeting for parties should target the **full list + site-visitor pixel
-  audiences**, not just these 258.
-- **POL is surging** — 57 of its 74 last-30-day opt-ins came in the **last 7 days**.
-- **18 redemptions are tracked in GHL** (`promo-redeemed`: 12 + 6). Good — that's real proof. But the
-  `redeemed-{loc}` tag is empty and the windowed count reads 0 (the reporting filters on contact
-  *creation* date, not when the redeemed tag was applied). **Q for you: which tag/field marks a
-  redemption, and can it carry a redemption date?**
-- **The two locations store the child's birthday differently** — POL a full **Date**, WP only a
-  **Month** — with different field IDs. The birthday radar can only key off one field, and WP's
-  month-only data can't anchor a precise 30-day reminder. Worth aligning.
+¹ *"New offer-leads" = contacts tagged from the BOGO / half-price / 50%-off funnels, counted by date
+added. This is distinct from the all-time `voucher-delivered` audience above, and from Google's
+conversion count.*
+
+**Reading it:**
+- **Opted-in audience is ~258, not 20k.** The 20k is the raw waiver DB; ~258 have opted in. Paid
+  party retargeting should use the **full list + site-visitor pixel audiences**, not just these 258.
+- **POL is surging** — 57 of its 74 last-30-day offer-leads landed in the **last 7 days**.
+- **166 new offer-leads in 30 days** across both locations (POL 74 + WP 92).
+- **0 unsubscribes** at both — worth confirming the unsubscribe tag is actually wired.
 
 ---
 
-## 2. What I need from you (William) to complete Michael's report
+## 4. By period (the month/week view)
 
-The ad numbers above are only half the funnel. The number Michael needs for corporate is
-**provable in-store redemptions + parties booked** — and that data lives in your systems. Please send:
+**GHL new offer-leads — live, exact:**
 
-1. **Code redemptions** (from the verification-page backend): **codes generated vs redeemed
-   in-store**, split **by code type** (`WELCOME`, `BOGO/`, `50% off`, `FJP/`) and **by location**,
-   for **last 30 days** and **last 7 days**.
-2. **`BDAY25` party redemptions in Aluvii** (our only party attribution) — **last 30d + last 7d**,
-   and total booked parties if you can pull it.
-3. **Confirmation the GHL form-tracking / conversion bug is fixed** — it was showing **0
-   redemptions** earlier; I need to know redemptions are firing before I trust cost-per-redemption.
-4. **Any GHL-native metrics** you already have: new opt-ins / SMS list growth, and whether the
-   birthday automation is sending (so we don't double up with the drip).
+| Window | POL | WP | Total |
+|---|---:|---:|---:|
+| Last 7 days | 57 | 18 | 75 |
+| Last 30 days | 74 | 92 | 166 |
+| Month-to-date (Jul) | 61 | 35 | 96 |
 
----
+**POL Google impressions by month — from the daily export (impressions only):**
 
-## 3. By period (month 1 / month 2 / last week)
+| Period | POL Google impressions |
+|---|---:|
+| Month 1 (Apr 27–May 26) | 11,234 |
+| Month 2 (May 27–Jun 25) | 8,468 |
+| Month 3 (Jun 26–Jul 13, partial) | 6,314 |
+| Last 7 days (Jul 7–13) | 2,224 |
 
-**Honesty note on the source data:** the Google and Facebook exports are **"All time" aggregates —
-no date column**, so **spend and CPA cannot be split by month or week from them.** The only dated
-file is a daily **impressions** series, and it's **Pointe Orlando's Google account only**
-(its 26,016 total matches the POL Google report). So the by-period view below is **POL Google
-impressions**; the spend/CPA-by-period cells need a dated re-export (see the ask below).
-
-**Ads live from ~Apr 27, 2026** (kickoff was March; ramp took a few weeks).
-
-| Period | POL Google impressions | Spend | Conv. | CPA |
-|---|---:|---:|---:|---:|
-| Month 1 (Apr 27–May 26) | 11,234 | _pending dated export_ | _pending_ | _pending_ |
-| Month 2 (May 27–Jun 25) | 8,468 | _pending_ | _pending_ | _pending_ |
-| Month 3 (Jun 26–Jul 13, partial) | 6,314 | _pending_ | _pending_ | _pending_ |
-| Last 7 days (Jul 7–13) | 2,224 | _pending_ | _pending_ | _pending_ |
-
-*Read: POL Google reach peaked in Month 1 and has tapered — partly the partial current month, partly
-choppy delivery (62 of 88 days had impressions). Worth checking budget pacing.*
-
-**To fill the spend / conv / CPA columns** (2 min each in the platform UIs): re-export **Google Ads**
-and **Meta** with the date range set to each window — or run the live pull
-(`fetch_consolidated_reporting.py` already computes today / 7d / 30d / MTD). Drop those in and this
-table becomes exact for both locations and both platforms.
+**Ad spend / conversions / CPA by month:** *not derivable from the current exports* — the Google and
+Facebook reports are "all-time" with no date column. To fill this precisely, re-export Google Ads +
+Meta with the date range set to **Last 7 days** and each month (2 min each), **or** add the Meta +
+Google API tokens as GitHub secrets and the live pull produces these windows automatically (GHL
+already does).
 
 ---
 
-## 4. Parties push — so we're aligned
+## 5. The redemption picture — and what only you (William) can close
 
-Original pilot goal was **weekday walk-ins**, so we haven't advertised parties. Michael now needs
-parties to beat last year for the corporate deck. Plan (launching this week):
-- **$25-off (`BDAY25`) as a Facebook/IG retargeting campaign** to the warm audience — Google party
-  keywords are $25–40 CPC, so paid search is out; retargeting warm users at ~$3–4/lead is the play.
-- **Birthday reminders + post-visit party upsell** on owned email/SMS.
+Redemptions are the number Michael needs, and here's exactly where it stands:
+
+- GHL shows **18 redemptions tracked** via `promo-redeemed` (POL 12 · WP 6). The standard
+  `redeemed-{loc}` tag is **empty**.
+- All 18 are on contacts **created more than 30 days ago**, so they show **0 in the last-30-day
+  window** — GHL is storing the redeemed *tag* but **not a redemption date**, so we can't yet report
+  redemptions "this week / this month" from GHL alone.
+
+**To complete Michael's numbers, please send:**
+1. **Code redemptions** from the verification backend — generated vs redeemed in-store, **by code**
+   (`WELCOME` / `BOGO/` / `50% off` / `FJP/`) and **by location**, for **last 30 days** and **last 7
+   days** (with dates, so we can show the trend).
+2. **`BDAY25` party redemptions in Aluvii** — last 30d + 7d, and total booked parties.
+3. **Which tag/field marks a redemption** (is `promo-redeemed` the complete set of 18?), and can it
+   carry a redemption **date** going forward?
+4. **Confirm the GHL conversion/form-tracking bug is fixed.**
+5. **Birthday automation** — is it live, at what cadence, and POL-only? (So our sends don't double up.)
+
+---
+
+## 6. Parties push — next 7 & 30 days (WILBA scope: lead reactivation / retargeting)
+
+Original focus was weekday walk-ins, so parties haven't been advertised — and "birthday parties
+Orlando" is $25–40 CPC on Google, so paid search is out. Plan (launching this week):
+- **$25-off (`BDAY25`) as a Facebook/IG retargeting campaign** to warm audiences — the **full email
+  list + site-visitor pixel**, not just the ~258 opted-in.
+- **Post-visit "book a party" upsell** on owned email/SMS.
 - Everything drives to the booking + `BDAY25` so parties are trackable.
-- **Ask:** please confirm `BDAY25` is live and redeemable in Aluvii before we launch.
+- **Gate:** please confirm `BDAY25` is live and redeemable in Aluvii before launch.
 
 ---
 
-## 5. The corporate story (once your data lands)
+## 7. The corporate story (once your redemption + party data lands)
 
-**Spend → audience → redemptions → parties.** We have the top of that funnel (spend, ~102 Google
-conversions, ~298 FB leads, opt-ins). Your redemption + `BDAY25` numbers close it into an ROI story:
-*"$X spend drove Y in-store redemptions and Z parties vs last year."* That's the slide Michael needs.
+**Spend → audience → redemptions → parties.** We now have the top of the funnel verified: **$4,021
+spend**, ~298 FB leads, **166 new GHL leads in 30 days**, **258 opted-in**, **18 tracked
+redemptions**. Your dated redemption + `BDAY25` numbers turn that into the ROI slide Michael needs:
+*"$X spend → Y in-store redemptions → Z parties vs last year."*
+
+*GHL figures: live API pull 2026-07-14. Ad figures: platform exports (pilot-to-date, USD).*
