@@ -194,12 +194,25 @@ redemptions needs an export from William + an Aluvii count until William tags re
 
 **Commands:** `/mj-ghl` · `/mj-redemptions` · `/mj-birthday` · `/mj-ads` · `/mj-report` (see Commands section).
 
+**GHL live-data path (WORKS):** the dev session's network blocks GHL, so the `mj-audit.yml` GitHub
+Action runs `scripts/mj_ghl_audit.py` server-side and commits results to
+`outputs/monkey-joes/reporting/ghl-audit.md`. The GHL scripts previously failed with a Cloudflare
+1010 ban (fake browser User-Agent) — now fixed. Trigger via `mcp__github__actions_run_trigger`
+(run_workflow, mj-audit.yml, ref main) and read the committed file. Location IDs: POL
+`xlzFHtujfHhegk3xc9q2`, WP `yaRfypmZfcGDtpGEz3Gz`. Child-birthday field: POL `4dW6Ni9njQByJweCW8ip`
+(Date), WP `U1HiMixVAZ9ZQ1ItLROl` (Month — less precise).
+
+**Live GHL snapshot (2026-07-14):** opted-in `voucher-delivered` POL 112 / WP 146 (~258 total, NOT
+the 20k raw DB); opt-ins last 30d POL 74 / WP 92; `promo-redeemed` POL 12 / WP 6 (18 tracked
+redemptions); 0 unsubscribed; 0 parties booked in GHL.
+
 **Status:** Meta ads live (~$1,071 spend, ~298 leads @ ~$3.50); Google live (~$2,950 spend). Ads
-audit done. Open items: (1) **birthday scripts hard-code unconfirmed `$234/$194` party prices — fix
-or remove**; (2) reconcile our birthday drip with William's GHL-native workflow (double-send risk);
-(3) confirm how redemptions export from William/Aluvii; (4) WP has no birthday data yet; (5) this
-cloud session's **network policy blocks GHL/Meta/Google APIs** — live pulls run via GitHub Actions
-or from CSV exports.
+audit done; live GHL audit working. The three GitHub workflows (drip/radar/scorecard) are
+`disabled_manually` — nothing auto-runs until re-enabled. Open items: (1) party prices corrected to
+`$314` (verified) — the birthday scripts still need the drip re-enabled to send; (2) reconcile our
+birthday drip with William's GHL-native workflow (double-send risk); (3) confirm the real redemption
+tag with William (`promo-redeemed` has 18; `redeemed-` is empty); (4) WP birthday stored as Month
+only; (5) Meta/Google API tokens not set as secrets yet (only GHL is wired).
 
 ---
 
