@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T04:06:38+00:00",
+  "generated_at": "2026-07-14T04:19:12+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
@@ -34,7 +34,6 @@
         "redeemed-welcome": 7,
         "welcome-redeemed": 7,
         "half-redeemed": 5,
-        "redeemed-half": 5,
         "follow-up": 4,
         "voucher-delivered-resend": 4,
         "no sms": 3,
@@ -56,16 +55,17 @@
         "half": 5,
         "welcome": 7
       },
-      "redemptions_total": 14,
+      "redemptions_by_code_total": 14,
       "redemption_tags_raw": {
         "bogo-redeemed": 2,
         "half-redeemed": 5,
         "promo-redeemed-pol": 12,
         "redeemed-bogo": 2,
-        "redeemed-half": 5,
         "redeemed-welcome": 7,
         "welcome-redeemed": 7
       },
+      "unique_redeemers": 26,
+      "promo_redeemed_not_in_bycode": 12,
       "campaign_sends": {
         "nudge-email-may2026": 54,
         "nudge-sms-may2026": 101,
@@ -151,7 +151,7 @@
         "half": 20,
         "welcome": 40
       },
-      "redemptions_total": 60,
+      "redemptions_by_code_total": 60,
       "redemption_tags_raw": {
         "half-redeemed": 20,
         "promo-redeemed-wp": 6,
@@ -159,6 +159,8 @@
         "redeemed-welcome": 40,
         "welcome-redeemed": 40
       },
+      "unique_redeemers": 66,
+      "promo_redeemed_not_in_bycode": 6,
       "campaign_sends": {
         "nudge-email-may2026": 38,
         "nudge-sms-may2026": 126,
