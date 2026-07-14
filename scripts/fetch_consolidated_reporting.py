@@ -97,7 +97,7 @@ def ghl_search(api_key: str, location_id: str, filters: list, _retry: int = 0) -
             "Authorization": f"Bearer {api_key}",
             "Version": GHL_VERSION,
             "Content-Type": "application/json",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+            "User-Agent": "wilba-mj/1.0",
             "Accept": "*/*",
         },
     )

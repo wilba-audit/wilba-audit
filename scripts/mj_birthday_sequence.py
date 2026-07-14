@@ -65,11 +65,11 @@ TOUCHPOINTS = [
     {"day": 0, "channel": "both",
      "subject": "Your Monkey Joe's birthday — let's plan it 🎉",
      "body": "<p>Throwing a birthday your kid will actually remember shouldn't take a spreadsheet and three weekends of stress. At Monkey Joe's, we do the setup, the fun, and the cleanup — you just show up.</p>"
-             "<p>Our <strong>Jungle Experience party starts at $234</strong> and includes dedicated party space, a host who runs the whole thing, unlimited play, and happy, worn-out kids by the end.</p>",
-     "sms": "Monkey Joe's 🎉 Got a birthday coming up? Our Jungle Experience parties start at $234 — we do it all, you just show up. Details: " + BOOK_LINK + " Reply STOP to opt out."},
+             "<p>Our <strong>Jungle Experience party starts at $314</strong> and includes dedicated party space, a host who runs the whole thing, unlimited play, and happy, worn-out kids by the end.</p>",
+     "sms": "Monkey Joe's 🎉 Got a birthday coming up? Our Jungle Experience parties start at $314 — we do it all, you just show up. Details: " + BOOK_LINK + " Reply STOP to opt out."},
 
     {"day": 2, "channel": "email",
-     "subject": "What's included in the Jungle Experience ($234)",
+     "subject": "What's included in the Jungle Experience ($314)",
      "body": "<p>Here's exactly what you get in the <strong>Jungle Experience</strong>:</p>"
              "<ul><li>Private party room + a dedicated party host</li><li>Unlimited play on the inflatables the whole time</li><li>Plates, cups, napkins & setup — sorted</li><li>A stress-free hour and a half that runs itself</li></ul>"
              "<p>Add pizza, slushies, or an upgraded package if you want — but the base already covers the essentials.</p>"},
@@ -96,8 +96,9 @@ TOUCHPOINTS = [
              "<p>If your child's birthday is coming up in the next few months, reply with the month and we'll flag the prime slots before they're gone.</p>"},
 
     {"day": 75, "channel": "email",
-     "subject": "Weekday parties from $194 — same Jungle Experience",
-     "body": "<p>Weekends filling up? A <strong>weekday party starts at just $194</strong> — the exact same Jungle Experience, quieter floor, and often the kids' favourite because they get more run of the place.</p>"},
+     "subject": "Everything the Jungle Experience includes",
+     "body": "<p>The <strong>Jungle Experience</strong> covers up to 8 kids and includes a private party suite, a dedicated party pro who runs the whole thing, unlimited play, pizza and drinks, themed plates and napkins, a gift for the birthday child, and a visit from Monkey Joe himself.</p>"
+             "<p>Weekday slots are quieter and often the kids' favourite — more run of the place. Booking early locks in your date.</p>"},
 
     {"day": 120, "channel": "email",
      "subject": "Quick hello from Monkey Joe's 👋",
@@ -113,7 +114,7 @@ TOUCHPOINTS = [
      "subject": "Your child's birthday is coming up again 🎉",
      "body": "<p>Around this time last year you looked into a Monkey Joe's birthday — which means another one might be right around the corner!</p>"
              "<p>Want us to make it easy again? Same Jungle Experience, same zero-stress setup. Just say the word.</p>",
-     "sms": "MJ 🎉 Birthday season again? Let's make it easy like last time — Jungle Experience from $234. Plan it: " + BOOK_LINK + " Reply STOP to opt out."},
+     "sms": "MJ 🎉 Birthday season again? Let's make it easy like last time — Jungle Experience from $314. Plan it: " + BOOK_LINK + " Reply STOP to opt out."},
 ]
 
 
