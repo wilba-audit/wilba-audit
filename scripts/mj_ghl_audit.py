@@ -155,8 +155,42 @@ def audit_location(loc: str, api_key: str, location_id: str) -> dict:
     for t in redemption:
         got = ids_for(t)
         (promo_ids if "promo-redeemed" in t.lower() else bycode_ids).update(got)
-    res["unique_redeemers"] = len(bycode_ids | promo_ids)
+    redeemer_ids = bycode_ids | promo_ids
+    res["unique_redeemers"] = len(redeemer_ids)
     res["promo_redeemed_not_in_bycode"] = len(promo_ids - bycode_ids)
+
+    # ATTRIBUTION: for each redeemer, read their GHL attribution source (utm) to see which
+    # channel originally drove them — Google vs Facebook vs email vs direct. Uses data already
+    # in GHL (captured at opt-in), so no new tokens or William build required.
+    def classify(c: dict) -> str:
+        src = c.get("attributionSource") or {}
+        last = c.get("lastAttributionSource") or {}
+        parts = " ".join(str(x) for x in [
+            src.get("utmSource"), src.get("utmMedium"), src.get("sessionSource"), src.get("referrer"),
+            src.get("url"), src.get("campaign"), last.get("utmSource"), last.get("utmMedium"),
+        ] if x).lower()
+        has_fbclid = bool(src.get("fbclid") or last.get("fbclid"))
+        if "google" in parts or "gclid" in parts:
+            return "google"
+        if has_fbclid or any(k in parts for k in ("facebook", "fbclid", "instagram", "meta", "ig_", " fb", "fb.")):
+            return "facebook"
+        if any(k in parts for k in ("email", "newsletter", "resend", "mailer", "klaviyo")):
+            return "email"
+        if parts.strip():
+            return "other/referral"
+        return "direct/unknown"
+    channels, samples = {}, []
+    for cid in redeemer_ids:
+        st, d = _req("GET", f"{GHL_BASE}/contacts/{cid}", api_key)
+        c = d.get("contact", d) if st in (200, 201) else {}
+        ch = classify(c)
+        channels[ch] = channels.get(ch, 0) + 1
+        if len(samples) < 6:
+            s = c.get("attributionSource") or {}
+            samples.append({"utmSource": s.get("utmSource"), "utmMedium": s.get("utmMedium"),
+                            "campaign": s.get("campaign"), "referrer": s.get("referrer")})
+    res["redemptions_by_channel"] = dict(sorted(channels.items(), key=lambda kv: -kv[1]))
+    res["attribution_samples"] = samples
 
     res["campaign_sends"] = grp("weekend-stars", "bananas", "nudge", "blast")
     res["offer_leads"] = grp("-lead", "offer-", "voucher-delivered", "promo-issued")
@@ -185,6 +219,8 @@ def render_md(rep: dict) -> str:
             f"- Opted-in (`voucher-delivered`): **{d['metrics']['voucher_delivered']}** · unsubscribed: {d['metrics']['unsubscribed']}",
             f"- **Redemptions by code:** {d['redemptions_by_code'] or 'none'}  →  by-code total {d.get('redemptions_by_code_total', 0)}",
             f"- **Unique redeemers (all redemption tags): {d.get('unique_redeemers', 0)}**  (promo-redeemed not in by-code: {d.get('promo_redeemed_not_in_bycode', 0)})",
+            f"- **Redemptions by channel (from GHL attribution): {d.get('redemptions_by_channel', {})}**",
+            f"    - attribution samples: {d.get('attribution_samples', [])}",
             f"- **BANANAS / nudge campaign sends:** {d['campaign_sends'] or 'none'}",
             f"- Birthday: {d['birthday'] or 'none'}",
             f"- Voice/inbound: {d['voice_inbound'] or 'none'}",
