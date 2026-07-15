@@ -59,11 +59,23 @@ Establish, in one paragraph each:
    been burned; name it without blame).
 
 ### Phase 1 — Collect the evidence
-Give the client (or Jess) `references/data-collection-checklist.md`. You need
-**last-90-day analytics**, not guesses. Where you cannot get live data
-(login-walled platforms), say so explicitly and mark every such figure
-`[CLIENT TO CONFIRM]`. Never invent metrics. A qualitative audit is honest; a
-fabricated number is fraud.
+Two routes, best first:
+1. **Run the `social-data-collector` skill** on the client's handles to pull
+   real public data (profile stats + recent posts, esp. real YouTube view
+   counts). This grounds the audit in actual numbers. Note: it needs open
+   network egress — if you're in a sandbox that blocks social hosts (`403
+   CONNECT policy denial`), have the client/dev run it, and say so plainly.
+2. **Ask for last-90-day analytics** via `references/data-collection-checklist.md`
+   — screenshots of native analytics are the surest source of all.
+
+Then do the forensic pass in `references/manual-review-protocol.md` (per-post
+teardown) on whatever real content you have. For an authority/B2B client, also
+run `references/linkedin-review.md` — it's often the biggest untapped channel.
+
+Where you cannot get live data (login-walled platforms), say so explicitly and
+mark every such figure `[CONFIRM]`. Never invent metrics. A qualitative audit is
+honest; a fabricated number is fraud. Tag every figure `[REAL]` / `[PROXY]` /
+`[CONFIRM]` so the source of each is transparent.
 
 What to gather per platform: follower count + 90-day growth, posting cadence,
 per-post reach/views split by follower vs non-follower, average view duration /
@@ -135,5 +147,11 @@ Optionally publish a polished client-facing proposal as an Artifact (see the
 - `references/audit-framework.md` — the 8-dimension rubric, scoring, weighting
 - `references/platform-playbooks.md` — how each platform ranks content in 2026 + authority plays
 - `references/failure-patterns.md` — the library of why content fails (with fixes)
+- `references/manual-review-protocol.md` — forensic per-post teardown on the REAL content
+- `references/linkedin-review.md` — LinkedIn-specific review module (authority/B2B)
 - `references/data-collection-checklist.md` — exactly what to pull, per platform
 - `references/proposal-template.md` — tiered proposal structure + pricing logic
+
+## Companion skill
+- `social-data-collector` — pulls the real public data this audit runs on.
+  Use it in Phase 1 whenever you have handles and open network access.

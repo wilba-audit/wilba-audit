@@ -7,6 +7,17 @@ bulletproof), we need ~30 minutes of her analytics. Everything marked
 `[CONFIRM]` in the audit gets filled from this sheet. Native-analytics
 screenshots are perfect — no need to type anything out.
 
+## Three ways to get us the real data (pick the easiest)
+The Claude web session can't reach Instagram/LinkedIn directly (its network is
+locked down), so the real numbers come to us one of these ways:
+1. **Run the collector** (`.claude/skills/social-data-collector/scripts/SETUP.md`)
+   on any normal computer — 5 minutes, produces a data file we audit. Best for
+   YouTube (real public view counts) + profile stats. *You or the dev can run it.*
+2. **Analytics screenshots** — the surest source. Last-90-day native analytics
+   from each platform (see checklist below).
+3. **Share access / links** — 10 recent post links per platform we can review,
+   or temporary analytics access.
+
 ## The fast version (if she only sends one thing)
 Screenshots of **last-90-day analytics** from Instagram + YouTube, plus a
 one-line answer to: *"In your words, what does success look like in 6 months?"*

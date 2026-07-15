@@ -172,11 +172,20 @@ by a dedicated skill so every audit is expert-level and consistent.
 **The skill:** `.claude/skills/social-media-audit/` — a senior-strategist skill.
 Invoke it for any social review / "spent money on content, no traction" / content
 proposal request. Contains an 8-dimension scoring rubric, 2026 platform playbooks
-(IG/YouTube/TikTok/LinkedIn/X), a 12-item failure-pattern library, a data-
+(IG/YouTube/TikTok/LinkedIn/X), a 12-item failure-pattern library, a forensic
+per-post manual-review protocol, a dedicated LinkedIn review module, a data-
 collection checklist, and a tiered proposal template. Core belief: *reach is
 rented, authority is owned* — judge authority clients on saves/shares/enquiries,
-never vanity views. Produces `00-data-request.md`, `audit.md`, `proposal.md` per
-client in `outputs/<client-slug>/`.
+never vanity views. Every figure tagged `[REAL]`/`[PROXY]`/`[CONFIRM]`. Produces
+`00-data-request.md`, `audit.md`, `proposal.md` per client in `outputs/<slug>/`.
+
+**Companion skill — `social-data-collector`:** `.claude/skills/social-data-collector/`
+— a Node + Playwright script (`scripts/collect_social.mjs`, plain-English
+`scripts/SETUP.md`) that pulls real PUBLIC data (profile stats + recent posts;
+real YouTube view counts via RSS) so audits run on numbers, not guesses. **Needs
+open network egress** — it will NOT run inside the Claude web sandbox, whose
+egress policy blocks Instagram/LinkedIn/etc (`403 CONNECT policy denial`). Run it
+on a normal machine or a WILBA environment with open networking.
 
 **First client — Dr Gina Schoeman (The Schoeman Clinic):** functional/longevity
 medicine, bioidentical hormones, premium London market. Goal: authority/thought
