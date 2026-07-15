@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T09:55:19+00:00",
+  "generated_at": "2026-07-15T10:11:00+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
@@ -93,22 +93,68 @@
           "referrer": null
         },
         {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
-          "campaign": "Halfprice-pol",
-          "referrer": "https://www.google.com"
-        },
-        {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
-          "campaign": "Bogo-pol",
-          "referrer": "https://www.google.com"
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
         },
         {
           "utmSource": null,
           "utmMedium": null,
           "campaign": null,
           "referrer": null
+        },
+        {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://www.google.com"
+        }
+      ],
+      "weekly_leads": [
+        {
+          "week_start": "2026-04-29",
+          "new_leads": 2
+        },
+        {
+          "week_start": "2026-05-06",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-05-13",
+          "new_leads": 23
+        },
+        {
+          "week_start": "2026-05-20",
+          "new_leads": 18
+        },
+        {
+          "week_start": "2026-05-27",
+          "new_leads": 28
+        },
+        {
+          "week_start": "2026-06-03",
+          "new_leads": 2
+        },
+        {
+          "week_start": "2026-06-10",
+          "new_leads": 10
+        },
+        {
+          "week_start": "2026-06-17",
+          "new_leads": 5
+        },
+        {
+          "week_start": "2026-06-24",
+          "new_leads": 6
+        },
+        {
+          "week_start": "2026-07-01",
+          "new_leads": 11
+        },
+        {
+          "week_start": "2026-07-08",
+          "new_leads": 57
         }
       ],
       "campaign_sends": {
@@ -243,10 +289,56 @@
           "referrer": null
         },
         {
-          "utmSource": "facebook",
-          "utmMedium": "paid_social",
-          "campaign": "Halfprice-wp",
-          "referrer": "https://facebook.com"
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        }
+      ],
+      "weekly_leads": [
+        {
+          "week_start": "2026-04-29",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-05-06",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-05-13",
+          "new_leads": 3
+        },
+        {
+          "week_start": "2026-05-20",
+          "new_leads": 17
+        },
+        {
+          "week_start": "2026-05-27",
+          "new_leads": 27
+        },
+        {
+          "week_start": "2026-06-03",
+          "new_leads": 38
+        },
+        {
+          "week_start": "2026-06-10",
+          "new_leads": 24
+        },
+        {
+          "week_start": "2026-06-17",
+          "new_leads": 22
+        },
+        {
+          "week_start": "2026-06-24",
+          "new_leads": 27
+        },
+        {
+          "week_start": "2026-07-01",
+          "new_leads": 17
+        },
+        {
+          "week_start": "2026-07-08",
+          "new_leads": 20
         }
       ],
       "campaign_sends": {
