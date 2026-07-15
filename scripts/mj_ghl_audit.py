@@ -18,7 +18,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib import error, parse, request
 
@@ -192,6 +192,30 @@ def audit_location(loc: str, api_key: str, location_id: str) -> dict:
     res["redemptions_by_channel"] = dict(sorted(channels.items(), key=lambda kv: -kv[1]))
     res["attribution_samples"] = samples
 
+    # WEEK-BY-WEEK new opt-ins: count lead-tagged contacts by the week they were created.
+    # Robust cumulative-diff approach (uses only the gte date filter, which GHL supports reliably).
+    def count_since(iso: str) -> int:
+        total = 0
+        for lt in (f"bogo-{lc}-lead", f"half-{lc}-lead", f"50off-{lc}-lead"):
+            st, data = _req("POST", f"{GHL_BASE}/contacts/search", api_key,
+                            {"locationId": location_id, "pageLimit": 1, "filters": [
+                                {"field": "tags", "operator": "contains", "value": lt},
+                                {"field": "dateAdded", "operator": "range", "value": {"gte": iso}}]})
+            total += int(data.get("total", 0)) if st in (200, 201) else 0
+        return total
+    now = datetime.now(timezone.utc)
+    N = 11
+    bounds = [(now - timedelta(days=7 * k)) for k in range(N + 1)]  # s0=now .. sN=N weeks ago
+    cum = {}
+    for k in range(1, N + 1):
+        cum[k] = count_since(bounds[k].replace(microsecond=0).isoformat())
+    cum[0] = 0
+    weekly = []
+    for k in range(N):  # week between bounds[k+1] (start) and bounds[k] (end)
+        wk = max(cum[k + 1] - cum[k], 0)
+        weekly.append({"week_start": bounds[k + 1].date().isoformat(), "new_leads": wk})
+    res["weekly_leads"] = list(reversed(weekly))  # oldest → newest
+
     res["campaign_sends"] = grp("weekend-stars", "bananas", "nudge", "blast")
     res["offer_leads"] = grp("-lead", "offer-", "voucher-delivered", "promo-issued")
     res["birthday"] = grp("bday", "birthday")
@@ -219,6 +243,7 @@ def render_md(rep: dict) -> str:
             f"- Opted-in (`voucher-delivered`): **{d['metrics']['voucher_delivered']}** · unsubscribed: {d['metrics']['unsubscribed']}",
             f"- **Redemptions by code:** {d['redemptions_by_code'] or 'none'}  →  by-code total {d.get('redemptions_by_code_total', 0)}",
             f"- **Unique redeemers (all redemption tags): {d.get('unique_redeemers', 0)}**  (promo-redeemed not in by-code: {d.get('promo_redeemed_not_in_bycode', 0)})",
+            f"- **New opt-ins week-by-week:** {' · '.join(str(w['new_leads']) for w in d.get('weekly_leads', []))}  (oldest→newest, last {len(d.get('weekly_leads', []))} wks)",
             f"- **Redemptions by channel (from GHL attribution): {d.get('redemptions_by_channel', {})}**",
             f"    - attribution samples: {d.get('attribution_samples', [])}",
             f"- **BANANAS / nudge campaign sends:** {d['campaign_sends'] or 'none'}",
