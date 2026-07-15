@@ -1,12 +1,14 @@
 # Monkey Joe's — GHL Account Audit (authoritative tag counts)
 
-_Generated 2026-07-15T09:34:01+00:00 (live, server-side via GitHub Actions)_
+_Generated 2026-07-15T09:55:19+00:00 (live, server-side via GitHub Actions)_
 
 ## POL
 - Connection: **ok** · 13216 total contacts in the account
 - Opted-in (`voucher-delivered`): **112** · unsubscribed: 0
 - **Redemptions by code:** {'bogo': 2, 'half': 5, 'welcome': 7}  →  by-code total 14
 - **Unique redeemers (all redemption tags): 26**  (promo-redeemed not in by-code: 12)
+- **Redemptions by channel (from GHL attribution): {'other/referral': 18, 'google': 7, 'facebook': 1}**
+    - attribution samples: [{'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'google', 'utmMedium': 'paid_search', 'campaign': 'Halfprice-pol', 'referrer': 'https://www.google.com'}, {'utmSource': 'google', 'utmMedium': 'paid_search', 'campaign': 'Bogo-pol', 'referrer': 'https://www.google.com'}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}]
 - **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 54, 'nudge-sms-may2026': 101, 'weekend-stars-email-pol-2026-06-30': 111}
 - Birthday: {'bday-start-2026-07-06': 112, 'birthday-inquiry': 2, 'birthday-pol-lead': 110}
 - Voice/inbound: {'birthday-inquiry': 2, 'inbound-call-po': 12, 'topic-party': 12, 'voice-agent-sms': 12}
@@ -66,6 +68,8 @@ _Generated 2026-07-15T09:34:01+00:00 (live, server-side via GitHub Actions)_
 - Opted-in (`voucher-delivered`): **146** · unsubscribed: 0
 - **Redemptions by code:** {'half': 20, 'welcome': 40}  →  by-code total 60
 - **Unique redeemers (all redemption tags): 66**  (promo-redeemed not in by-code: 6)
+- **Redemptions by channel (from GHL attribution): {'other/referral': 48, 'facebook': 13, 'google': 5}**
+    - attribution samples: [{'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-wp', 'referrer': 'https://facebook.com'}]
 - **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 38, 'nudge-sms-may2026': 126, 'weekend-stars-email-wp-2026-06-30': 142}
 - Birthday: {'bday-start-2026-07-06': 145, 'birthday-wp-lead': 145}
 - Voice/inbound: {'inbound-call-wp': 13, 'topic-party': 13, 'voice-agent-sms': 13}

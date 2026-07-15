@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T09:34:01+00:00",
+  "generated_at": "2026-07-15T09:55:19+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
@@ -68,6 +68,49 @@
       },
       "unique_redeemers": 26,
       "promo_redeemed_not_in_bycode": 12,
+      "redemptions_by_channel": {
+        "other/referral": 18,
+        "google": 7,
+        "facebook": 1
+      },
+      "attribution_samples": [
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://www.google.com"
+        },
+        {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Bogo-pol",
+          "referrer": "https://www.google.com"
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        }
+      ],
       "campaign_sends": {
         "nudge-email-may2026": 54,
         "nudge-sms-may2026": 101,
@@ -163,6 +206,49 @@
       },
       "unique_redeemers": 66,
       "promo_redeemed_not_in_bycode": 6,
+      "redemptions_by_channel": {
+        "other/referral": 48,
+        "facebook": 13,
+        "google": 5
+      },
+      "attribution_samples": [
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-wp",
+          "referrer": "https://facebook.com"
+        }
+      ],
       "campaign_sends": {
         "nudge-email-may2026": 38,
         "nudge-sms-may2026": 126,
