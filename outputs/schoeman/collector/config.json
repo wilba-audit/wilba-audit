@@ -1,0 +1,13 @@
+{
+  "slug": "schoeman",
+  "outDir": "..",
+  "accounts": {
+    "instagram": "drginaschoeman",
+    "linkedin": "https://www.linkedin.com/in/dr-gina-schoeman-022a07b/"
+  },
+  "_add_if_she_has_them": {
+    "youtube": "paste her channel URL or @handle here, then move this line up into accounts",
+    "tiktok": "paste her @handle here, then move it up into accounts",
+    "x": "ginaschoeman"
+  }
+}
