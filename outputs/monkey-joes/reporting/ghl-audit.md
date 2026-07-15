@@ -1,9 +1,9 @@
 # Monkey Joe's — GHL Account Audit (authoritative tag counts)
 
-_Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
+_Generated 2026-07-15T09:34:01+00:00 (live, server-side via GitHub Actions)_
 
 ## POL
-- Connection: **ok** · 13208 total contacts in the account
+- Connection: **ok** · 13216 total contacts in the account
 - Opted-in (`voucher-delivered`): **112** · unsubscribed: 0
 - **Redemptions by code:** {'bogo': 2, 'half': 5, 'welcome': 7}  →  by-code total 14
 - **Unique redeemers (all redemption tags): 26**  (promo-redeemed not in by-code: 12)
@@ -19,17 +19,17 @@ _Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
   - `reactivate-wk1-tue`: 500
   - `reactivate-wk1-wed`: 500
   - `reactivate-wk1-sun`: 499
-  - `pol`: 158
-  - `promo-issued`: 158
-  - `offer-half`: 132
-  - `half-pol-lead`: 131
+  - `pol`: 166
+  - `promo-issued`: 166
+  - `offer-half`: 141
+  - `half-pol-lead`: 140
   - `bday-start-2026-07-06`: 112
   - `voucher-delivered`: 112
   - `weekend-stars-email-pol-2026-06-30`: 111
   - `birthday-pol-lead`: 110
+  - `weekly-list`: 108
   - `voucher-optin-pending`: 107
   - `nudge-sms-may2026`: 101
-  - `weekly-list`: 99
   - `nudge-email-may2026`: 54
   - `bogo-pol-lead`: 33
   - `openlink`: 14
@@ -42,6 +42,7 @@ _Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
   - `redeemed-welcome`: 7
   - `welcome-redeemed`: 7
   - `half-redeemed`: 5
+  - `redeemed-half`: 5
   - `follow-up`: 4
   - `voucher-delivered-resend`: 4
   - `no sms`: 3
@@ -61,7 +62,7 @@ _Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
 </details>
 
 ## WP
-- Connection: **ok** · 37052 total contacts in the account
+- Connection: **ok** · 37056 total contacts in the account
 - Opted-in (`voucher-delivered`): **146** · unsubscribed: 0
 - **Redemptions by code:** {'half': 20, 'welcome': 40}  →  by-code total 60
 - **Unique redeemers (all redemption tags): 66**  (promo-redeemed not in by-code: 6)
@@ -77,11 +78,11 @@ _Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
   - `reactivate-wk1-thu`: 499
   - `reactivate-wk1-wed`: 499
   - `reactivate-wk1-mon`: 494
-  - `wp`: 238
-  - `promo-issued`: 236
-  - `offer-half`: 227
-  - `weekly-list`: 226
-  - `half-wp-lead`: 225
+  - `wp`: 241
+  - `promo-issued`: 239
+  - `offer-half`: 230
+  - `weekly-list`: 229
+  - `half-wp-lead`: 228
   - `voucher-delivered`: 146
   - `voucher-optin-pending`: 146
   - `bday-start-2026-07-06`: 145
@@ -97,10 +98,10 @@ _Generated 2026-07-14T04:19:12+00:00 (live, server-side via GitHub Actions)_
   - `topic-party`: 13
   - `voice-agent-sms`: 13
   - `bogo-wp-lead`: 12
-  - `no sms`: 7
-  - `no-sms-consent`: 7
-  - `sms-unsub`: 7
-  - `unsubscribed-sms`: 7
+  - `no sms`: 8
+  - `no-sms-consent`: 8
+  - `sms-unsub`: 8
+  - `unsubscribed-sms`: 8
   - `voucher-delivered-resend`: 7
   - `promo-redeemed-wp`: 6
   - `sms-consent`: 6
