@@ -4,6 +4,22 @@
 
 ---
 
+## Latest thread state (Mati ↔ Griffin, 13 Jul — after the group reply)
+
+- **Twilio — DECIDED: Option 2.** Caller-ID verification was **tested with Lisa and failed** (landline + mobile both won't verify), so → **new London number** for the PAs, callbacks forward to the clinic line and log in GHL. Only blocker left: **Gina to top up the GHL wallet**, then Mati sets it up. *(494321-as-caller-ID idea is dead — verification won't pass.)*
+- **Meta verification** — done in **Meta Business Manager** (business.facebook.com → Business Settings → Security Center → Start Verification), needs clinic **business-reg doc + proof of address**. Mati handling. Not a GHL feature.
+- **⚠️ New-patient journey was accidentally LIVE for weeks** — Griffin set Stage 1 live when the website was "launching next Monday"; that launch got **cancelled** and it was never switched off (cause of the stray "thanks for registering" emails + "dummy record"). **Mati asked Griffin to turn it all off** until the new website + remaining copy + **blood-test barcode activation** are ready. Moving opportunities between stages fires the live automations — good to know.
+- **Website reset** — old web company was "terrible"; clinic has moved to **a new provider**, so the patient-journey timeline is pushed/uncertain.
+- **Contact migration (Semble → GHL)** — Griffin ready to run as a controlled pass on Mati's go; safely matches existing patients (email/phone) and **keeps them OUT of the new-patient journey**. Griffin manages sequencing so existing patients don't get new-patient emails. *(Griffin frames it as "the migration Jess + I are doing.")*
+- **Alerts** — lab-results-missing → **email to info@** (external sender); paid-invoice **stays on WhatsApp** until migration done, then retires cleanly. Mati reviewing internal-alert **copy** so team can tell FYI vs action-needed.
+- **Prescription-eligibility rule** — Gina: it's based on the **treatment plan** (1/2/3-mo follow-up she sets), not a fixed window. Jess's rec: **manual** (PA checks plan in Semble); never automate the gate; later add an "overdue follow-up" flag as a helper. To confirm with Gina on the KB call → SOP.
+- **Discovery calls CONFIRMED** — fixed **M–F 10–5**, booked calls **assigned to PA by availability** (validates connecting the PA calendars). → WILBA to build the calendar to this spec.
+- **KB ownership** — Mati handed KB queries to Jess (he's on patient journey, not KB). **Jess now owns finishing the KB with Gina** + the escalation line + SOP.
+
+**Jess's live action items:** (1) book the Gina call — finish KB + lock escalation + social; (2) spec the consent fields for the enquiry form; (3) spec the discovery-calendar build (M–F 10–5, round-robin by availability).
+
+---
+
 ## ⭐ Tonight's team training — outcome (13 Jul 2026)
 
 **Attended:** Zoey van Huyssteen, Isabell Drake, Lisa (joined under Zoom name "Megan Fensom-Turner"). Went well — team engaged and keen. Ran on Google Meet.
