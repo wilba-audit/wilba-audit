@@ -178,7 +178,18 @@ Jess's organic content weapon. Turns daily AI news into finished, on-brand conte
 **Reads from:** `outputs/brand/brand-positioning.md` (voice) + `outputs/brand/social-media-intelligence.md` (segments, pillars, hooks, 30-day calendar).
 **Saves to:** `outputs/content/` (daily briefs, reels, carousels, thumbnails, weeks, logs). Index: `outputs/content/README.md`.
 
-**Status:** Built and live. Next: run `/content` on today's Rundown to test end-to-end; optionally auto-run every morning via a scheduled trigger.
+**Primary content direction — The AIOS Builder brand:** Jess is positioning as an industry leader for *non-technical founders building AI systems* — mirroring the Claude Code hacks / skills-sheet creators (e.g. @ai_with_albert), funnelling into a Skool community. Her angle: "I can't code, and I built a business that runs on AI anyway — so can you." Strategy: `outputs/brand/aios-builder-brand-strategy.md`.
+
+**The funnel:** Reel (give away a real skill) → *comment `SKILLS`* → auto-DM the skills sheet → capture email → nurture → **Skool: "The AIOS Builders"** (~$39 founding / $59/mo).
+- Lead magnet: `outputs/content/skills-sheet.md`
+- Comment-to-DM (Manychat) flow + copy: `outputs/content/funnel/comment-to-dm-flow.md`
+- Skool offer/pricing/structure/copy: `outputs/content/funnel/skool-setup.md`
+- Email nurture (5 emails): `outputs/content/funnel/email-nurture.md`
+- Reel scripts: `outputs/content/scripts/builder-reels-batch-1.md` + `-batch-2.md` (16 scripts)
+
+**Two revenue engines (no conflict):** (1) near-term cash = WILBA **agency** via warm outreach → free audit → done-for-you clients (see `outputs/wilba-10k-60day-sprint.md`); (2) long-term flywheel = **builder brand → skills sheet → Skool** (recurring). Agency content bank: `outputs/content/30-post-authority-bank.md`.
+
+**Status:** Content Engine + full builder funnel copy built. Needs (Jess's clicks): connect Manychat to IG, spin up the Skool space, host the skills sheet + email capture. Then record reels (start 1, 8, 9, 16) with the comment-to-DM live. Higgsfield visuals paused pending a photo of Jess for consistent thumbnails/avatar.
 
 ---
 

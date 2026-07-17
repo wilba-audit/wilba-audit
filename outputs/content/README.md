@@ -44,3 +44,20 @@ News in one end → finished, on-brand content out the other. You stay the face 
 ## Connections powering this
 - **Gmail** — The Rundown AI arrives from `news@daily.therundown.ai`
 - **Higgsfield** — Plus plan, your visual studio (images, video, thumbnails, virality prediction)
+
+---
+
+## 🚀 The AIOS Builder brand + funnel (primary direction)
+
+Positioning Jess as the leader for non-technical founders building AI systems. Funnel: Reel → comment `SKILLS` → skills sheet → email → Skool.
+
+| Asset | File |
+|---|---|
+| Strategy + positioning | `../brand/aios-builder-brand-strategy.md` |
+| Skills sheet (lead magnet) | `skills-sheet.md` |
+| Comment-to-DM flow + copy | `funnel/comment-to-dm-flow.md` |
+| Skool offer/pricing/copy | `funnel/skool-setup.md` |
+| Email nurture (5 emails) | `funnel/email-nurture.md` |
+| Reel scripts (16) | `scripts/builder-reels-batch-1.md`, `scripts/builder-reels-batch-2.md` |
+
+**Agency track (near-term cash):** `30-post-authority-bank.md` + `../wilba-10k-60day-sprint.md`.
