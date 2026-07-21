@@ -58,3 +58,21 @@ Captured from Gina's email reply to Jess. Folds into the KB (`source-notes/knowl
 - Section **14** — Gina continuing "tomorrow".
 - Blood-test pricing — Gina to send.
 - Social media — to discuss on the KB call.
+
+---
+
+## Jess's reply to Gina (ready to send)
+
+Hi Gina! Thank you so much for this — it's brilliant, you've filled in a huge amount and it really helps. No apology needed at all. Quick answers to your questions:
+
+**Discovery call vs enquiry:** I agree — for anyone unsure, guide them to the discovery call (lowest friction: a quick chat beats a form when undecided). Enquiry form for those ready to proceed; discovery call for anyone wanting to talk it through first.
+
+**"Recall":** reminders for patients who have a planned follow-up (the interval you set), triggered 6–8 weeks ahead so they've time to sort bloods. Plus an optional one-off re-engagement for overdue patients — happy to set up both.
+
+**Clinical questions to the doctor directly:** yes — as you add doctors, clinical escalations route to the treating doctor rather than all landing with you. For now: PA/info inbox → PA routes to the right clinician; we build direct-to-doctor routing once the roster's settled.
+
+**Escalation wording:** yours is lovely — I'd just warm it: "Thank you — I've passed your message to our team, who'll be in touch with you shortly."
+
+Everything else (pricing, tone, out-of-hours, letter responses) is perfect — building it into the KB.
+
+I'd love 30–45 mins to whip through the last few KB questions + lock escalation. And on social — I'd love your thoughts: I've had a proper look at your current online presence and pulled together a little audit with some ideas, so I'd love to walk you through it. What suits your diary this week? x
