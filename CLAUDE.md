@@ -187,7 +187,9 @@ Jess's organic content weapon. Turns daily AI news into finished, on-brand conte
 - Email nurture (5 emails): `outputs/content/funnel/email-nurture.md`
 - Reel scripts: `outputs/content/scripts/builder-reels-batch-1.md` + `-batch-2.md` (16 scripts)
 
-**Two revenue engines (no conflict):** (1) near-term cash = WILBA **agency** via warm outreach → free audit → done-for-you clients (see `outputs/wilba-10k-60day-sprint.md`); (2) long-term flywheel = **builder brand → skills sheet → Skool** (recurring). Agency content bank: `outputs/content/30-post-authority-bank.md`.
+**Two revenue engines (no conflict):** (1) near-term cash = WILBA **agency** via warm outreach → free audit → done-for-you clients (see `outputs/wilba-10k-60day-sprint.md`); (2) long-term flywheel = **builder brand → skills sheet → Skool** (recurring). Master plan tying both together: `outputs/wilba-master-plan.md`. Agency content bank: `outputs/content/30-post-authority-bank.md`.
+
+**The Sales Engine (cash side):** commands `/outreach` (writes the day's 10-12 warm messages to send) and `/pipeline` (deal board + next best action), powered by the `outreach-writer` agent. Ready-to-send copy: `outputs/wilba-outreach-pack.md`. Deal board: `outputs/wilba-pipeline.md`. Skool starter modules: `outputs/content/funnel/skool-starter-modules.md`. Launch checklist: `outputs/content/LAUNCH-CHECKLIST.md`.
 
 **Status:** Content Engine + full builder funnel copy built. Needs (Jess's clicks): connect Manychat to IG, spin up the Skool space, host the skills sheet + email capture. Then record reels (start 1, 8, 9, 16) with the comment-to-DM live. Higgsfield visuals paused pending a photo of Jess for consistent thumbnails/avatar.
 
