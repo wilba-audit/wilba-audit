@@ -76,3 +76,14 @@ Hi Gina! Thank you so much for this — it's brilliant, you've filled in a huge 
 Everything else (pricing, tone, out-of-hours, letter responses) is perfect — building it into the KB.
 
 I'd love 30–45 mins to whip through the last few KB questions + lock escalation. And on social — I'd love your thoughts: I've had a proper look at your current online presence and pulled together a little audit with some ideas, so I'd love to walk you through it. What suits your diary this week? x
+
+---
+
+## Gina's follow-up reply (22 Jul) — NEW items
+
+- **Recall confirmed = 6 weeks ahead** (trigger follow-up + bloods reminder 6 wks before).
+- **Re-engagement for overdue patients** — YES, and ALSO **surface them to the admin team as a LIST + EMAIL** so they're on the team's radar. ⭐ build requirement (not just patient message).
+- **Doctor query oversight** — doctors do NOT work a roster (answer even on days off). Gina wants **visibility of each doctor's queries** so nothing falls behind / to cover leave. ⭐ escalation-routing design point → confirm on the call + build.
+- **Escalation wording approved** — but **NO em dash**: "Thank you, I've passed your message to our team, who'll be in touch shortly." 💡 Gina dislikes em dashes — keep them out of ALL patient-facing copy.
+- **New blood-test prices** — Gina sent them **to Mati** (for patient journey/forms).
+- **Call booked:** Wed 14:00 SAST = **8pm Wed Bali time** (Jess). Covers final KB questions + escalation + social audit.
