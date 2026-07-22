@@ -2,6 +2,41 @@
 Goal: capture everything the WhatsApp/web AI needs to draft accurate non-clinical replies for the 3-PA shared inbox — bookings, bloods, payments, pharmacies, logistics — while keeping a hard line around anything medical.
 Blue text = filled in from clinic documents, the live website (theschoemanclinic.com), and prior conversation history. Items in italics with no blue answer are still open and need confirming with Dr Gina / Lisa / Mati.
 
+---
+
+## ✅ CONFIRMED BY GINA (22 Jul email + follow-up) — see `../gina-kb-answers.md` for detail
+
+- **Pricing (NEW):** initial concise £350 / standard £500 / comprehensive £750; follow-ups (30m) £250 (standard + functional/gut); new 15-min brief for outstanding bloods. Blood-test prices → sent to Mati.
+- **Discovery calls:** free 10–15 min, by PAs; unsure enquirers → discovery call. International needs UK address, no referral. 18+ only.
+- **Recall:** = reminders for planned follow-ups, trigger **6 weeks** ahead. Plus re-engagement for overdue patients, AND surface overdue to admins as a **list + email**.
+- **Post-consult letters:** 5 working days; approved before/after-5-day AI responses; outstanding admin → "team notified, 48h"; follow-up timing answerable from treatment plan; prescription queries → AI may state pharmacy + duration.
+- **Tone/brand:** warm, patient-centred; no "unfortunately/cannot"; **no emojis**; no competitor mentions; sign-off "Best wishes, The Schoeman Clinic Team." (Gina dislikes em dashes.)
+- **Inbox/coverage:** Zoey (M–F), Louise (M–F), Isabell (Mon+Fri). Escalation → info inbox, wording "Thank you, I've passed your message to our team, who'll be in touch shortly." Out-of-hours WA message confirmed. All clinical → clinician; appt-date changes → PA.
+- **Doctor oversight:** doctors have no rota; Gina wants visibility of each doctor's queries (mechanism TBC on call).
+
+## 🔴 STILL OPEN — ASK ON THE WEDNESDAY CALL (prioritised)
+
+**Escalation (Section 1 — the priority):**
+1. Holding line for medication questions ("should I increase/stop my dose, is this side effect normal?").
+2. 2–3 examples of questions that *sound* admin but are actually clinical → escalate.
+3. Safeguarding/crisis: what the patient is told immediately, WHO is alerted instantly, and how.
+4. Words/phrases that must ALWAYS trigger an urgent human flag.
+5. Prescriptions: exactly what the PA checks before a repeat (per treatment plan); what if overdue.
+6. Doctor oversight — how Gina wants to see each doctor's queries (daily digest / shared view / unanswered-alert).
+
+**Operational quick-fire (Sections 3–7):**
+7. Top 3–5 enquiry reasons vs niche; what you DON'T offer / politely decline.
+8. IV therapy — walk-in vs appointment, which locations.
+9. Blood panel cost + turnaround per path (partly via Mati's blood prices); home-kit contents + return.
+10. Refund on bloods once paid / if they don't proceed to a consult.
+11. "Haven't received my pharmacy link" chase wording; Zen vs compounding = doctor's call?
+12. Can the AI share the Gut Map code (DRGINA) + a "check your spam" line for Nordic/Vibrant/Natural Dispensary?
+13. Patient-facing "why the ~1-month wait after bloods" explanation; anti-scam "what a legit payment link looks like".
+
+**Can be async in the doc (nice-to-have):** typical patient profile · what to bring to a consult · Trucheck/Ezra one-liners · "AI got it wrong" feedback route · AI-disclosure line on first contact.
+
+---
+
 1. The Escalation Boundary — What the AI Must NEVER Answer
 Read this first. This is the difference between a safe medical assistant and a liability. Everything here routes to a human PA with NO AI draft.
 Clinical / medical (hard line)
