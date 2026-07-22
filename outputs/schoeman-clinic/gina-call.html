@@ -1,0 +1,268 @@
+<title>The Schoeman Clinic — Working Session</title>
+<style>
+  :root{
+    --paper:#F4F6F5; --card:#FFFFFF; --ink:#182528; --muted:#566A6C;
+    --line:#DCE4E2; --accent:#0E6E68; --accent-ink:#0B534E; --accent-soft:#E4F0ED;
+    --amber:#8A5A0C; --amber-soft:#F6ECD6; --amber-line:#E4CF9E;
+    --red:#A3392C; --red-soft:#F6E2DD; --red-line:#E5B7AC;
+    --green:#2E6B4F; --green-soft:#E1EFE7;
+    --display:Georgia,"Times New Roman",serif;
+    --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0F1618; --card:#16211F; --ink:#E8EEEC; --muted:#9BAEAB;
+    --line:#283A38; --accent:#41B8AF; --accent-ink:#8FD9D2; --accent-soft:#12302C;
+    --amber:#D8A94E; --amber-soft:#2A2313; --amber-line:#4A3C1C;
+    --red:#E58976; --red-soft:#2E1B16; --red-line:#4C2A22;
+    --green:#72C199; --green-soft:#15271E;
+  }}
+  :root[data-theme="light"]{--paper:#F4F6F5;--card:#FFFFFF;--ink:#182528;--muted:#566A6C;--line:#DCE4E2;--accent:#0E6E68;--accent-ink:#0B534E;--accent-soft:#E4F0ED;--amber:#8A5A0C;--amber-soft:#F6ECD6;--amber-line:#E4CF9E;--red:#A3392C;--red-soft:#F6E2DD;--red-line:#E5B7AC;--green:#2E6B4F;--green-soft:#E1EFE7;}
+  :root[data-theme="dark"]{--paper:#0F1618;--card:#16211F;--ink:#E8EEEC;--muted:#9BAEAB;--line:#283A38;--accent:#41B8AF;--accent-ink:#8FD9D2;--accent-soft:#12302C;--amber:#D8A94E;--amber-soft:#2A2313;--amber-line:#4A3C1C;--red:#E58976;--red-soft:#2E1B16;--red-line:#4C2A22;--green:#72C199;--green-soft:#15271E;}
+
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;margin:0;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:54rem;margin:0 auto;padding:2.4rem 1.5rem 4rem;}
+  .bar{display:flex;justify-content:flex-end;gap:.5rem;margin-bottom:1rem;}
+  .btn{font:600 .8rem/1 var(--body);color:var(--accent-ink);background:var(--accent-soft);border:1px solid var(--line);border-radius:.5rem;padding:.5rem .8rem;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);}
+  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  header{border-bottom:2px solid var(--accent);padding-bottom:1.2rem;margin-bottom:1.5rem;}
+  .eyebrow{font:600 .72rem/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 .55rem;}
+  h1{font-family:var(--display);font-weight:600;font-size:2.2rem;line-height:1.08;margin:0 0 .2rem;letter-spacing:-.01em;text-wrap:balance;}
+  .sub{font-family:var(--display);font-style:italic;font-size:1.1rem;color:var(--muted);margin:0 0 1rem;}
+  .meta{background:var(--accent);color:#fff;border-radius:.6rem;padding:.7rem .9rem;font-size:.9rem;}
+  :root[data-theme="dark"] .meta,@media (prefers-color-scheme:dark){.meta{color:#08201e;}}
+  .meta b{font-weight:700;}
+  .meta div{margin:.1rem 0;}
+
+  .phase{font:700 .72rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:2.4rem 0 .3rem;}
+  h2{font-family:var(--display);font-weight:600;font-size:1.5rem;margin:.2rem 0 .6rem;display:flex;align-items:baseline;gap:.6rem;text-wrap:balance;}
+  h2 .n{font:700 .95rem/1 var(--mono);color:var(--accent);background:var(--accent-soft);border-radius:.4rem;padding:.3rem .48rem;flex:none;}
+  h3{font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-ink);margin:1.1rem 0 .3rem;}
+  p{margin:.6rem 0;}
+  ul{margin:.5rem 0;padding-left:1.2rem;}
+  li{margin:.32rem 0;}
+  .lead{color:var(--muted);}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:.6rem;background:var(--card);margin:.8rem 0;}
+  table{border-collapse:collapse;width:100%;font-size:.92rem;}
+  th,td{text-align:left;padding:.55rem .8rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--accent);color:#fff;font:600 .72rem/1.2 var(--mono);letter-spacing:.05em;}
+  :root[data-theme="dark"] thead th{color:#08201e;}
+  @media (prefers-color-scheme:dark){thead th{color:#08201e;}}
+  tbody tr:last-child td{border-bottom:0;}
+  td.t{font-family:var(--mono);color:var(--accent-ink);font-weight:600;white-space:nowrap;}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:.7rem;padding:1rem 1.2rem;margin:.9rem 0;}
+  .card.recap{border-left:4px solid var(--green);}
+  .card ul{margin:.3rem 0;}
+  .card li{font-size:.92rem;}
+  .card li b{color:var(--ink);}
+
+  .qgroup{margin:.6rem 0 1rem;}
+  .qgroup ul{list-style:none;padding-left:0;}
+  .qgroup li{padding-left:1.5rem;position:relative;margin:.4rem 0;}
+  .qgroup li::before{content:"?";position:absolute;left:0;top:0;font:700 .8rem/1.2 var(--mono);color:var(--accent);background:var(--accent-soft);border-radius:.3rem;width:1.1rem;height:1.1rem;text-align:center;}
+
+  .safety{border:1px solid var(--line);border-radius:.7rem;overflow:hidden;margin:.8rem 0;}
+  .safety .row{display:grid;grid-template-columns:8.5rem 1fr;gap:0;border-bottom:1px solid var(--line);}
+  .safety .row:last-child{border-bottom:0;}
+  .safety .lv{padding:.65rem .9rem;font-weight:700;font-size:.9rem;}
+  .safety .lv.op{background:var(--green-soft);color:var(--green);}
+  .safety .lv.cl{background:var(--amber-soft);color:var(--amber);}
+  .safety .lv.ur{background:var(--red-soft);color:var(--red);}
+  .safety .d{padding:.65rem .9rem;font-size:.9rem;background:var(--card);}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:.8rem 0;}
+  @media (max-width:640px){.cols{grid-template-columns:1fr}.safety .row{grid-template-columns:6rem 1fr}}
+  .box{border:1px solid var(--line);border-radius:.7rem;padding:.9rem 1.1rem;background:var(--card);}
+  .box.str{border-top:3px solid var(--green);}
+  .box.opp{border-top:3px solid var(--amber);}
+  .box h4{margin:.1rem 0 .5rem;font-size:.95rem;}
+  .box.str h4{color:var(--green);}
+  .box.opp h4{color:var(--amber);}
+  .box ul{padding-left:1.1rem;} .box li{font-size:.9rem;}
+
+  .rec{background:var(--accent-soft);border:1px solid var(--line);border-radius:.7rem;padding:1rem 1.2rem;margin:.8rem 0;}
+  .rec h4{margin:.1rem 0 .4rem;color:var(--accent-ink);font-size:1rem;}
+
+  .divider{height:2px;background:linear-gradient(90deg,var(--accent),transparent);border:0;margin:2.6rem 0 0;border-radius:2px;}
+
+  footer{margin-top:2.6rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);font-style:italic;}
+
+  @media print{.bar{display:none}body{background:#fff}.wrap{max-width:none;padding:0}
+    .card,.box,.safety,.tablewrap,.rec{break-inside:avoid}h2{break-after:avoid}}
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <button class="btn" onclick="document.documentElement.setAttribute('data-theme',(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'))">Theme</button>
+    <button class="btn" onclick="window.print()">Print</button>
+  </div>
+
+  <header>
+    <p class="eyebrow">The Schoeman Clinic</p>
+    <h1>Knowledge Base &amp; Digital Presence</h1>
+    <p class="sub">Working session, Session 3</p>
+    <div class="meta">
+      <div><b>Date:</b> Wednesday, 2:00pm SAST</div>
+      <div><b>With:</b> Dr Gina Schoeman and Jess Morrell (WILBA)</div>
+      <div><b>Aim:</b> Confirm what we have captured, close the last knowledge base gaps, finalise the clinical safety detail, then review your digital presence.</div>
+    </div>
+  </header>
+
+  <h2><span class="n">A</span> Agenda</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th style="width:6rem">Time</th><th>Section</th></tr></thead>
+      <tbody>
+        <tr><td class="t">5 min</td><td>Confirm what is already locked</td></tr>
+        <tr><td class="t">10 min</td><td>Final knowledge base gaps</td></tr>
+        <tr><td class="t">12 min</td><td>Clinical safety and escalation detail</td></tr>
+        <tr><td class="t">6 min</td><td>Doctor routing and oversight</td></tr>
+        <tr><td class="t">10 min</td><td>Digital presence: the audit</td></tr>
+        <tr><td class="t">2 min</td><td>Access and next steps</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="phase">Part one — Knowledge base</div>
+
+  <h2><span class="n">1</span> Confirmed so far</h2>
+  <p class="lead">A quick scan so we are aligned. Please flag anything that has changed, otherwise it is locked and we move on.</p>
+  <div class="card recap">
+    <ul>
+      <li><b>Consultations:</b> concise £350, standard £500, comprehensive £750; follow-ups 30 min £250; 15 min brief for outstanding bloods.</li>
+      <li><b>Bloods:</b> required before the first consultation (TDL, home kit, or own results); cycle days 18 to 22; consult about one month after the test.</li>
+      <li><b>Discovery calls:</b> free 10 to 15 minutes, run by the PAs; anyone unsure is guided to one.</li>
+      <li><b>Access:</b> international welcome with a UK address; no referral; 18 and over only.</li>
+      <li><b>Recall:</b> reminder 6 weeks before a planned follow-up; re-engagement for overdue patients, who are also given to the admin team as a list and an email.</li>
+      <li><b>Letters:</b> within 5 working days, with agreed holding responses.</li>
+      <li><b>Clinical safety:</b> results go to the clinician, never the patient; two short emails then it becomes a consultation; prescriptions only for current patients with the appointment and treatment plan checked.</li>
+      <li><b>Tone:</b> warm, patient centred, no negative wording, no emojis, no competitor comparisons; sign off "Best wishes, The Schoeman Clinic Team".</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">2</span> Final knowledge base gaps</h2>
+  <p class="lead">The last operational details we need, so the team and the assistant always have accurate, approved answers.</p>
+  <div class="qgroup">
+    <h3>Services and referrals</h3>
+    <ul>
+      <li>Top 3 to 5 reasons patients enquire, and which are more niche?</li>
+      <li>Anything patients ask for that the clinic does not offer, and where you refer them?</li>
+      <li>IV therapy and injectables: by appointment or walk in, and at which location?</li>
+      <li>One off screenings (cardiac, cancer, biological age): standalone, or only after a consultation?</li>
+    </ul>
+    <h3>Blood tests and payments</h3>
+    <ul>
+      <li>Rough blood panel cost and turnaround per path (TDL London, home kit, own results)?</li>
+      <li>Home kit: what it contains and how the patient returns it?</li>
+      <li>Refund or cancellation position if a blood test is paid but the patient does not proceed?</li>
+      <li>What a legitimate payment link and sender looks like, to reassure a patient who asks if it is genuine?</li>
+    </ul>
+    <h3>Prescriptions and pharmacies</h3>
+    <ul>
+      <li>When Zen is used versus a compounding pharmacy, and is that always the clinician's decision?</li>
+      <li>Preferred wording when a patient says they have not received their pharmacy link?</li>
+      <li>Happy for the assistant to share the Gut Map code (DRGINA) and a "please check your spam folder" line for Nordic, Vibrant and Natural Dispensary?</li>
+    </ul>
+    <h3>Keeping it current</h3>
+    <ul>
+      <li>How often do prices or partners change, and the easiest way to send us updates?</li>
+      <li>Once live, the simplest way for the team to flag anything the assistant answers incorrectly?</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">3</span> Clinical safety and escalation</h2>
+  <p class="lead">The framework is agreed. Every message sits at one of three levels. These are the last points to make it watertight.</p>
+  <div class="safety">
+    <div class="row"><div class="lv op">Operational</div><div class="d">Handled by the team: bookings, rescheduling, blood logistics, pricing, locations, pharmacy status, admin.</div></div>
+    <div class="row"><div class="lv cl">Clinical</div><div class="d">Passed to a clinician, never answered by the team or assistant: symptoms, results, medication, "is this safe", or a specific patient's history.</div></div>
+    <div class="row"><div class="lv ur">Urgent</div><div class="d">Immediate human and a priority alert: a mental health crisis, self harm, or a medical emergency.</div></div>
+  </div>
+  <div class="qgroup">
+    <ul>
+      <li>Two or three examples of questions that sound operational but are actually clinical.</li>
+      <li>The exact holding message for a medication question ("should I change my dose", "is this side effect normal") while a clinician takes over.</li>
+      <li>Urgent and safeguarding: what the patient is told immediately, which words must always trigger a priority alert, and who is notified and how.</li>
+      <li>An overdue patient requesting a repeat prescription: what should the team do?</li>
+      <li>The short list of anything the assistant must never answer.</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">4</span> Doctor routing and oversight</h2>
+  <p class="lead">So clinical questions reach the right treating doctor as the clinic grows, with the oversight you asked for.</p>
+  <div class="qgroup">
+    <ul>
+      <li>Route a clinical query automatically to the treating doctor, or into a shared clinical queue that is then assigned?</li>
+      <li>How would you like to stay aware of open queries: a short daily summary per doctor, a shared view you can check anytime, or an alert only when something is unanswered beyond a set time?</li>
+      <li>When a doctor is on leave, reassign automatically, or flag to you to redirect?</li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+  <div class="phase">Part two — Digital presence</div>
+
+  <h2><span class="n">5</span> Social media &amp; brand: the audit</h2>
+  <p class="lead">A look at how the clinic shows up online, so the foundations are right before anyone invests in marketing.</p>
+
+  <h3>How we looked at it</h3>
+  <p>Five lenses: <b>discoverability</b> (can a searching patient find you), <b>credibility</b> (does the presence match a premium, CQC-registered clinic), <b>content</b> (what is posted, and for whom), <b>conversion</b> (does interest lead to an enquiry), and <b>foundations</b> (healthy accounts and consistent branding).</p>
+
+  <div class="cols">
+    <div class="box str">
+      <h4>Strengths to build on</h4>
+      <ul>
+        <li>Dr Gina's authority and credentials, and a clear, in-demand niche in hormone, longevity and functional medicine.</li>
+        <li>Real patient outcomes and testimonials.</li>
+        <li>Dr Gina comes across naturally and warmly on camera.</li>
+        <li>A genuinely premium, CQC-registered positioning.</li>
+      </ul>
+    </div>
+    <div class="box opp">
+      <h4>Opportunities</h4>
+      <ul>
+        <li>The online presence does not yet match the quality of the clinic itself.</li>
+        <li>Discoverability: making sure a searching patient easily finds you (website and Google Business Profile).</li>
+        <li>The website, mid-transition, is the front door and the priority to get right.</li>
+        <li>A clear, obvious path from social and site to a discovery call or enquiry.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="rec">
+    <h4>Recommendation: foundations first</h4>
+    <ul>
+      <li>Strengthen the fundamentals first: consistent branding, a working website, discoverability, and a simple, authoritative content rhythm built around Dr Gina's expertise, rather than chasing followers or paid ads.</li>
+      <li>Scale marketing once the clinic has capacity (the new doctors bedding in) and the path from interest to enquiry converts. Reach does not equal revenue.</li>
+      <li>Lean into the genuine differentiators: authority, real outcomes, and Dr Gina on camera.</li>
+      <li>Align efforts so we complement, rather than duplicate, the work already underway with Marianne.</li>
+    </ul>
+  </div>
+
+  <h3>Your direction</h3>
+  <div class="qgroup">
+    <ul>
+      <li>What would success look like online over the next 6 to 12 months?</li>
+      <li>Who is the ideal patient you most want to attract?</li>
+      <li>How do you feel on camera, and how much time could you give to content?</li>
+      <li>How would you like us to work alongside Marianne?</li>
+      <li>What brand assets do you have (logo, fonts, photography, tone guide)?</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">6</span> Access &amp; next steps</h2>
+  <h3>Access we would value (view or analytics level)</h3>
+  <ul>
+    <li>Meta Business Manager (Instagram and Facebook), also required for the WhatsApp Business verification.</li>
+    <li>Website analytics (Google Analytics), and the Google Business Profile.</li>
+    <li>Any current social scheduling tool.</li>
+    <li>Brand assets: logo, fonts, approved photography, any tone or brand guide.</li>
+  </ul>
+  <h3>Next steps</h3>
+  <p class="lead">Agreed actions captured live on the call.</p>
+
+  <footer>Prepared by WILBA for The Schoeman Clinic</footer>
+</div>
