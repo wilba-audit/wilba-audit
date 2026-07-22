@@ -192,10 +192,18 @@ medicine, bioidentical hormones, premium London market. Goal: authority/thought
 leadership. Audit complete (preliminary score ~48% — "real potential, leaking at
 three points": production-value fallacy + peer-not-patient content + no
 distribution). Honest tiered proposal drafted (recommend starting Tier 1 —
-Audit & Strategy Sprint). Files in `outputs/schoeman/`.
-**Status:** Deliverables drafted. Needs: confirm this is the right Dr Schoeman +
-her 90-day analytics (see `outputs/schoeman/00-data-request.md`) to lock numbers
-and pricing, then a client-facing proposal can be finalised.
+Audit & Strategy Sprint). Comprehensive strategy written (`strategy.md`) grounded
+in real niche benchmarks (Dr Louise Newson ~826K, Dr Mary Claire Haver ~4M): ICP
+"Sarah, 49", positioning rewrite, 6 content pillars, per-platform roles, hook bank,
+lead-magnet funnel, 1-shoot→12-touch repurposing, 90-day calendar. Turnkey data
+collector packaged in `outputs/schoeman/collector/`. Files: `00-data-request.md`,
+`audit.md`, `strategy.md`, `proposal.md`, `proposal.html`, `collector/`.
+**YouTube finding:** no active channel found for the right Dr Schoeman — untapped
+opportunity, needs confirming.
+**Status:** Comprehensive audit + strategy drafted on public data + benchmarks.
+Needs (to make it fully grounded): run the collector OR her 90-day analytics
+screenshots (`00-data-request.md`) + confirm her YouTube/TikTok handles, then lock
+the quantitative scores, targets and pricing.
 
 ---
 

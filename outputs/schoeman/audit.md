@@ -26,6 +26,18 @@ mainstream care. She has genuine credentials, a clear specialty, and a
 premium offer. The raw materials for authority are *all here.* Which is exactly
 why "spent money on video, no traction" is frustrating — and fixable.
 
+**The niche is *proven* to work on social — so this is a strategy problem, not a
+market problem.** Benchmarks in her exact space: Dr Louise Newson (UK,
+@menopause_doctor) ~826K followers `[REAL]`; Dr Mary Claire Haver (US,
+@drmaryclaire) ~4M IG / 2.2M TikTok `[REAL]`. Critically, **they won on
+relatability, myth-busting and consistency — not production value** — which is
+the exact opposite of where Gina's budget went. Newson is Gina's template (UK,
+evidence-based, hormone-led, built owned assets); Haver is the cautionary
+contrast (huge reach but sells supplements — "raised eyebrows"). Gina's open
+lane is *the honest, premium, functional doctor.* See `strategy.md` for the full
+play. **YouTube status:** no active channel for the right Dr Schoeman could be
+found publicly `[CONFIRM]` — treated as untapped opportunity, not existing asset.
+
 ## 2. The ICP she should own
 The person the content must reach (to be confirmed with her, but almost
 certainly): **a 45–55 year-old professional woman — brain fog, weight gain,
