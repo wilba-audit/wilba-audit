@@ -98,3 +98,18 @@ I'd love 30–45 mins to whip through the last few KB questions + lock escalatio
 - **Internal "results-not-ready" alert moved to email (info@)** — PA team informed. Open Q (Griffin to confirm for Gina): moving internal alerts to email does NOT stop patient-facing WhatsApp automations (those run on Meta-approved templates + consent).
 - **Idea (Jess):** a light monthly "confirm your working hours" check-in automation so the discovery calendar never drifts — park until calendar is live.
 - **Asked Griffin:** status of the Semble→GHL contact/email migration.
+
+---
+
+## FINAL — consolidated team update (Mati + Griffin), pulls in emails + Telegram
+
+**Pricing (Mati):** initial concise £350 / standard £500 / comprehensive £750; follow-ups (30m) £250 standard + £250 functional/gut; new 15-min brief for outstanding bloods. Blood-test prices sent to Mati directly.
+**Recall/re-engagement (build):** recall 6 wks ahead; re-engagement for overdue; overdue also surfaced to admins as list + email.
+**Escalation & doctors:** clinical → clinician review; escalate to treating doctor as roster grows; doctors have no rota → Gina wants oversight of each doctor's queries (leave cover); approved team wording (no dash): "Thank you, I've passed your message to our team, who'll be in touch shortly."
+**Tone/brand:** warm; no "unfortunately/cannot"; no emojis; no competitor mentions; sign-off "Best wishes, The Schoeman Clinic Team."
+**Letters/queries:** 5-day letter (approved responses captured); outstanding admin → 48h; follow-up timing from treatment plan; prescription queries → pharmacy + duration.
+**Out-of-hours WA:** approved message captured (§12).
+**Discovery calls:** all PAs; M–F 10:00–16:30, internal rota, widening to shifts; Jess sets up calendar. Lisa departure CONFIDENTIAL.
+**Griffin Qs:** (1) Semble→GHL migration status? (2) alert-to-email is internal only; patient WA automations still run on templates+consent — confirm.
+**Mati Q:** does Semble already send appointment reminders?
+**Jess:** folding KB in; booking Gina for Wed (escalation + social audit); setting up discovery calendar.
