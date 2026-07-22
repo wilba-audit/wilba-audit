@@ -87,3 +87,14 @@ I'd love 30–45 mins to whip through the last few KB questions + lock escalatio
 - **Escalation wording approved** — but **NO em dash**: "Thank you, I've passed your message to our team, who'll be in touch shortly." 💡 Gina dislikes em dashes — keep them out of ALL patient-facing copy.
 - **New blood-test prices** — Gina sent them **to Mati** (for patient journey/forms).
 - **Call booked:** Wed 14:00 SAST = **8pm Wed Bali time** (Jess). Covers final KB questions + escalation + social audit.
+
+---
+
+## Telegram updates (22 Jul) — discovery calls + confidential note
+
+- **Discovery calls: ALL PAs do them.** Start **M–F 10:00–16:30**, rota arranged internally; window will widen as the team moves to shifts (some patients may only manage after-work slots). Jess sets up: remove Griffin (test user), add PAs on their own availability, mind holiday hours.
+- **⚠️ CONFIDENTIAL — Lisa is LEAVING (last day 13 Aug), NOT yet official, team does NOT know.** Keep OUT of all PA-facing comms. Mati/Griffin/WILBA internal only.
+- **Mati uploaded factual info to the "KB drive"** — pull from there when finishing the KB.
+- **Internal "results-not-ready" alert moved to email (info@)** — PA team informed. Open Q (Griffin to confirm for Gina): moving internal alerts to email does NOT stop patient-facing WhatsApp automations (those run on Meta-approved templates + consent).
+- **Idea (Jess):** a light monthly "confirm your working hours" check-in automation so the discovery calendar never drifts — park until calendar is live.
+- **Asked Griffin:** status of the Semble→GHL contact/email migration.
