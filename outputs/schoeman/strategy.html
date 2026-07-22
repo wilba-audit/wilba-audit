@@ -1,0 +1,403 @@
+<title>WILBA · Authority Strategy — Dr Gina Schoeman</title>
+<style>
+  :root{
+    --bone:#F5F6F3; --panel:#FFFFFF; --ink:#1A2724; --ink-soft:#4C5B56;
+    --line:#DDE3DE; --teal:#1E6E6A; --teal-deep:#155551; --clay:#B67C74;
+    --strong:#3B7A57; --caution:#B0812B; --weak:#B5544C;
+    --shadow:0 1px 2px rgba(26,39,36,.04),0 8px 30px rgba(26,39,36,.06);
+    --maxw:800px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bone:#121A18; --panel:#18211F; --ink:#EAF0EC; --ink-soft:#9DB0A9;
+      --line:#28322F; --teal:#5AB6AE; --teal-deep:#8FD6CE; --clay:#D69C93;
+      --strong:#6FBD8E; --caution:#D6B25A; --weak:#DB8981;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.34);
+    }
+  }
+  :root[data-theme="light"]{
+    --bone:#F5F6F3; --panel:#FFFFFF; --ink:#1A2724; --ink-soft:#4C5B56;
+    --line:#DDE3DE; --teal:#1E6E6A; --teal-deep:#155551; --clay:#B67C74;
+    --strong:#3B7A57; --caution:#B0812B; --weak:#B5544C;
+    --shadow:0 1px 2px rgba(26,39,36,.04),0 8px 30px rgba(26,39,36,.06);
+  }
+  :root[data-theme="dark"]{
+    --bone:#121A18; --panel:#18211F; --ink:#EAF0EC; --ink-soft:#9DB0A9;
+    --line:#28322F; --teal:#5AB6AE; --teal-deep:#8FD6CE; --clay:#D69C93;
+    --strong:#6FBD8E; --caution:#D6B25A; --weak:#DB8981;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--sans);
+    line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;text-wrap:balance;line-height:1.16}
+  p{max-width:66ch}
+  a{color:var(--teal);text-underline-offset:3px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--teal);margin:0 0 14px}
+
+  header{border-bottom:1px solid var(--line);background:var(--panel)}
+  .mast{display:flex;justify-content:space-between;align-items:center;
+    padding:20px 24px;max-width:var(--maxw);margin:0 auto;font-family:var(--mono);
+    font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .mast .brand{color:var(--ink);font-weight:600;letter-spacing:.22em}
+  .hero{padding:60px 0 44px}
+  .hero h1{font-size:clamp(30px,5vw,46px);margin:0 0 22px;letter-spacing:-.01em}
+  .hero .thesis{font-family:var(--serif);font-size:21px;line-height:1.5;color:var(--ink);
+    border-left:3px solid var(--teal);padding-left:22px;max-width:60ch}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:30px;
+    font-family:var(--mono);font-size:12.5px;color:var(--ink-soft)}
+  .meta b{color:var(--ink);font-weight:600}
+
+  section{padding:42px 0;border-top:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--teal);margin:0 0 18px}
+  section h2{font-size:27px;margin:0 0 14px}
+  section h3{font-size:19px;margin:26px 0 8px}
+  .sub{color:var(--ink-soft);max-width:64ch}
+
+  /* Tables */
+  .tbl{overflow-x:auto;margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+  tr:last-child td{border-bottom:0}
+  td b{color:var(--ink)}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* Benchmark cards */
+  .bench{display:grid;gap:14px;margin-top:8px}
+  @media(min-width:640px){.bench{grid-template-columns:1fr 1fr 1fr}}
+  .bcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .bcard .who{font-family:var(--serif);font-size:17px;margin:0 0 2px}
+  .bcard .stat{font-family:var(--serif);font-size:32px;color:var(--teal);font-variant-numeric:tabular-nums;line-height:1.1;margin:6px 0}
+  .bcard .role{font-size:13.5px;color:var(--ink-soft)}
+  .bcard.lane{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),var(--shadow)}
+  .bcard.lane .stat{font-size:20px}
+  .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--clay);margin-top:10px}
+
+  /* Persona */
+  .persona{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;margin-top:8px}
+  .persona .top{display:flex;gap:18px;align-items:center;padding:22px;border-bottom:1px solid var(--line);background:linear-gradient(0deg,transparent,color-mix(in srgb,var(--teal) 6%,transparent))}
+  .avatar{width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;background:color-mix(in srgb,var(--clay) 22%,var(--panel));color:var(--ink);font-family:var(--serif);font-size:24px;font-weight:600}
+  .persona .top h3{margin:0;font-size:22px}
+  .persona .top .role{font-size:14px;color:var(--ink-soft)}
+  .persona dl{display:grid;grid-template-columns:1fr;gap:0;margin:0;padding:6px 22px 10px}
+  @media(min-width:620px){.persona dl{grid-template-columns:1fr 1fr;column-gap:28px}}
+  .persona .row{padding:13px 0;border-bottom:1px solid var(--line)}
+  .persona dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+  .persona dd{margin:0;font-size:14.5px;color:var(--ink)}
+
+  /* Before / after */
+  .ba{display:grid;gap:10px;margin-top:8px}
+  .ba .pair{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow)}
+  @media(min-width:640px){.ba .pair{grid-template-columns:1fr 1fr}}
+  .ba .b,.ba .a{padding:15px 18px;font-size:14.5px}
+  .ba .b{color:var(--ink-soft);border-bottom:1px solid var(--line)}
+  @media(min-width:640px){.ba .b{border-bottom:0;border-right:1px solid var(--line)}}
+  .ba .a{color:var(--ink)}
+  .ba .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:6px}
+  .ba .b .lbl{color:var(--weak)} .ba .a .lbl{color:var(--strong)}
+
+  /* Pillars */
+  .pillars{display:grid;gap:14px;margin-top:8px}
+  @media(min-width:620px){.pillars{grid-template-columns:1fr 1fr}}
+  .pillar{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);position:relative}
+  .pillar .n{font-family:var(--mono);font-size:12px;color:var(--teal);letter-spacing:.08em}
+  .pillar h3{margin:6px 0 6px;font-size:17.5px}
+  .pillar p{margin:0;font-size:14px;color:var(--ink-soft)}
+  .pillar.signature{border-color:var(--clay);box-shadow:0 0 0 1px color-mix(in srgb,var(--clay) 60%,transparent),var(--shadow)}
+  .pillar.signature .n{color:var(--clay)}
+
+  /* Hook bank */
+  .hooks{margin-top:8px;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px 22px}
+  .hooks div{padding:13px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:16px;color:var(--ink);display:flex;gap:14px;align-items:baseline}
+  .hooks div:last-child{border-bottom:0}
+  .hooks .type{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);flex:none;width:96px}
+
+  /* Flow 1->12 */
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px}
+  .flow .node{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:13.5px;box-shadow:var(--shadow)}
+  .flow .node b{display:block;font-family:var(--serif);font-size:15px}
+  .flow .arow{color:var(--teal);font-size:18px;font-weight:700}
+  .flow .seed{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),var(--shadow)}
+
+  /* Timeline */
+  .arc{margin-top:8px}
+  .phase{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:20px 0;border-top:1px dashed var(--line)}
+  .phase:first-child{border-top:0}
+  .phase .when{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);padding-top:3px}
+  .phase h3{margin:0 0 8px;font-size:18px}
+  .phase ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:14.5px}
+  .phase li{margin:4px 0}
+
+  /* KPI split */
+  .kpis{display:grid;gap:14px;margin-top:8px}
+  @media(min-width:620px){.kpis{grid-template-columns:1fr 1fr}}
+  .kbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .kbox h3{margin:0 0 10px;font-size:16px}
+  .kbox ul{margin:0;padding-left:18px;font-size:14px;color:var(--ink-soft)}
+  .kbox.lead{border-top:3px solid var(--strong)}
+  .kbox.lag{border-top:3px solid var(--teal)}
+
+  .callout{background:color-mix(in srgb,var(--teal) 8%,transparent);border:1px solid color-mix(in srgb,var(--teal) 32%,transparent);border-radius:12px;padding:18px 22px;margin-top:16px;font-size:15.5px}
+  .callout b{color:var(--ink)}
+
+  footer{padding:40px 0 60px;color:var(--ink-soft);font-size:13px}
+  .draftnote{background:color-mix(in srgb,var(--caution) 12%,transparent);
+    border:1px solid color-mix(in srgb,var(--caution) 40%,transparent);border-radius:10px;
+    padding:14px 18px;font-size:13.5px;color:var(--ink-soft);margin-bottom:26px}
+  .draftnote b{color:var(--ink)}
+  .tag{font-family:var(--mono);font-size:10px;padding:2px 6px;border-radius:4px;letter-spacing:.04em;border:1px solid var(--line);color:var(--ink-soft);vertical-align:middle}
+</style>
+
+<header>
+  <div class="mast">
+    <span class="brand">WILBA</span>
+    <span>Authority Strategy · Confidential</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <p class="eyebrow">Content &amp; Authority Strategy · Dr Gina Schoeman</p>
+    <h1>Become the UK&rsquo;s most trusted voice for the woman her doctor called &ldquo;fine.&rdquo;</h1>
+    <p class="thesis">Not louder. Not more polished. <em>Clearer, braver, and more
+      consistent</em> than anyone else in the niche — by translating world-class hormone
+      &amp; longevity medicine into content her ideal patient actually feels, saves, and acts on.</p>
+    <div class="meta">
+      <span><b>Goal</b> &nbsp;Authority → premium enquiries</span>
+      <span><b>Prepared by</b> &nbsp;Jess Morrell, WILBA</span>
+      <span><b>Date</b> &nbsp;13 Jul 2026</span>
+    </div>
+  </div>
+
+  <section>
+    <p class="kicker">01 — Proof the niche works</p>
+    <h2>This is a strategy problem, not a market problem.</h2>
+    <p class="sub">Her exact space is one of the biggest organic-growth stories in health
+      media. Critically — the winners did it on <em>relatability and consistency, not
+      production value.</em> That&rsquo;s the opposite of where the budget has gone.</p>
+    <div class="bench">
+      <div class="bcard">
+        <p class="who">Dr Louise Newson 🇬🇧</p>
+        <div class="stat">826K</div>
+        <p class="role">@menopause_doctor · evidence-based, hormone-led, built owned assets (podcast + app + clinic).</p>
+        <p class="tagline">Gina&rsquo;s template</p>
+      </div>
+      <div class="bcard">
+        <p class="who">Dr Mary Claire Haver 🇺🇸</p>
+        <div class="stat">4M</div>
+        <p class="role">@drmaryclaire · relatable myth-busting + community. But sells supplements — &ldquo;raised eyebrows.&rdquo;</p>
+        <p class="tagline">Cautionary contrast</p>
+      </div>
+      <div class="bcard lane">
+        <p class="who">The open lane</p>
+        <div class="stat">Gina&rsquo;s to own</div>
+        <p class="role">The <em>honest, premium, functional</em> doctor. Trust is the moat — never traded for reach.</p>
+        <p class="tagline">The positioning</p>
+      </div>
+    </div>
+    <div class="callout"><b>The takeaway:</b> a phone camera and a sharp, honest take beats a
+      film crew in this niche. The audience is proven, hungry, and under-served in exactly the
+      lane Gina is built for.</div>
+  </section>
+
+  <section>
+    <p class="kicker">02 — Who we build everything for</p>
+    <h2>One real person, not &ldquo;everyone.&rdquo;</h2>
+    <p class="sub">Broad content is invisible content. Every post is written to her —
+      if it doesn&rsquo;t speak to Sarah, it doesn&rsquo;t ship. <span class="tag">confirm with Gina</span></p>
+    <div class="persona">
+      <div class="top">
+        <div class="avatar">S</div>
+        <div>
+          <h3>&ldquo;Sarah,&rdquo; 49</h3>
+          <div class="role">Senior professional · London / commuter belt · pays privately</div>
+        </div>
+      </div>
+      <dl>
+        <div class="row"><dt>Symptoms</dt><dd>Brain fog, weight she can&rsquo;t shift, broken sleep, anxiety/rage that isn&rsquo;t like her, low libido, aching joints.</dd></div>
+        <div class="row"><dt>The wound</dt><dd>Her GP ran bloods, said &ldquo;everything&rsquo;s normal,&rdquo; offered antidepressants. She feels dismissed and gaslit.</dd></div>
+        <div class="row"><dt>Behaviour</dt><dd>Googling symptoms at 11pm; deep in menopause Instagram &amp; podcasts; confused about HRT safety; distrusts supplement-sellers.</dd></div>
+        <div class="row"><dt>Trigger to act</dt><dd>Content that names her exact experience and says <em>&ldquo;you&rsquo;re not imagining it, and it&rsquo;s treatable&rdquo;</em> — from a serious, honest clinician.</dd></div>
+      </dl>
+    </div>
+    <p class="sub" style="margin-top:14px"><b>Secondary ICP:</b> men 45–60 with fatigue / low drive (andropause) — underserved, low competition. A small distinct pillar, not the main show.</p>
+  </section>
+
+  <section>
+    <p class="kicker">03 — Positioning</p>
+    <h2>From CV to patient promise.</h2>
+    <div class="callout" style="background:color-mix(in srgb,var(--clay) 10%,transparent);border-color:color-mix(in srgb,var(--clay) 34%,transparent)">
+      <b>The brand promise:</b> &ldquo;Your symptoms are real. Your bloods being &lsquo;normal&rsquo;
+      doesn&rsquo;t mean you are. I help women reclaim their energy, clarity and confidence with
+      honest, evidence-based hormone &amp; longevity medicine.&rdquo;</div>
+    <h3>Instagram bio (rewrite)</h3>
+    <p class="sub">Dr Gina Schoeman · Hormone &amp; longevity doctor 🩺 · Helping women feel like
+      themselves again — evidence-first · Perimenopause · menopause · BHRT · Harley St + online ·
+      ↓ Free: &ldquo;Is it your hormones?&rdquo; symptom guide</p>
+    <h3>LinkedIn headline (rewrite)</h3>
+    <p class="sub">&ldquo;Hormone &amp; longevity physician helping women reclaim energy and health —
+      evidence-based BHRT &amp; functional medicine&rdquo; <span class="tag">not &ldquo;Functional Medicine Doctor at…&rdquo;</span></p>
+  </section>
+
+  <section>
+    <p class="kicker">04 — The highest-leverage change</p>
+    <h2>Stop talking to peers. Talk to Sarah.</h2>
+    <p class="sub">Lead with the feeling, deliver the mechanism, end with hope + a next step.</p>
+    <div class="ba">
+      <div class="pair">
+        <div class="b"><span class="lbl">Peer-facing · loses Sarah</span>Optimising the HPA axis via bioidentical estradiol titration.</div>
+        <div class="a"><span class="lbl">Patient-facing · wins Sarah</span>Why you wake at 3am wired-but-exhausted — and what actually fixes it.</div>
+      </div>
+      <div class="pair">
+        <div class="b"><span class="lbl">Peer-facing</span>The evidence base for transdermal vs oral HRT.</div>
+        <div class="a"><span class="lbl">Patient-facing</span>&ldquo;HRT gave my mum cancer&rdquo; — what the science actually says in 2026.</div>
+      </div>
+      <div class="pair">
+        <div class="b"><span class="lbl">Peer-facing</span>Functional medicine takes a systems approach.</div>
+        <div class="a"><span class="lbl">Patient-facing</span>Your GP has 8 minutes. Here&rsquo;s what a full hormone work-up actually looks for.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">05 — Content pillars</p>
+    <h2>Six lanes that make her recognisable.</h2>
+    <p class="sub">Every post belongs to one — so she&rsquo;s instantly &ldquo;hers,&rdquo; and the algorithm knows who to show her to.</p>
+    <div class="pillars">
+      <div class="pillar"><span class="n">Pillar 01</span><h3>&ldquo;You&rsquo;re not imagining it&rdquo;</h3><p>Validating dismissed symptoms — her strongest emotional angle. Highest save/share potential.</p></div>
+      <div class="pillar"><span class="n">Pillar 02</span><h3>Perimenopause, decoded</h3><p>Symptom → mechanism → options. Evergreen education that builds trust.</p></div>
+      <div class="pillar"><span class="n">Pillar 03</span><h3>BHRT, honestly</h3><p>Myths, safety, evidence. Her specialty + huge search intent + separates her from hype-sellers.</p></div>
+      <div class="pillar"><span class="n">Pillar 04</span><h3>Longevity for women 45+</h3><p>Beyond hormones: muscle, sleep, metabolic health. Premium positioning.</p></div>
+      <div class="pillar signature"><span class="n">★ Signature</span><h3>The Schoeman method</h3><p>Her POV, consented patient turnarounds, honest takes on industry nonsense. Nobody can copy her voice — this is where authority lives.</p></div>
+      <div class="pillar"><span class="n">Pillar 06</span><h3>Men&rsquo;s hormones</h3><p>Andropause honesty. Small cadence, underserved, low competition.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">06 — Platform roles</p>
+    <h2>Give each platform a job — don&rsquo;t just &ldquo;be everywhere.&rdquo;</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Platform</th><th>Its job</th><th>Format &amp; cadence</th><th>Success metric</th></tr></thead>
+      <tbody>
+        <tr><td><b>Instagram</b><br><span class="tag">primary</span></td><td>Discovery + nurture; proven home base</td><td>3–4 Reels/wk (hook-first, 20–40s) + 1–2 carousels + Stories</td><td>Saves, sends, profile→follow</td></tr>
+        <tr><td><b>LinkedIn</b><br><span class="tag">authority</span></td><td>Clinicians, press, corporate wellness, affluent patients</td><td>2–3/wk: clinical POV + document carousels + consented stories</td><td>Comment quality; inbound</td></tr>
+        <tr><td><b>TikTok</b><br><span class="tag">test lab</span></td><td>Cheap reach + hook R&amp;D; port winners to IG</td><td>3–5/wk native, lo-fi, myth-bust</td><td>Watch %, shares</td></tr>
+        <tr><td><b>YouTube</b><br><span class="tag">the moat</span></td><td>Evergreen search — where produced budget finally pays off</td><td>Start 1 long-form / 2 wks + Shorts <span class="tag">confirm channel</span></td><td>Watch time, search traffic</td></tr>
+        <tr><td><b>Email</b><br><span class="tag">owned</span></td><td>Convert rented reach → owned audience → consults</td><td>Weekly-ish nurture from lead magnet</td><td>List growth, bookings</td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub" style="margin-top:12px"><b>Start order:</b> win Instagram + LinkedIn + Email first. TikTok as the hook lab. YouTube as the deliberate long-term moat. Don&rsquo;t spread thin.</p>
+  </section>
+
+  <section>
+    <p class="kicker">07 — The hook system</p>
+    <h2>The first two seconds decide everything.</h2>
+    <p class="sub">Payoff first; intro never. Build and test 3 hooks per idea — winners get reused. A starter bank for her niche:</p>
+    <div class="hooks">
+      <div><span class="type">Callout</span>&ldquo;If you&rsquo;re 45+ and waking at 3am, this is for you.&rdquo;</div>
+      <div><span class="type">Myth-bust</span>&ldquo;No, HRT does not &lsquo;just delay the inevitable.&rsquo; Here&rsquo;s the truth.&rdquo;</div>
+      <div><span class="type">Contrarian</span>&ldquo;Your &lsquo;normal&rsquo; blood test is hiding the problem. Let me show you.&rdquo;</div>
+      <div><span class="type">Story</span>&ldquo;A patient came in convinced she had early dementia. It was her hormones.&rdquo;</div>
+      <div><span class="type">Permission</span>&ldquo;You&rsquo;re not lazy. You&rsquo;re not crazy. You&rsquo;re perimenopausal.&rdquo;</div>
+      <div><span class="type">Us-vs-them</span>&ldquo;What the supplement influencers won&rsquo;t tell you about menopause.&rdquo;</div>
+      <div><span class="type">Googled Q</span>&ldquo;Is bioidentical HRT safe? A doctor&rsquo;s honest answer.&rdquo;</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">08 — Own the audience</p>
+    <h2>Turn rented reach into a business asset.</h2>
+    <p class="sub">Reach is rented; an email list is owned — the &ldquo;fuel line&rdquo; the audit found missing.</p>
+    <div class="flow">
+      <div class="node seed"><b>Lead magnet</b>&ldquo;Is It Your Hormones?&rdquo; 27-symptom checklist</div>
+      <span class="arow">→</span>
+      <div class="node"><b>Email capture</b>Name + email, gated</div>
+      <span class="arow">→</span>
+      <div class="node"><b>5-email nurture</b>Welcome → myth → BHRT → story → consult</div>
+      <span class="arow">→</span>
+      <div class="node"><b>Consult</b>The premium offer</div>
+    </div>
+    <h3>1 shoot → 12 touches (the repurposing engine)</h3>
+    <div class="flow">
+      <div class="node seed"><b>1 filming session</b></div>
+      <span class="arow">→</span>
+      <div class="node">1 YouTube long-form</div>
+      <div class="node">3–4 Reels / Shorts</div>
+      <div class="node">2 carousels</div>
+      <div class="node">1 LinkedIn doc + post</div>
+      <div class="node">3–5 TikToks</div>
+      <div class="node">1 email</div>
+      <div class="node">Stories + quotes</div>
+    </div>
+    <p class="sub" style="margin-top:12px">≈12+ assets per shoot — exactly where WILBA&rsquo;s AI pipeline (script → voice → video → repurpose) creates the leverage.</p>
+  </section>
+
+  <section>
+    <p class="kicker">09 — The 90-day plan</p>
+    <h2>Foundations → rhythm → compounding.</h2>
+    <div class="arc">
+      <div class="phase"><div class="when">Weeks 1–4</div><div>
+        <h3>Foundations &amp; re-use existing footage</h3>
+        <ul>
+          <li>Rewrite bios; publish the lead magnet; turn on email capture.</li>
+          <li>Re-cut the videos she&rsquo;s <em>already paid for</em> into hook-first short-form — no reshoot.</li>
+          <li>Establish cadence; seed Pillar 1 (&ldquo;You&rsquo;re not imagining it&rdquo;); batch-film session #1.</li>
+        </ul></div></div>
+      <div class="phase"><div class="when">Weeks 5–8</div><div>
+        <h3>Rhythm &amp; authority</h3>
+        <ul>
+          <li>Weekly myth-bust series (BHRT, honestly).</li>
+          <li>First LinkedIn consented patient story + document carousel.</li>
+          <li>Launch the YouTube moat (if confirmed); start the weekly email; first collab outreach.</li>
+        </ul></div></div>
+      <div class="phase"><div class="when">Weeks 9–12</div><div>
+        <h3>Compounding &amp; conversion</h3>
+        <ul>
+          <li>Double down on the top-3 performing formats (from real data by now).</li>
+          <li>Longevity pillar to lift premium positioning.</li>
+          <li>First measured conversion push: content → lead magnet → consult; review 90-day indicators.</li>
+        </ul></div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">10 — How we measure</p>
+    <h2>Judge authority, not vanity.</h2>
+    <div class="kpis">
+      <div class="kbox lead"><h3>Leading indicators (we control)</h3>
+        <ul><li>Posting consistency</li><li>Hook test rate</li><li>Saves + shares per post</li><li>Average watch %</li><li>Email list growth</li><li>DM / comment quality</li></ul></div>
+      <div class="kbox lag"><h3>Lagging indicators (outcomes)</h3>
+        <ul><li>Profile → follow %</li><li>Lead-magnet signups</li><li>Consult enquiries from social</li><li>Branded search (&ldquo;Dr Gina Schoeman&rdquo;)</li><li>Booked consults</li></ul></div>
+    </div>
+    <div class="callout"><b>No follower-count promise.</b> That&rsquo;s a vanity trap. We commit to a
+      system and the leading indicators we can actually move — precise 90-day targets set once
+      her baseline analytics are in hand.</div>
+  </section>
+
+  <section>
+    <p class="kicker">11 — Non-negotiable</p>
+    <h2>Trust is the asset. We protect it.</h2>
+    <p class="sub">Educational framing over promotional. No unverified claims — cite evidence,
+      acknowledge nuance (that <em>is</em> her differentiator vs. hype-sellers). Patient stories
+      only where GMC/ASA-permitted, anonymised and consented. On BHRT: precise about
+      bioidentical vs body-identical, safety, and licensed vs. compounded. Precision reads as
+      authority here.</p>
+  </section>
+
+  <footer>
+    <div class="draftnote"><b>Working strategy.</b> Grounded in Dr Schoeman&rsquo;s public
+      positioning and real niche benchmarks (Newson, Haver figures from public web). Her own
+      performance numbers, exact 90-day targets and the confirmed YouTube/TikTok handles finalise
+      once her analytics are shared — see the data-request sheet. Prepared by WILBA.</div>
+    WILBA · wilba.ai · AI automation &amp; content, built around your business.
+  </footer>
+
+</main>
