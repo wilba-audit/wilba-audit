@@ -22,6 +22,19 @@ We don't build all five at once. We ship the fastest win first, then stack.
 
 ---
 
+## 📞 Ground truth from the FULL call (listened end to end)
+
+- **Booking Layer has an API** ✓ — that's how we integrate. Journal (accounting) does too; Moka POS link is broken → accounting stays out of scope.
+- **The data is messy by design.** Sean pays ~€9/mo (0.09% commission) and, to avoid commission, often just **blocks rooms manually** and books **flights off-system**, keeping details in free-text **Notes**. → The agent must read the API *and* the Notes field, and some detail won't be in the system at all. The brief is only as good as what's entered. Don't over-promise perfection.
+- **The #1 pain is guest comms.** Staff (Indy, Monica, Danny, Ella) aren't confident in English → Sean answers almost everything himself. **The multi-language WhatsApp agent is the biggest, most emotional win → build it FIRST.** (This flips the written proposal's order — the call is unambiguous.)
+- **What Sean actually wants:** a daily **to-do list** email to the team — "book flights for X, check this transfer" — *translated*. Bonus: it finds Traveloka flight options and sends links; Sean books (credit card stays human).
+- **Room-linking blocker:** the new **Baja room + Studio** can sell single OR as a linked 2-bed "deluxe," but Booking Layer can't auto-link/block them. **Mashi** is resolving this with Booking Layer support — not our build, but the agent needs the final room structure.
+- **Mashi is the operator.** Very capable (runs resort experience + software + marketing). Do the technical setup with *her* — Sean is very non-technical ("can't use Excel", "starts getting gibberish to me"). Record him a Loom to refer back to.
+- **Drive is a mess** → blocks the content pipeline. Claude Code can help clean/organise it (Sean was drowning doing it by hand).
+- **Direct bookings are hard / Booking.com heavy** → reinforces the direct-booking + LLM-discoverability play (System 5) as a real future upsell.
+
+---
+
 ## System 1 — The Daily Ops Brief  ⭐ ship this FIRST
 **What it does:** every morning at 6am, one email lands in the team's inbox — who's checking in, checking out, transfers, who's in-house, next 48 hours, and any flags. No more checking five systems.
 **How it works:** a script pulls bookings from Booking Layer each morning → Claude writes it up in plain English → emailed to the team. Runs unattended.
@@ -68,13 +81,17 @@ Result: you convert Booking.com's one-time guests into WILBA-owned repeat guests
 
 ## The build order (phases)
 
-| Phase | Ship | Needs | Timeline |
+**Corrected to match the call — WhatsApp agent leads, because guest comms is the real pain.**
+
+| Phase | Ship | Needs | Can start now? |
 |---|---|---|---|
-| **1a** | Daily Ops Brief | Booking Layer API key | ~2 weeks |
-| **1b** | WhatsApp Guest Agent (finish + go live) | WA Business number + Baha info | parallel |
-| **2** | Email Responder | Gmail access | +1-2 weeks |
-| **3** | Social Auto-Poster (Higgsfield→Drive→post) | Drive cleanup | when Drive's ready |
-| **4** | Direct-booking capture + rebooking nurture | QR/opt-in setup | after core is live |
+| **1** | **WhatsApp Guest Agent** (multi-language, 24/7, website + IG + WA) | agent knowledge base + WA Business number | ✅ YES — the knowledge base needs no API key |
+| **2** | **Daily To-Do Brief** + availability/notes (Booking Layer) | **Booking Layer API key** | ⏳ needs the key |
+| **2b** | Email responder (same brain, email channel) | Gmail access | ⏳ needs Gmail |
+| **3** | Social Auto-Poster (Higgsfield→Drive→post) | Drive cleanup | after Drive tidy |
+| **4** | Direct-booking capture + LLM/GEO discoverability | QR/opt-in setup | after core is live |
+
+**The key unlock:** Phase 1 (the WhatsApp agent's brain — rooms, packages, prices, transfers, FAQs) we can **build right now** without waiting on Sean. The Booking Layer API key unlocks Phase 2.
 
 ---
 
