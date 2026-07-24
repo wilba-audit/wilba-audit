@@ -5,3 +5,9 @@ __pycache__/
 outputs/audit/leads.csv
 .DS_Store
 credentials/
+
+# Social session-capture: never commit auth sessions, node deps, or captured client content
+.auth/
+**/.auth/
+**/scripts/node_modules/
+outputs/*/captures/

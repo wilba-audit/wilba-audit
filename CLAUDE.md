@@ -200,6 +200,18 @@ manual-review-protocol. Proven on Dr Schoeman's LinkedIn CSVs. **Data reality:
 LinkedIn = real; Instagram + Facebook = NOT yet received (no data drawn from
 them — any IG/FB statements so far are inference, not findings).**
 
+**Companion skill — `social-session-capture`:** `.claude/skills/social-session-capture/`
+— "log in via Playwright" done responsibly. The account OWNER logs in themselves
+in a visible browser (types password + 2FA); `scripts/capture.mjs` saves that
+session locally and captures THEIR OWN pages (recent-activity, analytics) as
+screenshots + text for the audit. Deliberately NOT an unattended password-storing
+auto-login scraper — that pattern violates platform ToS and can get a client's
+account banned (a real, hard-to-reverse harm for e.g. a doctor). Human-in-the-loop,
+headed by default, consent-gated, `.auth/` + `outputs/*/captures/` gitignored,
+needs open network (won't run in the web sandbox). Prefer `social-analytics-ingest`
+(native exports) first; use this only when live post content is also needed and the
+owner is present and consenting.
+
 **First client — Dr Gina Schoeman (The Schoeman Clinic):** functional/longevity
 medicine, bioidentical hormones, premium London market. Goal: authority/thought
 leadership. Audit complete (preliminary score ~48% — "real potential, leaking at
