@@ -187,6 +187,19 @@ open network egress** — it will NOT run inside the Claude web sandbox, whose
 egress policy blocks Instagram/LinkedIn/etc (`403 CONNECT policy denial`). Run it
 on a normal machine or a WILBA environment with open networking.
 
+**Companion skill — `social-analytics-ingest`:** `.claude/skills/social-analytics-ingest/`
+— the compliant, works-anywhere path when scraping is blocked or off-limits: the
+account OWNER exports their own data and we parse it (no scraping, no automated
+login — automated LinkedIn login violates ToS and risks the client's account).
+`scripts/parse_exports.mjs` parses LinkedIn "Profile Growth" CSVs (auto-detects
+multiple profiles, ignores duplicate exports, flags dormant pages), summarises
+generic CSVs, and points at Meta "Download Your Information" for IG/FB.
+`references/export-guides.md` = plain-English "which export to ask for" per
+platform. Mode B = screenshot-based post-STYLE teardown via the audit skill's
+manual-review-protocol. Proven on Dr Schoeman's LinkedIn CSVs. **Data reality:
+LinkedIn = real; Instagram + Facebook = NOT yet received (no data drawn from
+them — any IG/FB statements so far are inference, not findings).**
+
 **First client — Dr Gina Schoeman (The Schoeman Clinic):** functional/longevity
 medicine, bioidentical hormones, premium London market. Goal: authority/thought
 leadership. Audit complete (preliminary score ~48% — "real potential, leaking at
