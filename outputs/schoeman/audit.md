@@ -84,6 +84,23 @@ usual suspects — in priority order:
 There is **nothing wrong with her or her expertise.** The spend was aimed at the
 wrong target. That's a strategy problem, and strategy is fixable fast.
 
+## 3b. Real-data confirmation — LinkedIn (24 Jul 2026) `[REAL]`
+
+Her own LinkedIn exports now **confirm the diagnosis with hard numbers** (full
+detail in `linkedin-analysis.md`):
+- **Fragmented presence:** two separate profiles (**1,513** and **2,349**
+  followers) + a dormant company page (~12). Authority split in half. `[CONFIRM which is which]`
+- **Feast-or-famine cadence:** views swing **30–37×** day to day — the signature
+  of sporadic posting (root cause #6, now proven).
+- **No amplification:** **0–1 reposts per week.** Content informs but isn't
+  shared — the authority-killer (root cause #4/#6), and the clearest evidence yet
+  that this is a *system* problem, not a talent problem.
+- **But the appeal is real:** post-days pull **~1,000 views** — when she shows up,
+  people look. Fixing consistency + shareability is the whole game.
+
+This moves LinkedIn from `[CONFIRM]` to `[REAL]` and validates the audit's core
+thesis on actual data.
+
 ## 4. Scorecard (weighted for Authority goal)
 
 Scores are preliminary. Dimensions driven by public/qualitative review are

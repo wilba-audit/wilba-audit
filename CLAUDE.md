@@ -200,10 +200,18 @@ collector packaged in `outputs/schoeman/collector/`. Files: `00-data-request.md`
 `audit.md`, `strategy.md`, `proposal.md`, `proposal.html`, `collector/`.
 **YouTube finding:** no active channel found for the right Dr Schoeman — untapped
 opportunity, needs confirming.
-**Status:** Comprehensive audit + strategy drafted on public data + benchmarks.
-Needs (to make it fully grounded): run the collector OR her 90-day analytics
-screenshots (`00-data-request.md`) + confirm her YouTube/TikTok handles, then lock
-the quantitative scores, targets and pricing.
+**LinkedIn — REAL DATA IN (24 Jul):** her own exports analysed in
+`outputs/schoeman/linkedin-analysis.md`. Findings `[REAL]`: fragmented across TWO
+profiles (1,513 + 2,349 followers) + dormant company page (~12); feast-or-famine
+posting (views swing 30–37× day-to-day); near-zero reposts (0–1/wk = no
+amplification); but post-days pull ~1,000 views (appeal is real). Grounded
+LinkedIn strategy written: consolidate to one profile, 3 posts/wk fixed cadence,
+share-engineered formats (document carousels / POV / consented patient stories),
+hook first line, links in first comment, 15 min/day commenting. Open `[CONFIRM]`:
+which of the two profiles is primary / are both hers.
+**Status:** LinkedIn now fully grounded on real data. Still need Instagram +
+YouTube/TikTok analytics (collector or screenshots, `00-data-request.md`) to
+ground the rest and lock cross-platform scores/targets/pricing.
 
 ---
 
