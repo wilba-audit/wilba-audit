@@ -1,0 +1,10 @@
+{
+  "slug": "schoeman",
+  "platform": "linkedin",
+  "outDir": "../captures",
+  "consent": "I own or have explicit permission to access these accounts",
+  "pages": [
+    { "name": "recent-activity", "url": "https://www.linkedin.com/in/dr-gina-schoeman-mb-chb-mba-dip-derm-mrcgp-mbcam-afmcp/recent-activity/all/" },
+    { "name": "profile",         "url": "https://www.linkedin.com/in/dr-gina-schoeman-mb-chb-mba-dip-derm-mrcgp-mbcam-afmcp/" }
+  ]
+}
