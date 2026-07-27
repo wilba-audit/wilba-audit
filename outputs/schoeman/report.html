@@ -1,0 +1,217 @@
+<title>WILBA · Social Media Audit &amp; Growth Proposal — Dr Gina Schoeman</title>
+<style>
+  :root{
+    --bone:#F5F6F3; --panel:#FFFFFF; --ink:#1A2724; --ink-soft:#4C5B56;
+    --line:#DDE3DE; --teal:#1E6E6A; --teal-deep:#155551; --clay:#B67C74;
+    --strong:#3B7A57; --caution:#B0812B; --weak:#B5544C;
+    --shadow:0 1px 2px rgba(26,39,36,.04),0 8px 30px rgba(26,39,36,.06);
+    --maxw:800px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bone:#121A18; --panel:#18211F; --ink:#EAF0EC; --ink-soft:#9DB0A9;
+    --line:#28322F; --teal:#5AB6AE; --teal-deep:#8FD6CE; --clay:#D69C93;
+    --strong:#6FBD8E; --caution:#D6B25A; --weak:#DB8981;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.34);}}
+  :root[data-theme="light"]{
+    --bone:#F5F6F3; --panel:#FFFFFF; --ink:#1A2724; --ink-soft:#4C5B56;
+    --line:#DDE3DE; --teal:#1E6E6A; --clay:#B67C74; --strong:#3B7A57; --caution:#B0812B; --weak:#B5544C;
+    --shadow:0 1px 2px rgba(26,39,36,.04),0 8px 30px rgba(26,39,36,.06);}
+  :root[data-theme="dark"]{
+    --bone:#121A18; --panel:#18211F; --ink:#EAF0EC; --ink-soft:#9DB0A9;
+    --line:#28322F; --teal:#5AB6AE; --clay:#D69C93; --strong:#6FBD8E; --caution:#D6B25A; --weak:#DB8981;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.34);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;line-height:1.16}
+  p{max-width:66ch}
+  a{color:var(--teal)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 14px}
+  header{border-bottom:1px solid var(--line);background:var(--panel)}
+  .mast{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:var(--maxw);margin:0 auto;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .mast .brand{color:var(--ink);font-weight:600;letter-spacing:.22em}
+  .hero{padding:58px 0 42px}
+  .hero h1{font-size:clamp(29px,5vw,44px);margin:0 0 20px;letter-spacing:-.01em}
+  .hero .lede{font-size:19px;color:var(--ink-soft);max-width:58ch}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:28px;font-family:var(--mono);font-size:12.5px;color:var(--ink-soft)}
+  .meta b{color:var(--ink)}
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 16px}
+  section h2{font-size:26px;margin:0 0 12px}
+  .sub{color:var(--ink-soft);max-width:64ch}
+  .tbl{overflow-x:auto;margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:480px}
+  th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+  tr:last-child td{border-bottom:0}
+  td b{color:var(--ink)}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ok{color:var(--strong);font-weight:600}.pend{color:var(--caution);font-weight:600}
+  .readout{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:24px;margin-top:8px}
+  .score-num{font-family:var(--serif);font-size:52px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+  .score-num small{font-size:22px;color:var(--ink-soft)}
+  .verdict{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--caution);padding:5px 10px;border-radius:999px;border:1px solid var(--caution);align-self:center}
+  .readout p{margin:0;color:var(--ink-soft);font-size:15px;flex:1;min-width:240px}
+  .cards{display:grid;gap:14px;margin-top:8px}
+  .cause{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow)}
+  .cause h3{font-size:17px;margin:0 0 6px;display:flex;gap:12px;align-items:baseline}
+  .cause h3 em{font-family:var(--mono);font-style:normal;font-size:12px;color:var(--weak)}
+  .cause p{margin:0;color:var(--ink-soft);font-size:15px}
+  .bench{display:grid;gap:12px;margin-top:8px}
+  @media(min-width:640px){.bench{grid-template-columns:1fr 1fr}}
+  .bcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+  .bcard .stat{font-family:var(--serif);font-size:28px;color:var(--teal);font-variant-numeric:tabular-nums}
+  .tiers{display:grid;gap:14px;margin-top:8px}
+  @media(min-width:680px){.tiers{grid-template-columns:1fr 1fr 1fr}}
+  .tier{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .tier.reco{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),var(--shadow)}
+  .tier .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 4px}
+  .tier.reco .tag{color:var(--teal)}
+  .tier h3{font-size:18px;margin:0 0 8px}
+  .tier p{font-size:14px;color:var(--ink-soft);margin:0 0 12px}
+  .tier .price{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--ink);border-top:1px solid var(--line);padding-top:10px}
+  .ribbon{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--teal);display:inline-block;padding:3px 9px;border-radius:999px;margin-bottom:10px;align-self:flex-start}
+  ul.clean{list-style:none;padding:0;margin:8px 0 0}
+  ul.clean li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink-soft);font-size:15px}
+  ul.clean li:last-child{border-bottom:0}
+  ul.clean li b{color:var(--ink)}
+  .callout{background:color-mix(in srgb,var(--teal) 8%,transparent);border:1px solid color-mix(in srgb,var(--teal) 30%,transparent);border-radius:12px;padding:16px 20px;margin-top:16px;font-size:15px}
+  .callout b{color:var(--ink)}
+  .cta{background:var(--ink);color:var(--bone);border-radius:16px;padding:36px 30px;margin-top:8px;text-align:center}
+  :root[data-theme="dark"] .cta{background:var(--panel);border:1px solid var(--line)}
+  .cta h2{color:inherit;font-size:24px;margin:0 0 10px}
+  .cta p{margin:0 auto;color:inherit;opacity:.85;max-width:48ch}
+  .cta .go{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;background:var(--teal);color:#fff;padding:13px 24px;border-radius:999px}
+  footer{padding:36px 0 60px;color:var(--ink-soft);font-size:13px}
+  .scope{background:color-mix(in srgb,var(--caution) 11%,transparent);border:1px solid color-mix(in srgb,var(--caution) 38%,transparent);border-radius:10px;padding:14px 18px;font-size:13.5px;color:var(--ink-soft);margin-top:14px}
+  .scope b{color:var(--ink)}
+</style>
+
+<header><div class="mast"><span class="brand">WILBA</span><span>Audit &amp; Growth Proposal · Confidential</span></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <p class="eyebrow">Prepared for Dr Gina Schoeman · The Schoeman Clinic</p>
+    <h1>Great medicine. Great video. It just isn&rsquo;t travelling yet.</h1>
+    <p class="lede">You invested in beautiful content and it hasn&rsquo;t reached the women who
+      need you. That&rsquo;s not a reflection of your expertise — it&rsquo;s a fixable strategy gap,
+      and the data shows exactly where.</p>
+    <div class="meta">
+      <span><b>From</b> Jess Morrell, WILBA</span>
+      <span><b>Goal</b> Authority → premium enquiries</span>
+      <span><b>Date</b> 24 Jul 2026</span>
+    </div>
+  </div>
+
+  <section>
+    <p class="kicker">01 — What we analysed</p>
+    <h2>Grounded on your real data, honest about the rest.</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Channel</th><th>This report</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td><b>LinkedIn</b></td><td class="ok">Analysed — real data</td><td>Your own analytics exports (2 profiles + company page)</td></tr>
+        <tr><td><b>Instagram</b></td><td class="pend">Deep audit in engagement</td><td>Full post-by-post review is the first paid deliverable</td></tr>
+        <tr><td><b>Facebook</b></td><td class="pend">Deep audit in engagement</td><td>Same — reviewed once access/exports are shared</td></tr>
+        <tr><td><b>Benchmarks</b></td><td class="ok">Real</td><td>Public figures for peer accounts in your niche</td></tr>
+      </tbody>
+    </table></div>
+    <div class="scope"><b>Straight talk:</b> this report is built on LinkedIn data you can
+      verify and on how your niche actually performs — not on guesswork. The exhaustive
+      post-by-post review of every Instagram &amp; Facebook post (with engagement) is the
+      forensic work we do <em>inside</em> the engagement, so nothing here is invented.</div>
+  </section>
+
+  <section>
+    <p class="kicker">02 — The diagnosis</p>
+    <h2>A strong engine, three fixable leaks.</h2>
+    <div class="readout">
+      <div class="score-num">44<small>&thinsp;/100</small></div>
+      <span class="verdict">Real potential — leaking at three points</span>
+      <p>World-class expertise (your appeal is real — your LinkedIn post-days pull ~1,000
+        views), held back by fragmented positioning and no distribution engine.</p>
+    </div>
+    <div class="cards" style="margin-top:14px">
+      <div class="cause"><h3>Fragmented presence <em>from your data</em></h3><p>Your LinkedIn is split across <b>two profiles</b> (1,513 &amp; 2,349 followers) plus a dormant company page (~12). Every follower on one never sees the other — your authority is halved.</p></div>
+      <div class="cause"><h3>Feast-or-famine posting <em>from your data</em></h3><p>Views swing <b>30–37×</b> day to day — the fingerprint of posting in bursts. The algorithm never builds momentum between them.</p></div>
+      <div class="cause"><h3>Nothing gets shared <em>from your data</em></h3><p><b>0–1 reposts per week.</b> On LinkedIn, shares and comments are the growth engine — so your posts stay inside your existing network and nothing compounds.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">03 — Why this is worth fixing</p>
+    <h2>Your exact niche is a proven social success — you&rsquo;re in the open lane.</h2>
+    <div class="bench">
+      <div class="bcard"><div class="stat">826K</div><p class="sub">Dr Louise Newson (UK) — evidence-based menopause authority. Built on consistency, not gloss. <b>Your template.</b></p></div>
+      <div class="bcard"><div class="stat">4M</div><p class="sub">Dr Mary Claire Haver (US) — huge reach, but sells supplements. <b>Your open lane: the honest, premium doctor.</b></p></div>
+    </div>
+    <div class="callout"><b>The proof point:</b> these doctors won on relatability and rhythm,
+      not production budget. The audience is proven, hungry, and under-served in exactly your
+      lane. This is a strategy problem — and strategy is fixable.</div>
+  </section>
+
+  <section>
+    <p class="kicker">04 — The plan</p>
+    <h2>Fix the steering and the fuel line.</h2>
+    <ul class="clean">
+      <li><b>Consolidate to one LinkedIn profile</b> + reactivate the company page to reshare. Ends the fragmentation immediately.</li>
+      <li><b>Fixed cadence — 3 posts/week</b> on set days. Ends the 30× volatility.</li>
+      <li><b>Engineer for shares:</b> document carousels, strong clinical POV, and consented patient-outcome stories — the formats that actually get reposted.</li>
+      <li><b>Hook first, translate for the patient</b> (not the peer) — speak to the 49-year-old told her bloods are &ldquo;normal.&rdquo;</li>
+      <li><b>Own the audience:</b> a lead magnet (&ldquo;Is it your hormones?&rdquo;) + email, so reach converts to consults.</li>
+      <li><b>Leverage the videos you&rsquo;ve already paid for:</b> re-cut into hook-first clips + carousels — one shoot → ~12 assets, no new spend.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="kicker">05 — How we&rsquo;d work together</p>
+    <h2>Start where the risk is lowest.</h2>
+    <div class="tiers">
+      <div class="tier reco">
+        <span class="ribbon">Recommended start</span>
+        <p class="tag">Tier 1</p><h3>Audit &amp; Strategy Sprint</h3>
+        <p>The <b>full forensic audit of every Instagram, Facebook &amp; LinkedIn post + engagement</b>, your ICP &amp; positioning, content pillars, hook bank, and a 90-day plan built to re-use footage you&rsquo;ve already paid for. Yours to keep.</p>
+        <div class="price">One-off fee · de-risks before more production spend</div>
+      </div>
+      <div class="tier">
+        <p class="tag">Tier 2</p><h3>Content Engine</h3>
+        <p>Done-for-you on WILBA&rsquo;s AI-assisted pipeline, capturing <em>your</em> voice. Long-form + short-form + carousels, repurposed everywhere, with monthly reporting on what matters.</p>
+        <div class="price">Monthly retainer</div>
+      </div>
+      <div class="tier">
+        <p class="tag">Tier 3</p><h3>Full Growth Partner</h3>
+        <p>Everything in Tier 2 plus email &amp; nurture, a lead magnet, collaborations &amp; PR, and a built path from &ldquo;interesting doctor&rdquo; to &ldquo;booked consult.&rdquo;</p>
+        <div class="price">Higher monthly retainer</div>
+      </div>
+    </div>
+    <div class="callout"><b>Note:</b> the exhaustive post-by-post review across all platforms
+      lives in <b>Tier 1</b> — it&rsquo;s the paid diagnostic, delivered with full access to your
+      accounts, so every finding is real and specific to your content.</div>
+  </section>
+
+  <section>
+    <p class="kicker">06 — What we won&rsquo;t promise</p>
+    <h2>The honesty this rests on.</h2>
+    <ul class="clean">
+      <li><b>No virality or follower-number promises.</b> Anyone who guarantees that is guessing with your money.</li>
+      <li><b>Never at the cost of your clinical integrity.</b> Educational framing over promotional — it&rsquo;s safer and more authoritative.</li>
+      <li><b>A system and honest monthly reporting.</b> If a channel isn&rsquo;t earning its keep in 90 days, we&rsquo;ll tell you and change course.</li>
+    </ul>
+  </section>
+
+  <section style="border-top:0;padding-top:22px">
+    <div class="cta">
+      <h2>Ready when you are.</h2>
+      <p>A 45-minute kickoff to confirm your goals and get access — then your full audit and
+        roadmap within days.</p>
+      <span class="go">Book the kickoff</span>
+    </div>
+  </section>
+
+  <footer>
+    WILBA · wilba.ai · Prepared for Dr Gina Schoeman. LinkedIn findings from her own analytics
+    exports; benchmark figures from public sources; per-platform post audit delivered within the engagement.
+  </footer>
+</main>
