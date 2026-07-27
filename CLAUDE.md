@@ -223,6 +223,24 @@ Example: `/share the daily brief system`
 
 ---
 
+## Skills
+
+Skills are on-demand experts Claude can load for a specific kind of work. Invoke by name (e.g. "use the outreach expert") or via the Skill tool.
+
+### outreach-expert
+Jess's cold + warm outreach coach for landing WILBA clients (hospitality & wellness niche) and job leads. Defines the ICP, warms up prospects on LinkedIn, and writes ready-to-send connection requests, DMs, cold emails, and multi-touch follow-up sequences. Grounded in Alex Hormozi's value-first method + LinkedIn organic playbooks. File: `.claude/skills/outreach-expert/SKILL.md`
+
+### social-media-expert
+Jess's content & social coach for building WILBA's and Baha's brands and hitting 1 post/day. Plans content buckets, writes captions + hooks, and actually creates visuals/reels using the Higgsfield MCP tools. Voice = witty, soulful, real (McConaughey / Pantalones). File: `.claude/skills/social-media-expert/SKILL.md`
+
+---
+
+## WILBA 90-Day Roadmap
+
+The foolproof plan to get WILBA to real income while keeping Jess sane. Two lanes: **daytime = income/outreach**, **evenings = the retreat build**. Niche locked as **hospitality & wellness** (Baha Baha = case study #1). Daily rhythm = morning top-3 + evening check-in with Claude. File: `outputs/wilba/90-day-roadmap.md`
+
+---
+
 ## Getting Started
 
 **First time?** Start here:
