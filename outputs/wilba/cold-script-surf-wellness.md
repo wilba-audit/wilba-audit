@@ -80,6 +80,43 @@
 
 ---
 
+## ✉️ EMAIL SCRIPT (best cold channel while your social is still warming up)
+*Their email is on their website's contact page. One clean message.*
+
+**Subject line (pick one):**
+- `quick idea for [Resort]`
+- `your guest enquiries`
+- `filling more direct bookings at [Resort]`
+
+**Body:**
+> Hi [Name],
+>
+> [Resort] looks incredible — [specific detail: that clifftop / the Ekas break / your yoga deck]. 🌊
+>
+> Quick one: when a guest emails asking about availability or a package, how fast do they usually hear back? Most surf & wellness spots I talk to lose a few direct bookings a week to slow replies — and a chunk of revenue to Booking.com's cut.
+>
+> I set up a simple thing for resorts that instantly answers guest questions and takes bookings 24/7, in any language. I'll build it for [Resort] free — you only "pay" with a testimonial if you love it. And honestly, if you ever did hire me and weren't thrilled, I'd refund every dollar.
+>
+> Worth a quick look?
+>
+> Jess — WILBA · wilba.ai
+
+*(3-day follow-up if no reply: "Hey [Name], no worries if now's not the time — here's a 60-sec example of what it looks like [link]. Thought it might be useful either way. 🙏")*
+
+---
+
+## 📞 WhatsApp — use the DM script above
+WhatsApp = same as the DM script (top of this doc). Most Indonesian resorts have a **WhatsApp Business number right on their website** — it gets read fast and feels warm. Perfect channel for you.
+
+---
+
+## Where to find each prospect's contact
+- **Website → "Contact" page** = their email + often a WhatsApp number
+- **Google listing** (search the resort) = phone / WhatsApp + website
+- **Instagram bio** = usually links the website + sometimes an email
+
+---
+
 ### Notes for Jess
 - **Never say "AI," "chatbot," "automation," or "system" in these messages.** Say what it *does* — "instantly answers guest questions." Selling the outcome converts far better cold.
 - Add the guarantee anywhere it fits: *"and if you ever worked with me and didn't love it, I'd refund every dollar."*
