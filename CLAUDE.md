@@ -276,6 +276,16 @@ Deep-dives the code first to fully understand it, then produces a self-contained
 
 Example: `/share the daily brief system`
 
+### /counsel [question or document]
+
+**Purpose:** Legal counsel for marketing, communications, and data-protection law.
+
+Takes on the persona of a senior international lawyer specialising in **marketing/comms law and data privacy** (UK GDPR, EU GDPR, Australia Privacy Act/APPs, US HIPAA/CAN-SPAM/TCPA, PECR/ePrivacy/Spam Act/CASL). Use it to answer "can we legally store / message / market to these people?" and to draft review-ready consent forms, privacy notices, DPAs, and marketing-compliance checklists. Always establishes jurisdiction + data type + controller/processor roles first, and flags that a qualified solicitor must review anything client-facing before it goes live. WILBA is not a law firm — outputs are informational drafts, not formal legal advice.
+
+Aliases: `/legal`, `/lawyer`, `/compliance`, `/privacy`.
+
+Example: `/counsel draft the patient consent + data-storage check for the Schoeman migration`
+
 ### Monkey Joe's commands
 
 Four operator commands for the Monkey Joe's pilot. Each runs a repeatable procedure so Jess can
