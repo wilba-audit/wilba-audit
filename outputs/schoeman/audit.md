@@ -84,27 +84,22 @@ usual suspects — in priority order:
 There is **nothing wrong with her or her expertise.** The spend was aimed at the
 wrong target. That's a strategy problem, and strategy is fixable fast.
 
-## 3b. Real-data confirmation — LinkedIn (24 Jul 2026) `[REAL]`
+## 3b. Real-data — corrected 3-platform picture (29 Jul 2026) `[REAL]`
 
-Her exports **plus her real recent posts** (see `linkedin-content-review.md`)
-now ground this on actual content. **Two earlier inferences corrected:**
-- **Cadence is a STRENGTH, not a weakness:** real post dates show ~**6 posts/week
-  (near-daily)**. The earlier "feast-or-famine" read (from view swings) is
-  **withdrawn** — the swings are per-post *performance* variance, not gaps.
-- **Company page = 241 followers and active** (not ~12/dormant — CSV column
-  misread).
+**Platform correction:** the Later CSVs were re-labelled and are **Instagram &
+Facebook**, not LinkedIn. Corrected sources: `instagram-analysis.md` (IG/FB
+analytics) and `linkedin-content-review.md` (LinkedIn posts). Summary:
 
-The **real, content-level** problems (all `[REAL]`, all fixable):
-- **Reach throttled by fixable errors:** nearly every post has a **link in the
-  body** (LinkedIn demotes these) and opens with a **soft line, not a hook**.
-- **Weakest format over-used:** external-article posts underperform (1–2
-  reactions) vs her documents/videos (8–14). Voice drifts to clinic "we" vs Gina "I".
-- **No amplification:** ~**0 reposts** of her content by others → stays inside her network.
-- **But the appeal is real:** a simple video pulled 14 reactions; her document
-  post drew the most comments. The raw material works — the packaging caps it.
-
-This moves LinkedIn from `[CONFIRM]` to `[REAL]`. (Fragmentation — two follower
-bases 1,513 & 2,349 — still `[CONFIRM which is which]`.)
+- **Instagram `[REAL]` — the real story.** Two accounts. The **Schoeman Clinic
+  IG went viral in June** (303 → ~1,500 followers, **23,089 views/week**), then
+  **fell ~97%** to 647. Personal IG (2,350) is bigger but flat. Fragmented across
+  two accounts; momentum not sustained. *She's proven she can break out — that's
+  the pitch.* (Missing: which June post did it + IG post content.)
+- **Facebook `[REAL]` — dormant.** 5 and 12 followers. Deprioritise.
+- **LinkedIn `[REAL]` (content) — consistent, fixable.** ~6 posts/week (a
+  strength), strong topics, but **links-in-body** throttle reach, **soft hooks**,
+  external-article posts weakest, ~0 reshares. Company page 241. (Missing:
+  LinkedIn analytics trend.)
 
 ## 4. Scorecard (weighted for Authority goal)
 

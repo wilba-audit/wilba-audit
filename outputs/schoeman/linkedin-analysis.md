@@ -5,12 +5,13 @@
 (week of 17–24 Jul 2026) + company-page export (15–22 Jul). All figures `[REAL]`.
 **Profile URL given:** linkedin.com/in/dr-gina-schoeman-mb-chb-mba-dip-derm-mrcgp-mbcam-afmcp/
 
-> ⚠️ **SUPERSEDED IN PART — see `linkedin-content-review.md` (real posts, 24 Jul).**
-> Two claims below are corrected there: (1) cadence is a **strength** (~6 posts/wk,
-> near-daily) — the "feast-or-famine" read is withdrawn; (2) the company page has
-> **241 followers and is active**, not ~12/dormant. The follower/reach/repost
-> figures remain valid; the *content-level* diagnosis (links-in-body, soft hooks,
-> weak formats, low amplification) is the accurate one.
+> 🛑 **SUPERSEDED — THIS DOC MISLABELLED THE PLATFORM. See `instagram-analysis.md`.**
+> The follower/view/repost figures in this file (2,349 & 1,513 "profiles" + the
+> "company page") are **Instagram and Facebook data, NOT LinkedIn** — the
+> platform-labelled Later exports (29 Jul) prove it. Do not cite this file for
+> LinkedIn. LinkedIn = the 7-post content review in `linkedin-content-review.md`
+> only. The corrected cross-platform picture lives in `instagram-analysis.md`
+> and `full-audit.md`.
 
 ---
 

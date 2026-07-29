@@ -87,41 +87,23 @@ pulled the most *comments*. She has the instinct; it's just not applied every ti
 5. **Add a genuine question** at the end to invite comments (drives distribution).
 6. **Repurpose the videos** she already has into hook-first clips + document carousels.
 
-## Still to confirm (for a 100%-airtight audit)
-- **Profile setup:** analytics show two follower bases (1,513 & 2,349) — confirm
-  whether that's two profiles, and consolidate if so.
+## Still to confirm (for a 100%-airtight LinkedIn picture)
+- **LinkedIn analytics** — we have her posts, but no follower/view trend for
+  LinkedIn (the CSVs turned out to be Instagram/Facebook). A LinkedIn export
+  would complete it.
 - **Video library size** and whether she's open to re-edits (repurposing goldmine).
+- (The "two accounts" fragmentation issue is on **Instagram** — see `instagram-analysis.md`.)
 
 ---
 
-## 12-month trend (longer exports, 24 Jul) `[REAL]` — the June breakout
+## ⚠️ Trend data moved — it was INSTAGRAM, not LinkedIn
 
-Her year/3-month exports reveal what the 1-week files hid: **a real breakout in
-early June 2026, then a steep decline.** Weekly views:
+The "June breakout" time-series previously in this section came from the Later
+CSVs, which are now confirmed to be **Instagram & Facebook** accounts, not
+LinkedIn. That analysis (the 303→1,515 clinic-IG breakout, the 2,350 personal
+IG, etc.) has moved to **`instagram-analysis.md`** where it's correctly labelled.
 
-| Week | Profile A (→1,515) views / followers | Profile B (→2,350) views |
-|---|--|--|
-| Jun 2 | 12,254 / 303 | 12,078 |
-| Jun 9 | 20,828 / 548 | 9,658 |
-| **Jun 16** | **23,089 / 1,121** | **16,794** |
-| Jun 23 | 7,132 / 1,312 | 3,675 |
-| Jun 30 | 3,730 / 1,482 | 5,245 |
-| Jul 7 | 1,890 / 1,496 | 3,195 |
-| Jul 14 | 2,926 / 1,500 | 2,264 |
-| Jul 21 | 2,263 / 1,512 | 4,284 |
-| Jul 28 | 647 / 1,515 | 593 |
-
-**Findings:**
-- **Profile A exploded in June** — ~303 → ~1,300 followers in ~3 weeks, peaking at
-  **23,089 views/week** — then **declined ~97%** to 647 by late July. Follower
-  growth stalled (only +33 across July).
-- **Profile B shows the same June spike** (16,794 peak) and the same decline —
-  but almost no follower growth (2,171→2,350), i.e. it's the established, passive profile.
-- **The reframe:** she has *already* proven a 20k+/week ceiling. The recent low
-  numbers are a **slump, not a limit.** The strategic job is to diagnose what hit
-  in June and make it a repeatable system — not to "start from zero."
-- **Open question for her:** what changed in June (a format? a posting push? a
-  single viral post?) and why did it fade? Her answer is the key to rebuilding it.
-
-*(Page-follower exports also included: small pages at ~12 and ~5 followers — note
-the live company page shows 241, so confirm her full page/profile setup.)*
+**This file remains valid for LinkedIn content only** — the 7 real posts above
+(hooks, links-in-body, formats, engagement 1–14 reactions) are genuinely from
+her LinkedIn recent-activity feed. We still **lack LinkedIn *analytics***
+(follower/view trend) — only her IG/FB analytics came through.

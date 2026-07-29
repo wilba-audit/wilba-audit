@@ -196,9 +196,13 @@ multiple profiles, ignores duplicate exports, flags dormant pages), summarises
 generic CSVs, and points at Meta "Download Your Information" for IG/FB.
 `references/export-guides.md` = plain-English "which export to ask for" per
 platform. Mode B = screenshot-based post-STYLE teardown via the audit skill's
-manual-review-protocol. Proven on Dr Schoeman's LinkedIn CSVs. **Data reality:
-LinkedIn = real; Instagram + Facebook = NOT yet received (no data drawn from
-them — any IG/FB statements so far are inference, not findings).**
+manual-review-protocol. **Data reality (corrected 29 Jul):** the Later CSVs are
+**Instagram + Facebook** (2 IG accounts: Dr Gina 2,350, Clinic 1,515; 2 FB pages:
+5 & 12), NOT LinkedIn — earlier docs mislabelled them; corrected in
+`instagram-analysis.md`. LinkedIn = the 7 reviewed posts only (content, no
+analytics). **Instagram headline:** the Clinic IG had a June breakout
+(303→~1,500 followers, 23k views/wk) then fell ~97% — a proven, unrepeated win.
+Facebook = dormant. Still need: IG post content + LinkedIn analytics.
 
 **Companion skill — `social-session-capture`:** `.claude/skills/social-session-capture/`
 — "log in via Playwright" done responsibly. The account OWNER logs in themselves
