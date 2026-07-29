@@ -86,20 +86,25 @@ wrong target. That's a strategy problem, and strategy is fixable fast.
 
 ## 3b. Real-data confirmation — LinkedIn (24 Jul 2026) `[REAL]`
 
-Her own LinkedIn exports now **confirm the diagnosis with hard numbers** (full
-detail in `linkedin-analysis.md`):
-- **Fragmented presence:** two separate profiles (**1,513** and **2,349**
-  followers) + a dormant company page (~12). Authority split in half. `[CONFIRM which is which]`
-- **Feast-or-famine cadence:** views swing **30–37×** day to day — the signature
-  of sporadic posting (root cause #6, now proven).
-- **No amplification:** **0–1 reposts per week.** Content informs but isn't
-  shared — the authority-killer (root cause #4/#6), and the clearest evidence yet
-  that this is a *system* problem, not a talent problem.
-- **But the appeal is real:** post-days pull **~1,000 views** — when she shows up,
-  people look. Fixing consistency + shareability is the whole game.
+Her exports **plus her real recent posts** (see `linkedin-content-review.md`)
+now ground this on actual content. **Two earlier inferences corrected:**
+- **Cadence is a STRENGTH, not a weakness:** real post dates show ~**6 posts/week
+  (near-daily)**. The earlier "feast-or-famine" read (from view swings) is
+  **withdrawn** — the swings are per-post *performance* variance, not gaps.
+- **Company page = 241 followers and active** (not ~12/dormant — CSV column
+  misread).
 
-This moves LinkedIn from `[CONFIRM]` to `[REAL]` and validates the audit's core
-thesis on actual data.
+The **real, content-level** problems (all `[REAL]`, all fixable):
+- **Reach throttled by fixable errors:** nearly every post has a **link in the
+  body** (LinkedIn demotes these) and opens with a **soft line, not a hook**.
+- **Weakest format over-used:** external-article posts underperform (1–2
+  reactions) vs her documents/videos (8–14). Voice drifts to clinic "we" vs Gina "I".
+- **No amplification:** ~**0 reposts** of her content by others → stays inside her network.
+- **But the appeal is real:** a simple video pulled 14 reactions; her document
+  post drew the most comments. The raw material works — the packaging caps it.
+
+This moves LinkedIn from `[CONFIRM]` to `[REAL]`. (Fragmentation — two follower
+bases 1,513 & 2,349 — still `[CONFIRM which is which]`.)
 
 ## 4. Scorecard (weighted for Authority goal)
 
