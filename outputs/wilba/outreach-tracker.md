@@ -45,6 +45,16 @@ Your live CRM. **Status key:** 🔵 to-contact · 🟡 warming up (liking/commen
 | 23 | **Maringi Sumba** | Sumba | Eco bamboo resort, farm-to-table | 🔵 | |
 | 24 | **Wanderlust Fitness Retreat** | Canggu | Fitness + wellness retreat | 🔵 | |
 
+## 🆕 Batch 2 — added via lead-scraper (fresh finds)
+
+| # | Business | Location | Why they fit | Status | Next step |
+|---|----------|----------|--------------|--------|-----------|
+| 25 | **Luana Lombok** | Selong Belanak | Design-led surf boutique hotel — perfect ICP | 🔵 | warm up on IG |
+| 26 | **Innit Lombok** | Ekas | Beautiful surf + lifestyle hotel, couples/lux | 🔵 | warm up on IG |
+| 27 | **Ekas Surf Resort** | Ekas | Personal, low student numbers | 🔵 | |
+| 28 | **360 Surf Academy** | Kuta Lombok | Laid-back surf lodge, flexible packages | 🔵 | |
+| 29 | **Black Fin Surf School** | Belanak Bay | Boutique surf school | 🔵 | |
+
 *(Deliberately skipped: big chains / party hostels — Club Med, Mad Monkey, NIHI Sumba, The Yoga Barn — they have full teams and aren't your ICP.)*
 
 ---
