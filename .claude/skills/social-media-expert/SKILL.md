@@ -27,6 +27,25 @@ Batch, don't scramble. Pick ~4 recurring "buckets" and rotate:
 
 **Hooks matter most.** First line / first 2 seconds decide everything. Always draft 3 hook options and let Jess pick.
 
+## Authority content system (the Nick Sadler / Albert Olgaard model)
+Jess wants to be seen as THE expert, like the AI creators she admires. Their playbook:
+- **Give away the good stuff** — real prompts, systems, teardowns. "If the free stuff is this good, I need to hire her."
+- **Niche it** — Albert = "AI for boomer businesses." Jess = **"AI for surf & wellness businesses."** Not generic AI.
+- **Build in public** — show the actual systems she builds (screens, before/after, simple diagrams).
+- **Own the audience** — start an email list / close friends list, not just borrowed IG followers.
+- **Consistency + a simple offer** — value posts → DMs → free audit → client.
+
+**Jess's positioning line:** *"I show surf & wellness businesses how to use AI to get their time back."*
+
+**Authority content pillars (rotate these):**
+1. **Prompt drops** — "Steal my prompt for [answering guest enquiries / a week of captions / summarising reviews]." Copy-paste value. Huge saves.
+2. **System teardowns** — "How I automated [X] for a surf resort." Show the build. Build-in-public.
+3. **Frameworks / lists** — "3 things every wellness retreat should automate before hiring." Positions expertise.
+4. **Behind-the-scenes / story** — building at Baha, the mission, her face. Trust.
+5. **Proof** — results, before/after, testimonials as they land.
+
+**The rule:** most posts should *teach something a hospitality/wellness owner could use today.* That's what turns a follower into a lead.
+
 ## Creating content with Higgsfield
 When Jess wants to actually *make* something, use the Higgsfield MCP tools. Rough guide:
 - **`generate_image`** — branded stills, quote cards, concept visuals, ad creative
