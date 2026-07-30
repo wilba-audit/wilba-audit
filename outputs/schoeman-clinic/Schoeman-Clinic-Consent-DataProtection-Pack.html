@@ -8,7 +8,7 @@
   :root{
     --navy:#142A28; --teal:#0E6E68; --tealink:#0B534E; --grey:#55605F;
     --green:#2E6B4F; --amber:#8A5A0C; --red:#A33A2C;
-    --line:#C9D2DE; --box:#F4F6F5; --ink:#20302E;
+    --line:#C9D2DE; --box:#F4F6F5; --ink:#20302E; --tint:#EAF3F1;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -23,19 +23,32 @@
   }
   .eyebrow{color:var(--teal); font-weight:700; letter-spacing:.06em; font-size:15px; margin:0 0 2px;}
   h1.title{color:var(--navy); font-size:30px; line-height:1.1; margin:0 0 4px; font-weight:800;}
-  .sub{color:var(--grey); font-style:italic; font-size:16px; margin:0 0 22px;}
-  h2{color:var(--navy); font-size:20px; font-weight:800; margin:26px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line);}
+  .sub{color:var(--grey); font-style:italic; font-size:16px; margin:0 0 18px;}
+  .how{background:var(--tint); border-radius:6px; padding:13px 16px; margin:0 0 8px; font-size:15px;}
+  .how b{color:var(--tealink);}
+  .partband{background:var(--navy); color:#fff; border-radius:6px; padding:11px 16px; margin:30px 0 6px;}
+  .partband .pk{display:block; font-size:12px; letter-spacing:.10em; color:#9fc4bd; font-weight:700;}
+  .partband .pt{display:block; font-size:19px; font-weight:800; line-height:1.15;}
+  h2{color:var(--navy); font-size:20px; font-weight:800; margin:24px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line);}
   h3{color:var(--tealink); font-size:16px; font-weight:700; margin:16px 0 4px;}
   p{margin:0 0 9px;}
   .lead{color:var(--grey); font-style:italic; margin:0 0 9px;}
   .summary-h{font-weight:700; margin:0 0 3px;}
   ul{margin:0 0 10px; padding-left:22px;}
   li{margin:0 0 5px;}
-  li b{color:inherit;}
   .b-teal b{color:var(--teal);} .b-red b{color:var(--red);} .b-amber b{color:var(--amber);}
+  .formcard{border:1px solid var(--line); border-left:4px solid var(--teal); border-radius:6px; padding:15px 18px; margin:0 0 16px; background:#fff;}
+  .formcard .fh{font-weight:800; color:var(--navy); font-size:16px; display:block; margin:0 0 10px;}
+  .tickline{display:flex; align-items:flex-start; gap:9px; margin:0 0 11px; font-size:15px;}
+  .tickline .cb{font-size:19px; line-height:1.2; color:var(--teal);}
+  .tickline .req{color:var(--red); font-weight:700; font-size:12px; margin-left:4px; white-space:nowrap;}
+  .tickline .opt{color:var(--grey); font-weight:600; font-size:12px; margin-left:4px; white-space:nowrap;}
+  .prefrow{background:var(--tint); border-radius:5px; padding:9px 12px; font-size:14px; margin:0 0 4px;}
+  .prefrow .cb{color:var(--teal); font-size:17px;}
+  .microcopy{color:var(--grey); font-style:italic; font-size:13px; margin:8px 0 0;}
   .box{background:var(--box); border:1px solid var(--line); border-radius:5px; padding:14px 16px; margin:0 0 14px; font-size:15px;}
   .box .bh{font-weight:700; display:block; margin:0 0 6px;}
-  .box .opt{font-weight:700; display:block; margin:8px 0 4px;}
+  .box .opt2{font-weight:700; display:block; margin:8px 0 4px;}
   .box .note{font-style:italic; color:var(--grey); font-size:14px; display:block; margin-top:6px;}
   .box .tick{display:block; margin:4px 0;}
   .cb{font-size:17px; line-height:1;}
@@ -55,7 +68,9 @@
   @media print{
     body{background:#fff;} .toolbar{display:none;}
     .page{box-shadow:none; margin:0; max-width:none; padding:0; border-radius:0;}
-    h2{break-after:avoid;} table,.box{break-inside:avoid;}
+    h2,.partband{break-after:avoid;} table,.box,.formcard{break-inside:avoid;}
+    .partband{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    th{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
   }
 </style>
 </head>
@@ -67,8 +82,37 @@
   <h1 class="title">Consent &amp; Data-Protection Pack</h1>
   <div class="sub">Working draft for the clinic&rsquo;s data-protection adviser to review and sign off</div>
 
+  <div class="how">
+    <b>How to read this.</b> There are two parts. <b>Part A</b> is the short wording that goes on the forms &mdash; a tick box and one line, and that is all the patient ever sees. <b>Part B</b> is the detail behind it, for the data-protection adviser to review and sign off once. The patient never reads Part B; the full terms they can click through to are the existing Privacy Policy.
+  </div>
+
+  <!-- ============ PART A ============ -->
+  <div class="partband"><span class="pk">PART A &mdash; FOR THE FORM BUILDER</span><span class="pt">The form copy: what the patient actually sees</span></div>
+  <p class="lead">Short and simple. Each patient sees a tick box and one line, with a link to the Privacy Policy if they want the full detail. Required boxes must be unticked by default; optional boxes are clearly optional.</p>
+
+  <h3>On the enquiry form</h3>
+  <div class="formcard">
+    <span class="fh">Enquiry consent</span>
+    <div class="tickline"><span class="cb">&#9744;</span><span>I consent to The Schoeman Clinic using my details, including any health information I share, to respond to my enquiry and guide me through the next steps. <a href="#">(See our Privacy Policy.)</a><span class="req">REQUIRED</span></span></div>
+    <div class="tickline"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and health information by email.<span class="opt">OPTIONAL</span></span></div>
+    <div class="prefrow"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone &nbsp;&mdash;&nbsp; how would you like us to contact you about your care?</div>
+    <p class="microcopy">WhatsApp is used for appointment reminders and service messages, not marketing. You can change your preferences or unsubscribe at any time.</p>
+  </div>
+
+  <h3>On the registration form</h3>
+  <div class="formcard">
+    <span class="fh">Registration consent</span>
+    <div class="tickline"><span class="cb">&#9744;</span><span>I confirm my details are accurate and I understand how The Schoeman Clinic will use my information to provide my care, as set out in the <a href="#">Patient Privacy Policy</a>.<span class="req">REQUIRED</span></span></div>
+    <div class="tickline"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and updates by email.<span class="opt">OPTIONAL</span></span></div>
+    <div class="prefrow"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone &nbsp;&mdash;&nbsp; how we contact you about your care</div>
+    <p class="microcopy">Carry the contact and email preference across from the enquiry rather than asking again, unless it was not captured cleanly.</p>
+  </div>
+
+  <!-- ============ PART B ============ -->
+  <div class="partband"><span class="pk">PART B &mdash; FOR THE DATA-PROTECTION ADVISER</span><span class="pt">The reference pack behind the wording</span></div>
+
   <p class="summary-h">Plain-English summary</p>
-  <p>This pack turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It covers what the enquiry and registration forms should ask, how to capture email and WhatsApp preferences properly, the lawful basis for each activity, the updated list of the systems that touch patient data, and the specific edits the existing privacy policies need. It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
+  <p>This part turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It sets out the lawful basis for each activity, why the enquiry and registration wording reads as it does, the systems that touch patient data, and the specific edits the existing privacy policies need. It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
 
   <h2>Context we have worked from</h2>
   <ul>
@@ -78,33 +122,20 @@
     <li><b>Controller / processor:</b> the clinic is the data controller. Semble and GoHighLevel and others are processors acting on the clinic&rsquo;s instructions.</li>
   </ul>
 
-  <h2>1 &middot; Enquiry-form consent block</h2>
-  <p class="lead">The enquiry form collects: name, surname, email, phone, sex at birth, reason for enquiry (drop-down), referral source. Because the reason can reveal health information, capture explicit consent to handle it, then keep marketing separate and optional.</p>
-  <h3>a) Handling your enquiry (required to proceed)</h3>
+  <h2>1 &middot; Why the enquiry wording reads as it does</h2>
+  <p class="lead">The enquiry form collects: name, surname, email, phone, sex at birth, reason for enquiry (drop-down), referral source. Because the reason can reveal health information, we capture explicit consent to handle it, then keep marketing separate and optional.</p>
   <div class="box">
-    <span class="bh">How we will use these details</span>
+    <span class="bh">The full version of the required consent</span>
     We use the information you provide to respond to your enquiry and guide you through the next steps. Because your enquiry may include information about your health, we ask for your explicit consent to handle it for this purpose.
     <span class="tick"><b><span class="cb">&#9744;</span>&nbsp; I consent to The Schoeman Clinic using the information in this enquiry, including any health-related details, to respond and help me take the next steps.</b></span>
-    <span class="note">(Unticked by default. See our Privacy Policy for how we look after your information.)</span>
-  </div>
-  <h3>b) Staying in touch (optional, unticked)</h3>
-  <div class="box">
-    <span class="bh">How would you like us to contact you about your care?</span>
-    <span class="tick channels"><span class="cb">&#9744;</span> Email &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone</span>
-    <span class="opt">Clinic updates (optional)</span>
-    <span class="tick"><span class="cb">&#9744;</span>&nbsp; I would like to receive clinic news, health information and occasional updates by email.</span>
-    <span class="note">You can change your preferences or unsubscribe at any time. WhatsApp is used for appointment reminders and service messages, not marketing.</span>
+    <span class="note">Unticked by default. On the form this is shortened to the single line in Part A; this longer version is the reasoning for the adviser.</span>
   </div>
 
-  <h2>2 &middot; Registration-form consent block</h2>
-  <p class="lead">The registration form collects full medical history and identity. For a patient receiving care the basis shifts from consent to contract plus provision of health care, so the wording changes accordingly. Carry the marketing preference across from the enquiry rather than re-asking, unless it was not captured cleanly.</p>
+  <h2>2 &middot; Why the registration wording changes</h2>
+  <p class="lead">The registration form collects full medical history and identity. For a patient receiving care the basis shifts from consent to contract plus provision of health care, so the wording changes accordingly.</p>
   <div class="box">
-    <span class="bh">Your information and your care</span>
+    <span class="bh">The basis for a patient in care</span>
     We use the information on this form to provide your healthcare, keep your medical records, arrange tests and prescriptions, and manage your appointments and billing. We handle your health information under UK GDPR Article 9(2)(h) (provision of health care) and the Data Protection Act 2018.
-    <span class="tick"><b><span class="cb">&#9744;</span>&nbsp; I confirm the information I have provided is accurate, and I understand how The Schoeman Clinic will use it, as described in the Patient Privacy Policy.</b></span>
-    <span class="opt">Contact &amp; updates</span>
-    <span class="tick channels"><span class="cb">&#9744;</span> Email &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone &nbsp;&nbsp;(how we contact you about your care)</span>
-    <span class="tick"><span class="cb">&#9744;</span>&nbsp; I would like to receive clinic news and updates by email (optional).</span>
     <span class="note">Note for build: replace every &ldquo;EU GDPR&rdquo; reference on the Semble registration and consent forms with &ldquo;UK GDPR&rdquo;.</span>
   </div>
 
