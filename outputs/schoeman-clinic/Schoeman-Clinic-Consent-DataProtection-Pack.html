@@ -115,7 +115,7 @@
   <div class="partband"><span class="pk">PART B &mdash; FOR THE DATA-PROTECTION ADVISER</span><span class="pt">The reference pack behind the wording</span></div>
 
   <p class="summary-h">Plain-English summary</p>
-  <p>This part turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It sets out the lawful basis for each activity, how long information is kept, patients&rsquo; rights, the systems that touch patient data and how it moves internationally, and the specific edits the existing privacy policies need. It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
+  <p>This part turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It sets out the lawful basis for each activity, how long information is kept, patients&rsquo; rights, the systems that touch patient data and how it moves internationally, the specific edits the existing privacy policies need, and a ready-to-complete DPIA outline (Part C). It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
 
   <h2>Context we have worked from</h2>
   <ul>
@@ -161,7 +161,7 @@
       <tr><td>Appointment reminders / service messages</td><td>Contract / legitimate interests</td><td>n/a</td></tr>
       <tr><td>Email newsletter / clinic marketing</td><td>Consent &mdash; Art 6(1)(a) + PECR</td><td>n/a</td></tr>
       <tr><td>Payment processing</td><td>Contract &mdash; Art 6(1)(b)</td><td>n/a</td></tr>
-      <tr><td>Website analytics, cookies, retargeting</td><td>Consent &mdash; PECR (cookie banner)</td><td>n/a</td></tr>
+      <tr><td>Website analytics &amp; cookies</td><td>Consent &mdash; PECR (cookie banner)</td><td>n/a</td></tr>
     </tbody>
   </table>
 
@@ -212,15 +212,12 @@
     <li><b>Add processor:</b> add GoHighLevel as a processor (operational CRM, inbox, forms, communications; US, HIPAA tier, UK IDTA).</li>
     <li><b>Add processor:</b> add WhatsApp / Meta Cloud API as a processor for patient messaging (GB storage).</li>
     <li><b>Update:</b> the website policy names MailChimp for newsletters; update to reflect the move to GoHighLevel (retain MailChimp only if still used).</li>
-    <li class="b-amber"><b>Confirm / fix:</b> the website policy references retargeting ads via Google, Facebook and Instagram. Confirm whether these are actually in use; if not, remove the clause; if yes, ensure the cookie banner captures consent for them (PECR).</li>
+    <li class="b-amber"><b>Remove ads clause:</b> the website policy references retargeting ads via Google, Facebook and Instagram. The clinic does not run these, so remove the clause so the policy matches what the clinic actually does. If retargeting is ever introduced, add a cookie-consent opt-in for it first (PECR).</li>
     <li><b>Cookies:</b> ensure a compliant cookie consent banner is in place for non-essential cookies (analytics, maps, any retargeting).</li>
     <li><b>Retention &amp; rights:</b> state the retention periods and the patient rights above, with a named data-protection contact and the subject-access-request route.</li>
   </ul>
 
-  <h2>10 &middot; Data protection by design &mdash; DPIA &amp; accountability</h2>
-  <p>Because this involves special-category (health) data at scale, a new operational CRM (GoHighLevel), and international transfer, a <b>Data Protection Impact Assessment (DPIA)</b> is expected under UK GDPR Article 35. We recommend completing a short DPIA for the GoHighLevel rollout before launch; your data adviser should own and sign it. WILBA can provide a pre-filled DPIA outline to speed this up.</p>
-
-  <h2>11 &middot; Before this goes live &mdash; data-person checklist</h2>
+  <h2>10 &middot; Before this goes live &mdash; data-person checklist</h2>
   <div class="check"><span class="cb">&#9744;</span> Confirm the lawful bases above for special-category data at enquiry and in care</div>
   <div class="check"><span class="cb">&#9744;</span> Approve the final enquiry and registration consent wording</div>
   <div class="check"><span class="cb">&#9744;</span> Confirm the data controller&rsquo;s legal entity name and ICO registration</div>
@@ -229,17 +226,52 @@
   <div class="check"><span class="cb">&#9744;</span> Confirm the newsletter list only contains contacts with a valid basis before the MailChimp &rarr; GHL migration</div>
   <div class="check"><span class="cb">&#9744;</span> Replace Semble&rsquo;s auto-marked consent with genuine captured opt-in</div>
   <div class="check"><span class="cb">&#9744;</span> Put a signed UK IDTA and Article 28 DPA in place with GoHighLevel and other US processors</div>
-  <div class="check"><span class="cb">&#9744;</span> Complete a DPIA for the GoHighLevel rollout</div>
-  <div class="check"><span class="cb">&#9744;</span> Confirm whether retargeting ads are in use and fix the website policy accordingly</div>
+  <div class="check"><span class="cb">&#9744;</span> Complete and sign the DPIA in Part C</div>
+  <div class="check"><span class="cb">&#9744;</span> Remove the retargeting-ads clause from the website policy (ads not currently run)</div>
   <div class="check"><span class="cb">&#9744;</span> Confirm patient &ldquo;active / inactive / archived&rdquo; status governs who can be marketed to</div>
   <div class="check"><span class="cb">&#9744;</span> Update EU &rarr; UK GDPR references everywhere</div>
 
-  <h2>12 &middot; Review &amp; sign-off</h2>
-  <p>For the reviewing data team: please confirm the items in section 11, note any changes, and complete the sign-off below. WILBA will action any wording or build changes you flag.</p>
+  <!-- ============ PART C ============ -->
+  <div class="partband"><span class="pk">PART C &mdash; DATA PROTECTION IMPACT ASSESSMENT</span><span class="pt">DPIA outline, ready for the data adviser to complete</span></div>
+  <p class="lead">A DPIA is expected under UK GDPR Article 35 here, because the build involves special-category (health) data at scale, a new operational CRM (GoHighLevel), and an international transfer. This outline is pre-filled from what we know; the data adviser confirms the detail, adds anything clinic-specific, and signs it off. Items marked [confirm] need the clinic&rsquo;s input.</p>
+
+  <h3>Step 1 &mdash; Describe the processing</h3>
+  <ul>
+    <li><b>What:</b> collecting enquiry and registration information, messaging patients (WhatsApp, email, SMS), running a shared inbox and CRM (GoHighLevel), sending appointment reminders, and (with consent) newsletters.</li>
+    <li><b>Whose data:</b> adult private patients (UK, and international patients with a UK address). Special-category health data is involved from the enquiry onward.</li>
+    <li><b>Scale:</b> approximately [confirm number] existing contacts migrated from Semble, plus new enquiries.</li>
+    <li><b>Context:</b> premium hormone / longevity clinic. The clinical record stays in Semble; GoHighLevel is operational only and does not hold the clinical record.</li>
+    <li><b>Purposes:</b> respond to enquiries, coordinate care and appointments, send service messages, and send marketing only to patients who have opted in.</li>
+  </ul>
+
+  <h3>Step 2 &mdash; Necessity &amp; proportionality</h3>
+  <ul>
+    <li><b>Lawful basis:</b> as set out in section 4 &mdash; consent for enquiries and marketing; contract plus Article 9(2)(h) for providing care.</li>
+    <li><b>Data minimisation:</b> only the fields needed are collected; clinical detail remains in Semble, not GoHighLevel.</li>
+    <li><b>Individual rights:</b> supported as in section 6; consent is recorded and as easy to withdraw as to give.</li>
+    <li><b>Retention:</b> set and documented as in section 5, including deletion of non-converting enquiries.</li>
+    <li><b>Transfers:</b> US processors covered by UK IDTA and a Transfer Risk Assessment (section 8).</li>
+  </ul>
+
+  <h3>Step 3 &mdash; Risk register</h3>
   <table>
-    <thead><tr><th>Reviewed by</th><th>Role</th><th>Confirmed / changes requested</th><th>Date</th></tr></thead>
+    <thead><tr><th>Risk</th><th>Likelihood</th><th>Severity</th><th>Measures to reduce it</th></tr></thead>
     <tbody>
-      <tr><td style="height:34px;">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Health data held in a US-based CRM (GoHighLevel)</td><td>Low</td><td>High</td><td>HIPAA tier; UK IDTA + Transfer Risk Assessment; clinical record kept in Semble, not GHL; access controls.</td></tr>
+      <tr><td>Shared-inbox messages seen by wider team than needed</td><td>Medium</td><td>Medium</td><td>Role-based access; staff data-protection agreements and training; sensitive items recorded in Semble.</td></tr>
+      <tr><td>Marketing sent without a valid basis after the MailChimp &rarr; GHL migration</td><td>Medium</td><td>Medium</td><td>Migrate only validly-consented contacts; per-channel opt-in; working unsubscribe; consent audit trail.</td></tr>
+      <tr><td>Invalid consent from Semble auto-marking opt-in</td><td>High (current)</td><td>Medium</td><td>Replace with a genuine captured opt-in; re-permission the list where needed.</td></tr>
+      <tr><td>Unauthorised access or data breach</td><td>Low</td><td>High</td><td>Multi-factor authentication; least-privilege access; Article 28 DPAs; 72-hour ICO breach process; encryption in transit and at rest.</td></tr>
+    </tbody>
+  </table>
+  <p class="tcap">Likelihood and severity are the adviser&rsquo;s to confirm; add any clinic-specific risks.</p>
+
+  <h3>Step 4 &mdash; Outcome &amp; approval</h3>
+  <p>Record the residual risk after the measures above, any actions still outstanding, and the approval below. WILBA will action any wording or build changes flagged during review.</p>
+  <table>
+    <thead><tr><th>Reviewed / approved by</th><th>Role</th><th>Residual risk &amp; any actions</th><th>Date</th></tr></thead>
+    <tbody>
+      <tr><td style="height:38px;">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     </tbody>
   </table>
 
