@@ -3,76 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Schoeman Clinic — Consent &amp; Data-Protection Pack</title>
+<title>The Schoeman Clinic — Patient Consent</title>
 <style>
   :root{
     --navy:#142A28; --teal:#0E6E68; --tealink:#0B534E; --grey:#55605F;
-    --green:#2E6B4F; --amber:#8A5A0C; --red:#A33A2C;
     --line:#C9D2DE; --box:#F4F6F5; --ink:#20302E; --tint:#EAF3F1;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
-  body{
-    margin:0; background:#e9edeb; color:var(--ink);
-    font-family:"Calibri","Segoe UI",Helvetica,Arial,sans-serif;
-    font-size:16px; line-height:1.5;
-  }
-  .page{
-    max-width:820px; margin:24px auto; background:#fff; padding:44px 52px 56px;
-    box-shadow:0 2px 18px rgba(0,0,0,.10); border-radius:4px;
-  }
+  body{margin:0; background:#e9edeb; color:var(--ink);
+    font-family:"Calibri","Segoe UI",Helvetica,Arial,sans-serif; font-size:16px; line-height:1.55;}
+  .page{max-width:760px; margin:24px auto; background:#fff; padding:46px 54px 52px;
+    box-shadow:0 2px 18px rgba(0,0,0,.10); border-radius:4px;}
   .eyebrow{color:var(--teal); font-weight:700; letter-spacing:.06em; font-size:15px; margin:0 0 2px;}
-  h1.title{color:var(--navy); font-size:30px; line-height:1.1; margin:0 0 4px; font-weight:800;}
-  .sub{color:var(--grey); font-style:italic; font-size:16px; margin:0 0 8px;}
-  .meta{font-size:12.5px; color:var(--grey); letter-spacing:.02em; margin:0 0 18px; padding-bottom:14px; border-bottom:2px solid var(--tint);}
-  .meta b{color:var(--tealink);}
-  .how{background:var(--tint); border-radius:6px; padding:13px 16px; margin:0 0 8px; font-size:15px;}
-  .how b{color:var(--tealink);}
-  .partband{background:var(--navy); color:#fff; border-radius:6px; padding:11px 16px; margin:30px 0 6px;}
-  .partband .pk{display:block; font-size:12px; letter-spacing:.10em; color:#9fc4bd; font-weight:700;}
-  .partband .pt{display:block; font-size:19px; font-weight:800; line-height:1.15;}
-  h2{color:var(--navy); font-size:20px; font-weight:800; margin:24px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line);}
-  h3{color:var(--tealink); font-size:16px; font-weight:700; margin:16px 0 4px;}
-  p{margin:0 0 9px;}
-  .lead{color:var(--grey); font-style:italic; margin:0 0 9px;}
-  .summary-h{font-weight:700; margin:0 0 3px;}
-  ul{margin:0 0 10px; padding-left:22px;}
-  li{margin:0 0 5px;}
-  .b-teal b{color:var(--teal);} .b-red b{color:var(--red);} .b-amber b{color:var(--amber);}
-  .formcard{border:1px solid var(--line); border-left:4px solid var(--teal); border-radius:6px; padding:15px 18px; margin:0 0 16px; background:#fff;}
-  .formcard .fh{font-weight:800; color:var(--navy); font-size:16px; display:block; margin:0 0 10px;}
-  .tickline{display:flex; align-items:flex-start; gap:9px; margin:0 0 11px; font-size:15px;}
-  .tickline .cb{font-size:19px; line-height:1.2; color:var(--teal);}
-  .tickline .req{color:var(--red); font-weight:700; font-size:12px; margin-left:4px; white-space:nowrap;}
-  .tickline .opt{color:var(--grey); font-weight:600; font-size:12px; margin-left:4px; white-space:nowrap;}
-  .prefrow{background:var(--tint); border-radius:5px; padding:9px 12px; font-size:14px; margin:0 0 4px;}
-  .prefrow .cb{color:var(--teal); font-size:17px;}
-  .microcopy{color:var(--grey); font-style:italic; font-size:13px; margin:8px 0 0;}
-  .box{background:var(--box); border:1px solid var(--line); border-radius:5px; padding:14px 16px; margin:0 0 14px; font-size:15px;}
-  .box .bh{font-weight:700; display:block; margin:0 0 6px;}
-  .box .note{font-style:italic; color:var(--grey); font-size:14px; display:block; margin-top:6px;}
-  .box .tick{display:block; margin:4px 0;}
-  .cb{font-size:17px; line-height:1;}
-  table{width:100%; border-collapse:collapse; margin:2px 0 8px; font-size:14px;}
-  th{background:var(--navy); color:#fff; text-align:left; padding:7px 9px; font-weight:700; font-size:13px;}
-  td{border:1px solid var(--line); padding:6px 9px; vertical-align:top;}
-  tbody tr:nth-child(even){background:#f7f9f8;}
-  .tcap{font-size:12.5px; color:var(--grey); font-style:italic; margin:0 0 14px;}
-  .note-strip{border-left:3px solid var(--amber); background:#fbf6ec; padding:9px 13px; font-size:14px; margin:0 0 14px;}
-  .check{margin:2px 0; font-size:15px;}
-  .check .cb{margin-right:6px;}
-  .disclaimer{color:var(--red); font-style:italic; font-size:14px; margin:26px 0 4px; padding-top:12px; border-top:1px solid var(--line);}
-  .prep{color:var(--grey); font-style:italic; font-size:13px; margin:0;}
-  .toolbar{max-width:820px; margin:20px auto -4px; text-align:right; padding:0 8px;}
+  h1{color:var(--navy); font-size:27px; line-height:1.12; margin:0 0 6px; font-weight:800;}
+  .sub{color:var(--grey); font-style:italic; font-size:15.5px; margin:0 0 22px; padding-bottom:16px; border-bottom:2px solid var(--tint);}
+  h2{color:var(--navy); font-size:19px; font-weight:800; margin:26px 0 8px;}
+  h3{color:var(--tealink); font-size:15px; font-weight:700; margin:18px 0 6px; text-transform:uppercase; letter-spacing:.04em;}
+  p{margin:0 0 10px;}
+  .consentbox{border:1px solid var(--line); border-left:4px solid var(--teal); border-radius:6px; padding:16px 18px; margin:0 0 12px; background:#fff;}
+  .tick{display:flex; align-items:flex-start; gap:10px; margin:0 0 12px; font-size:16px;}
+  .tick:last-child{margin-bottom:0;}
+  .tick .cb{font-size:20px; line-height:1.15; color:var(--teal);}
+  .tick .req{color:#A33A2C; font-weight:700; font-size:11px; margin-left:5px; white-space:nowrap;}
+  .tick .opt{color:var(--grey); font-weight:600; font-size:11px; margin-left:5px; white-space:nowrap;}
+  .prefs{background:var(--tint); border-radius:5px; padding:10px 13px; font-size:14.5px;}
+  .prefs .cb{color:var(--teal); font-size:18px;}
+  .microcopy{color:var(--grey); font-style:italic; font-size:13.5px; margin:8px 0 0;}
+  .details{background:var(--box); border:1px solid var(--line); border-radius:6px; padding:6px 20px 14px; margin:6px 0 0;}
+  .details dl{margin:0;}
+  .details dt{font-weight:700; color:var(--tealink); margin:12px 0 2px; font-size:15px;}
+  .details dd{margin:0; font-size:15px;}
+  .foot{color:var(--grey); font-style:italic; font-size:13px; margin:24px 0 0; padding-top:14px; border-top:1px solid var(--line);}
+  .toolbar{max-width:760px; margin:20px auto -4px; text-align:right; padding:0 8px;}
   .btn{background:var(--teal); color:#fff; border:none; border-radius:6px; padding:9px 16px; font-size:14px; font-weight:600; cursor:pointer;}
   .btn:hover{background:var(--tealink);}
-  @media (max-width:640px){ .page{padding:28px 20px 36px; margin:10px;} h1.title{font-size:24px;} }
+  @media (max-width:640px){ .page{padding:28px 22px 36px; margin:10px;} h1{font-size:22px;} }
   @media print{
     body{background:#fff;} .toolbar{display:none;}
     .page{box-shadow:none; margin:0; max-width:none; padding:0; border-radius:0;}
-    h2,.partband{break-after:avoid;} table,.box,.formcard,.note-strip{break-inside:avoid;}
-    .partband{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
-    th{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    .consentbox,.details{break-inside:avoid;}
   }
 </style>
 </head>
@@ -81,202 +51,54 @@
 <div class="page">
 
   <div class="eyebrow">THE SCHOEMAN CLINIC</div>
-  <h1 class="title">Consent &amp; Data-Protection Pack</h1>
-  <div class="sub">Working draft for the clinic&rsquo;s data-protection adviser to review and sign off</div>
-  <div class="meta"><b>Version 1.0</b> &nbsp;&middot;&nbsp; Draft for review &nbsp;&middot;&nbsp; 30 July 2026 &nbsp;&middot;&nbsp; Prepared by WILBA for The Schoeman Clinic</div>
+  <h1>Patient Consent &amp; How We Use Your Information</h1>
+  <div class="sub">The tick-box wording for the enquiry and registration forms, with the data-protection detail behind it.</div>
 
-  <div class="how">
-    <b>How to read this.</b> There are two parts. <b>Part A</b> is the short wording that goes on the forms: just a tick box and one line, and that is all the patient ever sees. <b>Part B</b> is the detail behind it, for the data-protection adviser to review and sign off once. The patient never reads Part B; the full terms they can click through to are the existing Privacy Policy.
+  <h2>Enquiry form</h2>
+  <div class="consentbox">
+    <div class="tick"><span class="cb">&#9744;</span><span>I consent to The Schoeman Clinic using my details, including any health information I share, to respond to my enquiry and help me take the next steps.<span class="req">REQUIRED</span></span></div>
+    <div class="tick"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and health information by email.<span class="opt">OPTIONAL</span></span></div>
+    <div class="prefs"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone. &nbsp; How would you like us to contact you about your care?</div>
+    <p class="microcopy">You can update your preferences or withdraw your consent at any time. See how we use your information below.</p>
   </div>
 
-  <!-- ============ PART A ============ -->
-  <div class="partband"><span class="pk">PART A &mdash; FOR THE FORM BUILDER</span><span class="pt">The form copy: what the patient actually sees</span></div>
-  <p class="lead">Short and simple. Each patient sees a tick box and one line, with a link to the Privacy Policy if they want the full detail. Required boxes are unticked by default; optional boxes are clearly optional.</p>
-
-  <h3>On the enquiry form</h3>
-  <div class="formcard">
-    <span class="fh">Enquiry consent</span>
-    <div class="tickline"><span class="cb">&#9744;</span><span>I consent to The Schoeman Clinic using my details, including any health information I share, to respond to my enquiry and guide me through the next steps. <a href="#">(See our Privacy Policy.)</a><span class="req">REQUIRED</span></span></div>
-    <div class="tickline"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and health information by email.<span class="opt">OPTIONAL</span></span></div>
-    <div class="prefrow"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone. &nbsp; How would you like us to contact you about your care?</div>
-    <p class="microcopy">WhatsApp is used for appointment reminders and service messages, not marketing. You can update your preferences or withdraw your consent at any time.</p>
+  <h2>Registration form</h2>
+  <div class="consentbox">
+    <div class="tick"><span class="cb">&#9744;</span><span>I confirm my details are accurate and I understand how The Schoeman Clinic will use my information to provide my care, as set out below and in the Privacy Policy.<span class="req">REQUIRED</span></span></div>
+    <div class="tick"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and updates by email.<span class="opt">OPTIONAL</span></span></div>
+    <div class="prefs"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone. &nbsp; How we contact you about your care.</div>
   </div>
 
-  <h3>On the registration form</h3>
-  <div class="formcard">
-    <span class="fh">Registration consent</span>
-    <div class="tickline"><span class="cb">&#9744;</span><span>I confirm my details are accurate and I understand how The Schoeman Clinic will use my information to provide my care, as set out in the <a href="#">Patient Privacy Policy</a>.<span class="req">REQUIRED</span></span></div>
-    <div class="tickline"><span class="cb">&#9744;</span><span>Keep me updated with clinic news and updates by email.<span class="opt">OPTIONAL</span></span></div>
-    <div class="prefrow"><span class="cb">&#9744;</span> Email &nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone. &nbsp; How we contact you about your care.</div>
-    <p class="microcopy">Carry the contact and email preference across from the enquiry rather than asking again, unless it was not captured cleanly.</p>
+  <h2>The details &mdash; how we use and protect your information</h2>
+  <div class="details">
+    <dl>
+      <dt>What we collect</dt>
+      <dd>Your contact details and the health information you choose to share, so we can respond to you and provide your care.</dd>
+
+      <dt>Why we can use it (our lawful basis)</dt>
+      <dd>Because health information is sensitive, we ask for your explicit consent to use it when you enquire (UK GDPR Article 9(2)(a)). Once you are a patient, we use it to provide your healthcare under UK GDPR Article 9(2)(h) and the Data Protection Act 2018.</dd>
+
+      <dt>How we contact you</dt>
+      <dd>Only in the ways you choose above. We use WhatsApp, SMS and email for appointment reminders and service messages. We send marketing or newsletters only if you opt in, and you can unsubscribe at any time.</dd>
+
+      <dt>Where your information is kept</dt>
+      <dd>Your clinical record is held securely in our clinical system; our day-to-day messaging and admin are handled in our secure practice system. Both are protected with access controls and appropriate safeguards, including for any storage outside the UK.</dd>
+
+      <dt>Who we share it with</dt>
+      <dd>Only trusted providers who help deliver your care &mdash; such as laboratories and pharmacies &mdash; under contract. We never sell your information.</dd>
+
+      <dt>How long we keep it</dt>
+      <dd>Only as long as needed. Clinical records are kept in line with healthcare guidance; enquiries that do not proceed are kept for a limited period and then deleted.</dd>
+
+      <dt>Your rights</dt>
+      <dd>You can ask to see, correct or delete your information, and withdraw consent at any time &mdash; as easily as you gave it. Withdrawing marketing consent never affects your care. We respond within one month.</dd>
+
+      <dt>Contact</dt>
+      <dd>To exercise any of these, or to ask a question about your information, contact [data-protection contact and email].</dd>
+    </dl>
   </div>
 
-  <!-- ============ PART B ============ -->
-  <div class="partband"><span class="pk">PART B &mdash; FOR THE DATA-PROTECTION ADVISER</span><span class="pt">The reference pack behind the wording</span></div>
-
-  <p class="summary-h">Plain-English summary</p>
-  <p>This part turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It sets out the lawful basis for each activity, how long information is kept, patients&rsquo; rights, the systems that touch patient data and how it moves internationally, the specific edits the existing privacy policies need, and a ready-to-complete DPIA outline (Part C). It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
-
-  <h2>Context we have worked from</h2>
-  <ul>
-    <li><b>Jurisdiction:</b> UK. Clinic established in the UK, CQC registered; patients may be international but require a UK address. Governing regime: UK GDPR + Data Protection Act 2018 + PECR.</li>
-    <li><b>Data type:</b> special-category (health) data. Even at enquiry, the &ldquo;reason for enquiry&rdquo; can reveal health information, so Article 9 applies from the first touchpoint.</li>
-    <li><b>Patients:</b> adults only (18+). No children&rsquo;s data is processed.</li>
-    <li><b>Marketing:</b> email + newsletter (moving from MailChimp to GoHighLevel). WhatsApp is used for the shared inbox and appointment reminders (service), not marketing. Retargeting ads (Google/Facebook/Instagram) are referenced in the current website policy but not confirmed as in use.</li>
-    <li><b>Controller / processor:</b> the clinic is the data controller. Semble and GoHighLevel and others are processors acting on the clinic&rsquo;s instructions.</li>
-  </ul>
-
-  <h2>1 &middot; Why the enquiry wording reads as it does</h2>
-  <p class="lead">The enquiry form collects: name, surname, email, phone, sex at birth, reason for enquiry (drop-down), referral source. Because the reason can reveal health information, we capture explicit consent to handle it, then keep marketing separate and optional.</p>
-  <div class="box">
-    <span class="bh">The full version of the required consent</span>
-    We use the information you provide to respond to your enquiry and guide you through the next steps. Because your enquiry may include information about your health, we ask for your explicit consent to handle it for this purpose.
-    <span class="tick"><b><span class="cb">&#9744;</span>&nbsp; I consent to The Schoeman Clinic using the information in this enquiry, including any health-related details, to respond and help me take the next steps.</b></span>
-    <span class="note">Unticked by default. On the form this is shortened to the single line in Part A; this longer version is the reasoning for the adviser.</span>
-  </div>
-
-  <h2>2 &middot; Why the registration wording changes</h2>
-  <p class="lead">The registration form collects full medical history and identity. For a patient receiving care the basis shifts from consent to contract plus provision of health care, so the wording changes accordingly.</p>
-  <div class="box">
-    <span class="bh">The basis for a patient in care</span>
-    We use the information on this form to provide your healthcare, keep your medical records, arrange tests and prescriptions, and manage your appointments and billing. We handle your health information under UK GDPR Article 9(2)(h) (provision of health care) and the Data Protection Act 2018.
-    <span class="note">Note for build: replace every &ldquo;EU GDPR&rdquo; reference on the Semble registration and consent forms with &ldquo;UK GDPR&rdquo;.</span>
-  </div>
-
-  <h2>3 &middot; Marketing consent &mdash; how to capture it</h2>
-  <ul>
-    <li class="b-teal"><b>Design:</b> capture explicit, per-channel opt-in ONCE, cleanly, at the enquiry stage, using separate unticked boxes. Do not bundle &ldquo;email and WhatsApp&rdquo; into one tick, and do not pre-tick.</li>
-    <li><b>Separation:</b> keep marketing (newsletters, clinic updates) clearly separate from service messages (appointment reminders, results logistics). This keeps consent &ldquo;specific&rdquo;.</li>
-    <li><b>Email:</b> email marketing needs consent or a valid PECR soft opt-in; every send needs a working unsubscribe and a genuine sender identity. Newsletters moving from MailChimp to GoHighLevel must carry only contacts with a valid basis; do not assume the whole patient list is opted in.</li>
-    <li><b>WhatsApp:</b> treat any future WhatsApp marketing as needing its own explicit opt-in plus Meta-approved templates. For now WhatsApp stays service-only, which matches Dr Gina&rsquo;s wish not to &ldquo;bombard&rdquo; patients.</li>
-    <li class="b-red"><b>Record + fix:</b> record what each person consented to, when, how, and which version of the notice they saw. Important: Semble currently auto-marks SMS/email consent on registration; that is not valid consent and should be replaced with a genuine opt-in captured as above.</li>
-  </ul>
-
-  <h2>4 &middot; Lawful-basis table</h2>
-  <table>
-    <thead><tr><th>Activity</th><th>Lawful basis (Art 6)</th><th>Health-data basis (Art 9)</th></tr></thead>
-    <tbody>
-      <tr><td>Responding to an enquiry (incl. health reason)</td><td>Consent &mdash; Art 6(1)(a)</td><td>Explicit consent &mdash; Art 9(2)(a)</td></tr>
-      <tr><td>Providing healthcare (records, tests, prescriptions)</td><td>Contract &mdash; Art 6(1)(b)</td><td>Provision of health care &mdash; Art 9(2)(h)</td></tr>
-      <tr><td>Appointment reminders / service messages</td><td>Contract / legitimate interests</td><td>n/a</td></tr>
-      <tr><td>Email newsletter / clinic marketing</td><td>Consent &mdash; Art 6(1)(a) + PECR</td><td>n/a</td></tr>
-      <tr><td>Payment processing</td><td>Contract &mdash; Art 6(1)(b)</td><td>n/a</td></tr>
-      <tr><td>Website analytics &amp; cookies</td><td>Consent &mdash; PECR (cookie banner)</td><td>n/a</td></tr>
-    </tbody>
-  </table>
-
-  <h2>5 &middot; Retention &mdash; how long information is kept</h2>
-  <table>
-    <thead><tr><th>Information type</th><th>Suggested retention</th><th>Note</th></tr></thead>
-    <tbody>
-      <tr><td>Patient clinical records (held in Semble)</td><td>~8 years after last treatment (adults)</td><td>Align to the clinic&rsquo;s clinical records policy; confirm.</td></tr>
-      <tr><td>Enquiries that do not become patients</td><td>6&ndash;12 months, then delete or anonymise</td><td>Unless they have opted into marketing.</td></tr>
-      <tr><td>Operational / CRM records (GoHighLevel)</td><td>Match the record they relate to</td><td>Review annually; do not keep messages indefinitely.</td></tr>
-      <tr><td>Marketing contacts &amp; consent records</td><td>Until withdrawn; refresh if inactive ~24 months</td><td>Keep the consent audit trail even after removal.</td></tr>
-      <tr><td>Billing &amp; financial records</td><td>~6 years</td><td>HMRC / accounting requirement.</td></tr>
-    </tbody>
-  </table>
-  <p class="tcap">Periods are the clinic&rsquo;s decision; these are common private-healthcare benchmarks for the adviser to confirm and document.</p>
-
-  <h2>6 &middot; Patients&rsquo; rights over their information</h2>
-  <p>Patients can exercise the following rights, and the clinic responds within one calendar month (UK GDPR):</p>
-  <ul>
-    <li><b>Access</b> a copy of their information (subject access request), <b>correct</b> it, and ask for <b>erasure</b>.</li>
-    <li><b>Restrict</b> or <b>object</b> to certain processing, and request <b>portability</b> of data they provided.</li>
-    <li><b>Withdraw consent</b> at any time, as easily as it was given. Withdrawing marketing consent never affects a patient&rsquo;s care.</li>
-  </ul>
-  <p class="tcap">Erasure is limited where records must be kept for clinical or legal retention. Name a clear route (a contact and email) for these requests in the privacy notice.</p>
-
-  <h2>7 &middot; Sub-processor register (updated)</h2>
-  <table>
-    <thead><tr><th>Provider</th><th>What data</th><th>Location</th><th>Transfer mechanism</th></tr></thead>
-    <tbody>
-      <tr><td>Semble</td><td>Clinical records, admin</td><td>UK</td><td>n/a</td></tr>
-      <tr><td>GoHighLevel (HIPAA tier)</td><td>Operational CRM, inbox, forms, comms</td><td>US</td><td>UK IDTA in DPA</td></tr>
-      <tr><td>WhatsApp / Meta Cloud API</td><td>Patient messages</td><td>GB storage</td><td>Meta DPA / adequacy</td></tr>
-      <tr><td>Stripe</td><td>Payment data</td><td>UK / EU</td><td>n/a / SCCs</td></tr>
-      <tr><td>The Doctors Laboratory (TDL)</td><td>Blood-test data</td><td>UK</td><td>n/a</td></tr>
-      <tr><td>Pharmacies (PCCA, Fagron, Zen, Natural Dispensary, Nordic, Vibrant)</td><td>Prescription / order data</td><td>UK / US</td><td>confirm per vendor</td></tr>
-      <tr><td>Google Analytics / Maps</td><td>Website usage</td><td>US</td><td>confirm (consent-gated)</td></tr>
-      <tr><td>MailChimp (being retired &rarr; GHL)</td><td>Newsletter emails</td><td>US</td><td>confirm / remove on migration</td></tr>
-    </tbody>
-  </table>
-  <div class="note-strip">Each processor needs an <b>Article 28 data processing agreement</b> in place, binding them to act only on the clinic&rsquo;s instructions and to notify the clinic of any breach without undue delay. A reportable personal-data breach must reach the <b>ICO within 72 hours</b>.</div>
-
-  <h2>8 &middot; International transfers</h2>
-  <p>Some processors (GoHighLevel, certain pharmacies, and analytics) are in the US. Those transfers rely on the <b>UK International Data Transfer Agreement (IDTA)</b>, or the UK Addendum to the EU Standard Contractual Clauses, within each processor&rsquo;s DPA, supported by a <b>Transfer Risk Assessment</b>. GoHighLevel is on its HIPAA tier. Confirm the signed IDTA and DPA with GoHighLevel are in place before go-live.</p>
-
-  <h2>9 &middot; Privacy-notice updates needed</h2>
-  <ul>
-    <li class="b-red"><b>Terminology:</b> replace every &ldquo;EU GDPR&rdquo; reference with &ldquo;UK GDPR&rdquo; across the Semble registration form, consent form, and both privacy policies.</li>
-    <li><b>Add processor:</b> add GoHighLevel as a processor (operational CRM, inbox, forms, communications; US, HIPAA tier, UK IDTA).</li>
-    <li><b>Add processor:</b> add WhatsApp / Meta Cloud API as a processor for patient messaging (GB storage).</li>
-    <li><b>Update:</b> the website policy names MailChimp for newsletters; update to reflect the move to GoHighLevel (retain MailChimp only if still used).</li>
-    <li class="b-amber"><b>Remove ads clause:</b> the website policy references retargeting ads via Google, Facebook and Instagram. The clinic does not run these, so remove the clause so the policy matches what the clinic actually does. If retargeting is ever introduced, add a cookie-consent opt-in for it first (PECR).</li>
-    <li><b>Cookies:</b> ensure a compliant cookie consent banner is in place for non-essential cookies (analytics, maps, any retargeting).</li>
-    <li><b>Retention &amp; rights:</b> state the retention periods and the patient rights above, with a named data-protection contact and the subject-access-request route.</li>
-  </ul>
-
-  <h2>10 &middot; Before this goes live &mdash; data-person checklist</h2>
-  <div class="check"><span class="cb">&#9744;</span> Confirm the lawful bases above for special-category data at enquiry and in care</div>
-  <div class="check"><span class="cb">&#9744;</span> Approve the final enquiry and registration consent wording</div>
-  <div class="check"><span class="cb">&#9744;</span> Confirm the data controller&rsquo;s legal entity name and ICO registration</div>
-  <div class="check"><span class="cb">&#9744;</span> Name a data-protection contact (and DPO if applicable) and the subject-access-request route</div>
-  <div class="check"><span class="cb">&#9744;</span> Set and document the retention periods; configure deletion of non-converting enquiry data</div>
-  <div class="check"><span class="cb">&#9744;</span> Confirm the newsletter list only contains contacts with a valid basis before the MailChimp &rarr; GHL migration</div>
-  <div class="check"><span class="cb">&#9744;</span> Replace Semble&rsquo;s auto-marked consent with genuine captured opt-in</div>
-  <div class="check"><span class="cb">&#9744;</span> Put a signed UK IDTA and Article 28 DPA in place with GoHighLevel and other US processors</div>
-  <div class="check"><span class="cb">&#9744;</span> Complete and sign the DPIA in Part C</div>
-  <div class="check"><span class="cb">&#9744;</span> Remove the retargeting-ads clause from the website policy (ads not currently run)</div>
-  <div class="check"><span class="cb">&#9744;</span> Confirm patient &ldquo;active / inactive / archived&rdquo; status governs who can be marketed to</div>
-  <div class="check"><span class="cb">&#9744;</span> Update EU &rarr; UK GDPR references everywhere</div>
-
-  <!-- ============ PART C ============ -->
-  <div class="partband"><span class="pk">PART C &mdash; DATA PROTECTION IMPACT ASSESSMENT</span><span class="pt">DPIA outline, ready for the data adviser to complete</span></div>
-  <p class="lead">A DPIA is expected under UK GDPR Article 35 here, because the build involves special-category (health) data at scale, a new operational CRM (GoHighLevel), and an international transfer. This outline is pre-filled from what we know; the data adviser confirms the detail, adds anything clinic-specific, and signs it off. Items marked [confirm] need the clinic&rsquo;s input.</p>
-
-  <h3>Step 1 &mdash; Describe the processing</h3>
-  <ul>
-    <li><b>What:</b> collecting enquiry and registration information, messaging patients (WhatsApp, email, SMS), running a shared inbox and CRM (GoHighLevel), sending appointment reminders, and (with consent) newsletters.</li>
-    <li><b>Whose data:</b> adult private patients (UK, and international patients with a UK address). Special-category health data is involved from the enquiry onward.</li>
-    <li><b>Scale:</b> approximately [confirm number] existing contacts migrated from Semble, plus new enquiries.</li>
-    <li><b>Context:</b> premium hormone / longevity clinic. The clinical record stays in Semble; GoHighLevel is operational only and does not hold the clinical record.</li>
-    <li><b>Purposes:</b> respond to enquiries, coordinate care and appointments, send service messages, and send marketing only to patients who have opted in.</li>
-  </ul>
-
-  <h3>Step 2 &mdash; Necessity &amp; proportionality</h3>
-  <ul>
-    <li><b>Lawful basis:</b> as set out in section 4 &mdash; consent for enquiries and marketing; contract plus Article 9(2)(h) for providing care.</li>
-    <li><b>Data minimisation:</b> only the fields needed are collected; clinical detail remains in Semble, not GoHighLevel.</li>
-    <li><b>Individual rights:</b> supported as in section 6; consent is recorded and as easy to withdraw as to give.</li>
-    <li><b>Retention:</b> set and documented as in section 5, including deletion of non-converting enquiries.</li>
-    <li><b>Transfers:</b> US processors covered by UK IDTA and a Transfer Risk Assessment (section 8).</li>
-  </ul>
-
-  <h3>Step 3 &mdash; Risk register</h3>
-  <table>
-    <thead><tr><th>Risk</th><th>Likelihood</th><th>Severity</th><th>Measures to reduce it</th></tr></thead>
-    <tbody>
-      <tr><td>Health data held in a US-based CRM (GoHighLevel)</td><td>Low</td><td>High</td><td>HIPAA tier; UK IDTA + Transfer Risk Assessment; clinical record kept in Semble, not GHL; access controls.</td></tr>
-      <tr><td>Shared-inbox messages seen by wider team than needed</td><td>Medium</td><td>Medium</td><td>Role-based access; staff data-protection agreements and training; sensitive items recorded in Semble.</td></tr>
-      <tr><td>Marketing sent without a valid basis after the MailChimp &rarr; GHL migration</td><td>Medium</td><td>Medium</td><td>Migrate only validly-consented contacts; per-channel opt-in; working unsubscribe; consent audit trail.</td></tr>
-      <tr><td>Invalid consent from Semble auto-marking opt-in</td><td>High (current)</td><td>Medium</td><td>Replace with a genuine captured opt-in; re-permission the list where needed.</td></tr>
-      <tr><td>Unauthorised access or data breach</td><td>Low</td><td>High</td><td>Multi-factor authentication; least-privilege access; Article 28 DPAs; 72-hour ICO breach process; encryption in transit and at rest.</td></tr>
-    </tbody>
-  </table>
-  <p class="tcap">Likelihood and severity are the adviser&rsquo;s to confirm; add any clinic-specific risks.</p>
-
-  <h3>Step 4 &mdash; Outcome &amp; approval</h3>
-  <p>Record the residual risk after the measures above, any actions still outstanding, and the approval below. WILBA will action any wording or build changes flagged during review.</p>
-  <table>
-    <thead><tr><th>Reviewed / approved by</th><th>Role</th><th>Residual risk &amp; any actions</th><th>Date</th></tr></thead>
-    <tbody>
-      <tr><td style="height:38px;">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    </tbody>
-  </table>
-
-  <p class="disclaimer">This is a working draft to speed up your compliance process. Have a qualified lawyer or your data-protection adviser in the relevant jurisdiction review and sign it off before it goes live.</p>
-  <p class="prep">Prepared by WILBA for The Schoeman Clinic &middot; Version 1.0 &middot; 30 July 2026</p>
+  <p class="foot">This is a working draft to speed up your compliance process. Have a qualified lawyer or your data-protection adviser review and sign it off before it goes live. Governing regime: UK GDPR, Data Protection Act 2018 and PECR.</p>
 
 </div>
 </body>
