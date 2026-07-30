@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Schoeman Clinic — Consent &amp; Data-Protection Pack</title>
+<style>
+  :root{
+    --navy:#142A28; --teal:#0E6E68; --tealink:#0B534E; --grey:#55605F;
+    --green:#2E6B4F; --amber:#8A5A0C; --red:#A33A2C;
+    --line:#C9D2DE; --box:#F4F6F5; --ink:#20302E;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:#e9edeb; color:var(--ink);
+    font-family:"Calibri","Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.5;
+  }
+  .page{
+    max-width:820px; margin:24px auto; background:#fff; padding:44px 52px 56px;
+    box-shadow:0 2px 18px rgba(0,0,0,.10); border-radius:4px;
+  }
+  .eyebrow{color:var(--teal); font-weight:700; letter-spacing:.06em; font-size:15px; margin:0 0 2px;}
+  h1.title{color:var(--navy); font-size:30px; line-height:1.1; margin:0 0 4px; font-weight:800;}
+  .sub{color:var(--grey); font-style:italic; font-size:16px; margin:0 0 22px;}
+  h2{color:var(--navy); font-size:20px; font-weight:800; margin:26px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line);}
+  h3{color:var(--tealink); font-size:16px; font-weight:700; margin:16px 0 4px;}
+  p{margin:0 0 9px;}
+  .lead{color:var(--grey); font-style:italic; margin:0 0 9px;}
+  .summary-h{font-weight:700; margin:0 0 3px;}
+  ul{margin:0 0 10px; padding-left:22px;}
+  li{margin:0 0 5px;}
+  li b{color:inherit;}
+  .b-teal b{color:var(--teal);} .b-red b{color:var(--red);} .b-amber b{color:var(--amber);}
+  .box{background:var(--box); border:1px solid var(--line); border-radius:5px; padding:14px 16px; margin:0 0 14px; font-size:15px;}
+  .box .bh{font-weight:700; display:block; margin:0 0 6px;}
+  .box .opt{font-weight:700; display:block; margin:8px 0 4px;}
+  .box .note{font-style:italic; color:var(--grey); font-size:14px; display:block; margin-top:6px;}
+  .box .tick{display:block; margin:4px 0;}
+  .cb{font-size:17px; line-height:1;}
+  .channels{letter-spacing:.02em;}
+  table{width:100%; border-collapse:collapse; margin:2px 0 14px; font-size:14px;}
+  th{background:var(--navy); color:#fff; text-align:left; padding:7px 9px; font-weight:700; font-size:13px;}
+  td{border:1px solid var(--line); padding:6px 9px; vertical-align:top;}
+  tbody tr:nth-child(even){background:#f7f9f8;}
+  .check{margin:2px 0; font-size:15px;}
+  .check .cb{margin-right:6px;}
+  .disclaimer{color:var(--red); font-style:italic; font-size:14px; margin:26px 0 4px; padding-top:12px; border-top:1px solid var(--line);}
+  .prep{color:var(--grey); font-style:italic; font-size:13px; margin:0;}
+  .toolbar{max-width:820px; margin:20px auto -4px; text-align:right; padding:0 8px;}
+  .btn{background:var(--teal); color:#fff; border:none; border-radius:6px; padding:9px 16px; font-size:14px; font-weight:600; cursor:pointer;}
+  .btn:hover{background:var(--tealink);}
+  @media (max-width:640px){ .page{padding:28px 20px 36px; margin:10px;} h1.title{font-size:24px;} }
+  @media print{
+    body{background:#fff;} .toolbar{display:none;}
+    .page{box-shadow:none; margin:0; max-width:none; padding:0; border-radius:0;}
+    h2{break-after:avoid;} table,.box{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><button class="btn" onclick="window.print()">Save as PDF / Print</button></div>
+<div class="page">
+
+  <div class="eyebrow">THE SCHOEMAN CLINIC</div>
+  <h1 class="title">Consent &amp; Data-Protection Pack</h1>
+  <div class="sub">Working draft for the clinic&rsquo;s data-protection adviser to review and sign off</div>
+
+  <p class="summary-h">Plain-English summary</p>
+  <p>This pack turns the clinic&rsquo;s consent capture into something defensible under UK GDPR and PECR as communications move into GoHighLevel. It covers what the enquiry and registration forms should ask, how to capture email and WhatsApp preferences properly, the lawful basis for each activity, the updated list of the systems that touch patient data, and the specific edits the existing privacy policies need. It is written to be handed to your data-protection adviser for final sign-off before anything goes live.</p>
+
+  <h2>Context we have worked from</h2>
+  <ul>
+    <li><b>Jurisdiction:</b> UK. Clinic established in the UK, CQC registered; patients may be international but require a UK address. Governing regime: UK GDPR + Data Protection Act 2018 + PECR.</li>
+    <li><b>Data type:</b> special-category (health) data. Even at enquiry, the &ldquo;reason for enquiry&rdquo; can reveal health information, so Article 9 applies from the first touchpoint.</li>
+    <li><b>Marketing:</b> email + newsletter (moving from MailChimp to GoHighLevel). WhatsApp is used for the shared inbox and appointment reminders (service), not marketing. Retargeting ads (Google/Facebook/Instagram) are referenced in the current website policy but not confirmed as in use.</li>
+    <li><b>Controller / processor:</b> the clinic is the data controller. Semble and GoHighLevel and others are processors acting on the clinic&rsquo;s instructions.</li>
+  </ul>
+
+  <h2>1 &middot; Enquiry-form consent block</h2>
+  <p class="lead">The enquiry form collects: name, surname, email, phone, sex at birth, reason for enquiry (drop-down), referral source. Because the reason can reveal health information, capture explicit consent to handle it, then keep marketing separate and optional.</p>
+  <h3>a) Handling your enquiry (required to proceed)</h3>
+  <div class="box">
+    <span class="bh">How we will use these details</span>
+    We use the information you provide to respond to your enquiry and guide you through the next steps. Because your enquiry may include information about your health, we ask for your explicit consent to handle it for this purpose.
+    <span class="tick"><b><span class="cb">&#9744;</span>&nbsp; I consent to The Schoeman Clinic using the information in this enquiry, including any health-related details, to respond and help me take the next steps.</b></span>
+    <span class="note">(Unticked by default. See our Privacy Policy for how we look after your information.)</span>
+  </div>
+  <h3>b) Staying in touch (optional, unticked)</h3>
+  <div class="box">
+    <span class="bh">How would you like us to contact you about your care?</span>
+    <span class="tick channels"><span class="cb">&#9744;</span> Email &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone</span>
+    <span class="opt">Clinic updates (optional)</span>
+    <span class="tick"><span class="cb">&#9744;</span>&nbsp; I would like to receive clinic news, health information and occasional updates by email.</span>
+    <span class="note">You can change your preferences or unsubscribe at any time. WhatsApp is used for appointment reminders and service messages, not marketing.</span>
+  </div>
+
+  <h2>2 &middot; Registration-form consent block</h2>
+  <p class="lead">The registration form collects full medical history and identity. For a patient receiving care the basis shifts from consent to contract plus provision of health care, so the wording changes accordingly. Carry the marketing preference across from the enquiry rather than re-asking, unless it was not captured cleanly.</p>
+  <div class="box">
+    <span class="bh">Your information and your care</span>
+    We use the information on this form to provide your healthcare, keep your medical records, arrange tests and prescriptions, and manage your appointments and billing. We handle your health information under UK GDPR Article 9(2)(h) (provision of health care) and the Data Protection Act 2018.
+    <span class="tick"><b><span class="cb">&#9744;</span>&nbsp; I confirm the information I have provided is accurate, and I understand how The Schoeman Clinic will use it, as described in the Patient Privacy Policy.</b></span>
+    <span class="opt">Contact &amp; updates</span>
+    <span class="tick channels"><span class="cb">&#9744;</span> Email &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> WhatsApp &nbsp;&nbsp;&nbsp; <span class="cb">&#9744;</span> SMS / phone &nbsp;&nbsp;(how we contact you about your care)</span>
+    <span class="tick"><span class="cb">&#9744;</span>&nbsp; I would like to receive clinic news and updates by email (optional).</span>
+    <span class="note">Note for build: replace every &ldquo;EU GDPR&rdquo; reference on the Semble registration and consent forms with &ldquo;UK GDPR&rdquo;.</span>
+  </div>
+
+  <h2>3 &middot; Marketing consent &mdash; how to capture it</h2>
+  <ul>
+    <li class="b-teal"><b>Design:</b> capture explicit, per-channel opt-in ONCE, cleanly, at the enquiry stage, using separate unticked boxes. Do not bundle &ldquo;email and WhatsApp&rdquo; into one tick, and do not pre-tick.</li>
+    <li><b>Separation:</b> keep marketing (newsletters, clinic updates) clearly separate from service messages (appointment reminders, results logistics). This keeps consent &ldquo;specific&rdquo;.</li>
+    <li><b>Email:</b> email marketing needs consent or a valid PECR soft opt-in; every send needs a working unsubscribe and a genuine sender identity. Newsletters moving from MailChimp to GoHighLevel must carry only contacts with a valid basis &mdash; do not assume the whole patient list is opted in.</li>
+    <li><b>WhatsApp:</b> treat any future WhatsApp marketing as needing its own explicit opt-in plus Meta-approved templates. For now WhatsApp stays service-only, which matches Dr Gina&rsquo;s wish not to &ldquo;bombard&rdquo; patients.</li>
+    <li class="b-red"><b>Record + fix:</b> record what each person consented to, when, how, and which version of the notice they saw. Important: Semble currently auto-marks SMS/email consent on registration &mdash; that is not valid consent and should be replaced with a genuine opt-in captured as above.</li>
+  </ul>
+
+  <h2>4 &middot; Lawful-basis table</h2>
+  <table>
+    <thead><tr><th>Activity</th><th>Lawful basis (Art 6)</th><th>Health-data basis (Art 9)</th></tr></thead>
+    <tbody>
+      <tr><td>Responding to an enquiry (incl. health reason)</td><td>Consent, or legitimate interests</td><td>Explicit consent &mdash; Art 9(2)(a)</td></tr>
+      <tr><td>Providing healthcare (records, tests, prescriptions)</td><td>Contract &mdash; Art 6(1)(b)</td><td>Provision of health care &mdash; Art 9(2)(h)</td></tr>
+      <tr><td>Appointment reminders / service messages</td><td>Contract / legitimate interests</td><td>n/a</td></tr>
+      <tr><td>Email newsletter / clinic marketing</td><td>Consent &mdash; Art 6(1)(a) + PECR</td><td>n/a</td></tr>
+      <tr><td>Payment processing</td><td>Contract &mdash; Art 6(1)(b)</td><td>n/a</td></tr>
+      <tr><td>Website analytics, cookies, retargeting</td><td>Consent &mdash; PECR (cookie banner)</td><td>n/a</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5 &middot; Sub-processor register (updated)</h2>
+  <table>
+    <thead><tr><th>Provider</th><th>What data</th><th>Location</th><th>Transfer mechanism</th></tr></thead>
+    <tbody>
+      <tr><td>Semble</td><td>Clinical records, admin</td><td>UK</td><td>n/a</td></tr>
+      <tr><td>GoHighLevel (HIPAA tier)</td><td>Operational CRM, inbox, forms, comms</td><td>US</td><td>UK IDTA in DPA</td></tr>
+      <tr><td>WhatsApp / Meta Cloud API</td><td>Patient messages</td><td>GB storage</td><td>Meta DPA / adequacy</td></tr>
+      <tr><td>Stripe</td><td>Payment data</td><td>UK / EU</td><td>n/a / SCCs</td></tr>
+      <tr><td>The Doctors Laboratory (TDL)</td><td>Blood-test data</td><td>UK</td><td>n/a</td></tr>
+      <tr><td>Pharmacies (PCCA, Fagron, Zen, Natural Dispensary, Nordic, Vibrant)</td><td>Prescription / order data</td><td>UK / US</td><td>confirm per vendor</td></tr>
+      <tr><td>Google Analytics / Maps</td><td>Website usage</td><td>US</td><td>confirm (consent-gated)</td></tr>
+      <tr><td>MailChimp (being retired &rarr; GHL)</td><td>Newsletter emails</td><td>US</td><td>confirm / remove on migration</td></tr>
+    </tbody>
+  </table>
+
+  <h2>6 &middot; Privacy-notice updates needed</h2>
+  <ul>
+    <li class="b-red"><b>Terminology:</b> replace every &ldquo;EU GDPR&rdquo; reference with &ldquo;UK GDPR&rdquo; across the Semble registration form, consent form, and both privacy policies.</li>
+    <li><b>Add processor:</b> add GoHighLevel as a processor (operational CRM, inbox, forms, communications; US, HIPAA tier, UK IDTA).</li>
+    <li><b>Add processor:</b> add WhatsApp / Meta Cloud API as a processor for patient messaging (GB storage).</li>
+    <li><b>Update:</b> the website policy names MailChimp for newsletters; update to reflect the move to GoHighLevel (retain MailChimp only if still used).</li>
+    <li class="b-amber"><b>Confirm / fix:</b> the website policy references retargeting ads via Google, Facebook and Instagram. Confirm whether these are actually in use; if not, remove the clause; if yes, ensure the cookie banner captures consent for them (PECR).</li>
+    <li><b>Cookies:</b> ensure a compliant cookie consent banner is in place for non-essential cookies (analytics, maps, any retargeting).</li>
+    <li><b>Contact:</b> name a data-protection contact and the subject-access-request route.</li>
+  </ul>
+
+  <h2>7 &middot; Before this goes live &mdash; data-person checklist</h2>
+  <div class="check"><span class="cb">&#9744;</span> Confirm the lawful bases above for special-category data at enquiry and in care</div>
+  <div class="check"><span class="cb">&#9744;</span> Approve the final enquiry and registration consent wording</div>
+  <div class="check"><span class="cb">&#9744;</span> Confirm the newsletter list only contains contacts with a valid basis before the MailChimp &rarr; GHL migration</div>
+  <div class="check"><span class="cb">&#9744;</span> Replace Semble&rsquo;s auto-marked consent with genuine captured opt-in</div>
+  <div class="check"><span class="cb">&#9744;</span> Sign off the updated sub-processor register and the UK IDTA for GoHighLevel</div>
+  <div class="check"><span class="cb">&#9744;</span> Confirm whether retargeting ads are in use and fix the website policy accordingly</div>
+  <div class="check"><span class="cb">&#9744;</span> Confirm patient &ldquo;active / inactive / archived&rdquo; status governs who can be marketed to</div>
+  <div class="check"><span class="cb">&#9744;</span> Update EU &rarr; UK GDPR references everywhere</div>
+
+  <p class="disclaimer">This is a working draft to speed up your compliance process. Have a qualified lawyer or your data-protection adviser in the relevant jurisdiction review and sign it off before it goes live.</p>
+  <p class="prep">Prepared by WILBA for The Schoeman Clinic</p>
+
+</div>
+</body>
+</html>
