@@ -167,9 +167,9 @@ Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WIL
 
 **Deal:** $10,000 USD one-time (50/50 kickoff/go-live) + $1,000/mo retainer (min 3 months). Gina also pays GHL HIPAA tier ($297/mo). Phase 1 = 6 features: WhatsApp shared inbox, recall/nurture/newsletter automation, after-hours voice agent, paid-first patient-journey funnel, Dr Gina daily brief, replicable doctor-onboarding stack. **Clinical records stay in Semble (EHR); GHL is operational only, connected via webhook.**
 
-**Files:** `outputs/schoeman-clinic/CONTEXT.md` (full catch-up), `outputs/schoeman-clinic/tonight-team-training-runsheet.md` (PA training run sheet), `outputs/schoeman-clinic/source-notes/` (proposal v3 + filled knowledge base).
+**Files:** `outputs/schoeman-clinic/CONTEXT.md` (full catch-up — read this first), `outputs/schoeman-clinic/Schoeman-Clinic-Consent-DataProtection-Pack.{pdf,docx,html}` (patient consent + 12-section privacy notice), `outputs/schoeman-clinic/tonight-team-training-runsheet.md` (PA training run sheet), `outputs/schoeman-clinic/source-notes/` (proposal v3 + filled knowledge base). Compliance skill: `.claude/skills/marketing-comms-counsel/`.
 
-**Status (13 Jul 2026):** GHL + WhatsApp connected; **shared inbox live for the PA team** (Lisa/Zoey/Isabell + new 4th admin). Knowledge base + AI suggestive-reply mode + voice agent still being built. Open: website still shows an old WhatsApp number (inbox number confirmed +44 7426 494321; site shows +44 7426 292 321 — needs fixing), Semble admin access for Griffin, Twilio number pending Gina GHL top-up, marketing/GDPR consent wording.
+**Status (31 Jul 2026):** GHL + WhatsApp connected; shared inbox live for the PA team; ~815 patients migrated Semble → GHL (all workflows OFF until launch). **Consent + privacy notice delivered** (→ Mati → clinic data team to sign off). Post-consultation email built and staged. **Launch ~5 Aug:** website live, new-doctor announcement email 7 Aug, social intros w/c 10 Aug (Dr Nathan/Sonia/Nikita via Nadia Babar), newsletter w/c 24 Aug. Open: finish KB on the Gina call, double-messaging fix (Coexistence — move team to GHL-only), newsletter needs consent basis first, Jess to train Gina on sending emails/newsletter from GHL. See CONTEXT.md "Latest (31 Jul 2026)".
 
 ---
 

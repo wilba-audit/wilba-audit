@@ -1,6 +1,29 @@
 # The Schoeman Clinic — Client Context
 
-**Last updated:** 2026-07-13 · Built from Proposal v3, 6 meeting transcripts (Jun–Jul 2026, incl. the 13 Jul team training), the knowledge-base pack, and the WhatsApp thread with Griffin/Mati.
+**Last updated:** 2026-07-31 · Built from Proposal v3, 6 meeting transcripts (Jun–Jul 2026, incl. the 13 Jul team training), the knowledge-base pack, the WhatsApp/Telegram thread with Griffin/Mati, and the late-Jul launch-planning thread.
+
+---
+
+## Latest (31 Jul 2026)
+
+**Consent & Privacy Notice — DELIVERED.** Built the patient consent + privacy notice: the tick-box consent for the enquiry and registration forms, followed by a comprehensive 12-section clinic privacy notice (controller, data collected, purposes, all lawful bases incl. Art 9(2)(a)/9(2)(h), sharing, international transfers, retention, security, rights, marketing choices, ICO complaint, changes). Grounded in how UK private clinics do it. Files: `Schoeman-Clinic-Consent-DataProtection-Pack.{pdf,docx,html}`. **Flow: Jess → Mati → clinic's data team to confirm/sign off.** `[brackets]` = clinic to fill (controller address, DP contact/email, effective date). Iterated a lot: started as a heavy DPO pack (Parts A/B/C, DPIA, sub-processor register), Jess wanted it simple = "just the checkbox + the regulation detail," landed on checkbox + full privacy notice. New skill built for this: `marketing-comms-counsel`.
+
+**Launch timeline (from Gina, late Jul):**
+- **~5 Aug** — website goes live (estimated; new provider). New doctor bios provided.
+- **Fri (EOD)** — Giedrius (new website dev) to have the site link ready for review.
+- **7 Aug** — new-doctor announcement email to the whole database (Mati to send; Gina writes copy).
+- **W/c 10 Aug** — social intros, one doctor per week: **Dr Nathan → Dr Sonia → Dr Nikita**. Handled by **Nadia Babar** (social scheduling, clinic side).
+- **W/c 24 Aug** — first clinic newsletter (the one Mati's been building).
+
+**New names:** Giedrius (website developer), Nadia Babar (social scheduling), Dr Nathan / Dr Sonia / Dr Nikita (new doctors joining).
+
+**Build status updates:**
+- **Contact migration DONE** — ~815 patients migrated Semble → GHL. No "inactive" patients migrated (resolves Mati's "don't message inactive" worry). All workflows currently OFF, so no one gets messages until launch.
+- **Post-consultation email BUILT** (Griffin) from Gina's PDF + copy, branded, partners PDF attached, tested, switched OFF; goes live at launch and replaces the old automated post-consult letter.
+- **Double messaging — NOT resolved.** Likely WhatsApp Coexistence (team answering in BOTH the phone WhatsApp app AND GHL). Action: get a screenshot from Zoey, then move the team to GHL-only. Relay to Griffin.
+- **Gina asked Jess** to walk her through *how to actually send* the emails/newsletter from GHL (Gina owns design/content; Jess owns the "how to send" training).
+
+**Jess's open actions:** (1) send consent/privacy notice to Mati for the data team; (2) flag that the newsletter (w/c 24 Aug) needs the consent basis landed first; (3) make sure her social/digital review feeds Nadia (not duplicate); (4) run the Gina call to finish the KB; (5) troubleshoot double-messaging (Zoey screenshot → GHL-only); (6) set up the discovery calendar (all PAs, M–F 10–5, availability-based).
 
 ---
 
