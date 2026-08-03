@@ -1,0 +1,299 @@
+<title>Monkey Joe's 90-Day Growth Pilot — Results</title>
+<style>
+  :root{
+    --ground:#F6F3ED; --card:#FFFFFF; --ink:#1C1813; --muted:#6E6555; --hair:#E7E0D2;
+    --gold:#F2A900; --gold-soft:#FCEFCF; --grape:#5B2A86; --grape-soft:#EDE3F6;
+    --good:#1F9D57; --good-soft:#E0F3E7; --bad:#D8452F; --bad-soft:#FBE4DE;
+    --shadow:0 1px 2px rgba(28,24,19,.04),0 8px 24px rgba(28,24,19,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#15120D; --card:#211C15; --ink:#F4EEE1; --muted:#A99B85; --hair:#342D22;
+      --gold:#F7B417; --gold-soft:#3A2E12; --grape:#B98BE0; --grape-soft:#2A1B3B;
+      --good:#4FC684; --good-soft:#173226; --bad:#F0715C; --bad-soft:#3A1C17;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#F6F3ED; --card:#FFFFFF; --ink:#1C1813; --muted:#6E6555; --hair:#E7E0D2;
+    --gold:#F2A900; --gold-soft:#FCEFCF; --grape:#5B2A86; --grape-soft:#EDE3F6;
+    --good:#1F9D57; --good-soft:#E0F3E7; --bad:#D8452F; --bad-soft:#FBE4DE;
+    --shadow:0 1px 2px rgba(28,24,19,.04),0 8px 24px rgba(28,24,19,.06);
+  }
+  :root[data-theme="dark"]{
+    --ground:#15120D; --card:#211C15; --ink:#F4EEE1; --muted:#A99B85; --hair:#342D22;
+    --gold:#F7B417; --gold-soft:#3A2E12; --grape:#B98BE0; --grape-soft:#2A1B3B;
+    --good:#4FC684; --good-soft:#173226; --bad:#F0715C; --bad-soft:#3A1C17;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1020px;margin:0 auto;padding:clamp(20px,4vw,56px) clamp(16px,4vw,40px);}
+  .disp{font-family:ui-rounded,"SF Pro Rounded",system-ui,sans-serif;font-weight:800;
+    letter-spacing:-.02em;text-wrap:balance;}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--grape);}
+  h1{font-size:clamp(30px,5.4vw,50px);line-height:1.02;margin:.28em 0 .2em;}
+  h2{font-size:clamp(20px,3vw,27px);margin:0 0 .1em;}
+  .lede{color:var(--muted);font-size:clamp(15px,1.9vw,18px);max-width:60ch;}
+  section{margin-top:clamp(34px,6vw,64px);}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--hair);
+    padding-bottom:10px;margin-bottom:22px;}
+  .sec-head .num{font-family:ui-rounded,system-ui;font-weight:800;color:var(--gold);font-size:15px;
+    font-variant-numeric:tabular-nums;}
+  .sub{color:var(--muted);font-size:14px;margin:-.2em 0 0;}
+  .tabnum{font-variant-numeric:tabular-nums;}
+
+  /* header banner */
+  .banner{background:linear-gradient(135deg,var(--grape),#3E1B60);color:#fff;border-radius:20px;
+    padding:clamp(26px,5vw,46px);position:relative;overflow:hidden;box-shadow:var(--shadow);}
+  .banner .eyebrow{color:var(--gold);}
+  .banner h1{color:#fff;}
+  .banner .lede{color:rgba(255,255,255,.82);}
+  .banner .dot{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;}
+  .banner .d1{width:180px;height:180px;background:var(--gold);top:-60px;right:-30px;opacity:.35;}
+  .banner .d2{width:90px;height:90px;background:#fff;bottom:-30px;right:120px;opacity:.12;}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:13.5px;color:rgba(255,255,255,.9);}
+  .meta b{color:#fff;}
+
+  /* KPI tiles */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:20px;}
+  .kpi{background:var(--card);border:1px solid var(--hair);border-radius:15px;padding:16px 18px;box-shadow:var(--shadow);}
+  .kpi .v{font-family:ui-rounded,system-ui;font-weight:800;font-size:clamp(26px,3.4vw,34px);line-height:1;letter-spacing:-.02em;}
+  .kpi .l{font-size:12.5px;color:var(--muted);margin-top:7px;}
+  .kpi .t{font-size:11.5px;margin-top:4px;font-weight:700;}
+  .up{color:var(--good);} .flat{color:var(--muted);}
+  .kpi.hero{background:var(--gold-soft);border-color:transparent;}
+  .kpi.hero .v{color:var(--grape);}
+
+  /* cards + grids */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr;}}
+  .card{background:var(--card);border:1px solid var(--hair);border-radius:15px;padding:20px;box-shadow:var(--shadow);}
+  .card h3{margin:0 0 4px;font-size:17px;}
+  .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 9px;border-radius:999px;}
+  .pill.pol{background:var(--gold-soft);color:#8a5a00;}
+  .pill.wp{background:var(--grape-soft);color:var(--grape);}
+  :root[data-theme="dark"] .pill.pol{color:var(--gold);}
+
+  /* tables */
+  .tbl-scroll{overflow-x:auto;border:1px solid var(--hair);border-radius:13px;}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:440px;}
+  th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--hair);white-space:nowrap;}
+  th:first-child,td:first-child{text-align:left;}
+  thead th{background:var(--card);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+  tbody tr:last-child td{border-bottom:none;}
+  tr.total td{font-weight:800;background:var(--gold-soft);}
+  :root[data-theme="dark"] tr.total td{background:var(--gold-soft);}
+  td.win{color:var(--good);font-weight:700;}
+
+  /* timeline */
+  .timeline{position:relative;display:grid;gap:2px;}
+  .tl{display:grid;grid-template-columns:112px 1fr;gap:16px;align-items:start;padding:12px 0;border-bottom:1px dashed var(--hair);}
+  .tl:last-child{border-bottom:none;}
+  .tl .when{font-weight:800;font-size:13.5px;color:var(--grape);font-family:ui-rounded,system-ui;}
+  .tl .what b{display:block;font-size:15px;}
+  .tl .what span{color:var(--muted);font-size:13.5px;}
+  .tl.hi .when{color:var(--gold);}
+
+  /* month cards */
+  .months{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
+  .mo{background:var(--card);border:1px solid var(--hair);border-radius:15px;padding:18px;box-shadow:var(--shadow);
+    border-top:4px solid var(--gold);}
+  .mo:nth-child(2){border-top-color:var(--grape);}
+  .mo:nth-child(3){border-top-color:var(--good);}
+  .mo:nth-child(4){border-top-color:var(--bad);}
+  .mo .mh{display:flex;justify-content:space-between;align-items:baseline;}
+  .mo .mn{font-family:ui-rounded,system-ui;font-weight:800;font-size:19px;}
+  .mo .tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);}
+  .mo ul{margin:10px 0 0;padding-left:18px;font-size:13.5px;color:var(--muted);}
+  .mo li{margin:5px 0;}
+  .mo .imp{font-size:12.5px;margin-top:12px;padding-top:10px;border-top:1px solid var(--hair);color:var(--ink);}
+  .mo .imp b{font-family:ui-rounded,system-ui;}
+
+  /* redemption bars */
+  .bars{display:grid;gap:12px;margin-top:6px;}
+  .bar{display:grid;grid-template-columns:120px 1fr 42px;gap:12px;align-items:center;font-size:13.5px;}
+  .bar .track{background:var(--hair);border-radius:999px;height:14px;overflow:hidden;}
+  .bar .fill{height:100%;border-radius:999px;}
+  .bar .n{text-align:right;font-weight:800;font-variant-numeric:tabular-nums;}
+
+  .callout{background:var(--grape-soft);border:1px solid transparent;border-left:4px solid var(--grape);
+    border-radius:0 13px 13px 0;padding:16px 18px;font-size:14.5px;}
+  .callout.gold{background:var(--gold-soft);border-left-color:var(--gold);}
+  .callout b{color:var(--grape);}
+  .callout.gold b{color:#8a5a00;}
+  :root[data-theme="dark"] .callout.gold b{color:var(--gold);}
+
+  .rec{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--hair);}
+  .rec:last-child{border-bottom:none;}
+  .rec .rn{width:34px;height:34px;border-radius:10px;background:var(--gold);color:#231a02;display:grid;place-items:center;
+    font-weight:800;font-family:ui-rounded,system-ui;}
+  .rec b{font-size:15px;}
+  .rec p{margin:2px 0 0;color:var(--muted);font-size:13.5px;}
+
+  footer{margin-top:56px;padding-top:20px;border-top:2px solid var(--hair);color:var(--muted);font-size:12.5px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .note{color:var(--muted);font-size:12.5px;margin-top:10px;}
+  @media (prefers-reduced-motion:no-preference){
+    .kpi,.mo,.card{transition:transform .15s ease;}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="banner">
+    <span class="dot d1"></span><span class="dot d2"></span>
+    <div class="eyebrow">Pilot Results Report · Prepared by WILBA</div>
+    <h1 class="disp">Monkey Joe's 90-Day Growth Pilot</h1>
+    <p class="lede">Paid ads, email &amp; SMS, and automation across two Orlando locations — Pointe Orlando &amp; Winter Park — built to grow weekday visits, redemptions, and parties.</p>
+    <div class="meta">
+      <span>Kickoff <b>Mar 16, 2026</b></span>
+      <span>Ads live <b>~Apr 27</b></span>
+      <span>Pilot review <b>~Jul 1</b></span>
+      <span>Data as of <b>Jul 14, 2026</b></span>
+    </div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi hero"><div class="v tabnum">92</div><div class="l">In-store redemptions tracked</div><div class="t up">POL 26 · WP 66</div></div>
+    <div class="kpi"><div class="v tabnum">$3,021</div><div class="l">Net ad spend (after $1,000 credits)</div><div class="t flat">$4,021 gross</div></div>
+    <div class="kpi"><div class="v tabnum">258</div><div class="l">Opted-in audience</div><div class="t up">+166 leads in 30d</div></div>
+    <div class="kpi"><div class="v tabnum">253</div><div class="l">4th-of-July email reach</div><div class="t flat">POL 111 · WP 142</div></div>
+    <div class="kpi"><div class="v tabnum">298</div><div class="l">Facebook leads @ ~$3.59</div><div class="t up">8× cheaper than search</div></div>
+  </div>
+
+  <section>
+    <div class="sec-head"><h2 class="disp">The story so far</h2></div>
+    <p class="lede" style="max-width:70ch">In roughly eleven weeks of live advertising, the pilot has driven <b>92 tracked in-store redemptions</b>, built a <b>258-person opted-in audience</b> inside a ~50,000-contact database, and stood up a full email/SMS engine — the 4th-of-July offer alone reached <b>253 families</b>. Google credits covered <b>$1,000</b> of the $4,021 spend, so real out-of-pocket sits near <b>$3,021</b>. Parties haven't been advertised yet; that's the next lever (§6), and the voice agent has already fielded <b>25 party enquiries</b>.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">01</span><h2 class="disp">Timeline</h2></div>
+    <div class="timeline">
+      <div class="tl"><div class="when">Mar 16</div><div class="what"><b>Kickoff</b><span>90-day pilot agreed — 2 locations, 8 deliverables, 3-person team (WILBA marketing · Lanyu automation · Michael approvals).</span></div></div>
+      <div class="tl"><div class="when">~Apr 1</div><div class="what"><b>Systems go-live</b><span>Tracking (GA4, Pixel, CallRail), AI voice agent, and birthday automation deployed.</span></div></div>
+      <div class="tl hi"><div class="when">~Apr 27</div><div class="what"><b>Google Ads live</b><span>Search campaigns start delivering at both locations (50%-off &amp; BOGO). ~4 weeks after the planned date.</span></div></div>
+      <div class="tl"><div class="when">May</div><div class="what"><b>Optimize + reactivate</b><span>Facebook retargeting live; May nudge campaign (227 SMS · 92 email); 1st monthly report.</span></div></div>
+      <div class="tl hi"><div class="when">Jun 30</div><div class="what"><b>4th-of-July "STARS" email</b><span>Reached 253 opted-in families (POL 111 · WP 142).</span></div></div>
+      <div class="tl"><div class="when">Jul 1</div><div class="what"><b>Nominal pilot end</b><span>Results compiled for the corporate expansion decision (Jack &amp; Daryl, Big Game Brands).</span></div></div>
+      <div class="tl"><div class="when">Jul 6</div><div class="what"><b>Birthday nurture enrolled</b><span>Birthday drip cohort tagged for the full opted-in audience (POL 112 · WP 145).</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2 class="disp">Month by month</h2><p class="sub">POL Google reach + what shipped each month</p></div>
+    <div class="months">
+      <div class="mo"><div class="mh"><span class="mn">April</span><span class="tag">Launch</span></div>
+        <ul><li>Google Ads live ~Apr 27</li><li>Tracking, pixel &amp; voice agent deployed</li><li>Opt-in funnel opened</li></ul>
+        <div class="imp">POL Google reach <b>3,123</b> impressions</div></div>
+      <div class="mo"><div class="mh"><span class="mn">May</span><span class="tag">Optimize</span></div>
+        <ul><li>Facebook retargeting live</li><li>Nudge campaign: 227 SMS + 92 email</li><li>A/B: 50%-off vs BOGO</li></ul>
+        <div class="imp">POL Google reach <b>10,541</b> — peak month</div></div>
+      <div class="mo"><div class="mh"><span class="mn">June</span><span class="tag">Scale</span></div>
+        <ul><li>Reactivation sequence (~2,500/loc)</li><li>Redemptions building at WP</li><li>Summer-push prep</li></ul>
+        <div class="imp">POL Google reach <b>7,895</b> impressions</div></div>
+      <div class="mo"><div class="mh"><span class="mn">July</span><span class="tag">Summer push</span></div>
+        <ul><li>4th-of-July email → 253 families</li><li>Birthday nurture enrolled</li><li>POL surging: 57 leads in 7 days</li></ul>
+        <div class="imp">POL Google reach <b>4,457</b> (to Jul 13)</div></div>
+    </div>
+    <p class="note">Reach shown is Pointe Orlando's Google impressions (the one channel with a daily export). Month-level <em>spend</em> isn't in the current platform exports — a dated re-export or the live API will slot exact spend/CPA per month into this view.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">03</span><h2 class="disp">Advertising performance</h2><p class="sub">Pilot to date · USD</p></div>
+
+    <div class="callout gold" style="margin-bottom:18px">💰 <b>Ad credits:</b> Google issued a <b>$500 credit on each account ($1,000 total)</b>. Gross spend $4,021 → <b>net out-of-pocket ~$3,021</b>.</div>
+
+    <h3 style="margin:0 0 10px" class="disp">Google Ads — Search</h3>
+    <div class="tbl-scroll"><table>
+      <thead><tr><th>Location · campaign</th><th>Spend</th><th>Clicks</th><th>CPC</th><th>Conv.</th><th>Cost/conv.</th></tr></thead>
+      <tbody>
+        <tr><td>POL · 50% Off</td><td class="tabnum">$871.75</td><td class="tabnum">791</td><td class="tabnum">$1.10</td><td class="tabnum">30.7</td><td class="tabnum win">$28.43</td></tr>
+        <tr><td>POL · BOGO</td><td class="tabnum">$760.51</td><td class="tabnum">615</td><td class="tabnum">$1.24</td><td class="tabnum">20.3</td><td class="tabnum">$37.40</td></tr>
+        <tr><td>WP · 50% Off</td><td class="tabnum">$803.63</td><td class="tabnum">2,152</td><td class="tabnum">$0.37</td><td class="tabnum">38.2</td><td class="tabnum win">$21.06</td></tr>
+        <tr><td>WP · BOGO</td><td class="tabnum">$514.36</td><td class="tabnum">748</td><td class="tabnum">$0.69</td><td class="tabnum">12.8</td><td class="tabnum">$40.08</td></tr>
+        <tr class="total"><td>Total (gross)</td><td class="tabnum">$2,950.25</td><td class="tabnum">4,306</td><td class="tabnum">$0.69</td><td class="tabnum">102</td><td class="tabnum">$28.9</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">50%-off out-performs BOGO at <b>both</b> locations. Winter Park runs at less than half POL's cost-per-click and is capped by budget — the clearest place to scale. (Conversion tracking under-fired during a known form bug, so treat Google "conversions" as directional.)</p>
+
+    <h3 style="margin:26px 0 10px" class="disp">Facebook / Instagram</h3>
+    <div class="tbl-scroll"><table>
+      <thead><tr><th>Campaign</th><th>Spend</th><th>Reach</th><th>LP views</th><th>Leads</th><th>Cost/lead</th></tr></thead>
+      <tbody>
+        <tr><td>WP · Spring 2026</td><td class="tabnum">$662.90</td><td class="tabnum">49,434</td><td class="tabnum">1,814</td><td class="tabnum">204</td><td class="tabnum win">$3.25</td></tr>
+        <tr><td>POL · Spring 2026</td><td class="tabnum">$350.66</td><td class="tabnum">33,990</td><td class="tabnum">1,292</td><td class="tabnum">94</td><td class="tabnum">$3.73</td></tr>
+        <tr class="total"><td>Total</td><td class="tabnum">$1,070.77</td><td class="tabnum">~90,522</td><td class="tabnum">3,313</td><td class="tabnum">298</td><td class="tabnum">~$3.59</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Facebook leads cost roughly one-eighth of a Google search conversion. Retargeting warm audiences is the biggest untapped lever — and the engine for the parties push (§6).</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">04</span><h2 class="disp">Audience &amp; redemptions</h2><p class="sub">Live from GoHighLevel · Jul 14</p></div>
+    <div class="grid2">
+      <div class="card">
+        <h3 class="disp">The opt-in funnel</h3>
+        <div class="tbl-scroll" style="border:none"><table style="min-width:0">
+          <thead><tr><th>Stage</th><th>POL</th><th>WP</th></tr></thead>
+          <tbody>
+            <tr><td>Database on file</td><td class="tabnum">~13,208</td><td class="tabnum">~37,052</td></tr>
+            <tr><td>Vouchers issued</td><td class="tabnum">158</td><td class="tabnum">236</td></tr>
+            <tr><td>Opted-in (delivered)</td><td class="tabnum">112</td><td class="tabnum">146</td></tr>
+            <tr><td>New leads · 30 days</td><td class="tabnum">74</td><td class="tabnum">92</td></tr>
+            <tr class="total"><td>New leads · 7 days</td><td class="tabnum">57</td><td class="tabnum">18</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">Opted-in audience ≈ 258. Pointe Orlando is surging — 57 of its last-30-day leads landed in the past week.</p>
+      </div>
+      <div class="card">
+        <h3 class="disp">92 redemptions, by code</h3>
+        <div class="bars">
+          <div class="bar"><span>Welcome $25</span><span class="track"><span class="fill" style="width:100%;background:var(--gold)"></span></span><span class="n">47</span></div>
+          <div class="bar"><span>Half-price</span><span class="track"><span class="fill" style="width:53%;background:var(--grape)"></span></span><span class="n">25</span></div>
+          <div class="bar"><span>Promo (generic)</span><span class="track"><span class="fill" style="width:38%;background:var(--good)"></span></span><span class="n">18</span></div>
+          <div class="bar"><span>BOGO</span><span class="track"><span class="fill" style="width:6%;background:var(--bad)"></span></span><span class="n">2</span></div>
+        </div>
+        <p class="note" style="margin-top:14px"><span class="pill wp">WP 66</span> &nbsp; <span class="pill pol">POL 26</span> &nbsp; — Winter Park drives most redemptions, led by the $25 Welcome voucher.</p>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:16px">🎂 <b>Parties:</b> 0 booked through GHL so far — parties haven't been advertised. But the AI voice agent has already fielded <b>25 inbound calls tagged "party"</b> (POL 12 · WP 13), and 257 families are enrolled in the birthday nurture. Warm demand is there to convert (§6).</div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">05</span><h2 class="disp">Campaigns that shipped</h2></div>
+    <div class="grid2">
+      <div class="card"><h3 class="disp">4th-of-July "STARS"</h3><p class="sub">Email · ~Jun 30</p>
+        <p style="margin:.4em 0 0">Free-arcade-credits weekend invite to the opted-in list. <b>253 recipients</b> — POL 111, WP 142.</p></div>
+      <div class="card"><h3 class="disp">May nudge campaign</h3><p class="sub">Email + SMS</p>
+        <p style="margin:.4em 0 0"><b>227 SMS</b> (POL 101 · WP 126) and <b>92 email</b> (POL 54 · WP 38) to re-engage the list.</p></div>
+      <div class="card"><h3 class="disp">Database reactivation</h3><p class="sub">Sequenced daily batches</p>
+        <p style="margin:.4em 0 0">A reactivation sequence has worked roughly <b>2,500 contacts per location</b> from the dormant waiver database.</p></div>
+      <div class="card"><h3 class="disp">Always-on automations</h3><p class="sub">Running</p>
+        <p style="margin:.4em 0 0">AI voice agent (25 party calls handled), birthday nurture, and the opt-in → voucher → redemption flow.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">06</span><h2 class="disp">Next lever — parties</h2></div>
+    <p class="lede" style="max-width:72ch">Michael's priority is party bookings beating last year. Because "birthday parties Orlando" costs <b>$25–40 per click</b> on Google, paid search is out. The efficient play is a <b>$25-off (BDAY25) offer retargeted on Facebook/Instagram</b> to the warm audience — plus a post-visit "book a party" nudge on email &amp; SMS. Every party is tracked via the code, and the voice agent's 25 party enquiries are ready to convert now.</p>
+    <div class="callout gold" style="margin-top:16px">📋 <b>To close the ROI loop for corporate:</b> confirm <b>BDAY25</b> is live in Aluvii, and pull the Aluvii <b>party-booking count</b> — the one number that lives outside GHL — so spend can be shown all the way through to booked parties vs last year.</div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">07</span><h2 class="disp">Recommendations</h2></div>
+    <div class="rec"><div class="rn">1</div><div><b>Re-weight Pointe Orlando's Google budget to 50%-off.</b><p>Its winner is capped below its weaker BOGO campaign — a free efficiency gain.</p></div></div>
+    <div class="rec"><div class="rn">2</div><div><b>Scale Winter Park + Facebook retargeting.</b><p>WP is the low-cost, budget-limited account; Meta leads are ~8× cheaper than search.</p></div></div>
+    <div class="rec"><div class="rn">3</div><div><b>Launch the parties push this week.</b><p>$25-off retargeting + post-visit upsell + the 25 warm voice-agent enquiries.</p></div></div>
+    <div class="rec"><div class="rn">4</div><div><b>Close the measurement gaps.</b><p>Add a redemption date (to trend weekly) and the Aluvii BDAY25 count (to prove parties). Fix the Google conversion event.</p></div></div>
+  </section>
+
+  <footer>
+    <span>Monkey Joe's 90-Day Growth Pilot · Pointe Orlando &amp; Winter Park</span>
+    <span>Prepared by WILBA · GHL data live Jul 14, 2026 · ad figures pilot-to-date</span>
+  </footer>
+
+</div>

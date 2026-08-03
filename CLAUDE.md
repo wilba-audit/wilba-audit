@@ -173,6 +173,61 @@ Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WIL
 
 ---
 
+### Monkey Joe's — Growth Operator (Client Pilot: POL + WP)
+
+WILBA's marketing-execution pilot for Michael Carter's two Orlando Monkey Joe's locations —
+**Pointe Orlando (POL)** and **Winter Park (WP)** — via William Milner / Lanyu. The stack runs on
+**GoHighLevel (GHL / LeadConnector)** as the CRM (one sub-account per location, driven entirely by
+contact tags), **Meta Marketing API** for Facebook/Instagram ads, and **Google Ads API** for
+reporting (pending dev-token approval). Everything keys off two audiences: `voucher-delivered`
+(opted-in) and `unsubscribed` (excluded).
+
+**Live automations (GitHub Actions — creds in repo Secrets, not `.env`):**
+- `mj-birthday-drip.yml` (daily) → `scripts/mj_birthday_sequence.py` — 180-day, 10-touchpoint birthday nurture from enrollment date
+- `mj-birthday-radar.yml` (weekly) → `scripts/mj_birthday_radar.py` — 90/60/30-day reminders before the child's actual birthday (needs `CHILD_BDAY_FIELD_ID`)
+- `mj-weekly-scorecard.yml` (Mon) → `scripts/mj_weekly_scorecard.py` — emails Jess a GHL+ads scorecard via Resend
+
+**Other scripts:**
+- `scripts/mj_weekend_bananas_blast.py` — the core GHL helper (fetch_audience / send_message / apply_cohort_tag) + one-off blasts
+- `scripts/mj_meta_manage.py` — Meta ads write control (list / pause / enable / budget, $60/day guardrail)
+- `scripts/fetch_consolidated_reporting.py` — joins GHL + Meta + Google into `outputs/monkey-joes/reporting/consolidated.json`
+
+**Docs:** `outputs/monkey-joes/`. The dated July docs are current: `ADS-AUDIT-2026-07.md`,
+`BIRTHDAY-ACQUISITION-STRATEGY-2026-07.md`, and the rewritten `promo-codes.md` (v2). The other
+(March) docs describe the pre-migration Aluvii/Constant Contact plan — GHL is the current reality.
+
+**Real codes (July 2026):** `WELCOME` ($25 opt-in voucher) · `BOGO/` (Wacky Wednesday) · `50% off`
+(best Google performer) · `FJP/` (Frequent Jumper, not for parties) · `BDAY25` ($25 off a party,
+redeemed in **Aluvii**). The old `WACKY-*`/`COMEBACK` scheme is dead.
+
+**Redemption tracking:** codes are redeemed **in-store on William's external verification page**,
+and **party sales via `BDAY25` in Aluvii** (no API) — **NOT via GHL tags by default**. Reporting
+redemptions needs an export from William + an Aluvii count until William tags redeemed back to GHL.
+
+**Commands:** `/mj-ghl` · `/mj-redemptions` · `/mj-birthday` · `/mj-ads` · `/mj-report` (see Commands section).
+
+**GHL live-data path (WORKS):** the dev session's network blocks GHL, so the `mj-audit.yml` GitHub
+Action runs `scripts/mj_ghl_audit.py` server-side and commits results to
+`outputs/monkey-joes/reporting/ghl-audit.md`. The GHL scripts previously failed with a Cloudflare
+1010 ban (fake browser User-Agent) — now fixed. Trigger via `mcp__github__actions_run_trigger`
+(run_workflow, mj-audit.yml, ref main) and read the committed file. Location IDs: POL
+`xlzFHtujfHhegk3xc9q2`, WP `yaRfypmZfcGDtpGEz3Gz`. Child-birthday field: POL `4dW6Ni9njQByJweCW8ip`
+(Date), WP `U1HiMixVAZ9ZQ1ItLROl` (Month — less precise).
+
+**Live GHL snapshot (2026-07-14):** opted-in `voucher-delivered` POL 112 / WP 146 (~258 total, NOT
+the 20k raw DB); opt-ins last 30d POL 74 / WP 92; `promo-redeemed` POL 12 / WP 6 (18 tracked
+redemptions); 0 unsubscribed; 0 parties booked in GHL.
+
+**Status:** Meta ads live (~$1,071 spend, ~298 leads @ ~$3.50); Google live (~$2,950 spend). Ads
+audit done; live GHL audit working. The three GitHub workflows (drip/radar/scorecard) are
+`disabled_manually` — nothing auto-runs until re-enabled. Open items: (1) party prices corrected to
+`$314` (verified) — the birthday scripts still need the drip re-enabled to send; (2) reconcile our
+birthday drip with William's GHL-native workflow (double-send risk); (3) confirm the real redemption
+tag with William (`promo-redeemed` has 18; `redeemed-` is empty); (4) WP birthday stored as Month
+only; (5) Meta/Google API tokens not set as secrets yet (only GHL is wired).
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
@@ -232,6 +287,18 @@ Example: `/implement plans/2026-01-28-competitor-analysis-command.md`
 Deep-dives the code first to fully understand it, then produces a self-contained, beginner-friendly package with a Claude-guided installer (INSTALL.md + README.md + scripts). The recipient gives the folder to Claude Code and says "read INSTALL.md and set this up" — Claude walks them through everything step by step. Runs a 6-stage interactive flow: Research → Scope → Frame → Write → Validate → Deliver. Outputs to `shares/`.
 
 Example: `/share the daily brief system`
+
+### Monkey Joe's commands
+
+Four operator commands for the Monkey Joe's pilot. Each runs a repeatable procedure so Jess can
+check or operate the account without needing the developer. All follow **dry-run → confirm →
+execute** for anything that sends or changes live data.
+
+- **`/mj-ghl`** — GHL account health check & operations (audience counts, tag/custom-field audit, blasts)
+- **`/mj-redemptions`** — promo-code redemption tracking & channel attribution (reconciles the code scheme)
+- **`/mj-birthday`** — birthday-party funnel status & controls (drip + radar; reconciles the GHL-native workflow)
+- **`/mj-ads`** — Google + Facebook ads status, spend, audit, and Meta controls (pause/enable/budget)
+- **`/mj-report`** — weekly ops report + monthly on-brand corporate report (codes, redemptions, ads, parties)
 
 ---
 

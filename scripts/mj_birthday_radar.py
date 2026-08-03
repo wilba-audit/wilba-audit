@@ -55,8 +55,8 @@ WINDOWS = [
     {"days": 90, "grace": 4, "key": "90",
      "subject": "3 months to the big day — let's start planning 🎉",
      "body": "<p>Your child's birthday is about <strong>three months away</strong> — the perfect time to lock in the date before the best weekend slots go.</p>"
-             "<p>Our Jungle Experience party (from $234) does it all: private room, a dedicated host, unlimited play, and zero cleanup for you.</p>",
-     "sms": "Monkey Joe's 🎉 Birthday's ~3 months out — prime time to book the date! Jungle Experience from $234, we do it all: " + BOOK_LINK + " Reply STOP to opt out."},
+             "<p>Our Jungle Experience party (from $314) does it all: private room, a dedicated host, unlimited play, and zero cleanup for you.</p>",
+     "sms": "Monkey Joe's 🎉 Birthday's ~3 months out — prime time to book the date! Jungle Experience from $314, we do it all: " + BOOK_LINK + " Reply STOP to opt out."},
     {"days": 60, "grace": 4, "key": "60",
      "subject": "2 months out — lock in your party date",
      "body": "<p>The birthday's about <strong>two months away</strong>. Weekend suites are booking up — grab your preferred time now and it's one less thing to think about.</p>"

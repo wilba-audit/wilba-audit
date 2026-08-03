@@ -1,0 +1,66 @@
+name: MJ GHL + Reporting Audit (on demand)
+
+# Runs the read-only GHL account audit + consolidated reporting server-side
+# (GitHub's runners CAN reach GHL / Meta / Google; the cloud dev session cannot),
+# then commits the results back so they can be read from any session.
+#
+# Trigger it manually from the Actions tab ("Run workflow"), or on the weekly schedule.
+# Uses the same secrets the other MJ workflows already use.
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Monday 14:00 UTC — refresh the audit weekly, ahead of the scorecard
+    - cron: "0 14 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mj-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install python-dotenv
+
+      - name: Run GHL account audit
+        env:
+          GHL_API_KEY_POL: ${{ secrets.GHL_API_KEY_POL }}
+          GHL_LOCATION_ID_POL: ${{ secrets.GHL_LOCATION_ID_POL }}
+          GHL_API_KEY_WP: ${{ secrets.GHL_API_KEY_WP }}
+          GHL_LOCATION_ID_WP: ${{ secrets.GHL_LOCATION_ID_WP }}
+        run: python scripts/mj_ghl_audit.py
+
+      - name: Run consolidated reporting (GHL + Meta + Google)
+        env:
+          GHL_API_KEY_POL: ${{ secrets.GHL_API_KEY_POL }}
+          GHL_LOCATION_ID_POL: ${{ secrets.GHL_LOCATION_ID_POL }}
+          GHL_API_KEY_WP: ${{ secrets.GHL_API_KEY_WP }}
+          GHL_LOCATION_ID_WP: ${{ secrets.GHL_LOCATION_ID_WP }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_POL: ${{ secrets.META_AD_ACCOUNT_POL }}
+          META_AD_ACCOUNT_WP: ${{ secrets.META_AD_ACCOUNT_WP }}
+        run: python scripts/fetch_consolidated_reporting.py --days 30 || echo "reporting pull incomplete (some sources may be unwired)"
+
+      - name: Commit results
+        run: |
+          git config user.name "mj-audit-bot"
+          git config user.email "actions@github.com"
+          git add outputs/monkey-joes/reporting/ghl-audit.json outputs/monkey-joes/reporting/ghl-audit.md outputs/monkey-joes/reporting/consolidated.json || true
+          git commit -m "MJ audit: refresh GHL + reporting data [skip ci]" || echo "no changes to commit"
+          git push || echo "nothing to push"

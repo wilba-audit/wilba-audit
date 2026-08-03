@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-07-27T16:30:37+00:00",
+  "windows": {
+    "today": [
+      "2026-07-27T00:00:00+00:00",
+      "2026-07-27T16:30:37+00:00"
+    ],
+    "yesterday": [
+      "2026-07-26T00:00:00+00:00",
+      "2026-07-27T00:00:00+00:00"
+    ],
+    "last_7d": [
+      "2026-07-20T16:30:37+00:00",
+      "2026-07-27T16:30:37+00:00"
+    ],
+    "last_30d": [
+      "2026-06-27T16:30:37+00:00",
+      "2026-07-27T16:30:37+00:00"
+    ],
+    "mtd": [
+      "2026-07-01T00:00:00+00:00",
+      "2026-07-27T16:30:37+00:00"
+    ]
+  },
+  "ghl": {
+    "available": true,
+    "locations": {
+      "POL": {
+        "location_id": "xlzFHtujfHhegk3xc9q2",
+        "leads": {
+          "today": 1,
+          "yesterday": 5,
+          "last_7d": 38,
+          "last_30d": 149,
+          "mtd": 146
+        },
+        "redeemed": {
+          "today": 0,
+          "yesterday": 0,
+          "last_7d": 0,
+          "last_30d": 0,
+          "mtd": 0
+        },
+        "redeemed_by_channel": {
+          "g": 0,
+          "f": 0,
+          "e": 0,
+          "d": 0
+        }
+      },
+      "WP": {
+        "location_id": "yaRfypmZfcGDtpGEz3Gz",
+        "leads": {
+          "today": 0,
+          "yesterday": 2,
+          "last_7d": 16,
+          "last_30d": 73,
+          "mtd": 64
+        },
+        "redeemed": {
+          "today": 0,
+          "yesterday": 0,
+          "last_7d": 0,
+          "last_30d": 0,
+          "mtd": 0
+        },
+        "redeemed_by_channel": {
+          "g": 0,
+          "f": 0,
+          "e": 0,
+          "d": 0
+        }
+      }
+    }
+  },
+  "meta": {
+    "available": false,
+    "reason": "META_ACCESS_TOKEN not set"
+  },
+  "google_ads": {
+    "available": false,
+    "reason": "GOOGLE_ADS_DEVELOPER_TOKEN / LOGIN_CUSTOMER_ID not set"
+  },
+  "blended_30d": {
+    "spend": {
+      "meta": 0.0,
+      "google": 0.0,
+      "total": 0.0
+    },
+    "leads_ghl": 222,
+    "redeemed_ghl": 0,
+    "blended_cpl": 0.0,
+    "blended_cpa_redeemed": 0.0
+  }
+}
