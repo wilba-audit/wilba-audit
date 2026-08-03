@@ -1,0 +1,294 @@
+<title>Schoeman Clinic — GHL Team Training Run Sheet</title>
+<style>
+  :root{
+    --paper:#F5F6F5; --card:#FFFFFF; --ink:#1B2A2E; --muted:#586A6D;
+    --line:#DCE4E1; --accent:#0E6E68; --accent-ink:#0B534E; --accent-soft:#E4F0ED;
+    --amber:#8A5A0C; --amber-soft:#F6ECD6; --amber-line:#E4CF9E;
+    --danger:#A33A2C; --danger-soft:#F6E2DD; --danger-line:#E5B7AC;
+    --good:#2E6B4F; --good-soft:#E1EFE7;
+    --display:Georgia,"Times New Roman",serif;
+    --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0F1618; --card:#16211F; --ink:#E9EEEC; --muted:#9BAEAB;
+      --line:#283A38; --accent:#41B8AF; --accent-ink:#8FD9D2; --accent-soft:#12302C;
+      --amber:#D8A94E; --amber-soft:#2A2313; --amber-line:#4A3C1C;
+      --danger:#E58976; --danger-soft:#2E1B16; --danger-line:#4C2A22;
+      --good:#72C199; --good-soft:#15271E;
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#F5F6F5; --card:#FFFFFF; --ink:#1B2A2E; --muted:#586A6D;
+    --line:#DCE4E1; --accent:#0E6E68; --accent-ink:#0B534E; --accent-soft:#E4F0ED;
+    --amber:#8A5A0C; --amber-soft:#F6ECD6; --amber-line:#E4CF9E;
+    --danger:#A33A2C; --danger-soft:#F6E2DD; --danger-line:#E5B7AC;
+    --good:#2E6B4F; --good-soft:#E1EFE7;
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1618; --card:#16211F; --ink:#E9EEEC; --muted:#9BAEAB;
+    --line:#283A38; --accent:#41B8AF; --accent-ink:#8FD9D2; --accent-soft:#12302C;
+    --amber:#D8A94E; --amber-soft:#2A2313; --amber-line:#4A3C1C;
+    --danger:#E58976; --danger-soft:#2E1B16; --danger-line:#4C2A22;
+    --good:#72C199; --good-soft:#15271E;
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);
+    line-height:1.55;-webkit-font-smoothing:antialiased;margin:0;}
+  .wrap{max-width:60rem;margin:0 auto;padding:2.4rem 1.5rem 4rem;}
+
+  /* toolbar */
+  .bar{display:flex;justify-content:flex-end;gap:.5rem;margin-bottom:1rem;}
+  .btn{font:600 .8rem/1 var(--body);color:var(--accent-ink);background:var(--accent-soft);
+    border:1px solid var(--line);border-radius:.5rem;padding:.5rem .8rem;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);}
+  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  /* header */
+  header{border-bottom:2px solid var(--accent);padding-bottom:1.1rem;margin-bottom:1.4rem;}
+  .eyebrow{font:600 .72rem/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 .55rem;}
+  h1{font-family:var(--display);font-weight:600;font-size:2.15rem;line-height:1.08;
+    text-wrap:balance;margin:0 0 .3rem;letter-spacing:-.01em;}
+  .sub{font-family:var(--display);font-style:italic;font-size:1.12rem;color:var(--muted);margin:0 0 .9rem;}
+  .meta{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.86rem;color:var(--muted);}
+  .meta b{color:var(--ink);font-weight:600;}
+
+  /* scope band */
+  .scope{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.4rem 0 2rem;}
+  @media (max-width:560px){.scope{grid-template-columns:1fr}}
+  .scope div{border:1px solid var(--line);border-radius:.7rem;padding:.85rem 1rem;background:var(--card);}
+  .scope .covers{border-left:4px solid var(--good);}
+  .scope .not{border-left:4px solid var(--danger);}
+  .scope h3{margin:0 0 .35rem;font:700 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;}
+  .scope .covers h3{color:var(--good);}
+  .scope .not h3{color:var(--danger);}
+  .scope p{margin:0;font-size:.9rem;color:var(--ink);}
+
+  h2{font-family:var(--display);font-weight:600;font-size:1.4rem;margin:2.4rem 0 .9rem;
+    padding-top:1.3rem;border-top:1px solid var(--line);text-wrap:balance;}
+  h2:first-of-type{border-top:0;padding-top:0;}
+
+  /* tables */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:.7rem;background:var(--card);}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;}
+  th,td{text-align:left;padding:.62rem .85rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--accent);color:#fff;font:600 .74rem/1.2 var(--mono);
+    letter-spacing:.06em;text-transform:uppercase;}
+  :root[data-theme="dark"] thead th{color:#08201E;}
+  @media (prefers-color-scheme:dark){thead th{color:#08201E;}}
+  tbody tr:last-child td{border-bottom:0;}
+  td.t{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--accent-ink);font-weight:600;white-space:nowrap;}
+  td.it{font-weight:600;}
+  .qa td:first-child{font-weight:600;width:38%;}
+
+  /* run of show */
+  ol.ros{list-style:none;counter-reset:s;margin:0;padding:0;display:flex;flex-direction:column;gap:.9rem;}
+  ol.ros>li{counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:.7rem;padding:1rem 1.1rem 1rem 3.4rem;}
+  ol.ros>li::before{content:counter(s);position:absolute;left:.9rem;top:.95rem;
+    width:1.7rem;height:1.7rem;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);
+    font:700 .9rem/1.7rem var(--mono);text-align:center;}
+  ol.ros h4{margin:.1rem 0 .5rem;font-size:1.02rem;font-weight:700;}
+  ol.ros h4 .dur{font:600 .72rem/1 var(--mono);color:var(--muted);margin-left:.5rem;letter-spacing:.04em;}
+  ol.ros ul{margin:.35rem 0 0;padding-left:1.1rem;}
+  ol.ros li{font-size:.9rem;margin:.28rem 0;}
+  .say{font-family:var(--display);font-style:italic;color:var(--ink);background:var(--accent-soft);
+    border-radius:.5rem;padding:.6rem .8rem;margin:.2rem 0 0;font-size:.95rem;}
+
+  /* callouts */
+  .call{border-radius:.7rem;padding:1rem 1.1rem;margin:.2rem 0 0;}
+  .call.amber{background:var(--amber-soft);border:1px solid var(--amber-line);}
+  .call.danger{background:var(--danger-soft);border:1px solid var(--danger-line);}
+  .call .lab{font:700 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.4rem;}
+  .call.amber .lab{color:var(--amber);}
+  .call.danger .lab{color:var(--danger);}
+  .call ul{margin:.3rem 0 0;padding-left:1.1rem;}
+  .call li{font-size:.9rem;margin:.28rem 0;}
+
+  /* checklist */
+  ul.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.45rem;}
+  ul.check li{padding-left:1.8rem;position:relative;font-size:.92rem;}
+  ul.check li::before{content:"";position:absolute;left:0;top:.15rem;width:1.05rem;height:1.05rem;
+    border:1.5px solid var(--accent);border-radius:.28rem;}
+  .lead{font-weight:700;}
+  .danger-txt{color:var(--danger);font-weight:700;}
+  .good-txt{color:var(--good);font-weight:700;}
+
+  footer{margin-top:2.6rem;padding-top:1rem;border-top:1px solid var(--line);
+    font-size:.78rem;color:var(--muted);font-style:italic;}
+
+  @media print{
+    .bar{display:none;}
+    body{background:#fff;}
+    .wrap{max-width:none;padding:0;}
+    ol.ros>li,.tablewrap,.scope div,.call{break-inside:avoid;}
+    h2{break-after:avoid;}
+  }
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <button class="btn" onclick="document.documentElement.setAttribute('data-theme', (document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'))">Toggle theme</button>
+    <button class="btn" onclick="window.print()">Print</button>
+  </div>
+
+  <header>
+    <p class="eyebrow">The Schoeman Clinic · Live Team Training</p>
+    <h1>GoHighLevel Team Training</h1>
+    <p class="sub">Going live on the shared WhatsApp inbox</p>
+    <div class="meta">
+      <span><b>Led by</b> Jess · WILBA</span>
+      <span><b>When</b> ~11am UK / evening Bali</span>
+      <span><b>Who</b> Lisa · Zoey · Isabell · new admin <span style="opacity:.7">(Gina optional)</span></span>
+      <span><b>Number</b> +44 7426 494321</span>
+    </div>
+  </header>
+
+  <div class="scope">
+    <div class="covers">
+      <h3>Tonight covers</h3>
+      <p>One shared WhatsApp inbox in GHL — find messages, reply, leave internal notes, work as a team, escalate anything clinical.</p>
+    </div>
+    <div class="not">
+      <h3>Not tonight</h3>
+      <p>No AI auto-replies · no knowledge-base answers · no phone/voice agent · no appointment booking (that stays in Semble).</p>
+    </div>
+  </div>
+
+  <h2>Agenda · about 40 minutes</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th style="width:5.5rem">Time</th><th>Item</th><th>Goal</th></tr></thead>
+      <tbody>
+        <tr><td class="t">2 min</td><td class="it">Frame it</td><td>Why we're moving to one shared inbox</td></tr>
+        <tr><td class="t">5 min</td><td class="it">Tour the Conversations tab</td><td>Know the layout: list / thread / patient panel</td></tr>
+        <tr><td class="t">8 min</td><td class="it">Reply to a patient</td><td>Send a reply &amp; understand the 24-hour window</td></tr>
+        <tr><td class="t">6 min</td><td class="it">Internal notes (safety)</td><td>Team-only notes vs patient replies — never mix them</td></tr>
+        <tr><td class="t">6 min</td><td class="it">Work as a team</td><td>Assign, mark unread, hand off across days</td></tr>
+        <tr><td class="t">4 min</td><td class="it">Calendars — the 60-second version</td><td>Keep your linked calendar current and it just works</td></tr>
+        <tr><td class="t">5 min</td><td class="it">Escalation basics</td><td>Clinical → human. Email Gina + paste to Semble</td></tr>
+        <tr><td class="t">4 min</td><td class="it">What is NOT changing</td><td>Appointments &amp; reminders stay in Semble</td></tr>
+        <tr><td class="t">5 min</td><td class="it">Q&amp;A + wrap</td><td>Answer questions, promise the recap</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Before you start · solo, 10 min ahead</h2>
+  <ul class="check">
+    <li><span class="lead">Log in → open Conversations</span> and reply on a test WhatsApp thread so you've done every click once.</li>
+    <li><span class="lead">Confirm the exact internal-note button</span> in this sub-account with Griffin — don't guess live. <span class="danger-txt">This is the one thing to nail.</span></li>
+    <li><span class="lead">Number is confirmed: +44 7426 494321.</span> No team action — just note the website still shows an old one (+44 7426 292 321); flag Mati/Gina to fix the site.</li>
+    <li><span class="lead">Check everyone's logins work.</span></li>
+  </ul>
+
+  <h2>Running the session</h2>
+  <ol class="ros">
+    <li>
+      <h4>Frame it<span class="dur">2 min</span></h4>
+      <p class="say">"From today, every patient WhatsApp lands in one shared inbox inside GoHighLevel. No more forwarding screenshots or one person holding the phone. You all see the same conversation in real time and can hand off to each other across your different days."</p>
+    </li>
+    <li>
+      <h4>Tour the Conversations tab<span class="dur">5 min</span></h4>
+      <ul>
+        <li><b>Left</b> = the conversation list (unread at top). <b>Middle</b> = the thread. <b>Right</b> = the patient's details.</li>
+        <li><b>Filters</b> at the top: Unread / Assigned to me / All — live in <i>Unread</i> and <i>Assigned to me</i>.</li>
+        <li>The channel icon shows WhatsApp vs SMS/email — every channel, one place.</li>
+      </ul>
+    </li>
+    <li>
+      <h4>Reply to a patient<span class="dur">8 min</span></h4>
+      <ul>
+        <li>Open a conversation → type in the box at the bottom → <b>Send</b>.</li>
+      </ul>
+      <div class="call amber">
+        <span class="lab">The 24-hour window — the #1 "why won't it send?"</span>
+        You can free-text a patient for <b>24 hours after their last message</b>. After that, WhatsApp only allows an approved <b>template</b> — the box may block you. If a normal reply won't send, that's why: send a template to reconnect. <em>(Confirm template names with Griffin.)</em>
+      </div>
+    </li>
+    <li>
+      <h4>Internal notes — the safety lesson<span class="dur">6 min</span></h4>
+      <div class="call danger">
+        <span class="lab">Slow down here — highest-risk thing in the room</span>
+        <ul>
+          <li>Leave a note the <b>team sees but the patient never does</b> — "chased Gina re bloods", "waiting on payment", "clinical, escalating".</li>
+          <li>A reply-to-patient <b>looks different</b> from an internal note (colour / label / tab). Every time, ask: <i>"Am I talking to the patient, or my team?"</i></li>
+          <li><b>Demo both ways live</b> — show a note stay internal and a reply go out.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <h4>Work as a team<span class="dur">6 min</span></h4>
+      <ul>
+        <li><b>Assign</b> a conversation to yourself when you pick it up, so two PAs don't double-reply.</li>
+        <li><b>Mark unread</b> to leave it for someone else; @mention a teammate in a note if available.</li>
+        <li>Agree the norm out loud: <i>assign to yourself → internal-note what you did → mark unread if it needs another pair of hands.</i></li>
+      </ul>
+    </li>
+    <li>
+      <h4>Calendars — the 60-second version<span class="dur">4 min</span></h4>
+      <p style="font-size:.9rem;margin:.1rem 0 .5rem">Keep this high-level. You are <b>not</b> teaching them to build or configure calendars — WILBA sets those up. They just need to understand the one thing that's on them.</p>
+      <ul>
+        <li>WILBA builds the clinic calendar (e.g. discovery calls) with the clinic's set hours. <b>The team doesn't configure that.</b></li>
+        <li>Each of you is <b>linked into it with your own connected calendar</b>. When a patient books, they don't pick a person — the system offers whoever's free.</li>
+        <li><b>Your only job:</b> keep your linked calendar up to date — connect it, and block out time off / anything you're unavailable for.</li>
+      </ul>
+      <div class="call amber">
+        <span class="lab">The one takeaway</span>
+        As long as your linked calendar is up to date, availability stays accurate on its own — there's nothing to manage by hand. If you're ever off, block it in your calendar and the booking slots update automatically.
+      </div>
+    </li>
+    <li>
+      <h4>Escalation basics<span class="dur">5 min</span></h4>
+      <ul>
+        <li><span class="danger-txt">Never answer anything clinical</span> — no results, dosing, symptoms, or "is this safe". Do not answer.</li>
+        <li><b>Keep the current process:</b> copy the message to Dr Gina by email <b>and</b> paste it onto the patient's Semble file, then leave an internal note in GHL.</li>
+        <li><b>Blood results</b> are discussed at an appointment — never sent over WhatsApp.</li>
+        <li><b>Gina's rule:</b> 2 short emails max, then it becomes a paid consult.</li>
+      </ul>
+    </li>
+    <li>
+      <h4>What is NOT changing tonight<span class="dur">4 min</span></h4>
+      <ul>
+        <li><b>Consultations &amp; follow-ups are still booked in Semble</b>, exactly as now — and Semble still sends the appointment reminders. GHL does nothing on booking tonight.</li>
+        <li>The GHL discovery-call calendar and AI-suggested replies come later, each with its own walkthrough.</li>
+      </ul>
+    </li>
+    <li>
+      <h4>Wrap<span class="dur">2 min</span></h4>
+      <ul>
+        <li><i>"This is deliberately simple for now. As you get comfortable we'll add AI-suggested replies — a PA still approves every one — and the knowledge base. Not today."</i></li>
+        <li>Tell them a written recap follows, and they can WhatsApp you questions.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Q&amp;A cheat table · keep this open during the call</h2>
+  <div class="tablewrap">
+    <table class="qa">
+      <thead><tr><th>They'll ask…</th><th>Your answer</th></tr></thead>
+      <tbody>
+        <tr><td>"Does the patient see my note?"</td><td>No — internal notes are team-only. Replies go to the patient. Always check which one you're in.</td></tr>
+        <tr><td>"Why won't my message send?"</td><td>The 24-hour WhatsApp window has closed — use an approved template to reconnect.</td></tr>
+        <tr><td>"What if two of us reply at once?"</td><td>Assign it to yourself when you pick it up — that's the whole point of the shared inbox.</td></tr>
+        <tr><td>"Do I need to manage the calendar?"</td><td>No — just keep your own linked calendar up to date and block out time off. Availability updates on its own.</td></tr>
+        <tr><td>"Where do I book appointments?"</td><td>In Semble, exactly as now — nothing about booking changes today. Tonight is only the WhatsApp inbox.</td></tr>
+        <tr><td>"Can it answer patients automatically?"</td><td>Not yet — that's a later phase, and a human will always approve every AI reply.</td></tr>
+        <tr><td>"Which number is this?"</td><td>+44 7426 494321 (confirmed). The website still shows an old one — we're getting the site fixed.</td></tr>
+        <tr><td>"A patient sent their blood results — what do I do?"</td><td>Don't interpret them. Escalate: email Gina, paste to the Semble file, internal-note it. Results are discussed at an appointment.</td></tr>
+        <tr><td>"Do we still use WhatsApp on our phones?"</td><td>No — from now the clinic inbox lives in GHL so everyone shares it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>After the call</h2>
+  <ul class="check">
+    <li><span class="lead">Send the written recap</span> (or a quick screen-recording) to the team.</li>
+    <li><span class="lead">Send Griffin/Mati a 2-line note:</span> went live, who attended, any confusion, website-number fix status.</li>
+    <li><span class="lead">Log any "how do I…" gaps</span> to feed the written SOP.</li>
+  </ul>
+
+  <footer>Prepared for Jess Morrell · WILBA (wilba.ai) · 13 July 2026 · Scope confirmed with Griffin &amp; Mati: shared inbox only.</footer>
+</div>
