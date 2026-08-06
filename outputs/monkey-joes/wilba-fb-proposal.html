@@ -1,0 +1,191 @@
+<title>WILBA · Facebook Marketing for Monkey Joe's</title>
+<style>
+  :root{
+    --sand:#F5F0E8; --card:#FFFFFF; --ink:#2D2D2D; --navy:#2C3E6B; --cerulean:#4A90D9;
+    --slate:#7B8FA1; --hair:#E4DCCD; --navy-soft:#EAEFF7; --cer-soft:#E7F0FA;
+    --shadow:0 1px 2px rgba(44,62,107,.05),0 10px 30px rgba(44,62,107,.08);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --sand:#161C2B; --card:#212A40; --ink:#ECE7DC; --navy:#8FA6D6; --cerulean:#6BA6E6;
+    --slate:#93A3B5; --hair:#313B54; --navy-soft:#232E48; --cer-soft:#1E2C41;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 34px rgba(0,0,0,.4);
+  }}
+  :root[data-theme="light"]{--sand:#F5F0E8;--card:#FFFFFF;--ink:#2D2D2D;--navy:#2C3E6B;--cerulean:#4A90D9;--slate:#7B8FA1;--hair:#E4DCCD;--navy-soft:#EAEFF7;--cer-soft:#E7F0FA;--shadow:0 1px 2px rgba(44,62,107,.05),0 10px 30px rgba(44,62,107,.08);}
+  :root[data-theme="dark"]{--sand:#161C2B;--card:#212A40;--ink:#ECE7DC;--navy:#8FA6D6;--cerulean:#6BA6E6;--slate:#93A3B5;--hair:#313B54;--navy-soft:#232E48;--cer-soft:#1E2C41;--shadow:0 1px 2px rgba(0,0,0,.3),0 12px 34px rgba(0,0,0,.4);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--sand);color:var(--ink);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:920px;margin:0 auto;padding:clamp(18px,4vw,52px) clamp(16px,4vw,40px);}
+  .disp{font-weight:800;letter-spacing:-.015em;text-wrap:balance;}
+  .tabnum{font-variant-numeric:tabular-nums;}
+  .eyebrow{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cerulean);}
+
+  .band{background:var(--navy);color:#fff;border-radius:18px;padding:clamp(24px,5vw,44px);box-shadow:var(--shadow);position:relative;overflow:hidden;}
+  .mark{font-weight:800;letter-spacing:.34em;font-size:15px;color:#fff;}
+  .mark span{color:var(--cerulean);}
+  .band h1{font-size:clamp(28px,5vw,46px);line-height:1.04;margin:.4em 0 .25em;color:#fff;}
+  .band p{color:#D5DEEE;font-size:clamp(15px,1.9vw,18px);max-width:56ch;margin:0;}
+  .band .by{margin-top:18px;font-size:13px;color:#AEBCD6;}
+  .band .arc{position:absolute;width:220px;height:220px;border-radius:50%;background:var(--cerulean);opacity:.16;top:-70px;right:-50px;}
+
+  section{margin-top:clamp(30px,5vw,58px);}
+  h2{font-size:clamp(21px,3vw,29px);color:var(--navy);margin:0 0 .5em;}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--cerulean);text-transform:uppercase;}
+  p.lede{font-size:clamp(15px,1.9vw,18px);max-width:64ch;}
+  strong{color:var(--navy);} :root[data-theme="dark"] strong{color:var(--ink);}
+
+  .tbl{overflow-x:auto;border:1px solid var(--hair);border-radius:14px;box-shadow:var(--shadow);}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:440px;background:var(--card);}
+  th,td{padding:13px 16px;text-align:right;border-bottom:1px solid var(--hair);}
+  th:first-child,td:first-child{text-align:left;}
+  thead th{background:var(--navy);color:#fff;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.win{color:var(--cerulean);font-weight:800;}
+  tr.hi td{background:var(--cer-soft);font-weight:700;}
+
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:680px){.cards{grid-template-columns:1fr;}}
+  .card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:22px;box-shadow:var(--shadow);}
+  .card h3{margin:0 0 6px;color:var(--navy);font-size:18px;} :root[data-theme="dark"] .card h3{color:var(--ink);}
+  .card .tag{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--cerulean);}
+  .card ul{margin:10px 0 0;padding-left:18px;color:var(--ink);font-size:14.5px;}
+  .card li{margin:6px 0;}
+
+  .funnel{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:8px;}
+  .fstep{flex:1 1 150px;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px;box-shadow:var(--shadow);}
+  .fstep .n{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--cerulean);}
+  .fstep b{display:block;color:var(--navy);font-size:16px;margin:4px 0;} :root[data-theme="dark"] .fstep b{color:var(--ink);}
+  .fstep span{font-size:13px;color:var(--slate);}
+  .fstep.cer{background:var(--cerulean);border-color:transparent;} .fstep.cer .n{color:#dceaf7;} .fstep.cer b,.fstep.cer span{color:#fff;}
+
+  .stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;}
+  .st{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .st .v{font-size:clamp(26px,3.4vw,34px);font-weight:800;color:var(--navy);letter-spacing:-.02em;} :root[data-theme="dark"] .st .v{color:var(--cerulean);}
+  .st .l{font-size:13px;color:var(--slate);margin-top:6px;}
+
+  .pull{background:var(--navy-soft);border-left:4px solid var(--cerulean);border-radius:0 14px 14px 0;padding:18px 22px;font-size:clamp(16px,2.1vw,19px);color:var(--navy);font-weight:600;}
+  :root[data-theme="dark"] .pull{color:var(--ink);}
+  ul.clean{list-style:none;padding:0;margin:0;}
+  ul.clean li{padding:11px 0;border-bottom:1px solid var(--hair);display:flex;gap:12px;align-items:flex-start;font-size:15px;}
+  ul.clean li:last-child{border-bottom:none;}
+  ul.clean .dot{width:8px;height:8px;border-radius:50%;background:var(--cerulean);margin-top:8px;flex:none;}
+  footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--hair);color:var(--slate);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .note{color:var(--slate);font-size:12.5px;margin-top:10px;}
+</style>
+
+<div class="wrap">
+
+  <header class="band">
+    <span class="arc"></span>
+    <div class="mark">WIL<span>BA</span></div>
+    <div class="eyebrow" style="color:var(--cerulean);margin-top:20px">Marketing Proposal</div>
+    <h1 class="disp">Facebook, done properly, for Monkey Joe's</h1>
+    <p>One channel, two offers, and the retargeting engine we never switched on. The same budget, pointed at what actually drives redemptions.</p>
+    <div class="by">Prepared by Jess, WILBA · Pointe Orlando and Winter Park · July 2026</div>
+  </header>
+
+  <section>
+    <div class="kicker">The case</div>
+    <h2 class="disp">The pilot already told us where the money works</h2>
+    <p class="lede">We ran Google Search and Facebook side by side for the pilot. Facebook won, and it wasn't close. It brought in more real redemptions at roughly a third of the cost.</p>
+    <div class="tbl" style="margin-top:18px"><table>
+      <thead><tr><th>What we measured</th><th>Google Search</th><th>Facebook and Instagram</th></tr></thead>
+      <tbody>
+        <tr><td>Spend (lifetime)</td><td class="tabnum">$2,957 gross</td><td class="tabnum">$1,071</td></tr>
+        <tr><td>Cost per lead</td><td class="tabnum">~$20</td><td class="tabnum win">$3.59</td></tr>
+        <tr><td>Redemptions it drove</td><td class="tabnum">14</td><td class="tabnum win">21</td></tr>
+        <tr class="hi"><td>Cost per redemption</td><td class="tabnum">~$147</td><td class="tabnum">~$51</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Google's conversion tracking hit a form bug during the pilot, so I treat its conversion figures as directional. The redemptions above come straight from GHL, and they're the number that matters.</p>
+    <div class="pull" style="margin-top:20px">Facebook drove more redemptions at a third of the cost. That's the whole argument.</div>
+  </section>
+
+  <section>
+    <div class="kicker">Two more reasons</div>
+    <h2 class="disp">Google can't do the two things we most want</h2>
+    <div class="cards" style="margin-top:8px">
+      <div class="card"><h3>Parties are priced out of Search</h3>
+        <p style="margin:.2em 0 0">"Birthday parties Orlando" runs $25 to $40 a click on Google. That's unworkable. On Facebook I reach the exact parent audience for about $3 a lead, and parties are the highest value thing Monkey Joe's sells.</p></div>
+      <div class="card"><h3>Retargeting has barely run</h3>
+        <p style="margin:.2em 0 0">The warmest audience, people who already visited, watched, or joined the list, has had almost no spend behind it. It's the cheapest place to win and it's sitting switched off.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">The strategy</div>
+    <h2 class="disp">Two offers up top, a retargeting engine underneath</h2>
+    <div class="funnel">
+      <div class="fstep"><div class="n">Top of funnel</div><b>50% off</b><span>Our best offer. Cold parents, drives weekday walk ins.</span></div>
+      <div class="fstep"><div class="n">Top of funnel</div><b>Birthdays</b><span>$25 off a party. Never advertised before now.</span></div>
+      <div class="fstep cer"><div class="n">The engine</div><b>Retargeting</b><span>Everyone who engaged, hit again with both offers.</span></div>
+      <div class="fstep"><div class="n">Result</div><b>Redeem and book</b><span>Walk ins in store, parties booked with the code.</span></div>
+    </div>
+    <p class="lede" style="margin-top:18px">Cold ads for the two offers fill the audience. Retargeting then converts the people who leaned in. Every redemption ties back to Facebook because the tracking already carries the source into GHL. We proved that in the pilot.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Campaign structure</div>
+    <h2 class="disp">Four clean campaigns, split by store</h2>
+    <div class="tbl" style="margin-top:8px"><table>
+      <thead><tr><th>Campaign</th><th>Stage</th><th>Who</th><th>Offer</th></tr></thead>
+      <tbody>
+        <tr><td>50% off prospecting</td><td>Cold</td><td>Parents 25 to 45, 15 mile radius</td><td>50% off</td></tr>
+        <tr><td>Birthday prospecting</td><td>Cold</td><td>Parents of 2 to 10 year olds</td><td>$25 off party</td></tr>
+        <tr><td>Retargeting</td><td>Warm</td><td>Visitors, engagers, list, past redeemers</td><td>Both plus parties</td></tr>
+        <tr><td>Lookalikes (phase 2)</td><td>Cold</td><td>Lookalike of redeemers</td><td>50% off</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Pointe Orlando and Winter Park run as separate ad sets, so budget and results stay clean by store. Placements across Feed, Stories and Reels.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Creative</div>
+    <h2 class="disp">Angles that already work</h2>
+    <ul class="clean" style="margin-top:6px">
+      <li><span class="dot"></span><div><strong>"Active kids, happy hearts."</strong> Michael's best performer, straight up.</div></li>
+      <li><span class="dot"></span><div><strong>Get the kids off the screen.</strong> Indoor, active, out of the house.</div></li>
+      <li><span class="dot"></span><div><strong>Air conditioned fun.</strong> Built for the hot, rainy Florida summer.</div></li>
+      <li><span class="dot"></span><div><strong>The easiest party you'll throw.</strong> You bring the cake, we do the rest.</div></li>
+    </ul>
+    <p class="note">Short Reels of the play floor and party room, plus simple offer cards. Fresh creative every two to three weeks so it never goes stale.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Budget</div>
+    <h2 class="disp">Same spend, pointed at Facebook</h2>
+    <div class="tbl" style="margin-top:8px"><table>
+      <thead><tr><th>Line</th><th>Per store / month</th><th>Both stores</th></tr></thead>
+      <tbody>
+        <tr><td>50% off prospecting</td><td class="tabnum">$300</td><td class="tabnum">$600</td></tr>
+        <tr><td>Birthday prospecting</td><td class="tabnum">$200</td><td class="tabnum">$400</td></tr>
+        <tr><td>Retargeting</td><td class="tabnum">$250</td><td class="tabnum">$500</td></tr>
+        <tr class="hi"><td>Total</td><td class="tabnum">$750</td><td class="tabnum">$1,500 / month</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Weighted toward Winter Park once the data confirms its edge. Retargeting scales up as the warm audience grows.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Targets</div>
+    <h2 class="disp">What good looks like in 90 days</h2>
+    <div class="stat" style="margin-top:8px">
+      <div class="st"><div class="v tabnum">≤ $4</div><div class="l">Cost per lead (pilot ran $3.59)</div></div>
+      <div class="st"><div class="v tabnum">≤ $50</div><div class="l">Cost per redemption, trending to $35</div></div>
+      <div class="st"><div class="v tabnum">3 to 4×</div><div class="l">Redemptions as retargeting turns on</div></div>
+      <div class="st"><div class="v tabnum">25</div><div class="l">Warm party enquiries already waiting</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">The bottom line</div>
+    <h2 class="disp">Spend the same money on the channel that actually delivers</h2>
+    <p class="lede">The pilot proved the model. $4,027 in spend turned into 479 codes and 101 in store redemptions, and Facebook did the heavy lifting per dollar. The two biggest levers, retargeting and parties, are still switched off. Turn them on, on Facebook, and this compounds.</p>
+    <div class="pull" style="margin-top:18px">One channel. Two offers. Retargeting doing the work underneath. I'd like to build it.</div>
+  </section>
+
+  <footer>
+    <span>WILBA · Facebook Marketing Proposal for Monkey Joe's</span>
+    <span>Figures from GHL live pull and platform billing, as of 22 July 2026, USD</span>
+  </footer>
+</div>
