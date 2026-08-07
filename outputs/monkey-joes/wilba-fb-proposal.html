@@ -63,6 +63,14 @@
   .st .v{font-size:clamp(26px,3.4vw,34px);font-weight:800;color:var(--navy);letter-spacing:-.02em;} :root[data-theme="dark"] .st .v{color:var(--cerulean);}
   .st .l{font-size:13px;color:var(--slate);margin-top:6px;}
 
+  .road{display:grid;gap:0;margin-top:8px;}
+  .rstep{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--hair);position:relative;}
+  .rstep:last-child{border-bottom:none;}
+  .rstep .when{display:flex;flex-direction:column;gap:2px;}
+  .rstep .ph{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cerulean);}
+  .rstep .wk{font-weight:800;color:var(--navy);font-size:15px;} :root[data-theme="dark"] .rstep .wk{color:var(--ink);}
+  .rstep .what b{display:block;color:var(--navy);font-size:16.5px;margin-bottom:2px;} :root[data-theme="dark"] .rstep .what b{color:var(--ink);}
+  .rstep .what span{color:var(--slate);font-size:14.5px;}
   .pull{background:var(--navy-soft);border-left:4px solid var(--cerulean);border-radius:0 14px 14px 0;padding:18px 22px;font-size:clamp(16px,2.1vw,19px);color:var(--navy);font-weight:600;}
   :root[data-theme="dark"] .pull{color:var(--ink);}
   ul.clean{list-style:none;padding:0;margin:0;}
@@ -137,6 +145,24 @@
       </tbody>
     </table></div>
     <p class="note">Pointe Orlando and Winter Park run as separate ad sets, so budget and results stay clean by store. Placements across Feed, Stories and Reels.</p>
+  </section>
+
+  <section>
+    <div class="kicker">The build</div>
+    <h2 class="disp">A clear roadmap, live inside two weeks</h2>
+    <p class="lede">This is not a slow build. The offers are proven and the tracking already works, so we launch fast and let the retargeting engine compound from there.</p>
+    <div class="road" style="margin-top:14px">
+      <div class="rstep"><div class="when"><span class="ph">Phase 1</span><span class="wk">Week 1</span></div>
+        <div class="what"><b>Foundations</b><span>Confirm the Pixel and Conversions API are firing on the offer, redemption and party pages. Build the audiences. Lock the UTMs so every redemption ties back to Facebook in GHL. First creative ready for both offers.</span></div></div>
+      <div class="rstep"><div class="when"><span class="ph">Phase 2</span><span class="wk">Week 2</span></div>
+        <div class="what"><b>Launch the offers</b><span>50% off and birthday prospecting go live at both stores. Daily eyes on it while the campaigns learn, budgets held steady.</span></div></div>
+      <div class="rstep"><div class="when"><span class="ph">Phase 3</span><span class="wk">Weeks 3 to 4</span></div>
+        <div class="what"><b>Turn on retargeting</b><span>The warm audience engine goes live. First optimisation pass: cut what is not working, push budget to what is. First weekly scorecard lands in your inbox.</span></div></div>
+      <div class="rstep"><div class="when"><span class="ph">Phase 4</span><span class="wk">Month 2</span></div>
+        <div class="what"><b>Optimise and scale</b><span>Lookalike audiences built off the people who redeemed. Creative refresh and offer testing. Budget weighted to the stronger store.</span></div></div>
+      <div class="rstep"><div class="when"><span class="ph">Phase 5</span><span class="wk">Month 3</span></div>
+        <div class="what"><b>Parties and review</b><span>Full birthday push into the summer, enquiries handed to the front desk with deposits. A 90 day results pack and a clear recommendation for what comes next.</span></div></div>
+    </div>
   </section>
 
   <section>
