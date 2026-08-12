@@ -59,6 +59,10 @@ Match platform to funnel job, then **pick two or three and dominate** rather tha
 - **Nurture / warm audience:** Instagram Stories, Facebook.
 All of them drive to the same place: the lead magnet and the list (see social-growth-strategist).
 
+## Paid reach: the boost-button trap
+
+The "Boost Post" button is not advertising — it rents vanity reach. It optimises for cheap engagement, floods the account with low-intent followers, and the moment the budget stops, reach collapses, often below where it started, because the algorithm now sees a large, unengaged follower base and throttles distribution. The tell-tale signature: a sharp spike in followers and views during the boost, then a cliff. If you are going to pay, use a proper campaign in Ads Manager, targeted and optimised for a real objective (leads/conversions to the lead magnet), never the boost button. Organic reach and a working funnel come first; paid amplifies a machine that already converts — it never substitutes for one. When you see spike-then-collapse in the data, suspect a boost.
+
 ## Output style
 
 - Recommend, don't hedge: name the platforms, the formats, the cadence, and the first move.
