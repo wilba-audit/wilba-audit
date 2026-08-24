@@ -31,14 +31,6 @@
   strong{color:var(--navy);} :root[data-theme="dark"] strong{color:var(--ink);}
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;} @media(max-width:700px){.cards{grid-template-columns:1fr;}}
   .card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:20px;box-shadow:var(--shadow);}
-  .card h3{margin:0 0 4px;color:var(--navy);font-size:17px;} :root[data-theme="dark"] .card h3{color:var(--ink);}
-  .card .tag{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--cerulean);}
-  .ad{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);margin-top:14px;border-left:4px solid var(--cerulean);}
-  .ad .lab{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--cerulean);}
-  .ad .body{margin:8px 0 12px;font-size:15px;}
-  .ad .meta{display:grid;gap:6px;font-size:13.5px;border-top:1px solid var(--hair);padding-top:10px;}
-  .ad .meta div{display:flex;gap:8px;}
-  .ad .meta b{color:var(--navy);min-width:78px;flex:none;} :root[data-theme="dark"] .ad .meta b{color:var(--slate);}
   ul.clean{list-style:none;padding:0;margin:10px 0 0;}
   ul.clean li{padding:10px 0;border-bottom:1px solid var(--hair);display:flex;gap:12px;align-items:flex-start;font-size:14.5px;}
   ul.clean li:last-child{border-bottom:none;}
@@ -54,10 +46,32 @@
   .fnode .s{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--cerulean);}
   .fnode b{display:block;color:var(--navy);font-size:15px;margin:3px 0;} :root[data-theme="dark"] .fnode b{color:var(--ink);}
   .fnode span{font-size:12.5px;color:var(--slate);}
-  .check{background:var(--cer-soft);border:1px solid var(--hair);border-radius:14px;padding:20px 22px;}
-  .check li{padding:8px 0;border-bottom:1px dashed var(--hair);font-size:14.5px;} .check li:last-child{border-bottom:none;}
-  footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--hair);color:var(--slate);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .camphead{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--hair);border-left:5px solid var(--cerulean);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);}
+  .camphead .no{font-size:26px;font-weight:800;color:var(--cerulean);font-variant-numeric:tabular-nums;}
+  .camphead h3{margin:0;color:var(--navy);font-size:20px;} :root[data-theme="dark"] .camphead h3{color:var(--ink);}
+  .camphead span{color:var(--slate);font-size:13.5px;}
+  .subh{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cerulean);margin:22px 0 10px;}
+  .copy{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);margin-top:12px;border-left:4px solid var(--cerulean);}
+  .copy .lab{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--cerulean);}
+  .copy .body{margin:8px 0 12px;font-size:15px;}
+  .copy .meta{display:grid;gap:6px;font-size:13.5px;border-top:1px solid var(--hair);padding-top:10px;}
+  .copy .meta div{display:flex;gap:8px;} .copy .meta b{color:var(--navy);min-width:74px;flex:none;} :root[data-theme="dark"] .copy .meta b{color:var(--slate);}
+  .assets{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px;} @media(max-width:640px){.assets{grid-template-columns:1fr;}}
+  .asset{position:relative;overflow:hidden;border-radius:16px;padding:20px;min-height:190px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;box-shadow:var(--shadow);}
+  .asset::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.4),rgba(0,0,0,0) 60%);}
+  .asset>*{position:relative;z-index:1;}
+  .asset .brand{position:absolute;top:16px;left:18px;font-weight:800;letter-spacing:.18em;font-size:10px;opacity:.9;}
+  .asset .badge{position:absolute;top:14px;right:14px;background:#fff;color:#151515;font-weight:900;font-size:12.5px;padding:6px 12px;border-radius:999px;transform:rotate(4deg);z-index:1;}
+  .asset .big{font-weight:900;font-size:22px;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em;text-shadow:0 1px 6px rgba(0,0,0,.25);}
+  .asset .sub{font-size:13px;opacity:.95;margin-top:6px;text-shadow:0 1px 4px rgba(0,0,0,.25);}
+  .asset .cta{align-self:flex-start;margin-top:12px;background:#fff;color:#1a1a1a;font-weight:800;font-size:12.5px;padding:8px 15px;border-radius:999px;}
+  .a-plum{background:linear-gradient(150deg,#8A3FC0,#5A1E86);} .a-lime{background:linear-gradient(150deg,#7DBE2E,#3E8E1E);}
+  .a-sky{background:linear-gradient(150deg,#43A6E8,#1466B0);} .a-sun{background:linear-gradient(150deg,#FFB020,#E07A00);}
+  .a-berry{background:linear-gradient(150deg,#F0468C,#B01253);} .a-violet{background:linear-gradient(150deg,#8A6CE6,#4A38B0);}
+  .a-teal{background:linear-gradient(150deg,#22C3B8,#00786E);} .a-tang{background:linear-gradient(150deg,#FF7A40,#D63A12);}
   .note{color:var(--slate);font-size:12.5px;margin-top:10px;}
+  .check{background:var(--cer-soft);border:1px solid var(--hair);border-radius:14px;padding:20px 22px;}
+  footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--hair);color:var(--slate);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 </style>
 
 <div class="wrap">
@@ -65,16 +79,28 @@
     <span class="arc"></span>
     <div class="mark">WIL<span>BA</span></div>
     <div class="eyebrow" style="color:var(--cerulean);margin-top:20px">Facebook Launch Kit</div>
-    <h1 class="disp">Built and ready to go for Monkey Joe's</h1>
-    <p>The birthday ads, the 50% off ads, the retargeting, and the audiences. Written, structured, and wired to your codes. Say go and this is live within a week.</p>
+    <h1 class="disp">Plug and play for Monkey Joe's</h1>
+    <p>Two campaigns, built and ready. Two copy tests and four ad creatives each, the audiences, the budget, and weekly reporting. Say go and this is live within a week.</p>
     <div class="by">Prepared by Jess, WILBA · Pointe Orlando and Winter Park · ready to deploy</div>
   </header>
 
   <section>
     <div class="kicker">What this is</div>
-    <h2 class="disp">A campaign you can switch on, not a plan to think about</h2>
-    <p class="lede">Everything below is deployment ready. The ad copy is written, the audiences are specified so they build straight into Ads Manager, and every ad carries the tracking that ties a redemption back to Facebook in GHL. We proved that attribution in the pilot, so nothing here is theory.</p>
-    <div class="pull" style="margin-top:18px">Three campaigns. Real copy. Real audiences. All that's missing is the word go.</div>
+    <h2 class="disp">A campaign you switch on, not a plan to think about</h2>
+    <p class="lede">Everything here is deployment ready. Two campaigns, 50% off and birthday parties. Each one has two copy variants to test and four ad creatives, all written and designed. The audiences build straight into Ads Manager, the ads point at the pages already built in the pilot, and every click carries the tracking that ties a redemption back to Facebook in GHL.</p>
+    <div class="pull" style="margin-top:18px">Two campaigns. Sixteen ads ready to test. All that is missing is the word go.</div>
+  </section>
+
+  <section>
+    <div class="kicker">Built on what won</div>
+    <h2 class="disp">The copy is pulled from the data, not guesswork</h2>
+    <ul class="clean">
+      <li><span class="dot"></span><div><strong>The $25 hook drove the most redemptions of any offer.</strong> The Welcome voucher pulled 47, more than anything else, so the $25 idea runs through the birthday offer too.</div></li>
+      <li><span class="dot"></span><div><strong>Half price was the efficient winner.</strong> Best cost per result on Google and the second most redeemed offer. It leads the walk in campaign.</div></li>
+      <li><span class="dot"></span><div><strong>"Active kids, happy hearts" is Michael's best performing line ever.</strong> We build on it rather than reinvent it.</div></li>
+      <li><span class="dot"></span><div><strong>BOGO barely redeemed.</strong> Two redemptions across the whole pilot, so we drop it.</div></li>
+      <li><span class="dot"></span><div><strong>Facebook retargeting ran at $0.23 per landing page view,</strong> well below benchmark. That is the engine under both campaigns.</div></li>
+    </ul>
   </section>
 
   <section>
@@ -82,128 +108,127 @@
     <h2 class="disp">The whole journey, one page</h2>
     <div class="flow">
       <div class="fnode"><div class="s">See it</div><b>Cold ads</b><span>50% off and birthday ads to parents near each store.</span></div>
-      <div class="fnode"><div class="s">Grab it</div><b>Landing page</b><span>They claim the offer or enquire about a party.</span></div>
+      <div class="fnode"><div class="s">Grab it</div><b>Landing page</b><span>The pilot pages. They claim the offer or enquire about a party.</span></div>
       <div class="fnode"><div class="s">Opt in</div><b>Code delivered</b><span>Emailed and texted, they join the list in GHL.</span></div>
       <div class="fnode"><div class="s">Stay warm</div><b>Nurture</b><span>Birthday reminders and weekly sends keep them close.</span></div>
       <div class="fnode"><div class="s">Bring back</div><b>Retargeting</b><span>Warm audiences hit again, the cheapest win.</span></div>
-      <div class="fnode"><div class="s">Convert</div><b>Redeem or book</b><span>Walk in with the code, or book a party at $25 off.</span></div>
-    </div>
-    <h3 style="color:var(--navy);margin:26px 0 8px;font-size:18px">The birthday party path, in detail</h3>
-    <div class="flow">
-      <div class="fnode"><div class="s">1</div><b>Birthday ad</b><span>Runs to birthday parents and the warm list.</span></div>
-      <div class="fnode"><div class="s">2</div><b>Enquiry form</b><span>Location, child's age, preferred date.</span></div>
-      <div class="fnode"><div class="s">3</div><b>Front desk call</b><span>Team calls the lead and takes a deposit.</span></div>
-      <div class="fnode"><div class="s">4</div><b>Party booked</b><span>Confirmed in Aluvii, the $25 off code applied.</span></div>
-      <div class="fnode"><div class="s">5</div><b>Counted</b><span>BDAY25 in Aluvii ties the booking back to us.</span></div>
+      <div class="fnode"><div class="s">Convert</div><b>Redeem or book</b><span>Half price walk in, or a party at $25 off.</span></div>
     </div>
     <p class="note">Every step is tracked. The weekly report shows spend, leads, redemptions and parties, split by store and by channel.</p>
   </section>
 
   <section>
-    <div class="kicker">1 · The audiences</div>
+    <div class="kicker">The audiences</div>
     <h2 class="disp">Who we put this in front of</h2>
     <div class="tbl"><table>
-      <thead><tr><th>Audience</th><th>Type</th><th>Definition</th></tr></thead>
+      <thead><tr><th>Audience</th><th>Feeds</th><th>Definition</th></tr></thead>
       <tbody>
-        <tr><td><strong>Parents near the store</strong></td><td>Cold</td><td>15 mile radius of each location (Pointe Orlando: International Drive. Winter Park: Lake Howell Rd). Ages 25 to 45. Parents of toddlers through early school age. Interests: indoor play, trampoline parks, family attractions, kids birthday parties, Orlando family activities. Run as a separate ad set per store.</td></tr>
-        <tr><td><strong>Birthday parents</strong></td><td>Cold</td><td>Same radius and ages, narrowed to parents of 2 to 10 year olds, layered with event and shopping behaviours. Feeds the birthday campaign.</td></tr>
-        <tr><td><strong>Website visitors</strong></td><td>Warm</td><td>Everyone who hit the site or an offer page in the last 180 days (Meta Pixel).</td></tr>
-        <tr><td><strong>Engagers</strong></td><td>Warm</td><td>Anyone who watched 25% of a video or engaged with the Facebook or Instagram page in the last 365 days.</td></tr>
-        <tr><td><strong>Your list</strong></td><td>Warm</td><td>The GHL opted in list plus the wider database, uploaded as a Custom Audience (hashed).</td></tr>
-        <tr><td><strong>Past redeemers</strong></td><td>Warm</td><td>Everyone who has already redeemed a code, uploaded as a Custom Audience. The gold list.</td></tr>
+        <tr><td><strong>Parents near the store</strong></td><td>Cold ad set</td><td>15 mile radius of each location (Pointe Orlando: International Drive. Winter Park: Lake Howell Rd). Ages 25 to 45. Parents of toddlers through early school age. Interests: indoor play, trampoline parks, family attractions, kids birthday parties. A separate ad set per store.</td></tr>
+        <tr><td><strong>Birthday parents</strong></td><td>Birthday cold</td><td>Same radius and ages, narrowed to parents of 2 to 10 year olds with event and shopping behaviours.</td></tr>
+        <tr><td><strong>Website visitors</strong></td><td>Retargeting</td><td>Everyone who hit the site or an offer page in the last 180 days (Meta Pixel).</td></tr>
+        <tr><td><strong>Engagers</strong></td><td>Retargeting</td><td>Video viewers at 25% or more, and Facebook or Instagram page engagers, last 365 days.</td></tr>
+        <tr><td><strong>Your list</strong></td><td>Retargeting</td><td>The GHL opted in list plus the wider database, uploaded as a Custom Audience (hashed).</td></tr>
+        <tr><td><strong>Past redeemers</strong></td><td>Retargeting</td><td>Everyone who has already redeemed a code, uploaded as a Custom Audience. The gold list.</td></tr>
         <tr><td><strong>Lookalikes</strong></td><td>Cold, phase 2</td><td>1% to 3% lookalike of the redeemers and of your customer list. Scale what already works.</td></tr>
       </tbody>
     </table></div>
-    <p class="note">Warm audiences power the retargeting campaign. Cold audiences feed the two top of funnel offers.</p>
+    <p class="note">Both campaigns run a cold ad set (prospecting) and a warm ad set (retargeting), sharing the four creatives below.</p>
   </section>
 
   <section>
-    <div class="kicker">2 · The birthday ads</div>
-    <h2 class="disp">Ready to paste, three angles</h2>
+    <div class="kicker">Campaign 1</div>
+    <div class="camphead"><div class="no">50%</div><div><h3>Half price play</h3><span>Drives weekday walk ins. Half price admission ($12.25 Pointe Orlando, $8.50 Winter Park). Points at the pilot half price pages.</span></div></div>
 
-    <div class="ad"><div class="lab">Birthday · Ad A · Zero stress</div>
-      <div class="body">The easiest birthday party you will ever throw. Two hours in your own private party room, a host who runs the whole thing, unlimited play, pizza and drinks sorted. You bring the cake, we do the rest. Book this month and take $25 off.</div>
-      <div class="meta"><div><b>Headline</b><span>Book a party, save $25</span></div><div><b>Description</b><span>Private room. Zero cleanup. Happy kids.</span></div><div><b>Button</b><span>Book Now</span></div></div>
-    </div>
-    <div class="ad"><div class="lab">Birthday · Ad B · Kid excitement</div>
-      <div class="body">Give them the party they will talk about for weeks. Giant slides, the bounce houses, the three story jungle gym, all theirs. We handle setup, food and cleanup so you actually enjoy the day. $25 off parties booked this month.</div>
-      <div class="meta"><div><b>Headline</b><span>$25 off your child's birthday</span></div><div><b>Description</b><span>We set up, serve, and clean up.</span></div><div><b>Button</b><span>Book Now</span></div></div>
-    </div>
-    <div class="ad"><div class="lab">Birthday · Ad C · Summer, indoors</div>
-      <div class="body">Rainy Orlando afternoon and a birthday to plan? Sorted. Indoor, air conditioned, and completely done for you. Private room, dedicated host, unlimited play. Book this month and take $25 off.</div>
-      <div class="meta"><div><b>Headline</b><span>Indoor birthday parties, $25 off</span></div><div><b>Description</b><span>Cool, easy, and a lot of fun.</span></div><div><b>Button</b><span>Book Now</span></div></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="kicker">3 · The 50% off ads</div>
-    <h2 class="disp">The offer that already wins</h2>
-    <div class="ad"><div class="lab">50% off · Ad A · Off the screen</div>
+    <div class="subh">Two copy variants to test</div>
+    <div class="copy"><div class="lab">Copy A · Off the screen</div>
       <div class="body">Get the kids off the screen and onto the bounce houses. Active play, air conditioned, and right now it is half price admission. Grab your pass and come jump.</div>
-      <div class="meta"><div><b>Headline</b><span>50% off. Active kids, happy hearts.</span></div><div><b>Button</b><span>Get Offer</span></div></div>
+      <div class="meta"><div><b>Headline</b><span>Active kids, happy hearts</span></div><div><b>Button</b><span>Get Offer</span></div></div>
     </div>
-    <div class="ad"><div class="lab">50% off · Ad B · Something to do today</div>
-      <div class="body">Looking for something to do with the kids today? Half price admission at Monkey Joe's. Unlimited play, indoors and cool. Grab your pass and come in.</div>
+    <div class="copy"><div class="lab">Copy B · Something to do today</div>
+      <div class="body">Looking for something to do with the kids today? Half price play at Monkey Joe's. Unlimited slides, bounce houses and the jungle gym, indoors and cool. Grab your pass and come in.</div>
       <div class="meta"><div><b>Headline</b><span>Half price play today</span></div><div><b>Button</b><span>Get Offer</span></div></div>
     </div>
-  </section>
 
-  <section>
-    <div class="kicker">4 · The retargeting</div>
-    <h2 class="disp">Bring the warm ones back</h2>
-    <p class="lede">These run only to the warm audiences above. Cheaper, higher intent, and where the pilot showed Facebook converts best.</p>
-    <div class="ad"><div class="lab">Retarget · Ad A · Reminder</div>
-      <div class="body">Still thinking about it? Your half price pass to Monkey Joe's is waiting. Unlimited play, indoors, out of the heat. Come jump.</div>
-      <div class="meta"><div><b>Headline</b><span>Your 50% off pass is waiting</span></div><div><b>Button</b><span>Get Offer</span></div></div>
-    </div>
-    <div class="ad"><div class="lab">Retarget · Ad B · Birthday nudge</div>
-      <div class="body">Got a birthday coming up? Let us do the hard part. Private room, host, food and unlimited play, and $25 off when you book this month. You just bring the cake.</div>
-      <div class="meta"><div><b>Headline</b><span>$25 off your party. We do the rest.</span></div><div><b>Button</b><span>Book Now</span></div></div>
+    <div class="subh">Four ad creatives to test</div>
+    <div class="assets">
+      <div class="asset a-plum"><div class="brand">MONKEY JOE'S</div><div class="badge">50% OFF</div><div class="big">Active kids,<br>happy hearts</div><div class="sub">Half price play at Monkey Joe's.</div><div class="cta">Get your pass</div></div>
+      <div class="asset a-lime"><div class="brand">MONKEY JOE'S</div><div class="badge">50% OFF</div><div class="big">Off the screen,<br>onto the slides</div><div class="sub">Half price admission today.</div><div class="cta">Come jump</div></div>
+      <div class="asset a-sky"><div class="brand">MONKEY JOE'S</div><div class="badge">50% OFF</div><div class="big">Rainy day?<br>Sorted.</div><div class="sub">Indoor, cool, and half price.</div><div class="cta">Grab your pass</div></div>
+      <div class="asset a-sun"><div class="brand">MONKEY JOE'S</div><div class="badge">50% OFF</div><div class="big">Half price<br>play today</div><div class="sub">Unlimited slides and bounce houses.</div><div class="cta">Get offer</div></div>
     </div>
   </section>
 
   <section>
-    <div class="kicker">5 · Creative direction</div>
-    <h2 class="disp">What the visuals should be</h2>
+    <div class="kicker">Campaign 2</div>
+    <div class="camphead"><div class="no">$25</div><div><h3>Birthday parties</h3><span>Drives party bookings. $25 off with the BDAY25 code. Points at the pilot birthday enquiry page.</span></div></div>
+
+    <div class="subh">Two copy variants to test</div>
+    <div class="copy"><div class="lab">Copy A · Zero stress</div>
+      <div class="body">The easiest birthday party you will ever throw. Private room, a host who runs the whole thing, unlimited play, pizza and drinks sorted. You bring the cake, we do the rest. Book this month and take $25 off.</div>
+      <div class="meta"><div><b>Headline</b><span>You bring the cake, we do the rest</span></div><div><b>Button</b><span>Book Now</span></div></div>
+    </div>
+    <div class="copy"><div class="lab">Copy B · The party they remember</div>
+      <div class="body">Give them the party they will talk about for weeks. Giant slides, bounce houses, the three story jungle gym, all theirs. We handle setup, food and cleanup so you enjoy the day. $25 off parties booked this month.</div>
+      <div class="meta"><div><b>Headline</b><span>The party they will talk about</span></div><div><b>Button</b><span>Book Now</span></div></div>
+    </div>
+
+    <div class="subh">Four ad creatives to test</div>
+    <div class="assets">
+      <div class="asset a-berry"><div class="brand">MONKEY JOE'S</div><div class="badge">$25 OFF</div><div class="big">You bring<br>the cake</div><div class="sub">We do the rest. Zero stress.</div><div class="cta">Book now</div></div>
+      <div class="asset a-violet"><div class="brand">MONKEY JOE'S</div><div class="badge">$25 OFF</div><div class="big">The easiest party<br>you'll throw</div><div class="sub">Private room, host, food, play.</div><div class="cta">Book now</div></div>
+      <div class="asset a-teal"><div class="brand">MONKEY JOE'S</div><div class="badge">$25 OFF</div><div class="big">Zero stress<br>birthdays</div><div class="sub">We set up, serve, and clean up.</div><div class="cta">Book now</div></div>
+      <div class="asset a-tang"><div class="brand">MONKEY JOE'S</div><div class="badge">$25 OFF</div><div class="big">A party they'll<br>talk about</div><div class="sub">Slides, bounce houses, jungle gym.</div><div class="cta">Book now</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">Creative direction</div>
+    <h2 class="disp">How these run</h2>
     <ul class="clean">
-      <li><span class="dot"></span><div><strong>Use your real footage.</strong> The play floor, kids on the slides, a party room set up, a genuine birthday moment. Real beats stock every time for a local venue.</div></li>
-      <li><span class="dot"></span><div><strong>Reels first.</strong> Short vertical video (9 by 16) for Feed, Stories and Reels, plus a couple of simple square offer cards.</div></li>
-      <li><span class="dot"></span><div><strong>Hook in two seconds.</strong> Open on the action (a kid mid slide), not a logo.</div></li>
-      <li><span class="dot"></span><div><strong>Offer on screen.</strong> "50% off" or "$25 off parties" overlaid clearly, with the same wording as the ad copy.</div></li>
-      <li><span class="dot"></span><div><strong>Refresh every two to three weeks</strong> so it never goes stale.</div></li>
+      <li><span class="dot"></span><div><strong>The cards above are production ready</strong> as static offer ads, square for Feed and vertical for Stories and Reels.</div></li>
+      <li><span class="dot"></span><div><strong>For video, cut short Reels from Monkey Joe's own footage</strong> of the play floor and party room, with the same offer overlaid.</div></li>
+      <li><span class="dot"></span><div><strong>Hook in two seconds.</strong> Open on the action, a kid mid slide, not a logo.</div></li>
+      <li><span class="dot"></span><div><strong>Refresh every two to three weeks</strong> so nothing goes stale, and keep the winning ad running.</div></li>
     </ul>
-    <p class="note">I can mock up concept visuals if useful, but the strongest creative uses Monkey Joe's own photos and video of the real space.</p>
   </section>
 
   <section>
-    <div class="kicker">6 · Campaign setup</div>
-    <h2 class="disp">How it's wired</h2>
+    <div class="kicker">Budget and setup</div>
+    <h2 class="disp">Same spend, wired to your systems</h2>
     <div class="tbl"><table>
+      <thead><tr><th>Campaign</th><th>Per store / month</th><th>Both stores</th></tr></thead>
+      <tbody>
+        <tr><td>50% off (cold + retargeting)</td><td>$400</td><td>$800</td></tr>
+        <tr><td>Birthday parties (cold + retargeting)</td><td>$350</td><td>$700</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>$750</strong></td><td><strong>$1,500 / month</strong></td></tr>
+      </tbody>
+    </table></div>
+    <div class="tbl" style="margin-top:16px"><table>
       <thead><tr><th>Setting</th><th>How it's built</th></tr></thead>
       <tbody>
-        <tr><td>Structure</td><td>Three campaigns: 50% off prospecting, Birthday prospecting, Retargeting. Each split into a Pointe Orlando and a Winter Park ad set.</td></tr>
-        <tr><td>Objective</td><td>Leads, optimised toward the offer and party form completions.</td></tr>
+        <tr><td>Structure</td><td>Two campaigns, each split into a Pointe Orlando and a Winter Park ad set, cold and retargeting.</td></tr>
+        <tr><td>Objective</td><td>Leads, optimised toward the offer and party enquiry completions.</td></tr>
         <tr><td>Placements</td><td>Advantage+ across Facebook and Instagram feed, Stories and Reels.</td></tr>
-        <tr><td>Budget</td><td>$750 per store per month. $300 to 50% off, $200 to birthdays, $250 to retargeting.</td></tr>
-        <tr><td>Tracking</td><td>Meta Pixel and Conversions API on the offer, redemption and party pages. UTMs on every ad (source facebook, medium paid_social, campaign named by offer and store) so each redemption ties back in GHL.</td></tr>
-        <tr><td>Offers</td><td>50% off admission and the $25 off party code (BDAY25), live and redeemable.</td></tr>
-        <tr><td>Reporting</td><td>A weekly scorecard to Michael: spend, leads, redemptions and parties, split by store and by channel. A monthly on brand summary for the corporate view.</td></tr>
+        <tr><td>Offers</td><td>Half price admission ($12.25 Pointe Orlando, $8.50 Winter Park) and $25 off parties (BDAY25).</td></tr>
+        <tr><td>Landing pages</td><td>The pilot pages, reused. Half price checkout and the birthday enquiry page.</td></tr>
+        <tr><td>Tracking</td><td>Meta Pixel and Conversions API on the offer, redemption and party pages. UTMs on every ad so each redemption ties back in GHL.</td></tr>
+        <tr><td>Reporting</td><td>A weekly scorecard to Michael: spend, leads, redemptions and parties by store and by channel. A monthly on brand summary for corporate.</td></tr>
       </tbody>
     </table></div>
   </section>
 
   <section>
-    <div class="kicker">7 · Go live checklist</div>
+    <div class="kicker">Go live checklist</div>
     <h2 class="disp">What it takes to switch on</h2>
     <div class="check"><ul class="clean" style="margin:0">
-      <li><span class="dot"></span><div>Confirm the Pixel and Conversions API are firing on the offer, redemption and party pages</div></li>
-      <li><span class="dot"></span><div>Build the seven audiences above, upload the list and redeemer files</div></li>
-      <li><span class="dot"></span><div>Load the ad copy and creative into the three campaigns, split by store</div></li>
+      <li><span class="dot"></span><div>Confirm the Pixel and Conversions API are firing on the pilot offer, redemption and party pages</div></li>
+      <li><span class="dot"></span><div>Build the audiences, upload the list and redeemer files</div></li>
+      <li><span class="dot"></span><div>Load the two campaigns, two copy variants and four creatives each, split by store</div></li>
       <li><span class="dot"></span><div>Set UTMs so GHL attributes every redemption to Facebook</div></li>
-      <li><span class="dot"></span><div>Confirm the 50% off and BDAY25 codes are live</div></li>
+      <li><span class="dot"></span><div>Confirm the half price and BDAY25 codes are live</div></li>
       <li><span class="dot"></span><div>One tracking test end to end, then switch on</div></li>
     </ul></div>
-    <div class="pull" style="margin-top:18px">This is built. Give me the word and the two levers that have never run, retargeting and parties, are live within a week.</div>
+    <div class="pull" style="margin-top:18px">This is built. Give me the word and both campaigns are live within a week.</div>
   </section>
 
   <footer>
