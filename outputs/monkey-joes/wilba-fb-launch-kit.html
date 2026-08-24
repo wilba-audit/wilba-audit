@@ -49,6 +49,11 @@
   thead th{background:var(--navy);color:#fff;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;}
   tbody tr:last-child td{border-bottom:none;}
   .pull{background:var(--navy-soft);border-left:4px solid var(--cerulean);border-radius:0 14px 14px 0;padding:18px 22px;font-size:clamp(16px,2.1vw,19px);color:var(--navy);font-weight:600;} :root[data-theme="dark"] .pull{color:var(--ink);}
+  .flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+  .fnode{flex:1 1 130px;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:14px;box-shadow:var(--shadow);border-top:3px solid var(--cerulean);}
+  .fnode .s{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--cerulean);}
+  .fnode b{display:block;color:var(--navy);font-size:15px;margin:3px 0;} :root[data-theme="dark"] .fnode b{color:var(--ink);}
+  .fnode span{font-size:12.5px;color:var(--slate);}
   .check{background:var(--cer-soft);border:1px solid var(--hair);border-radius:14px;padding:20px 22px;}
   .check li{padding:8px 0;border-bottom:1px dashed var(--hair);font-size:14.5px;} .check li:last-child{border-bottom:none;}
   footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--hair);color:var(--slate);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
@@ -70,6 +75,28 @@
     <h2 class="disp">A campaign you can switch on, not a plan to think about</h2>
     <p class="lede">Everything below is deployment ready. The ad copy is written, the audiences are specified so they build straight into Ads Manager, and every ad carries the tracking that ties a redemption back to Facebook in GHL. We proved that attribution in the pilot, so nothing here is theory.</p>
     <div class="pull" style="margin-top:18px">Three campaigns. Real copy. Real audiences. All that's missing is the word go.</div>
+  </section>
+
+  <section>
+    <div class="kicker">The full funnel</div>
+    <h2 class="disp">The whole journey, one page</h2>
+    <div class="flow">
+      <div class="fnode"><div class="s">See it</div><b>Cold ads</b><span>50% off and birthday ads to parents near each store.</span></div>
+      <div class="fnode"><div class="s">Grab it</div><b>Landing page</b><span>They claim the offer or enquire about a party.</span></div>
+      <div class="fnode"><div class="s">Opt in</div><b>Code delivered</b><span>Emailed and texted, they join the list in GHL.</span></div>
+      <div class="fnode"><div class="s">Stay warm</div><b>Nurture</b><span>Birthday reminders and weekly sends keep them close.</span></div>
+      <div class="fnode"><div class="s">Bring back</div><b>Retargeting</b><span>Warm audiences hit again, the cheapest win.</span></div>
+      <div class="fnode"><div class="s">Convert</div><b>Redeem or book</b><span>Walk in with the code, or book a party at $25 off.</span></div>
+    </div>
+    <h3 style="color:var(--navy);margin:26px 0 8px;font-size:18px">The birthday party path, in detail</h3>
+    <div class="flow">
+      <div class="fnode"><div class="s">1</div><b>Birthday ad</b><span>Runs to birthday parents and the warm list.</span></div>
+      <div class="fnode"><div class="s">2</div><b>Enquiry form</b><span>Location, child's age, preferred date.</span></div>
+      <div class="fnode"><div class="s">3</div><b>Front desk call</b><span>Team calls the lead and takes a deposit.</span></div>
+      <div class="fnode"><div class="s">4</div><b>Party booked</b><span>Confirmed in Aluvii, the $25 off code applied.</span></div>
+      <div class="fnode"><div class="s">5</div><b>Counted</b><span>BDAY25 in Aluvii ties the booking back to us.</span></div>
+    </div>
+    <p class="note">Every step is tracked. The weekly report shows spend, leads, redemptions and parties, split by store and by channel.</p>
   </section>
 
   <section>
@@ -160,6 +187,7 @@
         <tr><td>Budget</td><td>$750 per store per month. $300 to 50% off, $200 to birthdays, $250 to retargeting.</td></tr>
         <tr><td>Tracking</td><td>Meta Pixel and Conversions API on the offer, redemption and party pages. UTMs on every ad (source facebook, medium paid_social, campaign named by offer and store) so each redemption ties back in GHL.</td></tr>
         <tr><td>Offers</td><td>50% off admission and the $25 off party code (BDAY25), live and redeemable.</td></tr>
+        <tr><td>Reporting</td><td>A weekly scorecard to Michael: spend, leads, redemptions and parties, split by store and by channel. A monthly on brand summary for the corporate view.</td></tr>
       </tbody>
     </table></div>
   </section>
