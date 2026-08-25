@@ -29,16 +29,16 @@ Capacity; patient value/LTV/conversion; exact June driver / follower quality; cu
 
 **Jess's rate card (verified from her):** social management = **£2,500 setup + £1,500/mo** (USD-quoted originally; earlier "$2,500/mo" was reconciled/superseded). She has now **set the Schoeman price directly:**
 
-- **Growth Build (setup, one-time): £2,500** — she does not want to go above this.
-- **Growth Partnership (monthly, ALL platforms): £2,000/month.**
-- **Ad spend: separate**, paid to platforms, controlled by Gina, from £1,000–£2,000/mo to start.
-- **Currency: GBP** (client-facing).
+- **Growth Build (setup, one-time): $2,500 USD** (≈ £1,850) — she does not want to go above this.
+- **Growth Partnership (monthly, ALL platforms): $2,000/month USD** (≈ £1,480).
+- **Ad spend: separate**, paid to platforms by Gina (GBP), from £1,000–£2,000/mo to start.
+- **Currency: fees billed in USD; show GBP conversion to Gina** (rate ≈ 0.74, per Jess's own $2,500≈£1,850 anchor; sterling marked "approximate, at today's rate").
 
 **Positioning:** this is a **value-priced** offer by choice — £2,000/mo bundles social (all platforms) + paid management + assessment/funnel + tracking + strategy, which are usually separate retainers. Page 15 is written to **show that value** (full inclusion list + "social alone is usually a full retainer, paid another"). Internal note: at this price the delivery must be run efficiently (batching, repurposing, WILBA's content pipeline) to stay sustainable — a deliberate accessible-entry decision, not an oversight. No scope-creep guardrail changes; keep the build to assessment v1 + one funnel.
 - **Media note:** given UK health CPMs, £1,500+/mo learns faster — nudge there if Gina's comfortable. No results invented.
 
 ## 3. FIVE-ITEM SEND CHECK (NO Mati items)
-1. You're happy with **£2,500 setup / £2,000 month (all platforms) / £1–2k media** in writing (GBP).
+1. You're happy with **$2,500 setup / $2,000 month (all platforms) / £1–2k media** in writing (fees USD, ~£1,850 / ~£1,480 shown to Gina).
 2. Existing infrastructure is framed as **complementary (the clinic's), never as your product or absorbed** — confirm the copy reads that way (it does).
 3. **IHF stays unnamed + qualitative** (no numbers) — confirm (it does).
 4. Assessment = **education-not-diagnosis** throughout; Lisa's exit stays out (both do).

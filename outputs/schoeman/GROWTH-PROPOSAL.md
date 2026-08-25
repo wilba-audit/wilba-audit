@@ -188,7 +188,7 @@ And because it's built as a repeatable approach, the same foundation can grow wi
 
 Most clinics buy these as separate services: a social media manager, an ads manager, a funnel build, and someone to handle tracking and reporting. Here they're one partnership, working together.
 
-**The Growth Build — £2,500** *(one-time)*
+**The Growth Build — $2,500** *(one-time · approximately £1,850)*
 Everything set up and ready to run:
 - The June breakout investigation
 - Account architecture and a clear role for each Instagram account
@@ -199,7 +199,7 @@ Everything set up and ready to run:
 - Tracking and measurement, so every step is visible
 - Your reporting, live from day one
 
-**The Growth Partnership — £2,000 per month** *(all platforms)*
+**The Growth Partnership — $2,000 per month** *(all platforms · approximately £1,480)*
 The whole engine, run for you:
 - Social strategy and management across Instagram and LinkedIn
 - Content ideation, editing, repurposing, captions and creative
@@ -213,7 +213,9 @@ The whole engine, run for you:
 Paid straight to the platforms, controlled entirely by you, and kept small while we prove what works.
 **From £1,000–£2,000 per month to begin**
 
-Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for £2,000 a month.
+Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for $2,000 a month.
+
+*Fees are billed in US dollars. Sterling figures are approximate, at today's exchange rate.*
 
 **The economics we'll establish together.** Rather than promise a return I can't yet prove, the first phase establishes your real numbers: cost per lead, cost per qualified lead, lead to consultation, consultation to patient where we can measure it, a sustainable acquisition cost, and your capacity limits. So we can answer, with your figures:
 
