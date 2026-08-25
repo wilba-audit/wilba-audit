@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>The Schoeman Growth Partnership</title>
+<style>
+  :root{
+    --bone:#F6F7F4; --panel:#FFFFFF; --ink:#1A2724; --ink-soft:#4C5B56;
+    --line:#DCE2DD; --teal:#1E6E6A; --teal-deep:#12514D; --clay:#B67C74;
+    --strong:#3B7A57; --gold:#B0812B;
+    --serif:Georgia,"Iowan Old Style",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--ink);line-height:1.62;font-size:11.4pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  @page{ size:A4; margin:0; }
+  .page{
+    position:relative; width:210mm; min-height:297mm; padding:24mm 22mm 20mm;
+    background:var(--panel); page-break-after:always;
+  }
+  .page:last-child{page-break-after:auto}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.14;margin:0}
+  p{margin:0 0 10pt;max-width:150mm}
+  .kicker{font-family:var(--mono);font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin:0 0 10pt}
+  .h{font-size:21pt;letter-spacing:-.01em;margin:0 0 12pt;color:var(--ink)}
+  .sub{color:var(--ink-soft)}
+  .foot{position:absolute;left:22mm;right:22mm;bottom:12mm;display:flex;justify-content:space-between;
+    font-family:var(--mono);font-size:7.5pt;letter-spacing:.1em;text-transform:uppercase;color:#9aa8a2;border-top:1px solid var(--line);padding-top:6pt}
+  strong,b{color:var(--ink)}
+  em{color:var(--teal-deep);font-style:italic}
+  ul{margin:6pt 0 10pt;padding-left:16pt}
+  li{margin:3pt 0}
+  .lead{font-size:13pt;line-height:1.5;color:var(--ink-soft)}
+  .rule{height:2px;width:44pt;background:var(--teal);margin:0 0 16pt;border-radius:2px}
+
+  /* Cover */
+  .cover{display:flex;flex-direction:column;justify-content:center;background:
+    linear-gradient(160deg,#12514D 0%,#1E6E6A 60%,#2B7E76 100%);color:#F3F7F5}
+  .cover .brand{font-family:var(--mono);font-size:9pt;letter-spacing:.34em;text-transform:uppercase;color:#Bfe3dd;margin-bottom:auto}
+  .cover h1{font-size:33pt;line-height:1.1;color:#fff;max-width:150mm;margin:0 0 16pt}
+  .cover .subtitle{font-size:13.5pt;color:#DCEFEA;max-width:135mm;line-height:1.5}
+  .cover .prep{font-family:var(--mono);font-size:9pt;letter-spacing:.08em;text-transform:uppercase;color:#Bfe3dd;margin-top:26pt}
+
+  .callout{background:#F0F6F4;border:1px solid #CFE4DE;border-left:3px solid var(--teal);
+    border-radius:6px;padding:12pt 15pt;margin:6pt 0 12pt}
+  .quote{font-family:var(--serif);font-size:14pt;line-height:1.45;color:var(--teal-deep);
+    border-left:3px solid var(--clay);padding-left:14pt;margin:14pt 0}
+  .stat{font-family:var(--serif);font-size:40pt;color:var(--teal);line-height:1}
+  .stat small{font-size:16pt;color:var(--ink-soft)}
+  .findings > div{padding:9pt 0;border-bottom:1px solid var(--line)}
+  .findings > div:last-child{border-bottom:0}
+  .findings .n{font-family:var(--serif);color:var(--clay);font-size:13pt;margin-right:8pt}
+  .diagram{font-family:var(--mono);font-size:9pt;line-height:1.9;background:#F0F6F4;border:1px solid #CFE4DE;
+    border-radius:6px;padding:14pt 16pt;color:var(--teal-deep);white-space:pre-wrap;margin:10pt 0}
+  .cols{display:flex;gap:14pt}
+  .cols > div{flex:1;background:#FAFBFA;border:1px solid var(--line);border-radius:6px;padding:12pt 14pt}
+  .cols h3{font-size:12pt;margin-bottom:4pt}
+  .price{background:#FAFBFA;border:1px solid var(--line);border-radius:8px;padding:14pt 16pt;margin:8pt 0}
+  .price .amt{font-family:var(--serif);font-size:17pt;color:var(--teal-deep)}
+  .price .amt small{font-size:10pt;color:var(--ink-soft)}
+  .price h3{font-size:12.5pt;margin-bottom:2pt}
+  .tag{font-family:var(--mono);font-size:8pt;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+  .mini{font-size:9pt;color:#9aa8a2}
+  .stepbar{display:flex;gap:8pt;margin:10pt 0}
+  .stepbar > div{flex:1;background:#F0F6F4;border:1px solid #CFE4DE;border-radius:6px;padding:9pt 10pt}
+  .stepbar h3{font-size:10.5pt;color:var(--teal-deep);margin-bottom:2pt}
+  .stepbar p{font-size:8.7pt;margin:0;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="brand">WILBA · wilba.ai</div>
+  <h1>You've already proven the demand is there. Here's how we make it repeatable.</h1>
+  <div class="subtitle">The Schoeman Growth Partnership — social authority, paid acquisition, and a smarter path from attention to patient.</div>
+  <div class="prep">Prepared for Dr Gina Schoeman · by Jess, WILBA</div>
+</section>
+
+<!-- 2 OPPORTUNITY -->
+<section class="page">
+  <p class="kicker">01 — The opportunity</p>
+  <div class="rule"></div>
+  <h2 class="h">The one thing worth knowing first.</h2>
+  <p class="lead">Something in the market has already responded to Dr Gina. Earlier this summer, your clinic's Instagram grew roughly fivefold in a matter of weeks, then faded. That answers the hardest question in marketing: the right people will respond to you.</p>
+  <p>What's missing is the way to catch that response, qualify it, and hand it — ready — to the follow-up your clinic already has taking shape. This proposal is about building that missing piece: turning your expertise into steady, qualified patient demand.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 02</span></div>
+</section>
+
+<!-- 3 HOMEWORK -->
+<section class="page">
+  <p class="kicker">02 — We did the homework</p>
+  <div class="rule"></div>
+  <h2 class="h">This didn't come from a template. I studied your digital presence.</h2>
+  <p class="sub">Before recommending anything, here's exactly what I reviewed, and what I didn't.</p>
+  <div class="cols">
+    <div><h3>Instagram — analytics</h3><p class="mini">Both accounts, historical performance, follower trends, views, the June breakout, and the role each account plays.</p></div>
+    <div><h3>Facebook — analytics</h3><p class="mini">Both pages, and the reality of the organic audiences.</p></div>
+  </div>
+  <div class="cols" style="margin-top:12pt">
+    <div><h3>LinkedIn — content</h3><p class="mini">Your posts, topics, openings, formatting and link placement. The content, not the analytics — I don't have LinkedIn's numbers, so nothing here is a LinkedIn performance claim.</p></div>
+    <div><h3>How it connects</h3><p class="mini">The parts of your patient journey and communication set-up that matter for where qualified interest should go next.</p></div>
+  </div>
+  <p style="margin-top:14pt"><em>I'd rather be precise about what I know than impressive about what I don't.</em></p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 03</span></div>
+</section>
+
+<!-- 4 FINDINGS -->
+<section class="page">
+  <p class="kicker">03 — What the data tells us</p>
+  <div class="rule"></div>
+  <h2 class="h">Five things worth your attention.</h2>
+  <div class="findings">
+    <div><span class="n">1</span><strong>The market has already responded to you.</strong> More on this next.</div>
+    <div><span class="n">2</span><strong>Your authority is spread across two accounts</strong> (Dr Gina ~2,350 followers; The Schoeman Clinic ~1,515). A chance to give each a clear job, rather than two calendars pulling against each other.</div>
+    <div><span class="n">3</span><strong>LinkedIn has the expertise; the delivery can lift it.</strong> Credible, knowledgeable and consistent, with room in the openings, formatting, link placement and reuse. <span class="mini">(Content review.)</span></div>
+    <div><span class="n">4</span><strong>Facebook isn't worth organic effort right now</strong> (very small audiences). That's separate from Meta as a paid platform — a different tool for a different job.</div>
+    <div><span class="n">5</span><strong>Right now, attention has nowhere useful to go.</strong> The single biggest opportunity, and it's next.</div>
+  </div>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 04</span></div>
+</section>
+
+<!-- 5 JUNE -->
+<section class="page">
+  <p class="kicker">04 — The June signal</p>
+  <div class="rule"></div>
+  <h2 class="h">You're not starting from zero.</h2>
+  <div class="stat">~300 → ~1,500<br><small>followers · peak week ~23,000 views</small></div>
+  <p style="margin-top:14pt">In June, your clinic's Instagram grew from around 300 followers to roughly 1,500, with a peak week of about 23,000 views. Then visibility fell away.</p>
+  <p>I'm not going to call that “going viral”, because we don't yet know what caused it, and pretending we do would be guessing with your money.</p>
+  <p>Here's why it matters: the market has already shown your expertise can attract the right kind of attention. So instead of guessing what to post next, our first job is to determine what drove it, whether it reached the right audience, and how to build a repeatable way of creating that response — then amplify what works.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 05</span></div>
+</section>
+
+<!-- 6 MISSING LINK -->
+<section class="page">
+  <p class="kicker">05 — The missing link</p>
+  <div class="rule"></div>
+  <h2 class="h">When someone discovers you today, what happens next?</h2>
+  <p class="lead">Someone sees an excellent post from Gina. Then what? Do we learn who they are, understand their problem, follow up, or know if they ever booked?</p>
+  <p>Today, almost none of that happens. The trail ends at a like, and warm interest quietly disappears.</p>
+  <div class="quote">Closing that gap is where the growth is.</div>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 06</span></div>
+</section>
+
+<!-- 7 BIG REVEAL -->
+<section class="page">
+  <p class="kicker">06 — The big reveal</p>
+  <div class="rule"></div>
+  <h2 class="h">The opportunity isn't more content. It's connecting what you already have.</h2>
+  <p class="sub">Three layers — and only the first two are what I'm proposing to build. The third already exists in your clinic.</p>
+  <ul>
+    <li><strong>Layer 1 — Authority.</strong> Your expertise, turned into content that grows the right audience organically.</li>
+    <li><strong>Layer 2 — Acquisition.</strong> Paid campaigns that amplify what works, an educational assessment that qualifies interest, and a clear next step.</li>
+    <li><strong>Layer 3 — Connection (your existing infrastructure).</strong> The consented communication, WhatsApp follow-up and safe clinical escalation your clinic already has taking shape.</li>
+  </ul>
+  <p><em>I'm not rebuilding Layer 3. I'm building the growth layer that feeds qualified, ready people into it.</em></p>
+  <div class="diagram">MY WORK
+EXPERTISE → CONTENT → ORGANIC ATTENTION → PAID ACQUISITION →
+EDUCATIONAL ASSESSMENT → QUALIFIED INTEREST
+        │
+        ▼  (handed to your existing infrastructure)
+CONSENTED COMMUNICATION → WHATSAPP / FOLLOW-UP →
+SAFE CLINICAL ESCALATION → CONSULTATION → PATIENT
+        │
+        ▼
+DATA / INSIGHT  ↺  BETTER CONTENT + BETTER ACQUISITION</div>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 07</span></div>
+</section>
+
+<!-- 8 PATIENT -->
+<section class="page">
+  <p class="kicker">07 — The patient experience</p>
+  <div class="rule"></div>
+  <h2 class="h">Imagine one of your future patients.</h2>
+  <p>A woman sees a short video from Gina naming something she's quietly lived with for months. Instead of a cold “book a consultation”, she's offered something more useful: a short, educational assessment that helps her understand what might be worth discussing with a clinician.</p>
+  <p>She learns something. The clinic quietly learns what she's looking for. If she consents, she moves into the follow-up your clinic already runs, and any clinical question goes straight to a clinician.</p>
+  <p>That's the difference between getting attention and turning it into patients. Advertising stops producing traffic, and starts producing qualified intent.</p>
+  <div class="callout"><strong>The assessment educates and guides.</strong> It never diagnoses, and it never replaces a clinical consultation.</div>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 08</span></div>
+</section>
+
+<!-- 9 IHF -->
+<section class="page">
+  <p class="kicker">08 — Why this isn't theory</p>
+  <div class="rule"></div>
+  <h2 class="h">I've seen this work, not just drawn it on a diagram.</h2>
+  <p>The assessment-to-follow-up approach isn't something I'm proposing because it looks neat on a funnel. I've led marketing inside a health business built on the same principle: paid acquisition feeding a structured assessment and a proper follow-up journey, rather than sending cold traffic straight to a booking.</p>
+  <p>The lesson stuck with me. In a high-trust field like yours, the strongest results don't come from more clicks. They come from giving interested people the right next step, so they arrive better informed and genuinely ready.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 09</span></div>
+</section>
+
+<!-- 10 SOCIAL -->
+<section class="page">
+  <p class="kicker">09 — Your social, done properly</p>
+  <div class="rule"></div>
+  <h2 class="h">Two accounts, one clear purpose each.</h2>
+  <div class="cols">
+    <div><h3>Dr Gina — the authority voice</h3><p class="mini">Your expertise, your perspective, your story. The person patients come to trust.</p></div>
+    <div><h3>The Schoeman Clinic — trust &amp; conversion</h3><p class="mini">Your team, your services, the patient journey, and the natural home for introducing your new doctors.</p></div>
+  </div>
+  <p style="margin-top:12pt">They feed and amplify each other, instead of running as two separate calendars. First, we confirm what drove June, so the plan is built on evidence.</p>
+  <p class="sub">And this is a full professional service, not just posting: channel strategy and account roles, content pillars and planning, editing and repurposing, captions and creative, publishing and optimisation, and steady testing of hooks, formats and what actually gets discovered.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 10</span></div>
+</section>
+
+<!-- 11 PAID -->
+<section class="page">
+  <p class="kicker">10 — Paid growth</p>
+  <div class="rule"></div>
+  <h2 class="h">Advertising, without the gamble.</h2>
+  <p class="lead">Paid isn't “boosting posts”. Think of it as controlled access to new demand.</p>
+  <p>Organic shows us what genuinely resonates. Paid then places those proven messages in front of more of the right people. The assessment gives them a useful next step. Your follow-up stops warm interest slipping away. And measurement tells us whether it's actually worth it.</p>
+  <div class="quote">We start small, you control the budget, and we increase spend only when the evidence earns it. Prove before scale.</div>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 11</span></div>
+</section>
+
+<!-- 12 DIFFERENT -->
+<section class="page">
+  <p class="kicker">11 — Why this is different</p>
+  <div class="rule"></div>
+  <h2 class="h">It isn't “social plus ads”.</h2>
+  <ul>
+    <li><strong>A social media manager</strong> creates and distributes content.</li>
+    <li><strong>An ads manager</strong> buys and optimises traffic.</li>
+    <li><strong>This partnership</strong> builds your authority organically, learns what resonates, uses paid to amplify proven messages, adds a useful assessment that qualifies interest, connects that interest into your clinic's existing follow-up, and measures what happens — so every cycle improves the next.</li>
+  </ul>
+  <p>That connection, from a first post all the way to a qualified patient conversation, is why this is worth more than either service on its own.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 12</span></div>
+</section>
+
+<!-- 13 COMPOUNDING -->
+<section class="page">
+  <p class="kicker">12 — The compounding advantage</p>
+  <div class="rule"></div>
+  <h2 class="h">Most marketing starts again every Monday. This gets better every month.</h2>
+  <ul>
+    <li><strong>Month one:</strong> what earns attention?</li>
+    <li><strong>Month two:</strong> what turns attention into a completed assessment?</li>
+    <li><strong>Month three:</strong> which audiences become real conversations?</li>
+    <li><strong>Month four onward:</strong> which of those lead to consultations?</li>
+  </ul>
+  <div class="quote">The lasting asset isn't only the audience we build. It's what the clinic learns about that audience — and no one can copy that.</div>
+  <p class="sub">And because it's built as a repeatable approach, the same foundation can grow with you: new doctors as they join, new services, longevity and men's health, events and partnerships, and in time wider reach. Growth that doesn't have to be reinvented every step.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 13</span></div>
+</section>
+
+<!-- 14 HOW IT RUNS -->
+<section class="page">
+  <p class="kicker">13 — How it runs, and your part in it</p>
+  <div class="rule"></div>
+  <h2 class="h">Your expertise, without another job.</h2>
+  <p class="sub">The 90-day proof phase — built to produce evidence, not promises.</p>
+  <div class="stepbar">
+    <div><h3>Days 1–30 · Understand</h3><p>June, baseline, account roles, capacity, patient value, measurement.</p></div>
+    <div><h3>Days 31–60 · Build &amp; launch</h3><p>Content, assessment, creative, tracking, follow-up link, first controlled campaigns.</p></div>
+    <div><h3>Days 61–90 · Learn &amp; decide</h3><p>Lead quality, cost per qualified lead, conversion — scale, change, or stop.</p></div>
+  </div>
+  <p style="margin-top:12pt"><strong>Your part is light.</strong> You're a busy clinician, not a content team. I batch and repurpose so I'm not forever asking for more. From you: your expertise in focused sessions, clinical approval where it's needed, and the occasional review. From me: the strategy, content, campaigns, assessment, measurement, and the constant refining.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 14</span></div>
+</section>
+
+<!-- 15 INVESTMENT -->
+<section class="page">
+  <p class="kicker">14 — Investment</p>
+  <div class="rule"></div>
+  <h2 class="h">Everything included, and what it's worth.</h2>
+  <p class="sub">Most clinics buy these as separate services: a social media manager, an ads manager, a funnel build, and someone to handle tracking. Here they're one partnership.</p>
+  <div class="price">
+    <div class="tag">One-time</div>
+    <h3>The Growth Build</h3>
+    <div class="amt">$2,500 <small>· approximately £1,850</small></div>
+    <p class="mini" style="margin-top:4pt">June breakout investigation · account architecture &amp; roles · content strategy · paid-acquisition strategy · the educational assessment, built · the lead-capture &amp; funnel journey · tracking &amp; measurement · reporting from day one.</p>
+  </div>
+  <div class="price">
+    <div class="tag">Monthly · all platforms</div>
+    <h3>The Growth Partnership</h3>
+    <div class="amt">$2,000 / month <small>· approximately £1,480</small></div>
+    <p class="mini" style="margin-top:4pt">Social strategy &amp; management (Instagram + LinkedIn) · content, editing, repurposing, captions &amp; creative · publishing, optimisation &amp; testing · Meta campaign management &amp; paid creative · the assessment &amp; funnel, refined · measurement, reporting &amp; monthly strategy.</p>
+  </div>
+  <div class="price">
+    <div class="tag">Separate · you control it</div>
+    <h3>Advertising budget</h3>
+    <div class="amt">from $1,000 / month <small>· about £740</small></div>
+    <p class="mini" style="margin-top:4pt">Paid straight to the platforms. A sensible minimum to learn from, scaled only as the evidence supports it.</p>
+  </div>
+  <p class="mini">Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one. Fees are billed in US dollars; sterling figures are approximate, at today's exchange rate.</p>
+  <div class="foot"><span>The Schoeman Growth Partnership</span><span>Confidential · 15</span></div>
+</section>
+
+<!-- 16 NEXT STEP -->
+<section class="page">
+  <p class="kicker">15 — The next step</p>
+  <div class="rule"></div>
+  <h2 class="h">Let's map your first 90 days.</h2>
+  <p class="lead">You've got the full picture of what I'm recommending. The call isn't to explain it again — it's to switch it on: confirm your capacity, align on priorities and patient value, finalise the scope, and agree a start date.</p>
+  <p>A focused 30 to 45 minutes, and the proof phase begins.</p>
+  <div class="quote">Let's find a time this week.</div>
+  <p style="margin-top:26pt;font-family:var(--mono);font-size:8.5pt;letter-spacing:.1em;text-transform:uppercase;color:#9aa8a2">Jess · WILBA · wilba.ai</p>
+</section>
+
+</body>
+</html>

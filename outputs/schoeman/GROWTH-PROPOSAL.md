@@ -210,8 +210,7 @@ The whole engine, run for you:
 - Continuous improvement, so it gets better every month
 
 **Advertising budget** *(separate)*
-Paid straight to the platforms, controlled entirely by you, and kept small while we prove what works.
-**From £1,000–£2,000 per month to begin**
+Paid straight to the platforms, controlled entirely by you. I'd suggest a minimum of **$1,000 per month** *(about £740)* to start, so there's enough to learn from, scaled only as the evidence supports it. You decide what you're comfortable with.
 
 Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for $2,000 a month.
 
