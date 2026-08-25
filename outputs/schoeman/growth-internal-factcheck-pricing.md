@@ -51,3 +51,28 @@
 8. Confirm the **call slot** you'll offer this week.
 9. Make sure the proposal **doesn't duplicate Nadia's** doctor-intro social remit (positioned as complementary).
 10. Final read for **em dashes / emojis** (Gina's preferences) and banned agency words.
+
+---
+
+## 4. FINAL HARDENING PASS (29 Jul) — pricing verdict + weaknesses fixed
+
+### 7 weaknesses found & fixed
+1. **June stat repeated verbatim** across pages → now: P2 teases ("roughly fivefold"), P5 states it in full once, P11 drops the numbers. Momentum restored.
+2. **Price felt unexplained** vs the £1,850 social anchor → P15 now opens with a value anchor ("managing social well is a full discipline; this is that *plus* paid, assessment, tracking, strategy").
+3. **Read as "social + ads"** in places → paid reframed as "controlled access to new demand" (P10); every marketing page ties back to patients.
+4. **Homework buckets muddled** → P3 now cleanly separates Analytics-reviewed / Content-reviewed / Business-&-systems-reviewed, and is explicit about what we did NOT analyse.
+5. **Overuse of "system"/"engine"** → trimmed and varied throughout.
+6. **P14 generic** → now "Your expertise, without another job," names the busy-clinician reality, promises batching/repurposing.
+7. **Overlap-with-$10k risk** → P2 draws the receiving-vs-acquisition line early; P15 "continues everything we already do for you" makes the $1k continuity explicit, not a second invoice.
+
+### FINAL PRICING VERDICT (internal) — CHANGED
+Workload estimate for the monthly scope ≈ **45–55 hrs/mo** (strategy, 2 IG + LinkedIn management, editing/repurposing, Meta campaign management + creative, funnel/assessment optimisation, reporting, meetings, follow-up coordination).
+- **£3,750** ⇒ ~£70–83/hr — **too low** once paid-campaign management (genuinely 15–20 hrs/mo of skilled work) sits on top of social. Risk of resentment / scope creep.
+- **£4,250 ⭐ CHOSEN** ⇒ ~£77–94/hr — sustainable senior rate, not underpriced, still an easy-ish yes for a premium London clinic. Of the £4,250: ~£790 continues existing support+pass-through, ~£3,460 is growth (well above the £1,850 social-only anchor, reflecting paid + funnel + tracking + strategy).
+- **£4,500 / £5,000** ⇒ defensible but a harder first-commitment yes; hold as future step-up once proven.
+- **Build £4,500:** DEFEND, with an internal SOW guardrail — assessment **v1**, a capped set of initial creatives, **one** funnel — so it ships without resentment. (~45–55 hrs ≈ ~£90/hr, in line with the original build's ~$97/hr.)
+- **Media:** £1,000–£2,000/mo start, separate, Gina-controlled.
+- **$1k:** unify into the £4,250 (client sees one number); protect the support scope + pass-through; **confirm with Mati before contracting.**
+
+### Client-facing changes applied
+GROWTH-PROPOSAL.md P15 monthly £3,750 → **£4,250**; cheat-sheet price line updated; email de-risked ("no pressure" removed, replaced with warm certainty); CTA → "Let's map your first 90 days" (activate, not discover).

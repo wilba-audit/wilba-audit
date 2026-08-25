@@ -1,11 +1,11 @@
 # The Schoeman Growth Partnership
-### Client-facing proposal copy — ready for premium design/PDF. Prepared for Dr Gina Schoeman by Jess, WILBA.
+### Client-facing proposal copy (hardened) — ready for premium design/PDF. Prepared for Dr Gina Schoeman by Jess, WILBA.
 
 ---
 
 ## PAGE 1 — COVER
 # You've already proven the demand is there. Here's how we make it repeatable.
-**The Schoeman Growth Partnership — building the next layer of growth for The Schoeman Clinic.**
+**The Schoeman Growth Partnership — the next layer of growth for The Schoeman Clinic.**
 
 Prepared for Dr Gina Schoeman · by Jess, WILBA
 
@@ -14,50 +14,48 @@ Prepared for Dr Gina Schoeman · by Jess, WILBA
 ## PAGE 2 — THE OPPORTUNITY
 ### The one thing worth knowing first.
 
-In June, your clinic's Instagram grew from around 300 to roughly 1,500 followers, with a peak week of about 23,000 views. That answered the hardest question in marketing: will the right people respond to Dr Gina? They did.
+Something in the market has already responded to Dr Gina. Earlier this summer, your clinic's Instagram grew roughly fivefold in a matter of weeks, then faded. That answers the hardest question in marketing: the right people will respond to you.
 
-What's missing isn't more content. It's the system that catches that response, qualifies it, follows it up safely, and learns from every patient it brings in. And the part of that system that looks after people once they arrive is already being built.
+What's missing is the way to catch that response, follow it up safely, and turn it into patients. We've spent recent months building the side of this that looks after people once they reach you. This is about building the side that brings the right people in.
 
 ---
 
 ## PAGE 3 — WE DID THE HOMEWORK
-### Before we recommend anything, here's what we actually looked at.
+### This didn't come from a template. We studied your clinic.
 
-We reviewed:
-- Both Instagram accounts, and the performance history available to us
-- Both Facebook pages
-- Your LinkedIn content
-- Your content patterns, and how your audience is spread across accounts
-- The role each channel is currently playing
-- And, because we're already inside it: your patient journey, your WhatsApp and knowledge-base work, and the clinical-escalation design
+Before recommending anything, here's exactly what we reviewed, and what we didn't.
 
-One point of honesty: on LinkedIn we reviewed the **content**, not the analytics, because we don't have them. So nothing here about LinkedIn is a performance claim.
+- **Analytics we reviewed:** Dr Gina Instagram, The Schoeman Clinic Instagram, the historical Instagram performance available to us, and both Facebook pages.
+- **Content we reviewed:** your LinkedIn posts. We looked at the content itself, not the analytics, because we don't have LinkedIn's numbers. So nothing here about LinkedIn is a performance claim.
+- **Business and systems we reviewed:** your patient journey, the WhatsApp and knowledge-base work, the clinical-escalation design, the Phase 1 build already underway, and the growth ideas already on the table for what comes next.
 
-*This isn't a template. We studied your clinic.*
+We'd rather be precise about what we know than impressive about what we don't.
 
 ---
 
 ## PAGE 4 — WHAT THE DATA TELLS US
 ### Five things worth your attention.
 
-**1. The audience has already responded.** Your clinic account's June growth shows the appetite for your expertise is real. The opportunity is to understand what caused it and make that kind of response repeatable.
+**1. The market has already responded to you.** More on this next.
 
-**2. Your authority is spread across two accounts** (Dr Gina, around 2,350 followers; The Schoeman Clinic, around 1,515). That's not a problem. It's a chance to give each a clear job, instead of running two separate content calendars.
+**2. Your authority is spread across two accounts** (Dr Gina, around 2,350 followers; The Schoeman Clinic, around 1,515). A chance to give each a clear job, rather than two calendars pulling against each other.
 
-**3. LinkedIn has the expertise; the distribution can lift it.** Your content is credible, knowledgeable and consistent. There's clear room in the hooks, the formatting, where links sit, and how posts are repurposed. *(Content review, not a performance claim.)*
+**3. LinkedIn has the expertise; the delivery can lift it.** Credible, knowledgeable and consistent, with clear room in the openings, the formatting, where links sit, and how posts are reused. *(Content review.)*
 
-**4. Facebook isn't where organic effort belongs right now.** The audiences are very small. That says nothing about Meta as a paid platform, which is a different tool for a different job.
+**4. Facebook isn't worth organic effort right now.** The audiences are very small. That's separate from Meta as a paid platform, which is a different tool for a different job.
 
-**5. Right now, attention has nowhere intelligent to go.** This is the big one, and it's next.
+**5. Right now, attention has nowhere useful to go.** The single biggest opportunity, and it's next.
 
 ---
 
 ## PAGE 5 — THE JUNE SIGNAL
-### You've already had the breakthrough. It simply wasn't built to last, yet.
+### You're not starting from zero.
 
-In June, the clinic account went from around 300 to roughly 1,500 followers, with a peak week of about 23,000 views. Then visibility fell away.
+In June, your clinic's Instagram went from around 300 followers to roughly 1,500, with a peak week of about 23,000 views. Then visibility fell away.
 
-We're deliberately not calling this "going viral", because we don't yet know exactly what caused it. That's the point. The first thing we do together is find out. Whatever created that response is something we can study and build on deliberately, rather than hoping it happens again.
+We're not going to call that "going viral", because we don't yet know what caused it, and pretending we do would be guessing with your money.
+
+Here's why it matters: the market has already shown your expertise can attract the right kind of attention. So instead of guessing what to post next, our first job is to investigate what produced that response, and build from the evidence.
 
 *Visual: a simple line — quiet, a sharp June rise, then a decline.*
 
@@ -66,40 +64,24 @@ We're deliberately not calling this "going viral", because we don't yet know exa
 ## PAGE 6 — THE MISSING LINK
 ### When someone discovers you today, what happens next?
 
-Someone sees an excellent post from Gina. Then what? Do we capture their interest? Understand their problem? Follow up? Know whether they booked? Learn anything from it?
+Someone sees an excellent post from Gina. Then what? Do we learn who they are, understand their problem, follow up, or know if they ever booked?
 
-Today, mostly not. The trail ends at a like. Attention is being created, and then quietly lost.
+Today, almost none of that happens. The trail ends at a like, and warm interest quietly disappears.
 
-Closing that gap is the single biggest opportunity in this document.
+Closing that gap is where the growth is.
 
 ---
 
 ## PAGE 7 — THE BIG REVEAL
 ### The opportunity isn't more content. It's connecting what you already have.
 
-Everything we reviewed is a piece of the same machine: your expertise, your audiences, the June signal, your LinkedIn authority, and the patient communication, WhatsApp, knowledge and safe escalation already being built.
+You already own the hard parts: your expertise, two established audiences, the June response, your LinkedIn authority, and the patient communication, follow-up and safe clinical escalation being built right now.
 
-Connected, each piece makes the next one work, and the whole thing gets better over time.
+Joined up, they stop being separate efforts and become one path from attention to patient, that gets smarter each time.
 
-*Visual (kept simple):*
 ```
-   DR GINA'S EXPERTISE
-        ↓
-   ORGANIC AUTHORITY
-        ↓
-   ORGANIC + PAID DISTRIBUTION
-        ↓
-   EDUCATIONAL ASSESSMENT
-        ↓
-   QUALIFIED INTEREST
-        ↓
-   CONSENTED WHATSAPP FOLLOW-UP
-        ↓
-   OPERATIONAL NURTURE  →  SAFE HUMAN / CLINICAL ESCALATION
-        ↓
-   CONSULTATION  →  PATIENT
-        ↓
-   DATA + LEARNING  ↺  BETTER CONTENT + BETTER CAMPAIGNS
+EXPERTISE → ATTENTION → QUALIFIED INTEREST → FOLLOW-UP →
+CONSULTATION → PATIENT → LEARNING ↺ BETTER ACQUISITION
 ```
 
 ---
@@ -107,114 +89,113 @@ Connected, each piece makes the next one work, and the whole thing gets better o
 ## PAGE 8 — THE PATIENT EXPERIENCE
 ### Imagine one of your future patients.
 
-A woman sees a short video from Gina naming a problem she's quietly lived with for months. Instead of a cold "book a consultation", she's invited to understand what might be worth discussing with a clinician.
+A woman sees a short video from Gina naming something she's quietly lived with for months. Instead of a cold "book a consultation", she's offered something more useful: a short, educational assessment that helps her understand what might be worth discussing with a clinician.
 
-She completes a short, genuinely useful educational assessment. Not a diagnosis. She receives helpful, non-diagnostic guidance. The clinic quietly learns what she's looking for. If she consents, the communication systems you're already building continue the conversation, and any clinical question is passed to a clinician.
+She learns something. The clinic quietly learns what she's looking for. If she consents, the follow-up we're already building continues the conversation, and any clinical question goes straight to a clinician.
 
-That's the difference between creating attention and building a way to turn it into patients.
+That's the difference between getting attention and turning it into patients.
 
-> *Educational and routing only, never a diagnosis. Consent-based, and clinical questions always go to a clinician.*
+> *The assessment educates and guides. It never diagnoses, and it never replaces a clinical consultation.*
 
 ---
 
 ## PAGE 9 — ORGANIC AUTHORITY
-### Two accounts, working as one.
+### Two accounts, one clear purpose each.
 
 **Dr Gina becomes the authority voice:** your expertise, your perspective, your story, the person patients come to trust.
 
-**The Schoeman Clinic becomes the trust-and-conversion voice:** your team, your services, the patient journey, the practical next steps, and the natural home for introducing your new doctors.
+**The Schoeman Clinic becomes the trust-and-conversion voice:** your team, your services, the patient journey, and the natural home for introducing your new doctors.
 
-They share content and amplify each other, instead of running as two disconnected calendars. First, we confirm what drove June, so the plan is built on evidence, not guesswork.
+They feed and amplify each other, instead of running as two separate calendars. First, we confirm what drove June, so the plan is built on evidence.
 
 ---
 
 ## PAGE 10 — PAID GROWTH
-### Advertising, without gambling.
+### Advertising, without the gamble.
 
-Paid growth here doesn't mean spending money boosting posts. It means learning first.
+Paid isn't "boosting posts". Think of it as controlled access to new demand.
 
-- **Test** small, controlled campaigns.
-- **Learn** which patient problems and messages attract the right people.
-- **Prove** whether we can create qualified enquiries at a sensible cost.
-- **Optimise** the creative, the audience, the assessment and the follow-up.
-- **Scale** only when the evidence supports it.
+Organic shows us what genuinely resonates. Paid then places those proven messages in front of more of the right people. The assessment gives them a useful next step. The follow-up stops warm interest slipping away. And measurement tells us whether it's actually worth it.
 
-We call it **prove before scale**, and it runs through everything we do. The aim isn't cheap clicks. It's the cost of a genuinely qualified patient opportunity.
+We start small, you control the budget, and we increase spend only when the evidence earns it. We call that proving before scaling.
 
 ---
 
 ## PAGE 11 — THE COMPOUNDING ADVANTAGE
 ### Most marketing starts again every Monday. This gets better every month.
 
-- **Month one:** what attracts attention?
-- **Month two:** what gets the assessment completed?
-- **Month three:** which audiences create qualified conversations?
-- **Month four and beyond:** which journeys appear to lead to consultations?
+- **Month one:** what earns attention?
+- **Month two:** what turns attention into a completed assessment?
+- **Month three:** which audiences become real conversations?
+- **Month four onward:** which of those lead to consultations?
 
-Each answer feeds the next round of content, ads and follow-up.
+Each answer sharpens the next round of content, ads and follow-up.
 
-> **The asset isn't only the audience we build. It's what the clinic learns about that audience.**
+> **The lasting asset isn't only the audience we build. It's what the clinic learns about that audience, and no one can copy that.**
 
 ---
 
 ## PAGE 12 — THE 90-DAY PROOF PHASE
 ### The first 90 days are built to produce evidence, not promises.
 
-**Days 1–30 · Understand.** Study June. Establish a baseline. Agree each account's role. Understand your capacity. Get a picture of patient value. Set up tracking. Agree the assessment concept.
+**Days 1–30 · Understand.** Study June. Set a baseline. Agree each account's role. Understand your capacity. Get a picture of patient value. Set up measurement.
 
-**Days 31–60 · Build and launch.** The content engine, the assessment, the creative, the measurement, the connection into your WhatsApp journey, and the first controlled campaigns.
+**Days 31–60 · Build and launch.** The content, the assessment, the creative, the tracking, the link into your follow-up, and the first controlled campaigns.
 
-**Days 61–90 · Learn and decide.** Lead quality, cost per qualified lead, conversion, and a clear decision: scale what works, change what doesn't, and stop what doesn't justify the spend.
+**Days 61–90 · Learn and decide.** Lead quality, cost per qualified lead, conversion, and an honest call on what to scale, what to change, and what to stop.
 
-We're not asking you to believe a forecast. We're building a system designed to show you the truth.
+You won't be asked to trust a forecast. You'll be shown the truth.
 
 ---
 
 ## PAGE 13 — BUILT FOR WHAT COMES NEXT
 ### Built to grow with the clinic, not to be rebuilt every time it does.
 
-Once the engine works, the same foundation could support your new doctors as they join, additional services, women's and men's health, longevity, educational events and webinars, new audiences, and in time new locations.
+- **Today:** you, your team, your current services.
+- **Next:** repeatable, measured demand for those services.
+- **Then:** the same foundation supporting new doctors as they join, new services and clinical focus areas, educational events and webinars, partnerships, and in time new locations and wider reach.
 
-We're not proposing a campaign that has to be reinvented whenever you grow. We're proposing infrastructure that can grow with you.
+The point isn't to spend more on marketing. It's to build growth that doesn't have to be reinvented every time the clinic takes a step forward.
 
 ---
 
 ## PAGE 14 — WHO DOES WHAT
-### Your part is small. Ours is the system.
+### Your expertise, without another job.
 
-**From you:** a focused content session (we also make the most of what you already have), clinical approval where it's needed, your strategic view, access to the relevant data, and the occasional review.
+You're a busy clinician, not a content team, and this is designed around that. We batch and repurpose so we're not forever asking you for more.
 
-**From WILBA:** the content, the repurposing, the distribution, the campaigns, the assessment, the follow-up connection, the measurement and the optimisation.
+**From you:** your expertise in focused sessions, clinical approval where it's needed, and the occasional review.
+**From WILBA:** the content, the campaigns, the assessment, the follow-up connection, the reporting, and the constant refining.
 
-You bring the expertise and the sign-off. We build and run the system.
+You bring the medicine. We run the growth.
 
 ---
 
 ## PAGE 15 — INVESTMENT
 ### How the investment works.
 
-Three simple parts:
+Managing social media well is already a full discipline in its own right. This is that, plus paid acquisition, the assessment, the tracking, and the strategy that ties it together, run as one partnership.
 
-**The Growth Build** *(one-time)* sets everything up: strategy, the June analysis, account architecture, the content system, the assessment, the campaign setup, tracking and reporting.
+**The Growth Build** *(one-time)* sets everything up: the June analysis, the strategy, the content foundations, the assessment, the campaign setup, and the measurement.
 **£4,500**
 
-**The Growth Partnership** *(monthly)* runs it: your social and content, organic growth, paid campaigns, the funnel, the follow-up connection, reporting and ongoing optimisation. This one figure also continues everything we already run for you, so there's one clear relationship rather than a stack of separate retainers.
-**£3,750 per month**
+**The Growth Partnership** *(monthly)* runs all of it, and continues everything we already do for you, so it's one relationship, not a stack of retainers.
+**£4,250 per month**
 
-**Advertising budget** *(separate)* is paid directly to the platforms, controlled by you, and kept small while we prove what works.
+**Advertising budget** *(separate)* is paid straight to the platforms, controlled by you, and kept small while we prove what works.
 **From £1,000–£2,000 per month to begin**
 
-**The economics we'll establish together.** Rather than promise a return we can't yet prove, the proof phase establishes your cost per lead, cost per qualified lead, lead-to-consultation conversion, consultation-to-patient where we can measure it, a sustainable acquisition cost, your capacity limits, and attributable revenue where possible. The goal is to answer, with your real numbers:
+**The economics we'll establish together.** Rather than promise a return we can't yet prove, the first phase establishes your real numbers: cost per lead, cost per qualified lead, lead to consultation, consultation to patient where we can measure it, a sustainable acquisition cost, and your capacity limits. So we can answer, with your figures:
 
-> **If we invest £1 in acquiring qualified demand, what happens next?**
+> **If you invest £1 in acquiring qualified demand, what comes back?**
 
 ---
 
 ## PAGE 16 — THE NEXT STEP
-### The next step is one conversation.
+### Let's map your first 90 days.
 
-A short call to confirm a few things: your capacity to take on new patients, a rough sense of patient value, and what we can already see in the June data. From there, we begin the 90-day proof phase.
+You've got the full picture of what we're recommending. The call isn't to explain it again, it's to switch it on: confirm your capacity, align on priorities and patient value, finalise the scope, and agree a start date.
 
-No leap of faith. The first phase is designed to show you whether this works.
+A focused 30 to 45 minutes, and the proof phase begins.
 
-**Let's find 30–45 minutes this week.**
+**Let's find a time this week.**

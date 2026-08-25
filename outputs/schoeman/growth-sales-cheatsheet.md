@@ -21,7 +21,7 @@ Keep it a conversation, not a pitch. Let her react. British warmth, no jargon, A
 *"Advertising here isn't boosting posts. We test small, learn what attracts the right people, prove it works at a sensible cost, then scale only when the evidence is there. Prove before scale. You control the budget, and it starts small."*
 
 ## PRICE — say it plainly, then stop talking
-*"There are three parts: a one-time growth build at £4,500 to set it all up; a single monthly partnership at £3,750 that runs everything, including continuing the support we already do for you, so it's one relationship not a stack; and a small ad budget, from £1,000 to £2,000 a month to start, paid straight to the platforms and controlled by you."*
+*"There are three parts: a one-time growth build at £4,500 to set it all up; a single monthly partnership at £4,250 that runs everything, including continuing the support we already do for you, so it's one relationship not a stack; and a small ad budget, from £1,000 to £2,000 a month to start, paid straight to the platforms and controlled by you."*
 Then: *"And rather than promise you a return I can't prove yet, the first 90 days establish your real numbers, so we can answer: if you put £1 into acquiring qualified demand, what comes back?"*
 
 ## OBJECTIONS
