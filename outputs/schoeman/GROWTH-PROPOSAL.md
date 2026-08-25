@@ -184,18 +184,36 @@ And because it's built as a repeatable approach, the same foundation can grow wi
 ---
 
 ## PAGE 15 — INVESTMENT
-### How the investment works.
+### Everything included, and what it's worth.
 
-Managing social media well is already a full discipline in its own right. This is that, plus paid acquisition, the assessment, the tracking, and the strategy that ties it together, run as one partnership.
+Most clinics buy these as separate services: a social media manager, an ads manager, a funnel build, and someone to handle tracking and reporting. Here they're one partnership, working together.
 
-**The Growth Build** *(one-time)* sets everything up: the June analysis, the account and content architecture, the paid-acquisition strategy, the assessment, the campaign and tracking set-up.
-**£4,500**
+**The Growth Build — £2,500** *(one-time)*
+Everything set up and ready to run:
+- The June breakout investigation
+- Account architecture and a clear role for each Instagram account
+- Your content strategy and pillars
+- The paid-acquisition strategy and campaign structure
+- The educational assessment, designed and built
+- The lead-capture and funnel journey
+- Tracking and measurement, so every step is visible
+- Your reporting, live from day one
 
-**The Growth Partnership** *(monthly)* runs all of it: your social strategy and management, organic growth, paid campaigns, the assessment and funnel, measurement, reporting and ongoing optimisation.
-**£4,500 per month**
+**The Growth Partnership — £2,000 per month** *(all platforms)*
+The whole engine, run for you:
+- Social strategy and management across Instagram and LinkedIn
+- Content ideation, editing, repurposing, captions and creative
+- Publishing, optimisation, and ongoing testing of hooks and formats
+- Meta campaign management and paid creative testing
+- The assessment and funnel, refined as we learn
+- Measurement, reporting, and monthly strategy
+- Continuous improvement, so it gets better every month
 
-**Advertising budget** *(separate)* is paid straight to the platforms, controlled entirely by you, and kept small while we prove what works.
+**Advertising budget** *(separate)*
+Paid straight to the platforms, controlled entirely by you, and kept small while we prove what works.
 **From £1,000–£2,000 per month to begin**
+
+Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for £2,000 a month.
 
 **The economics we'll establish together.** Rather than promise a return I can't yet prove, the first phase establishes your real numbers: cost per lead, cost per qualified lead, lead to consultation, consultation to patient where we can measure it, a sustainable acquisition cost, and your capacity limits. So we can answer, with your figures:
 
