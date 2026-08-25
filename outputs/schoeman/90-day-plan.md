@@ -13,7 +13,7 @@ reserve real discovery for the **two genuine unknowns** (what drove June, and ca
 |---|---|
 | **Account roles:** Dr Gina = authority, Clinic = conversion/new-doctor intros | Two accounts (2,350 / 1,515); clinic account carried the June breakout |
 | **LinkedIn fixes, day one:** move links to first comment; rewrite soft hooks; stop article-link posts; do more documents + video | Content review: links-in-body throttle; article-links got 1–2 reactions; document + video got 8+4 comments / 14 reactions |
-| **Content pillars** (below) | Her own top topics + the proven-interest niche |
+| **Content pillars** (below) | Her own top topics + high-interest niche territories |
 | **Best formats to lead with:** document carousels + hook-first video | Her best-performing posts |
 | **Assessment theme:** hormones / perimenopause for women 40+ | Her strongest topic cluster (blood markers, perimenopause, biological age) |
 | **Facebook:** deprioritise organic | 5 & 12 followers |
@@ -29,13 +29,13 @@ reserve real discovery for the **two genuine unknowns** (what drove June, and ca
 1. **"You're not imagining it"** — dismissed symptoms (the emotional entry; her IBS-as-a-signal post already shows this lands).
 2. **Blood markers &amp; perimenopause, decoded** — her best-commented topic (the markers document).
 3. **BHRT / hormones, honestly** — her specialty; high search intent.
-4. **Biological age &amp; longevity** — a proven interest area for her (biological-age + GLP-1 posts).
+4. **Biological age &amp; longevity** — a high-interest territory for her (biological-age + GLP-1 posts).
 5. **The Schoeman method / behind the medicine** — POV, consented stories, why functional.
 6. **Men's health (secondary)** — her men's-health post exists; underserved.
 
 **Format rule from her data:** lead with document carousels + hook-first video; retire article-link drops; hook the first line; links in first comment.
 
-## First paid-test matrix (weeks 6–9) — testing HER proven-interest angles, not guesses
+## First paid-test matrix (weeks 6–9) — testing HER high-potential angles as hypotheses, not blind guesses
 | Angle | Hypothesis (from data) | Creative source |
 |---|---|---|
 | "Is it your hormones?" | Perimenopause symptom-awareness is her biggest pull | Existing footage + assessment |

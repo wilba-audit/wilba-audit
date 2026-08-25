@@ -171,15 +171,20 @@ And because it's built as a repeatable approach, the same foundation can grow wi
 
 ---
 
-## PAGE 14 — HOW IT RUNS, AND YOUR PART IN IT
-### Your expertise, without another job.
+## PAGE 14 — YOUR FIRST 90 DAYS
+### Your first 90 days.
 
-**The 90-day proof phase, built to produce evidence, not promises.**
-- **Days 1–30 · Understand:** study June, set a baseline, agree each account's role, understand your capacity, get a picture of patient value, set up measurement.
-- **Days 31–60 · Build and launch:** the content, the assessment, the creative, the tracking, the connection into your follow-up, and the first controlled campaigns.
-- **Days 61–90 · Learn and decide:** lead quality, cost per qualified lead, conversion, and an honest call on what to scale, change, or stop.
+We don't spend a month deciding what we think — the deep dive already did that. We start acting in week one, test our strongest hypotheses, and improve from real evidence. Throughout, your part stays light: your expertise in focused sessions, clinical approval where needed, and the occasional review. I run the rest.
 
-**Your part is light.** You're a busy clinician, not a content team. I batch and repurpose so I'm not forever asking for more. From you: your expertise in focused sessions, clinical approval where it's needed, and the occasional review. From me: the strategy, the content, the campaigns, the assessment, the measurement, and the constant refining.
+**Weeks 1–2 · Turn the audit into action.** Apply the LinkedIn improvements we've already identified (openings, formatting, link placement, repurposing); set up the two-account model; begin content from your strongest topics; pull and analyse June's best-performing posts; establish tracking and baseline reporting; confirm clinic capacity and the Assessment V1 concept. *Content improvement begins in week one — we're not waiting a month to post.*
+
+**Weeks 3–4 · Build the acquisition layer.** Create Assessment V1 (educational, never diagnostic); build the entry journey and tracking; prepare initial paid creative and retargeting audiences; connect the agreed lead handoff into your clinic's existing follow-up (complementary, not rebuilt); keep publishing and optimising.
+
+**Weeks 5–8 · Launch and learn.** Launch controlled Meta tests on our strongest two to four angles. Recommended minimum media budget: **$1,000/month**, enough to run meaningful tests. It's separate from my fee, paid to the platform, and yours to control and adjust; never scaled automatically. We measure creative response, assessment completion, lead quality, cost per lead, and cost per qualified lead where definable.
+
+**Weeks 9–12 · Optimise and decide.** Now we can answer the questions that matter: which messages attract the right people, which create real intent, what a qualified opportunity costs, where people drop out, and whether capacity is sufficient. Then we scale what earns it, improve what shows promise, and stop what doesn't. Prove before scale, in practice.
+
+**By day 90, you'll have:** a working social operating model, an active content engine, a live acquisition journey, real paid-media data, a qualification and assessment process, a clearer view of your acquisition economics, and the evidence for what to scale next. Not a promise of a set number of patients or a guaranteed return — a system producing real answers.
 
 ---
 
@@ -210,7 +215,7 @@ The whole engine, run for you:
 - Continuous improvement, so it gets better every month
 
 **Advertising budget** *(separate)*
-Paid straight to the platforms, controlled entirely by you. I'd suggest a minimum of **$1,000 per month** *(about £740)* to start, so there's enough to learn from, scaled only as the evidence supports it. You decide what you're comfortable with.
+My recommended starting minimum is **$1,000 per month** *(about £740)* — enough to run meaningful tests and begin learning. It's separate from my fee, paid straight to the platforms, and entirely under your control to adjust; never scaled automatically.
 
 Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for $2,000 a month.
 
