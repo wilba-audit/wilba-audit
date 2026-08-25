@@ -1,78 +1,51 @@
-# Phase 2 Growth — INTERNAL: Fact Check, Pricing & Pre-Send Checklist
+# Phase 2 Growth — INTERNAL: Fact Check, Pricing & Send Check (CORRECTED)
 
-**Prepared by:** WILBA (Jess) · **Date:** 2026-07-29 · **INTERNAL ONLY — not for client.**
+**Prepared by:** WILBA (Jess) · **Date:** 2026-07-29 · **INTERNAL ONLY.**
 
-## 1. FINAL FACT CHECK (key facts used + unknowns)
+> **COMMERCIAL CORRECTION (supersedes earlier drafts):** This is **Jess's direct
+> proposal to Dr Gina** for **social + paid acquisition + the acquisition journey.**
+> **Mati is NOT part of this.** The existing $10k build / $1k-month (via Mati) is
+> **complementary infrastructure, not sold, not absorbed, not owned in this
+> proposal.** All prior "unify the $1k / via Mati / continues what we already do"
+> logic is void.
 
-### Verified from source (safe to use)
-- **Existing engagement:** $10,000 one-time build (50% kickoff / 50% go-live, full-refund promise) + **$1,000/mo retainer** (min 3 months). Gina pays **GHL HIPAA $297/mo** separately. Via **Mati Simarro (RobinHoodSolutions AI)**, who owns the client relationship. *(proposal-v3, CONTEXT.md §2)*
-- **What the $1k/mo covers:** platform pass-through costs, active monitoring/iteration, live KPI dashboard, monthly 30-min strategy call, minor scope (<2 hrs/mo), priority access. *(proposal-v3 "Monthly retainer")* → **do not give this away when unifying.**
-- **Phase 1 (existing) scope:** WhatsApp shared inbox; recall/nurture/newsletter; after-hours voice agent; paid-first patient-journey redesign; daily brief; replicable doctor-onboarding stack. Semble = clinical EHR (stays); GHL operational only. *(proposal-v3, CONTEXT §3–4)*
-- **Phase 2 already named (unpriced):** lead generation, custom landing pages, Wilba Social, webinar automation, Semble bidirectional, AI booking, patient portal. *(proposal-v3 "Phase 2")* → **VERIFIED — the growth proposal is the planned continuation.**
-- **Clinical escalation (verified):** AI + PAs operational only, never clinical; clinical → clinician; blood results → Dr Gina, never straight to patient; hard escalation rule on the voice agent; AI in suggestive mode with PA approval of every draft; approved wording "Thank you, I've passed your message to our team, who'll be in touch shortly" (no em dash; no emojis patient-facing). *(gina-kb-answers §12, CONTEXT §6, proposal-v3)*
-- **Consult pricing:** initial concise £350 / standard £500 / comprehensive £750; follow-up 30-min £250 (×2 types); 15-min brief for outstanding bloods. *(gina-kb-answers)* → context only; **NOT used for any ROI/break-even claim.**
-- **Social (corrected, labelled):** Dr Gina IG ~2,350 (June peak ~16,794 wk views; recent ~593). Schoeman Clinic IG ~1,515 (June breakout ~303→~1,500; peak ~23,089 wk views; ~647 late Jul). Facebook: Dr Gina 5, Clinic 12 (dormant). LinkedIn: 7 posts reviewed = **content only, NO analytics**; company page 241. *(instagram-analysis.md, linkedin-content-review.md)*
-- **Scaling / people:** new doctors Nathan/Sonia/Nikita + health coach; ~815 patients migrated; ~385 overdue follow-up; Nadia Babar = doctor-intro social (clinic side); Marianne/Shelly/Samir = Gina's separate social people. UK; CQC Provider 1-21485506718 (Oyster Wharf); 18+.
+## 1. FACT CHECK
 
-### Unknowns (structured INTO the 90-day proof phase; not invented)
-- Capacity / new-patients-per-month the clinic can absorb.
-- Patient contribution value, LTV, conversion rates, margins, current volume.
-- Exact June-breakout driver / whether followers were target patients / whether it produced patients.
-- Any current paid-ad spend or results.
-- Who currently runs each social account.
+### Verified — safe to use
+- **Social (corrected/labelled):** Dr Gina IG ~2,350 (June peak ~16,794 wk views; recent ~593). Schoeman Clinic IG ~1,515 (June breakout ~303→~1,500; peak ~23,089 wk views; ~647 late Jul). Facebook: Dr Gina 5, Clinic 12 (dormant). LinkedIn: 7 posts reviewed = **content only, NO analytics**; company page 241. *(instagram-analysis.md, linkedin-content-review.md)*
+- **Complementary (existing) infrastructure — reference as the clinic's, do NOT sell/own:** patient-communication + WhatsApp shared inbox + knowledge base + operational nurture/recall + after-hours voice + **clinical escalation** (operational-only AI/PA, clinical→clinician, blood results→Dr Gina not patient, suggestive mode/PA-approved). Being put in place now. *(CONTEXT.md, proposal-v3, gina-kb-answers)*
+- **IHF = Integrated Health Foundation** — an online *health* program; Jess = Head of Ops/Marketing/Strategy (systems, content, SEO, social, acquisition). **Health-category acquisition experience.** *(context/business-info.md)* → **NO verified IHF metrics anywhere in repo → use QUALITATIVELY ONLY, unnamed client-side.**
+- **Consult pricing** (context only, no ROI use): £350 / £500 / £750 initial; £250 follow-ups.
+- UK; CQC Provider 1-21485506718; 18+.
 
-### Flags that materially affect pricing / contract (resolve before contracting, not before sending)
-- **Commercial routing:** the existing deal is "prepared for Mati." Confirm whether the growth partnership contracts **direct with Gina** or **via Mati/RobinHood**, and the currency alignment (existing deal is USD; proposal is GBP).
-- **Existing $1k treatment** (see §2) must be agreed with Mati so support/pass-through isn't given away.
+### Unknowns → into the 90-day proof phase (not invented)
+Capacity; patient value/LTV/conversion; exact June driver / follower quality; current ad spend; who runs each account.
 
-## 2. FINAL PRICING RECOMMENDATION (internal)
+### Contract flags (before contracting, NOT a send blocker)
+- Confirm the **contract is direct Jess ↔ Gina** and the **currency** (GBP recommended).
+- The existing $10k/$1k arrangement stays as-is, separate. This proposal doesn't touch it.
 
-- **Social-only anchor:** ~**£1,850/mo** (= your standard $2,500). The partnership is materially more than social management, so it must price above this.
-- **Value/workload stack above social-only:** paid-media management + growth strategy + assessment/funnel ownership + tracking/measurement + optimisation + reporting + WhatsApp/nurture integration + strategic oversight.
+## 2. FINAL PRICING (rebuilt standalone — no Mati, no $1k)
 
-| Tier | One-time build | Monthly (unified) | Notes |
-|---|--:|--:|---|
-| **Floor** | £3,000 | £3,000/mo | Below this we underprice the paid + funnel + strategy work |
-| **Recommended ⭐** | **£4,500** | **£3,750/mo** | ~2× social-only; reflects full scope; clean single monthly |
-| **Premium** | £6,000 | £5,500/mo | Multi-funnel, search, deeper attribution, higher content volume |
+- **Anchor `[FACT]`:** social management alone = **US$2,500 ≈ £1,850/mo**. That's *one component* of this engagement.
+- **Standalone monthly scope:** social strategy + management (2 IG + LinkedIn) · content/repurposing · paid (Meta) campaign management · paid creative testing · assessment/funnel · tracking · optimisation · reporting · growth strategy · connection into the clinic's existing follow-up.
+- **Workload ≈ 50–65 hrs/mo.**
 
-- **Ad spend (media):** separate, paid to platforms, **£1,000–£2,000/mo to start**, controlled by Gina, scaled only on evidence.
-- **Existing $1k/mo treatment — RECOMMEND Option B (unify), done safely:** present **one** monthly figure (£3,750) that *continues* everything already run for her AND adds growth, so she never faces a confusing retainer stack. **Internally:** of the £3,750, roughly **£790 continues the existing support + pass-through** and ~**£2,960 is growth**. Confirm pass-through cost levels hold margin; confirm with Mati that the partnership supersedes the $1k. *(Do NOT casually absorb and give support away.)*
-- **Reasoning:** social alone is ~£1,850; the partnership adds paid, funnel/assessment, tracking, optimisation and strategic oversight, which independently justify materially more. Recommended ≈ 2× social-only is defensible for a premium London clinic already investing in infrastructure, and a single clean number beats a stack. Build fee reflects genuine setup work (funnel + assessment + tracking + integration + creative + campaign architecture). **No patient economics invented to justify any of it.**
+| Monthly option | Effective rate | Read |
+|---|---|---|
+| £3,750 | ~£58–75/hr | Too low once paid + funnel sit on social |
+| £4,250 | ~£65–85/hr | OK, light for full scope |
+| **£4,500 ⭐ CHOSEN** | **~£69–90/hr** | Strong value + sustainable + excellent margin + long-term |
+| £5,000 | ~£77–100/hr | Justified step-up once proven |
 
-## 3. FINAL PRE-SEND CHECKLIST (max 10)
-1. Confirm with **Mati** he's happy the growth proposal goes to Gina, and the **routing/currency** (direct-GBP vs via-RobinHood-USD).
-2. Confirm **unifying the $1k** into the £3,750 is agreed with Mati (support/pass-through not given away).
-3. Sanity-check the **numbers** in the copy (2,350 / 1,515 / ~23,089 / ~300→~1,500 / 5 / 12) read as "approximately".
-4. Confirm you're happy with **£4,500 build / £3,750 mo / £1–2k media** before it's in writing.
-5. Check the **assessment** is framed education-not-diagnosis everywhere (compliance).
-6. Confirm **Lisa's departure stays out** of anything client-facing (it does here).
-7. Pick the **email subject line** (recommend #2).
-8. Confirm the **call slot** you'll offer this week.
-9. Make sure the proposal **doesn't duplicate Nadia's** doctor-intro social remit (positioned as complementary).
-10. Final read for **em dashes / emojis** (Gina's preferences) and banned agency words.
+- **RECOMMEND: Monthly £4,500 · Build £4,500 · Media from £1,000–£2,000/mo.**
+- **Build £4,500:** deep social + June analysis, account & content architecture, paid-acquisition strategy, **assessment architecture**, funnel/landing journey, tracking, campaign + creative-testing setup, reporting. ~50–70 hrs. **Internal SOW guardrail:** assessment **v1**, **one** funnel, capped initial creatives — ships without scope-creep/resentment.
+- **Media note:** £1,000–£2,000/mo is a sensible controlled start; given UK health CPMs, **£1,500+/mo learns faster** — nudge there if she's comfortable. Gina controls it; scale on evidence only. No results invented.
+- **Why £4,500 (not higher/lower):** clearly above the £1,850 social baseline (reflecting paid + funnel + strategy + connection), a sustainable senior rate that protects delivery quality, excellent margin, and a defensible premium-clinic number that supports a long-term relationship. Optimised for value + sustainability + margin + relationship, not max price or easiest yes.
 
----
-
-## 4. FINAL HARDENING PASS (29 Jul) — pricing verdict + weaknesses fixed
-
-### 7 weaknesses found & fixed
-1. **June stat repeated verbatim** across pages → now: P2 teases ("roughly fivefold"), P5 states it in full once, P11 drops the numbers. Momentum restored.
-2. **Price felt unexplained** vs the £1,850 social anchor → P15 now opens with a value anchor ("managing social well is a full discipline; this is that *plus* paid, assessment, tracking, strategy").
-3. **Read as "social + ads"** in places → paid reframed as "controlled access to new demand" (P10); every marketing page ties back to patients.
-4. **Homework buckets muddled** → P3 now cleanly separates Analytics-reviewed / Content-reviewed / Business-&-systems-reviewed, and is explicit about what we did NOT analyse.
-5. **Overuse of "system"/"engine"** → trimmed and varied throughout.
-6. **P14 generic** → now "Your expertise, without another job," names the busy-clinician reality, promises batching/repurposing.
-7. **Overlap-with-$10k risk** → P2 draws the receiving-vs-acquisition line early; P15 "continues everything we already do for you" makes the $1k continuity explicit, not a second invoice.
-
-### FINAL PRICING VERDICT (internal) — CHANGED
-Workload estimate for the monthly scope ≈ **45–55 hrs/mo** (strategy, 2 IG + LinkedIn management, editing/repurposing, Meta campaign management + creative, funnel/assessment optimisation, reporting, meetings, follow-up coordination).
-- **£3,750** ⇒ ~£70–83/hr — **too low** once paid-campaign management (genuinely 15–20 hrs/mo of skilled work) sits on top of social. Risk of resentment / scope creep.
-- **£4,250 ⭐ CHOSEN** ⇒ ~£77–94/hr — sustainable senior rate, not underpriced, still an easy-ish yes for a premium London clinic. Of the £4,250: ~£790 continues existing support+pass-through, ~£3,460 is growth (well above the £1,850 social-only anchor, reflecting paid + funnel + tracking + strategy).
-- **£4,500 / £5,000** ⇒ defensible but a harder first-commitment yes; hold as future step-up once proven.
-- **Build £4,500:** DEFEND, with an internal SOW guardrail — assessment **v1**, a capped set of initial creatives, **one** funnel — so it ships without resentment. (~45–55 hrs ≈ ~£90/hr, in line with the original build's ~$97/hr.)
-- **Media:** £1,000–£2,000/mo start, separate, Gina-controlled.
-- **$1k:** unify into the £4,250 (client sees one number); protect the support scope + pass-through; **confirm with Mati before contracting.**
-
-### Client-facing changes applied
-GROWTH-PROPOSAL.md P15 monthly £3,750 → **£4,250**; cheat-sheet price line updated; email de-risked ("no pressure" removed, replaced with warm certainty); CTA → "Let's map your first 90 days" (activate, not discover).
+## 3. FIVE-ITEM SEND CHECK (NO Mati items)
+1. You're happy with **£4,500 build / £4,500 month / £1–2k media** in writing.
+2. Existing infrastructure is framed as **complementary (the clinic's), never as your product or absorbed** — confirm the copy reads that way (it does).
+3. **IHF stays unnamed + qualitative** (no numbers) — confirm (it does).
+4. Assessment = **education-not-diagnosis** throughout; Lisa's exit stays out (both do).
+5. Pick **subject line (#2)** + the **call slot** you'll offer; final glance for em dashes/emojis/banned words.

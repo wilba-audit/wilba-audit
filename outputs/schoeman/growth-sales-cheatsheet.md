@@ -1,39 +1,40 @@
 # Sales-Call Cheat Sheet — Dr Gina (Growth Partnership) · INTERNAL
 
-Keep it a conversation, not a pitch. Let her react. British warmth, no jargon, AI stays in the background.
+Keep it a conversation. This is YOUR social + paid-growth proposal to Gina. The existing WhatsApp/follow-up infrastructure is complementary, you're not selling it here. No Mati in the commercial framing. AI stays in the background.
 
 ## OPENING — why you went deeper
-*"When I looked at your socials it started as a quick audit, but I kept finding things that mattered, so I went properly deep, including how it connects to the systems we're already building for you. I'd love to walk you through what I found."*
+*"Gina, thanks for the time. When I started looking at your socials it was meant to be a quick audit, but I kept finding things worth acting on, so I went properly deep. Let me walk you through what I found, and what I think we should do with it."*
 
-## THE AUDIT — the 3–4 findings you lead with
-1. **The audience already responded** (clinic account, June: ~300 → ~1,500 followers, ~23k views in a week). *Not "viral" — a real signal.*
-2. **Your authority is split across two accounts** (Dr Gina ~2,350, Clinic ~1,515) — an opportunity to give each a job.
-3. **LinkedIn is credible but under-distributed** (content review — small fixes: hooks, links, repurposing).
-4. **Attention has nowhere to go** — when someone finds you today, nothing catches it. *(This is the hook into the bigger idea.)*
+## THE AUDIT — the findings you lead with
+1. **The market already responded** (clinic account, June: ~300 → ~1,500 followers, ~23k views in a week). *Not "viral" — a real signal.*
+2. **Your authority is split across two accounts** (Dr Gina ~2,350, Clinic ~1,515) — give each a job.
+3. **LinkedIn is credible but under-distributed** (content review — hooks, links, repurposing).
+4. **Attention has nowhere to go** — when someone finds you today, nothing catches it.
 
-## THE TRANSITION — audit → growth opportunity
-*"So the question isn't 'can Gina get attention?' You've proven you can. The real question is what happens next, and right now the answer is 'not much'. That's the opportunity."*
+## THE TRANSITION — audit → growth
+*"So the question isn't 'can Gina get attention?' You've proven you can. It's what happens next, and right now the answer is 'not much'. That's the opportunity."*
 
-## THE BIG REVEAL — plain English
-*"Think of it as one system instead of separate things. Your expertise makes content; content plus some paid distribution brings the right people; they do a short, useful assessment (not a diagnosis); if they're interested and consent, they flow into the WhatsApp follow-up we're already building; clinical questions go to a clinician; and everything we learn makes the next round better. Phase 1 built what happens once someone's in the clinic's world. This builds how the right people get in."*
+## THE REVEAL — three layers, plain English
+*"Think of it as three layers. One, authority: your expertise made into content that grows the right audience. Two, acquisition: paid campaigns amplifying what works, plus a short educational assessment that qualifies people. Three, connection: the follow-up your clinic already has. I'm building the first two, and feeding qualified, ready people into the third. I'm not rebuilding what you've already got, I'm building the layer that fills it."*
+
+## IHF CREDIBILITY — drop in naturally
+*"And this isn't theory for me. I've led marketing inside a health business built on exactly this: paid acquisition feeding an assessment and a proper follow-up, rather than cold traffic straight to a booking. In a high-trust field like yours, that middle step is what makes the difference."*
 
 ## ADS — exciting, not a gamble
-*"Advertising here isn't boosting posts. We test small, learn what attracts the right people, prove it works at a sensible cost, then scale only when the evidence is there. Prove before scale. You control the budget, and it starts small."*
+*"Paid here isn't boosting posts. It's controlled access to new demand. We test small, learn what attracts the right people, prove it works at a sensible cost, then scale only on evidence. You control the budget, and it starts small."*
 
-## PRICE — say it plainly, then stop talking
-*"There are three parts: a one-time growth build at £4,500 to set it all up; a single monthly partnership at £4,250 that runs everything, including continuing the support we already do for you, so it's one relationship not a stack; and a small ad budget, from £1,000 to £2,000 a month to start, paid straight to the platforms and controlled by you."*
-Then: *"And rather than promise you a return I can't prove yet, the first 90 days establish your real numbers, so we can answer: if you put £1 into acquiring qualified demand, what comes back?"*
+## PRICE — say it plainly, then stop
+*"Three parts: a one-time growth build at £4,500 to set it all up; a monthly partnership at £4,500 that runs everything, your social, the campaigns, the assessment, the measurement and the optimisation; and a small ad budget, from £1,000 to £2,000 a month to start, paid straight to the platforms and controlled by you. And rather than promise a return I can't prove yet, the first 90 days give us your real numbers, so we can answer: if you put £1 into acquiring qualified demand, what comes back?"*
 
 ## OBJECTIONS
-- **"I'm already paying you."** → *"That's the receiving side, what happens once someone's in. This is the acquisition side, bringing the right people in. Different job, and it makes what you're already paying for worth more. It was always the planned next phase."*
-- **"Why do I need this?"** → *"You're adding doctors. That capacity has to be filled. This fills it predictably instead of hoping for referrals."*
-- **"Could I just hire a social manager?"** → *"A social manager posts. This connects content to ads to a qualifying assessment to your WhatsApp follow-up to measurement. One hire can't build or run that, and can't touch your clinical systems."*
+- **"Isn't this like what's already being built?"** → *"That's the follow-up side, what happens once someone's in. This is the acquisition side, bringing the right people in and qualifying them. Different job, and it makes that existing follow-up far more valuable because there's finally something feeding it."*
+- **"Why do I need this?"** → *"You're adding doctors. That capacity needs filling. This fills it predictably instead of hoping for referrals."*
+- **"Could I just hire a social manager?"** → *"A social manager posts. This connects content to paid to a qualifying assessment to your follow-up to measurement, and gets smarter each cycle. One hire can't build or run that."*
 - **"What if ads don't work?"** → *"We only spend small until they're proven. If the numbers don't work, we don't scale. You'll see that before committing more."*
 - **"What if the leads aren't good?"** → *"The assessment qualifies people before they reach your team, and we measure qualified leads, not clicks. If quality's low, we change the message, that's what the test phase is for."*
-- **"Will this be more work for me?"** → *"Your part is small: a focused content session, approvals, the odd review. We build and run the system."*
+- **"Will this be more work for me?"** → *"Your part is light: a focused content session, approvals, the odd review. I build and run the rest."*
 - **"Can we handle more patients?"** → *"Great question, and we won't create demand you can't service. Establishing your capacity is one of the first things the 90 days does. We pace to it."*
-- **"How do we know it's working?"** → *"Because it's built to produce evidence: cost per qualified lead, conversion, real numbers by day 90. You decide to scale from proof, not from my forecast."*
-- **"Is this compliant?"** *(if raised)* → *"Built for UK healthcare: the assessment educates and routes, it never diagnoses; consent before any messaging; clinical questions always to a clinician. Your data person signs off the copy."*
+- **"How do we know it's working?"** → *"Because it's built to produce evidence: cost per qualified lead, conversion, real numbers by day 90. You decide to scale from proof, not my forecast."*
 
-## CLOSE — no pressure
-*"How does that sit with you? If it feels right, the next step is just the 90-day proof phase. Shall I get it started, and we close off those last knowledge-base and escalation points while we're at it?"*
+## CLOSE — warm certainty
+*"How does that sit with you? If it feels right, the next step is simply mapping your first 90 days: a short call to confirm capacity, align priorities, and set a start date. Shall we get that booked, and close off the last knowledge-base and escalation points while we're at it?"*
