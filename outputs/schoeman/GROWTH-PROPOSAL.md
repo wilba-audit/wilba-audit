@@ -1,237 +1,113 @@
 # The Schoeman Growth Partnership
-### Client-facing proposal copy — a social growth & patient-acquisition proposal from Jess (WILBA) to Dr Gina Schoeman. Ready for premium design/PDF.
+### Client-facing proposal copy (final structure). A social growth & patient-acquisition proposal from Jess (WILBA) to Dr Gina Schoeman.
+
+**Page order:** 1 Cover · 2 The opportunity · 3 We did the homework · 4 What we found · 5 Immediate wins, one bigger opportunity · 6 Content shouldn't end at engagement · 7 Your organic authority · 8 The educational assessment (from attention to qualified interest) · 9 Paid growth with a purpose · 10 The compounding advantage (every response makes the next campaign smarter) · 11 Why this isn't theory (IHF) · 12 Your first 90 days (three workstreams) · 13 Where this can go · 14 Your part in it · 15 Investment · 16 The next step.
 
 ---
 
 ## PAGE 1 — COVER
 # You've already proven the demand is there. Here's how we make it repeatable.
-**The Schoeman Growth Partnership — social authority, paid acquisition, and a smarter path from attention to patient.**
-
-Prepared for Dr Gina Schoeman · by Jess, WILBA
-
----
+**The Schoeman Growth Partnership — social authority, paid acquisition, and a smarter path from attention to patient.** Prepared for Dr Gina Schoeman · by Jess, WILBA.
 
 ## PAGE 2 — THE OPPORTUNITY
-### The one thing worth knowing first.
-
-Something in the market has already responded to Dr Gina. Earlier this summer, your clinic's Instagram grew roughly fivefold in a matter of weeks, then faded. That answers the hardest question in marketing: the right people will respond to you.
-
-What's missing is the way to catch that response, qualify it, and hand it, ready, to the follow-up your clinic already has taking shape. This proposal is about building that missing piece: turning your expertise into steady, qualified patient demand.
-
----
+### You're not starting from zero.
+**~300 → ~1,500 followers · peak week ~23,000 views.** Earlier this summer, your clinic's Instagram grew from around 300 followers to roughly 1,500, with a peak week of about 23,000 views. Then visibility fell away. We're not going to call that "going viral", because we don't yet know what caused it. But it answers the hardest question in marketing: the right people already respond to Dr Gina. Our job is to understand what created that response and build a repeatable way to create it, rather than hoping it happens again.
 
 ## PAGE 3 — WE DID THE HOMEWORK
 ### This didn't come from a template. I studied your digital presence.
-
-Before recommending anything, here's exactly what I reviewed, and what I didn't.
-
-- **Instagram (analytics):** the Dr Gina account, The Schoeman Clinic account, the historical performance available to me, follower trends, views, the June breakout, and the role each account plays.
+- **Instagram (analytics):** both accounts, historical performance, follower trends, views, the June breakout, and the role each plays.
 - **Facebook (analytics):** both pages, and the reality of the organic audiences.
-- **LinkedIn (content):** your posts, topics, openings, formatting, link placement, and distribution. I reviewed the content, not the analytics, because I don't have LinkedIn's numbers. So nothing here about LinkedIn is a performance claim.
-- **How it connects downstream:** the parts of your patient journey and communication set-up that matter for where qualified interest should go next.
+- **LinkedIn (content):** posts, topics, openings, formatting, link placement. The content, not the analytics — I don't have LinkedIn's numbers, so nothing here is a LinkedIn performance claim.
+- **How it connects:** the parts of your patient journey and communication set-up that matter for where qualified interest should go next.
+*I'd rather be precise about what I know than impressive about what I don't.*
 
-I'd rather be precise about what I know than impressive about what I don't.
-
----
-
-## PAGE 4 — WHAT THE DATA TELLS US
+## PAGE 4 — WHAT WE FOUND
 ### Five things worth your attention.
+1. **The market has already responded to you** — the June growth shows the appetite is real.
+2. **Your authority is spread across two accounts** (~2,350 / ~1,515) — give each a clear job.
+3. **LinkedIn has the expertise; the delivery can lift it** — openings, formatting, link placement, reuse. *(Content review.)*
+4. **Facebook isn't worth organic effort right now** (small audiences) — separate from Meta as a paid platform.
+5. **Attention has nowhere useful to go** — the single biggest opportunity.
 
-**1. The market has already responded to you.** More on this next.
+## PAGE 5 — IMMEDIATE WINS, ONE BIGGER OPPORTUNITY
+### There's plenty we can improve from day one.
+Before a single pound of ad spend, the audit already points to changes we make in week one.
+**Immediate wins:** give each account a clear role (Dr Gina = authority, The Schoeman Clinic = trust & conversion — a recommendation, not two disconnected calendars); analyse the June breakout and rebuild on what worked; stronger openings and link placement on LinkedIn, repackaged as native content; clear content pillars, hooks and calls-to-action; smarter reuse of your strongest topics and existing video; deprioritise organic Facebook, keep Meta for paid.
+**One bigger opportunity:** your content earns attention; paid puts proven messages in front of more of the right people; an **educational assessment** turns that attention into identifiable interest; and your existing follow-up turns interest into a patient journey. Right now, most of that attention ends at a like. That's the opportunity.
 
-**2. Your authority is spread across two accounts** (Dr Gina, around 2,350 followers; The Schoeman Clinic, around 1,515). A chance to give each a clear job, rather than two calendars pulling against each other.
+## PAGE 6 — WHERE THE REAL GROWTH IS
+### Content shouldn't end at engagement.
+Today, someone might watch Gina, save a post, visit the profile, think "this sounds like me", and then disappear. We don't know who they were, what they were struggling with, what they wanted, or whether they were ready. The attention was real, and then it was gone.
+> **The biggest opportunity is what happens after someone stops scrolling.**
+Everything that follows is about capturing that moment, respectfully, and in a way that makes every future campaign smarter.
 
-**3. LinkedIn has the expertise; the delivery can lift it.** Credible, knowledgeable and consistent, with clear room in the openings, the formatting, where links sit, and how posts are reused. *(Content review.)*
+## PAGE 7 — YOUR ORGANIC AUTHORITY
+### Serious social management, where every post has a job.
+Run across both accounts in their roles, your content works to a clear purpose:
+- **Recognition** — "that's exactly what I'm experiencing" (symptoms people have normalised, feeling unwell despite "normal" results, hormonal change).
+- **Education** — what may be happening, the questions worth asking, how Gina thinks — without ever diagnosing through content.
+- **Authority** — her expertise, perspective and clinical philosophy.
+- **Trust** — her, the team, and what a consultation is actually like.
+- **Action** — a logical next step; increasingly not "book now", but "take the educational assessment".
+That last step is where your content and the next stage meet.
 
-**4. Facebook isn't worth organic effort right now.** The audiences are very small. That's separate from Meta as a paid platform, which is a different tool for a different job.
+## PAGE 8 — FROM ATTENTION TO QUALIFIED INTEREST
+### The educational assessment: your biggest growth opportunity.
+Instead of asking a stranger to book a consultation, we offer something more useful first:
+1. **A problem-aware message** — a post or ad that names something real.
+2. **An educational assessment** — a short, genuinely useful next step. Low commitment.
+3. **A personalised educational result** — helpful guidance and routing. Never a diagnosis.
+4. **Consented follow-up** — connected, where appropriate, into your clinic's existing communication.
+5. **A consultation opportunity** — for the people who want the appropriate next step.
+We lower the commitment at the start, while increasing what the clinic learns. *The assessment educates and guides. It never diagnoses, and never replaces a clinical consultation.*
 
-**5. Right now, attention has nowhere useful to go.** The single biggest opportunity, and it's next.
+## PAGE 9 — PAID GROWTH, WITH A PURPOSE
+### Advertising becomes a way to reach more of the right people.
+Not "pay Meta for more views". Organic shows us what resonates; paid deliberately puts those proven messages in front of more relevant people; the assessment gives them a measurable next step; and follow-up turns interest into a patient journey.
+**Three initial hypotheses to test — not guaranteed winners:**
+1. *"You've been told your results are normal. Why don't you feel normal?"* → assessment → guidance + next step → consented journey.
+2. **Perimenopause and hormonal change, misunderstood** → symptom-awareness assessment → guidance → consented journey.
+3. **Longevity and biological-age curiosity** (or men's health) → educational assessment → guidance → consented journey.
+We start small, you control the budget, and we increase spend only when the evidence earns it.
 
----
+## PAGE 10 — THE COMPOUNDING ADVANTAGE
+### Every response makes the next campaign smarter.
+The assessment doesn't only capture interest. It quietly builds first-party insight — subject to consent, privacy and compliance. Over time we may learn which symptoms come up most, which problems bring people in, which questions recur, and which messages create the strongest interest. That understanding feeds straight back in: more **content** around what people actually need, deliberate **paid** tests of those themes, and better **information** for the people who arrive.
+**Audience → Data → Insight → Better content → Smarter acquisition → more Insight.**
+> **Your audience starts telling us what to create next.**
+A social manager posts; an ads manager buys traffic. This connects them into something that learns — which is why it's worth more than either on its own.
 
-## PAGE 5 — THE JUNE SIGNAL
-### You're not starting from zero.
+## PAGE 11 — WHY THIS ISN'T THEORY
+### I've built this before, inside a health business.
+I've led marketing inside a health-related business where acquisition didn't end with "ad, then a sales call". There was an intermediate assessment step that gave people a useful next action, captured their interest, helped qualify who was a fit, enabled structured follow-up, and created real data about what the audience was struggling with. That experience is exactly why I'm recommending this shape for you. In a high-trust field, giving people the right next step, rather than forcing an immediate high-commitment decision, is what makes the difference. *(Experience with the method, not a promise of identical results.)*
 
-In June, your clinic's Instagram went from around 300 followers to roughly 1,500, with a peak week of about 23,000 views. Then visibility fell away.
-
-I'm not going to call that "going viral", because we don't yet know what caused it, and pretending we do would be guessing with your money.
-
-Here's why it matters: the market has already shown your expertise can attract the right kind of attention. So instead of guessing what to post next, our first job is to determine what drove it, whether it reached the right audience, and how to build a repeatable way of creating that response, then amplify what works.
-
-*Visual: a simple line — quiet, a sharp June rise, then a decline.*
-
----
-
-## PAGE 6 — THE MISSING LINK
-### When someone discovers you today, what happens next?
-
-Someone sees an excellent post from Gina. Then what? Do we learn who they are, understand their problem, follow up, or know if they ever booked?
-
-Today, almost none of that happens. The trail ends at a like, and warm interest quietly disappears.
-
-Closing that gap is where the growth is.
-
----
-
-## PAGE 7 — THE BIG REVEAL
-### The opportunity isn't more content. It's connecting what you already have.
-
-There are three layers to this, and only the first two are what I'm proposing to build. The third already exists in your clinic.
-
-- **Layer 1 — Authority.** Your expertise, turned into content that grows the right audience organically.
-- **Layer 2 — Acquisition.** Paid campaigns that amplify what works, an educational assessment that qualifies interest, and a clear next step.
-- **Layer 3 — Connection (your existing infrastructure).** The consented communication, WhatsApp follow-up and safe clinical escalation your clinic already has taking shape.
-
-I'm not rebuilding Layer 3. I'm building the growth layer that feeds qualified, ready people into it.
-
-```
-   MY WORK
-   EXPERTISE → CONTENT → ORGANIC ATTENTION → PAID ACQUISITION →
-   EDUCATIONAL ASSESSMENT → QUALIFIED INTEREST
-                     │
-                     ▼   (handed to your existing infrastructure)
-   CONSENTED COMMUNICATION → WHATSAPP / FOLLOW-UP →
-   SAFE CLINICAL ESCALATION → CONSULTATION → PATIENT
-                     │
-                     ▼
-   DATA / INSIGHT ↺ BETTER CONTENT + BETTER ACQUISITION
-```
-
----
-
-## PAGE 8 — THE PATIENT EXPERIENCE
-### Imagine one of your future patients.
-
-A woman sees a short video from Gina naming something she's quietly lived with for months. Instead of a cold "book a consultation", she's offered something more useful: a short, educational assessment that helps her understand what might be worth discussing with a clinician.
-
-She learns something. The clinic quietly learns what she's looking for. If she consents, she moves into the follow-up your clinic already runs, and any clinical question goes straight to a clinician.
-
-That's the difference between getting attention and turning it into patients. Advertising stops producing traffic, and starts producing qualified intent.
-
-> *The assessment educates and guides. It never diagnoses, and it never replaces a clinical consultation.*
-
----
-
-## PAGE 9 — WHY THIS ISN'T THEORY
-### I've seen this work, not just drawn it on a diagram.
-
-The assessment-to-follow-up approach isn't something I'm proposing because it looks neat on a funnel. I've led marketing inside a health business built on the same principle: paid acquisition feeding a structured assessment and a proper follow-up journey, rather than sending cold traffic straight to a booking.
-
-The lesson stuck with me. In a high-trust field like yours, the strongest results don't come from more clicks. They come from giving interested people the right next step, so they arrive better informed and genuinely ready.
-
----
-
-## PAGE 10 — YOUR SOCIAL, DONE PROPERLY
-### Two accounts, one clear purpose each, run as a real service.
-
-**Dr Gina becomes the authority voice:** your expertise, your perspective, your story, the person patients come to trust.
-**The Schoeman Clinic becomes the trust-and-conversion voice:** your team, your services, the patient journey, and the natural home for introducing your new doctors.
-
-They feed and amplify each other, instead of running as two separate calendars. First, we confirm what drove June, so the plan is built on evidence.
-
-This is a full professional service, not just posting: channel strategy and account roles, content pillars and planning, editing and repurposing, captions and creative packaging, publishing and optimisation, and steady testing of hooks, formats and what actually gets discovered.
-
----
-
-## PAGE 11 — PAID GROWTH
-### Advertising, without the gamble.
-
-Paid isn't "boosting posts". Think of it as controlled access to new demand.
-
-Organic shows us what genuinely resonates. Paid then places those proven messages in front of more of the right people. The assessment gives them a useful next step. Your follow-up stops warm interest slipping away. And measurement tells us whether it's actually worth it.
-
-We start small, you control the budget, and we increase spend only when the evidence earns it. We call that proving before scaling.
-
----
-
-## PAGE 12 — WHY THIS IS DIFFERENT
-### It isn't "social plus ads".
-
-- **A social media manager** creates and distributes content.
-- **An ads manager** buys and optimises traffic.
-- **This partnership** builds your authority organically, learns what resonates, uses paid to amplify proven messages, adds a useful assessment that qualifies interest, connects that interest into your clinic's existing follow-up, and measures what happens, so every cycle improves the next.
-
-That connection, from a first post all the way to a qualified patient conversation, is why this is worth more than either service on its own.
-
----
-
-## PAGE 13 — THE COMPOUNDING ADVANTAGE
-### Most marketing starts again every Monday. This gets better every month.
-
-- **Month one:** what earns attention?
-- **Month two:** what turns attention into a completed assessment?
-- **Month three:** which audiences become real conversations?
-- **Month four onward:** which of those lead to consultations?
-
-Each answer sharpens the next round of content, ads and follow-up.
-
-> **The lasting asset isn't only the audience we build. It's what the clinic learns about that audience, and no one can copy that.**
-
-And because it's built as a repeatable approach, the same foundation can grow with you: new doctors as they join, new services, longevity and men's health, events and partnerships, and in time wider reach. Growth that doesn't have to be reinvented every step.
-
----
-
-## PAGE 14 — YOUR FIRST 90 DAYS
-### Your first 90 days.
-
-We don't spend a month deciding what we think — the deep dive already did that. We start acting in week one, test our strongest hypotheses, and improve from real evidence. Throughout, your part stays light: your expertise in focused sessions, clinical approval where needed, and the occasional review. I run the rest.
-
-**Weeks 1–2 · Turn the audit into action.** Apply the LinkedIn improvements we've already identified (openings, formatting, link placement, repurposing); set up the two-account model; begin content from your strongest topics; pull and analyse June's best-performing posts; establish tracking and baseline reporting; confirm clinic capacity and the Assessment V1 concept. *Content improvement begins in week one — we're not waiting a month to post.*
-
-**Weeks 3–4 · Build the acquisition layer.** Create Assessment V1 (educational, never diagnostic); build the entry journey and tracking; prepare initial paid creative and retargeting audiences; connect the agreed lead handoff into your clinic's existing follow-up (complementary, not rebuilt); keep publishing and optimising.
-
-**Weeks 5–8 · Launch and learn.** Launch controlled Meta tests on our strongest two to four angles. Recommended minimum media budget: **$1,000/month**, enough to run meaningful tests. It's separate from my fee, paid to the platform, and yours to control and adjust; never scaled automatically. We measure creative response, assessment completion, lead quality, cost per lead, and cost per qualified lead where definable.
-
-**Weeks 9–12 · Optimise and decide.** Now we can answer the questions that matter: which messages attract the right people, which create real intent, what a qualified opportunity costs, where people drop out, and whether capacity is sufficient. Then we scale what earns it, improve what shows promise, and stop what doesn't. Prove before scale, in practice.
-
+## PAGE 12 — YOUR FIRST 90 DAYS
+### Three workstreams, running in parallel.
+We don't spend a month deciding what to think — the deep dive already did that. Three tracks run at once and converge. Throughout, your part stays light.
+- **1 · Organic growth — from week one:** apply the channel improvements we've already identified; set the two-account model; define content pillars; publish strategically; test hooks and formats; analyse June's best posts; optimise on response. *Content improvement begins in week one.*
+- **2 · The acquisition journey — early:** design Assessment V1 (educational, never diagnostic); build the entry journey and the qualification/routing; set up tracking; connect the agreed follow-up into your clinic's existing communication.
+- **3 · Paid acquisition — once the entry journey is ready:** launch the initial test angles. Recommended minimum media budget **US$1,000/month** — separate from my fee, paid to the platform, yours to control and adjust, never scaled automatically. Measure lead quality, build retargeting, optimise, and scale only what earns it.
 **By day 90, you'll have:** a working social operating model, an active content engine, a live acquisition journey, real paid-media data, a qualification and assessment process, a clearer view of your acquisition economics, and the evidence for what to scale next. Not a promise of a set number of patients or a guaranteed return — a system producing real answers.
 
----
+## PAGE 13 — WHERE THIS CAN GO
+### Built to grow with the clinic, not to be rebuilt every time it does.
+- **Today:** you, your team, your current services.
+- **Next:** repeatable, measured demand for those services.
+- **Then:** the same foundation supporting new doctors as they join, new services and clinical focus areas, educational events, partnerships, and in time wider reach.
+The point isn't to spend more on marketing. It's to build a growth pathway that doesn't have to be reinvented every time the clinic takes a step forward.
+
+## PAGE 14 — YOUR PART IN IT
+### Your expertise, without another job.
+You're a busy clinician, not a content team. I batch and repurpose so I'm not forever asking for more. **From you:** your expertise in focused sessions, clinical approval where it's needed, and the occasional review. **From me:** the strategy, the content, the campaigns, the assessment, the measurement, and the constant refining. *You bring the medicine. I run the growth.*
 
 ## PAGE 15 — INVESTMENT
 ### Everything included, and what it's worth.
-
-Most clinics buy these as separate services: a social media manager, an ads manager, a funnel build, and someone to handle tracking and reporting. Here they're one partnership, working together.
-
-**The Growth Build — $2,500** *(one-time · approximately £1,850)*
-Everything set up and ready to run:
-- The June breakout investigation
-- Account architecture and a clear role for each Instagram account
-- Your content strategy and pillars
-- The paid-acquisition strategy and campaign structure
-- The educational assessment, designed and built
-- The lead-capture and funnel journey
-- Tracking and measurement, so every step is visible
-- Your reporting, live from day one
-
-**The Growth Partnership — $2,000 per month** *(all platforms · approximately £1,480)*
-The whole engine, run for you:
-- Social strategy and management across Instagram and LinkedIn
-- Content ideation, editing, repurposing, captions and creative
-- Publishing, optimisation, and ongoing testing of hooks and formats
-- Meta campaign management and paid creative testing
-- The assessment and funnel, refined as we learn
-- Measurement, reporting, and monthly strategy
-- Continuous improvement, so it gets better every month
-
-**Advertising budget** *(separate)*
-My recommended starting minimum is **$1,000 per month** *(about £740)* — enough to run meaningful tests and begin learning. It's separate from my fee, paid straight to the platforms, and entirely under your control to adjust; never scaled automatically.
-
-Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one, for $2,000 a month.
-
-*Fees are billed in US dollars. Sterling figures are approximate, at today's exchange rate.*
-
-**The economics we'll establish together.** Rather than promise a return I can't yet prove, the first phase establishes your real numbers: cost per lead, cost per qualified lead, lead to consultation, consultation to patient where we can measure it, a sustainable acquisition cost, and your capacity limits. So we can answer, with your figures:
-
-> **If you invest £1 in acquiring qualified demand, what comes back?**
-
----
+Most clinics buy these as separate services: a social media manager, an ads manager, an acquisition build, and someone to handle tracking. Here they're one partnership.
+- **The Growth Build (one-time): $2,500** *(approximately £1,850)* — June breakout analysis, account architecture & roles, content strategy, paid-acquisition strategy, the educational assessment (built), the entry journey, tracking & measurement, reporting from day one.
+- **The Growth Partnership (monthly, all platforms): $2,000/month** *(approximately £1,480)* — social strategy & management (Instagram + LinkedIn), content/editing/repurposing/captions/creative, publishing/optimisation/testing, Meta campaign management & paid creative, the assessment & acquisition journey refined, measurement/reporting/monthly strategy.
+- **Advertising budget (separate): recommended minimum $1,000/month** *(about £740)* — my recommended starting minimum, enough to run meaningful tests and begin learning. Separate from my fee, paid to the platforms, and entirely under your control to adjust; never scaled automatically.
+*Bought separately, your social management alone would usually take a full retainer, and paid campaign management another. Here they work as one. Fees are billed in US dollars; sterling figures are approximate, at today's exchange rate.*
 
 ## PAGE 16 — THE NEXT STEP
 ### Let's map your first 90 days.
-
-You've got the full picture of what I'm recommending. The call isn't to explain it again, it's to switch it on: confirm your capacity, align on priorities and patient value, finalise the scope, and agree a start date.
-
-A focused 30 to 45 minutes, and the proof phase begins.
-
-**Let's find a time this week.**
+You've got the full picture. The call isn't to explain it again, it's to switch it on: confirm your capacity, align on priorities, finalise the scope, and agree a start date. A focused 30 to 45 minutes, and we begin. **Let's find a time this week.**
