@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-31T19:55:24+00:00",
+  "generated_at": "2026-09-07T18:40:53+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
       "connection": "ok",
-      "total_contacts": 13433,
+      "total_contacts": 13443,
       "tag_counts": {
         "reactivate-wk1-mon": 500,
         "reactivate-wk1-thu": 500,
         "reactivate-wk1-tue": 500,
         "reactivate-wk1-wed": 500,
         "reactivate-wk1-sun": 499,
-        "pol": 351,
-        "promo-issued": 351,
-        "weekly-list": 343,
-        "offer-half": 318,
-        "half-pol-lead": 317,
+        "weekly-list": 363,
+        "pol": 359,
+        "promo-issued": 359,
+        "offer-half": 326,
+        "half-pol-lead": 325,
         "bday-start-2026-07-06": 111,
         "voucher-delivered": 111,
         "weekend-stars-email-pol-2026-06-30": 110,
@@ -30,9 +30,9 @@
         "no-sms-consent": 26,
         "sms-unsub": 26,
         "unsubscribed-sms": 26,
-        "inbound-call-po": 22,
-        "topic-party": 22,
-        "voice-agent-sms": 22,
+        "inbound-call-po": 24,
+        "topic-party": 24,
+        "voice-agent-sms": 24,
         "openlink": 14,
         "promo-redeemed-pol": 12,
         "wp": 9,
@@ -75,12 +75,6 @@
       },
       "attribution_samples": [
         {
-          "utmSource": "facebook",
-          "utmMedium": "paid_social",
-          "campaign": "Halfprice-pol",
-          "referrer": "http://m.facebook.com"
-        },
-        {
           "utmSource": "google",
           "utmMedium": "paid_search",
           "campaign": "Halfprice-pol",
@@ -93,10 +87,16 @@
           "referrer": null
         },
         {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://www.google.com"
+        },
+        {
           "utmSource": "facebook",
           "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": null
+          "referrer": "https://instagram.com"
         },
         {
           "utmSource": null,
@@ -105,17 +105,13 @@
           "referrer": null
         },
         {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://facebook.com"
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-06-15",
-          "new_leads": 4
-        },
         {
           "week_start": "2026-06-22",
           "new_leads": 5
@@ -138,23 +134,27 @@
         },
         {
           "week_start": "2026-07-27",
-          "new_leads": 40
+          "new_leads": 39
         },
         {
           "week_start": "2026-08-03",
-          "new_leads": 19
+          "new_leads": 20
         },
         {
           "week_start": "2026-08-10",
-          "new_leads": 18
+          "new_leads": 15
         },
         {
           "week_start": "2026-08-17",
-          "new_leads": 11
+          "new_leads": 14
         },
         {
           "week_start": "2026-08-24",
           "new_leads": 16
+        },
+        {
+          "week_start": "2026-08-31",
+          "new_leads": 8
         }
       ],
       "campaign_sends": {
@@ -166,9 +166,9 @@
         "birthday-pol-lead": 109,
         "bogo-pol-lead": 41,
         "bogo-wp-lead": 8,
-        "half-pol-lead": 317,
-        "offer-half": 318,
-        "promo-issued": 351,
+        "half-pol-lead": 325,
+        "offer-half": 326,
+        "promo-issued": 359,
         "voucher-delivered": 111,
         "voucher-delivered-resend": 4
       },
@@ -179,9 +179,9 @@
       },
       "voice_inbound": {
         "birthday-inquiry": 2,
-        "inbound-call-po": 22,
-        "topic-party": 22,
-        "voice-agent-sms": 22
+        "inbound-call-po": 24,
+        "topic-party": 24,
+        "voice-agent-sms": 24
       },
       "metrics": {
         "voucher_delivered": 111,
@@ -197,7 +197,7 @@
     "WP": {
       "location_id": "yaRfypmZfcGDtpGEz3Gz",
       "connection": "ok",
-      "total_contacts": 37120,
+      "total_contacts": 37124,
       "tag_counts": {
         "reactivate-wk1-tue": 500,
         "reactivate-wk1-sun": 499,
@@ -205,10 +205,10 @@
         "reactivate-wk1-wed": 498,
         "reactivate-wk1-mon": 494,
         "weekly-list": 313,
-        "wp": 292,
-        "promo-issued": 290,
-        "offer-half": 278,
-        "half-wp-lead": 276,
+        "wp": 294,
+        "promo-issued": 292,
+        "offer-half": 280,
+        "half-wp-lead": 278,
         "voucher-delivered": 149,
         "voucher-optin-pending": 149,
         "bday-start-2026-07-06": 144,
@@ -220,9 +220,9 @@
         "nudge-email-may2026": 38,
         "half-redeemed": 36,
         "redeemed-half": 36,
-        "inbound-call-wp": 24,
-        "topic-party": 24,
-        "voice-agent-sms": 24,
+        "inbound-call-wp": 27,
+        "topic-party": 27,
+        "voice-agent-sms": 27,
         "bogo-wp-lead": 15,
         "no sms": 15,
         "no-sms-consent": 15,
@@ -270,10 +270,10 @@
           "referrer": null
         },
         {
-          "utmSource": "facebook",
-          "utmMedium": "paid_social",
-          "campaign": "Halfprice-wp",
-          "referrer": "https://l.facebook.com"
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
         },
         {
           "utmSource": null,
@@ -301,10 +301,6 @@
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-06-15",
-          "new_leads": 26
-        },
         {
           "week_start": "2026-06-22",
           "new_leads": 28
@@ -344,6 +340,10 @@
         {
           "week_start": "2026-08-24",
           "new_leads": 0
+        },
+        {
+          "week_start": "2026-08-31",
+          "new_leads": 1
         }
       ],
       "campaign_sends": {
@@ -354,9 +354,9 @@
       "offer_leads": {
         "birthday-wp-lead": 144,
         "bogo-wp-lead": 15,
-        "half-wp-lead": 276,
-        "offer-half": 278,
-        "promo-issued": 290,
+        "half-wp-lead": 278,
+        "offer-half": 280,
+        "promo-issued": 292,
         "voucher-delivered": 149,
         "voucher-delivered-resend": 7
       },
@@ -365,9 +365,9 @@
         "birthday-wp-lead": 144
       },
       "voice_inbound": {
-        "inbound-call-wp": 24,
-        "topic-party": 24,
-        "voice-agent-sms": 24
+        "inbound-call-wp": 27,
+        "topic-party": 27,
+        "voice-agent-sms": 27
       },
       "metrics": {
         "voucher_delivered": 149,
