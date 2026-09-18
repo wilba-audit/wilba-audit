@@ -16,11 +16,11 @@
 
 | # | Pillar | Hook | Source | Assets | Status |
 |---|--------|------|--------|--------|--------|
-| 1 | Jess's World | "I build AI that runs businesses — from a laptop on the Surf Coast. Here's what that looks like." | Authority Bank #1 | 🎥🖼 | Draft |
-| 2 | Behind the AI | "I can't code. I built an AI that rebooks a business's lost customers anyway." | new (flagship) | 🎥🖼 | Draft |
-| 3 | Revenue Leak | "Your business is losing money at 2am — and you can't even see it." | Authority Bank | 🎥🖼 | Draft |
-| 4 | Jess's World | "Six months ago I had $0 coming in. Here's what I changed." | new (build-in-public) | 🎥🖼 | Draft |
-| 5 | Behind the AI | "Everyone's using ChatGPT to write captions. I built something that makes that look like a typewriter." | Builder Reels B1 | 🎥🖼 | Draft |
+| 1 | Jess's World | "I build AI that runs businesses — from a laptop on the Surf Coast. Here's what that looks like." | Authority Bank #1 | 🎥🖼 | Produced |
+| 2 | Behind the AI | "I can't code. I built an AI that rebooks a business's lost customers anyway." | new (flagship) | 🎥🖼 | Produced |
+| 3 | Revenue Leak | "Your business is losing money at 2am — and you can't even see it." | Authority Bank | 🎥🖼 | Produced |
+| 4 | Jess's World | "Six months ago I had $0 coming in. Here's what I changed." | new (build-in-public) | 🎥🖼 | Produced |
+| 5 | Behind the AI | "Everyone's using ChatGPT to write captions. I built something that makes that look like a typewriter." | Builder Reels B1 | 🎥🖼 | Produced |
 
 ## 🖥 Screen-record (record 5 captures — see shot-list) — your strongest proof
 
