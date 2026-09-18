@@ -1,7 +1,10 @@
 # WILBA Sales Pipeline
 ## The deal board. The truth of the business. Run `/pipeline` to read it, `/pipeline [update]` to change it.
 
-**Target:** $10,000 USD cash collected in the 60-day sprint · **Started:** 2026-07-13
+**Target:** $10,000 USD cash collected · **Headline metric: discovery calls booked** · Niche: med spa AU
+
+> 📊 **Daily activity → `outputs/cash-sprint/scoreboard.md`.** Run `/daily` each morning. The stage flow below is the truth of each deal.
+> **Stages:** Outreach sent → Follow-up → Reply → **Call booked** (the number that matters) → Call held → Proposal → Won.
 
 ---
 

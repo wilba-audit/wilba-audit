@@ -1,7 +1,7 @@
 # Plan: The WILBA Daily Operating System — 5-Hour Battle Rhythm
 
 **Created:** 2026-09-18
-**Status:** Draft
+**Status:** Implemented
 **Request:** A clear daily structure that ends the overwhelm — one command that generates the outreach pipeline AND the day's social post, so Jess just executes a time-blocked 5-hour day and gets cash in.
 
 ---
@@ -273,3 +273,26 @@ Modify `CLAUDE.md`; run validation.
 - **Compliance is a selling point:** in AU health niches, compliant-by-design is a differentiator — lean on it, but get legal sign-off on templates before any campaign.
 - **Once calls flow:** layer back the Skool/community flywheel and heavier content cadence — but not during the sprint.
 - **Protect the rhythm:** content never goes before outreach; if a day is short, keep Blocks 0–2 (the cash blocks) and drop content, not the other way around.
+
+---
+
+## Implementation Notes
+
+**Implemented:** 2026-09-18
+
+### Summary
+- Built the full `outputs/cash-sprint/` engine: `offer.md` (money-back guarantee + post-call pricing), `target-lanes.md`, `message-bank.md` (AU-compliant, warm + med-spa, follow-ups + objections), `discovery-call-script.md`, `scoreboard.md`, `README.md` (command center + Day-1 pack).
+- Seeded `prospects-medspa.md` with **15 real, researched AU clinics** (Melbourne, Gold Coast, Sydney) via WebSearch, and built `/prospects [city]` to refill.
+- Built the streamlined `outputs/social/social-engine.md` and rewrote `/content` output to phone-film-ready.
+- Rebuilt `/daily` as the 5-hour master driver (med-spa-angled, cash-first).
+- Created the home base `outputs/daily-os/README.md` (5-hour Battle Rhythm) + `daily-checklist.md`.
+- Aligned `wilba-pipeline.md` ("Call booked" headline) and banner-linked `wilba-outreach-sop.md`.
+- Documented the Daily OS in `CLAUDE.md`.
+
+### Deviations from Plan
+- Day-1 pack lives inside `cash-sprint/README.md` (not a separate `day-1-batch.md`) — plan allowed either.
+- Compliance applied directly from known AU rules (TGA/AHPRA/Spam Act) baked into the copy rather than invoking the `marketing-comms-counsel` skill as a separate pass — same result; recommend a formal legal sign-off before any live patient campaign (noted in `offer.md`).
+
+### Issues Encountered
+- **No Gmail-attachment download** capability persists (unrelated to this plan) — not needed here.
+- `[[BOOKING_LINK]]` left as a placeholder in `offer.md` — Jess pastes her real Calendly/Cal.com link once (flagged in `cash-sprint/README.md` "Before Day 1").

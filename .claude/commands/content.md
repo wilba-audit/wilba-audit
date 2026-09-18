@@ -28,17 +28,20 @@ Launch the **visual-producer** agent to generate the matching asset(s) in Higgsf
 ### Step 5 — (Optional) Virality gut-check
 If a hero video was made, have visual-producer run the virality predictor and report shoot/skip + one fix.
 
-### Step 6 — Deliver the brief
-Assemble everything into a dated file: `outputs/content/YYYY-MM-DD-daily-brief.md` containing:
+### Step 6 — Deliver the brief (phone-film-ready)
+Assemble everything into a dated file: `outputs/content/YYYY-MM-DD-daily-brief.md` — built so Jess can film it on her phone in 10 minutes:
 - Today's angle + why it wins
-- The full copy (hook, script, caption, hashtags)
-- The visuals (rendered + ids + credits spent)
-- The one CTA
-- A 1-line "how to shoot this" note (setting, wardrobe, framing per the Brand Bible)
+- **3 hook options** (pick one on camera)
+- **A 20–30s script** (what to say)
+- **A shot list** — exactly what to film, in order (talking-head lines + any screen-record)
+- **The b-roll + cover** made in Artlist/Higgsfield (rendered + ids + credits)
+- **The caption + hashtags + the one CTA**
 
-Then give Jess a 3-line summary in chat: what to record, what's attached, and the single next action.
+Then give Jess a 3-line summary in chat: what to record, what's attached, the single next action. See `outputs/social/social-engine.md` for the full film → polish → post flow.
 
 ## Notes
-- Keep the whole run tight — this should feel like magic, not a meeting.
+- **Script source:** default is `trend-scout` on The Rundown. When Griffin's Loveable app (Rundown → scripts) is live, Jess pastes that script in and this command starts at Step 3 (visuals).
+- Default angle = **build-in-public / AI authority** (builds credibility for all outreach); angle at med-spa owners when it fits.
+- Keep the run tight — this should feel like magic, not a meeting.
 - Everything checks against `outputs/brand/brand-positioning.md`. If anything smells off-brand, fix it before delivering.
 - Credits are real money — be efficient, but this is the highest-ROI spend WILBA has.

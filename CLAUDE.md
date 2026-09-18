@@ -262,6 +262,26 @@ Jess's organic content weapon. Turns daily AI news into finished, on-brand conte
 
 ---
 
+### The WILBA Daily Operating System (ACTIVE — current focus)
+
+Jess's daily structure to end the overwhelm and book discovery calls fast. **Home base: `outputs/daily-os/README.md`. One command: `/daily`.** Cash first, content last.
+
+**The rhythm (5-hour day):** Prime (`/daily`) → Send outreach → Prospect + reply → Calls → Content → Close-out. Full block breakdown + checklist in `outputs/daily-os/`.
+
+**Niche:** med spa / cosmetic clinics AU (owner-operated, injectables-led, cash-pay, 300+ dormant patients). **Offer:** the AI receptionist/reactivation system — *"we build it, and if you don't love it, full refund."* Price is set **after** the discovery call. Sell the call, never the build.
+
+**The outreach engine — `outputs/cash-sprint/`:** `offer.md` · `target-lanes.md` (warm-first, then med spa) · `message-bank.md` (AU Spam-Act + TGA/AHPRA compliant) · `prospects-medspa.md` (living list, 15 seeded) · `discovery-call-script.md` · `scoreboard.md` (headline metric: **calls booked**).
+
+**Commands:** `/daily` (master — generates the whole day) · `/prospects [city]` (Claude researches + appends med-spa prospects via WebSearch) · `/content` (phone-film-ready posts) · `/outreach` (just the messages) · `/pipeline` (deal board) · `/mentor` (Mon targets).
+
+**Social — `outputs/social/social-engine.md`:** script (`/content` or Griffin's Loveable Rundown→script app when live) → film on phone → b-roll/cover via `visual-producer` (Artlist + Higgsfield) → caption → post. Default angle: build-in-public / AI authority. Batch a week with `/content-week`.
+
+**Delivery reality:** the med-spa/receptionist build is Griffin's (Prestique) — proven engine (5+ mo live, 200+ bookings for a US insurance client), med-spa version is a build (~6–8 wks), first client pro-bono. Compliance sign-off on templates before any live patient campaign.
+
+**Plan of record:** `plans/2026-09-18-daily-operating-system.md` (folds in `plans/2026-09-18-cash-sprint-outreach-engine.md`).
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.

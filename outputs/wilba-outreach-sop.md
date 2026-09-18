@@ -1,6 +1,8 @@
 # WILBA — Daily Outreach Routine + Social Plan
 ## The one page you follow every day. Outreach leads, social supports.
 
+> ⚡ **During the cash sprint, follow `outputs/daily-os/README.md` and run `/daily`** (med spa niche, 5-hour rhythm). This page is the steady-state / hospitality version — kept for reference.
+
 **Split:** ~80% outreach (the cash engine) / ~20% social (credibility + long game).
 **The rule:** when in doubt, do outreach. Content compounds; outreach pays.
 

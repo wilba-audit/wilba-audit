@@ -1,34 +1,34 @@
-# /daily — Your WILBA Day, One Command
+# /daily — Your Whole Day, One Command
 
-> Type `/daily` each morning. It tees up your whole day in order: **cash first (outreach), then content.** You just execute what it hands you.
+> Type `/daily` each morning. It generates your entire day — outreach batch, fresh prospects, one social post — and hands you a time-blocked 5-hour schedule. You stop deciding and start executing.
+>
+> Home base: `outputs/daily-os/README.md`. Niche: **med spa / cosmetic clinics AU**. Cash first, content last.
 
 ## Instructions
 
-Run these in order. Narrate each in one plain line so Jess can follow. The goal: she finishes the run with a copy-paste outreach list and a ready-to-post piece of content — ~60 min of doing, zero deciding.
+Run these in order. One plain line of narration per step (Jess is non-technical and likes to see what's happening). The goal: she finishes the run with everything ready and just works the blocks.
 
-### Step 1 — Pipeline snapshot (10 seconds)
-Read `outputs/wilba-pipeline.md`. Tell Jess in 2 lines: where she is on the ONE number (3 paying hospitality clients), and who's due a follow-up today.
+### Step 1 — Pipeline snapshot (10 sec)
+Read `outputs/cash-sprint/scoreboard.md` + `outputs/wilba-pipeline.md`. Tell Jess in 2 lines: the headline number (**discovery calls booked**) and who's **due a follow-up today**.
 
-### Step 2 — OUTREACH FIRST 💰 (the cash engine — always before content)
-Launch the **outreach-writer** agent (or use the prospect lists + `wilba-outreach-sop.md`). Produce **today's 10 touches**:
-- 5 new audit-led messages from `wilba-bali-prospects.md` / `wilba-prospect-list.md` (lead with each prospect's likely leak).
-- Follow-up messages for anyone messaged 2–3 days ago (check the pipeline).
-Present as a clean copy-paste **send list** (mark IG DM / LinkedIn / email). Remind her to log sends in `wilba-pipeline.md`.
+### Step 2 — OUTREACH BATCH 💰 (the cash engine — always first)
+Launch the **outreach-writer** agent. Produce **today's ~20 touches**, half warm / half med-spa:
+- **Warm (Lane A):** ~10 messages from Jess's network (she drops in names) using `message-bank.md` → Lane A.
+- **Med spa (Lane B):** ~10 messages for the next un-contacted clinics in `outputs/cash-sprint/prospects-medspa.md`, personalised with each clinic's leak, using `message-bank.md` → Lane B.
+- **Follow-ups first:** anyone messaged 2–3 days ago with no reply (check the pipeline) — follow-ups close deals.
+Present as a clean copy-paste **send list**, marked IG DM / email and first-touch vs follow-up, each with the booking link. Remind her to log sends in `scoreboard.md`.
 
-### Step 3 — CONTENT 🎨 (after outreach)
-One post for today, **hospitality-angled**:
-1. **Angle** — pull from today's Rundown (via **trend-scout**) or the next hospitality idea (Baha Baha build, a booking-leak tip, behind-the-scenes).
-2. **Copy** — **hook-writer** agent → hook + caption in Jess's voice.
-3. **Visual** — **visual-producer** agent. Two studios now live:
-   - **Higgsfield** — `mcp__Higgsfield__generate_image/generate_video` (thumbnails, faceless b-roll, avatar).
-   - **Artlist** — `mcp__artlist__generate_image/generate_video/generate_voiceover` (b-roll, voiceovers).
-   Pick whichever fits, or hand Jess a shot list if she's filming herself. Preflight credits.
-4. Deliver ready to post (LinkedIn + IG).
+### Step 3 — Top up the pipeline (if thin)
+If `prospects-medspa.md` is running low on "New" rows, run the `/prospects` logic to research + append ~10 more so tomorrow's batch is loaded.
 
-### Step 4 — The one line
-Jess's single most important revenue action today + one short kick.
+### Step 4 — ONE social post 🎨 (content, after outreach)
+Produce today's **phone-film-ready** post (run the `/content` flow): 3 hooks + a 20–30s script + a shot list + b-roll/cover made in Artlist/Higgsfield + caption + one CTA. Default angle: build-in-public / AI authority. Deliver ready to film + post (IG + LinkedIn).
+
+### Step 5 — Print the day
+Hand Jess the **time-blocked 5-hour schedule** + the tick-box checklist from `outputs/daily-os/daily-checklist.md`, filled for today. End with her single most important action and one short kick.
 
 ## Rules
-- **Outreach always before content.** Cash before compounding.
+- **Outreach always before content.** If the day is short, keep the cash blocks and drop content, never the reverse.
 - Keep the whole run tight — Jess executes, doesn't decide.
-- Everything checks against the Brand Bible + the hospitality focus.
+- Everything checks against the Brand Bible + AU compliance (no prescription-med brand names, no testimonials; emails carry an unsubscribe).
+- Sell the **call**, never the build. The money-back guarantee carries the offer; price is set after the call.
