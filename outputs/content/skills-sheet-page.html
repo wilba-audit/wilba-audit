@@ -1,0 +1,190 @@
+<style>
+  :root {
+    --sand: #f5f0e8;
+    --bg: #f3ede2;
+    --surface: #ffffff;
+    --text: #2b2f3a;
+    --heading: #2c3e6b;
+    --muted: #6c7789;
+    --accent: #2f6fc0;
+    --accent-ink: #24589e;
+    --accent-soft: rgba(74, 144, 217, 0.12);
+    --border: #e6ddcd;
+    --shadow: 0 1px 2px rgba(44, 62, 107, 0.05), 0 8px 30px rgba(44, 62, 107, 0.07);
+    --maxw: 760px;
+    --radius: 14px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sand: #1c2233;
+      --bg: #151a28;
+      --surface: #20263a;
+      --text: #e9e3d6;
+      --heading: #cfd9ef;
+      --muted: #9aa4bb;
+      --accent: #6fa9e6;
+      --accent-ink: #8bbcf0;
+      --accent-soft: rgba(74, 144, 217, 0.16);
+      --border: #2c3450;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 34px rgba(0, 0, 0, 0.32);
+    }
+  }
+  :root[data-theme="light"] {
+    --sand: #f5f0e8; --bg: #f3ede2; --surface: #ffffff; --text: #2b2f3a;
+    --heading: #2c3e6b; --muted: #6c7789; --accent: #2f6fc0; --accent-ink: #24589e;
+    --accent-soft: rgba(74, 144, 217, 0.12); --border: #e6ddcd;
+    --shadow: 0 1px 2px rgba(44, 62, 107, 0.05), 0 8px 30px rgba(44, 62, 107, 0.07);
+  }
+  :root[data-theme="dark"] {
+    --sand: #1c2233; --bg: #151a28; --surface: #20263a; --text: #e9e3d6;
+    --heading: #cfd9ef; --muted: #9aa4bb; --accent: #6fa9e6; --accent-ink: #8bbcf0;
+    --accent-soft: rgba(74, 144, 217, 0.16); --border: #2c3450;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 34px rgba(0, 0, 0, 0.32);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+  .eyebrow {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-ink); margin: 0 0 18px;
+  }
+
+  /* Hero */
+  header.hero { padding: 74px 0 44px; }
+  header.hero h1 {
+    font-size: clamp(2.1rem, 6vw, 3.3rem); line-height: 1.04; letter-spacing: -0.02em;
+    color: var(--heading); margin: 0 0 18px; text-wrap: balance; font-weight: 800;
+  }
+  header.hero h1 .em { color: var(--accent); }
+  .lede { font-size: clamp(1.05rem, 2.4vw, 1.28rem); color: var(--text); margin: 0 0 26px; max-width: 60ch; }
+  .lede strong { color: var(--heading); }
+  .byline { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 0.95rem; }
+  .byline .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+
+  /* Callout */
+  .callout {
+    background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 18px 20px; margin: 32px 0 8px; color: var(--text); font-size: 0.98rem;
+  }
+  .callout b { color: var(--heading); }
+
+  /* Sections */
+  section.system { padding: 40px 0 6px; }
+  .sys-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .sys-head h2 {
+    font-size: clamp(1.3rem, 3.4vw, 1.7rem); color: var(--heading); margin: 0; letter-spacing: -0.01em; font-weight: 800;
+  }
+  .sys-head .tag { font-size: 1.25rem; }
+  .sys-sub { color: var(--muted); margin: 2px 0 20px; font-size: 1rem; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); overflow: hidden;
+  }
+  .skill { padding: 16px 20px; border-top: 1px solid var(--border); }
+  .skill:first-child { border-top: none; }
+  .skill .name {
+    font-weight: 700; color: var(--heading);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.96rem; margin-bottom: 3px;
+  }
+  .skill .desc { color: var(--text); font-size: 0.98rem; margin: 0; }
+  .prose { padding: 16px 20px; border-top: 1px solid var(--border); color: var(--text); }
+  .prose .steal { color: var(--accent-ink); font-weight: 700; }
+
+  .single { padding: 20px; }
+  .single p { margin: 0; }
+
+  /* CTA */
+  .cta {
+    margin: 52px 0 20px; background: var(--heading); color: #fff; border-radius: 18px;
+    padding: 40px 30px; text-align: center; box-shadow: var(--shadow);
+  }
+  :root[data-theme="dark"] .cta { background: linear-gradient(160deg, #24304f, #1a2138); border: 1px solid var(--border); }
+  @media (prefers-color-scheme: dark) { .cta { background: linear-gradient(160deg, #24304f, #1a2138); border: 1px solid var(--border); } }
+  .cta h2 { color: #fff; font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
+  .cta p { color: #d9e2f2; margin: 0 auto 26px; max-width: 46ch; }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 700; padding: 15px 30px; border-radius: 999px; font-size: 1.02rem;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .btn:hover { background: #5aa0e8; transform: translateY(-1px); }
+  .btn:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 3px; }
+  .cta .fine { display: block; margin-top: 16px; color: #aebbd4; font-size: 0.85rem; }
+
+  footer { padding: 30px 0 70px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); margin-top: 30px; }
+  footer .sig { color: var(--heading); font-weight: 700; }
+
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Free skills sheet</p>
+    <h1>The exact AI skills running my business. <span class="em">Steal them.</span></h1>
+    <p class="lede">I'm Jess. I run an AI automation agency from the Surf Coast of Australia — and here's the part most people won't tell you: <strong>I can't code.</strong> Not a line. Everything below, I built by describing what I wanted in plain English. Now these skills run my business every day.</p>
+    <p class="byline"><span class="dot"></span> Jess Morrell · WILBA · a founder who taught herself to build AI</p>
+    <div class="callout"><b>New to this?</b> A "skill" is just an instruction you build once and your AI runs forever — no re-explaining, no code. Think of it as an employee who only needs training a single time.</div>
+  </header>
+
+  <section class="system">
+    <div class="sys-head"><span class="tag">📣</span><h2>The Content Engine</h2></div>
+    <p class="sys-sub">Turns daily AI news into finished, on-brand content — so I never face a blank page.</p>
+    <div class="card">
+      <div class="skill"><div class="name">/content</div><p class="desc">The whole morning loop: reads the day's AI news → finds the angles my audience cares about → writes a post in my voice → makes the visuals. One command.</p></div>
+      <div class="skill"><div class="name">Trend Scout</div><p class="desc">An agent that reads my newsletters every morning and surfaces the 2–3 ideas actually worth posting about.</p></div>
+      <div class="skill"><div class="name">Hook Writer</div><p class="desc">Turns any idea into a finished script + caption, in my exact voice, checked against my brand rules.</p></div>
+      <div class="skill"><div class="name">Visual Producer</div><p class="desc">Generates thumbnails, carousels, and b-roll — on-brand — and predicts how a video will perform before I post it.</p></div>
+      <div class="skill"><div class="name">Repurposer</div><p class="desc">One video → a Reel, a Short, a carousel, a Story, and an email. Record once, post everywhere.</p></div>
+      <div class="prose"><span class="steal">Steal the idea →</span> point your AI at the sources you already read, give it your voice, and let it draft. You direct; it produces.</div>
+    </div>
+  </section>
+
+  <section class="system">
+    <div class="sys-head"><span class="tag">💸</span><h2>The Audit Machine</h2></div>
+    <p class="sys-sub">My best salesperson — and it's software.</p>
+    <div class="card">
+      <div class="single"><p>Someone fills out a form on my site. Sixty seconds later they get a <b>personalised report</b> — their exact numbers, their roadmap — in their inbox. No human touches it. It reads the answers, does the maths, writes the report, sends it. While I sleep.</p></div>
+      <div class="prose"><span class="steal">Steal the idea →</span> any time you send the "same kind of document" to different people (quotes, reports, proposals), that's a skill waiting to be built.</div>
+    </div>
+  </section>
+
+  <section class="system">
+    <div class="sys-head"><span class="tag">🌅</span><h2>The Daily Brief</h2></div>
+    <p class="sys-sub">Hands a messy business to AI and gets back a clean morning.</p>
+    <div class="card">
+      <div class="single"><p>For a client, I fed the AI everything — bookings, team, the daily chaos — and asked for a brief every morning. Now, before anyone's awake, it pulls it all together: who's arriving, who's leaving, what needs to happen. Sent automatically at 6am.</p></div>
+      <div class="prose"><span class="steal">Steal the idea →</span> whatever you check across five tabs every morning, an agent can check for you and hand you the summary.</div>
+    </div>
+  </section>
+
+  <section class="system">
+    <div class="sys-head"><span class="tag">🧠</span><h2>The AIOS — the whole operating system</h2></div>
+    <p class="sys-sub">The layer that makes all of the above possible.</p>
+    <div class="card">
+      <div class="single"><p>The secret isn't any one skill — it's giving your AI <b>context</b> about your business once, so every skill it runs is already smart about who you are, what you sell, and how you talk. That's the foundation. Everything else is built on top, one skill at a time.</p></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Want to build your own?</h2>
+    <p>This sheet is the <em>what</em>. Building it for <b>your</b> business is the <em>how</em> — and that's what we do inside <b>The AIOS Builders</b>. Every week we build a real skill together, live. You leave with something that works.</p>
+    <a class="btn" href="#" target="_blank" rel="noopener">Join The AIOS Builders →</a>
+    <span class="fine">Founding members lock in the lowest price it'll ever be.</span>
+  </div>
+
+  <footer>
+    <p><span class="sig">Jess Morrell</span> · WILBA (wilba.ai) — a founder who taught herself to build AI systems, so you can too. 🤙</p>
+  </footer>
+</div>

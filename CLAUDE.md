@@ -228,6 +228,40 @@ only; (5) Meta/Google API tokens not set as secrets yet (only GHL is wired).
 
 ---
 
+### The WILBA Content Engine (Personal Brand — Instagram + YouTube)
+
+Jess's organic content weapon. Turns daily AI news into finished, on-brand content for her personal brand. Fuel: **The Rundown AI** (Gmail, `news@daily.therundown.ai`). Voice: the Brand Bible. Studio: **Higgsfield** (connected, Plus plan). Jess stays the face + director.
+
+**The loop:** Rundown AI email → angles reframed for WILBA's audience → copy in Jess's voice → visuals made in Higgsfield → daily brief, ready to shoot.
+
+**Agents** (`.claude/agents/`): `trend-scout` (reads Rundown, surfaces angles) · `hook-writer` (angle → on-brand copy) · `visual-producer` (Higgsfield images/video/thumbnails + virality prediction) · `repurposer` (one piece → six).
+
+**Commands** (`.claude/commands/`):
+- `/content` — flagship daily loop (Rundown → reel + visuals → daily brief)
+- `/rundown` — just today's angles from The Rundown AI
+- `/make-reel [topic]` · `/make-carousel [topic]` · `/thumbnail [title]`
+- `/content-week` — batch a whole week · `/repurpose [video/script]` — one → six · `/post-check [draft]` — brand + virality check
+
+**Reads from:** `outputs/brand/brand-positioning.md` (voice) + `outputs/brand/social-media-intelligence.md` (segments, pillars, hooks, 30-day calendar).
+**Saves to:** `outputs/content/` (daily briefs, reels, carousels, thumbnails, weeks, logs). Index: `outputs/content/README.md`.
+
+**Primary content direction — The AIOS Builder brand:** Jess is positioning as an industry leader for *non-technical founders building AI systems* — mirroring the Claude Code hacks / skills-sheet creators (e.g. @ai_with_albert), funnelling into a Skool community. Her angle: "I can't code, and I built a business that runs on AI anyway — so can you." Strategy: `outputs/brand/aios-builder-brand-strategy.md`.
+
+**The funnel:** Reel (give away a real skill) → *comment `SKILLS`* → auto-DM the skills sheet → capture email → nurture → **Skool: "The AIOS Builders"** (~$39 founding / $59/mo).
+- Lead magnet: `outputs/content/skills-sheet.md`
+- Comment-to-DM (Manychat) flow + copy: `outputs/content/funnel/comment-to-dm-flow.md`
+- Skool offer/pricing/structure/copy: `outputs/content/funnel/skool-setup.md`
+- Email nurture (5 emails): `outputs/content/funnel/email-nurture.md`
+- Reel scripts: `outputs/content/scripts/builder-reels-batch-1.md` + `-batch-2.md` (16 scripts)
+
+**Two revenue engines (no conflict):** (1) near-term cash = WILBA **agency** via warm outreach → free audit → done-for-you clients (see `outputs/wilba-10k-60day-sprint.md`); (2) long-term flywheel = **builder brand → skills sheet → Skool** (recurring). Master plan tying both together: `outputs/wilba-master-plan.md`. Agency content bank: `outputs/content/30-post-authority-bank.md`.
+
+**The Sales Engine (cash side):** commands `/outreach` (writes the day's 10-12 warm messages to send) and `/pipeline` (deal board + next best action), powered by the `outreach-writer` agent. Ready-to-send copy: `outputs/wilba-outreach-pack.md`. Deal board: `outputs/wilba-pipeline.md`. Skool starter modules: `outputs/content/funnel/skool-starter-modules.md`. Launch checklist: `outputs/content/LAUNCH-CHECKLIST.md`.
+
+**Status:** Content Engine + full builder funnel copy built. Needs (Jess's clicks): connect Manychat to IG, spin up the Skool space, host the skills sheet + email capture. Then record reels (start 1, 8, 9, 16) with the comment-to-DM live. Higgsfield visuals paused pending a photo of Jess for consistent thumbnails/avatar.
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.

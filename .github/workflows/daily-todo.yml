@@ -1,0 +1,25 @@
+name: Daily To-Do (Telegram)
+
+# Sends Jess her daily to-do on Telegram every weekday morning.
+# 21:00 UTC = 7:00am AEST (Surf Coast). Mon–Fri.
+on:
+  schedule:
+    - cron: "0 21 * * 0-4"
+  workflow_dispatch: {} # lets you run it manually to test
+
+jobs:
+  send-todo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install anthropic
+      - name: Send daily to-do
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/daily_todo_telegram.py
