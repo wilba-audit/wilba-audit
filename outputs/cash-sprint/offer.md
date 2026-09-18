@@ -37,7 +37,7 @@ Do **not** quote a number in outreach. Price is level-based and set on the call 
 - Before any live patient campaign: **Australian regulatory sign-off on templates.** Budget for it.
 
 ## The booking link (used in every message)
-`[[BOOKING_LINK]]` ← paste your Calendly/Cal.com link here once; every message in the message bank pulls it in.
+**https://calendly.com/hello-wilba/30min** ← this is now baked into every message in the bank.
 
 ---
 _Related: `target-lanes.md` (who) · `message-bank.md` (what to send) · `discovery-call-script.md` (the call) · `scoreboard.md` (tracking)._

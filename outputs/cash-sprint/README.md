@@ -12,9 +12,9 @@
 - **`discovery-call-script.md`** — the 15-min call.
 - **`scoreboard.md`** — daily activity tracking.
 
-## ⚠️ Before Day 1 (2 minutes)
-1. Paste your booking link into `offer.md` where it says `[[BOOKING_LINK]]` (I'll then use it in every message).
-2. Line up 8–10 warm names (people who know you) for Lane A.
+## ⚠️ Before Day 1
+- ✅ Booking link wired in everywhere: **https://calendly.com/hello-wilba/30min**
+- Warm lane = anyone who knows you (for referrals OR a direct pitch if they run an appointment/cash-pay business). You do NOT need warm med-spa contacts — the cold med-spa lane runs on the seeded list because the offer (free first build + full refund) removes the need for warmth.
 
 ---
 
