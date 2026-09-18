@@ -1,6 +1,8 @@
 # /content-week — Batch a Whole Week in One Session
 
 > The leverage move. Plan and pre-write 7 days of content at once so posting is just uploading.
+>
+> **Bigger push?** For a 15–30 post weekend sprint use **`/content-batch [N]`** (bulk producer, pulls from `outputs/content/weekend-sprint/30-post-plan.md`). `/content-week` stays the 5–7/week planner.
 
 ## Instructions
 

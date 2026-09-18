@@ -40,6 +40,9 @@ Rotate through: a build-in-progress clip · a "here's a system I made" demo · a
 ## Batch a week in one sitting (optional, recommended)
 Run `/content-week` → I plan 5–7 posts, you film them all in one session, I make all the visuals. A week of content in ~90 min. Best way to stay consistent without daily filming.
 
+## Go big: the weekend sprint (30 posts)
+For a month-long buffer, run the **Weekend Content Sprint**: `outputs/content/weekend-sprint/README.md` → `/content-batch 15` (×2 across the weekend). 30 posts **produced and scheduled out ~1/day** (don't dump them all at once). On camera once. Artlist automates the faceless production — see `outputs/social/artlist-automation.md`.
+
 ## The rules
 - **Outreach before content, always.** If a day is short, drop content, not outreach.
 - **Consistency > perfection.** Posted-and-imperfect beats perfect-and-never.

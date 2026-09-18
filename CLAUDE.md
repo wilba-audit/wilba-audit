@@ -274,7 +274,7 @@ Jess's daily structure to end the overwhelm and book discovery calls fast. **Hom
 
 **Commands:** `/daily` (master — generates the whole day) · `/prospects [city]` (Claude researches + appends med-spa prospects via WebSearch) · `/content` (phone-film-ready posts) · `/outreach` (just the messages) · `/pipeline` (deal board) · `/mentor` (Mon targets).
 
-**Social — `outputs/social/social-engine.md`:** script (`/content` or Griffin's Loveable Rundown→script app when live) → film on phone → b-roll/cover via `visual-producer` (Artlist + Higgsfield) → caption → post. Default angle: build-in-public / AI authority. Batch a week with `/content-week`.
+**Social — `outputs/social/social-engine.md`:** script (`/content` or Griffin's Loveable Rundown→script app when live) → film on phone → b-roll/cover via `visual-producer` (Artlist + Higgsfield) → caption → post. Default angle: build-in-public / AI authority. Batch a week with `/content-week`; go big with the **Weekend Sprint** (`outputs/content/weekend-sprint/`, `/content-batch [N]`) — 30 posts produced + scheduled out. Artlist automation: `outputs/social/artlist-automation.md` (voiceover + b-roll = faceless reels; it can't auto-post).
 
 **Delivery reality:** the med-spa/receptionist build is Griffin's (Prestique) — proven engine (5+ mo live, 200+ bookings for a US insurance client), med-spa version is a build (~6–8 wks), first client pro-bono. Compliance sign-off on templates before any live patient campaign.
 

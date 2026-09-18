@@ -1,7 +1,7 @@
 # Plan: The Weekend Content Sprint — 30 Posts Produced & Scheduled
 
 **Created:** 2026-09-18
-**Status:** Draft
+**Status:** Implemented
 **Request:** Spend the weekend batch-producing ~30 Instagram posts (scripts + assets), using Artlist to automate as much as possible, with minimal filming — and decide whether a dedicated social command is needed.
 
 ---
@@ -244,3 +244,21 @@ Modify `.claude/commands/content-week.md`, `outputs/social/social-engine.md`, `C
 - **Highest-value posts:** the screen-record reels (proof the system works) and the build-in-public talking-heads — front-load these in the schedule.
 - **Weekday tie-in:** once the buffer exists, `/daily` Block 4 just pulls the next scheduled post instead of producing fresh — protecting outreach time.
 - **Don't over-invest in perfection:** a phone-shot, Artlist-polished reel that ships beats a perfect one that never does.
+
+---
+
+## Implementation Notes
+
+**Implemented:** 2026-09-18
+
+### Summary
+- Built `outputs/content/weekend-sprint/`: `30-post-plan.md` (30 rows across the exact mix — 5 talking-head, 5 screen-record, 10 faceless, 10 carousel, with hooks, sources, assets, status), `README.md` (2-day run-sheet + scheduling workflow + "drip don't dump"), `batch-film-shotlist.md` (one 5-clip film session + 5 screen-captures).
+- Built `outputs/social/artlist-automation.md` (voiceover/b-roll/image = yes; auto-post = no; the faceless recipe + CapCut steps + MCP-down fallback).
+- Built `.claude/commands/content-batch.md` (`/content-batch [N]` bulk producer that generates copy + queues Artlist assets + updates the tracker).
+- Cross-linked `/content-week`, `social-engine.md`, and `CLAUDE.md`.
+
+### Deviations from Plan
+- None material. `/content-batch` saves finished posts to `outputs/content/weekend-sprint/posts/` (created on first run).
+
+### Issues Encountered
+- Artlist/Higgsfield MCP connectivity has been intermittent this session; `content-batch.md` + `artlist-automation.md` include a fallback (produce all copy + hand Jess exact prompts to run in the Artlist app) so the weekend is never blocked.
