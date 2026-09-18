@@ -56,6 +56,37 @@
 
 ---
 
+## LANE D — Google-Ads Advertisers (cold, high-intent)
+
+> They pay for every lead → slow follow-up is wasted money. Honest + urgent. Never imply a fault with their account. Source them with `/ad-scan`.
+
+### D1 · First touch (email)
+> **Subject:** the leads your Google Ads are paying for
+>
+> Hi [name],
+>
+> Saw you're running Google Ads for [service] in [city] — so every enquiry that comes in is costing you real money. The bit most businesses lose isn't the click, it's what happens next: a lead comes in after hours or on a flat-out day, no one answers fast enough, and the spend is wasted.
+>
+> I built an AI system that answers every enquiry in minutes and keeps following up until they book — so you stop paying for leads that slip through. I'm setting one up free for a first business to prove it out, with a full money-back guarantee after that.
+>
+> Worth a quick look at what it'd do with your enquiries? https://calendly.com/hello-wilba/30min
+>
+> No worries if not — reply "no thanks" and I won't follow up.
+>
+> Jess
+> _WILBA · wilba.ai · reply STOP/"unsubscribe" to opt out._
+
+### D2 · First touch (Instagram DM)
+> Hi [name] — noticed you're running ads for [service] 🙌 Quick one: who answers the enquiries those ads bring in, and how fast? The leads that come in after hours are the ones that quietly slip. I built an AI system that answers every one in minutes and follows up till they book, so you stop paying for leads you lose. Setting one up free for a first business — worth a look? https://calendly.com/hello-wilba/30min
+
+### D3 · Follow-up #2 (2–3 days)
+> Hi [name], following up — simplest way to see it is a quick look at what happens to your ad enquiries right now vs answered-in-minutes. No pitch: https://calendly.com/hello-wilba/30min
+
+### D4 · Follow-up #3 (day 6) / break-up
+> Hi [name], last one from me 🙏 If tightening up what happens after the click ever moves up the list, the free-build spot is first-in. All the best either way. Jess
+
+---
+
 ## Objection bank (steer everything back to the call)
 - **"How much is it?"** → "Honestly depends on your list and setup, so I set the price after I've seen it — and the first build's free with a full refund guarantee anyway. Easiest is a quick look: https://calendly.com/hello-wilba/30min"
 - **"I already have someone / a system."** → "Love that. Most systems answer the phone but don't work the dormant list over weeks — that's the bit that's usually left on the table. Worth a 15-min second opinion? https://calendly.com/hello-wilba/30min"
