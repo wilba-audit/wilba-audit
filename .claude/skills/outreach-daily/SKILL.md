@@ -10,7 +10,27 @@ One run = one day of outreach. Everything here is unattended except the send.
 Read `outputs/pipeline/ICP.md` first. It is the qualification standard and the offer
 description, and it changes more often than this file.
 
-## 1. Check where the pipeline stands
+## 1. Stop chasing anyone who replied
+
+Before anything else, check for replies. Search Gmail for inbound mail from the
+domains of everyone whose status is Emailed or Follow-up N:
+
+```
+python3 scripts/wilba_outreach.py due          # who is mid-sequence
+```
+
+For each, `mcp__Gmail__search_threads` on their domain. Anyone who has written back
+gets marked immediately:
+
+```
+python3 scripts/wilba_outreach.py mark --ids <ids> --status Replied
+```
+
+That ends their sequence. **Nobody gets a follow-up after they have answered** — it
+is the fastest way to burn a prospect and a sender reputation. Surface the replies to
+Jess in the daily report; they are the whole point of the exercise.
+
+## 2. Check where the pipeline stands
 
 ```
 python3 scripts/wilba_outreach.py status
@@ -23,7 +43,7 @@ prospects are left.
 **If it says LOW, source before you draft.** A day spent sourcing is a fine day.
 Drafting into an empty list is not.
 
-## 2. Source, when the list is short
+## 3. Source, when the list is short
 
 Target: enough qualified prospects for a week at the current cap.
 
@@ -44,7 +64,7 @@ Append accepted rows to `outputs/pipeline/clinic-pipeline.csv` with `status` New
 `icp_fit` A or B per `ICP.md`, and `email_source` saying where the address was read
 and on what date.
 
-## 3. Draft the day's batch
+## 4. Draft the day's batch
 
 ```
 python3 scripts/wilba_outreach.py batch
@@ -79,6 +99,11 @@ goes to a patient.
 Around 120-140 words. Australian and British spelling. No "I hope this finds you
 well". No em-dash in the subject line.
 
+**The signature.** Every draft carries Jess's signature block. Pass it in `htmlBody`
+using the cold-outreach variant in `outputs/pipeline/email-signature.md` — the short
+one, without the audit CTA button. Give `body` the plain-text equivalent so the email
+degrades cleanly.
+
 Stage each one with `mcp__Gmail__create_draft`. Never `send_message`.
 
 Then:
@@ -86,7 +111,27 @@ Then:
 python3 scripts/wilba_outreach.py mark --ids <ids> --status "Draft ready"
 ```
 
-## 4. Report
+## 5. Draft the follow-ups that are due
+
+`python3 scripts/wilba_outreach.py due` lists them. The cadence runs from the day the
+initial went out:
+
+| Touch | Day | What it does |
+|---|---|---|
+| Initial | 0 | The verified opening fact, the offer, the risk reversal |
+| Follow-up 1 | +3 | Four lines. Restate only the risk reversal: they pay out of what it books. No new pitch. |
+| Follow-up 2 | +7 | A different angle — the size of the idle list, or what a comparable practice recovered. Still short. |
+| Follow-up 3 | +14 | The close-out. "I'll stop here — if it's ever worth a look, the offer stands." Leaves the door open and stops. |
+| — | after +14 | Retire as Lost. |
+
+Follow-ups reply into the **same Gmail thread** (`replyToMessageId` on the original),
+so it reads as one conversation rather than four cold emails. Keep each one shorter
+than the last. Nobody ever gets a fifth.
+
+Anything the `due` output lists under `RETIRE:` gets
+`mark --ids <ids> --status Lost`.
+
+## 6. Report
 
 Post one short reply in the thread: how many are staged, who they are, and anything
 that needs Jess. Keep it to a few lines — the detail is in the pipeline file.
@@ -94,7 +139,7 @@ that needs Jess. Keep it to a few lines — the detail is in the pipeline file.
 If nothing was staged because the list was empty, say that plainly and say how many
 prospects were sourced instead.
 
-## 5. Commit
+## 7. Commit
 
 Commit the pipeline and any new prospect rows to the working branch and push.
 
@@ -105,8 +150,14 @@ her name to people who did not ask to hear from her. A send cannot be recalled. 
 human presses the button on each batch — that is a deliberate design choice, not a
 missing feature.
 
-After she sends, record it so the ramp advances:
+After she sends, record it so the ramp advances and the sequence starts:
 ```
 python3 scripts/wilba_outreach.py mark --ids <ids> --status Emailed
 ```
-That also schedules follow-up 1 for three days later.
+That also schedules follow-up 1 for three days later. The same command records each
+follow-up as it goes out, which schedules the next one.
+
+**The From address.** Drafts are staged in whichever mailbox the Gmail connection
+points at. If that is still the personal account, the drafts are correct but the From
+needs switching at send time. Once `jess@wilba.ai` is connected, that stops being a
+step and nothing else about this changes.

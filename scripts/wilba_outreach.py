@@ -8,7 +8,8 @@ half (sourcing, qualifying, writing) is done by the session that calls this.
 
     python3 scripts/wilba_outreach.py status
     python3 scripts/wilba_outreach.py batch [--size N]
-    python3 scripts/wilba_outreach.py mark --ids 4,6,8 --status Drafted
+    python3 scripts/wilba_outreach.py due
+    python3 scripts/wilba_outreach.py mark --ids 4,6,8 --status "Draft ready"
     python3 scripts/wilba_outreach.py ramp
 
 Pipeline lives in outputs/pipeline/clinic-pipeline.csv.
@@ -28,6 +29,18 @@ RAMP_MAX = 20
 
 # Only these statuses mean "still to be approached".
 OPEN_STATUSES = {'New', 'Draft ready'}
+
+# Follow-up cadence, in days after the initial send. A reply at any point ends the
+# sequence - nobody gets chased after they have answered.
+SEQUENCE = [
+    ('Follow-up 1', 3),
+    ('Follow-up 2', 7),
+    ('Follow-up 3', 14),
+]
+SEQUENCE_END = 'Lost'
+
+# Statuses that mean the sequence has stopped and must not resume.
+STOPPED = {'Replied', 'Call booked', 'Proposal sent', 'Won', 'Lost', 'Disqualified'}
 
 
 def load_rows():
@@ -158,6 +171,61 @@ def cmd_batch(args):
     print(f'IDS: {",".join(r["id"] for r in batch)}')
 
 
+def cmd_due(args):
+    """Who is due a follow-up today, and which touch it is."""
+    rows = load_rows()
+    today = date.today()
+    due = []
+    for r in rows:
+        status = r.get('status', '').strip()
+        if status in STOPPED or status in OPEN_STATUSES or not status:
+            continue
+        sent = r.get('date_last_contact', '').strip()
+        if not sent:
+            continue
+        try:
+            sent_on = datetime.strptime(sent, '%Y-%m-%d').date()
+        except ValueError:
+            continue
+        # Which touch comes next after the current status?
+        names = [n for n, _ in SEQUENCE]
+        if status == 'Emailed':
+            nxt, gap = SEQUENCE[0]
+        elif status in names:
+            i = names.index(status)
+            if i + 1 >= len(SEQUENCE):
+                # Final touch already sent; retire it once the last gap has passed.
+                if (today - sent_on).days >= SEQUENCE[-1][1]:
+                    due.append((r, SEQUENCE_END, 0))
+                continue
+            nxt, gap = SEQUENCE[i + 1]
+        else:
+            continue
+        if (today - sent_on).days >= gap:
+            due.append((r, nxt, gap))
+
+    if not due:
+        print('Nothing due today.')
+        return
+
+    print(f'# Follow-ups due {today.isoformat()}')
+    print()
+    for r, nxt, gap in due:
+        if nxt == SEQUENCE_END:
+            print(f'## {r["id"]} | {r["clinic_name"]} -> retire as Lost (sequence complete, no reply)')
+            continue
+        print(f'## {r["id"]} | {r["clinic_name"]} -> {nxt}')
+        print(f'   to:       {r["contact_email"]}')
+        print(f'   who:      {r.get("lead_doctor") or "not named"}')
+        print(f'   last sent:{r.get("date_last_contact")} ({gap}+ days ago)')
+        print(f'   angle:    {r.get("opening_angle","")}')
+        print()
+    print(f'IDS: {",".join(r["id"] for r, n, g in due if n != SEQUENCE_END)}')
+    retire = [r["id"] for r, n, g in due if n == SEQUENCE_END]
+    if retire:
+        print(f'RETIRE: {",".join(retire)}')
+
+
 def cmd_mark(args):
     rows = load_rows()
     ids = {i.strip() for i in args.ids.split(',') if i.strip()}
@@ -166,10 +234,19 @@ def cmd_mark(args):
     for r in rows:
         if r['id'] in ids:
             r['status'] = args.status
-            if args.status == 'Emailed':
+            names = [n for n, _ in SEQUENCE]
+            if args.status == 'Emailed' or args.status in names:
                 r['date_last_contact'] = today
-                r['next_action'] = 'Follow-up 1'
-                r['next_action_date'] = (date.today() + timedelta(days=3)).isoformat()
+                if args.status == 'Emailed':
+                    nxt, gap = SEQUENCE[0]
+                else:
+                    i = names.index(args.status)
+                    nxt, gap = SEQUENCE[i + 1] if i + 1 < len(SEQUENCE) else (SEQUENCE_END, SEQUENCE[-1][1])
+                r['next_action'] = nxt
+                r['next_action_date'] = (date.today() + timedelta(days=gap)).isoformat()
+            elif args.status in STOPPED:
+                r['next_action'] = 'Sequence stopped'
+                r['next_action_date'] = today
             elif args.status == 'Draft ready':
                 r['next_action'] = 'Jess to review and send'
                 r['next_action_date'] = today
@@ -194,6 +271,7 @@ def main():
     sub = p.add_subparsers(dest='cmd', required=True)
     sub.add_parser('status').set_defaults(fn=cmd_status)
     sub.add_parser('ramp').set_defaults(fn=cmd_ramp)
+    sub.add_parser('due').set_defaults(fn=cmd_due)
     b = sub.add_parser('batch'); b.add_argument('--size', type=int); b.set_defaults(fn=cmd_batch)
     m = sub.add_parser('mark')
     m.add_argument('--ids', required=True)
