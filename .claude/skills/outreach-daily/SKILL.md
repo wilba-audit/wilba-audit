@@ -30,7 +30,17 @@ That ends their sequence. **Nobody gets a follow-up after they have answered** �
 is the fastest way to burn a prospect and a sender reputation. Surface the replies to
 Jess in the daily report; they are the whole point of the exercise.
 
-## 2. Check where the pipeline stands
+## 2. If Gmail is unavailable, source instead
+
+If the Gmail tools return a sign-in or authorisation error, no drafts can be staged
+this run. Do not treat that as a failed day: spend the whole run on step 3, sourcing
+and qualifying, which needs no mailbox. Say so plainly in the report — re-authorising
+is something only Jess can do, and she needs to know the drafts are not waiting.
+
+The same applies to a permission prompt that blocks web fetching. Report what stopped
+rather than looping on it.
+
+## 3. Check where the pipeline stands
 
 ```
 python3 scripts/wilba_outreach.py status
@@ -43,7 +53,7 @@ prospects are left.
 **If it says LOW, source before you draft.** A day spent sourcing is a fine day.
 Drafting into an empty list is not.
 
-## 3. Source, when the list is short
+## 4. Source, when the list is short
 
 Target: enough qualified prospects for a week at the current cap.
 
@@ -64,7 +74,7 @@ Append accepted rows to `outputs/pipeline/clinic-pipeline.csv` with `status` New
 `icp_fit` A or B per `ICP.md`, and `email_source` saying where the address was read
 and on what date.
 
-## 4. Draft the day's batch
+## 5. Draft the day's batch
 
 ```
 python3 scripts/wilba_outreach.py batch
@@ -111,7 +121,7 @@ Then:
 python3 scripts/wilba_outreach.py mark --ids <ids> --status "Draft ready"
 ```
 
-## 5. Draft the follow-ups that are due
+## 6. Draft the follow-ups that are due
 
 `python3 scripts/wilba_outreach.py due` lists them. The cadence runs from the day the
 initial went out:
@@ -131,7 +141,7 @@ than the last. Nobody ever gets a fifth.
 Anything the `due` output lists under `RETIRE:` gets
 `mark --ids <ids> --status Lost`.
 
-## 6. Report
+## 7. Report
 
 Post one short reply in the thread: how many are staged, who they are, and anything
 that needs Jess. Keep it to a few lines — the detail is in the pipeline file.
@@ -139,7 +149,7 @@ that needs Jess. Keep it to a few lines — the detail is in the pipeline file.
 If nothing was staged because the list was empty, say that plainly and say how many
 prospects were sourced instead.
 
-## 7. Commit
+## 8. Commit
 
 Commit the pipeline and any new prospect rows to the working branch and push.
 
