@@ -192,3 +192,51 @@ of the Atlantic.
 consults) and **The MedSpa of DFW** (Aesthetic Record, real membership) both have
 published emails and real systems, and are excluded only by the single-site rule.
 If Jess wants Houston volume, Skin 101 is the one to relax it for.
+
+## Found 24 Sep 2026 (United States — Northeast)
+
+### Worth a browser visit or a phone call, best first
+
+| Clinic | Where | Why it matters |
+|---|---|---|
+| **Greenwich Medical Spa** | 8 sites across CT, NY and NJ | The single best prospect found in the entire Northeast. Zenoti *and* GoHighLevel, a $99/month VIP membership with loyalty points and anniversary credits, plus a $199/month HRT programme. One browser tab away from being emailable |
+| **SkinMD** | 10 Massachusetts sites | The biggest Boston-area practice found. RepeatMD rewards, gift cards, CareCredit and Cherry |
+| **East Coast Advanced Plastic Surgery** | NYC + 5 NJ sites | 10 surgeons and 8 PA-Cs across six locations — the largest practice in the region |
+| **Ethos Aesthetics + Wellness** | 7 NJ sites | Owner-operated, not a chain. Two founders plus four NPs, and a VIP membership with bankable "Ethos Bucks" |
+| **Trifecta Med Spa** | 4 NY sites | Allergan Top 100 Injector, Zenoti, 0% APR plans |
+| **Metro Laser MedSpa** | 3 Philadelphia-area sites | Boulevard, memberships from $39 to $249 a month across two ladders |
+| **Tribeca MedSpa / AYA Skin** | 2 NYC sites | Board-certified plastic surgeon, Zenoti, an "AYA Beauty Bank" loyalty scheme |
+| **SkinHealth Centers**, **PURE Cosmetic**, **Demma Aesthetics**, **Clareo**, **Boston Medical Aesthetics** | Boston metro | All four have the profile and a real platform. None publishes an email |
+
+**Boston is a hole in the map.** Every strong Boston clinic found publishes no
+readable email, so the city contributed nothing to the pipeline. A focused
+Massachusetts pass would likely clear SkinMD, Demma, SkinHealth Centers and PURE
+Cosmetic — they need an address found, not qualifying.
+
+### Two more things the Northeast pass established
+
+**Boulevard is the dominant platform in the Northeast** — five of the fifteen
+qualified rows run on it, with Zenoti on two more and Aesthetic Record on three.
+Combined with the West Coast picture, that makes Boulevard and Zenoti the two
+integrations that would unlock the most US ground.
+
+**RepeatMD is worth watching.** It is a dormant-rewards database by design, and it
+turned up on both a qualified row (Newtown MediSpa) and a near-miss (SkinMD). Any
+clinic running it is, by definition, already tracking exactly the credit we would
+be reactivating.
+
+### Rejected on dormant signal rather than contactability
+
+A useful category, because it is the one kind of clinic to stop researching:
+**Plastic Surgery Group New Jersey** publishes a perfectly good address but runs no
+membership, loyalty, gift-card or financing scheme at all. Boston Center for
+Plastic Surgery, Longwood, NYBG Plastic Surgery and about a dozen other surgical
+groups are the same. Scale without a scheme is not a prospect for this offer —
+there is nothing dormant to reactivate.
+
+### Three grade-C fallbacks with real published emails
+
+If a batch ever needs topping up: **Aesthé By MD** (3 CT/NJ sites),
+**Manhattan Medspa** (annual memberships at $1,999 and $2,299) and
+**Skinly Aesthetics** (Skinly Club plus two lenders). All three fail only on
+naming a booking platform, which the first discovery question answers.
