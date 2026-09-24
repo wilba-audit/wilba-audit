@@ -62,3 +62,42 @@ best-fit prospect in the entire pipeline — it just cannot be emailed.
 - **Beauty-led rather than medical:** No.6 Clinic (Tunbridge Wells)
 - **Corporate chains — head office controls marketing:** sk:n, Thérapie,
   The Harley Medical Group, Air Aesthetics
+
+## Found 24 Sep 2026 (UK regional sweep — Manchester, Birmingham, Leeds, Bristol, Glasgow, Edinburgh)
+
+| Clinic | Why it qualifies | Why we can't email |
+|---|---|---|
+| **Quinn Clinics** (Bristol) | Eight-plus named staff including an oculoplastic surgeon, Zenoti, and four separate dormant pools — a named membership, a referral scheme, payment plans and gift vouchers | No email anywhere on the site. Phone 0117 924 4592, or the enquiry form |
+| Elanic (Glasgow) | Eleven named surgeons across three Bath Street addresses, financing eligibility checker, gift cards, free consultations | No email on the homepage or either contact page; on-site form only |
+| CLNQ / Reza Nassab (Manchester + Knutsford) | Two clinics, Chrysalis Finance, and a "CLNQ Privé" annual subscription membership | No email published and no booking system visible |
+
+Quinn Clinics is the strongest of these — the membership, referral scheme,
+payment plans and vouchers all point at exactly the list we want to work.
+
+### A judgement call worth knowing about
+
+**The Goddess Clinic (Edinburgh)** has the best dormant signal of anything found
+in this sweep — a "Goddess Glow Club" tiered subscription at £75/£125/£170 a
+month, gift cards, and free 45-minute consultations — plus a real booking system
+and a published email. It was excluded only because a single practitioner (Nurse
+Dawn, the founder) is named anywhere on the site, and our rule drops
+single-operator clinics. If Jess wants to relax that rule, this one goes
+straight in.
+
+## Ruled out in the UK regions, don't revisit
+
+- **Corporate and hospital chains:** Spire, Nuffield Health, sk:n, Thérapie,
+  Transform, The Private Clinic, Signature Clinic, Nu Cosmetic, Este Medical Group
+- **Single operators:** Essence Medical (Dr Kieren Bong, Glasgow), Craig Hobson
+  Aesthetics (Bristol), Skin & Joints / Vee Spandoni (Bristol), Skins Clinic
+  (Manchester)
+
+## One caveat on every "no CRM" verdict in this file
+
+Sourcing agents identify the booking system from where the "Book now" link
+points, because raw page source is not readable from this environment. A clinic
+recorded as having no identifiable system may still run one behind a contact
+form — it just isn't linked publicly. That is why the four C-graded rows in the
+pipeline (Manchester Private Hospital, UK Aesthetic, Victoria House Clinic,
+Yorkshire Skin Centre) are worth emailing anyway: the first discovery question
+answers it.
