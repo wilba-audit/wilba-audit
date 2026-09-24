@@ -24,7 +24,7 @@ LOG_PATH = os.path.join(ROOT, 'outputs/pipeline/send-log.json')
 
 # Cold domain warm-up. jess@wilba.ai has never sent anything, so volume ramps by
 # the number of days we have actually sent on, not by calendar date.
-RAMP = [(5, 5), (10, 10), (15, 15)]   # (through send-day N, daily cap)
+RAMP = [(2, 10), (5, 15)]   # (through send-day N, daily cap); 20/day from send-day 6
 RAMP_MAX = 20
 
 # Only these statuses mean "still to be approached".

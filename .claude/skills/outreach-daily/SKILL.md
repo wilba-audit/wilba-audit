@@ -52,8 +52,8 @@ rather than looping on it.
 python3 scripts/wilba_outreach.py status
 ```
 
-This prints today's cap (the domain is cold, so volume ramps 5 → 10 → 15 → 20 over
-the first fifteen send-days) and how many qualified, contactable, unapproached
+This prints today's cap (the domain is cold, so volume ramps 10 → 15 → 20 over
+the first five send-days, then holds at 20 a day, Jess's target) and how many qualified, contactable, unapproached
 prospects are left.
 
 **If it says LOW, source before you draft.** A day spent sourcing is a fine day.
