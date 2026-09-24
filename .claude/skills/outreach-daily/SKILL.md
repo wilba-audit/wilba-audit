@@ -33,9 +33,15 @@ Jess in the daily report; they are the whole point of the exercise.
 ## 2. If Gmail is unavailable, source instead
 
 If the Gmail tools return a sign-in or authorisation error, no drafts can be staged
-this run. Do not treat that as a failed day: spend the whole run on step 3, sourcing
-and qualifying, which needs no mailbox. Say so plainly in the report — re-authorising
-is something only Jess can do, and she needs to know the drafts are not waiting.
+this run. Do not treat that as a failed day: write the batch to
+`outputs/pipeline/outreach-batch-N.md` anyway so the copy is ready and reviewable,
+then spend the rest of the run on step 3, sourcing and qualifying, which needs no
+mailbox.
+
+**Connectors are read once, when a session starts.** If Jess reconnects Gmail while a
+session is already running, that session will never see it — retrying is pointless and
+so is asking her to reconnect again. The fix is a new session. Say that plainly rather
+than reporting the same error twice.
 
 The same applies to a permission prompt that blocks web fetching. Report what stopped
 rather than looping on it.
