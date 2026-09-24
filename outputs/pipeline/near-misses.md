@@ -132,3 +132,63 @@ the database the offer is built for.
   fees in advance and non-redeemable, and runs no complimentary consults. There is
   no dormant pool to reactivate — the model is built to filter people out before
   they book. A useful reminder that scale alone does not make a prospect.
+
+## Found 24 Sep 2026 (United States — South and West)
+
+The US is the worst region yet for this. Roughly **two strong clinics were blocked
+for every one that made the pipeline**, and about sixty in total. Listing the ones
+worth the effort rather than all of them.
+
+### Worth a browser visit or a phone call, best first
+
+| Clinic | Where | Why it matters |
+|---|---|---|
+| **Aesthetic Center for Plastic Surgery** | Houston ×3 | 13 surgeons, three sites, memberships on RepeatMD at $149/$199/$299 a month, all six-month commitments |
+| **Cienega Medical** | West Hollywood, Santa Monica, Calabasas | Three LA sites, ~12 clinicians including a board-certified dermatologist medical director |
+| **La Jolla Cosmetic Surgery Centre** | La Jolla | Seven surgeons, free consults on all primary procedures, Model Rewards plus Allē, and four separate financing partners |
+| **Westlake Dermatology** | 22 sites across Texas | The largest footprint found anywhere in any sweep |
+| **North Texas Plastic Surgery** | DFW ×7 | Seven surgeons, seven locations, nine aesthetic providers |
+| **Advanced Aesthetics** | Las Vegas ×3, Dallas, La Jolla | Five sites on PatientNow, $99/month membership on a six-month commitment |
+| **La Jolla Cosmetic Medical Spa** | Five San Diego-area sites | Double board-certified facial plastic surgeon, GLAMfam VIP loyalty club |
+| **AdmireMD Skin + Wellness** | Scottsdale ×2 | Zenoti, three memberships including a "Bank Your Beauty" credit-banking tier |
+| **La Belle Vie Med Spa** | Tukwila, WA | Six practitioners including two MDs, Zenoti, three tiers at $99/$175/$275 |
+| **Skintegrity MedSpa** | Kirkland, Bellevue, Redmond | Runs a monthly prize draw explicitly open to "current, past, or prospective clients" — they are already trying to do this by hand |
+| **Spa Sydell** | Atlanta ×3 | Zenoti, eight membership tiers |
+| **Truffles Aesthetics** | Atlanta metro ×5 | Boulevard, Diamond Club membership |
+| **Fresh Start Aesthetics** | Scottsdale ×2 + Phoenix | Mindbody, four tiers from $149 to $399 a month on twelve-month commitments |
+
+Another twenty or so are recorded in the sourcing reports but not worth listing
+until the ones above are exhausted.
+
+### Two findings that change how we should work this
+
+**1. Surgical practices do not publish email addresses. Med spas do.** Every large
+surgical group found across all six southern metros — ACPS, North Texas, Dallas
+Plastic Surgery Institute, Miami Plastic Surgery, Basu, Memorial — routes
+everything through a form. If the offer is meant to land on plastic surgeons
+specifically, email-only outreach will keep hitting this wall, and phone or
+LinkedIn needs a decision before the next US batch.
+
+**2. Which CRM Griffin integrates with first is now an evidence-based choice.**
+Across the US sweeps: **Zenoti** appeared most often overall, **Aesthetic Record**
+appeared on the most dormant-lead-rich accounts (every AR clinic found ran a
+membership or a banked-credit scheme), and **PatientNow / RepeatMD** covered the
+larger surgical groups. In the UK and Australia the picture was completely
+different — Pabau, Timely and Phorest. One integration will not cover both sides
+of the Atlantic.
+
+### Excluded, don't revisit
+
+- **US chains and franchises:** Beverly Hills Rejuvenation Center, SkinSpirit,
+  It's A Secret Med Spa, dermani MEDSPA, Elase, VIO, Skin Spa New York, Juvly,
+  Skin Pharm, Smiley Aesthetics, Mia Aesthetics, Novuskin, OrangeTwist,
+  Hand & Stone, milk + honey
+- **Hospital and university systems:** Vanderbilt Health, UTHealth, Wellstar
+- **Portrait Care** is a directory, not a clinic
+
+### Judgement calls, same shape as The Goddess Clinic
+
+**Skin 101 Houston** (OptiMantra, three membership categories, $350 and $179 paid
+consults) and **The MedSpa of DFW** (Aesthetic Record, real membership) both have
+published emails and real systems, and are excluded only by the single-site rule.
+If Jess wants Houston volume, Skin 101 is the one to relax it for.
