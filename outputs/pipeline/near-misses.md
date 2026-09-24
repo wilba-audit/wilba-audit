@@ -101,3 +101,34 @@ form — it just isn't linked publicly. That is why the four C-graded rows in th
 pipeline (Manchester Private Hospital, UK Aesthetic, Victoria House Clinic,
 Yorkshire Skin Centre) are worth emailing anyway: the first discovery question
 answers it.
+
+## Found 24 Sep 2026 (Ireland, New Zealand, regional Australia)
+
+| Clinic | Why it qualifies | Why we can't email |
+|---|---|---|
+| **The Skin Care Clinic** (Hobart) | The best dormant signal found in Tasmania: a full points loyalty scheme — a point per dollar, £5 off per 100 points, 300 points for a referral and 300 for a testimonial — plus Timely, gift e-certificates, Afterpay and Zippay, six named staff including a doctor in cosmetic medicine since 2004 | No email on any reachable page, and no phone published either. Their `/contact/` page could not be fetched at all |
+| River Medical (Dublin, Cork, Belfast) | Three clinics across two jurisdictions, Phorest on two instances, BAAPS/BAPRAS/RQIA accredited surgical practice | Cloudflare-obfuscated everywhere |
+| Palm Clinic (Auckland) | Skin and vein clinic, Dr Sam Dunn, NZ Society of Cosmetic Medicine accredited, gift vouchers, Q Mastercard interest-free plans | Cloudflare-obfuscated |
+| Vamp Cosmetic Clinic (Newcastle) | Zenoti, a named loyalty programme with its own terms page, gift cards, treatment packages, complimentary consultations, open six days | No email on the homepage or contact page — form only |
+| Laser Skin & Vein Clinic (Adelaide) | Two clinics, treatment vouchers through their own shop, direct booking with no referral | Cloudflare-obfuscated |
+| Ponsonby Cosmetic Medical Clinic (Auckland) | Medical-led appearance medicine, gift voucher collection, a dedicated treatment financing page | No email and no phone published |
+| Accent on Skin (Wellington) | CANNZ-accredited, own booking portal | Cloudflare-obfuscated, and only two practitioners named so it would likely fail scale anyway |
+
+**The Skin Care Clinic in Hobart and River Medical are the two worth Jess opening
+herself.** The Hobart one converts straight to grade A if its contact page can be
+read — that loyalty scheme, with points for referrals and testimonials, is exactly
+the database the offer is built for.
+
+## Ruled out in Ireland, NZ and regional Australia
+
+- **Chains:** Skin Institute (NZ), The Cosmetic Clinic (NZ), Transform Clinic (NZ),
+  My Cosmetic Clinic (Newcastle), Concept Cosmetic Medicine (Newcastle), and the
+  SILK / Australian Skin Clinics / Cosmetique branches in these cities
+- **Single operators:** Newcastle Cosmetic Doctor, Coastal Skin & Laser (Tewantin),
+  Dr Sarah Sparks and Hobart Facial Aesthetics (Hobart), Sapphire Appearance
+  Medicine (Auckland)
+- **Wrong offer shape, not wrong size:** Fitzgerald Plastic Surgery (Dublin) has a
+  published email but states "We do not offer payment plans", charges consultation
+  fees in advance and non-redeemable, and runs no complimentary consults. There is
+  no dormant pool to reactivate — the model is built to filter people out before
+  they book. A useful reminder that scale alone does not make a prospect.
