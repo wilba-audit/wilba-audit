@@ -116,10 +116,11 @@ goes to a patient.
 Around 120-140 words. Australian and British spelling. No "I hope this finds you
 well". No em-dash in the subject line.
 
-**The signature.** Every draft carries Jess's signature block. Pass it in `htmlBody`
-using the cold-outreach variant in `outputs/pipeline/email-signature.md` — the short
-one, without the audit CTA button. Give `body` the plain-text equivalent so the email
-degrades cleanly.
+**The signature.** Every draft carries Jess's signature block, because drafts made
+through the API don't get her Gmail signature appended. End the body at "Jess", then
+append `outputs/pipeline/email-signature-cold.html` verbatim in `htmlBody` (her real
+signature, without the audit button). Give `body` the plain-text equivalent from
+`outputs/pipeline/email-signature.md` so the email degrades cleanly.
 
 Stage each one with `mcp__Gmail__create_draft`. Never `send_message`.
 
@@ -174,7 +175,5 @@ python3 scripts/wilba_outreach.py mark --ids <ids> --status Emailed
 That also schedules follow-up 1 for three days later. The same command records each
 follow-up as it goes out, which schedules the next one.
 
-**The From address.** Drafts are staged in whichever mailbox the Gmail connection
-points at. If that is still the personal account, the drafts are correct but the From
-needs switching at send time. Once `jess@wilba.ai` is connected, that stops being a
-step and nothing else about this changes.
+**The From address.** Gmail is connected to `jess@wilba.ai` (confirmed 24 Sep 2026),
+so drafts are staged there and need no From change at send time.
