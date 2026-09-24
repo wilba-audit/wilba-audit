@@ -7,17 +7,18 @@ not go in the pipeline.
 ## The offer we are selling
 
 Reactivate the clinic's **existing dormant CRM leads** and convert them into booked
-procedures. Paid as a **revenue share on procedures booked from those leads**, with
-nothing upfront. We integrate with the CRM they already run — no migration.
+procedures. Paid as **10% of the revenue from procedures booked from those leads**,
+with nothing upfront. We integrate with the CRM they already run — no migration.
 
 Why it sells: the clinic's objection is risk. Fear of AI, fear of disruption, fear
 of paying for something that might not work. Revenue share removes all three. They
 are not buying software, they are getting paid-for-performance on a list they have
 already paid to build and are currently not touching.
 
-> **Unconfirmed:** the revenue-share percentage. The call landed on roughly 10% of
-> procedures booked from reactivated leads. Do not state a number in any email until
-> Jess confirms it. Draft as "a share of what it books, nothing upfront".
+> **Confirmed 24 Sep 2026.** The figure is **10%**. On the 22 Sep call Griffin's
+> first instinct was "like 10", immediately followed by a worry it might be too much
+> to ask; Jess's answer was "maybe not, I don't reckon", and she confirmed it on
+> 24 Sep. Emails may state it. Write it as "10% of what it books, nothing upfront".
 
 ## Must have
 

@@ -7,7 +7,8 @@ sign-in error when they were written. The moment Gmail answers, these five go in
 drafts verbatim and the rows are marked `Draft ready`.
 
 Every opening fact below is from the clinic's own site and is recorded against its row
-in `clinic-pipeline.csv`. No revenue-share percentage is stated anywhere, per `ICP.md`.
+in `clinic-pipeline.csv`. The revenue share is stated as 10%, confirmed by Jess on 24 Sep 2026 against the
+Griffin call of 22 Sep.
 
 Signature on all five (plain text; the HTML variant is in `email-signature.md`):
 
@@ -36,7 +37,7 @@ and consultations that never converted, and follows them up properly over SMS an
 calls until they either book or tell you to stop. Nothing changes on your side and
 nobody migrates anything. Your team gets a switch to turn it off.
 
-We take a share of what it actually books, and nothing upfront.
+We take 10% of what it actually books, and nothing upfront.
 
 Worth 15 minutes? I'm on Bali time, so I can work around your day.
 
@@ -63,7 +64,7 @@ moment they land, and works back through the years of clients who haven't been i
 recently. It follows up over SMS and calls, in your voice, and hands over to your team
 the moment someone wants to talk. Nothing to migrate.
 
-We take a share of what it books, nothing upfront.
+We take 10% of what it books, nothing upfront.
 
 Worth 15 minutes? I'm on Bali time and can fit around you.
 
@@ -89,7 +90,7 @@ I work with a build partner on a system that connects to your booking system, sp
 the members going quiet before they cancel, and reaches out to the lapsed ones over
 SMS and calls. Your team approves anything sensitive and can switch it off entirely.
 
-We take a share of what it books, with nothing upfront.
+We take 10% of what it books, with nothing upfront.
 
 Worth 15 minutes? I'm on Bali time, so I'll work around your diary.
 
@@ -116,7 +117,7 @@ I work with a build partner on a system that connects to Semble, pulls together 
 enquiries and consultations that didn't convert across all three locations, and works
 them over SMS and calls until they book or opt out.
 
-We take a share of what it books, nothing upfront.
+We take 10% of what it books, nothing upfront.
 
 Worth 15 minutes? I'm on Bali time and can fit around you.
 
@@ -142,7 +143,7 @@ I work with a build partner on a system that connects to your booking system, fi
 those people, and follows them up over SMS and calls until they rebook or tell you to
 stop. Nothing migrates and your team can switch it off at any point.
 
-We take a share of what it books, with nothing upfront.
+We take 10% of what it books, with nothing upfront.
 
 Worth 15 minutes? I'm on Bali time, so we're near enough the same hours.
 

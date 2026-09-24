@@ -84,12 +84,13 @@ It selects A grade before B, oldest first, capped at today's ramp. It prints the
 verified facts for each prospect. Write from those facts only.
 
 **The offer.** Reactivate the dormant leads already sitting in their CRM, converted
-into booked procedures, paid as a share of what it books with nothing upfront. We
+into booked procedures, paid as 10% of what it books with nothing upfront. We
 integrate with the CRM they run — no migration. A human approves before anything
 goes to a patient.
 
-> **Do not state a percentage.** The 10% figure from the 22 Sep call is unconfirmed.
-> Write "a share of what it books, nothing upfront" until Jess confirms it.
+> **The percentage is 10%**, confirmed by Jess on 24 Sep 2026. Write it as
+> "10% of what it books, nothing upfront". If she ever changes it, change it here
+> and in `ICP.md` together.
 
 **The shape**, matching the voice already established in `outreach-batch-2.md`:
 
