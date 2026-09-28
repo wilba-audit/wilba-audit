@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-21T19:14:42+00:00",
+  "generated_at": "2026-09-28T20:28:48+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
       "connection": "ok",
-      "total_contacts": 13479,
+      "total_contacts": 13482,
       "tag_counts": {
         "reactivate-wk1-mon": 500,
         "reactivate-wk1-thu": 500,
         "reactivate-wk1-tue": 500,
         "reactivate-wk1-wed": 500,
         "reactivate-wk1-sun": 499,
+        "weekly-list": 403,
         "pol": 390,
         "promo-issued": 390,
-        "weekly-list": 381,
         "offer-half": 357,
         "half-pol-lead": 356,
         "bday-start-2026-07-06": 111,
@@ -26,13 +26,13 @@
         "bogo-pol-lead": 41,
         "half-redeemed": 30,
         "redeemed-half": 30,
+        "inbound-call-po": 28,
+        "topic-party": 28,
+        "voice-agent-sms": 28,
         "no sms": 26,
         "no-sms-consent": 26,
         "sms-unsub": 26,
         "unsubscribed-sms": 26,
-        "inbound-call-po": 25,
-        "topic-party": 25,
-        "voice-agent-sms": 25,
         "openlink": 14,
         "promo-redeemed-pol": 12,
         "wp": 9,
@@ -78,25 +78,13 @@
           "utmSource": "facebook",
           "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": "https://instagram.com"
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
+          "referrer": "http://m.facebook.com"
         },
         {
           "utmSource": "google",
           "utmMedium": "paid_search",
-          "campaign": "Bogo-pol",
-          "referrer": null
-        },
-        {
-          "utmSource": "facebook",
-          "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": "http://m.facebook.com"
+          "referrer": "https://www.google.com"
         },
         {
           "utmSource": "facebook",
@@ -109,13 +97,21 @@
           "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
           "referrer": "https://facebook.com"
+        },
+        {
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://facebook.com"
+        },
+        {
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://instagram.com"
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-07-06",
-          "new_leads": 51
-        },
         {
           "week_start": "2026-07-13",
           "new_leads": 52
@@ -134,11 +130,11 @@
         },
         {
           "week_start": "2026-08-10",
-          "new_leads": 16
+          "new_leads": 18
         },
         {
           "week_start": "2026-08-17",
-          "new_leads": 13
+          "new_leads": 11
         },
         {
           "week_start": "2026-08-24",
@@ -155,6 +151,10 @@
         {
           "week_start": "2026-09-14",
           "new_leads": 21
+        },
+        {
+          "week_start": "2026-09-21",
+          "new_leads": 0
         }
       ],
       "campaign_sends": {
@@ -179,9 +179,9 @@
       },
       "voice_inbound": {
         "birthday-inquiry": 2,
-        "inbound-call-po": 25,
-        "topic-party": 25,
-        "voice-agent-sms": 25
+        "inbound-call-po": 28,
+        "topic-party": 28,
+        "voice-agent-sms": 28
       },
       "metrics": {
         "voucher_delivered": 111,
@@ -204,7 +204,7 @@
         "reactivate-wk1-thu": 498,
         "reactivate-wk1-wed": 498,
         "reactivate-wk1-mon": 494,
-        "weekly-list": 318,
+        "weekly-list": 321,
         "wp": 299,
         "promo-issued": 297,
         "offer-half": 285,
@@ -294,17 +294,13 @@
           "referrer": null
         },
         {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-wp",
+          "referrer": "https://instagram.com"
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-07-06",
-          "new_leads": 17
-        },
         {
           "week_start": "2026-07-13",
           "new_leads": 14
@@ -344,6 +340,10 @@
         {
           "week_start": "2026-09-14",
           "new_leads": 3
+        },
+        {
+          "week_start": "2026-09-21",
+          "new_leads": 0
         }
       ],
       "campaign_sends": {
