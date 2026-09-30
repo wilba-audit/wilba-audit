@@ -101,3 +101,142 @@ form — it just isn't linked publicly. That is why the four C-graded rows in th
 pipeline (Manchester Private Hospital, UK Aesthetic, Victoria House Clinic,
 Yorkshire Skin Centre) are worth emailing anyway: the first discovery question
 answers it.
+
+## Found 24 Sep 2026 (Ireland, New Zealand, regional Australia)
+
+| Clinic | Why it qualifies | Why we can't email |
+|---|---|---|
+| **The Skin Care Clinic** (Hobart) | The best dormant signal found in Tasmania: a full points loyalty scheme — a point per dollar, £5 off per 100 points, 300 points for a referral and 300 for a testimonial — plus Timely, gift e-certificates, Afterpay and Zippay, six named staff including a doctor in cosmetic medicine since 2004 | No email on any reachable page, and no phone published either. Their `/contact/` page could not be fetched at all |
+| River Medical (Dublin, Cork, Belfast) | Three clinics across two jurisdictions, Phorest on two instances, BAAPS/BAPRAS/RQIA accredited surgical practice | Cloudflare-obfuscated everywhere |
+| Palm Clinic (Auckland) | Skin and vein clinic, Dr Sam Dunn, NZ Society of Cosmetic Medicine accredited, gift vouchers, Q Mastercard interest-free plans | Cloudflare-obfuscated |
+| Vamp Cosmetic Clinic (Newcastle) | Zenoti, a named loyalty programme with its own terms page, gift cards, treatment packages, complimentary consultations, open six days | No email on the homepage or contact page — form only |
+| Laser Skin & Vein Clinic (Adelaide) | Two clinics, treatment vouchers through their own shop, direct booking with no referral | Cloudflare-obfuscated |
+| Ponsonby Cosmetic Medical Clinic (Auckland) | Medical-led appearance medicine, gift voucher collection, a dedicated treatment financing page | No email and no phone published |
+| Accent on Skin (Wellington) | CANNZ-accredited, own booking portal | Cloudflare-obfuscated, and only two practitioners named so it would likely fail scale anyway |
+
+**The Skin Care Clinic in Hobart and River Medical are the two worth Jess opening
+herself.** The Hobart one converts straight to grade A if its contact page can be
+read — that loyalty scheme, with points for referrals and testimonials, is exactly
+the database the offer is built for.
+
+## Ruled out in Ireland, NZ and regional Australia
+
+- **Chains:** Skin Institute (NZ), The Cosmetic Clinic (NZ), Transform Clinic (NZ),
+  My Cosmetic Clinic (Newcastle), Concept Cosmetic Medicine (Newcastle), and the
+  SILK / Australian Skin Clinics / Cosmetique branches in these cities
+- **Single operators:** Newcastle Cosmetic Doctor, Coastal Skin & Laser (Tewantin),
+  Dr Sarah Sparks and Hobart Facial Aesthetics (Hobart), Sapphire Appearance
+  Medicine (Auckland)
+- **Wrong offer shape, not wrong size:** Fitzgerald Plastic Surgery (Dublin) has a
+  published email but states "We do not offer payment plans", charges consultation
+  fees in advance and non-redeemable, and runs no complimentary consults. There is
+  no dormant pool to reactivate — the model is built to filter people out before
+  they book. A useful reminder that scale alone does not make a prospect.
+
+## Found 24 Sep 2026 (United States — South and West)
+
+The US is the worst region yet for this. Roughly **two strong clinics were blocked
+for every one that made the pipeline**, and about sixty in total. Listing the ones
+worth the effort rather than all of them.
+
+### Worth a browser visit or a phone call, best first
+
+| Clinic | Where | Why it matters |
+|---|---|---|
+| **Aesthetic Center for Plastic Surgery** | Houston ×3 | 13 surgeons, three sites, memberships on RepeatMD at $149/$199/$299 a month, all six-month commitments |
+| **Cienega Medical** | West Hollywood, Santa Monica, Calabasas | Three LA sites, ~12 clinicians including a board-certified dermatologist medical director |
+| **La Jolla Cosmetic Surgery Centre** | La Jolla | Seven surgeons, free consults on all primary procedures, Model Rewards plus Allē, and four separate financing partners |
+| **Westlake Dermatology** | 22 sites across Texas | The largest footprint found anywhere in any sweep |
+| **North Texas Plastic Surgery** | DFW ×7 | Seven surgeons, seven locations, nine aesthetic providers |
+| **Advanced Aesthetics** | Las Vegas ×3, Dallas, La Jolla | Five sites on PatientNow, $99/month membership on a six-month commitment |
+| **La Jolla Cosmetic Medical Spa** | Five San Diego-area sites | Double board-certified facial plastic surgeon, GLAMfam VIP loyalty club |
+| **AdmireMD Skin + Wellness** | Scottsdale ×2 | Zenoti, three memberships including a "Bank Your Beauty" credit-banking tier |
+| **La Belle Vie Med Spa** | Tukwila, WA | Six practitioners including two MDs, Zenoti, three tiers at $99/$175/$275 |
+| **Skintegrity MedSpa** | Kirkland, Bellevue, Redmond | Runs a monthly prize draw explicitly open to "current, past, or prospective clients" — they are already trying to do this by hand |
+| **Spa Sydell** | Atlanta ×3 | Zenoti, eight membership tiers |
+| **Truffles Aesthetics** | Atlanta metro ×5 | Boulevard, Diamond Club membership |
+| **Fresh Start Aesthetics** | Scottsdale ×2 + Phoenix | Mindbody, four tiers from $149 to $399 a month on twelve-month commitments |
+
+Another twenty or so are recorded in the sourcing reports but not worth listing
+until the ones above are exhausted.
+
+### Two findings that change how we should work this
+
+**1. Surgical practices do not publish email addresses. Med spas do.** Every large
+surgical group found across all six southern metros — ACPS, North Texas, Dallas
+Plastic Surgery Institute, Miami Plastic Surgery, Basu, Memorial — routes
+everything through a form. If the offer is meant to land on plastic surgeons
+specifically, email-only outreach will keep hitting this wall, and phone or
+LinkedIn needs a decision before the next US batch.
+
+**2. Which CRM Griffin integrates with first is now an evidence-based choice.**
+Across the US sweeps: **Zenoti** appeared most often overall, **Aesthetic Record**
+appeared on the most dormant-lead-rich accounts (every AR clinic found ran a
+membership or a banked-credit scheme), and **PatientNow / RepeatMD** covered the
+larger surgical groups. In the UK and Australia the picture was completely
+different — Pabau, Timely and Phorest. One integration will not cover both sides
+of the Atlantic.
+
+### Excluded, don't revisit
+
+- **US chains and franchises:** Beverly Hills Rejuvenation Center, SkinSpirit,
+  It's A Secret Med Spa, dermani MEDSPA, Elase, VIO, Skin Spa New York, Juvly,
+  Skin Pharm, Smiley Aesthetics, Mia Aesthetics, Novuskin, OrangeTwist,
+  Hand & Stone, milk + honey
+- **Hospital and university systems:** Vanderbilt Health, UTHealth, Wellstar
+- **Portrait Care** is a directory, not a clinic
+
+### Judgement calls, same shape as The Goddess Clinic
+
+**Skin 101 Houston** (OptiMantra, three membership categories, $350 and $179 paid
+consults) and **The MedSpa of DFW** (Aesthetic Record, real membership) both have
+published emails and real systems, and are excluded only by the single-site rule.
+If Jess wants Houston volume, Skin 101 is the one to relax it for.
+
+## Found 24 Sep 2026 (United States — Northeast)
+
+### Worth a browser visit or a phone call, best first
+
+| Clinic | Where | Why it matters |
+|---|---|---|
+| **Greenwich Medical Spa** | 8 sites across CT, NY and NJ | The single best prospect found in the entire Northeast. Zenoti *and* GoHighLevel, a $99/month VIP membership with loyalty points and anniversary credits, plus a $199/month HRT programme. One browser tab away from being emailable |
+| **SkinMD** | 10 Massachusetts sites | The biggest Boston-area practice found. RepeatMD rewards, gift cards, CareCredit and Cherry |
+| **East Coast Advanced Plastic Surgery** | NYC + 5 NJ sites | 10 surgeons and 8 PA-Cs across six locations — the largest practice in the region |
+| **Ethos Aesthetics + Wellness** | 7 NJ sites | Owner-operated, not a chain. Two founders plus four NPs, and a VIP membership with bankable "Ethos Bucks" |
+| **Trifecta Med Spa** | 4 NY sites | Allergan Top 100 Injector, Zenoti, 0% APR plans |
+| **Metro Laser MedSpa** | 3 Philadelphia-area sites | Boulevard, memberships from $39 to $249 a month across two ladders |
+| **Tribeca MedSpa / AYA Skin** | 2 NYC sites | Board-certified plastic surgeon, Zenoti, an "AYA Beauty Bank" loyalty scheme |
+| **SkinHealth Centers**, **PURE Cosmetic**, **Demma Aesthetics**, **Clareo**, **Boston Medical Aesthetics** | Boston metro | All four have the profile and a real platform. None publishes an email |
+
+**Boston is a hole in the map.** Every strong Boston clinic found publishes no
+readable email, so the city contributed nothing to the pipeline. A focused
+Massachusetts pass would likely clear SkinMD, Demma, SkinHealth Centers and PURE
+Cosmetic — they need an address found, not qualifying.
+
+### Two more things the Northeast pass established
+
+**Boulevard is the dominant platform in the Northeast** — five of the fifteen
+qualified rows run on it, with Zenoti on two more and Aesthetic Record on three.
+Combined with the West Coast picture, that makes Boulevard and Zenoti the two
+integrations that would unlock the most US ground.
+
+**RepeatMD is worth watching.** It is a dormant-rewards database by design, and it
+turned up on both a qualified row (Newtown MediSpa) and a near-miss (SkinMD). Any
+clinic running it is, by definition, already tracking exactly the credit we would
+be reactivating.
+
+### Rejected on dormant signal rather than contactability
+
+A useful category, because it is the one kind of clinic to stop researching:
+**Plastic Surgery Group New Jersey** publishes a perfectly good address but runs no
+membership, loyalty, gift-card or financing scheme at all. Boston Center for
+Plastic Surgery, Longwood, NYBG Plastic Surgery and about a dozen other surgical
+groups are the same. Scale without a scheme is not a prospect for this offer —
+there is nothing dormant to reactivate.
+
+### Three grade-C fallbacks with real published emails
+
+If a batch ever needs topping up: **Aesthé By MD** (3 CT/NJ sites),
+**Manhattan Medspa** (annual memberships at $1,999 and $2,299) and
+**Skinly Aesthetics** (Skinly Club plus two lenders). All three fail only on
+naming a booking platform, which the first discovery question answers.

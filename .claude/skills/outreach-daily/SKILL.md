@@ -61,6 +61,14 @@ Drafting into an empty list is not.
 
 ## 4. Source, when the list is short
 
+**Sourcing has its own scheduled run**, four hours ahead of the drafting run, in a
+separate thread. So on a normal day the list is already topped up and this step is
+skipped. Only source from the drafting run if the list is genuinely about to run dry
+— fewer prospects left than today's cap — and say in the report that you had to,
+because that means the sourcing run failed and somebody should look at it.
+
+Two runs sourcing on the same day both push to the same branch and will collide.
+
 Target: enough qualified prospects for a week at the current cap.
 
 Run several `Agent` workers in parallel, each on a different metro. Give each one a
