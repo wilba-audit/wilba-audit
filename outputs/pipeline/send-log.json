@@ -1,0 +1,6 @@
+{
+  "send_days": [
+    "2026-09-30"
+  ],
+  "note": "Days on which outreach actually went out. Drives the warm-up ramp."
+}

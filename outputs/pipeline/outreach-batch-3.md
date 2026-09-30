@@ -2,15 +2,15 @@
 
 **Drafted 24 Sep 2026. Send-day 1, cap 5.**
 
-These are written but **not staged in Gmail** — the connector was still returning a
-sign-in error when they were written. The moment Gmail answers, these five go in as
-drafts verbatim and the rows are marked `Draft ready`.
+**Staged in Gmail (jess@wilba.ai) on 24 Sep 2026** as five drafts, body word for word,
+signed with Jess's real Gmail signature minus the audit button. Rows marked `Draft ready`.
+Nothing has been sent.
 
 Every opening fact below is from the clinic's own site and is recorded against its row
 in `clinic-pipeline.csv`. The revenue share is stated as 10%, confirmed by Jess on 24 Sep 2026 against the
 Griffin call of 22 Sep.
 
-Signature on all five (plain text; the HTML variant is in `email-signature.md`):
+Sign-off as drafted (the staged drafts carry the full signature from `email-signature.md`):
 
 ```
 Jess
