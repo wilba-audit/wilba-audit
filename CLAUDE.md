@@ -173,6 +173,20 @@ Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WIL
 
 ---
 
+### WILBA Clinic Outreach in GHL (own sales pipeline)
+
+WILBA's own cold outreach to 100 verified med spa / plastic surgery prospects, run from a
+dedicated WILBA sub-account in Jess's GoHighLevel. Files: `outputs/pipeline/ghl/`
+(`GHL-SETUP.md` build guide, `email-sequence.md` 4 emails over days 0/2/4/7,
+`ghl-import.csv` 100 contacts with per-clinic subject + opener, `email-1-preview.md`).
+`scripts/wilba_ghl_load.py` + `wilba-ghl-load.yml` load contacts and opportunities by API
+(needs secrets `WILBA_GHL_TOKEN`, `WILBA_GHL_LOCATION_ID`; never sends). The pipeline and
+workflow are built in the GHL UI. Nothing sends until the workflow is published and a
+contact gets the `outreach-go` tag. Once live, these 100 must be taken out of the Gmail
+drafting routine so nobody is emailed twice.
+
+---
+
 ### Monkey Joe's — Growth Operator (Client Pilot: POL + WP)
 
 WILBA's marketing-execution pilot for Michael Carter's two Orlando Monkey Joe's locations —
