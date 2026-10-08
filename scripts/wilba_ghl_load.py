@@ -61,10 +61,15 @@ def _req(method: str, path: str, token: str, payload: dict | None = None) -> tup
             return e.code, {"raw": body[:300]}
 
 
+PIPELINES_SEEN: list[str] = []
+
+
 def find_pipeline(token: str, loc: str) -> tuple[str, str] | None:
     status, data = _req("GET", f"/opportunities/pipelines?locationId={loc}", token)
     if status != 200:
         sys.exit(f"Could not list pipelines ({status}): {data}")
+    for p in data.get("pipelines", []):
+        PIPELINES_SEEN.append(f'{p.get("name")} ({", ".join(s.get("name", "") for s in p.get("stages", []))})')
     for p in data.get("pipelines", []):
         if p.get("name", "").strip().lower() == PIPELINE_NAME.lower():
             for s in p.get("stages", []):
@@ -156,6 +161,7 @@ def main() -> None:
     mode = "LIVE" if args.live else "DRY RUN"
     lines = [f"# GHL load report ({mode}, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())})",
              "", f"- Pipeline: {'found' if pipe else 'NOT FOUND (contacts only, no cards)'}",
+             f"- Pipelines in account: {'; '.join(PIPELINES_SEEN) or 'none'}",
              f"- Custom fields: {', '.join(f'{c}={v}' for c, v in field_ids.items())}",
              f"- Rows: {len(rows)}", f"- Loaded: {done}", f"- Failed: {len(failed)}", ""]
     lines += [f"- {name}: {why}" for name, why in failed]
