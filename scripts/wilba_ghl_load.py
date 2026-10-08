@@ -110,10 +110,10 @@ def main() -> None:
         rows = rows[: args.limit]
 
     pipe = find_pipeline(token, loc)
+    pipeline_id, stage_id = pipe or (None, None)
     if not pipe:
-        sys.exit(f'No pipeline named "{PIPELINE_NAME}" yet. Create it in GHL first '
-                 "(see outputs/pipeline/ghl/GHL-SETUP.md, step 2).")
-    pipeline_id, stage_id = pipe
+        print(f'No pipeline named "{PIPELINE_NAME}" yet: loading contacts only. '
+              "Re-run after creating it to add the opportunity cards.")
     field_ids = ensure_fields(token, loc, args.live)
 
     done, failed = 0, []
@@ -135,6 +135,10 @@ def main() -> None:
             failed.append((r["company_name"], f"contact {s}: {d}"))
             continue
         cid = d["contact"]["id"]
+        if not pipeline_id:
+            done += 1
+            time.sleep(0.25)
+            continue
         s, d = _req("GET", f"/opportunities/search?location_id={loc}&contact_id={cid}"
                     f"&pipeline_id={pipeline_id}", token)
         if s == 200 and d.get("opportunities"):
@@ -151,7 +155,9 @@ def main() -> None:
 
     mode = "LIVE" if args.live else "DRY RUN"
     lines = [f"# GHL load report ({mode}, {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())})",
-             "", f"- Rows: {len(rows)}", f"- Loaded: {done}", f"- Failed: {len(failed)}", ""]
+             "", f"- Pipeline: {'found' if pipe else 'NOT FOUND (contacts only, no cards)'}",
+             f"- Custom fields: {', '.join(f'{c}={v}' for c, v in field_ids.items())}",
+             f"- Rows: {len(rows)}", f"- Loaded: {done}", f"- Failed: {len(failed)}", ""]
     lines += [f"- {name}: {why}" for name, why in failed]
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
