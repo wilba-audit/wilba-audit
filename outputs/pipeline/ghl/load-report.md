@@ -1,4 +1,4 @@
-# GHL load report (DRY RUN, 2026-10-08 04:48 UTC)
+# GHL load report (LIVE, 2026-10-08 05:07 UTC)
 
 - Pipeline: NOT FOUND (contacts only, no cards)
 - Pipelines in account: Client Funnel (New Lead 📞, 1st Call 📞, 2nd Call 📞, Booked 📆, Closed ✅ ); WILBA Sales 2026 (Prospect, Contacted, Engaged, Call Booked, Proposal Sent, Closed Won, Delivery / Onboarding, Active Retainer)
