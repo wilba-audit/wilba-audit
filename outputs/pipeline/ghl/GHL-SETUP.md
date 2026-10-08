@@ -20,15 +20,18 @@ Files in this folder:
 
 ---
 
-## What's left for you (about 20 minutes)
+## Status (8 Oct 2026)
 
-1. Make a separate WILBA sub-account in GHL (step 1).
-2. Create the **Clinic outreach** pipeline with the 11 stages (step 2).
-3. Then **either** upload `ghl-import.csv` yourself (steps 3 and 4), **or** send Claude a
-   Private Integration token and your Location ID and Claude loads all 100 for you.
-4. Build the two workflows (step 5) and test on your own email (step 6).
-5. Confirm the refund guarantee with Griffin, and choose how to send (see the end of this guide).
-6. Tell Claude "go". Nothing sends before that.
+**Done by Claude:** the 7 custom fields are created and all 100 clinics are loaded as contacts,
+with their fields and tags, in sub-account `A3tY7p4YMaGWtkblpmUX`. Nothing has been sent.
+
+**What's left for you:**
+
+1. Create the **Clinic outreach** pipeline with the 11 stages (step 2). Then tell Claude,
+   and Claude adds the 100 opportunity cards in New prospect. Skip step 4.
+2. Build the two workflows (step 5) and test them on your own email address (step 6).
+3. Confirm the refund guarantee with Griffin, and choose how to send (see the end of this guide).
+4. Tell Claude "go". Nothing sends before that.
 
 ---
 

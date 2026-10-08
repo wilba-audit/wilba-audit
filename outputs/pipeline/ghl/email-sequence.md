@@ -46,7 +46,7 @@ Here's what I'd like to do. We plug into {{contact.crm_phrase}}, find those peop
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-{{contact.tz_line}} Grab any time that suits here: https://calendly.com/hello-wilba
+{{contact.timezone_line}} Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 

@@ -27,7 +27,7 @@ Here's what I'd like to do. We plug into {{contact.crm_phrase}}, find those peop
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-{{contact.tz_line}} Grab any time that suits here: {cal}""", "Book a 15-minute chat"),
+{{contact.timezone_line}} Grab any time that suits here: {cal}""", "Book a 15-minute chat"),
 
     (2, "Re: {{contact.cold_subject}}", """Did you get a chance to see my note?
 
@@ -188,8 +188,9 @@ def main() -> None:
     day0 = EMAILS[0][2]
     for n, r in enumerate(rows, 1):
         body = day0
-        for k in ("cold_opener", "crm_phrase", "tz_line", "currency"):
-            body = body.replace("{{contact.%s}}" % k, r.get(k, ""))
+        for tag, col in (("cold_opener", "cold_opener"), ("crm_phrase", "crm_phrase"),
+                         ("timezone_line", "tz_line"), ("currency", "currency")):
+            body = body.replace("{{contact.%s}}" % tag, r.get(col, ""))
         prev += ["---", "", f"## {n}. {r['company_name']} ({r['country']}, grade {r['icp_grade']}) · {r['email']}",
                  "", f"**Subject:** {r['cold_subject']}", "", body.replace("{cal}", CALENDAR), "", "Jess", ""]
     (OUT / "email-1-preview.md").write_text("\n".join(prev), encoding="utf-8")
