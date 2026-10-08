@@ -1,8 +1,10 @@
 # Clinic outreach in GoHighLevel: setup guide
 
+WILBA sub-account Location ID: `A3tY7p4YMaGWtkblpmUX`
+
 What this builds: a pipeline board for 100 clinic prospects, every prospect loaded as a
-contact with a personal first email, and one workflow that sends four emails over seven
-days, moves each card along the board, and stops the moment someone replies.
+contact with a personal first email, and one workflow that sends ten branded emails over
+40 days, moves each card along the board, and stops the moment someone replies.
 
 **Nothing sends until the workflow is published.** Build it, test it on your own email
 address, and only then switch it on.
@@ -10,7 +12,8 @@ address, and only then switch it on.
 Files in this folder:
 
 - `ghl-import.csv` — the 100 prospects, ready for GHL's contact import
-- `email-sequence.md` — the four emails, word for word (Dean Jackson style, with the refund guarantee)
+- `email-sequence.md` — the ten emails, word for word (Dean Jackson style, with the refund guarantee)
+- `templates/email-01.html` to `email-10.html` — the branded versions to paste into GHL
 - `email-1-preview.md` — the first email exactly as each of the 100 clinics will get it
 - `scripts/wilba_ghl_load.py` + the "WILBA GHL load" GitHub Action — loads the same 100
   through the API instead of the CSV, once a token is in place
@@ -42,14 +45,14 @@ Opportunities → Pipelines → Create new pipeline. Name: **Clinic outreach**.
 |---|---|---|
 | 1 | New prospect | Import |
 | 2 | Email 1 sent | Workflow |
-| 3 | Follow-up 1 sent | Workflow |
-| 4 | Follow-up 2 sent | Workflow |
+| 3 | Following up (emails 2 to 4) | Workflow |
+| 4 | Long follow-up (emails 5 to 9) | Workflow |
 | 5 | Final email sent | Workflow |
 | 6 | Replied | Workflow (on reply) |
-| 7 | Call booked | You |
+| 7 | Call booked | You, or automatic with a GHL calendar |
 | 8 | Proposal sent | You |
 | 9 | Won | You |
-| 10 | No response | Workflow (day 7, no reply) |
+| 10 | No response | Workflow (after email 10) |
 | 11 | Not interested | You |
 
 ## 3. Create the custom fields
@@ -62,56 +65,65 @@ Settings → Custom Fields → Add field (Contact):
 | Cold opener | Multi line |
 | CRM phrase | Single line |
 | Timezone line | Single line |
+| Currency | Single line |
 | Pipeline ID | Single line |
 | ICP grade | Single line |
 
-GHL turns these into the merge tags `{{contact.cold_subject}}`, `{{contact.cold_opener}}`
-and so on. Check the tag GHL shows for each field matches; if it differs, use GHL's.
+GHL turns these into merge tags such as `{{contact.cold_subject}}`. Check that the tag GHL
+shows for each field matches the one used in the emails, and if it doesn't, use GHL's.
 
 ## 4. Import the 100 prospects
 
 Contacts → Import → upload `ghl-import.csv`.
 
-- Map each column to the field of the same name (the four cold fields to the custom
-  fields above).
-- Tick **Create opportunities**, pipeline **Clinic outreach**, stage **New prospect**.
-- Tags: the file already gives every contact `clinic-outreach` plus a grade tag
+- Map each column to the field with the same name.
+- Tick **Create opportunities**, pick pipeline **Clinic outreach** and stage **New prospect**.
+- Tags: the file already gives every contact `clinic-outreach`, a grade tag
   (`grade-a`, `grade-b`, `grade-c`) and a country tag.
 
 ## 5. Build the workflow
 
 Automation → Workflows → Create → Start from scratch. Name: **Clinic outreach sequence**.
 
-**Settings (the cog):**
-- **Stop on response: ON.** This is what stops follow-ups when someone replies.
+**Settings (the cog icon):**
+- **Stop on response: ON.** This is what stops the follow-ups when someone replies.
 - Allow re-entry: OFF.
 - Time window: Mon to Fri, 8am to 4pm in the contact's timezone.
 
 **Trigger:** Contact Tag added → `outreach-go`.
-You start a batch by adding `outreach-go` to that day's contacts, so you control volume.
+You start a batch by adding `outreach-go` to that day's contacts, so you control the volume.
 
-**Steps:**
+**Steps.** For each email, add a **Send email** action, open the code editor, and paste in
+`templates/email-NN.html`. Then set the subject from `email-sequence.md`, with the from name
+"Jess Morrell".
 
-1. **Drip mode**: batch size 10, every 1 day. (Raise to 15, then 20, once the first
-   week shows no bounce or spam problems.)
-2. **Send email**: Email 1 from `email-sequence.md`. From name "Jess Morrell".
-3. **Update opportunity**: stage → Email 1 sent.
-4. **Wait** 2 days.
-5. **Send email**: Email 2. **Update opportunity** → Follow-up 1 sent.
-6. **Wait** 2 days.
-7. **Send email**: Email 3. **Update opportunity** → Follow-up 2 sent.
-8. **Wait** 3 days.
-9. **Send email**: Email 4. **Update opportunity** → Final email sent.
-10. **Wait** 3 days, then **Update opportunity** → No response, and add tag
-    `outreach-no-response`.
+| Step | Wait before it | Send | Then move the card to |
+|---|---|---|---|
+| 1 | Drip mode: 10 a day | Email 1 | Email 1 sent |
+| 2 | 2 days | Email 2 | Following up |
+| 3 | 2 days | Email 3 | |
+| 4 | 3 days | Email 4 | |
+| 5 | 3 days | Email 5 | Long follow-up |
+| 6 | 4 days | Email 6 | |
+| 7 | 4 days | Email 7 | |
+| 8 | 5 days | Email 8 | |
+| 9 | 7 days | Email 9 | |
+| 10 | 10 days | Email 10 | Final email sent |
+| End | 7 days | (none) | No response, plus the tag `outreach-no-response` |
+
+Raise the Drip from 10 to 15 and then 20 once the first week shows no bounce or spam problems.
 
 **Second, small workflow: "Clinic outreach replied".** Trigger: Customer replied
-(channel: email), filter tag is `clinic-outreach`. Actions: update opportunity → Replied,
-add tag `outreach-replied`, and send yourself an internal notification.
+(channel: email), filtered to the tag `clinic-outreach`. Actions: move the card to Replied,
+add the tag `outreach-replied`, and send yourself an internal notification.
+
+**Optional third workflow: "Clinic outreach booked".** If you move from Calendly to a
+GHL calendar, set the trigger to Appointment booked on that calendar. The actions are:
+move the card to Call booked and remove the contact from the sequence workflow.
 
 ## 6. Test before going live
 
-Create one contact with your own email, fill the four cold fields, add `outreach-go`,
+Create one contact with your own email, fill the five cold fields, add `outreach-go`,
 and check that the email arrives in the inbox (not spam), reads correctly, and that the
 card moves on the board. Reply to it and check the follow-ups stop.
 

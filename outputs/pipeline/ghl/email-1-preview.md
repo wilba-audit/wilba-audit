@@ -1,6 +1,7 @@
 # Email 1 for all 100 prospects
 
-What each clinic receives as its first email, in send order (grade A first). Built from `ghl-import.csv`. The follow-ups are in `email-sequence.md`.
+What each clinic receives first, in send order (grade A first). The branded version
+adds the WILBA signature and a "Book a 15-minute chat" button.
 
 ---
 
@@ -16,7 +17,7 @@ Here's what I'd like to do. We plug into Pabau, find those people, and follow th
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -34,7 +35,7 @@ Here's what I'd like to do. We plug into Clinic Software, find those people, and
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -52,7 +53,7 @@ Here's what I'd like to do. We plug into Pabau, find those people, and follow th
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -70,7 +71,7 @@ Here's what I'd like to do. We plug into Pabau, find those people, and follow th
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -88,7 +89,7 @@ Here's what I'd like to do. We plug into Phorest, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -106,7 +107,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -124,7 +125,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -142,7 +143,7 @@ Here's what I'd like to do. We plug into Cliniko, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -160,7 +161,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -178,7 +179,7 @@ Here's what I'd like to do. We plug into Shortcuts, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -196,7 +197,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -214,7 +215,7 @@ Here's what I'd like to do. We plug into Zenoti and HealthEngine, find those peo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -232,7 +233,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -250,7 +251,7 @@ Here's what I'd like to do. We plug into Phorest, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -268,7 +269,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -286,7 +287,7 @@ Here's what I'd like to do. We plug into Phorest, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -304,7 +305,7 @@ Here's what I'd like to do. We plug into Pabau, find those people, and follow th
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -322,7 +323,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -340,7 +341,7 @@ Here's what I'd like to do. We plug into MXPortal, find those people, and follow
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -358,7 +359,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -376,7 +377,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -394,7 +395,7 @@ Here's what I'd like to do. We plug into Pabau, find those people, and follow th
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -412,7 +413,7 @@ Here's what I'd like to do. We plug into Phorest, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -430,7 +431,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -448,7 +449,7 @@ Here's what I'd like to do. We plug into Collums, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -466,7 +467,7 @@ Here's what I'd like to do. We plug into Clinicminds, find those people, and fol
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -484,7 +485,7 @@ Here's what I'd like to do. We plug into Phorest and Zenoti, find those people, 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -502,7 +503,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -520,7 +521,7 @@ Here's what I'd like to do. We plug into Phorest, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -538,7 +539,7 @@ Here's what I'd like to do. We plug into Fresha, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -556,7 +557,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -574,7 +575,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -592,7 +593,7 @@ Here's what I'd like to do. We plug into Shortcuts, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -610,7 +611,7 @@ Here's what I'd like to do. We plug into Fresha, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -628,7 +629,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -646,7 +647,7 @@ Here's what I'd like to do. We plug into Kitomba, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -664,7 +665,7 @@ Here's what I'd like to do. We plug into Symplast, find those people, and follow
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -682,7 +683,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -700,7 +701,7 @@ Here's what I'd like to do. We plug into NexHealth, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -718,7 +719,7 @@ Here's what I'd like to do. We plug into GoHighLevel, find those people, and fol
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -736,7 +737,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -754,7 +755,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -772,7 +773,7 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -790,7 +791,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -808,7 +809,7 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -826,7 +827,7 @@ Here's what I'd like to do. We plug into Nextech, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -844,7 +845,7 @@ Here's what I'd like to do. We plug into RepeatMD, find those people, and follow
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -862,7 +863,7 @@ Here's what I'd like to do. We plug into GoHighLevel, find those people, and fol
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -880,7 +881,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -898,7 +899,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -916,7 +917,7 @@ Here's what I'd like to do. We plug into AestheticsPro, find those people, and f
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -934,7 +935,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -952,7 +953,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -970,7 +971,7 @@ Here's what I'd like to do. We plug into GoHighLevel, find those people, and fol
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -988,7 +989,7 @@ Here's what I'd like to do. We plug into Acuity Scheduling, find those people, a
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1006,7 +1007,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1024,7 +1025,7 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1042,7 +1043,7 @@ Here's what I'd like to do. We plug into TouchMD, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1060,7 +1061,7 @@ Here's what I'd like to do. We plug into Zenoti, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1078,7 +1079,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1096,7 +1097,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1114,7 +1115,7 @@ Here's what I'd like to do. We plug into Mangomint, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1132,7 +1133,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1150,7 +1151,7 @@ Here's what I'd like to do. We plug into Shortcuts, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1168,7 +1169,7 @@ Here's what I'd like to do. We plug into Fresha, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1186,7 +1187,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1204,7 +1205,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1222,7 +1223,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1240,7 +1241,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1258,7 +1259,7 @@ Here's what I'd like to do. We plug into Aesthetic Nurse Software, find those pe
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1276,7 +1277,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1294,7 +1295,7 @@ Here's what I'd like to do. We plug into Timely, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1312,7 +1313,7 @@ Here's what I'd like to do. We plug into Kitomba, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1330,7 +1331,7 @@ Here's what I'd like to do. We plug into Square Appointments, find those people,
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1348,7 +1349,7 @@ Here's what I'd like to do. We plug into each of your Mindbody studios, find tho
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1366,7 +1367,7 @@ Here's what I'd like to do. We plug into both of your Vagaro accounts, find thos
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1384,7 +1385,7 @@ Here's what I'd like to do. We plug into Vagaro, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1402,7 +1403,7 @@ Here's what I'd like to do. We plug into Vagaro, find those people, and follow t
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1420,7 +1421,7 @@ Here's what I'd like to do. We plug into GoHighLevel, find those people, and fol
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1438,7 +1439,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1456,7 +1457,7 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1474,7 +1475,7 @@ Here's what I'd like to do. We plug into SpaTime, find those people, and follow 
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1492,7 +1493,7 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1510,7 +1511,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1528,7 +1529,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1546,7 +1547,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1564,7 +1565,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1582,7 +1583,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1600,7 +1601,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1618,7 +1619,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1636,7 +1637,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1654,7 +1655,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1672,7 +1673,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1690,7 +1691,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1708,7 +1709,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1726,7 +1727,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1744,7 +1745,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1762,7 +1763,7 @@ Here's what I'd like to do. We plug into the booking system you already use, fin
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1780,7 +1781,7 @@ Here's what I'd like to do. We plug into Boulevard, find those people, and follo
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
 
@@ -1798,7 +1799,6 @@ Here's what I'd like to do. We plug into Aesthetic Record, find those people, an
 
 You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day. Grab any time that suits here: https://calendly.com/hello-wilba
 
 Jess
-

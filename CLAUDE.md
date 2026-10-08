@@ -176,8 +176,8 @@ Premium hormone/longevity/functional-medicine clinic (Dr Gina Schoeman, UK). WIL
 ### WILBA Clinic Outreach in GHL (own sales pipeline)
 
 WILBA's own cold outreach to 100 verified med spa / plastic surgery prospects, run from a
-dedicated WILBA sub-account in Jess's GoHighLevel. Files: `outputs/pipeline/ghl/`
-(`GHL-SETUP.md` build guide, `email-sequence.md` 4 emails over days 0/2/4/7,
+dedicated WILBA sub-account in Jess's GoHighLevel (Location ID `A3tY7p4YMaGWtkblpmUX`). Files: `outputs/pipeline/ghl/`
+(`GHL-SETUP.md` build guide, `email-sequence.md` 10 emails over 40 days, `templates/` branded HTML with Calendly link, `scripts/wilba_ghl_sequence.py` regenerates them,
 `ghl-import.csv` 100 contacts with per-clinic subject + opener, `email-1-preview.md`).
 `scripts/wilba_ghl_load.py` + `wilba-ghl-load.yml` load contacts and opportunities by API
 (needs secrets `WILBA_GHL_TOKEN`, `WILBA_GHL_LOCATION_ID`; never sends). The pipeline and

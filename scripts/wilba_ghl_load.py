@@ -38,6 +38,7 @@ CUSTOM_FIELDS = {  # csv column -> (GHL field name, dataType)
     "cold_opener": ("Cold opener", "LARGE_TEXT"),
     "crm_phrase": ("CRM phrase", "TEXT"),
     "tz_line": ("Timezone line", "TEXT"),
+    "currency": ("Currency", "TEXT"),
     "pipeline_id": ("Pipeline ID", "TEXT"),
     "icp_grade": ("ICP grade", "TEXT"),
 }
