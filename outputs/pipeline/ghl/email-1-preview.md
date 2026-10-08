@@ -1,6 +1,6 @@
 # Email 1 for all 100 prospects
 
-What each clinic will receive as the first email, in send order (grade A first). Built from `ghl-import.csv`. Follow-ups are in `email-sequence.md`.
+What each clinic receives as its first email, in send order (grade A first). Built from `ghl-import.csv`. The follow-ups are in `email-sequence.md`.
 
 ---
 
@@ -12,11 +12,11 @@ Your referral form pays GBP 25 to both sides and collects the referred friend's 
 
 The catch is that someone has to ring them. Referred friends who never booked, plus consultations for Morpheus 8 or MINT threads that didn't go ahead, are probably sitting quietly in Pabau.
 
-I work with a build partner on a system that connects to Pabau, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Pabau, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -30,11 +30,11 @@ You run four divisions from Cobden House, aesthetics, body, skin and dermatology
 
 Alongside that you sell gift vouchers, pre-paid Aesthetic Packages, monthly offers and Kandoo finance. Each of those is a separate pool of people who paid or applied once, and the ones who never came back are usually still in Clinic Software.
 
-I work with a build partner on a system that connects to Clinic Software, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Clinic Software, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -48,11 +48,11 @@ You run a standing 20% off any single therapist service when an existing client 
 
 Offers like that tend to exist because a good share of the database only ever books one thing. Those one-treatment clients, plus refer-a-friend vouchers and newsletter sign-ups that never turned into appointments, are likely sitting idle in Pabau.
 
-I work with a build partner on a system that connects to Pabau, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Pabau, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -66,11 +66,11 @@ Every consultation at Oak House ends with a bespoke treatment plan, and you have
 
 Each plan that was written but never booked is a documented opportunity. Over time those, along with gift voucher buyers who never redeemed, tend to pile up quietly in Pabau.
 
-I work with a build partner on a system that connects to Pabau, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Pabau, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -84,11 +84,11 @@ Your Beauty Bank lets clients deposit money and draw it down later, alongside a 
 
 Unspent balances are about the warmest lead a clinic can have, since the client has already paid. The ones who deposited, lapsed on a membership or stopped mid-course are probably sitting in Phorest without anyone ringing them.
 
-I work with a build partner on a system that connects to Phorest, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -102,11 +102,11 @@ You run branded programmes, The Manse Glow, The Manse Filter and a dedicated Rej
 
 That makes the consult list the most valuable thing in the building. The people who had the free consult, or bought a gift card through the Zenoti store, and never booked in are likely still sitting there.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -120,11 +120,11 @@ Your $100 new-client voucher only applies to a first in-clinic treatment after a
 
 An offer that controlled keeps refilling a list of people who consulted and never converted. Many of them will have paid the $75 deposit too, and are probably still sitting in Zenoti.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -138,11 +138,11 @@ Every new patient gets a complimentary 30-minute consultation, across six Melbou
 
 That adds up to years of free consults sitting in a single system. A fair share of those people took the consultation, went home to think about it and never booked a treatment.
 
-I work with a build partner on a system that connects to Cliniko, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Cliniko, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -156,11 +156,11 @@ You offer free nurse and therapist consultations and a $30 doctor consult across
 
 On a free-consult funnel, two days is often long enough for a lead to book somewhere else. The ones who never came back are probably still in Zenoti.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -174,11 +174,11 @@ You run a separate inbox and phone line for each of the Brisbane CBD, Aspley, Ca
 
 Four front doors make it easy for each clinic to work its own day and nobody to own the history. Free consults, gift card buyers and package enquiries that went quiet are likely sitting in that one database.
 
-I work with a build partner on a system that connects to Shortcuts, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Shortcuts, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -192,11 +192,11 @@ You sell $250 and $425 vouchers through Timely, with a SkinCeuticals gift pack o
 
 That leaves a standing pile of prepaid value waiting on an appointment. Unredeemed voucher holders and lapsed members are probably sitting in Timely next to the patients who came once and never rebooked.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -210,11 +210,11 @@ You charge $300 for a cosmetic consultation and run aesthetics on Zenoti, while 
 
 That split means a patient who paid for one consult can be invisible to the other side. People who consulted about surgery and didn't go ahead are likely sitting across both systems untouched.
 
-I work with a build partner on a system that connects to Zenoti and HealthEngine, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti and HealthEngine, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -228,11 +228,11 @@ You run a treatment wallet where clients prepay and draw down later, alongside v
 
 Unspent wallet balances are about the warmest lead going, since the money is already in. Those, plus newsletter subscribers who never booked and one-time Morpheus8 or HIFU clients, are probably sitting in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -246,11 +246,11 @@ You charge a $50 booking fee that is deducted from treatment or refunded on canc
 
 Every cancelled or credited booking is a named person who showed real intent. Those, alongside free consults that never became treatment and unredeemed vouchers, are likely still sitting in Phorest.
 
-I work with a build partner on a system that connects to Phorest, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -264,11 +264,11 @@ Your gift cards run for three years and can only be redeemed after a clinical as
 
 That means a rolling stack of prepaid value waiting on an assessment someone has to book. Unredeemed card holders, plus assessments that never led to treatment, are probably sitting in Zenoti.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -282,11 +282,11 @@ You run Mullaloo, Floreat, Perth CBD and Swan Valley each with its own Phorest c
 
 Split that way, lapsed members and unredeemed vouchers end up spread across four sites with no single owner for the follow-up. Most of them are likely still sitting in Phorest, waiting for someone to ask.
 
-I work with a build partner on a system that connects to Phorest, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -300,11 +300,11 @@ You sell treatment packages and gifted consultations through an online shop and 
 
 So every unredeemed package and gifted consultation is already in one place. Those, along with free consultations that didn't book in for surgery or laser, are likely sitting idle in Pabau.
 
-I work with a build partner on a system that connects to Pabau, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Pabau, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -318,11 +318,11 @@ You still honour SkinViva credit and gift vouchers, and the whole book now sits 
 
 That is a list of people already holding money with you, and some of them may not have been in since the SkinViva days or know the credit still stands.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -336,11 +336,11 @@ Online bookings at your Birmingham and Manchester clinics stay provisional until
 
 Every provisional booking that never got that call is still sitting in MXPortal: a surgical enquiry who chose a slot and may never have been reached.
 
-I work with a build partner on a system that connects to MXPortal, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into MXPortal, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -354,11 +354,11 @@ You have been running since 1999 and sell monthly plans for facials, injectables
 
 Twenty-seven years in, Zenoti is likely holding a long list of lapsed plan members, free consultations that never booked, and body-contouring enquiries nobody went back to.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -372,11 +372,11 @@ Your consultation fee is redeemable against treatment, and the Mailbox clinic ha
 
 So somewhere in Timely is a list of people who paid for a consultation and still hold credit against a treatment they never booked, plus gift voucher buyers who never came in.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -390,11 +390,11 @@ Your acne and skin consultation costs £40 and is redeemable against treatment, 
 
 That puts unclaimed consultation credit, free consultations that never booked and half-finished courses in a single database, and most of it is likely untouched.
 
-I work with a build partner on a system that connects to Pabau, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Pabau, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -408,11 +408,11 @@ Bookings run through Phorest, but surgical enquiries at Bath Street go through t
 
 Anyone who filled in either form and was not reached is a facelift, eyelid or liposuction enquiry that has quietly gone cold.
 
-I work with a build partner on a system that connects to Phorest, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -426,11 +426,11 @@ Q-Plan, your tiered monthly membership, comes with birthday vouchers, skincare g
 
 That usually leaves two quiet groups at Ingram Street: members who paused or lapsed, and people holding a birthday voucher they never came in to use.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -444,11 +444,11 @@ Your founder is credited with more than 30,000 procedures over 15 years, and you
 
 A book that deep, with prepaid value sitting on top of it, tends to hold a lot of past patients and voucher holders who simply never got asked back.
 
-I work with a build partner on a system that connects to Collums, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Collums, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -462,11 +462,11 @@ You charge for consultations on purpose, to keep the advice unbiased, and there 
 
 That makes every past consultation a paying, qualified patient, and the ones in Clinicminds who never rebooked are probably the most valuable list you own.
 
-I work with a build partner on a system that connects to Clinicminds, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Clinicminds, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -480,11 +480,11 @@ You book through Phorest in Sandyford and Zenoti in Galway, so your patient list
 
 That makes it easy for both halves to go unworked: gift voucher holders, people who looked at Klarna, and past surgical consultations, in two places that never see each other.
 
-I work with a build partner on a system that connects to Phorest and Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest and Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -498,11 +498,11 @@ Your front door is a free VISIA skin analysis, offered whether or not someone bo
 
 So Zenoti holds everyone who was scanned, told what their skin needed, and never came back, plus the buyers of gift vouchers sold through the same store.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -516,11 +516,11 @@ ORA Rewards points and your gift cards both run through Phorest, the same system
 
 That means points balances and unspent vouchers are already sitting next to the patients who own them, and an unused balance is about the easiest reason there is to get in touch.
 
-I work with a build partner on a system that connects to Phorest, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Phorest, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -534,11 +534,11 @@ You take card details on every booking without charging upfront, and charge 30% 
 
 So Fresha already holds a named list of no-shows and late cancellations who may never have rebooked, which is about the warmest apology list a clinic can have.
 
-I work with a build partner on a system that connects to Fresha, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Fresha, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
 
 Jess
 
@@ -552,11 +552,11 @@ Your Skin Club runs three tiers at $50, $65 and $105 a week, each on a six-month
 
 That means a cohort of paying members reaches the end of their term every six months, and the ones who quietly let it lapse are still sitting in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -570,11 +570,11 @@ You ran a $30-a-ticket acne clinic launch evening, with the ticket redeemable ag
 
 Everyone who paid to turn up and did not book is a named lead with a priced intent in Timely, alongside R Collective Rewards members and people who dropped out of a treatment journey part-way.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -588,11 +588,11 @@ Your packages are non-refundable and expire twelve months after purchase, alongs
 
 That gives you a dated list in Shortcuts of people holding credit that is about to run out, and a deadline is the easiest reason to call anyone.
 
-I work with a build partner on a system that connects to Shortcuts, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Shortcuts, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -606,11 +606,11 @@ The Junction and Dulwich Hill both run off a single Fresha instance, which also 
 
 So one database holds patients from both cities and every outstanding voucher, which makes the people who have not been back in a while unusually easy to find.
 
-I work with a build partner on a system that connects to Fresha, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Fresha, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -624,11 +624,11 @@ You have two full-time patient concierges on a ten-person team, with bookings an
 
 That is a team that already gets more enquiries than it converts. The ones the concierges never got back to, and the gift card holders who never booked, are probably still sitting in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -642,11 +642,11 @@ You have been doctor-led in Geelong since 1991, with doctors, specialists, nurse
 
 That is a lot of consultations sitting in Kitomba. Most of the people who had the analysis, or drifted off a Skincare Plan partway through, have probably not heard from you since.
 
-I work with a build partner on a system that connects to Kitomba, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Kitomba, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -660,11 +660,11 @@ All four of your Tennessee locations run off one Symplast instance, with CareCre
 
 That puts every consult that never converted in a single system, with the financing history attached. Those are people who got as far as asking how to pay for surgery, then went quiet.
 
-I work with a build partner on a system that connects to Symplast, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Symplast, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -678,11 +678,11 @@ You run three skin memberships at $225, $325 and $400 a month, each with a treat
 
 A lapsed member is someone who was paying you every month and simply stopped. Across two locations, those people are likely sitting in Boulevard with nobody assigned to ask why.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -696,11 +696,11 @@ You run the More than Beauty Club at $69 a month and a $375 body contouring tier
 
 The members are pooled but the follow-up is split three ways. Lapsed members and old inquiries tend to fall into the gap between the desks.
 
-I work with a build partner on a system that connects to NexHealth, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into NexHealth, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -714,11 +714,11 @@ You charge $150 for a virtual consultation and run a Virtual Price Guide as a le
 
 So your CRM holds people who paid to be quoted and then went quiet. That is about as warm as a dormant lead gets.
 
-I work with a build partner on a system that connects to GoHighLevel, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into GoHighLevel, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -732,11 +732,11 @@ Your three locations in Austin and San Antonio run on a single Boulevard instanc
 
 That database is likely full of people who came once for the offer and were never asked back at full price, plus the ones who looked at CareCredit or a payment plan and stopped there.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -750,11 +750,11 @@ You run SkinClub Essential at $175 a month and VIP at $275 a month across four P
 
 That is three overlapping lists of people who were paying you regularly and may have stopped. Add the gift card holders who never booked, and it is four.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -768,11 +768,11 @@ You run one Aesthetic Record instance across three clinics in Orange County and 
 
 So the whole lapsed-member list is already in one place, just unworked. Add the people who took the 20% new-patient offer once, or looked at Cherry or PatientFi, and never came back.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -786,11 +786,11 @@ Coastal Club members bank $99 a month in credit that rolls over and does not exp
 
 That is a literal pool of unspent money with a date on it, sitting in Zenoti. Members who stopped coming in still have credit running down, and most would rather be reminded than lose it.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -804,11 +804,11 @@ Your VIP members get a free twelve-month treatment plan written for them, alongs
 
 So somebody has already documented exactly what each of those people was going to buy, and when. The ones who fell off the plan partway through, or had the consult and never started, are already in Aesthetic Record.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -822,11 +822,11 @@ Your Aspire points redeem in $20 blocks against the next injection appointment, 
 
 So every lapsed patient is sitting on credit that only converts if they come back, and nobody is telling them. The consultations that never turned into a procedure are likely in Nextech too.
 
-I work with a build partner on a system that connects to Nextech, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Nextech, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -840,11 +840,11 @@ Your membership runs on its own RepeatMD app across your two Scottsdale location
 
 So the unredeemed member credit is already itemized. It just needs someone to act on it, starting with the members who paid in and stopped booking.
 
-I work with a build partner on a system that connects to RepeatMD, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into RepeatMD, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -858,11 +858,11 @@ You offer Cherry approvals up to $50,000 with no hard credit check, plus CareCre
 
 That usually leaves a list of people who were cleared to spend serious money and never booked the consultation, sitting in a system you already own.
 
-I work with a build partner on a system that connects to GoHighLevel, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into GoHighLevel, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -876,11 +876,11 @@ You still run three legacy tiers, VIP 20, VIP 60 and VIP 100, closed to new memb
 
 Those are some of your longest-standing clients, and in most clinics nobody has spoken to them in years. They sit in Zenoti alongside whoever is holding a gift card they never used.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -894,11 +894,11 @@ All five of your Southern California locations lead with the same call to action
 
 So every free assessment across LA and Orange County is pooled in one place, including everyone who came in for the opinion and never booked the treatment.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -912,11 +912,11 @@ Your $99 a month Glamoi Membership Club lets members bank credits toward bigger 
 
 That builds a pot of saved-up credit waiting on a decision nobody is prompting, plus lapsed members who stopped paying before they ever spent it.
 
-I work with a build partner on a system that connects to AestheticsPro, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into AestheticsPro, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -930,11 +930,11 @@ You have run complimentary consultations since 2019 across seven locations in Ne
 
 That is years of people who came in for a free opinion and never booked, sitting in a single database nobody has the time to work through by hand.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -948,11 +948,11 @@ You carry three finance providers at 0%, Cherry, CareCredit and Alphaeon, and ru
 
 So you already know the two groups behave differently. The people who were pre-approved and never proceeded are a third group, and they rarely get a follow-up.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -966,11 +966,11 @@ Your financing page lists six partners, Cherry, Alphaeon, United Medical Credit,
 
 Every abandoned application is someone who wanted a procedure badly enough to apply for credit. Many of those names are likely already in GoHighLevel, untouched since the day they applied.
 
-I work with a build partner on a system that connects to GoHighLevel, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into GoHighLevel, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -984,11 +984,11 @@ You run a 20% off first treatment email opt-in alongside a separate free-consult
 
 That makes the mailing list and the consult pool two different aging lists, and in most clinics neither gets worked once the first email has gone out.
 
-I work with a build partner on a system that connects to Acuity Scheduling, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Acuity Scheduling, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1002,11 +1002,11 @@ Your three memberships, Purify at $149, Rejuvenation at $199 and Always Attuned 
 
 That gives you three separate cohorts of lapsed members, each one having already told you exactly what they were willing to pay.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1020,11 +1020,11 @@ Your VIP membership runs a Premier Wallet where unused balance carries over mont
 
 Which means you are likely holding money for people who have stopped coming in. They are easy to find in Aesthetic Record, and most only need a reason to book.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1038,11 +1038,11 @@ You stack three of your own monthly clubs, Botox, TOX and Filler, on top of Alle
 
 Six schemes means six sets of unclaimed points and lapsed subscriptions, and nobody at a busy injector clinic has the time to chase them all.
 
-I work with a build partner on a system that connects to TouchMD, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into TouchMD, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1056,11 +1056,11 @@ You have twelve providers across four locations on one Zenoti instance, and the 
 
 Unredeemed credit builds faster than anyone could work through by hand, and the members who drifted away are still holding every unspent dollar of theirs.
 
-I work with a build partner on a system that connects to Zenoti, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Zenoti, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1074,11 +1074,11 @@ You run a Concierge Primary Care membership alongside the aesthetics menu in Fis
 
 Concierge memberships tend to lapse quietly, and the people who let one go are some of the easiest to bring back. So are the Cherry applicants who never booked.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1092,11 +1092,11 @@ You have four people on reception for a single Newtown Square site, and three pr
 
 That is a practice with real inbound, and three lists of people who started a credit application and stopped. Most of them never hear from the clinic again.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1110,11 +1110,11 @@ Both your memberships, Laser + Sofwave at $300 a month and Unlimited Tox at $195
 
 So every member who has not claimed it has a hard deadline attached, and a very good reason to pick up the phone.
 
-I work with a build partner on a system that connects to Mangomint, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Mangomint, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1128,11 +1128,11 @@ Dr Jung personally performs every treatment at the Deakin clinic, yet the menu r
 
 With one pair of hands that busy, the complimentary consultations with your clinic manager and the form enquiries waiting on a 24-48 hour reply are the ones most likely to drift. Most of them will still be sitting in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1146,11 +1146,11 @@ You have a dedicated marketing manager driving consultation bookings across the 
 
 That is a lot of effort going into the front door. The people who paid the AUD 100 consult, didn't treat that day and never came back are likely still sitting in Shortcuts.
 
-I work with a build partner on a system that connects to Shortcuts, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Shortcuts, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1164,11 +1164,11 @@ Every appointment at Ardington and Abingdon carries a GBP 25 deposit that become
 
 Both policies create records of people who paid something and didn't carry on. Those consultations that never turned into a treatment are likely sitting in Fresha, already paid for and waiting.
 
-I work with a build partner on a system that connects to Fresha, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Fresha, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1182,11 +1182,11 @@ New patients pay GBP 195 for a consultation and only get it back if they treat t
 
 So anyone who consulted and went away to think about it has already paid to tell you they are interested. Those patients, plus referrals who never booked, are probably sitting in Timely with nothing following them up.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1200,11 +1200,11 @@ You sell gift vouchers through the same Timely storefront you take bookings on a
 
 That means unredeemed voucher balances and every past consultation are already in one system. The people who bought, consulted once and went quiet are likely sitting right there next to your active clients.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1218,11 +1218,11 @@ You run an Essentials Newsletter promising exclusive offers alongside a Timely v
 
 So the list and the prepaid balances are both already there. What usually gets left behind is the follow-up: subscribers who never booked, vouchers never redeemed, and one-time patients still sitting in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1236,11 +1236,11 @@ You offer a free 15-minute virtual consult, a free in-clinic consult and consult
 
 With no paid gate on any of them, plenty of people raise a hand and go quiet. Those lapsed members and consults that never turned into treatment are likely sitting idle in Timely.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1254,11 +1254,11 @@ You offer a free initial consultation at both Horsforth and Bradford, and both c
 
 That puts everyone who came in for a free consult and never booked a treatment in a single list, which is usually the warmest list a clinic has and the least worked.
 
-I work with a build partner on a system that connects to Aesthetic Nurse Software, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Nurse Software, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1272,11 +1272,11 @@ Your current offer prices a six-session full-body laser course at £999 against 
 
 Discounted courses fill the diary, but they also leave people in Timely who stopped part-way, and likely a few Profhilo or filler consultations that never turned into a booking.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1290,11 +1290,11 @@ You offer Genoapay, but only in clinic, so anyone in Te Aro or Rosedale who want
 
 The people who meant to and never did are still in Timely, along with gift card and shop voucher holders who may not have been back since.
 
-I work with a build partner on a system that connects to Timely, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Timely, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
 
 Jess
 
@@ -1308,11 +1308,11 @@ You market across Pukekohe, Papakura, Manukau and Franklin from a single Takanin
 
 Everything that wide a catchment produces ends up in Kitomba: gift voucher holders, Afterpay starters and enquiries from a few towns away who probably never got a second call.
 
-I work with a build partner on a system that connects to Kitomba, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Kitomba, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your afternoon is my morning.
+Worth a 15 minute chat? I'm on Bali time, so your afternoon is my morning.
 
 Jess
 
@@ -1326,11 +1326,11 @@ You run your own Cherry financing portal alongside Square gift cards across Boca
 
 That is two separate lists of people who got as far as arranging how to pay and then did not book: the ones who pre-qualified for financing, and the ones still holding a gift card balance.
 
-I work with a build partner on a system that connects to Square Appointments, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Square Appointments, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1344,11 +1344,11 @@ Each of your four Georgia locations runs as its own Mindbody studio, all selling
 
 That means four client lists that never talk to each other. The patients who came once and stopped are split four ways, and nobody is looking at the overlap.
 
-I work with a build partner on a system that connects to each of your Mindbody studios, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into each of your Mindbody studios, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1362,11 +1362,11 @@ Your Downtown and Champions locations book through two separate Vagaro accounts,
 
 So a member at one site is invisible at the other. Anyone who lapsed, or got approved through Cherry and never booked, is sitting in whichever account they happened to start in.
 
-I work with a build partner on a system that connects to both of your Vagaro accounts, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into both of your Vagaro accounts, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1380,11 +1380,11 @@ Your memberships run at $99, $299 and $499 a month, priced purely by how many tr
 
 That makes every lapsed member a known monthly value. The case for going back to them is about as easy to put as it gets, and they are already in Vagaro.
 
-I work with a build partner on a system that connects to Vagaro, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Vagaro, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1398,11 +1398,11 @@ You run Gold, Diamond and Platinum membership tiers on Vagaro, each offering pri
 
 So the members who lapsed are already sorted by how much they used to spend. The Platinum ones who stopped coming are probably the first list worth working.
 
-I work with a build partner on a system that connects to Vagaro, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Vagaro, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1416,11 +1416,11 @@ Your $100 a month membership banks five Botox units a month up to a thirty-unit 
 
 That is a dated list of members about to lose something they already paid for. Most of them would rather hear from you before the units go than after.
 
-I work with a build partner on a system that connects to GoHighLevel, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into GoHighLevel, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1434,11 +1434,11 @@ You sell gift cards through Boulevard's own commerce, next to payment plans, new
 
 So the unredeemed balances and the consults that never turned into treatment are already itemized in the same system as your bookings. Nobody has to dig for them.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1452,11 +1452,11 @@ You trade Wednesday through Sunday, both weekend days included, with a menu runn
 
 A week that busy tends to leave a trail: lapsed members, newsletter sign-ups who never booked, and one-time patients who never came back for round two.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1470,11 +1470,11 @@ Your Self-Care Club runs five tiers from $149 to $350 a month, on top of gift ca
 
 Every member who cancelled has already told you what they used to spend each month. That is five price points of lapsed members sitting in SpaTime, each with an obvious offer attached.
 
-I work with a build partner on a system that connects to SpaTime, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into SpaTime, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1488,11 +1488,11 @@ You offer complimentary consultations two ways, in person and virtual, through y
 
 Virtual consults tend to be the ones that drift, because the patient never walked through the door. Those people are probably still in Aesthetic Record, waiting for someone to ask if they are still interested.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1506,11 +1506,11 @@ One of the testimonials on your homepage opens with a patient who has been havin
 
 I couldn't see which booking system sits behind the enquiry form, but a patient base that long and wide usually holds a lot of people who had one consultation or one course and simply stopped.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1524,11 +1524,11 @@ You have eighteen surgeons across Manchester, London, Liverpool and Birmingham, 
 
 At those prices, the gap between a free consult and a booked operation is where most of the money sits, and it is usually the part nobody has time to chase.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1542,11 +1542,11 @@ You run a full surgical menu in Manchester under two named plastic surgeons, Hum
 
 Surgical decisions take a while, so practices like yours usually carry a backlog of consultations and enquiries from the past year or two that never went any further.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1560,11 +1560,11 @@ You sell twelve Dermalux sessions for £100, alongside the surgical work Mr Filo
 
 A course like that fills the diary, but it also leaves a trail of people who stopped turning up halfway through, and some of them are exactly who you would want back for a consultation.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1578,11 +1578,11 @@ Your consultations are paid at three tiers, £30 with a practitioner, £50 with 
 
 So every past consultation was a paying, qualified lead, and the people who paid and never booked, or stopped part-way through a course, are the obvious place to start.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1596,11 +1596,11 @@ Your AviClear packages run from $2,850 to $3,650, and the 20% discount only hold
 
 So everyone who had the scan and did not commit on the day is a priced, known intent that walked away from a discount. Add the $50 dermal consultations that never became treatment, and that is a list worth working.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so we're only a few hours apart.
+Worth a 15 minute chat? I'm on Bali time, so we're only a few hours apart.
 
 Jess
 
@@ -1614,11 +1614,11 @@ You sell gift vouchers in both digital and postal formats across your Dublin and
 
 That tends to leave unredeemed balances spread across two sites and two formats, sitting alongside the past patients and enquiries who came in once and were never asked back. Usually nobody's job is to chase either list.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so I can take a call in your morning.
+Worth a 15 minute chat? I'm on Bali time, so I can do your morning.
 
 Jess
 
@@ -1632,11 +1632,11 @@ You have seven physicians across Boca Raton and Fort Lauderdale, covering plasti
 
 A lot of people have been through that door. The consult requests that never booked, the members who lapsed and the patients who looked at CareCredit or Cherry are probably sitting there unworked.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1650,11 +1650,11 @@ You have eight clinics across Dallas-Fort Worth, each with its own direct line, 
 
 Somebody there is already handling inbound by hand. At that volume, the inquiries that never booked and the loyalty members who drifted off are most likely sitting untouched.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1668,11 +1668,11 @@ You charge $150 for a consultation, described as part of creating a custom treat
 
 The people who paid for that plan and never booked it are both qualified and already sold on the practice. They are likely the warmest list you have.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1686,11 +1686,11 @@ You run a monthly membership and a VIP program alongside gift cards through The 
 
 That is four different ways someone ends up on your list, and no sign anything pulls them back. The lapsed members and unredeemed gift card holders are probably the first place to look.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1704,11 +1704,11 @@ You have four board-certified surgeons working from one Bedford Drive suite, a m
 
 The people who applied for finance and never went ahead with surgery are a known, named list, and most practices stop calling them once the consultation goes quiet.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1722,11 +1722,11 @@ You ask for a card on file for every appointment and charge a $25 scheduling fee
 
 So every no-show and lapsed booking is already an identified record with payment details attached. Those are the easiest people to bring back, and usually the least chased.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1740,11 +1740,11 @@ Your Neurotoxin Club sells four treatments for $2,000 to be used within twelve m
 
 Both leave dated balances behind. Anyone who bought in and stopped coming has treatments on a clock, which is a reason to call that needs no sales pitch.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1758,11 +1758,11 @@ Your first consultation costs $150 and only counts toward treatment booked the s
 
 So everyone who consulted and went away to think about it paid $150 for the opinion and never got the credit back. In most clinics, nobody calls them to say the door is still open.
 
-I work with a build partner on a system that connects to the booking system you already use, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into the booking system you already use, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1776,11 +1776,11 @@ You run a $50 welcome offer on a first appointment, alongside memberships and Pa
 
 Everyone who took the offer and did not come back is already identified, and already discounted once. They are the simplest people in your system to invite back.
 
-I work with a build partner on a system that connects to Boulevard, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Boulevard, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 
@@ -1794,11 +1794,11 @@ You sell two prepaid package tiers, Elite and VIP, with discounts on both produc
 
 Prepaid tiers that go unused are the simplest thing in the world to call someone about, and most clinics never get around to it.
 
-I work with a build partner on a system that connects to Aesthetic Record, finds the enquiries and past patients that went quiet, and follows them up over SMS and calls until they book or tell you to stop. Nothing migrates, and your team approves anything before it goes to a patient.
+Here's what I'd like to do. We plug into Aesthetic Record, find those people, and follow them up by text and phone until they book or say stop. Nothing changes for your team.
 
-We take 10% of what it books, nothing upfront.
+You pay 10% of the bookings it brings in. Nothing upfront. And if you don't love what we build, you get every cent back.
 
-Worth 15 minutes? I'm on Bali time, so your evening is my morning and I can work around you.
+Worth a 15 minute chat? I'm on Bali time, so I'll work around your day.
 
 Jess
 

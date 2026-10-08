@@ -10,9 +10,22 @@ address, and only then switch it on.
 Files in this folder:
 
 - `ghl-import.csv` — the 100 prospects, ready for GHL's contact import
-- `email-sequence.md` — the four emails, word for word
+- `email-sequence.md` — the four emails, word for word (Dean Jackson style, with the refund guarantee)
+- `email-1-preview.md` — the first email exactly as each of the 100 clinics will get it
 - `scripts/wilba_ghl_load.py` + the "WILBA GHL load" GitHub Action — loads the same 100
   through the API instead of the CSV, once a token is in place
+
+---
+
+## What's left for you (about 20 minutes)
+
+1. Make a separate WILBA sub-account in GHL (step 1).
+2. Create the **Clinic outreach** pipeline with the 11 stages (step 2).
+3. Then **either** upload `ghl-import.csv` yourself (steps 3 and 4), **or** send Claude a
+   Private Integration token and your Location ID and Claude loads all 100 for you.
+4. Build the two workflows (step 5) and test on your own email (step 6).
+5. Confirm the refund guarantee with Griffin, and choose how to send (see the end of this guide).
+6. Tell Claude "go". Nothing sends before that.
 
 ---
 
