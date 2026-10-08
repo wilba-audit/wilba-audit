@@ -27,7 +27,7 @@ jobs:
       - name: Load prospects
         env:
           WILBA_GHL_TOKEN: ${{ secrets.WILBA_GHL_TOKEN }}
-          WILBA_GHL_LOCATION_ID: ${{ secrets.WILBA_GHL_LOCATION_ID }}
+          WILBA_GHL_LOCATION_ID: A3tY7p4YMaGWtkblpmUX  # WILBA sub-account (not secret)
         run: python scripts/wilba_ghl_load.py ${{ inputs.live && '--live' || '' }}
       - name: Commit report
         run: |
