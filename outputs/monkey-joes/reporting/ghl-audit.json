@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:26:35+00:00",
+  "generated_at": "2026-10-12T22:02:24+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
@@ -77,26 +77,14 @@
         {
           "utmSource": "google",
           "utmMedium": "paid_search",
-          "campaign": "Bogo-pol",
-          "referrer": null
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
-        },
-        {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
           "campaign": "Halfprice-pol",
           "referrer": "https://www.google.com"
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
         },
         {
           "utmSource": "facebook",
@@ -105,17 +93,25 @@
           "referrer": "http://m.facebook.com"
         },
         {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Bogo-pol",
+          "referrer": "https://www.google.com"
+        },
+        {
           "utmSource": null,
           "utmMedium": null,
           "campaign": null,
           "referrer": null
+        },
+        {
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://facebook.com"
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-07-20",
-          "new_leads": 37
-        },
         {
           "week_start": "2026-07-27",
           "new_leads": 40
@@ -154,6 +150,10 @@
         },
         {
           "week_start": "2026-09-28",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-10-05",
           "new_leads": 0
         }
       ],
@@ -209,8 +209,8 @@
         "promo-issued": 296,
         "offer-half": 284,
         "half-wp-lead": 282,
-        "voucher-delivered": 150,
-        "voucher-optin-pending": 150,
+        "voucher-delivered": 151,
+        "voucher-optin-pending": 151,
         "bday-start-2026-07-06": 144,
         "birthday-wp-lead": 144,
         "weekend-stars-email-wp-2026-06-30": 142,
@@ -220,14 +220,14 @@
         "half-redeemed": 38,
         "nudge-email-may2026": 38,
         "redeemed-half": 38,
-        "inbound-call-wp": 30,
-        "topic-party": 30,
-        "voice-agent-sms": 30,
+        "inbound-call-wp": 31,
+        "topic-party": 31,
+        "voice-agent-sms": 31,
+        "no sms": 16,
+        "no-sms-consent": 16,
+        "sms-unsub": 16,
+        "unsubscribed-sms": 16,
         "bogo-wp-lead": 15,
-        "no sms": 15,
-        "no-sms-consent": 15,
-        "sms-unsub": 15,
-        "unsubscribed-sms": 15,
         "voucher-delivered-resend": 7,
         "promo-redeemed-wp": 6,
         "sms-consent": 6,
@@ -270,9 +270,9 @@
           "referrer": null
         },
         {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
-          "campaign": "Halfprice-wp",
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
           "referrer": null
         },
         {
@@ -301,10 +301,6 @@
         }
       ],
       "weekly_leads": [
-        {
-          "week_start": "2026-07-20",
-          "new_leads": 16
-        },
         {
           "week_start": "2026-07-27",
           "new_leads": 11
@@ -344,6 +340,10 @@
         {
           "week_start": "2026-09-28",
           "new_leads": 0
+        },
+        {
+          "week_start": "2026-10-05",
+          "new_leads": 0
         }
       ],
       "campaign_sends": {
@@ -357,7 +357,7 @@
         "half-wp-lead": 282,
         "offer-half": 284,
         "promo-issued": 296,
-        "voucher-delivered": 150,
+        "voucher-delivered": 151,
         "voucher-delivered-resend": 7
       },
       "birthday": {
@@ -365,12 +365,12 @@
         "birthday-wp-lead": 144
       },
       "voice_inbound": {
-        "inbound-call-wp": 30,
-        "topic-party": 30,
-        "voice-agent-sms": 30
+        "inbound-call-wp": 31,
+        "topic-party": 31,
+        "voice-agent-sms": 31
       },
       "metrics": {
-        "voucher_delivered": 150,
+        "voucher_delivered": 151,
         "unsubscribed": 0
       },
       "custom_fields_count": 146,
