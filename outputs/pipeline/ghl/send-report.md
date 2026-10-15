@@ -1,8 +1,8 @@
-# Outreach send report (DRY, 2026-10-15)
+# Outreach send report (LIVE, 2026-10-15)
 
-- In sequence: 0 · Replied: 0 · Started so far: 0 of 100
+- In sequence: 10 · Replied: 0 · Started so far: 10 of 100
 
-- New clinics started: 10 (cap 10) · Emails that would send: 10
+- New clinics started: 10 (cap 10) · Emails sent: 10
 - Elite Aesthetics (new): email 1 "Referred friends with no follow-up"
 - rtwskin (new): email 1 "Four divisions and an out-of-hours line"
 - Epsom Skin Clinics (new): email 1 "Two sites and a 20% try-something-new offer"
