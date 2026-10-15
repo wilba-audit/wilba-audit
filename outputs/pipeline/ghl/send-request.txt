@@ -1,3 +1,3 @@
-test
+dry
 
-One test email (email 1) to jess@wilba.ai only. Jess asked on 15 Oct: "ca you do this i need eveyrthign up and set up today". Clinics get nothing until this says live, which needs Jess to say "go".
+Daily run requested 2026-10-15. Dry = report only. Switch to live only after Jess says "go".
