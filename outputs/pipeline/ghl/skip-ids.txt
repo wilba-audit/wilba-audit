@@ -1,0 +1,2 @@
+# Clinics listed here get no more outreach emails (one pipeline_id per line).
+# Empty for now: the briefing pause list waits on Jess saying so.

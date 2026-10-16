@@ -1,0 +1,47 @@
+name: WILBA GHL daily outreach send
+
+# Sends the 10-email clinic sequence through Jess's GHL, a few clinics a day.
+# Mode comes from the first line of outputs/pipeline/ghl/send-request.txt:
+#   dry  = report who would get what, send nothing
+#   test = send email 1 to TEST_EMAIL only
+#   live = really send (only after Jess says "go")
+
+on:
+  push:
+    paths:
+      - outputs/pipeline/ghl/send-request.txt
+  schedule:
+    - cron: "0 22 * * 0-4"  # 8am AEST / 9am AEDT, Mon-Fri in Australia
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wilba-ghl-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Send today's emails
+        env:
+          WILBA_GHL_TOKEN: ${{ secrets.WILBA_GHL_TOKEN }}
+          WILBA_GHL_LOCATION_ID: A3tY7p4YMaGWtkblpmUX  # WILBA sub-account (not secret)
+          TEST_EMAIL: jess@wilba.ai
+        run: python scripts/wilba_ghl_sender.py
+      - name: Commit report and state
+        if: always()
+        run: |
+          git config user.name "wilba-bot"
+          git config user.email "actions@github.com"
+          git add outputs/pipeline/ghl/send-report.md
+          [ -f outputs/pipeline/ghl/send-state.json ] && git add outputs/pipeline/ghl/send-state.json
+          git diff --cached --quiet || git commit -m "GHL send report"
+          git pull --rebase -q && git push
