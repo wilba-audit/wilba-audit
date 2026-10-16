@@ -1,6 +1,6 @@
 ---
 name: outreach-daily
-description: Run one day of WILBA outreach — source and qualify med spa / plastic surgery prospects, draft the day's batch on the aged-leads revenue-share offer, stage them in Gmail, and update the pipeline. Use when the daily outreach routine fires, or when Jess asks to run outreach for the day.
+description: Run one day of WILBA outreach — source and qualify owner-operated med spa / aesthetic clinic prospects, draft the day's batch on the aged-leads revenue-share offer, stage them in Gmail, and update the pipeline. Use when the daily outreach routine fires, or when Jess asks to run outreach for the day.
 ---
 
 # Daily outreach
@@ -9,6 +9,12 @@ One run = one day of outreach. Everything here is unattended except the send.
 
 Read `outputs/pipeline/ICP.md` first. It is the qualification standard and the offer
 description, and it changes more often than this file.
+
+**It changed on 16 Oct 2026.** The standard is now v2, from Griffin's med spa briefing,
+which Jess uploaded and told us to master: owner-operated, injectables-led, cash-pay,
+one to four sites. Plastic surgery, dermatology, hospital groups and chains are now
+*disqualifications* — under the 22 Sep standard they were targets. AU metros come first.
+Do not qualify anything from memory of the old rules.
 
 ## 1. Stop chasing anyone who replied
 
@@ -78,10 +84,14 @@ days of sending at the 20/day cap and leaves headroom for the GHL sequence, whic
 consumes the same list. Run out of untouched metros before you run out of ambition —
 `near-misses.md` lists the markets already swept.
 
-Run several `Agent` workers in parallel, each on a different metro. Give each one a
-short list of search terms ("med spa <city>", "plastic surgery <city>",
-"cosmetic surgery clinic <city>") and the Must-have list from `ICP.md`. Require of
-every worker:
+**Work AU metros first** — Sydney, Melbourne, Brisbane, Gold Coast, Perth — then US and
+UK. The pipeline is heavily US-weighted and v2 puts Australia at the front.
+
+Run **three or four** `Agent` workers in parallel, each on a different metro, never more.
+WebSearch and WebFetch budgets are shared across the whole turn, not per agent, so eight
+workers starve each other and all eight stop short. Give each one a short list of search
+terms ("med spa <city>", "aesthetic clinic <city>", "cosmetic injectables <city>",
+"<city> med spa membership") and the Must-have list from `ICP.md`. Require of every worker:
 
 - **Never construct an email address.** Only report one seen in fetched page content,
   with the URL it was seen on. A clinic with no published address is recorded as a
@@ -89,11 +99,22 @@ every worker:
 - Report `crm_detected` from the booking flow or page source, `scale_signals`
   (practitioners, locations, menu, memberships), and `dormant_lead_signal`
   (lead magnets, waitlists, redeemable consults, membership schemes).
-- Quote the specific fact each opening angle will be built from.
+- Quote the specific fact each opening angle will be built from — and note that the
+  opener cannot use a product name or a price, so the fact needs to be about the
+  practice, not its menu.
+- Count the locations. Five or more means head office, so it does not go in.
+- **For AU and NZ rows**, record in `notes` that the address was read off the clinic's
+  own site and that the site carries no "no unsolicited commercial email" notice. Both
+  findings, explicitly, or the row is not sendable.
+
+A clinic that is close but fails one must-have is graded **C** and parked with a note
+saying why, not dropped. The standard may widen again, and re-finding a clinic costs more
+than keeping it.
 
 Append accepted rows to `outputs/pipeline/clinic-pipeline.csv` with `status` New,
 `icp_fit` A or B per `ICP.md`, and `email_source` saying where the address was read
-and on what date.
+and on what date. Then tell the GHL outreach thread the new id range, since it sends
+from the same list.
 
 ## 5. Draft the day's batch
 
@@ -104,10 +125,12 @@ python3 scripts/wilba_outreach.py batch
 It selects A grade before B, oldest first, capped at today's ramp. It prints the
 verified facts for each prospect. Write from those facts only.
 
-**The offer.** Reactivate the dormant leads already sitting in their CRM, converted
-into booked procedures, paid as 10% of what it books with nothing upfront. We
-integrate with the CRM they run — no migration. A human approves before anything
-goes to a patient.
+**The offer.** Work the clinic's lapsed patients — people who came once or twice and
+never rebooked — over a few weeks of two-way conversation that books them back into
+the clinic's own calendar. We work inside the system they already run; their team
+changes nothing. Paid as 10% of what it books, nothing upfront. A human approves
+before anything goes to a patient. **Never promise a refund** — that was never
+Griffin's offer. The risk reversal is "if nothing comes back, you owe nothing".
 
 > **The percentage is 10%**, confirmed by Jess on 24 Sep 2026. Write it as
 > "10% of what it books, nothing upfront". If she ever changes it, change it here
@@ -130,6 +153,13 @@ goes to a patient.
 
 Around 120-140 words. Australian and British spelling. No "I hope this finds you
 well". No em-dash in the subject line.
+
+**Three hard copy rules, from `ICP.md`:** no prescription-medicine brand or category
+names (not Botox, Dysport, filler, anti-wrinkle injections, "tox"); **no prices or
+discounts anywhere**, including quoting the clinic's own published prices back at them;
+and no testimonials, case studies or results we do not have — a third-party benchmark
+may only appear as a question. Every send carries a working unsubscribe and WILBA's
+business address.
 
 **The signature.** Every draft carries Jess's signature block. Pass it in `htmlBody`
 using the cold-outreach variant in `outputs/pipeline/email-signature.md` — the short

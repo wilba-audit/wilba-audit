@@ -664,3 +664,34 @@ and it is the dominant platform among smaller Mountain West med spas, behind Zen
 eight. And **two more clinics already run GoHighLevel** — Utah Facial Plastics and Stay
 Flawless — which brings the pipeline's GHL count to four and makes them the cheapest
 integrations available; both are blocked purely on a readable address.
+
+---
+
+## The standard changed under all of this — 16 Oct 2026
+
+Everything above was swept under the 22 Sep ICP, which *wanted* scale: multi-site groups,
+plastic surgery, "$100k+/month" proxies. On 16 Oct Jess uploaded Griffin's *Med Spa
+Reactivation* briefing and told us to master it, and the standard inverted. v2 wants
+**owner-operated, injectables-led, cash-pay, one to four sites**; plastic surgery,
+dermatology, hospital-attached groups and anything with five or more locations are now
+disqualified outright.
+
+So read the sweeps above with that reversal in mind:
+
+- The clinics ruled out above for having **no published email** are still ruled out. That
+  finding does not expire — it is about the website, not the standard.
+- The clinics the sweeps above *kept* are a different matter. 49 pipeline rows were
+  re-graded to C on 16 Oct for failing v2, most of them for being surgical practices or
+  five-site-plus groups. The notes on each row say which rule it failed.
+- A market this file records as "swept" was swept for the **old** profile. Looking for
+  single-site owner-operated clinics there may well turn up rows the old pass skipped as
+  too small — "single-operator studios with no support staff" was a disqualification under
+  22 Sep and is close to the ideal under v2. Boutique one-site clinics passed over in the
+  Midwest, mid-Atlantic and Mountain West sweeps are worth a second look.
+- **Australia is now the priority market** and barely appears above. Sydney, Melbourne,
+  Brisbane, Gold Coast and Perth are where the next sweeps belong.
+
+The other v2 change that affects sourcing: an opener may not name a product or a price.
+Several US rows above carry membership and tier prices in their opening angle. Those
+openers need rewriting before they send, and future rows should quote a fact about the
+practice — who owns it, how long it has traded, what scheme it runs — rather than its menu.
