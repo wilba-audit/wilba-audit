@@ -59,17 +59,24 @@ prospects are left.
 **If it says LOW, source before you draft.** A day spent sourcing is a fine day.
 Drafting into an empty list is not.
 
-## 4. Source, when the list is short
+## 4. Source — every day, as much as the day allows
 
 **Sourcing has its own scheduled run**, four hours ahead of the drafting run, in a
-separate thread. So on a normal day the list is already topped up and this step is
-skipped. Only source from the drafting run if the list is genuinely about to run dry
-— fewer prospects left than today's cap — and say in the report that you had to,
-because that means the sourcing run failed and somebody should look at it.
+separate thread. That run sources **every day regardless of how many prospects are
+left**. Jess asked for scale on 16 Oct 2026 ("I needd to scale this big", "I think I
+should be doing more outreach than this daily"), so there is no longer a threshold
+below which sourcing waits — a day that adds no rows is a day the list shrank.
 
-Two runs sourcing on the same day both push to the same branch and will collide.
+The drafting run still does not source. Only source from the drafting run if the list
+is genuinely about to run dry — fewer prospects left than today's cap — and say in the
+report that you had to, because that means the sourcing run failed and somebody should
+look at it. Two runs sourcing on the same day both push to the same branch and will
+collide.
 
-Target: enough qualified prospects for a week at the current cap.
+Target for the sourcing run: **at least 60 new qualified rows a day**, which is three
+days of sending at the 20/day cap and leaves headroom for the GHL sequence, which
+consumes the same list. Run out of untouched metros before you run out of ambition —
+`near-misses.md` lists the markets already swept.
 
 Run several `Agent` workers in parallel, each on a different metro. Give each one a
 short list of search terms ("med spa <city>", "plastic surgery <city>",
