@@ -240,3 +240,330 @@ If a batch ever needs topping up: **Aesthé By MD** (3 CT/NJ sites),
 **Manhattan Medspa** (annual memberships at $1,999 and $2,299) and
 **Skinly Aesthetics** (Skinly Club plus two lenders). All three fail only on
 naming a booking platform, which the first discovery question answers.
+
+---
+
+## Midwest — Chicago, Milwaukee, Indianapolis, Detroit, Columbus, Cleveland (16 Oct 2026)
+
+Fourteen rows went into the pipeline from this sweep. These cleared the ICP on profile
+and failed only on contactability.
+
+**Worth Jess opening in her own browser, best first:**
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **Ageless Indy** | Indianapolis NW, Greenwood, Fishers IN | The best dormant structure in the whole sweep. Zenoti, three sites, founder Shelley Clayton FNP-BC. "Forever Flawless" at $149/mo is a prepaid credit account — credits do not expire while active, and after cancellation remaining credit stays usable for 90 days. Plus Platinum $249, Gold $149, Zenoti gift cards, financing | No email and no phone anywhere on the site; /contact/ errors |
+| **Illume Cosmetic Surgery & MedSpa** | 6 Wisconsin sites | The largest practice in any of the six metros — six locations, nine named surgeons. Allē and Aspire rewards, patient financing, MedSpa seasonal specials | No email; /contact/ errors. Phone (414) 439-3000 |
+| **SHarper Surgery & Med Spa** | Indianapolis, Fishers, Avon IN + a surgical centre | Dr Stanley Harper and Dr Jaime Harper. "SHarper Skin Society" $225/mo with $100 toward tox after four months of active membership — banked credit with a clock on it | Cloudflare-obfuscated on every page |
+| **Quintessa Aesthetic Center** | 5 Wisconsin sites | Three named doctors, per-location phone lines, a gift-card shop | No email anywhere on the site |
+| **SkinergyMD** | Birmingham, Troy, Grosse Pointe MI | Exactly the three target Detroit suburbs. RepeatMD rewards, Prospyr gift cards, CareCredit *and* Cherry, a $200-off first-visit offer | Cloudflare-obfuscated |
+| **Ashpole Plastic Surgery** | Itasca, IL | $150/mo buys $175 of MedSpa credit and the credit rolls over for up to three months on a six-month minimum — textbook expiring banked credit | Cloudflare-obfuscated |
+| **Modern Aesthetics of Michigan** | metro Detroit | Vagaro confirmed. A "Membership Savings Bank" at $99/mo where "all of your monthly payments are banked for you to use on your treatments" | No email, no phone and no address published at all |
+| **Wellness Center Cleveland** | North Olmsted, OH | Silver/Gold/Platinum $99/$149/$199 on a six-month minimum, and "any accrual funds must be used within 12 months, otherwise will expire" — expiring banked credit stated outright | No email. Single site, so scale is thin too |
+| **Radiant Divine Medical Spa** | Avon, Brecksville, Medina OH | Three locations with their own lines, RepeatMD, Giftfly gift cards, financing | No email |
+| **Radiant Skin Indy** | Zionsville + Danville IN | PatientNow confirmed, six named staff under owner Kayla Trammel BSN RN, a membership, Square gift cards, Cherry | No email |
+| **Grace + Beauty Medical Spa** | Westlake, OH | Five named staff, a documented membership with member injectable pricing and a birthday treatment, package discounts, gift cards, financing | No email; booking is an on-page popup |
+| **KÜR Modern Medical Aesthetics** | Cleveland, OH | KÜR Rewards on RepeatMD, Square Appointments, Square gift cards, Cherry 0% | No email — social only |
+| **SKN BAR Rx** | Milwaukee / Shorewood / Pewaukee WI | Zenoti confirmed, "Elevated Monthly Memberships", Zenoti gift cards, four named providers | No email; /contact/ errors |
+| **Wise Aesthetics** | Carmel, IN | Aesthetic Care Plans, a W/A Rewards programme, gift cards, Cherry split payments, and a $50 account credit to both sides of every referral | No email |
+
+**Ruled out, don't revisit.** Rejected on dormant signal despite real scale: Giancarlo
+Zuliani MD (Bloomfield Hills), Illuum Cosmetic Surgery (Novi), Ponsky Facial Plastic
+Surgery (Beachwood, Symplast), Donaldson Plastic Surgery (Columbus, three surgeons),
+**Moxie Medispa** (Menomonee Falls — publishes a perfectly good address and books on Jane,
+but runs no scheme at all), Between the Lines Aesthetics (Birmingham MI), Spa 43 (three
+Michigan sites, four DOs and eleven estheticians, but no scheme and a shared
+`dermsites4.com` booking instance under a "DOCS" group, i.e. a roll-up). Also out:
+Skin House (Birmingham MI) and Cleveland Plastic Surgery Institute, both of which fail
+the dormant test as well as the email test.
+
+Chains and networks out: **Medspa of Cleveland** and **Medspa of Indianapolis** are
+white-labelled sites on the MedspaCircle network (Cleveland's "Book Now" resolves to
+`go.medspacircle.com/clinics/medspa-of-newyork/`) with a $19.95/month network
+membership — not independent clinics. Cleveland Clinic and OSU Wexner are hospital systems.
+
+Single operators out: Glo Aesthetics (Carmel IN — has a "Glo Bank" holding gift-card
+value all year, but one operator), Reflection Theory, Revive Medical Aesthetics,
+Cool Blue Image, East Town Salon & MedSpa, Mind & Body Aesthetic Center, Renova Aesthetics.
+
+**What this region taught us.** The Midwest publishes emails far more readily than the
+Northeast or the South — fourteen of roughly forty serious candidates, against about one
+in three elsewhere. The reliable move was fetching `/contact/` directly rather than the
+homepage: RELUXE, BB Aesthetic, PURE, Boss Gal and Jiva all showed nothing on the
+homepage and a plain address on `/contact/`. **Make that the default second call.**
+Milwaukee and Detroit are the holes, for opposite reasons: Milwaukee's scale sits in two
+practices that publish nothing, so a phone call would unlock it; Detroit's two practices
+with real size run no scheme at all, so nothing would.
+
+## Mid-Atlantic — DC, Northern Virginia, Maryland, Richmond (16 Oct 2026)
+
+Eighteen rows went into the pipeline. Of the near-misses, these are the ones worth a
+browser tab — several are better prospects than rows that did qualify:
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **Life Med Institute** | 6 sites across MD, DE and PA | The largest footprint in the sweep. AestheticsPro confirmed, a free rewards programme, gift cards, financing | No email on the homepage; the contact page was never reached before the budget ran out — **re-check this one first** |
+| **The District Injector** | McLean, VA | Symplast confirmed, and a membership that banks units: $139/mo = 10 banked units, $249/mo = 20. Banked units are the ideal dormant asset | No email anywhere, no mailto |
+| **Javan Wellness** | Dupont Circle, U Street DC + Ballston | Three sites and eleven named clinical staff — the biggest independent in DC | No email, and every Book button is an on-page anchor so even the platform is hidden |
+| **Vitalify MedSpa** | Dupont Circle, DC | Zenoti *and* Practice Better, a "Vitalify Vault" loyalty programme, a botox membership, a $100 refer-a-friend credit | Cloudflare-obfuscated — one browser tab from qualifying |
+| **Purity Spa Med** | Arlington, VA | Meevo confirmed, Silver $110 and Gold $200 memberships, a points loyalty programme, an eGift portal, treat-now-pay-later | Cloudflare-obfuscated |
+| **Aesthetic Artistry Laser Centers** | North Bethesda, Annapolis + Arlington | Three locations, Zenoti confirmed, an "AALC Membership Club" with priority booking across all three | No email on the homepage, contact page or HIPAA notice |
+| **Georgetown Allure** | Washington DC | Zenoti confirmed, memberships at $150/$280/$400, gift cards, financing, a corporate wellness programme | No email (their reviews link also points at `localhost` — the site is half-built) |
+| **Elegance Aesthetics** | Roland Park, Baltimore | Mangomint confirmed, Mangomint gift cards, Cherry *and* CareCredit on practice links | Cloudflare-obfuscated |
+| **Butterfly Medical Spa** | Rockville, MD | Zenoti confirmed, online gift cards | Cloudflare-obfuscated on every page |
+| **Synergy Face + Body** | Richmond + Midlothian VA | A "FAB Beauty Vault" membership under a named plastic surgeon, multi-site. On profile the strongest Richmond prospect found | Pages returned a fetch error three times — likely bot-blocking, so this needs a browser |
+| **Belcara Health** | Baltimore | Plastic surgery, dermatology and wellness in one, a "BH Blue" loyalty programme, an Allē programme, a community loyalty scheme | No email on any page reached |
+| **Somenek + Pittman MD** | West End DC + NYC | Two board-certified plastic surgeons plus a PA-C, an "S+P MedSpa Club" at $250/$350/$450, Square e-gift cards, NextPatient booking | No email on the homepage, contact page or privacy policy |
+| **NoBe Aesthetics** | North Bethesda, MD | Jane App, a $185/mo Tox Membership, two named NPs | No email |
+| **Posh Med Spa & Wellness** | Old Town Alexandria | AestheticsPro confirmed, CoolSculpting and filler packages | No email, nobody named |
+| **Maple & Magnolia Aesthetics** | Richmond, VA | **Publishes an address** and has three named practitioners, a membership section and payment plans — only the CRM is unresolved. One fetch from qualifying | Budget ran out mid-verification |
+
+**Two judgement calls in the same shape as the others.** **Artifex Aesthetics**
+(Alexandria) publishes an address and has the best banked-credit term found anywhere:
+"The Study" at $125/mo gives $125/mo in treatment credits with a **12-month rollover**.
+Excluded only because one person is named on the site. **The Aesthetic Era** (Richmond)
+publishes an address, runs on Prospyr and has both memberships and gift cards; again one
+named practitioner.
+
+**Ruled out, don't revisit.** Real scale or a published email but nothing dormant:
+**FMW Med Spa** (Towson — publishes an address, board-certified NPs, no scheme at all),
+**DWH Med Spa** (Richmond — publishes an address and runs AestheticsPro, but no scheme),
+Metropolitan ENT medical aesthetics, WeDo Aesthetics. Chains and institutions out:
+**Medspa of Baltimore** (another MedspaCircle white-label, its location field a literal
+`xxxx` placeholder), OVME, SkinSpirit Annapolis, Evexia, dermani, Massage Envy,
+Anne Arundel Dermatology (PE-backed), University of Maryland Facial Plastic Surgery.
+**Modern Med VA** redirects to another company — an ICP disqualifier. Single operators out:
+Muse Medical Spa, Clear Aesthetics & Wellness.
+
+**What this region taught us.** Aesthetic Record dominates the mid-Atlantic and dominates
+the dormant-credit end of it: seven of the eighteen qualified rows run on it, and six of
+those seven run a membership or a banked-credit wallet. And **"wallet", "bank" and "vault"
+are the words to search for** — eight of these clinics name their membership credit
+explicitly, and searching those three words plus a metro name was far more productive
+than searching "med spa" plus a city. Every clinic found that way had a dollar balance
+attached to named patients.
+
+## Florida outside South Florida (16 Oct 2026)
+
+Twenty-one rows went into the pipeline. The near-misses here are unusually strong:
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **Beverly Hills Wellness Center & Med Spa** | West Palm Beach | **The single best phone-call target in Florida.** Aesthetic Record confirmed, memberships at $99 Beauty Bank / $199 Starlet Glow / $399 Couture Rejuvenation, and unused Beauty Bank funds sit in a "Wellness Wallet" that **expires on cancellation**. Dr Dahabra named | Publishes no email anywhere — there is no contact page at all, only phone and address |
+| **Sarasota Premier Aesthetics** | Lakewood Ranch + Sarasota | Zenoti confirmed. "VIP Beauty Bank" at $145/$295 where "every dollar you contribute monthly is banked in your account" | Cloudflare-obfuscated — one browser tab from qualifying |
+| **Skin Lab Winter Park Village** | Winter Park | Dr Jeffrey Hartog DMD MD overseeing two APRNs, Boulevard, and four dormant pools: a Rewards programme, a BeautyBANK, gift cards and payment plans | No email — footer has a signup field only |
+| **Sweet Spot MediSpa** | Fort Myers + Punta Gorda | PatientNow, a Boulevard client portal **and** a GoHighLevel form. Gold $99 / Platinum $199 with a "Stash or Cash" option — "stash your fee and use it towards future services" | No email on the homepage, memberships page or contact page |
+| **Elite Medical Spa of Lakewood Ranch** | Bradenton | Four named providers including a board-certified plastic surgeon medical director, Boulevard. "Elite Beauty Bank" $149/mo on a 12-month term, and on cancellation unused services, balance and credits are **forfeited after 12 months** | No email |
+| **Modern Aesthetic Centers (MAC Florida)** | 3 Jacksonville-area sites | Twenty-six named staff — including a **"Lead Conversion Specialist"**, so they already employ someone to work the lead list. Zenoti, a membership section. The strongest Jacksonville profile found | No email on the about page |
+| **Azul Cosmetic Surgery & Medical Spa** | 6 southwest Florida sites + 2 surgery centres | Four named surgeons. The largest footprint found in Florida. A membership programme and CareCredit | No email on the offices or contact page — form only |
+| **Polished Beauty MedSpa** | Winter Park | Moxie. "Beauty Bank" $150/mo and "Polished Elite" $250/mo, monthly contribution fully banked, $1,800–$3,000 banked annually on a 12-month commitment, expiry terms given only at enrolment | Cloudflare-obfuscated |
+| **The Garden Medical Spa** | 4 sites, Pinellas to North Palm Beach | Plastic-surgeon medical director, VIP Memberships, gift cards, Cherry | Cloudflare-obfuscated, and no platform named either |
+| **Bijoux Med Spa** | Orlando | Podium. "Each month, your membership payment goes into your BIJOUX BANK" — $149/$199/$249 on a 12-month commitment. Kyla Hargraves PA-C | No email |
+| **Perizia Aesthetics** | Jupiter | Dr Fred Silvestri plus two APRNs, AestheticsPro, and Cherry, CareCredit **and** Alphaeon | Cloudflare-obfuscated |
+| **Ponte Vedra Plastic Surgery** | 5 north Florida sites | Six doctors, eight APPs and six skin-health specialists — the largest practice in north Florida | No email, and no scheme either, so it fails the dormant test too |
+| **Bowtique Med Spa** | Sarasota + Lakewood Ranch | Seven named providers including two MD medical directors, Zenoti | No email; payment plans only, no membership |
+| **Inside Out Med Spa** | 2 Naples sites | Mangomint, memberships at $59/$99/$149 | No email — contact is a JotForm |
+| **Nouveau Health & Wellness** | Palm Beach Gardens | Zenoti, three named providers, an "Exclusive Membership Program" | No email |
+| **Von & Co Aesthetics** | Naples | White-labelled Zenoti, "The Club" member pricing, a $100 referral credit, Affirm, a 15%-off first-visit funnel | No email |
+| **BlueWater Wellness & Med Spa** | Ponte Vedra | Podium, six providers including three NPs, a $35/mo membership with a free first month, CareCredit | No email |
+| **Jewell Medical Spa** | Naples | **Publishes an address**, runs Aesthetic Record, has a membership ladder from $99/mo and CareCredit. Excluded only because the site describes the owner as "sole proprietor" — relax that rule and it goes straight in | Single-operator rule |
+
+**Ruled out, don't revisit.** Chains and franchises: **Look Lab** (eight sites across four
+states with a corporate office and an 833 number — the best membership on paper, with
+credit that "rolls over and never expires", but head office runs it), **Couture Med Spa**
+(seven sites, multi-state), **Facial Mania Med Spa** (a franchising LLC with a
+franchise-opportunities arm), **CARE Esthetics Jupiter** (100+ locations),
+**Windermere Medical Spa** (has joined AYA Skin, a multi-state network, and all booking
+now resolves there). Real scale but nothing dormant: **Hass Plastic Surgery** (the only
+"loyalty" named is Allē and Aspire, which belong to Allergan and Galderma, not the
+practice — so there is no list of theirs to work), **Truglo**, **Kent V. Hasen MD**,
+**Arsenault Aesthetics**, **Plastic Surgery of Palm Beach / MedSpaZen** (an unusually rich
+scheme, but the only address on the page belongs to their web agency),
+Southwest Florida Med Spa. Wrong vertical: **The Spa Orlando** has the cleanest dormant
+signal seen anywhere ("your service rolls over automatically and never expires") and
+publishes an address, but it is a day spa with no injectables.
+
+**What this region taught us.** "Beauty Bank" is a product category, not a brand — nine
+separate Florida clinics use that exact phrase or near-identical wording, and several
+state in writing that the balance expires or is forfeited on cancellation. That is the
+sharpest version of this offer's premise found anywhere in the pipeline, and a
+Florida-specific opening line could be built on the phrase itself. Zenoti and Boulevard
+together cover sixteen of around forty identifiable platforms here, and three clinics run
+**GoHighLevel forms alongside** their booking platform — the easiest integration Griffin has.
+
+## Massachusetts and New England (16 Oct 2026)
+
+Fourteen rows went into the pipeline. **The five named Boston clinics are now resolved**
+and three of them can be struck off permanently:
+
+- **SkinMD** — confirmed publishes no email anywhere. Nine pages checked including two
+  separate privacy pages, the terms, careers and the Shopify store. Phone only:
+  (844) 754-6631 for all ten sites. It also exposes no booking platform, so it would have
+  graded C regardless. Rewards run on RepeatMD. **Stop researching.**
+- **Demma Aesthetics** — dead name. The domain now 302-redirects to RN Esthetics, so it is
+  disqualified under the redirect rule. **Drop permanently.** But the successor is the
+  strongest near-miss in New England (below).
+- **SkinHealth Centers** — qualified, now row 243. The address was on the employment page.
+- **PURE Cosmetic Center** — Cloudflare-obfuscated on the membership terms page, so not
+  seen. Worth a browser tab: Nextech confirmed, and the VIPure membership runs Bronze $49
+  / Silver $199 / Gold $399 on a 12-month commitment with a 3-month cancellation penalty,
+  where the Bronze **$150 quarterly credit expires each quarter and cannot accrue** while
+  reward points never expire.
+- **Boston Medical Aesthetics** — confirmed publishes no email anywhere; the full sitemap
+  was checked. Vagaro confirmed, three stacked manufacturer schemes (Allē, ASPIRE,
+  Xperience+), and a $50 charge for a missed consultation, which implies a consultation
+  pipeline worth reactivating. Phone (617) 973-9700. **Stop researching.**
+
+Other near-misses worth a browser tab:
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **RN Esthetics** (successor to Demma) | Boston/Brighton, Salem, Lynnfield, Newburyport MA | **The best dormant signal in New England.** They sell prepaid annual cards — Navy $2,295, Teal $1,895, Black $550, Teen Teal $500 — all on 365-day terms, plus a $550 hydration membership. **26+ named providers** including eight nurse practitioners, four sites | No third-party platform exposed and no email on locations, team, terms or privacy |
+| **Bella Santé** | Boston Newbury St, Lexington, Wellesley | Three locations on one call centre. Meevo confirmed. **"Bella Points"** — up to 500 points redeemable per visit for $25, **expiring six months after they are earned**, redeemable at all three sites. A loyalty ledger on a six-month clock | No email on contact, loyalty or careers pages |
+| **AW Plastic Surgery** | Portsmouth, NH | PatientNow confirmed. Two memberships — AW VIP $175/mo and AW VIP Wellness $350/mo, the latter mandating in-office labs and three follow-ups a year. Shopify gift cards, financing. Membership enrolment is by phone | No email |
+| **MD Esthetics** | Harwich MA, Windham NH HQ, 3 Virginia sites | Zenoti **and AesthetixCRM, a GoHighLevel white-label — so Griffin's GHL work transfers directly.** Four membership tiers $109–$379/mo with credits redeemable only at the purchasing location, gift cards, financing, a $100/$100 refer-a-friend | No email. Flag: multi-state with a separate HQ — check it isn't becoming a franchise |
+| **Cape Cod Surgical Arts & MediSpa** | Falmouth, MA | Double board-certified surgeon plus two RNs, Square booking and gift cards. **Nearly emailable** — the visible text is Cloudflare-obfuscated | One browser tab converts this to a grade-B prospect |
+| **Dr Frank Fechner / Facial Plastic Surgery** | Worcester + Concord, MA | Two MDs, two locations, CareCredit, and a "Beauty Bucks" promotional week | No email. Flag: the careers link suggests an APDerm affiliation — verify it isn't head-office-controlled |
+| **Seacoast Rejuvenation Center** | Newington, NH | Four separate dormant pools: a three-tier membership each including a birthday gift card of $50/$75/$100, a standalone rewards page, gift certificates and financing | No email. Single site |
+| **Modern Med Spa NH** | Hooksett + Plymouth, NH | Jane App confirmed, two locations, memberships, packages, payment plans, Jane gift cards | Cloudflare-obfuscated |
+| **BIO Medspa** | Providence RI + Fall River MA | Two locations in two states on one Boulevard instance, gift cards, special financing | No email, and nobody named |
+| **Thrive Med Spa** | Portsmouth, NH | Two named naturopathic doctors, a membership page, Boulevard gift cards | No email. Segment flag: naturopathic-led rather than medical-aesthetic |
+| **Penobscot Medical Aesthetics** | Hampden (Bangor), ME | Three named staff, a membership page, Square gift cards, AdvanceCare financing with 6–14 month interest-free periods | No email, no platform |
+
+**Ruled out, don't revisit.** Rejected on dormant signal: Sean Doherty MD, Boston Plastic
+Surgery Specialists, Longwood Plastic Surgery (confirming the earlier verdict),
+**Pretti Aesthetic** (Cape Cod — publishes a good address but runs no scheme at all,
+the Fitzgerald lesson again), Newton Beauty, Level Up Med Spa. Single operators:
+Bel Viso Medical Spa, **Sorgente MedSpa** (gift certificates that expire in three months
+is a decent signal, but the med spa is a side-line of an OB/GYN practice — wrong segment).
+Chains: VIO Med Spa, Hand & Stone. **LuxDerm Med Spa** disallows fetching in robots.txt
+and was never assessed.
+
+**What this region taught us.** Zenoti was on eight of the twenty-four practices profiled,
+far ahead of everything else — **for Massachusetts and northern New England, Zenoti is the
+single integration that unlocks the most ground**, which agrees with the West Coast finding
+and cuts against Boulevard being the Northeast default. And the biggest blocker here is not
+Cloudflare (only three clinics) but practices that **publish no address at all** (eleven of
+twenty-four). The two addresses found in unexpected places came off a **careers page** and a
+**privacy-policy block on an about page** — both pages a normal contact-page sweep skips.
+Make those two page types standard checks.
+
+## The constraint that capped all four sweeps
+
+All four agents hit the same wall and reported it independently: **WebSearch (200 calls) and
+WebFetch (400/hour) are shared across the whole turn, not per agent.** Running eight sourcing
+agents at once starves all eight — each of these four stopped two to sixteen rows short of
+its target with candidates already queued and unverified. **Run three or four at a time, in
+sequence, not eight in parallel.** Each report ends with a named queue of already-surfaced,
+immediately-fetchable URLs, so a follow-up run costs no search budget to restart.
+
+## Northern California and Oregon (16 Oct 2026)
+
+Thirteen rows went into the pipeline. **One finding changes how this region gets worked:
+not a single Cloudflare-obfuscated address in the entire sweep.** Every near-miss below is
+form-only — the address is not on the site at all, so opening these in a browser will not
+reveal one. These need a phone call or LinkedIn, which is a different conclusion from the
+UK and Australia sweeps.
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **Destination Aesthetics** | El Dorado Hills, Elk Grove, Folsom, Napa, Roseville, Sacramento (6 sites) | **The biggest prospect in this sweep.** 35 team members including a 20-strong injector team (16 RNs, 3 NPs, a PA-C), a named MD medical director, Zenoti with per-location service paths, and a **"DA Beauty Bank" VIP membership**. They also rent out beauty suites | No address on contact, per-location contact or team pages; the Beauty Bank page is robots-disallowed |
+| **Berman Skin Institute** | 10 sites across the Bay Area and Sacramento Valley | The largest footprint in NorCal. **RepeatMD** for gift cards, a HubSpot form, a Nextech patient portal, NextPatient provider booking, CareCredit and Allē payment plans, monthly specials, an online store. They are already pre-sold on the category | No address on the Walnut Creek or appointment pages |
+| **Skin by Lovely** | Portland, Lake Oswego, Bend, Camas WA, Santa Monica (5 sites) | **22 named practitioners** — 14 injection specialists plus 5 estheticians and a training manager. White-labelled Zenoti. Memberships, refer-a-friend, financing. A Portland Thorns sponsor and a Business Journal fastest-growing company | No address on the contact page or homepage |
+| **Hayes Valley Medical & Esthetics** | SF Gough St, SF Cow Hollow, Larkspur (3 sites) | **The only Marin presence found anywhere.** 15 named staff including an MD medical director and a Director of Nursing, an enormous device menu, and **four separate dormant pools** — rewards, referrals, a VIP specials signup and gift cards | No address on either page checked |
+| **Illuminate Plastic Surgery** | San Jose ×2, Palo Alto, Morgan Hill (4 sites) | 3 plastic surgeons plus 12 named med-spa providers including two Master Injectors and a Nurse Educator — 15 clinicians, the largest count in the South Bay. PatientNow. $75 consultation fees, so consults are a paid, tracked product | No address on schedule or contact pages |
+| **Fresh Faces Rx** | Portland + Lake Oswego | 15 named staff including three doctors and three RN injectors. Mindbody. A **"FFRX Skin Club" with a $99 enrolment fee** and tiered benefits plus bonus treatments | No address on homepage or new-patient page |
+| **Thrive Aesthetic & Wellness** | Tigard / Portland | **The best dormant stack in Oregon — six schemes:** VIP memberships, HRT memberships, an app-based rewards programme advertising a $50 reward for downloading the app, gift cards, payment plans and bridal packages. PatientNow | No address on homepage or appointment-request page |
+| **Refine Anti-Aging Medicine and Aesthetics** | Oakland | Prospyr Med CRM. Memberships, packages, gift cards, Cherry financing — and a **"Specials Redeem" page, which is a literal unredeemed-credit ledger** | No address on homepage or contact page |
+| **Nubo Spa** | Berkeley | 10 named staff including a board-certified plastic surgeon owner and a founder-CEO. Boulevard. A membership, gift cards, financing, and a **free consultation with a hard deadline** — a dated lead magnet | No address on the homepage |
+
+**Best three to phone:** Destination Aesthetics (6 sites, 35 staff, Zenoti, a named Beauty
+Bank), Berman Skin Institute (10 sites, already running RepeatMD *and* HubSpot) and
+Hayes Valley (3 sites, 15 staff, four dormant schemes, the only Marin foothold).
+
+**Ruled out, don't revisit.** Chains: NakedMD (40+ locations), LaserAway, Restore Hyper
+Wellness (269 locations), SkinSpirit, Ideal Image. Health systems: Sutter, Kaiser, El Camino,
+The Oregon Clinic, UCSF. Scale but no dormant scheme: **Angell Medical Spa** (Sacramento —
+publishes two perfectly good addresses and runs Boulevard, but has no membership, loyalty,
+gift cards or financing, and new clients go through a *Google Form*), Movassaghi Plastic
+Surgery, Centre for Plastic Surgery, Roseville Facial Plastic Surgery, Bohley, Hetal
+Fichadia, Reza Najafian, Dr Lee Daniel. **That last cluster confirms the earlier finding:
+Oregon plastic surgeons are a dead end for this offer.** Single operators: Osho Aesthetics,
+La Vie MD, True You, Seven:Thirty. Wrong segment: the entire Santa Rosa and Sonoma listing
+is day spas, so the North Bay produced nothing; San Jose single-provider medical
+dermatology; Sacramento weight and metabolic clinics.
+
+**One lead left unverified, worth a single search next run:** **Korman Plastic Surgery &
+Wunderbar MedSpa** — four sites (San Jose, Mountain View, Los Altos, Carmel-by-the-Sea) on
+PatientNow, with a directory-listed address that was never confirmed on their own page.
+
+**Technique worth keeping.** `WebSearch` with `allowed_domains: ["<clinic-domain>"]` and a
+generic query like "contact us email locations membership" reliably surfaces a clinic's own
+contact, team and membership URLs, which can then be fetched. Plain brand searches return
+almost nothing but directory spam. `threebestrated.com/med-spa-in-<city>-<state>` is the
+most efficient single source found — one fetch returns three clinics with website, email,
+phone, locations, practitioners, memberships and pricing — but it only exists for the larger
+metros, and the address must still be confirmed on the clinic's own page afterwards.
+`withorbital.com/data/med-spa/<city>/largest/` gives a ranked multi-location list per metro
+and is how four of the best near-misses above were found, though it gives no websites.
+
+**Platform picture.** NorCal and Oregon are **Boulevard-dominant** — Boulevard on five of
+the ten qualified rows, Zenoti on four, and **PatientNow on every large multi-site group**.
+Boulevard plus PatientNow would unlock this region. And **VIDA Aesthetic Medicine is already
+on GoHighLevel**, the platform WILBA already runs — worth checking whether more Oregon
+clinics are, because if so Oregon is the cheapest market in the pipeline.
+
+## The Carolinas and east Tennessee (16 Oct 2026)
+
+Ten rows went into the pipeline, covering **Charleston, Raleigh-Durham, Charlotte and
+Greensboro only**. Five target metros got no coverage at all because the search budget died
+before a single clinic domain could be surfaced for them: **Wilmington NC, Greenville SC,
+Columbia SC, Knoxville TN and Chattanooga TN.** Again, no Cloudflare obfuscation anywhere —
+every blocked clinic here is form-only, so a browser visit will not help.
+
+| Clinic | Where | Why it matters | Blocker |
+|---|---|---|---|
+| **BodyLase Med Spa** | Raleigh, Cary, Chapel Hill/Durham, Clayton NC | **The single strongest Carolinas prospect found.** Four locations, Meevo booking with Liine lead capture, and **four separate dormant pools** — a VIP membership, BodyLase Rewards, Allē Rewards, gift cards and financing. Inc. 5000 listed, a top-50 Allergan provider | No address on the homepage or the book-consultation page, which doubles as the contact page |
+| **Charleston Medical Spa** | James Island, Charleston SC | Prospyr Med booking, a **"Beauty Bank Membership"** with monthly savings on treatments, services and products, plus a GLP-1 membership, gift cards and payment plans. The best dormant framing in the Carolinas | No address on homepage or contact page |
+| **Cool Renewal Spa** | Charlotte + Mooresville NC | Two locations, PatientNow, and memberships, gift cards, payment plans and CareCredit each on its own page, behind a CoolSculpting and CO2 high-ticket menu | No address on homepage or contact page |
+| **Infinity Med Spa & Wellness** | SouthPark, Charlotte NC | Zenoti, a VIP membership with two named tiers, Allē payment plans plus PatientFi plus CareCredit, six-plus named staff | No address on homepage or contact page |
+| **Blossum Aesthetics** | Raleigh NC | Aesthetic Record, **Luxe members $150/mo or $1,500/yr and Elite $250/mo or $2,500/yr**, gift cards, and 0% financing with approvals up to $50,000 and no hard credit check | No address and **no contact page at all** — a phone link is the only route |
+| **Glow Aesthetics NC** | Greensboro NC | Aesthetic Record, a memberships page and a payment-plans page | Their main contact page was never reachable — **this one may well convert on a single fetch next run** |
+| **M.D. Laser Studio** | Mooresville, Cornelius, Huntersville NC | Three locations, MDware booking, 450+ reviews | No address — Google Forms and phone links only, and nobody named |
+
+**Ruled out, don't revisit.** Scale without a dormant scheme: **Piedmont Plastic Surgery &
+Dermatology** (10 NC sites, 25 MDs — the biggest practice in the Carolinas and exactly the
+wrong offer shape), **Beck Aesthetic Surgery** (and note `surface-medspa.com` redirects to
+their domain, itself a disqualifier), **The MedSpa Raleigh** (publishes an address but
+booking is a homepage anchor, so grade C, with payment plans as the only scheme).
+Single-site or single-operator, several with perfectly good published addresses — they fail
+on size, so do not re-source them: 704 Aesthetics, Aesthetica Med Spa, Charlotte Medical
+Aesthetics, Mirama, The Skin Atelier, Prestige Medical Spa, NuDerma Health, Ella Ora,
+Ageless Remedies, Voci MedSpa, Evolve Medical Associates, Femme Medspa (*"this is a TEXTING
+line only"*), Cameo Facial Aesthetics, Med Spa CLT, Infinite Allure, Nu Body Solutions,
+Radiant Medical Aesthetics. Chains: Elase, VIO, SkinSpirit, Skin Pharm, **Smiley Aesthetics**
+(14 Knoxville-area sites), Ideal Image, **Genesis Lifestyle Medicine** (22 TN sites),
+Allure Medical, **Skin Clique** (15 SC sites, a nurse-network model), The Aesthetics Lounge
+& Spa (self-describes as a chain).
+
+**Named leads for the five uncovered metros** — directory-level only, nothing verified, no
+addresses, no CRMs, and none of them elsewhere in this file or the pipeline. This is the
+shortest path for whoever picks the region up next:
+
+- **East Tennessee, highest priority and genuinely promising:** Southern Surgical Arts,
+  Chattanooga (16 locations, 1,808 reviews — the largest east-TN operator in the data);
+  Meridiem Dermspa, Knoxville (10); Gallaher Plastic Surgery & Spa MD, Knoxville (9);
+  Plastic Surgery Group, Chattanooga (9).
+- **South Carolina:** The Essential Face, Columbia (4); JAG Medical Spa, Summerville (4);
+  Germain Dermatology, Summerville (13 — check whether it is a chain); Body By Design
+  Charleston (3); Solcara Health, Mt Pleasant (3); Back To 30, Greenville; Lux, Bluffton.
+- **North Carolina, surfaced but never reached:** Revive Aesthetics and Wellness, Monroe (6);
+  Luminous Medical Aesthetics, Stanley (4); White Diamond Medical Clinic & Spa, Charlotte (3);
+  New Life Aesthetics, Raleigh (4); La Miel Aesthetics, Raleigh (3); Synergy Face + Body,
+  Charlotte and Raleigh; Urban Medspa, Hydrate Medical, Carolina Facial Plastic.
+  **Wilmington produced nothing at all — not one name.**
+
+**Platform picture.** Aesthetic Record dominates the Carolinas: five of the ten qualified
+rows run it, and it appears on half the ruled-out list too, with PatientNow on three and
+Boulevard on two. That is a sharper signal than the Northeast's Boulevard lead — **if
+Griffin builds one US integration, Aesthetic Record unlocks the most Carolinas ground.**
