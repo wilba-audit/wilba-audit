@@ -37,6 +37,7 @@ GHL_DIR = ROOT / "outputs" / "pipeline" / "ghl"
 CSV_PATH = GHL_DIR / "ghl-import.csv"
 STATE_PATH = GHL_DIR / "send-state.json"
 REPORT_PATH = GHL_DIR / "send-report.md"
+SKIP_PATH = GHL_DIR / "skip-ids.txt"  # one pipeline_id per line (# comments ok): never email these
 
 FROM_NAME = "Jess Morrell"
 RAMP = [(5, 10), (None, 20)]  # first 5 send-days: 10 new a day, then 20
@@ -109,6 +110,9 @@ def main() -> None:
     rows = {r["pipeline_id"]: r for r in csv.DictReader(CSV_PATH.open(encoding="utf-8"))}
     state = json.loads(STATE_PATH.read_text()) if STATE_PATH.exists() else {"send_days": [], "clinics": {}}
     log: list[str] = []
+    skip = set()
+    if SKIP_PATH.exists():
+        skip = {ln.split("#")[0].strip() for ln in SKIP_PATH.read_text().splitlines()} - {""}
 
     if mode == "test":
         test_email = os.environ.get("TEST_EMAIL")
@@ -137,7 +141,7 @@ def main() -> None:
         if st.get("stopped") or st["step"] >= len(EMAILS) or st["next_date"] > today.isoformat():
             continue
         row = rows.get(cid)
-        if not row:
+        if not row or cid in skip:
             continue
         if has_replied(token, loc, st["contact_id"]):
             st["stopped"] = "replied"
@@ -160,7 +164,7 @@ def main() -> None:
 
     # 2. new clinics on email 1
     cap = daily_cap(len(state["send_days"]))
-    fresh = [r for r in rows.values() if r["pipeline_id"] not in state["clinics"]]
+    fresh = [r for r in rows.values() if r["pipeline_id"] not in state["clinics"] and r["pipeline_id"] not in skip]
     fresh.sort(key=lambda r: (GRADE_ORDER.get(r["icp_grade"], 9), int(r["pipeline_id"])))
     started = 0
     for row in fresh[:cap]:
