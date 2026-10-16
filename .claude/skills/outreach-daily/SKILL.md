@@ -59,9 +59,24 @@ prospects are left.
 **If it says LOW, source before you draft.** A day spent sourcing is a fine day.
 Drafting into an empty list is not.
 
-## 4. Source, when the list is short
+## 4. Source — every day, as much as the day allows
 
-Target: enough qualified prospects for a week at the current cap.
+**Sourcing has its own scheduled run**, four hours ahead of the drafting run, in a
+separate thread. That run sources **every day regardless of how many prospects are
+left**. Jess asked for scale on 16 Oct 2026 ("I needd to scale this big", "I think I
+should be doing more outreach than this daily"), so there is no longer a threshold
+below which sourcing waits — a day that adds no rows is a day the list shrank.
+
+The drafting run still does not source. Only source from the drafting run if the list
+is genuinely about to run dry — fewer prospects left than today's cap — and say in the
+report that you had to, because that means the sourcing run failed and somebody should
+look at it. Two runs sourcing on the same day both push to the same branch and will
+collide.
+
+Target for the sourcing run: **at least 60 new qualified rows a day**, which is three
+days of sending at the 20/day cap and leaves headroom for the GHL sequence, which
+consumes the same list. Run out of untouched metros before you run out of ambition —
+`near-misses.md` lists the markets already swept.
 
 Run several `Agent` workers in parallel, each on a different metro. Give each one a
 short list of search terms ("med spa <city>", "plastic surgery <city>",
@@ -116,10 +131,11 @@ goes to a patient.
 Around 120-140 words. Australian and British spelling. No "I hope this finds you
 well". No em-dash in the subject line.
 
-**The signature.** Every draft carries Jess's signature block. Pass it in `htmlBody`
-using the cold-outreach variant in `outputs/pipeline/email-signature.md` — the short
-one, without the audit CTA button. Give `body` the plain-text equivalent so the email
-degrades cleanly.
+**The signature.** Every draft carries Jess's signature block, because drafts made
+through the API don't get her Gmail signature appended. End the body at "Jess", then
+append `outputs/pipeline/email-signature-cold.html` verbatim in `htmlBody` (her real
+signature, without the audit button). Give `body` the plain-text equivalent from
+`outputs/pipeline/email-signature.md` so the email degrades cleanly.
 
 Stage each one with `mcp__Gmail__create_draft`. Never `send_message`.
 
@@ -174,7 +190,5 @@ python3 scripts/wilba_outreach.py mark --ids <ids> --status Emailed
 That also schedules follow-up 1 for three days later. The same command records each
 follow-up as it goes out, which schedules the next one.
 
-**The From address.** Drafts are staged in whichever mailbox the Gmail connection
-points at. If that is still the personal account, the drafts are correct but the From
-needs switching at send time. Once `jess@wilba.ai` is connected, that stops being a
-step and nothing else about this changes.
+**The From address.** Gmail is connected to `jess@wilba.ai` (confirmed 24 Sep 2026),
+so drafts are staged there and need no From change at send time.

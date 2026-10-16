@@ -1,23 +1,17 @@
 # Jess's email signature
 
-Two variants. The designed signature lives at `outputs/wilba-email-signature.html`,
-but it is **not currently attached to her Gmail sends** — her real sent mail signs
-off with just "Cheers, Jess". So drafts must carry the signature in the message body
-rather than relying on a Gmail setting.
+Checked against her sent mail on 24 Sep 2026: jess@wilba.ai signs with the designed
+signature (Jess Morrell, Founder & AI Automation Strategist, wilba.ai, hello@wilba.ai,
+@wilba.ai, Victoria, Australia, the wilba.ai wordmark, a "Get Your Free AI Business
+Audit" button and the "bleeding time" tagline). Drafts created through the Gmail API do
+not get it appended, so it goes in the draft body.
 
 ## Cold outreach — use this one
 
-No CTA button. A cold email to a clinic that has never heard of WILBA should not
-carry a button for a different offer, and link-heavy first-contact mail lands in spam
-more often.
-
-```html
-<table cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif; font-size: 14px; color: #333333;">
-  <tr><td style="padding-bottom: 4px;"><strong style="font-size: 15px;">Jess Morrell</strong></td></tr>
-  <tr><td style="padding-bottom: 2px; color: #555555;">Founder, WILBA — AI Automation &amp; Content Agency</td></tr>
-  <tr><td style="color: #555555; font-size: 13px;"><a href="https://wilba.ai" style="color: #555555; text-decoration: none;">wilba.ai</a></td></tr>
-</table>
-```
+Her real signature with the audit button and the tagline row removed. A cold email to a
+clinic should not carry a button for a different offer, and link-heavy first-contact
+mail lands in spam more often. The exact HTML used for batch 3 is in
+`outputs/pipeline/email-signature-cold.html`.
 
 Plain-text equivalent for the `body` field:
 
@@ -25,8 +19,12 @@ Plain-text equivalent for the `body` field:
 Jess
 
 Jess Morrell
-Founder, WILBA — AI Automation & Content Agency
-wilba.ai
+
+Founder & AI Automation Strategist
+wilba.ai <https://www.wilba.ai/>
+hello@wilba.ai
+@wilba.ai <https://www.instagram.com/wilba.ai>
+Victoria, Australia
 ```
 
 ## Warm and existing conversations
