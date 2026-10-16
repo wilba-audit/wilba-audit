@@ -567,3 +567,100 @@ shortest path for whoever picks the region up next:
 rows run it, and it appears on half the ruled-out list too, with PatientNow on three and
 Boulevard on two. That is a sharper signal than the Northeast's Boulevard lead — **if
 Griffin builds one US integration, Aesthetic Record unlocks the most Carolinas ground.**
+
+## The US Mountain West (16 Oct 2026)
+
+Twenty-two rows went into the pipeline: Denver and Boulder carried the batch with nine,
+and **Reno, Boise and Santa Fe each produced exactly one qualified clinic** — genuinely
+thin, not under-researched. In each of those three the strongest local prospect was
+unreachable, which is why they are thin.
+
+**The two Jess can convert herself — Cloudflare-hidden, so the address is on the page in a
+real browser:**
+
+| Clinic | Where | Why it matters |
+|---|---|---|
+| **Om Wellness and Aesthetics** | Boise, ID | The best Boise prospect found. Zenoti, and a membership where **"100% of your monthly membership payments goes toward future treatments"**, with members-only VIP sales and events and Zenoti gift cards. One browser tab from qualifying |
+| **Royal Medical Health** | Albuquerque, NM | A named medical team, memberships, a concierge-medicine fee model, three live monthly specials, and a newsletter lead magnet offering **15% off a next visit** |
+
+**Qualify on profile but publish no address at all — a browser will not help these,
+strongest first:**
+
+1. **RESTOR Medical Spa** — Denver ×4 plus Boulder, with two more opening (6 addresses).
+   Dr Flora Waples. **"TrueYou" membership described as "a beauty savings account"** with
+   monthly instalments, plus RESTOR Rewards and Founding Memberships. Two live lead
+   magnets: a **"CLAIM MY $75"** new-guest popup that expires a week after signup, and a
+   "join the insider list" waitlist for the two unopened locations. Scheduling on Decoda
+   Health. **The single best prospect in Colorado — it needs an address found, not
+   qualifying.**
+2. **Utah Facial Plastics** — Draper, Layton, Heber City plus a Park City med spa.
+   Double board-certified facial plastic surgeon, VIP memberships, a rewards programme and
+   refer-a-friend. **Runs GoHighLevel** — Jess and Griffin's own stack, so integration
+   would be near-zero friction. **The highest-value name in the whole sweep.**
+3. **The Center for Cosmetic Surgery / Rejuvenate MedSpa** — Golden, Denver ×2, Colorado
+   Springs and a Denver SkinLab. **The largest practice found in Colorado:** six plastic
+   surgeons plus 13 named med spa providers across seven addresses. Nextech, GiftUp gift
+   cards, a newsletter. Covers Denver *and* Colorado Springs in one deal.
+4. **Vyla Aesthetics** — Park City and Millcreek SLC. Eight named staff including two
+   co-owner FNPs. **"Vyla Beauty Bank" at $199/month** on a six-month commitment,
+   Aesthetic Record, a $50 late-cancel fee. The best Park City prospect by a wide margin.
+5. **AlluraDerm MD Med Spa** — Albuquerque. **The best dormant-credit scheme found
+   anywhere in this sweep:** the "A-List" at $149/month, three-month minimum, where each
+   payment "becomes credit you can apply to any service or product", unused credit "rolls
+   over without penalties and does not expire while the membership is active", and after
+   cancellation "you have 60 days to use remaining credit before it expires". Zenoti, plus
+   a birthday gift card, two annual guest passes, Cherry and CareCredit.
+6. **Sandia Skin + Face** — Albuquerque. An FNP-C owner plus a facial cosmetic surgeon
+   co-owner and three more staff. A **"Beauty Bank Membership"** with a monthly treatment
+   balance. PatientFi and Cherry. Nextech.
+7. **Stay Flawless** — Albuquerque ×2. A membership benefits page, a **"Flawless Rewards
+   Program"**, financing and gift cards. Running **both PatientNow and a GoHighLevel form
+   subdomain**.
+8. **Ageless Aesthetics** — Santa Fe. **Zenoti plus Liine lead-capture forms**, so they
+   already pay for lead software. Facial and wellness memberships, both manufacturer
+   rewards programmes, two lenders, walk-in Wednesdays, thirteen staff named. **By profile
+   the best Santa Fe prospect; Viva Skin got the pipeline slot only because it publishes
+   an address.**
+9. **Timeless Aesthetics** — Colorado Springs. Boulevard, a "Timeless Member" membership,
+   treatment packages, 0% financing over up to 24 months, Square e-gift cards.
+10. **Beautiful Skin** — Denver and Boulder. **Two booking platforms** — Zenoti for Denver
+    and Booksy for Boulder — with a "Beauty Bank" membership *and* a separate TrueTox
+    membership.
+11. **Treasure Valley Aesthetics & Wellness** — Boise and Caldwell. **Pabau**, a DNP owner
+    and medical director, and a redeemable-consult lead magnet.
+12. **Raval Facial Aesthetics** — Denver Cherry Creek. Nextech, and three membership
+    ladders at $50, $75 and $100 a month.
+13. **Juicy Face Med Spa** — Denver Cherry Creek. The richest dormant stack on any
+    unreachable site — a VIP club, a VIP access signup, a newsletter page, an offers page,
+    payment plans and gift cards — and it **publishes neither an email nor a phone number**.
+14. Also: **Monumental Med Spa** (Palmer Lake, Zenoti), **The Firm Medspa** (Lone Tree,
+    a $50-off first-visit form), **BB Medical Esthetics** (Boise and Meridian, Vagaro,
+    a VIP signup through Podium).
+
+**Ruled out, don't revisit.** Verified email but nothing dormant to reactivate — the
+category to stop researching: **Spa 35** (Boise — has both the address and Zenoti, but no
+membership, loyalty or lead magnet; the only scheme is that financing "may" be available),
+**Santa Fe Skin Institute**, **Ageless Aesthetics Med Spa** (Cherry Creek — its injector
+is top-1% nationally by Allergan's count, and there is still no scheme of any kind),
+**Skinsanity**, **Alpine Aesthetics**, **Ahern Aesthetics** (Park City — the site
+advertises "Personalized, **no memberships**"), **Mindful MedSpa**, **Ageless MD
+Solutions**, and **Revenge MD** (Reno, Las Vegas and Henderson — eleven named staff,
+three locations, four lenders under "BOOK NOW. PAY LATER.", and no membership or loyalty
+scheme at all, so the financing applications are the only pool and not one the ICP
+recognises). Scale but no scheme and no address: Janiga MDs, Renovation Medical Spa,
+Bonaldi Aesthetics, Dr Eric Cerrati, Santa Fe Medical Aesthetics, Venus Medi Spa.
+Chains and multi-state groups: **Aurora Medical Spa** (nine sites across three states
+behind one Austin-area number), **RenewMD** (eight sites across three states behind an 800
+number, despite an excellent $50 referral "Beauty Bank"), Face to Face Spa, SkinSpirit,
+Ideal Image, OVME, 4Ever Young. **Belén Aesthetics** (Denver) returns ROBOTS_DISALLOWED to
+any fetch and cannot be judged either way without a human opening it.
+
+**What this region taught us.** The **"beauty bank" is the Mountain West's signature
+scheme** — eleven separate clinics run a named banked-credit membership, several of them
+stating in writing when the balance expires, and they are already tracking that liability
+in Zenoti or Aesthetic Record. A regionally specific opener could be built on the phrase
+itself. **Vagaro matters here in a way it did not in earlier US sweeps** — five clinics,
+and it is the dominant platform among smaller Mountain West med spas, behind Zenoti's
+eight. And **two more clinics already run GoHighLevel** — Utah Facial Plastics and Stay
+Flawless — which brings the pipeline's GHL count to four and makes them the cheapest
+integrations available; both are blocked purely on a readable address.
