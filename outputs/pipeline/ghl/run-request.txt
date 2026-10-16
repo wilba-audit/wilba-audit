@@ -1,3 +1,3 @@
 live
 
-Load 71 new verified A/B clinics (ids 183-276) as contacts, 16 Oct. No sending.
+Load 15 Mountain West clinics (ids 278-293, minus 291) as contacts, 16 Oct. No sending.
