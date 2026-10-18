@@ -37,6 +37,12 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
 3. **Owner-operated, one site or a small handful (1 to 4).** The owner or owner-injector
    is the buyer, and they need to be reachable. Five or more sites usually means a head
    office decides marketing.
+
+   **Count decision-makers, not addresses.** Three structures look like five-plus sites
+   and are not: SEO suburb pages (one Melbourne clinic claims 18 locations against a
+   single address), one travelling nurse who lists every town she visits, and injectors
+   renting a room inside a host salon. In all three, one person still decides marketing,
+   so they qualify. Conversely a three-site group run by a marketing manager does not.
 4. **Established.** A real review history, and enough trading time to have accumulated
    roughly 300+ lapsed patients. A brand-new clinic has no list.
 5. **A published email address, read off their own page.** Never constructed, never

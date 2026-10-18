@@ -695,3 +695,453 @@ The other v2 change that affects sourcing: an opener may not name a product or a
 Several US rows above carry membership and tier prices in their opening angle. Those
 openers need rewriting before they send, and future rows should quote a fact about the
 practice — who owns it, how long it has traded, what scheme it runs — rather than its menu.
+
+---
+
+# Australia, second pass — 18 Oct 2026, under ICP v2
+
+The 24 Sep Australian sweep looked for scale and ruled out "single operators with no
+support staff". v2 wants exactly those clinics, so this pass went back over the same five
+metros plus Tasmania and Canberra, staying out of the CBDs and the multi-site groups.
+It added 82 pipeline rows (ids 300-381) and the clinics below are the ones it could not
+email.
+
+**Two findings that change how to work this market.**
+
+The first is that **Australia's problem is not Cloudflare, it is silence.** Suburban
+clinics here publish a phone number and an Instagram handle and no email at all. Sydney
+produced not one obfuscated address in the whole sweep. So the "Jess reads it in her own
+browser" workaround, which rescued clinics in the UK and the US Northeast, rescues almost
+nothing here — most of these need a call or a DM, and Jess has ruled out calling. That
+makes the LinkedIn and Instagram route the only one left for them.
+
+The second is that **builder placeholders are a trap.** Several Melbourne clinics publish
+`filler@godaddy.com` or `contact@wix.com` — a template default the owner never replaced.
+Those are not addresses, they are furniture, and they are not recoverable in a browser
+either. Likewise, directory sites ship real-looking addresses inside QR code images; the
+Perth sweep flagged three rows that would have been fabrications had it trusted them.
+
+**What worked, for the next pass.** Blocking the directory farms (whatclinic, fresha,
+doctify, bookwell, top4) was the single biggest lever in three of the four sweeps — plain
+brand-name searches returned overseas medical-tourism spam. Stacking four or five suburb
+names into one query with "membership", "nurse" and "contact" roughly doubled the useful
+hits. Guessing a `.com.au` domain and passing it as `allowed_domains` beat searching for
+the clinic by name, because search is US-weighted. And Fresha's city landing pages are the
+cheapest test of whether a clinic is established, since they show the name, the suburb and
+the review count together.
+
+**What this pass could not reach:** Toowoomba, Cairns, Darwin, and most of the Sunshine
+Coast, where about a third of the qualifying clinics are robots-disallowed. Nine unscreened
+Sydney candidates and two Canberra contact pages are listed in the sections below for
+whoever picks this up next.
+
+
+## Sydney (suburban) near-misses — 18 Oct 2026
+
+Clinics that clear the ICP but that I could not put in the pipeline, almost all for the same
+reason: **no readable email address anywhere on their own site.** Notably, **not one** Sydney
+clinic in this sweep used a Cloudflare-obfuscated address — the pattern here is simply
+"phone number and Instagram, no email at all", so there is nothing Jess can unmask in her own
+browser. These need a phone call or a DM, not an email.
+
+## Qualifies on ICP, publishes NO email address at all
+
+| Clinic | Where | Why it qualifies | Evidence gap |
+|---|---|---|---|
+| **Hills Aesthetics** | Castle Hill (Suite 1, 269-271 Old Northern Rd) | "Hills Aesthetics was then founded in 2021" — stated outright, so 5 years of trading; one site; Danielle (RN, 13+ years, surname Hunt only in page metadata); Timely; gift vouchers sold through Timely | Homepage lists only phone 0430 871 926 + socials. `/contact/` returned a server error on two attempts, so an address may exist there — worth one retry later. Best near-miss of the batch. |
+| **Lived In Aesthetic** | Northern beaches | Founder and Clinic Director "Sarah", RN; Timely (bookings.gettimely.com) | No email on homepage; footer lists "Privacy Policy" as text with no link; `/contact` 500-errored twice. |
+| **Facetime Skin and Body** | Crows Nest (Shop 58/78-80 Alexander St) | One site; "specialist clinician" with 18+ years; injectables on the menu; runs on **Konnect** (bookings.konnect.software); "Skin Gym Programs" packages page = a real dormant signal | No email anywhere on the homepage, including footer. No practitioner named either. |
+| **Marah** | Chatswood | Founder & Clinical Director **Marina Hu** named; "15+ Years in Practice"; one clinic; Fresha | No email anywhere including footer — phone and address only. Injectables prescribed by an unnamed AHPRA practitioner, administered by the nursing team. |
+| **Rejuve Cosmetix** | Sydney (suburb not stated) | Founder **Linda**, RN, 14+ years; Timely | No email; and the phone is contradictory — page text says 0478 008 228 while the tel: link goes to 0406 789 188. Also no address published, so I could not confirm the suburb. |
+| **Cosmetic Nurse Sarah** (cosmeticinjectablessydney.com.au) | "2 locations across Sydney NSW" | Nurse since 2010; two sites; Timely | No email; no suburbs named at all, which makes it hard to even place. |
+| **Northern Beaches Cosmetic** | Belrose | Led by **Dr Sam Qin**; one site; 2017 copyright | No email. ALSO a likely must-have fail: the menu includes "Skin Checks" and "Skin Moles Removal", which usually means Medicare billing — check before ever working it. |
+
+## Qualifies, publishes an email — but one I do not trust
+
+| Clinic | Where | Issue |
+|---|---|---|
+| **Cosmetic HQ by Danielle Ryan** | Corrimal, Wollongong / Illawarra | Good ICP fit — AHPRA-registered cosmetic nurse **Danielle Ryan** named as founder, 10+ years, one site at 1/55 Railway Street, Timely. But the only address published on cosmetichqbydanielleryan.com.au is **info@malexinjectables.com** — a different business's domain. Either a shared/sister brand or an unedited template leftover. I would not send to it without Jess eyeballing the site herself. Worth a phone follow-up; the clinic itself is the best Illawarra candidate I found. |
+| **Skin Social** | Sydney (memberships page) | Sells memberships, which is exactly our dormant signal, but the site is **robots-disallowed** to WebFetch, so I could verify nothing — not the suburb, not the owner, not an address. Needs a human to open it. |
+
+## Ruled out on the must-haves (do not re-source)
+
+- **Dee Why Skin Cancer and Cosmetic Clinic** — skin cancer work, Medicare. Fail on cash-pay.
+- **Rejuv Australia**, **Babyface**, **My Cosmetic Clinic**, **Laser Clear Clinic** (East Gosford /
+  Terrigal / Cooks Hill) — multi-site networks or chains; Laser Clear is borderline on three sites
+  but reads as a laser chain rather than an owner-injector clinic.
+- **Dr Van Park**, **Refine Clinic**, **Cosmos Clinic** — surgical / plastic-surgery-led.
+- **Privée**, **Contour Clinics**, **Concept Cosmetic Medicine** — already on the ruled-out list.
+- **MD Cosmedical Solutions**, **Bespoke Cosmetics Institute**, **DrCosmetist**, **The Beauty
+  Collective**, **Beauty and Laser Clinic**, **Ozderm / Medical Cosmetic Clinic**, **Face to Face by
+  Marjan** — not reached before budget ran down; unscreened rather than rejected. Pick these up first
+  on the next Sydney pass.
+
+## What this market taught me
+
+Suburban Sydney is full of exactly the clinic the new standard wants — one site, one named
+owner-injector, Timely or Phorest underneath — but it is the **worst market so far for published
+email**. Roughly half the qualifying clinics publish no address at all; the northern beaches and
+lower north shore were the worst for it. The useful substitute signal was the **booking subdomain**:
+searching for `gettimely.com` and reading `bookings.<brand>.gettimely.com` links off homepages both
+identified the practice system and proved the clinic was single-site, because multi-site groups route
+through `book.gettimely.com/Booking/Location/<id>` with a location picker instead. Shopify-built
+clinics (Manly, The Clinic Bondi, Sisä) were the most reliable for a readable address, because
+Shopify forces a `/policies/privacy-policy` page that almost always restates the contact address —
+and those policies consistently described the clinic's *own* opt-out email marketing, i.e. the
+opposite of a no-unsolicited-email notice. I found **no** clinic in Sydney carrying such a notice.
+Constructed `/privacy-policy/` paths 404 on the smaller WordPress and Squarespace clinics, which is
+itself a finding: most of these businesses have no privacy policy at all.
+
+## Melbourne near-misses — inner & middle suburbs, Geelong, Ballarat
+Swept 18 Oct 2026 under ICP v2. These clinics clear the ICP on fit but publish **no readable
+email address**, so under the absolute rule on email addresses they are not sendable from here.
+Two different problems, which need two different fixes.
+
+---
+
+## Group 1 — Cloudflare-obfuscated address (Jess can read these in her own browser)
+
+### Dermaluxe Beauty — Geelong West / Geelong / Colac, VIC
+- **Site:** https://dermaluxebeauty.com.au/
+- **Why it qualifies:** Three Victorian sites (138 Shannon Ave Geelong West; a day-spa suite at
+  Oaks Vue Geelong; a monthly room in Colac) — inside the four-site cap. Runs **memberships**,
+  **gift vouchers** and a **payment plan**: three separate pools of named people with unspent
+  intent. Two practice systems side by side — **Phorest** (`dermaluxebeauty.phorest.me`) for the
+  main book and a **separate Timely instance specifically for injectables**
+  (`bookings.gettimely.com/dermaluxeinjectables/book`), which is both a nameable system and
+  evidence injectables are a distinct, deliberate revenue line.
+- **Email status:** **Cloudflare-hidden.** The contact section and the footer both render the
+  literal placeholder `[email protected]`. Per the brief that counts as NOT SEEN and I have not
+  recorded it. **Jess can almost certainly read it by opening the page in a normal browser** —
+  worth sixty seconds, because on fit this is one of the better prospects in the whole batch.
+- **Caveats:** No owner or founder named anywhere ("Meet the Team" links to an empty page). No
+  founding date. No specific injectable treatment named in body copy — injectables are inferred
+  from the Timely URL and the Facebook handle. The Colac site opens one Monday a month, so it is a
+  room, not a clinic.
+
+### Appearance Clinic Australia — Aberfeldie / Essendon, VIC
+- **Site:** https://appearanceclinicaustralia.com.au/
+- **Why it qualifies:** Says it has operated **"Since 1995"** with "30+ Years of Experience" —
+  the deepest lapsed pool I found outside Nitai and Beauty on Rose. **Dr Diana Phan** named as
+  leading the team. Runs **Aesthetic Record** (My Aesthetic Record booking), which is on the
+  brief's own list of nameable practice systems. One real clinic (301 Buckley St, Aberfeldie;
+  the FAQ says Essendon).
+- **Email status:** **Obfuscated.** The only email on the page is a scrambled "Email Us" link.
+  It decodes to a plausible `info@` address, but that is a decode, not text shown on the page, so
+  I have recorded nothing. **Jess can read this one in a browser.**
+- **Caveats, and they matter:** the site advertises **18 "locations"** — Brunswick, Carlton,
+  Docklands, Essendon, Fitzroy, Footscray, Hawthorn, Kensington, Maribyrnong, Moonee Ponds, North
+  Melbourne, Parkville, Richmond, South Yarra, Southbank, St Kilda, Williamstown, Yaraville —
+  against **one street address**. These are SEO suburb pages, not sites, but anyone reading
+  quickly will score this as a 5+ fail. Injectables are one of many treatments, not the stated
+  focus. Dr Phan is called team lead, never owner.
+
+---
+
+## Group 2 — No email address published at all (a form or phone only)
+
+### Take Off Skin & Body — North Melbourne, VIC
+- **Site:** https://takeoffskinandbody.com.au/
+- **Why it qualifies:** Strong dormant-list infrastructure — a real **three-month membership
+  program** (four named tiers, each requiring a consultation and prepaid treatment courses, with
+  a "must be completed within 3 months" expiry that *manufactures* lapsed patients), plus **gift
+  vouchers**, both running on **Square**. "Nurse Shelley" is the public face.
+- **Email status:** **None published.** I fetched the contact page and the memberships page; there
+  is no email address and no `mailto:` link in body or footer on either. Phone, street address and
+  a contact form only. Not recoverable by opening a browser — the address genuinely is not there.
+- **Caveats:** Site copyright reads 2020, so trading length is unverified. Owner not named.
+  Memberships are facial/skin courses, so the list may skew skin rather than injectables.
+
+### Medical Aesthetic — South Melbourne, VIC
+- **Site:** https://medicalaesthetic.com.au/
+- **Why it qualifies:** **Established 1984 — "over 40 years."** Nothing else in this sweep comes
+  close; a four-decade patient database is the single largest lapsed pool I saw. Runs **The Good
+  Skin Club**, a genuine tiered weekly-fee membership (three levels), on **Timely**. Zena Dammous
+  named as leading first consultations with "over 12 years of experience in aesthetic care."
+- **Email status:** **None published.** Phone numbers, booking links and a **Podium** enquiry form
+  (`forms.podium.com`) — no email address anywhere on the homepage. A Podium form usually means
+  inbound is deliberately routed to SMS, which is ironic given our offer is SMS-based, and is
+  itself an argument for a phone-first approach rather than email.
+- **Caveats:** Injectables are offered but are **not** the focus — the clinic positions itself as a
+  laser-hair-removal and cosmetic-skin pioneer, with injectables sitting inside an "Age Management"
+  category. No owner named.
+
+### In Depth Cosmetics — Albert Park, VIC
+- **Site:** https://indepthcosmetics.com.au/
+- **Why it qualifies:** Single Albert Park site, explicitly **"specialises in advanced cosmetic
+  injectables"**, run by **"Nurse Julie"**, a Registered Nurse Cosmetic Injector with "over 20
+  years of nursing experience" including more than five years working with plastic surgeons.
+  Books on **Timely**. Clean owner-operator shape.
+- **Email status:** **None published.** The only address on the page is `filler@godaddy.com`,
+  which is a GoDaddy website-builder placeholder in the "Signed in as" account menu, not a clinic
+  address. I did not record it. Nothing a browser would recover.
+- **Caveats:** No founding date, so trading length unverified. No membership, loyalty or voucher
+  scheme — the only promotion is a dated HIFU special. Appointment-only, likely single-operator.
+
+### Skin Society Co — Belmont, Geelong, VIC
+- **Site:** https://skinsocietyco.com.au/
+- **Why it qualifies:** **Founder Aubrey**, an internationally registered nurse with over ten
+  years' nursing experience, one site at 159 High St Belmont. Injectables are headline services.
+  Books on **Fresha**. Sells **gift vouchers from $100 to $750, "Valid for 12 months"** — dated
+  banked credit against named buyers is close to a perfect dormant-list signal — plus a
+  first-time-client offer feeding an enquirer list.
+- **Email status:** **Not found.** No email on the homepage, and `/contact-us/` returned a fetch
+  error so I could not check it. This one is **unresolved rather than confirmed absent** — an
+  address may well sit on the contact page. Worth one retry; on fit it would be a solid B, maybe
+  an A given the named founder plus Fresha plus dated vouchers.
+
+### Enhanceme Lab — Ballarat Central, VIC
+- **Site:** https://www.enhancemelab.com/
+- **Why it borderline qualifies:** Single Ballarat Central site, a registered nurse and skin
+  therapist on staff, a gift card on sale.
+- **Email status:** **None published.** The only address is `contact@wix.com`, a Wix template
+  placeholder. Not recorded.
+- **Why it would probably fail anyway:** the footer reads **"© 2035"** and the newsletter block is
+  unstyled — the site is a barely-edited Wix template, which points to a very new business, and the
+  only injectables reference on the whole page is a "Post Injectables Aftercare" link. Listed for
+  completeness, not as a recommendation.
+
+---
+
+## Also looked at and dropped outright (not near-misses)
+
+- **CDC Clinics** (`cdc-clinics.com.au`) resolves to **CSD Clinics**, Armadale — already on the
+  do-not-source list, and it offers **skin cancer checks**, which is a Medicare/cash-pay fail.
+  Runs Zenoti, for what it's worth.
+- **Cityskin Brighton**, **Victorian Laser & Skin**, **MySkin Clinics** — previously ruled out or
+  multi-site chains.
+- **Melbourne Cosmetic Centre** (`melbournecosmeticcentre.com`) is an injectables **training
+  provider**, not a treating clinic.
+- **drsaber.com.au** is one practice spraying near-identical suburb landing pages across Melbourne
+  (Fitzroy, CBD, North/East/South Melbourne); it reads as an SEO shell rather than local clinics.
+- **Beingwell Melbourne** — multi-specialty wellness group.
+- **dvinesmiles.com.au** — a dental practice selling injectables on the side.
+
+---
+
+## What this market taught me
+
+Melbourne's inner and middle ring is exactly the opposite of the CBD sweep, and the constraint
+flipped with it. In the CBD the problem was scale — everything was a group with a head office. Out
+here almost nothing fails on site count; the single-site owner-injector is the *default* shape. The
+binding constraint became **the email address**, and specifically **small-operator web hygiene**.
+Clinics run by one nurse with a Wix, Squarespace or GoDaddy template routinely publish a phone
+number and a form and no address at all, or leave a builder placeholder (`filler@godaddy.com`,
+`contact@wix.com`) sitting where a real address should be. Four of my seven near-misses are that
+exact failure, and none of those four are recoverable in a browser — the address is simply not
+there. Only two were Cloudflare-hidden and therefore worth Jess's sixty seconds. If this metro
+is swept again, the yield-limiting step is not finding clinics, it is that **roughly a fifth of
+good-fit owner-operated clinics are unreachable by email by construction** — and a few, like
+Medical Aesthetic with its Podium SMS form, have deliberately chosen not to be reachable that way.
+
+Two further patterns worth carrying forward:
+
+**The "wallet/bank" search technique did not work here and something better replaced it.** Searching
+"beauty bank Melbourne" and "skin wallet Melbourne" returned nothing but WhatClinic and Fresha
+directory spam. What worked was **stacking four or five suburb names into one query** alongside
+"membership", "nurse" and "contact" — four such searches produced every single row in this batch.
+Blocking `whatclinic.com`, `fresha.com`, `doctify.com` and `bookwell.com.au` roughly doubled the
+useful hits per search. Fetching `/contact/` blind was right about 70% of the time; when it errored,
+the plain homepage almost always carried the address anyway, so a failed `/contact/` is worth one
+homepage retry rather than abandonment.
+
+**Site counting is now the subtlest trap, not the obvious one.** Three different structures all
+*look* like 5+ sites and are not: SEO suburb pages masquerading as locations (Appearance Clinic
+claims 18 against one address; Dr Saber does the same), one travelling nurse running clinic days
+across towns (PEP Me Up's six, Bianca Stewart's four), and injectors renting rooms inside host
+beauty salons (Beneath The Skin's five, Dermaluxe's Colac room, Loving Glow inside Devine
+Aesthetics). The brief's rule — 5+ means a head office decides marketing — is about *who decides*,
+and in all three of those structures one person still decides. I parked PEP Me Up and Beneath The
+Skin as C rather than dropping them for precisely that reason, and I'd suggest the rule be
+restated as decision-makers rather than addresses. Two genuine disqualifies did show up and are
+cleanly parked: EST Clinic (plastic surgeon on the team) and True Aesthetics (two of three sites
+inside private hospitals).
+
+## Queensland near-misses — 18 Oct 2026
+
+Clinics that clear (or very nearly clear) the ICP but publish no email address I could read.
+Two different handling routes: **Cloudflare-hidden** (Jess can read these in her own browser in
+about ten seconds each) vs **no address published / site unreadable to a fetcher**.
+
+## Cloudflare-hidden address — Jess can read these herself
+
+1. **Ascension Cosmetic Medicine** — New Farm, Brisbane. https://ascension.com.au/
+   Single site ("our New Farm clinic"), doctor-led (Dr Scott Allison named), cash-pay, very broad
+   device and cosmetic-medicine menu, **Zenoti** (ascension.zenoti.com) as the practice system,
+   gift cards sold through the shop. Strong A-grade candidate on every test except the address.
+   Three email links on the contact area, **all rendered as the Cloudflare `[email protected]`
+   placeholder** — not recorded. Also note three different 1300 numbers on one page.
+2. **S Kosmetics** — Parkwood, Gold Coast. https://www.skosmetics.com.au/contact_us.php
+   One site, ~574 reviews on Fresha, Fresha booking, gift vouchers, InMode device suite plus
+   regenerative injectables. Address shows as `[email protected]` (Cloudflare); the underlying
+   link decodes but that is not a *seen* address, so it is not recorded. Caveat for Jess: the
+   page's own meta description calls the business "Cosmetic and Plastic Surgery", which may
+   disqualify it on the surgery rule — check before sending.
+
+## No readable address — site blocks fetching or publishes a form only
+
+3. **Aesthetic Nurse Aimee** — Noosaville / Coolum Beach, Sunshine Coast. aestheticnurseaimee.com.au
+   Founder named and verified in press: Aimee Browne, senior registered cosmetic nurse specialist,
+   founder/director, written up in Noosa Today in September 2022 (so 4+ years trading). Exactly the
+   owner-operator profile. **Site returns robots-disallowed on every page**, so nothing could be read
+   off it — needs a human browser.
+4. **sō Aesthetica** — Mooloolaba (La Balsa building), Sunshine Coast. https://soaesthetica.com.au/
+   Injectables-only clinic, RN Dionne Hayes named ("Your Registered Nurse", 20+ years), one site.
+   Homepage shows **no email and no phone**; the /contact page is robots-disallowed.
+5. **Illuminate Aesthetics Co** — Warana, Sunshine Coast. illuminateaesthetics.com.au
+   Named in three separate Style Magazines Sunshine Coast injectables round-ups, has its own
+   contact page. **Whole domain robots-disallowed** — nothing readable.
+6. **Azure Aesthetics** — Maroochydore, Sunshine Coast. azureaesthetics.com.au — robots-disallowed.
+7. **Imani Skin Clinic** — Maroochydore, Sunshine Coast. imaniskinclinic.com.au — robots-disallowed.
+   ~152 reviews on Fresha, so a real trading history.
+8. **Define Clinic** — Milton, Brisbane. defineclinic.com.au
+   Doctor-led (Dr Joshua Mullins), Timely (defineclinics.gettimely.com), named in the Style
+   Magazines Brisbane injectables list. **Robots-disallowed** — no address readable.
+9. **Nurse Vicki Aesthetics** — Mermaid Beach, Gold Coast. nursevickiaesthetics.com.au
+   Owner-named brand, injectables-only pages, on Fresha's Gold Coast list. **Robots-disallowed.**
+10. **Skin to Soul Clinic** — Mermaid Waters, Gold Coast (plus a Melbourne site, so 2 locations).
+    https://skintosoulclinic.com.au/contact/ — Timely, full injectables and thread-lift menu.
+    Contact page publishes **a form and a phone number only; no email address at all**. Not a
+    Cloudflare case — there is nothing to read, so this one needs a phone or form approach.
+11. **Beautiqué / miscellaneous Fresha-listed Gold Coast clinics** (Snatched Clinic, Clarity Cosmetic
+    Laser, Mimi Lane Cosmetic, Image Aesthetics Burleigh, Stevie J. Aesthetics, Gold Coast Cosmetic
+    Medicine): all appear on Fresha's Gold Coast aesthetics directory with real review counts but
+    I ran out of budget before finding and verifying their own domains. Worth a second pass.
+
+## Ruled out on the ICP, not on the address (noted so nobody re-sources them)
+
+- **The Rejuv Lab** (Buderim, Noosa, Bundall, North Lakes, Springwood + 2 NSW) — **7 locations**,
+  head-office marketing, contact form only. Fails the 1-4 site rule outright.
+- **AuzSkin Aesthetic & Dr Umed Cosmetics** — 4 sites across Australia, New Zealand and Dubai, and
+  it runs **skin cancer services** alongside cosmetics (HotDoc for skin checks, Kitomba for
+  cosmetics). Fails scale and cash-pay. Its `info@auzskin.com.au` exists only behind a footer icon,
+  not as visible text, so it would not have been recordable anyway.
+- **Laser Skin Specialist** (Bundall) — publishes info@laserskinspecialist.com.au openly and runs
+  Phorest, but the menu has **no injectables**: laser/skin only.
+- **Skin Enhance** (Bulimba, 638 Fresha reviews) — no injectables, and no email on the site.
+- **LÚME HAUS Aesthetics** (Wavell Heights) — publishes lumehausaestheticsau@gmail.com and names
+  founder Katharina Libicher, but it is brows/lashes/body sculpting, not injectables.
+- **Earth & Skin** (Mudgeeraba) — day spa. **Chantal Louise Skin Therapy**, **Hawthorne Skin &
+  Beauty**, **Aceso Aesthetics** (Hawthorne) — skin/brow/cosmetic-tattoo led, not injectables.
+- **Cosmetic Injectables Australia** (East Brisbane) — redirects to **cosmeticnursesaustralia.com.au**
+  with Brisbane, Gold Coast and Darwin locations; the domain-redirect-to-another-company rule plus an
+  unresolved site count parked it. Could be re-checked if the standard widens.
+
+## What this market taught me
+
+Queensland's owner-operated aesthetics layer is deep and almost entirely nurse-owned — the pattern
+is a single suite in a shopping plaza or a shared studio building, one or two registered nurses, a
+Timely or Fresha diary, and a gift-voucher page. Timely dominates Brisbane and the Gold Coast;
+Fresha dominates the review-rich clinics (it is also the best *discovery* tool I found, because its
+city landing pages list clinic name, suburb and review count together, which is the cheapest
+"established?" test available). Dapple appeared once, Zenoti once, Kitomba once, Phorest once.
+
+The real constraint here was not ICP scarcity, it was **readability**. Roughly a third of the
+qualifying Sunshine Coast and Gold Coast clinics sit behind robots-disallowed walls or Cloudflare
+email obfuscation, and Wix/Squarespace builds increasingly publish a form instead of an address.
+The Sunshine Coast was by far the worst (five of my seven best candidates there were unreadable),
+which is why my accepted rows skew Brisbane and Gold Coast. Search was also actively hostile: the
+engine is US-weighted, so brand searches returned Florida med spas, and the technique that actually
+worked was `WebSearch` with a **guessed .com.au domain in `allowed_domains`** plus a generic
+"contact us email" query — that confirmed the domain and handed me the contact URL in one call.
+Local magazine listicles (Style Magazines Brisbane/Gold Coast/Sunshine Coast) were the best
+candidate generator and often named the owner-injector where the clinic's own site did not.
+
+One recurring trap worth flagging to whoever writes the email: several of these clinics are
+mid-rebrand (Hamilton Skin Clinic → Soluxe Skin House, Fresh Face Australia → Amayra, SCinjectables
+→ Aesthetics on Point). That is great news for the offer — a rebrand strands an old patient list —
+but it also means displayed addresses and underlying mailto links sometimes disagree. Always send to
+the address as published, and expect some bounces.
+
+## Near misses — Perth / Adelaide / Tasmania / Canberra sweep, 18 Oct 2026
+
+Clinics that look like the ICP but could not go in the pipeline because no email address
+was readable off their own site. The two categories need different handling: a
+**Cloudflare-hidden** address Jess can read herself in a browser in ten seconds; a
+**no address at all** clinic needs a phone call or a contact form instead.
+
+---
+
+## Cloudflare-hidden address — Jess can read these in her own browser
+
+### Academy Face & Body — Suite 1a, Arcadia Chambers, 1 Roydhouse Street, Subiaco WA
+- **Why it looked right:** long-established Subiaco clinic, named lead practitioner (Dr Jason Oates), single address published, phone and fax both listed. Contact page carries no "no unsolicited commercial email" notice.
+- **Email status:** **Cloudflare-obfuscated.** The contact page at https://academyfaceandbody.com.au/contact/ renders the address as `[email protected]`. Not recorded, per the absolute rule.
+- **Warning before Jess spends time on it:** Dr Jason Oates works in facial surgery, and the clinic brands as "Face & Body". If it is a cosmetic-surgery practice it is disqualified outright regardless of the email, so check the treatment menu before unmasking the address.
+
+### Aesthetique Medical — Shop 2, 246 Unley Road, Unley SA
+- **Why it looked right:** two named co-founders (Noleen, Registered Nurse; Dr Veronica, Cosmetic Doctor) plus a senior dermal therapist, one site, Zenoti in place (aesthetiquemed.zenoti.com), a real linked privacy policy, and a broad device menu (Morpheus8, EMFACE, Lumecca, EMSELLA).
+- **Email status:** **Cloudflare-obfuscated.** The footer of https://aesthetiquemedical.com.au/about-us/ renders as `[[email protected]]`.
+- **But it probably fails anyway:** the about page calls it "Adelaide's Newest Boutique Clinic", and the only tenure figures given are staff experience (Noleen 5 years). A clinic marketing itself as the newest in town does not have 300+ lapsed patients. Unmasking the address is cheap, but this is a park-for-later, not a send.
+
+---
+
+## No readable address anywhere — needs a phone call or a form
+
+### Canberra Cosmetic Medicine Centre (cancosmed.com) — 1/14 Hannah Place, Deakin ACT
+- **Why it looked right:** the best "established" evidence I found in Canberra — the clinic claims it has treated **over 20,000 clients in nearly 25 years**, which is exactly the lapsed-list profile the offer needs. Injectables, IPL, peels and medical management of acne, rosacea and pigmentation. One site. "Dr Gibson" credited with introducing the category to Canberra.
+- **Email status:** **none obtainable.** cancosmed.com returns ROBOTS_DISALLOWED to any fetch, so I could not read a single page of it, and the Top4 listing's contact record has an empty email field. This is a crawler block, not Cloudflare obfuscation — Jess opening the site in a browser would see whatever address is there.
+- **Caveat:** sclerotherapy and "medical management" of skin conditions on the menu raise a Medicare question that needs answering before pitching. Phone is (02) 6282 8587.
+
+### The Skyn Lounge — Bruce, Canberra
+- **Why it looked right:** gift vouchers available in clinic, a 75-minute new-client skin assessment as an entry point, injectables delivered by a named staff member (Hayley), and **two** nameable practice systems in evidence — Phorest for appointments and a second Shortcuts Software booking link. Reviews name three staff, so it is busy.
+- **Email status:** **no address on the homepage.** There is a contact page at https://www.theskynlounge.com.au/contact that I did not fetch (shared fetch budget). Worth one fetch next run — this is the most likely of the near-misses to convert.
+- **Caveat:** no founding year, no owner named, and the menu is skin-, laser- and beauty-led with injectables as one line. Name collision warning: this is **not** the already-ruled-out "SKYN" brand.
+
+### Platinum By April — Canberra
+- **Why it looked right:** founder named and fronting the brand ("Nurse April", head aesthetics nurse), **six named practitioners** including four registered nurses, Timely in place, and a "Cosmetic Aesthetics" category on the menu. A six-practitioner single-site clinic has a real lapsed list.
+- **Email status:** **no address on the our-story page.** A contact page exists at https://www.platinumbyapril.com.au/contact-us-1, unfetched (budget). Second-best conversion candidate.
+- **Caveat:** no founding year, no location count, no privacy policy, and the Cosmetic Aesthetics category lists no treatments, so injectables-led is inferred from the nurses' titles.
+
+### Siren Cosmetic Clinic — Perth
+- **Why it looked right:** surfaced on an owner-operated, cosmetic-nurse-led search for the Mount Lawley / Leederville / Fremantle / South Perth corridor.
+- **Email status:** **unknown.** https://www.sirencosmeticclinic.com.au/ returned a client error on fetch, so nothing was verified — not even the suburb. Retry next run before writing it off.
+
+### The Aesthetic Laser Centre — Battery Point, Hobart
+- **Why it looked right:** the only Hobart clinic listed in the Battery Point professional strip, i.e. the right postcode for cash-pay aesthetics.
+- **Email status:** **no own website found.** The only presence that surfaced was a Facebook page. Directory-only businesses are not worth a send.
+
+---
+
+## What this market taught me
+
+**Generic searches are useless here and brand searches are worse.** Every "cosmetic
+injectables <suburb>" query returned the same wall of WhatClinic, Top4, Fresha, Seek and
+bsale listings, and searching a clinic by its own name was the single worst-performing
+move of the run — it returned medical-tourism spam and overseas clinics with similar
+names. The thing that actually broke the market open was `blocked_domains` with the
+directory farms listed out: the same query that had returned nine directories returned
+nine real clinic domains. That is a bigger lever than any query wording, and it should be
+the default on every future AU sweep.
+
+**The directories were still worth one pass, but only for names.** WhatClinic state-level
+pages gave me a clean roster of clinic names per market at one fetch each, and Top4
+business pages then gave me the clinic's own domain. But Top4 ships an email inside a QR
+code contact block, and that is a directory address, not a published one — three of my
+rows (Future You, Heart Aesthetics, Victoria's) had their address appear in a Top4 QR
+first, and I re-read every one off the clinic's own page before recording it. Anyone
+working faster than that would have recorded directory data as site data.
+
+**The new standard fits this half of the country better than the old one.** Perth and
+Adelaide are full of exactly what the ICP now wants: a named registered nurse, one room,
+Timely or Zenoti behind it. The catch is that the same smallness destroys must-have 4 —
+roughly a third of what I looked at published no founding year at all, and several
+operate out of a room inside someone else's business (Eterna inside Vera Beauty,
+Attentive inside FaceHub, Lite Nurse inside the Midnight Hotel). "Established" is the
+must-have I had to infer most often, and it is the one most likely to be wrong.
+
+**Tasmania and Canberra punch above their size on list depth.** The three strongest
+lapsed-list cases in the whole run came from the smallest markets — Inya in O'Connor
+trading since 2009 with a stated last-minute waiting list, Sanctum running Dapple CRM
+across three sites on 30+ years, and the one I could not reach, cancosmed.com, claiming
+20,000 clients over 25 years. Small-city clinics stay put for decades, which is precisely
+what accumulates a dormant list. Chasing those two Canberra contact pages and finding a
+way into cancosmed.com is worth more than another twenty Perth searches.
+
+**One practical warning for whoever writes the email:** four of these clinics publish a
+mailbox that is not a clean branded one — two gmails (Lite Nurse, and Attentive's hidden
+mailto), an ISP mailbox at tpg.com.au (Attentive's visible one), and one address on a
+*different domain* from the website it was printed on (The Clinique Aesthetics, whose site
+is theclinique.com.au but whose published address is @thecliniqueaesthetics.com.au).
+Expect bounces there, and read the `notes` field before sending — the fallback addresses
+are recorded in it.
