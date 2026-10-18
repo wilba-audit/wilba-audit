@@ -27,6 +27,7 @@ import os
 import sys
 import time
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from wilba_ghl_load import _req  # noqa: E402
@@ -106,7 +107,8 @@ def main() -> None:
     if not token or not loc:
         sys.exit("WILBA_GHL_TOKEN and WILBA_GHL_LOCATION_ID must be set.")
 
-    today = dt.date.today()
+    # Jess works on Melbourne time; the runner is UTC, where Monday 8am is still Sunday.
+    today = dt.datetime.now(ZoneInfo("Australia/Melbourne")).date()
     rows = {r["pipeline_id"]: r for r in csv.DictReader(CSV_PATH.open(encoding="utf-8"))}
     state = json.loads(STATE_PATH.read_text()) if STATE_PATH.exists() else {"send_days": [], "clinics": {}}
     log: list[str] = []
