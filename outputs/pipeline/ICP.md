@@ -51,6 +51,19 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
 6. **For AU and NZ, also:** no "no unsolicited commercial email" notice anywhere on the
    site, and the address must be published on the clinic's own site (not a directory).
    Record both findings in `notes`.
+7. **For the UK and Ireland, also: a company identity.** UK anti-spam rules (PECR) let us
+   email a corporate subscriber — a limited company — without prior consent, but not a
+   sole trader or a partnership. Look for "Ltd", "Limited" or a company number in the
+   footer, on the contact page, or in the privacy policy, which is where it usually hides
+   because UK footers name the web designer instead. No company identity anywhere means
+   grade C with "sole trader not verified" in `notes`.
+
+**Three things that look like a published address and are not.** A website-builder
+placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
+shipped inside a directory site's QR code image, which is directory data rather than
+something the clinic published. And an address served in a page's Open Graph meta tags
+while the visible one is obfuscated. None of the three may be recorded, and none is
+recoverable by opening the page in a browser.
 
 ## Strong signals — grade A
 

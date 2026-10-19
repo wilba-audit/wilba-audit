@@ -1145,3 +1145,717 @@ mailto), an ISP mailbox at tpg.com.au (Attentive's visible one), and one address
 is theclinique.com.au but whose published address is @thecliniqueaesthetics.com.au).
 Expect bounces there, and read the `notes` field before sending — the fallback addresses
 are recorded in it.
+
+---
+
+# New Zealand, regional Australia, the UK outside the big cities, and the US interior — 19 Oct 2026
+
+Four sweeps, 81 pipeline rows (ids 382-462), 60 of them sendable. The markets were picked
+because no earlier sweep had touched them: New Zealand held only three rows in the whole
+pipeline, regional Australia none, and the UK and US sweeps in September had stayed in the
+large metros.
+
+**New Zealand is the cleanest market we have swept.** Twenty-three of twenty-five pages
+fetched published a readable address, with **no Cloudflare obfuscation and no builder
+placeholders at all**, and not one site carried a no-unsolicited-email notice. The limit in
+New Zealand is not reachability, it is supply: block the chains and the independent layer is
+thin. The "wallet / bank / vault" search returns nothing there — what works instead is
+**weekly-payment memberships and prize-draw opt-in lists**. Many NZ independents are one
+nurse in a room inside another business, or a home clinic that visits a second town monthly,
+which is why several are parked: the 300-plus lapsed-patient bar cannot be verified.
+
+**The UK is a legal problem, not a sourcing problem.** UK anti-spam rules let us email a
+limited company without prior consent but not a sole trader, and that single screen decided
+the whole sweep: sixteen clinics had a readable address and a clean fit, and only eight
+printed any company identity. **UK footers name the web designer, not the entity** — the
+"Ltd" hides in the privacy policy, and one extra fetch of that page flipped a clinic from
+parked to sendable. Worse, the two qualifications are close to anti-correlated: the clinics
+that do print a company number often publish no address at all. So **twelve of the parked UK
+rows are one Companies House lookup away from being sendable**, which is the cheapest
+conversion available anywhere in this file.
+
+**In the US interior the fit is easy and the address is everything.** Clinics there publish
+contact forms and "text us" links rather than addresses, which killed the best lead of the
+sweep outright. Founding years are almost never published, so "established" was inferred
+rather than verified on most rows, and each of those rows says so.
+
+**A third fabrication trap, new this run.** One UK clinic serves a real-looking address in
+its Open Graph meta tags while the address visible on the page is obfuscated. A meta tag is
+not a published address and was not recorded. That joins the builder placeholders
+(`filler@godaddy.com`, `contact@wix.com`) and the addresses shipped inside directory QR
+images. Also worth knowing: the Australian "beauty bank" search does not transfer to Britain
+— a Cambridge query returned Cambridge, Ontario.
+
+**Market-specific notes.** Timely runs roughly two-thirds of regional Australian clinics,
+and three of them had two booking systems live at once, which is a half-finished migration
+and a genuine opening angle. Darwin produced nothing because a single group owns its search
+results. Cairns over-produced. Queenstown produced nothing.
+
+
+## New Zealand — near misses (19 Oct 2026)
+
+Clinics that clear the ICP but could not go in the pipeline, plus the NZ clinics I checked
+and ruled out for a substantive reason. Sourced 19 Oct 2026.
+
+---
+
+## 1. Clears the ICP, publishes NO readable email address
+
+### Marnie Aesthetics — Queenstown
+- **Site:** https://marnieaesthetics.co.nz/
+- **Why it qualifies:** founder-led, nurse-run appearance medicine clinic at 4A Sandford
+  Terrace, Lower Shotover, Queenstown. Founder is "Marnie", described as an advanced
+  aesthetics practitioner and registered nurse. Repeat-cycle injectables menu plus skin
+  rejuvenation and iS Clinical retail. Single site. Cash-pay. This is the clinic I most
+  wanted for Queenstown coverage, and Queenstown is the one target city in my brief that
+  ended up with no accepted row.
+- **Address problem:** **no email published at all** — and no phone either. The site exposes
+  only a street address and its own internal booking page. This is NOT a Cloudflare-hidden
+  address, so there is nothing for Jess to read in her own browser; it genuinely is not on
+  the page I fetched. If she wants this one, the route is the on-site booking/contact form,
+  or an Instagram DM, not email.
+- **Also missing:** surname, founding year, any membership or voucher scheme.
+
+### The Face Place — Auckland (partial; it IS in the pipeline, flagged here for handling)
+- **Site:** https://www.thefaceplace.co.nz/
+- This one is accepted as an **A** row, but it belongs on this list too because it publishes
+  **no generic inbox** — only four personal staff mailboxes (`queza@`, `marilou@`, `bryony@`,
+  `jess@`). Dr Jenni Irvine, the named Owner & Medical Director, has no published address.
+  I put the Clinical Team Leader in the row. **`/contact` would not fetch** (client error),
+  so there may well be a generic `info@` or `hello@` there that I could not see. Worth Jess
+  opening that page herself before the email goes out — it is a two-site Zenoti clinic with
+  an owner-doctor, so it is the best NZ target in the batch and worth getting the route right.
+
+---
+
+## 2. Checked and ruled out for a substantive reason
+
+- **Koru Skin Clinic (Cashmere, Christchurch)** — in the JSON as a **C**, not a near-miss,
+  because it does publish `info@koruskin.co.nz`. Fails the cash-pay screen: skin cancer
+  screening, mole checks and minor surgery sit alongside the appearance medicine.
+- **Orewa Cosmetic Medical (Auckland)** — in the JSON as a **C**. Dr James Crighton publishes
+  `james@` directly, but he is a GP as well as a cosmetic doctor and is based at the Hibiscus
+  Coast Medical Centre, so the surrounding practice is not cleanly cash-pay.
+- **Dunedin Skin and Surgery Clinic** — surgery practice, disqualified on the face of it;
+  not fetched.
+- **Skin Centre (Tauranga)** — appearance medicine sits inside what is primarily a
+  dermatology/skin-cancer centre; disqualified on category, not fetched.
+- **Caci (Mt Maunganui and nationwide)** — national franchise network, far beyond four sites.
+- **The Skin Clinics** — multi-site nurse-injector group; head office decides marketing.
+- **Face Doctors / Promedical (Auckland)** — not fetched; both read as larger multi-practitioner
+  Auckland groups and I ran out of budget before I could count their sites. Worth a look on a
+  later run if more Auckland rows are needed, with site-counting as the first question.
+- Already excluded by the brief and confirmed as such in search results: Skin Institute
+  (national, and skin cancer plus veins), The Cosmetic Clinic (national chain), Transform
+  Clinic, Palm Clinic, Ponsonby Cosmetic Medical Clinic, Accent on Skin, Sapphire Appearance
+  Medicine. Already in the pipeline: Bloom Clinic (Wellington), Clinic 1 (Auckland),
+  Clinic4O2 (Takanini).
+
+---
+
+## What this market taught me
+
+New Zealand is small enough that the usual sourcing trick — search a metro, skim ten clinics —
+collapses fast: the first page of results for any NZ city is dominated by the four or five
+national chains the brief already rules out (Skin Institute, The Cosmetic Clinic, Transform,
+Caci), and once you block those the independent layer underneath is genuinely thin. The
+vocabulary swap mattered more here than anywhere: "appearance medicine" is the trade term and
+searching it, rather than "med spa", is what surfaced the owner-operated clinics. The
+"wallet / bank / vault" trick from the brief returned nothing at all in NZ — zero NZ results,
+just a US clinic — so banked patient credit does not seem to be a thing the NZ trade markets.
+What NZ independents run instead is **weekly-payment memberships** (Wellington Cosmetic Clinic,
+Cashmore, Aesthetic Avenue, The Treatment Clinic, Blossom) and **prize-draw opt-in lists**
+with names like "Glow Club", which do the same job for us.
+
+Two structural quirks changed how I graded. First, a large share of NZ independents are a
+single nurse working out of a **room inside someone else's business** — a beauty salon, a
+wellness cafe — or out of a **private home clinic**, often with a second town visited monthly.
+Charris, Timeless, Refine Nurse and Andrea Harris all have this shape. It makes "count the
+locations" ambiguous and it makes the 300+ lapsed-patient bar genuinely unverifiable, which is
+why five rows came back C rather than B. Second, almost nobody publishes a founding year:
+I could verify trading history outright for only three clinics (Clinique Élan 2013, Silk 2022,
+Wellington Cosmetic Clinic's 2024 ownership change), so "established" is inferred from menu
+depth and practitioner tenure on most rows and I have said so in every `notes` field.
+
+On the upside, the email position is much better than I expected: **23 of the 25 clinics I
+fetched published a readable address in page text**, and I hit **zero Cloudflare obfuscation
+and zero website-builder placeholders** across the whole run. The NZ pattern is a plain
+`info@` or `admin@` in the footer, or the owner's own first name at the domain — which is the
+best possible route for this offer. Three clinics publish a personal Gmail rather than a domain
+mailbox, which I recorded (they were read verbatim and plainly in use) but flagged as a signal
+of how small the back office is. **No NZ site in this batch carried a "no unsolicited
+commercial email" notice**, so the Unsolicited Electronic Messages Act screen passed on every
+row. The real gap left is geographic, not legal: Queenstown has no row because the one good
+clinic there publishes no address, and Auckland is under-covered relative to its size —
+I got CBD, Takapuna, Parnell, Albany, Orewa and Conifer Grove, but nothing in Ponsonby,
+Remuera, Newmarket, Mount Eden or Howick that was not already ruled out.
+
+## Regional & coastal Australia — near-misses (19 Oct 2026)
+
+Clinics that clear the ICP on substance but publish no email address I could read verbatim.
+Split into two groups, because they need different handling.
+
+---
+
+## Group 1 — Cloudflare-obfuscated address (Jess can read these in her own browser)
+
+These clinics **do** publish an address. It renders as `[email protected]` to a fetcher
+because of Cloudflare email protection, but it decodes and displays normally in a real
+browser. Each of these is one browser visit away from being a sendable row.
+
+### Nouvelle Cosmetics — Newcastle NSW (+ visiting room in Cessnock)
+- **Site:** https://nouvellecosmetics.com.au/
+- **Why it qualifies:** Jane O'Brien is named as "owner and primary Registered Nurse".
+  Trading "since 2016" — the clearest ten-year history of anything I found in the Hunter.
+  Timely as the practice system. Gift vouchers sold online. Level 4/6 Bolton St, Newcastle,
+  plus a visiting location at 139 Vincent St, Cessnock (so one fixed site, one visiting).
+- **Email status:** Cloudflare-hidden. The visible text is `[email protected]`; the link
+  target decodes to an `info@` address on their own domain, but it is **not shown in plain
+  text anywhere**, so I did not record it. This is the single highest-value near-miss in
+  the batch — owner named, decade of trading, nameable system, vouchers. Worth Jess's two
+  minutes.
+- **Consent note for when it is read:** no "no unsolicited commercial email" notice on the
+  contact page. There is a marketing opt-in checkbox ("I want to receive news and special
+  offers"), which is a subscriber opt-in, not a refusal notice.
+
+### Dose of Envy — Toowoomba & Dalby QLD
+- **Site:** https://doseofenvy.com.au/
+- **Why it qualifies:** "Alison Platt RN, Owner & Lead Cosmetic Nurse" — titled owner, which
+  is rarer than it should be. Two sites (30c Duggan Street, Toowoomba; 56G Patrick Street,
+  Dalby), so within the cap. Timely for bookings and vouchers. A team of unnamed
+  "highly skilled Cosmetic Nurses" implies a real book.
+- **Email status:** Cloudflare-hidden, and **two of them** — one per clinic, both rendering
+  as `[email protected]`, both linking to `/cdn-cgi/l/email-protection`. Also worth knowing:
+  the site publishes **no phone number at all**, so email is the only route in. Reading the
+  two addresses in a browser would make this a strong B, possibly an A.
+- **Consent note:** no "no unsolicited commercial email" notice found.
+
+### Naturaliste Skin Clinic — Bunbury, Busselton & Dunsborough WA
+- **Site:** https://www.naturalisteskinclinic.com.au/
+- **Why it qualifies:** three South West WA sites, within the cap, plus unspecified
+  "Visiting Clinics". Claims to have been "the first clinic to introduce cosmetic injectable
+  services in the South West", which is a real trading-history signal. A **Memberships** page
+  in the nav, gift vouchers, and a referral scheme that hands out treatment credit —
+  "BOOK A SKIN CONSULT WITH A FRIEND & RECEIVE $50 TREATMENT CREDIT EACH". Banked credit with
+  names attached is exactly the dormant-list signal the brief asks for.
+- **Email status:** Cloudflare-hidden — one per clinic, all rendering `[email protected]`.
+  Phones are published for all three sites.
+- **Caveat if Jess pursues it:** nobody is named as owner or practitioner anywhere (only
+  "Kylie" and "Jacquie" in social captions, no roles), so the buyer is unidentified. Three
+  sites with no named owner is the profile that sometimes turns out to have a manager
+  running marketing.
+- **Consent note:** no "no unsolicited commercial email" notice; newsletter block says only
+  "Sign up with your email address to receive our newsletters."
+
+### Minnamurra Medispa — Minnamurra NSW (Illawarra: Kiama / Shellharbour / Jamberoo)
+- **Site:** https://minnamurramedispa.com.au/
+- **Why it qualifies:** "Our Registered Nurse Kathleen" at 144 Charles Avenue, Minnamurra,
+  serving Kiama Downs, Shellharbour and Jamberoo. **Cliniko** as the practice system, which
+  is a named, exportable system. Gift vouchers offered.
+- **Email status:** Cloudflare-hidden — shown as `[email protected]` in the body text and
+  behind a "Send Email" button under "Contact Kathleen".
+- **Caveat:** Kathleen is named but not titled owner, no surname, and the clinic says she
+  works with "Fresh Team Doctors", which hints at an external prescriber arrangement rather
+  than a solo-owned book. Trading length not published.
+- **Consent note:** no "no unsolicited commercial email" notice found.
+
+---
+
+## Group 2 — no email address published at all
+
+These publish a phone number, an Instagram handle, or a contact form, and nothing else.
+There is nothing for Jess to read in a browser either. Per the brief, no address was
+constructed for any of them.
+
+### The Injectables Queen — Erina & Charlestown NSW (Central Coast / Newcastle)
+- **Site:** https://www.theinjectablesqueen.com/
+- **Why it qualifies — and this one hurts:** the best dormant-list signal I saw all day.
+  A paid annual membership, stated in their own words: **"Become a VIP Member for just $99
+  annually"**, with a phone number given specifically "To Join" (0249431043). **Phorest** as
+  the practice system. Gift cards sold through Phorest. Telisa is named as "Founder, Director
+  and Head Queen" — a titled owner-founder. Two rooms (Erina, Charlestown), footer reads
+  ©2020 so roughly six years trading.
+- **Email status:** **none published.** No address, no mailto, not even an obfuscated one.
+  Phone and booking links only. A paid membership list with no email route to the owner is
+  the most frustrating combination in this batch.
+
+### Skin Shore — West Wallsend NSW (Newcastle & Hunter Valley)
+- **Site:** https://www.skinshore.com/
+- **Why it qualifies:** two named owners, which is unusual — **"EBONNY: Senior Nurse Injector
+  / Clinic Owner"** and **"CANDICE: Clinic Co-Ordinator / Owner / Laser Technician"**, with the
+  site inviting people to "Come in and meet the sisters behind Skin Shore." Sister-owned,
+  single site (68B Carrington Street, West Wallsend), Timely, gift vouchers. Explicitly says
+  it uses "prescription-only medicines where clinically appropriate", so genuinely
+  injectables-led. No skin cancer or Medicare service.
+- **Email status:** **none published.** A contact form with an "Email (Required)" field for
+  the visitor, but no clinic address, and not obfuscated either. Phone (02) 4967 5634 only.
+
+### The Marr Clinic — Lennox Head NSW (Northern Rivers)
+- **Site:** https://themarrclinic.com.au/
+- **Why it qualifies:** a **"Rewards Points Program"** with its own terms page — banked points
+  are a named dormant list. Timely. Dr May Marr named, with "the last 27 years" in skin.
+  Single site at 42 Ballina Street, Lennox Head. No skin cancer or Medicare service listed.
+- **Email status:** **none published.** Two conflicting phone numbers instead
+  ((02) 6687 5202 in the header, (02) 6610 9707 in the footer).
+- **Secondary caveat:** the practice reads closer to medical/dermatologic skin than
+  injectables-led — the menu leads with lasers, peels, cryotherapy and intralesional steroid
+  injection, with injectables mentioned only in "Our Approach". Even with an email it would
+  have needed a judgement call.
+
+### The Luxe Clinic — Warrnambool VIC
+- **Site:** https://www.theluxeclinicwarrnambool.com/ (reached via a 302 from
+  luxecosmeticinjectablesclinic.com)
+- **Why it qualifies:** **"Owned and operated by Registered Nurse Lani"** — stated outright.
+  Single site at 222 Timor Street, Warrnambool. Timely. "Gift Vouchers Available in Clinic".
+  Footer ©2020, so roughly six years.
+- **Email status:** **none published.** The site's own instruction is "Dm us on instagram" —
+  exactly the phone-plus-Instagram-no-email pattern the task warned about. Call/text
+  0421 272 452 or Instagram, nothing else.
+
+### The Louve Skin Clinic — Geelong VIC
+- **Site:** https://thelouveskinclinic.com.au/
+- **Why it qualifies:** "owned by renowned Cosmetic Nurse Elly Seymour" — named owner — and a
+  membership-shaped scheme called **"The Louve Society"** plus Gift Vouchers in the nav.
+- **Email status:** **none published**, and no phone number either. Built on GoDaddy Website
+  Builder with no contact details on the home page at all.
+- **Note:** Geelong is already represented in the pipeline (Geelong Veins Skin & Laser, Lush
+  Aesthetics Geelong), so this is a lower priority to chase.
+
+### Skin Society Co — Belmont, Geelong VIC
+- **Site:** https://skinsocietyco.com.au/
+- **Why it qualifies:** "I'm Aubrey, the founder of Skin Society Co." Fresha as the practice
+  system. Gift vouchers with real terms published ("Valid for 12 months, no refunds or
+  returns on Gift Vouchers") plus a first-client offer, so there is a redeemable-credit list.
+- **Email status:** **none published** — not obfuscated, simply absent. Phone 0421 124 145 only.
+
+### The Cosmetic Studio Noosa — Noosaville QLD (Sunshine Coast)
+- **Site:** https://thecosmeticstudionoosa.com.au/
+- **Why it qualifies:** the best-verified trading history of any near-miss — **"Since 2014"**
+  and **"Over 12 Years In Business"** in their own words. Timely, gift vouchers, Zip Pay
+  buy-now-pay-later (so financed treatment courses). James Denton, Nurse Practitioner, named
+  under a Medical Director model. No skin cancer, no Medicare.
+- **Email status:** **none published.** Phone (07) 5447 4227 only. Twelve years of patient
+  records and no email route to the owner.
+
+### Bare Aesthetic — Sunshine Coast / Noosa QLD
+- **Site:** https://bare-aesthetic.com/
+- **Status: unreachable, not merely email-less.** The fetch returned metadata only — title,
+  description and build tags, no rendered body. Nothing could be verified: no contact details,
+  no owner, no locations, no policies. Logged here per the task's instruction not to fight
+  the Sunshine Coast blockers. Services visible in the meta description are injectables-led
+  and plausibly in-ICP, so it may be worth a browser look if the Sunshine Coast is revisited.
+
+---
+
+## Disqualified outright (not near-misses — recording so nobody re-sources them)
+
+- **North Coast Medispa** (Ballina & Lismore NSW) — has "our on-site Dermatologist" and offers
+  Photo Dynamic Therapy for "superficial types of skin cancer or pre-cancerous lesions", with
+  skin cancer management through collaborative clinics including North Coast Dermatology.
+  Dermatology-attached and not cash-pay-only. Also published no email.
+- **Aesthetics by Tarah** (Toowoomba QLD) — https://www.aestheticsbytarah.com/ returns
+  "This Account has been suspended." The only address on it is the hosting provider's
+  `webmaster@` link, which is furniture, not a clinic address. Business may be gone.
+- **Absolute Cosmetic** (Mandurah, Bunbury, Geraldton and more) — multi-site WA group, head
+  office decides marketing. Over the cap.
+- **Cosmetic Nurses Australia / Cosmetic Injectables Australia** (Brisbane & Darwin) — group
+  structure across two brand domains with a central contact and booking funnel; reads as a
+  head-office operation, not an owner-operator. This is also why **Darwin produced nothing**:
+  the searchable Darwin aesthetic market is dominated by this group.
+- **Queensland Plastic Surgery** (Townsville) — plastic surgery. **Cairns Dental Group** —
+  dental. **The Cosmetic Lounge** (Wollongong page) — Sydney chain. **Artisan Clinics**
+  (Toowoomba) — already on the ruled-out list.
+
+---
+
+## What this market taught me
+
+Regional Australia delivers on the structural promise: nearly everything here is single-site
+and owner-run, and I hit the owner-operator test far more often than a metro sweep would. The
+problem is not qualification, it is **reachability**, and it fails in a very specific way.
+
+The pattern is a town-sized business run from a phone. Three of the four best clinics I found
+— a paid $99 VIP membership (The Injectables Queen), a sister-owned practice with two titled
+owners (Skin Shore), a nurse-owner who states "Owned and operated by" outright (The Luxe
+Clinic Warrnambool) — publish no email at all. Two of them tell you to DM Instagram instead.
+These are not oversights; the owner genuinely runs the business through DMs and a mobile, and
+the better the owner-operator signal, the likelier that is. The ICP and the email requirement
+pull in opposite directions out here.
+
+Cloudflare was the second tax, and it is the cheaper one to fix: four clinics (Nouvelle,
+Dose of Envy, Naturaliste, Minnamurra) publish a real address that only a browser can read.
+Nouvelle Cosmetics especially — named owner, trading since 2016, Timely, vouchers — is a
+finished row waiting on one browser visit. I would hand those four to Jess before sourcing
+anything new.
+
+Three incidental things worth carrying forward. **Timely has effectively won regional
+Australia** — it is the system on roughly two-thirds of these sites, so a lapsed-list export
+story can be told once and reused. **Two live booking systems on one site** (Adorned, Laserclear,
+Aesthetic Studio Bendigo) turned up repeatedly and is a tell for a half-finished migration,
+which means lapsed names sitting unworked in the old system — a genuinely good opening. And
+**Cairns massively over-indexes**: five of my accepted rows are Far North Queensland, which is
+real market structure (an isolated city with no chain presence) but means the batch is
+geographically lumpy, and two of those clinics share one building on Upward Street.
+
+On the Sunshine Coast, the task's warning held exactly. One search returned almost nothing but
+directory farms and `wheree.com` listing pages, and of the two real clinic sites it surfaced,
+one was unreadable. I stopped after one query rather than burn fetches, as instructed. Darwin,
+Townsville, Mackay and Rockhampton produced nothing usable at all — Darwin because one group
+owns the search results, the others because search is US-weighted and simply did not return
+local independents.
+
+## UK near-misses — cities the September sweeps missed
+Sweep run 19 Oct 2026. ICP v2 (owner-operated single-site injectables).
+
+These clinics clear the ICP but publish **no email address I could read verbatim**, so none of
+them went into `uk.json`. They split into two groups that need different handling.
+
+---
+
+## Group 1 — Cloudflare-obfuscated address (Jess can read these in her own browser)
+
+The address is there, on the clinic's own page, but it renders as `[email protected]`.
+Opening the page in a normal browser with JavaScript on will show it.
+
+### CJA Aesthetics — Southampton, Winchester, Portsmouth
+`https://www.cja-aesthetics.co.uk/` · 023 8033 2429
+**The single best near-miss in this market — chase this one first.**
+Why it qualifies: footer names the operating company as **"Run My Clinics Ltd trading as CJA
+Aesthetics"**, so the sole-trader screen is already passed. Led by a named owner-doctor pair,
+**Dr Chris Airey and Dr Lauren Airey**. Three sites (Southampton, Winchester, Portsmouth) — inside
+the one-to-four band. And the dormant-list signal is the most explicit I saw anywhere in the UK:
+two named membership tiers (**Standard Club** and **Premier Club**) with four LED facials a year,
+product discounts and **a birthday voucher** — the clinic is already holding its members' birthdays
+and unredeemed annual allowances. Gift cards sold on site too.
+One flag before anyone writes to them: the group also runs **Arc TRT** (testosterone replacement,
+on a separate domain), and TRT is on the brief's disqualify list. It is a sibling brand rather than
+this clinic's menu, but it should be a conscious decision, not an oversight.
+Status: **Cloudflare-hidden, not absent.**
+
+### Harrogate Aesthetics — Harrogate, North Yorkshire
+`https://harrogateaesthetics.co.uk/` · 01423 567567 · 12 Princes Square, Harrogate HG1 1LX
+Why it qualifies: single clinic in the centre of Harrogate, "award winning medically led clinic",
+full injectables and energy-device menu, separate men's and women's treatment pages.
+Status: **Cloudflare-hidden, not absent.**
+Two oddities worth knowing before Jess reads the address: the footer prints **two different company
+numbers**, one of which is the literal placeholder `12345678` and the other `06184603`, and neither
+is accompanied by a "Ltd" or "Limited" name. So even once the email is readable, the sole-trader
+screen is unresolved — the real company number needs confirming. No owner is named on the site
+either (only "Sharon" and "Anthea" in testimonials), and no membership or voucher scheme is
+published. On current evidence it would come in as a C even with the address.
+
+### Sheffield Aesthetics & Laser Clinic (SAL Clinic) — Sheffield
+`https://salclinic.co.uk/` · 0114 327 5855 · 742 Ecclesall Road, Sheffield S11 8TB
+The visible email link is obfuscated. An address does appear in the page's **meta tags**
+(`meta-business:contact_data:email`), which is machine metadata rather than a published address, so
+I have deliberately **not** recorded it — it is the same class of problem as a directory-supplied
+address. Treat the email as unread.
+Why it half-qualifies only: the site is a UENI template, names no owner ("our team of highly skilled
+doctors"), states no trading length, and the navigation links to an **Islamabad clinic**, which makes
+the one-to-four site count unverifiable. Lower priority than the two above.
+
+---
+
+## Group 2 — no address published anywhere I fetched
+
+These need a phone call or a contact form, not a browser trick.
+
+### Dr Fiona Steedman — Jesmond / Newcastle upon Tyne
+`https://www.drfionasteedman.co.uk/` · 0191 260 5222 · St Nicholas Chambers, Amen Corner, NE1 1PE
+The most frustrating miss of the sweep. The footer reads **"(c) 2026 by Dr Fiona Steedman Ltd."**
+with **company registration number 12660943** — the cleanest corporate-subscriber verification I
+found in any UK city, on a named owner-doctor, single-site, pure-injectables clinic (anti-wrinkle,
+fillers, Mesotox, Profhilo, polynucleotides, skin boosters, SkinPen, PCA peels). It ticks four of the
+five must-haves outright and still cannot be sent to, because there is **no email address on the
+site at all**. Phone or the contact form only.
+
+### CKS Aesthetics — Nottingham
+`https://cksaesthetics.co.uk/` · 07950 633649
+Footer reads **"(c) 2026 CKS Aesthetics Limited"** — sole-trader screen passed. Treatments delivered
+by named nurses **Chantal Seera and Katie Haines**; "7+ years" of specialist experience; offers a free
+anti-wrinkle or skin consultation. No email on the page and **no street address either**, so even the
+site count is unverifiable. Worth a call.
+
+### Winchester Medical Aesthetics — Winchester, Hampshire
+`https://wmedicalaesthetics.co.uk/`
+Founded by an "award-winning Aesthetic Nurse Specialist" named only as **Carolina**, on Winchester's
+High Street. Runs **two named membership schemes — "The Founder Skin Club" and "The Anti-Wrinkles
+Club"** — which is a textbook dormant-list signal. But the site publishes **no email, no phone and no
+full street address**, and no company identity. Contact form only. Strong ICP, zero contactability.
+
+### City Aesthetics Clinic — Newcastle upon Tyne
+`https://www.cityaestheticsclinic.co.uk/` · 0191 260 38 62 · 5 Saville Place, NE1 8DQ
+Single first-floor city-centre clinic, injectables-led, a "Prices, Special Offers & Vouchers" page in
+the nav. No email, no company identity, no named owner (only "Book with Jane Gillies" in a menu
+link). Also sells prescription weight loss, which dilutes the list.
+
+### Novellus Aesthetics — Jesmond, Newcastle upon Tyne
+`https://novellusaesthetics.co.uk/contact/` · 0191 695 0450 · 1 Benton Terrace, Jesmond, NE2 1QU
+Single Jesmond clinic offering "complimentary, no obligation consultations" — a real dormant signal.
+I fetched the contact page itself and the only "Email" on it is a form field label. No company
+identity. One thing to check before any outreach: the copyright line reads **"(c) 2026 novellus
+training"**, which suggests the main business may be a **training academy** rather than a patient
+clinic — training businesses sell to practitioners, not to lapsed patients.
+
+### LA Clinic UK — Burwell (Cambridge) and Helpston (Peterborough)
+`https://www.laclinicuk.com/` · 01638 505982
+Nurse-led, two sites, described as "an established aesthetic clinic". The email is behind a
+JavaScript anti-spam wrapper that renders only as *"This email address is being protected from
+spambots"* — so there is nothing to read even in a browser without interaction. No company identity,
+no owner named beyond "Lily" in reviews.
+
+### Skin Lab Cambridge — Cambridge
+`https://skinlabcambridge.co.uk/`
+Owner named outright — **"Amy, Skin Specialist / Owner"** — with nurse **Natalya** doing the
+injectables, in one room at Chesterton Mill. Offers a free virtual consultation and runs named club
+events ("Skin Lab Summer Club", "Skin Lab x Freckled Club"). Squarespace site with **no email, no
+company identity** — two mobile numbers only. Also quite young: Natalya has specialised in
+aesthetics since 2023.
+
+### Skin&Spirit — Clowne / Chesterfield, Derbyshire
+`https://skinandspirit.co.uk/` · 01246 570170
+Footer reads **"Skin&Spirit Limited"** — screen passed — and it sells gift vouchers through its own
+shop. But **no email on the page**, and the menu is extremely wide (hair services, nails, ear
+piercing, counselling, hormone treatments, weight loss) so the patient list would be heavily diluted.
+Chesterfield also sits outside the brief's named cities. Low priority.
+
+---
+
+## Also seen and deliberately not accepted
+
+Recorded so nobody re-sources them:
+
+- **The Cardiff Clinic** (Cardiff) — medical director is a **Consultant Plastic Surgeon**, and the
+  menu includes breast and body surgery plus **skin cancer assessment and melanoma treatment**.
+  Disqualified on two counts. Publishes `info@thecardiffclinic.co.uk`, so it would otherwise have
+  passed the email test — do not let that tempt anyone.
+- **The A Clinic** (Nottingham/London/Manchester/Birmingham, possibly Cannock) — **four to five
+  sites** and the owner is a surgeon ("Owner and Surgeon at Liposhape", Vaser liposuction).
+  Disqualified.
+- **Dr Nancy** (Cardiff, London, Cowbridge, Bristol, Tetbury, plus Jammu and Lucknow in India) —
+  **seven locations**. Head office decides marketing. Disqualified.
+- **Muse Medical Clinic** (Harrogate) — `musemedicalclinic.co.uk/harrogate` **302-redirects to
+  `whealthclinic.co.uk`**. The brief disqualifies anything whose domain redirects to another company.
+- **Marlborough Clinic** (Belfast) — it is a **dental** practice (implants, aligners, endodontics)
+  with dermatology attached, not an aesthetics clinic.
+- **Mediaesthetics / Rebecca Rollett** (Leeds) — plastic surgery practice, and Leeds was already
+  swept in September.
+- **Cambridge Skin and Wellness** — looked ideal (Jane App, named doctor-and-nurse-practitioner
+  partnership, gift cards) and is in **Cambridge, Ontario, Canada**. Out of market. The search
+  engine's US weighting put it top of a UK query.
+- **Beauty Within Medi Spa** (Cowbridge, Vale of Glamorgan) — publishes
+  `info@beautywithinspa.co.uk` and has been trading since 1987, but the team page lists
+  chiropractic, acupuncture, podiatry, ophthalmology and GP services alongside the aesthetics. That
+  reads as a multi-specialty group, which the brief disqualifies. Park it; if the standard widens to
+  allow host-practitioner spas it is a good one.
+- **The One Clinic** (Leicester) — publishes `enquiries@the-oneclinic.co.uk` and has a Membership
+  page, but its Medical Director is a **Consultant Plastic Surgeon** and the footer carries no
+  company identity. Two strikes.
+- **Cardiff Cosmetic Clinic** (Cardiff) — publishes `enquiries@cardiffcosmeticclinic.com`, Dr Raj
+  Aggarwal, "Since 2010", one site, refundable consultation deposit. Held back because the menu
+  lists **blepharoplasty and brow lift** and the footer carries no company identity. If someone
+  confirms those are the non-surgical Plexr versions, this becomes a usable C.
+- **Simply Be Beautiful** (Lisburn Road, Belfast) — publishes `simplybebeautiful@hotmail.com`, lead
+  nurse Lisa Sloan, self-describes as a "busy very busy established Clinic". Held back on a hotmail
+  address plus no company identity plus no published street address.
+- **Skin Appeal Clinic** (Liverpool) — publishes `aestheticsliverpool@gmail.com`, nurse "Cornelius"
+  with 27 years' experience, one site on Walton Hall Avenue. Held back: gmail address, no company
+  identity, and the owner's surname is never given.
+- **Aspire Aesthetics** (Aberdeen) — publishes `info@aspireaesthetics.co.uk` and sells a **"Client
+  Prepayment Card"**, which is literally banked patient credit and exactly the signal the brief's
+  wallet/bank/vault technique is hunting for. Held back because the site publishes **no address, no
+  phone, no owner and no location count** — four of the five must-haves are unverifiable from it.
+  Worth a second look by someone with more fetch budget.
+- **JTMedical** (Liverpool) — publishes `infojtmedical@gmail.com`; "Ltd" appears only in the page
+  title. No owner named, no address, no location count. Too thin.
+- **Nikki Butler Skin Specialist** (Alton, Hampshire) — publishes two readable addresses, but the
+  menu is skin-and-scar work with no injectables, and Alton is outside the brief's cities.
+
+---
+
+## What this market taught me
+
+**The sole-trader screen is the whole game in the UK, and it is brutal.** Of the clinics I verified,
+**sixteen had a readable email and a perfect ICP fit, and only eight of those printed any company
+identity**. The pattern is consistent and worth exploiting: a UK aesthetics clinic's homepage footer
+almost never names the entity — it names the web designer. The company identity, when it exists,
+hides in the **privacy policy** (Dr Bonny → "B.Aesthetic Ltd."), in a **"T/A" line** (The Clinic
+Norwich → "Joolia Gilvey Ltd T/A The Clinic"), or in a **finance-broker disclosure**. For the next UK
+run: budget one extra fetch of `/privacy-policy/` per candidate before grading, because that single
+fetch is what separates a sendable B from a parked C. It flipped Dr Bonny from C to B in one call.
+Conversely, the footer that *does* carry a company number often belongs to a clinic with **no email
+at all** (Dr Fiona Steedman Ltd, CKS Aesthetics Limited, Skin&Spirit Limited) — the two
+qualifications seem almost anti-correlated, as if the tidier operators route everything through a
+form.
+
+**The inversion of the standard is real and it changes who the good leads are.** The best rows in
+this batch are not the polished multi-site groups September was chasing; they are HGface, where the
+doctor writes *"the clinic is just me and I am my own receptionist!"*, and Skin Aesthetix, where one
+injector covers Aberdeen three days and Elgin on Fridays. Both have the problem the offer solves
+written on the page.
+
+**Three technique notes.** (1) `WebSearch` is heavily US-weighted even with UK cities stacked — a
+Cambridge query returned a clinic in Cambridge, *Ontario*, and a "beauty bank" query returned ten US
+med spas and not one British clinic, so the wallet/bank/vault trick from the AU run **does not
+transfer to the UK**. (2) What did work was stacking city names with the literal string `"Ltd"` plus
+"membership" — that is how Innersense, HGface, The Aesthetics Hub and CKS surfaced, and it
+pre-filters for the screen. (3) Fetching the **memberships page instead of the homepage** was the
+highest-yield single call: it carries the email, the owners' names and the scheme in one go.
+
+**One new fabrication trap, beyond the two in the brief.** `salclinic.co.uk` serves a real-looking
+address inside its **Open Graph / business meta tags** while the visible mailto is obfuscated. That is
+machine metadata, not a published address, and recording it would be the same error as reading one
+off a directory. I did not record it. Also watch for **mismatched domains**: Blend prints
+`@blendskinandaesthetics.co.uk` in the header and `@blendskinandbeauty.co.uk` in the footer mailto,
+The Skin Firm publishes `info@theskinfirm.NET` from a `.co.uk` site, and Leicester Medispa publishes
+`info@leicestermedispa.UK` from a `.co.uk` site. All three are what the page says. The instinct to
+"tidy" them into matching the website domain would fabricate an address.
+
+## US interior metros — near misses (19 Oct 2026)
+
+Clinics below clear the inverted ICP (injectables-led, cash-pay, owner-operated, one to four
+sites, established) but **publish no email address I could read verbatim**. Each entry says
+whether there is **no address at all** or a **Cloudflare / JS-obfuscated** one — Jess can open
+the obfuscated ones in her own browser and read them; the others need a phone call or a form.
+
+Market: Kansas City, St Louis, Minneapolis–St Paul, Omaha, Des Moines, Madison, Pittsburgh,
+Louisville, Memphis, New Orleans, Oklahoma City, Tucson.
+
+---
+
+## No published address at all (form and phone only)
+
+### 1. Metropolitan Skin Clinic — Edina, MN (Minneapolis metro)
+https://metropolitanskinclinic.com/ · contact page: /contact-us/
+**The best lead I had to drop.** **Suzanne St. James is listed in plain text as
+"Injector/Co-Owner"** — a named owner-injector, which is exactly the buyer. Runs on **Zenoti**
+(metropolitanskin.zenoti.com webstore). Single Edina site, "15+ years of experience". Deep
+injectables and laser menu (BBL, Halo, Moxi, SkinPen with PRP). Has "Treat Now, Pay Later" and
+a "Programs" page.
+**Why dropped:** I fetched both the homepage and /contact-us/. Neither carries an email — only
+a form with an "Email*" field. Nothing obfuscated, just absent. Would be an A row on a phone
+call.
+
+### 2. Scout Aesthetics — Louisville, KY
+https://www.scoutaesthetics.com/ · contact page: /contact
+Lead injector **Jennifer Fick, DNP**, FNP with advanced and master's injector training. Single
+Herr Lane site. Two named memberships (The Scout, The Glow Getter) and — the detail that makes
+it valuable — the site says **membership dollars are "retained as an account credit"** for
+future treatments. That is a named list of people holding unspent balances.
+**Why dropped:** homepage and /contact both carry only the phone number (502) 576-7710 and a
+form. No address, obfuscated or otherwise.
+
+### 3. Metro Medspa — St Louis, MO
+https://www.metromedspa.com/ · memberships: /memberships/ · contact: /contact/
+Seven membership tiers, and the injectable and "Skinjectable" tiers explicitly **bank the
+membership fee into a "Beauty Bank"**. Runs on **MyPatientNow** (book.mypatientnow.com).
+Member perks extend to 14 partner businesses across St Louis, so this is an embedded local
+operator, not a new arrival.
+**Why dropped:** fetched both /memberships/ and /contact/. The contact page publishes no street
+address and no email — only a city and ZIP (63128). Phone and text only. Location count never
+stated either, which is a second thing to check.
+
+### 4. A Beautiful You Medical Spa — Memphis, TN
+https://www.abeautifulyoumedicalspa.com/aesthetics-center-in-memphis/
+**The longest tenure I found in Memphis.** JL and Lorrie Fisk bought the Memphis (and Little
+Rock) Sona MedSpa locations in **2005** and rebranded 11 years later; the page says 20 years of
+operation. Medical director Dr Kenneth Thompson; Megan Stewart, board-certified FNP and
+aesthetic NP. Memberships and financing are linked.
+**Why dropped:** no email anywhere on the About page, footer included. Also needs a location
+count check — they bought a Little Rock site in 2005 and image captions mention Collierville and
+Germantown, so this may be a multi-site group.
+
+### 5. a.dore Med Spa — Elkhorn, NE (Omaha metro)
+https://www.adoremedspaomaha.com/
+Publishes the **"a.dore SAPPHIRE Beauty Bank"**, a monthly membership — a textbook banked-credit
+dormant list, found exactly by the wallet/bank/vault search. Single Elkhorn site. Kristen Hammes,
+APRN, named in a photo caption.
+**Why dropped:** fetched /injectables-omaha and /contact. Neither carries an email; the contact
+page is remarkably bare (no address, no owner, no year).
+
+### 6. Skin Artisans — Edina / Minnetonka / Woodbury, MN (Minneapolis metro)
+https://skinartisans.com/
+Three sites, so inside the one-to-four rule. Runs on **NextPatient**. Named CANS-certified
+injection specialist (Jennifer Jeansson RN, CANS). "Rewards Programs", financing and a monthly
+newsletter.
+**Why dropped:** no email in the page content. Also no owner named, and the menu carries BIOTE
+hormone therapy and diVa vaginal laser, which pushes it toward the functional-medicine edge.
+
+### 7. Euphoria Health & Med Spa — Elkhorn, NE (Omaha metro)
+https://euphoria.health/
+HydraFacial memberships at a published monthly rate, gift cards, payment plans. Single site.
+Phone 402-957-6363. Booking runs on MyAestheticsPro.
+**Why dropped:** no email; the only "Email" on the page is a form label and a newsletter prompt.
+Owner not named either.
+
+### 8. Ageless Skin Co — Omaha, NE
+https://www.agelessskinco.com/
+Runs on **Boulevard** (dashboard.boulevard.io). Claims "8+ Years Experience", so established.
+Injectors Liz and Melissa named in reviews, one called a nurse injector.
+**Why dropped:** no email at all, and no membership or loyalty scheme — packages and financing
+only. Thinner than the rest of this list even if an address turns up.
+
+### 9. Telos Medical Aesthetics — Metairie, LA (New Orleans metro)
+https://telosmedicalaesthetics.com/
+Single Athania Parkway site, device-led aesthetics menu (AgeJET, Denza RF, ADVATx, AlloraPro).
+**Why dropped:** no email, no owner named, no membership, no founding year — nothing to build an
+opening line on even with an address. Lowest priority on this list. Peptides, medical weight loss
+and hyperbaric therapy also push it toward the functional-wellness disqualify.
+
+---
+
+## Obfuscated address (Jess can read this one in a browser)
+
+### 10. Great Skin KC — Kansas City, MO
+https://greatskinkc.com/contact/
+The contact page renders its address as **`in**@*********kc.com`** — masked, so by the brief's
+rule **NOT SEEN** and not recorded. Readable in a browser.
+**But do not chase it:** it **disqualifies on two counts anyway** — **four locations** (Ward
+Parkway KC MO, Liberty MO, Lenexa KS, Overland Park KS, with a head-office shape), and the
+service menu includes **plastic surgery** (blepharoplasty, facelifts, tummy tuck) plus hormone
+therapy, menopause and sexual wellness. Logged here only so nobody re-finds it and thinks the
+masked address is the only problem.
+
+---
+
+## What this market taught me
+
+The wallet/bank/vault search is genuinely the right first move in the US — it is how I found
+Divine Radiance's "Divine Beauty Bank" in Kansas City, L3's "Beauty Bank" in Oklahoma City,
+Beauty Lounge's in Tucson, a.dore's "SAPPHIRE Beauty Bank" in Omaha and Metro Medspa's in St
+Louis. Every one of those holds named patient credit. But it is a **thin** vein in the interior:
+it returned one or two results per metro and then dried up, where a plain metro-plus-membership
+search returned ten. Past Tucson and Kansas City I got more mileage from stacking suburb names
+(Leawood, Overland Park, Elkhorn, Middleton, Metairie, Cordova) with "membership" and "nurse
+injector", exactly as the 18 Oct Australian note suggested.
+
+Two things are structurally different from the AU and UK runs. First, **email publication is the
+binding constraint, not the ICP**. Nearly every clinic I opened was owner-operated, single-site,
+cash-pay and injectables-led — the inverted standard is easy to meet here. What US med spas do
+not do is publish an address: they publish a form, a phone number and a text-us link, because
+booking is the only funnel they care about. Half my drops were on email alone, and the single
+best lead in the whole sweep (Metropolitan Skin Clinic, with a named Injector/Co-Owner on Zenoti)
+died on exactly that. Fetching /contact/ was often *worse* than the homepage — the footer is
+where US addresses live, when they live anywhere.
+
+Second, **founding dates are almost never published**. Fourteen of my eighteen rows have no year
+opened; "established" had to be inferred from footer copyright, a membership ladder, a device
+stack or a stray testimonial. Only Skin Medics ("Trusted Since 2002") and A Beautiful You (bought
+2005) actually say. KSD Aesthetics and The Beauty Haven are the two accepted rows I would check
+for review history before sending, because both could be two years old.
+
+Third trap worth recording: **gmail addresses are the norm, not a red flag.** Five accepted rows
+publish a gmail or a first-party gmail-style address in the footer (L3, Reveal, The Aesthetic
+Place, Spa MD, Face KC) and one site publishes *both* a branded address as visible text and a
+gmail as the mailto target (Aesthetically Pleasing). I recorded the visible text in that case.
+I also hit the metadata-author trap the brief warns about in a new form: l3aesthetics.com carries
+`hibbtd@gmail.com` in its page metadata as the "Written by" author — that is the web designer,
+not the clinic, and I did not record it. And confidentbeautymedspa.com publishes
+`info@confidentbmedicalspa.com`, a *different* domain from the site it sits on — real, read
+verbatim, but it tells you the owner has moved domains at least once. That clinic is in Pikeville,
+not Louisville, so it fell outside the market and is not in the JSON.
+
+Finally, the four-site ceiling bit once. OWN Aesthetics in West Des Moines looks like a single
+clinic until you read the navigation, which carries three location pages (Des Moines, West Des
+Moines, Waukee). It is still inside the rule, but it is the row to re-count. Great Skin KC was
+the only outright five-plus-shaped group I hit, and it disqualified on plastic surgery too.
