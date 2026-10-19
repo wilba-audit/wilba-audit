@@ -44,3 +44,5 @@
 260  # Nob Hill Aesthetics
 268  # Totality Medispa
 279  # Jack Zamora MD Cosmetic Surgery and Aesthetics
+136  # Fitzgerald Private Clinic (IE): no company identity found (PECR/UK-IE screen, 19 Oct)
+107  # Lumiere Clinic (UK): company identity unverified, address match only (19 Oct)
