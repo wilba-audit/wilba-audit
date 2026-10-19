@@ -1,18 +1,18 @@
 # Monkey Joe's — GHL Account Audit (authoritative tag counts)
 
-_Generated 2026-10-12T22:02:24+00:00 (live, server-side via GitHub Actions)_
+_Generated 2026-10-19T19:45:29+00:00 (live, server-side via GitHub Actions)_
 
 ## POL
-- Connection: **ok** · 13483 total contacts in the account
+- Connection: **ok** · 13489 total contacts in the account
 - Opted-in (`voucher-delivered`): **111** · unsubscribed: 0
 - **Redemptions by code:** {'bogo': 3, 'half': 31, 'welcome': 7}  →  by-code total 41
 - **Unique redeemers (all redemption tags): 53**  (promo-redeemed not in by-code: 12)
-- **New opt-ins week-by-week:** 40 · 19 · 18 · 11 · 16 · 6 · 11 · 21 · 0 · 0 · 0  (oldest→newest, last 11 wks)
+- **New opt-ins week-by-week:** 19 · 17 · 12 · 16 · 6 · 11 · 21 · 0 · 0 · 0 · 0  (oldest→newest, last 11 wks)
 - **Redemptions by channel (from GHL attribution): {'facebook': 25, 'other/referral': 17, 'google': 11}**
-    - attribution samples: [{'utmSource': 'google', 'utmMedium': 'paid_search', 'campaign': 'Halfprice-pol', 'referrer': 'https://www.google.com'}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-pol', 'referrer': 'http://m.facebook.com'}, {'utmSource': 'google', 'utmMedium': 'paid_search', 'campaign': 'Bogo-pol', 'referrer': 'https://www.google.com'}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-pol', 'referrer': 'https://facebook.com'}]
+    - attribution samples: [{'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-pol', 'referrer': 'http://m.facebook.com'}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-pol', 'referrer': 'https://instagram.com'}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-pol', 'referrer': 'https://facebook.com'}]
 - **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 54, 'nudge-sms-may2026': 100, 'weekend-stars-email-pol-2026-06-30': 110}
 - Birthday: {'bday-start-2026-07-06': 111, 'birthday-inquiry': 2, 'birthday-pol-lead': 109}
-- Voice/inbound: {'birthday-inquiry': 2, 'inbound-call-po': 29, 'topic-party': 29, 'voice-agent-sms': 29}
+- Voice/inbound: {'birthday-inquiry': 2, 'inbound-call-po': 31, 'topic-party': 31, 'voice-agent-sms': 31}
 - Child-birthday field: `4dW6Ni9njQByJweCW8ip` (Child Birthday Date, DATE)
 
 <details><summary>All tag counts</summary>
@@ -36,10 +36,10 @@ _Generated 2026-10-12T22:02:24+00:00 (live, server-side via GitHub Actions)_
   - `nudge-email-may2026`: 54
   - `bogo-pol-lead`: 41
   - `half-redeemed`: 31
+  - `inbound-call-po`: 31
   - `redeemed-half`: 31
-  - `inbound-call-po`: 29
-  - `topic-party`: 29
-  - `voice-agent-sms`: 29
+  - `topic-party`: 31
+  - `voice-agent-sms`: 31
   - `no sms`: 26
   - `no-sms-consent`: 26
   - `sms-unsub`: 26
@@ -65,16 +65,16 @@ _Generated 2026-10-12T22:02:24+00:00 (live, server-side via GitHub Actions)_
 </details>
 
 ## WP
-- Connection: **ok** · 37133 total contacts in the account
+- Connection: **ok** · 37135 total contacts in the account
 - Opted-in (`voucher-delivered`): **151** · unsubscribed: 0
 - **Redemptions by code:** {'bogo': 1, 'half': 38, 'welcome': 43}  →  by-code total 82
 - **Unique redeemers (all redemption tags): 88**  (promo-redeemed not in by-code: 6)
-- **New opt-ins week-by-week:** 11 · 2 · 3 · 1 · 0 · 1 · 1 · 3 · 0 · 0 · 0  (oldest→newest, last 11 wks)
+- **New opt-ins week-by-week:** 2 · 3 · 1 · 0 · 1 · 1 · 3 · 0 · 0 · 0 · 0  (oldest→newest, last 11 wks)
 - **Redemptions by channel (from GHL attribution): {'other/referral': 53, 'facebook': 23, 'google': 12}**
-    - attribution samples: [{'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}]
+    - attribution samples: [{'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': 'facebook', 'utmMedium': 'paid_social', 'campaign': 'Halfprice-wp', 'referrer': 'https://facebook.com'}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}, {'utmSource': None, 'utmMedium': None, 'campaign': None, 'referrer': None}]
 - **BANANAS / nudge campaign sends:** {'nudge-email-may2026': 38, 'nudge-sms-may2026': 126, 'weekend-stars-email-wp-2026-06-30': 142}
 - Birthday: {'bday-start-2026-07-06': 144, 'birthday-wp-lead': 144}
-- Voice/inbound: {'inbound-call-wp': 31, 'topic-party': 31, 'voice-agent-sms': 31}
+- Voice/inbound: {'inbound-call-wp': 32, 'topic-party': 32, 'voice-agent-sms': 32}
 - Child-birthday field: `U1HiMixVAZ9ZQ1ItLROl` (Child Birthday Month, NUMERICAL)
 
 <details><summary>All tag counts</summary>
@@ -100,9 +100,9 @@ _Generated 2026-10-12T22:02:24+00:00 (live, server-side via GitHub Actions)_
   - `half-redeemed`: 38
   - `nudge-email-may2026`: 38
   - `redeemed-half`: 38
-  - `inbound-call-wp`: 31
-  - `topic-party`: 31
-  - `voice-agent-sms`: 31
+  - `inbound-call-wp`: 32
+  - `topic-party`: 32
+  - `voice-agent-sms`: 32
   - `no sms`: 16
   - `no-sms-consent`: 16
   - `sms-unsub`: 16
