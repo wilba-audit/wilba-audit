@@ -64,11 +64,15 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    because UK footers name the web designer instead. No company identity anywhere means
    grade C with "sole trader not verified" in `notes`.
 
-**Where to find a UK or Irish company identity, in order.** The privacy policy, not the
-footer — UK footers credit the web designer. Then the clinic's CQC registered-provider
-record, which names the legal entity and address outright and resolves clinics whose own
-site says nothing; in Scotland, Healthcare Improvement Scotland does the same job, and in
-Ireland it is the CRO. Then Companies House. An LLP counts: the ICO treats it as a corporate
+**Where to find a UK or Irish company identity, in order.** Go to the registers first and
+the clinic's own site last — that is the reverse of what seems natural, and it is what the
+20 Oct run established: twelve clinics were resolved in 28 calls without reading a single
+privacy policy. **Companies House** first, searching the clinic name and the owner's name.
+Then the clinic's **CQC registered-provider record**, which names the legal entity and its
+address outright and settles clinics whose own site says nothing; in Scotland it is
+**Healthcare Improvement Scotland**, in Wales **HIW**, and in Ireland the **CRO**. The
+**ICO data-protection register** also names entities and resolved one clinic. Only then the
+clinic's own **privacy policy** — never the footer, which credits the web designer. An LLP counts: the ICO treats it as a corporate
 subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
 **Three things that look like a published address and are not.** A website-builder
