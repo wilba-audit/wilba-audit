@@ -103,6 +103,7 @@ These are how you know your AIOS is working:
 | `reference/`       | Helpful docs, templates and patterns to assist in various workflows.                   |
 | `scripts/`         | Automation scripts — added by modules as you install them.                             |
 | `reference/clinic-sourcing-brief.md` | The brief handed to every clinic-sourcing worker. Pair it with `outputs/pipeline/ICP.md`. |
+| `outputs/pipeline/SOURCING-LOG.md` | What we know about sourcing clinics: what works per market, and the mistakes not to repeat. Read before a sourcing run. |
 | `shares/`          | Packaged systems for sharing. Created by `/share`, ready to hand off.                  |
 
 ---
