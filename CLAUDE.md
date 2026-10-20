@@ -102,6 +102,7 @@ These are how you know your AIOS is working:
 | `outputs/audit/`   | AI Receptionist Audit lead log and setup checklist.                                    |
 | `reference/`       | Helpful docs, templates and patterns to assist in various workflows.                   |
 | `scripts/`         | Automation scripts — added by modules as you install them.                             |
+| `reference/clinic-sourcing-brief.md` | The brief handed to every clinic-sourcing worker. Pair it with `outputs/pipeline/ICP.md`. |
 | `shares/`          | Packaged systems for sharing. Created by `/share`, ready to hand off.                  |
 
 ---
