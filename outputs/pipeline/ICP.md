@@ -51,12 +51,25 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
 6. **For AU and NZ, also:** no "no unsolicited commercial email" notice anywhere on the
    site, and the address must be published on the clinic's own site (not a directory).
    Record both findings in `notes`.
-7. **For the UK and Ireland, also: a company identity.** UK anti-spam rules (PECR) let us
+7. **For Canada, also: conspicuous publication.** Canada's CASL needs consent, and consent
+   is *implied* where the clinic has conspicuously published the address on its own site
+   with no statement refusing unsolicited commercial messages, and our message is relevant
+   to their business. That is the basis we rely on, so a Canadian row records three things
+   in `notes`: the page the address was published on, that the site carries no such
+   refusal, and that the privacy policy was checked for one (or could not be read).
+8. **For the UK and Ireland, also: a company identity.** UK anti-spam rules (PECR) let us
    email a corporate subscriber — a limited company — without prior consent, but not a
    sole trader or a partnership. Look for "Ltd", "Limited" or a company number in the
    footer, on the contact page, or in the privacy policy, which is where it usually hides
    because UK footers name the web designer instead. No company identity anywhere means
    grade C with "sole trader not verified" in `notes`.
+
+**Where to find a UK or Irish company identity, in order.** The privacy policy, not the
+footer — UK footers credit the web designer. Then the clinic's CQC registered-provider
+record, which names the legal entity and address outright and resolves clinics whose own
+site says nothing; in Scotland, Healthcare Improvement Scotland does the same job, and in
+Ireland it is the CRO. Then Companies House. An LLP counts: the ICO treats it as a corporate
+subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
 **Three things that look like a published address and are not.** A website-builder
 placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
