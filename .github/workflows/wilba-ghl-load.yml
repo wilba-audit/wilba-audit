@@ -1,0 +1,45 @@
+name: WILBA GHL load (on demand)
+
+# Loads the clinic prospects in outputs/pipeline/ghl/ghl-import.csv into Jess's own GHL
+# sub-account as contacts + opportunities. Never sends and never starts a workflow.
+# Runs here because the cloud dev session can't reach GHL.
+
+on:
+  # A push that changes run-request.txt runs the load from this branch (first line: dry or live).
+  push:
+    paths:
+      - outputs/pipeline/ghl/run-request.txt
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "Write to GHL (false = dry run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Load prospects
+        env:
+          WILBA_GHL_TOKEN: ${{ secrets.WILBA_GHL_TOKEN }}
+          WILBA_GHL_LOCATION_ID: A3tY7p4YMaGWtkblpmUX  # WILBA sub-account (not secret)
+        run: |
+          MODE="${{ inputs.live && 'live' || '' }}"
+          if [ "${{ github.event_name }}" = "push" ]; then MODE=$(head -1 outputs/pipeline/ghl/run-request.txt | tr -d '[:space:]'); fi
+          if [ "$MODE" = "live" ]; then python scripts/wilba_ghl_load.py --live; else python scripts/wilba_ghl_load.py; fi
+      - name: Commit report
+        run: |
+          git config user.name "wilba-bot"
+          git config user.email "actions@github.com"
+          git add outputs/pipeline/ghl/load-report.md
+          git diff --cached --quiet || git commit -m "GHL load report"
+          git pull --rebase -q && git push

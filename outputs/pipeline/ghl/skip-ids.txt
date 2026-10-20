@@ -1,0 +1,49 @@
+# Clinics listed here get no more outreach emails (one pipeline_id per line).
+# Added 18 Oct: these fail ICP v2 (Griffin briefing). Remove a line to resume that clinic.
+77  # Advanced Cosmetic Medicine
+87  # Epsom Skin Clinics
+90  # Woodford Medical
+92  # Dr Ellie Sateei
+96  # Cityskin Cosmetic Clinic
+99  # The Skin Lab
+101  # The Coastal Clinic
+105  # MedAesthetics
+108  # The Academy Clinic
+109  # Kat & Co
+115  # McKeown Medical
+117  # The Mayfield Clinic
+119  # Manchester Private Hospital
+120  # UK Aesthetic
+121  # Victoria House Clinic
+122  # Yorkshire Skin Centre
+123  # The Kelly Clinic
+133  # Aesthete Sunshine Coast
+134  # Geelong Veins, Skin & Laser
+135  # Hobart Plastic Surgery
+137  # Cool Springs Plastic Surgery
+140  # Sanctuary Medical Aesthetic Center
+142  # Georgia Plastic & Reconstructive Surgery
+144  # Total Med Solutions
+145  # Fort Worth Plastic Surgery & MedSpa
+156  # Rejuvent Medical Spa & Surgery
+158  # Newvue Medical
+164  # Beverly Hills Plastic Surgery Group
+165  # Guerra Plastic Surgery Center
+169  # UPKEEP Med Spa
+170  # SKINNEY Medspa
+171  # BeautyFix MedSpa
+183  # SpaDerma
+184  # PURE Medical Spa
+189  # Jiva Med Spa
+195  # Aurora MediSpa & Plastic Surgery
+209  # Reston Dermatology + Cosmetic Center
+232  # Velo Med Spa
+244  # Confident Med Spa
+258  # Radiant Med Spa
+259  # Epi Center MedSpa
+260  # Nob Hill Aesthetics
+268  # Totality Medispa
+279  # Jack Zamora MD Cosmetic Surgery and Aesthetics
+136  # Fitzgerald Private Clinic (IE): no company identity found (PECR/UK-IE screen, 19 Oct)
+107  # Lumiere Clinic (UK): company identity unverified, address match only (19 Oct)
+160  # Deluxe Med Spa (US): five sites, fails ICP v2 chain rule (20 Oct)
