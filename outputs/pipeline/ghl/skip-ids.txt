@@ -46,3 +46,4 @@
 279  # Jack Zamora MD Cosmetic Surgery and Aesthetics
 136  # Fitzgerald Private Clinic (IE): no company identity found (PECR/UK-IE screen, 19 Oct)
 107  # Lumiere Clinic (UK): company identity unverified, address match only (19 Oct)
+160  # Deluxe Med Spa (US): five sites, fails ICP v2 chain rule (20 Oct)
