@@ -2750,6 +2750,19 @@ to skip because it was already covered — **but neither is in the pipeline.** E
 a readable address and clears the must-haves on the evidence read on 21 Oct 2026. Somebody
 should pick them up; the verification is already done.
 
+> **CORRECTED 21 Oct 2026, same day.** Both were taken into the pipeline, and re-reading the
+> evidence changed one of the two grades. "Clears the must-haves" was right for Touch of
+> Beauty (now id 574, grade B) and **wrong for The Injection Lounge** (now id 573, grade C):
+> a 2024 copyright, no founding year and no review history is roughly two years of trading,
+> which will not support the 300+ lapsed patients must-have 4 asks for — the same reason NZ
+> row 399 is a C. It also runs no membership, loyalty, gift-card or banked-credit scheme at
+> all. Its one real asset is the photo-triage inbox its service pages invite people into.
+> Touch of Beauty carries a domain mismatch of its own: the address is on `touchtoronto.ca`
+> while the site is `touchofbeauty.love`, the host facility's domain, so check for a bounce.
+> The lesson is narrow and worth keeping: **"publishes an address" and "clears the
+> must-haves" are two findings, and a near-miss note that runs them together will be read as
+> a free row.**
+
 - **The Injection Lounge**, 621 Sheppard Ave E (Bayview Village), North York — `info@theinjectionlounge.com` read as plain text on the homepage. **Jessica Walker, RPN, founder and head nurse injector**, named outright. Jane App (`injectionlounge.janeapp.com`). No refusal notice; no privacy policy on the site. No founding year, copyright 2024. Minor caveat: a lipotropic injection is described as promoting weight loss.
 - **Touch of Beauty / Touch Toronto**, 63 Provost Drive, North York (inside Touch Health & Fitness) — `kali@touchtoronto.ca` read as plain text in the contact and accessibility sections. **Kali Tocco, RPN**, practising under Susie Jezerinac, NP. Jane App (`touchtoronto.janeapp.com`), do Finance financing. No refusal notice; no privacy policy. Copyright 2021. Caveat: an injector inside a host gym — the room-rental pattern, so still one buyer, but a small list.
 

@@ -206,3 +206,33 @@ Eugene OR (its three best clinics publish no address — that market needs a pho
 another search), Quebec City proper (five clinics, all graded C, the only usable Quebec rows
 being in Lévis), Fredericton (no independent surfaced at all), and Leslieville in Toronto.
 Bend OR is under-researched rather than thin — four unopened names were left there.
+
+## The parent-group loyalty link, resolved — 21 Oct 2026
+
+The 20 Oct sweep spotted that a loyalty programme branded for a parent company is the tell
+that marketing is decided elsewhere. It has now been chased to the end. **Vos Collection is
+the May 2026 rebrand of MedSpa Partners Inc** — Persistence Capital Partners-backed,
+acquisitive, more than 35 clinics across the US and Canada, with Cosmedica, SpaMedica,
+Whistler Medical Aesthetics and Clinique Chloé among the named acquisitions. Its launch
+release promises members "their own identity and **clinical** autonomy" — clinical, not
+commercial — alongside a shared e-commerce platform and a **cross-clinic loyalty
+programme**. That last one matters more than the site count: a group-run loyalty scheme
+means the lapsed-patient recall channel is already owned above the clinic, which is exactly
+what we sell. Two rows belonged to it, both already parked at C on the tell alone and now
+disqualified: 480 Skin Method (Vancouver) and 547 Bella Sante MD (Saskatoon). Nothing graded
+A or B was affected, because the tell caught them both at sourcing.
+
+**The lesson is that the tell works, so chase it the same day.** Both rows sat parked for a
+sweep waiting on this, and a parked row is a row nobody is selling to.
+
+**A clean negative worth keeping, so it is not re-run:** Artisan Aesthetic Clinics is an
+unrelated 14-location Australian chain whose suburbs overlap our AU targets almost exactly —
+Balmain, Bulimba, Maroochydore, Cairns, Toowoomba, Mosman, Robina, Gungahlin. We hold
+independents at three of those addresses (51 Suede Clinic, 335 Glo Haus, and three
+Maroochydore rows). Artisan runs its *own* branded clinics at those suburbs, so the overlap
+is market geography, not group membership, and none of our rows is an Artisan clinic.
+**Overlapping suburbs are not the parent-group tell; a loyalty link to another company's
+domain is.**
+
+Both groups, and Crafted Aesthetics (six staffed Montana locations plus a training arm,
+behind a Cloudflare-obfuscated address), are now in the brief's `blocked_domains` list.

@@ -65,6 +65,21 @@ because the standard may widen again and re-finding a clinic costs more than kee
 1. **Pass `blocked_domains` for the directory farms first** — whatclinic, fresha, doctify,
    bookwell, top4, and the job boards. Before blocking them, nine of ten results are
    directory pages and no clinic domain surfaces at all. This is the single biggest lever.
+   **Block these known groups in the same list**, all resolved and all disqualified, so
+   nobody spends the fetches again: `voscollection.com` and `medspapartnersinc.com` (Vos
+   Collection, the May 2026 rebrand of MedSpa Partners Inc — PE-backed, acquisitive, 35+
+   clinics across the US and Canada, with a cross-clinic loyalty programme that already
+   owns the recall channel we sell); `artisanclinics.com` (Artisan Aesthetic Clinics, a
+   14-location Australian chain whose suburbs — Balmain, Bulimba, Maroochydore, Cairns,
+   Toowoomba, Mosman, Robina, Gungahlin — overlap our AU targets almost exactly, so it
+   surfaces constantly); and `craftedaesthetics` (six staffed Montana locations plus a
+   training arm).
+
+   **A parent-group loyalty link in the footer is the tell**, and it is the only one either
+   of the Vos clinics gave. A loyalty programme branded for a company other than the clinic
+   means marketing is decided above the clinic. Chase it every time you see one.
+   Overlapping suburbs are not the same tell: Artisan runs its own branded clinics at those
+   addresses, so our rows there are independents in the same market, not group members.
 2. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
    "contact", rather than one city at a time.
 3. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
