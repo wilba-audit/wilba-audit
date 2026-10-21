@@ -43,6 +43,14 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    single address), one travelling nurse who lists every town she visits, and injectors
    renting a room inside a host salon. In all three, one person still decides marketing,
    so they qualify. Conversely a three-site group run by a marketing manager does not.
+
+   **And the inverse: the practitioner collective.** One address hosting several
+   independent injectors, each with her own brand and her own booking account, is
+   *several* decision-makers at one address — the mirror image of the room-renting case.
+   The founder may control only a fraction of the lapsed list, so what we would be
+   selling is not hers to sell. That fails this must-have. The tell is a team page where
+   each practitioner has a separate business name, a separate booking link or a separate
+   email address. Found at a Hamilton clinic on 21 Oct 2026.
 4. **Established.** A real review history, and enough trading time to have accumulated
    roughly 300+ lapsed patients. A brand-new clinic has no list.
 5. **A published email address, read off their own page.** Never constructed, never
@@ -75,12 +83,20 @@ address outright and settles clinics whose own site says nothing; in Scotland it
 clinic's own **privacy policy** — never the footer, which credits the web designer. An LLP counts: the ICO treats it as a corporate
 subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
-**Three things that look like a published address and are not.** A website-builder
+**Four things that look like a published address and are not.** A website-builder
 placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
 shipped inside a directory site's QR code image, which is directory data rather than
-something the clinic published. And an address served in a page's Open Graph meta tags
-while the visible one is obfuscated. None of the three may be recorded, and none is
-recoverable by opening the page in a browser.
+something the clinic published. An address served in a page's Open Graph meta tags
+while the visible one is obfuscated. And **the owner's own typo** — one AU clinic's terms
+page printed a mailbox at `.com.ay`, a domain that does not exist. None of the four may be
+recorded, and none is recoverable by opening the page in a browser.
+
+**A mismatched domain is not a typo, and must not be "corrected".** Where a clinic
+publishes an address on a domain other than its website — `info@sccclinic.com.au` on a site
+at `sccosmeticclinic.com.au` — record it exactly as the page prints it. Editing it to match
+the website is fabrication even when the guess would probably work. Seventeen of the 76 rows
+added on 21 Oct carried some form of mismatch, so this is common rather than exceptional.
+Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
 
 ## Strong signals — grade A
 
@@ -108,6 +124,12 @@ Note what changed from 22 Sep: plastic surgery, dermatology and multi-site group
 longer a virtue — owner-operated is.
 
 ## Where to find them, in order
+
+**Read the privacy policy before giving up on a clinic.** Homepage, then the About-page
+footer, then `/contact`, **then the privacy policy** — which is where one Moncton clinic
+published the only address it publishes anywhere, and it would otherwise have been filed
+unreachable. Outside the AU/NZ, Canadian and UK screens this costs an extra fetch; inside
+them the consent screen already takes you to that page, so it is nearly free.
 
 **AU metros first:** Sydney, Melbourne, Brisbane, Gold Coast, Perth. Google Maps by metro,
 filtering for independents with real review histories; Instagram for the owner-injector's

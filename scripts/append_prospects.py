@@ -38,6 +38,11 @@ BANNED = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|
                     r'anti-?wrinkle|wrinkle[- ]relax|tox|toxin|rejuran|profhilo|sculptra|'
                     r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
 PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|£|\d+\s*%|\bper cent\b)', re.I)
+COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
+COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
+               'New Zealand': 'NZ', 'United Kingdom': 'UK', 'Great Britain': 'UK',
+               'England': 'UK', 'Scotland': 'UK', 'Wales': 'UK', 'Ireland': 'IE'}
+
 PLACEHOLDER = re.compile(r'(filler@godaddy|contact@wix|example\.com|yourdomain|'
                          r'\[email\s*protected\])', re.I)
 
@@ -91,6 +96,16 @@ def main():
                 why = 'opening angle contains a price or percentage'
             if why:
                 rejected.append((cn or '(unnamed)', why)); continue
+
+            country = (r.get('country') or '').strip()
+            if country in COUNTRY_MAP:
+                # Workers write country names; the file uses two-letter codes, and the
+                # consent regimes (AU/NZ, CASL, PECR) are keyed off the code.
+                r['country'] = country = COUNTRY_MAP[country]
+            if country and country not in COUNTRY_OK:
+                rejected.append((cn, 'country %r is not one of %s'
+                                 % (country, ', '.join(sorted(COUNTRY_OK)))))
+                continue
 
             fit = (r.get('icp_fit') or '').strip()
             flag = (r.get('fit_flag') or '').strip()

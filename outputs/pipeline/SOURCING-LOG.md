@@ -162,3 +162,47 @@ One went the other way. 197 LifeSculpt stays C, but for the right reason: its ow
 and scale signals admit to four Illinois sites plus three more in California and Utah. The
 recorded reason had been the missing booking platform, which hid a real must-have failure
 behind a non-reason.
+
+## 21 Oct 2026 — three markets, and what each one settled
+
+**76 rows from three workers, 66 of them sendable**, on about 39 searches and 147 fetches
+between them. Three workers, not four, and every one stopped at supply rather than budget —
+which is the first time that has happened and is the clearest evidence yet that three is the
+right number.
+
+**A clinic with no website at all is not a near miss.** Three regional Australian clinics
+surfaced as nothing but a `*.gettimely.com` booking subdomain — AGE aesthetics in Ballarat,
+Alchemy Skin in Bunbury, The Cosmetic Lounge in Wagga. Timely has not only won regional
+bookings, for a slice of the market it has replaced the website. These clinics can never
+satisfy must-have 5, because there is no page for anyone to open. File them as structurally
+unreachable and stop spending fetches on them.
+
+**The Canadian consent screen is a recording cost, not a filter.** Across two sweeps it has
+disqualified exactly zero clinics: 29 rows, nine near misses and twelve privacy policies read
+in full, without a single refusal notice. Budget it as paperwork. **The real Canadian filters
+are no published owner and no published trading history** — of nine Saskatchewan and Atlantic
+rows, only two carried any trading-history proxy at all, which is why six say "established not
+verified" out loud.
+
+**Toronto's core was written off on 20 Oct for the wrong reason.** Quoting the neighbourhood
+names as alternates (`"King West" OR "Yorkville" OR …`) alongside `"info@"` on a
+directory-blocked query returned five independent Yorkville clinics in one search. The gap was
+the query, not the market. **Before concluding a metro is empty, vary the query shape once** —
+neighbourhood alternates, and the literal string `"info@"`.
+
+**The secondary-city tier holds up, and there is a reason.** The US worker's accept rate against
+clinics that failed on the address alone was roughly 2:1, against about 1:1 on 19–20 Oct and
+about 1:2 in the September big metros. The cause is structural: there is no national roll-up to
+clear out of the results, so blocking the directory farms is sufficient and no chain filtering is
+needed. Bendigo alone out-produced Townsville, Darwin, Launceston, Ballarat and Mandurah combined.
+
+**An owner who publishes anything publishes herself.** Five regional AU rows carry the owner's
+own first-name mailbox (`jo@`, `terry@`, `lianna@`, `chantelle@`). That partly reverses the
+19 Oct finding that a strong owner signal predicts no published address, and these are better
+than `info@`: no gatekeeper.
+
+**Dry holes, so nobody sweeps them again:** Darwin (third sweep running, nothing), Caloundra,
+Eugene OR (its three best clinics publish no address — that market needs a phone call, not
+another search), Quebec City proper (five clinics, all graded C, the only usable Quebec rows
+being in Lévis), Fredericton (no independent surfaced at all), and Leslieville in Toronto.
+Bend OR is under-researched rather than thin — four unopened names were left there.
