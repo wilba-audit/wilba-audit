@@ -125,3 +125,40 @@ the commit did not contain. Use `with open(...) as f:` and re-read the file befo
 Workers disagree about which field holds the A/B/C grade — two put the letter in `fit_flag`
 and prose in `icp_fit`, which would have made 39 rows invisible to the drafting script. Find
 the letter wherever it is rather than trusting the key.
+
+## The copy rules apply to rows already in the file — 21 Oct 2026
+
+Fifty rows that were ready to send carried a price, a discount percentage or a
+prescription-medicine brand name inside `opening_angle` — the field the opener is built from.
+The row validator has refused these since the day it was written, so every row added after it
+was clean; the fifty all predate it. **A rule added to the validator protects new rows and
+does nothing for the hundreds already in the file.** Whenever a rule changes, scan the whole
+file for it once, the same way the chain scan is now a standing step.
+
+`opening_angle` is the field that matters here because it is already phrased as copy and a
+drafter can lift it whole. **The research fields keep their figures on purpose** —
+`dormant_lead_signal`, `scale_signals` and `price_point` are what the angle gets built *from*,
+and the numbers are the evidence. They must never be pasted into a message verbatim, and the
+sending side has been told so.
+
+Rewriting these is not deletion: the mechanism is the whole value of an angle, and it survives
+without the number. "Banked credit that never expires." "A rollover window with a date on it."
+"A consult fee credited only on the day." Where a clinic's own promotion was named after a
+medicine, the name goes and the shape stays — a recurring weekly injectables promotion.
+
+## Two non-must-haves were parking good rows — 21 Oct 2026
+
+Seventeen rows sat at grade C because no booking platform could be named, or because the clinic
+has a single site. **Neither is a must-have under v2.** A nameable practice system is a grade-A
+*signal*, and one to four sites *qualifies* — the preference for multi-site groups belonged to
+the 22 Sep standard and died with it. The notes had been honest ("graded C on CRM only"), which
+is the only reason this was recoverable: **say which must-have a row fails, by number, or the
+reason cannot be audited when the standard moves.**
+
+Seventeen sendable rows for no searches and no fetches. That is a better return than any
+sourcing run has produced, and it came from reading the file rather than the web.
+
+One went the other way. 197 LifeSculpt stays C, but for the right reason: its own city field
+and scale signals admit to four Illinois sites plus three more in California and Utah. The
+recorded reason had been the missing booking platform, which hid a real must-have failure
+behind a non-reason.

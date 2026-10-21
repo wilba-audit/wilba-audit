@@ -135,9 +135,28 @@ def main():
     # message claiming a change the commit did not contain
     after = list(csv.DictReader(open(PIPELINE)))
     print('pipeline now %d rows' % len(after))
-    bad = [r['id'] for r in after
-           if r['icp_fit'].strip().lower() in ('a', 'b') and not r['contact_email'].strip()]
+    sendable = [r for r in after if r['icp_fit'].strip().lower() in ('a', 'b')]
+    bad = [r['id'] for r in sendable if not r['contact_email'].strip()]
     print('sendable rows with no email address: %d%s' % (len(bad), (' ' + str(bad)) if bad else ''))
+
+    # The copy rules apply to every sendable row, not just the ones added today.
+    # Fifty rows written before this validator existed carried a price or a
+    # medicine name into opening_angle, the field the opener is built from, and
+    # only a scan of the whole file found them.
+    dirty = [r['id'] for r in sendable
+             if BANNED.search(r['opening_angle'] or '') or PRICE.search(r['opening_angle'] or '')]
+    print('sendable rows whose opening_angle breaks the copy rules: %d%s'
+          % (len(dirty), (' ' + str(dirty)) if dirty else ''))
+
+    # A site count the row itself admits to, above the one-to-four must-have.
+    chain = re.compile(r'\b(\d+)\s*(?:sites|locations|clinics)\b', re.I)
+    many = []
+    for r in sendable:
+        blob = ' '.join([r['city'], r['scale_signals'], r['notes']])
+        if any(int(m.group(1)) >= 5 for m in chain.finditer(blob)):
+            many.append(r['id'])
+    print('sendable rows admitting to five or more sites: %d%s'
+          % (len(many), (' ' + str(many)) if many else ''))
 
 
 if __name__ == '__main__':
