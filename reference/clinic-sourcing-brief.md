@@ -80,14 +80,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    means marketing is decided above the clinic. Chase it every time you see one.
    Overlapping suburbs are not the same tell: Artisan runs its own branded clinics at those
    addresses, so our rows there are independents in the same market, not group members.
-2. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
+2. **Screen the treatment menu before you spend a fetch on the privacy policy.** The consent
+   screen has not disqualified a single clinic in Australia, New Zealand or Canada across
+   four sweeps and more than twenty policies read in full — not one site refuses unsolicited
+   commercial email. It is a recording cost, not a filter, so it must still be done and
+   written down, but it should be the *last* thing you do on a clinic rather than an early
+   one. What actually disqualifies clinics in those markets is the menu: skin cancer checks,
+   mole checks, vein work or minor surgery alongside the aesthetics, which fails the cash-pay
+   must-have outright. Five of seven New Zealand rule-outs on 22 Oct failed that way, because
+   a small town cannot support a pure injectables menu. Read the menu first and you stop
+   spending policy fetches on clinics that were never going to qualify.
+3. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
    "contact", rather than one city at a time.
-3. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
+4. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
    ("contact us email locations membership"). Search is US-weighted, so a brand-name search
    outside the US returns overseas spam — a Cambridge query once returned Cambridge, Ontario.
-4. **Read the homepage and About-page footers before `/contact`.** `/contact` has been worse
+5. **Read the homepage and About-page footers before `/contact`.** `/contact` has been worse
    than the homepage in two consecutive US sweeps.
-5. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
+6. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
    learned, but it works indirectly: the phrase returns vendor marketing blogs that outrank
    every clinic. Its value is recognising a bank once you are on a clinic's own site. It
    returns nothing useful in Australia or New Zealand, where weekly-payment memberships and
