@@ -72,6 +72,15 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    because UK footers name the web designer instead. No company identity anywhere means
    grade C with "sole trader not verified" in `notes`.
 
+**How to search Companies House, because the obvious way does not work.** The plain name
+search ranks results **alphabetically rather than by relevance** — "facial perfection"
+returned 1,745 matches with the clinic nowhere in the first twenty. Use the **advanced
+search** with `companyNameIncludes` plus `registeredOfficeAddress` plus
+`companyStatus=active`, and run it **once per town rather than once per clinic**: it returns
+every candidate entity in that town with its incorporation date, which answers must-have 8
+and must-have 4 together for a whole market in a single fetch. Do not try SIC codes without
+a name filter — that returned 108 paginated results and bought nothing.
+
 **Where to find a UK or Irish company identity, in order.** Go to the registers first and
 the clinic's own site last — that is the reverse of what seems natural, and it is what the
 20 Oct run established: twelve clinics were resolved in 28 calls without reading a single
@@ -90,6 +99,13 @@ something the clinic published. An address served in a page's Open Graph meta ta
 while the visible one is obfuscated. And **the owner's own typo** — one AU clinic's terms
 page printed a mailbox at `.com.ay`, a domain that does not exist. None of the four may be
 recorded, and none is recoverable by opening the page in a browser.
+
+**Two more things that are not a published company identity or address.** A company number
+or name appearing inside a **Fresha booking URL slug** proves the entity exists but is not a
+publication by the clinic, so it does not satisfy must-have 8 on its own. And an email
+address printed as **visible link text but wired to a `tel:` placeholder** — the text was
+genuinely published and read verbatim, so it is recordable, but record the caveat: whoever
+built the page never tested the link, which is a hint the mailbox may be unattended.
 
 **A mismatched domain is not a typo, and must not be "corrected".** Where a clinic
 publishes an address on a domain other than its website — `info@sccclinic.com.au` on a site

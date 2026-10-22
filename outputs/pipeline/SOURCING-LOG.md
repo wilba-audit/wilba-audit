@@ -236,3 +236,63 @@ domain is.**
 
 Both groups, and Crafted Aesthetics (six staffed Montana locations plus a training arm,
 behind a Cloudflare-obfuscated address), are now in the brief's `blocked_domains` list.
+
+## 22 Oct 2026 — New Zealand, regional Australia, UK secondary towns
+
+**82 rows, 52 sendable**, on about 64 searches and 224 fetches across three workers. All three
+stopped on supply rather than budget for the second run in a row.
+
+**A claim in this log was wrong, and the correction matters.** It said the two UK
+qualifications were "nearly anti-correlated" — that clinics printing a company identity tend
+not to publish an address. They are not. All eight clinics that printed a company identity on
+their own site also published a readable address. **The company screen is a question about
+legal form, not about how tidy a site is**, and there is no reason the two should correlate.
+The original observation came from a single sweep of twenty and was noise.
+
+**The Companies House technique, which is the biggest lever found in the UK.** The plain name
+search ranks alphabetically rather than by relevance, so a common clinic name returns
+thousands of matches with the clinic nowhere in the first twenty. The advanced search with
+`companyNameIncludes` + `registeredOfficeAddress` + `companyStatus=active`, run **once per
+town rather than once per clinic**, returns every candidate entity in that town with its
+incorporation date — answering the company screen and the "established" must-have together for
+a whole market in one fetch. Pass rate 45%, against 40% on 19 Oct. Twenty-nine UK rows for
+fifteen searches and no privacy policies read at all. Do not try SIC codes without a name
+filter: 108 paginated results, nothing gained.
+
+**"Produced nothing" has twice meant "the query was wrong".** 19 Oct recorded Mackay and
+Rockhampton as dry; both produced on 22 Oct once the *local* groups were blocked by name —
+`divinemedical.com.au` and `pacificplasticsurgery.com.au` owned the Bundaberg and Hervey Bay
+result pages, and blocking them surfaced five independents in one search. 20 Oct recorded
+Toronto's core as empty; it produced five clinics on 21 Oct once the query shape changed. The
+rule now: **a dry hole is only a dry hole once the query has been varied, and the variation to
+try is blocking whatever local group owns the results.**
+
+**The parent-group tell has a second form in Australia: a reception mailbox on the group's
+domain.** A Devonport clinic publishes `skinrec@myclinicplus.com.au` — the domain mismatch
+*was* the disclosure. But a mismatch is sometimes just the owner's other brand, so read the
+page header before concluding either way. One Queensland clinic's privacy policy sits on a
+second domain the owner also runs, and publishes the Director's own mailbox, which appears
+nowhere on the clinic site.
+
+**Mismatched mailbox domains are now the norm rather than the exception** — 9 of 25 Australian
+rows, 6 of 28 in New Zealand, 3 of 29 in the UK. The smaller the town, the likelier it is the
+owner's personal mailbox (`bigpond.com`, `icloud.com`), and those are better targets than
+`info@` because there is no gatekeeper.
+
+**Dry holes, documented so nobody sweeps them again:** Arrowtown (no aesthetics clinic exists
+there at all), Taupo, Rotorua, Johnsonville, Karori and Petone in New Zealand; Burnie, Albany,
+Morwell and standalone Armidale in Australia; Blackpool, Swansea, Derby, Peterborough, Ipswich,
+Gateshead, Bath and Inverness in the UK. **Unresolved rather than dry, and each one browser
+visit from settling:** Devonport (two best sites robots-disallowed), Freya Aesthetics in
+Rotorua, Newcastle Skin Clinic in Gateshead, pHskin in Stoke.
+
+**Depth left:** coastal Queensland only — Gladstone, Emerald, Airlie Beach, Bowen, Maryborough
+and Gympie all surfaced as catchment on other clinics' own pages and are unswept. Inland New
+South Wales, Tasmania outside Hobart and Launceston, and Western Australia outside Perth are
+effectively worked out at about one row per town. The untried UK rescue route is CQC, Healthcare
+Improvement Scotland and the ICO register, which no worker has needed yet.
+
+**Best clinics we cannot reach at all, for a channel that is not email:** Nude Aesthetics
+(Mackay and Bowen) — named founder, memberships, non-expiring gift cards, two sites, no email
+anywhere, and a browser will not help. Then LUSH Skin & Laser (Shepparton), and Newcastle Skin
+Clinic, which the UK worker called the best clinic in its sweep.
