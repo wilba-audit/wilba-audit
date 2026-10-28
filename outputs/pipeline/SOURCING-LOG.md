@@ -385,3 +385,39 @@ only aesthetics clinic is a named acquisition of the PE-backed group disqualifie
 robots-disallowed and both the only real candidate in their town; Skin Haven Whitsundays and Mel
 Hornery Cosmetics in Moranbah, which publish no email at all; and in Kentucky, Luxe Lounge and
 Beautiful You — that state's route in is a phone call.
+
+## Re-reading five old addresses — 28 Oct 2026
+
+Five rows from the 20–23 Sep batch carried `email_source` of "published on site": no page, no
+date, and no page named in notes either. They were held and re-checked. **Four of five
+confirmed, one unreadable, and the check paid for itself three times over** — in twenty
+fetches it corrected facts that had been wrong in the file for five weeks.
+
+- **M1 Med Beauty is two sites, not an unspecified "Australia"** — Sydney and Melbourne, both
+  addresses published. Still inside the one-to-four must-have, but the row had no site count at
+  all, which is must-have 3 unanswered.
+- **Two clinics now name a lead clinician** where the row said none: Dr Eugene Green at Dr Green
+  Cosmetic Group, Dr Tammy Tai as Director at Dr Salon. Sites change, and a row written five
+  weeks ago is a snapshot, not a fact.
+- **Three of the four publish no privacy policy at all.** Recorded plainly rather than left to
+  imply one was checked.
+- **Suede Clinic could not be re-read: robots-disallowed, six pages refused, including
+  `/robots.txt` itself.** That is not Cloudflare — a person opening the site in a browser sees
+  it normally, which makes this the best browser-visit candidate in the pipeline. The one page
+  that did fetch has its email field blank, so the old address is not confirmed and the row
+  stays held.
+
+**The general lesson: a row is a snapshot of a page on a date, and the date is what makes it
+one.** That is why must-have 5 asks for the URL and the date, and it is not bookkeeping — the
+provenance is also the only way to tell a stale row from a wrong one. Rows whose
+`email_source` names a page and a date can be re-verified cheaply; rows that say "published on
+site" cannot be distinguished from guesses without re-doing the work.
+
+**Two grading calls worth recording, both made on flags the worker surfaced rather than
+smoothed over.** Dr Green's Toorak service-area page has a meta description reading "Cosmetic
+surgery & Injections Treatments" and a URL slug of `/cosmetic-surgery-toorak/`, while the body
+copy and the whole treatment menu are explicitly non-surgical. Graded B and sendable, because
+the menu is the screen the brief says to trust, with the surgery question flagged for the first
+call. And Dr Salon lists "Moles and Skin Tags" among its concerns with no description of what
+is offered, plus a skin-surgery certification cited as a credential rather than a service: two
+soft flags, neither a clear cash-pay fail, both written into the row.
