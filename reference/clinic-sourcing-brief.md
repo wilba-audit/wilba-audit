@@ -73,7 +73,8 @@ because the standard may widen again and re-finding a clinic costs more than kee
    14-location Australian chain whose suburbs — Balmain, Bulimba, Maroochydore, Cairns,
    Toowoomba, Mosman, Robina, Gungahlin — overlap our AU targets almost exactly, so it
    surfaces constantly); and `craftedaesthetics` (six staffed Montana locations plus a
-   training arm).
+   training arm); and `whistlermedicalaesthetics.com`, a named Vos acquisition and the only
+   aesthetics clinic in Whistler, which makes that town structurally closed rather than thin.
 
    **A parent-group loyalty link in the footer is the tell**, and it is the only one either
    of the Vos clinics gave. A loyalty programme branded for a company other than the clinic
@@ -90,14 +91,20 @@ because the standard may widen again and re-finding a clinic costs more than kee
    must-have outright. Five of seven New Zealand rule-outs on 22 Oct failed that way, because
    a small town cannot support a pure injectables menu. Read the menu first and you stop
    spending policy fetches on clinics that were never going to qualify.
-3. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
+3. **Fetch one directory index per metro deliberately, as a source of names.** Blocking the
+   directory farms keeps them out of *search results*, where they crowd out clinic domains.
+   That is not a reason never to open one: a directory index fetched on purpose is a list of
+   clinic names to then research on their own sites, and one such fetch in Montreal produced
+   34 independents nobody had opened. Block them in the query, read one on purpose. Never
+   take an address off a directory page — only the name.
+4. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
    "contact", rather than one city at a time.
-4. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
+5. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
    ("contact us email locations membership"). Search is US-weighted, so a brand-name search
    outside the US returns overseas spam — a Cambridge query once returned Cambridge, Ontario.
-5. **Read the homepage and About-page footers before `/contact`.** `/contact` has been worse
+6. **Read the homepage and About-page footers before `/contact`.** `/contact` has been worse
    than the homepage in two consecutive US sweeps.
-6. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
+7. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
    learned, but it works indirectly: the phrase returns vendor marketing blogs that outrank
    every clinic. Its value is recognising a bank once you are on a clinic's own site. It
    returns nothing useful in Australia or New Zealand, where weekly-payment memberships and
