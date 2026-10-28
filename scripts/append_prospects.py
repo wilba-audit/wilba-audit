@@ -90,6 +90,10 @@ def main():
                 why = 'email already in the pipeline'
             elif not src:
                 why = 'no email_source - we cannot say where the address was read'
+            elif not re.search(r'20\d\d', src):
+                # Five rows from the earliest batch said only "published on site". The
+                # address was probably fine, but probably is not what we send on.
+                why = 'email_source names no date - must-have 5 wants the URL and the date'
             elif BANNED.search(angle):
                 why = 'opening angle names a prescription medicine or treatment category'
             elif PRICE.search(angle):
@@ -172,6 +176,14 @@ def main():
             many.append(r['id'])
     print('sendable rows admitting to five or more sites: %d%s'
           % (len(many), (' ' + str(many)) if many else ''))
+
+    # Provenance is the guarantee the whole list rests on, so check it over the whole
+    # file: the page may be named in email_source or in notes, but it must be somewhere.
+    url = re.compile(r'https?://|\b[\w-]+\.(?:com|net|org|au|nz|ca|uk|ie)\b', re.I)
+    thin = [r['id'] for r in sendable
+            if not url.search(r['email_source'] or '') and not url.search(r['notes'] or '')]
+    print('sendable rows naming no page for the address: %d%s'
+          % (len(thin), (' ' + str(thin)) if thin else ''))
 
 
 if __name__ == '__main__':
