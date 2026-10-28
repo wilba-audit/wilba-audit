@@ -104,7 +104,17 @@ because the standard may widen again and re-finding a clinic costs more than kee
    outside the US returns overseas spam — a Cambridge query once returned Cambridge, Ontario.
 6. **Read the homepage and About-page footers before `/contact`.** `/contact` has been worse
    than the homepage in two consecutive US sweeps.
-7. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
+7. **Fetch the device and skincare makers' "find a clinic" locators.** Two fetches of the
+   Exomide and Procell locators produced seven in-market Queensland clinics that 28 searches had
+   never surfaced. A manufacturer's locator is its list of the clinics that buy its professional
+   line, which is a far better filter than any directory: stocking a professional device line
+   means an operating aesthetics practice. Re-fetch Exomide with an `offset`, because it
+   truncates. Take only names from a locator, never an address.
+8. **Read the phone area code before the address, to catch the wrong town.** "Emerald Cosmetic
+   Clinic" is in Terrigal NSW, not Emerald QLD; "Skinsense" ranks for Warwick QLD and sits in
+   Warwick WA. Same-name towns across states are common in Australia and the area code settles it
+   faster than the address does.
+9. The **"wallet" / "bank" / "vault" plus a metro name** search works in the US, where it was
    learned, but it works indirectly: the phrase returns vendor marketing blogs that outrank
    every clinic. Its value is recognising a bank once you are on a clinic's own site. It
    returns nothing useful in Australia or New Zealand, where weekly-payment memberships and

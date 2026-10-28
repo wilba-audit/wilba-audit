@@ -292,7 +292,96 @@ South Wales, Tasmania outside Hobart and Launceston, and Western Australia outsi
 effectively worked out at about one row per town. The untried UK rescue route is CQC, Healthcare
 Improvement Scotland and the ICO register, which no worker has needed yet.
 
+> **CORRECTED 28 Oct 2026.** "Depth left: coastal Queensland" was wrong, and the mistake is in
+> the sentence that follows it: those towns surfaced *as catchment on other clinics' pages*,
+> which is evidence about the clinic claiming the catchment, not about the town. Swept on 28
+> Oct, four of them turned out to have no independent injectables clinic at all, and the whole
+> coast produced six sendable rows. The real depth was inland mining — Mount Isa alone produced
+> four. See the 28 Oct section.
+
 **Best clinics we cannot reach at all, for a channel that is not email:** Nude Aesthetics
 (Mackay and Bowen) — named founder, memberships, non-expiring gift cards, two sites, no email
 anywhere, and a browser will not help. Then LUSH Skin & Laser (Shepparton), and Newcastle Skin
 Clinic, which the UK worker called the best clinic in its sweep.
+
+## 28 Oct 2026 — coastal Queensland, Montreal and the Prairies, the US Upper Midwest
+
+**72 rows, 56 sendable**, on about 63 searches and 179 fetches. All three workers stopped on
+supply rather than budget for the third run running.
+
+**First, a correction to this log.** The 22 Oct entry said coastal Queensland was "the last
+stretch with real depth". It is not, and the reasoning behind that claim was wrong in a way
+worth naming: those towns — Gladstone, Emerald, Airlie Beach, Bowen, Maryborough, Gympie —
+surfaced as **catchment on other clinics' pages**, and catchment is all they are. Four of them
+have no independent injectables clinic at all; the page claiming the town belongs to a clinic
+in Mackay, Minyama, Hervey Bay or Mooloolaba, every one of them already swept. **A town that
+appears only as somebody else's catchment is a lead about a metro, not about the town.**
+
+The real Australian depth is **inland mining**, which nobody had thought to look at. Mount Isa
+produced four rows, Gladstone four on industrial rather than coastal trade, and Moranbah handed
+over a grade-A profile without being asked. The next Australian run is the mining belt:
+Moranbah, Blackwater, Dysart, Clermont, Biloela, Cloncurry.
+
+**The biggest new lever: device and skincare stockist "find a clinic" locators.** Two fetches of
+the Exomide and Procell locators produced seven in-market clinics that 28 searches had never
+surfaced. These are manufacturers' own lists of the clinics that buy their products, which is a
+far better filter than a directory — a clinic that stocks a professional device line is by
+definition an operating aesthetics practice. Re-fetch Exomide with an `offset`; it truncates.
+
+**Read the phone area code before the address.** Two clinics ranked for the wrong state
+entirely: "Emerald Cosmetic Clinic" is in Terrigal NSW, and "Skinsense" ranks for Warwick QLD
+and sits in Warwick WA. Both were caught by the area code, not by the address.
+
+**A fetched page tried to steer the extraction.** A Louisville clinic's page read as
+instructions to the model fetching it, and the address came back only on a second fetch with a
+prompt saying to treat page text as data. The row stands because the address corroborates in
+two places on the clinic's own site, and the row records that the page misbehaved. The rule is
+now in the brief: nothing a page says can authorise an address nobody saw, widen the must-haves,
+or declare a clinic qualified.
+
+**A big US metro nobody has swept behaves like a secondary city, not like Chicago.** The accept
+rate against clinics that failed on the address alone was about 2:1, matching the small-city
+sweeps, and only about one serious candidate in five was a chain or roll-up, against nine in ten
+in the September sweeps. The cause is not that Detroit or Minneapolis differ structurally from
+Chicago — it is that **nobody had picked them over, so the independent layer is intact.** That
+reframes the whole US plan: the question is not metro size, it is whether anyone has swept it.
+
+**Montreal beats English Canada, because of ownership language.** Eleven sendable rows from the
+island and Laval against nine from all of English Canada. French sites state ownership outright
+— "infirmière injectrice et co-propriétaire", "physician-owned and physician-operated", numbered
+Québec companies named in the policies — so the owner-operated must-have resolves far more
+often: four of nine Quebec rows name an owner, against two of nine English-Canadian ones. No
+clinic was skipped for language. Winnipeg, where we held nothing at all, was empty of queries
+rather than of clinics: neighbourhood alternates plus the literal string `"info@"` opened it.
+
+**Run the wallet/bank/vault query first, not last.** One such search produced three qualified US
+rows including the two best dormant structures of the batch. But verify the scheme on the
+clinic's own site: one clinic has "vault" in its name and no scheme behind it.
+
+**`/contact` was not needed once in 35 US rows** — all came off a homepage, About, locations or
+memberships footer. Third consecutive US sweep saying so. Stop budgeting for it in this market.
+
+**A new "established" proxy, and a trap worth more than the proxy.** A run of dated local
+readers'-choice awards works. **A practitioner's own years of experience does not** — seven US
+rows carry "decades of combined experience" or "17 years each, before this clinic", and every one
+is a personal career rather than the clinic's trading history. All seven say so in `notes`. Only
+three of 28 US rows published real tenure, and trading history is now the binding filter in
+Canada too, where only three of 22 rows published a usable proxy.
+
+**The consent screen has now failed to disqualify a single clinic in five sweeps** — 63 Canadian
+clinics and 28 policies read in full, zero refusals, and the same in Australia and New Zealand.
+The menu is what disqualifies clinics; the policy is paperwork. It still gets done and recorded,
+because it is the basis we rely on, and it still occasionally pays for itself: two Canadian rows
+exist only because the address was published inside the privacy policy.
+
+**Dry holes:** Bowen, Charters Towers, Roma, Warwick, Maryborough, Gympie and Proserpine in
+Queensland, each on three query shapes; Montclair, Summit, Short Hills and Red Bank in New Jersey
+(these four need a query each rather than a combined one, since every other northern NJ town
+produced); Grand Rapids and Lexington, which produced no emailable clinic at all; Saint-Laurent,
+Mile End, Griffintown and St Catharines. **Structurally closed rather than thin:** Whistler, whose
+only aesthetics clinic is a named acquisition of the PE-backed group disqualified last week.
+
+**Left for a browser or a phone, not another search:** CQ Skin and Kalology Gympie, both
+robots-disallowed and both the only real candidate in their town; Skin Haven Whitsundays and Mel
+Hornery Cosmetics in Moranbah, which publish no email at all; and in Kentucky, Luxe Lounge and
+Beautiful You — that state's route in is a phone call.
