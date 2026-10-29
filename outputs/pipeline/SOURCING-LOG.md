@@ -322,6 +322,16 @@ produced four rows, Gladstone four on industrial rather than coastal trade, and 
 over a grade-A profile without being asked. The next Australian run is the mining belt:
 Moranbah, Blackwater, Dysart, Clermont, Biloela, Cloncurry.
 
+> **CORRECTED 29 Oct 2026 — the mechanism was right and the cause was wrong. It is population,
+> not mining.** Swept the next day, Karratha (~17,000) behaved exactly like Mount Isa and gave
+> four rows, while the five Queensland coalfield towns under 10,000 produced nothing with a
+> website at all: at that size there is no competition because there is no market. And **Mount
+> Gambier — 27,000 people, timber rather than mining — produced three rows**, which breaks the
+> industry explanation outright. Broken Hill is the clean counter-example: a textbook isolated
+> mining town whose only aesthetics business is a day spa with no injectables, while a Sydney
+> practice flies in quarterly. **The rule is a population floor of roughly 15,000, wherever the
+> money comes from.** Nine of thirteen towns on the mining list produced nothing.
+
 **The biggest new lever: device and skincare stockist "find a clinic" locators.** Two fetches of
 the Exomide and Procell locators produced seven in-market clinics that 28 searches had never
 surfaced. These are manufacturers' own lists of the clinics that buy their products, which is a
@@ -421,3 +431,69 @@ the menu is the screen the brief says to trust, with the surgery question flagge
 call. And Dr Salon lists "Moles and Skin Tags" among its concerns with no description of what
 is offered, plus a skin-surgery certification cited as a credential rather than a service: two
 soft flags, neither a clear cash-pay fail, both written into the row.
+
+## 29 Oct 2026 — the mining belt, Texas and the mid-South, UK round two
+
+**60 rows, 34 sendable**, on about 72 searches and 200 fetches. One duplicate was caught by the
+validator rather than by a worker, which is what it is for.
+
+**The yields diverged sharply, and the reason is how picked-over each market is.** Texas and the
+mid-South gave 21 sendable from 24 rows. UK round two gave 8 from 27. The Australian mining
+belt gave 5 from 9. Australia is now genuinely worked out below the metros; the US is not.
+
+**A population floor of about 15,000 governs small-town Australia**, and it replaces the mining
+theory this log carried for a day — see the correction in the 28 Oct section. Nine of thirteen
+towns produced nothing. Broken Hill, a textbook isolated mining town, has no injectables
+business at all while a Sydney practice flies in quarterly.
+
+**In the South, the filter that bites is the surgeon, not the roll-up.** Ten rule-outs were
+plastic surgery or dermatology, and they owned the first result page in San Antonio, Amarillo,
+Jackson and Little Rock. Chains were only about one serious candidate in seven, and no national
+brand surfaced at all. The September sweeps taught us to budget for roll-ups; in the South,
+budget for the surgeon filter instead.
+
+**Cash-pay now out-filters the company screen even in Britain** — nine of twenty parked UK rows
+fail on mole checks, mole mapping, dermoscopy, vein work or minor surgery, against seven on the
+company test. Screening the menu first is no longer an AU/NZ/Canada rule. It is the rule.
+
+**McAllen and El Paso differ from the rest of the US in a specific way: the independent layer
+is intact but the publishing layer is not.** Three of four Rio Grande Valley addresses are
+personal Gmail accounts, two of them spelled differently from the clinic's own domain, and both
+metros market Instagram- and Spanish-first with websites thinner than the businesses behind
+them — one has Lorem Ipsum live, one prints neither email nor phone. Expect a personal mailbox
+and a mismatch there, and do not read either as a red flag.
+
+**Three standing techniques were corrected by the workers using them**, and all three are now
+fixed in the brief and the ICP rather than left as written:
+
+- The Companies House one-call-per-town search has two faults that produce confident wrong
+  answers: `companyNameIncludes` matches **whole words, not substrings**, so "aesthetic" misses
+  every "AESTHETICS" clinic, and the search **truncates at 20 results**, so in a town returning
+  77 a clinic can be paginated off page one and read as having no company. A no-match in a
+  20-of-many town is unresolved, not absent.
+- **The Exomide `offset` trick does not work.** Offsets of 6,000, 22,000 and 45,000 all ended at
+  the same entry, and three fetches went on proving it. Ask the first fetch to search the whole
+  page for your target towns instead. Only Exomide and Procell are static; the rest render
+  client-side.
+- **`/contact` is dead in the US** — fourth consecutive sweep, 59 consecutive addresses off a
+  homepage, About, locations or memberships footer. The **team page** is the better second
+  fetch, because it settles ownership and the address together.
+
+**A fourth way a site defeats a fetch, now in the brief as a taxonomy**: the client-side-rendered
+page returns 200 and a document head and nothing else, so unlike a refusal it looks like a
+successful fetch and **the fetch is spent before you know the page is empty**. Six of seventeen
+businesses opened in the Australian sweep could not be read, mostly this way. The taxonomy
+matters because it decides what to do next: Cloudflare obfuscation is unrecoverable and gets
+dropped, `robots_disallowed` and client-side rendering are both fine in a browser and belong on
+a human's list, and total silence needs a phone call.
+
+**The catchment warning paid off harder than the theory it was attached to.** Five of thirteen
+Australian towns are claimed by clinics in already-swept metros, and in four of them that metro
+clinic is the number-one result. Six such domains are now blocked by name, along with a regional
+West Texas group and seven UK directory farms.
+
+**Flagged rather than smoothed over, by the worker's own choice:** one Mount Gambier clinic's
+injectables are provided by a practitioner who also runs her own clinic in another state, which
+is a must-have 3 risk written into the row rather than resolved; and that worker marked its own
+inference about a linked closed clinic as uncorroborated, which is exactly the right way to
+leave it.

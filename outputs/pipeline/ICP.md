@@ -81,6 +81,25 @@ every candidate entity in that town with its incorporation date, which answers m
 and must-have 4 together for a whole market in a single fetch. Do not try SIC codes without
 a name filter — that returned 108 paginated results and bought nothing.
 
+Two faults in that search, both found the hard way on 29 Oct and both capable of producing a
+confident wrong answer:
+
+- **`companyNameIncludes` matches whole words, not substrings.** Searching `aesthetic` misses
+  every company named "AESTHETICS". Six calls were nearly wasted before the plural was tried.
+  Search both forms, or search the distinctive part of the clinic's name instead.
+- **It truncates at 20 results.** Bolton returned 77 matches, Colchester 38, Wigan 32 — so a
+  clinic can be paginated off the first page and read as having no company at all. One was
+  invisible exactly that way. **A no-match in a town that returned 20-of-many is unresolved,
+  not absent**, and the second call that settles it is a targeted search on the clinic's own
+  name. Only a no-match in a town whose full result set you actually saw means no company.
+
+Where Companies House genuinely comes up empty on a clinic worth having, the **CQC
+registered-provider record** names the legal entity outright and is still the untried route —
+no worker has needed it yet, and three good clinics are waiting on it. A **dissolved-company
+answer is itself a finding**: one clinic publishes two first-name mailboxes, reads as a
+partnership, and every company of its name is dissolved. That is a sole-trader-or-partnership
+answer, not an unresolved one.
+
 **Where to find a UK or Irish company identity, in order.** Go to the registers first and
 the clinic's own site last — that is the reverse of what seems natural, and it is what the
 20 Oct run established: twelve clinics were resolved in 28 calls without reading a single
@@ -99,6 +118,12 @@ something the clinic published. An address served in a page's Open Graph meta ta
 while the visible one is obfuscated. And **the owner's own typo** — one AU clinic's terms
 page printed a mailbox at `.com.ay`, a domain that does not exist. None of the four may be
 recorded, and none is recoverable by opening the page in a browser.
+
+**Tidiness predicts nothing, in either direction.** The company screen is a question about
+legal form, and it does not correlate with how organised a site looks. The only clinic in one
+sweep printing its own company number had placeholder links; the most polished site in that
+sweep — three priced membership programmes, a named nurse — had no company behind it at all.
+Do not skip a clinic because it looks too corporate, or chase one because it looks scrappy.
 
 **Two more things that are not a published company identity or address.** A company number
 or name appearing inside a **Fresha booking URL slug** proves the entity exists but is not a
