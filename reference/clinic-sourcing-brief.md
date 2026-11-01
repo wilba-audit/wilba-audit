@@ -75,6 +75,8 @@ because the standard may widen again and re-finding a clinic costs more than kee
    surfaces constantly); and `craftedaesthetics` (six staffed Montana locations plus a
    training arm); and `whistlermedicalaesthetics.com`, a named Vos acquisition and the only
    aesthetics clinic in Whistler, which makes that town structurally closed rather than thin.
+   Add `medspa-sanantonio.com` and `advancedskinmd.com`, two aggregator-style domains that
+   crowded out independents across the whole San Antonio ring on 1 Nov.
 
    **A parent-group loyalty link in the footer is the tell**, and it is the only one either
    of the Vos clinics gave. A loyalty programme branded for a company other than the clinic
@@ -98,15 +100,22 @@ because the standard may widen again and re-finding a clinic costs more than kee
    34 independents nobody had opened. Block them in the query, read one on purpose. Never
    take an address off a directory page — only the name.
 4. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
-   "contact", rather than one city at a time.
+   "contact", rather than one city at a time. **Leave the town names unquoted.** Measured on
+   1 Nov: six quoted town names returned **one** result, the identical query unquoted returned
+   **ten**. Quoting them reads as a demand that all six appear on one page, which almost
+   nothing satisfies.
 5. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
    ("contact us email locations membership"). Search is US-weighted, so a brand-name search
    outside the US returns overseas spam — a Cambridge query once returned Cambridge, Ontario.
 6. **In the US, stop fetching `/contact` altogether; fetch the team page instead.** Four
    consecutive US sweeps now say so — 59 addresses in a row came off a homepage, About,
    locations or memberships footer, and the two `/contact` fetches spent on 29 Oct produced
-   nothing new. **The team page is the better second fetch**, because it settles ownership and
-   the address together, and ownership is must-have 3. Outside the US `/contact` still earns
+   nothing new. **Budget the team or About page as an OWNERSHIP fetch, not an
+   address fetch** — corrected 1 Nov 2026, when six consecutive second fetches onto about and
+   team pages produced **zero** new addresses and settled ownership in every case. It is still
+   the right second fetch, because ownership is must-have 3 and nothing else establishes it,
+   but do not spend one hoping for an address the first page withheld: if the homepage and the
+   footers had no address, the team page will not have one either. Outside the US `/contact` still earns
    its place. The older advice follows, and still holds for every other market:
    **read the homepage and About-page footers before `/contact`.** `/contact` has been worse
    than the homepage in two consecutive US sweeps.
