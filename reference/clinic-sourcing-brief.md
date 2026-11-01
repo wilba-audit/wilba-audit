@@ -103,12 +103,20 @@ because the standard may widen again and re-finding a clinic costs more than kee
    "contact", rather than one city at a time. **Leave the town names unquoted.** Measured on
    1 Nov: six quoted town names returned **one** result, the identical query unquoted returned
    **ten**. Quoting them reads as a demand that all six appear on one page, which almost
-   nothing satisfies.
+   nothing satisfies. **Cap the stack at about four names and two modifiers.** Past that the
+   query collapses into something unrelated — two queries on 1 Nov came back with a massage
+   directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
+   is still thin. Unquoted and short beats long.
+   **Do not guess a privacy-policy path.** Three of four guessed `/privacy-policy` URLs
+   returned client errors on 1 Nov. Find the link on a page you have already fetched, or state
+   the consent finding for the pages you did read and say which those were.
 5. **Guess the clinic's likely domain and pass it as `allowed_domains`** with a generic query
    ("contact us email locations membership"). Search is US-weighted, so a brand-name search
    outside the US returns overseas spam — a Cambridge query once returned Cambridge, Ontario.
-6. **In the US, stop fetching `/contact` altogether; fetch the team page instead.** Four
-   consecutive US sweeps now say so — 59 addresses in a row came off a homepage, About,
+6. **In the US, stop fetching `/contact` altogether; fetch the team page instead.** Five
+   consecutive US sweeps now say so, and it is measured rather than impressionistic: two
+   `/contact` fetches on 29 Oct and five more on 1 Nov produced, between them, **not one
+   address the homepage would not have given** — 59 addresses in a row came off a homepage, About,
    locations or memberships footer, and the two `/contact` fetches spent on 29 Oct produced
    nothing new. **Budget the team or About page as an OWNERSHIP fetch, not an
    address fetch** — corrected 1 Nov 2026, when six consecutive second fetches onto about and
@@ -150,7 +158,7 @@ because the standard may widen again and re-finding a clinic costs more than kee
 WebFetch refuses a URL that has not appeared in a WebSearch result, so search before you
 fetch. `curl` is blocked.
 
-## Four ways a site defeats a fetch, and which ones a browser fixes
+## Five ways a site defeats a fetch, and which ones a browser fixes
 
 Knowing which is which decides whether a clinic is worth a human's time or should be dropped.
 
@@ -165,6 +173,11 @@ Knowing which is which decides whether a clinic is worth a human's time or shoul
   these fine. Six of seventeen businesses opened in one sweep could not be read, mostly this way.
 - **Total silence** — the site reads fine and simply publishes no address anywhere. This is the
   commonest US failure, and no browser helps. It needs a phone call or a direct message.
+- **A site-side error** — added 1 Nov, the fifth mode and the only one that is the clinic's own
+  fault. The host returns a client error and no content at all, on every path. Face & Beyond in
+  Turlock did this. Unlike client-side rendering there is nothing to render, so a browser is no
+  more likely to help than a fetch; treat it as a phone prospect and do not spend a second
+  fetch guessing another path.
 
 **Also block these, all catchment or group pages that own other towns' results:**
 `absolutecosmetic.com.au`, `absolutemakeover.com.au`, `utopiancosmetics.com.au`, `zecca.com.au`,

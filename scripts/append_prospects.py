@@ -39,6 +39,7 @@ BANNED = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|
                     r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
 PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|£|\d+\s*%|\bper cent\b)', re.I)
 MUSTHAVE = re.compile(r'must[- ]have\s*\d', re.I)
+OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
                'New Zealand': 'NZ', 'United Kingdom': 'UK', 'Great Britain': 'UK',
@@ -123,6 +124,25 @@ def main():
 
             fit = (r.get('icp_fit') or '').strip()
             flag = (r.get('fit_flag') or '').strip()
+            if fit.upper() in ('A', 'B') and country in ('AU', 'NZ'):
+                # The AU Spam Act and NZ UEMA screen is the one consent finding that cannot
+                # be reconstructed later from the row: it is a statement about what was NOT
+                # on the page, so if nobody wrote it down at the time, nobody can. Both
+                # findings have to be in notes in words - the address came off the clinic's
+                # own site, and the site carries no notice refusing unsolicited commercial
+                # email - or the row is not sendable. Checked here rather than trusted,
+                # because a worker reporting "consent OK" has told us nothing.
+                n = r.get('notes') or ''
+                have_own = OWN_SITE.search(n)
+                have_notice = re.search(r'unsolicited', n, re.I)
+                if not (have_own and have_notice):
+                    rejected.append((cn, 'AU/NZ row graded %s states %s - both consent '
+                                         'findings must be in notes, in words'
+                                     % (fit.upper(),
+                                        'neither consent finding' if not (have_own or have_notice)
+                                        else 'no "unsolicited" finding' if have_own
+                                        else "nothing about the clinic's own site")))
+                    continue
             if fit.upper() not in ('A', 'B', 'C') and flag.upper() in ('A', 'B', 'C'):
                 fit, flag = flag, fit
             if fit.upper() not in ('A', 'B', 'C'):
