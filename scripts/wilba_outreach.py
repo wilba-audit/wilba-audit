@@ -22,8 +22,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(ROOT, 'outputs/pipeline/clinic-pipeline.csv')
 LOG_PATH = os.path.join(ROOT, 'outputs/pipeline/send-log.json')
 
-# Cold domain warm-up. jess@wilba.ai has never sent anything, so volume ramps by
-# the number of days we have actually sent on, not by calendar date.
+# Cold domain warm-up: volume ramps by the number of days we have actually sent on,
+# not by calendar date.
+#
+# This comment used to assert that jess@wilba.ai had never sent anything. That stopped
+# being true on 15 Oct 2026, when the GoHighLevel thread sent email 1 to ten clinics,
+# and nothing here noticed for seventeen days because send-log.json did not exist and
+# an absent file reads identically to a file saying zero. The authoritative ledger is
+# the sending channel's own, outputs/pipeline/ghl/send-state.json on branch
+# claude/project-thread-ptytul; send-log.json here mirrors its send days so this ramp
+# does not restart from day 1 on a domain that is no longer cold. Two ledgers for one
+# domain is the actual defect, and unifying them belongs to the sending thread.
 RAMP = [(5, 5), (10, 10), (15, 15)]   # (through send-day N, daily cap)
 RAMP_MAX = 20
 

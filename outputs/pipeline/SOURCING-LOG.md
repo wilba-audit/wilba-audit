@@ -14,8 +14,30 @@ without the repo.
 ## Where the pipeline stands
 
 As of 1 Nov 2026: **852 rows, 583 ready to approach** — US 254, AU 168, CA 59, UK 58, NZ 42,
-IE 2. (It was 496 rows and 316 ready on 20 Oct.) **Nothing has ever been sent from it, and that
-has now been true for six weeks while the list nearly doubled.** The GoHighLevel thread holds every batch from
+IE 2. (It was 496 rows and 316 ready on 20 Oct.)
+
+**CORRECTION, 1 Nov 2026 — this log said repeatedly that nothing had ever been sent from the
+pipeline, and that was wrong.** Email 1 of the GoHighLevel sequence went to **ten clinics on 15
+Oct 2026** — ids 85, 86, 87, 88, 89, 93, 94, 96, 97 and 98 — recorded in `send-state.json` on
+branch `claude/project-thread-ptytul`. Those rows are now marked `Emailed 1` here; they had sat at
+`New` for seventeen days and were counted as unapproached in every runway figure this log quotes
+before today, including the 316 and the 541. Follow-ups are paused, so each of the ten has had
+exactly one email, sent under the **pre-v2 copy**, one day before the 16 Oct standard change.
+Two of the ten, 87 Epsom Skin Clinics and 96 Cityskin, are on the sending channel's skip list as
+ICP v2 failures, so they were approached and then ruled out.
+
+**Why this went unnoticed for seventeen days, because the mechanism matters more than the fact.**
+There are **two send ledgers for one domain**: the sending channel's `ghl/send-state.json`, which
+is authoritative, and `send-log.json` here, which drives this thread's warm-up ramp and **did not
+exist at all**. An absent ledger reads identically to a ledger saying zero, so `wilba_outreach.py`
+reported "send-day 1, cap 5/day, days sent so far 0" for a domain that was no longer cold, and the
+code comment asserted in so many words that jess@wilba.ai had never sent anything. Both are fixed,
+and `send-log.json` now mirrors the 15 Oct send day — but mirroring is a patch, not a fix. **One
+domain needs one ledger**, and unifying them belongs to the sending thread, which owns the sends.
+
+Everything else still holds, and it is the thing that matters: **575 of the 583 clinics on the
+current standard have never been contacted**, sending has been paused since 15 Oct, and it waits
+on Jess's sign-off on the v2 wording and nothing else. The GoHighLevel thread holds every batch from
 id 300 on until Jess approves the v2 copy, and sends are paused pending her word. The
 bottleneck has never been the list.
 
