@@ -92,10 +92,21 @@ confident wrong answer:
   invisible exactly that way. **A no-match in a town that returned 20-of-many is unresolved,
   not absent**, and the second call that settles it is a targeted search on the clinic's own
   name. Only a no-match in a town whose full result set you actually saw means no company.
+- **The near-miss match is the dangerous one** — added 1 Nov 2026, and the worker who found it
+  rates it above truncation, because truncation makes you miss a company while this one hands you
+  the wrong company and reads like a pass. "ELIXIR MEDICAL AESTHETICS" returned two companies of
+  that **exact** name, both registered in Scotland, against a clinic trading in Loughborough. A
+  name match on its own therefore proves nothing: **always pair `companyNameIncludes` with
+  `registeredOfficeAddress` for the clinic's own town**, and where the registered office sits in
+  another country, treat it as a different business until something ties the two together.
 
 Where Companies House genuinely comes up empty on a clinic worth having, the **CQC
-registered-provider record** names the legal entity outright and is still the untried route —
-no worker has needed it yet, and three good clinics are waiting on it. A **dissolved-company
+registered-provider record** names the legal entity outright. **Tried on 1 Nov 2026 and blocked
+by tooling, not by budget: CQC location pages return a client error to a fetch, and the ICO
+register is a POST form with no searchable URL.** So this route is not something to assign a
+worker again — it needs a person with a browser. The three clinics that have been waiting on it
+since 29 Oct are waiting on Jess, not on a sourcing run, and they should be carried on the
+browser-visit list rather than re-queued. A **dissolved-company
 answer is itself a finding**: one clinic publishes two first-name mailboxes, reads as a
 partnership, and every company of its name is dissolved. That is a sole-trader-or-partnership
 answer, not an unresolved one.

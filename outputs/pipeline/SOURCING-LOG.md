@@ -13,8 +13,9 @@ without the repo.
 
 ## Where the pipeline stands
 
-As of 20 Oct 2026: **496 rows, 316 ready to approach** — US 138, AU 106, UK 34, NZ 21, CA 16,
-IE 2. **Nothing has ever been sent from it.** The GoHighLevel thread holds every batch from
+As of 1 Nov 2026: **852 rows, 583 ready to approach** — US 254, AU 168, CA 59, UK 58, NZ 42,
+IE 2. (It was 496 rows and 316 ready on 20 Oct.) **Nothing has ever been sent from it, and that
+has now been true for six weeks while the list nearly doubled.** The GoHighLevel thread holds every batch from
 id 300 on until Jess approves the v2 copy, and sends are paused pending her word. The
 bottleneck has never been the list.
 
@@ -524,3 +525,56 @@ injectables are provided by a practitioner who also runs her own clinic in anoth
 is a must-have 3 risk written into the row rather than resolved; and that worker marked its own
 inference about a linked closed clinic as uncorroborated, which is exactly the right way to
 leave it.
+
+## 1 Nov 2026 — Australian outer-metro, northwest Arkansas, the Central Valley, UK round three
+
+64 rows, ids 789-852, 6 A / 34 B / 24 C. Ready to approach went 541 to 583. Four workers, each
+inside a 12-search and 45-fetch cap; three hit the fetch cap and none hit the search cap, which
+says the binding constraint is reading pages rather than finding them.
+
+**Northwest Arkansas is the best US ground we have found.** Six clinics opened, five published an
+address, and three of the run's four American A grades came from Bentonville and Rogers alone. It
+was never assigned before today — it surfaced on 29 Oct as a single out-of-market note. Sweep it
+properly next: Springdale, Fayetteville and Bella Vista are still untouched.
+
+**The San Antonio suburb ring is email-dead, and it is worth saying why that matters.** Nine
+clinics found across New Braunfels, Schertz, Helotes, Boerne and Stone Oak; eight publish no
+address at all. The ring is *rich* in exactly our signals — two genuine banked-credit schemes,
+three memberships, Moxie, Boulevard and Aesthetic Record, and one family-owned clinic trading
+since 1975 — so this is not a thin market, it is an unreachable one. It belongs on a phone or DM
+list. Do not send another fetch budget into it.
+
+**In California's Central Valley publishing, not supply, is the constraint — the worst ratio in
+this log.** Eleven clinics cleared the ICP and failed on the address alone, nine silent and two
+Cloudflare-hidden, against fifteen accepted: close to one lost for every one kept, where Texas ran
+two to one. One clinic, Ego Defined, publishes no email **and no phone** across three pages. The
+market also split the opposite way to expectation: the affluent inland south gave nine rows and
+the northern valley two, and **Visalia alone gave three — more than Fresno, Stockton, Modesto and
+Bakersfield combined.**
+
+**The UK finding reverses what this log said on 29 Oct, and it is structural rather than a
+sampling artefact.** Six of the fifteen UK rows parked today fail on **must-have 8 alone** — a
+company identity — against three on cash-pay. The 29 Oct sweep had concluded the opposite. The
+reason is that round three moved into smaller and more owner-shaped towns, and **the business
+structure that passes must-have 3 is the one that never incorporates**: a single owner-injector
+trading under her own name has no reason to form a limited company, and PECR then shuts us out of
+exactly the clinic v2 most wants. That tension is in the standard itself, not in the sourcing, so
+the UK will keep returning three sendable rows from eighteen until something changes. It is worth
+Jess knowing that the UK has a ceiling the other markets do not.
+
+The regulator route that was supposed to rescue those rows is **blocked by tooling** — CQC
+location pages error on a fetch and the ICO register is a POST form with no searchable URL. It
+needs a browser, so it is Jess's to do, not a worker's. Recorded in ICP.md where the route is
+described, so nobody assigns it again.
+
+**Three workers independently hit the same wall on stacked queries**, which is why the cap in the
+brief is now explicit: unquoted, and about four names with two modifiers. Quoted town names
+returned one result where the unquoted query returned ten; an over-long stack came back with a
+massage directory, a set of UK clinics on an Australian search, and a bare directory page. It cost
+the Perth outer ring and the whole southern half of the UK list.
+
+**Two smaller things worth keeping.** `Aesthetic Nurse Software` turned up four times in the UK and
+was never named in page text — always inferred from a booking URL — so it is the UK solo-injector
+default and the booking link is where to look for it. And the UK worker graded nothing A on
+purpose: three rows were A-shaped but it had spent no fetch on review volume, so it flagged them
+rather than upgrading them. That is the right call, and the right way round.
