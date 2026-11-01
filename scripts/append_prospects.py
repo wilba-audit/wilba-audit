@@ -38,6 +38,7 @@ BANNED = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|
                     r'anti-?wrinkle|wrinkle[- ]relax|tox|toxin|rejuran|profhilo|sculptra|'
                     r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
 PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|£|\d+\s*%|\bper cent\b)', re.I)
+MUSTHAVE = re.compile(r'must[- ]have\s*\d', re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
                'New Zealand': 'NZ', 'United Kingdom': 'UK', 'Great Britain': 'UK',
@@ -98,6 +99,15 @@ def main():
                 why = 'opening angle names a prescription medicine or treatment category'
             elif PRICE.search(angle):
                 why = 'opening angle contains a price or percentage'
+            elif (r.get('icp_fit') or '').strip().lower() not in ('a', 'b') \
+                    and not MUSTHAVE.search(r.get('notes') or ''):
+                # Found 1 Nov 2026: four rows had sat disqualified for a fortnight on the
+                # retired 22 Sep scale test, recoverable only because their notes recorded
+                # the test applied rather than a bare verdict. A parked row that says "not a
+                # fit" cannot be re-judged when the standard moves; one that names the number
+                # can be re-read in seconds.
+                why = ('parked row names no must-have by number - say which test it fails, '
+                       'or the reason cannot be audited when the standard moves')
             if why:
                 rejected.append((cn or '(unnamed)', why)); continue
 
@@ -184,6 +194,15 @@ def main():
             if not url.search(r['email_source'] or '') and not url.search(r['notes'] or '')]
     print('sendable rows naming no page for the address: %d%s'
           % (len(thin), (' ' + str(thin)) if thin else ''))
+
+    # Not a failure, a trend line. The early batches recorded their rule-outs in prose, and
+    # backfilling them is not worth the effort when most are plainly plastic surgery or
+    # chains. But this number should fall over time and never rise: every row parked from
+    # 1 Nov 2026 names its must-have, because the validator now refuses one that does not.
+    parked = [r for r in after if (r.get('icp_fit') or '').strip().lower() not in ('a', 'b')]
+    vague = [r['id'] for r in parked if not MUSTHAVE.search(r.get('notes') or '')]
+    print('parked rows predating the numbered-reason rule: %d of %d'
+          % (len(vague), len(parked)))
 
 
 if __name__ == '__main__':

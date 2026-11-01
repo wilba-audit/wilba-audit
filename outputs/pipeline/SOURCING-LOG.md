@@ -24,7 +24,7 @@ take action". It inverted the 22 Sep standard: owner-operated, injectables-led, 
 to four sites, and plastic surgery, dermatology, hospital groups and chains are now
 disqualifications where they used to be targets.
 
-## Two mistakes that keep recurring
+## Three mistakes that keep recurring
 
 **Auditing a list instead of the file.** The first v2 audit covered only the rows loaded into
 GoHighLevel, and the 16 Oct re-grade assumed the rest of that id range was therefore covered.
@@ -39,6 +39,33 @@ with an empty email address. Both scans have caught real errors.
 at all. Nothing could have mis-sent, because `wilba_outreach.py` filters them out as not
 contactable, but the grade was lying about the state of the list.
 `scripts/append_prospects.py` now refuses such a row, and re-runs the check after writing.
+
+**A disqualification that outlives its standard.** Found 1 Nov 2026. Four rows sat at status
+`Disqualified` with the same recorded reason: "solo practitioner / two practitioners, one site,
+below the $100k/mo scale proxies". That was the **22 Sep** test. ICP v2 retired it on 16 Oct and
+inverted it — owner-operated became must-have 3 and one site became a pass — so the reason those
+four rows were dropped had not been true for a fortnight. One of them, Dr Jodie in Camberwell,
+reads as a clean v2 fit on must-haves 1 through 4: injectables and threads, cash-pay, two
+practitioners on one site, fifteen years' trading and 186 reviews.
+
+This is the 21 Oct lesson again, and it is worth stating in the general form, because it has now
+arrived three times from three directions. **When the standard moves, the rows judged under the
+old one do not re-judge themselves, and `Disqualified` hides them better than grade C does.** A
+parked C row still gets read; a disqualified row reads as settled. So the sweep after a standard
+change has to cover the rule-outs as well as the acceptances — the acceptances are the ones
+everybody thinks of, because a wrongly-accepted row is the one that could embarrass us, but the
+wrongly-rejected rows are where the free sendable rows are.
+
+It also showed the whole-file copy scan has a blind spot in the same shape. The scan only covers
+**sendable** rows, so two of these four carried a price in `opening_angle` that no scan had ever
+looked at: a row promoted *into* sendability brings its old, never-inspected copy along with it.
+Both were rewritten to keep the mechanism and drop the figure. On 21 Oct the same gap bit from the
+other side, when eight rows upgraded mid-fix were missed by a scan that had already run.
+
+**The practical rule: say which must-have a row fails, by number.** All four of these were
+recoverable only because the note recorded the actual test applied rather than a verdict. A row
+that says "not a fit" is unauditable the moment the standard moves; a row that says "fails
+must-have 4, no founding year and no review count" can be re-read in seconds.
 
 ## Rescuing parked rows beats sourcing new ones
 
