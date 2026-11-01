@@ -27,6 +27,18 @@ CSV_PATH = os.path.join(ROOT, 'outputs/pipeline/clinic-pipeline.csv')
 LEDGER_REF = 'claude/project-thread-ptytul'
 LEDGER_PATH = 'outputs/pipeline/ghl/send-state.json'
 
+# send_days semantics, confirmed by the sending thread on 1 Nov 2026 - RAMP counts these
+# entries, so what one entry means is load-bearing:
+#   * Each entry is ONE SENDING DAY in Australia/Melbourne, Jess's own timezone. The
+#     sender computes today in Melbourne and appends that date.
+#   * It runs at most once a day, so one sending day is always exactly one entry. The
+#     count cannot double or merge, which is what makes the ramp trustworthy.
+#   * The first entry, '2026-10-15', is the ONLY UTC-dated one, left as it is because it
+#     is one entry for one day either way. It is Melbourne 16 Oct - the date to quote to
+#     Jess for the ten clinics (ids 85-89, 93, 94, 96, 97, 98) that received email 1.
+# So: do not reinterpret, shift or deduplicate these dates here. Read the list, count it,
+# and if the convention ever changes it changes in the sending thread, not in this file.
+
 # Cold domain warm-up: volume ramps by the number of days we have actually sent on,
 # not by calendar date.
 #

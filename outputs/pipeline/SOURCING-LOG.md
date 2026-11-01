@@ -45,6 +45,15 @@ every other command exits 1. It never fills in a zero, because that substitution
 an unreadable ledger and an empty one are not the same claim, and only one of them is safe to act
 on. If the ref is missing, `git fetch origin claude/project-thread-ptytul` fixes it.
 
+**What `send_days` means, confirmed by the sending thread on 1 Nov, because the ramp counts its
+entries.** Each entry is one sending day in **Australia/Melbourne** — Jess's own timezone — and
+the sender runs at most once a day, so one sending day is always exactly one entry. I had raised
+a double-count risk: a Melbourne day straddling midnight UTC landing as two entries and pushing
+the ramp out. It does not arise, and the count is trustworthy. The first entry, `2026-10-15`, is
+the **only** UTC-dated one and is Melbourne 16 Oct; it stays as it is, being one entry for one
+day either way. **Do not reinterpret or deduplicate those dates on our side** — read the list and
+count it. If the convention changes it changes in the sending thread.
+
 Everything else still holds, and it is the thing that matters: **575 of the 583 clinics on the
 current standard have never been contacted**, sending has been paused since 15 Oct, and it waits
 on Jess's sign-off on the v2 wording and nothing else. The GoHighLevel thread holds every batch from
