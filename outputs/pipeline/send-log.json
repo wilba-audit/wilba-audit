@@ -1,7 +1,0 @@
-{
-  "send_days": [
-    "2026-10-15"
-  ],
-  "note": "Days on which outreach actually went out. Drives the warm-up ramp.",
-  "provenance": "Created 1 Nov 2026. This file did not exist, so wilba_outreach.py reported 'send-day 1, cap 5/day, days sent so far 0' for a domain that had already sent on 15 Oct 2026. The sending channel is the GoHighLevel thread, which keeps its own ledger at outputs/pipeline/ghl/send-state.json on branch claude/project-thread-ptytul - that file is AUTHORITATIVE for what has been sent. It records send_days ['2026-10-15'] and step 1 for ten clinics: ids 85, 86, 87, 88, 89, 93, 94, 96, 97, 98. This file exists so the warm-up ramp in this thread's script does not restart a cold-start schedule on a domain that is no longer cold. If the two ever disagree, theirs wins and this one should be corrected to match."
-}

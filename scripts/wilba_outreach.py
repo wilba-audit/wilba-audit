@@ -20,7 +20,12 @@ from datetime import date, datetime, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(ROOT, 'outputs/pipeline/clinic-pipeline.csv')
-LOG_PATH = os.path.join(ROOT, 'outputs/pipeline/send-log.json')
+# The send ledger is NOT ours. The GoHighLevel thread owns the sends, so it owns the
+# record of them, and this script reads its file straight out of git, read-only. We keep
+# no copy: a copy drifts, and a drifted copy is what let this script claim for seventeen
+# days that the domain had never sent. Agreed with that thread on 1 Nov 2026.
+LEDGER_REF = 'claude/project-thread-ptytul'
+LEDGER_PATH = 'outputs/pipeline/ghl/send-state.json'
 
 # Cold domain warm-up: volume ramps by the number of days we have actually sent on,
 # not by calendar date.
@@ -71,17 +76,55 @@ def save_rows(rows):
         f.write(out.getvalue())
 
 
+class LedgerUnavailable(Exception):
+    """We could not read the send ledger. Never treat this as 'nothing has been sent'."""
+
+
 def load_log():
-    if not os.path.exists(LOG_PATH):
-        return {'send_days': [], 'note': 'Days on which outreach actually went out. Drives the warm-up ramp.'}
-    with open(LOG_PATH) as f:
-        return json.load(f)
+    """Read the sending thread's ledger out of git. Raises rather than guessing.
+
+    The one thing this must never do is return an empty ledger when it simply could not
+    read one. An absent ledger used to read identically to a ledger saying zero, which is
+    exactly how this script reported "send-day 1, days sent so far 0" for a domain that
+    had already sent to ten clinics. Silence is not evidence of no sends.
+    """
+    import subprocess
+    refs = ['origin/' + LEDGER_REF, LEDGER_REF]
+    errors = []
+    for ref in refs:
+        try:
+            out = subprocess.run(['git', '-C', ROOT, 'show', '%s:%s' % (ref, LEDGER_PATH)],
+                                 capture_output=True, text=True, timeout=30)
+        except (OSError, subprocess.SubprocessError) as exc:
+            errors.append('%s: %s' % (ref, exc)); continue
+        if out.returncode != 0:
+            errors.append('%s: %s' % (ref, (out.stderr or '').strip().splitlines()[:1])); continue
+        try:
+            log = json.loads(out.stdout)
+        except ValueError as exc:
+            raise LedgerUnavailable('%s:%s is not valid JSON (%s). The ledger is the sending '
+                                    'thread\'s file - do not edit it here; tell that thread.'
+                                    % (ref, LEDGER_PATH, exc))
+        if 'send_days' not in log:
+            raise LedgerUnavailable('%s:%s has no send_days key. Do not assume zero; ask the '
+                                    'sending thread what changed.' % (ref, LEDGER_PATH))
+        log['_ref'] = ref
+        return log
+    raise LedgerUnavailable(
+        'could not read %s from %s. Fetch it first:\n'
+        '    git fetch origin %s\n'
+        'Until it reads, the number of days this domain has sent on is UNKNOWN - which is '
+        'not the same as zero, and must not be reported as zero.\n  %s'
+        % (LEDGER_PATH, ' or '.join(refs), LEDGER_REF, '\n  '.join(errors)))
 
 
 def save_log(log):
-    with open(LOG_PATH, 'w') as f:
-        json.dump(log, f, indent=2)
-        f.write('\n')
+    """Refused by design: the ledger belongs to the sending thread."""
+    raise LedgerUnavailable(
+        'this script does not write the send ledger. %s on %s belongs to the GoHighLevel '
+        'thread, which does the sending; it records its own send days. If a send happened '
+        'here, tell that thread rather than writing a second record of it.'
+        % (LEDGER_PATH, LEDGER_REF))
 
 
 def todays_cap(log):
@@ -110,8 +153,15 @@ def on_profile(r):
 
 def cmd_status(args):
     rows = load_rows()
-    log = load_log()
-    cap, day_number = todays_cap(log)
+    try:
+        log = load_log()
+        cap, day_number = todays_cap(log)
+    except LedgerUnavailable as exc:
+        # Print the pipeline counts, which do not depend on the ledger, and say plainly
+        # that the send state is unknown. Do NOT fill in a zero.
+        log, cap, day_number = None, None, None
+        print('SEND LEDGER UNREADABLE - send state unknown, NOT zero.')
+        print('  %s\n' % exc)
 
     contactable = [r for r in rows if is_contactable(r)]
     on_icp = [r for r in contactable if on_profile(r)]
@@ -146,7 +196,8 @@ def cmd_ramp(args):
     log = load_log()
     cap, day_number = todays_cap(log)
     print(json.dumps({'send_day': day_number, 'cap_today': cap,
-                      'days_sent': len(log.get('send_days', []))}))
+                      'days_sent': len(log.get('send_days', [])),
+                      'ledger': '%s:%s' % (log.get('_ref'), LEDGER_PATH)}))
 
 
 def cmd_batch(args):
@@ -263,11 +314,12 @@ def cmd_mark(args):
     save_rows(rows)
 
     if args.status == 'Emailed':
-        log = load_log()
-        if today not in log['send_days']:
-            log['send_days'].append(today)
-            log['send_days'].sort()
-        save_log(log)
+        # The send day is recorded by whoever sent, in their own ledger. This script used
+        # to append it to a local copy, which is how two ledgers for one domain came to
+        # exist. Say what needs recording and where, rather than recording it here.
+        print('NOTE: %s is now the send ledger, owned by the thread that sends.\n'
+              '      If mail genuinely went out today (%s), that thread records it - this\n'
+              '      script no longer keeps a second copy.' % (LEDGER_PATH, today))
 
     print(f'{hit} rows set to {args.status}')
     missing = ids - {r['id'] for r in rows}
@@ -289,7 +341,12 @@ def main():
                             'Replied', 'Call booked', 'Proposal sent', 'Won', 'Lost', 'Disqualified'])
     m.set_defaults(fn=cmd_mark)
     args = p.parse_args()
-    args.fn(args)
+    try:
+        args.fn(args)
+    except LedgerUnavailable as exc:
+        # A clear refusal beats a traceback, and beats a guess by much more than that.
+        sys.stderr.write('%s: %s\n' % (type(exc).__name__, exc))
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':

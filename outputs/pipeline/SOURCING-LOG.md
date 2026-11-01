@@ -18,8 +18,10 @@ IE 2. (It was 496 rows and 316 ready on 20 Oct.)
 
 **CORRECTION, 1 Nov 2026 — this log said repeatedly that nothing had ever been sent from the
 pipeline, and that was wrong.** Email 1 of the GoHighLevel sequence went to **ten clinics on 15
-Oct 2026** — ids 85, 86, 87, 88, 89, 93, 94, 96, 97 and 98 — recorded in `send-state.json` on
-branch `claude/project-thread-ptytul`. Those rows are now marked `Emailed 1` here; they had sat at
+Oct 2026 UTC** — ids 85, 86, 87, 88, 89, 93, 94, 96, 97 and 98 — recorded in `send-state.json`
+on branch `claude/project-thread-ptytul`. **In Jess's own timezone that was the morning of 16
+Oct**: the ledger stores UTC and the sender uses Melbourne dates, so both dates that were quoted
+to me were right and neither source was wrong. Quote 16 Oct to Jess and 15 Oct to the ledger. Those rows are now marked `Emailed 1` here; they had sat at
 `New` for seventeen days and were counted as unapproached in every runway figure this log quotes
 before today, including the 316 and the 541. Follow-ups are paused, so each of the ten has had
 exactly one email, sent under the **pre-v2 copy**, one day before the 16 Oct standard change.
@@ -31,9 +33,17 @@ There are **two send ledgers for one domain**: the sending channel's `ghl/send-s
 is authoritative, and `send-log.json` here, which drives this thread's warm-up ramp and **did not
 exist at all**. An absent ledger reads identically to a ledger saying zero, so `wilba_outreach.py`
 reported "send-day 1, cap 5/day, days sent so far 0" for a domain that was no longer cold, and the
-code comment asserted in so many words that jess@wilba.ai had never sent anything. Both are fixed,
-and `send-log.json` now mirrors the 15 Oct send day — but mirroring is a patch, not a fix. **One
-domain needs one ledger**, and unifying them belongs to the sending thread, which owns the sends.
+code comment asserted in so many words that jess@wilba.ai had never sent anything. Both are fixed.
+
+**And the two ledgers are now one**, agreed with the sending thread on 1 Nov. `send-log.json` is
+deleted; `wilba_outreach.py` reads `outputs/pipeline/ghl/send-state.json` straight out of
+`claude/project-thread-ptytul` with `git show`, read-only, and keeps no copy, because a copy
+drifts and a drifted copy is what caused this. `save_log()` now refuses outright: if mail goes out,
+the thread that sent it records it. **The important half is the failure behaviour** — when the
+ledger cannot be read, `status` prints "SEND LEDGER UNREADABLE - send state unknown, NOT zero" and
+every other command exits 1. It never fills in a zero, because that substitution is the whole bug:
+an unreadable ledger and an empty one are not the same claim, and only one of them is safe to act
+on. If the ref is missing, `git fetch origin claude/project-thread-ptytul` fixes it.
 
 Everything else still holds, and it is the thing that matters: **575 of the 583 clinics on the
 current standard have never been contacted**, sending has been paused since 15 Oct, and it waits
