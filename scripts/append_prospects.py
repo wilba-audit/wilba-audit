@@ -39,6 +39,14 @@ BANNED = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|
                     r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
 PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|£|\d+\s*%|\bper cent\b)', re.I)
 MUSTHAVE = re.compile(r'must[- ]have\s*\d', re.I)
+
+
+def dom(url):
+    """Registrable-ish domain of a website field, for duplicate detection."""
+    if not url:
+        return ''
+    m = re.search(r'(?:https?://)?(?:www\.)?([^/\s]+)', url.strip(), re.I)
+    return m.group(1).lower().rstrip('.') if m else ''
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
@@ -59,7 +67,15 @@ def main():
     with open(PIPELINE, newline='') as f:
         fields = next(csv.reader(f))
     existing = list(csv.DictReader(open(PIPELINE)))
-    names = {r['clinic_name'].strip().lower() for r in existing}
+    # Keyed on (name, country), not name alone. On 2 Nov a name-only check rejected a
+    # grade-A Siloam Springs clinic as a duplicate of a grade-C clinic in Mildura, Victoria:
+    # both are called "The Skin Clinic" and they share nothing else - different country,
+    # different domain, different mailbox. Clinic names in this trade are extremely generic,
+    # so name alone is not identity. A genuinely re-sourced clinic is still caught, by the
+    # domain in its website field or by its email address, both checked separately below.
+    names = {(r['clinic_name'].strip().lower(), (r.get('country') or '').strip().upper())
+             for r in existing}
+    domains = {dom(r.get('website')) for r in existing if dom(r.get('website'))}
     emails = {r['contact_email'].strip().lower() for r in existing if r['contact_email'].strip()}
     next_id = max(int(r['id']) for r in existing if r['id'].strip().isdigit()) + 1
 
@@ -80,8 +96,11 @@ def main():
             why = None
             if not cn:
                 why = 'no clinic_name'
-            elif cn.lower() in names:
-                why = 'duplicate clinic already in the pipeline'
+            elif (cn.lower(), (r.get('country') or '').strip().upper()) in names:
+                why = 'duplicate clinic already in the pipeline (same name, same country)'
+            elif dom(r.get('website')) and dom(r.get('website')) in domains:
+                why = ('duplicate: %s is already in the pipeline under another name'
+                       % dom(r.get('website')))
             elif not em:
                 why = 'no email address'
             elif PLACEHOLDER.search(em):
@@ -148,7 +167,10 @@ def main():
             if fit.upper() not in ('A', 'B', 'C'):
                 rejected.append((cn, 'no A/B/C grade in icp_fit or fit_flag')); continue
 
-            names.add(cn.lower()); emails.add(em.lower())
+            names.add((cn.lower(), (r.get('country') or '').strip().upper()))
+            emails.add(em.lower())
+            if dom(r.get('website')):
+                domains.add(dom(r.get('website')))
             r['icp_fit'] = fit.upper()
             r['fit_flag'] = flag or 'ICP v2'
             r['priority'] = r['icp_fit']

@@ -1,18 +1,18 @@
 # Clinics we set aside only because a script could not read their address
 
-**Built 2 November 2026 by collecting every such clinic out of `near-misses.md`, which had them
+**Built 2 November 2026, refreshed the same evening with that day's four sweeps, by collecting every such clinic out of `near-misses.md`, which had them
 scattered across sixteen separate market write-ups where nobody was ever going to work through
 them.** Every clinic here already cleared the ICP on fit. The single thing standing between it
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **48** of them: 23 whose address is on the page but encoded, and 25 whose site refuses
+There are **55** of them: 29 whose address is on the page but encoded, and 26 whose site refuses
 automated reading altogether. **The two groups need different things, and that distinction is the
 whole point of this file.**
 
 ---
 
-## Group A — the site refuses automated reading (25 clinics)
+## Group A — the site refuses automated reading (26 clinics)
 
 These return `robots_disallowed`. There is nothing hidden and nothing to decode: the page is
 ordinary, the site simply declines to serve robots. **Opening one in a browser shows whatever is
@@ -24,13 +24,13 @@ One page-open each. If an address is published, the clinic becomes a normal row.
 
 | Clinic | Site | Market it came from |
 | --- | --- | --- |
-| You Wellness | `youwellness.net` | ?? — Near misses — northwest Arkansas, San Antonio su |
 | Azure Aesthetics | `azureaesthetics.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | Bespoke Clinic | `bespokeclinic.com.au` | AU — Near misses — Australian outer-metro suburbs (1  |
 | Beyond Beauty Injectables | `beyondbeautyinjectables.org` | AU — Coastal and inland Queensland near-misses and ru |
 | Skin Social | `cosmetichqbydanielleryan.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | CQ Skin | `cqskin.com.au` | AU — Coastal and inland Queensland near-misses and ru |
 | (name not captured) | `defineclinic.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
+| (name not captured) | `deviceconsulting.com.au` | AU — Near misses — Australia's last unswept corners,  |
 | Face Against Time | `faceagainsttime.com` | AU — Regional Australia, third pass — near misses and |
 | (name not captured) | `illuminateaesthetics.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | Kalology Skin Care | `kalology.com.au` | AU — Coastal and inland Queensland near-misses and ru |
@@ -49,8 +49,9 @@ One page-open each. If an address is published, the clinic becomes a normal row.
 | Art of Injections | `artofinjections.com` | US — US under-covered metros — near misses and rule-o |
 | Skin By Liv Aesthetics | `skinbylivaesthetics.com` | US — US under-covered metros — near misses and rule-o |
 | Botastic Aesthetics & Wellness LLC | `txmedicalaesthetics.com` | US — US under-swept Texas, Memphis, Little Rock and J |
+| You Wellness | `youwellness.net` | US — Near misses — northwest Arkansas, San Antonio su |
 
-## Group B — the address is on the page, encoded (23 clinics)
+## Group B — the address is on the page, encoded (29 clinics)
 
 These render as `[email protected]`. **Our brief was wrong about these, and I corrected it today.**
 It said a browser does not recover them and they should be dropped. Both halves are false.
@@ -68,8 +69,6 @@ are listed exactly like Group A: one page-open each.
 
 | Clinic | Site | Market it came from |
 | --- | --- | --- |
-| Dahlia by WHA | `dahliabywha.com` | ?? — Near misses — northwest Arkansas, San Antonio su |
-| (name not captured) | `mbsmedspa.com` | ?? — Near misses — northwest Arkansas, San Antonio su |
 | (name not captured) | `academyfaceandbody.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | (name not captured) | `aesthetiquemedical.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | (name not captured) | `ascension.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
@@ -88,16 +87,24 @@ are listed exactly like Group A: one page-open each.
 | nothing for a browser to decode | `dgaesthetics.uk` | UK — UK near-misses and rule-outs — round three — 1 N |
 | Site: | `newcastleskinclinic.co.uk` | UK — UK near-misses and rule-outs — 22 October 2026 |
 | An "Email Us" link with no address printed | `theluxeskinclinic.co.uk` | UK — UK near-misses and rule-outs — 29 October 2026 |
+| Chic la Vie Med Spa — Las Vegas (Sahara Ave, Summerlin side), NV | `chiclavie.com` | US — Nevada + California-gap near-misses and rule-out |
+| Dahlia by WHA | `dahliabywha.com` | US — Near misses — northwest Arkansas, San Antonio su |
 | gmail | `dvashaesthetics.com` | US — US under-swept Texas, Memphis, Little Rock and J |
 | Face & Beyond Aesthetic Lounge — Turlock, CA | `faceandbeyondaestheticlounge.com` | US — California Central Valley and inland south — nea |
+| Two fetches spent | `firmmedicalspa.com` | US — Northwest Arkansas, then eastern Oklahoma — near |
+| Franco Aesthetics — Norman, OK | `francoaesthetics.com` | US — Northwest Arkansas, then eastern Oklahoma — near |
+| Natausha Spears, RN, BS | `injectableaesthetics.com` | US — Northwest Arkansas, then eastern Oklahoma — near |
+| Zenoti | `luxefactorlv.com` | US — Nevada + California-gap near-misses and rule-out |
+| (name not captured) | `mbsmedspa.com` | US — Near misses — northwest Arkansas, San Antonio su |
 | Modesto Aesthetics & Laser — Modesto, CA | `modestoaestheticsandlaser.com` | US — California Central Valley and inland south — nea |
+| Antidote Aesthetics | `treatment-builder.com` | US — Near-misses — coastal Virginia, the Carolinas, G |
 
 ---
 
 ## The decision I am not making unilaterally
 
 Group B can be decoded in about four lines of code, from page content we already fetch. Doing
-that would turn 23 clinics into pipeline rows this afternoon, with no browser work and no
+that would turn 29 clinics into pipeline rows this afternoon, with no browser work and no
 guessing — the decode is exact, not inferred, and it returns the address the clinic itself put
 on the page.
 

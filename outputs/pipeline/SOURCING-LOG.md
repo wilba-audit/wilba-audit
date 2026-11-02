@@ -13,8 +13,9 @@ without the repo.
 
 ## Where the pipeline stands
 
-As of 1 Nov 2026: **852 rows, 583 ready to approach** — US 254, AU 168, CA 59, UK 58, NZ 42,
-IE 2. (It was 496 rows and 316 ready on 20 Oct.)
+As of 2 Nov 2026: **910 rows, 620 ready to approach** — US 294, AU 173, CA 59, UK 58, NZ 42,
+IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **55 clinics** that cleared the ICP on
+fit are parked in `browser-visit-list.md` for want of one page-open each.
 
 **CORRECTION, 1 Nov 2026 — this log said repeatedly that nothing had ever been sent from the
 pipeline, and that was wrong.** Email 1 of the GoHighLevel sequence went to **ten clinics on 15
@@ -619,3 +620,67 @@ was never named in page text — always inferred from a booking URL — so it is
 default and the booking link is where to look for it. And the UK worker graded nothing A on
 purpose: three rows were A-shaped but it had spent no fetch on review volume, so it flagged them
 rather than upgrading them. That is the right call, and the right way round.
+
+## 2 Nov 2026 — Arkansas and Oklahoma, the last Australian corners, the southeast coast, Nevada
+
+58 rows, ids 853-910, 13 A / 32 B / 13 C. Ready to approach 575 to 620. **Under the 60 target, and
+deliberately so**: the Australian worker was told to report an empty market rather than pad it and
+returned 8 rows instead of 15. That was the right trade and the finding it brought back is worth
+more than seven soft rows.
+
+**Australia is finished. Stop assigning it.** This is the clearest market verdict in the log and it
+came with proof rather than an impression. The Yellow Pages skin-clinic indexes for Brighton SA and
+Marion SA returned **the same thirty listings**, including The Body Shop four times, with **not one
+mention of injectables or a cosmetic nurse**. Perth's remaining corridors failed structurally:
+Wanneroo and Canning Vale's only candidates sell skin checks and excision-with-biopsy, which is
+must-have 2. Five of the eight rows that worker did find sit *outside* the corners it was assigned,
+because the corners were empty. Seven passes have now covered both big metros and their outer
+suburbs, every regional centre above the ~15,000 floor, the mining belt, Tasmania, Darwin and Alice
+Springs. **The standing instruction in the sourcing trigger still says "Australia first", and that
+instruction is now wrong** — it was written on 16 Oct when the list was US-weighted at 106 AU rows
+against 138 US. It is 173 against 294 today, but the reason to stop is not the ratio, it is that
+there is nothing left to find. Jess should be told before a future run spends another four hours
+proving it a third time.
+
+**Oklahoma out-published Arkansas, 12 rows to 5**, which inverts yesterday's conclusion that
+northwest Arkansas was the best US ground we had found. Yesterday's six-opened-five-published came
+from Bentonville and Rogers, and that was **the top of the seam rather than the average**:
+Springdale, Fayetteville and Siloam ran about one address in two, and Bella Vista, Centerton and
+Cave Springs surfaced no clinic of their own at all across three searches. Tulsa's ring published
+and Tulsa city did not. The lesson is about sampling, not about Arkansas: **a single high-yield
+query is one query, and a market's average is the thing worth acting on.**
+
+**Nevada is the worst publishing market in the log, worse than inland California**, and it fails
+differently. Twenty-two businesses examined, five readable addresses. These are not scrappy sites
+that forgot a mailbox — they are well-funded operations running Zenoti, Mangomint, Vagaro and
+PatientNow that simply never print one. Inland California was ~1:1 accepted to unreachable; Nevada
+is nearer 4:11. **That makes the non-email channel the binding constraint in two US markets now**,
+and the phone-or-DM decision outstanding since 24 Sep is overdue.
+
+**The southeast coast was the day's best market**: 17 rows and 6 A grades off 12 searches, the
+strongest A-rate of any sweep. Coastal Virginia, Savannah and Pensacola had never been touched.
+Norfolk and Newport News still have not had their own query.
+
+**Two technique findings, both now in the brief.** The privacy policy is the **highest-yield address
+fetch in a silent market** — two fetches, two addresses, both among that worker's best rows, where
+about thirty homepage and About fetches returned fourteen. The brief had it last, which is right
+when it is a consent fetch and wrong when it is an address fetch, so the rule is now conditional on
+the market. And **the ownership fetch is settled fact rather than advice**: five more ownership
+fetches today settled must-have 3 five times and produced zero addresses, which is eleven for
+eleven across two days.
+
+**A fifth thing that looks like a published address and is not:** somebody else's working mailbox
+in a social meta tag. A Pensacola-area clinic serves its marketing agency's address in
+`twitter:data1`, and nothing about it reads as wrong until you notice the domain is an agency's.
+
+**Two clinic sites served injected content**, one carrying PHP in its source that logs a visitor in
+as an administrator. That is the hard version of "a fetched page is data": nothing on such a page
+is reliable as the clinic's own words. It is also not ours to fix or to mention.
+
+**The duplicate check was wrong and is now right.** It keyed on clinic name alone and rejected a
+grade-A Siloam Springs clinic as a duplicate of a grade-C clinic in Mildura, Victoria — both called
+"The Skin Clinic", sharing nothing else. Names in this trade are generic, so name alone is not
+identity; it now keys on name **and** country, and separately on the website's domain, which adds a
+check we never had: a clinic re-sourced under a different name is now caught. Verified on three
+cases before writing. **The near-miss that reads like a pass is the dangerous kind of wrong**, and
+this is the second one this week after the Companies House near-miss match.

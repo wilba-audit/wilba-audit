@@ -6822,3 +6822,905 @@ miles away, through an SEO catchment page, and a Tunbridge Wells query returned 
 otherwise. **Read the published address against the query town every time**, exactly as the brief says
 to read the phone area code in Australia.
 
+
+
+---
+
+# 2 November 2026 — northwest Arkansas and Oklahoma, the last Australian corners, coastal Virginia and the southeast, Nevada and the California gaps
+
+
+# Northwest Arkansas, then eastern Oklahoma — near misses (2 Nov 2026)
+
+Markets swept: **northwest Arkansas** (Springdale, Fayetteville, Siloam Springs, Bentonville, Rogers,
+and searches covering Bella Vista, Centerton and Cave Springs) and **eastern / central Oklahoma**
+(Broken Arrow, Jenks, Bixby, Owasso, Tulsa proper; Edmond, Norman, Mustang, Yukon, and Stillwater
+via a second site). Budget used: **10 of 12 WebSearch, 41 of 45 WebFetch** — stopped with four
+fetches in hand rather than starving the other three workers.
+
+Every clinic below clears the v2 ICP on some axis and fails on the address, or publishes an address
+and fails a must-have. **No address was constructed for any of them.** Clinics already in
+`clinic-pipeline.csv` or `near-misses.md` were grepped and skipped before a fetch was spent — the
+list of those is at the bottom.
+
+---
+
+## Group 1 — Cloudflare-hidden address (Jess can read these in her own browser in seconds)
+
+A re-fetch does not recover these. A browser does.
+
+### Franco Aesthetics — Norman, OK
+`francoaesthetics.com` · 2400 Palmer Circle, Norman OK 73069 · (405) 217-2054
+**The single best browser-visit candidate of the run, and it would have been an A row.** The address
+renders as `In**@**************cs.com` — Cloudflare email protection, so by the rule it is NOT SEEN.
+Everything else is there: **Heather Franco, APRN, FNP-C, printed as 'Owner'** (OU BSN, Maryville MSN);
+**Shelby Bennett, Aesthetic Injector and InMode National Trainer**; Chloe Pearson, Aesthetician.
+**Boulevard** confirmed (dashboard.boulevard.io). A membership page, a specials page, a financing
+page, and a Shopify store. The page describes the business in its own words as **"Independent"** and
+**"Owner-Operated"**, and claims **"5+ years serving norman"** — which is a tenure proxy, so
+must-have 4 is nearly settled too. One fetch spent; a browser visit finishes it.
+
+### Injectable Aesthetics — Oklahoma City, OK
+`injectableaesthetics.com` · 8104 N. May Ave, Suite 200, Oklahoma City OK 73120 · 405-285-0625
+Address Cloudflare-obfuscated. **Natausha Spears, RN, BS**, aesthetic nurse with around 20 years in
+the industry — but **no owner or founder is named**, no booking platform is named (booking stays on
+their own contact page), and **no membership, loyalty or gift-card scheme was found**, so the dormant
+signal is thin even if the address is recovered. Lower priority than Franco, and note it sits in
+**OKC proper**, which was swept on 19 Oct, rather than in the suburbs I was assigned.
+
+---
+
+## Group 2 — No address published at all (total silence; a browser does not help)
+
+These need a phone call or a direct message. Where I spent a second fetch I say so, because a third
+is unlikely to pay.
+
+### PRISM Aesthetics — Rogers and Fayetteville, AR
+`prismaestheticsllc.com` · 5001 W. Pauline Whitaker Pkwy Suite 115, Rogers AR 72758 **and**
+3959 North Steele Boulevard #122, Fayetteville AR 72704 · 479-278-7166
+**Erin Courtway is printed as 'OUR FOUNDER'** (no credential given). Two sites, so must-have 3 is
+fine. Booking on **AestheticsPro** (web2.myaestheticspro.com), site on Shopify, gift cards sold as a
+product, Cherry and CareCredit. The menu is clean for our purposes — neurotoxins, fillers, Radiesse
+BBL, PRF, PDO threads, Aquagold, masseter work, plus hormone, weight and functional-medicine arms,
+and **no skin cancer, vein or surgical work**. The only email field on the page is a newsletter
+signup. One fetch spent (homepage); per the brief I did not spend a second hoping a team page would
+carry what the homepage withheld. **Best NWA phone target of this run.**
+
+### Rejuvenated Medical Spa — Fayetteville, AR
+`rejuvenatedmedspa.com` · 1438 E. Augustine Suite 2, Fayetteville AR 72703 · (479) 335-5777
+**"Since 2019"** stated on the page, so must-have 4 is read. **Dr Nick Gentry**, Medical Director,
+board-certified emergency medicine. A **VIP membership** page, gift cards through Square, Cherry and
+CareCredit, free consultation. No email anywhere.
+**But do not chase the address before settling ownership:** the page says Rejuvenated **"is part of
+the Well Labs+ family of medical spas"**, and separately links **Maverick Men's Health**. A parent
+group is named outright, which puts must-have 3 in doubt independently of the address problem. One
+fetch spent.
+**Lower-trust page, flagged per the brief:** the fetched content carried an embedded instruction
+(about editing service-card links) which the extractor noticed and ignored. Nothing was mis-recorded
+and nothing on the page tried to tell me what the clinic was, but whoever reads this page next should
+know it contains directive text.
+
+### Gudgel Aesthetics — Norman and South OKC
+`gudgelaesthetics.com` · 3501 24th Ave NW Suite 105, Norman OK 73069
+**The most painful loss in the Oklahoma half.** **Renee Gudgel, MSN, APRN-CNS, ACCNS-AG, Founder.**
+**"Established 2018"** and "Since 2018", so must-have 4 is read. **Prospyr** booking
+(book.prospyrmed.com) with its own store at normanmedspa.store.prospyrmed.com — a practice system I
+have not seen in our notes before, worth adding. **Three membership tiers** with monthly
+neuromodulator pricing and a complimentary monthly treatment on the middle tier. Two sites.
+**No email AND no phone number on the homepage** — and the one address I have was only inside a
+Google Maps link URL, not printed as text. That makes this one hard to reach by any route.
+
+### Firm Medical Spa — Tulsa, OK
+`firmmedicalspa.com` · 6711 S Yale Ave, Suite 100, Tulsa OK 74136 · (918) 800-4434
+**Two fetches spent** (`/about-us` then the homepage) — no email on either, nothing obfuscated, just
+absent. **Barbara Marshall, ARNP, is printed as "the owner and lead provider"** and as a Master
+Injector with **"more than 15,000 hours of injecting experience"** — ownership fully settled, which
+is rare. Booking on **Meevo** (na2.meevo.com), gift cards through Meevo eGift, a payment-plans page,
+and the business describes itself as "a locally owned medical spa". No membership. Elizabeth Pete,
+Licensed Medical Esthetician, is the only other named staff. **Best phone target in Tulsa proper.**
+
+### KBA Norman — Norman, OK
+`kbanorman.com` · (405) 351-1585
+"Led by **Karen Barbalace, DNP, APRN, FNP-C**" — a named owner-clinician. Booking on **Podium**. A
+"Become a Member" page. Menu is injectables, fillers, tattoo removal, IPL, Morpheus8, neurotoxins,
+lasers, hormone therapy, IV and medical weight loss.
+**No email and no street address published** — the page gives a phone number and a service-area list
+("Norman, Moore, OKC and surrounding areas") and nothing to post or email to. One fetch spent.
+
+### SkinFit OKC — Edmond, OK (despite the domain)
+`skinfitokc.com` · 15109 Traditions Lake Pkwy Suite A, Edmond OK 73013 · (405) 849-5549
+**"Established in 2020"**, so must-have 4 is read. **Shyla Ryan is printed as Owner and Founder** —
+but with no clinical credential; the nurse injectors are not named. Booking on **Vagaro**. The only
+offer is $10 off for joining an email list; **no membership and no gift cards found**. No email
+anywhere. Note the page also says "We have moved!", so any older address for them is stale.
+**Dedupe warning:** this sits at Suite A, 15109 Traditions Lake Pkwy, and **West Med Spa — an
+accepted pipeline row this run — is at Suite B, 15113 Traditions Lake Parkway**, four doors away in
+the same Edmond complex. Separate businesses, separate domains, separate owners. Do not merge them.
+
+### Elevate Wellness and Aesthetics — Norman, OK
+`elevatewellnessandaesthetics.com`
+**The worst-published site of the run: no email, no phone number and no street address.** Even a
+phone call is blocked. What it does publish is frustratingly good: **"In Business Since 2018"**
+(must-have 4 read), **"Memberships Available"**, **"Free Consultations"**, booking on
+**AestheticsPro** (myaestheticspro.com), and a serious device list — triLift by Lumenis, Neo Elite,
+miraDry, SmoothGlo, Legend Pro, Stellar M22, NuEra Tight, plus injectables, PDO threads, hormone
+pellets and HydraFacial. **Nobody is named.** This one needs a walk-in or an Instagram DM.
+
+### ClareBella Aesthetics — Oklahoma City, OK
+`clarebellaokc.com` · 7101 NW Expressway, Suite 350, Oklahoma City OK 73132 · 405.516.6140
+No email. The clinician is published only as **"Dr. Jenn", APRN, Doctor of Nursing Practice** — a
+first name with real credentials but no surname, so there is no identifiable decision-maker. Booking
+on **Zenoti** (clarebella.zenoti.com), which is a grade-A practice system. A membership page, and a
+new-client special including a complimentary skin consultation. The "Areas We Serve" list (Edmond,
+Norman, Jones, Yukon, Piedmont) is service areas, not sites — one address. OKC proper, so outside my
+assigned suburbs.
+
+### Vici Aesthetics and Wellness — Springdale, AR
+`viciaestheticsandwellness.com` · 7253 West Sunset Ave, Ste D, Springdale AR 72762 · (479) 343-8424
+No email, and **nobody named at all** — no owner, no founder, no clinician. Booking stays on their
+own contact page, so no practice system either. "Become a VIP and get access to member savings!" is
+the only dormant signal. Menu is Lutronic Clarity II laser, HydraFacial, Emsculpt Neo, peptides,
+hormone replacement and telemedicine in AR, OK and MO.
+**Flag for must-have 2 if anyone revisits:** the laser is advertised for "vascular lesions, including
+spider veins". No sclerotherapy and no vein centre, so it is probably cosmetic and cash-pay, but it
+is the same question BA Med Spa raised and it is unresolved here.
+
+---
+
+## Group 3 — Defeated the fetch (site-side error; a browser is no more likely to help)
+
+### The Med Spa NWA — northwest Arkansas
+`themedspanwa.com` — the one URL I had (`/med-spa-services-in-nwa`, from a search result) returned a
+**client error with nothing retrieved**: mode five in the brief's taxonomy, the clinic's own fault.
+Per the brief I did **not** spend a second fetch guessing another path, since there is nothing to
+render. **Completely unassessed** — segment, ownership, town and address all unknown. If it is worth
+resolving, it is a browser or phone job, not a fetch job.
+
+### allmedspas.com (Rogers index) — the deliberate directory fetch
+`allmedspas.com/med-spas-rogers-ar/` also returned a **client error**. This was my one planned
+directory-index fetch (brief technique 3, the one that produced 34 Montreal names), and it is the
+**only fetch in the run that bought literally nothing**. Worth knowing before the next worker budgets
+one in this market: `allmedspas.com` does not answer a fetch.
+
+---
+
+## Group 4 — Ruled out on the ICP, recorded so nobody spends the fetch again
+
+- **Radiant Elements Medical Spa** — 27 W Township St, Fayetteville AR. **Fails must-have 1.** It is a
+  massage and day spa — Swedish, deep tissue, ashiatsu, lymphatic, head spa, body scrub, spa days —
+  and states outright that "Services are wellness services and are not a substitute for medical
+  care." **No injectables at all.** It ranks on med spa queries because it runs **Mangomint**
+  booking, a memberships page and gift cards, which is the shape of a med spa without the menu.
+  Also worth recording as an area-code catch: the founder is named only as **"Elena"** and the phone
+  number is **(213) 463-6927 — a Los Angeles area code on a Fayetteville address.** Read the area
+  code, as the brief says.
+- **NWA Lasers and Healthcare** — Fayetteville AR, 479.841.1080. **Fails must-have 1 as published:**
+  device-only menu (SculpSure, EmSculpt Neo, EmFace, Emsella, BTL Exilis Ultra 360, HydraFacial MD
+  Elite, tattoo removal, body sculpting) with **no injectables named anywhere**. Also no email, no
+  street address, and nobody named in page text — "brooke-myers-licensed-aesthetician" appears only
+  inside a URL slug, which is not a publication. Nothing here to come back for.
+- **Harmony MediSpa** — Lawton **and** Duncan, OK. **Out of market:** that is southwest Oklahoma, not
+  eastern. No email anyway. Recorded because it is a decent profile if southwest Oklahoma is ever
+  assigned: two sites, **PatientNow** (na02.patientnow.com), a **Membership Rewards Program**, free
+  consultations, gift cards via salonvision.com, "locally owned and operated", and "Over 20 Years of
+  Combined Experience" (staff experience, not business tenure). **Nobody named.**
+- **Revitalize Medical Spa** — Broken Arrow and Jenks OK, plus Alamosa CO. **No email (form fields
+  only), so it cannot enter the pipeline — but it is the most interesting single find of the run and
+  belongs at the top of a phone list.** **"Founded in 2013 by two Physician Assistants"**: **Lindsay
+  Blankenship, PA**, co-owner and injector at Broken Arrow, and **Crista Hobbs, PA**, co-owner and
+  injector at Jenks, with a nurse practitioner ("Angie") at Alamosa. Booking on **Aesthetic Record**.
+  The membership is **genuine banked credit** — monthly payments auto-drafted into a spa **"wallet"**
+  that can be applied to treatments — the second real banked-credit scheme found in this run. First
+  ten units of a first neurotoxin treatment free, which is a classic dormant-first-timer pool.
+  **Count the decision-makers before pitching:** two co-owners each running her own location, plus a
+  third site in another state. Also note only the **Alamosa** phone number is published; neither
+  Oklahoma number is.
+- **Revive Medical Spa** — Fayetteville and Rogers AR (`shop.revivemedicalspa.com`). **Disqualified:**
+  it is the med spa arm of **Advanced Dermatology & Skin Cancer Center**, so must-haves 1 and 2 both
+  fail. Recorded for the pattern, though: it publishes a **"Revive VIP Savings Account"** alongside a
+  VIP membership — banked-credit language, and the **third** such scheme this run. Not fetched.
+- **Premier Dermatology (Bentonville)**, **Norman Primary Care** (running med spa specials),
+  **Woodhouse Spa (Rogers)** (franchise), and **Genesis OKC** (presents as a multi-site
+  OKC/Norman/Edmond group) — all ruled out on sight, none fetched.
+
+### Blocked-domain additions for the next run
+
+`advancedskinmd.com` **(my own mistake, logged honestly)** — it is already on the brief's add list and
+I did not carry it into my first search's `blocked_domains`, so it took two of ten result slots on the
+most important NWA query of the run. Carry the brief's list verbatim into the first query.
+Also add: `premierderm.net`, `normanprimarycare.com`, `woodhousespas.com`, `genesisokc.com`, and the
+listing farms that surfaced on AR/OK queries — `eliteaestheticsguide.com`, `medspascout.com`,
+`peptideiq.com`, `wheree.com`, `localskincare.net`, `yellowpages.com`, `allmedspas.com` and
+`web.springdale.com`.
+
+### Already resolved by earlier sweeps — grepped and skipped before any fetch
+
+From the pipeline: Vibrant Med Spa of NWA, VOXY Aesthetics (`livevoxy.com`), Ziva Aesthetics, Willow
+Park Rejuvenation, Glotologi, Ark Health, Beyond Wellness, BLANK Med Spa (Tulsa), L3 Aesthetics
+(Midwest City). From `near-misses.md`: Emerald Aesthetics (Rogers — two fetches already spent, no
+address), Dahlia by WHA (Bentonville — OB/GYN parent, explicitly "do not chase"), Renew Aesthetics
+(Rogers — vein work, already graded C), Advanced Dermatology & Skin Cancer Center, Natural State
+Aesthetics, Taylor Plastic Surgery, Stubbs Center, MD Aesthetics (Bixby), Orr Salon & Med Spa and
+Hobbs Salon + Med Spa (Tulsa). **The grep caught three of these before I spent a fetch** — Emerald,
+Dahlia and Renew all surfaced on my own NWA searches and would otherwise have been re-researched.
+
+---
+
+## What this market taught me
+
+**Northwest Arkansas is a good market, but the 1 November result was the top of the seam, not the
+average.** That run opened six clinics in Bentonville and Rogers and five published an address.
+I went into Springdale, Fayetteville and Siloam Springs — the towns that sweep said were untouched —
+and got **five published addresses from eleven NWA businesses opened**, with two of the five
+(PRISM, Rejuvenated) being exactly the clinics I most wanted. The difference is not that the
+outer towns are worse clinics; it is that **Bentonville and Rogers are where the money and the
+marketing budgets are, and a clinic with a marketer publishes an address.** NWA is still worth
+assigning, but budget it at roughly one address in two, not five in six, and expect Bella Vista,
+Centerton and Cave Springs to return nothing of their own — not one search surfaced a clinic sited
+in any of the three, which I read as those towns being served from Bentonville and Rogers rather
+than having their own practices.
+
+**Eastern and central Oklahoma published far better than Arkansas did, and that was the run's
+surprise.** Twelve of the seventeen accepted rows are Oklahoma. The OKC suburb ring in particular
+(Edmond, Yukon, Mustang, plus OKC proper) gave six reachable clinics from eight opened — a better
+rate than anything in the log except the Bentonville–Rogers seam itself. Tulsa's suburbs split
+cleanly: **Broken Arrow, Owasso and Bixby published; Tulsa proper did not.** Both Tulsa-city clinics
+I opened (Firm, and Nouveau's neighbour set) were the silent ones, and Firm cost two fetches to
+establish that. If anyone goes back, **work the ring and leave the city.**
+
+**The brief's two newest rules both paid, and one of them paid six times.** I spent **five ownership
+fetches** onto about, team and story pages. They settled must-have 3 in **five cases out of five**
+and produced **zero** new email addresses — Oum, BA Med Spa, ACE, The Treatment Room and Halestorm.
+That is now a very large consecutive run of the same result, and it should probably be stated in the
+brief as a flat fact rather than as advice: **the second fetch buys ownership, never an address.**
+The unquoted four-name cap also held — every one of my ten searches returned ten results, and not
+one collapsed into a directory or an out-of-market set.
+
+**The thing I would change about the standard, not the sourcing:** four of the twelve B rows are
+B *only* because must-have 4 cannot be read. Nine of the seventeen accepted clinics publish no
+founding year at all, and what they publish instead is the practitioner's personal career — "38+
+years in healthcare", "over sixteen years of experience", "7+ years medical", "over 13 years in
+nursing". Our standard needs clinic tenure and the American med spa web publishes operator tenure.
+**Every worker is therefore inferring must-have 4 from a structural proxy** — menu breadth, device
+capital, site count — and calling it established. That is worth a decision from Jess rather than
+seventeen individually-flagged guesses: either personal tenure plus an operating clinic is accepted
+as a tenure proxy, or must-have 4 should be checked against a review-platform date, which is a fetch
+nobody currently budgets. Of the four clinics that *did* publish a real founding year — BA Med Spa
+(2009), Rejuvenated (2019), Gudgel (2018), SkinFit (2020), Elevate (2018), Ageless (2019) — three
+publish no email, which is its own small irony.
+
+**Banked credit clustered, and not where the brief predicts.** The log says the wallet/bank/vault
+search is an affluent-suburb technique. I found **three** genuine credit schemes in this run and none
+of them was in an affluent suburb: a monthly account credit in **Siloam Springs** (population about
+17,000), an auto-drafted spa "wallet" in **Broken Arrow and Jenks**, and a "VIP Savings Account" on a
+**dermatology-attached** Fayetteville clinic we cannot use. All three were found by reading the
+clinic's own membership copy after landing on the site, never by searching the word — which is
+exactly what the brief says the technique is actually for. **Mid-size markets do run banked credit;
+they just do not call it a vault.**
+
+**One platform observation worth carrying.** **Moxie** (app.joinmoxie.com) turned up again, in Bixby,
+having first appeared in San Antonio on 1 Nov. **Prospyr** (book.prospyrmed.com) appeared for the
+first time anywhere in our notes, in Norman. Both are single-tenant practice platforms of the kind
+that satisfies the grade-A "nameable practice system" test, and neither is on our list. **Boulevard
+was the most common system by a wide margin** — five of seventeen accepted rows plus two near-misses
+— and in four of those five it was identifiable only from a `blvd.me` or `dashboard.boulevard.io`
+link, never named in page text. The booking link is where to look, exactly as the UK run found for
+Aesthetic Nurse Software.
+
+
+# Near misses — Australia's last unswept corners, 2 November 2026
+
+Assigned: Adelaide's western and coastal suburbs (Port Adelaide, Semaphore, Henley Beach,
+Glenelg's surrounds, Burnside, Brighton, Marion); Perth's northern and south-eastern corridors
+(Wanneroo, Canning Vale, Ellenbrook, Midland's surrounds, Armadale); and, if those ran dry,
+Geelong's and Ballarat's outer suburbs and the Mornington Peninsula beyond Mornington itself.
+
+Spent: 12 of 12 WebSearch, 40 of 45 WebFetch. Output: 8 rows (0 A, 5 B, 3 C).
+
+---
+
+## Cloudflare-hidden address — Jess can read these in her own browser in seconds
+
+### Fika Clinic — 28 Surrey Road, Keswick, Adelaide SA 5035
+- **Why it looked right:** single Adelaide clinic, injectables-led menu (no skin cancer work, no
+  vein work, no surgery), **Timely** in place at `bookings.gettimely.com/fikaclinic/book`, an
+  Instagram-fronted cosmetic physician, a "Fika Society" link in the footer, and a newsletter.
+- **Email status: Cloudflare-obfuscated.** The homepage renders it as `[email protected]`. Not
+  recorded, per the absolute rule — including the decoded form, which the fetch volunteered and
+  which I have deliberately not written down anywhere on this row.
+- **Caveats before Jess spends time:** no owner is named (only an Instagram handle for a cosmetic
+  physician), no founding year, and the only dormant signal is an undefined footer link. Keswick is
+  also inner-south, not the western/coastal corner. **Lower priority than its obfuscation suggests.**
+
+---
+
+## No readable address anywhere — needs a phone call, a DM or a browser
+
+### ORO Aesthetics — 3B/356 Oxford Street, Leederville, Perth WA
+- **Why it looked right:** the best-qualified clinic of the run on everything except contactability.
+  **Dr Monica Hernandez named as Director** under "Meet Our Director", a cosmetic-medicine menu
+  (Rejuran, skin boosters, microneedling, no skin cancer or vein work), **Timely** in place, one site.
+- **Email status: none published at all**, homepage or footer. This is the "total silence" failure
+  mode — a browser does not help. Phone 0461 334 383 is the only route.
+- **Warning:** this page is **serving injected spam** — unrelated casino links and two
+  Polish-language sections sitting inside the clinic's own content. Treat the site as lower-trust.
+
+### The Skin Nurse — 481 Fitzgerald St, North Perth WA 6006
+- **Why it looked right:** **two** nameable practice systems (Dapple CRM *and* Kitomba), a named
+  **Skin Membership** with its own terms, gift cards, iS Clinical and Global Innovator awards — i.e.
+  a real operation with a real list.
+- **Email status: none published at all.** The footer prints "Privacy Policy" as plain text with no
+  URL behind it, so there is no second page to try. Phone +61 491 061 399.
+- **Caveat:** injectables are not explicitly listed (a "Cosmetic Treatments" category with no
+  contents), and "Vasculyse" may be vascular work — check must-have 1 and 2 before pitching.
+
+### Aesthetics by Renee (Enhance Clinics Pty Ltd T/A Aesthetics by Renee) — Adelaide SA
+- **Why it looked right:** "Nurse Renee" fronts the brand, medical cosmetic treatments, PRP,
+  Square booking, a free consultation as the entry point, and a Pty Ltd behind it.
+- **Email status: none on the homepage, and the contact page is unreachable** — both
+  `reneesteena.com.au/contact` and the earlier-seen `/locationandhours` route failed with a
+  **site-side client error**, the fifth failure mode. No suburb or street address is published either.
+  A browser is no more likely to help than a fetch. **Phone prospect, and nothing more.**
+- Their newsletter block also renders the Squarespace placeholder "This newsletter signup form needs
+  a storage option", so the mailing list may not be capturing anything.
+
+### Siren Cosmetic Clinic — Perth WA
+- **Email status: unchanged from the 18 Oct sweep — site-side client error on every attempt.** I
+  retried `sirencosmeticclinic.com.au` once, a year's worth of sweeps apart, and got the same result.
+  Nothing has ever been verified about it, **not even the suburb**. **Stop retrying this one.**
+
+### Vera-Rose Aesthetics — 60/1140 Nepean Hwy, Mornington VIC 3931
+- **Why it looked right:** RN Maddie Mullins named with her AHPRA number, Timely, gift vouchers, and
+  a consultation fee credited toward treatment. Operates **inside SKIN Peninsula** — a room rental,
+  which per the ICP is still one decision-maker and therefore qualifies.
+- **Email status: none published** — enquiry form and mobile only. Also **Mornington itself was
+  explicitly excluded** from my brief, so this is out of area as well as unreachable.
+
+### Revitalize Aesthetics — 2 McFarlane Ct, Highett VIC 3190
+- **Why it looked right:** "**Laura — owner and expert cosmetic nurse**", a genuinely
+  injectables-led menu, Fresha in place, 15+ years' nursing.
+- **Email status: none published**, and no phone number either — Fresha booking is the only route.
+- Highett is bayside Melbourne, inside ground already swept seven times.
+
+### Peninsula Skin Co — Mornington Peninsula VIC
+- **Email status: `robots_disallowed`.** Nothing readable by a fetch; **a person opening it in a
+  browser sees it normally**, so this belongs on the browser-visit list rather than being written off.
+
+### Peta Autengruber Cosmetic Clinic (Fulham Gardens SA) and SDR Cosmetic Injectables (Fulham Gardens SA)
+- The only two injectables businesses this run surfaced inside the Henley Beach/Fulham Gardens
+  corridor, and **neither has a findable website**. Peta Autengruber exists only as a Nextdoor page
+  (`robots_disallowed`) and SDR only as a dlook listing (**client error**). With my searches spent I
+  could not surface a clinic domain for either. **These two are the best remaining reason to send a
+  human at the Adelaide coast**, and both need a name search in a browser, not another fetch.
+
+---
+
+## Ruled out on the must-haves, so nobody spends the fetches again
+
+- **West Coast Skin Clinic**, 857 Wanneroo Road, Wanneroo WA — **fails must-have 2.** Publishes
+  "Skin Checks" and has a **theatre room for surgical intervention**; meta keywords include mole
+  check and mole removal. Also publishes no email. Exactly the pattern the brief warns about: an
+  outer-suburb clinic cannot live on a pure aesthetics menu.
+- **Skin Hub Perth**, Canning Vale WA — **fails must-have 2.** It does offer injectables, but its
+  own pages also sell **dermatoscope skin checks, cryotherapy and excision with biopsy**. That is
+  Medicare work. No email published either. The one Canning Vale candidate the searches produced.
+- **Renaissance Cosmetic Clinics** — **fails must-have 3 outright: "11 LOCATIONS & COUNTING"**
+  (Albany, Applecross, Busselton, Carousel, Fremantle, Kwinana, Leederville, Mosman Park, Secret
+  Harbour, **Wanneroo** WA, Collingwood VIC, plus a Bali hair-transplant clinic), run from a
+  Leederville head office by an unnamed medical director, with a Skin Club membership and Cosmesoft
+  and Mediapp booking. **Add `renaissanceclinics.com.au` to `blocked_domains`** — its Wanneroo site
+  means it outranks independents on exactly the northern-corridor queries we need.
+- **Victoria Park Medispa (`vicpark.com`)** — **wrong country.** A "Midland" query returned its
+  **Midland, Ontario** clinic; the 705 area code settles it, and the booking dropdown lists ~30
+  Canadian sites including Montreal, Calgary and Winnipeg. Sells sclerotherapy and liposuction.
+  **Block `vicpark.com`.**
+- **BALM Clinic** — **wrong country.** A Perth "Midland/Guildford" query returned a **Guildford,
+  Surrey UK** clinic fronted by a plastic surgeon, prices in £.
+- **Evolve Cosmetic Clinic**, Clarkson WA — **fails must-have 1** (dermal and beauty therapy only:
+  IPL, peels, Dermapen, waxing; no injectables) **and must-have 5** (no email, no address, no phone
+  on the page). Two staff named, including a laser physician, and conflicting tenure claims (30 years
+  in one place, "over 25" in another).
+- **Unique Skin and Body Clinic**, Kalamunda WA — **fails must-have 1** (facials, brows, lashes,
+  nails, waxing) and publishes no email.
+- **Complexions Skin and Beauty Centre**, Cloverdale/Belmont WA — **fails must-have 1 and 5.** The
+  homepage names no treatment, no address, no phone and no email at all.
+- **Dianne Caine**, Malaga WA — **not a clinic.** A Perth-made **skincare product brand** on Shopify
+  with a Self-Care Rewards Club and a free skin consultation. No injectables, no address.
+- **The Beauté Collective**, Midland WA — **fails must-have 1.** A bridal/beauty salon (makeup,
+  brows, lashes, waxing, spray tans) with "our cosmetic nurse" as one line and a **Fresha slug
+  reading `kali-ma-beauty-therapy`**, i.e. an injector in a host salon's booking account. No email
+  on the page read.
+- **Cosmetique** (already blocked, 23 clinics), **Brighton Day Surgery** (day surgery),
+  **Skin Doctor SA** / **Dr Paul O'Brien** / **moleclinic.com.au** (skin cancer),
+  **Dermatology SA** / **myPRODERM** / **Endorphi** (dermatology — disqualified under v2),
+  **Adelaide Dental Spa** and **Azura Dental** (dental practices with an injectables line),
+  **APC Surgery**, **Facelift Clinic Perth**, **Dr Nathan Stewart** and **Dr Robert Goldman**
+  (cosmetic surgery), **cosmeticinjectablesadelaide.com.au** ("national cosmetics clinic expands to
+  Adelaide" — a chain). **`adelaideskinclinics.com.au`, `skinn.com.au` and `medical.mamma.com` are
+  aggregator-style domains that crowd Adelaide and Perth queries — add all three to `blocked_domains`.**
+
+---
+
+## What this market taught me
+
+**Australia is finished, and the Adelaide coast is the proof.** The clearest single finding of the
+run is not a clinic, it is a directory index. I fetched the Yellow Pages "skin treatments & skin
+clinics" indexes for **Brighton SA 5048 and Marion SA** on purpose, as the brief's technique 3
+prescribes. Both returned the **identical thirty listings**, neither list was local to the suburb
+queried, and the contents were **The Body Shop (four times), MAC Cosmetics, L'Occitane, a gym, a
+market, two dermatology groups and two skin cancer clinics**. *Not one listing on either index
+mentioned cosmetic injectables or a cosmetic nurse.* When a directory that exists to list skin
+clinics in a 400,000-person coastal catchment cannot find thirty of them and pads the page with
+cosmetics retail, the conclusion is not that my query was wrong. **There is no population of
+independent injectables clinics left in Adelaide's western and coastal suburbs.** The corner is
+empty, not unswept. Port Adelaide, Semaphore, Henley Beach, Burnside, Brighton and Marion produced,
+between eight searches and twenty-two fetches, exactly **two** independents with a readable address
+— Skin Afinity in Somerton Park and Skin4U in Glenelg — and the second of those has no injectables.
+
+**Perth's assigned corridors failed for a structural reason, not a search-wording one.** Wanneroo,
+Canning Vale, Ellenbrook, Midland and Armadale each produced **one** aesthetics candidate, and in
+three of the five that candidate **also sells skin cancer checks or minor surgery** (West Coast Skin
+in Wanneroo, Skin Hub in Canning Vale) or is a beauty salon with a visiting nurse (The Beauté
+Collective in Midland). This is the brief's own New Zealand lesson repeating: *an outer suburb
+cannot support a pure injectables menu*, so the clinics that exist there survive by adding
+Medicare-billed work, which fails must-have 2. **Screening the menu first saved four privacy-policy
+fetches** and is now confirmed in a second market.
+
+**Three of my twelve searches were destroyed by place-name collisions, and the area-code rule caught
+all three.** `Armadale Gosnells Kelmscott Thornlie ... WA` returned **Washington State** — "WA" is
+the collision, so never put the bare state abbreviation in a query with small-town names. `Midland
+Ellenbrook Bassendean Guildford` returned **Midland Ontario** (area code 705), **Midland Texas**,
+and **Guildford Surrey** — four towns, three countries, one query. The fix that worked was spelling
+out "Perth WA" or "Adelaide" *and* keeping the stack to four names plus two modifiers; the
+unquoted-and-short rule held up, but **it does not protect against a name that exists in three
+countries.** Add that to the rule: prefer suburb names that are unique in the English-speaking
+world (Wanneroo, Ellenbrook, Semaphore) over ones that are not (Midland, Brighton, Armadale,
+Richmond, Guildford).
+
+**The device-maker locator technique has lost its best Australian source.**
+`deviceconsulting.com.au/clinic-locator` — the one locator that surfaced for this market — returns a
+**client error** and no content on any path. Of the eight locators the brief lists, Aesthetics Rx,
+Cosmeceutical Solutions and dermaviduals render client-side, ZO is robots-disallowed, and this one
+is now simply broken. **The technique still has the best yield per fetch where a static locator
+exists, but Australia no longer has one — do not budget fetches for it here again.**
+
+**Two Australian clinic sites in one run were serving injected content, which is new.** Skin4U's page
+source contains **PHP that logs a visitor in as an administrator** on certain URL paths plus casino
+links, and ORO Aesthetics serves casino links and Polish-language blocks inside the clinic's own
+content. Neither tried to steer what I recorded, so this is not the Louisville case; it is
+compromised WordPress. But it is a reason to **read the `notes` field before emailing either** — a
+mailbox on a compromised host may be unattended or itself compromised — and a sixth thing that looks
+like clinic content and is not.
+
+**The consent screen still has not disqualified a single Australian clinic.** That is now five
+sweeps and, on this run, four privacy policies read in full (Skin Afinity, Jennifer Carly, Luum,
+and About Face's pages). Every one of them either says nothing about unsolicited email or says the
+**opposite** — Luum's policy volunteers that it may send direct marketing and names its CRM
+provider. It remains a recording cost, not a filter, and leaving it to last was right. **Not
+guessing `/privacy-policy` paths also worked**: four of five policy links I used were read off a
+page I had already fetched and all four resolved; the fifth, Mira Clinic's, was **robots-disallowed**,
+so I recorded the no-notice finding for the page I actually read and said which page that was,
+rather than claiming a screen I had not completed.
+
+**My verdict: stop assigning Australia.** Eight rows, none of them A, and five of the eight sit
+*outside* the corners I was sent to (Gawler, West Perth, Joondalup, Highett) because the corners
+themselves were bare. The remaining Australian value is not in sourcing at all — it is the
+**browser-visit list**: Fika Clinic's obfuscated mailbox, Peninsula Skin Co's robots block, and
+above all the two Fulham Gardens injectors with no findable website. That is twenty minutes of
+Jess's own browsing, not another sourcing run.
+
+
+# Near-misses — coastal Virginia, the Carolinas, Georgia and the Gulf coast (2 Nov 2026)
+
+Markets swept: Chesapeake, Virginia Beach, Williamsburg and Newport News VA; Greenville,
+Spartanburg and Anderson SC; Durham, Chapel Hill, Cary and Wilmington NC; Savannah, Pooler,
+Richmond Hill and Rincon GA; Pensacola, Pace, Gulf Breeze and Destin FL.
+
+Everything below clears or very nearly clears ICP v2 but has **no readable email address**, so
+none of it may go into the pipeline with a constructed address. The two groups need completely
+different handling, so they are separated.
+
+Budget consumed: **12 of 12 WebSearch calls, 39 of 45 WebFetch calls.** Search budget is what
+stopped the run, not fetch budget.
+
+---
+
+## Group 1 — Cloudflare-hidden. Jess can read these in a browser in seconds.
+
+These are the cheapest conversions in the file. The address exists on the page; a fetch cannot
+see it.
+
+| Clinic | Where | Why it matters | Note |
+|---|---|---|---|
+| **Bare N Beautiful** | Anderson SC + Greenville SC (2 sites) | **The best Upstate SC prospect found.** MyPatientNow confirmed, a membership page, Cherry payment plans and CareCredit, a full aesthetic menu with named injectors in reviews (Karen), plus head spa and body contouring. Both numbers are 864, so both towns check out | Renders as `[email protected]`. One browser tab from a pipeline row |
+| **LeJeune Aesthetic Centers** | Greenville SC (530 Haywood Road) | Energy devices plus injectables, named injectors in reviews, one address | Renders as `[email protected]`. **But the dormant signal is nil** — no membership, loyalty scheme, gift cards or financing anywhere, and no booking platform named. Footer reads © 2024. Worth a tab, but expect a B at best |
+| **Nuvee Aesthetics** | Durham NC (also trading as "The Physique Nurse") | Founded by Shenique, a licensed nurse with seven-plus years clinical. Jane App confirmed. LeadConnector / HighLevel assets on the site, i.e. our own platform | Renders as `[email protected]`, with a second obfuscated address as well. **Screen the menu before spending the tab:** body injectables, non-surgical BBLs, lipo dissolve, IV therapy and medical weight loss make it body-contouring-led, so it may fail must-have 1 even once the address is readable. No phone published either |
+
+---
+
+## Group 2 — Total silence. No address published anywhere reached. Needs a phone call or a DM.
+
+Ordered best first. The top four are better prospects than several rows that did qualify.
+
+| Clinic | Where | Why it matters | What was checked |
+|---|---|---|---|
+| **Antidote Aesthetics** | Virginia Beach VA (968 First Colonial Rd) | **The best Virginia Beach prospect found, and the one I most want back.** Co-founders **Andrea Hixon, FNP-C and Erin Dietel, PA-C**, both named as national trainers for two large aesthetic pharmaceutical companies. Boulevard gift cards (blvd.me), a VIP Membership page, Cherry financing, treatment-builder.com. Phone 757.995.4732 | Homepage **and** About page both fetched. No email on either, footer included. Not Cloudflare — genuinely absent |
+| **Magnolia Aesthetics & Wellness** | Richmond Hill GA (+ a Pooler location page) | **The best banked-credit scheme in this batch.** A membership with an enrolment fee and a monthly contribution paid into a dedicated **membership wallet** held for future treatments and products, quarterly member gifts and an annual members-only event. Amanda Hall, APRN, CRNA, MSN leads. Boulevard portal. Operates inside The Skin Studio plus mobile services for groups | Locations page **and** memberships page both fetched. No email on either. Phone (912) 226-2111 |
+| **Glow MedSpa Savannah** | Savannah GA (415 Eisenhower Dr) | **The richest dormant-asset stack of any clinic in the sweep, by a distance.** Glow VIP Rewards (free membership with an AI treatment advisor), Silver and Executive membership tiers, a Glow & Tell two-way referral credit, Allē and Aspire rewards, Affirm financing, gift cards and packages. **The VIP app runs on RepeatMD** — a named recall platform. Joyce Chan is Master Injector and Head of Aesthetics Nursing | Treatment page fetched: no email. The memberships page **302-redirects straight into `glowvip.repeatmd.app`**, so it cannot be read by fetch at all. Phone (912) 785-8643. Owner never named |
+| **Dermacare of Hampton Roads** | Chesapeake VA, serving Virginia Beach, Norfolk, Portsmouth and Suffolk from one site | Leon Garber (Owner, CEO), Dr Keith C Nichols (Medical Director), Carrie Labert MSBS PA-C (COO), Trisha O'Meara MSN APRN CANS plus four more nurses. Dermacare Membership Plans with a comparison chart, and a "Dermacare Difference Program". One convenient location, explicitly stated | No email on the homepage. Phone 757-547-7546. **Two flags:** a non-clinician CEO with a COO is a management layer, which is the shape must-have 3 warns about; and "Facial & Leg Veins" on the menu sits close to the vein-work cash-pay disqualifier |
+| **Spa North** | Travelers Rest SC + Greenville SC (2 sites) | Owners named outright: **Beckie Hoddy** (cosmetic nurse injector) and **Bridget Simmons**. Boulevard confirmed. Memberships in the nav, payment plans in the footer | **No email AND no phone number on the homepage.** Nothing to call, nothing to write to. Second-best Upstate SC prospect after Bare N Beautiful |
+| **House of Aesthetics** | Cary NC + Wilmington NC | **Jennifer Beeson, P.A.**, Founder, Advanced Injector and national trainer, "over 18 years" — a published trading-history claim, which is rare. Boulevard portal, GiftFly gift cards, Cherry financing | No email on the homepage. Five location pages (Cary, Wilmington, Southern Pines, Southport, Surf City) but only two addresses, so these are **SEO suburb pages** and it is one buyer under must-have 3, not a five-site group. Phone (919) 297-8682 for both |
+| **Beach Medical Aesthetics** | Wilmington NC + Leland NC | **Ashley Schuman, FNP-C founded it in 2021** — an actually published founding year, which almost nothing in this market gives. Membership page, payment plans, monthly specials, gift cards via Aesthetic Record, Aspire rewards accepted. Five named clinical staff | No email on the homepage. Phones 910-902-0455 and 910-902-0115 |
+| **Radiant Skin** | Richmond Hill GA + Rincon GA (2 sites) | **Tara Canzon**, Nurse Injector and Co-Owner. Zenoti confirmed. A "Beauty Club" membership, online gift cards, PatientFi financing, named seasonal events | No email. The founders are described as a board-certified emergency physician and a registered nurse but **never named**. Hormone therapy and weight loss are pushed to a separate company's site (coastalhealthandvitality.com), so there may be two entities here. The page also prints the Richmond Hill phone inside the Rincon block, contradicting its own Rincon number |
+| **Ageless Skin Rejuvenation** | Virginia Beach VA | MyPatientNow confirmed, VIP **and** Integrative Health & Wellness memberships with listed perks, Square gift cards, Cherry payment plans. Reviews reference clients since 2018 and "over a decade" | **The important case in this file.** The only email anywhere on the page is `mwm@middlewaymarketing.com`, served in a `twitter:data1` meta tag — **their marketing agency's mailbox, in metadata, not a clinic publication.** Not recordable under either the brief's four look-alikes or ICP's. No street address either, only "Virginia Beach" and geo coordinates. An owner "Rachael" is named only inside a customer review, so that is unverified too. Phone 757-707-1231 |
+| **The Spa and Laser Center** | Virginia Beach + Norfolk + Suffolk VA + Kill Devil Hills NC (4 sites) | Four sites is still inside must-have 3. Aesthetic Record confirmed, Square gift cards plus design-your-own instant gift certificates, a payment plans page, a Google rating of 4.8 from 45+ reviews, two named nurse providers | No email on the locations page. **Flag:** the laser menu carries vascular pulsed dye and vein therapy, close to the vein-work cash-pay disqualifier, and the Outer Banks site is in NC not VA. No owner named |
+| **Pure Cosmetics NC** | Raleigh NC + Wilmington NC | Meevo booking **and** LeadConnector / GoHighLevel powering the live chat — our own platform, which makes it cheap to work with if it ever becomes reachable. Meevo gift cards | No email, no owner named, and **the live site still renders unfilled template placeholders** where the addresses should be (`{{ l.address }}`), plus an internal "Style Lab" section marked not-linked-publicly. A half-built site. Phones (866) 691-4427 and (910) 232-2835 |
+| **Rebel Aesthetics** | Cary NC | Caitlin Allegrezza, CANS, and the site states "nurse-owned and operated". Jane App confirmed, Cherry financing | **No email, no phone and no street address** — the only route is a web contact form. Also thin: one operator running a concierge and on-site model, so the lapsed list is likely small |
+| **Williamsburg Med Spa** (`williamsburgmedspa.com`) | Williamsburg VA | Jenny Coleman named, no role given | No email. **Three separate reasons to leave it:** the menu is injectables plus PRP for joints, hyperhidrosis, medical ear piercing and O-Shot/P-Shot, which is not an aesthetics-led list; hours are Mon-Fri 6-8pm only, so it is a side practice with little volume; and the published phone is an **804 (Richmond) number on a Williamsburg (757) page**, exactly the wrong-town trap the brief warns about. Its "Newport News" page carries no Newport News address, so the location pages are SEO pages |
+
+---
+
+## Ruled out — do not re-source
+
+**Plastic surgery or facial-plastics practices with a med spa arm** (ICP v2 disqualification,
+screened off the menu without spending a fetch): North Beach Plastic Surgery (Virginia Beach),
+Choe Center for Facial Plastic Surgery (Virginia Beach), Wilmington Plastic Surgery (NC),
+Shaddix Plastic Surgery (Pensacola), and **The Med Spa on Augusta** (Greenville SC — this one
+I did fetch: Boulevard confirmed, a referral programme and gift cards, but Dr Orseck's menu
+carries "Surgical Consultation", so it is a surgical practice's spa).
+
+**Fails must-have 2 (cash-pay) on vein or similar work:** Chesapeake Vein & Medspa
+(Chesapeake VA), Sandy Keys Medical (Pensacola — spider vein removal plus HRT).
+
+**Fails must-have 1 (not injectables-led), screened on the menu visible in the search result
+rather than by spending a fetch:** The Push Med (Greenville SC — hormone therapy and weight
+loss first), Mind Body Soul Medical (Pensacola), Optimal Self MD (Greenville SC).
+**Caveat: these three were screened on title and search snippet only, so they are the least
+certain rule-outs here** — if the Upstate is ever re-swept and candidates are short, they are
+worth one fetch each.
+
+**Chains, groups or already resolved:** Elase (Greenville and Durham locations), Allure
+Medical, Ideal Image, **MD Esthetics** (already a Mid-Atlantic near-miss, multi-state with a
+separate HQ), Smiley Aesthetics, Skin Clique, **BodyLase / getbodylase** (already a Carolinas
+near-miss, four sites), Couture Med Spa.
+
+**Already covered, confirmed by grep before any fetch was spent:** BodyLase, Charleston
+Medical Spa, Avail Aesthetics (Cary), Totality Medispa, The Look and Co. (Mount Pleasant),
+Opal Aesthetics, The Spa at West Ashley, Magnolia MedSpa (Charlotte — note it is a *different*
+business from Magnolia Aesthetics & Wellness in Richmond Hill GA above; the names collide).
+
+---
+
+## What this market taught us
+
+**The southeast publishes an address more readily than the US average, and the obfuscation
+problem is small here.** Twenty-nine clinics were examined closely and seventeen gave a
+verbatim address, which is a far better rate than the "total silence is the commonest US
+failure" note in the brief would predict. Only three of the twelve unreachable ones were
+Cloudflare-hidden; the rest simply publish nothing, so this is a phone market more than a
+browser market. The one address pattern worth recording is **how often it is a gmail**: five
+of the seventeen (Colonial, Mela, Destin, Oak and Glow, Beauty Queens) publish a free mailbox
+rather than one on their own domain, which is a much higher mismatch rate than the roughly one
+in five seen on 21 Oct, and a hint that these are small operations where the owner reads her
+own mail — good for us, but it means a bounce is likelier and must be read as a bounce.
+
+**The brief's two measured corrections both held exactly.** Unquoted four-town stacks with two
+modifiers returned ten usable results every time, across six different stacks, and not one
+collapsed into a directory or the wrong region. And **no `/contact` was fetched at all**: every
+one of the seventeen addresses came off a homepage, an About page or a memberships-page footer,
+which now makes it 76 in a row. The ownership-fetch rule held too but is worth sharpening —
+**the single second fetch onto a team or About page settled ownership three times out of three
+and produced zero new addresses**, exactly as predicted. The Injectory is the clean case: the
+homepage gave the address and a testimonial name, and the team page turned a guess into "Bobby-Jo
+Lutner, CRNA, owner, launched February 2021".
+
+**The warning about this market was right, and it cost more than the plastic surgeons did.**
+Plastic-surgery practices were easy to screen off the menu and never cost a fetch. The real
+tax was the **hormone-and-weight-loss middle ground**: eight of the clinics I did fetch carry
+GLP-1, HRT or longevity programmes alongside the aesthetic menu, and three of them (Odomí,
+MedSpa 501, Dr Addison) are genuinely arguable rather than clear. I accepted all three with the
+doubt written into `notes` rather than smoothed over, because the aesthetic menus are full and
+listed first, but **Dr Addison Aesthetics is the one to re-screen before sending** — her second
+board is Obesity Medicine, and a practice whose lapsed list is mostly weight-management patients
+is not a practice our offer works on.
+
+**Two structural things to carry forward.** First, **Lost Key Med Spa is the case for always
+reading the phone before the town**: it publishes a toll-free 833 number and no street address,
+so the area-code check the brief mandates simply could not be run, and the only evidence for
+"Pensacola" is a meta description. That failure mode is new to this log — not a wrong town, but
+an **uncheckable** one. Second, **Ageless Skin Rejuvenation found a fifth look-alike address**:
+not Cloudflare, not a builder placeholder, not a QR code and not the clinic's own Open Graph
+tag, but **the marketing agency's mailbox served in a `twitter:data1` meta tag**. It reads like
+a published address to anything scraping metadata and it belongs to a third party, so it is
+arguably worse than a placeholder. Worth adding to the four in both the brief and ICP.
+
+**Coverage left behind.** The search budget died before Norfolk proper, Newport News and Suffolk
+got a dedicated stack — all three were only ever reached as the third or fourth name in someone
+else's query, and Norfolk produced no independent clinic domain of its own at all. Mount Pleasant
+SC and Pooler GA were likewise never searched directly. Savannah, Pensacola, Greenville SC and
+Chapel Hill are now properly covered; **Norfolk and Newport News are still at zero and should be
+the first stack of the next run.**
+
+
+# Nevada + California-gap near-misses and rule-outs — 2 November 2026
+
+**Markets worked:** Las Vegas's affluent suburbs (Summerlin, Henderson, Anthem, Green Valley,
+Seven Hills, Boulder City) — previously **zero** coverage in our files — then the California gaps
+yesterday's worker left open: Murrieta on its own, Clovis, Manteca, Hanford/Lemoore/Selma via
+Visalia, Fowler, plus Temecula's surrounds (Lake Elsinore, Menifee, Canyon Lake, Wildomar, Ripon).
+Qualified against ICP v2 (16 Oct 2026). No regional screen applies to the US beyond must-have 5.
+
+Accepted rows went to `nevada-california.json` — 16 rows, 4 A / 6 B / 6 C.
+**Spent: 12 WebSearch of 12, 43 WebFetch of 45.** Stopped at the cap, not on supply.
+
+Did **not** re-research, per instruction: Rio Glow, Bella Vida, Neo Medical Spa, RenewMD, Refyned,
+ONYX, Ego Defined, Face & Beyond. Also skipped **Revay Aesthetics** (Fresno/Clovis) — yesterday's
+sweep already settled its ownership on a team-page fetch.
+
+---
+
+## Cloudflare-hidden — one browser visit each, Jess can read these in seconds
+
+These three are the cheapest wins on this page. The clinic published an address; Cloudflare is
+hiding it from a fetcher only.
+
+### SkinSculpt Aesthetics — Fresno, CA
+`skinsculpt-aesthetics.com` · (559) 470-2125 · 1495 W Shaw Ave, Fresno CA 93711
+**The best clinic on this whole page.** **Esmeralda Devack, BSN, RN — published as "Owner &
+Founder" and "Injector"**, the only injector named. One address. **"76+ (5 Star Reviews)"**, which
+is a real published review count and rarer than it should be in this market. Booking through a
+**Blvd/Boulevard** widget. Full menu — injectables, biostimulants, lasers, microneedling, hair
+restoration, combination therapies, weight management. The footer and contact block both render the
+address as `[email protected]`. No membership scheme (a "Monthly Promos" page with no terms), which
+is the only weak leg. **Clears every must-have except 5, and must-have 5 is one browser visit away.**
+
+### Chic la Vie Med Spa — Las Vegas (Sahara Ave, Summerlin side), NV
+`chiclavie.com` · 702-233-8535 · 7650 W Sahara Ave Suite 3, Las Vegas NV 89117
+Address renders `[email protected]`. One site. **Memberships, Gift Cards AND Packages all hosted on
+Mangomint** — three dormant pools on a nameable system, which is the richest scheme stack of any
+Nevada business I opened. A Las Vegas Review Journal gold award badge (2021 graphic) is the only
+tenure proxy; no owner named on the page I read, though an "Our Team" page exists.
+
+### LuxeFactor Aesthetics — Las Vegas, NV
+`luxefactorlv.com` · (702) 805-0777 · 8861 W Sahara Ave #290, Las Vegas NV 89117
+Address renders `[email protected]`. One site. **Zenoti**, including a branded Zenoti mobile app
+(`com.zenoti.luxefactorlv`) — a clinic that has paid for an own-brand app has an invested list. No
+owner named ("credentialed specialists"), no founding year, a Promotions page with no terms.
+
+---
+
+## Robots-disallowed — a browser sees these normally, a fetch cannot
+
+### Revive Medical Aesthetics — Visalia, CA
+`revivemedvisalia.com` — refused the fetch outright. Visalia was the surprise town of yesterday's
+sweep (three accepted rows from ~140,000 people), so a fourth Visalia independent is worth the
+browser visit. Nothing known about it either way.
+
+### Aesthetic Club — Clovis / Fresno, CA
+`aestheticclubcorp.com` — its `/locations/` page refused the fetch. **Unresolved in a way that
+matters:** the domain says "corp", it has a dedicated locations page, and it was one of only two
+Clovis-area results that surfaced at all. It may be a multi-site group that should be blocked, or it
+may be an independent with a grandiose domain. **Settle this before the next Central Valley run** —
+if it is a group it belongs on the blocked list, and if it is not, Clovis has a second clinic.
+
+---
+
+## No address published at all — phone or direct message only, no browser helps
+
+**Nevada (the whole problem with this market is on this list):**
+
+1. **AMW Med Spa** — Henderson, 3145 St Rose Pkwy Ste 131 · (702) 744-4477. **The best dormant
+   structure in Nevada and no way to email it:** three named annual membership tiers (Silver, Gold,
+   Platinum) that bundle services *and* an explicit **"aesthetic credit" applicable toward
+   injectables**, plus a member sign-in portal at `members.amwmedspa.com`. That portal means
+   somebody is already tracking per-member balances. No owner named ("licensed providers", "a
+   licensed nurse injector"), no founding year, no booking platform named. **Phone prospect, and
+   the first call I would make in Nevada.**
+2. **Parie Med Spa** — Las Vegas, 1725 Village Center Circle Suite 150 (Summerlin) · (702) 930-6221.
+   Memberships with priority booking and "exclusive pricing", complimentary consultations, **Acuity
+   Scheduling**. Footer names the entity "Parie Medical Spa LLC". No owner named, no founding year.
+3. **Henderson Med Spa** — 90 S Stephanie St Suite 110 · 702-448-9977. **Dr Paige Hixson named as
+   founder**, Vagaro, a Memberships page. But a heading on the same site reads **"Henderson Internal
+   Medicine & Med Spa"**, which is a probable **must-have 2** failure as well as a must-have 5 one —
+   an internal-medicine practice bills insurance. Do not pursue without settling that.
+4. **Summerlin Med Spa by Bliss Wellness and Beauty** — 4245 S Grand Canyon Dr #117 · (725) 302-9963.
+   **Nurse Nikki Long** named. Operates *inside* "HUE Lux Suites", i.e. a room rented in a host
+   venue — the structure the ICP forgives. But the menu I read is IV therapy, vitamin and lipo
+   shots, NAD, hormone optimisation, weight loss and longevity: **wellness-led with injectables as
+   one nav item**, so must-have 1 is doubtful too. Low priority.
+5. **Infuze Aesthetics & Wellness** — Henderson/Las Vegas · (702) 964-9500. Publishes **no street
+   address at all**, and says "located in Henderson, Nevada" in one paragraph and "LOCATED IN LAS
+   VEGAS, NV" in the header. InMode device line. No owner named, no booking platform. Thinnest site
+   in the batch.
+6. **Veristic Aesthetics** — Henderson, 180 S Stephanie St Suite 140 **Room 1** · 702-623-7674.
+   "Room 1" suggests a rented room. Wix site "Powered By DoctorLogic". Full injectables range named
+   in prose but no structured menu, no team names despite an "Our Team" link, no founding year.
+7. **Green Valley Aesthetics** — **publishes no email AND no phone number**, on the page I read.
+   `gvaesthetics.com`. **"Since 2014"** is stated outright, which makes it the only unreachable
+   Nevada clinic with a verified trading history. **Acuity Scheduling.** One further catch worth
+   recording: the address is **365 Pilot Rd, Las Vegas 89119** — that is the airport/Paradise area,
+   **not Green Valley or Henderson**, despite the name. The name is a market claim, not a location.
+8. **Refresh MD Aesthetics** — **Boulder City**, 893 Adams Boulevard · (702) 733-7374. The only
+   Boulder City aesthetics business that surfaced at all, so that town is now **thin rather than
+   unswept**. Built on **GoDaddy Website Builder** (so check for a `filler@godaddy.com` placeholder
+   if anyone opens it — I saw none). Free consultation, no membership, no booking platform, no owner
+   named, no founding year. Teeth whitening on the menu.
+
+**California:**
+
+9. **Lucali Aesthetics and Regenerative Medicine** — **Murrieta**, 29995 Technology Dr Suite 202 ·
+   951-412-0172. **Dr Dzenan Lulic published as founder and "proficient injector"** — a named
+   owner-physician-injector, which is the profile this offer wants most. **Aesthetic Record.**
+   Complimentary/"risk-free" consultations, Cherry and CareCredit. 4.9 Google rating with no count.
+   **The strongest unreachable clinic in the California gaps. Phone prospect.**
+10. **Mystique Medical Spa** — Fresno, 7161 N. Howard St Suite 101 · (559) 447-5273. **Membership,
+    "Refer and Earn" AND Gift Cards — three schemes — on AestheticPro**, plus a separate retail shop
+    subdomain and a Brilliant Connections skincare store. **"Fresno's People's Choice Award Winner
+    6 years in a row"** is a strong six-year tenure proxy. No owner named despite "Our Providers &
+    Staff". Only contact route is a form behind a "Questions? Email Us!" link. **Phone prospect.**
+11. **Savage Serenity MedSpa** — Fresno, 997 E. Champlain Drive #160 · (559) 388-8726. **Angela
+    Hash**, aesthetic nurse injector and **a national trainer for Revance** — a manufacturer-trainer
+    is a reliable signal of a serious injectables practice. Gift cards through a **ProspyrMed**
+    portal. A second name, "Casey Slauter", appears as an image label with no role — possibly a
+    co-owner, unresolved. Publishes a call number and a separate text number, no email.
+12. **Verity Aesthetics** ("Verity Aesthetics by Nikki") — Visalia, 1747 W Walnut Ave #101 ·
+    (559) 972-7026. **Nikki Aguirre, FNP-C**, board-certified NP injector, sole practitioner.
+    **Aesthetic Record.** E-gift cards in the nav with no terms. Wix. Menu is tight and purely
+    aesthetic — the kind of clean injectables-only menu the inland-California failure mode usually
+    rules out. Only "over five years of experience" (career, not clinic).
+13. **Central Valley Medical Aesthetics** — Visalia, 215 E Caldwell Ave Suite A. **Publishes no
+    email AND no phone number**, and names nobody — "an experienced team of aestheticians and a
+    board-certified doctor". Total silence in the fullest sense. Nothing to act on but a street visit.
+14. **Resolve Aesthetics** — **Ripon and Copperopolis**, 1201 W Main St Suite 7 · (209) 399-0114.
+    **Ramona Huerta NP** and **Dr Harjit Gogna, Medical Director**, two sites, both named. But the
+    site has no structured service menu at all (one heading, "Your Skin Comes First"), no booking
+    platform, no founding year and no scheme — thin as well as unreachable.
+15. **Ageless Grace** — **Murrieta and Temecula**, 24910 Las Brisas Rd Ste 103 and 43446 Business
+    Park Drive · 951-643-4664. **Dr Lily Phillips** named as the board-certified physician leading
+    the clinical team (a review mentions "Drs Robert and Lili Phillips", so possibly a two-doctor
+    husband-and-wife practice — two decision-makers, unresolved). Two sites, so the count passes.
+    **Against it:** the menu is wellness-heavy (BioTE hormone replacement, weight management, miraDry,
+    laser feminine rejuvenation) and the site says **"Online Scheduling Coming Soon!"** on a Wix
+    build — a practice with no online booking probably has no system holding a workable list.
+    Complimentary consultations are the only dormant signal.
+16. **LeVogue Med Spa** — **Temecula and Cary, North Carolina** · 951-944-2546. Two sites in two
+    states. **Runs on LeadConnector, i.e. GoHighLevel** — which would make it one of the cheapest
+    integrations in the pipeline, and worth noting for that reason alone. But: no email, no owner or
+    injector named, copyright 2025, and it bills itself "#1 fastest-growing medical spa in Southern
+    California" with no review count — reads new. Low priority despite the GHL match.
+
+---
+
+## A site-side error — the fifth failure mode, and no browser or fetch helps
+
+### `medspa-lv.com` ("Memberships Las Vegas")
+Its `/memberships/` page returned a **client error** with no content, on the one fetch I spent. It
+surfaced in **three separate searches** (memberships, contact and wallet-phrase queries), so the
+domain ranks well for exactly the signal we hunt and I would like to know what it is. Per the brief
+I did not spend a second fetch guessing another path. **Unresolved — treat as a phone prospect or a
+browser visit, not a failed search.**
+
+---
+
+## Ruled out, with the reason — don't spend fetches here again
+
+**Chains, franchises and multi-site groups (must-have 3):** **NakedMD** — publishes **"42+ Locations
+Nationwide"** and *nine* state-by-state medical directors on a Shopify storefront; it ranked first
+or second on Henderson, Temecula *and* Murrieta queries, so **add `nakedmd.com` to the blocked list**:
+it is the single biggest crowder-out across both my markets. Also **Beverly Hills Rejuvenation
+Center** (`bhrcenter.com` — four Las Vegas-area pages alone, same pattern), **OrangeTwist**,
+**LaserAway**, **Restore Hyper Wellness**, **Genesis Lifestyle Medicine**, **Alpha Medical
+Aesthetics**, **Advanced Aesthetics LV** (five sites on PatientNow — already in our Sep near-misses),
+**The Treatment Skin Boutique** (five sites — kept as a C row, not dropped), **Facelogic Clovis**
+(franchise brand, already logged).
+
+**Plastic surgery or dermatology (must-have 2 / ICP disqualification):** **Hankins Plastic Surgery**,
+**Deram Cosmetic Surgery**, **Manhattan Beauty Project** (Lake Elsinore — "Surgeon-Led Cosmetic
+Surgery"), **Buddiga** (Fresno), **Vegas Dermatology**, **Summerlin Dermatology**, **Engineered
+Aesthetics** (a surgical practice's "non-surgical" sub-page). Also **Revenge MD** (Reno/Las Vegas/
+Henderson) stays ruled out from the Mountain West sweep.
+
+**Brand-new (must-have 4):** **Alchemy Beauty Bar** — Henderson, 11201 South Eastern Ave Suite 100.
+**Pheenie Scott published as "founder, COO"**, a clean injectables-and-regenerative menu, Mangomint —
+and the map label reads **"Opening Feb 2026"** with five reviews and no total. It also publishes no
+email. Re-check in 2027; it is a good future prospect.
+
+**The wrong-town catch of this sweep — and it is a bad one.** **Empower Aesthetics** surfaced on a
+*Lake Elsinore / Menifee / Canyon Lake / Wildomar* query as "Canyon Lake's Trusted Medical Spa
+Experts". It is in **Canyon Lake, TEXAS** — 16710 FM 306, area code **830**, with its FAQ describing
+itself as a top medspa in **New Braunfels, TX**. The brief's rule caught it: *read the area code
+before the address.* Canyon Lake CA and Canyon Lake TX are a same-name pair in exactly the way
+Emerald NSW/QLD is, and one fetch was spent proving it. It would have failed anyway on two counts:
+its team page is a **practitioner collective** — Lynn Hollis founded Empower, but Ignasia Garcia
+founded "Brow Confident", Kendra Lawhead founded "Heavenly Hair by Kendra" and Dora Powell founded
+"Bliss and Glow", all at the one address, which is the ICP's 21-Oct Hamilton disqualification exactly
+— and it runs a **franchise and training arm** ("Empics Management Enterprise", "born 12/4/2023")
+whose only published mailbox is a **gmail address belonging to the management entity**, not the clinic.
+
+**Not aesthetics-led (must-have 1):** **MP Esthetics** (Murrieta — waxing and skincare),
+**Nico DNP** (holistic/wellness pricing), **Summerlin Body Therapeutics**, **SOS Wax and Skincare**.
+**Aura Aesthetics** and **DNAesthetics** fail the same must-have but are kept as C rows because both
+publish a readable address and real dormant structure.
+
+**Surfaced and not opened, on profile alone — no fetches spent:** `lakesidelabinjector.glossgenius.com`
+and `mpbe.glossgenius.com` (booking pages on a third-party platform, not the business's own site, so
+nothing published there counts), `hendersontoprated.com` and `topoftemecula.com` and `medspafind.com`
+and `trustanalytica.org` and `superpages.com` and `yellowpages.com` and `nextdoor.com` and
+`bbb.org` and `zoominfo.com` (directory farms — **and `giftly.com` and `quickgifts.com`, two
+gift-card resellers new to our blocked list that hijacked an entire Summerlin query, returning six
+of ten results**), `greenvalleymedspa.com` and `luxeroomcosmetic.com` (the latter is Boulder,
+**Colorado** — another same-name catch, not opened), `synergywellnesscenter.com` and
+`drtiwanamd.com` (already logged).
+
+---
+
+## What this market taught me
+
+**Las Vegas is the worst publishing market in the entire log, and it is not close.** I examined
+**twenty-two Nevada businesses** and got **five readable addresses** — and two of those five
+(Aethereal, Blanqa) are graded C for being too new to have a list, and one (The Treatment) is a
+five-site group. **Nevada produced exactly three usable rows: Tru Beauty, Glamour Me and Abrams,
+plus Center for Aesthetic Medicine off a privacy policy.** Against yesterday's inland-California
+ratio of fifteen accepted to eleven lost — which the log already called the worst in the file —
+Nevada is roughly **4 accepted to 11 unreachable**, so **inland California is now the second-worst
+market and Las Vegas is the worst.** The texture is different too: inland California clinics market
+by phone, text widget and Instagram, whereas the Las Vegas ones are **conspicuously well-built sites
+with Zenoti, Mangomint, Vagaro and PatientNow behind them that simply never print a mailbox.** These
+are not scrappy operations hiding; they are funded operations that treat the phone and the booking
+widget as the only front door. **The practical consequence: Las Vegas needs a phone or Instagram-DM
+route, not an email route**, and the decision the 24 Sep sweep asked for about non-email channels is
+now overdue rather than optional.
+
+**The privacy policy was the single highest-yield fetch of the day, and the ICP is right about it.**
+Two of my sixteen rows exist only because of it — **Liquid Beauty** (`info@liquidbeauty.com`, in a
+"you may contact us regarding this policy" clause, where the homepage published nothing) and **Center
+for Aesthetic Medicine** (`info@camhplv.com`, printed three times on the policy page). Both are among
+my four best rows. Two policy fetches, two addresses, in a market where thirty-odd homepage and About
+fetches produced fourteen. **In a silent market, go to the privacy policy early rather than last.**
+That inverts what the brief currently implies for the US, where the policy is framed as a last resort
+and the consent screen as a mere recording cost.
+
+**`/contact` is dead in the US for the sixth consecutive sweep, and I only broke the rule once and
+only legitimately.** I spent exactly one `/contact` fetch, on ReNew Medical Aesthetics in Visalia,
+**because no homepage URL for that domain ever appeared in a search result** — so it was the *first*
+fetch on the domain, not a second one chasing an address the homepage had withheld. It produced an
+address. **That is worth writing into the brief as the one exception:** the rule is about not
+re-asking a page that already refused, so `/contact` as a first and only fetch on a domain whose
+homepage never surfaced is a different thing and it works.
+
+**Two mismatched mailbox domains in sixteen rows, both on good clinics.** `reception@trubeautymedspa.com`
+on `trubeautybytrevor.com`, and `info@camhplv.com` on `centerforaestheticmedicine.com`. Recorded
+exactly as printed, per the ICP, and flagged on both rows so a bounce reads as a bounce. Also two
+rows where the same mailbox is printed with different capitalisation in the contact block and the
+footer (Beauty Within, ReNew) — recorded in the contact-block form.
+
+**Suburb-stacked unquoted queries worked, and the cap is real.** Every query I ran was unquoted and
+held to four town names plus two modifiers, and none collapsed into an unrelated directory the way
+the 1 Nov over-long stacks did. Two things degraded results anyway: **gift-card reseller domains**
+(giftly, quickgifts) which own "gift cards" plus a suburb name, and **"email"/"contact" as a
+modifier**, which pulled in a window-coverings company and a drug-rehab centre. Better modifiers in
+a silent market are **"owner", "founder", "RN injector", "rewards"** — my best single query of the
+day was "independent medical spa injectables founded owner rewards program", which returned ten
+fresh clinic domains and no directories at all.
+
+**"Established" is the binding filter here too, and worse than yesterday.** Only **two of sixteen**
+rows publish a real trading history read off the page — Liquid Beauty ("founded 2016", 2,472+
+reviews) and Synergy Laser ("for 22 years") — with Beauty Within's "June 2022" a third but marginal.
+The career-tenure trap caught **five** clinics: Inner Beauty's "35 years as a Registered Nurse",
+Glamour Me's "9+ Years In Medical" (ambiguous and flagged as such), Naturalness's "21+ years in
+nursing", Summerlin Med Spa's "Fifteen Years in Nursing" and Verity's "over five years". Not one is
+a founding date and every one is flagged in its row.
+
+**The gaps I was sent to close, honestly marked.** **Closed:** Murrieta (two rows — Naturalness
+accepted, Lucali unreachable — it was the best of the five gap towns), **Clovis** (Inner Beauty & Skin,
+the first Clovis clinic of its own any sweep has found; Aesthetic Club unresolved behind robots),
+**Manteca** (Beauty Within, likewise the first), **Lake Elsinore/Menifee/Wildomar** (resolved as
+**catchment, not markets** — every result was a Temecula or Murrieta clinic serving them, or a
+surgical practice, and Synergy Laser is the row that covers them). **Still open:** **Hanford,
+Lemoore and Selma** produced no clinic domain of their own on a dedicated query — only Visalia and
+Fresno practices ranking into them, which the log's catchment rule says is a lead about Visalia, not
+about Hanford. **Fowler was not reached at all for the second day running** and I now doubt there is
+anything there: it is a town of about 5,500 and two targeted queries never surfaced a single
+business. **Anthem and Seven Hills** are the same — they appear only as Henderson clinics' catchment
+copy (Aethereal names both), and I would stop treating them as separate markets. **Boulder City has
+exactly one aesthetics business** (Refresh MD) and should be marked thin, not unswept.
+
