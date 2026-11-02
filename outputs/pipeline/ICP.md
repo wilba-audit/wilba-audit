@@ -55,7 +55,15 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    roughly 300+ lapsed patients. A brand-new clinic has no list.
 5. **A published email address, read off their own page.** Never constructed, never
    inferred. Record the URL and the date it was read. A Cloudflare-obfuscated address that
-   renders as `[email protected]` counts as not seen.
+   renders as `[email protected]` counts as not seen — **that has not changed and will not.**
+   What changed on 2 Nov 2026 is what happens next: such a clinic is **not unreachable and must
+   not be dropped.** The real address is in the page as a hex token that a browser decodes for a
+   human reader, so these go on the browser-visit list in
+   `outputs/pipeline/browser-visit-list.md`, and an address Jess reads in her own browser is seen.
+   We do not decode the token ourselves, by choice rather than inability — a clinic running
+   obfuscation has acted to stop automated collection, and must-haves 6 and 7 both rest on an
+   address being conspicuously published. The reasoning, and the decision that is Jess's to make,
+   are in that file.
 6. **For AU and NZ, also:** no "no unsolicited commercial email" notice anywhere on the
    site, and the address must be published on the clinic's own site (not a directory).
    Record both findings in `notes`.

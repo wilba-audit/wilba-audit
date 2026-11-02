@@ -162,8 +162,22 @@ fetch. `curl` is blocked.
 
 Knowing which is which decides whether a clinic is worth a human's time or should be dropped.
 
-- **Cloudflare obfuscation** — the address renders as `[email protected]`. Not seen, and a
-  browser does not recover it. Drop it.
+- **Cloudflare obfuscation** — the address renders as `[email protected]`. **Still NOT SEEN, so
+  never record it — but do NOT drop the clinic. CORRECTED 2 Nov 2026: this entry used to say "a
+  browser does not recover it. Drop it", and both halves were wrong.** Cloudflare email protection
+  ships the real address inside the page as a hex token and decodes it with a script when a person
+  loads the page: hiding it from scrapers while showing it to humans is the whole design. So a
+  browser shows these normally. Verified on W Medical Aesthetics, Adelaide, recorded as unreachable
+  since 19 Oct: the token on its homepage decodes to a plain `info@` address on its own domain.
+  These clinics go on the **browser-visit list** in `outputs/pipeline/browser-visit-list.md`, the
+  same as a robots-disallowed site. Two weeks of sweeps dropped them instead, which is why that
+  file exists.
+  **Do not decode the token yourself.** It is four lines of code and the answer is exact rather
+  than inferred, so this is not a technical limit — it is a deliberate choice, pending Jess's
+  decision, and the reason is in that file: a clinic running obfuscation has acted specifically to
+  stop automated collection, and the consent regimes we screen against (the AU Spam Act, CASL)
+  rest on an address being *conspicuously published*. A human reading the page the clinic renders
+  for humans is a different act from a script stripping the protection off it.
 - **`robots_disallowed`** — the fetch is refused. **A person opening the site in a browser sees
   it normally**, so these are the browser-visit list, and they are often the best clinic in
   their town. Suede Clinic in Sydney refused six pages including `/robots.txt` itself.
