@@ -135,8 +135,12 @@ placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). 
 shipped inside a directory site's QR code image, which is directory data rather than
 something the clinic published. An address served in a page's Open Graph meta tags
 while the visible one is obfuscated. And **the owner's own typo** — one AU clinic's terms
-page printed a mailbox at `.com.ay`, a domain that does not exist. None of the four may be
-recorded, and none is recoverable by opening the page in a browser.
+page printed a mailbox at `.com.ay`, a domain that does not exist. And, added 2 Nov 2026, a
+**fifth: somebody else's working mailbox served in a social meta tag** — one clinic serves its
+marketing agency's address in `twitter:data1`, which looks entirely normal until you notice the
+domain is an agency's. Check the domain before recording anything that came from a meta tag
+rather than visible text. None of the five may be recorded, and none is recoverable by opening
+the page in a browser.
 
 **Tidiness predicts nothing, in either direction.** The company screen is a question about
 legal form, and it does not correlate with how organised a site looks. The only clinic in one
