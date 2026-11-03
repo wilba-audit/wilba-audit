@@ -39,17 +39,28 @@ publication screen, and the UK and Irish company-identity screen.
 fetched page content, and put the URL and the date in `email_source`. `info@<their-domain>`
 that you did not actually read on a page is a fabrication even when it is probably right.
 
-Four things look like a published address and are not. None is recoverable by opening the
+Five things look like a published address and are not. None is recoverable by opening the
 page in a browser, so none goes in the pipeline:
 
 - a website-builder placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`)
 - an address shipped inside a directory site's QR code image — directory data, not published data
 - an address served in a page's Open Graph meta tags while the visible one is obfuscated
-- **somebody else's mailbox served in a social meta tag** — added 2 Nov. One Pensacola-area
-  clinic serves its *marketing agency's* address in a `twitter:data1` tag. It is a real, working
-  mailbox, which is exactly what makes it dangerous: nothing about it looks wrong until you
-  notice the domain belongs to an agency. Check that the domain is the clinic's or plausibly
-  theirs before recording any address that came out of a meta tag rather than visible text.
+- **somebody else's working mailbox, in a meta tag or in plain sight** — added 2 Nov,
+  widened 3 Nov. One Pensacola-area clinic serves its *marketing agency's* address in a
+  `twitter:data1` tag. It is a real, working mailbox, which is exactly what makes it dangerous:
+  nothing about it looks wrong until you notice the domain belongs to an agency. The widening
+  matters because the 3 Nov case was not hidden at all — a Tulsa clinic prints a **vendor's**
+  mailbox in plain visible text on its own page. So "it was in the visible body" is not the
+  test. **The test is whose domain it is.** Read the domain of every address before recording
+  it, however prominently it was printed.
+- **an address that exists only in the clinic's own meta tags** — added 3 Nov. Distinct from
+  the Open Graph case above, where the visible address was merely obfuscated. Here there is no
+  visible address anywhere: a Gold Coast clinic (pipeline row 103) serves `info@` and `manager@`
+  on its own domain in meta tags, and its contact page shows a form and two street addresses and
+  no mailbox. This is the most tempting of the five, because the domain is right and the mailbox
+  is probably live — which is why it needs stating. Must-haves 5, 6 and 7 rest on **conspicuous**
+  publication, and a string a visitor cannot see was not published to people. Same answer as
+  Cloudflare, for the same reason. Park the row, keep the address in it, name must-have 5.
 
 **A Cloudflare-obfuscated address used to head this list and no longer belongs on it** — see the
 fetch-failure taxonomy below. It still counts as not seen and is still never recorded, but it
@@ -106,22 +117,32 @@ because the standard may widen again and re-finding a clinic costs more than kee
    a small town cannot support a pure injectables menu. Read the menu first and you stop
    spending policy fetches on clinics that were never going to qualify.
 
-   **BUT — important qualification, 2 Nov 2026, and it cuts the other way in a silent market.**
+   **BUT — the policy is two different fetches, and 3 Nov settled the second one.**
    Everything above is about the policy as a *consent* fetch, where it is a recording cost and
-   belongs last. As an *address* fetch it was the single highest-yield page of the day: two
-   privacy-policy fetches returned two addresses, both among that worker's best rows, where about
-   thirty homepage and About fetches returned fourteen. So the rule is conditional on the market.
-   Where addresses are plentiful, read the menu first and leave the policy till last. **Where a
-   market has gone quiet — several clinics in a row publishing nothing — move the privacy policy
-   to the front of the queue, because a mailbox that appears nowhere else often appears there.**
-   Nevada and inland California are both that kind of market. (Still do not guess its path; find
-   the link.)
+   belongs last. As an *address* fetch it is the best page on the site when the homepage is
+   silent, and the rule is now unconditional: **no mailbox on the homepage, the privacy policy is
+   the next fetch — ahead of the About page and instead of `/contact`.**
+
+   That reverses what this brief said on 2 Nov, which made the rule conditional on the market
+   being quiet. The 2 Nov evidence was two fetches in Nevada. The 3 Nov evidence is **six accepted
+   addresses off policies the homepage withheld, in Oklahoma — a market that published *well***.
+   A well-publishing market was exactly the case the conditional rule excluded, so the condition
+   was wrong, and it was wrong because it was built on two data points. The pattern underneath it
+   is not about scarcity: a privacy policy has to name a contact for data requests, which is a
+   different obligation from wanting enquiries, so it survives on sites that strip the mailbox
+   from everywhere a marketer would look.
+
+   (Still do not guess its path; find the link.)
 3. **Fetch one directory index per metro deliberately, as a source of names.** Blocking the
    directory farms keeps them out of *search results*, where they crowd out clinic domains.
    That is not a reason never to open one: a directory index fetched on purpose is a list of
    clinic names to then research on their own sites, and one such fetch in Montreal produced
    34 independents nobody had opened. Block them in the query, read one on purpose. Never
    take an address off a directory page — only the name.
+   **Check it is actually a listing first — added 3 Nov.** A `portraitcare.com/.../sapulpa/`
+   URL read like a town index and turned out to be a vendor logo wall: one fetch for nothing.
+   A directory index names many businesses in its search-result snippet. A vendor's location
+   page names one, or none.
 4. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
    "contact", rather than one city at a time. **Leave the town names unquoted.** Measured on
    1 Nov: six quoted town names returned **one** result, the identical query unquoted returned
@@ -130,6 +151,13 @@ because the standard may widen again and re-finding a clinic costs more than kee
    query collapses into something unrelated — two queries on 1 Nov came back with a massage
    directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
    is still thin. Unquoted and short beats long.
+
+   **The technique works INSIDE a city, not just around it — added 3 Nov, and it reverses a
+   verdict.** On 2 Nov Tulsa read as worked out. On 3 Nov, naming *neighbourhoods* within the
+   city — "Brookside Cherry Street" — surfaced five domains that "Tulsa med spa" had never
+   returned across two sweeps, and eight of nine clinics opened there qualified. A metro
+   declared finished on city-name queries alone has not been searched, only sampled. Before
+   writing a city off, spend one query on the names locals use for its districts.
    **Do not guess a privacy-policy path.** Three of four guessed `/privacy-policy` URLs
    returned client errors on 1 Nov. Find the link on a page you have already fetched, or state
    the consent finding for the pages you did read and say which those were.
@@ -139,8 +167,16 @@ because the standard may widen again and re-finding a clinic costs more than kee
 6. **In the US, stop fetching `/contact` altogether; fetch the team page instead** — with one
    exception, added 2 Nov: when no homepage URL for the domain ever surfaced in search, `/contact`
    is a reasonable *first* fetch rather than a retry, and it worked that way on a Visalia clinic.
-   The rule is about not spending a *second* fetch on a page the homepage already beat. Five
-   consecutive US sweeps now say so, and it is measured rather than impressionistic: two
+   The rule is about not spending a *second* fetch on a page the homepage already beat.
+   **A second exception, added 3 Nov: a silent homepage AND no privacy policy at all.** With the
+   policy rule above in force, `/contact` is the retry only when the policy route does not exist.
+   One Oklahoma City clinic — named MD, a never-expiring banked-credit programme, everything else
+   on profile — was lost to the rule with no policy page to fall back on, and the worker who lost
+   it flagged it as the one call it would overturn. Overturned: no mailbox on the homepage and no
+   policy link anywhere, fetch `/contact`.
+
+   Five consecutive US sweeps support the main rule, and it is measured rather than
+   impressionistic: two
    `/contact` fetches on 29 Oct and five more on 1 Nov produced, between them, **not one
    address the homepage would not have given** — 59 addresses in a row came off a homepage, About,
    locations or memberships footer, and the two `/contact` fetches spent on 29 Oct produced

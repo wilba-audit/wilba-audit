@@ -13,9 +13,12 @@ without the repo.
 
 ## Where the pipeline stands
 
-As of 2 Nov 2026: **910 rows, 620 ready to approach** — US 294, AU 173, CA 59, UK 58, NZ 42,
-IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **55 clinics** that cleared the ICP on
-fit are parked in `browser-visit-list.md` for want of one page-open each.
+As of 3 Nov 2026: **932 rows, 644 ready to approach** — US 312, AU 171, CA 59, UK 58, NZ 42,
+IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **56 clinics** that cleared the ICP on
+fit are parked in `browser-visit-list.md` for want of one page-open each. Australia fell by two
+on 3 Nov rather than rising: two long-standing grade-A rows were parked when the consent re-read
+found their addresses no longer readable. **Going down is a working day too** — a row that cannot
+be verified today is worth less than no row, because somebody would have sent to it.
 
 **CORRECTION, 1 Nov 2026 — this log said repeatedly that nothing had ever been sent from the
 pipeline, and that was wrong.** Email 1 of the GoHighLevel sequence went to **ten clinics on 15
@@ -174,14 +177,33 @@ Cambridge, Ontario.
 200 calls, WebFetch 400 an hour. Eight parallel workers starved each other on 16 Oct and all
 eight stopped short. Three or four, never more.
 
-## Four things that look like a published address and are not
+## Six things that look like a published address and are not
 
-A Cloudflare placeholder rendering as `[email protected]`. A website-builder default the
-owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address shipped inside a
-directory site's QR code image. An address served in a page's Open Graph meta tags while the
-visible one is obfuscated. None is recoverable by opening the page in a browser, and none goes
-in the pipeline. Obfuscation is not always Cloudflare, either: one Canadian site hand-rolled
-`aesthevaclinic[@]gmail.com`.
+**This section was stale until 3 Nov 2026 and said something we had already disproved.** It
+listed a Cloudflare placeholder as the first entry and asserted that none of these is recoverable
+in a browser. The brief and `ICP.md` were both corrected on 2 Nov, when decoding a real token
+proved a browser recovers these normally; this file was not, so for a day the three documents
+disagreed and this was the one a new Claude reads first. **That is the third time a correction has
+been left half-applied across these files.** When one changes, grep the other two for the claim
+being replaced before closing the task.
+
+The current list, canonical version in `ICP.md`:
+
+1. A website-builder default the owner never replaced (`filler@godaddy.com`, `contact@wix.com`).
+2. An address shipped inside a directory site's QR code image — directory data, not published data.
+3. An address in Open Graph meta tags while the visible one is obfuscated.
+4. The owner's own typo — one AU clinic published a mailbox at `.com.ay`, a domain that does not exist.
+5. **Somebody else's working mailbox, hidden or in plain sight.** A marketing agency's address in
+   `twitter:data1`; and, 3 Nov, a Tulsa clinic printing a *vendor's* mailbox in plain visible text.
+   Visibility is not the test — whose domain it is, is the test.
+6. **An address that exists only in the clinic's own meta tags** — added 3 Nov, row 103. Nothing
+   visible anywhere, the domain is the clinic's, the mailbox is probably live. Conspicuous
+   publication is what must-haves 5, 6 and 7 rest on, so this fails, and it is the most tempting
+   of the six.
+
+**A Cloudflare-obfuscated address is NOT on this list.** It is not seen and is never recorded,
+but a browser recovers it, so the clinic goes on `browser-visit-list.md`. Obfuscation is not
+always Cloudflare: one Canadian site hand-rolled `aesthevaclinic[@]gmail.com`.
 
 Related: a dead clinic domain does not always 404. `19westaesthetics.com` now serves an
 unrelated AI companion app.
@@ -684,3 +706,83 @@ identity; it now keys on name **and** country, and separately on the website's d
 check we never had: a clinic re-sourced under a different name is now caught. Verified on three
 cases before writing. **The near-miss that reads like a pass is the dangerous kind of wrong**, and
 this is the second one this week after the Companies House near-miss match.
+
+## 3 Nov 2026 — Oklahoma finished, coastal Virginia closed out, and the AU consent backlog cleared
+
+**One worker, not four.** The run was deliberately scaled down: 22 rows against a 60-row target,
+because Jess is working about twenty minutes a day on a tight budget and a bigger list is not
+what is short. 16 searches and 61 fetches spent. Rows **911-932**, five grade A.
+
+**Tulsa reversed yesterday's verdict, and the method is the lesson.** On 2 Nov Tulsa read as
+worked out on city-name queries. Naming *neighbourhoods inside* the city — "Brookside Cherry
+Street" — surfaced five domains two sweeps had never returned, and eight of nine clinics opened
+there qualified. Suburb-stacking was written down as a technique for the ring around a city; it
+works just as well inside one. **A metro declared finished on city-name queries has been sampled,
+not searched.** Oklahoma has now out-published Arkansas two days running.
+
+**The privacy-policy rule reversed, and the 2 Nov version of it was built on two data points.**
+Yesterday this log made policy-first conditional on a market being quiet, on the evidence of two
+Nevada fetches. Today six accepted addresses came off policies the homepage withheld, **in
+Oklahoma, a market that published well** — exactly the case the conditional excluded. The rule is
+now unconditional: no mailbox on the homepage, the policy is the next fetch, ahead of About and
+instead of `/contact`. The mechanism was never scarcity: a policy has to name a contact for data
+requests, which is a different obligation from wanting enquiries, so it survives on sites that
+strip the mailbox from everywhere a marketer looks.
+
+**Coastal Virginia is finished and should not be re-queried.** Seven towns, five queries, five
+rows, zero A. Norfolk has had four queries across two sweeps for one reachable independent.
+Hampton Roads is dermatology, plastic surgery and an out-of-state chain's SEO pages.
+
+**Twenty-nine businesses opened with zero Cloudflare, zero robots refusals, zero render failures
+and zero site errors.** Worth recording as a fact about these markets rather than a gap in the
+method: the fetch-failure modes cluster by region, and Virginia, Oklahoma and the Upstate have
+almost none of them. Nothing new for the browser-visit list from the sweep itself.
+
+### The AU/NZ consent backlog — 18 rows, and two of them did not survive
+
+Eighteen AU and NZ rows graded A or B were created on 20-24 Sep, before the must-have 6 consent
+screen existed. The GoHighLevel thread has made AU/NZ/UK the **free first sending wave** — no
+postal address needed, unlike the US and Canada — which turned this from a recording chore into
+the actual legal basis for the first emails WILBA will send at volume. A finding about what was
+*not* on a page cannot be reconstructed after the fact by anybody, so all 18 were re-fetched, one
+page each. **No AU or NZ sendable row is now without a consent finding in words** — the validator
+enforces it and the whole-file audit returns zero.
+
+Sixteen cleared. Not one of the 18 carried a notice refusing unsolicited commercial email, which
+is now **more than thirty AU/NZ/CA policies read without a single refusal**. The screen is a
+recording cost, not a filter — but it has to be on the record, because the point is being able to
+show it was checked.
+
+Two rows failed and were parked at C with must-have 5 named, addresses kept so both calls are
+reversible:
+
+- **Row 103, Skin Forum (Gold Coast).** Publishes `info@` and `manager@` on its own domain in
+  **meta tags only** — no mailbox in the visible body of the homepage or the contact page. A sixth
+  address look-alike, and the most tempting, because the domain is right and the address probably
+  works. Same answer as Cloudflare: conspicuous publication is the test.
+- **Row 104, Bramis (Melbourne).** A grade-A row for six weeks, read off their contact page on 24
+  Sep. The site now runs Cloudflare email protection and the address is gone from fetched content.
+  **The clinic took it down after we read it**, which is the strongest version of the argument for
+  not decoding: we are not inferring intent from a site that was always obfuscated, we watched it
+  change. On the browser-visit list; one page-open returns it to A.
+
+**Three rows re-read with a different address than the one on file would have been a disaster and
+were not.** 95, 98 and 102 all matched exactly. Row 93's homepage no longer prints any address and
+needed a second page to confirm — which is the general shape of this: **an address verified six
+weeks ago is not verified now.** Four of the 18 (93, 94, 97, 98) had already been emailed on 15
+Oct with no finding on record; today's re-read clears all four and the address used is the address
+still published, so those sends were on solid ground — but nobody had checked at the time, and
+that is why the screen now runs before a send instead of after one.
+
+**Two rows sit at the top of the must-have 3 band**: 97 Skintech and 98 Injex both publish four
+clinic addresses. Four qualifies, five disqualifies, and both are chains-in-waiting. Re-count
+before any second approach.
+
+### Still open
+
+- Griffin's `/contact` rule cost one good Oklahoma City row (named MD, banked-credit programme,
+  silent homepage, **no privacy policy at all**). A second exception is now written into the brief
+  for exactly that case.
+- `portraitcare.com/.../sapulpa/` read like a town directory index and was a vendor logo wall.
+  One fetch for nothing. A directory index names many businesses in its snippet; a vendor's
+  location page names one.

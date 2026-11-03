@@ -7724,3 +7724,260 @@ business. **Anthem and Seven Hills** are the same — they appear only as Hender
 copy (Aethereal names both), and I would stop treating them as separate markets. **Boulder City has
 exactly one aesthetics business** (Refresh MD) and should be marked thin, not unswept.
 
+
+# 3 November 2026 — coastal Virginia (the unqueried half), Oklahoma City and Tulsa finished off, Upstate South Carolina
+
+Markets swept: **Norfolk, Portsmouth, Hampton, Newport News, Yorktown, Smithfield and Suffolk VA**;
+**Oklahoma City proper plus Yukon, Moore, Midwest City, Mustang, Del City, Choctaw and Shawnee**;
+**Tulsa city proper plus Sand Springs, Sapulpa, Claremore, Pryor and Brookside/Cherry Street**;
+**Greenville, Simpsonville, Spartanburg, Boiling Springs, Duncan and Greer SC**.
+22 rows accepted, 5 of them A. 16 searches and 61 fetches spent.
+
+Grepped `clinic-pipeline.csv` and `near-misses.md` before every fetch. Skipped without spending one:
+The Injectory, Colonial Aesthetics, Beauty Queens VB, Antidote Aesthetics, Dermacare of Hampton Roads,
+Ageless Skin Rejuvenation, The Spa and Laser Center, Williamsburg Med Spa (VA); Lou Lou, ACE Med Spa,
+XO Yukon, BA Med Spa, Bixby Aesthetic Solutions, Forme, Halestorm, TAP MedSpa, West Med Spa, The
+Treatment Room, BLANK Med Spa, L3 Aesthetics, Nouveau, Revamped Owasso, Restorative Injectables,
+Franco, Injectable Aesthetics, Gudgel, Firm Medical Spa, ClareBella, KBA Norman, SkinFit OKC, Elevate
+Norman (OK); Siffri, The Meridian, Bare N Beautiful, LeJeune, Spa North, The Med Spa on Augusta, The
+Push Med, Optimal Self MD, Elase (SC). **The grep saved at least a dozen fetches** — Revamped Owasso,
+ACE and Lou Lou in particular came back at the top of three separate Oklahoma queries.
+
+## Group 1 — Cloudflare-hidden address (one browser tab each)
+
+**None. Not one clinic in twenty-nine opened was running Cloudflare email protection.** That is worth
+recording as a fact about these markets rather than a gap in the method: after 2 Nov produced a
+cluster of them in Nevada and the Carolinas, I went looking and found none in Virginia, Oklahoma or
+the Upstate. Nothing goes on the browser-visit list from this run.
+
+## Group 2 — No address published at all (total silence; a browser does not help)
+
+These clear the ICP, or nearly, and simply publish nothing. Each needs a phone call or a direct
+message. Listed worst-loss first.
+
+### Belle Âme Med Spa — Oklahoma City, OK
+`belleamemedspa.com` · 8 SW 89th Street Suite 101, Oklahoma City OK 73139 · 405-679-2660
+**The most painful loss of the run, and partly a rule's fault.** Ana Kumar MD, Cristin Fong APRN and
+Sara L. Cole PhD MCHES are all named. The **Belle Âme Bank** is the second-best banked-credit scheme
+I found anywhere: a monthly fee banks into credit that the page says never expires, tiered discounts
+by lifetime spend, twelve-month minimum. Homepage, the Bank page and its footer all read in full —
+no address on any of them, and the site publishes **no privacy policy at all** (footer carries only
+Accessibility, Terms of Use and Sitemap). A `/contact/` page exists and **I deliberately did not
+fetch it**, per the standing US rule. Given the quality of this one I would overturn that for a
+single named exception: **this is the one clinic in the batch worth one browser tab or one `/contact`
+fetch on the next run.**
+
+### Advanced Aesthetics — Oklahoma City, OK
+`advancedaesthetics.com` · 13100 N Western Ave Ste 201, OKC 73114 · 405.751.3424
+**"Excellence since 1997" — the longest verified trading history of anything I opened**, which makes
+it the biggest lapsed list in the batch by a distance. Dr Michael Elder named. MyPatientNow **and** a
+RepeatMD rewards app (`advancedaesthetics.repeatmd.app`), gift cards, payment plans. Homepage and
+privacy policy both fetched; no address on either. Note a tooling quirk: the privacy-policy fetch
+returned the page chrome and the address block but **not the policy body**, so the consent finding is
+only for the text I actually saw. `Advanced Aesthetics LLC` appears inside a ZO Skin Health link
+parameter — the entity name, not a publication.
+
+### Peninsula Aesthetic Medicine — Newport News, VA
+`peninsula-aesthetics.com` · 12551 Jefferson Ave STE 187, Newport News VA 23602 · (757) 586-4575
+**Pabau** — a recognised practice system — and the most precisely documented practice in the sweep:
+**Adam Medlin, FNP-BC**, an autonomous Virginia nurse practitioner who personally performs the
+injections, with a named laser technician working to his plan. The privacy policy even names both
+entities: **Peninsula Aesthetic Medicine LLC** and **Medlin Aesthetic Medicine PLLC d/b/a Peninsula
+Aesthetic Medicine**. Homepage and privacy policy both read in full: **no mailbox anywhere**, and no
+membership or gift card either. A phone prospect, and a good one.
+
+### True Blue Aesthetics — Edmond and Elgin, OK (2 sites)
+`trueblueaesthetics.com` · 1800 Renaissance Blvd #200 Edmond OK 73013 and 9201 OK-17 Bldg 6 Elgin OK
+73538 · (405) 433-6022
+Brooke Baima RN BSN, certified injector, named and credentialled. Aesthetic Record, gift cards,
+financing, BodyTite/FaceTite. Homepage **and** privacy policy fetched, no address on either. A
+`/contact-us/` page surfaced in a domain-scoped search and I did not fetch it — second fetch on a
+page the homepage already beat. A separate SMS line (405-704-3080) is published. Elgin is "by
+appointment only", so this is one buyer with a satellite, not a two-site group.
+
+### Renew Wellness & Aesthetics — Oklahoma City, OK
+`renewoklahoma.com` · 7118 N. Western Avenue, OKC 73116 · 405-810-5944
+**Julie Shelley, DO** named as founder (the page describes her credentials two different ways —
+"double board-certified in Family Medicine and Primary Care Sports Medicine" in one place, without
+the "double" in another). **MyPatientNow** plus a memberships page. Homepage and privacy policy
+both silent on email. Worth knowing before anyone calls: a family-medicine and sports-medicine
+physician founder puts must-have 2 in doubt anyway.
+
+### Bella Derma — Shawnee, OK
+`belladermaok.com` · 1533 N Harrison St, Shawnee OK 74804 · (405) 777-4341
+**PatientNow**, and a membership that is effectively banked credit — the monthly fee is "added to the
+member's account" to spend on treatments. Two tiers plus a twelve-month device-maintenance programme.
+No clinician is named anywhere ("our skilled practitioner"), no privacy policy exists, and neither
+the homepage nor the membership page carries a mailbox. Shawnee is at the eastern edge of the OKC
+metro, so check it is in market before calling.
+
+### Greer Aesthetics MD — Greer, SC
+`greeraesthetics.com` · 455 S Buncombe Rd, Greer SC 29650 · 864-909-2678
+Dr Teny Henry Gomez MD (internal medicine) and Dr Georgea Thekkethottiyil DDS. Boulevard, a
+membership-plans page, a refer-a-friend page, financing. Homepage **and** privacy policy fetched:
+the only email route is a contact form at `/contact-us/contact-email/`. **An internal-medicine
+physician plus a dentist is an odd pairing and the "MD" in the brand name is doing work** — ask the
+cash-pay question early if it ever becomes reachable.
+
+### Sculpted Med Spas — Oklahoma City, OK
+`sculptedmedspas.com` · 421 NW 10th St, OKC 73103 · 405 259 9127
+Dr Eddie Lorents founded it **and** the Dental Arts Center, which is the flag: two businesses, and
+the brand is plural while only one med spa address exists. Jane App. No membership, no gift card, no
+email, no privacy policy linked.
+
+### Gentle Injections Aesthetics — Newport News, VA
+`gentleinjections.com` · 4151 William Styron Sq N, Newport News VA 23606
+**Jennifer** (surname never printed), described as a certified cosmetic nurse injector with ten years
+of nursing and four in aesthetics, and an Operation Enduring Freedom veteran — a genuinely good
+opener if she were reachable. Jane App booking. **Read the phone before trusting the town: the
+published number is (804) 781-4569, a Richmond area code on a Newport News address** — the same trap
+`Williamsburg Med Spa` fell into on 2 Nov, and the second instance on the Peninsula in two sweeps.
+No membership, no privacy policy, no mailbox. One fetch spent.
+
+### BlissfulMá Med Spa — Hampton, VA
+`blissfulma.com` · 21 N Mallory St, Hampton VA 23663 · 757-916-5743
+Hampton's best candidate and unreachable. **Dr Veronica Charity Barnes, NP**, founder, with a $99
+monthly membership and **Optimantra** as the practice system. Homepage and privacy policy both
+fetched, neither carries a mailbox. Two oddities worth flagging to whoever calls: the page metadata
+names the author as **"Dr. Vanessa Barnes"**, which does not match the body text, and the privacy
+policy prints a support number of **777-777-7777** — an unreplaced placeholder. The menu leans
+hormone replacement and medical weight loss, so must-have 2 is open as well.
+
+### Rejuva Medical Spa — Chesapeake, VA
+`rejuvamedspavirginia.com` · 3925 Portsmouth Blvd, Chesapeake VA 23321 · (757) 280-4186
+A VIP club, a new-client offer, and a full device menu. But the terms page names the practice owner
+as **Dr Samir Abdelshaheed MD** and links **"Family Medicine Healthcare"** in the About section, with
+"Family Medicine Aesthetics" in a Maps URL — an aesthetics arm bolted to a family-medicine practice,
+which puts must-have 2 in real doubt. Also publishes two different phone numbers. No email on the
+homepage or the terms/privacy page. Not worth a call before the insurance question is answered.
+
+## Group 3 — Defeated the fetch
+
+**Nothing in this group either.** No Cloudflare, no robots refusals, no client-side-rendered shells
+and no site-side errors across twenty-nine businesses opened. Every fetch returned readable content.
+After 2 Nov lost six of seventeen businesses to these modes, that is a striking difference and I do
+not have an explanation for it beyond market composition — these are WordPress-and-Squarespace towns.
+
+One technique failure to record instead, so nobody repeats it:
+- **`portraitcare.com/directory/.../sapulpa/` is not a directory index.** It surfaced looking like one
+  and I fetched it on purpose as a source of names, per the brief's technique 3. It is a **vendor
+  marketing page**: six clinic logos under "Trusted by 1,200+ Clinics Nationwide", no towns, no
+  domains, every logo linking to `#`. The six names (Skin Sirens Aesthetics, Skin Sirens LA, Skin &
+  Soul Aesthetics, Brittany Aesthetics, Napa Aesthetics, Ethereal Medical Aesthetics) are national
+  customers, not Sapulpa clinics. **One fetch wasted. The deliberate-directory-fetch technique needs
+  the site to be an actual directory — check the result page is a listing before spending the fetch.**
+
+## Group 4 — Ruled out on the ICP, recorded so nobody spends the fetch again
+
+**Fails must-have 1 (not aesthetics-led), screened off the menu:**
+- **A New Image OK** — Pryor **and** Claremore OK (2 sites). The entire aesthetics page is
+  dermaplaning, microdermabrasion, facials and peels. **No injectable anywhere**, no clinician named,
+  no email. Claremore's only candidate, and it does not qualify.
+- **Inspire Med Spa** — and read this one as a cautionary tale. It ranks for "Medical Spa Norfolk, VA"
+  with a dedicated `/norfolk-va/` page. **The published phone is 540-739-3214 — a southwest Virginia
+  area code** — and the areas-served list is Blacksburg, Christiansburg, Radford, Giles County,
+  Wytheville, Roanoke and Salem. It is not in Hampton Roads at all; the Norfolk page is pure SEO.
+  The menu also carries a **Medical Marijuana Program** and "COVID Post-Vaccination Injuries", which
+  fails must-have 1 twice over. Owner Jane Gilley NP. **The area code caught this before the address
+  did, exactly as the brief promises.**
+
+**Fails must-have 3 (five-plus sites, or a head office above the clinic):**
+- **MD Esthetics** (`mdestheticsus.com`) — ranks for Norfolk, Newport News, Virginia Beach and
+  Chesapeake, but the footer gives a **headquarters in Windham, New Hampshire**, a Practice Manager
+  named instead of an owner, a "Lexington-Location" image, and a page addressed to "Former Ideal Image
+  Patients". A multi-state chain. It will keep surfacing on Hampton Roads queries — **block
+  `mdestheticsus.com` next time.**
+- **Back to 30® Med Spa** — Greenville (McBee), Greenville (Highway 14), Boiling Springs and
+  Simpsonville SC, since 2012. Four sites is inside the count, but the shape is wrong: **four Practice
+  Managers, an Assistant Manager, two Patient Care Coordinators and an "Executive Leadership Team"**,
+  with Angela Mathews titled only "Founding Partner" and no owner named. Zenoti, a Beauty Bank
+  membership, Allē/Aspire rewards, gift cards per practice, and four financing lenders — the richest
+  recall stack in the Upstate and all of it already owned above clinic level. No email published
+  anyway. This is the "three-site group run by a marketing manager" case the ICP names.
+- **H-MD Medical Spa** — accepted as a C row rather than filed here, because it does publish an
+  address, but same structural failure: "our group of companies", "our ultimate holding company", a
+  sister brand called Avelure.
+
+**Fails must-have 2 (cash-pay) or is a disqualified specialty:**
+- **Integrated Dermatology of Tidewater** (Norfolk, Chesapeake, Portsmouth) — dermatology group.
+- **Clarity Aesthetics & Dermatology** (Suffolk VA) — dermatology.
+- **Skin Care Institute** (6565 S Yale Ave, Tulsa) — "Founded as the first medical spa in Oklahoma",
+  trusted since 1999, Zenoti, and a genuinely strong profile — but it is **board-certified
+  dermatologist Dr Jeff Alexander's practice with a linked Dermatology Clinic at
+  `jeffalexandermd.com`**, plus Emsella incontinence treatment and urinary-incontinence indications.
+  Dermatology is a straight ICP disqualification. No email published either.
+- **Cosmetic Surgery Affiliates** (`csaok.com`) — OKC and Jacksonville FL. Breast, body, facial and
+  transgender surgery. Plastic surgery, disqualified.
+- **Tulsa Surgical Arts** (Bella Roma Med Spa) and **South Tulsa Plastic Surgery** — plastic surgery,
+  screened off the search result without a fetch.
+- **Associates in Plastic Surgery** (Restoration MedSpa, Norfolk/Virginia Beach) and **Plastic Surgery
+  Center of Hampton Roads** — plastic surgery, screened off the result.
+- **Allure Medical** (Spartanburg location) — multi-state group, already in our blocked set.
+- **Galen Healthcare & Aesthetics** (Greer and Greenville SC) — a healthcare practice with an
+  aesthetics arm; screened off the title without a fetch.
+
+**Out of market:**
+- **Pure Med Spa** (`puremed-spa.com`) — 1430 Spring Hill Rd, **McLean VA**, which is Northern
+  Virginia, not the coast. Lucy Silva named as founder, Meevo plus mypatientvisit, e-gift cards, nine
+  service lines, no email published. **Recorded in full because the profile is a decent one if
+  Northern Virginia is ever worked** — it would join Honey Skincare and RxWellness, already in the
+  pipeline from Arlington and Ashburn.
+- **Harmony MediSpa** (Lawton/Duncan OK) — carried over from 2 Nov; southwest Oklahoma, still unworked.
+
+## Blocked-domain additions for the next run
+
+`mdestheticsus.com` (multi-state chain, Windham NH HQ, owns Hampton Roads town queries) ·
+`ovme.com` (national studio chain) · `backto30.com` (four Upstate SC sites under a management layer,
+and it took three of ten results on the Spartanburg query) · `norfolkvibe.com`, `rankscoremap.com`,
+`threebestrated.com`, `buoyhealth.com`, `medicalspalocator.com`, `thecliniccompass.com`,
+`clinics-usa.nears.me`, `poyst.com`, `wheree.com`, `alignable.com` (listicle and directory farms that
+between them took about a quarter of every Virginia result set) · `medspastandards.com` and
+`medispacover.com` (med-spa **compliance-law** blogs — a new species, and they ranked in four of my
+sixteen queries because "med spa" plus a state name is exactly their SEO target).
+
+## What these markets taught me
+
+**Privacy-policy-first is now the strongest single technique I have, and it is not only for quiet
+markets.** Six of the twenty-two accepted addresses came off a privacy policy that was absent from
+the homepage: Numa Spa, Mariposa, Elysian, Inject Tulsa, and the corroborating reads on Soul Tulsa
+and Venus. Four homepage-plus-policy pairs returned nothing at all. On yesterday's framing I would
+have read the menu first and left the policy till last in Oklahoma, which published well — and I
+would have lost four of those six. The better rule may be simpler than the conditional one: **when a
+homepage has no mailbox, the privacy policy is the next fetch, always, before the About page and
+instead of `/contact`.** The About-page-as-ownership-fetch rule held perfectly again — four About or
+team fetches, zero new addresses, ownership settled every time.
+
+**Tulsa city proper was the surprise, and it reverses 2 Nov's conclusion.** That sweep found "Tulsa's
+ring published; Tulsa proper did not" and both Tulsa-city clinics it opened were unreachable. Tulsa
+city gave me **eight accepted rows out of nine opened** — Align 918, Glow Medical, Core Medicine, HE
+Med Spa, Clinical Aesthetics, Luminate, Inject Tulsa and Soul. The difference was the query, not the
+town: "Tulsa Sand Springs Sapulpa Claremore" and "Tulsa midtown Brookside Cherry Street" reached
+clinics that "Tulsa med spa" never surfaces. **Naming the neighbourhoods inside a city works the way
+naming suburbs around one does** — Brookside and Cherry Street alone produced five new domains. That
+is a technique I had not seen written down and it is worth adding to the brief.
+
+**Coastal Virginia is genuinely thin, and the 2 Nov A-rate was a small-sample artefact.** Norfolk,
+Newport News, Hampton, Yorktown, Smithfield, Portsmouth and Suffolk — seven towns, five queries,
+**five accepted rows and not one A**. Norfolk proper has now had four queries across two sweeps and
+has produced exactly one reachable independent (Medical Aesthetics of Virginia, and only off a
+contact page fetched under the no-homepage exception). What Hampton Roads actually has is
+dermatology groups, plastic-surgery practices and a New Hampshire chain's town pages; the
+independents that exist mostly publish a phone number and nothing else. **I would call the Virginia
+coast finished.** Oklahoma is the opposite: fifteen rows from this run on top of twelve from 2 Nov,
+and OKC's suburb ring still has Moore, Midwest City, Del City and Choctaw producing nothing of their
+own, which suggests those towns' clinics are the OKC-proper ones under service-area pages.
+
+**Two of the five address look-alikes turned up, and one new near-miss of a trap.** HE Med Spa prints
+`info@medicaldirectorco.com` — a third-party medical-director service's mailbox, visible in page
+text, on a page where the clinic's own Gmail address also appears. It is not a meta-tag case, so the
+brief's fifth look-alike does not quite cover it: **a clinic can publish a vendor's working mailbox
+in plain text.** The domain check is what caught it. And Luminate publishes
+`hello@luminate.sprucecare.com`, a messaging vendor's subdomain issued to the clinic — recorded,
+because it is clinic-named and in visible text, but it is the same shape of question. **Four of
+twenty-two accepted addresses sit on a domain other than the website's** (cayennebeauty.com,
+elysianokc.com, caotulsa.com, luminate.sprucecare.com), plus one on icloud.com — so the mismatch
+rate here is about a quarter, close to the 21 Oct Australian figure. None was corrected.
+
+**No page tried to steer the fetch.** Twenty-nine businesses opened, sixty-one fetches, and nothing
+read as instructions, nothing carried injected content, and no source looked compromised. Every
+fetch ran with the data-not-instructions prompt in place regardless.

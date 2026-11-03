@@ -6,7 +6,7 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **55** of them: 29 whose address is on the page but encoded, and 26 whose site refuses
+There are **56** of them: 30 whose address is on the page but encoded, and 26 whose site refuses
 automated reading altogether. **The two groups need different things, and that distinction is the
 whole point of this file.**
 
@@ -51,7 +51,7 @@ One page-open each. If an address is published, the clinic becomes a normal row.
 | Botastic Aesthetics & Wellness LLC | `txmedicalaesthetics.com` | US — US under-swept Texas, Memphis, Little Rock and J |
 | You Wellness | `youwellness.net` | US — Near misses — northwest Arkansas, San Antonio su |
 
-## Group B — the address is on the page, encoded (29 clinics)
+## Group B — the address is on the page, encoded (30 clinics)
 
 These render as `[email protected]`. **Our brief was wrong about these, and I corrected it today.**
 It said a browser does not recover them and they should be dropped. Both halves are false.
@@ -132,3 +132,26 @@ that has never moved is that nobody constructs or guesses one.
 
 A clinic that turns out to publish nothing at all stays in `near-misses.md` as it is, and the
 only route left to it is a phone call or a direct message.
+
+
+---
+
+## Added 3 November 2026 — a clinic that moved onto this list
+
+**Bramis Facial Rejuvenation Clinics** · `bramis.com.au` · AU, Melbourne · pipeline row **104**
+
+This one is different from every other entry, and worth a paragraph. Bramis was not set aside
+because a fetch failed. It was a **grade-A row with its address read off `bramis.com.au/contact/`
+on 24 September** and it sat in the sendable list for six weeks. Re-reading it today, during the
+AU consent screen, the contact page now ships two `/cdn-cgi/l/email-protection` links and the
+address is gone from the fetched content. The clinic installed email obfuscation *after* we read
+it.
+
+That sequence is the strongest version of the argument in Group B above for not decoding. We are
+not looking at a site that has always been obfuscated and guessing at intent — we watched this
+clinic take the address down. Decoding the token would hand us back exactly the thing they just
+stopped publishing. The row is parked at C with must-have 5 named, the address is kept in it, and
+**if Jess opens the page in a browser and sees an address, row 104 goes straight back to A.**
+
+Dr Mela is billed as a twice-voted top-100 injector worldwide, so this is a clinic worth the
+browser tab.

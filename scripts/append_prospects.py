@@ -47,6 +47,7 @@ def dom(url):
         return ''
     m = re.search(r'(?:https?://)?(?:www\.)?([^/\s]+)', url.strip(), re.I)
     return m.group(1).lower().rstrip('.') if m else ''
+NOTICE = re.compile(r'unsolicited|anti-spam|spam act|\bUEMA\b|no spam notice', re.I)
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
@@ -153,7 +154,10 @@ def main():
                 # because a worker reporting "consent OK" has told us nothing.
                 n = r.get('notes') or ''
                 have_own = OWN_SITE.search(n)
-                have_notice = re.search(r'unsolicited', n, re.I)
+                # Widened 3 Nov: this looked for 'unsolicited' alone and so would have
+                # rejected three correctly-screened rows whose finding was recorded as
+                # "no anti-spam notice". The finding is what matters, not the wording.
+                have_notice = NOTICE.search(n)
                 if not (have_own and have_notice):
                     rejected.append((cn, 'AU/NZ row graded %s states %s - both consent '
                                          'findings must be in notes, in words'

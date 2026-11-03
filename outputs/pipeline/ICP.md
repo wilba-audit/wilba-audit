@@ -130,17 +130,30 @@ address outright and settles clinics whose own site says nothing; in Scotland it
 clinic's own **privacy policy** — never the footer, which credits the web designer. An LLP counts: the ICO treats it as a corporate
 subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
-**Four things that look like a published address and are not.** A website-builder
+**Six things that look like a published address and are not.** A website-builder
 placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
 shipped inside a directory site's QR code image, which is directory data rather than
 something the clinic published. An address served in a page's Open Graph meta tags
 while the visible one is obfuscated. And **the owner's own typo** — one AU clinic's terms
-page printed a mailbox at `.com.ay`, a domain that does not exist. And, added 2 Nov 2026, a
-**fifth: somebody else's working mailbox served in a social meta tag** — one clinic serves its
-marketing agency's address in `twitter:data1`, which looks entirely normal until you notice the
-domain is an agency's. Check the domain before recording anything that came from a meta tag
-rather than visible text. None of the five may be recorded, and none is recoverable by opening
-the page in a browser.
+page printed a mailbox at `.com.ay`, a domain that does not exist. And, added 2 Nov 2026 and
+widened 3 Nov, a **fifth: somebody else's working mailbox, whether hidden or in plain sight** —
+one clinic serves its marketing agency's address in `twitter:data1`, and a Tulsa clinic prints a
+vendor's mailbox in plain visible text on its own page. Visibility is not the test; **whose
+domain it is** is the test, so read the domain of every address before recording it.
+
+And, added 3 Nov 2026, a **sixth: an address that exists only in the clinic's own meta tags.**
+This is distinct from the Open Graph case, where a visible address existed and was merely
+obfuscated. Here nothing is visible anywhere: pipeline row 103 serves `info@` and `manager@` on
+its own domain in meta tags, while its contact page shows a form and two street addresses and no
+mailbox. It is the most tempting of the six, because the domain is right and the mailbox is
+probably live. **Must-haves 5, 6 and 7 rest on conspicuous publication, and a string a visitor
+cannot see was not published to people** — the same answer we gave Cloudflare obfuscation on
+2 Nov, for the same reason. Park the row with must-have 5 named, keep the address in it so the
+call is reversible, and do not send.
+
+None of the six may be recorded as a published address. The first four are not recoverable by
+opening the page in a browser; the sixth is not a recovery problem at all, but a question about
+whether the clinic published anything.
 
 **Tidiness predicts nothing, in either direction.** The company screen is a question about
 legal form, and it does not correlate with how organised a site looks. The only clinic in one
