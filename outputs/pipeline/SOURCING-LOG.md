@@ -11,6 +11,37 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## The scheduled prompt is out of date in five places — proposed changes, 3 Nov 2026
+
+**Read this before following the trigger prompt.** The nightly sourcing routine
+(`trig_01TwXxobGdpa5M6VH7HuBz28`) was last edited on 16 Oct and five of its instructions have
+since been overtaken by measurement. It is Jess's routine, so it has not been changed — these are
+proposals for her, and in the meantime the prompt loses to this file on all five.
+
+1. **"Metro order: Australia first — Sydney, Melbourne, Brisbane, Gold Coast, Perth."** Australia
+   is finished. Seven passes, and on 2 Nov two Adelaide suburb directories returned the same
+   thirty listings with no injectables mentioned, while five of eight rows came from outside the
+   assigned corners. On 3 Nov Australia went *down* by two. Sourcing Australia first now means
+   spending the first and best fetches of a run on worked-out ground.
+2. **"Target at least 60 new qualified rows a run."** That number came from Jess asking for scale
+   on 16 Oct, when the easy markets were untouched. It is now the wrong target twice over: the
+   remaining markets yield 20-25 a run at this quality, and the list is already far ahead of the
+   sending channel, which has 235 rows staged and 10 ever sent. Chasing 60 buys rows nobody will
+   email for months, at the cost of the verification work that turns out to matter more.
+3. **"Fetch `/contact/` directly, then the careers and privacy pages."** Reversed for the US on
+   2 Nov and refined again on 3 Nov. In the US `/contact` is a wasted second fetch; the privacy
+   policy is the right next page when the homepage is silent. The careers-page tip still stands.
+4. **"Search for wallet, bank or vault plus a metro name."** True in affluent suburbs, dead in
+   every mid-size market measured since. It reads in the prompt as a general technique.
+5. **Nothing in it about re-verifying an address before a send.** On 3 Nov that was the
+   highest-value work of the day: of 14 rows queued to send, one had taken its address down and
+   was first in the queue. **A row's address is a perishable fact**, and the prompt treats
+   sourcing as the whole job.
+
+**What is missing entirely:** the browser-visit list. The prompt says a Cloudflare-obfuscated
+address "counts as not seen", which is right, but implies the clinic is dropped. 57 clinics that
+cleared the ICP are parked for want of one page-open each.
+
 ## Where the pipeline stands
 
 As of 3 Nov 2026: **932 rows, 643 ready to approach** — US 312, AU 171, CA 59, UK 57, NZ 42,
