@@ -865,4 +865,26 @@ three still publish it on a contact page — `info@medizen.co.uk` and
 `enquiries@drvictoria.co.uk`, both exactly as recorded. **A liveness re-read that fetches only
 the homepage over-reports decay threefold.** One fetch says the homepage changed. It takes the
 second to say the clinic stopped publishing, and "the clinic stopped publishing" is the claim
-that parks a row. Real six-week decay: **one row in eight.**
+that parks a row. The trap repeated on the second batch: row 83 Bodyvie also prints nothing on
+its homepage and publishes `info@bodyvie.co.uk` on its contact page, unchanged.
+
+**The whole pre-October queue, 14 rows, re-read.** Final tally: **12 confirmed verbatim, one gone
+(116 Luxe Skin, obfuscated), one unreadable (78 Medicine of Cosmetics, site-side client error on
+both hosts).** Six-week decay is **one row in fourteen**.
+
+**"Unreadable" is not "gone", and the two have different remedies.** Row 78 returned a client
+error on both the bare domain and the www host, so nothing was learned about the clinic either
+way and the grade stays at A. An obfuscated row goes to a human with a browser; an erroring site
+goes back in the queue for another day. It was still recommended for a hold on the first live
+run, on the narrower ground that a site erroring on every host may be a site going away.
+
+**Two more UK rows reached the strongest PECR footing in the file**, both read off their own
+pages: `Bodyvie Limited trading as Bodyvie Medi-Clinic, Company number 3849113`, and row 118's
+`Skin Clinic (Edinburgh) Ltd, SC669495`. Both trade under a name that is not their registered
+name, which is the Companies House near-miss trap stated twice in one day: match the registered
+name or the number, never the brand.
+
+**Three rows publish more locations than their row implied** — 82 Dr MediSpa has three, 97
+Skintech and 98 Injex four each. All inside the one-to-four band, none a breach, but all three
+are chains-in-waiting and the count is what must-have 3 turns on. A re-read is the natural moment
+to re-count, and nothing else in the process ever does.
