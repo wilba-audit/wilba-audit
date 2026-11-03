@@ -6,7 +6,7 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **56** of them: 30 whose address is on the page but encoded, and 26 whose site refuses
+There are **57** of them: 31 whose address is on the page but encoded, and 26 whose site refuses
 automated reading altogether. **The two groups need different things, and that distinction is the
 whole point of this file.**
 
@@ -51,7 +51,7 @@ One page-open each. If an address is published, the clinic becomes a normal row.
 | Botastic Aesthetics & Wellness LLC | `txmedicalaesthetics.com` | US — US under-swept Texas, Memphis, Little Rock and J |
 | You Wellness | `youwellness.net` | US — Near misses — northwest Arkansas, San Antonio su |
 
-## Group B — the address is on the page, encoded (30 clinics)
+## Group B — the address is on the page, encoded (31 clinics)
 
 These render as `[email protected]`. **Our brief was wrong about these, and I corrected it today.**
 It said a browser does not recover them and they should be dropped. Both halves are false.
@@ -155,3 +155,21 @@ stopped publishing. The row is parked at C with must-have 5 named, the address i
 
 Dr Mela is billed as a twice-voted top-100 injector worldwide, so this is a clinic worth the
 browser tab.
+
+
+## Also added 3 November 2026 — the one that was queued to send
+
+**Luxe Skin** · `luxeskin.co.uk` · UK, Glasgow · pipeline row **116**
+
+Same shape as Bramis above and more urgent, because this row was **already loaded into the
+sending tool and queued for the first live run**. Its address was read on 24 September; the site
+now renders it as `[[email protected]]` in both the visit section and the footer. Obfuscation
+installed some time in the last six weeks.
+
+This is the row that justifies re-verifying an address before a send rather than after one. Had
+the run gone out on the September list, the first email of WILBA's first live campaign would have
+gone to an address that is no longer publicly readable.
+
+One page-open returns it. No company identity is published either (trading as "Luxe Skin
+Aesthetic Clinic by Dr Q", no Ltd suffix, no number), so if the browser gives up an address, the
+UK company check still has to be run before it can send.

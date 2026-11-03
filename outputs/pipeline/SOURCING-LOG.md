@@ -13,12 +13,15 @@ without the repo.
 
 ## Where the pipeline stands
 
-As of 3 Nov 2026: **932 rows, 644 ready to approach** — US 312, AU 171, CA 59, UK 58, NZ 42,
-IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **56 clinics** that cleared the ICP on
-fit are parked in `browser-visit-list.md` for want of one page-open each. Australia fell by two
-on 3 Nov rather than rising: two long-standing grade-A rows were parked when the consent re-read
-found their addresses no longer readable. **Going down is a working day too** — a row that cannot
-be verified today is worth less than no row, because somebody would have sent to it.
+As of 3 Nov 2026: **932 rows, 643 ready to approach** — US 312, AU 171, CA 59, UK 57, NZ 42,
+IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **57 clinics** that cleared the ICP on
+fit are parked in `browser-visit-list.md` for want of one page-open each.
+
+**Three rows came OFF the sendable list on 3 Nov** — two Australian and one UK, all of them
+long-standing grade A, all parked because a re-read found their published address gone. One of
+the three was already loaded into the sending tool and queued to go. **Going down is a working
+day too:** a row that cannot be verified today is worth less than no row, because somebody would
+have sent to it.
 
 **CORRECTION, 1 Nov 2026 — this log said repeatedly that nothing had ever been sent from the
 pipeline, and that was wrong.** Email 1 of the GoHighLevel sequence went to **ten clinics on 15
@@ -836,3 +839,30 @@ must-have 6 alone, and is now clear on every must-have that applies to it.
 The thing to keep is not the five rows. It is that **"I audited it and it is clean" was wrong,
 and an unrelated session's wrong-reason objection was what surfaced it.** When another thread
 disagrees with the file, check the file.
+
+### Re-verifying the loaded rows — one in eight had gone, and a method trap
+
+The sending thread had **125 rows loaded and unsent, mostly dated September**. 21 of them are
+AU/NZ/UK, the wave that can go first because those markets need no postal address in the footer.
+13 had already been re-read in the consent screen; the other **8, all UK, were re-read before the
+first live run rather than after it.**
+
+Seven stand. **One had gone: row 116 Luxe Skin, which was queued to send on an address that is no
+longer publicly readable** — the site has installed Cloudflare-style obfuscation since 24
+September. That single row is the whole argument for verifying before a send. It is now parked at
+C and on the browser-visit list.
+
+Two rows gained a company identity we had never read off their own page: `Dermoperfection
+Cosmetic Services Limited`, and best of all row 118, `Skin Clinic (Edinburgh) Ltd trading as
+DRVICTORIA, registered in Scotland SC669495` — a named company **and** a number, the strongest
+PECR footing any UK row in this file has. Note the trading name differs from the registered name,
+which is normal and is exactly the Companies House near-miss trap: match the registered name or
+the number, never the brand.
+
+**The method trap, which cost nothing only because it was checked.** On the first pass, three of
+the eight looked like they had lost their address. Only the homepage had been fetched. Two of the
+three still publish it on a contact page — `info@medizen.co.uk` and
+`enquiries@drvictoria.co.uk`, both exactly as recorded. **A liveness re-read that fetches only
+the homepage over-reports decay threefold.** One fetch says the homepage changed. It takes the
+second to say the clinic stopped publishing, and "the clinic stopped publishing" is the claim
+that parks a row. Real six-week decay: **one row in eight.**
