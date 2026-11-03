@@ -46,6 +46,7 @@ ADDRESS_PATH = GHL_DIR / "sender-address.txt"  # WILBA postal address for the fo
 FROM_NAME = "Jess Morrell"
 RAMP = [(5, 10), (None, 20)]  # first 5 send-days: 10 new a day, then 20
 GRADE_ORDER = {"A": 0, "B": 1, "C": 2}
+ADDRESS_COUNTRIES = {"US", "CA"}  # need a postal address in the footer
 
 
 def render(text: str, row: dict) -> str:
@@ -120,6 +121,9 @@ def main() -> None:
 
     # Jess works on Melbourne time; the runner is UTC, where Monday 8am is still Sunday.
     today = dt.datetime.now(ZoneInfo("Australia/Melbourne")).date()
+    skip = set()
+    if SKIP_PATH.exists():
+        skip = {ln.split("#")[0].strip() for ln in SKIP_PATH.read_text().splitlines()} - {""}
     rows = {r["pipeline_id"]: r for r in csv.DictReader(CSV_PATH.open(encoding="utf-8"))}
     v2 = copy_version() == "v2"
     if v2:
@@ -127,13 +131,13 @@ def main() -> None:
         for o in json.loads(OPENERS_V2_PATH.read_text()):
             if o["pipeline_id"] in rows:
                 rows[o["pipeline_id"]].update(cold_subject=o["cold_subject"], cold_opener=o["cold_opener"])
-        if mode == "live" and not sender_address():
-            sys.exit("v2 copy needs WILBA's postal address in sender-address.txt before a live send.")
+        if not sender_address():
+            # CAN-SPAM (US) and CASL (CA) need a postal address in every email; AU, NZ, UK
+            # and IE rules need sender identity and a working opt-out, which the footer has.
+            for cid in [c for c, r in rows.items() if r["country"] in ADDRESS_COUNTRIES]:
+                skip.add(cid)
     state = json.loads(STATE_PATH.read_text()) if STATE_PATH.exists() else {"send_days": [], "clinics": {}}
     log: list[str] = []
-    skip = set()
-    if SKIP_PATH.exists():
-        skip = {ln.split("#")[0].strip() for ln in SKIP_PATH.read_text().splitlines()} - {""}
 
     if mode == "test":
         test_email = os.environ.get("TEST_EMAIL")
