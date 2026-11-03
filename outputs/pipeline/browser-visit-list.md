@@ -6,8 +6,12 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **57** of them: 31 whose address is on the page but encoded, and 26 whose site refuses
-automated reading altogether. **The two groups need different things, and that distinction is the
+There are **73** of them: 34 whose address is on the page but encoded, 38 whose site refuses
+automated reading or will not render, and one special case (row 352) described at the end.
+**16 were added on 3 November from the re-read of the staged sending wave, and every one of
+those was queued to receive WILBA's first cold email.** They are listed in their own section at
+the end of this file rather than merged into the tables above, because they are a different kind
+of entry: not clinics we never reached, but clinics we had already verified and staged. **The two groups need different things, and that distinction is the
 whole point of this file.**
 
 ---
@@ -173,3 +177,68 @@ gone to an address that is no longer publicly readable.
 One page-open returns it. No company identity is published either (trading as "Luxe Skin
 Aesthetic Clinic by Dr Q", no Ltd suffix, no number), so if the browser gives up an address, the
 UK company check still has to be run before it can send.
+
+
+---
+
+# Added 3 November 2026 — from the re-read of the staged sending wave
+
+All 206 October-dated rows staged in the sending tool were re-read before the first live send,
+one page each with a second fetch where the first was silent. 176 confirmed, 7 had simply moved
+their address to another page, 2 had changed it. **These 16 could not be sent to**, and all 16
+were in the queue.
+
+## Encoded since we read them (3) — the clinic installed obfuscation after verification
+
+| Row | Clinic | Site | Note |
+| --- | --- | --- | --- |
+| 382 | Wellington Cosmetic Clinic | `wellingtoncosmeticclinic.co.nz` | All three email links now Cloudflare tokens |
+| 412 | Enrich Aesthetics | `enrichaesthetics.com.au` | Address was read 19 Oct — obfuscated within the fortnight |
+| 636 | Aesthetics Central Clinic | `aestheticscentral.co.uk` | See below — the most instructive of the three |
+
+**Row 636 is worth reading twice.** Both visible slots on its contact page are Cloudflare-
+protected, but the plain address is still in the page *inside the meta description*. Anything
+that merely searched the raw page for the recorded address would have called this a clean
+confirm and sent to it. It is the sixth address look-alike recorded in `ICP.md` the same day,
+found independently from the opposite direction: **a meta-tag address behind an obfuscated
+visible one is not conspicuous publication.** None of the three was decoded.
+
+## Site would not serve or would not render (12)
+
+A person opening these sees the page normally. Ten refused robots; two render client-side and
+served no text.
+
+| Row | Clinic | Site | Failure |
+| --- | --- | --- | --- |
+| 310 | The Louve Skin Clinic | `thelouveskinclinic.com.au` | robots |
+| 347 | Art of Aesthetics | `artofaesthetics.com.au` | renders partially; its `/contact` client-errors |
+| 366 | Skinave Co | `skinaveco.com.au` | robots |
+| 386 | Clinic 23 | `clinic23.co.nz` | robots |
+| 421 | The Cosmetic Club | `thecosmeticclub.com.au` | robots |
+| 429 | The Aesthetics Table | `theaestheticstable.co.uk` | renders empty on three fetches |
+| 433 | Blend Skin & Aesthetics | `blendskinandaesthetics.co.uk` | robots |
+| 503 | Iylah Aesthetics | `iylahaesthetics.com.au` | robots |
+| 587 | Shoal Aesthetics | `shoalaesthetics.com.au` | robots |
+| 610 | Naked Face Clinic | `nakedface.co.nz` | robots |
+| 632 | HDM Aesthetics | `hdmaesthetics.co.uk` | robots |
+| 730 | Aesthetik Skin & Body | `aesthetikskin.com.au` | robots |
+
+**These rows keep their grade.** Nothing was learned about them in either direction, which is
+the whole distinction: an unreadable site is not a dead address. They were recommended for a
+hold on the first send only because an unverifiable address on a domain with no sending
+reputation is a risk not worth taking, not because anything is wrong with the clinic.
+
+## One special case (1)
+
+**Row 352, Finesse Cosmetic Therapies** · `finessecosmetics.com.au`. Its address is absent from
+the homepage and the About page, both of which render fine with no obfuscation — so on the
+evidence it has been taken down. But the site's own `/contact-us/` returned a server error, so
+two pages were read and the third could not be. **One browser look settles whether this is a
+withdrawn address or just a broken page**, which is why it is here rather than written off.
+
+## Not on this list, because a browser will not help
+
+Four rows failed in ways a person cannot fix by opening a tab, and are phone or DM prospects:
+**660 Face Works** and **350 The GOSS** (site-side errors with no content at all, on every path
+including `thegoss.au`'s redirect), and **308 U Skin Clinics** and **742 SO Aesthetics**, whose
+pages render perfectly and simply no longer publish an address anywhere.

@@ -44,9 +44,9 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 3 Nov 2026: **932 rows, 643 ready to approach** — US 312, AU 171, CA 59, UK 57, NZ 42,
-IE 2. (It was 496 rows and 316 ready on 20 Oct.) A further **57 clinics** that cleared the ICP on
-fit are parked in `browser-visit-list.md` for want of one page-open each.
+As of 3 Nov 2026: **932 rows, 636 ready to approach** — US 312, AU 167, CA 59, UK 55, NZ 41, IE 2. (It was 496 rows and 316 ready on
+20 Oct.) A further **73 clinics** that cleared the ICP on fit are parked in
+`browser-visit-list.md` for want of one page-open each.
 
 **Three rows came OFF the sendable list on 3 Nov** — two Australian and one UK, all of them
 long-standing grade A, all parked because a re-read found their published address gone. One of
@@ -838,6 +838,64 @@ that is why the screen now runs before a send instead of after one.
 **Two rows sit at the top of the must-have 3 band**: 97 Skintech and 98 Injex both publish four
 clinic addresses. Four qualifies, five disqualifies, and both are chains-in-waiting. Re-count
 before any second approach.
+
+### Re-reading the whole staged sending wave — 206 rows, and the number that matters is 11%
+
+The sending thread had **235 AU/NZ/UK rows staged** with v2 openers, waiting on Jess's yes. Of
+those, 10 had been re-read earlier in the day and 19 were added within the last three days, so
+**206 October-dated rows were re-read before the first live send** — four workers, one page per
+row, a second fetch only where the first was silent. 208 fetches, 11 searches.
+
+| verdict | rows | what it means |
+| --- | --- | --- |
+| confirmed | 176 | address published verbatim, as recorded |
+| moved | 7 | address live, but on a different page than we cited |
+| unreadable | 14 | fetch failed — **nothing learned, grade unchanged** |
+| gone | 6 | 3 newly obfuscated, 3 genuinely absent |
+| changed | 2 | the site publishes a different address |
+
+**6 of 206 addresses had gone in under a month — 2.9%.** Add the 2 changed and the 14
+unverifiable and **22 rows, 11% of the wave, should not have gone out as staged.** On a sending
+domain with no reputation, that is the difference between a campaign that lands and one that
+gets filtered.
+
+**Three findings worth more than the row count.**
+
+1. **Row 636 Aesthetics Central is the best argument the look-alike rule has.** Both visible
+   slots on its contact page are Cloudflare-protected, and the plain address is still in the page
+   — *inside the meta description*. A check that searched the raw page for the recorded address
+   would have called it confirmed and sent to it. This is the sixth address look-alike, recorded
+   in `ICP.md` the same morning from row 103 — found again independently, from the opposite
+   direction, by a worker who had read the rule. That is the rule earning its place rather than
+   just being written down.
+2. **Most decay is not deliverability, it is stale citation.** Seven rows had a live address on a
+   page we were no longer pointing at, and four more "confirmed" rows had a recorded source page
+   that now errors or refuses robots while the address sits on the homepage. **A dead citation
+   looks exactly like a dead address on the first fetch.** It is only the second fetch that tells
+   them apart, and telling them apart is the difference between parking a good clinic and sending
+   to a dead mailbox.
+3. **The decay rate varies hugely by batch, so one batch is not a rate.** Batch 2 lost 4 of 52;
+   batch 4 lost 0 of 51, with no obfuscation and no absences at all. Earlier in the day a batch of
+   14 lost 1 and I quoted "one in fourteen" to the sending thread as though it were a rate. It was
+   one batch. The honest aggregate across 220 rows re-read today is **about 3% gone per month**,
+   and even that is one month's observation.
+
+**The AU/NZ/UK consent screen has now disqualified nobody across more than fifty policies and
+206 further pages.** Not one clinic refuses unsolicited commercial email. The closest wordings
+found were clinics promising *their own* lists "no spam" (382, 420, 575, 384, 614) — a promise
+about their outbound mail, not a refusal of our inbound. The screen stays, because being able to
+show it was checked is the point, but it can now be stated plainly: **it is a recording cost, not
+a filter.**
+
+**Two rows needed a judgement rather than a verdict.** Row 322 has rebranded — domain redirects,
+new name, new mailbox, and the staged opener still names the old clinic. Row 588 publishes
+`info@...com` where we recorded `info@...com.au`; one of the two is a probable hard bounce and
+this session has no DNS tooling to find out which (MX and A lookups both fail), so the row now
+carries what is published and is recommended out of the first send. **Row 582 was the only
+must-have failure found: five locations on its About page, where five is the disqualifying
+threshold.** Held at C rather than dropped, because five addresses across coastal Queensland
+reads more like one travelling operator than a chain. **Nothing in our process re-counts
+locations except a re-read.**
 
 ### Still open
 
