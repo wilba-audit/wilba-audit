@@ -92,6 +92,103 @@ If waking up old enquiries is ever worth a look, the offer stands: 10% of what i
 My calendar is always open: {cal}""", "Book a 15-minute chat"),
 ]
 
+# v2 copy (Griffin's med spa briefing, 16 Oct): no refund promise, no prices, no medicine
+# names, questions instead of invented maths, and a compliance email for Australia and NZ.
+# Source: /mnt/project-files/ghl-outreach/email-sequence-v2-briefing.md
+EMAILS_V2 = [
+    (0, "{{contact.cold_subject}}", """{{contact.cold_opener}}
+
+Most clinics have hundreds of patients who came in once or twice and never rebooked. Nobody follows them up, because doing it properly means texting a few hundred people and then answering everyone who writes back.
+
+That's what we do. We work your lapsed patients inside {{contact.crm_phrase}} over a few weeks of real two-way text conversations, and book the ones who are ready straight into your calendar. Your team changes nothing.
+
+You pay 10% of the bookings it brings in. If nothing comes back, you owe nothing.
+
+{{contact.timezone_line}} Grab any time that suits here: {cal}""", "Book a 15-minute chat"),
+
+    (2, "Re: {{contact.cold_subject}}", """Did you get a chance to see my note?
+
+Short version: there are patients in {{contact.crm_phrase}} who haven't been back in six months or more. We follow them up properly and book them back in, and you only pay from what comes back.
+
+Happy to show you how it works: {cal}""", None),
+
+    (4, "Worst case", """Here's the worst that can happen if you say yes:
+
+We work a slice of your lapsed patients, nobody books, and you've paid nothing.
+
+Here's the best:
+
+Patients who'd drifted away come back in, and you keep 90% of every booking.
+
+Fifteen minutes is all it takes to see which one you'd get: {cal}""", "Pick a time"),
+
+    (7, "{{contact.company_name}}", """Is anyone following up the patients who haven't rebooked?""", None),
+
+    (10, "Three quick questions", """Three questions I ask every clinic owner:
+
+1. How many patients haven't been in for six months?
+2. What's a returning patient worth to you over a year?
+3. Who follows them up at the moment?
+
+The answer to the third one is usually "nobody, really". That's the gap we fill, and the first two tell you what it's worth.
+
+If you'd like to work the numbers through together: {cal}""", "Pick a time"),
+
+    (14, "Why we only take 10%", """Most agencies charge a monthly retainer and hope it works.
+
+We'd rather get paid when you do. That's why it's 10% of the bookings we bring in. If nothing comes back, you owe nothing.
+
+If we don't deliver, we don't eat. It keeps us honest.
+
+{cal}""", "Book a 15-minute chat"),
+
+    (18, "The message most clinics can't send", """The obvious way to bring a patient back is a text about their next treatment, with the product name and a price.
+
+In Australia, that message breaks the TGA's advertising rules, and an industry audit of 100 injector websites last year found almost every one in breach.
+
+Our follow-up is written as a genuine recall from your clinic: no product names, no prices, no offers, and every reply handled by a real conversation that respects "not now" and "stop". Your team approves the wording before anything goes out.
+
+Worth 15 minutes? {cal}""", None),
+
+    (23, "Quick question", """What happens at {{contact.company_name}} when a patient doesn't rebook?
+
+Just curious. Most clinics tell me "nothing, really", and that's the gap we fill.
+
+Jess""", None),
+
+    (30, "Should I close your file?", """I haven't heard back, so I'm guessing lapsed patients aren't a priority right now. Totally fine.
+
+Should I close your file, or would you like me to keep you on the list?
+
+Either way, just reply with a quick "close" or "keep".""", None),
+
+    (40, "Last one from me", """I'll leave it here so I'm not cluttering your inbox.
+
+If following up lapsed patients is ever worth a look, the offer stands: 10% of what it books, and nothing if nothing comes back.
+
+My calendar is always open: {cal}""", "Book a 15-minute chat"),
+]
+
+# Email 7 outside Australia and NZ, where the TGA angle doesn't apply.
+EMAIL7_V2_INTL = (18, "What your team actually does", """The question I get most: "What does my team have to do?"
+
+Almost nothing. The system works inside {{contact.crm_phrase}}, your team approves anything before it goes to a patient, and there's one "AI off" switch if they ever want to pause it.
+
+No new software to learn. No migration.
+
+Worth a look? {cal}""", None)
+
+
+def sequence(version: str, country: str = "") -> list:
+    """The 10 emails for a copy version, with the right email 7 for the clinic's country."""
+    if version != "v2":
+        return EMAILS
+    emails = list(EMAILS_V2)
+    if country not in ("AU", "NZ"):
+        emails[6] = EMAIL7_V2_INTL
+    return emails
+
+
 SIGN_TEXT = f"Jess\n\nJess Morrell\nWILBA, wilba.ai\nBook a call: {CALENDAR}"
 OPT_OUT = 'If this isn\'t for you, reply "no" and I won\'t email again.'
 
@@ -105,7 +202,7 @@ def plain(body: str) -> str:
     return text + "\n\n" + OPT_OUT
 
 
-def html_email(body: str, button: str | None) -> str:
+def html_email(body: str, button: str | None, address: str = "") -> str:
     paras = []
     for p in body.split("\n\n"):
         p = p.strip()
@@ -135,7 +232,8 @@ def html_email(body: str, button: str | None) -> str:
            f'<p style="margin:0;font-size:12px;color:{GREY}"><a href="https://www.wilba.ai/" style="color:{INK};font-weight:600;text-decoration:none">wilba.ai</a> &middot; <a href="{CALENDAR}" style="color:{GREY}">Book a call</a> &middot; Victoria, Australia</p></td>'
            f'<td style="padding:12px 0 0 18px;vertical-align:middle;border-left:1px solid #ebebeb">'
            f'<p style="margin:0;font-size:20px;font-weight:800;letter-spacing:-1px;color:{INK}">wilba<span style="color:{BLUE}">.ai</span></p></td></tr></table>')
-    foot = f'<p style="margin:22px 0 0;font-size:11px;color:#9a9a9a">{html.escape(OPT_OUT)}</p>'
+    foot_text = html.escape(OPT_OUT) + (f"<br>WILBA &middot; {html.escape(address)}" if address else "")
+    foot = f'<p style="margin:22px 0 0;font-size:11px;color:#9a9a9a">{foot_text}</p>'
     return ('<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;'
             f'color:{INK};max-width:560px">' + "".join(paras) + btn + sig + foot + "</div>\n")
 

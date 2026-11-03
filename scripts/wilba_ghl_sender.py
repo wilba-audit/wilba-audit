@@ -31,7 +31,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from wilba_ghl_load import _req  # noqa: E402
-from wilba_ghl_sequence import EMAILS, html_email  # noqa: E402
+from wilba_ghl_sequence import EMAILS, html_email, sequence  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 GHL_DIR = ROOT / "outputs" / "pipeline" / "ghl"
@@ -39,6 +39,9 @@ CSV_PATH = GHL_DIR / "ghl-import.csv"
 STATE_PATH = GHL_DIR / "send-state.json"
 REPORT_PATH = GHL_DIR / "send-report.md"
 SKIP_PATH = GHL_DIR / "skip-ids.txt"  # one pipeline_id per line (# comments ok): never email these
+COPY_PATH = GHL_DIR / "copy-version.txt"  # "v1" (original) or "v2" (briefing-aligned)
+OPENERS_V2_PATH = GHL_DIR / "openers-v2.json"  # v2 subject + opener per pipeline_id
+ADDRESS_PATH = GHL_DIR / "sender-address.txt"  # WILBA postal address for the footer (v2 needs it)
 
 FROM_NAME = "Jess Morrell"
 RAMP = [(5, 10), (None, 20)]  # first 5 send-days: 10 new a day, then 20
@@ -56,10 +59,18 @@ def render(text: str, row: dict) -> str:
     return text
 
 
+def copy_version() -> str:
+    return COPY_PATH.read_text().split()[0].strip() if COPY_PATH.exists() else "v1"
+
+
+def sender_address() -> str:
+    return ADDRESS_PATH.read_text().strip() if ADDRESS_PATH.exists() else ""
+
+
 def build_email(step: int, row: dict) -> tuple[str, str]:
     """Return (subject, html) for email number `step` (1-10) for this clinic."""
-    _, subject, body, button = EMAILS[step - 1]
-    html = html_email(body, button)
+    _, subject, body, button = sequence(copy_version(), row["country"])[step - 1]
+    html = html_email(body, button, sender_address())
     # the opener has paragraph breaks; keep them as separate paragraphs in HTML
     opener_html = row["cold_opener"].replace("\n\n", '</p><p style="margin:0 0 16px">')
     html = html.replace("{{contact.cold_opener}}", opener_html)
@@ -110,6 +121,14 @@ def main() -> None:
     # Jess works on Melbourne time; the runner is UTC, where Monday 8am is still Sunday.
     today = dt.datetime.now(ZoneInfo("Australia/Melbourne")).date()
     rows = {r["pipeline_id"]: r for r in csv.DictReader(CSV_PATH.open(encoding="utf-8"))}
+    v2 = copy_version() == "v2"
+    if v2:
+        # v2 openers drop prices and medicine names; grade C clinics no longer qualify
+        for o in json.loads(OPENERS_V2_PATH.read_text()):
+            if o["pipeline_id"] in rows:
+                rows[o["pipeline_id"]].update(cold_subject=o["cold_subject"], cold_opener=o["cold_opener"])
+        if mode == "live" and not sender_address():
+            sys.exit("v2 copy needs WILBA's postal address in sender-address.txt before a live send.")
     state = json.loads(STATE_PATH.read_text()) if STATE_PATH.exists() else {"send_days": [], "clinics": {}}
     log: list[str] = []
     skip = set()
@@ -166,7 +185,8 @@ def main() -> None:
 
     # 2. new clinics on email 1
     cap = daily_cap(len(state["send_days"]))
-    fresh = [r for r in rows.values() if r["pipeline_id"] not in state["clinics"] and r["pipeline_id"] not in skip]
+    fresh = [r for r in rows.values() if r["pipeline_id"] not in state["clinics"] and r["pipeline_id"] not in skip
+             and not (v2 and r["icp_grade"] == "C")]
     fresh.sort(key=lambda r: (GRADE_ORDER.get(r["icp_grade"], 9), int(r["pipeline_id"])))
     started = 0
     for row in fresh[:cap]:
