@@ -210,6 +210,33 @@ unrelated AI companion app.
 
 ## Scripting traps
 
+**A keyword regex cannot tell a finding from a denial that one was ever made — 3 Nov 2026.**
+The worst scripting bug in this project so far, because it silently *cleared* rows instead of
+failing loudly. The AU/NZ consent check searched a row's notes for the words of the finding
+(`unsolicited`, `anti-spam`, `own page`). Five rows passed while stating the opposite: their
+notes read *"nobody has checked the site for a 'no unsolicited commercial email' notice"*,
+which contains the exact word the check was hunting for. The audit built on that check reported
+**zero** AU/NZ rows missing a consent finding, and the real number was five.
+
+Three compounding details worth keeping:
+
+- **The check was widened that same morning for a good reason, and the widening made it worse.**
+  It had looked for `unsolicited` alone and wrongly rejected three rows recording "no anti-spam
+  notice". Adding synonyms was right. Nobody asked the other question: does matching these words
+  ever mean the opposite of a finding? It does.
+- **It was caught from outside, by accident.** The GoHighLevel thread excluded exactly those five
+  rows because their notes read "HELD at C" while the grade column read B — the wrong reason,
+  since a note is history and the grade column is the state. It was right anyway. Two sessions
+  reading the same rows differently is worth more than either one's audit.
+- **A text field cannot carry a boolean.** The honest fix is a column, not a cleverer regex. The
+  regex fix shipped (a denial clause disqualifies unless a dated screening stamp overrides it),
+  and the whole-file audit now prints both counts, but the structural answer is a
+  `consent_screened` date column, and that is worth doing before the pipeline doubles again.
+
+**The test for any scan over prose is now: write the sentence that would make this scan wrong,
+and check it against the file.** It takes a minute and it would have caught this.
+
+
 `open(path,'w').write(...)` without closing, inside a shell `&&` chain, silently lost the
 buffer: the edit printed success, never reached disk, and a commit message claimed a change
 the commit did not contain. Use `with open(...) as f:` and re-read the file before committing.
@@ -786,3 +813,26 @@ before any second approach.
 - `portraitcare.com/.../sapulpa/` read like a town directory index and was a vendor logo wall.
   One fetch for nothing. A directory index names many businesses in its snippet; a vendor's
   location page names one.
+
+### Later the same day: the consent screen was five rows short, and I had said it was complete
+
+Within the hour of reporting the screen finished, the GoHighLevel thread said it had excluded
+rows 66, 67, 70, 72 and 75 from the staged wave because their notes read "HELD at C" while their
+grade column read B. Checking that turned up the real problem, which was mine: **those five
+rows passed my consent audit by denying the consent check.** See the regex-negation entry under
+Scripting traps — their notes say "nobody has checked the site for a 'no unsolicited commercial
+email' notice", so a scan for the word `unsolicited` matched. The number I had just reported as
+eighteen rows and zero gaps was twenty-three rows and five gaps.
+
+All five were re-read: `contact@drgreencosmeticgroup.com.au`, `contact@collinscosmeticclinic.com.au`,
+`info@dr-jodie.com.au`, `info@m1-beauty.com.au` and `booking@drsalon.com.au`, each printed
+verbatim on the clinic's own page, matching the recorded address, none carrying a notice. So all
+five are sendable and the staged wave can have them back. **Twenty-three of twenty-three AU/NZ
+rows have now cleared the screen without a single refusal found** — which is the strongest
+version yet of the finding that the screen is a recording cost rather than a filter. Row 70 is
+worth singling out: it was dropped on the retired 22 Sep standard, recovered on 1 Nov, held on
+must-have 6 alone, and is now clear on every must-have that applies to it.
+
+The thing to keep is not the five rows. It is that **"I audited it and it is clean" was wrong,
+and an unrelated session's wrong-reason objection was what surfaced it.** When another thread
+disagrees with the file, check the file.

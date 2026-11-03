@@ -48,6 +48,17 @@ def dom(url):
     m = re.search(r'(?:https?://)?(?:www\.)?([^/\s]+)', url.strip(), re.I)
     return m.group(1).lower().rstrip('.') if m else ''
 NOTICE = re.compile(r'unsolicited|anti-spam|spam act|\bUEMA\b|no spam notice', re.I)
+# Added 3 Nov 2026. NOTICE and OWN_SITE look for the WORDS of a consent finding, and five rows
+# passed that test while stating the opposite: "nobody has checked the site for a 'no
+# unsolicited commercial email' notice" contains the very word NOTICE hunts for. A keyword
+# regex cannot tell a finding from a denial that one was ever made, so the denial has to be
+# matched explicitly. SCREENED is the override: a row that was once held and has since been
+# re-read carries both the old denial and the new stamp, and the stamp wins.
+DENIAL = re.compile(r'has not been (run|checked|done)|have not been (run|checked|done)'
+                    r'|nobody has checked|nobody ever (checked|recorded|looked)'
+                    r'|cannot be demonstrated|never been (run|checked|screened)'
+                    r'|not been screened|HELD at C', re.I)
+SCREENED = re.compile(r'must[- ]have 6 screened', re.I)
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
@@ -158,6 +169,12 @@ def main():
                 # rejected three correctly-screened rows whose finding was recorded as
                 # "no anti-spam notice". The finding is what matters, not the wording.
                 have_notice = NOTICE.search(n)
+                # A denial outranks both, unless the row has since been re-read.
+                if DENIAL.search(n) and not SCREENED.search(n):
+                    rejected.append((cn, 'AU/NZ row graded %s has consent wording that says '
+                                         'the check was NOT made - a row cannot be cleared by '
+                                         'a note recording that nobody looked' % fit.upper()))
+                    continue
                 if not (have_own and have_notice):
                     rejected.append((cn, 'AU/NZ row graded %s states %s - both consent '
                                          'findings must be in notes, in words'
@@ -249,6 +266,20 @@ def main():
     vague = [r['id'] for r in parked if not MUSTHAVE.search(r.get('notes') or '')]
     print('parked rows predating the numbered-reason rule: %d of %d'
           % (len(vague), len(parked)))
+
+    # Whole-file consent audit. The per-row check above only ever sees rows being appended,
+    # and the five rows that slipped through on 3 Nov were already in the file. Anything this
+    # prints above zero is a row somebody could send to on a finding nobody made.
+    au = [r for r in after if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
+          and (r.get('country') or '').strip().upper() in ('AU', 'NZ')]
+    denied = [r['id'] for r in au
+              if DENIAL.search(r.get('notes') or '') and not SCREENED.search(r.get('notes') or '')]
+    silent = [r['id'] for r in au
+              if not (NOTICE.search(r.get('notes') or '') and OWN_SITE.search(r.get('notes') or ''))]
+    print('AU/NZ sendable rows whose notes deny the consent check: %d%s'
+          % (len(denied), (' ' + str(denied)) if denied else ''))
+    print('AU/NZ sendable rows with no consent finding at all: %d%s'
+          % (len(silent), (' ' + str(silent)) if silent else ''))
 
 
 if __name__ == '__main__':
