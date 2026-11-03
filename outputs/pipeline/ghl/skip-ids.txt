@@ -52,3 +52,26 @@
 104  # consent basis fails: address now Cloudflare-hidden (graded C 3 Nov)
 116  # Luxe Skin: address now obfuscated on site, graded C (3 Nov)
 78  # Medicine of Cosmetics: site erroring on every host 3 Nov; retry re-read before sending
+308  # wave: address gone on re-read 3 Nov (graded C)
+352  # wave: address gone on re-read 3 Nov (graded C)
+742  # wave: address gone on re-read 3 Nov (graded C)
+382  # wave: address gone on re-read 3 Nov (graded C)
+412  # wave: address gone on re-read 3 Nov (graded C)
+636  # wave: address gone on re-read 3 Nov (graded C)
+310  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+347  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+366  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+386  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+421  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+429  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+433  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+503  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+587  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+610  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+632  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+660  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+730  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+350  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+322  # wave: rebranded to Maddison Avenue, new address; opener must be rewritten
+588  # wave: published domain now .com vs recorded .com.au; bounce risk
+582  # wave: Respectable Aesthetics now lists 5 locations; pending a look
