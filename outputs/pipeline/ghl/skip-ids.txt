@@ -51,3 +51,4 @@
 103  # consent basis fails: address only in meta tags (graded C 3 Nov)
 104  # consent basis fails: address now Cloudflare-hidden (graded C 3 Nov)
 116  # Luxe Skin: address now obfuscated on site, graded C (3 Nov)
+78  # Medicine of Cosmetics: site erroring on every host 3 Nov; retry re-read before sending
