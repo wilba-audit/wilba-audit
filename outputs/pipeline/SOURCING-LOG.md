@@ -11,6 +11,40 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## Where to go next — standing list, refreshed 3 Nov 2026
+
+Keep this current. It is the thing that stops a run spending its first searches deciding where
+to look, and `near-misses.md` is the record of everything already swept.
+
+**Markets not yet touched, best first:**
+- **UK southern half** — York, Wilmslow, Winchester, Salisbury, Hove, Cowbridge. Expect a low
+  yield: PECR needs a company identity and an owner-injector often never incorporates, so about
+  three sendable from eighteen researched is the floor, not a bad run.
+- **California Central Valley remainder** — Hanford, Lemoore, Selma.
+- **Upstate South Carolina remainder** — Greenville and Spartanburg were opened on 3 Nov and gave
+  two rows including the first proper Spartanburg-side clinic. The metro is not exhausted.
+- **Canada beyond Montreal and the Prairies.** 59 rows and one directory fetch produced 34 names
+  in Montreal alone, which is the best single fetch recorded here. CASL's conspicuous-publication
+  test has never disqualified a Canadian row.
+
+**Markets that are finished. Do not re-query these:**
+- **Australia.** Seven passes. On 2 Nov two Adelaide suburb directories returned the same thirty
+  listings with no injectables mentioned; on 3 Nov the country went *down* by four rows.
+- **Nevada.** The worst publishing market measured: 22 businesses, 5 readable addresses, on
+  well-funded Zenoti and Mangomint sites.
+- **Coastal Virginia / Hampton Roads.** Seven towns, five queries, five rows, zero grade A, and
+  Norfolk alone has had four queries across two sweeps for one reachable independent.
+- **Tulsa and Oklahoma City** — but only on *city-name* queries. See the neighbourhood-stacking
+  entry: naming districts inside a city reopened Tulsa after it had been written off, so
+  "finished" here means finished by the queries tried, and that is a weaker claim than it sounds.
+
+**The standing job that is not sourcing.** As of 3 Nov the list is far ahead of the sending
+channel: 636 rows ready, 212 staged, ten ever sent. On any run where sourcing would add rows
+nobody will email for months, **re-verifying the rows about to be sent is worth more**, and on
+3 Nov it was worth 22 rows that would have misfired. The two jobs trade off and the ratio is not
+fixed — read `send-state.json` on `claude/project-thread-ptytul` and decide, rather than
+defaulting to sourcing because the prompt says to.
+
 ## The scheduled prompt is out of date in five places — proposed changes, 3 Nov 2026
 
 **Read this before following the trigger prompt.** The nightly sourcing routine
