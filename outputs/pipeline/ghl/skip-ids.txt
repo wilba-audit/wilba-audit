@@ -50,3 +50,4 @@
 76  # InLine Clinics: opener says one doctor at Deakin and names Dr Jung (inferred, never printed) + brand names; it is 2 sites. Redraft under v2 before sending (1 Nov)
 103  # consent basis fails: address only in meta tags (graded C 3 Nov)
 104  # consent basis fails: address now Cloudflare-hidden (graded C 3 Nov)
+116  # Luxe Skin: address now obfuscated on site, graded C (3 Nov)
