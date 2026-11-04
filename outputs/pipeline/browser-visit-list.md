@@ -242,3 +242,51 @@ Four rows failed in ways a person cannot fix by opening a tab, and are phone or 
 **660 Face Works** and **350 The GOSS** (site-side errors with no content at all, on every path
 including `thegoss.au`'s redirect), and **308 U Skin Clinics** and **742 SO Aesthetics**, whose
 pages render perfectly and simply no longer publish an address anywhere.
+
+
+---
+
+# Could a headless browser do this instead of Jess? Tested 4 November 2026. No.
+
+This question will occur to every future run, because the sourcing session has a real
+Chromium and Playwright installed. It was tested properly rather than assumed, and the answer
+is no — for two separate reasons, and the second one is the one that actually closes it.
+
+## First, most of this list should not be opened by a robot even if it could be
+
+The three groups are not equivalent and a browser is not the right tool for two of them:
+
+- **Renders client-side (2 rows).** A browser is exactly the right tool. No directive is being
+  disregarded and no obfuscation defeated; the rendered page is what any visitor sees. This is
+  the one legitimate case.
+- **robots_disallowed (38 rows).** `robots.txt` is a directive addressed to automated agents,
+  and a headless browser driven by this session **is an automated agent**. Driving one at a page
+  the site asks robots not to read is circumvention, not cleverness. Not done, and not to be
+  done without Jess deciding it.
+- **Cloudflare-encoded (34 rows).** A real browser recovers these, because the page's own
+  JavaScript decodes the token — that is the entire design. But that is also precisely the
+  automated collection the clinic installed it to prevent. It is the same question answered on
+  2 Nov about decoding the token arithmetically, and automating a browser instead does not change
+  the answer, only the mechanism. Not done.
+
+So on the rules we already hold, a browser could legitimately clear **2 of 73**.
+
+## Second, this container cannot reach these sites at all
+
+It could not even clear those 2. Chromium launched fine, and both navigations failed with
+`ERR_TUNNEL_CONNECTION_FAILED`. The container's outbound HTTPS goes through an agent proxy,
+which answered **403 to CONNECT** for both clinic hosts — a policy denial, logged in the proxy's
+own status as `connect_rejected`.
+
+That is worth understanding precisely, because it explains something otherwise confusing:
+**`WebFetch` works on clinic sites and a browser in this container does not.** They do not use
+the same path out. `WebFetch` is fetched for us; the browser uses this container's network,
+which is restricted by the environment's network policy. This project has **no cloud environment
+selected**, so it runs on a built-in one whose network settings cannot be changed from here.
+
+**Conclusion: this list needs a person with an ordinary browser, and that has not changed.**
+If Jess ever wants the two render-failure rows done automatically, it needs a cloud environment
+with broader network access, which is a setting in the Add cloud environment dialog under
+[Project settings](#project-settings/environment) — not something this session can arrange.
+And even then it would be 2 rows of 73, because the other 71 are a question about what we are
+willing to do, not about what we are able to do.

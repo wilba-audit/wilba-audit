@@ -62,6 +62,18 @@ page in a browser, so none goes in the pipeline:
   publication, and a string a visitor cannot see was not published to people. Same answer as
   Cloudflare, for the same reason. Park the row, keep the address in it, name must-have 5.
 
+**Do not reach for a headless browser to solve any of this.** Tested 4 Nov 2026. Chromium and
+Playwright are installed in this session, and the reasoning matters more than the result. A
+browser is the right tool for a page that **renders client-side** — nothing is bypassed and the
+rendered page is what a visitor sees. It is the WRONG tool for a `robots_disallowed` page, because
+`robots.txt` is a directive addressed to automated agents and a browser we drive is an automated
+agent; and for a **Cloudflare-encoded** address, because the page's own JavaScript decoding it is
+exactly the automated collection the clinic installed it to stop — automating a browser instead of
+doing the XOR by hand changes the mechanism, not the answer. Separately, it is moot here: this
+container's outbound HTTPS goes through a proxy that answers 403 to CONNECT for clinic hosts, so
+the browser cannot reach them at all, which is why `WebFetch` works and a browser does not. See
+`outputs/pipeline/browser-visit-list.md` for the full test.
+
 **A Cloudflare-obfuscated address used to head this list and no longer belongs on it** — see the
 fetch-failure taxonomy below. It still counts as not seen and is still never recorded, but it
 *is* recoverable by a person opening the page, so the clinic goes on the browser-visit list
