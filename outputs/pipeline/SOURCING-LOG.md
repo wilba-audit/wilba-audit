@@ -11,6 +11,24 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## The real blocker is not rows, and it is not the copy either — 4 Nov 2026
+
+Confirmed by the sending thread today: **the US and Canadian rows cannot be sent until WILBA has
+a postal address for the email footer**, which is what CAN-SPAM and CASL require. That is
+**390 of the 662 sendable rows** — US 315 and CA 75, the majority of the file and both of the
+markets this thread sources most heavily. Nothing is missing on the rows themselves; the sending
+thread was explicit about that.
+
+**There is no postal address anywhere in this workspace.** `outputs/pipeline/email-signature.md`
+carries name, title and `wilba.ai` and nothing else, and `context/personal-info.md` has only
+"Jan Juc / Bellbrae, Surf Coast, Victoria" as a location, which is a home address and not
+something to publish in cold mail. **Only Jess can supply this**, and a PO box or a registered
+business address answers it without putting her home address in front of 390 clinics.
+
+Asked on 4 Nov. **Until it is answered, sourcing US and Canadian rows adds to a queue that cannot
+move**, which is a stronger version of the standing note below about re-verification being worth
+more than new rows. The UK, Australian and New Zealand rows are not blocked on this.
+
 ## 4 Nov 2026 — three markets, and the rule that an inconsistent standard is worse than a strict one
 
 **51 rows, ids 933-983: 5 A, 22 B, 24 C.** Three workers: the UK southern half (21 rows), the
