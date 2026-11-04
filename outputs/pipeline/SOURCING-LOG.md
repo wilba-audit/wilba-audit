@@ -11,6 +11,102 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 4 Nov 2026 — three markets, and the rule that an inconsistent standard is worse than a strict one
+
+**51 rows, ids 933-983: 5 A, 22 B, 24 C.** Three workers: the UK southern half (21 rows), the
+California Central Valley remainder (7), and Canada round four — Greater Toronto's affluent
+suburbs, Ottawa and Vancouver Island (23). **Pipeline 932 → 983 rows, 636 → 662 ready to
+approach.** Fourteen clinics went to the browser-visit list, which is now 87.
+
+### The thing worth remembering: I was running two incompatible address rules at once
+
+The Canadian worker escalated that **our own fetch helper decodes Cloudflare tokens unasked** —
+three times out of three, twice saying outright that it had decoded one. That matters more than it
+sounds, because the rule as written ("do not decode") assumes a decision point that may never
+arrive: the plaintext simply sits in the fetch result looking like any other address. **So the rule
+now bites at the recording step. The test is the PAGE, not your result** — if the page shipped a
+`cdn-cgi/l/email-protection` token, the address is NOT SEEN, whatever the tooling then handed you.
+Zero sendable rows carry a decoded address; the workers held the line unprompted, and all three
+said so in writing.
+
+Auditing that, I found something worse, and it was mine. **Rows 536 and 588 are sendable on
+addresses that appear only as the target of a `mailto:` link, while row 132's own notes assert that
+"an address inside an href is not published text", and rows 103 and 636 were parked for being
+meta-tag-only.** Those cannot all be right, and the file was carrying both answers simultaneously.
+
+**Settled: a `mailto:` link IS conspicuous publication; a meta tag is not.** The test the
+must-haves actually apply is *can a member of the public use this to email the clinic?* A visitor
+sees a clickable "Email Us", their browser shows the address on hover and their mail client prints
+it in the To field — the clinic put it there for strangers to use. A meta tag offers the public
+nothing: it cannot be seen, hovered or clicked, and nothing on the page invites an email at all.
+So 536 and 588 stand, 103 and 636 stay parked, and row 132's note was corrected in place to the
+narrower rule it was reaching for: where a clinic publishes one address visibly and a *different*
+one only in an href, record the visible one and do not harvest the extra.
+
+**Why this is the fifth instance of one failure mode.** The consent regex that passed five rows
+saying nobody had checked; the `email_source` field that asserted a provenance the notes denied;
+the Cloudflare audit regex that matched `unobfuscated`; the log entry claiming two greps existed
+when one did. Now this: **a standard applied in two directions in the same file, with each
+application looking locally correct.** The pattern is always the same — the check interrogates the
+claim rather than the evidence, or the rule is never stated in one place where its two readings
+would have to meet. **An inconsistent standard is worse than a strict one or a loose one**, because
+whichever way the next worker reads it, half the file disagrees with them, and nobody can tell
+which half is wrong.
+
+### What each market settled
+
+**The UK southern half beat its own floor.** The standing estimate was three sendable from eighteen
+researched. The run got **7 sendable from 27 researched** (2 A, 5 B) and must-have 8 was satisfied
+on 10 of 21 rows, so **PECR removes about half this market, not nearly all of it.** Four clinics
+answered the company question on their own page in the fetch that got the address — the 1 Nov
+one-in-four rate, reproduced independently. **Zero Cloudflare-encoded addresses in 27 businesses**,
+and the homepage or footer gave the address on 20 of the 22 sites that published one: **what
+Britain withholds is legal identity, not the address.** The register is Britain's privacy policy,
+and the privacy-policy rule produced nothing there — six of the clinics opened have no policy page
+in existence.
+
+**Hanford, Lemoore and Selma are structurally closed, and now we know why.** The 2 Nov worker
+reported they "produced no clinic domain of their own". Two dedicated queries and a newspaper fetch
+later: **the aesthetics businesses in those towns do not own domains.** Everything trades on
+somebody else's platform — Vagaro, GlossGenius, Timely, `skincaretherapy.net` — and nothing
+published on a booking platform's domain can satisfy must-have 5. Closed to an **email** channel
+rather than thin, the way Whistler is closed. **A DM channel would open them instantly**, because
+a GlossGenius page always has an Instagram behind it. Do not assign those towns again.
+
+**Canada: must-have 2 is the only thing failing anything, in a form the ICP did not describe.**
+All seven C rows in the Canadian batch fail or are unresolved on cash-pay and **nothing else** —
+not ownership, scale, trading history or the address. Half of them are the briefed vein case. The
+other half is new: **a paramedical arm receipted to private extended-health plans** — RMT,
+acupuncture, osteopathy, naturopathy in the next room. That is not OHIP, so it passes a literal
+reading of "no Medicare billing", and it still fails what the must-have is for, because the
+practice has a non-discretionary third-party-reimbursed revenue stream. Parked as unresolved rather
+than failed, following the 20 Oct Philosophy of Beauty precedent.
+
+**And the trap that nearly cost the best row in that sweep.** Bradford Skin Clinic prints "No
+marketing lists" and "we do not add you to a marketing list because you asked a question about your
+skin". **That is a promise about what they SEND. A consent refusal is about what they will
+ACCEPT.** One careless reading away from parking the strongest row in the batch. Quote wording like
+that verbatim on the row — a paraphrase is how it becomes a wrong call later.
+
+### Market verdicts to carry forward
+
+- **Vaughan and Woodbridge is the richest unworked patch found anywhere recently.** Of seven
+  clinics a directory named, three were opened and **all three cleared the ICP**; Elite Skin
+  Rejuvenation, Beauty Aesthetics and DC Medical Aesthetics were never opened. That hit rate in a
+  market that affluent deserves a worker of its own.
+- **Victoria BC is structurally closed** — seven clinics, four already ruled out. And **"Victoria"
+  is now the worst same-name trap in the file**: a BC city, an Australian state, and a common
+  clinic name. One Victoria BC query returned a Vancouver *Washington* clinic and a page about
+  Grovedale, Geelong whose search title read "Victoria Anti-Wrinkle Clinic... in Langford, BC".
+- **Oakville is silent, not thin.** Its two best clinics, pür glow and Boutique Medical
+  Aesthetics, publish nothing at all across three pages each.
+- **Duncan and Port Alberni on Vancouver Island were never queried.** The Saanich Peninsula and
+  mid-island corridor gave one A and one B off about ten fetches.
+- **The Cloudflare rate in affluent Ontario is far higher than any previous Canadian sweep, and
+  the oldest clinics are the ones behind it** — Vaughan Laser est. 1999, Willow est. 2005,
+  Mezzmerize est. 2008 are the three deepest trading histories in the sweep and all three are
+  unreadable. That is the single strongest argument the browser-visit list has ever had.
+
 ## 4 Nov 2026 — two rules, from seven rows nobody was ever going to decide
 
 The sending thread had seven rows staged and held because their own `notes` asked a question:
@@ -73,11 +169,16 @@ interpret.
 Keep this current. It is the thing that stops a run spending its first searches deciding where
 to look, and `near-misses.md` is the record of everything already swept.
 
-**Markets not yet touched, best first:**
-- **UK southern half** — York, Wilmslow, Winchester, Salisbury, Hove, Cowbridge. Expect a low
-  yield: PECR needs a company identity and an owner-injector often never incorporates, so about
-  three sendable from eighteen researched is the floor, not a bad run.
-- **California Central Valley remainder** — Hanford, Lemoore, Selma.
+**Markets not yet touched, best first — refreshed 4 Nov 2026:**
+- **Vaughan and Woodbridge, Ontario.** Three of three opened cleared the ICP. **Elite Skin
+  Rejuvenation Medical Spa, Beauty Aesthetics and DC Medical Aesthetics** were named by a
+  directory and never opened. Best known hit rate anywhere right now.
+- **Vancouver Island: Duncan and Port Alberni**, never queried at all, plus the rest of the
+  Saanich Peninsula and mid-island corridor.
+- **Ottawa's remaining directory names, domains already in hand** — The Cosmetic Clinic and
+  Accent Image & Laser (Luminesse and Dermalogic are on the browser-visit list instead).
+- **Two ownership fetches that would upgrade rows already verified:** The Powder Room and Skin
+  Excellence Medispa. Everything else about both is done.
 - **Upstate South Carolina remainder** — Greenville and Spartanburg were opened on 3 Nov and gave
   two rows including the first proper Spartanburg-side clinic. The metro is not exhausted.
 - **Canada beyond Montreal and the Prairies.** 59 rows and one directory fetch produced 34 names
@@ -94,9 +195,20 @@ to look, and `near-misses.md` is the record of everything already swept.
 - **Tulsa and Oklahoma City** — but only on *city-name* queries. See the neighbourhood-stacking
   entry: naming districts inside a city reopened Tulsa after it had been written off, so
   "finished" here means finished by the queries tried, and that is a weaker claim than it sounds.
+- **Hanford, Lemoore and Selma, California — closed, 4 Nov.** Not thin: the aesthetics
+  businesses there do not own domains, so nothing they publish can satisfy must-have 5. An
+  Instagram DM channel would open all three instantly.
+- **Victoria BC — closed, 4 Nov.** Seven clinics, four already ruled out, and the town name is
+  the worst same-name trap in the file.
+- **Oakville, Milton, Waterdown, Stouffville and Orléans, Ontario — 4 Nov.** Oakville is silent
+  rather than thin; the other four returned no independent domains of their own at all, only
+  service-area pages belonging to Burlington and Aurora clinics.
+- **The UK southern half — worked 4 Nov**, but not exhausted: that worker left a "surfaced but
+  not reached" list in `near-misses.md`, and Hove's independent layer is partly invisible to
+  search because two of its clinics have no website at all.
 
-**The standing job that is not sourcing.** As of 3 Nov the list is far ahead of the sending
-channel: 636 rows ready, 212 staged, ten ever sent. On any run where sourcing would add rows
+**The standing job that is not sourcing.** As of 4 Nov the list is further ahead still: 662 rows
+ready, 212 staged, ten ever sent. On any run where sourcing would add rows
 nobody will email for months, **re-verifying the rows about to be sent is worth more**, and on
 3 Nov it was worth 22 rows that would have misfired. The two jobs trade off and the ratio is not
 fixed — read `send-state.json` on `claude/project-thread-ptytul` and decide, rather than
@@ -135,8 +247,8 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 3 Nov 2026: **932 rows, 636 ready to approach** — US 312, AU 167, CA 59, UK 55, NZ 41, IE 2. (It was 496 rows and 316 ready on
-20 Oct.) A further **73 clinics** that cleared the ICP on fit are parked in
+As of 4 Nov 2026: **983 rows, 662 ready to approach** — US 315, AU 167, CA 75, UK 62, NZ 41, IE 2. (It was 496 rows and 316 ready on
+20 Oct.) A further **87 clinics** that cleared the ICP on fit are parked in
 `browser-visit-list.md` for want of one page-open each.
 
 **Three rows came OFF the sendable list on 3 Nov** — two Australian and one UK, all of them

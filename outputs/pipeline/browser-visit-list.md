@@ -6,8 +6,10 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **73** of them: 34 whose address is on the page but encoded, 38 whose site refuses
+There are **87** of them: 41 whose address is on the page but encoded, 45 whose site refuses
 automated reading or will not render, and one special case (row 352) described at the end.
+**14 were added on 4 November from that day's three sweeps** and are in their own section at the
+end.
 **16 were added on 3 November from the re-read of the staged sending wave, and every one of
 those was queued to receive WILBA's first cold email.** They are listed in their own section at
 the end of this file rather than merged into the tables above, because they are a different kind
@@ -290,3 +292,76 @@ with broader network access, which is a setting in the Add cloud environment dia
 [Project settings](#project-settings/environment) — not something this session can arrange.
 And even then it would be 2 rows of 73, because the other 71 are a question about what we are
 willing to do, not about what we are able to do.
+
+
+---
+
+# Added 4 November 2026 — from the UK southern half, the Central Valley remainder and Canada round four
+
+Fourteen clinics, all of which cleared the ICP on profile and none of which could be read. **The
+Canadian encoded group is the most valuable thing on this whole page**, because the three deepest
+trading histories found in that sweep are all in it — and a deep trading history is the lapsed
+patient list the offer is built on.
+
+## Encoded address — a browser shows it, a fetch cannot (7)
+
+| Clinic | Site | Market | What makes it worth the tab |
+| --- | --- | --- | --- |
+| **Vaughan Laser & Anti-Aging Medical Clinic** | `vaughanlaser.com` (Woodbridge, Vaughan ON) | CA round 4 | **"Established in 1999" — 27 years, the deepest history in the sweep.** One site, real review history. Open questions to settle in the same visit: the menu carries laser vein therapy and nail fungus (must-have 2), nobody is named as owner, and the page's own "over 24 years" / "past 25 years" claims disagree with the 1999 date |
+| **Mezzmerize Medical Aesthetics** | `mezzmerize.ca` (Burlington ON) | CA round 4 | Cathy Mezzalira RN founded it in **2008 — 18 years, stated**; a mother-and-daughter practice with two injectors. Settle one thing first: the Medical Director is a board-certified plastic surgeon who separately founded Appleby Plastic Surgery. Surgeon-*owned* is a disqualification, surgeon-*supervised* is not |
+| **Willow Medical Aesthetics** | `willowmedicalaesthetics.ca` (Courtenay + Campbell River BC) | CA round 4 | Dr Liezl Sullivan MD, **practising aesthetic medicine since 2005 — 21 years**, three doctors, two sites. The policy was read in full: **no refusal notice, and both street addresses in plain text.** Only the mailbox is hidden |
+| **Kiss Me Med Spa** | `medspakissme.com` (Fresno CA) | Central Valley | Karen RN, **operating partner since 2013** and an aesthetic nurse since 1997. Named senior partner, laser nurse, derm tech, two vacancies. **Memberships AND banked account credit**, which is exactly the dormant structure the offer acts on. Must-haves 1-4 clear; 5 is one tab away. The surname renders as lower-case "tesi" — confirm it before using it |
+| **Ottawa Medical Spa & Aesthetics** | `ottawamedicalspa.ca` (Kanata ON) | CA round 4 | MDware booking, gift certificates, promotions page. Policy read in full, no refusal notice. Caveats: day-spa hybrid, two conflicting postal codes printed, no owner named |
+| **Mana's Med Spa** | `manasmedspa.ca` (Aurora ON) | CA round 4 | Injectables plus a broad skin and laser menu, free consultations, one site. **Resolve the menu before spending the tab:** electrolysis, lash and brow, teeth whitening, tooth gems and acupuncture alongside the injectables, so it is a beauty-spa hybrid with the extended-health question attached |
+| **Sculpt Medispa** | `sculptmedispa.ca` (Unionville / Markham ON) | CA round 4 | **DO NOT SPEND A TAB YET.** Michelle Mag-iba RN is a Galderma Canada clinical trainer with her own training programme, which is a strong second list — but the page says Sculpt "encompasses surgical and non-surgical cosmetic procedures" and her listed skills include hormone replacement therapy. Either fails. Two Unionville addresses are printed, so the site count is unresolved too |
+
+## Site refuses automated reading (4)
+
+A person opening these sees an ordinary page. Nothing is hidden and nothing is encoded.
+
+| Clinic | Site | Market | Why it is worth the tab |
+| --- | --- | --- | --- |
+| **mAesthetics** | `maesthetics.co.uk` (Salisbury, Wiltshire) | UK south | Surfaced twice on two different Salisbury queries, ranking above everything else in the town, described as "Nurse Led Aesthetics and Skincare". **On ranking alone, likely the strongest independent in Salisbury.** Completely unassessed — unqualified, not disqualified. Check the domain: there is an unrelated `maesthetics.com.au` and an `hdmaesthetics.co.uk` in Hull already in the pipeline |
+| **FOŶ Aesthetics & Skin Clinic** | `foyaesthetics.co.uk` (Brighton & Hove) | UK south | One of only **two** clinics with their own domain that the Hove queries surfaced at all. Hove's independent layer is thin enough that one unread clinic is a material fraction of it |
+| **Reborn Aesthetics** | `rebornaesthetics.ca` (Orléans, Ottawa ON) | CA round 4 | A direct hit on an "Orléans nurse injector" query, and **Orléans produced nothing else at all.** Nothing retrieved: no email, owner, menu, platform or address. Could be a free row or a rule-out |
+| **Dermalogic** | `dermalogic.ca` (Greenbank Road, Ottawa ON) | CA round 4 | One of the nine clinics the Ottawa directory index names, which is weak evidence of being established and independent. Unassessed |
+
+## Will not render for a fetch (2)
+
+These return HTTP 200 and a document head with no body. The fetch is spent before you know the
+page is empty.
+
+| Clinic | Site | Market | Note |
+| --- | --- | --- | --- |
+| **Uplift Medical Aesthetics** | `upliftmedicalaesthetics.ca` (Nanaimo area BC) | CA round 4 | Metadata and one stray line only. **Not the same business as Uplift Aesthetics, Winnipeg**, which is already a grade-A row from 28 Oct — similar name, different province |
+| **Burlington Skin Clinic** | `burlingtonskinclinic.com` (Burlington ON) | CA round 4 | No body content whatsoever |
+
+## A sixth failure mode, and its first entry (1)
+
+| Clinic | Site | Market | Note |
+| --- | --- | --- | --- |
+| **Luminesse Laser & Skin Clinic** | `luminesselaser.ca` (Centrepointe, Ottawa ON) | CA round 4 | **HTTP 200, a complete page, and the entire content was "Please wait while your request is being verified".** A challenge interstitial: not obfuscation, not robots, not client-side rendering, not a site error. **A person's browser clears this in about a second**, which makes it one of the cheapest tabs on this page |
+
+## Not added, and why — so the next worker does not re-file them
+
+- **`alle.com/discover/l-visalia-california`**, the Allē provider locator, renders client-side. It
+  is **a page, not a clinic**, and it is the single highest-value page in that market for a human
+  with a browser: by definition it is the list of clinics buying one manufacturer's line in a
+  named town. The brief's client-side list has been updated.
+- **`d3medspa.com`**, **`amandahydeskin.com`**, **`dripfact.com`** (Central Valley) and **Nurse
+  Rachel** / **Lumina MD `/contact`** (BC) all return site-side errors or bare metadata with no
+  town even establishable. A browser is no more likely to help than a fetch.
+- **Pamela Fletcher Aesthetics** (Sussex) — site-side error, and no phone number either, so there
+  is no route to it at all until the site comes back.
+- **Revive Medical Aesthetics** (Visalia) and **Aesthetic Club / `aestheticclubcorp.com`**
+  (Clovis/Fresno) are robots-refused and were already logged on 2 Nov. The 2 Nov worker asked for
+  Aesthetic Club to be settled before the next Central Valley run; **the 4 Nov worker could not
+  settle it either**, because it refuses the fetch and nothing else about it surfaced in sixteen
+  queries. **It needs a browser tab, not another sourcing run** — that is twice now.
+
+## What the UK contributed to this list: nothing, and that is the finding
+
+**Zero encoded addresses in 27 British businesses opened.** The 1 Nov UK round found two in
+eighteen. The browser-visit workaround rescued nothing in that market, because **the thing Britain
+withholds is not the address — it is the company identity** that must-have 8 needs. A tab does not
+fix that; a register search does.

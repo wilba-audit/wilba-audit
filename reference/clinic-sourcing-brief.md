@@ -20,7 +20,17 @@ nothing upfront. Workers do not write the email. They find and verify clinics.
 
 1. **Injectables or aesthetics-led.** Treatments wear off on a three-to-four month cycle,
    which is what makes a lapsed list worth recalling.
-2. **Cash-pay.** No insurance or Medicare billing. Skin-cancer checks, vein work, urgent
+2. **Cash-pay.** No insurance or Medicare billing. **On vein work, narrowed 4 Nov 2026 and
+   this matters outside Australia:** must-have 2 is a test of the BILLING MODEL, not of a word
+   on a menu. The vein rule was learned in Australia, where vein work attracts a Medicare
+   rebate. **Cosmetic thread- and spider-vein treatment — IPL, ThermaVein — is cash-pay
+   everywhere we sell, and does not fail this must-have.** What does fail it is venous
+   *disease*: varicose veins, venous ulcers, anything a public system or insurer would fund.
+   Where a menu says only "sclerotherapy" or "veins injection" with no description, that is
+   **unresolved, not failed** — grade C naming must-have 2 as unresolved, so the row is
+   recoverable on one look at the service page. Applying the old rule as written cost three UK
+   clinics in a single sweep, and the same call was reached independently on row 439 the same
+   day. Skin-cancer checks, vein work of the venous-disease kind, urgent
    care and anything bulk-billed are a fail.
 3. **Owner-operated, one to four sites.** Count them. Five or more means a head office
    decides marketing. But count **decision-makers, not addresses**: SEO suburb pages, one
@@ -43,6 +53,9 @@ Five things look like a published address and are not. None is recoverable by op
 page in a browser, so none goes in the pipeline:
 
 - a website-builder placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`)
+  (**a `mailto:` link is NOT on this list** — see the ruling in `ICP.md`: a clickable "Email Us"
+  is a public invitation to email and counts as published, unlike a meta tag, which offers a
+  visitor nothing)
 - an address shipped inside a directory site's QR code image — directory data, not published data
 - an address served in a page's Open Graph meta tags while the visible one is obfuscated
 - **somebody else's working mailbox, in a meta tag or in plain sight** — added 2 Nov,
@@ -61,6 +74,23 @@ page in a browser, so none goes in the pipeline:
   is probably live — which is why it needs stating. Must-haves 5, 6 and 7 rest on **conspicuous**
   publication, and a string a visitor cannot see was not published to people. Same answer as
   Cloudflare, for the same reason. Park the row, keep the address in it, name must-have 5.
+
+**THE DECODE RULE BITES AT THE RECORDING STEP, NOT THE DECODING STEP. Added 4 Nov 2026 and
+this is the most important line in this section.** Our own fetch helper **volunteers the decoded
+address unasked** — three times out of three on one Canadian sweep, twice saying outright that it
+had decoded a token. So the rule cannot be "do not decode": you may never have made a decision at
+all, and the plaintext is simply sitting in your fetch result looking exactly like any other
+address. **The test is the PAGE, not your result:** if the page shipped a
+`cdn-cgi/l/email-protection` token or rendered `[email protected]` where the address should be,
+then the address is NOT SEEN, whatever your tooling then handed you, and the clinic goes to the
+browser-visit list. Say in the near-misses entry that the helper offered a decode and you did not
+take it — a careful worker leaves a record, and a less careful one produces rows that look
+completely normal.
+
+**A sixth fetch-failure mode, found 4 Nov 2026: a challenge interstitial.** 200 OK, a full page,
+and the body reads "Please wait while your request is being verified". It is none of the other
+five — not client-side rendering, not robots, not a site error — and a person's browser clears it
+in a second. Browser-visit list.
 
 **Do not reach for a headless browser to solve any of this.** Tested 4 Nov 2026. Chromium and
 Playwright are installed in this session, and the reasoning matters more than the result. A
@@ -112,6 +142,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    Add `nakedmd.com` (42+ locations, so disqualified on must-have 3 as well) and the gift-card
    resellers `giftly.com` and `quickgifts.com`, which between them crowded out three Nevada
    queries on 2 Nov.
+   **Added 4 Nov 2026.** `solskinspa.com` — twelve Greater Toronto locations, so disqualified on
+   must-have 3, and its towns are almost exactly our York/Halton/Peel targets, so it will surface
+   on every one of them. `consultingroom.com` (flagged by the 1 Nov UK worker and still not added
+   until now; the 4 Nov worker blocked it by hand and it worked), `thetweakmentsguide.com`,
+   `clinicbooking.com`, `britaine.co.uk`, `cylex-uk.co.uk`, `beautynailhairsalons.com`,
+   `skinsage.uk`, `justvisits.co.uk`, `hyphoe.eu`, `trustedlaser.com`, `thomsonlocal.com`,
+   `healthcentre.org.uk`, `inclinictraining.co.uk`, `dentalchoices.org` (UK directory farms).
+   `medispabodyshop.com` and `mainstmedspa.com` (**both Clovis, NEW MEXICO — between them they
+   took four of ten results on a Clovis California query**), `rejuvurskin.net`, `rejuvurskin.com`,
+   `alumamedicalaesthetics.com`, `injectco.com`, `fivestars.com`, `stressbalans.com`,
+   `wellness.com`, `yellowpagescalifornia.com`, `chamberofcommerce.com`, `auravenu.com`,
+   `ivtnearme.com`, `ivlist.com`, `peptideiq.com`, `tryglassskin.com`, `saunanearme.com`.
+   **And the worst crowder-out measured in any market: med-spa software and loyalty vendors'
+   marketing blogs**, which took eight of ten results on a single Central Valley query —
+   `regulr.ai`, `healthbizscale.com`, `prospyrmed.com`, `loopyloyalty.com`, `scalehaven.io`,
+   `codingace.net`, `joinblvd.com`, `pabau.com`, `americanmedspa.org`, `cosmeticinjectors.org`,
+   `nurse.org`. This is the same finding as "rewards" and "loyalty" going dead as modifiers, from
+   the other direction: **the vendors now own the vocabulary of the thing we sell.**
 
    **A parent-group loyalty link in the footer is the tell**, and it is the only one either
    of the Vos clinics gave. A loyalty programme branded for a company other than the clinic
@@ -144,7 +192,21 @@ because the standard may widen again and re-finding a clinic costs more than kee
    different obligation from wanting enquiries, so it survives on sites that strip the mailbox
    from everywhere a marketer would look.
 
-   (Still do not guess its path; find the link.)
+   **THE MECHANISM, added 4 Nov 2026 — and this is a refinement, NOT a reversal.** The rule
+   yielded six addresses in Oklahoma and **zero from four policies in inland California**, and
+   it is worth being careful here, because reverting on four data points would repeat the 2 Nov
+   mistake in the opposite direction. The reason it works where it works: a privacy policy has
+   to name a **contact for data requests** — and a phone-first clinic satisfies that obligation
+   with a *phone number*. One Central Valley policy says, in terms, "contact us via the email
+   address or phone number given on our website", and gives only a number. So the rule's yield
+   tracks how email-first a market is: **budget it high in the Midwest and South, near zero in
+   inland California, and near zero in the UK**, where six clinics in one sweep had no policy
+   page at all and the register call is the equivalent move.
+
+   **A cheaper way to run it, worth adopting:** one `WebSearch` with `allowed_domains` set to
+   **several** parked clinic domains at once and the query "privacy policy contact email
+   address" returned two exact policy URLs in a single call. No guessed paths, and no re-fetch
+   of pages already read. (Still do not guess its path; find the link.)
 3. **Fetch one directory index per metro deliberately, as a source of names.** Blocking the
    directory farms keeps them out of *search results*, where they crowd out clinic domains.
    That is not a reason never to open one: a directory index fetched on purpose is a list of
@@ -155,6 +217,31 @@ because the standard may widen again and re-finding a clinic costs more than kee
    URL read like a town index and turned out to be a vendor logo wall: one fetch for nothing.
    A directory index names many businesses in its search-result snippet. A vendor's location
    page names one, or none.
+   **Read the snippet for DOMAINS, not just names — added 4 Nov, and it decides the whole
+   budget.** Three Canadian indexes gave 23 names and the difference between them was stark.
+   `bestinottawa.com`, a human-written "best clinics in Ottawa" listicle, printed **nine names
+   with their domains**, so every name was free to resolve. `aestheticindex.ca` printed **names
+   only**, so each name cost a search — and one search stacking five of them resolved exactly
+   one. **You can tell which kind you have from the search snippet before spending the fetch.**
+   Budget a domain-printing listicle at nearly zero searches, and a name-only index at about
+   one search per two names, which is a poor rate. Montreal's 34-name haul is the ceiling, not
+   the benchmark.
+   **A real listing can be stale by an acquisition — added 4 Nov, and it is a different hazard
+   from the vendor page.** The 3 Nov warning is about pages that are not listings at all. This
+   is a genuine listing that is simply out of date: `bestinottawa` lists Concept Medical as an
+   Ottawa independent, and it is now a **Dermapure** location, ruled out as a national chain on
+   20 Oct. **So resolve each name through a fresh search rather than trusting the index.** The
+   same index did the reverse favour, printing Inskinity's domain as `elevaterx.ca` — which is
+   how a worker learned that the unknown "ElevateRx Kanata" *is* Inskinity, already a pipeline
+   row. **An index that exposes a rebrand can be worth the fetch on its own**, because the
+   duplicate-check grep cannot catch a clinic that has changed its name. That is a real gap in
+   a grep-first method.
+   **Prefer a business-district or main-street association over a chamber of commerce — added
+   4 Nov.** `oldtownclovis.org/salons-spas-yoga/` produced five clinic names in a town our
+   files credited with one, and two accepted rows came off it. The Visalia Chamber and
+   `downtownvisalia.com` produced nothing new. The difference is structural: **a chamber lists
+   dues-payers across every sector, while a district association lists one street by trade**,
+   so it is already the filter you wanted.
 4. **Stack four or five suburb or town names into one query** with "membership", "nurse" and
    "contact", rather than one city at a time. **Leave the town names unquoted.** Measured on
    1 Nov: six quoted town names returned **one** result, the identical query unquoted returned
@@ -163,6 +250,15 @@ because the standard may widen again and re-finding a clinic costs more than kee
    query collapses into something unrelated — two queries on 1 Nov came back with a massage
    directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
    is still thin. Unquoted and short beats long.
+
+   **STACK TOWNS, NEVER STACK NAMES — added 4 Nov 2026.** The cap and the unquoted rule hold:
+   all six stacked-*town* queries on the Canadian sweep returned ten results with clinic domains
+   among them. But the two queries that stacked clinic **names** both degraded badly — five
+   Vaughan names returned ten results about one of them and nothing about the other four, and
+   four Ottawa names returned a listicle plus two unrelated clinics. **A query naming several
+   businesses satisfies itself on whichever is best-indexed**, because business names are not
+   co-occurring attributes of a page the way town names are: they compete. Resolve directory
+   names one at a time, or better, use an index that already printed the domains.
 
    **The technique works INSIDE a city, not just around it — added 3 Nov, and it reverses a
    verdict.** On 2 Nov Tulsa read as worked out. On 3 Nov, naming *neighbourhoods* within the
@@ -210,13 +306,39 @@ because the standard may widen again and re-finding a clinic costs more than kee
    **Corrected 29 Oct: the `offset` trick does not work.** Offsets of 6,000, 22,000 and 45,000
    all ended at the same point, entry 769 of an alphabetical list, and three fetches were spent
    proving it. What works instead is **asking the first fetch to search the whole page for your
-   target town names**. And only **Exomide and Procell are static**: Aesthetics Rx,
+   target town names**. The **Alle provider locator renders client-side too** (added 4 Nov, one fetch spent proving
+   it). And only **Exomide and Procell are static**: Aesthetics Rx,
    Cosmeceutical Solutions and dermaviduals all render client-side (dermaviduals geolocates to
    Sydney), and ZO is robots-disallowed. Take only names from a locator, never an address.
-8. **Read the phone area code before the address, to catch the wrong town.** "Emerald Cosmetic
+8. **Read the phone area code before the address, to catch the wrong town.**
+   **"Victoria" is the worst same-name trap in the file — added 4 Nov 2026.** It is a British
+   Columbia city, an Australian state, and a common clinic name besides. In one sweep a Victoria
+   BC query returned `camasmedspa.com` in Vancouver **Washington** (so "Vancouver" alone does not
+   settle the *country*, let alone the town) and `jarretmorrow.com`, whose search-result title read
+   "Victoria Anti-Wrinkle Clinic: Conveniently in Langford, BC" over a page about **Grovedale,
+   Geelong, in the Australian state of Victoria**, listing sixteen Geelong suburbs. The title named
+   a BC town the page never mentions. **So: read the postal code before the city name, and where
+   there is no phone number read the suburb list** — a sixteen-suburb list of Geelong
+   neighbourhoods identifies the hemisphere instantly.
+   **The area code does NOT save you inside one state — added 4 Nov 2026.** Three same-name
+   catches in one Central Valley sweep, and the dangerous one was **Madera collapsing into
+   Corte Madera**: same state, so the same area code region, and only reading the town name in
+   the street address caught it. The out-of-state cases (Clovis NM twice, Selma TX) were the
+   easy ones — and note that both Clovis NM clinics published readable addresses, **which is
+   exactly what makes them dangerous**: nothing about the row looks wrong. Check the town in
+   the postal address itself, every time, not just the area code. "Emerald Cosmetic
    Clinic" is in Terrigal NSW, not Emerald QLD; "Skinsense" ranks for Warwick QLD and sits in
    Warwick WA. Same-name towns across states are common in Australia and the area code settles it
    faster than the address does.
+**Two modifiers that have gone dead in the US, 4 Nov 2026:** "rewards" and "loyalty".
+Med-spa software vendors now own those results. "owner" and "founder" were the best-performing
+modifiers of that sweep — which fits, because they target must-have 3 directly rather than a
+programme that might imply it.
+
+**Query the shopping street, not just the town.** Hove only opened up when its shopping-street
+names were queried, which is the same finding as the Tulsa neighbourhood result from a
+different direction: **a town name is one query, and the names locals use are several.**
+
 9. **The "wallet" / "bank" / "vault" search is an affluent-suburb technique, not a general
    one.** Run early where it applies: three of four banked-credit schemes found on 29 Oct
    clustered in Houston's wealthy suburbs. It was **dead in every mid-size market**, where the

@@ -79,6 +79,32 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    footer, on the contact page, or in the privacy policy, which is where it usually hides
    because UK footers name the web designer instead. No company identity anywhere means
    grade C with "sole trader not verified" in `notes`.
+   - **A company NAME with no number is still a pass. Clarified 4 Nov 2026**, because a
+     worker nearly spent a register call confirming what a footer had already answered.
+     The must-have asks for "Ltd", "Limited" **or** a company number — any one of the
+     three. "Aesthetics By Dr Katherine Limited, Registered in England & Wales" is a pass
+     on its own.
+   - **Ask the company question in the SAME extraction as the address.** Four of
+     twenty-one UK rows on 4 Nov answered must-have 8 off their own page in the fetch that
+     got the address — the same one-in-four rate the 1 Nov worker measured, independently
+     reproduced. It costs nothing and on 4 Nov it produced the run's best row.
+   - **The register is to Britain what the privacy policy is to America.** On 4 Nov the
+     homepage or footer gave the address on 20 of the 22 UK sites that published one at
+     all, and the one policy fetch spent returned a mailbox already in hand plus no company
+     number, no ICO number and no named controller. **What Britain withholds is legal
+     identity, not the address.** 23 of that worker's 58 fetches went to the register and
+     resolved must-have 8 for ten rows. PECR removed about half the market, not nearly all
+     of it: 27 businesses researched, 7 sendable.
+   - **A London service address on a provincial clinic's name match is a near-miss until
+     something ties them together.** Two of the four near-miss traps that fired on 4 Nov
+     were registered at mass-registration addresses — 71-75 Shelton Street, Covent Garden,
+     and 1 Quality Court, Chancery Lane. A single-nurse clinic in Salisbury does not
+     register its company in Covent Garden. The strongest passes are the reverse: a
+     registered office **byte-identical** to the clinic's published street address.
+   - **The near-miss trap fired four times in one run on 4 Nov, three of them EXACT name
+     matches** — an active or dissolved company with the clinic's exact trading name, in
+     another town. Each would have read as a pass. Check the registered-office town every
+     time.
 
 **How to search Companies House, because the obvious way does not work.** The plain name
 search ranks results **alphabetically rather than by relevance** — "facial perfection"
@@ -89,7 +115,23 @@ every candidate entity in that town with its incorporation date, which answers m
 and must-have 4 together for a whole market in a single fetch. Do not try SIC codes without
 a name filter — that returned 108 paginated results and bought nothing.
 
-Two faults in that search, both found the hard way on 29 Oct and both capable of producing a
+**FOURTH FAULT, found 4 Nov 2026: `registeredOfficeAddress` matches STREET names, not just
+towns.** Searching it for "Salisbury" returned six companies in Slough, Pudsey and Hounslow,
+all of them on a road called Salisbury something. This is worse than noise, because the
+20-result truncation means those six push the actual local companies off the page — so the
+fault produces a false *negative*, and a false negative here reads as "no company identity
+exists", which parks a sendable row. Narrowing with `companyNameIncludes=cosmetic` did not
+help: it returned one company, in Hounslow. **A town that is also a common street name
+(Salisbury, Richmond, Windsor, York) cannot be screened by registered-office search alone.**
+Use the clinic's own page for the company identity first, and treat an empty register result
+in such a town as unresolved rather than negative.
+
+**Also 4 Nov: a London mass-registration address is a near-miss trap of its own.** 71-75
+Shelton Street WC2H is a formation-agent address used by tens of thousands of companies, and
+it fired twice in one sweep. A registered office there tells you nothing about where the
+business is, so it can neither confirm nor exclude a match.
+
+Two further faults, both found the hard way on 29 Oct and both capable of producing a
 confident wrong answer:
 
 - **`companyNameIncludes` matches whole words, not substrings.** Searching `aesthetic` misses
@@ -130,6 +172,16 @@ address outright and settles clinics whose own site says nothing; in Scotland it
 clinic's own **privacy policy** — never the footer, which credits the web designer. An LLP counts: the ICO treats it as a corporate
 subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
+**Must-have 2 has a second failure mode in Canada, found 4 Nov 2026: private
+extended-health billing.** The briefed case is public funding — Medicare, OHIP, the NHS. But in
+Canada the thing that actually failed seven rows in one sweep was a clinic running an
+RMT / acupuncture / naturopathy arm **receipted to private extended-health plans**. That is not
+OHIP, so it passes a literal reading of "no Medicare billing", and it still fails what must-have
+2 is for: the practice has a non-discretionary, third-party-reimbursed revenue stream, so its
+patient list is not a list of people spending their own money by choice. Park it as a must-have 2
+failure and say which kind. **Must-have 2 was the only must-have that failed anything in that
+market** — every one of the seven C rows, nothing else.
+
 **Six things that look like a published address and are not.** A website-builder
 placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
 shipped inside a directory site's QR code image, which is directory data rather than
@@ -155,6 +207,50 @@ None of the six may be recorded as a published address. The first four are not r
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
 whether the clinic published anything.
 
+**A privacy promise about what the clinic SENDS is not a refusal to RECEIVE. Found 4 Nov 2026,
+and it nearly cost the best row in a sweep.** Bradford Skin Clinic prints, on its homepage and its
+policy, "We use what you send here only to contact you about this. **No marketing lists.**" and
+"we do not add you to a marketing list because you asked a question about your skin". That is a
+promise about what **they** do with a visitor's form submission. **A consent refusal under CASL or
+the AU/NZ rules is about messages the clinic will not ACCEPT; this is about messages the clinic
+will not SEND.** Privacy-forward marketing copy is spreading and "no marketing lists" reads like a
+refusal to anyone skimming for the word "marketing". **Quote the wording verbatim on the row rather
+than paraphrasing it**, because a paraphrase is exactly how this becomes a wrong call six weeks
+later. Running total across four Canadian sweeps: past eighty clinics, thirty-odd policies read in
+full, **zero actual refusals.**
+
+**A `mailto:` link IS conspicuous publication. A meta tag is not. Settled 4 Nov 2026,
+because the file was carrying both answers at once.**
+
+Three rows turn on this and they were not being treated alike. Rows **536 Lucia Medspa** and
+**588 Specialist Facial Aesthetics** are sendable on an address that appears only as the target
+of an "Email Us" link, never as visible body text. Meanwhile row **132's own notes** said, of a
+second address found the same way, that "an address inside an href is not published text" — and
+rows 103 and 636 were parked for being meta-tag-only. Those cannot all be right.
+
+**The ruling, and the reason:** the test for must-haves 5, 6 and 7 is conspicuous publication,
+and the question that actually answers is **can a member of the public use this to email the
+clinic?**
+
+- A **`mailto:` link is a working, public invitation to email.** A visitor sees a clickable
+  "Email Us", their browser shows the address on hover and their mail client prints it in the To
+  field. The clinic put it there for strangers to use. **That is published**, and 536 and 588
+  stand.
+- A **meta tag offers the public nothing.** No visitor can see it, hover it or click it; it
+  exists for machines. Nothing on the page invites an email at all. **That is not published**, and
+  103 and 636 stay parked.
+- A **Cloudflare placeholder is an act against machine collection** specifically. Still not seen,
+  still never decoded.
+
+**Row 132's note overstated the rule and is corrected today.** What it was reaching for is
+sound and narrower: when a clinic publishes one address visibly and a *different* one only in an
+href, record the visible one and do not harvest the extra. That is about not collecting more
+than the clinic offered, not about hrefs being invalid.
+
+**Still worth recording on the row when it happens**, as 536 and 588 both do: an address that
+was never printed on screen is one step weaker as evidence than one that was, and whoever sends
+should know which they have.
+
 **Tidiness predicts nothing, in either direction.** The company screen is a question about
 legal form, and it does not correlate with how organised a site looks. The only clinic in one
 sweep printing its own company number had placeholder links; the most polished site in that
@@ -179,7 +275,21 @@ Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
 
 - An owner-injector named on the door or on the clinic's Instagram
 - A practice system we can name: Pabau, Fresha, Zenoti, Cliniko, Timely, Boulevard,
-  Aesthetic Record, GoHighLevel, PatientNow, Mindbody
+  Aesthetic Record, GoHighLevel, PatientNow, Mindbody, **Aesthetic Nurse Software, Faces
+  Consent, Aesthetidocs** (the last three added 4 Nov 2026), Setmore, Acuity, Vagaro,
+  GlossGenius, Dapple, MyPatientNow, Mangomint
+  - **Aesthetic Nurse Software is the commonest platform in the UK independent sector** and
+    its absence from this list was costing us grade A rows. One sweep of the UK southern half
+    found it on **seven** clinics against one each for Timely, Fresha, Cliniko and Pabau. A
+    clinic running it was being marked down for having "no named system" when it in fact runs
+    the sector-standard one. The tell is a booking link resolving to
+    `portal.aestheticnursesoftware.com/book-online/<id>`.
+  - The point of this list was never the brand. It is that a named system means **a patient
+    list exists in a queryable place**, which is what the offer acts on. So a platform not on
+    this list is a prompt to check what it is, not a reason to mark a row down. Vagaro,
+    GlossGenius and similar are the exception that proves it: they are real systems, but a
+    clinic whose entire web presence is a Vagaro subdomain usually publishes no address of its
+    own, which fails must-have 5 for a different reason entirely.
 - Busy and well reviewed — reactivation amplifies an operation that already works
 - Memberships, loyalty schemes or banked credit. A lapsed member is an obvious recall,
   and schemes named "wallet", "bank" or "vault" are a reliable search term
