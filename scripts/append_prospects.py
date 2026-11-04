@@ -54,6 +54,19 @@ NOTICE = re.compile(r'unsolicited|anti-spam|spam act|\bUEMA\b|no spam notice', r
 # regex cannot tell a finding from a denial that one was ever made, so the denial has to be
 # matched explicitly. SCREENED is the override: a row that was once held and has since been
 # re-read carries both the old denial and the new stamp, and the stamp wins.
+# Added 4 Nov 2026, the provenance twin of DENIAL below. Row 25 carried an email_source
+# reading "published on contact page - verified 20 Sep 2026" while its own notes said the
+# address was "inferred from search snippets" and the clinic's website was never located. The
+# whole-file provenance scan reads email_source, so it passed that row every time: it asked the
+# field that was making the claim. Same failure mode as DENIAL - a check that interrogates the
+# claim instead of the evidence. VERIFIED is the override, for a row since re-read.
+INVENTED = re.compile(r'inferred from (a )?search snippet|from search snippets|address was inferred'
+                      r'|could not locate the clinic|never located the (clinic|site)'
+                      r'|snippet-derived', re.I)
+# The override is an explicit dated stamp, not a guess at prose. Matching loose wording was
+# tried first and matched the wrong things; a stamp is a deliberate act by whoever re-read the
+# page, which is what the override should require.
+VERIFIED = re.compile(r'must[- ]have 5 re-verified', re.I)
 DENIAL = re.compile(r'has not been (run|checked|done)|have not been (run|checked|done)'
                     r'|nobody has checked|nobody ever (checked|recorded|looked)'
                     r'|cannot be demonstrated|never been (run|checked|screened)'
@@ -169,6 +182,11 @@ def main():
                 # rejected three correctly-screened rows whose finding was recorded as
                 # "no anti-spam notice". The finding is what matters, not the wording.
                 have_notice = NOTICE.search(n)
+                if INVENTED.search(n) and not VERIFIED.search(n):
+                    rejected.append((cn, 'row graded %s admits its address was inferred rather '
+                                         'than read off a page - must-have 5 is the one rule that '
+                                         'never bends' % fit.upper()))
+                    continue
                 # A denial outranks both, unless the row has since been re-read.
                 if DENIAL.search(n) and not SCREENED.search(n):
                     rejected.append((cn, 'AU/NZ row graded %s has consent wording that says '
@@ -280,6 +298,15 @@ def main():
           % (len(denied), (' ' + str(denied)) if denied else ''))
     print('AU/NZ sendable rows with no consent finding at all: %d%s'
           % (len(silent), (' ' + str(silent)) if silent else ''))
+
+    # Provenance, every market. A sendable row whose own notes say the address was inferred is
+    # the one thing this pipeline must never contain.
+    inv = [r['id'] for r in after
+           if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
+           and INVENTED.search(r.get('notes') or '')
+           and not VERIFIED.search(r.get('notes') or '')]
+    print('sendable rows whose notes admit an inferred address: %d%s'
+          % (len(inv), (' ' + str(inv)) if inv else ''))
 
 
 if __name__ == '__main__':
