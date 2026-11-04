@@ -11,6 +11,63 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 4 Nov 2026 — two rules, from seven rows nobody was ever going to decide
+
+The sending thread had seven rows staged and held because their own `notes` asked a question:
+*"someone should decide whether that is disqualifying before sending"*, *"verify cash-pay before
+pitching"*, *"worth a glance before sending"*. All seven were resolved today. Six stand, one was
+re-graded down. But the rows are the small part.
+
+### Rule 1: never write a question into a row and move on
+
+**A row that asks a question is a row nobody will ever answer.** The sending side cannot answer
+it, because every one of these questions was about qualification, not copy. The sourcing side
+never looks at an existing row again, because the prompt says to source. So the question sits in
+the field, the row sits out of the wave, and the work of researching that clinic is wasted — all
+seven were researched in full, two are grade A, and one (439 Cosmex, trading since 2002) has the
+deepest lapsed patient pool in the entire file, which is the single thing the offer depends on.
+
+So: **resolve the question, or grade on it.** Writing "someone should check X" is only legitimate
+when paired with a grade that already assumes the worst, so the row is safe to send as graded and
+the check can only improve it. A caveat is information. A question is an unassigned task, and an
+unassigned task in a CSV field is a row quietly deleted.
+
+Worth noting how they were decided, because the pattern was consistent: five of the seven turned
+on **"is this the core, or an add-on?"** — menopause and weight loss at 425, weight management
+and blood tests at 432, veins and incontinence and sexual health at 439. Must-have 1 asks whether
+the clinic is aesthetics-**led**, and v2 disqualifies those categories as *standalone businesses*,
+not as add-ons hanging off an aesthetics clinic. All three stand. **639 Renu failed the same test
+and shows where the line is: its own menu LEADS with "Dermatology Treatments".** That is not an
+add-on, that is the clinic telling you what it is. Re-graded to C, with the second doubt
+compounding it — a sibling company named RENU SKIN AND SURGICAL CLINIC LTD exists and nobody has
+established which entity holds the patient list, which on a revenue share is a thing to know.
+
+### Rule 2: a check that reads the field making the claim cannot catch the claim lying
+
+**Row 25 Rejuva London was the serious one.** Its notes warned it came from the 24 Aug pass that
+"inferred from search snippets" and that the worker never located the clinic's website — so
+must-have 5, the rule we hold most tightly, had never actually been satisfied. Meanwhile its
+`email_source` field read **"published on contact page - verified 20 Sep 2026"**. An assertion,
+not a finding. And the whole-file provenance scan, which has been reported clean for days, reads
+`email_source`. **It passed this row every time, because it asked the field that was wrong.**
+
+It resolved in the row's favour: the address is published verbatim on their contact page today,
+read and now properly cited. The row was right and its paperwork was fiction. A whole-file sweep
+found exactly one other row of this shape (26, already graded C), so this is not a systemic rot —
+but it is the second instance in two days of **one failure mode**, which is the thing to keep:
+
+> Yesterday a consent audit cleared five rows whose notes said *"nobody has checked for a no
+> unsolicited commercial email notice"*, because it searched for the word `unsolicited`. Today a
+> provenance scan cleared a row whose provenance was invented, because it read the field that
+> made the claim. **Both checks interrogated the claim rather than the evidence.**
+
+The test that would have caught both: **name the sentence that would make this check wrong, and
+grep for it.** For a consent check, that sentence is "nobody has checked". For a provenance check,
+it is "inferred from search snippets". Both greps take a minute and both now exist in the
+validator. The structural answer is still a dated `consent_screened` column and a
+`provenance_verified` column — a boolean belongs in a field, not in prose a regex has to
+interpret.
+
 ## Where to go next — standing list, refreshed 3 Nov 2026
 
 Keep this current. It is the thing that stops a run spending its first searches deciding where
