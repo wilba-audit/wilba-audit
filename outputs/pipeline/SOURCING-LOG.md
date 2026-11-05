@@ -83,13 +83,42 @@ the wave looking normal. By date added: **20 from 28 Oct**, 6 from 18 Oct, 4 fro
 19 Oct, one from 1 Nov and **one from 4 Nov (981 Sharp Fix Aesthetics, which I handed to the
 sending thread yesterday as sendable).** By market: US 25, AU 6, NZ 1, CA 1, UK 1.
 
-The ids: 327, 363, 367, 371, 374, 376, 394, 458, 490, 492, 493, 494, 680, 700, 701, 703, 704, 705,
-706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 717, 719, 720, 721, 833, 981.
+The ids were: 327, 363, 367, 371, 374, 376, 394, 458, 490, 492, 493, 494, 680, 700, 701, 703, 704,
+705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 717, 719, 720, 721, 833, 981. **All 34 now
+carry a resolution stamp and the audit reads zero.**
 
-**This is a backlog, not a crisis** — most are one fetch or one judgement each, and the five
-resolved on 4 Nov prove the rate. But it is 34 rows of wasted research sitting in a list we keep
-calling ready, and **it is worth more than a day of new sourcing**, which is the same conclusion
-the re-verification note below reaches by a different route. The audit line prints on every append
+**CLEARED THE SAME DAY: 34 to 0.** Seven were in the staged wave and were done first, four of
+them answered by a single fetch each. The other twenty-seven turned out not to be twenty-seven
+problems.
+
+**Twenty-three of them asked the identical question — "check the Google review history before
+sending" — and it is not a question, it is an impossible instruction.** Tested rather than
+assumed: Google Maps renders client-side and refuses automated reading, and two WebSearch calls on
+named clinics in that batch returned only directory farms, with no rating line, no review count
+and no dates. An *oldest-review date*, which is what most of those notes actually ask for, is only
+visible by sorting reviews in the Maps interface, which nothing here can reach. **So one worker
+wrote a task on 23 rows that nobody could ever have done**, and every one of those rows sat in the
+wave carrying it. Withdrawn once, with the test recorded, rather than answered 23 times.
+
+**That is the sharpest version of the whole lesson.** The no-questions rule was about questions
+nobody will answer. This is worse: a question nobody *can* answer, repeated at scale, and it
+survived a week because nothing ever read the notes column in aggregate. **The audit is what found
+it, not judgement** — and that is the argument for a check over a convention.
+
+**Honest limit on those 23, stated on each row rather than smoothed over:** must-have 4 on them now
+rests on whatever their own site showed and nothing else, which is exactly why they are B and not
+A. A subset may have no trading proxy at all, which under today's evidence ladder would make them
+C. **Deciding that needs each row's notes read in full and it is not done** — it is the next job
+on this list, and roughly fourteen rows are candidates.
+
+The remaining four were settled individually: **981 Sharp Fix** was already answered by the 4 Nov
+vein narrowing the day before it was written ("Thread Vein Removal - IPL" is the brief's own
+passing example); **494 Pure Aesthetics** turned out to be the room-renting pattern, its two
+footer addresses being host premises printed with the hosts' own names, so must-have 3 passes;
+**833 Therabeauti** was verified as a real injectables service on a third page, eight named
+products, so must-have 1 passes; and **680 Belle Clinique** is closed as not answerable from its
+own site, which names nobody at all — a copy constraint rather than a blocker, and the constraint
+is now written on the row. The audit line prints on every append
 from now on, so the number can only go down visibly.
 
 **The override is a fixed stamp, deliberately.** An answered row keeps its original question text
