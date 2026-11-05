@@ -428,6 +428,18 @@ to look, and `near-misses.md` is the record of everything already swept.
   not reached" list in `near-misses.md`, and Hove's independent layer is partly invisible to
   search because two of its clinics have no website at all.
 
+**THE FIRST JOB OF THE NEXT RUN, BEFORE ANY SOURCING, named here on 5 Nov 2026 because that is
+where the next worker will look.** Twenty-three rows carry a must-have 4 that was never verified
+and now never can be from here — the Google-review instruction that turned out impossible, written
+up in the 5 Nov entry. Ids: **458, 490, 492, 493, 700, 701, 703, 704, 705, 706, 707, 708, 709,
+710, 711, 712, 713, 714, 715, 717, 719, 720, 721.** Every one is sendable at B right now. Under the
+evidence ladder set on 5 Nov, **a row with no dated or quantified artifact on its own site belongs
+at C, not B**, and a crude grep over those 23 suggested roughly fourteen may have no proxy at all.
+**That grep is not good enough to regrade on** — it is the same "interrogate the claim, not the
+evidence" error the week has been full of, so the job is to read each row's notes in full and
+decide. Expect some to drop to C. A row dropping to C is a working outcome, not a loss: an honest
+C is recoverable and an over-graded B gets emailed.
+
 **The standing job that is not sourcing.** As of 5 Nov: 707 rows ready, 212 staged, ten ever sent,
 and a hard gate on all of them. On any run where sourcing would add rows
 nobody will email for months, **re-verifying the rows about to be sent is worth more**, and on
