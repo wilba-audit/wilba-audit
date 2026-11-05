@@ -53,6 +53,15 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    email address. Found at a Hamilton clinic on 21 Oct 2026.
 4. **Established.** A real review history, and enough trading time to have accumulated
    roughly 300+ lapsed patients. A brand-new clinic has no list.
+   **THE EVIDENCE LADDER, set 5 Nov 2026, because "established" was being read three different
+   ways in one file.** A sweep where only 2 of 19 clinics published a founding date needed a rule
+   rather than a judgement, so: **a dated or quantified artifact on the clinic's own site
+   satisfies must-have 4** (a stated founding year, a review count, a copyright range starting
+   years ago, "serving X since Y"); **a practitioner's career length alone keeps the row at B**,
+   because that person's twenty years are not this clinic's lapsed list; **no proxy of any kind
+   parks it at C.** That ladder is what separates a grade A from a grade B on otherwise identical
+   rows, and it was set by the worker who could not reproduce the 4 Nov claim that must-have 4 is
+   not binding in affluent Ontario.
 5. **A published email address, read off their own page.** Never constructed, never
    inferred. Record the URL and the date it was read. A Cloudflare-obfuscated address that
    renders as `[email protected]` counts as not seen — **that has not changed and will not.**
@@ -115,6 +124,20 @@ every candidate entity in that town with its incorporation date, which answers m
 and must-have 4 together for a whole market in a single fetch. Do not try SIC codes without
 a name filter — that returned 108 paginated results and bought nothing.
 
+**A company that is NOT CURRENTLY ACTIVE does not satisfy must-have 8 — and "dissolved" was too
+narrow a word. Corrected 5 Nov 2026**, when the near-miss trap fired for the fifth time in two
+days on a company **in liquidation**, which is neither active nor dissolved and would have read as
+a pass to anyone matching on the two words this file used. Read it as **"dissolved, in
+liquidation, or otherwise not currently active"**, and pass `companyStatus=active` on the search
+rather than filtering by eye.
+
+**A second mass-registration address, found 5 Nov 2026: Adamson House, Towers Business Park,
+Didsbury M20 2YY** — 127 companies across seven pages. It belongs beside 71-75 Shelton Street,
+which has now fired three times in two days. **And the truncation fault has a street-level
+variant:** a `registeredOfficeAddress` search on a retail parade or a business park paginates at
+20 of dozens — Crown Passages, Hale returned 60 across three pages, and the target company was
+thirteenth by luck rather than by ranking. A street-level search is never complete at one page.
+
 **FOURTH FAULT, found 4 Nov 2026: `registeredOfficeAddress` matches STREET names, not just
 towns.** Searching it for "Salisbury" returned six companies in Slough, Pudsey and Hounslow,
 all of them on a road called Salisbury something. This is worse than noise, because the
@@ -172,6 +195,32 @@ address outright and settles clinics whose own site says nothing; in Scotland it
 clinic's own **privacy policy** — never the footer, which credits the web designer. An LLP counts: the ICO treats it as a corporate
 subscriber. A dissolved company does not — it means the entity now trading is unknown.
 
+**A THIRD must-have 2 failure kind, found 5 Nov 2026, and in York Region it was commoner than
+the other two combined: a named therapeutic-injection line.** Migraine, hyperhidrosis, TMJ,
+alopecia — reimbursed through private extended-health DRUG plans rather than through a provincial
+plan. Found on 6 of 19 businesses in one sweep. It is a spectrum rather than a line, so the worker
+set a threshold and applied it to all thirteen of its rows, and **the threshold is adopted here so
+that the next worker argues with a number instead of re-inventing one**: **four or more
+reimbursable indications under a named medical heading parks the row at C on must-have 2; one to
+three incidental lines pass, with the caveat recorded in `notes`.**
+
+**The same mechanical problem has moved to MOLES AND LESIONS, and it is settled here on the vein
+precedent, 5 Nov 2026.** The vein narrowing worked and rescued four British clinics in one sweep,
+and then the identical ambiguity turned up one line down the menu. So, the same shape:
+**mole or lesion SCREENING fails must-have 2** — "Map My Mole", mole mapping, dermatoscopy, any
+check for disease — because it is diagnostic work on the insurance and NHS referral pathway, and
+it leans on the dermatology disqualification besides. **Anything the clinic itself calls "minor
+surgery" fails.** But **cosmetic removal of a benign blemish passes** — liquid-nitrogen cryo or
+electrocautery for warts, skin tags and seborrhoeic keratoses is cash-pay cosmetic work
+everywhere we sell. **Screening is about finding disease; removal is about appearance.**
+
+**And on vein work specifically: extract the INDICATION, not the service name.** The 4 Nov rule
+made a bare, undescribed service name "unresolved rather than failed", and that is still right —
+but "unresolved" is only for a bare name. Where the clinic names the indication the rule resolves
+in one direction or the other: **"Spider Vein Removal (Sclerotherapy)" passes** (cosmetic,
+cash-pay), **"spider veins and varicose veins" fails** (varicose veins are venous disease). Two
+rows would have been needlessly parked on 5 Nov by stopping at the service name.
+
 **Must-have 2 has a second failure mode in Canada, found 4 Nov 2026: private
 extended-health billing.** The briefed case is public funding — Medicare, OHIP, the NHS. But in
 Canada the thing that actually failed seven rows in one sweep was a clinic running an
@@ -206,6 +255,36 @@ call is reversible, and do not send.
 None of the six may be recorded as a published address. The first four are not recoverable by
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
 whether the clinic published anything.
+
+**A GENERIC INDUSTRY DOMAIN IS NOT THE CLINIC'S OWN. Settled 5 Nov 2026, and settled here
+rather than asked of Jess, because it is a qualification question and she should never have to
+answer one.**
+
+The case: Clara Med Spa's address is published as `clara@medspas.info` — the clinic's name as the
+local part on a generic industry domain, found on a page bylined by a third party who gives their
+own gmail. The worker read it as a middle case between the clinic's own domain, an identifiable
+agency's mailbox and a consumer mailbox, and it is right that the existing test does not reach it.
+
+**The ruling follows from must-have 5's own words: "a published email address read off THEIR OWN
+site."** Two questions, and both have to pass:
+
+1. **Where was it published?** On the clinic's own domain, or on somebody else's page? An address
+   found only on a third-party page is not the clinic publishing an address. **Clara fails here**,
+   which decides it on its own, and the mailbox domain never has to be argued about.
+2. **Whose mailbox is it?** A mismatched mailbox domain is normal and is never "corrected" — a
+   clinic on `theclinique.com.au` publishing `cosmetic@thecliniqueaesthetics.com.au` is the clinic
+   publishing its own mailbox. But `medspas.info` is not a brand variant of Clara: it is a generic
+   domain serving an industry, so mail to it reaches whoever operates `medspas.info`, which may or
+   may not be the owner we are writing to.
+
+**So: if the clinic's own site publishes the address, record it, and record in `notes` that the
+mailbox sits on a generic domain the clinic does not appear to control, because a reply may not
+reach the owner.** That is a weaker row, not an invalid one. **If the address exists only on a
+third-party page, park it on must-have 5.** Clara is parked.
+
+**The general form, which is the part worth keeping:** the test for must-have 5 is never what the
+address looks like. It is *where it was published* and *who receives mail sent to it*. Every
+member of the six-item look-alike list below is really one of those two questions.
 
 **A privacy promise about what the clinic SENDS is not a refusal to RECEIVE. Found 4 Nov 2026,
 and it nearly cost the best row in a sweep.** Bradford Skin Clinic prints, on its homepage and its
@@ -278,7 +357,21 @@ Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
   Aesthetic Record, GoHighLevel, PatientNow, Mindbody, **Aesthetic Nurse Software, Faces
   Consent, Aesthetidocs** (the last three added 4 Nov 2026), Setmore, Acuity, Vagaro,
   GlossGenius, Dapple, MyPatientNow, Mangomint
-  - **Aesthetic Nurse Software is the commonest platform in the UK independent sector** and
+  - **GRADE A MAY BE STRUCTURALLY UNREACHABLE IN BRITAIN, and that is a fact about our grade rather
+than about British clinics. Recorded 5 Nov 2026.** A UK sweep returned **7 sendable rows and not
+one grade A**, and the worker's account of why is precise: it kept finding clinics with any three
+of grade A's four requirements and never all four, because **Britain's owner-injectors publish
+the practitioner and the platform freely and almost never publish a loyalty or membership
+scheme.** The 4 Nov UK sweep found two A rows out of 21, so this is not absolute — but the
+banked-credit signal that makes a Mountain West clinic an easy A is close to absent here.
+
+**The consequence to hold onto: a grade is not comparable across markets.** A British B and an
+Arizonan B are not the same row, and a run that reports "no grade A" may have found the best
+clinics in the country. Judge a market by its sendable count and its trading histories, not by
+its grade mix. **Do not pad a British row to A to make a sweep look better**, and do not read a
+low A-count there as a bad run.
+
+**Aesthetic Nurse Software is the commonest platform in the UK independent sector** and
     its absence from this list was costing us grade A rows. One sweep of the UK southern half
     found it on **seven** clinics against one each for Timely, Fresha, Cliniko and Pabau. A
     clinic running it was being marked down for having "no named system" when it in fact runs

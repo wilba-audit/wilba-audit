@@ -92,6 +92,30 @@ and the body reads "Please wait while your request is being verified". It is non
 five — not client-side rendering, not robots, not a site error — and a person's browser clears it
 in a second. Browser-visit list.
 
+**NEVER WRITE A QUESTION INTO A ROW. RESOLVE IT, OR GRADE ON IT.** This is enforced by the
+validator as of 5 Nov 2026 and it will reject a sendable row that breaks it.
+
+A row whose notes say "someone should decide whether that is disqualifying before sending" or
+"verify cash-pay before pitching" or "if Jess narrows must-have 2, this becomes a B" is **a row
+nobody will ever answer.** The sending side cannot answer it, because every such question has
+turned out to be about qualification rather than copy. The sourcing side never looks at an
+existing row again, because the prompt says to source. So the question sits in the field and the
+row sits out of the wave — and the research is wasted, which on 4 Nov meant seven fully-researched
+rows including two grade A and the deepest lapsed patient pool in the file.
+
+So: **decide it.** If you cannot decide it without another fetch and you have the budget, spend
+the fetch. If you cannot decide it at all, **grade on it** — park at C, name the must-have by
+number, and say what single check would release the row. That is a disposition, not a question,
+and the next person can disagree with a decision far more cheaply than they can re-litigate a
+question. **Writing "unresolved" on a parked C row is correct and encouraged**; deferring a
+decision on a row you are calling sendable is not.
+
+**If a question on an existing row is later answered, stamp it.** The notes must carry the literal
+phrase **`QUESTION RESOLVED`** or **`QUESTION WITHDRAWN`**, because the old question text stays in
+the notes forever and the validator needs a way to tell an answered row from an open one. The
+stamp is a fixed phrase on purpose: an override that guesses at prose is how the 4 Nov provenance
+check missed the very note it was written for.
+
 **Do not reach for a headless browser to solve any of this.** Tested 4 Nov 2026. Chromium and
 Playwright are installed in this session, and the reasoning matters more than the result. A
 browser is the right tool for a page that **renders client-side** — nothing is bypassed and the
@@ -149,6 +173,15 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `clinicbooking.com`, `britaine.co.uk`, `cylex-uk.co.uk`, `beautynailhairsalons.com`,
    `skinsage.uk`, `justvisits.co.uk`, `hyphoe.eu`, `trustedlaser.com`, `thomsonlocal.com`,
    `healthcentre.org.uk`, `inclinictraining.co.uk`, `dentalchoices.org` (UK directory farms).
+   **Added 5 Nov 2026, and the first of these is the most damaging single domain measured in
+   Britain:** `injectablesbooking.co.uk` took two of ten Sheffield slots and **is the reason
+   Fulwood reads as empty**; `drsknn.com` took three of ten Didsbury slots; plus
+   `consentz.com/directory`, `booksy.com`, `glowday.com`. Two remote-prescribing services —
+   `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
+   **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
+   it. **One careful exception: block `facesconsent.com/clinics/` but NOT the domain**, because
+   Faces Consent runs a clinic directory and a booking platform on the same host, and the booking
+   URLs are a grade-A platform signal.
    `medispabodyshop.com` and `mainstmedspa.com` (**both Clovis, NEW MEXICO — between them they
    took four of ten results on a Clovis California query**), `rejuvurskin.net`, `rejuvurskin.com`,
    `alumamedicalaesthetics.com`, `injectco.com`, `fivestars.com`, `stressbalans.com`,
@@ -160,6 +193,13 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `codingace.net`, `joinblvd.com`, `pabau.com`, `americanmedspa.org`, `cosmeticinjectors.org`,
    `nurse.org`. This is the same finding as "rewards" and "loyalty" going dead as modifiers, from
    the other direction: **the vendors now own the vocabulary of the thing we sell.**
+
+   **A MANUFACTURER'S programme is NOT a parent-group tell — added 5 Nov 2026.** Brilliant
+   Distinctions, Allē, Aspire and the like are manufacturer loyalty schemes that any independent
+   clinic can join, and they are a grade-A signal rather than a warning: they mean the clinic
+   tracks returning patients. The rule below is about a loyalty programme branded for the
+   clinic's **owner**, not for the company whose products it buys. Do not let it fire on a
+   manufacturer's name.
 
    **A parent-group loyalty link in the footer is the tell**, and it is the only one either
    of the Vos clinics gave. A loyalty programme branded for a company other than the clinic
@@ -203,6 +243,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    inland California, and near zero in the UK**, where six clinics in one sweep had no policy
    page at all and the register call is the equivalent move.
 
+   **PROMOTED 5 NOV 2026 TO THE STANDARD CLOSE-OUT MOVE, on a third independent measurement.**
+   One call with five parked domains returned exact contact or policy URLs for **all five**, and
+   it converted one near-miss into a row and upgraded another from a third-party address to the
+   clinic's own. Before writing any clinic into the near-misses file for want of an address, spend
+   this one search on the whole batch of them at once. It costs one call for as many domains as
+   you can list, and it never guesses a path.
+   **The yield table, three markets deeper as of 5 Nov 2026.** Oklahoma six-for-two; Arizona
+   **four addresses from twelve policies, about one in three**; Utah **zero from nine**; inland
+   California zero from four; the UK near zero and often no policy page in existence. Arizona and
+   Utah both confirmed the mechanism rather than merely restating it — every miss satisfied the
+   data-request duty with a phone number, a postal address or a form. **So keep the rule
+   unconditional, and budget it at a third in the Mountain West and the South, at nothing in
+   inland California and Utah, and go to the register instead in Britain.**
+
+   **A policy that nominates `/contact` as its data-request route is NOT a third `/contact`
+   exception — measured 5 Nov 2026.** A worker spent the fetch deliberately to test it and the
+   page returned nothing. The two exceptions stay as they are.
+
    **A cheaper way to run it, worth adopting:** one `WebSearch` with `allowed_domains` set to
    **several** parked clinic domains at once and the query "privacy policy contact email
    address" returned two exact policy URLs in a single call. No guessed paths, and no re-fetch
@@ -223,9 +281,17 @@ because the standard may widen again and re-finding a clinic costs more than kee
    with their domains**, so every name was free to resolve. `aestheticindex.ca` printed **names
    only**, so each name cost a search — and one search stacking five of them resolved exactly
    one. **You can tell which kind you have from the search snippet before spending the fetch.**
-   Budget a domain-printing listicle at nearly zero searches, and a name-only index at about
-   one search per two names, which is a poor rate. Montreal's 34-name haul is the ceiling, not
-   the benchmark.
+   Budget a domain-printing listicle at nearly zero searches. Montreal's 34-name haul is the
+   ceiling, not the benchmark.
+   **CORRECTED 5 NOV 2026: the "poor rate" for a name-only index was measured on a STACKED
+   query, which conflated two different things.** Yesterday's figure came from one search naming
+   five clinics at once, which returned ten results about one of them — that is the
+   never-stack-names failure below, not a property of name-only indexes. Resolved one at a time,
+   a name-only index of a **single town** went 4 searches to 4 first-try resolutions to 2 sendable
+   rows plus 2 clean dispositions, because a human "best in town" list has already applied
+   must-haves 1 and 4 for you. **So budget one search PER NAME and expect it to resolve first
+   try, when the index is local enough that the name is unambiguous.** A province-wide or
+   national index does not resolve first try and is not worth it.
    **A real listing can be stale by an acquisition — added 4 Nov, and it is a different hazard
    from the vendor page.** The 3 Nov warning is about pages that are not listings at all. This
    is a genuine listing that is simply out of date: `bestinottawa` lists Concept Medical as an
@@ -250,6 +316,13 @@ because the standard may widen again and re-finding a clinic costs more than kee
    query collapses into something unrelated — two queries on 1 Nov came back with a massage
    directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
    is still thin. Unquoted and short beats long.
+
+      **GREP THE PIPELINE BEFORE YOU FETCH, NOT AFTER — added 5 Nov 2026, and it cost two workers
+   on the same day.** One fetched and fully extracted two clinics before grepping, and both were
+   existing pipeline rows (435 and 431): three fetches for nothing. Another spent a register call
+   establishing a company identity that row 435 had already carried since 20 Oct. **The grep is
+   free and the fetch is not.** Run it on the clinic name AND the domain stem before opening
+   anything.
 
    **STACK TOWNS, NEVER STACK NAMES — added 4 Nov 2026.** The cap and the unquoted rule hold:
    all six stacked-*town* queries on the Canadian sweep returned ten results with clinic domains
@@ -310,7 +383,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    it). And only **Exomide and Procell are static**: Aesthetics Rx,
    Cosmeceutical Solutions and dermaviduals all render client-side (dermaviduals geolocates to
    Sydney), and ZO is robots-disallowed. Take only names from a locator, never an address.
+   **COUNT THE SITES ON THE CONTACT PAGE, NOT THE ABOUT PAGE — added 5 Nov 2026.** Solange's
+   About page says four locations including Woodbridge; its contact page lists **six**, and no
+   Woodbridge. The About page is marketing prose written once; the contact page is maintained
+   because customers have to find the door. Must-have 3 turns on the count, and five or more is
+   a disqualification, so take the count from the page the clinic has to keep accurate.
+
 8. **Read the phone area code before the address, to catch the wrong town.**
+   **Two British same-name traps, added 5 Nov 2026. BEVERLEY is a common first name** — four of
+   ten results for the East Yorkshire town were people, and two were overseas, including a Calgary
+   booking subdomain and a Southport on the Gold Coast that is an existing row. **And PRESTBURY
+   exists in both Cheshire and Gloucestershire**: a query containing the word "Cheshire" still
+   returned a Cheltenham clinic, so naming the county does not fix it.
+   **Read the TLD before you read the grep hit — added 5 Nov 2026.**
+   `foreveryoungmedicalspa.ca` in Thornhill, Ontario is not pipeline row 871,
+   `foreveryoungmedicalspa.com` in Temecula, California. The duplicate grep matches on the name
+   and the domain stem, so a `.ca`/`.com` pair of the same brand reads as a duplicate and a real
+   clinic gets dropped. **Add Vaughan to the same-name list** too: there is a Vaughan in Victoria,
+   Australia, and it surfaced in the same ten results as the Ontario one.
    **"Victoria" is the worst same-name trap in the file — added 4 Nov 2026.** It is a British
    Columbia city, an Australian state, and a common clinic name besides. In one sweep a Victoria
    BC query returned `camasmedspa.com` in Vancouver **Washington** (so "Vancouver" alone does not

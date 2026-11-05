@@ -11,6 +11,142 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 5 Nov 2026 — four markets, two never worked, and 62 rows
+
+**62 rows, ids 984-1045: 14 A, 31 B, 17 C.** Four workers: **Utah's Wasatch Front** (16 rows after
+two duplicate rejections, 8 A — the best grade mix any single sweep has produced), the **Phoenix
+metro** (17 rows, 5 A), **York Region, Ontario** (13 rows, 1 A) and the **UK northern half and
+Midlands** (16 rows, 7 B and no A). **Pipeline 983 → 1,045 rows, 662 → 707 ready to approach.**
+Fourteen clinics and one name source went to the browser-visit list, now 101.
+
+### The finding that matters most: grade A is not comparable across markets
+
+The British worker returned **7 sendable rows and not one grade A**, and said plainly that it kept
+finding clinics with any three of grade A's four requirements and never all four, because
+**Britain's owner-injectors publish the practitioner and the platform freely and almost never
+publish a loyalty or membership scheme.** The same day, Utah returned **8 A rows from 16**, because
+a named banked-credit membership is close to a Utah default.
+
+So a British B and a Utah B are not the same row, and **a sweep reporting no grade A may have found
+the best clinics in the country.** Written into ICP.md: judge a market by its sendable count and
+its trading histories, not by its grade mix, and never pad a British row to A to make a run look
+better. This is a fact about our grade, not about British clinics.
+
+### Three standards questions settled rather than passed upward
+
+**A generic industry domain is not the clinic's own.** The York worker found Clara Med Spa's
+address published as `clara@medspas.info` on a third-party-bylined page, called it a genuine middle
+case between the clinic's own domain and an agency's mailbox, and asked for Jess to decide — "the
+one decision from Jess worth more than any browser visit". **It is not a decision for Jess: it is a
+qualification question and this thread makes it.** Settled from must-have 5's own words, which ask
+for an address read off *their own site*: two tests, where it was published and who receives mail
+sent to it. Clara fails the first, which decides it without arguing about the domain. If the
+clinic's own site publishes such an address, record it and note that the mailbox sits on a domain
+the clinic does not control, because a reply may not reach the owner. **The general form is the
+keeper: must-have 5 never turns on what an address looks like.**
+
+**Moles and lesions, on the vein precedent.** The 4 Nov vein narrowing rescued four British clinics
+and then the identical ambiguity appeared one line down the menu. Ruled the same shape:
+**screening fails** — mole mapping, dermatoscopy, anything looking for disease, which is referral-
+pathway work — **anything the clinic itself calls "minor surgery" fails**, and **cosmetic removal
+of a benign blemish passes.** Screening is about finding disease; removal is about appearance.
+Applied immediately to row 1038 Elm Skin Clinics, whose notes had asked exactly this question:
+**it no longer fails must-have 2, and it stays at C on must-have 8 instead**, one register call
+from a B. The failing must-have moved; it did not disappear. A row that asks a question is still
+forbidden, and that row was written the same day the rule was recorded, which says the rule needs
+to be in the worker brief and not only in the log.
+
+**Must-have 4 needed a ladder, not a judgement.** The York worker could not reproduce the 4 Nov
+claim that must-have 4 is not binding in affluent Ontario — only 2 of 19 clinics stated a date —
+so it set a rule and applied it to all thirteen of its rows. Adopted: **a dated or quantified
+artifact on the clinic's own site satisfies it; a practitioner's career length alone keeps the row
+at B, because that person's twenty years are not this clinic's lapsed list; no proxy at all parks
+it at C.**
+
+### The no-questions rule is now enforced, and it exposed 34 rows, not 7
+
+The 4 Nov rule — never write a question into a row, resolve it or grade on it — **lived only in
+this log, which workers are not told to read.** They read the brief and `ICP.md`. So on 5 Nov a
+worker wrote another one ("if Jess narrows must-have 2 to billing only, this becomes a B
+immediately"), one day after the rule was recorded. **That is not the worker's failure, it is a
+filing failure, and it is the same shape as every other miss this week: the rule was somewhere the
+enforcement point could not see it.**
+
+Fixed in both places that matter. The rule is now **in the worker brief**, and the validator
+**rejects a sendable row whose notes defer a qualification decision** to a person who will never
+see it. A parked C row saying "must-have 2 unresolved" is untouched — that is a disposition and
+exactly what a parked row should carry.
+
+**And the whole-file audit found 34 sendable rows carrying an open question, not the 7 found on
+4 Nov.** Those seven were the ones the sending thread had noticed and held; the rest are sitting in
+the wave looking normal. By date added: **20 from 28 Oct**, 6 from 18 Oct, 4 from 20 Oct, 2 from
+19 Oct, one from 1 Nov and **one from 4 Nov (981 Sharp Fix Aesthetics, which I handed to the
+sending thread yesterday as sendable).** By market: US 25, AU 6, NZ 1, CA 1, UK 1.
+
+The ids: 327, 363, 367, 371, 374, 376, 394, 458, 490, 492, 493, 494, 680, 700, 701, 703, 704, 705,
+706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 717, 719, 720, 721, 833, 981.
+
+**This is a backlog, not a crisis** — most are one fetch or one judgement each, and the five
+resolved on 4 Nov prove the rate. But it is 34 rows of wasted research sitting in a list we keep
+calling ready, and **it is worth more than a day of new sourcing**, which is the same conclusion
+the re-verification note below reaches by a different route. The audit line prints on every append
+from now on, so the number can only go down visibly.
+
+**The override is a fixed stamp, deliberately.** An answered row keeps its original question text
+forever, so the validator needs a way to tell answered from open: the notes must carry the literal
+`QUESTION RESOLVED` or `QUESTION WITHDRAWN`. It is a fixed phrase because the 4 Nov provenance
+override was a guess at how a resolution would be worded and failed to match the note actually
+written — that is twice now, and the lesson is that **an override must be a convention, never a
+prediction.**
+
+### A correction to yesterday's own correction
+
+The 4 Nov entry said a name-only directory index should be budgeted at "about one search per two
+names, which is a poor rate". **That figure came from a query that stacked five clinic names at
+once**, which is the never-stack-names failure, not a property of name-only indexes. Resolved one
+at a time, a name-only index of a *single town* went **4 searches to 4 first-try resolutions to 2
+sendable rows plus 2 clean dispositions**, because a human "best in town" list has already applied
+must-haves 1 and 4 for you. The brief now says one search per name, first-try, when the index is
+local enough that the name is unambiguous — and that a province-wide index is not worth it. **Two
+variables were conflated in one measurement, which is how a true finding produces a false rule.**
+
+### Market verdicts
+
+- **Utah is a top-tier market and was mis-briefed as untouched.** 9 policies read for zero
+  addresses, so budget it like inland California — but 16 of 18 addresses came off a homepage,
+  About or team page. **The neighbourhood query is the technique here**: a suburb-stacked Salt Lake
+  query gave six domains and a second naming "9th and 9th Avenues downtown" gave **seven entirely
+  new ones**, five of which became rows. That reproduces the Tulsa Brookside result exactly.
+  Business-district directories do not exist in Utah — one query proved it; don't spend it again.
+- **Phoenix publishes mailboxes in its privacy policy about one time in three**, between Oklahoma
+  and inland California, and every miss answered the data-request duty with a phone or a form.
+  **Aesthetic Record is the dominant platform in both Phoenix (10 clinics) and Utah (7)** — two
+  unconnected markets reaching the same answer, which is the strongest evidence yet for which US
+  integration is worth building. In Arizona an Aesthetic Record link is the norm rather than a
+  find, so it should not lift a row toward A on its own.
+- **"Beauty bank" is confirmed as the Mountain West signature and Utah is its heartland** — six
+  Utah clinics run a named banked-credit membership. It is usable as a regional opener and it
+  names no price.
+- **Thornhill went 0-for-3 on addresses; Newmarket and Stouffville are 0-for-2 across two sweeps** —
+  structurally thin rather than unworked. **Durham, Formby, Hoylake and Jesmond are closed**, the
+  last of them now four near-miss entries deep with no sendable row. The north-east British layer
+  is Darlington and Eaglescliffe.
+- **Leamington Spa was the richest town in the British market** (two accepted rows), and
+  `injectablesbooking.co.uk` is **the reason Fulwood reads as empty** — it took two of ten
+  Sheffield slots. That domain is now blocked.
+
+### Best leads left unspent
+
+`oldtownscottsdale.com` is a real district association with per-business listing pages — the exact
+structure the 4 Nov note prefers over a chamber — but the one listing fetched returned a server
+error, so nobody knows whether it has a Health & Beauty index. **Finding that index is the highest-
+value next move in Phoenix.** In Britain: Helen Taylor Aesthetics (09757618, active since 2015) and
+Ministry of Aesthetics (12222300, 2019) both have must-haves 4 and 8 already answered from register
+calls spent today. Three more British clinics have their company identity in hand and no readable
+address: Skinpharma (10436528), Aesthetics Southport (13414250), Radiance Liverpool (10739206).
+**And stop queueing Dr Clarke Aesthetics for sourcing workers** — a search today proved it has no
+findable website at all.
+
 ## The real blocker is not rows, and it is not the copy either — 4 Nov 2026
 
 Confirmed by the sending thread on 4 Nov: **the rows cannot be sent until WILBA has a postal
@@ -263,8 +399,8 @@ to look, and `near-misses.md` is the record of everything already swept.
   not reached" list in `near-misses.md`, and Hove's independent layer is partly invisible to
   search because two of its clinics have no website at all.
 
-**The standing job that is not sourcing.** As of 4 Nov the list is further ahead still: 662 rows
-ready, 212 staged, ten ever sent. On any run where sourcing would add rows
+**The standing job that is not sourcing.** As of 5 Nov: 707 rows ready, 212 staged, ten ever sent,
+and a hard gate on all of them. On any run where sourcing would add rows
 nobody will email for months, **re-verifying the rows about to be sent is worth more**, and on
 3 Nov it was worth 22 rows that would have misfired. The two jobs trade off and the ratio is not
 fixed — read `send-state.json` on `claude/project-thread-ptytul` and decide, rather than
@@ -303,9 +439,13 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 4 Nov 2026: **983 rows, 662 ready to approach** — US 315, AU 167, CA 75, UK 62, NZ 41, IE 2. (It was 496 rows and 316 ready on
-20 Oct.) A further **87 clinics** that cleared the ICP on fit are parked in
+As of 5 Nov 2026: **1,045 rows, 707 ready to approach** — US 343, AU 167, CA 85, UK 69, NZ 41, IE 2. (It was 496 rows and 316 ready on
+20 Oct.) A further **101 clinics** that cleared the ICP on fit are parked in
 `browser-visit-list.md` for want of one page-open each.
+
+**Every one of those 707 rows is unsendable until Jess supplies a postal address** — see the entry
+below. Rows have not been the constraint for some time; now they are not even the second
+constraint.
 
 **Three rows came OFF the sendable list on 3 Nov** — two Australian and one UK, all of them
 long-standing grade A, all parked because a re-read found their published address gone. One of

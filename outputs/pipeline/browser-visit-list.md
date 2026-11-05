@@ -6,10 +6,12 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **87** of them: 41 whose address is on the page but encoded, 45 whose site refuses
+There are **101** of them: 48 whose address is on the page but encoded, 52 whose site refuses
 automated reading or will not render, and one special case (row 352) described at the end.
-**14 were added on 4 November from that day's three sweeps** and are in their own section at the
-end.
+**14 were added on 4 November and 14 more on 5 November**, each in their own section at the end.
+One further entry, added 5 November, is **not a clinic at all but a name source** — a local
+paper's readers'-choice list that refuses automated reading — and it is listed separately because
+opening it yields names rather than an address.
 **16 were added on 3 November from the re-read of the staged sending wave, and every one of
 those was queued to receive WILBA's first cold email.** They are listed in their own section at
 the end of this file rather than merged into the tables above, because they are a different kind
@@ -365,3 +367,69 @@ page is empty.
 eighteen. The browser-visit workaround rescued nothing in that market, because **the thing Britain
 withholds is not the address — it is the company identity** that must-have 8 needs. A tab does not
 fix that; a register search does.
+
+
+---
+
+# Added 5 November 2026 — from Utah, Phoenix, York Region and the UK northern half
+
+Fourteen clinics and one name source. **The pattern across four markets in one day is the thing
+worth reading here**: the obfuscation rate is not a property of the trade, it is a property of the
+market. Affluent Ontario and Utah hide addresses; **Phoenix hid none at all in 46 businesses**,
+and Britain hid two, the same low rate every British sweep has found.
+
+## Encoded address — a browser shows it, a fetch cannot (7)
+
+| Clinic | Site | Market | What makes it worth the tab |
+| --- | --- | --- | --- |
+| **Urban Injections** | `urbaninjections.com` (Syracuse, Davis County UT) | Utah | **The strongest parked profile in Utah.** Stacie Colby RN BSN is published as Owner, with a named medical director and four more staff; "8+ Years"; self-describes as locally owned; Jane App booking. **Two priced memberships that both include monthly credits**, a new-client welcome credit, gift cards and a consultation credit — banked credit is the single best dormant signal we look for |
+| **Nuance Aesthetics + Wellness** | `nuanceaesthetics.com` (9th and 9th, Salt Lake City) | Utah | **"Since its inception in July of 2015" — eleven years, verified.** Dr Rhudy is Owner and Medical Director with Jill Miller as Co-Owner. **"The Nuance+ Membership — a monthly fee banked toward any service"**, plus a second membership tier, a VIP page and an SMS opt-in. The token sits on the privacy policy and the homepage publishes nothing. One oddity for a human's eye: the SMS consent text names "Abundant Salon", which matches nothing else on the site |
+| **Spruce Aesthetics + Infusion Bar** | `sprucespa.com` (Holladay UT) | Utah | A grade-A profile on everything except the address: Lauren Lightfield NP as Co-Founder and CEO, Dr Robert Sawyer MD as Co-Founder and CMO, six more named staff including two nurse injectors, Zenoti booking, memberships, refer-a-friend, gift cards and payment plans. Rebranded from Olympus Health and Performance |
+| **Elite Skin Rejuvenation Medical Spa** | `eliteskinrejuvenation.ca` (Vaughan/Woodbridge ON) | York Region | One of the three clinics a directory named and nobody had opened; two of the three went straight into the pipeline and this is the third. One site, broad cash-pay menu, and the "Rosacea & Veins" line is IPL and laser — the cosmetic case, not venous disease, so must-have 2 is not a problem here. The token is in both the header and the footer, and there is no mailto and no privacy policy |
+| **ENRICHED Med Spa** | `enrichedmedspa.com` (Woodbridge + East Gwillimbury ON) | York Region | Two sites, a full injectables and device menu, Vivier and ZO retail, and page metadata carrying a 2017 publish date as a trading proxy. Four fetches across two pages produced no plaintext. **Its loyalty mechanism is Brilliant Distinctions, a manufacturer's programme — not a parent-group tell**, and the brief now says so. Its own two postal codes for the Woodbridge address disagree |
+| **Aesthetics by Sarah Williams** | `aestheticsbysarahwilliams.com` (Jesmond, Newcastle + Holmfirth) | UK north | **Chase this one first of the two British ones.** Sarah Williams, Advanced Nurse Practitioner and Independent Prescriber, named and NMC registered, "25+ Years Nursing Experience". Two rooms rented inside host clinics, which is the one-decision-maker pattern, so must-have 3 passes. ThermaVein on the menu is cosmetic thread-vein work and does **not** fail must-have 2 — do not park this one on veins |
+| **Jesmond Aesthetics** | `jesmondaesthetics.co.uk` (Newcastle) | UK north | **Low priority despite being cheap.** No practitioner named, no founding year, no company identity, no review count, a five-item menu, and the page ships unrendered template placeholders (`{{related_areas}}`). It reads like a part-built template site. **Jesmond is now worked out** — four near-miss entries across two sweeps, zero sendable rows |
+
+**The helper's behaviour on these was inconsistent, which is the whole argument for the recording-step rule.** On Urban Injections it volunteered the decoded address and named the token it came from; on Nuance it volunteered the decode **and stated the XOR key it had used**; on Spruce, on both Ontario clinics and on both British ones it reported the token and stopped. Every worker refused every offer and said so in writing. **If the rule had been "do not decode", the two volunteered plaintexts would have arrived without any decision being made at all.**
+
+## Site refuses automated reading (4)
+
+| Clinic | Site | Market | Why it is worth the tab |
+| --- | --- | --- | --- |
+| **Beauty Spell Injectables & Skincare** | `beautyspellaz.com` (Surprise AZ) | Phoenix | **The only independent Surprise clinic the sweep surfaced that was not ruled out on profile**, and the only browser-visit entry Phoenix produced at all |
+| **SQ Medi Spa** | `sqmedispa.ca` (Main Street Unionville, Markham ON) | York Region | Named by the Unionville Main Street business directory, which is the kind of index that has been reliable. Completely unverified — no menu, address, ownership or site count was retrieved |
+| **Dr Melanie Aesthetics** | `drmelanieaesthetics.com` (Southport, Merseyside) | UK north | A doctor-named Southport clinic; nothing is known beyond the search title. Two minutes in a browser |
+| **Liv Aesthetics** | `liv-aesthetics.com` (South Jordan UT) | Utah | A narrow case: the **homepage read fine and published no address**, so the privacy policy was the one route left, and it is the policy that refuses the fetch |
+
+## Will not render for a fetch (2)
+
+| Clinic | Site | Market | Note |
+| --- | --- | --- | --- |
+| **Halo Aesthetic Clinic** | `haloaestheticclinic.com` (Richmond Hill ON) | York Region | A React shell: title, tags and "You need to enable JavaScript to run this app". Its meta description is the only content on the page. **Do not spend a fetch on its policy or terms pages — they will be the same shell** |
+| **LM Clinical** | `lmclinical.co.uk` (Leamington Spa) | UK north | Metadata and a "Skip to main content" link. All that is readable is nurse-led, Royal Leamington Spa, and a four-item menu. **Leamington Spa was the richest town in that market**, which is what makes this worth two minutes |
+
+## A seventh thing that looks published and is not (1)
+
+| Clinic | Site | Market | Note |
+| --- | --- | --- | --- |
+| **Balanced Body** | `balancedbodyutah.com` (Kaysville UT) | Utah | Three named co-founders — Mindy Wade APRN, Cindy Kelfer RN and Clint Kelfer. Their footer prints what is plainly an address **split across a line break**: `info@balanced` on one line and `bodyhealthcare.com` on the next, and that is a **different domain from the website**. Recording it would mean doing two forbidden things at once: joining two visible fragments into a string the page never renders as one, and then accepting a domain the site does not use. **A human reading the footer sees one address**, which is exactly why this belongs here rather than in the bin |
+
+## Not a clinic — a name source that refuses the fetch (1)
+
+**City Weekly, "Best of Utah: Body & Mind"** — `robots_disallowed`. Not a prospect and it cost a
+fetch to discover. It is the one human-written local readers'-choice list that surfaced anywhere in
+Utah, organised by category, and **it is probably the single highest-yield page in that market**.
+Opening it hands over names, not an address, so it is a different kind of errand from everything
+above: whoever reads it should write the names down rather than look for a mailbox.
+
+## What four markets in one day settled about this list
+
+- **Phoenix produced exactly one entry in 46 businesses**, and that one was a robots refusal. Not a
+  single page in the metro shipped an email-protection token. Recorded as a measured absence rather
+  than an omission, because the contrast is the finding.
+- **Utah produced four**, including the two best profiles of the day, and its clinics hide addresses
+  the way affluent Ontario does.
+- **Britain produced two**, the same low rate as every previous British sweep. What Britain
+  withholds is company identity, and a browser tab does not fix that.
+- **No market produced a challenge interstitial.** The sixth failure mode, found on 4 Nov, has one
+  instance and has not reproduced in four markets since.

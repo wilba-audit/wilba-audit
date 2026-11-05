@@ -72,6 +72,33 @@ DENIAL = re.compile(r'has not been (run|checked|done)|have not been (run|checked
                     r'|cannot be demonstrated|never been (run|checked|screened)'
                     r'|not been screened|HELD at C', re.I)
 SCREENED = re.compile(r'must[- ]have 6 screened', re.I)
+# Added 5 Nov 2026. On 4 Nov seven rows were found sitting out of the sending wave because their
+# own notes asked a question - "someone should decide whether that is disqualifying before
+# sending", "verify cash-pay before pitching". A row that asks a question is a row nobody will
+# ever answer: the sending side cannot, because the question is about qualification, and the
+# sourcing side never looks at an existing row again. The rule recorded that day was "resolve the
+# question, or grade on it". It lived only in SOURCING-LOG.md, which workers are not told to read,
+# and on 5 Nov a worker wrote another one ("if Jess narrows must-have 2 to billing only, this
+# becomes a B immediately"). So it is enforced here and stated in the worker brief.
+#
+# This fires only on SENDABLE rows. A parked row saying "must-have 2 unresolved" is doing exactly
+# what it should - naming the test it fails so the row is recoverable. What is forbidden is a row
+# that defers the decision to a person who will never see it.
+# The override, and it is an EXPLICIT STAMP rather than a guess at prose - because on 4 Nov the
+# first version of the provenance override was a guess at how a resolution note would be worded
+# and it did not match the note actually written. A row whose question has been answered carries
+# the literal phrase "QUESTION RESOLVED" or "QUESTION WITHDRAWN" in its notes. Nothing else counts,
+# and that convention is stated in the worker brief so it is not folklore.
+RESOLVED = re.compile(r'QUESTION RESOLVED|QUESTION WITHDRAWN', re.I)
+DEFERS = re.compile(r'someone should (decide|check|verify|confirm|look)'
+                    r'|somebody should (decide|check|verify|confirm|look)'
+                    r'|should be (decided|checked|verified|confirmed) before sending'
+                    r'|worth a (glance|look|check) before sending'
+                    r'|(verify|confirm|check) .{0,40} before (sending|pitching|any approach)'
+                    r'|if Jess (narrows|decides|disagrees|agrees|widens)'
+                    r'|needs a (decision|ruling) from'
+                    r'|awaiting a (decision|ruling)'
+                    r'|leaving this (open|undecided) for', re.I)
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
@@ -144,6 +171,11 @@ def main():
                 why = 'opening angle names a prescription medicine or treatment category'
             elif PRICE.search(angle):
                 why = 'opening angle contains a price or percentage'
+            elif (r.get('icp_fit') or '').strip().lower() in ('a', 'b') \
+                    and DEFERS.search(r.get('notes') or '') \
+                    and not RESOLVED.search(r.get('notes') or ''):
+                why = ('sendable row defers a qualification decision to a person who will never '
+                       'see it - resolve the question or grade on it, per the 4 Nov rule')
             elif (r.get('icp_fit') or '').strip().lower() not in ('a', 'b') \
                     and not MUSTHAVE.search(r.get('notes') or ''):
                 # Found 1 Nov 2026: four rows had sat disqualified for a fortnight on the
@@ -307,6 +339,16 @@ def main():
            and not VERIFIED.search(r.get('notes') or '')]
     print('sendable rows whose notes admit an inferred address: %d%s'
           % (len(inv), (' ' + str(inv)) if inv else ''))
+
+    # Deferred decisions, every market. The per-row check above only sees rows being appended,
+    # so this is how rows written before 5 Nov 2026 become visible rather than staying lost in
+    # the notes column. A non-zero count here is a list of rows nobody will ever send.
+    defr = [r['id'] for r in after
+            if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
+            and DEFERS.search(r.get('notes') or '')
+            and not RESOLVED.search(r.get('notes') or '')]
+    print('sendable rows that defer a decision to a person: %d%s'
+          % (len(defr), (' ' + str(defr)) if defr else ''))
 
 
 if __name__ == '__main__':
