@@ -13,11 +13,11 @@ without the repo.
 
 ## The real blocker is not rows, and it is not the copy either — 4 Nov 2026
 
-Confirmed by the sending thread today: **the US and Canadian rows cannot be sent until WILBA has
-a postal address for the email footer**, which is what CAN-SPAM and CASL require. That is
-**390 of the 662 sendable rows** — US 315 and CA 75, the majority of the file and both of the
-markets this thread sources most heavily. Nothing is missing on the rows themselves; the sending
-thread was explicit about that.
+Confirmed by the sending thread on 4 Nov: **the rows cannot be sent until WILBA has a postal
+address for the email footer.** The sending thread framed it as a US and Canadian requirement
+under CAN-SPAM and CASL — 390 of the 662 sendable rows. **That framing was too narrow and so was
+my reply to Jess; see the correction below.** Nothing is missing on the rows themselves; the
+sending thread was explicit about that.
 
 **There is no postal address anywhere in this workspace.** `outputs/pipeline/email-signature.md`
 carries name, title and `wilba.ai` and nothing else, and `context/personal-info.md` has only
@@ -25,9 +25,22 @@ carries name, title and `wilba.ai` and nothing else, and `context/personal-info.
 something to publish in cold mail. **Only Jess can supply this**, and a PO box or a registered
 business address answers it without putting her home address in front of 390 clinics.
 
-Asked on 4 Nov. **Until it is answered, sourcing US and Canadian rows adds to a queue that cannot
-move**, which is a stronger version of the standing note below about re-verification being worth
-more than new rows. The UK, Australian and New Zealand rows are not blocked on this.
+**CORRECTION, 5 Nov 2026: this is not 390 rows, it is all 654, and I got it wrong yesterday by
+reading the law instead of our own standard.** The canonical ICP at
+`/mnt/project-files/revenue-engine/ICP.md` has carried this in its copy rules since 16 Oct, and
+the working copy repeats it at line 338: **"Every cold email: working unsubscribe + business
+address; opt-outs actioned within 5 business days."** Every cold email, every channel, every
+market. So the question is not which jurisdictions compel a postal address — it is that Griffin's
+own standard requires one on all of them, and I told Jess the UK, Australian and New Zealand rows
+were unblocked. They are not.
+
+**The lesson is the same one this week keeps teaching.** I answered a question about our standard
+by reasoning about CAN-SPAM and CASL from memory rather than reading the standard, which already
+said something broader. The canonical ICP is 2,675 bytes. Reading it would have cost nothing.
+
+Asked on 4 Nov, corrected 5 Nov. **Until it is answered, every row in this file is unsendable**,
+which makes the standing note below about re-verification being worth more than new rows the
+operative rule rather than a judgement call.
 
 ## 4 Nov 2026 — three markets, and the rule that an inconsistent standard is worse than a strict one
 
