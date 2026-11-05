@@ -46,7 +46,6 @@ ADDRESS_PATH = GHL_DIR / "sender-address.txt"  # WILBA postal address for the fo
 FROM_NAME = "Jess Morrell"
 RAMP = [(5, 10), (None, 20)]  # first 5 send-days: 10 new a day, then 20
 GRADE_ORDER = {"A": 0, "B": 1, "C": 2}
-ADDRESS_COUNTRIES = {"US", "CA"}  # need a postal address in the footer
 
 
 def render(text: str, row: dict) -> str:
@@ -131,11 +130,9 @@ def main() -> None:
         for o in json.loads(OPENERS_V2_PATH.read_text()):
             if o["pipeline_id"] in rows:
                 rows[o["pipeline_id"]].update(cold_subject=o["cold_subject"], cold_opener=o["cold_opener"])
-        if not sender_address():
-            # CAN-SPAM (US) and CASL (CA) need a postal address in every email; AU, NZ, UK
-            # and IE rules need sender identity and a working opt-out, which the footer has.
-            for cid in [c for c, r in rows.items() if r["country"] in ADDRESS_COUNTRIES]:
-                skip.add(cid)
+        if mode == "live" and not sender_address():
+            # The ICP's copy rules require WILBA's business address in every cold email.
+            sys.exit("v2 copy needs WILBA's business address in sender-address.txt before a live send.")
     state = json.loads(STATE_PATH.read_text()) if STATE_PATH.exists() else {"send_days": [], "clinics": {}}
     log: list[str] = []
 
