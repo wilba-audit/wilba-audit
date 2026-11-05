@@ -202,6 +202,24 @@ validator. The structural answer is still a dated `consent_screened` column and 
 `provenance_verified` column — a boolean belongs in a field, not in prose a regex has to
 interpret.
 
+## Picking a market: count the pipeline, not the near-misses file — 5 Nov 2026
+
+I chose today's four markets by counting how often each state or metro was mentioned in
+`near-misses.md`, and briefed the Utah worker that its market had **never been touched**. It had.
+The 16 Oct Mountain West sweep put four Utah rows in the pipeline — 290 RO Aesthetics, 291 The
+Vitamin Bar IV, 294 Altitude Medspa, 295 Park City Medesthetix — and left five more names in
+near-misses. The worker caught it on its own grep, and the validator's duplicate guard rejected
+its two re-finds (RO Aesthetics and Park City Medesthetix) before they could land.
+
+**Why the proxy failed.** `near-misses.md` is a stack of market write-ups in whatever shape each
+worker chose, and the early ones barely name their state — a sweep can be thorough and leave
+almost no searchable trace of where it went. **The authoritative record of what has been worked
+is the `city` column of `clinic-pipeline.csv`**, because every accepted row carries its town.
+Grep that first, and only then read the near-misses write-up for the texture.
+
+Cost today: one worker briefed with a false premise, and two fetches spent re-finding rows we
+already had. Cheap, and only because the duplicate guard exists.
+
 ## Where to go next — standing list, refreshed 3 Nov 2026
 
 Keep this current. It is the thing that stops a run spending its first searches deciding where
