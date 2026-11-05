@@ -38,6 +38,13 @@ were unblocked. They are not.
 by reasoning about CAN-SPAM and CASL from memory rather than reading the standard, which already
 said something broader. The canonical ICP is 2,675 bytes. Reading it would have cost nothing.
 
+**Settled with the sending thread the same day.** It confirmed the reading against `ICP.md:44`
+and **hard-gated its sender: no live v2 send in any market without WILBA's business address**
+(commit `186e8f5` on `claude/project-thread-ptytul`), and replaced Jess's card so it asks for one
+PO box or virtual address and says again not to use her home address. **It also confirmed that the
+ten emails sent on 15 Oct went out with no address line at all** — not recallable, and a real gap
+against our own standard on ten clinics, three weeks old. Their follow-ups will carry one.
+
 Asked on 4 Nov, corrected 5 Nov. **Until it is answered, every row in this file is unsendable**,
 which makes the standing note below about re-verification being worth more than new rows the
 operative rule rather than a judgement call.
