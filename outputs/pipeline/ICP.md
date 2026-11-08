@@ -218,6 +218,24 @@ that the next worker argues with a number instead of re-inventing one**: **four 
 reimbursable indications under a named medical heading parks the row at C on must-have 2; one to
 three incidental lines pass, with the caveat recorded in `notes`.**
 
+**A LABEL IS NOT A FINDING, AND DERMATOLOGY IS THE WORD IT KEEPS HAPPENING TO. Ruled 8 Nov
+2026**, the third outing for this shape after the vein rule and the mole rule. The Disqualify list
+below says "plastic surgery or dermatology practices", and it gives the reason in four words:
+*insurance billing, heavier privacy rules*. **That is what is disqualified — a practice that bills
+insurance and carries a disease caseload, not a clinic whose copy uses the word.** So a row parked
+on the bare label, with no insurance billing seen, no surgical menu and no diagnostic line named,
+is **UNRESOLVED, NOT FAILED**, and it holds at C until the treatment menu is read rather than being
+written off. Row 469 was downgraded B to C on 20 Oct because its meta description said "cosmetic
+dermatology", and went back to B on 8 Nov with the evidence against the label already in its own
+note: nothing surgical, nothing insurance-billed, injectables listed first and largest. The same
+test applies in reverse — row 27 fails honestly on nine consultant surgeons across three sites with
+a surgical menu, which is substance and not a word.
+
+**The general rule behind all three: extract the substance, not the word.** Whenever a row is
+parked on a single noun — "dermatology", "veins", "moles", "surgery", "chain", "consent-risk" —
+the question to ask is what was actually *seen*, and if the answer is nothing, the must-have is
+unscreened rather than failed.
+
 **The same mechanical problem has moved to MOLES AND LESIONS, and it is settled here on the vein
 precedent, 5 Nov 2026.** The vein narrowing worked and rescued four British clinics in one sweep,
 and then the identical ambiguity turned up one line down the menu. So, the same shape:

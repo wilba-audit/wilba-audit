@@ -390,6 +390,53 @@ already had. Cheap, and only because the duplicate guard exists.
 Keep this current. It is the thing that stops a run spending its first searches deciding where
 to look, and `near-misses.md` is the record of everything already swept.
 
+**THE CHEAPEST QUALIFIED ROWS LEFT IN THIS FILE ARE ALREADY IN IT — added 8 Nov 2026.** The
+parked-reason sweep done today read all 152 parked rows that carried no numbered must-have, and
+**fifteen of them are parked on nothing.** They are a better buy than any new market, because the
+expensive half of sourcing — finding a clinic and reading a published address off its own page —
+is already done and dated. One fetch each decides them.
+
+- **Nine are parked on rules ICP v2 abolished**: 198, 201, 202, 220, 236, 237, 252, 298, 299.
+  Every one is at C on "no nameable CRM", "the single-operator rule", "the two-scale-proxy rule"
+  or being "thin on scale". v2 reversed the first three on 16 Oct — **owner-operated became the
+  target and scale stopped being a virtue** — and an identifiable booking platform was never a
+  must-have, it was the pitch under the 22 Sep standard. What is actually missing on these is
+  **must-have 4, and sometimes 2**. Screen those two and most should move.
+- **Three more are at C on a ranking rather than a finding**: 166 ("booking not provable"), 181
+  ("staff count unconfirmed" — must-have 3 counts SITES, not people), 182 ("thinnest of the batch,
+  no practitioner named" — which is the commonest B reason in this file, not a failure).
+- **One Australian row, 77, is parked on the bare word "consent-risk"** with no finding behind it:
+  not what the risk was, not which page, not whether a refusal notice exists. Must-have 6 has to
+  be re-screened from scratch, and it must NOT be promoted on an assumption that the label meant
+  something mild. It escaped the 3 Nov consent audit because that audit reads only sendable rows.
+- **Two are parked on the same single question and should be done in one sitting**: 238 and 462
+  both have a board-certified plastic surgeon attached, and on neither could anyone establish
+  whether it is a med spa with a surgeon as medical director (passes) or an arm of a surgical
+  practice (disqualified).
+- **Two are parked on the bare word "dermatology"** with no evidence recorded either way: 99 and
+  259. See the ruling below — a label is not a finding.
+
+**A LABEL IS NOT A FINDING — ruled 8 Nov 2026, and it is the third time this shape has come up.**
+The vein rule said extract the indication, not the service name. The mole rule said screening is
+about finding disease and removal is about appearance. Now: **ICP v2 disqualifies dermatology
+PRACTICES because they bill insurance and carry heavier privacy rules — it does not disqualify a
+clinic whose copy uses the word.** A row parked on the label alone is unresolved, not failed.
+Row 469 was downgraded B to C on 20 Oct on that label and went back to B today, with the evidence
+against the label already sitting in its own note: nothing surgical, nothing insurance-billed, and
+injectables listed first and largest. **I made this error myself an hour before ruling on it**,
+numbering row 99 as a surgery disqualification alongside eighteen genuine plastic-surgery rows
+because I read its tag and not its evidence. The correction is on the row.
+
+**AND A QUESTION IN A C ROW IS STILL A QUESTION NOBODY ANSWERS.** The 4 Nov no-questions rule is
+enforced in the validator, but the validator only reads SENDABLE rows, so seven C rows were
+quietly carrying asks for Jess — "it is Jess call whether to relax the rule", "Jess decision",
+"resolve whether liposculpture is meaningful", "if Jess can establish that one of them is the
+owner". All seven are answered or withdrawn now. Three of them resolved in the row's favour and
+the rows went C to B: **423, 469, 544**. Two were withdrawn as not answerable by anyone from here
+(608 and 622 — the page that would settle it does not exist or is robots-disallowed), and that is
+a finding, not a task to leave on a row. **Worth extending the validator's deferred-decision
+audit to parked rows too**, since a C row is where a question hides longest.
+
 **Markets not yet touched, best first — refreshed 4 Nov 2026:**
 - **Vaughan and Woodbridge, Ontario.** Three of three opened cleared the ICP. **Elite Skin
   Rejuvenation Medical Spa, Beauty Aesthetics and DC Medical Aesthetics** were named by a
