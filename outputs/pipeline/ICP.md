@@ -53,6 +53,20 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    email address. Found at a Hamilton clinic on 21 Oct 2026.
 4. **Established.** A real review history, and enough trading time to have accumulated
    roughly 300+ lapsed patients. A brand-new clinic has no list.
+   **A BARE COPYRIGHT YEAR COUNTS ONLY IF IT IS AT LEAST THREE YEARS OLD. Added 8 Nov 2026**,
+   while applying the ladder below to 23 rows, because "is a copyright year a proxy?" was
+   otherwise getting a different answer on every row. A 2023 copyright read in 2026 evidences
+   three years of trading and is a usable, if thin, dated artifact. A 2025 or 2026 one evidences
+   nothing about age. A copyright *range* that starts years ago ("2019-2026") is better evidence
+   than either and always counted.
+
+   **AND MUST-HAVE 4 CAN FAIL ON SUBSTANCE EVEN WITH GOOD EVIDENCE.** Row 720 publishes an award
+   run for 2025 and 2026, which genuinely dates trading to 2024 or earlier - real evidence, better
+   than most of the batch. It still fails, because two to three years is not "enough trading time
+   to have accumulated roughly 300+ lapsed patients", which is what this must-have is actually
+   for. The ladder tells you whether you KNOW the age; the must-have asks whether the age is
+   ENOUGH. Both have to pass.
+
    **THE EVIDENCE LADDER, set 5 Nov 2026, because "established" was being read three different
    ways in one file.** A sweep where only 2 of 19 clinics published a founding date needed a rule
    rather than a judgement, so: **a dated or quantified artifact on the clinic's own site
