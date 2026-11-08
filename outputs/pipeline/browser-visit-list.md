@@ -6,8 +6,11 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **101** of them: 48 whose address is on the page but encoded, 52 whose site refuses
+There are **110** of them: 53 whose address is on the page but encoded, 56 whose site refuses
 automated reading or will not render, and one special case (row 352) described at the end.
+**Ten more were added on 8 November**, in their own section at the end, along with one clinic that
+is a browser job for a different reason — its address is readable, but it is already advertising a
+prize draw to "current, past, or prospective clients", which is a person's job and not a script's.
 **14 were added on 4 November and 14 more on 5 November**, each in their own section at the end.
 One further entry, added 5 November, is **not a clinic at all but a name source** — a local
 paper's readers'-choice list that refuses automated reading — and it is listed separately because
@@ -433,3 +436,39 @@ above: whoever reads it should write the names down rather than look for a mailb
   withholds is company identity, and a browser tab does not fix that.
 - **No market produced a challenge interstitial.** The sixth failure mode, found on 4 Nov, has one
   instance and has not reproduced in four markets since.
+
+---
+
+## Added 8 November 2026 — Chicago's affluent suburbs, Seattle's eastside, the Nashville ring
+
+**Nine clinics, and one deliberate exclusion worth reading before the table.** A seventh
+fetch-failure mode was found twice on 8 November — a privacy policy that nominates an email route
+and then omits the address, as in *"please email them to ."* — and it does **NOT** belong on this
+page, because no browser recovers a sentence the site never wrote. Those two went to
+`near-misses.md` instead. This page is only for addresses that exist and that a script could not
+read.
+
+| Clinic | Domain | Market | Why a browser fixes it |
+| --- | --- | --- | --- |
+| **Dermatique Laser and Skin** | `dermatique.com` (Geneva IL, 407 S Third St Suite 240) | Chicago, 8 Nov | **The highest-value tab on this whole page, and the worker said so unprompted.** Cloudflare: the privacy policy renders `[email protected]` and the page carries two `cdn-cgi/l/email-protection` tokens, so NOT SEEN. **The best dormant-list structure found in that market and the only enterprise system in it** — Zenoti throughout (booking, patient portal and gift cards all resolve to `dermatique.zenoti.com`), a Skin Membership, a "Bloom Loyalty Rewards" programme, an "Insider" programme with early access, Zenoti gift cards and Allergan Data Labs financing. Postal address and phone (630-262-2515) are readable. Note the helper offered no decode this time, so nothing was offered and nothing refused. Must-have 3 is unresolved: no owner named, and "full-time physicians, Nurse Practitioners, Aestheticians, and Laser Technicians" is a bigger staff than one decision-maker implies — worth settling in the same visit |
+| **Kucumber Skin Lounge** | `kucumberskinlounge.com` (Bellevue WA) | Seattle, 8 Nov | Cloudflare. **A would-be grade A: 380+ reviews and trading since 2010**, so must-have 4 is already evidenced twice over. One tab from being one of the strongest US rows in the file. Note its `areas-served/<town>` page set is blocked from sourcing queries, which is a separate matter from reading its address |
+| **RejuvenationMD** | `rejuvenationmdaesthetics.com` / `rejuvenationmdmedspa.com` (Seattle eastside) | Seattle, 8 Nov | Cloudflare — **and the one where the rule was tested and held**: the fetch helper volunteered the decoded plaintext unasked and the worker discarded it, as recorded in the file. The address exists on the page and a person reading it in a browser is the only route we will take to it |
+| **Skin Essentials Med Spa** | `skinessentialstn.com` (Brentwood TN) | Nashville, 8 Nov | Cloudflare-encoded; the helper offered no decode and none was attempted. Reached only via the Downtown Franklin association listing, which was the best fetch of that run |
+| **Nolo MedSpa** | `nolomedspa.com` (Nolensville TN) | Nashville, 8 Nov | Robots-refused. Runs **Jane App** and is **owner-CRNA**, so it clears on platform and on must-have 3 before anyone opens it. The close-out search proved the domain is live, which is the one thing that search is actually good for |
+| **La BeauTe Medical Spa & Laser Hair Removal** | `labeautemedspa.com` (Lake Forest IL) | Chicago, 8 Nov | Client-side render. Two fetches, homepage and contact page, both returned nothing but front matter and a single `meta-viewport` tag, so the ICP could not even be screened. **One of only two Lake Forest independents found** |
+| **Blue Seas Med Spa** | `blueseasmedspa.com` (Naperville + Glen Ellyn IL) | Chicago, 8 Nov | Partial render rather than silence: one fetch returned a truncated fragment of an Allē rewards blog post and none of the nine items asked for. The Allē tie is a MANUFACTURER programme, so per the 5 Nov clarification it is a grade-A signal and not a parent-group tell. Two towns, both in market. Unresolved rather than screened |
+| **Eastside Aesthetics and Wellness** | `eastsideaestheticsandwellness.com` (Seattle eastside) | Seattle, 8 Nov | Client-side render |
+| **HC Med Spa** | `hcmedspa.com` (Seattle eastside) | Seattle, 8 Nov | Client-side render. **Its town is also unresolved**, so the visit should settle which eastside town it is actually in — the town-in-the-postal-address rule caught a sibling case the same day, where a `/bothell-washington` URL belonged to a Bellevue clinic |
+
+| **Pure Perfection Clinic** | Wrexham, Wales | UK, 8 Nov | Cloudflare-encoded; decode not offered and not taken. **Must-haves 4 and 8 are already answered before anyone opens it** — established 2008, Ltd with company number 10719135, and 60 published reviews, which is the quantified review count British clinics almost never print. The worker stated its entry grade so nobody re-argues it on arrival: **C on must-have 2 unresolved**, for a bare "sclerotherapy" with no indication named. Under the rule settled the same day, read the modality and the practitioner's licence first, and the site-limited search on its own page titles before any fetch |
+
+**One clinic that is a browser job for a different reason — not an unreadable address.**
+**Skintegrity MedSpa** (`skintegritymedspa.com`, Kirkland / Bellevue / Redmond) publishes enough to
+be read, and the Seattle worker's judgement was that it "needs Jess with a browser, not another
+sourcing pass": **it already runs a prize draw open to "current, past, or prospective clients"**,
+which is a clinic advertising for exactly the cohort our offer works. No further fetch will improve
+on that; a person looking at it will.
+
+**And a market-level note that belongs here rather than in the pipeline: Kirkland WA is SILENT,
+not unworked.** Four clinics found, zero published emails. It is a browser market, not a sourcing
+market, and it has now been established at cost so nobody re-queries it.

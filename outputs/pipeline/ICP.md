@@ -153,6 +153,16 @@ a pass to anyone matching on the two words this file used. Read it as **"dissolv
 liquidation, or otherwise not currently active"**, and pass `companyStatus=active` on the search
 rather than filtering by eye.
 
+**THREE MORE COMPANIES HOUSE FAULTS, found 8 Nov 2026, and two of them cost rows.**
+**A `registeredOfficeAddress` town search gives the REGISTERED OFFICE town, not the trading town** —
+it mis-located two of five named leads in one run, including one clinic that turned out to be in
+Rugby rather than Leamington. **Never record a trading town from the register.** **The OFFICER
+search is unusable: do not spend a call on it.** Ten thousand matches on both attempts, because it
+does not AND the terms and does not expose the appointments URL; it cost that run two otherwise
+sendable rows. **And the street-name fault has a new worst measurement:** a Stamford street search
+returned five of nine companies in Ashton-under-Lyne. Add **Stamford and Cheltenham** to the
+street-name town list beside Crown Passages.
+
 **A second mass-registration address, found 5 Nov 2026: Adamson House, Towers Business Park,
 Didsbury M20 2YY** — 127 companies across seven pages. It belongs beside 71-75 Shelton Street,
 which has now fired three times in two days. **And the truncation fault has a street-level
@@ -257,6 +267,31 @@ unscreened rather than failed.
 **The same mechanical problem has moved to MOLES AND LESIONS, and it is settled here on the vein
 precedent, 5 Nov 2026.** The vein narrowing worked and rescued four British clinics in one sweep,
 and then the identical ambiguity turned up one line down the menu. So, the same shape:
+**CORRECTED 8 Nov 2026 — SCREENING FAILS, BUT NOT ON MUST-HAVE 2, AND THE TEST IS WHO READS THE
+IMAGES.** Three workers in three runs raised the same objection to the clause below and each one
+correctly applied it as written rather than reinterpreting it mid-run, which is why the sentence is
+mine to write. They were right. The clause failed mole screening on must-have 2 and gave the reason
+as *"diagnostic work on the insurance and NHS referral pathway"* — but **that is not a billing
+argument, and the 4 Nov narrowing made must-have 2 a billing test.** Map My Mole is a private,
+cash-pay UK service: on must-have 2's actual wording it passes. The real objection to screening is
+clinical risk and a disease caseload, which is the reasoning behind the DERMATOLOGY
+disqualification, so that is where it belongs.
+
+**So the test is whether the clinic takes on the skin-cancer clinical risk itself, and the question
+that settles it is who reads the images.** A **white-label teledermatology service the clinic merely
+HOSTS** — the patient pays, photographs go to a third party's dermatologist, the clinic provides the
+room and takes a booking — leaves the clinic a venue rather than a diagnostician: **it passes**, and
+the row then stands on its own injectables-led evidence. **Screening the clinic OWNS fails** on
+must-have 1 and the dermatology disqualification: its own dermatoscopy read by its own clinician, or
+mole checks with a named consultant dermatologist in the practice. One white-label line bolted onto
+an injectables clinic no more makes it a dermatology practice than one blemish-removal line makes it
+a surgical one — which is the same "substance, not the word" rule as everything else settled today.
+
+**This is NOT the blanket teledermatology exemption that was proposed**, and the difference matters:
+row 1101 keeps failing, because its mole checks are done *with a consultant dermatologist*, which is
+the clinic owning the screening. Row 1098 converts to B. Row 1038's must-have 2 now passes and it
+stays C anyway, on must-have 8.
+
 **mole or lesion SCREENING fails must-have 2** — "Map My Mole", mole mapping, dermatoscopy, any
 check for disease — because it is diagnostic work on the insurance and NHS referral pathway, and
 it leans on the dermatology disqualification besides. **Anything the clinic itself calls "minor
@@ -453,6 +488,8 @@ Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
   Optimantra** (added 8 Nov 2026, each seen twice or more; clinics running them were being marked
   down for "no named system"), Setmore, Acuity, Vagaro, GlossGenius, Dapple, MyPatientNow,
   Mangomint
+  - **Collums and PowerDiary added 8 Nov 2026** from the British sweep, which also confirmed
+    Aesthetic Nurse Software as the commonest UK independent platform for a third time.
   - **PODIUM IS DELIBERATELY NOT ON THIS LIST, decided 8 Nov 2026** on the Seattle worker's
     reasoning, which is right: it is a messaging-and-reviews product with booking bolted on, so it
     is materially weaker evidence that a queryable patient list exists. Seeing Podium is not seeing
@@ -471,6 +508,16 @@ of grade A's four requirements and never all four, because **Britain's owner-inj
 the practitioner and the platform freely and almost never publish a loyalty or membership
 scheme.** The 4 Nov UK sweep found two A rows out of 21, so this is not absolute — but the
 banked-credit signal that makes a Mountain West clinic an easy A is close to absent here.
+
+**THE DIAGNOSIS IS CORRECTED, 8 Nov 2026, and it is a better one.** The 5 Nov account said
+Britain's A-count is suppressed because its owner-injectors almost never publish a loyalty or
+membership scheme. A third British sweep returned 9 sendable and 0 A and found something different:
+**six of its sixteen rows carried a real dormant scheme, and the missing requirement in every
+near-A case was a PUBLISHED REVIEW COUNT — only 3 of 23 British businesses published one.** So it
+is not the dormant signal that is absent in Britain, it is the quantified review history. **British
+clinics are busy and well reviewed and simply do not print the number**, which is a publishing habit
+rather than a business fact, and it collides with must-have 4's evidence ladder. Do not read a
+British zero-A run as a weak market, and do not pad a row to A to fix it.
 
 **The consequence to hold onto: a grade is not comparable across markets.** A British B and an
 Arizonan B are not the same row, and a run that reports "no grade A" may have found the best

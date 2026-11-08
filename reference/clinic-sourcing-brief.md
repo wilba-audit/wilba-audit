@@ -195,7 +195,14 @@ because the standard may widen again and re-finding a clinic costs more than kee
    metro. Two remote-prescribing services —
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
-   it. **One careful exception: block `facesconsent.com/clinics/` but NOT the domain**, because
+   it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.** Block its
+   directory URLs, but read a `glowday.com/clinic/<name>` booking URL as a platform signal, exactly
+   as with Faces Consent. Also blocked from 8 Nov: `enhancinghealthandbeauty.com`,
+   `change-aesthetics.co.uk`, `airaesthetics.co.uk`, `clinictor.com`, `clinicsoftware.com`.
+   **And a correction to the 5 Nov note on Beverley: it is WORKED OUT, not trapped.** The name
+   being a common first name is real, but the town's only own-domain clinic is already a pipeline
+   row, so there is nothing left to find there and no trap to avoid.
+   **One careful exception: block `facesconsent.com/clinics/` but NOT the domain**, because
    Faces Consent runs a clinic directory and a booking platform on the same host, and the booking
    URLs are a grade-A platform signal.
    `medispabodyshop.com` and `mainstmedspa.com` (**both Clovis, NEW MEXICO — between them they
@@ -340,6 +347,20 @@ because the standard may widen again and re-finding a clinic costs more than kee
    query collapses into something unrelated — two queries on 1 Nov came back with a massage
    directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
    is still thin. Unquoted and short beats long.
+
+      **BATCH FOUR TO SIX DOMAIN GUESSES INTO ONE `allowed_domains` SEARCH — added 8 Nov 2026,
+   and it is the cheapest new technique of the week.** Six guesses tested in a single call, three
+   hit, two sendable rows resulted, including the domain for a clinic the 4 Nov sweep had called
+   "the cheapest outstanding lead in the file". **This does not violate never-stack-names**, and
+   the reason is worth understanding rather than memorising: `allowed_domains` FILTERS results, it
+   is not query text, so the names are not competing with each other for the ten slots.
+
+   **AND THE PRIVACY-POLICY RULE DOES WORK IN BRITAIN — correcting two earlier measurements,
+   8 Nov 2026.** Two UK sweeps recorded a yield of about zero and the standing note said "the
+   register is Britain's privacy policy". Both measurements were empty because **neither sweep
+   ever spent the fetch on a clinic that needed it**. A third sweep spent three and got three
+   addresses, two of them the only mailbox those clinics publish anywhere, which rescued two rows
+   outright. **Do not write a British clinic to near-misses before checking its privacy policy.**
 
       **A US PRIVACY POLICY'S PROCESSOR LIST IS A CRM-DETECTION TOOL — added 8 Nov 2026, and it
    costs nothing because you are reading the page anyway.** One Highland Park clinic's policy named

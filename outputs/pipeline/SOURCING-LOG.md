@@ -11,6 +11,81 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 8 Nov 2026 — a standard that reversed three weeks ago, and 59 rows
+
+**Four markets: Chicago's affluent suburbs (16 rows), Seattle's eastside (14), the Nashville ring
+(13) and a British finishing sweep (16). Ids 1046-1104. The pipeline is 1,104 rows and 748 ready to
+approach** — US 368, AU 169, CA 87, UK 80, NZ 42, IE 2. Six grade A, forty B, thirteen C. But the
+sourcing is not the story of the day.
+
+### THE FINDING: when a standard reverses, somebody has to apply it backwards
+
+**ICP v2 reversed the single-operator rule on 16 October. Under the 22 Sep standard scale was a
+virtue and a single operator was a reason to park a clinic; under v2 an owner-operated
+single-operator clinic is the TARGET. The reversal was applied to every run after it and to nothing
+before it.** That was found twice today, independently, from opposite ends of the file:
+
+- **From the pipeline:** nine rows (198, 201, 202, 220, 236, 237, 252, 298, 299) are still parked
+  at C on "the single-operator rule", "the two-scale-proxy rule", "thin on scale" or "no nameable
+  CRM" — three rules v2 retired and one that was never a must-have at all.
+- **From near-misses.md:** the British sweep found that the 23-24 Sep runs **dropped clinics
+  outright for being single operators** and nobody ever re-read those entries. **The Goddess Clinic
+  is a grade B in this file today purely because somebody went back.** Still unopened and named:
+  Essence Medical (Glasgow), Craig Hobson Aesthetics (Bristol), Skin & Joints (Bristol), Skins
+  Clinic (Manchester), plus Sussex Aesthetics, Aesthetic Klinik and Dr Liesel Holler.
+
+**And it cuts both ways, which is the part worth being honest about.** The same flip disqualifies
+September's *positive* near-misses — Quinn, Elanic, EF Medispa and CJA now fail must-have 3 on
+exactly the scale that recommended them. A backwards re-read is not a free row supply; it is a
+correction, and some of it costs.
+
+**The general rule, now the first thing on the standing list: a rule change reaches the run that
+makes it and nothing behind it.** The 4 Nov vein narrowing "rescued four British clinics in one
+sweep" — in that sweep. Twenty-odd rows parked on vein work before it were never revisited, and
+four of them turned out to be sendable (626, 802, 815, 911) once somebody read a page instead of
+arguing from a menu label. **Whenever a standard moves, the job is not finished until the rows
+already decided under the old one have been re-read.**
+
+### What else came out of the day
+
+**All 152 parked rows that carried no numbered failing must-have now carry one** — the count is
+zero, from 152 of 350 this morning. Mostly translation, since the rows already said why they were
+parked. Fifteen turned out to be parked on nothing at all, and seven C rows were quietly carrying
+questions for Jess that the validator could not see, because it only read sendable rows. It reads
+parked rows now too.
+
+**Three of my own claims were corrected by the day's evidence, and one of my rulings was corrected
+by a worker.**
+- "Aesthetic Record is the dominant US platform", recorded 5 Nov on two measurements, is wrong as a
+  US claim. Nashville has no dominant platform at all. **Platform concentration is per-market.**
+- The close-out `allowed_domains` search, promoted on three measurements as a policy-address finder,
+  returned five contact-page URLs and zero policy URLs on its fourth. **It is a URL-existence
+  prover.**
+- The 5 Nov account of why Britain yields no grade A (no loyalty schemes) is replaced by a better
+  one: six of sixteen British rows carried a real dormant scheme, and **the missing requirement in
+  every near-A case was a published review count — 3 of 23 British businesses printed one.** It is
+  a publishing habit, not a business fact.
+- **The 5 Nov mole clause was filed under the wrong must-have, and three workers in three runs said
+  so before I listened.** Each applied it as written rather than reinterpreting it mid-run, which
+  was right of them and left two rows waiting on a sentence only this thread could write. The clause
+  failed mole screening on must-have 2 and justified it as "diagnostic work on the referral
+  pathway" — a clinical-risk argument, not a billing one, and must-have 2 has tested the billing
+  model since 4 Nov. It is now must-have 1 and the dermatology disqualification, and **the question
+  that settles a row is who reads the images**: a white-label service the clinic hosts passes, the
+  clinic's own screening fails. Row 1098 converted; row 1101 still fails, with a consultant
+  dermatologist reading its moles, which is why the ruling was written narrowly rather than as the
+  blanket teledermatology exemption that was proposed.
+
+**And "substance, not the word" turned out to be one rule with four faces, all of them settled
+today.** A label is not a finding (dermatology). Prominence is not a test (veins). The minor-surgery
+rule bites on a service and not on a phrase — in both directions, which arrived from two markets the
+same day: "Laser Minor Surgery for Blemishes" passes and "Cyst & Lipoma Removal" under a heading
+called *Dermatology* fails. And who reads the images, not what the menu line is called (moles).
+
+**One recurring mistake, four times in one day, all mine:** writing prose that means `QUESTION
+WITHDRAWN` without being it. Rows 847, 871, 970 and 1038 each read as unanswered after being
+answered. The audit cannot read intent, and the brief now says so.
+
 ## 5 Nov 2026 — four markets, two never worked, and 62 rows
 
 **62 rows, ids 984-1045: 14 A, 31 B, 17 C.** Four workers: **Utah's Wasatch Front** (16 rows after
@@ -390,6 +465,21 @@ already had. Cheap, and only because the duplicate guard exists.
 Keep this current. It is the thing that stops a run spending its first searches deciding where
 to look, and `near-misses.md` is the record of everything already swept.
 
+**FIRST JOB, AND IT IS BIGGER THAN ANY MARKET: RE-READ WHAT A CHANGED STANDARD ALREADY DECIDED.**
+A rule change reaches the run that makes it and nothing behind it, which was proved twice on 8 Nov
+from opposite ends of the file. The named, unstarted work:
+
+- **The 23-24 Sep sweeps dropped clinics for being SINGLE OPERATORS, which ICP v2 made the target
+  on 16 Oct.** Those near-misses entries have never been re-read. Named and unopened: **Essence
+  Medical (Glasgow), Craig Hobson Aesthetics (Bristol), Skin & Joints (Bristol), Skins Clinic
+  (Manchester)**, plus Sussex Aesthetics, Aesthetic Klinik and Dr Liesel Holler. The Goddess Clinic
+  is a B in the file today only because somebody went back for it.
+- **It cuts both ways and the re-read must do both.** September's *positive* near-misses — Quinn,
+  Elanic, EF Medispa, CJA — now fail must-have 3 on the scale that recommended them. Anyone doing
+  this job marks those as disqualified in the same pass, or the file is left more wrong than before.
+- **Two British rows are ONE REGISTER CALL each from a B: 655 (search "Pasapula", a distinctive
+  surname the row names itself) and 1038.** Nothing else blocks either.
+
 **THE CHEAPEST QUALIFIED ROWS LEFT IN THIS FILE ARE ALREADY IN IT — added 8 Nov 2026.** The
 parked-reason sweep done today read all 152 parked rows that carried no numbered must-have, and
 **fifteen of them are parked on nothing.** They are a better buy than any new market, because the
@@ -527,11 +617,19 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 5 Nov 2026: **1,045 rows, 707 ready to approach** — US 343, AU 167, CA 85, UK 69, NZ 41, IE 2. (It was 496 rows and 316 ready on
-20 Oct.) A further **101 clinics** that cleared the ICP on fit are parked in
-`browser-visit-list.md` for want of one page-open each.
+As of 8 Nov 2026: **1,104 rows, 748 ready to approach** — US 368, AU 169, CA 87, UK 80, NZ 42, IE 2. (It was 496 rows and 316 ready on
+20 Oct, and 1,045 rows and 707 ready on 5 Nov.) A further **110 clinics** that cleared the ICP on
+fit are parked in `browser-visit-list.md` for want of one page-open each.
 
-**Every one of those 707 rows is unsendable until Jess supplies a postal address** — see the entry
+**Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
+existing ones. Twelve went B to C on the must-have 4 evidence ladder, which is a loss of twelve
+apparently sendable rows and the right outcome — an honest C is recoverable and an over-graded B
+gets emailed. Eight went C to B on rulings rather than on new research (423, 469, 544, 626, 802,
+815, 911, 1098), every one of them parked under a standard that had since changed. **Fifteen more
+parked rows are named on the standing list as parked on nothing at all**, with the published
+address already read and dated, which makes them the cheapest qualified rows left in the file.
+
+**Every one of those 748 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 
