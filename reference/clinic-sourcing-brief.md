@@ -183,7 +183,16 @@ because the standard may widen again and re-finding a clinic costs more than kee
    **Added 5 Nov 2026, and the first of these is the most damaging single domain measured in
    Britain:** `injectablesbooking.co.uk` took two of ten Sheffield slots and **is the reason
    Fulwood reads as empty**; `drsknn.com` took three of ten Didsbury slots; plus
-   `consentz.com/directory`, `booksy.com`, `glowday.com`. Two remote-prescribing services —
+   `consentz.com/directory`, `booksy.com`, `glowday.com`.
+   **Added 8 Nov 2026 from three US markets.** Vendor blogs and lead-gen farms, which the
+   "membership/rewards" query pulls six times in ten: `scalehaven.io`, `velarya.com`, `gracero.ai`,
+   `bennettfinancials.com`, `visionsalliance.net`, `spaacquisitions.com`. Directory farms:
+   `trustanalytica.org`, `medicalspalocator.com`, `liveyouthful.com`, `atly.com`,
+   `dermanimedspa.com`. Chain and parent-group domains to block by name once identified:
+   `advancedskinandbodysolutions.com` and `asbs.com` plus `eastsidebodyandskin.com`, which 302s to
+   it. **And block `areas-served/<town>` page sets from query one** — `kucumberskinlounge.com` and
+   `serenityrejuvenationcenter.com` each run one and take a slot on nearly every query in their
+   metro. Two remote-prescribing services —
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
    it. **One careful exception: block `facesconsent.com/clinics/` but NOT the domain**, because
@@ -200,6 +209,14 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `codingace.net`, `joinblvd.com`, `pabau.com`, `americanmedspa.org`, `cosmeticinjectors.org`,
    `nurse.org`. This is the same finding as "rewards" and "loyalty" going dead as modifiers, from
    the other direction: **the vendors now own the vocabulary of the thing we sell.**
+
+   **THE VOS LOYALTY FOOTER HAS NOW FIRED THREE TIMES AND IS THE MOST RELIABLE PARENT-GROUP TELL
+   WE HAVE — 8 Nov 2026.** It parked row 480 and row 547 in Canada, and on the Seattle eastside it
+   was the SOLE tell on a clinic that otherwise read as a flawless grade A: an ARNP medical
+   director, "over 20 years", "250+ 5-Star Reviews", and a published clickable mailbox. One footer
+   link to `voscollection.com/loyalty` was the only thing separating it from the file. **Three for
+   three means look for it on every strong row rather than noticing it by luck** — read the footer
+   before you celebrate.
 
    **A MANUFACTURER'S programme is NOT a parent-group tell — added 5 Nov 2026.** Brilliant
    Distinctions, Allē, Aspire and the like are manufacturer loyalty schemes that any independent
@@ -324,7 +341,25 @@ because the standard may widen again and re-finding a clinic costs more than kee
    directory and a set of UK clinics on an Australian search, which is why Perth's outer ring
    is still thin. Unquoted and short beats long.
 
-      **GREP THE PIPELINE BEFORE YOU FETCH, NOT AFTER — added 5 Nov 2026, and it cost two workers
+      **A US PRIVACY POLICY'S PROCESSOR LIST IS A CRM-DETECTION TOOL — added 8 Nov 2026, and it
+   costs nothing because you are reading the page anyway.** One Highland Park clinic's policy named
+   Square, Calendly, Resend and Google Sheets outright. That is the whole stack, from a page fetched
+   for the address. Read the sub-processor or third-party-services section on the same pass.
+
+   **CONSOLIDATION RUNS BY ACQUISITION, SO A REDIRECT CHECK IS A CHEAPER SCALE SCREEN THAN COUNTING
+   ADDRESSES — added 8 Nov 2026.** `imagesmedspa.com` now 302-redirects to `elase.com`, which means
+   Elase holds Hinsdale as well as Wilmette and **our own 16 Oct note on that market is out of
+   date**. A clinic does not announce that it was bought; its domain does. In an affluent-suburb
+   market the real crowder-out is not scale anyway — one Chicago sweep found a single clinic with
+   three sites and ruled out nine dermatology and plastic-surgery practices by name.
+
+   **THE SPONSORED CITY-MAGAZINE LISTICLE IS A NEW DIRECTORY HAZARD, and it is worse than the
+   others — added 8 Nov 2026.** A StyleBlueprint "Top Med Spas in Nashville" piece reads in the
+   snippet exactly like a human best-in-town list and is paid placement: four names, three of them
+   plastic surgeons. **Unlike a vendor logo wall you cannot tell before spending the fetch**, so
+   treat any city-magazine "top/best" listicle as a coin flip rather than a source.
+
+   **GREP THE PIPELINE BEFORE YOU FETCH, NOT AFTER — added 5 Nov 2026, and it cost two workers
    on the same day.** One fetched and fully extracted two clinics before grepping, and both were
    existing pipeline rows (435 and 431): three fetches for nothing. Another spent a register call
    establishing a company identity that row 435 had already carried since 20 Oct. **The grep is
@@ -362,6 +397,32 @@ because the standard may widen again and re-finding a clinic costs more than kee
    on profile — was lost to the rule with no policy page to fall back on, and the worker who lost
    it flagged it as the one call it would overturn. Overturned: no mailbox on the homepage and no
    policy link anywhere, fetch `/contact`.
+
+   **The second exception is now confirmed in a second market and WIDENED, 8 Nov 2026.** Confirmed:
+   a Green Hills clinic with a silent homepage and no policy link anywhere gave up its address on
+   `/contact` — the best offer-fit row in Nashville. Widened, because the wording was too narrow and
+   it cost a row: a Mt Juliet clinic has a privacy page that EXISTS and is a two-sentence stub
+   nominating no contact route at all, which is neither tested case, and the row was lost. **Read
+   the exception as "no privacy policy, OR a policy that nominates no contact route at all".** This
+   does NOT reopen the 5 Nov rejection of a policy that nominates `/contact` *as* its route — that
+   is still not an exception.
+
+   **A SEVENTH FETCH-FAILURE MODE, found twice on 8 Nov in two markets: a policy that nominates an
+   email route and then omits the address.** One Seattle policy reads *"please email them to ."* and
+   one Nashville policy says to make data requests *"via the email address or phone number given on
+   our website"* on a site that publishes no email. It is not silence, not Cloudflare, not
+   client-side rendering, not a site error and not an interstitial, and **no browser recovers it** —
+   so it belongs in near-misses, not on the browser-visit list. **Cheapest tell: look at the
+   policy's revision date.** The Seattle one is dated 2018 and still names a previous owner's
+   domain; it is boilerplate nobody has read since.
+
+   **AND THE CLOSE-OUT SEARCH IS OVERSOLD — correcting it, 8 Nov 2026.** It was promoted on three
+   measurements as a way to find privacy-policy addresses across several parked domains at once. On
+   a fourth measurement it returned, for six domains in one call, **five contact-page URLs and zero
+   policy URLs**, and nothing at all for the one domain the worker most needed. It is really a
+   **URL-existence prover** — genuinely useful, it proved a robots-refused clinic's domain was live
+   — but it is not a policy finder, and it dangles exactly the `/contact` fetch the rule above
+   forbids. Use it to learn what exists, not to get an address.
 
    Five consecutive US sweeps support the main rule, and it is measured rather than
    impressionistic: two
@@ -432,6 +493,16 @@ Med-spa software vendors now own those results. "owner" and "founder" were the b
 modifiers of that sweep — which fits, because they target must-have 3 directly rather than a
 programme that might imply it.
 
+**Three target-list corrections from 8 Nov 2026, so nobody re-queries them.** **Medina and Clyde
+Hill (WA) are off the list** — residential enclaves with no commercial strip and nothing to find,
+and Mercer Island's only two providers are satellites of Seattle and Kirkland parents. **Kirkland
+is SILENT, not unworked:** four clinics found, zero published emails, so it is a browser job rather
+than a sourcing job. And **12 South, Hillsboro Village and Belle Meade did not reproduce the Tulsa
+Brookside neighbourhood result** — one business each, none sendable. The worker's read is worth
+keeping: those are real-estate labels that clinics do not self-apply, whereas Green Hills,
+Germantown and Cool Springs are names Nashville clinics use about themselves. **The neighbourhood
+technique works on names locals trade under, not on names estate agents use.**
+
 **Query the shopping street, not just the town.** Hove only opened up when its shopping-street
 names were queried, which is the same finding as the Tulsa neighbourhood result from a
 different direction: **a town name is one query, and the names locals use are several.**
@@ -451,7 +522,7 @@ different direction: **a town name is one query, and the names locals use are se
 WebFetch refuses a URL that has not appeared in a WebSearch result, so search before you
 fetch. `curl` is blocked.
 
-## Five ways a site defeats a fetch, and which ones a browser fixes
+## Seven ways a site defeats a fetch, and which ones a browser fixes
 
 Knowing which is which decides whether a clinic is worth a human's time or should be dropped.
 

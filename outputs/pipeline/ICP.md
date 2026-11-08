@@ -67,6 +67,14 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    for. The ladder tells you whether you KNOW the age; the must-have asks whether the age is
    ENOUGH. Both have to pass.
 
+   **TWO ADDITIONS TO THE LADDER, 8 Nov 2026, both from the Chicago sweep and both of which
+   nearly cost real rows.** First, **a wall of individually dated client reviews IS a quantified
+   dated artifact** — it is the clinic's own page evidencing a span of trading, and it nearly parked
+   two accepted rows whose only dating was reviews running 2023 to 2025. Second, and the other way,
+   **a bare star rating with no count is NOT a quantified artifact**: "rated 5.0" evidences nothing
+   about how many patients or how long, where "based on 137 reviews" evidences both. Say which one
+   the page actually shows.
+
    **THE EVIDENCE LADDER, set 5 Nov 2026, because "established" was being read three different
    ways in one file.** A sweep where only 2 of 19 clinics published a founding date needed a rule
    rather than a judgement, so: **a dated or quantified artifact on the clinic's own site
@@ -214,6 +222,16 @@ the other two combined: a named therapeutic-injection line.** Migraine, hyperhid
 alopecia — reimbursed through private extended-health DRUG plans rather than through a provincial
 plan. Found on 6 of 19 businesses in one sweep. It is a spectrum rather than a line, so the worker
 set a threshold and applied it to all thirteen of its rows, and **the threshold is adopted here so
+**THE FOUR-INDICATION THRESHOLD IS UNDER REVIEW BUT NOT CHANGED, 8 Nov 2026.** Two workers in two
+markets independently said the same thing on the same day: it feels loose at three. One Seattle
+clinic sits at hyperhidrosis plus alopecia plus lipomas and reads closer to a fail; one Chicago
+clinic at migraines plus excessive sweating plus TMJ. **Both applied the number as written and said
+so, which is exactly right** — a threshold that each worker re-tunes is not a threshold. It stays
+at four until a row passes on three and then turns out to be insurance-billed; that is the evidence
+that would move it, and the two instances above are now on the record so the third is recognisable.
+Note what saved the Chicago row on the merits rather than the count: the page described no treatment
+for any of the three and listed the neuromodulator only as "Cosmetic".
+
 that the next worker argues with a number instead of re-inventing one**: **four or more
 reimbursable indications under a named medical heading parks the row at C on must-have 2; one to
 three incidental lines pass, with the caveat recorded in `notes`.**
@@ -242,11 +260,32 @@ and then the identical ambiguity turned up one line down the menu. So, the same 
 **mole or lesion SCREENING fails must-have 2** — "Map My Mole", mole mapping, dermatoscopy, any
 check for disease — because it is diagnostic work on the insurance and NHS referral pathway, and
 it leans on the dermatology disqualification besides. **Anything the clinic itself calls "minor
-surgery" fails.** But **cosmetic removal of a benign blemish passes** — liquid-nitrogen cryo or
+surgery" fails — AND THE CONVERSE, ADDED 8 Nov 2026: avoiding the phrase does not rescue a
+genuinely surgical procedure.** Both halves of this were found on the same day from opposite
+directions, which is why the rule is now stated as substance rather than vocabulary. A Peterborough
+clinic lists "Laser Minor Surgery for Blemishes": it uses the words and PASSES, because it names a
+cosmetic indication and laser blemish work is cash-pay. A Franklin clinic lists "Cyst & Lipoma
+Removal" and "Surgical Scar Revision" under a heading it calls *Dermatology* and never says "minor
+surgery": it avoids the words and FAILS, because excision with closure is surgery whatever the
+heading says. **Fail cyst and lipoma excision and surgical scar revision regardless of the label;
+pass cosmetic blemish and benign-lesion removal regardless of the label.** The word is not the
+test, and a row parked or passed on the word alone has not been screened. But **cosmetic removal of a benign blemish passes** — liquid-nitrogen cryo or
 electrocautery for warts, skin tags and seborrhoeic keratoses is cash-pay cosmetic work
 everywhere we sell. **Screening is about finding disease; removal is about appearance.**
 
-**AND WHERE NO INDICATION IS NAMED ANYWHERE, THE ABSENCE OF DISEASE LANGUAGE IS ITSELF THE
+**BUT TRY TO NAME THE INDICATION BEFORE FALLING BACK ON ITS ABSENCE — THE MODALITY AND THE
+PRACTITIONER'S LICENCE USUALLY DO IT. Added 8 Nov 2026 by the Nashville sweep, which is a better
+rule than the one below it because it rests on positive evidence rather than on silence.** *An
+external aesthetic vascular laser in an aesthetician's hands is cosmetic; "endovascular laser
+therapy" is venous disease.* That run had one of each and they resolved in opposite directions.
+Read the device name and read who holds it.
+
+**And the cheapest move of all comes first: a site-limited search often resolves a bare vein name
+from the RESULT TITLES, with no fetch at all.** One such search took a Nashville row from C to B
+for zero fetches, because the clinic's own page titles said "spider veins" where its menu had said
+only "veins".
+
+**WHERE NO INDICATION IS NAMED ANYWHERE, THE ABSENCE OF DISEASE LANGUAGE IS ITSELF THE
 EVIDENCE. Settled 8 Nov 2026, and it closes the vein question.** The 4 Nov rule left a bare service
 name "unresolved", which was right while the test was the name — but the 4 Nov narrowing also moved
 the test to the BILLING MODEL, and once that is the test, a whole site with no disease and no
@@ -410,8 +449,21 @@ Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
 - An owner-injector named on the door or on the clinic's Instagram
 - A practice system we can name: Pabau, Fresha, Zenoti, Cliniko, Timely, Boulevard,
   Aesthetic Record, GoHighLevel, PatientNow, Mindbody, **Aesthetic Nurse Software, Faces
-  Consent, Aesthetidocs** (the last three added 4 Nov 2026), Setmore, Acuity, Vagaro,
-  GlossGenius, Dapple, MyPatientNow, Mangomint
+  Consent, Aesthetidocs** (the last three added 4 Nov 2026), **MyAestheticsPro, Moxie,
+  Optimantra** (added 8 Nov 2026, each seen twice or more; clinics running them were being marked
+  down for "no named system"), Setmore, Acuity, Vagaro, GlossGenius, Dapple, MyPatientNow,
+  Mangomint
+  - **PODIUM IS DELIBERATELY NOT ON THIS LIST, decided 8 Nov 2026** on the Seattle worker's
+    reasoning, which is right: it is a messaging-and-reviews product with booking bolted on, so it
+    is materially weaker evidence that a queryable patient list exists. Seeing Podium is not seeing
+    a practice system.
+  - **AND THERE IS NO SINGLE US PLATFORM — correcting my own 5 Nov claim.** I wrote that "Aesthetic
+    Record is the dominant US platform" on two independent measurements, Phoenix 10 and Utah 7.
+    Nashville is a clean counter-example: Vagaro three, Aesthetic Record two, Zenoti two, Boulevard
+    two, Podium two and six singletons, with no dominant platform at all. Seattle's eastside had
+    Aesthetic Record at five and was the standard there. **So platform concentration is a
+    PER-MARKET fact, not a US fact**, and a pitch should not assume the platform before the row
+    names it.
   - **GRADE A MAY BE STRUCTURALLY UNREACHABLE IN BRITAIN, and that is a fact about our grade rather
 than about British clinics. Recorded 5 Nov 2026.** A UK sweep returned **7 sendable rows and not
 one grade A**, and the worker's account of why is precise: it kept finding clinics with any three
