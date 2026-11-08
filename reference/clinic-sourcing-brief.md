@@ -116,6 +116,13 @@ the notes forever and the validator needs a way to tell an answered row from an 
 stamp is a fixed phrase on purpose: an override that guesses at prose is how the 4 Nov provenance
 check missed the very note it was written for.
 
+**WRITE THE STAMP VERBATIM. It is two words and it has caught four rows, all of them mine, on
+8 Nov 2026 alone.** "The question this row asked is withdrawn", "MUST-HAVE 2 RESOLVED IN THIS ROW'S
+FAVOUR" and "QUESTION WITHDRAWN 5 Nov 2026 - ..." all read as answers to a human and none of them
+matches `QUESTION WITHDRAWN` or `QUESTION RESOLVED` as a contiguous phrase, so rows 847, 871, 970
+and 1038 each kept showing up as unanswered after being answered. **The audit cannot read intent.**
+Put the bare stamp in the note, then write whatever prose you like around it.
+
 **Do not reach for a headless browser to solve any of this.** Tested 4 Nov 2026. Chromium and
 Playwright are installed in this session, and the reasoning matters more than the result. A
 browser is the right tool for a page that **renders client-side** — nothing is bypassed and the

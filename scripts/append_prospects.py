@@ -350,6 +350,18 @@ def main():
     print('sendable rows that defer a decision to a person: %d%s'
           % (len(defr), (' ' + str(defr)) if defr else ''))
 
+    # And the same check over PARKED rows, added 8 Nov 2026. The audit above reads only sendable
+    # rows, which is where a deferred decision does the most damage - but not where it survives
+    # longest. Seven C rows were found carrying questions for Jess that nobody would ever see,
+    # because a parked row is not re-read the way a sendable one is before a send. A question in
+    # a C row is still a question nobody answers.
+    pdefr = [r['id'] for r in after
+             if (r.get('icp_fit') or '').strip().lower() not in ('a', 'b')
+             and DEFERS.search(r.get('notes') or '')
+             and not RESOLVED.search(r.get('notes') or '')]
+    print('parked rows that defer a decision to a person: %d%s'
+          % (len(pdefr), (' ' + str(pdefr)) if pdefr else ''))
+
 
 if __name__ == '__main__':
     main()

@@ -246,6 +246,29 @@ surgery" fails.** But **cosmetic removal of a benign blemish passes** — liquid
 electrocautery for warts, skin tags and seborrhoeic keratoses is cash-pay cosmetic work
 everywhere we sell. **Screening is about finding disease; removal is about appearance.**
 
+**AND WHERE NO INDICATION IS NAMED ANYWHERE, THE ABSENCE OF DISEASE LANGUAGE IS ITSELF THE
+EVIDENCE. Settled 8 Nov 2026, and it closes the vein question.** The 4 Nov rule left a bare service
+name "unresolved", which was right while the test was the name — but the 4 Nov narrowing also moved
+the test to the BILLING MODEL, and once that is the test, a whole site with no disease and no
+billing language is not an absence of evidence, it is evidence. So: **a vein line sitting inside a
+cosmetic laser or device menu passes must-have 2 when varicose veins, venous insufficiency,
+phlebology and vein disease appear NOWHERE on the site, and neither does insurance, Medicare or
+bulk-billing language.** Read the whole site before concluding it, not the menu.
+
+Three people reached this independently before it was written down, which is why it is a rule and
+not a judgement: the worker who parked row 802 on 1 Nov said in the row itself *"my own reading is
+softer than the grade — it is laser-only, sits among cosmetic laser services, and the site mentions
+no Medicare or bulk billing anywhere — but the brief lists vein work as a fail and I am not going
+to soften a must-have on my own reading."* **That was exactly right of them and exactly the wrong
+outcome**: softening a must-have is this thread's job, not a worker's, and the row then sat at C for
+a week because nobody did it. A Chicago worker proposed the same rule on 8 Nov from a laser menu of
+its own, and the five rows re-read here point the same way.
+
+**PROMINENCE IS NOT AND NEVER WAS THE TEST.** Two rows (847, 871) were parked on an invented line
+where a vein CATEGORY fails and a vein line item buried in an injectables menu passes, with row 847
+grading itself C against row 831's A on exactly that. A category heading is a navigation choice. The
+billing model is the test.
+
 **And on vein work specifically: extract the INDICATION, not the service name.** The 4 Nov rule
 made a bare, undescribed service name "unresolved rather than failed", and that is still right —
 but "unresolved" is only for a bare name. Where the clinic names the indication the rule resolves
