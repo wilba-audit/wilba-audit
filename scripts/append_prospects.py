@@ -290,6 +290,32 @@ def main():
     print('sendable rows whose opening_angle breaks the copy rules: %d%s'
           % (len(dirty), (' ' + str(dirty)) if dirty else ''))
 
+    # The same check over the OTHER field a drafter builds copy from, added 9 Nov 2026.
+    # The audit above has printed zero every night for days and was telling the truth about
+    # the field it reads. It reads one field. A recovery worker found "$11-a-unit tox" sitting
+    # in dormant_lead_signal, and a scan of every column then found 70 sendable rows with a
+    # price in that field and 14 with a medicine name.
+    #
+    # The distinction that matters, and the reason this is a WARNING and not a rejection:
+    # services, notes and scale_signals legitimately record what a clinic sells and what it
+    # published - "Injectables/threads/fillers/skin" is a true research note and rewriting it
+    # would destroy the asset. The copy rules govern what we SEND, not what we know.
+    # But dormant_lead_signal is different in kind: it is the field the drafting channel reads
+    # to build an opener, so a published price sitting in it is the single most quotable thing
+    # in the row, and the copy rules specifically forbid quoting a clinic's own prices back at
+    # them. So: never silently rewrite these, and never let one reach a draft unread.
+    feeder = [r['id'] for r in sendable
+              if BANNED.search(r['dormant_lead_signal'] or '')
+              or PRICE.search(r['dormant_lead_signal'] or '')]
+    print('sendable rows with copy-unsafe material in dormant_lead_signal '
+          '(a true record, NOT to be quoted): %d%s'
+          % (len(feeder), (' ' + str(feeder)) if len(feeder) <= 20 else ''))
+
+    # price_point has been under a standing "leave it empty" instruction for weeks.
+    priced = [r['id'] for r in sendable if (r['price_point'] or '').strip()]
+    print('sendable rows with anything in price_point (should be empty): %d%s'
+          % (len(priced), (' ' + str(priced)) if len(priced) <= 20 else ''))
+
     # A site count the row itself admits to, above the one-to-four must-have.
     chain = re.compile(r'\b(\d+)\s*(?:sites|locations|clinics)\b', re.I)
     many = []

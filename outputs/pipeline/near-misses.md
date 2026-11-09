@@ -300,7 +300,27 @@ Plastic Surgery, Longwood, NYBG Plastic Surgery and about a dozen other surgical
 groups are the same. Scale without a scheme is not a prospect for this offer —
 there is nothing dormant to reactivate.
 
-### Three grade-C fallbacks with real published emails
+### Three grade-C fallbacks ~~with real published emails~~ — THE HEADING WAS FALSE
+
+**CORRECTED 9 Nov 2026. THIS HEADING SAID "real published emails" AND NO EMAIL, DOMAIN OR URL FOR
+ANY OF THE THREE WAS EVER WRITTEN DOWN ANYWHERE IN THIS FILE.** A recovery worker was sent to spend
+"one fetch each" on them and had to run a domain search plus one to three fetches per clinic to
+find out they existed at all. One of the three, **Manhattan Medspa, publishes no address at all** —
+so the heading was not merely unevidenced, it was wrong about the clinics.
+
+**The chain this started is the thing to learn from, because nobody in it was careless.** The
+September heading asserted the addresses existed. The 9 Nov re-read worker read the heading,
+believed it, and promoted the claim into the standing list as "all three already have published
+addresses recorded". I read the standing list and copied it into the brief commissioning the
+recovery run, as a specification. **Three generations of good-faith trust, and the root was a
+heading with no data under it.** It took a fourth worker grepping the file in situ to find that the
+claim had never had a source.
+
+**THE RULE THAT FOLLOWS, and it is enforceable: a near-miss entry that CLAIMS an address exists
+must CONTAIN the address and the URL it was read from, exactly as a pipeline row does.** An entry
+asserting a published address without printing it is not a lead, it is a rumour, and it costs a
+later run several fetches to disprove. Where an entry says "has a published email" and shows none,
+treat the claim as unmade.
 
 If a batch ever needs topping up: **Aesthé By MD** (3 CT/NJ sites),
 **Manhattan Medspa** (annual memberships at $1,999 and $2,299) and
@@ -310,9 +330,11 @@ naming a booking platform, which the first discovery question answers.
 **THESE THREE ARE PARKED ON NOTHING, AND THEY ARE THE RICHEST THING LEFT IN THE SEPTEMBER
 SECTIONS - flagged 9 Nov 2026 during the v2 re-read.** A nameable booking platform was never a
 must-have; it was the pitch under the 22 Sep standard and is only a grade cap under v2. All three
-already have published addresses recorded, all three pass must-have 3 on count, and the US needs no
-regional screen - so it is one fetch each to confirm the address still stands and screen must-haves
-2 and 4. This is the same bug as the fifteen pipeline rows the 8 Nov sweep found parked on retired
+~~already have published addresses recorded~~ **[FALSE — corrected 9 Nov 2026, see the heading
+above. No address, domain or URL for any of the three was ever recorded in this file; the claim was
+inherited from a September heading that had no data under it. The real cost was a domain search
+plus one to three fetches each, and Manhattan Medspa publishes no address at all.]** all three pass
+must-have 3 on count, and the US needs no regional screen. This is the same bug as the fifteen pipeline rows the 8 Nov sweep found parked on retired
 rules, one rule over.
 
 ---
@@ -12816,8 +12838,16 @@ unopened since:**
 - **Skins Clinic** (**Manchester**)
 - **Sussex Aesthetics** (Crawley), **Aesthetic Klinik** (Brighton), **Dr Liesel Holler** (Bromley)
   — listed as "single operators, no support staff"
-- **No.6 Clinic** (Tunbridge Wells) — ruled out as "beauty-led rather than medical", which is a
-  v2-valid reason and should stay out
+- **No.6 Clinic** (Tunbridge Wells) — ~~ruled out as "beauty-led rather than medical", which is a
+  v2-valid reason and should stay out~~ **[STRUCK 9 Nov 2026. This file carried TWO CONTRADICTORY
+  STANDING READINGS of No.6, both written in the same pass: this one, and one elsewhere calling it
+  "unresolved rather than failed, worth one look". The second was right. The clinic was opened on
+  9 Nov and MUST-HAVE 1 PASSES ON SUBSTANCE: injectables are the first and largest category, there
+  is no waxing, no lashes, no nails, no massage and no tanning anywhere on the site, and it has a
+  medical director (Dr Natasha Gilani) plus a nurse manager. Must-have 4 passes on "has been an
+  established medical aesthetic clinic for 20 years". It is now on the browser-visit list, blocked
+  only by Cloudflare. THE REASON IT WAS MISREAD IS THE BEST EXAMPLE WE HAVE OF "A LABEL IS NOT A
+  FINDING": the misleading word was the business's own trading name, "NO.6 BEAUTY CLINIC".]**
 
 **Three of those are in towns on my own assigned list (Glasgow, Bristol x2) and I ran out of
 budget before I could resolve their domains.** They are the cheapest unworked leads in the whole
@@ -13660,8 +13690,11 @@ fallbacks with real published emails" with the words "**All three fail only on n
 platform**" — and a booking platform was never a must-have under v2; it was the *pitch* under the
 22 Sep standard. **Aesthé By MD** (3 CT/NJ sites), **Manhattan Medspa** (annual memberships) and
 **Skinly Aesthetics** (Skinly Club plus two lenders) are therefore parked on nothing, exactly like
-the fifteen pipeline rows the 8 Nov sweep found. They have addresses recorded already. One fetch
-each, and the US needs no regional screen.
+the fifteen pipeline rows the 8 Nov sweep found. ~~They have addresses recorded already. One fetch
+each~~ **[FALSE on both counts — corrected 9 Nov 2026. No address was ever recorded for any of the
+three, and the cost was a domain search plus one to three fetches each. This sentence is the middle
+link in a three-generation chain of inherited trust; see the corrected heading in the 24 Sep
+Northeast section.]**, and the US needs no regional screen.
 
 **Two Australian clinics dropped for the same non-must-have:** **Dr Tass Cosmetic & Skin Clinics**
 (three Melbourne clinics, a named Signature Club membership — dropped because "bookings are taken by
@@ -13679,9 +13712,23 @@ seven named single operators that the re-read *loses* rather than gains.)
 (Tunbridge Wells), ruled out 23 Sep as "beauty-led rather than medical". That is a must-have 1
 judgement made under the old standard by a worker who was also applying a scale rule, and "beauty-led"
 is the kind of single-word parking the 8 Nov "a label is not a finding" ruling exists for.
+**ANSWERED 9 Nov 2026 AND THIS READING WAS THE CORRECT ONE: must-have 1 passes on substance** —
+injectables first and largest, no beauty-salon services anywhere on the site, a medical director
+and a nurse manager, and must-have 4 clear on "an established medical aesthetic clinic for 20
+years". Blocked only by Cloudflare, so it is on the browser-visit list. **The word that misled
+three readings was the clinic's own trading name**, which makes it the strongest instance of the
+label rule in the file.
 
 **Two clinics whose only blocker is a fetch failure, and which are v2 targets on profile:**
-Illuminate Skin Clinics (401, above) and **The Skin Care Clinic** (Hobart) — one site, six named
+~~Illuminate Skin Clinics (401, above) and **The Skin Care Clinic** (Hobart)~~ **[CORRECTED 9 Nov
+2026 — "whose only blocker is a fetch failure" IS WRONG FOR THE HOBART CLINIC. Its homepage fetched
+cleanly on 9 Nov. It FAILS MUST-HAVE 1 on substance: injectables are not mentioned anywhere on the
+site, the staff are a "Dermal Therapist" and "trained skin technicians", no doctor, nurse or
+prescriber is named, and the business is dermal therapy plus retail skincare on Afterpay/ZIP. Its
+loyalty scheme is real and irrelevant. NOT a browser candidate — the blocker is qualification, not
+tooling. ILLUMINATE IS STILL A BROWSER CANDIDATE, and its domain is `illuminateskinclinic.co.uk`,
+SINGULAR "clinic" — the plural spelling used here returns nothing, which is almost certainly why
+two separate runs "ran out of search budget" on it.]** The Hobart clinic has one site, six named
 staff, a full points loyalty scheme with points for referrals and testimonials, and a `/contact/`
 page that could not be fetched at all. September called it the best dormant signal in Tasmania.
 
@@ -14616,3 +14663,350 @@ row and three rule-outs, and Rumson, Fair Haven, Little Silver, Holmdel and Midd
 queried on their own. **Princeton has more left** behind a robots refusal and a silent clinic with
 thirteen published years. And **Hoboken, Jersey City and the Gold Coast were deliberately left
 alone** — they are the 26 Oct sweep's ground and already carry five pipeline rows.
+
+---
+
+## 9 November 2026 — recovery pass over rows parked under abolished rules
+
+# Recovery run near-misses — 9 November 2026
+
+Standard applied: ICP v2 with every ruling in `outputs/pipeline/ICP.md` as of 9 Nov 2026, including
+the seventh address look-alike (`sms:` href), the market-type correction to must-have 4 evidence,
+the "dermatology is a hiring credential in a wealthy market" validation, Meevo and Symplast on the
+platform list, and NYSHIP as a must-have 2 detector. Fetch rules and the eight fetch-failure modes
+from `reference/clinic-sourcing-brief.md`.
+
+Every entry below names its failing must-have by number. Nothing here carries a question for a
+person: each is a decision, with the single check that would reverse it where one exists.
+
+---
+
+## A. Group A recovery candidates that do not qualify
+
+### Skinly Aesthetics — Upper East Side, New York, NY · `skinlyaesthetics.com`
+**FAILS MUST-HAVE 4.** No dated or quantified artifact of any kind on the clinic's own site.
+
+- 157 East 64th Street, 2nd floor, New York, NY 10065. One address; `/location/upper-east-side/`
+  is that one site, not a second.
+- **Must-have 5 PASSES and the September note was right about this one:**
+  `info@skinlyaesthetics.com` was read verbatim as visible text and as a `mailto:` on
+  `https://skinlyaesthetics.com/`, 9 Nov 2026. Nothing obfuscated, no mask, no meta-tag-only case.
+  The address is kept here so the call is reversible.
+- Must-have 1 passes: Botox, Dysport and the full filler range head the menu.
+- Must-have 2 passes, caveat recorded: the only named therapeutic indications are **hyperhidrosis**
+  and **TMJ** (plus Upneeq, arguably a third). That is two to three incidental lines, inside the
+  four-indication threshold, which passes as written. No insurance, Medicare or named scheme
+  anywhere; financing is Cherry and CareCredit, i.e. cash-pay consumer credit. Semaglutide,
+  tirzepatide, BHRT and NAD+ are cash-pay wellness lines with no reimbursement language.
+- **The "Cosmetic Dermatology" label was tested and cleared**, which is the sixth market this
+  shape has been caught in: the clinic calls itself a "Cosmetic Dermatology Clinic" and the page
+  never calls Dr Schwarzburg a dermatologist, lists nothing surgical ("non-surgical" repeatedly),
+  names no mole, lesion or skin-cancer service and bills no insurance. Label, not finding.
+- **Why it fails:** no founding year, no "since", no "established", no "over N years", **no review
+  count**, no star rating, no dated client reviews, no award years, and **no footer copyright year
+  at all**. Press logos (Good Housekeeping, Harper's Bazaar, Forbes) are undated. Dr Schwarzburg is
+  "Ivy League-educated and board-certified" with no career length given, so even the ladder's
+  middle rung is unavailable.
+- **The single check that would release it:** a founding year or a review count on an About or team
+  page. **One search was spent looking for one and bought nothing** — a site-limited search of
+  `skinlyaesthetics.com` for "about us founded year reviews our team" returned ten treatment pages
+  and no About or team page at all. That negative result is itself worth recording: this is a
+  clinic with 40-odd service pages and no page about itself.
+- Textbook instance of the 9 Nov market-type finding: Upper East Side Manhattan, an affluent
+  referral-driven market, and must-have 4 on evidence is the only thing that failed it.
+- Dormant signal is real and would have made a good row: "Join the Exclusive Skinly Club", a $50
+  first-visit credit for subscribers, 0% financing.
+
+### Manhattan Medspa — New York, NY · `manhattan-medspa.com`
+**FAILS MUST-HAVE 5**, and also fails must-have 4.
+
+- 220 Madison Ave. Suite C, New York, NY 10016. One address.
+- **Must-have 5: no email address anywhere on the homepage, in any form** — not visible text, not a
+  `mailto:`, not an `sms:` href, not a meta tag, and not masked or Cloudflare-protected. Simply
+  absent. The only contact routes are "Request an Appointment" and two phone numbers (new patients
+  and existing patients).
+- Must-have 4 also fails: "with years of outstanding service behind us" and no number, no founding
+  year, no review count, no star rating, no dated reviews, a Marie Claire badge with no year, and a
+  bare "© 2026 Manhattan Medspa".
+- Must-have 1 passes (wrinkle relaxers and dermal fillers head the menu). Must-have 3 passes (one
+  site). Must-have 2 passes: Sclerotherapy sits under a "Vein Therapy" heading, and **prominence is
+  explicitly not the test** — varicose veins, venous insufficiency, phlebology and vein disease
+  appear nowhere on the site, and neither does insurance, so the 8 Nov closing rule resolves it in
+  the clinic's favour.
+- **No privacy-policy fetch was spent**, deliberately. The unconditional rule says a silent
+  homepage earns a policy fetch, but must-have 4 fails independently here, so the row would be C
+  with or without an address. Recorded as a judgement, not an omission.
+- **This is the second of the three "grade-C fallbacks with real published emails" to turn out not
+  to have one.** See the note at the end of this file.
+
+### Dr Tass Cosmetic & Skin Clinics — Southbank / Port Melbourne / Ripponlea, VIC · `drtass.com.au`
+**FAILS MUST-HAVE 1 — a surgical arm, on substance rather than on a word.**
+
+- The 24 Sep drop reason was correctly identified as a non-must-have ("bookings are taken by
+  phone"). That reason is dead. The clinic still fails, for a different and better reason.
+- Three Melbourne clinics, so **must-have 3 passes on count**: Crown Spa (Crown Towers L3, 8
+  Whiteman Street, Southbank 3006), 101 Beach Street Port Melbourne 3207, 100 Brighton Road
+  Ripponlea 3185, all on one phone number.
+- **Must-have 5 PASSES and the address is kept here so the call is reversible:**
+  `enquiries@drtass.com.au` was read verbatim as visible footer text and as a `mailto:` on
+  `https://drtass.com.au/contact/`, 9 Nov 2026. A second visible address, `marketing@drtass.com.au`,
+  is published on the same page for PR enquiries.
+- **Must-have 6 would also have passed:** the contact page carries no statement refusing
+  unsolicited commercial email or marketing, and the address is on the clinic's own site, not a
+  directory. Recorded because it was checked, not because it matters now.
+- Must-have 2 was screened and is not the failure: no Medicare, bulk billing, health-fund or
+  insurance language anywhere; "Spider Veins & Capillaries" with no varicose or venous-disease
+  language passes under the 5 Nov vein rule; "Excessive Sweating (Hyperhidrosis)" is one named
+  indication, inside the four-indication threshold.
+- **Why it fails must-have 1.** The navigation carries a top-level **"Surgical"** item, and a
+  site-limited search of `drtass.com.au` resolved it from the result titles alone, for zero
+  fetches: `drtass.com.au/dr-tass-cosmetic-clinics-surgical/` exists, alongside
+  `/treatments/hair-transplant-treatment/`, `/treatments/hair-transplant/` and a published
+  "How Much Does a Hair Transplant Cost in Australia?" guide. **Hair transplantation is excision
+  with closure**, and the 8 Nov ruling is explicit that excision is surgery regardless of what the
+  heading calls it — the converse of the Peterborough case, where cosmetic blemish work passes
+  despite using the words "minor surgery". This is not one line bolted onto an injectables clinic:
+  it is a dedicated surgical section of the business with its own marketing funnel. A second
+  doctor, Dr Vikram Jayaprakash, has his own About page.
+- The decision was close and is recorded as a decision. The counter-argument is real — Dr Tass
+  bills no insurance and carries no disease caseload, which are the two reasons the ICP gives for
+  the surgery and dermatology disqualifications — and if the standard is ever narrowed to a pure
+  billing test, this row comes back with everything else already verified.
+  **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1**
+- Dormant signal, recorded in case the call is revisited: "DR TASS SIGNATURE CLUB", a named
+  subscriber scheme.
+
+---
+
+## B. Group C — the two fetch-failure retries
+
+### The Skin Care Clinic — Hobart, TAS · `theskincareclinic.com.au`
+**FAILS MUST-HAVE 1. The brief's premise for this clinic is wrong: it was never blocked only by a
+fetch failure.**
+
+- The homepage fetched cleanly on 9 Nov 2026, so there is no fetch failure to classify and this is
+  **not** a browser-visit candidate. The blocker is qualification, not tooling.
+- **Injectables are not mentioned anywhere on the site.** The menu is "In Clinic Skin Treatments",
+  "Skin Consultations", "Facial Treatments", "Acne Treatments" and "Cosmetic Therapies". Staff are
+  a "Dermal Therapist" and "trained skin technicians". **No doctor, no nurse, no prescriber is
+  named anywhere** — the only personal name on the page is "Meg", in a customer testimonial.
+- That fails must-have 1 on its own terms rather than on a label: must-have 1 exists because
+  injectables wear off on a three-to-four month cycle, which is what makes a lapsed list worth
+  recalling. A dermal-therapy and retail-skincare clinic has no such cycle. Afterpay and ZIP Pay
+  are the only payment lines; product sales (Osmosis, ZO) are a large part of the business.
+- Must-have 5 also fails: **no email address anywhere on the homepage** in any form, and **no
+  street address either**. September's `/contact/` page was never the only gap.
+- Must-have 4 is unresolved and moot: a meta description claiming "20 years in skin care", no
+  founding year, no review count, no dated reviews, a bare "© 2026".
+- Must-have 6 recorded because it was checked: no statement refusing unsolicited commercial email
+  appears on the homepage.
+- September called it "the best dormant signal in Tasmania" and the loyalty scheme is real —
+  "Loyalty Rewards" / "My Loyalty Rewards" points plus a "Gift E-Certificate". A good dormant
+  signal on a clinic in the wrong business is still the wrong business.
+  **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1**
+
+### Illuminate Skin Clinic — Kings Hill, Kent · `illuminateskinclinic.co.uk`
+**FAILS MUST-HAVE 5 on a fetch failure. GOES ON THE BROWSER-VISIT LIST — see section D.**
+Not a near-miss on the merits; the merits are excellent.
+
+- **The domain was found, and it is not what two earlier runs guessed.** It is
+  `illuminateskinclinic.co.uk` — **"clinic", singular**. A batched `allowed_domains` search on the
+  plural `illuminateskinclinics.co.uk` returned nothing, which is probably why 23 Sep and 9 Nov
+  both ran out of budget on it. One ordinary search found it immediately. Recorded so nobody
+  spends a third run on the guess.
+- Must-have 4 passes outright and strongly: **"Founded by Dr Sophie Shotter in 2014"** plus award
+  years 2015, 2016, 2017 and 2019 including "Aesthetic Award For Best Clinic South 2019". Twelve
+  years of trading, on the clinic's own page, on the ladder's top rung.
+- Must-have 1 passes. Must-have 3 passes: one site, Kings Hill, Kent; Dr Sophie Shotter is
+  "Medical Director and Founder of Illuminate", one decision-maker.
+- Must-have 2 passes: no insurance, no NHS, and no vein, mole, lesion, skin-cancer or surgical line
+  anywhere on the homepage.
+- **Must-have 5 fails on tooling.** No email address on the homepage in any form. `/contact`
+  returns **401** to a fetch (the 23 Sep finding, reproduced). `/privacy-policy` — the exact URL a
+  search returned, not a guessed path — returns **client_error**. So the homepage serves while two
+  subpages refuse an automated agent.
+- **Which failure mode:** an access refusal, the same family as the sixth mode (challenge
+  interstitial) rather than the seventh. **It is NOT mode seven**: no policy was ever read, so no
+  policy nominated an email route and then omitted the address. A 401 is addressed to our fetcher
+  and a person's browser clears it, so this is browser-recoverable and does not belong in
+  near-misses on the merits.
+- Must-have 8 is unresolved: no "Ltd", "Limited", company number or registered name on the
+  homepage, and the policy that would normally carry it could not be read. A UK row cannot be
+  graded without it, so Jess's browser visit should read the footer and the policy together.
+
+---
+
+## C. Group D — the two Long Island hand-overs
+
+### The Sonu Spa — Woodbury, NY · `thesonuspa.com`
+**FAILS MUST-HAVE 5. The one named fetch was spent and the answer is negative.**
+
+- `thesonuspa.com/locations` was fetched on 9 Nov 2026, as the Long Island worker's next action
+  specified. **There is no email address on it in any form** — not visible text, not a `mailto:`,
+  not an `sms:` href, not a meta tag, not masked or protected. The only contact routes are
+  "199 Froehlich Farm Blvd Woodbury, NY 11797", "631-605-PAIN (7246)" / "Tel: 631-605-7246", and a
+  "Join Our List" signup whose "Enter your email here" is a form placeholder, not an address.
+- So the 3 Nov `/contact` exception in its original tested form (silent homepage, no privacy policy
+  anywhere) has now been spent on this clinic through the only URL the close-out search could prove
+  existed, and it **paid nothing**. **That is a second data point against the close-out search as an
+  address finder and the second spend of the widened exception family to return nothing** — add it
+  to the line the brief started on 9 Nov rather than starting a new one.
+- Everything else still clears, which is what makes it worth recording: Dr Seema V. Nambiar, M.D.
+  is the only name and offers free consultations; one site; an entirely cosmetic menu with not one
+  reimbursable line; and must-have 4 passes on "© 2023 Proudly created by Medspa Destinations",
+  three years old and usable under the 8 Nov rule.
+- **New fact from this fetch, worth a sentence:** the page says "We rebranded and relocated!" and
+  its meta descriptions name two former sites — "Saks Fifth Ave at Walt Whitman Mall, Huntington
+  Station, NY" and "Dr. Seema Nambiar's office in Commack, NY". So the single Woodbury address is
+  a consolidation, not a startup, which strengthens must-have 4 on substance. The phone spelling
+  "631-605-PAIN" is a leftover from a previous practice.
+- **The single check that would release it:** a human opening the site and looking for a mailbox
+  the markup does not carry, or a LinkedIn route to Dr Nambiar. **Not a browser-visit candidate on
+  the usual grounds** — nothing is obfuscated or challenged, the page simply has no address — so a
+  browser would be reading the same empty markup. Phone or LinkedIn is the honest route.
+
+### Med Spa of New York · `medspaofnewyork.com`
+**UNRESOLVED on must-have 5. The named fetch failed.** No disposition change.
+
+- `https://medspaofnewyork.com/privacy/` was fetched on 9 Nov 2026 and returned **`client_error`**
+  with nothing retrieved. That is the second bad route on this domain after `/meet-the-team/`,
+  which the Long Island worker recorded the same way.
+- So the fetch that was meant to settle both the market (Nassau/Suffolk versus Manhattan) and the
+  address settled neither. The close-out search had proved `/privacy/` and `/ccpa/` exist, so the
+  domain is live — which is exactly the brief's 8 Nov correction in action: the close-out search is
+  a **URL-existence prover**, and a URL existing is not a URL that will serve a fetch.
+- **Classification:** two different subpages returning client errors to a fetch while the domain
+  resolves is an access-refusal pattern, the same family as Illuminate above. Browser-recoverable
+  in principle, but it is the lowest-value entry in this run — the market is still unestablished
+  and the clinic may be out of the Long Island brief altogether — so it goes here rather than onto
+  the browser-visit list, and the cheapest next move is one search to establish the city before
+  anybody spends another fetch.
+- No must-have can be numbered as failed, because nothing about the clinic has been read.
+  **Recorded as unresolved, not failed.**
+
+---
+
+## D. Belongs on the browser-visit list
+
+These four are **not** near-misses on the merits. Each fails must-have 5 only because the page did
+not ship the characters, and each is recoverable by a person opening it. Added to
+`outputs/pipeline/browser-visit-list.md` is the caller's edit to make; the evidence is here.
+
+### 1. No.6 Clinic — Tunbridge Wells, Kent · `no6clinic.co.uk` — **the best of the four**
+Group E resolved: **must-have 1 PASSES on substance and the September label was wrong.**
+
+- The September rule-out read "beauty-led rather than medical", a bare label with no evidence
+  behind it. Read today, the treatment menu says the opposite. **Injectables are the first and
+  largest category**: "Anti-Wrinkle Injections", "Dermal Fillers", "8 Point Face Lift", "Profhilo",
+  "Polynucleotides (Plinest)", "Sculptra", "Sunekos", "Excessive Sweating". There is **no waxing,
+  no lashes, no nails, no massage and no tanning on the site at all**. Staff are "medical director
+  Dr Natasha Gilani" and a "Nurse manager Samantha".
+- **The label here was the clinic's own trading name** — the site brands itself "NO.6 BEAUTY
+  CLINIC" and is a medical aesthetics clinic. That is the strongest instance of "a label is not a
+  finding" measured so far, because the misleading word was not in a meta description or a heading
+  but in the business's name. Worth adding to the ruling's examples.
+- Must-have 4 passes outright: **"has been an established medical aesthetic clinic for 20 years"**,
+  a years-in-business claim about the business, the ladder's top rung. Dated reviews exist
+  (11/02/2026, 9/04/2026, 8/14/2026) but are all 2026 and add nothing.
+- Must-have 2 passes, and two separate rules did the work: "Red Thread Vein Removal",
+  "Thermavein" and "Vascular IPL" are **named in the brief as cash-pay everywhere we sell**, and
+  "Excessive Sweating" is one named indication, inside the four-indication threshold. No insurance,
+  no NHS anywhere on the page.
+- Must-have 3 passes: one address, Clayfield Mews, Newcomen Road, Tunbridge Wells TN4 9PA; one
+  decision-maker.
+- **Must-have 5 fails: the address is Cloudflare-obfuscated.** The header and footer both render
+  `[email protected]`, linked to a `/cdn-cgi/l/email-protection#` path. **The page did not ship
+  the characters, so the address is NOT SEEN** — and nothing is recorded here. **Our fetch helper
+  did not offer a decode and none was taken.**
+- Must-have 8 unresolved: no "Ltd", "Limited" or company number on the homepage. The footer reads
+  "© No.6 Clinic® 2026", a registered trade mark rather than a company identity. Jess's visit
+  should read the footer and the privacy policy (`/privacy-cookie-policy/`, which exists) for a
+  company name in the same sitting as the mailbox.
+
+### 2. Cosmetic Connection — Toorak, VIC + St Leonards, NSW · `cosmeticconnection.com.au`
+Group A recovery: the 24 Sep drop reason ("gift cards on Square", filed under "no identifiable
+booking system") was never a must-have, and **everything clears except must-have 5.**
+
+- Must-have 3 passes: exactly two clinics, read off `/our-locations/` — "Suite 402/69 Christie
+  Street St Leonards, NSW, 2065" and "Suite 1/59 Ross Street Toorak, VIC, 3142". Described as
+  "Doctor-led aesthetic clinics".
+- Must-have 1 passes emphatically: the menu is **nothing but injectables and facial contouring**,
+  in TGA-compliant language throughout — facial balancing, jaw and masseter slimming, lip
+  volumisation, tear trough, temple volume restoration, non-surgical rhinoplasty, trapezius
+  slimming. Thirty-odd lines and not one of them off-profile.
+- Must-have 2 passes cleanly: **no vein, mole, skin-cancer, dermatology, hair-transplant, weight-loss
+  or surgical line anywhere**, and no Medicare, bulk-billing, health-fund or insurance language on
+  the locations page, the bookings page or the privacy policy.
+- Must-have 4 passes: the footer reads **"©2020-2026 Cosmetic Connection®"** — a copyright **range**
+  starting years ago, which the ICP says is better evidence than either a bare year or a founding
+  claim and is always counted. Six years.
+- **Platform signal came free, from a search result title:** `cconnection.ap.zenoti.com/webstoreNew/`
+  — **Zenoti**, with a real tenant slug, for zero fetches.
+- **Must-have 6 is fully screened and passes, both findings recorded.** The privacy policy was read
+  in full on 9 Nov 2026: **no statement refusing unsolicited commercial email or marketing exists
+  anywhere on it**, and the policy affirmatively says the clinic uses information "for advertising
+  and marketing, including to send you promotional information about our Products and Services".
+  The address, when recovered, will be on the clinic's own domain and not a directory. (Policy
+  "Last update: 31st July 2022"; no ABN or ACN published.)
+- **Must-have 5 fails: Cloudflare obfuscation, found on the privacy policy.** The policy renders
+  `[email protected]` as visible text linked to
+  `https://cosmeticconnection.com.au/cdn-cgi/l/email-protection`. There is **no `mailto:`** and no
+  meta-tag address. The locations page and the bookings page publish **no address in any form** —
+  only the phone numbers 1300 322 346 and a booking form with an "Email Address" field label.
+  **The page did not ship the characters. Nothing recorded. Our helper did not volunteer a decode
+  and none was taken.**
+- This is the strongest Australian profile in the run and the only thing between it and a sendable
+  B is one person opening one page.
+
+### 3. Forte Faces — Conshohocken, PA · `fortefaces.com` — **pipeline row 181**
+- Row 181 recovers on must-haves 1, 2, 3 and 4 (see the run report), **but its must-have 5 evidence
+  no longer holds.** The row records `info@fortefaces.com` as "read off their own page - verified
+  24 Sep 2026". Read today, **the footer renders `[email protected]`, linked to a
+  `cdn-cgi/l/email-protection` path, with no `mailto:` and no plain text anywhere.**
+- Two readings and both point the same way: either the site has added Cloudflare protection since
+  September, or **the 24 Sep read was a helper decode recorded as an ordinary address** — which is
+  exactly what the 4 Nov decode rule exists to catch, and the 24 Sep read predates that rule by six
+  weeks, so nobody would have flagged it. `info@<their-domain>` is also the single most guessable
+  pattern there is.
+- Either way the page does not ship the characters today, so **must-have 5 is unverified and the
+  row must not be promoted to sendable on it.** It holds at C naming **must-have 5**, and the
+  recorded address stays in the row so the call is reversible.
+- Worth the browser visit: **"Based on 147 reviews"** published on the homepage (must-have 4 on the
+  ladder's top rung), one Conshohocken address, Sara McLaughlin MSN AGNP-C described as "Co-Owner"
+  and "co-founder and lead injector", **Boulevard** confirmed at
+  `joinblvd.com/b/forte-faces/widget`, a Memberships page and a $50 welcome offer.
+
+### 4. (Carried, not new) — nothing else from this run
+No CleanTalk mask and no `sms:`-href case was met in this run. Both were looked for on every page
+and neither fired, which is one small negative data point for each of the two newest look-alikes.
+
+---
+
+## E. The brief's own claim about Group A, which was not true
+
+**The near-misses file never recorded an address or a URL for any of the three American Group A
+clinics**, although it twice asserts otherwise.
+
+The 24 Sep section heads them "Three grade-C fallbacks with **real published emails**", the 9 Nov
+re-read says "All three **already have published addresses recorded**", and the section-4 summary
+repeats "They have addresses recorded already." Grepped and read in place on 9 Nov 2026: the file
+contains, for Aesthé By MD, Manhattan Medspa and Skinly Aesthetics, **no email address, no domain
+and no URL** — only the clinic names, a site count or a membership note, and the assertion.
+
+Measured outcome of the three one-fetch recoveries that assertion promised:
+
+| Clinic | Address actually published? | Outcome |
+|---|---|---|
+| Aesthé By MD / Osphere Med Aesthetics | **Yes** — two, one per brand | Sendable B (new row) |
+| Skinly Aesthetics | **Yes** — visible text and `mailto:` | C on **must-have 4** |
+| Manhattan Medspa | **No** — none on the homepage in any form | C on **must-have 5** |
+
+So the claim was two-thirds true as a statement about the clinics and **entirely untrue as a
+statement about the file** — and the difference matters, because the promised cost was one fetch
+each and the real cost was a search to find each domain plus one to three fetches. Both Australian
+Group A entries behaved the same way: names and suburbs recorded, no domain, no address.
+
+**The general form, which is the part worth keeping:** a near-miss entry that says a clinic has a
+published address without printing the address is not a recoverable lead, it is a lead that has to
+be re-found. The fix is mechanical — **print the address and the URL in the entry, or do not claim
+one exists.** Every entry in this file prints what it found.

@@ -276,6 +276,21 @@ note: nothing surgical, nothing insurance-billed, injectables listed first and l
 test applies in reverse — row 27 fails honestly on nine consultant surgeons across three sites with
 a surgical menu, which is substance and not a word.
 
+**AND THE RULE HAS A MIRROR IMAGE THAT COST US TWO ROWS' WORTH OF FALSE HOPE — 9 Nov 2026.**
+"A label is not a finding" says a row parked on a bare noun is unscreened rather than failed. The
+mirror is: **a row whose PARKED REASON has been checked and dismissed is also unscreened — it is
+not thereby passed.** On 8 Nov a batch note declared of nine "single-operator" rows that "no
+must-have has been shown to fail". That was wrong on two of them, and wrong the same way both
+times: **the note audited the parked reason and never read the menu.** Row 201 turned out to carry
+a full surgical menu — rhinoplasty, facelift, breast augmentation, tummy tuck, liposuction — with
+two FRCSC plastic surgeons and "2,500+ rhinoplasties", and is now disqualified on must-have 1. Row
+202's recorded website was a different business altogether.
+
+**So "parked on nothing" and "qualified" are different claims, and only the second needs the menu
+read.** Both halves of this are the same error: **deciding a must-have from metadata about the row
+rather than from the clinic's own page.** A retired rule tells you the old reason is void; it tells
+you nothing about whether a current rule fails.
+
 **The general rule behind all three: extract the substance, not the word.** Whenever a row is
 parked on a single noun — "dermatology", "veins", "moles", "surgery", "chain", "consent-risk" —
 the question to ask is what was actually *seen*, and if the answer is nothing, the must-have is
@@ -713,6 +728,53 @@ before picking a market so the same ground is not covered twice.
   never as our result.
 - Every cold email carries a working unsubscribe and WILBA's business address. Opt-outs
   actioned within 5 business days.
+
+**WHERE THE COPY RULES BITE, AND WHERE THEY DO NOT — settled 9 Nov 2026 after a scan that was
+overdue.** The validator has checked `opening_angle` for medicine names and prices since it was
+written, and has honestly reported zero for days. **It reads one field.** A recovery worker found
+`$11-a-unit tox` sitting in `dormant_lead_signal`, and a scan of every column of every row then
+found **70 sendable rows with a price in that field and 16 with a medicine name**, plus 286 with a
+medicine name in `services`.
+
+**Almost none of that is a breach, and this is the distinction to hold.** The copy rules govern
+what we **SEND**. `services`, `notes` and `scale_signals` record what a clinic sells and what it
+published — "Injectables/threads/fillers/skin" is a true research note, and rewriting it would
+destroy the asset for no gain. **More than that: most of the `dormant_lead_signal` hits are the
+clinic's own PROPER NOUNS** — a "Botox Bank", a "Monthly TOX Club", "Bevara Bucks". That is the
+programme's actual name, it is the most precise thing we know about the row, and it is exactly what
+identifies the scheme on a call. **None of these rows was rewritten and none should be.**
+
+**The real exposure is narrow, and it is at the DRAFTING end rather than the sourcing end.**
+`dormant_lead_signal` is the field an opener gets built from, so a drafter reading "a Botox Bank
+that adds 5 units" may write "your Botox Bank" into the email — because it is the clinic's own word
+and it reads as personal. That is the trap, and it is one step away from a breach rather than being
+one. **The rule: name the MECHANISM, never the clinic's brand for it.** "Your banked treatment
+credit", "the credit your members have sitting unused" — which is better copy anyway, because it
+describes the thing the owner cares about instead of parroting their own marketing back at them.
+The same goes for a published price: the fact that a scheme costs $99 a month is useful to us and
+must never appear in the email.
+
+**So the validator now prints both counts as a HANDOVER WARNING, not a rejection** — "a true
+record, NOT to be quoted" — and the drafting channel has been told directly, because it is the only
+place the mistake could actually ship from.
+
+**AND THE SAME SCAN CAUGHT A SECOND, SHARPER VERSION OF THE PROBLEM THE SAME NIGHT — one I had
+just created.** Recovering rows 166 and 298 from C to B immediately put two copy breaches into the
+sendable set: 166's opener named a prescription category and a published price, 298's quoted a
+discount figure. **Both had been sitting in the file for weeks and neither had ever been reported,
+because the copy audit reads SENDABLE rows only.** While a row is parked at C its opener is invisible
+to every check we run.
+
+**So every C-to-B recovery is an unaudited promotion**, and recoveries are something this project
+does deliberately and in bulk — eight of them that night. **The rule: a row promoted into the
+sendable set gets its opener re-read as if it were new, because for every check we own, it is.**
+Both were rewritten to keep the mechanism and drop the clinic's own figure, which is the paraphrase
+rule above applied to copy that already existed.
+
+**This is the eighth or ninth time the same shape has bitten: a check scoped to where the problem
+usually is will not see it where it actually survives.** The whole-file sweep, the parked-row
+deferred-decision audit, and now the promotion case are all the same lesson. **When adding a check,
+ask what state a row has to be in to escape it.**
 
 ## What we record
 

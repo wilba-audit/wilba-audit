@@ -13,11 +13,13 @@ without the repo.
 
 ## 9 Nov 2026 — two affluent suburbs, and a correction corrected within a day
 
-**Rows: 48 appended — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY and
+**Rows: 49 appended, plus 9 existing rows recovered and 1 repaired — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY and
 Fairfield County CT, 16 rows: 2 A, 10 B, 4 C), 1127-1143 (Long Island, Nassau and Suffolk, 17 rows:
 1 A, 9 B, 7 C) and 1144-1158 (northern New Jersey, 15 rows: 1 A, 8 B, 6 C).** Pipeline **1,158
-rows, 785 ready to approach** — US 400, AU 169, CA 87, UK 85, NZ 42, IE 2. Browser-visit list up to **117 clinics**. A recovery pass over
-rows parked under abolished rules was still running when this was written.
+rows, 795 ready to approach** — US 409, AU 169, CA 88, UK 85, NZ 42, IE 2. Browser-visit list up
+to **121 clinics**. **A fourth pass recovered nine rows parked under abolished rules and found
+three false claims in our own files** — see the recovery entry below; it is the most valuable run of
+the day despite producing one new row.
 
 **THE DAY'S FINDING, and it overturns something written yesterday.** On 8 Nov this file recorded
 that Britain's zero-grade-A problem is "a publishing habit rather than a business fact" — a
@@ -140,6 +142,110 @@ own near-misses file says House of Ness fails must-have 3 regardless and files i
 The file was right and two were added. **This keeps happening because a report is written from
 memory of the run and the file is written during it** — so where the two disagree, the file wins,
 and the count worth recording is the one you can measure afterwards.
+
+**THE RECOVERY PASS, AND IT IS THE MOST VALUABLE RUN OF THE DAY DESPITE PRODUCING ONE NEW ROW.**
+It was sent to re-read rows parked under rules ICP v2 abolished. Result: **nine rows recovered
+(220 to A; 198, 166, 182, 237, 252, 298, 238 and the repaired 202 to B), one disqualified outright
+(201), five held at C with the must-have numbered, and one new row (1159).** But its real output
+was **three false claims in our own files, two of which I had propagated myself.**
+
+**1. The file promised addresses it never held, and three generations of us believed it.** A
+September near-miss heading reads "Three grade-C fallbacks with **real published emails**". **No
+email, domain or URL for any of the three was ever written down anywhere in the file.** The 9 Nov
+re-read worker read that heading, believed it, and promoted it into the standing list as "all three
+already have published addresses recorded". **I read the standing list and copied it into the brief
+commissioning the recovery run, as a specification.** The promised cost was one fetch each; the real
+cost was a domain search plus one to three fetches per clinic, and **Manhattan Medspa publishes no
+address at all.** Nobody in that chain was careless — the root was a heading with no data under it,
+and it took a fourth worker grepping the file in situ to find the claim had never had a source.
+**The rule now in the brief: a near-miss entry that CLAIMS an address exists must CONTAIN the
+address and the URL it was read from, exactly as a pipeline row does. An entry that asserts one
+without showing it has not made the claim.** This is the second time in two days that a
+second-hand claim in a brief has propagated in a way the same claim in a row would not; the
+difference is that this one was third-hand and I was the third link.
+
+**2. The copy audit has been reporting zero every night while reading one field.** The worker found
+`$11-a-unit tox` in a `dormant_lead_signal`. A scan of every column then found **70 sendable rows
+with a price in that field and 16 with a medicine name**, plus 286 with a medicine name in
+`services`. **Almost none of it is a breach, and the distinction is the finding**: the copy rules
+govern what we SEND, and `services` and `notes` legitimately record what a clinic sells. Most of
+the `dormant_lead_signal` hits are the clinic's **own proper nouns** — a "Botox Bank", a "Monthly
+TOX Club", "Bevara Bucks". That is the programme's real name and the most precise thing we know
+about the row. **Nothing was rewritten.** The exposure is at the drafting end: a drafter reading
+"a Botox Bank" may write "your Botox Bank" into an email because it reads as personal. **The rule:
+name the mechanism, never the clinic's brand for it** — "the credit your members have sitting
+unused" is better copy anyway. The validator now prints it as a handover warning, and the drafting
+channel has been told directly.
+
+**3. And the same scan caught a sharper version the same night — one I had just created.**
+Recovering 166 and 298 from C to B put two copy breaches straight into the sendable set: 166's
+opener named a prescription category and a published price, 298's quoted a discount figure. Both had
+sat in the file for weeks unreported, **because the copy audit reads sendable rows only.** While a
+row is parked at C its opener is invisible to every check we run. **So every C-to-B recovery is an
+unaudited promotion** — and this project does recoveries deliberately and in bulk, eight of them
+that night. Both were rewritten to keep the mechanism and drop the figure. **This is the eighth or
+ninth time the same shape has bitten, and it is worth stating as a rule for writing checks: ask
+what state a row has to be in to escape the check you are adding.**
+
+**A ruling came out of the disqualification, and it is the mirror of "a label is not a finding".**
+The 8 Nov batch note declared of nine single-operator rows that "no must-have has been shown to
+fail". Wrong on two, the same way both times: **it audited the parked REASON and never read the
+MENU.** Row 201 carries a full surgical menu with two FRCSC plastic surgeons and "2,500+
+rhinoplasties"; row 202's recorded website was a different business entirely. **"Parked on nothing"
+and "qualified" are different claims, and only the second needs the menu read.** Both halves are
+the same error — deciding a must-have from metadata about the row rather than from the clinic's own
+page.
+
+**Row 202 was repaired in place rather than superseded, and the validator decided it.** The worker
+offered the real Calgary cosmetic clinic as a new row and flagged the choice; the duplicate check
+refused it on the clinic name, **and the check was right** — the NAME was always correct, and only
+the website, email and city had been attached to the wrong business (`preventous.com` is Preventous
+Collaborative Health, a preventive-medicine clinic with a Corporate Health arm, which fails
+must-have 1 and raises must-have 2 independently). Repairing it keeps one row where one clinic
+exists.
+
+**Two contradictory standing readings of the same clinic were found in the file, both written in
+the same pass**, one saying No.6 Clinic "should stay out" and one calling it "worth one look". The
+second was right: it is now the **strongest instance of the label rule we have, because the
+misleading word was the business's own trading name** — "NO.6 BEAUTY CLINIC" is a medical
+aesthetics clinic with no beauty-salon service anywhere on its site. It is on the browser-visit
+list, blocked only by Cloudflare, with must-have 8 closing in the same page-open.
+
+**Also corrected: a browser candidate that was never a tooling problem, and a domain we had
+misspelled for weeks.** The Skin Care Clinic Hobart was listed as "blocked only by a fetch
+failure"; its homepage fetched cleanly and it **fails must-have 1 on substance** — no injectables
+anywhere, staff are a dermal therapist and skin technicians, no prescriber named. And Illuminate's
+domain is `illuminateskinclinic.co.uk`, **singular**: the plural spelling in our file returns
+nothing, which is almost certainly why two separate runs recorded "ran out of search budget" on it.
+
+**One row is now flagged as possibly carrying a decoded address from before the rule existed.**
+Row 181's footer renders a Cloudflare placeholder with no `mailto:` and no plain text, yet the file
+holds an ordinary-looking `info@` address read on 24 Sep — six weeks before the 4 Nov decode rule,
+in the most guessable pattern there is. Either Cloudflare was added since, or the September read was
+a helper decode nobody would have flagged. Held at C, address kept so the call is reversible, not
+to be sent on, and on the browser-visit list. **Worth asking how many other September rows share
+that shape.**
+
+**Conventions this run measured.** Confirmed: a site-limited search resolving a bare name from
+result titles for zero fetches (it decided Dr Tass outright); the close-out search as a
+URL-existence prover and not an address finder, twice more; must-have 4 as the binding constraint
+in affluent markets, a fourth time; the label rule, twice more. Extended: the widened `/contact`
+exception has now been spent twice in one day and **paid nothing both times**. One caveat added to
+batched domain guessing: **a wrong guess is invisible** — it returns nothing rather than a near
+miss, so a short batch has not proved the clinics have no site. That is exactly how Illuminate was
+lost.
+
+**Group F was not opened, and the reason is worth carrying:** six AU/NZ single operators have no
+domain recorded either — the same gap as the three American clinics — so each costs a domain search
+plus fetches plus the AU/NZ consent screen. **It needs its own search-weighted run** (roughly 8
+searches to 12 fetches) briefed to expect a name, a suburb and nothing else.
+
+**The one call worth a second opinion**, recorded by the worker rather than hidden: it failed Dr
+Tass on must-have 1 for a dedicated surgical section plus in-house hair transplantation, against a
+real counter-argument that the clinic bills no insurance and carries no disease caseload — which
+are the two reasons the ICP actually gives for the surgery disqualification. Everything else on it
+is verified. **If that standard is ever narrowed to a pure billing test, Dr Tass comes straight
+back**, and the counter-argument is recorded in its entry so the reversal is cheap.
 
 **One housekeeping failure found and fixed.** The address look-alike list lives in three files, and
 the copy in the brief had been **one item shorter than the canonical list in `ICP.md` for weeks** —
@@ -730,16 +836,24 @@ because a re-fetch of its locations page confirms three sites, inside v2's one-t
 dead on must-have 5, which was re-confirmed, and its September recommendation is withdrawn. What is
 left of this seam:
 
-- **The richest thing left is not a single-operator case — it is the same bug one rule over.**
-  **Aesthé By MD, Manhattan Medspa and Skinly Aesthetics** (24 Sep US Northeast, "three grade-C
-  fallbacks with real published emails") are recorded as failing *only* on naming a booking
-  platform, which was never a must-have. Addresses already in hand, no regional screen, one fetch
-  each. Same shape in Australia: **Dr Tass Cosmetic & Skin Clinics** and **Cosmetic Connection**,
-  both dropped for "no identifiable booking system".
+- ~~**The richest thing left is not a single-operator case — it is the same bug one rule over.**
+  **Aesthé By MD, Manhattan Medspa and Skinly Aesthetics**... Addresses already in hand, one fetch
+  each. Same shape in Australia: **Dr Tass** and **Cosmetic Connection**.~~ **[DONE 9 Nov 2026, AND
+  THE "addresses already in hand" CLAIM WAS FALSE — no address was ever recorded for any of the
+  three; see the recovery entry. Outcome: Aesthé By MD is now row 1159 (trading as Osphere, four
+  studios not three, and checked specifically for being an acquirer — it is not). Manhattan Medspa
+  publishes no address at all. Skinly is a near-miss on must-have 4. Dr Tass FAILED on must-have 1
+  for a surgical section plus in-house hair transplantation, with the counter-argument recorded so
+  the call is cheap to reverse. Cosmetic Connection is one Cloudflare page from sendable and is on
+  the browser-visit list with its consent screen already passed.]**
 - **Six AU/NZ single operators, never opened:** DC Aesthetics, Newcastle Cosmetic Doctor, Coastal
   Skin & Laser (Tewantin), Dr Sarah Sparks, Hobart Facial Aesthetics, Sapphire Appearance Medicine.
   Each needs the must-have 6 consent screen as well as an address, so they are dearer than the
-  American three. (Dr Terrence Scamp, listed beside them, is a plastic surgeon and is *disqualified*
+  American three. **STILL OPEN after the 9 Nov recovery pass, which ran out of SEARCHES rather
+  than fetches and left this group untouched. The reason matters: none of the six has a domain
+  recorded either — the same gap that made the American three cost five times their estimate. So
+  this needs its own SEARCH-WEIGHTED run, roughly 8 searches to 12 fetches, briefed to expect a
+  name, a suburb and nothing else.** It is the clearest-defined job left on this list. (Dr Terrence Scamp, listed beside them, is a plastic surgeon and is *disqualified*
   under v2 — the reversal loses him rather than recovering him.)
 - **Two blocked only by a fetch failure, both v2 targets on profile:** Illuminate Skin Clinics
   (Dr Sophie Shotter — contact page 401) and The Skin Care Clinic, Hobart (/contact/ unfetchable,
@@ -897,9 +1011,9 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 9 Nov 2026: **1,158 rows, 785 ready to approach** — US 400, AU 169, CA 87, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
+As of 9 Nov 2026: **1,159 rows, 795 ready to approach** — US 409, AU 169, CA 88, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
 20 Oct, 1,045 rows and 707 ready on 5 Nov, and 1,104 rows and 748 ready on 8 Nov.) A further
-**115 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+**121 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
 page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
@@ -910,7 +1024,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 785 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 795 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 

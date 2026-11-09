@@ -49,6 +49,18 @@ publication screen, and the UK and Irish company-identity screen.
 fetched page content, and put the URL and the date in `email_source`. `info@<their-domain>`
 that you did not actually read on a page is a fabrication even when it is probably right.
 
+**AN ENTRY THAT CLAIMS AN ADDRESS MUST CONTAIN THE ADDRESS. Added 9 Nov 2026, and it is the
+rule with the largest measured cost behind it.** A September near-miss heading read "Three grade-C
+fallbacks with real published emails" and **no email, domain or URL for any of the three was ever
+written down.** A re-read worker believed the heading and promoted it into the standing list; the
+standing list went into a brief as a specification; a recovery run was commissioned to spend "one
+fetch each" and spent a domain search plus one to three fetches per clinic to discover that one of
+the three publishes no address at all. **Three generations of good-faith trust on a heading with no
+data under it.** So: when writing a near-miss entry, **print the address and the URL you read it
+from, exactly as a pipeline row does** — and when reading one, **an entry that asserts a published
+address without showing it has not made the claim.** Treat it as unknown, and budget a domain
+search before any fetch.
+
 Seven things look like a published address and are not. None goes in the pipeline, and only one
 of the seven (the obfuscated-visible case) is even a recovery problem a browser could solve.
 **This list and the one in `ICP.md` were different lengths until 9 Nov 2026** — the owner's-own-typo
