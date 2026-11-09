@@ -477,8 +477,15 @@ from opposite ends of the file. The named, unstarted work:
 - **It cuts both ways and the re-read must do both.** September's *positive* near-misses — Quinn,
   Elanic, EF Medispa, CJA — now fail must-have 3 on the scale that recommended them. Anyone doing
   this job marks those as disqualified in the same pass, or the file is left more wrong than before.
-- **Two British rows are ONE REGISTER CALL each from a B: 655 (search "Pasapula", a distinctive
-  surname the row names itself) and 1038.** Nothing else blocks either.
+- ~~Two British rows are one register call each from a B: 655 and 1038.~~ **WRONG, and tested
+  on 9 Nov 2026 rather than left on the list looking attractive. Both calls are spent and neither
+  produced a B.** For 1038 the quoted search for "Elm Skin" returns zero companies, so must-have 8
+  now FAILS rather than being unchecked — the clinic trades under a name unrelated to its brand or
+  through no company at all, and no further search settles that. For 655, "Pasapula" returns zero
+  companies and a quoted search on its trading name returned 9,016 matches containing the phrase
+  nowhere, so must-have 8 stays unresolved with the cheap route gone. **Do not spend another
+  register call on either.** The lesson is the one worth keeping: a cheap-looking standing item is
+  worth spending to disprove, because otherwise it keeps getting promised.
 
 **THE CHEAPEST QUALIFIED ROWS LEFT IN THIS FILE ARE ALREADY IN IT — added 8 Nov 2026.** The
 parked-reason sweep done today read all 152 parked rows that carried no numbered must-have, and

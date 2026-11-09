@@ -153,6 +153,23 @@ a pass to anyone matching on the two words this file used. Read it as **"dissolv
 liquidation, or otherwise not currently active"**, and pass `companyStatus=active` on the search
 rather than filtering by eye.
 
+**A TECHNIQUE THAT HALF WORKS, AND THE RULE THAT MAKES IT SAFE: QUOTE THE PHRASE, THEN READ THE
+MATCH COUNT BEFORE YOU READ THE RESULTS. Measured 9 Nov 2026 on three searches.** Quoting a company
+name on the public search sometimes forces a phrase match and sometimes silently falls back to
+OR-ing the words, and **the match count is the only tell**:
+
+- `"Imogen's Aesthetics"` returned **1** — the phrase search engaged, and the one hit matched a
+  company number already known from another route, so the technique is sound when it engages.
+- `"Elm Skin"` returned **0**, where the same words unquoted returned 10,000. A fallback would have
+  returned ten thousand again, so the zero is real: no company of that name exists.
+- `"UK Cosmetic Clinic"` returned **9,016**, and not one result on the first page contained the
+  phrase. The search ignored the quotes entirely.
+
+**So: a count of zero or a handful means the phrase search did what you asked and you may trust it.
+A count in the thousands means it fell back and you have learned NOTHING — do not read those
+results, and do not spend a second call paging through them.** This is the same failure family as
+the officer search's 10,000 matches, and the count is the signal in both.
+
 **THREE MORE COMPANIES HOUSE FAULTS, found 8 Nov 2026, and two of them cost rows.**
 **A `registeredOfficeAddress` town search gives the REGISTERED OFFICE town, not the trading town** —
 it mis-located two of five named leads in one run, including one clinic that turned out to be in
