@@ -281,6 +281,25 @@ parked on a single noun — "dermatology", "veins", "moles", "surgery", "chain",
 the question to ask is what was actually *seen*, and if the answer is nothing, the must-have is
 unscreened rather than failed.
 
+**THE RULE PAID FOR ITSELF WITHIN A DAY, AND THE REASON IT DID IS WORTH MORE THAN THE RULE.
+Measured 9 Nov 2026, Westchester and Fairfield County.** The label test fired **five times in one
+sweep and cleared the clinic all five times** — five clinics whose copy carried "dermatology", none
+of which was a dermatology practice on the evidence. A rule that fires five times and reverses the
+default five times is not a tie-breaker; it is correcting a systematic misread.
+
+**Why, and this is the part that generalises: in an affluent suburb "dermatology" is a HIRING
+CREDENTIAL, not a business model.** A cash-pay injectables clinic in Scarsdale or New Canaan
+advertises that a board-certified dermatologist oversees its injectors, because that is what its
+patients are buying. The word is on the page to describe **who works there**, not what the
+business bills for. The old reading inverted exactly the clinics whose credentialing was
+strongest — and those are the clinics most likely to be worth writing to.
+
+**So the operational line: in a wealthy market, treat the word "dermatology" as evidence ABOUT
+STAFF until an insurance line, a surgical menu or a named diagnostic service says otherwise.**
+Read the treatment menu and the billing language; the noun on its own tells you nothing about
+either. Fifth market this shape has been caught in, and the first where it was the dominant
+error rather than an edge case.
+
 **The same mechanical problem has moved to MOLES AND LESIONS, and it is settled here on the vein
 precedent, 5 Nov 2026.** The vein narrowing worked and rescued four British clinics in one sweep,
 and then the identical ambiguity turned up one line down the menu. So, the same shape:
@@ -374,10 +393,15 @@ RMT / acupuncture / naturopathy arm **receipted to private extended-health plans
 OHIP, so it passes a literal reading of "no Medicare billing", and it still fails what must-have
 2 is for: the practice has a non-discretionary, third-party-reimbursed revenue stream, so its
 patient list is not a list of people spending their own money by choice. Park it as a must-have 2
-failure and say which kind. **Must-have 2 was the only must-have that failed anything in that
+failure and say which kind. **A NAMED INSURANCE SCHEME ON THE TREATMENT MENU IS THE
+CHEAPEST MUST-HAVE 2 FAILURE THERE IS — added 9 Nov 2026.** One Long Island clinic prints
+"Medical Massage/**NYSHIP**" — the New York State Health Insurance Program — on its own service
+list. That is must-have 2 decided for **zero policy fetches**, off the page you were already
+reading. So when scanning a menu for must-have 1, read it for scheme acronyms too: a named
+public or group scheme beside a service line is a reimbursed revenue stream admitting itself. **Must-have 2 was the only must-have that failed anything in that
 market** — every one of the seven C rows, nothing else.
 
-**Six things that look like a published address and are not.** A website-builder
+**Seven things that look like a published address and are not.** A website-builder
 placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`). An address
 shipped inside a directory site's QR code image, which is directory data rather than
 something the clinic published. An address served in a page's Open Graph meta tags
@@ -392,15 +416,26 @@ And, added 3 Nov 2026, a **sixth: an address that exists only in the clinic's ow
 This is distinct from the Open Graph case, where a visible address existed and was merely
 obfuscated. Here nothing is visible anywhere: pipeline row 103 serves `info@` and `manager@` on
 its own domain in meta tags, while its contact page shows a form and two street addresses and no
-mailbox. It is the most tempting of the six, because the domain is right and the mailbox is
+mailbox. It is the most tempting of the seven, because the domain is right and the mailbox is
 probably live. **Must-haves 5, 6 and 7 rest on conspicuous publication, and a string a visitor
 cannot see was not published to people** — the same answer we gave Cloudflare obfuscation on
 2 Nov, for the same reason. Park the row with must-have 5 named, keep the address in it so the
 call is reversible, and do not send.
 
-None of the six may be recorded as a published address. The first four are not recoverable by
+None of the seven may be recorded as a published address. The first four are not recoverable by
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
 whether the clinic published anything.
+
+And, added 9 Nov 2026 from Westchester, a **seventh: a gmail published only inside an `sms:`
+href.** The page's "text us" button carries `sms:+1...&body=...` and the clinic's gmail appears
+inside that href's query string, so the string IS in the visible page's markup and a fetch reports
+it as found. **But a visitor cannot email from it.** Clicking the button opens a text message, not
+a mail composer, and nothing on the rendered page invites anyone to write to that mailbox. That
+makes it functionally identical to the meta-tag case: the address exists in the HTML and was not
+published *to people*. Same answer, same reason — park on must-have 5, keep the address in the row
+so the call is reversible, do not send. **The general form, worth more than the instance: ask what
+a visitor could DO with the string, not whether the string is in the page.** A grep over markup
+cannot tell these apart, which is why must-have 5 is a reading task and not a search task.
 
 **A GENERIC INDUSTRY DOMAIN IS NOT THE CLINIC'S OWN. Settled 5 Nov 2026, and settled here
 rather than asked of Jess, because it is a qualification question and she should never have to
@@ -430,7 +465,7 @@ third-party page, park it on must-have 5.** Clara is parked.
 
 **The general form, which is the part worth keeping:** the test for must-have 5 is never what the
 address looks like. It is *where it was published* and *who receives mail sent to it*. Every
-member of the six-item look-alike list below is really one of those two questions.
+member of the seven-item look-alike list below is really one of those two questions.
 
 **A privacy promise about what the clinic SENDS is not a refusal to RECEIVE. Found 4 Nov 2026,
 and it nearly cost the best row in a sweep.** Bradford Skin Clinic prints, on its homepage and its
@@ -507,6 +542,13 @@ Flag it in `notes` so a bounce is read as a bounce and not as disinterest.
   Mangomint
   - **Collums and PowerDiary added 8 Nov 2026** from the British sweep, which also confirmed
     Aesthetic Nurse Software as the commonest UK independent platform for a third time.
+  - **Meevo and Symplast added 9 Nov 2026** from Long Island, each seen with a real tenant ID
+    rather than a logo. **Meevo is the stronger evidence of the two by some distance**: it serves
+    the diary, gift cards AND memberships from one tenant, so seeing it is seeing a queryable
+    patient list and a dormant-credit mechanism in one observation. Seen twice there.
+    **`elyonhq.com` (Elyon) is NOT on the list and should not be treated as a named system yet** —
+    seen once, nothing known about what it does. Record the string in `notes`, do not grade on it,
+    and if a second sweep meets it, that is the point to decide.
   - **PODIUM IS DELIBERATELY NOT ON THIS LIST, decided 8 Nov 2026** on the Seattle worker's
     reasoning, which is right: it is a messaging-and-reviews product with booking bolted on, so it
     is materially weaker evidence that a queryable patient list exists. Seeing Podium is not seeing
@@ -535,6 +577,57 @@ is not the dormant signal that is absent in Britain, it is the quantified review
 clinics are busy and well reviewed and simply do not print the number**, which is a publishing habit
 rather than a business fact, and it collides with must-have 4's evidence ladder. Do not read a
 British zero-A run as a weak market, and do not pad a row to A to fix it.
+
+**AND THAT CORRECTION IS ITSELF CORRECTED, 9 Nov 2026 — ONE DAY LATER, BY AN AMERICAN
+MEASUREMENT. IT IS NOT A BRITISH PUBLISHING HABIT. IT IS A MARKET-TYPE EFFECT.** Yesterday's
+sentence above blamed a national habit, which was the natural reading when every measurement came
+from Britain. A Westchester / Fairfield County sweep — rich American suburbs, nothing British about
+them — found the identical pattern independently: **only 3 of 28 clinics published a dated artifact
+about the business at all**, and must-have 4 on *evidence* was what failed the rest. Two
+measurements in two countries with one shape between them is a market-type effect, not a
+nationality.
+
+**The shape: the richer and more referral-driven the market, the less its clinics publish about
+themselves.** A clinic whose chairs fill on word of mouth in an affluent suburb has no reason to
+print a review count, a "serving X since Y", a patient number or a dated milestone. A clinic
+competing on visibility in a mid-market metro prints all four, because it must. **So the evidence
+ladder reads marketing effort and calls it trading history.**
+
+**The structural consequence, which is uncomfortable and should stay written down: must-have 4's
+ladder systematically parks good clinics in exactly the markets this offer most wants.** Affluent,
+owner-operated, cash-pay, dormant-list-rich — the ICP's own profile — is the profile least likely
+to clear the ladder's evidence bar. Every near-A row lost this way is a clinic we would have been
+glad to write to.
+
+**What this does NOT license: inventing evidence, or padding a row to A.** The ladder stays as it
+is and the grades stay honest; a C parked on must-have 4 evidence is still a C today.
+**What it DOES change is how a run is read and what is worth one more fetch.** A sweep of an
+affluent suburb reporting a thin grade mix has probably found good clinics and a stingy market, so
+report the market type alongside the mix; and where a row is otherwise strong and the ONLY gap is
+a quantified artifact, that is the single highest-yield fetch left on the row, because the trading
+history almost certainly exists and simply was never printed on the page you read.
+**The open question, for whoever has a day to spend on it rather than a run to finish:
+is a ladder that measures marketing effort the right ladder for must-have 4 at all?**
+Flagged, not answered, and not changed unilaterally — it is a scoring change and it would
+re-grade the whole file.
+
+**A THIRD MEASUREMENT, THE SAME DAY, FROM A THIRD AFFLUENT SUBURB. Long Island, 9 Nov 2026.**
+Six of its seven C rows are C on must-have 4 **alone** — nothing else failed them — and **only 2
+of 24 businesses published a founding year.** Britain, Fairfield County, Nassau/Suffolk: three
+measurements, three countries-or-coasts, one shape. Must-have 4 on evidence is now the **binding
+constraint** in affluent referral-driven markets, ahead of must-have 2 and must-have 5, and that
+should be the expectation a worker carries INTO such a market rather than a surprise it reports
+out of one.
+
+**And the way that third measurement arrived is itself the finding.** The Long Island worker
+reached independently for the retired explanation — it wrote "a publishing habit, not a business
+fact", the exact framing corrected a few hours earlier — because **it was commissioned before the
+correction existed.** Nobody was careless. This is the 8 Nov lesson arriving from the other
+direction: **a rule change reaches the run that makes it and nothing already in flight.** A worker
+dispatched in the morning is reasoning from the morning's file however good it is, so its
+conclusions have to be read against the brief it actually held, not the file as it now stands —
+and a mid-run correction to a live convention is worth messaging to the workers already out, not
+just writing down for the next ones.
 
 **The consequence to hold onto: a grade is not comparable across markets.** A British B and an
 Arizonan B are not the same row, and a run that reports "no grade A" may have found the best

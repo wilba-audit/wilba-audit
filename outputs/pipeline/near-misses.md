@@ -9,17 +9,28 @@ obfuscate their email with Cloudflare, which means the address *is* on the page
 and readable in a normal browser — it just cannot be read by a fetch. If Jess
 opens the page herself she can read it off and we will add them to the pipeline.
 
+> **THE 23-24 SEPTEMBER SECTIONS HAVE NOW BEEN RE-READ UNDER ICP v2 - 9 Nov 2026.** They were
+> written under the retired 22 Sep standard, where scale was a virtue and a single operator was a
+> reason to rule a clinic out. v2 reversed both on 16 Oct. Seven named single-operator clinics plus
+> two American judgement calls were re-qualified, and **six became pipeline rows 1105-1110**:
+> Essence Medical (Glasgow), Craig Hobson Aesthetics (Bristol, grade A), Sussex Aesthetics
+> (Crawley), Aesthetic KLINIK (Brighton), Dr Liesel Holler (Bromley) and Skin 101 Houston. The same
+> flip **disqualified twenty-five of September's *positive* near-misses**, which are marked inline
+> below as `DISQUALIFIED UNDER ICP v2` with the failing must-have numbered. **Do not re-source a
+> marked clinic as promising.** A clinic in these tables carrying no marker and no correction is
+> still a near-miss on must-have 5 only.
+
 ## Found 23 Sep 2026 (London / South East sweep)
 
 | Clinic | Why it qualifies | Why we can't email |
 |---|---|---|
-| EF MEDISPA | Three London sites (Kensington, Chelsea, St John's Wood), complimentary consultations, "EF Loyalty Points", own booking portal | No email published anywhere on the site. Phone 0207 361 1000 |
-| CJA Aesthetics | Six sites (Southampton, Winchester, Portsmouth + 3), Semble booking, two membership tiers, Dr Chris Airey & Dr Lauren Airey | Cloudflare-obfuscated on every page. Phone 023 8033 2429 |
+| EF MEDISPA | **RECOMMENDATION WITHDRAWN UNDER ICP v2 - FAILS MUST-HAVE 5, CONFIRMED 9 Nov 2026. Must-have 3 PASSES on count (three sites, re-verified), so do not record this as a must-have 3 failure; what is dead is the reason to want it.** Three London sites (Kensington, Chelsea, St John's Wood), complimentary consultations, "EF Loyalty Points", own booking portal | No email published anywhere on the site. Phone 0207 361 1000 |
+| CJA Aesthetics | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** Six sites (Southampton, Winchester, Portsmouth + 3), Semble booking, two membership tiers, Dr Chris Airey & Dr Lauren Airey | Cloudflare-obfuscated on every page. Phone 023 8033 2429 |
 | Cosmedics Skin Clinics | Four sites including Harley Street and Putney | Cloudflare-obfuscated |
 | The Cosmetic Skin Clinic | Harley Street + Stoke Poges | Cloudflare-obfuscated |
 | Melior Clinics | Sevenoaks, Harley Street, Huntingdon; vouchers, £25 refer-a-friend, free consults, three named doctors | No published email, no identifiable booking platform |
-| Centre for Surgery | Baker Street, Chrysalis 0% finance, CQC "Good" | No published email, no booking platform |
-| Illuminate Skin Clinics | Dr Sophie Shotter, Kings Hill, Kent | Contact page returns 401 to a fetch |
+| Centre for Surgery | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** Baker Street, Chrysalis 0% finance, CQC "Good" | No published email, no booking platform |
+| Illuminate Skin Clinics | **A v2 TARGET - single site, owner-doctor. Not re-opened on 9 Nov for want of search budget; it is top of the list for whoever finishes this seam.** Dr Sophie Shotter, Kings Hill, Kent | Contact page returns 401 to a fetch - a fetch failure, so a browser-visit candidate rather than a disqualification |
 
 **Cloudflare obfuscation is the single biggest blocker on this list.** Four of
 the seven are otherwise strong. If Jess wants them, the fastest route is her
@@ -29,17 +40,19 @@ opening the contact page in her own browser and pasting the address back.
 
 | Clinic | Why it qualifies | Why we can't email |
 |---|---|---|
-| **Contour Clinics** (Sydney + Brisbane) | The single largest prospect found anywhere: eight doctor-led clinics, ~50 practitioners including 20 cosmetic doctors, Zenoti, a Rewards program at every location, a $75 deposit on every booking, Afterpay/ZipPay/Elevant | Cloudflare-obfuscated. Form and phone only (1300 233 803) |
-| Absolute Cosmetic (Perth) | 12 WA clinics, Nookal booking, gift vouchers, Dr Glenn Murray medical director — and they already advertise a 24/7 "AI receptionist", so they are pre-sold on the category | Cloudflare-obfuscated / form only |
-| Artisan Aesthetic Clinics (NSW/ACT/QLD) | 11 clinics, gift cards, loyalty program, refer-a-friend | No plain-text email |
-| Victorian Laser & Skin Clinic (Melbourne) | Five clinics, Kitomba booking, vouchers, Afterpay and Zip, free consultations | No plain-text email |
+| **Contour Clinics** (Sydney + Brisbane) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **Eight sites and ~50 practitioners is where a head office decides marketing - this is now the clearest disqualification in the file, and the September verdict below it is void.** The single largest prospect found anywhere: eight doctor-led clinics, ~50 practitioners including 20 cosmetic doctors, Zenoti, a Rewards program at every location, a $75 deposit on every booking, Afterpay/ZipPay/Elevant | Cloudflare-obfuscated. Form and phone only (1300 233 803) |
+| Absolute Cosmetic (Perth) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** 12 WA clinics, Nookal booking, gift vouchers, Dr Glenn Murray medical director — and they already advertise a 24/7 "AI receptionist", so they are pre-sold on the category | Cloudflare-obfuscated / form only |
+| Artisan Aesthetic Clinics (NSW/ACT/QLD) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** 11 clinics, gift cards, loyalty program, refer-a-friend | No plain-text email |
+| Victorian Laser & Skin Clinic (Melbourne) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** Five clinics, Kitomba booking, vouchers, Afterpay and Zip, free consultations | No plain-text email |
 | LLC Cosmetic (QLD) | Four clinics, Timely booking, free consultation, "save up to 50% on eligible first-visit offers" | No plain-text email |
 | Jade Cosmetic & Wellness (Brisbane + Cairns) | Two clinics, Dapple CRM, $100 consultation redeemable against any treatment, gift vouchers | No plain-text email |
 | Southern Cosmetics (Melbourne) | Sandringham and Highett, Dapple CRM, "Southern Circle" loyalty program, gift cards | No plain-text email |
 
-**Contour Clinics is worth a phone call on its own.** Eight clinics and fifty
+~~**Contour Clinics is worth a phone call on its own.** Eight clinics and fifty
 practitioners on one Zenoti instance, with a deposit on every booking, is the
-best-fit prospect in the entire pipeline — it just cannot be emailed.
+best-fit prospect in the entire pipeline — it just cannot be emailed.~~
+**[Struck 9 Nov 2026: eight sites fails ICP v2 must-have 3. Under the 22 Sep standard this was the
+file's best prospect; under v2 it is disqualified, and that is the cost side of the re-read.]**
 
 ## Ruled out in Australia, don't revisit
 
@@ -48,18 +61,34 @@ best-fit prospect in the entire pipeline — it just cannot be emailed.
 - **Same group as an existing pipeline row:** CDC Clinics Armadale (publishes
   info@csdclinics.com.au — the CSD Clinics group, already listed)
 - **Single operators:** Dr Terrence Scamp, DC Aesthetics
+  - **RE-READ 9 Nov 2026 under ICP v2, which reversed this rule.** **DC Aesthetics** is a live
+    recovery candidate and has never been opened. **Dr Terrence Scamp** is a Gold Coast plastic
+    surgeon and is *disqualified* under v2 (must-have 1 and the plastic-surgery disqualification),
+    not recoverable - so this bullet now cuts both ways and must not be re-read as one rule.
 - **No identifiable booking system:** Dr Tass Cosmetic & Skin Clinics (three
   Melbourne clinics and a Signature Club membership, but bookings are taken by
   phone), Cosmetic Connection (Toorak + St Leonards, gift cards on Square)
+  - **THIS WAS NEVER A MUST-HAVE. Noted 9 Nov 2026.** A nameable booking platform was the *pitch*
+    under the 22 Sep standard and is only a grade cap under v2. Both clinics pass must-have 3 on
+    count and both are unopened recovery candidates; both need the AU/NZ must-have 6 consent screen.
 - **Failed on scale, CRM or email:** Enrich Clinic, ICCM, The Layt Clinic,
   Gold Coast Plastic Surgery, Skin Project Clinics, Studio Aesthetica, MA360,
   The Manor Clinic
 
 ## Ruled out in the UK, don't revisit
 
-- **Single operators, no support staff:** Sussex Aesthetics (Crawley),
-  Aesthetic Klinik (Brighton), Dr Liesel Holler (Bromley)
+- ~~**Single operators, no support staff:** Sussex Aesthetics (Crawley),
+  Aesthetic Klinik (Brighton), Dr Liesel Holler (Bromley)~~
+  - **ALL THREE RECOVERED 9 Nov 2026 AND ALL THREE ARE NOW PIPELINE ROWS.** This rule-out reason
+    was retired by ICP v2 on 16 Oct: an owner-operated single-operator clinic is the target.
+    **Sussex Aesthetics = row 1107 (B)** - company registered byte-identically at its own door since
+    2018, Aesthetic Nurse Software, free consultations. **Aesthetic KLINIK = row 1108 (B)** - opened
+    2017 by its founding nurse, redeemable paid consultations. **Dr Liesel Holler = row 1109 (B)** -
+    207 published reviews, company at the clinic's own address since 2015.
 - **Beauty-led rather than medical:** No.6 Clinic (Tunbridge Wells)
+  - **UNRESOLVED RATHER THAN FAILED, flagged 9 Nov 2026.** This is a must-have 1 judgement recorded
+    as a bare label by a worker applying the retired scale rule, and the 8 Nov "a label is not a
+    finding" ruling is exactly for this shape. Worth one look; no evidence was recorded either way.
 - **Corporate chains — head office controls marketing:** sk:n, Thérapie,
   The Harley Medical Group, Air Aesthetics
 
@@ -67,12 +96,16 @@ best-fit prospect in the entire pipeline — it just cannot be emailed.
 
 | Clinic | Why it qualifies | Why we can't email |
 |---|---|---|
-| **Quinn Clinics** (Bristol) | Eight-plus named staff including an oculoplastic surgeon, Zenoti, and four separate dormant pools — a named membership, a referral scheme, payment plans and gift vouchers | No email anywhere on the site. Phone 0117 924 4592, or the enquiry form |
-| Elanic (Glasgow) | Eleven named surgeons across three Bath Street addresses, financing eligibility checker, gift cards, free consultations | No email on the homepage or either contact page; on-site form only |
+| **Quinn Clinics** (Bristol) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** **Its own page titles are "Surgical Plastic Surgery Oculoplasty" and "Minor Skin Surgery in Bristol" (quinnclinics.co.uk/surgical/). NOT a must-have 3 failure - must-have 3 counts sites and this is one address; the staff-and-surgeon scale that recommended it is what disqualifies it. Must-have 5 also still stands.** Eight-plus named staff including an oculoplastic surgeon, Zenoti, and four separate dormant pools — a named membership, a referral scheme, payment plans and gift vouchers | No email anywhere on the site. Phone 0117 924 4592, or the enquiry form |
+| Elanic (Glasgow) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** **Eleven surgeons is substance, not a label. Three addresses would have passed must-have 3 on count, so the failing must-have is 1, not 3.** Eleven named surgeons across three Bath Street addresses, financing eligibility checker, gift cards, free consultations | No email on the homepage or either contact page; on-site form only |
 | CLNQ / Reza Nassab (Manchester + Knutsford) | Two clinics, Chrysalis Finance, and a "CLNQ Privé" annual subscription membership | No email published and no booking system visible |
 
-Quinn Clinics is the strongest of these — the membership, referral scheme,
-payment plans and vouchers all point at exactly the list we want to work.
+~~Quinn Clinics is the strongest of these — the membership, referral scheme,
+payment plans and vouchers all point at exactly the list we want to work.~~
+**[Struck 9 Nov 2026: Quinn and Elanic are both disqualified under ICP v2 as surgical practices.
+CLNQ / Reza Nassab (two clinics) passes must-have 3 on count and remains a near-miss on must-have 5
+only - but note it is led by a consultant plastic surgeon, so the surgical substance test has to be
+applied before anyone treats it as a prospect.]**
 
 ### A judgement call worth knowing about
 
@@ -88,9 +121,20 @@ straight in.
 
 - **Corporate and hospital chains:** Spire, Nuffield Health, sk:n, Thérapie,
   Transform, The Private Clinic, Signature Clinic, Nu Cosmetic, Este Medical Group
-- **Single operators:** Essence Medical (Dr Kieren Bong, Glasgow), Craig Hobson
+- ~~**Single operators:** Essence Medical (Dr Kieren Bong, Glasgow), Craig Hobson
   Aesthetics (Bristol), Skin & Joints / Vee Spandoni (Bristol), Skins Clinic
-  (Manchester)
+  (Manchester)~~
+  - **ALL FOUR RE-READ 9 Nov 2026 under ICP v2, which made this profile the target. Two recovered,
+    two did not.** **Essence Medical = pipeline row 1105 (B)** - one doctor treating personally,
+    ESSENCE MEDICAL LIMITED active on the register since 2009, address published in the footer.
+    **Craig Hobson Aesthetics = pipeline row 1106 (A)**, the best row the whole re-read produced -
+    Ltd plus company number on its own page, 257 Google reviews, Aesthetidocs and Zenoti, a skin
+    membership, and an address that was only on the terms page. **Skin & Joints by Vee Spandoni
+    stays out: must-have 5** (no address on its contact page or its policies page) **and must-have 8**
+    (no company identity anywhere); it also runs a co-equal ultrasound-guided joint-injection and
+    acupuncture arm, which is a must-have 2 concern if it is ever reachable. **Skins Clinic
+    ("SKINS by Christina") stays out: must-have 5** - /contact is robots-disallowed and the
+    homepage publishes no address in any form - plus must-have 4 and must-have 8 unevidenced.
 
 ## One caveat on every "no CRM" verdict in this file
 
@@ -107,12 +151,12 @@ answers it.
 | Clinic | Why it qualifies | Why we can't email |
 |---|---|---|
 | **The Skin Care Clinic** (Hobart) | The best dormant signal found in Tasmania: a full points loyalty scheme — a point per dollar, £5 off per 100 points, 300 points for a referral and 300 for a testimonial — plus Timely, gift e-certificates, Afterpay and Zippay, six named staff including a doctor in cosmetic medicine since 2004 | No email on any reachable page, and no phone published either. Their `/contact/` page could not be fetched at all |
-| River Medical (Dublin, Cork, Belfast) | Three clinics across two jurisdictions, Phorest on two instances, BAAPS/BAPRAS/RQIA accredited surgical practice | Cloudflare-obfuscated everywhere |
+| River Medical (Dublin, Cork, Belfast) | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** **September listed the surgical accreditation as a reason to want it; v2 makes it the disqualification.** Three clinics across two jurisdictions, Phorest on two instances, BAAPS/BAPRAS/RQIA accredited surgical practice | Cloudflare-obfuscated everywhere |
 | Palm Clinic (Auckland) | Skin and vein clinic, Dr Sam Dunn, NZ Society of Cosmetic Medicine accredited, gift vouchers, Q Mastercard interest-free plans | Cloudflare-obfuscated |
 | Vamp Cosmetic Clinic (Newcastle) | Zenoti, a named loyalty programme with its own terms page, gift cards, treatment packages, complimentary consultations, open six days | No email on the homepage or contact page — form only |
 | Laser Skin & Vein Clinic (Adelaide) | Two clinics, treatment vouchers through their own shop, direct booking with no referral | Cloudflare-obfuscated |
 | Ponsonby Cosmetic Medical Clinic (Auckland) | Medical-led appearance medicine, gift voucher collection, a dedicated treatment financing page | No email and no phone published |
-| Accent on Skin (Wellington) | CANNZ-accredited, own booking portal | Cloudflare-obfuscated, and only two practitioners named so it would likely fail scale anyway |
+| Accent on Skin (Wellington) | CANNZ-accredited, own booking portal | **CORRECTED 9 Nov 2026: the scale half of this verdict is void.** Under ICP v2 two named practitioners is not a failure and would not have been a tiebreak. This is a near-miss on **must-have 5 only** (Cloudflare-obfuscated). ~~and only two practitioners named so it would likely fail scale anyway~~ |
 
 **The Skin Care Clinic in Hobart and River Medical are the two worth Jess opening
 herself.** The Hobart one converts straight to grade A if its contact page can be
@@ -127,7 +171,14 @@ the database the offer is built for.
 - **Single operators:** Newcastle Cosmetic Doctor, Coastal Skin & Laser (Tewantin),
   Dr Sarah Sparks and Hobart Facial Aesthetics (Hobart), Sapphire Appearance
   Medicine (Auckland)
-- **Wrong offer shape, not wrong size:** Fitzgerald Plastic Surgery (Dublin) has a
+  - **ICP v2 REVERSED THIS RULE on 16 Oct 2026 and these five have never been opened.** They are
+    the largest block of untouched recovery candidates left in the September sections. Each needs
+    the AU/NZ must-have 6 consent screen as well as an address.
+- **Wrong offer shape, not wrong size:** Fitzgerald Plastic Surgery (Dublin) - **also
+  DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY
+  DISQUALIFICATION. Re-read 9 Nov 2026.** This is a cleaner answer than the dormant-signal
+  reasoning below. (Wording normalised 9 Nov 2026: this entry originally read "DISQUALIFIED
+  OUTRIGHT under ICP v2", which means the same thing to a reader and is invisible to a grep.)** It has a
   published email but states "We do not offer payment plans", charges consultation
   fees in advance and non-redeemable, and runs no complimentary consults. There is
   no dormant pool to reactivate — the model is built to filter people out before
@@ -143,18 +194,18 @@ worth the effort rather than all of them.
 
 | Clinic | Where | Why it matters |
 |---|---|---|
-| **Aesthetic Center for Plastic Surgery** | Houston ×3 | 13 surgeons, three sites, memberships on RepeatMD at $149/$199/$299 a month, all six-month commitments |
+| **Aesthetic Center for Plastic Surgery** | Houston ×3 | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** 13 surgeons, three sites, memberships on RepeatMD at $149/$199/$299 a month, all six-month commitments |
 | **Cienega Medical** | West Hollywood, Santa Monica, Calabasas | Three LA sites, ~12 clinicians including a board-certified dermatologist medical director |
-| **La Jolla Cosmetic Surgery Centre** | La Jolla | Seven surgeons, free consults on all primary procedures, Model Rewards plus Allē, and four separate financing partners |
-| **Westlake Dermatology** | 22 sites across Texas | The largest footprint found anywhere in any sweep |
-| **North Texas Plastic Surgery** | DFW ×7 | Seven surgeons, seven locations, nine aesthetic providers |
-| **Advanced Aesthetics** | Las Vegas ×3, Dallas, La Jolla | Five sites on PatientNow, $99/month membership on a six-month commitment |
-| **La Jolla Cosmetic Medical Spa** | Five San Diego-area sites | Double board-certified facial plastic surgeon, GLAMfam VIP loyalty club |
+| **La Jolla Cosmetic Surgery Centre** | La Jolla | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY DISQUALIFICATION. Re-read 9 Nov 2026.** Seven surgeons, free consults on all primary procedures, Model Rewards plus Allē, and four separate financing partners |
+| **Westlake Dermatology** | 22 sites across Texas | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **Also the dermatology disqualification.** The largest footprint found anywhere in any sweep |
+| **North Texas Plastic Surgery** | DFW ×7 | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **Also plastic surgery (must-have 1).** Seven surgeons, seven locations, nine aesthetic providers |
+| **Advanced Aesthetics** | Las Vegas ×3, Dallas, La Jolla | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** Five sites on PatientNow, $99/month membership on a six-month commitment |
+| **La Jolla Cosmetic Medical Spa** | Five San Diego-area sites | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** Double board-certified facial plastic surgeon, GLAMfam VIP loyalty club |
 | **AdmireMD Skin + Wellness** | Scottsdale ×2 | Zenoti, three memberships including a "Bank Your Beauty" credit-banking tier |
 | **La Belle Vie Med Spa** | Tukwila, WA | Six practitioners including two MDs, Zenoti, three tiers at $99/$175/$275 |
 | **Skintegrity MedSpa** | Kirkland, Bellevue, Redmond | Runs a monthly prize draw explicitly open to "current, past, or prospective clients" — they are already trying to do this by hand |
 | **Spa Sydell** | Atlanta ×3 | Zenoti, eight membership tiers |
-| **Truffles Aesthetics** | Atlanta metro ×5 | Boulevard, Diamond Club membership |
+| **Truffles Aesthetics** | Atlanta metro ×5 | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** Boulevard, Diamond Club membership |
 | **Fresh Start Aesthetics** | Scottsdale ×2 + Phoenix | Mindbody, four tiers from $149 to $399 a month on twelve-month commitments |
 
 Another twenty or so are recorded in the sourcing reports but not worth listing
@@ -193,16 +244,28 @@ consults) and **The MedSpa of DFW** (Aesthetic Record, real membership) both hav
 published emails and real systems, and are excluded only by the single-site rule.
 If Jess wants Houston volume, Skin 101 is the one to relax it for.
 
+**BOTH RE-READ 9 Nov 2026 - ICP v2 RELAXED THE SINGLE-SITE RULE SEVEN WEEKS AGO AND NOBODY CAME
+BACK.** **Skin 101 Houston = pipeline row 1110 (B)**: one suite on the Katy Freeway (the street
+number has changed since September - it now publishes 11300, not 9774), OptiMantra, "for over a
+decade" of trading, and `skin101houston@gmail.com` printed as visible text and as a mailto on its
+own contact page - recorded with the caveat that it is a consumer mailbox rather than one on the
+clinic's own domain. **The MedSpa of DFW stays out on must-have 5, and September's claim about it
+was wrong**: its homepage and its `/contact/` page were both read on 9 Nov and neither publishes an
+address in any form - phone, SMS, fax and an embedded `link.aestheticrecord.com` form only.
+Everything else about it clears v2 (one Grapevine site, the Southlake page is a service-area page;
+Aesthetic Record; a PA-C with "over a decade"; no insurance mention), so it needs an address found
+rather than qualifying. The one cheap check left is a privacy-policy fetch.
+
 ## Found 24 Sep 2026 (United States — Northeast)
 
 ### Worth a browser visit or a phone call, best first
 
 | Clinic | Where | Why it matters |
 |---|---|---|
-| **Greenwich Medical Spa** | 8 sites across CT, NY and NJ | The single best prospect found in the entire Northeast. Zenoti *and* GoHighLevel, a $99/month VIP membership with loyalty points and anniversary credits, plus a $199/month HRT programme. One browser tab away from being emailable |
-| **SkinMD** | 10 Massachusetts sites | The biggest Boston-area practice found. RepeatMD rewards, gift cards, CareCredit and Cherry |
-| **East Coast Advanced Plastic Surgery** | NYC + 5 NJ sites | 10 surgeons and 8 PA-Cs across six locations — the largest practice in the region |
-| **Ethos Aesthetics + Wellness** | 7 NJ sites | Owner-operated, not a chain. Two founders plus four NPs, and a VIP membership with bankable "Ethos Bucks" |
+| **Greenwich Medical Spa** | 8 sites across CT, NY and NJ | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **September called it "one browser tab away from being emailable"; it is not one tab away from anything now.** The single best prospect found in the entire Northeast. Zenoti *and* GoHighLevel, a $99/month VIP membership with loyalty points and anniversary credits, plus a $199/month HRT programme. One browser tab away from being emailable |
+| **SkinMD** | 10 Massachusetts sites | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** The biggest Boston-area practice found. RepeatMD rewards, gift cards, CareCredit and Cherry |
+| **East Coast Advanced Plastic Surgery** | NYC + 5 NJ sites | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **Also plastic surgery (must-have 1).** 10 surgeons and 8 PA-Cs across six locations — the largest practice in the region |
+| **Ethos Aesthetics + Wellness** | 7 NJ sites | **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites). Re-read 9 Nov 2026.** **"Owner-operated, not a chain" was a 22 Sep virtue; v2 counts the sites.** Owner-operated, not a chain. Two founders plus four NPs, and a VIP membership with bankable "Ethos Bucks" |
 | **Trifecta Med Spa** | 4 NY sites | Allergan Top 100 Injector, Zenoti, 0% APR plans |
 | **Metro Laser MedSpa** | 3 Philadelphia-area sites | Boulevard, memberships from $39 to $249 a month across two ladders |
 | **Tribeca MedSpa / AYA Skin** | 2 NYC sites | Board-certified plastic surgeon, Zenoti, an "AYA Beauty Bank" loyalty scheme |
@@ -227,7 +290,10 @@ be reactivating.
 
 ### Rejected on dormant signal rather than contactability
 
-A useful category, because it is the one kind of clinic to stop researching:
+A useful category, because it is the one kind of clinic to stop researching.
+**All of the surgical groups named in this paragraph are DISQUALIFIED OUTRIGHT under ICP v2
+(must-have 1 and the plastic-surgery disqualification), which is a stronger answer than the
+dormant-signal one - marked 9 Nov 2026.**
 **Plastic Surgery Group New Jersey** publishes a perfectly good address but runs no
 membership, loyalty, gift-card or financing scheme at all. Boston Center for
 Plastic Surgery, Longwood, NYBG Plastic Surgery and about a dozen other surgical
@@ -240,6 +306,14 @@ If a batch ever needs topping up: **Aesthé By MD** (3 CT/NJ sites),
 **Manhattan Medspa** (annual memberships at $1,999 and $2,299) and
 **Skinly Aesthetics** (Skinly Club plus two lenders). All three fail only on
 naming a booking platform, which the first discovery question answers.
+
+**THESE THREE ARE PARKED ON NOTHING, AND THEY ARE THE RICHEST THING LEFT IN THE SEPTEMBER
+SECTIONS - flagged 9 Nov 2026 during the v2 re-read.** A nameable booking platform was never a
+must-have; it was the pitch under the 22 Sep standard and is only a grade cap under v2. All three
+already have published addresses recorded, all three pass must-have 3 on count, and the US needs no
+regional screen - so it is one fetch each to confirm the address still stands and screen must-haves
+2 and 4. This is the same bug as the fifteen pipeline rows the 8 Nov sweep found parked on retired
+rules, one rule over.
 
 ---
 
@@ -13109,3 +13183,992 @@ would rather leave seven searches for them than buy two more C rows.
 **Only one of my seven parked rows failed on the thing Britain is supposed to withhold.** Must-have
 8 was satisfied on 11 of 16 rows and answered free on the page seven times out of 23 businesses.
 **PECR is no longer the binding filter in this market. Our own tooling and the mole clause are.**
+
+---
+
+## 9 November 2026 — Westchester County NY / Fairfield County CT
+
+# Westchester / Fairfield affluent corridor — near misses and rule-outs
+
+**Swept 9 Nov 2026.** Market: Westchester County NY (Scarsdale, Rye, Bronxville, Larchmont,
+Mamaroneck, White Plains, Harrison, Armonk, Chappaqua, Katonah, Port Chester, Bedford, Mount
+Kisco, Pound Ridge), then Fairfield County CT (Greenwich, Old Greenwich, Darien, New Canaan,
+Westport, Wilton, Ridgefield, Fairfield, Stamford, Norwalk), plus one Rockland County NY
+address (Nanuet) that came in attached to a Westchester clinic.
+
+Spend: **8 WebSearch, 48 WebFetch.** 28 businesses opened or resolved; **16 accepted rows**
+(2 A, 10 B, 4 C) in `westchester.json`; 12 recorded here.
+
+**How C rows were split from this file.** A clinic with a verified published address that fails
+one must-have is graded C and kept in the JSON, per the brief's grading section — four rows are
+there (Naqi, Sense, Contour, Ayla), each naming its failing must-have by number. This file holds
+(a) clinics that clear the ICP on fit but publish no readable address and (b) outright rule-outs.
+
+---
+
+## 1. Cleared on fit, no readable address — NO ADDRESS PUBLISHED AT ALL
+
+No browser helps with any of these. They need a phone call, a form submission or a DM.
+
+| Clinic | Where | Fit evidence | Where I looked |
+|---|---|---|---|
+| **Privá MedSpa** (`privamedspa.com`) | Fairfield + Oxford, CT (2 sites) | Gabrielle Pino PA-C leads the team and is the named copyright holder; **Zenoti confirmed**; **"4.9 Stars 168 Reviews"** published; memberships page, gift cards sold online, specials and financing pages; 2020 award. Clean on must-haves 1–4. | Homepage **and** privacy policy. The policy is "effective as of January 1, 2026" and nominates only "contact us" linking to `/contact/`. **Per the 5 Nov 2026 ruling that a policy nominating `/contact` as its route is NOT a third `/contact` exception, I did not spend that fetch.** The policy named no processors; Zenoti, DatoCMS and Studio 3 came off the nav and footer. |
+| **Element Medical Aesthetics** (`elementct.com`) | New Canaan, CT (1 site) | **Merry Thornton, PA-C, founder**, board-certified PA licensed in NY, NJ and CT; **Zenoti**; **"Based on 192 reviews"**; membership page, gift cards, payment plans. The single cleanest fit in Fairfield County that cannot be emailed. | Homepage **and** privacy policy ("Last updated: July 6, 2026"), which says "please contact us through our website at https://elementct.com/contact" — again the nominated-`/contact` case, so no fetch spent. Only Google Analytics named as a processor. |
+| **Rejive Medical Aesthetics** (`rejivema.com`) | New Canaan, CT (1 site) | **Stacey-Jo Murray, NP, Owner & Medical Director**, "over 20 years of medical aesthetics experience"; **MyAestheticRecord** (`jpquz.myaestheticrecord.com`); and the **best banked-credit wording found in this corridor**: a monthly VIP fee "to be used towards services and products… **Fee is NEVER lost. And rolls over from month to month.**" | Homepage **and** privacy policy. The policy nominates **phone and postal mail only** — "Please contact us by phone at 203-564-4488 or by mail at 59 Grove St." — and no email exists anywhere on either page. Also note the policy's phone number (203-564-4488) differs from the header's (203-564-4448). |
+| **Intentional Self Aesthetics** (`intentionalselfaesthetics.com`) | New Canaan, CT (1 site) | **Dr Teresa Alasio, MD**, Founder & Medical Director, Mount Sinai-trained; Allison Sosa-Vega, licensed aesthetician; a **RepeatMD patient portal** (`intentionalselfaesthetics.repeatmd.app`) — a dormant-rewards database by design; membership with "preferred pricing". | Homepage, privacy policy **and `/contact/`** — three pages, no address on any of them. **The widened second `/contact` exception genuinely applied here** (the policy nominates no contact route at all for data requests — its "Your Rights" section gives no address, form or phone), and the fetch returned nothing. Worth recording as a data point: the exception is correctly drawn but it does not always pay. Must-have 4 also unevidenced (no founding year, bare 2026 copyright, no review count). |
+| **Thrive Wellness and Aesthetics** (`thrivewellnow.com`) | Mount Kisco, NY (1 real site) | **Dana Protomastro, AGPCNP-BC, founder**, board-certified NP, "over 25 years of experience"; membership page, gift cards, exclusive offers, a monthly facial membership mentioned in a blog; **"Best of Westchester 2026"** award. | Homepage. **Its privacy policy is hosted off-site on iubenda (`iubenda.com/privacy-policy/94883733`) and the on-domain `/privacy-policy/` returned a SERVER_ERROR**, so there is no readable policy route on their own domain. No practice platform named either — "Schedule Appointment" points to their own contact page. |
+| **Suma Life House** (`sumalifehouse.com`) | Old Greenwich, CT (1 site) | **Kristin Updike, Founder and CEO** (no clinical credential published); Natalia, MSN, FNP-BC as aesthetic NP; "Specials & Packages" and an "Ambassador Program" linked. | Homepage. No address, no mailto. **Two further gaps, so this would not be sendable even with an address:** must-have 4 is unevidenced (no founding year, bare 2026 copyright, no review count), and **must-have 1 is thin** — the menu is device-and-wellness-led (Emface, Exion, Emsculpt NEO, hyperbaric and Ammortal chambers, IV, Biote hormones) with PDRN/PDGF/exosome injections and "Lip Enhancement" but **no published neuromodulator or dermal-filler line at all**, so the three-to-four month wear-off cycle the offer depends on is not evidenced. |
+| **Greenwich MD** (`greenwich-md.com`) | Stamford, CT (1 site) | Founder-physician named, board-certified in internal medicine with aesthetic and longevity training; aesthetic medicine listed first with injectables at the top; FAQ confirms treatments "are not covered by insurance". | Homepage (the Stamford med-spa page). No address, no mailto. **Two caveats if anyone chases it: the page names the founding physician two different ways** — "Dr. Juliana Querido, MD" as Medical Director and founder, then "Founded and led by Dr. Susana Querido, MD" in the closing note — so the owner's first name is unresolved from the site alone. And the HSA/FSA eligibility noted for some wellness services is the patient's own pre-tax money, **not** third-party reimbursement, so it does not fail must-have 2. "Spider Vein Reduction" names a cosmetic indication with no varicose language, so that passes too. |
+
+---
+
+## 2. Cleared on fit, no readable address — **CLOUDFLARE-HIDDEN (browser-visit list)**
+
+Jess can read both of these in her own browser in seconds. They belong on
+`outputs/pipeline/browser-visit-list.md`, not in the bin.
+
+- **SeeBeyond Beauty** (`seebeyondbeauty.com`) — **Scarsdale NY + Greenwich CT, 2 sites.**
+  Dr Joon Lee, "Board Certified Physician", "20+ Years", "Over 10,000 patients"; three
+  priced membership tiers; a separate retail site at `seebeyondshop.com`.
+  **The homepage publishes no address. The privacy policy renders the literal text
+  `[email protected]` TWICE** — in the "Your Rights" section and the Contact section — and each
+  is a link whose target carries a `cdn-cgi/l/email-protection` token. The page's own wording is
+  "Contact See Beyond Beauty at [email protected] or 914-635-4609 to exercise these rights."
+  **NOT SEEN, and not recorded.** The page shipped the token, which is the test.
+  **Free CRM detection off the same fetch: the policy names LeadConnector for appointment
+  scheduling** — so this is a GoHighLevel clinic, worth knowing before the call.
+  One unresolved point to settle in the browser at the same time: the homepage carries a menu
+  heading called **"Facelift"** and says "View All 22 Services" while showing 20. If that is a
+  surgical facelift rather than a device or thread lift, ICP v2's plastic-surgery
+  disqualification bites; nothing else on the page is surgical and "Cutera Excel V+ for vascular
+  conditions" is an external aesthetic laser, which passes.
+- **Luxe Level Aesthetics** (`luxelevelaesthetics.com`) — **Darien CT, 1 site.**
+  Dr Andrew Wong MD as Medical Director (separately Regional Medical Director at Hartford
+  HealthCare Medical Group — his own affiliation, not a parent of the clinic); Natalia Cardona
+  RN, "nurse since 2023". **The page renders the literal text `[email protected]` beside the
+  word "Email" in its Contact Us section.** NOT SEEN, not recorded.
+  **Second gap: must-have 4 is unevidenced** — copyright is "© 2025" (read in 2026, so one
+  year, which ICP v2's three-year rule says evidences nothing), the only tenure figure is a
+  nurse qualifying in 2023, and the 5.0 Google rating is published **with no count**, which ICP
+  v2 says is not a quantified artifact. So unmasking the address makes this a C, not a send.
+  "Spider Vein" treatments for upper and lower leg name a cosmetic indication with no varicose
+  or venous language anywhere, so must-have 2 passes.
+
+**On the decode rule, because the brief asks for the record explicitly: our fetch helper did
+NOT volunteer a decoded address on either of these.** Both times it reported the literal
+`[email protected]` string and, for SeeBeyond, named the `cdn-cgi/l/email-protection` token in the
+link target. I did not decode either token and I did not ask it to. Had it handed me plaintext
+unasked, I would have discarded it — the page shipped the token, so the address is not seen
+whatever the tooling then produced.
+
+---
+
+## 3. A **NEW** address-look-alike worth adding to the six: an address inside an `sms:` href
+
+- **Primary Aesthetic Skin Care** (`primaryaestheticskincare.net`) **and
+  `aestheticsinjectables.com`** — **Bedford + Armonk, NY.** These are **the same business on two
+  domains**: same practitioner (**Elena Ginsberg, FNP, MSN, BSN**, founder, "over 18 years" /
+  "over 20 years" depending on the page), same two towns, same phone (914) 234-8670, same trick.
+  Fit is otherwise decent — Facial Membership and VIP Membership programmes, gift certificates,
+  complimentary consultations, Cherry and CareCredit.
+  **Both domains publish `primaryaesthetics@gmail.com` ONLY as the target of a "Text Us" link —
+  an `sms:` href, not a `mailto:`, and never as visible text.** This is not one of ICP v2's six
+  look-alikes and it is not the `mailto:` case that was settled on 4 Nov. Applying the test that
+  ruling actually set — *can a member of the public use this to email the clinic* — the answer is
+  no: a visitor sees "Text Us", hovering shows an SMS target, and clicking opens a messaging app
+  with an email address as the recipient, which reaches nobody. **Functionally this is closer to
+  a meta tag than to a `mailto:` link, so it is NOT conspicuous publication and is not recorded.**
+  Worth adding to the look-alike list, because it reads as a normal published address in a fetch
+  result and it fired on two domains in one sweep.
+  Two further gaps: **no street address is printed on either site** (location links go to Google
+  Maps), the Armonk ZIP is printed as "1050" (incomplete), and there is no founding year, no
+  copyright year and no review count — so must-have 4 is unevidenced too.
+
+---
+
+## 4. Rule-outs, each with the failing must-have **numbered**
+
+1. **Grace Medical Aesthetics** (`gracemedicalaesthetics.com`) — Bedford Hills NY, Southbury CT,
+   Westport CT, Southington CT and New York City. **FAILS MUST-HAVE 3: five locations**, which is
+   the 5+ disqualification outright, not a counting artefact — they are five real offices with
+   memberships "redeemable across our offices". Also **fails must-have 5**: no email anywhere on
+   the page, only a Constant Contact opt-in link. Painful, because the offer fit is excellent —
+   Charis Wipfler APRN as owner/operator, Heather Tomchik PA-C as lead practitioner, **Zenoti**,
+   and a **Boutique Membership banked toward injectables** plus two more membership ladders.
+   Recorded here so nobody spends the fetches again.
+2. **Kállos Medical Aesthetics** (`kallosmedicalaesthetics.com`) — Pound Ridge NY + Greenwich CT.
+   **FAILS MUST-HAVE 1** (the plastic-surgery disqualification), and on substance rather than on
+   a word: the menu carries a **"Surgical Procedures" item that links out to
+   `sandramargolesmd.com`**, and the practice is led by **Dr Sandra Margoles, MD, FACS, a
+   board-certified plastic surgeon**. A linked surgical menu is a surgical practice whatever the
+   med-spa branding says. Also **fails must-have 5** (no email, no mailto; contact is phone, form
+   or Symplast) and **must-have 4** (no founding year, bare 2026 copyright, no review count, no
+   dormant scheme at all — only a launch special). **Symplast** noted as the platform.
+3. **Morph Med Spa** (`morphmedspa.com`) — Ridgefield CT. **FAILS MUST-HAVE 1:** the three
+   published service categories are **Hormone Health, Medical Weight Loss and Body Sculpting**,
+   with no injectables line published at all, so there is no three-to-four month treatment cycle
+   and no lapsed injectables list to recall. Owner is **Dr Brittny Howell, a board-certified
+   vascular surgeon** and "women's midlife health specialist" — I am not failing it on that
+   label, since no varicose, venous-insufficiency, phlebology or insurance language appears
+   anywhere, but combined with the menu this is a hormone-and-longevity practice rather than an
+   aesthetics one. Also **fails must-have 5** (no email anywhere) and **must-have 4** (no
+   founding year, "© MORPH MED SPA 2026", no review count, no membership or credit scheme —
+   only Cherry financing). **Zenoti** noted. One fetch of its "All Services" page would release
+   must-have 1 if injectables turn out to be there; it would still fail must-have 5.
+4. **Skin Archive** (`skinarchivespa.com`) — Mamaroneck NY. **FAILS MUST-HAVE 4 outright and on
+   substance, not on evidence: the page says "Skin Archive opened in 2025."** One year of
+   trading is the ICP's brand-new-clinic disqualification — there is no 300+ lapsed list to work.
+   The dating evidence here is good; the age is simply not enough, which is the row-720
+   distinction. Also **fails must-have 5** (no email) and publishes **no street address at all**
+   (by-appointment-only, Westchester 914 phone). Mayjon Ghrayyeb licensed esthetician & founder,
+   Karen Lemus MD; **Vagaro** noted. Do not re-open before 2028.
+5. **Form & Function Aesthetics and Wellness** (`formandfunctionaesthetics.com`) — Katonah NY.
+   **FAILS MUST-HAVE 1 on the published service architecture:** the site leads with **Wellness &
+   Longevity — "Comprehensive Diagnostics", Metabolic & Cellular, Brain & Performance, Pelvic
+   Health, Functional Strength** — and injectables are one of four sub-headings under a secondary
+   "Advanced Aesthetic" category. A physician-led longevity practice with its own diagnostics
+   line is not aesthetics-led, and a diagnostics caseload is the substance behind the dermatology
+   disqualification. Also **fails must-have 5** (no email on the page). **Zenoti** confirmed, Dr
+   Linda Harkavy named as founder, memberships page linked. Press coverage frames Katonah as an
+   *expansion*, so the site count may be higher than the one address the page shows.
+6. **Aspire Medical Aesthetics** (`aspiremedaesthetics.com`) — Scarsdale NY + 888 Park Avenue
+   Manhattan + Flushing NY (3 sites). **FAILS MUST-HAVE 5:** no email on the homepage, and the
+   privacy policy ("Last updated: June 4, 2025") nominates only its contact page —
+   "By visiting this page on our website: Contact Us" — so the nominated-`/contact` rule applied
+   and no fetch was spent. Otherwise a real prospect: **Wei Jiang, RN, Co-Founder and Aesthetic
+   Nurse Injector**, RN in New York since 2004; memberships page; **three manufacturer loyalty
+   schemes (Aspire, Allē, Xperience)**, which per ICP v2's 5 Nov note are a grade-A-ish signal
+   rather than a parent-group tell. Platform is **Zocdoc**, which is a booking marketplace rather
+   than a practice system. Policy named MyAdvice as the web vendor and Codenroll for
+   accessibility; "Eugene J Liu M D" appears in the page title, which is the likeliest name of
+   the medical owner if anyone phones. "Spider Veins/Sclerotherapy" names a cosmetic indication
+   with no varicose language, so must-have 2 passes. Must-have 4 would sit at B on career length
+   only — the "5 Star Google Reviews" and "Years" counters on the page are **blank**.
+
+---
+
+## 5. Already in the pipeline — grepped before fetching, not re-opened
+
+- **Attune Wellness Med Spa**, Stamford + Greenwich CT — pipeline row 174 (grade A).
+- **Premier Medical Aesthetics**, Berlin + Ridgefield + Washington Depot CT — pipeline row 175.
+- **Greenwich Medical Spa** — already in `near-misses.md` from the 24 Sep 2026 Northeast pass as
+  **8 sites across CT, NY and NJ**, so it fails must-have 3 under ICP v2 regardless of the
+  address. I blocked `greenwichmedicalspa.com` in two queries after it took slots on the first
+  Fairfield search, and I also blocked `giftly.com`, which surfaced as its gift-card reseller
+  exactly as the brief predicts.
+
+---
+
+## What this market taught me
+
+**The corridor is genuinely near-virgin and it is rich.** Eight searches and 48 fetches produced
+16 accepted rows from 28 businesses opened — a 57% conversion that is at the top of anything in
+the files, and it happened because nobody had queried these towns before. "Westchester" and
+"Scarsdale" returned zero in both the pipeline and near-misses before today, and the only prior
+Northeast pass (24 Sep) was run under the **pre-ICP-v2 standard**, which welcomed multi-site and
+plastic surgery — so its verdicts here are not reusable and its one great find, Greenwich Medical
+Spa, is now disqualified on scale. **A metro swept under an old standard has not been swept.**
+
+**The dermatology-and-plastic-surgery hazard I was warned about did not materialise the way it
+was framed.** I expected to rule out many practices on the label. In fact only **two** rule-outs
+were surgical or diagnostic (Kállos, with a linked surgical menu and an FACS plastic surgeon;
+Form & Function, with its own diagnostics line), and both failed on *substance* — a surgical menu
+link, a diagnostics category — exactly as the 8 Nov ruling says they should. **The label fired
+far more often than the substance did**, and each time the substance cleared it: Contour's
+unnamed plastic-surgeon CMO over a wholly non-surgical menu, Jennvie's and Element's founders
+with "a background in dermatology", Priva's "cosmetic dermatologic skincare specialist",
+Primary's "American Academy of Dermatology Nurse Practitioners" membership. **In an affluent
+suburb the dermatology word is a hiring credential, not a business model.** The 8 Nov ruling
+earned its keep five times in one sweep.
+
+**The real crowder-out in this corridor is the Manhattan satellite, and it is weaker than
+billed.** Four businesses run a city site alongside a suburban one — Youtherapy (Manhattan +
+Scarsdale + Chappaqua), Aspire (Park Avenue + Scarsdale + Flushing), The Formula (Staten Island
++ Rockaway + Rye), SYR x 4Her (White Plains + a Manhattan room "coming soon") — and **not one of
+them exceeded four sites, so not one failed must-have 3 on the count.** The hazard is real but it
+is a *pitching* problem, not a qualification one: the buyer sits in the city while the lapsed
+list sits in the suburb. I recorded that on each row rather than failing it.
+
+**What actually failed clinics here was must-have 4, and it failed on evidence rather than on
+age.** Eleven of the 28 businesses published no founding year, no "since" line, no review count
+and no career figure — four accepted rows are parked at C for exactly that, and three more pass
+only on a practitioner's career length. **Only three clinics in the whole corridor published a
+dated artifact about the business** (Dolce Vida's "Since 2010", Pure's "Since 2015" plus 5,000
+patients, Skin Archive's fatal "opened in 2025"). This is the British review-count finding
+reappearing in a wealthy American suburb: these are plainly busy, long-standing practices that
+simply do not print the number. **A bare "5.0 on Google" with no count turned up five times**
+and each time it was worth nothing under the 8 Nov ladder.
+
+**The privacy-policy address rule paid for itself, but the `/contact` ruling cost four good
+clinics and I think it is correctly costing them.** Five of 16 accepted addresses came off a
+privacy policy the homepage withheld — Youtherapy, SYR x 4Her, Ayla, Contour (twice over) — which
+is about a one-in-three yield on the fifteen policies read, so **budget the Northeast like the
+Mountain West rather than like inland California.** Against that, **four strong clinics (Privá,
+Element, Aspire, and arguably Rejive) have policies that nominate `/contact` as their data-request
+route**, and the 5 Nov rejection of that as a third exception held me off all four. That is the
+single biggest cost of the run. I am not proposing it be reopened — one worker already spent a
+fetch deliberately to test it and got nothing — but it is worth recording that **the
+nominated-`/contact` pattern is unusually common in this corridor**, four times in 28 businesses,
+so if the rule is ever re-measured, Fairfield County is where the sample is.
+
+**Two techniques that worked, measured.** (1) **The US policy as a CRM detector paid off twice in
+one sweep and both times it was the only way to learn the platform:** Contour's policy names
+**Boulevard** in plain words, and SeeBeyond's names **LeadConnector** — on a clinic whose address
+is Cloudflare-hidden, so the policy fetch was the entire return. (2) **The close-out search is a
+URL-existence prover, exactly as the 8 Nov correction says, and not a policy finder.** One call
+over six parked domains returned **two privacy-policy URLs, three contact or locations URLs and
+one blog post** — and the one genuinely useful result was `intentionalselfaesthetics.com/contact/`,
+which the widened exception legitimately allowed me to fetch and which then published nothing.
+
+**Platform concentration, per the per-market rule.** Zenoti five (Privá, Element, Grace, Form &
+Function, The Formula) — the clear standard here. Aesthetic Record three (Beauty & Fly, Naqi,
+Pure). MyAestheticRecord/MyAestheticsPro two (Rejive, Versailles). Boulevard two (The Cosmetic
+Clinic, Contour). GoHighLevel/LeadConnector three (Jennvie, SeeBeyond, The Formula). Mangomint,
+Symplast, Vagaro, RepeatMD and Shopify one each. **Nine of 28 businesses named no platform at
+all**, booking on their own domain — notably higher than the US runs in the files, and a reminder
+that in a market where clinics can afford bespoke web builds, the booking link stops being a
+tell.
+
+**Where I stopped and why.** On judgement, not budget — I had searches left. The last four
+homepages opened produced **one** sendable row (Pure) against three dead ends (Kállos surgical,
+Suma silent and wellness-led, Greenwich MD silent), and the four before that produced two. The
+marginal fetch had stopped buying rows.
+
+**What I would do next, in order.** (1) **Jess's browser, ten minutes, two clinics:** SeeBeyond
+Beauty and Luxe Level Aesthetics are one tab each, and SeeBeyond is a two-site Scarsdale/Greenwich
+practice running LeadConnector with 10,000 patients claimed. (2) **One phone call to Rejive
+Medical Aesthetics in New Canaan** — a named owner-NP, MyAestheticRecord, and a membership fee
+that is "NEVER lost" and rolls over indefinitely; that is the sharpest dormant asset in the
+corridor and the only barrier is that she publishes a phone number instead of a mailbox.
+(3) **Four releasable C rows need one page each** — a founding year or a review count on the
+About pages of Naqi, Sense, Ayla, and an owner's name for Contour. Sense in particular has a
+loyalty-points membership and would be a solid B the moment a review count appears. (4) The towns
+I did **not** reach: Larchmont (one lead, `thestudiomd.com`, whose `/larchmont/medspa/` returns a
+client error and which looks multi-site), Harrison, Armonk beyond the Ginsberg pair, Katonah
+beyond Form & Function, and **all of Rockland County** (Nyack, Piermont) — Nanuet arrived only as
+Contour's third address. Those are the next sweep.
+
+---
+
+## 9 November 2026 — re-read of pre-ICP-v2 near-misses
+
+# Backwards re-read of the 23-24 September 2026 near-misses, under ICP v2 — 9 November 2026
+
+The 23-24 Sep sweeps ran under the retired 22 Sep standard, where scale was a virtue and a single
+operator was a reason to rule a clinic out. ICP v2 (16 Oct 2026) reversed that and the reversal was
+only ever applied forwards. This file is the half of that re-read that did **not** produce a
+pipeline row: clinics re-opened and still failing, clinics that could not be reached, and — the
+part that keeps the file honest rather than merely longer — **September's *positive* near-misses
+that the same flip turned into disqualifications.**
+
+Accepted rows from the same pass are in `reread.json` (ids 1105-1110).
+
+---
+
+## 1. Re-read and still does not clear
+
+### Skins Clinic / "SKINS by Christina" (Manchester) — FAILS MUST-HAVE 5
+Dropped 24 Sep as a single operator. Re-opened 9 Nov: `https://skinsclinic.co.uk/contact` is
+**robots-disallowed** to a fetch, and the homepage `https://skinsclinic.co.uk/` fetched clean and
+publishes **no email address in any form** — no visible text, no `mailto:`, no Cloudflare
+`cdn-cgi/l/email-protection` token and no `[email protected]` rendering. Nothing was decoded and
+nothing was offered to decode. No privacy policy is linked, so the ICP's British policy route has
+nowhere to go.
+
+Also failing independently, recorded so nobody re-sources this one as cheap: **must-have 8** (no
+Ltd, no Limited, no company number, no ICO number anywhere on the page) and **must-have 4** (no
+founding year, no copyright line, no review count, no stated practitioner experience — no proxy of
+any kind, which the evidence ladder parks at C).
+
+And a finding the September entry did not have: the practitioner, Christina, is "a Physician
+Associate and Aesthetics Practitioner" who "works primarily as a NHS medical professional in
+Trauma, Orthopaedics and Plastic Surgery in Manchester." No NHS service is offered *through the
+business*, so must-have 2 is not what fails here — but this is an aesthetics practice run alongside
+a full-time hospital job, with no address, no company, no platform and no stated location. It is
+the thinnest of the seven named clinics and I would not spend another fetch on it.
+**Not a browser-visit candidate:** the blocked page is `robots.txt`-disallowed, which per the brief
+is a directive to automated agents rather than something a browser recovers, and the page that
+*was* read has no address to recover.
+
+### Skin & Joints by Vee Spandoni (Bristol) — FAILS MUST-HAVE 5 AND MUST-HAVE 8
+Dropped 24 Sep as a single operator. Re-read properly on 9 Nov, including the policy page, because
+the ICP's 8 Nov correction says a British clinic must not be written off before its privacy policy
+has been checked. Two pages read: `https://www.skinjoints.co.uk/contact` and
+`https://www.skinjoints.co.uk/policies`. **Neither publishes an email address** — contact form
+only, no `mailto:`, no Cloudflare token, no `[email protected]`. The policy route was spent and
+came back empty, which is the answer the 8 Nov rule asks for rather than an untested assumption.
+
+**Must-have 8 also fails on its own pages:** no Ltd, no Limited, no company number, no ICO
+registration and no named data controller; the only identity string anywhere is the copyright line
+"Copyright 2026 - Skin & Joints by Vee Spandoni". I did **not** spend a register call, because
+must-have 5 had already decided the row and a company identity would not have made it sendable.
+
+**One substantive concern recorded for whoever ever reaches this clinic, so the work is not
+repeated:** alongside a full injectables menu (PDO threads, dermal filler, anti-wrinkle, exosomes,
+polynucleotides, skin boosters, hybrid fillers) the clinic runs a co-equal **Pain Management** arm —
+ultrasound-guided Artrosamid and Durolane joint injections, ultrasound-guided steroid injections,
+ultrasound-guided PRF — plus **acupuncture** pages. That is musculoskeletal disease work, and in
+Britain ultrasound-guided MSK injection and acupuncture are the lines private medical insurers
+reimburse. It maps onto the ICP's second must-have 2 failure mode (a third-party-reimbursed arm
+alongside the discretionary one) rather than onto must-have 1. The policy page says only "For
+health, safety, and insurance purposes" about guests in the treatment room and makes **no** claim
+about health-fund rebates, so this is a reasoned concern and not a finding. **Disposition: parked
+at C naming must-have 5 first.** If the clinic ever publishes an address, the single check that
+decides the rest is whether the pain-management arm accepts insurer-funded referrals.
+
+### The MedSpa of DFW (Grapevine, Texas) — FAILS MUST-HAVE 5, AND THE SEPTEMBER ENTRY WAS WRONG ABOUT IT
+This is a half-one candidate the September sweep itself flagged: it wrote that The MedSpa of DFW
+and Skin 101 Houston "both have published emails and real systems, and are excluded **only** by the
+single-site rule." v2 relaxed that rule. Skin 101 recovered and became row 1110. **This one did
+not, and the reason is that the claim about its published email is not reproducible.**
+`https://medspaofdfw.com/` and `https://medspaofdfw.com/contact/` were both read on 9 Nov and
+**neither publishes an email address in any form** — no visible text, no `mailto:`, no Cloudflare
+token, no `[email protected]`. Every contact route is a phone number, an SMS number, a fax number
+or an embedded `link.aestheticrecord.com` form.
+
+Everything else about it clears v2 and is worth keeping, because it needs an address found and not
+qualifying: one location (815 Ira E. Woods Ave Suite 200, Grapevine TX 76051 — the Southlake page
+is a service-area page, not a second clinic, so **must-have 3 passes**); **Aesthetic Record** as the
+practice system, with its own booking subdomain; H. Elaine Ewing, BS, MPAS, PA-C with "over a decade
+of experience", which satisfies **must-have 4** at a B cap on the evidence ladder; a Membership
+Program page; no insurance, Medicare or Medicaid mention anywhere, so **must-have 2 passes**.
+Copyright is a bare "© Copyright 2026", which under the ICP's 8 Nov rule evidences nothing.
+**The one remaining check is a privacy-policy fetch** — the American equivalent of the British
+register — which I did not spend because no policy URL was exposed on either page read and the ICP
+warns that guessing one is a URL-existence question, not a finding. That is the cheapest thing left
+on this clinic and it is one fetch.
+
+---
+
+## 2. Could not be reached
+
+### Illuminate Skin Clinics (Dr Sophie Shotter, Kings Hill, Kent) — NOT RE-OPENED, AND IT SHOULD BE
+Listed in the 23 Sep table because its contact page "returns 401 to a fetch". Under v2 this is
+exactly the target profile — a single-site, owner-doctor clinic with a nationally known
+owner-injector — and the only thing against it is a fetch failure, which is the most recoverable
+reason in the file. I ran out of search budget before getting a domain for it. **It belongs at the
+top of whoever finishes this seam**, and a 401 is a browser-visit candidate rather than a
+disqualification.
+
+### Everything in section 4 below
+The unopened remainder is listed there rather than here, because none of it was reached at all —
+not reached and not attempted is a different fact from reached and blocked.
+
+---
+
+## 3. THE INVERSION — September's positive near-misses, disqualified under ICP v2
+
+**Read this section before re-sourcing anything from a September table.** These clinics are
+recorded in `near-misses.md` as attractive *because they had scale*. Under v2 scale is not a virtue,
+and several of them now fail outright on the very thing that recommended them. Twenty-five clinics are disqualified outright, one has its recommendation withdrawn (EF Medispa) and one
+has a stale reason corrected (Accent on Skin). Each is marked in `near-misses.md` itself so the
+table cannot be read without the correction.
+
+### The four named on the standing list
+
+| Clinic | September's recommendation | v2 disposition |
+|---|---|---|
+| **CJA Aesthetics** (Southampton, Winchester, Portsmouth + 3) | "Six sites, Semble booking, two membership tiers, Dr Chris Airey & Dr Lauren Airey" | **FAILS MUST-HAVE 3.** Six sites is five-or-more, which the ICP says means a head office decides marketing. None of the three look-alike structures applies: these are six distinct trading addresses across Hampshire, not SEO suburb pages, not one travelling nurse and not a room inside a host salon. Clean fail, no fetch needed. Its Cloudflare obfuscation (must-have 5) is now moot — **do not put it on the browser-visit list.** |
+| **Quinn Clinics** (Bristol) | "Eight-plus named staff including an oculoplastic surgeon, Zenoti, and four separate dormant pools" | **FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY DISQUALIFICATION — but NOT must-have 3, and the distinction is deliberate.** The clinic's own page titles are "Surgical Plastic Surgery Oculoplasty" and "Minor Skin Surgery in Bristol" (`quinnclinics.co.uk/surgical/`, `/surgical/skin/`), under Dr John Quinn. That is a surgical practice with a surgical menu — substance, not a word, and the same shape as pipeline row 27. It also fails the ICP's minor-surgery rule, which it meets by name. **Must-have 3 is NOT the failing one**, because must-have 3 counts *sites* and Quinn is one address; the thing that recommended it in September was staff and surgeon scale, not site count. Recorded this way so nobody later "corrects" the entry to must-have 3. Must-have 5 (no published email) also still stands. |
+| **Elanic** (Glasgow) | "Eleven named surgeons across three Bath Street addresses, financing eligibility checker, gift cards, free consultations" | **FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY DISQUALIFICATION.** Eleven named surgeons is substance, not a label, and v2 moved plastic surgery from target to disqualification outright ("insurance billing, heavier privacy rules"). Three addresses would have passed must-have 3 on count, so — as with Quinn — **the failing must-have is 1, not 3.** Must-have 5 also still stands (form only). |
+| **EF MEDISPA** (Kensington, Chelsea, St John's Wood) | "Three London sites, complimentary consultations, EF Loyalty Points, own booking portal" | **FAILS MUST-HAVE 5, CONFIRMED TWICE — AND ITS SEPTEMBER RECOMMENDATION IS WITHDRAWN. THE MUST-HAVE 3 READING DOES NOT HOLD AND I AM NOT GOING TO PRETEND IT DOES.** I fetched `https://www.efmedispa.com/find` on 9 Nov: **three** locations, no more (29 Kensington Church Street W8 4LL; 193 Kings Road SW3 5ED; 69 St John's Wood High Street NW8 7NL), "Trusted Since 2007", a Loyalty Points programme, and **no email address anywhere on the page** — phone, WhatsApp, callback form and an online booking link only, which reproduces the 23 Sep finding seven weeks later. Three sites is inside v2's one-to-four band, so **must-have 3 passes on count** and the standing list's claim that EF Medispa "now fails must-have 3" is wrong as written. What *is* true, and is the point: it is a three-site London group with a central price list, a central booking portal, a central loyalty scheme and no named owner on its locations page — the shape the ICP's "a three-site group run by a marketing manager does not [qualify]" clause is aimed at — so the scale that recommended it in September is no longer any reason to want it, and **it cannot be emailed at all.** Disposition: dead for this offer on must-have 5, recommendation withdrawn, not to be re-sourced as promising. |
+
+### Others of the same kind, found while in there
+
+Same inversion, same September tables, and all of them were listed as prospects *because* of their
+footprint. **Marked in `near-misses.md`.**
+
+**Fail MUST-HAVE 3 on five-or-more sites — none of the three look-alike structures applies:**
+
+- **Contour Clinics** (Sydney + Brisbane) — eight doctor-led clinics, ~50 practitioners. The 24 Sep
+  table calls it "the single largest prospect found anywhere" and "the best-fit prospect in the
+  entire pipeline, worth a phone call on its own." Under v2 it is the clearest disqualification in
+  the file: eight sites and fifty practitioners is exactly where a head office decides marketing.
+- **Absolute Cosmetic** (Perth) — twelve WA clinics.
+- **Artisan Aesthetic Clinics** (NSW/ACT/QLD) — eleven clinics; already a blocked domain in the
+  sourcing brief, now also numbered.
+- **Victorian Laser & Skin Clinic** (Melbourne) — five clinics.
+- **Westlake Dermatology** (22 sites, Texas) — fails must-have 3 *and* the dermatology
+  disqualification; the September table listed it for "the largest footprint found anywhere."
+- **North Texas Plastic Surgery** (DFW ×7) — seven sites, seven surgeons: must-have 3 *and* plastic
+  surgery.
+- **Advanced Aesthetics** (Las Vegas ×3, Dallas, La Jolla) — five sites.
+- **La Jolla Cosmetic Medical Spa** (five San Diego-area sites) — five sites, surgeon-led.
+- **Truffles Aesthetics** (Atlanta metro ×5) — five sites.
+- **Greenwich Medical Spa** (8 sites, CT/NY/NJ) — eight sites. September called it "the single best
+  prospect found in the entire Northeast" and "one browser tab away from being emailable." It is
+  not one tab away from anything now.
+- **SkinMD** (10 Massachusetts sites) — ten sites.
+- **East Coast Advanced Plastic Surgery** (NYC + 5 NJ) — six sites, ten surgeons: must-have 3 *and*
+  plastic surgery.
+- **Ethos Aesthetics + Wellness** (7 NJ sites) — seven sites. September explicitly defended it as
+  "owner-operated, not a chain", which was a 22 Sep virtue; v2 counts the sites.
+
+**Fail the plastic-surgery / surgical disqualification and MUST-HAVE 1, on substance rather than on
+a label (surgeons named, surgical menus published):**
+
+- **Centre for Surgery** (Baker Street) — listed in September for finance and a CQC rating.
+- **Aesthetic Center for Plastic Surgery** (Houston ×3) — thirteen surgeons; also must-have 3 at
+  three sites would have passed, so the failing must-have is 1.
+- **La Jolla Cosmetic Surgery Centre** — seven surgeons.
+- **River Medical** (Dublin, Cork, Belfast) — a BAAPS/BAPRAS/RQIA-accredited surgical practice.
+  September listed the accreditation as a *reason to want it*.
+- **Fitzgerald Plastic Surgery** (Dublin) — already rejected in September on dormant signal; under
+  v2 it is disqualified outright, which is a cleaner answer.
+- The surgical groups already listed in September's "rejected on dormant signal" paragraph —
+  **Plastic Surgery Group New Jersey, Boston Center for Plastic Surgery, Longwood, NYBG Plastic
+  Surgery** — are disqualified outright under v2 rather than merely unattractive.
+
+**Borderline and deliberately NOT disqualified, because the evidence is not there and a guess in
+this direction is as damaging as a guess in the other:**
+
+- **Cosmedics Skin Clinics** ("four sites including Harley Street and Putney") — four sites is
+  inside v2's band on count. It reads like a London group with central management, but I did not
+  verify a current site count and will not disqualify on a recollection. It fails **must-have 5**
+  (Cloudflare) regardless, so it stays where it is.
+- **The Cosmetic Skin Clinic** (Harley Street + Stoke Poges, two sites), **Melior Clinics**
+  (Sevenoaks, Harley Street, Huntingdon, three sites, three named doctors), **LLC Cosmetic** (four
+  QLD clinics), **Jade Cosmetic & Wellness** (two), **Southern Cosmetics** (two), **AdmireMD**
+  (two), **Skintegrity MedSpa** (three), **Fresh Start Aesthetics** (three), **Spa Sydell** (three),
+  **Trifecta Med Spa** (four), **Metro Laser MedSpa** (three), **Cienega Medical** (three),
+  **Tribeca MedSpa / AYA** (two) — all pass must-have 3 on count under v2 and all remain
+  near-misses on **must-have 5**, which is unchanged. Several of them (Tribeca, Cienega, La Jolla
+  Cosmetic Medical Spa's surgeon, Spa Sydell's size) would need the surgical/dermatology substance
+  test applied if anyone ever reaches them. **No scale-based reason remains to rank any of them
+  above an owner-operated single-chair clinic.**
+
+### And one correction in the opposite direction, in the same tables
+
+- **Accent on Skin** (Wellington, NZ) was recorded on 24 Sep with "only two practitioners named so
+  it would likely fail scale anyway." That reason is dead: under v2 two practitioners is not a
+  failure and would not have been a tiebreak. It remains a near-miss **solely on must-have 5**
+  (Cloudflare-obfuscated). The entry has been corrected in `near-misses.md` so the stale scale
+  reason is not read as a standing rule-out.
+
+---
+
+## 4. What is left in the September sections — the unopened remainder
+
+I re-read **every** pre-16-October section of `near-misses.md` (23 Sep London/South East; 24 Sep
+Australia; 24 Sep UK regions; 24 Sep Ireland / NZ / regional Australia; 24 Sep US South and West;
+24 Sep US Northeast, plus all four "ruled out, don't revisit" lists). The seam is **not** exhausted.
+Named, legible and never opened:
+
+**The richest thing left, and it is not a single-operator case at all — it is the same bug one rule
+over.** Three American clinics in the 24 Sep Northeast section are recorded under "Three grade-C
+fallbacks with real published emails" with the words "**All three fail only on naming a booking
+platform**" — and a booking platform was never a must-have under v2; it was the *pitch* under the
+22 Sep standard. **Aesthé By MD** (3 CT/NJ sites), **Manhattan Medspa** (annual memberships) and
+**Skinly Aesthetics** (Skinly Club plus two lenders) are therefore parked on nothing, exactly like
+the fifteen pipeline rows the 8 Nov sweep found. They have addresses recorded already. One fetch
+each, and the US needs no regional screen.
+
+**Two Australian clinics dropped for the same non-must-have:** **Dr Tass Cosmetic & Skin Clinics**
+(three Melbourne clinics, a named Signature Club membership — dropped because "bookings are taken by
+phone") and **Cosmetic Connection** (Toorak + St Leonards, gift cards on Square). Both pass
+must-have 3 on count. Both need the AU/NZ must-have 6 consent screen, which makes them dearer than
+the American three.
+
+**Six AU/NZ single operators, never opened, dropped on exactly the reversed rule:** DC Aesthetics,
+Newcastle Cosmetic Doctor, Coastal Skin & Laser (Tewantin), Dr Sarah Sparks (Hobart), Hobart Facial
+Aesthetics, Sapphire Appearance Medicine (Auckland). (**Dr Terrence Scamp**, listed beside them, is
+a Gold Coast plastic surgeon and is disqualified under v2 rather than recoverable — one of the
+seven named single operators that the re-read *loses* rather than gains.)
+
+**One UK clinic dropped on must-have 1, not on scale, and worth exactly one look:** **No.6 Clinic**
+(Tunbridge Wells), ruled out 23 Sep as "beauty-led rather than medical". That is a must-have 1
+judgement made under the old standard by a worker who was also applying a scale rule, and "beauty-led"
+is the kind of single-word parking the 8 Nov "a label is not a finding" ruling exists for.
+
+**Two clinics whose only blocker is a fetch failure, and which are v2 targets on profile:**
+Illuminate Skin Clinics (401, above) and **The Skin Care Clinic** (Hobart) — one site, six named
+staff, a full points loyalty scheme with points for referrals and testimonials, and a `/contact/`
+page that could not be fetched at all. September called it the best dormant signal in Tasmania.
+
+**Not worth anyone's time, recorded so it is not re-checked:** the AU/UK/US/NZ chain and franchise
+lists (Cosmetique, Australian Skin Clinics, SILK, sk:n, Thérapie, Harley Medical Group, Air
+Aesthetics, Transform, The Private Clinic, Signature, Nu Cosmetic, Este Medical, Spire, Nuffield,
+Skin Institute, The Cosmetic Clinic NZ, and the twenty-odd US franchises) — all fail must-have 3 or
+the chain disqualification under both standards. The flip changed nothing for them.
+
+---
+
+## 9 November 2026 — Long Island NY (Nassau + Suffolk)
+
+# Near misses — Long Island, New York (Nassau & Suffolk), swept 9 November 2026
+
+Standard applied: ICP v2 with the five rulings of 8 Nov 2026 (label-is-not-a-finding, veins,
+minor surgery cuts both ways, mole screening, prominence-is-not-a-test). US rows need must-haves
+1 to 5 and no consent screen.
+
+**Run totals:** 13 WebSearch, 42 WebFetch. 17 accepted rows (1 A, 9 B, 7 C) in
+`longisland.json`. 24 businesses opened or resolved; 13 clear the ICP on fit and publish no
+readable email; 5 are rule-outs with the failing must-have numbered below; the rest were
+chains or out-of-market and are listed at the end so nobody re-queries them.
+
+**On the decode rule: the fetch helper NEVER volunteered a decoded address on this run.** Every
+fetch prompt told it not to decode and to say only that a token was present, and it complied in
+all three obfuscation cases below. Nothing decoded was offered to me and nothing was taken.
+
+---
+
+## A. Cleared the ICP on fit, publish no readable email
+
+### 1. Applied Aesthetic — Garden City, NY · `appliedaesthetic.com`
+**THE BEST ROW LONG ISLAND HAD AND CLOUDFLARE TOOK IT. Browser-visit list.**
+- 1539 Franklin Avenue, Suite 101, Garden City NY 11530 · (516) 243-9907
+- **Natalie Sharp, FNP-BC**, owner and founder, board-certified Nurse Practitioner, "over 10
+  years of experience". Legal entity printed in the SMS consent text as "Natalie Sharp NP In
+  Family Health PC".
+- **5.0 from 301+ Reviews** — the highest published review count of any single-site clinic in
+  the market, so must-have 4 passes outright.
+- **"Beauty Bank Membership"** — banked credit, with 100% of the membership usable against
+  treatment, a birthday credit and a referral credit. Plus gift cards, a specials page and a
+  provider-training arm. This is the richest dormant structure found anywhere on Long Island.
+- CRM free from the policy's processor pass: **Blvd (Boulevard)** gift cards, **CareCredit** and
+  **Cherry** financing, site built by **Growthstack by Influx / Medspa Marketing**. The policy
+  body names no processors at all.
+- Menu clean: hyperhidrosis is the only reimbursable-adjacent line, one against a threshold of
+  four. No veins, moles, lesions, excision, surgery, dermatology or insurance language.
+- **WHY IT IS HERE:** the homepage renders its only mailbox as `[email protected]` with a
+  `cdn-cgi/l/email-protection` token. I then spent the policy fetch — and **the privacy policy
+  serves THE SAME Cloudflare-protected token, twice**, in its Contact Us section ("By emailing us
+  directly at:") and again in the footer. So both of the pages the brief points at are protected.
+  Not seen, not recorded, **and recoverable by a person opening the page** — Jess can read this
+  one in her browser in seconds and it is the first one she should open. Policy last updated
+  21 February 2025; no refusal of unsolicited commercial email anywhere.
+
+### 2. Nimbus Medical Spa — Great Neck, NY · `nimbusmedicalspa.com`
+**FETCH-FAILURE MODE SEVEN. Not a browser job — no browser recovers it.**
+- 701-703 Middle Neck Rd, Great Neck NY 11023 · (516) 788-4742 · one site
+- **Zenoti** confirmed (`nimbusmedspa.zenoti.com`), **"Nimbus Club Reserve"** membership,
+  **5.0 Stars from 49 Reviews**. No owner named anywhere.
+- **MUST-HAVE 2 RESOLVED IN ITS FAVOUR before it fell on must-have 5**, and the working is worth
+  keeping: the laser menu lists "Laser Vein Removal". I read the homepage AND the full privacy
+  policy and the words varicose, venous insufficiency, phlebology, vein disease, insurance and
+  Medicare appear **nowhere**. Under the 8 Nov absence rule that is a pass. Hyperhidrosis and
+  medical weight loss are the only reimbursable-adjacent lines — two against four.
+- **WHY IT IS HERE:** the homepage publishes no mailbox; its contact links all point at
+  `/contact-us/`. The privacy policy then says, in terms, **"email us at ."** — the address is
+  simply missing — and nominates data requests to *"the email address or phone number given on
+  our website"* on a site that gives no email address. That is the seventh mode, found twice on
+  8 Nov and now a third time. **The brief's cheapest tell did NOT work here:** the policy is
+  dated *Effective: January 1, 2026* and page-modified April 2026, so it is current boilerplate
+  rather than something nobody has read since 2018.
+- `/contact-us/` was **deliberately not fetched**: the policy nominates a route, so the 5 Nov
+  rejection of the "policy nominates /contact" exception applies.
+
+### 3. Youthology Medical — Melville, NY · `youthologymedical.com`
+**Total silence on email across homepage and a full privacy policy.**
+- 900 Walt Whitman Road Suite 205, Melville NY 11747 · (516) 817-6423 · one site
+- **Dr Craig Grobman**, board-certified physician, founder and medical director; **Ilene
+  Grobman**, Co-Owner & Practice Manager — a named husband-and-wife ownership pair, which is the
+  cleanest must-have 3 evidence in the market. Plus a licensed esthetician, an aesthetic nurse
+  specialist, an office manager and two patient-care coordinators.
+- **RepeatMD** (`youthologymedical.repeatmd.app`) driving a **VIP Loyalty App**, a memberships
+  page and gift cards. A dedicated loyalty app is a grade-A dormant signal.
+- Menu is large and genuinely aesthetics-led (Sciton BBL Hero, MOXI, ProFractional, Contour TRL,
+  Avéli, Bellafill), with hormone optimisation, peptides, weight management and O-Shot/P-Shot as
+  a wellness arm — two reimbursable-adjacent lines against four.
+- **ONE UNRESOLVED ITEM, recorded so nobody re-litigates it:** the injectables menu lists
+  **"Asclera Treatment"** with no description anywhere. I spent one site-limited search
+  (`site:youthologymedical.com` for "Asclera spider veins sclerotherapy") to resolve it from the
+  result titles for zero fetches, per the brief's cheapest-move rule. **It did not resolve** —
+  the only matching title is "What to Expect During an Asclera® Treatment" and names no
+  indication. The absence rule still points to a pass (no varicose, venous-insufficiency,
+  phlebology or insurance language on the homepage or the full policy), but since the row is a
+  near-miss on must-have 5 anyway the question is moot and I have not graded on it.
+- **WHY IT IS HERE:** no mailbox on the homepage, and the privacy policy — read in full, last
+  updated 4 June 2025 — nominates **"By visiting this page on our website: Contact Us"** and no
+  mailbox. It adds "Please include non-medical questions and correspondence only." Per the 5 Nov
+  measurement a policy that nominates `/contact` as its route is **not** a third exception, so I
+  did not spend the fetch. Policy processors: Google Analytics, Facebook Insights, GTM, plus
+  Codenroll and MyAdvice as site vendors. No refusal of unsolicited commercial email.
+
+### 4. The Skin Clinic — Huntington, NY · `theskincliniconline.com`
+**A NEW, EIGHTH OBFUSCATION FLAVOUR: CleanTalk email encoding. Browser-visit list.**
+- 76 East Main Street Suite 3, Huntington NY 11743 · (631) 470-8219 · one site
+- **Stephanie**, Owner and Clinical Licensed Aesthetician, NY State licensed, **over 20 years'
+  experience, and she opened The Skin Clinic in 2009** — one of only two explicit founding
+  years anywhere in this market, so must-have 4 passes on a stated founding year, the top rung of
+  the ladder. **Mike**, Licensed Nurse Practitioner (MSN Adult Health, Hunter College 2003,
+  ANCC). **Marisca**, Clinical Licensed Aesthetician, with the team since 2017.
+- **GlossGenius** booking and gift cards (`theskinclinicbooking.glossgenius.com`), gift
+  certificates, and an explicit **"Free Consultation — No Obligation"** form.
+- Menu is aesthetician-led skin and device work — acne series, Celluma LED, Venus Legacy,
+  dermaplaning, HydraFacial, IPL, laser hair removal, RF microneedling, Tribella, Glo2Facial.
+  **NO INJECTABLES AT ALL**, which is a real weakness for the offer: the recall cycle rests on
+  facials and acne courses rather than on a three-to-four month wear-off. Must-have 1 passes as
+  aesthetics-led, not injectables-led. "Skin Irregularities" sits in the navigation with no
+  detail — **UNSCREENED, not failed**, per the substance rule; nothing seen, so nothing to grade.
+  "Surgery" appears only in staff biographies naming a former employer.
+- **WHY IT IS HERE, AND IT IS A NEW TAXONOMY ENTRY.** The privacy policy's contact link displays
+  as `th*****************@gm***.com` and its underlying `mailto:` resolves to a **different**
+  masked address, `th***********@op*******.net`. The page states outright: *"This contact has
+  been encoded by CleanTalk."* **I did not decode it.** This is not Cloudflare — it is a
+  different vendor doing the same job — and the brief's seven-mode taxonomy names only
+  Cloudflare. Functionally identical: not seen, never recorded, **and a browser recovers it**,
+  so this is a browser-visit-list clinic, not a dead one. Two further details matter: the
+  displayed mask and the mailto mask are **different domains**, so a human reading it must check
+  whose mailbox the `op*******.net` one is before using it (the brief's "somebody else's working
+  mailbox" rule); and the policy is dated **Last Updated 2/24/2020**, so it is old boilerplate.
+  **Recommend CleanTalk be added beside Cloudflare in the fetch-failure taxonomy.**
+
+### 5. Beauty Bomb Aesthetics — Smithtown, NY · `beautybombny.com`
+**Total silence. Lost to the /contact rule, and the closest call of the run.**
+- 100 W. Main Street, Suite E, Smithtown NY 11787 · 516-732-6712 · one site
+- **Christine Gerena**, board-certified Physician Associate and the practice's **only injector**,
+  "over a decade of experience" (a career length, which caps at B). Called "Dr. Christine" and
+  "Chrissy" in testimonials. No owner stated.
+- **MyAestheticsPro** confirmed via `web2.myaestheticspro.com` gift cards — on the ICP's grade-A
+  list since 8 Nov. Gift cards, Cherry financing, "No pressure. No obligation." consultations.
+- A deep, genuinely injectables-led menu (five neurotoxin brands, six volumiser lines, Sculptra,
+  CO2/CoolPeel/Tetra/Virtue RF, Subnovii plasma, Physiq) plus a wellness arm. One oddity:
+  **"Kenalog Allergy Shot"**, a therapeutic steroid injection, plus Medical Weight Loss and
+  "Obesity" listed as a treated condition — three reimbursable-adjacent lines against a
+  threshold of four, so a pass with the caveat recorded. No veins, moles, lesions, excision or
+  insurance language.
+- **WHY IT IS HERE:** no mailbox on the homepage, and the privacy policy — read in full, dated
+  1 October 2025 — publishes no address either. It nominates **a postal address and a phone
+  number** for questions. That is two contact routes, so it is **not** the 8 Nov "policy that
+  nominates no contact route at all" exception, and `/contact-us` stayed unfetched. **This is the
+  best offer-fit row in Suffolk County that we could not reach, and if the /contact rule is ever
+  widened again this is the first clinic to re-open.**
+- Minor flag: the Facebook URL slug is `christine.greco.509`, which does not match the surname
+  Gerena. Unexplained; could be a maiden name or a mis-set link. Do not assume the surname.
+
+### 6. VITRA Aesthetics Clinic — Islip, Huntington, Smithtown, Massapequa NY · `vitraaesthetics.com`
+**Four sites, inside must-have 3. Total silence on email.**
+- 469 Main St, Islip 11751 · 192 E Main St, Huntington 11743 · 87 NY-111, Smithtown 11787 ·
+  20 Hicksville Rd, Massapequa 11758. One phone for all four: (631) 662-7880.
+- **MyPatientNow** confirmed (`book.mypatientnow.com/practice/UgoJl8`) — grade-A list — with one
+  practice ID across all four sites, which is how I satisfied myself it is one decision-making
+  unit rather than four. **VVIP Membership**, gift cards, promotions, events & specials, Cherry
+  and CareCredit, a ZO "Circle Club 2025 Member" badge and a separate retail subdomain.
+- Menu is a serious device stack (HALO, Sciton Moxi & BBL Hero, Evoke, EvolveX, Sofwave,
+  CoolSculpting, Contour TRL) plus HRT and a branded weight-loss programme — two
+  reimbursable-adjacent lines against four. No veins, moles, lesions, excision, surgery,
+  dermatology or insurance language on either page read.
+- **WHY IT IS HERE:** **NOBODY IS NAMED ANYWHERE** — no owner, no founder, no medical director,
+  no provider; the page says only that the professionals are "all licensed". A four-site group
+  with no named human is the shape must-have 3 warns about, and even if reachable there is no
+  buyer to address. And the HIPAA & Privacy Policy, read in full, publishes no mailbox and
+  nominates **"give us a call at 631-662-7880"** — a phone route, so no `/contact` exception, and
+  its only linked policy document is an **image file** rather than text. Policy body carries no
+  date; metadata says modified 2022-04-28.
+- **If an address ever surfaces this is a must-have-3 judgement call, not a free row.** I would
+  grade it C on must-have 3 absent a named owner.
+
+### 7. Angelic Medi Spa — Lynbrook, NY · `angelicmedispa.com`
+**Total silence — and the one place on this run where the `/contact` exception fired and paid nothing.**
+- 91 Atlantic Avenue, Lynbrook NY 11563 · (516) 665-1252 · one site
+- **Sonia Anderson, RN** — Board Certified in Aesthetic Enhancement Treatments, Expert Artistic
+  Injector, **Clinical Educator for Merz Aesthetics**, Master Medical Aesthetician and Certified
+  Laser Technician. A manufacturer clinical-educator role is a strong credibility signal. She is
+  **not** stated to be the owner.
+- **GlossGenius** (`angelicmedispa.glossgenius.com/services`), a complimentary consultation, a
+  specials page and a shop. A 50% late-cancellation fee, which implies a managed diary.
+- "Laser Vein Reduction" is the only vein line, inside a device menu, with no varicose, venous,
+  sclerotherapy, phlebology or insurance language anywhere — passes on the absence rule.
+- **Must-have 4 would have parked it anyway:** the copyright line carries **no year at all**, no
+  founding year, no "since", and no review count (three Google reviews displayed, no total).
+- **WHY IT IS HERE, AND THE MEASUREMENT IS THE POINT.** Homepage: no mailbox. Privacy policy
+  (last updated 8 March 2022): no mailbox, and its only contact instruction is a bare *"please
+  contact Us"* inside the children's-privacy section, naming **no channel at all** — which IS the
+  8 Nov widened exception. So I spent the `/contact/contact-form/` fetch deliberately, exactly as
+  the widening licenses. **It returned a phone number and nothing else.** One clean data point
+  against the widened exception, offered without arguing it should be narrowed again.
+
+### 8. Syosset Medi Spa — Syosset, NY · `syossetmedispa.com`
+**Mode seven again, and this time it is in a META DESCRIPTION.**
+- 175 Jericho Turnpike, Suite 201, Syosset NY 11791 · 516-802-4884 · one site
+- **Alla Khalfin, DO** — "Medical Doctor & Injector" — and **Nonna Gilevich**, Esthetician.
+  No owner, founder or medical director stated. Team described as having "more than 40 years of
+  experience between them".
+- **TWO REASONS IT WOULD HAVE BEEN PARKED ANYWAY, both worth recording:**
+  (1) **must-have 4** — "5 / 5 | 5 Total Reviews" is a quantified artifact of five reviews, no
+  founding year, no copyright line; five reviews is not 300 lapsed patients.
+  (2) **must-have 3 is a live question** — Dr Khalfin's page links out to
+  `drallakhalfin.com`, a **separate website** for "Dr. Khalfin's Additional Offerings". A
+  practitioner with her own separate brand at the same address is the leading edge of the
+  practitioner-collective failure the ICP added on 21 Oct; the mitigating fact is that there is
+  one shared diary, one mailbox-less contact route and no separate booking link. **My
+  disposition: C on must-have 4 primarily, with must-have 3 unresolved** — the single check is
+  whether `drallakhalfin.com` sells the same treatments to the same list.
+- **WHY IT IS HERE:** no mailbox anywhere, and **the meta description itself reads "Contact us at
+  or visit us at"** with the address missing. That is mode seven expressed in metadata rather
+  than in a policy, which I had not seen before. Its privacy page is at `/your-privacy` and was
+  not fetched, because the homepage silence plus a template-generated policy on a Tebra site is
+  not worth the fetch at this grade. Site is "Medical Websites Powered by TEBRA" and the
+  "Book Online" control has no URL behind it.
+
+### 9. The Sonu Spa — Woodbury, NY · `thesonuspa.com`
+**Silent homepage, no privacy policy at all — the one clinic where the second `/contact`
+exception genuinely applies and I ran out of a usable URL.**
+- 199 Froehlich Farm Blvd, Woodbury NY 11797 · 631-605-7246 · one site
+- **Dr Seema Nambiar, MD** — the only name on the site, offering "Free Consultations provided by
+  Dr. Seema Nambiar, M.D." Her credentials are printed three different ways on one page (MMD,
+  MD, M.D.), which is a copy-quality signal rather than a doubt.
+- Small, entirely cosmetic menu: wrinkle relaxers, volumisers, HydraFacial Syndeo, laser hair
+  removal, truSculpt flex, SMYLE teeth whitening, Vivace RF microneedling. **Must-have 2 is
+  immaculate** — not one reimbursable line, no veins, no moles, no lesions, no surgery, no
+  weight loss, no hormones, no insurance language.
+- **Must-have 4 passes:** copyright "© 2023 Proudly created by Medspa Destinations", and a bare
+  copyright year at least three years old is usable under the 8 Nov rule — three years of trading.
+- Newsletter: "Join Our List" for discounts, exclusive offers and special invitations. No
+  membership, loyalty or gift cards. No booking platform and no booking URL (Wix site).
+- **WHY IT IS HERE:** the homepage publishes no mailbox and there is **no privacy policy link
+  anywhere**, which is the 3 Nov `/contact` exception in its original tested form. I ran the
+  close-out `allowed_domains` search to find a contact URL and it returned only
+  `thesonuspa.com/locations` — not a contact page. **NEXT ACTION, and it is one fetch:** open
+  `thesonuspa.com/locations`, which on a one-site Wix build is where the contact block usually
+  lives. This is the cheapest outstanding lead in the market.
+
+### 10. Rejuv Aesthetics & Wellness Spa — Hauppauge, NY · `rejuvaesthetix.com`
+**Client-side rendering across the whole site. Browser-visit list.**
+- Hauppauge (Town of Islip, Suffolk County) — town from meta keywords only; no street address,
+  ZIP or phone rendered.
+- **Jacqueline Wilson, NP** named in the meta description as the person to book a consultation
+  with. Services listed in metadata: injectables, skin care, weight loss, hormone therapy.
+- **WHY IT IS HERE:** two fetches, two empty bodies. The homepage returned HTML head metadata
+  and nothing else, and **so did the privacy policy** — so this is site-wide client-side
+  rendering, not one bad page. A browser sees these fine, so Jess can read it; a fetch cannot.
+  I spent the second fetch deliberately (the policy URL had surfaced in the close-out search) to
+  establish that it is the whole site rather than one route, and that is what it bought.
+
+### 11. Bellmore Med Spa / Shore Medical Aesthetics — Bellmore + Babylon, NY · `bellmoremedspa.com`
+**No email; and a must-have 1 concern I am recording rather than burying.**
+- 2605 Merrick Rd, Bellmore NY 11710 · (516) 690-7546. A "Babylon office" is referenced with no
+  address, linking to `shoremedaesthetics.com` — so two sites under one brand, inside must-have 3.
+- The copyright reads "© 2026 Shore Medical Aesthetics & Anti-Aging", so `bellmoremedspa.com` is
+  a Shore Medical Aesthetics property rather than an independent of its own.
+- **Dr Robert Caiati, M.D.**, named as the supervising physician, with no title stated.
+- **Aesthetic Record** confirmed (`shoremedaesthetics.myaestheticrecord.com/online-booking`).
+- **MUST-HAVE 1 CONCERN, NUMBERED: the Body Contouring section offers "complimentary
+  CoolSculpting consults and SmartLipo consultations".** SmartLipo is laser-assisted liposuction
+  — a surgical procedure — and under the 8 Nov "minor surgery cuts both ways" ruling the
+  substance decides, not the heading. Against that: the rest of the menu is wholly non-surgical
+  and the site offers *consultations* rather than the procedure, which may mean it refers out.
+  **My disposition: must-have 5 is the fatal failure here, and must-have 1 is unresolved** — the
+  single check is whether `shoremedaesthetics.com` lists SmartLipo as a procedure it performs.
+- **A SECOND, HARDER REASON NOT TO CHASE IT:** three of its testimonials are still marked
+  **"[Placeholder review — replace with a real Google review.]"** and no review count is
+  published. A site that has not replaced its placeholder reviews has not accumulated 300 lapsed
+  patients, so **must-have 4 fails too.**
+
+### 12. Artistry Wellness & Medspa — Manhasset, NY · `artistrymedspas.com`
+**Site-side error on two paths, and brand-new besides.**
+- Two fetches attempted, both `client_error` with no content: `/injectables` and (via search)
+  nothing else resolvable. Mode five — the clinic's own fault, no browser helps, do not spend a
+  third fetch guessing a path.
+- **Must-have 4 would fail anyway:** a Long Island Press piece dates its Manhasset opening to
+  **4 November 2024**, which is two years. Under the row-720 precedent two to three years is not
+  "enough trading time to have accumulated roughly 300+ lapsed patients", so this fails
+  must-have 4 on substance even though the dating evidence is good.
+- Search exposed a `meet-the-team-2/` page naming **"Dr. Wong"**, and an
+  `artistrymedspas.com/service-areas/<town>` page set ("New Med Spa & Weight loss Clinic Serving
+  areas in Baldwin, NY"). **Add that `service-areas/<town>` set to the block list** — it is the
+  same species as the `areas-served/<town>` sets blocked on 8 Nov and it took two slots.
+
+### 13. The Hamptons MediSpa · `thehamptonsmedispa.com`
+**Dead domain. Do not re-queue.** The homepage 302-redirects to
+`expireddomains.com/domain/thehamptonsmedispa.com`. Under the ICP's "practices whose domain
+redirects to another company" disqualification, and in substance the business is gone. Noted
+because `thehamptonsmedispa.com` and its `/about.html` both still rank, so it will surface again
+on any Hamptons query.
+
+### 14. Med Spa of New York · `medspaofnewyork.com`
+**Unresolved, one fetch spent.** `/meet-the-team/` returned `client_error` with no content.
+The close-out search proved `/privacy/` and `/ccpa/` both exist, so the domain is live and it is
+a single bad route rather than a dead site. **Not chased further because the market is ambiguous:**
+the name says New York and nothing in any search result tied it to Nassau or Suffolk, so it may be
+a Manhattan practice and therefore out of this brief's market. One fetch of `/privacy/` would
+settle both the market and the address.
+
+---
+
+## B. Rule-outs, with the failing must-have numbered
+
+### 1. Great Neck Medical Spa (Dr Deborah Marciano) — Great Neck, NY · `greatneckmedicalspa.com`
+**FAILS MUST-HAVE 1 — a cosmetic surgery practice, on substance rather than on a word.**
+- 233 East Shore Road, Suite 109, Great Neck NY 11023 · (516) 439-5075 · fax (516) 439-5074
+- **It publishes a readable address — `greatneckmedicalspa@gmail.com`, in the contact section and
+  the footer — so this is a rule-out, not an address near-miss.** I am keeping the address in this
+  entry so the call is reversible if the standard ever widens.
+- The page describes the business as **"Aesthetic and office-based surgery"** and a
+  **"Liposuction Smartlipo center"**. Under the 8 Nov ruling the substance decides and the labels
+  do not: office-based surgery and liposuction are surgery whatever the heading says, and the ICP
+  disqualifies plastic surgery practices outright. No insurance acceptance is stated and
+  financing is offered through Cherry, CareCredit and United Medical Credit, so it is cash-pay —
+  **but must-have 2 passing does not rescue a must-have 1 failure.**
+- Secondary: the copyright reads **"© 2023 by PURE"**, an unreplaced Wix template credit naming a
+  different brand; no review count; no booking platform; a "Like us on Facebook and receive a
+  credit toward your next treatment" promotion. The site is thin and may be semi-dormant.
+- `/contact` was the only URL that ever surfaced for this domain across three queries, so
+  fetching it first was the 2 Nov exception rather than a rule break.
+
+### 2. Beauty Lab Long Island — Merrick, NY · `beautylablongisland.com`
+**FAILS MUST-HAVE 2 — insurance billing named on its own service menu. And MUST-HAVE 5.**
+- 2073 Merrick Road, Merrick NY 11566 · 516-412-6800 · one site
+- **THE FINDING IS THE TECHNIQUE: the Massage Therapy menu lists "Medical Massage/NYSHIP".**
+  NYSHIP is the New York State Health Insurance Program. That is a named third-party payer
+  printed on the clinic's own treatment list — the most direct must-have 2 failure of the run,
+  and it cost **zero** policy fetches because the menu said it. Under must-have 2 as a billing
+  test this is not a borderline reimbursable indication; it is the clinic advertising that it
+  bills a government health plan.
+- Also fails **must-have 5**: no mailbox on the homepage or on `/contact-us/` (read in full) —
+  a contact form and a phone number only. Its `/privacy-policy/` exists and was not fetched,
+  because must-have 2 had already decided it.
+- Also carries a `med-spa/<town>-ny` and `facials/<town>-ny` SEO page set across Lynbrook,
+  Merrick, Hewlett, North Massapequa and South Valley Stream. One of those pages is literally
+  titled "Owner-Operated Med Spa near North Massapequa, NY", so must-have 3 was never the
+  problem. Aesthetic Record confirmed (`thebeautylab.myaestheticrecord.com`); memberships page
+  exists. **Add this `med-spa/<town>-ny` set to the block list** — it took four of ten slots on
+  one query.
+
+### 3. Vital Medical Care & Aesthetics · `vmaesthetics.com`
+**FAILS MUST-HAVE 2 — ruled out on its own search-result title, no fetch spent.** The title
+reads "Medical Spa On Long Island & **Internal Medicine**". An internal-medicine practice bills
+insurance and carries a disease caseload; that is the substance the ICP's disqualification is
+about, not a label. Recorded so nobody spends a fetch proving it.
+
+### 4. Marotta Med Spa / `marottamd.com`
+**FAILS MUST-HAVE 1 — a facial plastic surgery practice with a med-spa arm.** Surfaced twice on
+Suffolk queries. Ruled out on the title and the domain; no fetch spent.
+
+### 5. VIO Med Spa (East Northport, Patchogue) · `viomedspa.com`
+**FAILS MUST-HAVE 3 — a national franchise.** Its East Northport opening was announced by PR
+Newswire for 9 December. Franchise locations have no local marketing decision-maker. Ruled out on
+the press release and the `/patchogue/` location-page structure; no fetch spent.
+
+---
+
+## C. Chains, groups and out-of-market domains — do not re-query
+
+- **`deepbluemedspa.com`** — a `/locations/` page covering Long Island, NYC and Garden City.
+  Multi-site group; ruled out on structure.
+- **`idealimage.com`** (surfaced as "Ideal Image Garden City") — national chain.
+- **`spafitnation.com`** — a `/locations/` page set.
+- **`modmd.com/hamptons`** — a multi-location brand with a Hamptons satellite.
+- **`drhamptons.com`** — the word "Hamptons" is a surname here, not the place. Same-name trap.
+- **`nativebeautymi.com`** — ranked on a Manhasset/Great Neck query; "mi" is Michigan.
+- **`spahamptons.com`**, **`1928westhealthspa.com`**, **`drshoremedspa.com`** — surfaced and not
+  resolved; markets unconfirmed. Carry as names for a later run, not as leads.
+- **The Beauty Edge Med Spa, East Hampton** — surfaced only via an Air Mail piece headlined
+  "Investigated For Harmful Injections". Not approached; the reputational risk to WILBA of cold
+  outreach to a clinic under investigation is not worth a row.
+- **Directory and listicle hazards specific to this market, recommended for the block list:**
+  `bestprosintown.com` (took slots on two queries), `thecliniccompass.com`, `bestoflongisland.com`,
+  `vuehamptons.com`, `sociallifemagazine.com`, `jameslanepost.com`, `easthampton.com`,
+  `liherald.com`, `insidemedspa.com`, `mindbodyonline.com/explore/...`, `golocalads.com`,
+  `badmomsoflongisland.com`, `prnewswire.com`. **`longislandpress.com` deserves a special note:
+  it is a genuinely useful source of NEW-clinic announcements, which is precisely the wrong end of
+  must-have 4** — both of the pieces it surfaced ("New medical spa opens in Woodbury", October
+  2026; "Artistry Wellness & Medspa opens its doors in Manhasset", November 2024) are clinics too
+  young to have a lapsed list. Block it on sourcing queries and read it only to DATE a clinic.
+
+---
+
+## What the market taught me
+
+**1. Long Island is as rich as the brief hoped, and the grep was right that it was untouched.**
+"Long Island", "Nassau", "Garden City", "Manhasset", "Great Neck", "Massapequa", "Smithtown",
+"Syosset", "Bellmore" and "Merrick" all returned zero prior hits. 13 searches and 42 fetches
+produced **17 accepted rows** — the best rows-per-fetch of any US market in the file that I can
+see — and I stopped on judgement, not budget (see point 10).
+
+**2. THE WORST SAME-NAME TRAP IN THE MARKET IS "ROCKVILLE CENTRE" → "ROCKVILLE, MARYLAND", and
+it cost a whole query.** A stacked query naming Smithtown, Commack, Port Washington and Rockville
+Centre returned **seven of ten results in Rockville, MD** — ReNew You, Aesthetic & Dermatology
+Center, Faulkner Plastic Surgery, The Beauty Bay, The Medical Skin Clinic — including
+`bellablissmedspa.com`, which is **already pipeline row 211 as a Rockville MD clinic**. The area
+code does not save you (both are outside any shared region) but the town name alone destroys the
+query. **Say "Rockville Centre NY", or better, pair it only with other Nassau towns.** Add
+Rockville Centre to the same-name list beside Clovis NM, Corte Madera and Victoria.
+
+**3. A NEW, EIGHTH FETCH-FAILURE MODE: CleanTalk email encoding.** The Skin Clinic Huntington
+renders its policy mailbox as `th*****************@gm***.com` and says so outright — *"This
+contact has been encoded by CleanTalk"* — with a **different** masked address behind the
+`mailto:`. It is not Cloudflare, not client-side rendering, not silence, not a site error, not an
+interstitial, and not mode seven. It behaves exactly like Cloudflare: not seen, never recorded,
+**browser-recoverable**, so browser-visit list. **Recommend adding CleanTalk beside Cloudflare in
+the taxonomy**, and note the wrinkle that the two masked addresses sit on different domains, so a
+human recovering it must still apply the "whose domain is it" test.
+
+**4. THE PRIVACY-POLICY ADDRESS RULE IS A HIGH-YIELD RULE ON LONG ISLAND: 4 hits from 9 policies,
+about 44%** — better than Arizona's one in three and far better than inland California's zero.
+It produced **Bella NYC** (the only mailbox on that whole site), **Nova Med Spa**
+(`admin@`, nominated as the data-request route), **Garden City Medical Spa** (nominated outright),
+and **Applied Aesthetic** (a hit that Cloudflare voided). The five misses all satisfied the
+data-request duty exactly as the stated mechanism predicts — a phone number (VITRA, Youthology
+via a form), a postal address plus phone (Beauty Bomb), a bare "contact Us" (Angelic), or a
+missing string (Nimbus). **Budget this rule HIGH in Nassau and Suffolk.**
+
+**5. The free CRM-detection pass is worth more here than the address sometimes is.** Three
+policies named their stack outright: Nova Med Spa names **Twilio** for SMS and email delivery,
+which tells us a programmatic two-way SMS channel is already provisioned at that clinic — exactly
+what the offer needs. Garden City Medical Spa names **Termly**, Google Maps Platform and Google
+Analytics. Bella NYC names **Boulevard** as its payment and booking provider in the policy text,
+which is far stronger evidence than a `blvd.me` URL inference. Read the processor list every time.
+
+**6. MUST-HAVE 4 IS THE BINDING CONSTRAINT ON LONG ISLAND, NOT MUST-HAVE 2 OR 5 — and this is
+the mirror image of the British diagnosis.** Seven of 17 accepted rows are C, and **six of those
+seven are C on must-have 4 alone** (the seventh, Legacy, fails must-have 2 and 4 together).
+Only **two businesses in the entire market published a founding year** (The Skin Clinic's 2009,
+in a staff bio — and it is a near-miss; The Sonu Spa's 2023 copyright — also a near-miss), and
+only **six published a review count**. Long Island clinics publish their owners, their platforms
+and their membership schemes freely and almost never publish their age. **That is a publishing
+habit, not a business fact**, and it collides head-on with the evidence ladder. Do not read a
+C-heavy Long Island run as a weak market, and do not pad a row to B to fix it.
+
+**7. The banked-credit signal is alive and well in Nassau, and it has a name here.** TWO separate
+clinics run a scheme called **"The Beauty Bank"** — Applied Aesthetic in Garden City and The
+Natural Beauty Med Spa in Huntington — neither affiliated with the other. That is the brief's
+"wallet / bank / vault" affluent-suburb technique confirming itself in a new market, from the
+other direction: I never ran the wallet query, and the schemes turned up anyway because the
+postcodes support them. Worth running the wallet query here on a second pass.
+
+**8. NO DOMINANT PLATFORM, which confirms the per-market finding again.** Across 24 businesses:
+GlossGenius ×3, Boulevard ×4 (three of them `blvd.me` URL inferences, one named in text),
+Aesthetic Record ×4, Meevo ×2, and one each of Zenoti, Mangomint, MyAestheticsPro, MyPatientNow,
+RepeatMD, Vagaro, Podium, Symplast, Elyon and Tebra — plus **four clinics with no identifiable
+platform at all** (Rethink, Spa Cosmedic, SM Aesthetics, Lavender Lush), every one of them with
+inert Book Now buttons. **Two candidates for the grade-A nameable-system list, each seen with a
+real tenant ID: Meevo (Millennium)**, which at Garden City Medical Spa and VITA serves the diary,
+the gift cards AND the memberships from one tenant — which is exactly "a patient list in a
+queryable place" — and **Symplast**, a full aesthetics practice-management and EMR platform, at
+Boost Your Beauty. **Elyon** (`elyonhq.com`) is a platform I have not seen before and could not
+identify from the page; worth someone looking at it.
+
+**9. The gmail/yahoo rate is this market's signature and it belongs on every row.** Eight of the
+17 accepted mailboxes are consumer gmail or yahoo addresses published on the clinic's own domain
+— Aesthetic Arts, Rethink, Natural Beauty, Spa Cosmedic (yahoo), SM Aesthetics, Garden City
+Medical Spa, Legacy, and the ruled-out Great Neck Medical Spa. All pass must-have 5 on both of
+its real tests (published on their own page; mail reaches them), and none is a generic industry
+domain or an agency mailbox, so the `medspas.info` ruling does not bite. But every one of them
+means a reply lands in a personal inbox rather than a monitored shared one, which affects how the
+first email should be written. It is recorded on each row.
+
+**10. WHERE I STOPPED AND WHY.** The first 20 fetches produced 10 accepted rows. The next 16
+produced 5. The last 6 produced 2 — Lavender Lush and nothing else — and three of those six
+(Angelic's contact form, Rejuv's policy, Beauty Lab's contact page) confirmed failures rather
+than buying rows. **That is the marginal fetch stopping paying, so I stopped**, four searches and
+eight fetches inside the budget rather than spending them.
+
+**WHAT I WOULD DO NEXT, in cost order.** (1) **One fetch: `thesonuspa.com/locations`** — a named
+MD, a three-year copyright, an immaculate menu and a free-consultation offer, blocked only by a
+missing contact URL. The cheapest outstanding lead in the market. (2) **One fetch:
+`medspaofnewyork.com/privacy/`** — settles both its market and its address. (3) **Hand Jess the
+browser-visit list in this order: Applied Aesthetic (Cloudflare, and it is the best row Long
+Island has), The Skin Clinic Huntington (CleanTalk), Rejuv Aesthetix (client-side).** Three
+browser minutes could add a grade A and two Bs. (4) **Untouched towns**, every one of which still
+greps to zero: Oceanside, Long Beach, Lynbrook's neighbours Hewlett and Woodmere, Hicksville,
+Levittown, Wantagh, East Setauket, Stony Brook, Sayville, Riverhead, and Southampton and
+Westhampton proper — the Hamptons query I did run returned a dead domain, two listicles and a
+massage practice, so the Hamptons are **thin rather than unworked**. (5) **Try the
+neighbourhood/main-street technique properly here, because I only sampled it.** Every accepted
+row on this run sits on a named main street — Plandome Road, Middle Neck Road, Merrick Road,
+Jericho Turnpike, Franklin Avenue, East Main Street, Nassau Boulevard. Long Island clinics
+self-describe by their village main street, which is exactly the "names locals trade under"
+condition the Tulsa Brookside result turned on. Query **"Plandome Road", "Americana Manhasset",
+"Seventh Street Garden City", "Main Street Bay Shore"** rather than the town names again.

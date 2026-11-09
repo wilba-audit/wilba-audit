@@ -49,14 +49,20 @@ publication screen, and the UK and Irish company-identity screen.
 fetched page content, and put the URL and the date in `email_source`. `info@<their-domain>`
 that you did not actually read on a page is a fabrication even when it is probably right.
 
-Five things look like a published address and are not. None is recoverable by opening the
-page in a browser, so none goes in the pipeline:
+Seven things look like a published address and are not. None goes in the pipeline, and only one
+of the seven (the obfuscated-visible case) is even a recovery problem a browser could solve.
+**This list and the one in `ICP.md` were different lengths until 9 Nov 2026** — the owner's-own-typo
+case below had never been carried across — so if you ever find them disagreeing again, `ICP.md` is
+canonical and this one is the copy:
 
 - a website-builder placeholder the owner never replaced (`filler@godaddy.com`, `contact@wix.com`)
   (**a `mailto:` link is NOT on this list** — see the ruling in `ICP.md`: a clickable "Email Us"
   is a public invitation to email and counts as published, unlike a meta tag, which offers a
   visitor nothing)
 - an address shipped inside a directory site's QR code image — directory data, not published data
+- **the owner's own typo** — one AU clinic's terms page printed a mailbox at `.com.ay`, a domain
+  that does not exist. Carried across from `ICP.md` on 9 Nov 2026, having been missing from this
+  copy for weeks. It is the only member of the list that is nobody's fault
 - an address served in a page's Open Graph meta tags while the visible one is obfuscated
 - **somebody else's working mailbox, in a meta tag or in plain sight** — added 2 Nov,
   widened 3 Nov. One Pensacola-area clinic serves its *marketing agency's* address in a
@@ -66,6 +72,13 @@ page in a browser, so none goes in the pipeline:
   mailbox in plain visible text on its own page. So "it was in the visible body" is not the
   test. **The test is whose domain it is.** Read the domain of every address before recording
   it, however prominently it was printed.
+- **an address published only inside an `sms:` href** — added 9 Nov, from Westchester. A "text
+  us" button whose href is `sms:+1...&body=...` can carry the clinic's gmail in its query string.
+  The string is in the visible page's markup and a fetch will report it found, but **clicking it
+  opens a text message, not a mail composer**, and nothing on the rendered page invites a visitor
+  to write to that mailbox. Functionally the meta-tag case: in the HTML, not published to people.
+  Park on must-have 5. **The test is what a visitor could DO with the string, not whether the
+  string is in the page** — which is also why no grep over markup can catch this one for you.
 - **an address that exists only in the clinic's own meta tags** — added 3 Nov. Distinct from
   the Open Graph case above, where the visible address was merely obfuscated. Here there is no
   visible address anywhere: a Gold Coast clinic (pipeline row 103) serves `info@` and `manager@`
@@ -115,6 +128,15 @@ phrase **`QUESTION RESOLVED`** or **`QUESTION WITHDRAWN`**, because the old ques
 the notes forever and the validator needs a way to tell an answered row from an open one. The
 stamp is a fixed phrase on purpose: an override that guesses at prose is how the 4 Nov provenance
 check missed the very note it was written for.
+
+**AND THE RULE IS GENERAL: ANYTHING WRITTEN TO BE FOUND AGAIN HAS TO BE A FIXED STRING.** Added
+9 Nov 2026, after the same mistake appeared in a second place and from a second author: a
+disqualification marker in `near-misses.md` was written as "DISQUALIFIED OUTRIGHT under ICP v2"
+instead of the standard `DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE <n>`. It means the right thing
+to a reader and is invisible to the search that counts them, so a correctly disqualified clinic read
+as unmarked. **Stamps, disqualification markers and numbered must-haves are all the same kind of
+thing: a string a later reader will grep for.** Write the string exactly, then write whatever prose
+you like around it.
 
 **WRITE THE STAMP VERBATIM. It is two words and it has caught four rows, all of them mine, on
 8 Nov 2026 alone.** "The question this row asked is withdrawn", "MUST-HAVE 2 RESOLVED IN THIS ROW'S
@@ -288,6 +310,17 @@ because the standard may widen again and re-finding a clinic costs more than kee
    unconditional, and budget it at a third in the Mountain West and the South, at nothing in
    inland California and Utah, and go to the register instead in Britain.**
 
+   **LONG ISLAND IS THE BEST YIELD YET AND IT BREAKS THE GEOGRAPHIC BUDGET ABOVE — 9 Nov 2026.**
+   **Four addresses from nine policies, about 44%**, better than Arizona's one-in-three and in a
+   coastal Northeast suburb the budget line would have had you spending nothing on. Every miss
+   again satisfied the data-request duty with a phone or a postal address, exactly as the mechanism
+   predicts, so the mechanism is confirmed for a fourth time while the **geography is not.**
+   **Read the budget line as a weak prior, not a rule**: what the mechanism actually tracks is how
+   email-first a market's clinics are, and "Mountain West and South yes, coasts no" was a proxy for
+   that which has now failed once in the clinic's favour. The rule is unconditional anyway, so the
+   only thing the budget ever decided was expectation — and the expectation for an affluent
+   Northeast suburb should now be *high*, not zero.
+
    **A policy that nominates `/contact` as its data-request route is NOT a third `/contact`
    exception — measured 5 Nov 2026.** A worker spent the fetch deliberately to test it and the
    page returned nothing. The two exceptions stay as they are.
@@ -428,6 +461,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    does NOT reopen the 5 Nov rejection of a policy that nominates `/contact` *as* its route — that
    is still not an exception.
 
+   **AND NOW THAT RULE HAS A PRICE TAG, 9 Nov 2026.** It has been carried for four days on
+   principle with no idea what it costs. A Westchester / Fairfield County sweep measured it:
+   **4 of 28 clinics were lost to it** — a policy that exists, names `/contact` as the route to
+   reach them, and the rule forbids spending the fetch that would finish the row. That is a seventh
+   of the market, and it is the largest single cost any sourcing convention has been measured at.
+   **The rule still stands** — it was adopted because `/contact` was burning second fetches on
+   pages the homepage had already beaten, and one sweep does not overturn that. But it is now a
+   known-cost rule rather than a free one. **If it is ever re-measured, measure it here: Fairfield
+   County, those 4 named rows, against the fetch budget the exception would have spent.** A
+   convention whose cost nobody has written down gets defended forever; one with a number against
+   it can be argued about.
+
+   **The WIDENED exception (a policy nominating no route at all) has now been spent once and paid
+   nothing** — one Long Island clinic, one fetch, no address. One data point, offered by the worker
+   without arguing for narrowing anything, and recorded the same way. It is not evidence against
+   the widening; it is the beginning of a count, and the next worker to spend it should add to
+   this line rather than start a new one.
+
    **A SEVENTH FETCH-FAILURE MODE, found twice on 8 Nov in two markets: a policy that nominates an
    email route and then omits the address.** One Seattle policy reads *"please email them to ."* and
    one Nashville policy says to make data requests *"via the email address or phone number given on
@@ -436,6 +487,23 @@ because the standard may widen again and re-finding a clinic costs more than kee
    so it belongs in near-misses, not on the browser-visit list. **Cheapest tell: look at the
    policy's revision date.** The Seattle one is dated 2018 and still names a previous owner's
    domain; it is boilerplate nobody has read since.
+
+   **THAT CHEAPEST TELL IS NOT RELIABLE — correcting it the day after writing it, 9 Nov 2026.**
+   Mode seven fired twice again on Long Island, and **Nimbus's policy is dated January 2026**. So
+   a current revision date does not clear a policy of this fault: boilerplate gets a date bump
+   without anyone reading the body. Read the sentence, not the date. The date is worth a glance and
+   nothing more. (The second Long Island case puts the omitted address in a **meta description**,
+   which is mode seven and the meta-tag look-alike arriving together.)
+
+   **AN EIGHTH FETCH-FAILURE MODE, found 9 Nov 2026 on Long Island: CleanTalk email encoding.**
+   The page renders `th****@gm***.com` and says outright that the address is protected, and the
+   masked domain behind the `mailto:` differs from the masked domain in the text. **Treat it
+   exactly as Cloudflare obfuscation, for the same reason and with the same consequence**: the
+   page did not ship the address, so the address is NOT SEEN however the mask reads, nothing is
+   recorded, and the clinic goes to the browser-visit list because a person's browser does render
+   it. It is the second named product doing what Cloudflare does, which is the real lesson —
+   **expect more of these, and let the test be "did the page ship the characters", not "is this
+   Cloudflare".** (The Skin Clinic, Huntington, is on the browser list on this.)
 
    **AND THE CLOSE-OUT SEARCH IS OVERSOLD — correcting it, 8 Nov 2026.** It was promoted on three
    measurements as a way to find privacy-policy addresses across several parked domains at once. On
@@ -505,7 +573,11 @@ because the standard may widen again and re-finding a clinic costs more than kee
    the street address caught it. The out-of-state cases (Clovis NM twice, Selma TX) were the
    easy ones — and note that both Clovis NM clinics published readable addresses, **which is
    exactly what makes them dangerous**: nothing about the row looks wrong. Check the town in
-   the postal address itself, every time, not just the area code. "Emerald Cosmetic
+   the postal address itself, every time, not just the area code. **And added 9 Nov 2026: "ROCKVILLE
+   CENTRE" COLLAPSES INTO "ROCKVILLE, MARYLAND."** One Long Island query returned seven of ten
+   results in Maryland — including **pipeline row 211, which is a Maryland clinic we already
+   hold**, so the trap does not merely waste a query, it manufactures what looks like a duplicate
+   find in the wrong state. The "Centre" spelling is the whole signal and search drops it. "Emerald Cosmetic
    Clinic" is in Terrigal NSW, not Emerald QLD; "Skinsense" ranks for Warwick QLD and sits in
    Warwick WA. Same-name towns across states are common in Australia and the area code settles it
    faster than the address does.

@@ -11,6 +11,190 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 9 Nov 2026 — two affluent suburbs, and a correction corrected within a day
+
+**Rows: 33 appended so far — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY
+and Fairfield County CT, 16 rows: 2 A, 10 B, 4 C) and 1127-1143 (Long Island, Nassau and Suffolk,
+17 rows: 1 A, 9 B, 7 C).** Pipeline **1,143 rows, 776 ready to approach** — US 391, AU 169, CA 87,
+UK 85, NZ 42, IE 2. Browser-visit list up to **115 clinics**. Two more passes were still out when
+this was written.
+
+**THE DAY'S FINDING, and it overturns something written yesterday.** On 8 Nov this file recorded
+that Britain's zero-grade-A problem is "a publishing habit rather than a business fact" — a
+national explanation, which was the natural reading when every measurement had come from Britain.
+**It is not national. It is a market-type effect, and two American measurements settled it in one
+day.** Westchester and Fairfield County — rich American suburbs — found **only 3 of 28 clinics
+publishing a dated artifact about the business**, must-have 4 on evidence failing the rest. Long
+Island then found **6 of its 7 C rows C on must-have 4 alone**, and **only 2 of 24 businesses
+publishing a founding year**. Three measurements, three affluent referral-driven markets, one
+shape.
+
+**The mechanism: the richer and more referral-driven the market, the less its clinics publish
+about themselves.** A clinic whose chairs fill on word of mouth has no reason to print a review
+count or a "serving X since Y"; a clinic competing on visibility in a mid-market metro prints all
+four because it must. **So the evidence ladder reads marketing effort and calls it trading
+history** — and the uncomfortable consequence, now written into `ICP.md`, is that **must-have 4
+systematically parks good clinics in exactly the markets this offer most wants.** Affluent,
+owner-operated, cash-pay, dormant-list-rich is the ICP's own profile and the profile least likely
+to clear the bar. Nothing was re-graded on this: the ladder stands, a C stays a C. What changes is
+how a thin grade mix in a wealthy suburb is read, and that where a strong row's ONLY gap is a
+quantified artifact, that is the highest-yield fetch left on it. **Whether a ladder that measures
+marketing effort is the right ladder at all is flagged in `ICP.md` and deliberately not answered —
+it is a scoring change and it would re-grade the whole file.**
+
+**And the way the third measurement arrived is its own lesson.** The Long Island worker reached
+independently for the retired explanation — it wrote "a publishing habit, not a business fact", the
+exact phrase corrected a few hours earlier — **because it was commissioned before the correction
+existed.** Nobody was careless. This is the 8 Nov lesson from the other direction: a rule change
+reaches the run that makes it and nothing already in flight. A worker dispatched in the morning is
+reasoning from the morning's file, so **read its conclusions against the brief it held, not the
+file as it now stands** — and a mid-run correction to a live convention is worth messaging to the
+workers already out.
+
+**Second ruling of the day: "dermatology" in a wealthy suburb is a HIRING CREDENTIAL, not a
+business model.** The 8 Nov "a label is not a finding" test fired five times in the Westchester
+sweep and **cleared the clinic all five times**. A rule that reverses the default five times out of
+five is not a tie-breaker, it is correcting a systematic misread: a cash-pay injectables clinic in
+Scarsdale advertises that a board-certified dermatologist oversees its injectors because that is
+what its patients are buying. The old reading inverted precisely the best-credentialled clinics.
+
+**Third: an eighth fetch-failure mode — CleanTalk encoding**, which renders `th****@gm***.com` and
+hides a different masked domain behind the `mailto:`. Treated exactly as Cloudflare: not seen,
+never recorded, browser-visit list. Two named products now do this, so **the test is "did the page
+ship the characters", not "is this Cloudflare".** Expect a third.
+
+**Fourth: a seventh address look-alike — a gmail published only inside an `sms:` href.** The
+string is in the markup and a fetch reports it found, but clicking the button opens a text message,
+not a mail composer. The meta-tag case in a different hat. **The general form: ask what a visitor
+could DO with the string, not whether the string is in the page** — which is also why no grep over
+markup can catch this one, and why must-have 5 is a reading task.
+
+**Two conventions got price tags, which they have never had before.**
+- **The rule forbidding a `/contact` fetch when the policy nominates it costs 4 of 28 clinics** —
+  a seventh of a market, the largest measured cost of any sourcing convention we hold. The rule
+  stands; it is now a known-cost rule rather than a free one, and Fairfield County is named as the
+  sample to re-measure it against.
+- **The widened exception (a policy nominating no route at all) has been spent once and paid
+  nothing.** One data point, offered by the worker without arguing for narrowing anything. The
+  beginning of a count.
+
+**The privacy-policy address rule had its best yield yet and it broke our own geography.**
+**4 of 9 policies on Long Island, about 44%**, beating Arizona — in a coastal Northeast suburb the
+budget line said to spend nothing on. Every miss again satisfied the data-request duty with a phone
+or postal address, so **the mechanism is confirmed a fourth time while the geography is not.** The
+"Mountain West and South yes, coasts no" line was a proxy for how email-first a market is, and it
+has now failed once in the clinic's favour. Read it as a weak prior.
+
+**Smaller things worth keeping.** A **named insurance scheme on the treatment menu** is the
+cheapest must-have 2 failure there is — one Long Island clinic prints "Medical Massage/NYSHIP" on
+its own service list, deciding must-have 2 for zero policy fetches. **Meevo and Symplast** join the
+platform list, Meevo the stronger of the two because it serves diary, gift cards and memberships
+from one tenant; `elyonhq.com` was seen once and is deliberately NOT on the list yet. **"Rockville
+Centre" collapses into "Rockville, Maryland"** — one query returned 7 of 10 in Maryland including
+pipeline row 211, a Maryland clinic we already hold, so the trap manufactures a false duplicate
+rather than merely wasting a query. And **the "check the policy's revision date" tell, written
+yesterday, is not reliable**: Long Island's mode-seven policy is dated January 2026. Read the
+sentence, not the date.
+
+**One housekeeping failure found and fixed.** The address look-alike list lives in three files, and
+the copy in the brief had been **one item shorter than the canonical list in `ICP.md` for weeks** —
+the owner's-own-typo case was never carried across. All three now say seven and agree on the
+contents, and the brief says in its own text which copy is canonical. This is the fourth time a
+correction has been left half-applied across these three files, and the section in this file that
+warns about it was itself one of the three that needed updating.
+
+## 9 Nov 2026 — the backwards re-read, done: 6 rows recovered, 21 near-misses disqualified
+
+**The job the 8 Nov standing list put first.** The 23-24 Sep sections of `near-misses.md` were
+re-read against ICP v2 — both halves, which is the part that matters. **Twenty-six September
+entries were re-opened or re-decided; six became rows 1105-1110** (ids allocated 1105-1110):
+Essence Medical Glasgow (B), **Craig Hobson Aesthetics Bristol (A)**, Sussex Aesthetics Crawley (B),
+Aesthetic KLINIK Brighton (B), Dr Liesel Holler Bromley (B) and Skin 101 Houston (B). Four of the
+seven named clinics had never been opened at all. **9 searches and 19 fetches.**
+
+**The recovery rate on the named list was 5 of 7**, which makes this a real seam rather than a
+formality: Skin & Joints Bristol stays out on must-have 5 and 8, and Skins Clinic Manchester on
+must-have 5 (robots-disallowed contact page, nothing on the homepage).
+
+**Three of the six rows exist because of one fetch each, and all three were register calls.**
+Essence Medical, Sussex Aesthetics and Dr Liesel Holler publish **no** company identity on their own
+pages and would all have parked at C on must-have 8. Companies House settled all three, and two came
+back **byte-identical to the clinic's published street address** — SUSSEX AESTHETICS LTD at 6 Haslett
+Avenue West, and DOCTOR HOLLER ALMASI LIMITED at Milestones, Royal Parade, Chislehurst. The same
+calls supplied the dated artifact for must-have 4 (2018, 2015 and 2009), which the clinics' own sites
+did not. **The ICP's "go to the registers first" instruction is doing more work in Britain than its
+own text claims.**
+
+**And the British privacy-policy/document rule produced the grade A.** Craig Hobson Aesthetics
+publishes no address on its homepage or its contact page. The address is in the body of its
+**terms and conditions** page — two fetches said unreachable and the third produced
+`contact@cha.clinic`, on a clinic that also prints Ltd, a company number and a VAT number and
+publishes **257 Google reviews and 249 Facebook reviews**. The 8 Nov diagnosis that Britain's
+missing grade-A requirement is a *published review count* is confirmed from the other direction:
+the one British clinic in this pass that printed its counts is the one that made A.
+
+### The inverted half, which is what keeps the file honest
+
+**Twenty-one of September's *positive* near-misses are now marked `DISQUALIFIED UNDER ICP v2`
+inline in `near-misses.md`, each with the failing must-have numbered.** That number is COUNTED from
+the file rather than taken from the report of the pass, which claimed twenty-five in one place and
+twenty-three in another; the file holds twenty-one. The difference is not sloppiness about three
+clinics, it is a category error worth naming: the report counted four Boston-area surgical practices
+that September had ALREADY ruled out, so they were never positive near-misses and needed no
+inverting. **A disqualification only counts if an entry that recommended the clinic now says it is
+disqualified.** Fourteen fail must-have 3 on
+five-or-more sites (Contour Clinics, Absolute Cosmetic, Artisan, Victorian Laser, Westlake, North
+Texas, Advanced Aesthetics, La Jolla Cosmetic Medical Spa, Truffles, Greenwich, SkinMD, East Coast
+Advanced Plastic Surgery, Ethos, CJA); seven fail must-have 1 and the plastic-surgery or dermatology
+disqualification on substance — surgeons named and surgical menus published — (Quinn Clinics,
+Elanic, Centre for Surgery, Aesthetic Center for Plastic Surgery, La Jolla Cosmetic Surgery Centre,
+River Medical and Fitzgerald Plastic Surgery). **The two biggest casualties were the
+file's own favourites:** Contour Clinics, "the best-fit prospect in the entire pipeline", and
+Greenwich Medical Spa, "the single best prospect found in the entire Northeast". Both struck.
+
+**AND THE WRONG FACTS WERE IN MY BRIEF, WHICH IS WORSE THAN HAVING THEM IN A ROW.** The two
+corrections below are corrections to instructions I wrote. On 8 Nov a British worker's report said
+in one line that "the September positive near-misses (Quinn, Elanic, EF Medispa, CJA) are now
+disqualified on mh3", and I copied that into the standing list and then into the brief that
+commissioned this job — as a specification, naming four clinics and the must-have they fail,
+without checking any of it. Two of the four were wrong. **A brief is read as instruction, so a
+second-hand claim in one propagates in a way the same claim in a row does not**: a row gets argued
+with, a brief gets executed. This is the same failure the week keeps producing — interrogating the
+claim rather than the evidence — arriving somewhere new. The worker refused to launder it, said so
+plainly, and was right on both counts. **Anything naming a specific clinic and a specific must-have
+gets checked before it goes into a brief, even when a careful worker is the source.**
+
+**Two corrections to the standing list's own wording, both found by doing the job.** **Quinn and
+Elanic do NOT fail must-have 3** — must-have 3 counts sites and each is one address; what
+recommended them was surgeon and staff scale, so the failing must-have is 1. **EF Medispa does not
+fail must-have 3 either**: its locations page was re-fetched and shows three sites, inside v2's
+one-to-four band. It is dead on must-have 5 (no address anywhere, re-confirmed seven weeks on) and
+its recommendation is withdrawn, but recording it as a must-have 3 failure would have been wrong.
+**A backwards re-read has to be allowed to disagree with the instruction that commissioned it**,
+or it just launders the previous reading.
+
+**A MARKER NOBODY CAN GREP IS NOT A MARKER — fifth instance in two days, and this one was not
+mine.** Fitzgerald Plastic Surgery was correctly disqualified in the same pass, in an entry reading
+"DISQUALIFIED OUTRIGHT under ICP v2". That means exactly the right thing to a human and is invisible
+to the search that counts them, so the clinic read as unmarked and the count came out wrong. It is
+the same shape as the four rows I left reading as unanswered on 8 Nov by writing prose that meant
+`QUESTION WITHDRAWN` without being it. **So the rule generalises beyond that one stamp: anything
+written into these files to be FOUND again later — a stamp, a disqualification marker, a numbered
+must-have — has to be a fixed string, used verbatim, every time.** Write the string, then write
+whatever prose you like around it. The wording here has been normalised.
+
+**A third kind of stale decision, and it may be worth more than the single-operator one.** Clinics
+dropped for having **no identifiable booking system** — never a must-have, only the 22 Sep pitch.
+The 24 Sep Northeast section has three with published addresses already recorded (Aesthé By MD,
+Manhattan Medspa, Skinly Aesthetics) and Australia has two more (Dr Tass, Cosmetic Connection).
+Those are one fetch each and no regional screen for the American three.
+
+**One September claim turned out to be simply wrong, which is its own finding:** the sweep wrote that
+The MedSpa of DFW and Skin 101 Houston "both have published emails". Skin 101 does.
+**The MedSpa of DFW does not** — homepage and `/contact/` both read on 9 Nov, no address in any
+form. A seven-week-old "has a published email" is not evidence; the address gets re-read or the row
+does not exist.
+
 ## 8 Nov 2026 — a standard that reversed three weeks ago, and 59 rows
 
 **Four markets: Chicago's affluent suburbs (16 rows), Seattle's eastside (14), the Nashville ring
@@ -460,23 +644,67 @@ Grep that first, and only then read the near-misses write-up for the texture.
 Cost today: one worker briefed with a false premise, and two fetches spent re-finding rows we
 already had. Cheap, and only because the duplicate guard exists.
 
-## Where to go next — standing list, refreshed 3 Nov 2026
+## Where to go next — standing list, refreshed 9 Nov 2026
 
 Keep this current. It is the thing that stops a run spending its first searches deciding where
 to look, and `near-misses.md` is the record of everything already swept.
 
+**THE AFFLUENT-SUBURB SEAM IS THE BEST GROUND LEFT, AND 9 NOV PROVED IT TWICE.** Westchester,
+Fairfield County, Nassau and Suffolk gave 33 rows between them. The pattern to expect there is now
+known and should be carried in rather than rediscovered: **must-have 4 on evidence is the binding
+constraint, not must-have 2 or 5**; "dermatology" on the page is usually a hiring credential;
+and the privacy-policy route pays well despite the old geography line saying it would not. Named
+next, in order, all handed over by the Long Island pass:
+
+- **Two single fetches, each one row away:** `thesonuspa.com/locations` (named MD, clean menu,
+  blocked only by a missing contact URL) and `medspaofnewyork.com/privacy/`.
+- **Untouched Long Island towns:** Oceanside, Long Beach, Hicksville, Levittown, Hewlett/Woodmere,
+  Stony Brook, Riverhead.
+- **Use the MAIN-STREET query form there** — Plandome Road, Americana Manhasset, Seventh Street
+  Garden City. Every accepted Long Island row sits on a named village main street, which is the
+  kind of query shape worth reusing in any affluent suburb.
+- **The Hamptons are THIN, not unworked.** That query returned a dead domain, two paid listicles
+  and a massage practice. Established at cost; do not re-spend it.
+- **Comparable suburbs not yet opened**, on the same reasoning: the North Shore of Chicago beyond
+  Lake Forest, Main Line Philadelphia, Montgomery County MD, Marin County.
+
 **FIRST JOB, AND IT IS BIGGER THAN ANY MARKET: RE-READ WHAT A CHANGED STANDARD ALREADY DECIDED.**
 A rule change reaches the run that makes it and nothing behind it, which was proved twice on 8 Nov
-from opposite ends of the file. The named, unstarted work:
+from opposite ends of the file.
 
-- **The 23-24 Sep sweeps dropped clinics for being SINGLE OPERATORS, which ICP v2 made the target
-  on 16 Oct.** Those near-misses entries have never been re-read. Named and unopened: **Essence
-  Medical (Glasgow), Craig Hobson Aesthetics (Bristol), Skin & Joints (Bristol), Skins Clinic
-  (Manchester)**, plus Sussex Aesthetics, Aesthetic Klinik and Dr Liesel Holler. The Goddess Clinic
-  is a B in the file today only because somebody went back for it.
-- **It cuts both ways and the re-read must do both.** September's *positive* near-misses — Quinn,
-  Elanic, EF Medispa, CJA — now fail must-have 3 on the scale that recommended them. Anyone doing
-  this job marks those as disqualified in the same pass, or the file is left more wrong than before.
+**THE SEPTEMBER HALF OF THIS JOB WAS DONE ON 9 NOV 2026 — see the 9 Nov entry above. All seven named
+single operators plus two American judgement calls were re-read; six became rows 1105-1110,
+including the run's only grade A (Craig Hobson Aesthetics). The inverted half was done in the same
+pass: twenty-one of September's positive near-misses are now marked `DISQUALIFIED UNDER ICP v2`
+inline in `near-misses.md` with the must-have numbered — counted from the file, not from the report
+of the pass.** Two corrections to the item as it was
+written below, both from doing it: **Quinn and Elanic fail must-have 1 and the plastic-surgery
+disqualification, NOT must-have 3** (must-have 3 counts sites and each is one address — what
+recommended them was surgeon and staff scale); and **EF Medispa does not fail must-have 3 at all**,
+because a re-fetch of its locations page confirms three sites, inside v2's one-to-four band — it is
+dead on must-have 5, which was re-confirmed, and its September recommendation is withdrawn. What is
+left of this seam:
+
+- **The richest thing left is not a single-operator case — it is the same bug one rule over.**
+  **Aesthé By MD, Manhattan Medspa and Skinly Aesthetics** (24 Sep US Northeast, "three grade-C
+  fallbacks with real published emails") are recorded as failing *only* on naming a booking
+  platform, which was never a must-have. Addresses already in hand, no regional screen, one fetch
+  each. Same shape in Australia: **Dr Tass Cosmetic & Skin Clinics** and **Cosmetic Connection**,
+  both dropped for "no identifiable booking system".
+- **Six AU/NZ single operators, never opened:** DC Aesthetics, Newcastle Cosmetic Doctor, Coastal
+  Skin & Laser (Tewantin), Dr Sarah Sparks, Hobart Facial Aesthetics, Sapphire Appearance Medicine.
+  Each needs the must-have 6 consent screen as well as an address, so they are dearer than the
+  American three. (Dr Terrence Scamp, listed beside them, is a plastic surgeon and is *disqualified*
+  under v2 — the reversal loses him rather than recovering him.)
+- **Two blocked only by a fetch failure, both v2 targets on profile:** Illuminate Skin Clinics
+  (Dr Sophie Shotter — contact page 401) and The Skin Care Clinic, Hobart (/contact/ unfetchable,
+  and the best dormant signal found in Tasmania).
+- **One parked on a bare label:** No.6 Clinic, Tunbridge Wells, ruled out as "beauty-led rather than
+  medical" with no evidence recorded — the exact shape of the 8 Nov "a label is not a finding" rule.
+- **The sections AFTER 16 Oct have not been checked for the same disease.** 9 Nov only covered the
+  pre-v2 sections. Other standards moved later — the 4 Nov vein narrowing, the 5 and 8 Nov mole and
+  minor-surgery rulings, the 2 Nov Cloudflare correction — and every near-misses section written
+  before each of those is still carrying decisions made under the older wording.
 - ~~Two British rows are one register call each from a B: 655 and 1038.~~ **WRONG, and tested
   on 9 Nov 2026 rather than left on the list looking attractive. Both calls are spent and neither
   produced a B.** For 1038 the quoted search for "Elm Skin" returns zero companies, so must-have 8
@@ -624,9 +852,10 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 8 Nov 2026: **1,104 rows, 748 ready to approach** — US 368, AU 169, CA 87, UK 80, NZ 42, IE 2. (It was 496 rows and 316 ready on
-20 Oct, and 1,045 rows and 707 ready on 5 Nov.) A further **110 clinics** that cleared the ICP on
-fit are parked in `browser-visit-list.md` for want of one page-open each.
+As of 9 Nov 2026: **1,143 rows, 776 ready to approach** — US 391, AU 169, CA 87, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
+20 Oct, 1,045 rows and 707 ready on 5 Nov, and 1,104 rows and 748 ready on 8 Nov.) A further
+**115 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
 existing ones. Twelve went B to C on the must-have 4 evidence ladder, which is a loss of twelve
@@ -636,7 +865,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 748 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 776 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 
@@ -803,7 +1032,7 @@ Cambridge, Ontario.
 200 calls, WebFetch 400 an hour. Eight parallel workers starved each other on 16 Oct and all
 eight stopped short. Three or four, never more.
 
-## Six things that look like a published address and are not
+## Seven things that look like a published address and are not
 
 **This section was stale until 3 Nov 2026 and said something we had already disproved.** It
 listed a Cloudflare placeholder as the first entry and asserted that none of these is recoverable
@@ -825,11 +1054,22 @@ The current list, canonical version in `ICP.md`:
 6. **An address that exists only in the clinic's own meta tags** — added 3 Nov, row 103. Nothing
    visible anywhere, the domain is the clinic's, the mailbox is probably live. Conspicuous
    publication is what must-haves 5, 6 and 7 rest on, so this fails, and it is the most tempting
-   of the six.
+   of the seven.
+7. **An address published only inside an `sms:` href** — added 9 Nov 2026, Westchester. A "text us"
+   button whose href is `sms:+1...&body=...` carries the clinic's gmail in its query string, so the
+   string IS in the markup and a fetch reports it found. But **clicking it opens a text message, not
+   a mail composer**, and nothing on the rendered page invites a visitor to write there. The
+   meta-tag case wearing a different hat. **The test is what a visitor could DO with the string,
+   not whether the string is in the page** — which is why no grep over markup catches this one.
 
 **A Cloudflare-obfuscated address is NOT on this list.** It is not seen and is never recorded,
 but a browser recovers it, so the clinic goes on `browser-visit-list.md`. Obfuscation is not
 always Cloudflare: one Canadian site hand-rolled `aesthevaclinic[@]gmail.com`.
+**And obfuscation is not always Cloudflare in a SECOND sense, added 9 Nov 2026: CleanTalk** does
+the same job under a different name, rendering `th****@gm***.com` with a different masked domain
+behind the `mailto:`. Treat it identically — not seen, never recorded, browser-visit list. Two
+named products now do this, so **the test is "did the page ship the characters", not "is this
+Cloudflare".** Expect a third.
 
 Related: a dead clinic domain does not always 404. `19westaesthetics.com` now serves an
 unrelated AI companion app.
