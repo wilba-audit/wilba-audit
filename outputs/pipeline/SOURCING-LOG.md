@@ -143,6 +143,43 @@ The file was right and two were added. **This keeps happening because a report i
 memory of the run and the file is written during it** — so where the two disagree, the file wins,
 and the count worth recording is the one you can measure afterwards.
 
+**TWO CORRECTIONS THAT CAME BACK FROM THE DRAFTING CHANNEL THE SAME EVENING, AND IT WAS RIGHT
+BOTH TIMES.**
+
+**It overturned the copy ruling I had written hours earlier, and the reason is about ownership.**
+I had said a clinic's own programme name must always be replaced by the mechanism in copy. The
+drafting side had already scanned **all 366 staged subjects and openers against their full text**
+— not just `opening_angle`, which is all my audit reads — and found **zero medicine words and zero
+prices**. My flat rule would have discarded about **thirty personalised openers** for no reason any
+rule we hold actually gives. **The standing rule is now theirs:** keep a programme name that
+contains no medicine word and no price ("Beauty Bank", "Skin Club", "Bevara Bucks"), substitute the
+mechanism where the name itself carries one ("Botox Bank", "TOX Club"), and never print a price.
+**The lesson: a rule about what we SEND belongs to whoever sends it, and should be settled with the
+staged text in view rather than from the row.** From the sourcing side the conservative call looks
+free; only the drafting side could see it cost the best line in thirty emails.
+
+**And it disclosed an incident that changed what I build.** Two of its edits on 4-5 Nov
+**truncated its own skip-ids list, silently releasing every hold.** Nothing was sent, because the
+send trigger is off and no live push happened, and it has rebuilt the list and re-checked every
+staged row against current grades. **But a hold list that can empty without anyone noticing is the
+wrong shape for the job**, so the sourcing side now publishes the answer instead:
+`outputs/pipeline/DO-NOT-SEND.txt`, every row id that is not grade A or B, regenerated from the CSV
+by `scripts/refresh_do_not_send.py`. The send side re-derives its skip list from it each run rather
+than appending to one and trusting it.
+
+**Worth recording how I got that script's design wrong first, because it is the same error as the
+audits.** I wrote the refresh as a step inside `append_prospects.py`. Wrong hook twice over: the
+appender returns early when given no rows, and — the real problem — **a grade change is not an
+append.** Ten rows changed grade that night by a direct CSV edit and not one would have triggered a
+refresh, yet those are exactly the changes the list exists to track: a row leaving C becomes
+sendable, a row becoming DISQ must stop. **Same shape as "a check scoped to where the problem
+usually is will not see it where it survives", one layer down: a hook placed on the commonest path
+misses the path that matters.** It is standalone now, and the appender calls it too.
+
+**One limit stated in the file itself: a grade is a qualification verdict, not a send clearance.**
+Row 181 is grade C so the list catches it, but the general case is real — a row can be A or B and
+still be unsendable for a reason the grade does not carry. Those stay in the row's notes and here.
+
 **THE RECOVERY PASS, AND IT IS THE MOST VALUABLE RUN OF THE DAY DESPITE PRODUCING ONE NEW ROW.**
 It was sent to re-read rows parked under rules ICP v2 abolished. Result: **nine rows recovered
 (220 to A; 198, 166, 182, 237, 252, 298, 238 and the repaired 202 to B), one disqualified outright
