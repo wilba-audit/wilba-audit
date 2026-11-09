@@ -214,10 +214,28 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `advancedskinandbodysolutions.com` and `asbs.com` plus `eastsidebodyandskin.com`, which 302s to
    it. **And block `areas-served/<town>` page sets from query one** — `kucumberskinlounge.com` and
    `serenityrejuvenationcenter.com` each run one and take a slot on nearly every query in their
-   metro. Two remote-prescribing services —
+   metro.
+
+   **BUT AN SEO SUBURB PAGE IS ALSO A SOURCE, AND THIS RULE WAS ONLY HALF RIGHT — 9 Nov 2026.**
+   Blocking the page *sets* from query one stays correct: they crowd out real clinics. What was
+   missing is that **an individual `areas-served/<town>` page carries the full site footer**, so it
+   gives up the mailbox, the treatment menu, the founder bio AND the site count in one fetch. Two
+   New Jersey rows (Zen Aesthetics, Fortress) exist only because a suburb page was READ rather than
+   discarded. So: **block the sets in the query, and read any single one you land on** — it is one
+   of the cheaper fetches available, because an SEO page is built to carry every contact detail the
+   site has. The two uses do not conflict; the old wording just never separated them. Two remote-prescribing services —
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
-   it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.** Block its
+   it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.****A SISTER BUSINESS IN THE FOOTER'S "MAIN PAGE" OR "SHOP" SLOT — added 9 Nov 2026, and it is now
+   the commoner tell of the two.** Across 15 New Jersey rows the Vos-style parent-group loyalty
+   footer **never fired once**, and this fired twice instead: a footer nav whose "Main Page" or
+   "Shop" link leaves for a **different business the same owner runs** — in both cases a salon
+   parent, not a med-spa roll-up. **That distinction is the whole point and it cuts the safe way:**
+   a salon sibling is an owner with two businesses, which is must-have 3 intact and often a
+   *better* prospect, whereas a roll-up parent is the disqualification. So read the destination
+   before deciding: **a sibling is not a parent.** Check the footer's nav links, not just its
+   loyalty or gift-card links.
+    Block its
    directory URLs, but read a `glowday.com/clinic/<name>` booking URL as a platform signal, exactly
    as with Faces Consent. Also blocked from 8 Nov: `enhancinghealthandbeauty.com`,
    `change-aesthetics.co.uk`, `airaesthetics.co.uk`, `clinictor.com`, `clinicsoftware.com`.
@@ -320,6 +338,16 @@ because the standard may widen again and re-finding a clinic costs more than kee
    that which has now failed once in the clinic's favour. The rule is unconditional anyway, so the
    only thing the budget ever decided was expectation — and the expectation for an affluent
    Northeast suburb should now be *high*, not zero.
+
+   **AND NEW JERSEY WENT ZERO FROM FOUR THE SAME DAY — which is the stronger result, not a
+   contradiction.** Two Northeast suburbs measured hours apart, 44% and 0%, so **geography predicts
+   nothing at all** and should be dropped as a predictor rather than patched again. What held in
+   both is the mechanism: all four New Jersey misses failed by a route the mechanism already names
+   — one routes to `/contact`, one gives a postal address, one nominates no route, one is the hibu
+   platform's generic page. **Fifth confirmation of the mechanism, and the final failure of the
+   geography.** Budget the rule by what a market's clinics do with their own contact details, which
+   you can only learn by spending it; the rule is unconditional anyway, so spend it and record the
+   count.
 
    **A policy that nominates `/contact` as its data-request route is NOT a third `/contact`
    exception — measured 5 Nov 2026.** A worker spent the fetch deliberately to test it and the

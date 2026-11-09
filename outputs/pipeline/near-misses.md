@@ -14172,3 +14172,447 @@ Jericho Turnpike, Franklin Avenue, East Main Street, Nassau Boulevard. Long Isla
 self-describe by their village main street, which is exactly the "names locals trade under"
 condition the Tulsa Brookside result turned on. Query **"Plandome Road", "Americana Manhasset",
 "Seventh Street Garden City", "Main Street Bay Shore"** rather than the town names again.
+
+---
+
+## 9 November 2026 — northern New Jersey
+
+# Northern and central New Jersey's affluent ring — near misses and rule-outs — 9 November 2026
+
+**Markets swept:** Essex and Morris counties (Montclair, Millburn, Short Hills, Summit, Madison,
+Chatham, Morristown, Verona, West Caldwell, Livingston, Randolph, Denville, Mendham); Bergen County
+(Ridgewood, Englewood, Englewood Cliffs, Tenafly, Closter, Cresskill, Westwood, Paramus, Upper
+Saddle River, Woodcliff Lake, Fair Lawn, Wyckoff); then Princeton, Pennington, Westfield and the
+Red Bank / Monmouth ring (Rumson, Shrewsbury, Little Silver, Matawan, Wall).
+
+ICP v2, US screen — must-haves 1 to 5, no consent screen. **15 rows went to `newjersey.json`: 1 A,
+8 B, 6 parked at C.** Everything below either cannot be emailed or was ruled out on the standard.
+
+Every clinic name and domain stem below was grepped against `outputs/pipeline/clinic-pipeline.csv`
+and `outputs/pipeline/near-misses.md` **before** a fetch was spent on it. The existing eight New
+Jersey pipeline rows (Norwood, Jersey City, Morristown/Enriched, Hoboken ×2, Ridgewood/The Wellness,
+Paramus/Aesthetica, Weehawken) and the 26 Oct near-misses (Downtown Med Spa, Attain, Ethos, Evolve,
+VIO) were all excluded on the grep, not on a fetch.
+
+---
+
+## Clear the ICP on fit but publish no readable address
+
+### Cloudflare-hidden — recoverable by a person opening the page (browser-visit list)
+
+**Menon Medispa** — 45 Essex Street, Suite 202, Millburn NJ 07041 (`menonmedispa.com`).
+**THE BEST UNREACHABLE CLINIC IN ESSEX COUNTY and the one Jess can rescue in thirty seconds.**
+**Dr Aditi Menon, MD**, named as founder and leader; **"since 2019"** published outright;
+**"100+ 5 Star Reviews"**; a **Menon Monthly Membership** whose monthly payment becomes an equal
+credit toward one treatment, with unused credit rolling over for up to three months on a
+three-month minimum; a complimentary consultation; a "Find Your Glow" skin quiz as a lead magnet;
+and a newsletter. That is a founding year, a review count, an owner-doctor and a banked-credit
+scheme — a grade A or a strong B the moment the footer is readable.
+The footer address renders as `[email protected]` **twice** and the links point at
+`/cdn-cgi/l/email-protection`. **THE HELPER DID NOT VOLUNTEER A DECODE on this one** — it said
+outright that the real address is hidden and that it had not decoded it, and I did not ask it to.
+No address recorded. Two things for whoever opens it in a browser: the menu carries **"Vascular
+Treatments"** with no indication named anywhere, which needs the 8 Nov whole-site read before the
+row is accepted; and the footer links to a separate entity, **Menon Regenerative Institute**
+(`menonregen.com`), so the site count needs checking too.
+
+**House of Ness** — its "Email Us" link is Cloudflare-protected and the helper again volunteered
+nothing. Listed under rule-outs below, because it fails must-have 3 regardless.
+
+### Robots-refused — recoverable by a person opening the page (browser-visit list)
+
+**Princeton Medi Spa** — `princetonmedispa.com`. **`robots_disallowed`**: the fetch was refused
+outright and nothing of the page was retrieved. A person opening it in a browser sees it normally,
+and our own notes say a robots-refused clinic is often the best one in its town, so this goes on the
+browser-visit list rather than the bin. Nothing else is known about it — it ranked second on the
+Princeton query, above two clinics that became rows.
+
+### No address published at all — no browser recovers these
+
+**Salt & Sky Wellness** — 580 N Maple Ave, Suite 2, Ridgewood NJ 07450 (`saltskywellness.com`).
+**THE BEST UNREACHABLE CLINIC IN BERGEN COUNTY.** Founder **Linda Agarwal**, "over 30 years of
+experience as a Certified Registered Nurse Anesthetist (CRNA) and RN"; **Boulevard** (`blvd.app`,
+`blvd.me`); a membership programme; gift cards; and a free consultation stated on the contact page.
+Service-area pages for Paramus and Wyckoff; one physical site. **I spent three fetches on this
+clinic and it publishes no email anywhere** — homepage, privacy policy, contact page. The policy is
+WordPress boilerplate (it names only Gravatar and an unnamed spam-detection service) and **nominates
+no contact route at all** for data requests, which is exactly the 8 Nov widened second exception, so
+the `/contact` fetch was licensed rather than against the rule. The contact page is a form. Phone or
+Instagram is the only route.
+
+**Eminence Medical Aesthetics** — 707 State Road, Suite 221, Princeton NJ 08540 (`eminencema.com`).
+**THE BEST UNREACHABLE CLINIC IN MERCER COUNTY.** **"Since opening our doors in 2013"** — thirteen
+years, published. A **"Proprietary Membership Program"** with "loyalty incentives". A consultation
+"which is **ALWAYS FREE**". One site. Two fetches spent (About, privacy policy) and no address on
+either. The policy nominates a **postal** address for data requests — "contact us at 707 State Rd,
+Suite 221, Princeton, NJ 08540" — so this is **not** the no-contact-route exception and `/contact`
+stays forbidden; I did not spend it. The policy carries no refusal of unsolicited commercial email
+and in fact reserves the right to send marketing email, so the consent picture is clean. One thing
+to settle before accepting it later: the vein line is "Vein Treatment" plus "Sclerotherapy", with
+conditions given as "Leg Veins" and "Broken Vessels" and **no varicose, venous-insufficiency or
+phlebology language anywhere**, which reads as a pass under the 8 Nov rule; a "Cortisone Shot" also
+sits under injectables.
+
+**Naturally Aesthetic** — 118 E River Rd, Rumson NJ 07760, serving Red Bank
+(`naturallyaesthetic.com`). Founder **Nichole Gilbarty**, board-certified nurse practitioner, "over
+10 years of experience"; **Sophia Cona, BSN RN**; **Boulevard** (`dashboard.boulevard.io`); Cherry
+financing; memberships and packages sold through the booking platform; Pro-Nox and Aura 3D imaging.
+Two fetches (homepage, privacy policy). **The policy's data-request route is a link to
+`/contact`** — which the 5 Nov measurement settled is **not** a third `/contact` exception — so I
+stopped there rather than spending the forbidden fetch. Policy effective 12-13-2024; no refusal of
+unsolicited commercial email.
+
+**Ledo Aesthetics** — 400 Old Hook Road, Ste 2-2, Westwood NJ 07675 (`ledoaesthetics.com`).
+"Proudly **woman-owned and owner-operated** medical spa", "Board-Certified Physician Associates",
+"Over 20 Years of Clinical Experience" (a career claim, not a business age). A clean injectables and
+laser menu with nothing reimbursable on it. Gift cards via Square; a referral reward whose amount
+the homepage and the FAQ **disagree about**. No email, no mailto, and its "privacy policy" link
+points at `budurl.com/hibuprivacy` — **the hibu website platform's generic policy, not the
+clinic's** — so there is no policy of its own to fetch and no second address route. Template
+placeholders (`{{placeholder_...}}`) still in the footer and a "(Hibu Plumbers)" label inside the
+directions link.
+
+**Joven Medical Aesthetics** — 16 Pocono Rd, Suite 217, Denville NJ 07834
+(`jovenmedicalaesthetics.com`). Founder **Maria Cristina Sanchez, APN**; **Daniel Ferrante**,
+medical director; **Erika Naranjo**, ANP; Giomary Ricart, medical aesthetician.
+**MyAestheticsPro** (`web2.myaestheticspro.com`) — a grade-A platform. A complimentary evaluation
+and consultation. Bioidentical hormone therapy, EMSELLA pelvic-floor therapy and NAD+ sit beside the
+aesthetics. No email on the homepage. **Its privacy policy exists at `/privacy-policy/` and I did
+NOT spend that fetch** — I had run the policy yield down to zero elsewhere in this market and chose
+to spend the remaining budget on fresh clinics. **That is the cheapest outstanding lead in New
+Jersey:** one fetch, and the clinic is otherwise a B.
+
+**Exhibit Medical Aesthetics** — 282 West Main Street, Denville NJ 07834
+(`exhibitmedicalaesthetics.com`). **Nicole Bauer**, nurse practitioner and licensed aesthetic
+injector; **Melissa LaMarca, PA-C**, with a plastic-surgery background; **Dr Jonathan Martinez
+Dalmasi**, medical director. **MOXIE** (`app.joinmoxie.com/booking/exhibit-medical-aesthetics`) —
+another sighting of the platform added to the grade-A list on 8 Nov, now seen three or more times.
+Gift cards through Moxie. No founding year, no review count, a single "© 2026". No email on the
+homepage; policy exists at `/privacy-policy/` and I did not fetch it. Second cheapest outstanding
+lead in the state.
+
+**The Skin Lounge** — 10 Fairmount Ave, Chatham NJ 07928 (`theskinloungenj.com`). No email, no
+mailto, **no privacy policy and no contact page**, so there is literally nothing left to fetch.
+**What makes it worth recording is the structure, not the address.** It runs **two separate phone
+lines** labelled "Aesthetics" and "Med Spa" and **two separate booking accounts** —
+`skinloungenj.glossgenius.com` and `theskinloungenj.janeapp.com` — with **"Beauty By Carolyn"**
+appearing in the tracking parameters of the aesthetics links. Separate booking accounts and separate
+phone lines per sub-brand at one address is the **practitioner-collective shape** the ICP added on
+21 Oct. So: near-miss on **must-have 5**, with **must-have 3 flagged as LEANING FAIL** rather than
+unresolved, because two booking accounts is the ICP's own stated tell. Also: its Facebook link and
+two service links point at `firebrick-crow-824244.hostingersite.com`, a Hostinger staging hostname.
+
+**Serenity Medical Spa** — 2425 Pennington Road, Suite 100, Pennington NJ 08534 (`serenitynj.com`).
+"Led by **Sharon Gertzman, DO**". Weight loss described as "medically guided" programmes
+**addressing obesity**. Its review widget reads **"0 Total Reviews"** while displaying three
+testimonials, so the counter is broken. No email on the homepage. **THE REASON I DID NOT CHASE THE
+ADDRESS is a must-have 2 doubt worth more than the address:** booking runs on
+`consumer.scheduling.athena.io` — athenahealth, an EHR whose core business is electronic insurance
+claims — and the site is built by **Tebra**, another medical-billing vendor. Neither proves
+insurance billing, and a vendor name is not a billing model (the same reasoning that passed Fortress
+Medical Aesthetics on AdvancedMD). But combined with an explicit obesity-treatment line it is the
+strongest must-have 2 doubt I met in New Jersey, and the policy at `/your-privacy` would have to
+answer it before an address was worth having.
+
+**Atrium Medspa** — 380 NJ-17, Upper Saddle River NJ 07458 (`atriummedspa.com`).
+**NO ADDRESS PUBLISHED, AND PARKED ON MUST-HAVE 2 AS WELL, so it fails twice.** Boulevard
+(`dashboard.boulevard.io`, `blvd.me` gift cards), memberships, a newsletter, and a published count
+of **110 reviews at 5.0**. **MUST-HAVE 2 FAILS ON THE FOUR-INDICATION THRESHOLD, counted rather
+than eyeballed:** under a heading the clinic itself calls **"Medicine & Longevity"** it lists Cardio
+IQ heart-risk testing, a GLP-1 weight-loss programme, blood testing and longevity, **Galleri**
+multi-cancer screening, InBody composition analysis and **Shield** colorectal cancer screening. That
+is four or more reimbursable indications under a named medical heading, which is the ICP's own
+threshold, so it parks even if an address turns up. Note what does **not** fail it: Galleri and
+Shield are third-party laboratory tests rather than the clinic's own diagnosis, so the 8 Nov "who
+reads the images" logic would pass it on that specific point, and neither is a skin-cancer check.
+The **threshold** is what fails it. One reviewer calls the facility "Brand new", so must-have 4 is
+doubtful too; no owner or medical director is named, and the GLP-1 programme is "overseen by a
+board-certified physician" who is never identified. Its only externally branded scheme is **Evolus
+Rewards**, a manufacturer's programme, correctly **not** the parent-group tell.
+
+---
+
+## Ruled out on the standard — do not re-source
+
+### Plastic surgery or surgical practices — must-have 1 fails on substance, and the buyer is not in the room
+
+**Arria MedSpa** — 37 N Fullerton Ave, Suite A, Montclair NJ (`arriamedspa.com`).
+**OUT ON PROFILE, NOT ON CONTACTABILITY** — it publishes `hello@arriamedspa.com` visibly and as a
+mailto, has gift cards, a mailing list, one address and page metadata published 2022-06-14.
+**MUST-HAVE 1 FAILS:** the page describes itself, in its own words, as **"the non-surgical branch of
+The Plastic Surgery Group of New Jersey"**, links to a "Surgeons Team" page and lists body, breast
+and facial surgery under the parent group. That is substance, not a label. **MUST-HAVE 3 FAILS
+TOO:** the marketing buyer is the surgical group. The near-misses file already carries a 26 Oct
+entry for "Plastic Surgery Group New Jersey"; **this is its med spa arm, now identified** — worth
+linking the two so nobody opens either again.
+
+**Altman Aesthetic Center** — 570 Sylvan Ave, Englewood Cliffs NJ 07632 **plus** 853 Fifth Avenue,
+New York NY 10065 (`altmanaestheticscenter.com`). **Dr Gil Altman, MD, FACS**, double
+board-certified plastic surgeon. Menu is facelift, rhinoplasty, brow lift, deep neck lift, breast
+augmentation, lift and reduction, abdominoplasty, liposuction and BBL. **Must-have 1 fails on
+substance; must-have 3 fails on the New Jersey-plus-Manhattan pair.** No email published either.
+
+**Better U Medical Spa** — 180 Grand Ave, Suite B, Englewood NJ 07631 (`betterumedicalspa.com`).
+**OUT ON PROFILE, NOT ON CONTACTABILITY** — it publishes `staff4gor@gmail.com` visibly and as a
+mailto. **Dr Hetal Gor, MD, FACOG**, an actively licensed OBGYN with hospital privileges at Hudson
+Regional Hospital. **MUST-HAVE 1 FAILS:** BodyTite liposuction, pubic and supra-pubic fat removal,
+labia reduction, urinary incontinence treatment, erectile dysfunction, penis enlargement and scrotum
+fillers sit alongside the injectables. That is a gynaecology-led surgical and sexual-health practice
+with an aesthetics arm, not an aesthetics-led clinic, and urinary incontinence is a reimbursable
+condition, so **must-have 2 is in doubt as well**. Footer reads "© Copyright 2020-2021" and the page
+still carries COVID-19 telehealth notices.
+
+**Source Medical Aesthetics** — 1032 Rt 34, Matawan NJ 07747, by appointment only
+(`sourcemedicalaesthetics.com`). **MUST-HAVES 1 AND 2 FAIL OUTRIGHT and this one is unambiguous:**
+its own service menu lists **"Cancer Screening"** and **"Precision Health Screening"** under the
+clinic's own name, plus **"Minor Skin Procedures"** and "Vein Treatments", with "Spider Veins" and
+"Skin Lesions" among its conditions. Screening the clinic owns is the dermatology disqualification
+and the brief's named fail, and anything the clinic itself calls a minor procedure fails regardless
+of label. MyPatientNow portal, a three-level Skin Membership Program, "over 20+ years of aesthetic
+experience". **No email published either**, so it would have been a near-miss anyway.
+
+**LG Aesthetica / Coastal Med Aesthetics** — 3350 NJ-138 #118, Wall Township NJ 07719
+(`lgaesthetica.com`). **Dr Leila Grayson, MD**. **MUST-HAVE 1 FAILS on substance under the 8 Nov
+converse rule:** the menu lists **"Earlobe Repair"** and **"Scar Revision"**, and earlobe repair is
+excision with closure whatever heading it sits under. It also lists neuromodulator treatment for TMJ
+disorders. No email published either. Page metadata shows it published in December 2015, so this is
+a long-trading practice — worth nothing to us, worth not re-opening.
+
+### Not aesthetics-led — must-have 1
+
+**Remede Skin Care Center** — 100 Summit Avenue, Summit NJ 07901 (`remedeskincarecenter.com`).
+**THE MOST CONTACTABLE BUSINESS I RULED OUT IN NEW JERSEY, recorded precisely so nobody spends the
+fetch again.** It publishes `info@remedeskincarecenter.com` visibly in the header and footer, says
+**"For over 20 years"** and **"20+ Years in Operation"** and **"500+ Happy Clients"** — which would
+satisfy must-have 4 twice over — and is in one of the assigned towns. **MUST-HAVE 1 FAILS ANYWAY:
+there are no injectables and no devices on the menu at all.** It is facials, teen acne, brow
+shaping, waxing, lash and brow tinting, shellac manicures, spa pedicures and nail extensions,
+delivered by "expert estheticians". A day spa with a skincare programme has no three-to-four-month
+treatment cycle, so there is no lapsed-injectables list to recall. **OUT ON PROFILE, NOT ON
+CONTACTABILITY.**
+
+**Medi Spa by SDP** — 51 Trinity St, Newton NJ 07860 and 14 North Village, Sparta NJ 07871
+(`medispabysdp.com`; Sussex County, outside the assigned ring). **Kathleen Czerhoniak** named as
+Owner/Co-Founder; **Phorest** booking (`salondipanacheandmedispa`). **MUST-HAVE 1 FAILS:** it is the
+medical arm of **Salon di Panache** — its own footer "Main Page" link goes to `salondipanache.com` —
+and its published services include **physicals and bloodwork** alongside bioidentical hormone
+replacement, IV therapy and weight loss. Also publishes no email. Its only copyright line is
+**"©2023 ThemePure"**, the theme vendor's, not the clinic's.
+
+### Five or more sites, or a city parent with a New Jersey satellite — must-have 3
+
+**HL Med Spa** — `hlmedspa.com`. **OUT ON PROFILE, NOT ON CONTACTABILITY** — it publishes
+`sp@hlmedspa.com` visibly and as a mailto. **MUST-HAVE 3 FAILS:** four addresses listed — 275
+Chestnut Street and 278 Ferry Street, Newark NJ; **Pico Clinics, 821 Broadway, 9th Floor, New York
+NY**; and 441 60th Street, West New York NJ marked **"Coming soon"** — so a fifth is already
+announced. On top of the count it has a **General Manager and a Practice Manager**, eight named
+staff, and a medical director (**Troy Callahan, MD**) with almost three decades of plastic and
+reconstructive surgery. A management layer between the owner and marketing is the ICP's own
+disqualification.
+
+**House of Ness** — `houseofness.com`. **THE HAZARD THE BRIEF WARNED ABOUT, IN ITS EXACT FORM.**
+Three locations: 162 E 78th St, 4th floor, New York NY 10075 (Upper East Side); 2935 Veterans Rd W,
+Staten Island NY, **inside Sola**; and 393 Rt 17 South, Paramus NJ 07652, **inside Strands
+Studios**. The phone number is a **212 Manhattan line**. So the New Jersey presence is a room inside
+a hair studio serving a Manhattan parent — **a satellite of a city parent, which fails must-have
+3.** It is "led by a Board Certified Plastic Surgeon" who is never named. Aesthetic Record
+(`houseofness.myaestheticrecord.com`), **Allē** rewards (a **manufacturer's** programme, correctly
+**not** the parent-group tell), complimentary consultations and free two-week touch-ups. Its "Email
+Us" link is **Cloudflare-protected**; the helper said so and volunteered nothing, and the row is out
+on profile regardless.
+
+**Reflections Center** — `reflectionscenter.com`. Owned the "Med Spa New Jersey" and Livingston
+result slots with an `/about/our-locations/` page set. Multi-site and surgery-adjacent on the
+structure of its own URLs. **NOT OPENED.**
+
+**Short Hills Surgery Center** — `shorthillssc.com`. Surfaced on a Short Hills med spa query with a
+"Medical Staff" page. A surgery centre. **NOT OPENED.**
+
+**Chains, franchises and location-page sets that took result slots.** All blocked by name in later
+queries: `skinspirit.com` (national, Millburn location page), `orangetwist.com` (Princeton location
+page), `viomedspa.com` (Shrewsbury franchise — already in the file), `4everyoungantiaging.com`
+(Ridgewood franchise), `liquividanj.com`, `itaesthetix.com` (per-city location pages),
+`woodhousespas.com`, `handandstone.com`, `evolvemedspa.com` and `myethosspa.com` (both already in
+the file), `attainmedspa.com` (already an unresolved 26 Oct near-miss, "three locations (and
+growing)"), `bergencountymedicalspa.com` (an `/englewood/`, `/fair-lawn/` **areas-served page
+set**), `skinsplendid.com` ("Nurse Practitioner in New York, NY and Montclair, NJ" — the city-parent
+shape again; **NOT OPENED**), and `aesura.com` (Hackensack, "Premier Longevity Medicine & Med Spa" —
+**NOT OPENED**, longevity-led).
+
+### Brand-new or not yet trading — must-have 4
+
+**Le Ami Med Spa** — `leamimedicalspa.com`. **A SEARCH-RESULT HAZARD WORTH NAMING AS A PATTERN.**
+Its Tenafly areas-served page is **indexed and ranking** — it came fourth on the Tenafly query with
+a confident title, "Med Spa Tenafly NJ - Le Ami Med Spa - Book Now" — and the page itself is a
+WordPress **"coming soon" placeholder** reading "New WordPress website is being built and will be
+published soon", with no address, no phone, no menu and no content at all. One fetch spent proving
+it. **An areas-served URL can rank while the site behind it does not exist yet, and the snippet
+gives no hint** — this is a new sibling of the 3 Nov vendor-logo-wall warning, except that there the
+snippet could be read and here it could not.
+
+### Out of market — surfaced on a New Jersey query, do NOT count as coverage
+
+**MedSpa by Beauty Bar** — **COLORADO SPRINGS, CO**, three addresses (1359 Interquest Pkwy #120;
+and its sister salon at 26 N Tejon St and 5925 Dublin Blvd #150). It surfaced on a New
+Jersey-restricted beauty-bank query and **its Beauty Bank Membership is the best-documented
+banked-credit scheme I read all day**: a monthly fee on a twelve-month commitment, funds banking
+into an account usable for any service or retail purchase, **"Banked funds never expire"** in its own
+words, a birthday gift card, a pause fee, an early-cancellation fee with stated exceptions, and
+balances that are non-refundable and non-transferable. **Zenoti** (`medspabeautybar.zenoti.com`),
+**"Based on 122 reviews"**. Recorded in full because Colorado has not been swept and this is a
+ready-made lead. **Two things to check first:** the birthday gift card is redeemable at **Beauty Bar
+Salon & Spa**, a sister company on its own domain (`beautybar-inc.com`), which **is** the
+cross-brand parent shape and needs the footer read; and some of its navigation points at
+`http://medspa.local/`, a development hostname.
+
+**Wellington Rejuvenation Center** — **ROYAL PALM BEACH, FLORIDA** (its own copy also says West Palm
+Beach, a contradiction it does not resolve). Publishes `info@wellingtonrejuvenationcenter.com`
+visibly and as a mailto; **Zenoti on the same tenant** as its New Jersey siblings. It is the fourth
+clinic in the Montclair Rejuvenation Center family, which is a `newjersey.json` row this run, so it
+is **not** an independent lead. **But its team page is where I found the February 2017 founding date
+for the New Jersey clinic, which the New Jersey clinic's own site never publishes** — a sibling
+clinic's team page can date a practice the practice will not date itself, and that is a technique
+worth keeping.
+
+**Three beauty-bank domains I surfaced and did not place.** `inspiremedspa.com`,
+`skinperfectionmedspa.com` (`/spa-beauty-bank/`) and `vanitymedicalspa.com`. All three ranked on a
+New Jersey-restricted query and **none named a state in its title**, so any of them may be out of
+market. **A free lead:** one `allowed_domains` search across all three would place them in a single
+call, which is the 8 Nov batched-guess technique used for placing rather than for finding.
+
+### Noise, and what to block
+
+Add to `blocked_domains`: `medspascout.com`, `thecliniccompass.com`, `bestofnj.com`
+("New Jersey's Best Medical Spas of 2026" — the sponsored-listicle hazard), `bestofessex.com`,
+`monmouthhealthandwellness.com`, `businessyab.com`, `threebestrated.com`, `medspa.com`,
+`princetonequity.com` and `princetonmedspapartners.com` (the PE roll-up already in the file as a
+Huntsville near-miss — **its name alone takes a Princeton slot**), `alle.com` (its provider-locator
+town pages), `themontclairgirl.com` and `themonmouthmoms.com` (local blog "where to get" and
+"salon + spa guide" listicles — the coin-flip hazard), and `montclaircenter.com/directory-bid`
+(a business-improvement-district directory whose only med spa listing was a chain, so the
+district-association technique that worked in Clovis **did not** work here).
+
+**AND A NEW NOISE CLASS: COSMETIC DENTISTRY.** The combination of "aesthetics" with an affluent New
+Jersey town name pulls **dentists** hard — `eislerdental.com` took two of ten slots on the Tenafly
+query, and `academydentalcare.com`, `englewoodcliffsdentistry.com`, `morriseyeassociates.com`
+("Ocular Aesthetics"), `familyofcaring.com` and `inspirewellness.com` (counselling) took one each
+across three queries. In an affluent suburb every trade markets itself as "aesthetics". Block the
+dental domains as you meet them, or add "injector" rather than "aesthetics" as the modifier.
+
+---
+
+## What this market taught me
+
+**The affluent ring is not where the rows are — they are one town out, and that is a structural
+fact rather than bad luck.** Of 15 accepted rows, the twelve assigned core towns produced only
+**six**: Montclair 1, Englewood 2, Morristown 1, Madison/Livingston 1, Westfield 1. The other nine
+came from **one ring further out** — Verona/West Caldwell, Randolph ×2, Mountainside, Woodcliff
+Lake, Red Bank, Princeton Junction, Highland Park and Hamilton. **And the correction to the 26 Oct
+read matters.** That sweep said "Montclair, Summit, Short Hills and Red Bank deserve their own query
+each". I gave Montclair and Red Bank their own query and each produced exactly one sendable row.
+**Short Hills and Summit produced ZERO own-town rows across three queries between them** — every
+Short Hills result was either an **SEO suburb page belonging to a clinic in Millburn, Mountainside or
+Morristown**, or a national chain's location page; and the one clinic actually at a Summit address
+was a nail-and-waxing day spa. **SHORT HILLS AND SUMMIT ARE SEO-FARMED, NOT THIN.** The affluent town
+name is a keyword that clinics in cheaper towns rank for, which is the **mirror image** of the Tulsa
+neighbourhood finding: there, local names surfaced clinics a city name had hidden; here, the
+prestige name surfaces clinics that are not in it. **Do not query those two towns again. Query the
+towns around them** — Mountainside, Westfield, Verona, West Caldwell, Randolph and Denville all
+produced.
+
+**Tenafly, Westwood and Chatham are SILENT rather than unworked, in the Kirkland sense.** Every
+clinic I found in them publishes no email: Ledo (Westwood), The Skin Lounge (Chatham), Le Ami
+(Tenafly, not trading at all). Those are browser or phone jobs, not sourcing jobs.
+
+**THE PRIVACY-POLICY ADDRESS RULE YIELDED ZERO FROM FOUR POLICIES, AND THE MECHANISM HELD EXACTLY AS
+THE BRIEF PREDICTS RATHER THAN FAILING MYSTERIOUSLY.** Naturally Aesthetic's policy routes data
+requests to `/contact`; Eminence's routes them to a **postal** address; Salt & Sky's is WordPress
+boilerplate nominating **no route at all**; and Ledo's "policy" is the hibu platform's generic page,
+not the clinic's at all. **So New Jersey behaves like inland California and Utah, not like Oklahoma
+— budget this fetch at near zero here.** But the useful half: the Salt & Sky case is **the first
+time I have seen a no-route policy actually license the 8 Nov widened `/contact` exception**, and I
+spent that `/contact` fetch legitimately — and it was still a form. The exception is correctly
+worded; it just does not pay in this market.
+
+**The US `/contact` rule held for a sixth consecutive sweep.** Fourteen of 15 accepted rows had the
+address off a homepage, an About page, a membership page or an SEO suburb page footer. The one
+`/contact` fetch made as a **first** move — Summit Aesthetics MD, whose homepage never surfaced in
+search — produced an address, exactly as the 2 Nov exception predicts. The two made as retries
+produced one address (FACE Aesthetic Artistry, whose contact page was the only URL that surfaced at
+all) and one nothing (Salt & Sky).
+
+**A NEW AND CHEAP ADDRESS SOURCE: AN SEO SUBURB PAGE CARRIES THE FULL SITE FOOTER.** Two accepted
+rows (Zen Aesthetics, Fortress Medical Aesthetics) and one rule-out (House of Ness) gave up their
+mailbox, their full menu, their founder bio, their platform and their site count on an "areas
+served" page, because those pages are generated from the site template rather than hand-written.
+The brief currently treats `areas-served/<town>` page sets purely as crowders-out to block in query
+one. **They are that, and once one has surfaced it is as good an address fetch as the homepage and
+sometimes better**, because it also prints the clinic's own list of claimed towns, which is what you
+need in order to count sites. The exception is a page set on a site that is not built yet — see Le
+Ami above.
+
+**THE VOS-STYLE PARENT-GROUP LOYALTY FOOTER DID NOT FIRE ONCE in 15 accepted rows, and I looked on
+every single one.** What fired instead, twice, was a **manufacturer's** programme being present and
+correctly not counting (Allē at House of Ness, Evolus Rewards at Atrium). And what fired twice as a
+genuine group tell was **something the brief does not yet name: a cross-brand sister business linked
+from the footer's "Main Page" or "Shop" slot.** Medi Spa by SDP's footer "Main Page" link goes to
+`salondipanache.com`, the salon that owns it; MedSpa by Beauty Bar's birthday gift card is
+redeemable at its sister salon group. **Suggested addition to the brief: in the US, read the
+footer's "Main Page", "Shop" and "Our Family of Brands" links, not only the loyalty slot — a salon
+parent hides there, where a med spa roll-up hides in the loyalty link.**
+
+**MUST-HAVE 4 WAS THE BINDING CONSTRAINT IN THIS MARKET, as in Britain but for a different reason.**
+Five of my six parked C rows fail on must-have 4 and only one on must-have 2. Only **four** of 15
+accepted rows published a founding year or equivalent (Elizabeth Roche 2007; Montclair Rejuvenation
+February 2017, **found on a sibling clinic's site**; Zen Aesthetics 2021; Englewood "10+ Years /
+4,000+ Patients"), and only **three** published a review count (The Aesthetic Bar 250+, Elizabeth
+Roche 113, Princeton Aesthetics 81+). Britain's problem is that busy clinics do not print the
+number; **New Jersey's problem is that the number is printed and BROKEN**. Three sites' own
+statistics counters render as **"0 +"** or **"0 Total Reviews"** while the page displays real
+testimonials — The Aesthetic Bar (years, units and clients all zero), Serenity, and Atrium's
+"Brand new" reviewer note pulling against its 110 reviews. **A broken counter is not a low count
+and must not be read as one**; it is the same class of artifact as a stale copyright and should be
+recorded as "counter broken", not as "no reviews".
+
+**No platform concentration, confirming the 8 Nov per-market correction.** Across 15 rows:
+Boulevard 3, Jane 2, Meevo 2, GlossGenius 1, MyAestheticsPro 1, AdvancedMD 1, Zenoti 1 plus 1
+probable — and **five rows with no identifiable platform at all**. That last number is the one to
+carry into a pitch: **a third of New Jersey's independents book on their own domain with nothing
+nameable behind it**, so the offer cannot assume a queryable list exists. Moxie turned up once more
+(on a near-miss), which is now its third or later sighting since being added on 8 Nov.
+
+**The gmail mailbox is common here and is a finding, not a defect.** Three of 15 rows publish only a
+consumer mailbox whose local part is the clinic's own name — `imagerevolutionhealth@gmail.com`,
+`fortressmedicalaesthetics@gmail.com`, and `staff4gor@gmail.com` on a rule-out. All are recordable
+under the ICP (published visibly, on the clinic's own page, not a generic industry domain and not an
+agency's), all are one step weaker than an own-domain mailbox, and none may be "corrected". A fourth
+row publishes an own-brand but **different** domain (`info@mrcenter.co` against a site at
+`montclairrejuvenationcenter.com`), which is the ordinary mismatch the ICP says to record as printed.
+
+**Fetch-failure picture:** no client-side rendering, no interstitials, no site-side errors. **Two
+Cloudflare cases** (Menon Medispa, House of Ness) and **one `robots_disallowed`** (Princeton Medi
+Spa). **In both Cloudflare cases the helper did NOT volunteer a decode** — it stated outright that
+the address was hidden and that it had not decoded it, I did not ask it to, and no address was
+recorded from either. New Jersey's dominant failure mode is the usual American one: plain silence,
+a form and a phone number.
+
+**One same-name catch, and the pattern is worth more than the clinic.** "Summit Aesthetics MD"
+trades in **Hamilton, Mercer County**, about forty miles from Summit; the 609 area code was the tell
+before the postal address was. **AFFLUENT NEW JERSEY TOWN NAMES ARE USED AS BRAND NAMES BY CLINICS
+ELSEWHERE IN THE STATE** — Summit, Princeton and Montclair all appeared in the names of clinics not
+in those towns (Montclair Rejuvenation Center is in Verona and West Caldwell; Princeton Medi Spa and
+Princeton Aesthetics are in Princeton and Princeton Junction respectively; Bergen County Medical Spa
+is in Fair Lawn). **Read the postal address, never the brand**, and in this state the area code
+settles the county before the address does.
+
+**Where the depth is, for whoever goes next.** **Denville and Randolph are the richest unworked
+pocket** — Randolph alone gave two accepted rows and Denville gave two clinics that need one policy
+fetch each (Joven, Exhibit), which are the two cheapest outstanding leads in the state. **The
+bank/wallet/vault query should be run FIRST in any affluent US suburb ring**: one search produced
+seven clinic domains including two accepted rows and the richest dormant structure in the run — but
+it is a **national** query, so budget a placing step, because one of its seven was Colorado and
+three could not be placed at all. **Monmouth County is barely touched**: one query produced one A
+row and three rule-outs, and Rumson, Fair Haven, Little Silver, Holmdel and Middletown were never
+queried on their own. **Princeton has more left** behind a robots refusal and a silent clinic with
+thirteen published years. And **Hoboken, Jersey City and the Gold Coast were deliberately left
+alone** — they are the 26 Oct sweep's ground and already carry five pipeline rows.

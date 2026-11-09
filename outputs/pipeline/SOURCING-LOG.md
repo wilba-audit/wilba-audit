@@ -13,11 +13,11 @@ without the repo.
 
 ## 9 Nov 2026 — two affluent suburbs, and a correction corrected within a day
 
-**Rows: 33 appended so far — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY
-and Fairfield County CT, 16 rows: 2 A, 10 B, 4 C) and 1127-1143 (Long Island, Nassau and Suffolk,
-17 rows: 1 A, 9 B, 7 C).** Pipeline **1,143 rows, 776 ready to approach** — US 391, AU 169, CA 87,
-UK 85, NZ 42, IE 2. Browser-visit list up to **115 clinics**. Two more passes were still out when
-this was written.
+**Rows: 48 appended — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY and
+Fairfield County CT, 16 rows: 2 A, 10 B, 4 C), 1127-1143 (Long Island, Nassau and Suffolk, 17 rows:
+1 A, 9 B, 7 C) and 1144-1158 (northern New Jersey, 15 rows: 1 A, 8 B, 6 C).** Pipeline **1,158
+rows, 785 ready to approach** — US 400, AU 169, CA 87, UK 85, NZ 42, IE 2. Browser-visit list up to **117 clinics**. A recovery pass over
+rows parked under abolished rules was still running when this was written.
 
 **THE DAY'S FINDING, and it overturns something written yesterday.** On 8 Nov this file recorded
 that Britain's zero-grade-A problem is "a publishing habit rather than a business fact" — a
@@ -95,6 +95,51 @@ pipeline row 211, a Maryland clinic we already hold, so the trap manufactures a 
 rather than merely wasting a query. And **the "check the policy's revision date" tell, written
 yesterday, is not reliable**: Long Island's mode-seven policy is dated January 2026. Read the
 sentence, not the date.
+
+**Northern New Jersey, 15 rows (ids 1144-1158), 1 A, 8 B, 6 C** — and it corrected two of our own
+notes. **Short Hills and Summit are SEO-FARMED, not thin:** every Short Hills result was a suburb
+page belonging to a clinic in Millburn, Mountainside or Morristown, so the 26 Oct instruction to
+give those towns a query each is wasted effort and has been struck through where it was written.
+More usefully, **the affluent ring is not where the rows were** — the twelve assigned towns gave
+six rows and nine came one ring out (Verona, West Caldwell, Randolph twice, Mountainside, Woodcliff
+Lake, Red Bank, Princeton Junction, Highland Park, Hamilton). Red Bank produced a grade A off a
+single query.
+
+**And it half-reversed a rule we have been applying for weeks: an SEO suburb page is a SOURCE as
+well as a crowder-out.** Blocking the page *sets* from query one is still right. What nobody had
+noticed is that **an individual `areas-served/<town>` page carries the full site footer** — mailbox,
+menu, founder bio and site count in one fetch. Two New Jersey rows exist only because such a page
+was read instead of discarded. The brief now separates the two uses: block the sets in the query,
+read any single one you land on.
+
+**The parent-group loyalty footer did not fire once in 15 rows.** What fired twice instead was a
+**sister business in the footer's "Main Page" or "Shop" slot** — in both cases a salon the same
+owner runs, not a med-spa roll-up. **That distinction cuts the safe way and is worth holding: a
+sibling is not a parent.** An owner with two businesses is must-have 3 intact and often a better
+prospect; a roll-up parent is the disqualification. Read the destination before deciding.
+
+**New Jersey's must-have 4 failures are a third variant, and the most interesting one.** Five of
+its six C rows fail on must-have 4 — but where Britain's clinics never print the number, three New
+Jersey sites print a BROKEN one: "0 +" or "0 Total Reviews" beside a page of real, individually
+dated testimonials. **So the ladder cannot distinguish three different things and fails all three
+identically:** no trading history, history never printed, and history printed into a broken widget.
+Only the first is a reason not to write to someone. The practical fix is already in the file — a
+wall of dated reviews is itself a quantified artifact — but the finding makes the open question
+sharper rather than merely better evidenced: **the ladder is partly reading whether a clinic's
+website works**, which is further still from trading history.
+
+**The privacy-policy rule went zero-from-four here, hours after going 4-of-9 on Long Island.** Two
+Northeast suburbs, same day, 0% and 44%. **Geography predicts nothing and has been dropped as a
+predictor rather than patched again.** The mechanism held in both — all four New Jersey misses
+satisfied the data-request duty by a route the mechanism already names — so that is its fifth
+confirmation and the geography's final failure.
+
+**One count claim did not match its own file, for the third time in three days and the second from
+a different author.** The New Jersey report says three clinics go to the browser-visit list; its
+own near-misses file says House of Ness fails must-have 3 regardless and files it under rule-outs.
+The file was right and two were added. **This keeps happening because a report is written from
+memory of the run and the file is written during it** — so where the two disagree, the file wins,
+and the count worth recording is the one you can measure afterwards.
 
 **One housekeeping failure found and fixed.** The address look-alike list lives in three files, and
 the copy in the brief had been **one item shorter than the canonical list in `ICP.md` for weeks** —
@@ -852,7 +897,7 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 9 Nov 2026: **1,143 rows, 776 ready to approach** — US 391, AU 169, CA 87, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
+As of 9 Nov 2026: **1,158 rows, 785 ready to approach** — US 400, AU 169, CA 87, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
 20 Oct, 1,045 rows and 707 ready on 5 Nov, and 1,104 rows and 748 ready on 8 Nov.) A further
 **115 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
 page-open each.
@@ -865,7 +910,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 776 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 785 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 
@@ -1372,7 +1417,11 @@ exist only because the address was published inside the privacy policy.
 **Dry holes:** Bowen, Charters Towers, Roma, Warwick, Maryborough, Gympie and Proserpine in
 Queensland, each on three query shapes; Montclair, Summit, Short Hills and Red Bank in New Jersey
 (these four need a query each rather than a combined one, since every other northern NJ town
-produced); Grand Rapids and Lexington, which produced no emailable clinic at all; Saint-Laurent,
+produced); **[CORRECTED 9 Nov 2026 — SHORT HILLS AND SUMMIT ARE SEO-FARMED,
+NOT THIN, AND GIVING THEM THEIR OWN QUERY IS WASTED. Every Short Hills result was a suburb page
+belonging to a clinic in Millburn, Mountainside or Morristown. Red Bank, by contrast, produced a
+grade A off one query. Do not re-spend a query on Short Hills or Summit; query the towns the
+suburb pages point AT.]** Grand Rapids and Lexington, which produced no emailable clinic at all; Saint-Laurent,
 Mile End, Griffintown and St Catharines. **Structurally closed rather than thin:** Whistler, whose
 only aesthetics clinic is a named acquisition of the PE-backed group disqualified last week.
 

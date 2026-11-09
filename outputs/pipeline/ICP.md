@@ -608,6 +608,25 @@ a quantified artifact, that is the single highest-yield fetch left on the row, b
 history almost certainly exists and simply was never printed on the page you read.
 **The open question, for whoever has a day to spend on it rather than a run to finish:
 is a ladder that measures marketing effort the right ladder for must-have 4 at all?**
+
+**A FOURTH MEASUREMENT, AND IT IS A DIFFERENT FAILURE WEARING THE SAME CLOTHES. Northern New
+Jersey, 9 Nov 2026.** Five of its six C rows fail on must-have 4, so the pattern holds a fourth
+time — but **the reason is new and it matters more than the count.** Britain's clinics are busy and
+simply do not print the number. New Jersey's **print a BROKEN one**: three sites render
+"0 +" or "0 Total Reviews" beside a page of real, individually dated testimonials. The trading
+history exists, the clinic tried to publish it, and **a counter widget is misconfigured.**
+
+**So there are now three distinct things the ladder cannot tell apart**, and it fails all three
+identically: a clinic with no trading history (the honest C), a clinic with history it never
+printed (the affluent-suburb case), and a clinic with history it printed into a broken widget.
+Only the first is a reason not to write to someone. **Operationally: a "0" counter sitting beside
+visible dated testimonials is NOT zero evidence — read the testimonials and date the oldest, and
+the 8 Nov rung that a wall of individually dated reviews IS a quantified artifact already covers
+it.** Do not let a broken number beat a readable page.
+
+**And this sharpens the open question below rather than just adding to it.** The ladder is not only
+reading marketing effort; it is reading **whether a clinic's website works.** That is further still
+from trading history, and it is a worse thing to grade an owner-operated business on.
 Flagged, not answered, and not changed unilaterally — it is a scoring change and it would
 re-grade the whole file.
 
