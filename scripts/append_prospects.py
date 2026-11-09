@@ -316,6 +316,17 @@ def main():
     print('sendable rows with anything in price_point (should be empty): %d%s'
           % (len(priced), (' ' + str(priced)) if len(priced) <= 20 else ''))
 
+    # Keep DO-NOT-SEND.txt in step with the CSV. The real work lives in
+    # scripts/refresh_do_not_send.py, which is standalone deliberately: a GRADE CHANGE is
+    # not an append and never reaches this function, and ten rows changed grade by direct
+    # CSV edit on 9 Nov. Run that script after any such edit; this call only covers appends.
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from refresh_do_not_send import refresh
+        refresh()
+    except Exception as exc:
+        print('WARNING: could not regenerate DO-NOT-SEND.txt (%s)' % exc)
+
     # A site count the row itself admits to, above the one-to-four must-have.
     chain = re.compile(r'\b(\d+)\s*(?:sites|locations|clinics)\b', re.I)
     many = []

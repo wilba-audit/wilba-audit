@@ -748,11 +748,26 @@ identifies the scheme on a call. **None of these rows was rewritten and none sho
 `dormant_lead_signal` is the field an opener gets built from, so a drafter reading "a Botox Bank
 that adds 5 units" may write "your Botox Bank" into the email — because it is the clinic's own word
 and it reads as personal. That is the trap, and it is one step away from a breach rather than being
-one. **The rule: name the MECHANISM, never the clinic's brand for it.** "Your banked treatment
-credit", "the credit your members have sitting unused" — which is better copy anyway, because it
-describes the thing the owner cares about instead of parroting their own marketing back at them.
-The same goes for a published price: the fact that a scheme costs $99 a month is useful to us and
-must never appear in the email.
+one. **THE RULE, CORRECTED WITHIN HOURS BY THE DRAFTING CHANNEL, WHICH WAS RIGHT AND HAD THE
+MEASUREMENT.** My first version of this said "name the MECHANISM, never the clinic's brand for it",
+flatly. That is over-broad and it would have thrown away about thirty personalised openers for no
+reason any rule we hold actually gives. The drafting side had already scanned **all 366 staged
+subjects and openers against their full text** — not just `opening_angle`, which is the field my
+own audit reads — and found **zero medicine words and zero prices**. Their ruling, which stands:
+
+- **A clinic's own programme name is KEPT where the name itself contains no medicine word and no
+  price** — "Beauty Bank", "Skin Club", "Bevara Bucks". It is the clinic's published brand, it
+  breaks none of the copy rules as written, and **it is the most personal line in the email.**
+- **A name that CONTAINS a medicine word gets the mechanism instead** — "Botox Bank", "TOX Club"
+  become "your banked treatment credit".
+- **A published price never appears**, whatever it is attached to. That a club costs $99 a month is
+  useful to us and goes nowhere near an email.
+
+**The general lesson, and it is about which side owns a copy rule.** I was reasoning about copy
+from the sourcing side, where the conservative call looks free; the drafting side could see that it
+costs the best line in thirty emails. **A rule about what we SEND belongs to whoever sends it, and
+should be settled with the staged text in front of you rather than from the row.** My audit reads
+one field and theirs reads the whole email, so on this question theirs is the better instrument.
 
 **So the validator now prints both counts as a HANDOVER WARNING, not a rejection** — "a true
 record, NOT to be quoted" — and the drafting channel has been told directly, because it is the only
