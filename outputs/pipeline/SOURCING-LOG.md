@@ -13,11 +13,41 @@ without the repo.
 
 ## 10 Nov 2026 — the September decode risk, measured instead of worried about
 
-**Rows: 16 appended so far — 1160 (AU/NZ recovery), 1161-1169 (Montgomery County MD and the
-northern Virginia ring, 9 rows: 5 B, 4 C) and 1170-1175 (Chicago North Shore second pass, 6 rows:
-2 B, 4 C).** Pipeline **1,175 rows, 803 ready to approach** — US 416, AU 169, CA 88, UK 85, NZ 43,
-IE 2. Browser-visit list **123 clinics**. Main Line Philadelphia was still running when this was
-written.
+**Rows: 26 appended — 1160 (AU/NZ recovery), 1161-1169 (Montgomery County MD and the northern
+Virginia ring: 5 B, 4 C), 1170-1175 (Chicago North Shore second pass: 2 B, 4 C) and 1176-1185
+(Main Line Philadelphia: 2 A, 4 B, 4 C).** Pipeline **1,185 rows, 808 ready to approach** — US 421,
+AU 169, CA 88, UK 85, NZ 43, IE 2. Browser-visit list **127 clinics**.
+
+**THE MOST CONSEQUENTIAL THING TODAY WAS NOT A NEW ROW. ROW 177 WAS GRADE A, FIRST IN THE SEND
+QUEUE, AND IS NOW DISQUALIFIED.** The Main Line worker noticed in passing that two existing grade-A
+rows published wording that today's rules fail, and reported it rather than editing rows that were
+not its own. **Both were verified by direct fetch rather than taken on the report, because a grade-A
+row is the most expensive thing in the file to be wrong about — and the two came out differently,
+which is why the verification mattered.**
+
+**Row 177 (La Chelé) is disqualified on must-have 1, with must-have 2 failing independently.** The
+medical director's own bio reads *"Surgical options limited to liposuction"* and calls him *"a
+nationally recognized liposuction provider"*; the menu carries FUE and Smartgraft hair
+transplantation. Separately it runs a **VEIN CENTER** with "Varicose Vein Treatment" and "Vein
+Disease Treatments" as named services, plus GLP-1 and "Obesity Medical Providers". It was sourced
+24 Sep under the retired standard, where four sites and twelve providers read as scale rather than
+as a different kind of business — **and its own `services` field said only "Med spa / aesthetics",
+so nothing in the row could have caught it.**
+
+**Row 179 (KP Aesthetics) does NOT fail and stays grade A** — and the way the report went wrong is
+worth more than the row. It was reported as failing must-have 2 because its sclerotherapy copy
+names "varicose and spider veins". The fetch shows the actual wording is *"Say goodbye to unsightly
+varicose and spider veins"* and *"Reduce the APPEARANCE of spider and varicose veins"*, with no
+medical vein condition named anywhere, no surgery, and financing rather than insurance. **The word
+"varicose" is not itself disease language.**
+
+**And the fault was in my own wording, not the worker's reading.** The 8 Nov vein rule listed
+"varicose veins" in the same breath as "venous insufficiency", "phlebology" and "vein disease",
+which implies the word is disqualifying. **The list is now split in `ICP.md`: "varicose" and
+"spider" are APPEARANCE words and neutral; "vein disease", "venous insufficiency", "phlebology",
+"duplex scanning", "reflux" and a named vein centre are DISEASE language and any one fails
+must-have 2.** The pair settles it in one line: **one row says "varicose" and passes, the other
+says "varicose" and fails, so the word was never the test.**
 
 **THE DAY'S REAL RESULT IS NOT THE ROWS. Four of my own claims were wrong and the workers caught
 all four**, which is worth stating plainly because the pattern is now legible: **every one was a
@@ -44,6 +74,25 @@ claim and got zero in-market clinics. **A query shape is now recorded with the m
 not as a general technique, until it has worked in two unlike markets.** Main-street shape:
 confirmed on Long Island and in Montgomery County, failed on the Chicago North Shore.
 Town-name-plus-owner works in both and is the better default.
+
+**AND THEN I DID IT AGAIN, WITHIN THE HOUR, IN THE MESSAGE WHERE I WAS CORRECTING THE FIRST ONE.**
+Montgomery County had just found that 10 of 15 clinics published a mailbox on the first page read,
+making the privacy-policy route redundant there. I passed that to the Main Line worker mid-run as
+"the privacy-policy route may be redundant rather than low-yield here" — **a fifth wrong claim, and
+the same generalisation-from-one-market shape as the main-street error I was writing the rule
+against in the same message.** For the Main Line it was badly wrong: the policy route produced the
+run's single best finding, including **must-have 2 decided from a policy whose homepage carried no
+insurance language at all**, and the only mailbox one clinic publishes anywhere.
+
+**So the honest conclusion about my own failure mode, now that there are five instances in two
+days: the problem is not carelessness about facts, it is that I keep converting ONE measurement
+into guidance.** A finding becomes a pattern becomes a rule in the space of a few hours, because
+writing guidance feels like the useful thing to do with a finding. **The workers have caught every
+one of these, which is the system working — but the cheap fix is on my side: when a brief is about
+to state what a market will be like, say which market the claim was measured in and let the worker
+discount it.** "Montgomery County published mailboxes on 10 of 15 homepages, so check two before
+spending on policies" is both shorter and true, where "the policy route is redundant here" was
+neither.
 
 
 

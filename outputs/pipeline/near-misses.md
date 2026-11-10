@@ -16127,3 +16127,385 @@ Melamed) are **silence** and **mode seven** respectively, and no browser recover
 phone or direct-message prospects. The three Chicago-area browser candidates already on the list from
 8 Nov — Dermatique (Cloudflare), La BeauTe (client-side), Blue Seas (client-side) — were deliberately
 not re-fetched, as instructed, and remain the highest-value items in this metro.
+
+---
+
+## 10 November 2026 — Main Line Philadelphia
+
+# Main Line Philadelphia — near misses, 10 Nov 2026
+
+Region throughout: **Main Line Philadelphia and the Delaware/Montgomery County ring** —
+Ardmore, Bryn Mawr, Haverford/Havertown, Villanova, Radnor/Wayne, Devon, Berwyn, Gladwyne,
+Narberth, Rosemont, Paoli, Malvern, Media, Chestnut Hill, Bala Cynwyd, Newtown Square,
+King of Prussia.
+
+Every must-have below is named by number with the digit adjacent, as the validator greps for.
+Where a clinic has a published street address it is **printed in full with the URL it was read
+from**, per the 9 Nov rule that an entry asserting an address without showing it has not made
+the claim.
+
+---
+
+## 1. Browser-visit list — the address is in the page and a person can read it
+
+All four of these are clinics the ICP says must NOT be dropped. Nothing was recorded from any
+of them and no decode was taken.
+
+### Essent Spa & Medical Spa — Radnor, PA · `essentspa.com` — **the best clinic in this sweep**
+- **Fails must-have 5, Cloudflare obfuscation only. Nothing else fails.**
+- Visible text renders `[email protected]`; both the header and footer links are
+  `cdn-cgi/l/email-protection` hrefs, no `mailto:` anywhere. **Our fetch helper volunteered a
+  decode unasked and stated the decoded gmail address. I DID NOT TAKE IT and have not recorded
+  it** — the page did not ship the characters, so the address is NOT SEEN.
+- **Email is MASKED, not absent.** Jess reading this page in her own browser sees the address
+  in seconds.
+- **No street address is published anywhere on the page read** (`https://essentspa.com/`,
+  read 2026-11-10) — only the phone **(484) 580-9063** and the fact that it operates from
+  **The Radnor Hotel**, with a review naming a Wayne location. So there is nothing to print here,
+  and I am saying so rather than claiming one.
+- Why it matters: **Dr Alison Abiri, MD, MBA, published as "Physician/Owner"**; "Based on 167
+  reviews"; copyright **"© 2018 ESSENT SPA"** (eight years old, well past the three-year
+  threshold) and an oldest dated testimonial of **2016-03-10** — so must-have 4 passes twice over
+  on evidence and substance, which is rare in this market. "Essent Laser Hair Removal Club" is a
+  named dormant scheme. Booking on Secure-Booker (not on the named-system list).
+- Must-have 3 checked rather than assumed: she **co-founded Main Line Plastic Surgery** and
+  Dr Raymond Jean, a board-certified plastic surgeon, is named. Per the 9 Nov footer rule the
+  destination was read — `mainlineplasticsurgery.com` is a **SIBLING business the same owner runs,
+  not a roll-up parent**, so must-have 3 is intact and must-have 1 passes because the spa itself
+  offers no surgery; the surgical content belongs to the affiliated practice.
+
+### Bala Better Health MedSpa — Bala Cynwyd, PA · `bbhmedspa.com`
+- **Fails must-have 5, Cloudflare obfuscation.** Visible text renders `[email protected]`
+  behind a `cdn-cgi/l/email-protection` href. **The helper did not even offer a decode this
+  time** — it reported the address "cannot be recovered from this content". Nothing recorded.
+- **Email is MASKED, not absent.**
+- **Published address: `2 Bala Plaza, Suite 11, Bala Cynwyd, PA 19004`, phone (215) 261-7685**
+  — read on `https://www.bbhmedspa.com/`, 2026-11-10.
+- Why it matters: **Adam L. Wilkes, MD**, published as founder and Medical Director, board
+  certified in Internal Medicine, Jefferson Medical College, **30 years of clinical experience**;
+  **Mindbody** booking with a real studio ID (`clients.mindbodyonline.com/...studioid=5741130`),
+  which is on the ICP named-system list. One site.
+- Also thin on **must-have 4**: no founding year, no review count, copyright a bare 2026,
+  undated testimonials — the 30-year career length is the only proxy, which holds it at B at best.
+- One caveat recorded rather than left as a question: the menu lists **chin/neck liposuction
+  (submental contouring)**, which is a surgical line. Decided as a must-have 1 PASS, because it is
+  one line in an otherwise injectables-and-device menu — the same reasoning as "one blemish-removal
+  line does not make a surgical practice". If a reader disagrees the evidence is here.
+
+### La-Mon'e Aesthetics — Bryn Mawr, PA · `lamoneaesthetics.com`
+- **Fails must-have 5, Cloudflare obfuscation.** Header AND footer both render
+  `[email protected]` behind `cdn-cgi/l/email-protection` hrefs; no `mailto:` anywhere.
+  **The helper volunteered a decode of the header one unasked. I DID NOT TAKE IT** and nothing
+  was recorded.
+- **Email is MASKED, not absent.**
+- **Published address: `819 Glenbrook ave Bryn Mawr, PA 19010`**; phone **(484) 344-1261**,
+  text line **(610) 684-7757** — read on `https://www.lamoneaesthetics.com/about-us/`, 2026-11-10.
+- Why it matters: **La-Tasha Walker, BSN, RN**, published as founder; Dr Glenn Rosen as Medical
+  Director; two further named RNs. One site. Memberships and gift cards published.
+- Also thin on **must-have 4**: copyright "© 2025 by La-Mon'e Aesthetics" is a single year one
+  year old, which the three-year threshold excludes, and the page says only "Since we opened our
+  doors" with no year. No review count.
+- **Booking is Podium**, which the ICP deliberately excludes from the named-system list, so this
+  would not have been an A even with the address.
+- Note on provenance: this site runs a large SEO page set (`/best-med-spa-skin-of-color-bryn-mawr-pa/`,
+  author pages). The clinic is real; the page set is marketing.
+
+### Day Spa by Zsuzsanna · `dayspabyzsuzsanna.com`
+- **Fails must-have 5 — `robots_disallowed`. The fetch was refused and nothing of the page was
+  retrieved**, so nothing at all is known: not the address, not the town, not the menu.
+- **Email status UNKNOWN, not absent.** A person opening the site sees it normally, which is why
+  this is a browser job rather than a rule-out. It surfaced on a Main Line membership query; the
+  town was never established and should not be assumed.
+
+---
+
+## 2. Email cannot reach them at all — no address is published anywhere
+
+### Elevate Medical Aesthetics — Ardmore / Havertown + West Chester, PA · `elevatemawc.com`
+- **Fails must-have 5: NO email anywhere.** No visible address, no `mailto:`, no meta tag, no
+  obfuscation — total silence, which no browser fixes.
+- **Published address: `2525 Haverford Rd 1st Floor Ardmore, PA 19003`**, phone
+  **484-275-0403** — read on `https://elevatemawc.com/areas-we-serve/ardmore-pa/`, 2026-11-10.
+- **Also fails must-have 4**: no founding year, no review count, and the copyright line reads
+  "Copyright © Elevate Medical Aesthetics. All Rights Reserved" **with no year at all** — which is
+  the 10 Nov "no publishing furniture" variety, a theme that omits the year, arriving in an
+  American suburb the same day it was recorded from Australia.
+- Two locations (Havertown, West Chester) per the Locations menu, so must-have 3 would pass.
+  No owner is named anywhere. No membership or loyalty scheme; the only money page is payment plans.
+- **Sloppiness worth recording:** the footer's visible phone is `484-275-0403` while the `tel:`
+  href behind it is `+14847159012`. Whoever built the page never tested it — the same hint the ICP
+  records for an email wired to a `tel:` placeholder.
+- **NOT the same business as "Elevate Medical Aesthetics (Wakefield)"** already in
+  `near-misses.md` as a closure notice. Different town, different domain, still trading.
+
+### The Cosmetic Injector — Wayne + King of Prussia, PA · `cosmetics-injector.com`
+- **Fails must-have 5: NO email anywhere.** Two pages read — homepage and `/contact/` — and
+  neither carries a visible address, a `mailto:`, an `sms:` href or an obfuscated token. A
+  close-out search confirmed the domain publishes **no privacy policy page at all**, which is why
+  the `/contact/` fetch was spent under the standing exception. It paid nothing.
+- **Published address: `985 Old Eagle School Road, Suite 500, Wayne, PA 19087`**, phone
+  **(215) 692-9731** — read on `https://cosmetics-injector.com/contact/`, 2026-11-10.
+- **A second address exists ONLY IN THE META DESCRIPTION: `680 W. Dekalb Pike Studio 8A,
+  King of Prussia, PA 19406`.** This is the meta-tag look-alike applied to a street address rather
+  than a mailbox, and it is recorded as a curiosity: the clinic's own contact page lists Wayne only,
+  while its title tag claims King of Prussia and Conshohocken. **Site count unresolved at one to
+  three; must-have 3 would pass either way.**
+- **Also fails must-have 4**: no founding year, no copyright year, no review count. The only date
+  on either page is a metadata `modified_time` of 2024-09-12.
+- Booking is **GlossGenius** at `lynntestaiuti.glossgenius.com/booking-flow`. The tenant slug
+  almost certainly names the owner-injector, but **the page never states a name or a role, so no
+  owner is recorded** — a slug is not a publication.
+- "Spider Veins" appears under Aesthetics. Decided as a **must-have 2 pass**: no varicose veins,
+  venous insufficiency, phlebology, vein disease, insurance or Medicare language anywhere on either
+  page, which is the settled cosmetic case.
+
+### Body+Beauty Lab — Radnor + Philadelphia, PA (+ two Florida sites) · `bodyandbeautylab.com`
+- **Fails must-have 5: NO email anywhere** — no visible address, no `mailto:`, no obfuscation.
+  Total silence.
+- **Published addresses, all four, read on
+  `https://bodyandbeautylab.com/is-a-med-spa-membership-worth-it/`, 2026-11-10:**
+  - `595 East Lancaster Avenue, Radnor, PA 19087`
+  - `834 Chestnut St Ste 104, Philadelphia, PA 19107`
+  - `1000 Kane Concourse, Suite 4, Bay Harbor Islands, FL 33154`
+  - `645 South Olive Avenue, West Palm Beach, FL 33401`
+- **must-have 3 is ALSO doubtful** and it is recorded as a decision, not a question: four sites is
+  inside the one-to-four band by count, but they span **two states** and the site is "Powered by
+  Plastix" (`plastixmarketing.com`), an outside marketing agency. The ICP's own words are that
+  "a three-site group run by a marketing manager does not" qualify. No owner is named in visible
+  text anywhere — the only hint is a URL slug, `dr-lisa-learn-d-o-facos`. **Parked primarily on
+  must-have 5 because that is unarguable; must-have 3 is the second reason and would not survive
+  a closer look.**
+- What makes it painful: **"4.9 STARS + 329 REVIEWS"** satisfies must-have 4 outright, Zenoti runs
+  all four sites on named tenants, and the **"B+BL Bank Membership"** is the single best
+  dormant-list signal found anywhere in this market — fees banked monthly, spendable on any
+  service, and **"valid for 12 months from the date they're banked"**, i.e. a published expiry on
+  a pile of unspent credit. A second tier banks a monthly facial.
+- **This is the "wallet / bank / vault" affluent-suburb search technique working exactly as the
+  ICP describes it** — the phrase surfaced the clinic and the bank was then verified on the
+  clinic's own page. Recorded because the technique is listed as US-only and suburb-only, and this
+  is a clean confirmation.
+- **Phone mismatch recorded:** the Radnor visible phone is (215) 258-8301 — the Philadelphia
+  number — while its `tel:` href is 1-215-645-5664. Neither is a Radnor number.
+
+### Main Line Center for Laser Surgery — Ardmore, PA · `dermguy.com`
+- **Fails must-have 2 AND must-have 5, so it is a rule-out rather than a parked C.**
+- **must-have 2 fails on the clinic's own privacy policy**, which says it collects a
+  "medical insurance carrier and ID number", collects "health insurance information and account
+  number" for coverage checks, and shares PHI with insurance companies for coverage purposes.
+  Read on `https://dermguy.com/policy/`, 2026-11-10.
+- **The homepage had NO insurance language at all.** The policy is what decided it. See the
+  technique note at the end of this file — this is a new use for a fetch we already spend.
+- **must-have 5 fails on Cloudflare obfuscation**: three separate `[email protected]`
+  placeholders behind `cdn-cgi/l/email-protection` hrefs, in the Contact Us, Third Party and
+  Removal-of-Information sections. **The helper volunteered a decode three times. I DID NOT TAKE
+  IT.** Because must-have 2 fails on substance, this clinic does **not** go on the browser-visit
+  list — reading the address in a browser would not make it sendable.
+- **Published address: `The Times Building, 32 Parking Plaza, Suite 200, Ardmore, PA 19003`**
+  (the policy adds "Suburban Square"), phone **610.645.5551** — read on `https://dermguy.com/` and
+  `https://dermguy.com/policy/`, 2026-11-10.
+- **The label test fired here and the clinic passed it on must-have 1**, which is worth recording
+  because the rule was being tested: the business is called "Center for Laser **Surgery**", its
+  director's title is "Director of Laser Surgery and Cosmetic **Dermatology**", and the menu is
+  wholly cosmetic — wrinkles, pigmentation, facial veins, tattoo removal, injectables,
+  CoolSculpting, EMSculpt — with **no skin cancer, no Mohs, no mole checks, no biopsies and no
+  surgical procedures of any kind.** Eric F. Bernstein, MD, MSE and Kachiu C. Lee, MD, MPH named.
+  Zenoti booking. So the nouns were a credential and the menu cleared them — and the clinic still
+  failed, on billing, from a different page. **Substance beat the label in both directions on the
+  same row.**
+
+### Spruce Medispa — Moon Township / Robinson / Wexford, PA · `sprucemedispa.com`
+- **Out of market: this is the PITTSBURGH metro**, 300 miles from the Main Line. It surfaced on a
+  Chestnut Hill / Germantown Avenue query.
+- **Also fails must-have 5: NO email anywhere** — no visible address, no `mailto:`, no obfuscation.
+- **Published addresses** read on `https://www.sprucemedispa.com/`, 2026-11-10:
+  `993 Brodhead Road Suite 202, Moon Township, PA 15108`; `1934 Park Manor Boulevard, Pittsburgh,
+  PA 15205`; `2000 Village Run Road, Wexford, PA 15090`. The page states "3 Locations".
+- Founded by **Dr Theresa Crocenelli**; **MyAestheticsPro** booking (on the named-system list);
+  one dated testimonial, "Posted ON October 23, 2025". Pipeline rows 459 and 462 are already
+  Pittsburgh metro, so whoever works that market should start from them.
+- The Services section still carries **"Lorem ipsum"** placeholder text and a
+  "SERVICES SUBHEADER gOES hERE" heading.
+
+---
+
+## 3. Disqualified outright
+
+### Bryn Mawr Dermatology — Villanova / Collegeville / Wayne-Chesterbrook, PA · `brynmawrdermatology.com`
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1** (a dermatology practice with a disease
+  caseload), **FAILS MUST-HAVE 2** (insurance billing) and **FAILS MUST-HAVE 3** (not
+  owner-operated; thirteen clinicians across three sites).
+- **Email IS published and can reach them — it is simply the wrong business.**
+  **`office@brynmawrdermatology.com`**, visible text labelled "Email Address:" and also a
+  `mailto:` link, read on `https://www.brynmawrdermatology.com/contact/`, 2026-11-10.
+- **Published addresses, same URL:** `775 East Lancaster Avenue, Suite 200, Villanova, PA 19085`;
+  `534 2nd Ave, Ste 101, Collegeville, PA 19426`; `945 Chesterbrook Blvd., Wayne, PA 19087`.
+  Main line (610) 525-7800.
+- **The substance, not the label** — this is the first clinic in six outings where the label test
+  did NOT clear the clinic, so the evidence is set out in full: an **"Insurance We Accept"** menu
+  plus "Insurance FAQs" and "Insurances We Take"; **Mohs surgery**, excisions and ED&Cs, incision
+  and drainage, foreign-body removal, laceration repair; **skin cancer treatment** and a skin
+  cancer risk assessment; eczema, psoriasis, hyperhidrosis, molluscum, nail disorders, HSV/HPV;
+  **cysts and lipomas**, which the ICP fails explicitly. Six MD FAADs and seven PA-Cs.
+- It also runs a named membership, the **"Bryn Mawr Cosmetic Club"** — a textbook dormant-list
+  signal attached to a clinic we cannot sell to. Noted so nobody chases it twice.
+
+### Aesthetics 360 Medical Spa — Wayne, PA · `a360medspa.com`
+- **DISQUALIFIED - THE BUSINESS HAS CLOSED.** The page's own heading reads
+  **"Aesthetics 360 Medical Spa Has Permanently Closed"** and the body says "Our Wayne, PA
+  location is now closed." Read on `https://a360medspa.com/about/`, 2026-11-10.
+- **No email and NO street address is published** — the page gives only "Wayne, PA". Nothing to
+  print, and I am saying so rather than implying one exists.
+- **Block this domain in future Main Line queries.** It still runs a live SEO page set
+  (`/med-spa-in-berwyn-pa/`, `/med-spa-in-devon-pa/`, `/botox-villanova-pa/`, `/botox-bryn-mawr-pa/`)
+  that ranks for Berwyn, Devon, Villanova and Bryn Mawr, so **a dead business is currently taking
+  result slots on four of the briefed towns.** This is the strongest single reason those four towns
+  read as thin.
+
+### Main Line Institute of Plastic Surgery — Villanova, PA · `mainlineips.com`
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1** (plastic surgery practice).
+- **Resolved from search-result titles alone, with ZERO fetches** — "Plastic Surgery & Med Spa In
+  Philadelphia" and "Plastic Surgery & Med Spa Relocating To Villanova, PA". It surfaced on three
+  separate queries, so it is worth having written down.
+- **No address or email was read, so none is printed.** Email reachability unknown.
+
+### Dr Subbio — Newtown Square, PA · `drsubbio.com`
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1** (plastic surgeon's med spa arm, per the
+  search-result title "Medical Spa Newtown Square, PA" on a plastic surgeon's domain).
+- **Resolved with zero fetches. No address or email was read, so none is printed.** Email
+  reachability unknown.
+
+### Skincredible — Bryn Mawr + Philadelphia, PA · `skincredible.com`
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3.** The page says in terms that
+  **"Skincredible joined the MD Esthetics family"**, both sites book through a single
+  **`mdesthetics.zenoti.com`** parent tenant, two of its three published mailboxes sit on the
+  **parent's** domain, and the social links are `mdestheticsphiladelphia` and
+  `mdesthetics.philadelphia`. **No owner or founder is named anywhere.** MD Esthetics also runs a
+  Center Valley location (`mdestheticsus.com/locations/center-valley/`), so the group is larger
+  than the two sites on this page. Marketing is decided above the clinic — which is the
+  disqualification, not the site count.
+- **Email IS published and CAN reach them. All three addresses, visible text and `mailto:` links,
+  read on `https://skincredible.com/`, 2026-11-10:**
+  - **`BrynMawrinfo@mdestheticsus.com`**
+  - **`Philadelphiainfo@mdestheticsus.com`**
+  - **`frontdesk@skincredible.com`**
+- **Published addresses, same URL:** `919 Conestoga Rd. Building 2 Suite 207, Bryn Mawr, PA 19010`
+  (610) 525-3677; `1420 Walnut Street, Suite 1201, Philadelphia, PA 19102` (215) 608-1231; and a
+  third, `Jason Matthew Salon, 1735 Chestnut St, 2nd Floor, Philadelphia, PA 19102`, whose map link
+  duplicates the Walnut Street one.
+- Recorded so a later reader does not spend a fetch rediscovering a reachable but unsellable
+  clinic. Zenoti, "Veins Treatment" on the menu (never described), rosacea/melasma/acne as named
+  conditions, copyright "© 2026 Skincredible", no founding year, no review count.
+
+### Suburban Med Spa — Peachtree Corners, **GEORGIA** · `suburbanmedspa.com`
+- **DISQUALIFIED - WRONG MARKET, and it is a same-name trap worth recording.** A query containing
+  **"Suburban Square Ardmore"** returned a clinic in Peachtree Corners, GA, 700 miles away, because
+  the word "Suburban" is in its trading name. **Published address
+  `4989 Peachtree Pkwy NW, Peachtree Corners, GA 30092`, phone (678) 282-0051**, read on
+  `https://www.suburbanmedspa.com/`, 2026-11-10 — printed so the geography is checkable.
+- Email is published and perfectly reachable (**`suburbanmedicalspa@gmail.com`**, visible text and
+  `mailto:`), which is precisely what makes it dangerous: **nothing about the row looks wrong until
+  you read the state in the postal address.** Dr Sunit Singhal named as founder; "Best Medical Spa"
+  in Peachtree Corners Magazine 2023 and 2026. **Nothing was recorded into the pipeline.**
+- The lesson generalises: the Long Island main-street query shape works, but a **shopping-centre**
+  name made of common words ("Suburban Square", "Eagle Village") behaves like a same-name town and
+  needs the postal address read, exactly as the ICP says for Madera and Rockville Centre.
+
+---
+
+## 4. Already ours — confirmed duplicates, caught by grep
+
+### La Chelé Medical Aesthetics & Wellness — `lachele.com` — **pipeline row 177**
+- New Hope / Newtown / Dresher / Newtown Square, PA. Row 177's four towns match the four
+  addresses on the live site exactly. **Not re-added.**
+- **One finding to hand on rather than act on, because it is not my row to change.** Row 177 is
+  graded **A** and its current menu, read 2026-11-10 on `https://lachele.com/`, now lists
+  **"varicose vein treatment"** and **"vein disease"** treatments alongside sclerotherapy and laser
+  vein treatment, plus **liposuction** at the Newtown practice and an **FUE hair transplant**.
+  Under the standing ICP ruling, "spider veins and varicose veins" **fails must-have 2**, and a
+  named liposuction line is the substance test for must-have 1. The row dates from 24 Sep 2026,
+  before ICP v2. Whoever owns the file should re-read it; I am reporting it, not editing it.
+- Also now published and not on the row: **"5.0 from 485+ Reviews"**, **"Celebrating 18 Years in
+  Business"**, and an award run from **Allergan Top 10 Location 2023** through 2025.
+
+### KP Aesthetics — `kpaesthetics.com` — **pipeline row 179**
+- Newtown Square, PA, already labelled "(Main Line)" on the row and sourced 24 Sep 2026.
+  **Not re-added.** My fetch was spent before the grep — see the method note below.
+- **Same kind of finding to hand on.** Row 179 is graded **A**. Its live menu, read 2026-11-10,
+  describes sclerotherapy and laser vein reduction as treating **"varicose and spider veins"** —
+  the exact phrase the ICP rules **fails must-have 2**. No insurance language appears anywhere, so
+  a reader might well decide the billing model passes; I would not, because the rule names this
+  wording. Reported, not edited.
+- Also on that page: **"Over 0"** patient counters for clients, treatments and wellness clients —
+  the New Jersey broken-widget fault, on a clinic whose must-have 4 is independently satisfied by
+  "over 8 years" and a Top Doctor 2018 badge.
+
+---
+
+## 5. Not reachable by fetch — a tool failure, not a clinic finding
+
+### `juvenate.com/providers/` — "All 380 Med Spas — Philadelphia to the Lehigh Valley"
+- **Fetch failed with `client_error` and nothing was retrieved.** This read in the search snippet
+  like the single highest-yield directory index available in this market — 380 named providers
+  across exactly our geography — and it is unreadable. One fetch lost. **Do not buy it again.**
+
+### `mainlinetoday.com/best-of-the-main-line/best-main-line-winners/`
+- Fetched **deliberately** as a names source, on the reasoning that a reader-voted best-of is
+  closer to a human "best in town" list than to a paid listicle, and that blocking a domain in a
+  query does not forbid reading one page of it on purpose — the same distinction the 9 Nov rule
+  draws for `areas-served` page sets.
+- **It returned the intro, the critics' names, a party advert and a newsletter form, and NOT ONE
+  WINNER.** The category lists render client-side. The page confirms it is a reader poll
+  ("our readers' ballots and elimination round voting"), so the reasoning was sound and the
+  **mechanism** defeated it. One fetch lost. **Do not buy it again.**
+- **This extends the 8 Nov city-magazine hazard rather than repeating it.** That note says a
+  sponsored city-magazine listicle is a coin flip on quality *that you cannot assess before
+  paying*. This one is worse and in a new way: **a genuine reader poll can be unreadable
+  entirely**, so the hazard is not only editorial but technical.
+
+---
+
+## What this market taught me
+
+**The Main Line is a real market with a thin top end, and the constraint is exactly the one the
+brief said to expect — but it is not the only one.**
+
+**Twenty-three businesses were researched. Ten became rows (2 A, 4 B, 4 C). Thirteen did not.**
+Of the thirteen: **seven fail must-have 5** (four Cloudflare or robots, three total silence),
+**four are outright disqualifications**, and **two were already ours.** Of the four parked C rows,
+**three are C on must-have 4 and nothing else** — so the brief's prediction held, and must-have 4
+on evidence remains the binding constraint in an affluent referral-driven suburb. **Report the
+market type with the mix: this is a stingy market full of good clinics, not a weak one.**
+
+**But must-have 5 was heavier here than in the other three suburbs, and the reason is specific.**
+Four of the seven unreachable clinics are **Cloudflare or robots cases** — recoverable in a
+browser — and three of those four (Essent, Bala Better Health, La-Mon'e) are among the best
+businesses in the market. **The Main Line's strong clinics protect their mailboxes.** That is a
+different failure from Long Island's broken widgets or Britain's unprinted review counts, and it
+means **the browser-visit list is where this market's value actually sits.** Essent Spa alone —
+physician-owner named, 167 reviews, a 2018 copyright and 2016 testimonials — is worth more than
+two of my accepted rows.
+
+**Four things I would hand to the next worker:**
+
+1. **A dead clinic is holding four towns hostage.** `a360medspa.com` has permanently closed and its
+   SEO page set still ranks for Berwyn, Devon, Villanova and Bryn Mawr. Block it. Berwyn, Devon,
+   Gladwyne, Narberth, Rosemont and Paoli produced **no own-domain clinic of their own** in this
+   sweep, and this is at least part of why.
+2. **The privacy policy is a must-have 2 screen, not only an address fetch.** `dermguy.com`'s
+   homepage carried no insurance language whatsoever and its policy collects insurance carrier
+   and ID numbers and shares PHI with insurers. **That is must-have 2 decided off a page we already
+   spend a fetch on**, and it is the cheapest way yet found to catch a cash-pay-looking clinic that
+   bills. Read the policy's data-collection list for insurance words on the same pass as the
+   mailbox and the processor list.
+3. **An ownership change resets must-have 4, and the footer will not tell you.** Lily & Oak
+   advertises "8+ Years on the Main Line" and a "Since 2018" badge; its About page says the premises
+   opened in 2018 **as a different business**, that the current owner bought it in 2025, and that
+   she relaunched it in **February 2026**. Nine months of her own list. This is a **fifth** variety
+   the evidence ladder cannot tell apart — history that belongs to a **previous owner** — and it
+   sits beside the honest C, the unprinted history, the broken widget and the missing footer. It
+   cost one extra fetch and saved a wrong B.
+4. **Suburban Square and Eagle Village are same-name traps, not just main streets.** The
+   main-street query shape works here (Germantown Avenue and State Street each produced an accepted
+   row, Lancaster Avenue produced two), but a shopping-centre name built from common words pulled a
+   Georgia clinic with a perfectly readable address into a Main Line query. Read the state in the
+   postal address.

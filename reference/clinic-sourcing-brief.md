@@ -69,6 +69,21 @@ guess. Main-street shape: **confirmed on Long Island and in Montgomery County** 
 Wisconsin-Avenue query produced a row that "Bethesda med spa" never surfaced), **failed on the
 Chicago North Shore.** Town-name-plus-owner: works in both, and is the better default.
 
+**AND THE MAIN-STREET SHAPE HAS ITS OWN SAME-NAME TRAP, found 10 Nov 2026: A SHOPPING-CENTRE NAME
+MADE OF COMMON WORDS.** "Suburban Square Ardmore" returned a **Peachtree Corners, GEORGIA** clinic
+with a perfectly readable published address — the Madera and Rockville Centre failure in a new
+costume, and the dangerous kind, because nothing about the result looks wrong. "Eagle Village" is
+the same hazard. **So when using a district name, pair it with the state or read the postal address
+before recording anything** — and prefer a street name, which is rarer, over a centre name built
+from words like "suburban", "square" and "village".
+
+**ONE DEAD BUSINESS WAS HOLDING FOUR BRIEFED TOWNS HOSTAGE, which is a hazard worth naming.**
+`a360medspa.com` has **permanently closed** and its live SEO page set still ranks for Berwyn, Devon,
+Gladwyne, Narberth, Rosemont and Paoli — six towns that produced no own-domain clinic at all, and
+the worker's reading is that the dead page set is why. **Blocked.** The general lesson: a closed
+clinic's SEO pages do not come down when the clinic does, so **a town that returns nothing may be
+occupied rather than empty** — check what IS ranking before writing the town off as thin.
+
 **GREP `near-misses.md` FOR A MARKET BEFORE WRITING "THIS MARKET HAS NOT BEEN SWEPT" INTO A
 BRIEF. One command, and it would have caught the fourth of my four wrong claims this week.**
 On 10 Nov a brief told a worker "nothing in this market has been swept" about Montgomery County.
@@ -478,7 +493,26 @@ because the standard may widen again and re-finding a clinic costs more than kee
    route in. **Practical consequence: do not budget this rule by region at all. Read two or three
    homepages first, and let the hit rate on those tell you whether policies are worth fetching in
    this market.** That is one or two fetches to size a decision that has been guessed at for a
-   week. Two Northeast suburbs measured hours apart, 44% and 0%, so **geography predicts
+   week.
+
+   **AND THE POLICY IS A MUST-HAVE 2 SCREEN, NOT JUST AN ADDRESS FETCH — 10 Nov 2026, and this is
+   the best new technique found in a week.** A Main Line clinic's homepage carried **no insurance
+   language at all** and read as a cash-pay cosmetic practice. **Its privacy policy collects the
+   patient's insurance carrier and ID number and discloses PHI to insurers.** Must-have 2 decided
+   off a page we were already fetching for the address.
+
+   **Why it is cheap and should now be standard: a privacy policy has to describe what the clinic
+   actually DOES with data, so it describes the business more honestly than marketing copy does.**
+   A clinic that bills insurance has to say so there even when it never says so on a service page.
+   **So read every policy you fetch for TWO things — the contact route AND any mention of insurers,
+   carriers, claims, PHI disclosure to payers, or an HIPAA-style notice of privacy practices.** It
+   is the cheapest way yet found to catch a clinic that LOOKS cash-pay and bills, which is the
+   must-have 2 failure most likely to survive a menu read. The same run also got a platform name
+   out of a policy's terms ("Booker by MindBody"), so a policy fetch can pay three ways.
+
+   **A THIRD SPEND OF THE WIDENED `/contact` EXCEPTION, AND THIS ONE PAID.** A Media PA clinic's
+   policy nominated no contact route at all, `/contact/` was fetched on the exception, and it
+   yielded the only mailbox she publishes. **The count is now 1 paid, 2 not.** Two Northeast suburbs measured hours apart, 44% and 0%, so **geography predicts
    nothing at all** and should be dropped as a predictor rather than patched again. What held in
    both is the mechanism: all four New Jersey misses failed by a route the mechanism already names
    — one routes to `/contact`, one gives a postal address, one nominates no route, one is the hibu

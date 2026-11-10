@@ -390,6 +390,31 @@ cosmetic laser or device menu passes must-have 2 when varicose veins, venous ins
 phlebology and vein disease appear NOWHERE on the site, and neither does insurance, Medicare or
 bulk-billing language.** Read the whole site before concluding it, not the menu.
 
+**THAT LIST WAS BADLY WORDED AND IT COST A GRADE-A ROW A FALSE ACCUSATION — corrected 10 Nov 2026,
+and the wording was mine.** Putting "varicose veins" in the same list as "venous insufficiency",
+"phlebology" and "vein disease" implies the WORD "varicose" is disease language. It is not, and a
+careful worker reading the list as written reported a grade-A row as failing must-have 2 because
+its sclerotherapy copy says "varicose and spider veins". A direct fetch upheld the row: its actual
+wording is *"Say goodbye to unsightly varicose and spider veins"* and *"Reduce the APPEARANCE of
+spider and varicose veins"*, it names no medical vein condition anywhere, and it bills nothing.
+
+**So the list is split, because the two halves do different work:**
+
+- **"Varicose" and "spider" are APPEARANCE words and are neutral.** A varicose vein is a visible
+  thing a patient dislikes the look of, and treating that look is what a med spa does. The word
+  alone resolves nothing — read what the sentence around it is promising. *"Reduce the appearance
+  of varicose veins"* is cosmetic; *"Varicose Vein Treatment"* under a **VEIN CENTER** heading
+  beside *"Vein Disease Treatments"* is not.
+- **"Vein disease", "venous insufficiency", "phlebology", "duplex scanning", "reflux" and a named
+  vein clinic or centre are DISEASE language, and any one of them fails must-have 2.** These
+  describe managing a condition rather than improving an appearance.
+
+**The same row pair settled it in one day, which is why it is written as a rule.** Row 179 passes
+on cosmetic framing with no condition named; **row 177 was disqualified the same hour** for running
+a "VEIN CENTER" with "Varicose Vein Treatment" and "Vein Disease Treatments" as named services —
+and separately for surgical liposuction and FUE transplantation. **One of those rows says
+"varicose" and passes; the other says "varicose" and fails. The word was never the test.**
+
 Three people reached this independently before it was written down, which is why it is a rule and
 not a judgement: the worker who parked row 802 on 1 Nov said in the row itself *"my own reading is
 softer than the grade — it is laser-only, sits among cosmetic laser services, and the site mentions
@@ -727,6 +752,29 @@ and the only separator was that one still ships builder demo text in two of its 
 ("Maybe you want to launch a business"). **A clinic that has not replaced its demo testimonials
 does not yet have enough real ones to replace them with**, which is direct evidence against
 must-have 4's "established enough to have a lapsed list". So that one is C and the other is B.
+
+**It is the exact converse of New Jersey's broken-counter rung**, and worth holding as a pair: a
+broken counter is a site that *had* the evidence and failed to display it, so look past the widget;
+unreplaced placeholder copy is a site that *has no* evidence yet, so believe the absence.
+
+**AND A SIXTH THING THE LADDER CANNOT SEE, WHICH IS THE MOST IMPORTANT OF THEM BECAUSE IT MAKES A
+GOOD-LOOKING ROW WRONG RATHER THAN UNDERGRADED: AN OWNERSHIP CHANGE RESETS MUST-HAVE 4, AND THE
+FOOTER LIES ABOUT IT. Added 10 Nov 2026.** One Main Line clinic advertises "8+ Years on the Main
+Line" and a "Since 2018" badge. Its About page says the premises opened in 2018 **as a different
+business**, that the current owner **bought it in 2025**, and that she **relaunched in February
+2026**. So the trading history on the footer is real and belongs to **somebody else** — nine months
+of the current owner's own list, and the inherited list is a cryotherapy lounge's customers.
+
+**Why this one matters more than the other five: must-have 4 exists to establish that a LAPSED
+PATIENT LIST exists for this owner to reactivate.** A previous owner's list may not have
+transferred, may not have consented, and in any case is not a list of people who had the treatments
+this clinic now sells. **A confident B became an honest C on one extra fetch.**
+
+**So: when a footer or badge asserts a trading span, check the About page for an acquisition or
+relaunch before relying on it.** The tells are "under new ownership", "newly reopened", "relaunched",
+a founder's start date later than the business's, and a premises history described in the third
+person. **This is the one case where the ladder's top rung — a stated founding year — is actively
+misleading rather than merely absent.**
 
 **It is the exact converse of New Jersey's broken-counter rung**, and worth holding as a pair: a
 broken counter is a site that *had* the evidence and failed to display it, so look past the widget;
