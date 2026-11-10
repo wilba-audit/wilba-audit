@@ -11,6 +11,52 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 10 Nov 2026 — the September decode risk, measured instead of worried about
+
+**Four passes are out as this is written** (Main Line Philadelphia, Montgomery County MD, the
+Chicago North Shore beyond Lake Forest, and the six AU/NZ single operators yesterday's run left
+untouched). Rows and findings go in below when they land. What follows was done while they ran.
+
+**THE JOB YESTERDAY LEFT OPEN: how many rows share row 181's shape?** Row 181 holds an
+ordinary-looking `info@` address recorded on 24 Sep from a page that today ships no plaintext at
+all — possibly a helper decode written down as a published address, six weeks before the decode
+rule existed. That is the kind of question that sits in a file for months as an unease, so it was
+measured. **Of 139 rows whose `email_source` names a September read, 93 have a guessable local part,
+50 of those are sendable, and 33 of those say nothing about WHERE on the page the address was
+seen** — only the formula "read off their own page - verified".
+
+**That formula is the actual defect, and naming it is the useful part: it asserts the reading
+without describing it.** Thirty-three sendable rows are therefore unauditable, not by anyone's
+carelessness but because the field was written to a template that recorded the conclusion and not
+the evidence. **From now on `email_source` says where** — "visible footer text plus a matching
+mailto", "inside the privacy policy's data-request clause".
+
+**Then three fetches were spent rather than 33, on the worst-shaped rows across three markets, and
+all three came back clean** — rows 82 (UK), 102 (AU) and 151 (US) each publish the address as plain
+visible text today, with no token and no mask. **So row 181 is an exception so far, not a pattern,
+and the remaining 30 are UNVERIFIED rather than suspect. Nothing was parked.** Parking 33 sendable
+rows on a suspicion that a sample contradicts would have been the expensive mistake here. The three
+sampled rows are annotated so nobody buys those fetches twice; the other 30 are 30 single fetches
+whenever there is budget, and they are the highest-value re-verification in the file because every
+one is a row we would otherwise send.
+
+**AND THE FETCHES FOUND SOMETHING SHARPER THAN THE ANSWER THEY WERE SENT FOR: the decode rule is
+asymmetric.** Its test is "did the PAGE ship the characters". **That is strong when the answer is
+yes and weak when the answer is no.** All three fetches volunteered the same caveat unprompted —
+they were reading a converted or rendered version of the page, not raw HTML, so they could not rule
+out a token the conversion had stripped. **A helper reporting a token is near-conclusive; a helper
+reporting no token is weaker evidence.** Enough to record an address in the ordinary case, where it
+also appears as plain visible text and a matching `mailto:`. Not enough to *clear* a row already
+suspected of carrying a decode — only a browser does that. Written into the brief beside the rule
+itself, because for six days we have been treating a negative as if it were as strong as a
+positive.
+
+**One stale line struck from the standing list before any worker could pay for it.** It named
+`thesonuspa.com/locations` and `medspaofnewyork.com/privacy/` as "two single fetches, each one row
+away". Yesterday's recovery pass spent both and **both paid nothing** — the Sonu page exists and
+publishes no address, the other returns a client error. They are also the third and fourth
+confirmations that the close-out search proves a URL exists and says nothing about what is on it.
+
 ## 9 Nov 2026 — two affluent suburbs, and a correction corrected within a day
 
 **Rows: 49 appended, plus 9 existing rows recovered and 1 repaired — ids 1105-1110 (the re-read, below), 1111-1126 (Westchester County NY and
@@ -844,8 +890,11 @@ constraint, not must-have 2 or 5**; "dermatology" on the page is usually a hirin
 and the privacy-policy route pays well despite the old geography line saying it would not. Named
 next, in order, all handed over by the Long Island pass:
 
-- **Two single fetches, each one row away:** `thesonuspa.com/locations` (named MD, clean menu,
-  blocked only by a missing contact URL) and `medspaofnewyork.com/privacy/`.
+- ~~**Two single fetches, each one row away:** `thesonuspa.com/locations` and
+  `medspaofnewyork.com/privacy/`.~~ **[BOTH SPENT 9 Nov 2026 by the recovery pass and BOTH PAID
+  NOTHING — the Sonu page existed and published no address, the medspaofnewyork policy returned a
+  client error. Struck so nobody buys them twice. They are also the third and fourth confirmations
+  that the close-out search proves a URL exists and tells you nothing about what is on it.]**
 - **Untouched Long Island towns:** Oceanside, Long Beach, Hicksville, Levittown, Hewlett/Woodmere,
   Stony Brook, Riverhead.
 - **Use the MAIN-STREET query form there** — Plandome Road, Americana Manhasset, Seventh Street

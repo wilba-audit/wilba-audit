@@ -112,6 +112,35 @@ browser-visit list. Say in the near-misses entry that the helper offered a decod
 take it — a careful worker leaves a record, and a less careful one produces rows that look
 completely normal.
 
+**AND THE RULE IS ASYMMETRIC, WHICH NOBODY HAD NOTICED UNTIL IT WAS TESTED — 10 Nov 2026.** The
+test is "did the PAGE ship the characters". **That test is strong when the answer is YES and weak
+when the answer is NO.** Three fetches run deliberately to look for tokens all came back clean, and
+all three volunteered the same caveat unprompted: they were reading a converted or rendered version
+of the page, not raw HTML, so they could not rule out a token the conversion had stripped. **So a
+helper reporting a token is near-conclusive — park the row. A helper reporting no token is weaker
+evidence.** It is still enough to record an address in the ordinary case, where the address also
+appears as plain visible text and as a matching `mailto:` — which is what all three showed. It is
+NOT enough to clear a row already suspected of carrying a decode; only a browser does that.
+
+**THE MEASUREMENT BEHIND THIS, AND THE JOB IT LEAVES.** Row 181 was found on 9 Nov holding an
+ordinary-looking `info@` address read on 24 Sep, on a page that today ships no plaintext at all —
+possibly a helper decode recorded as a published address, six weeks before the decode rule existed.
+The obvious question was how many rows share that shape, so it was measured rather than worried
+about: **of 139 rows whose `email_source` names a September read, 93 have a guessable local part
+(`info@`, `hello@`, `contact@`), 50 of those are sendable, and 33 of those say nothing about WHERE
+on the page the address was seen** — only the formula "read off their own page - verified".
+
+**That formula is the actual defect: it asserts the reading without describing it.** A three-row
+sample across three markets (rows 82 UK, 102 AU, 151 US) found **all three publishing the address
+as plain visible text today**, so **row 181 is an exception so far rather than a pattern, and the
+other 32 are UNVERIFIED rather than suspect — do not park them.** What remains is 32 single
+fetches, the highest-value re-verification left in the file because every one is a row we would
+otherwise send.
+
+**So, for `email_source` from now on: say WHERE you saw it** — "visible footer text plus a matching
+mailto", "inside the privacy policy's data-request clause". "Read off their own page" cannot be
+audited six weeks later, and this is exactly the audit that wanted it.
+
 **A sixth fetch-failure mode, found 4 Nov 2026: a challenge interstitial.** 200 OK, a full page,
 and the body reads "Please wait while your request is being verified". It is none of the other
 five — not client-side rendering, not robots, not a site error — and a person's browser clears it
