@@ -935,11 +935,22 @@ left of this seam:
 - **Six AU/NZ single operators, never opened:** DC Aesthetics, Newcastle Cosmetic Doctor, Coastal
   Skin & Laser (Tewantin), Dr Sarah Sparks, Hobart Facial Aesthetics, Sapphire Appearance Medicine.
   Each needs the must-have 6 consent screen as well as an address, so they are dearer than the
-  American three. **STILL OPEN after the 9 Nov recovery pass, which ran out of SEARCHES rather
-  than fetches and left this group untouched. The reason matters: none of the six has a domain
-  recorded either — the same gap that made the American three cost five times their estimate. So
-  this needs its own SEARCH-WEIGHTED run, roughly 8 searches to 12 fetches, briefed to expect a
-  name, a suburb and nothing else.** It is the clearest-defined job left on this list. (Dr Terrence Scamp, listed beside them, is a plastic surgeon and is *disqualified*
+  American three. ~~**STILL OPEN... this needs its own SEARCH-WEIGHTED run, roughly 8 searches to
+  12 fetches.**~~ **[DONE 10 Nov 2026, AND THE BUDGET RECOMMENDATION WAS INVERTED. The run took
+  3 searches and 11 fetches, a ratio of 1:3.7 — fetches were the constraint, never searches, and
+  ONE batched `allowed_domains` call resolved 4 of the 6 domains at once. The 9 Nov worker that
+  recommended a search-weighted budget had run out of searches only because it had spent them on
+  four other groups first; its scarcity was an artefact of its run order, not a property of the
+  job. See the finding-versus-recommendation rule in the brief.
+  OUTCOME: one sendable row — Sapphire Appearance Medicine, Auckland (row 1160, B), domain
+  `sapphire.net.nz` and NOT the descriptive name we would have guessed. DC Aesthetics and
+  Newcastle Cosmetic Doctor are C (must-have 4 and must-have 5). Dr Sarah Sparks fails must-have 5
+  and 4. Coastal Skin & Laser is DISQUALIFIED on must-have 1, owning its own skin-cancer screening
+  with its own dermoscope and GPs. Hobart Facial Aesthetics is DISQUALIFIED on must-have 2 and 1 -
+  a dental practice that says it works with all health funds via HICAPS. Nothing for the browser:
+  where email failed here it failed because nothing was published, which no browser fixes.
+  Domains for all six are now recorded in the near-misses entries so none is ever searched for
+  again.]** (Dr Terrence Scamp, listed beside them, is a plastic surgeon and is *disqualified*
   under v2 — the reversal loses him rather than recovering him.)
 - **Two blocked only by a fetch failure, both v2 targets on profile:** Illuminate Skin Clinics
   (Dr Sophie Shotter — contact page 401) and The Skin Care Clinic, Hobart (/contact/ unfetchable,

@@ -171,9 +171,23 @@ the database the offer is built for.
 - **Single operators:** Newcastle Cosmetic Doctor, Coastal Skin & Laser (Tewantin),
   Dr Sarah Sparks and Hobart Facial Aesthetics (Hobart), Sapphire Appearance
   Medicine (Auckland)
-  - **ICP v2 REVERSED THIS RULE on 16 Oct 2026 and these five have never been opened.** They are
-    the largest block of untouched recovery candidates left in the September sections. Each needs
-    the AU/NZ must-have 6 consent screen as well as an address.
+  - ~~**ICP v2 REVERSED THIS RULE on 16 Oct 2026 and these five have never been opened.**~~
+    **[ALL OPENED 10 Nov 2026 — see the 10 November section at the end of this file for the full
+    entries and every resolved domain. Verdicts: Sapphire Appearance Medicine ACCEPTED as pipeline
+    row 1160 (grade B, domain `sapphire.net.nz`, NOT the descriptive name anyone would guess);
+    Newcastle Cosmetic Doctor C on must-have 5 (no email on three pages, absent not masked);
+    Dr Sarah Sparks fails must-have 5 and must-have 4; Coastal Skin & Laser DISQUALIFIED UNDER
+    ICP v2 - FAILS MUST-HAVE 1, owning its own skin-cancer screening with its own dermoscope and
+    GPs, which is the failing side of the who-reads-the-images test; Hobart Facial Aesthetics
+    DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 2 AND MUST-HAVE 1, a dental practice stating it
+    works with all health funds via HICAPS.
+    TWO CORRECTIONS TO THIS LINE ITSELF. (1) "Never been opened" was FALSE for Coastal Skin &
+    Laser: this file already held an entry for Nurse Laura at the same street address, recording a
+    doubt about whether the host clinic's skin-cancer work left it cash-pay. That doubt was right
+    and the disqualification confirms it. (2) THE COUNT: this line says five and the standing list
+    said six, and both were right about different sets - DC Aesthetics sits in the Australian
+    section rather than here, and is C on must-have 4. Either number alone misleads, so the set is
+    named in full in the 10 November section.]**
 - **Wrong offer shape, not wrong size:** Fitzgerald Plastic Surgery (Dublin) - **also
   DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1 AND THE PLASTIC-SURGERY / DERMATOLOGY
   DISQUALIFICATION. Re-read 9 Nov 2026.** This is a cleaner answer than the dormant-signal
@@ -15010,3 +15024,403 @@ Group A entries behaved the same way: names and suburbs recorded, no domain, no 
 published address without printing the address is not a recoverable lead, it is a lead that has to
 be re-found. The fix is mechanical — **print the address and the URL in the entry, or do not claim
 one exists.** Every entry in this file prints what it found.
+
+---
+
+## 10 November 2026 — the six AU/NZ single operators ICP v2 left behind
+
+# AU/NZ recovery run — near misses
+
+**Run date: 2026-11-10.** Search-weighted recovery of the six Australian and New Zealand
+clinics dropped in September 2026 under the "single operators" rule that ICP v2 abolished on
+16 Oct 2026. Five of the six did not qualify; one (Sapphire Appearance Medicine, Auckland) is
+in `aunz-recovery.json` as a grade B.
+
+**Premise check first, because the brief asked for it.** All six were genuinely dropped on the
+single-operator rule and nothing else — I read every entry. Two corrections to the commission,
+both detailed at the end of this file: one of the six had already been partially opened, and
+"never opened at all" is therefore not true of it; and a seventh name sits beside them in the
+same bullets which is disqualified rather than recoverable, which the file already flags.
+
+**Where C rows live.** Every clinic below is in this file, including the ones that fail exactly
+one must-have and are therefore **C, parked, not dropped**. `aunz-recovery.json` holds only the
+sendable row. Each entry below prints the address, the URL and the consent findings in full, so a
+C can be promoted later without re-researching it.
+
+**No email address anywhere in this file was constructed, guessed or inferred**, and no decode of
+any masked or obfuscated address was offered to me or taken. Nothing in this run was
+Cloudflare-obfuscated or CleanTalk-masked: where an address is absent below, the page genuinely
+published none, which is a different problem and **not** a browser-visit problem.
+
+---
+
+## 1. DC Aesthetics — Ashmore, Gold Coast, QLD · `dcaesthetics.com.au`
+
+**Grade C. Failing must-have: must-have 4.** Exactly one must-have fails, so this is parked and
+recoverable, not dropped.
+
+- **Domain resolved:** `dcaesthetics.com.au` (no domain had ever been recorded for this clinic).
+  Footer brand name: "DC Aesthetics Injectables & Skin Gold Coast". The "DC" is the owner's
+  initials — **Diana Cern**.
+- **Published address, printed in full as required:** **12 Warrungen Way, Ashmore, Gold Coast,
+  Queensland 4214**, read off <https://dcaesthetics.com.au/contact/> on 2026-11-10. Postcode 4214
+  and the suburb name confirm the Gold Coast, Queensland. Phone 0421 774 279.
+- **Email: PUBLISHED AND SEEN.** `info@dcaesthetics.com.au`, printed as plain text on the clinic's
+  own contact page at <https://dcaesthetics.com.au/contact/>, read 2026-11-10. The page shipped the
+  real characters — not a `[email protected]` render, not a Cloudflare email-protection token, not
+  a CleanTalk mask. **Email can reach this clinic.** It is not masked and it is not absent.
+- **AU/NZ must-have 6, finding (a) — address provenance:** the address above was read off the
+  clinic's **own** site, its contact page, and is repeated on its homepage. Not a directory, not a
+  social profile, not a meta tag, not a QR code.
+- **AU/NZ must-have 6, finding (b) — consent screen:** **no** "no unsolicited commercial email"
+  notice and no anti-spam or refusal-to-receive wording of any kind on either the contact page or
+  the homepage. There is **no privacy policy on the site at all** — none is linked from either page
+  — so the policy route was unavailable rather than skipped. Nothing on either page is a refusal to
+  receive; there is no marketing-promise wording to quote in either direction. Both must-have 6
+  findings are clear.
+- **Must-haves that pass:** must-have 1 (injectables-led: wrinkle treatments, bio-remodelling,
+  biostimulators, PDO threads, PRP/PRF, peels — no beauty-salon menu, no surgery, no disease
+  language); must-have 2 (no Medicare, no HICAPS, no health fund, no bulk billing anywhere in the
+  text, and no therapeutic indication named at all — no migraine, hyperhidrosis, TMJ, veins or mole
+  checks); must-have 3 (**one** site. The suburb links — Broadbeach Waters, Helensvale, Labrador,
+  Nerang, Robina — are SEO service-area pages off one address, which is the first of the three
+  look-alikes must-have 3 names, and one owner-injector still decides marketing); must-have 5 (above).
+- **WHY IT FAILS MUST-HAVE 4, and I am not softening it.** The clinic publishes **no dated or
+  quantified artifact of any kind** on either page I read: no founding year, no "established" or
+  "since" claim, **no copyright year or range at all** (the footer says only "proudly powered by
+  WordPress"), and no review count. The nearest thing to a proxy is the owner's line "since the
+  beginning of my nursing" — which is a career *reference with no length attached*, so it is not
+  even the practitioner-career-length rung that would keep the row at B. Under the 5 Nov 2026
+  evidence ladder, no proxy of any kind parks a row at C, and that is what this is.
+- **MUST-HAVE 2 — THE NATUROPATHY LABEL, CHECKED AND DISMISSED.** Search returned this clinic's
+  homepage under the title "Skin & Naturopathy Clinic in Gold Coast", which is a must-have 2 and
+  must-have 1 alarm (the ICP fails a clinic running a naturopathy arm receipted to third-party
+  plans). I read the homepage for it: **"naturopathy" appears only in the page title and meta
+  tags, and not one naturopathic service appears in the body text or the treatment menu.** That is
+  the "a label is not a finding" shape exactly, and I am recording the dismissal rather than the
+  label. Must-have 2 passes. *Note the mirror rule, 9 Nov 2026: dismissing the parked reason is not
+  by itself a pass — so I also read the menu, and the menu is injectables and skin, start to finish.*
+- **A CAVEAT THAT MATTERS MORE THAN THE GRADE: THE SITE IS SPAM-INJECTED.** The homepage carries
+  hidden keyword strings and links wholly unrelated to a skin clinic — "1Win", "Tower Rush",
+  "chicken road casino", "Flappy Bird" — and several internal links point at targets that do not
+  match their labels ("Rejuran" resolves to a fat-dissolving URL). Under the sourcing brief's rule
+  for a compromised page, nothing attested **only** by that page is recordable as the clinic's own
+  words, and it is not ours to fix or to mention to them. So: the address and the mailbox are safe
+  because the **contact page** attests to both independently and the two pages agree. The owner's
+  name (Diana Cern, AHPRA Registered Nurse and Cosmetic Injector) and the booking platform
+  (**Timely**, `bookings.gettimely.com/dianacernaesthetics/bb/book`) rest on the compromised page
+  alone and are recorded here with that caveat rather than promoted into a row.
+- **Other findings worth keeping:** free consultation offered ("Fair Price and Free Consultation")
+  — a real dormant pool. A "We accept" block exists but its contents are an unreadable image, so
+  payment methods are unknown. Timely is a named practice system and would be a grade-A signal if
+  it were attested anywhere else.
+- **The one check that releases this row:** a review count, a founding year or a copyright range on
+  a page of its own site that is **not** the compromised homepage. I did not guess a path for an
+  About or reviews page — the brief's measurement is that three of four guessed paths return client
+  errors, and evidence found on a compromised page would be unrecordable anyway.
+- **Not a browser-visit candidate.** Nothing is obfuscated and the mailbox is already in hand; the
+  blocker is qualification evidence, not tooling.
+
+---
+
+## 2. Newcastle Cosmetic Doctor — Broadmeadow, NSW · `newcastlecosmeticdoctor.com.au`
+
+**Grade C. Failing must-have: must-have 5.** Exactly one must-have fails. **Email cannot reach
+this clinic at all** — the address is not masked, it is absent.
+
+- **Domain resolved:** `newcastlecosmeticdoctor.com.au`.
+- **Published address, printed in full as required:** **68 Belford Street, Broadmeadow, NSW 2292,
+  Australia**, read off <https://newcastlecosmeticdoctor.com.au/contact/> and repeated verbatim on
+  <https://newcastlecosmeticdoctor.com.au/contact-us> on 2026-11-10. Phone 1300 282 410.
+  **Same-name town check: this is Newcastle, New South Wales, not Newcastle, England** — settled on
+  the postal address itself, "Broadmeadow NSW 2292", not on the phone number, which is a 1300
+  national number and would have settled nothing.
+- **Email: NOT PUBLISHED ANYWHERE. CANNOT REACH THEM BY EMAIL.** Three pages read on 2026-11-10 —
+  `/contact/`, `/contact-us` and the policy index at
+  `/policy_type/governance-privacy-communications/` — and **none prints an email address, in text,
+  in a `mailto:` href, or anywhere else.** No Cloudflare token, no CleanTalk mask, no
+  `[email protected]` render, nothing offered for decode. The only "@" strings on the contact page
+  are social handles (`@newcastledoctor`, `@newcastlecosmeticdoctor`). Contact route is form and
+  phone only, and the clinic states "Online appointments only" for bookings.
+- **I spent the privacy-policy route the ICP recommends, and it is the irony of this row.** This
+  clinic publishes an unusually deep governance library — ten-plus documents under a heading it
+  calls "Governance, Privacy & Communications", including per-treatment patient FAQ and safety
+  documents. **Not one of them, nor the index, prints a mailbox.** This is close to fetch-failure
+  mode seven (a policy that nominates a contact route and omits the address), and like mode seven
+  **no browser recovers it**: there is nothing hidden to render. It belongs here, not on the
+  browser-visit list.
+- **AU/NZ must-have 6, finding (a) — address provenance:** read off the clinic's **own** site, two
+  of its own pages, agreeing verbatim. Not a directory.
+- **AU/NZ must-have 6, finding (b) — consent screen:** **no** "no unsolicited commercial email"
+  notice and no anti-spam or refusal wording on any of the three pages read, including the
+  governance and privacy policy index. There is no wording to quote in either direction. Both
+  must-have 6 findings are clear — **so the only thing standing between this clinic and a sendable
+  row is that it publishes no mailbox.**
+- **Must-haves that pass:** must-have 1 (cosmetic injectables plus laser; Dr Bart Scanlon, a
+  cosmetic doctor, plus Sharon Leayr, Skin & Laser Therapist); must-have 2 (no Medicare, no
+  insurance, no health fund, no bulk billing anywhere; **and the vein line resolves in our favour**
+  — the menu names "Broken Capillaries and Spider Veins", and spider-vein work is cosmetic and
+  cash-pay under the 5 Nov ruling, with varicose veins, venous insufficiency, phlebology and vein
+  disease appearing nowhere on the site. Rosacea, acne, acne scarring and melasma are cosmetic
+  indications, not a disease caseload); must-have 3 (**one** site, one doctor, one therapist);
+  must-have 4 (**passes at B level** — Dr Bart Scanlon is given "10 years of experience in
+  aesthetic medicine" and Sharon Leayr "has worked alongside Dr Bart for nearly a decade". The
+  second of those is better evidence than the first, because a staff tenure dates the **business**
+  rather than a career, and ten years is comfortably enough trading time for the 300+ lapsed
+  patients must-have 4 is actually asking about).
+- **A must-have 4 rung I applied as written rather than re-tuning:** the only review figure on the
+  site is "a 5.0 Trustindex score based on Google reviews over the past 12 months". Under the
+  8 Nov 2026 rule **a bare star rating with no count is not a quantified artifact**, so it
+  contributed nothing, and I did not let it stand in for one.
+- **Handling:** form-or-phone row. Per the ICP's disqualification of "anything whose only contact
+  route is a form or phone", it goes here or to the LinkedIn sheet and **never into the pipeline
+  with a guessed address**. `newcastlecosmeticdoctor.com.au` is now recorded so nobody searches
+  for it again. Dr Bart Scanlon is a named, single-site owner-doctor with a decade of trading and
+  a clean consent screen, which makes him a good candidate for a non-email channel rather than a
+  dead lead.
+
+---
+
+## 3. Coastal Skin & Laser — Tewantin, QLD · `coastalskinandlaser.com.au`
+
+**DISQUALIFIED. Failing must-haves: must-have 1 (primary) and must-have 5, with must-have 2 in
+serious doubt besides.** More than one must-have fails, so this is a disqualification rather than
+a C — and it is the clearest ruling in this run.
+
+- **Domain resolved:** `coastalskinandlaser.com.au`.
+- **Published address, printed in full as required:** **Shop 4, 84 Poinciana Ave, Tewantin QLD
+  4565**, read off <https://www.coastalskinandlaser.com.au/contact> on 2026-11-10. Phone
+  (07) 5355 6033. Postcode 4565 confirms Tewantin on the Sunshine Coast, Queensland.
+  **This matches the address our own file already held for the host clinic** at
+  near-misses.md line 2607 ("4/84 Poinciana Avenue, Tewantin"), so the two records agree.
+- **Email: NOT PUBLISHED. Cannot reach them by email.** The contact page prints no address and
+  carries no `mailto:` link — only a contact form with an "Email:" input field, which is a field for
+  the visitor's own address and not a published one. No mask, no token, nothing to decode.
+- **MUST-HAVE 1 FAILS ON SUBSTANCE, NOT ON A LABEL, AND THE CLINIC OWNS THE SCREENING.** The
+  5 Nov 2026 mole-and-lesion ruling makes the test *who reads the images*, and every answer here is
+  "this clinic":
+  - **"Skin Cancer Checks" is a named service** on its own contact page.
+  - Its logo's alt text is **"Skin Cancer Clinic Sunshine Coast"** — the clinic's own self-description.
+  - An image alt text names a **"FotoFinder Dermoscope"** — its own dermatoscopy equipment, on site.
+  - **"Skin Procedures" links to `skin-biopsy`** — its own diagnostic excisions.
+  - The footer staffs it with **"General Practitioners"** and "Registered Nurses".
+  - Its booking runs on **HotDoc under `/medical-centres/`**:
+    `https://www.hotdoc.com.au/medical-centres/tewantin-QLD-4565/coastal-skin-and-laser/doctors`.
+  That is own dermatoscope, own GPs, own biopsies — the clinic taking on the skin-cancer clinical
+  risk itself, which the ruling fails on must-have 1 and the dermatology disqualification. It is
+  explicitly **not** the white-label teledermatology case that passes, where a third party's
+  dermatologist reads the photographs and the clinic is only a venue.
+- **Must-have 2 is in serious doubt for a second, independent reason:** GP-performed skin checks
+  and skin biopsies in Australia attract Medicare rebates, and HotDoc lists this business as a
+  **medical centre** staffed by general practitioners. The page itself names no Medicare, insurance
+  or bulk-billing wording, so I am recording must-have 2 as *doubtful rather than proven failed* and
+  resting the disqualification on must-have 1, which is proven. Either way the row does not stand.
+- **Must-have 3 passes and is worth recording so it is never re-litigated:** search surfaced
+  `/locations/skin-clinic-noosa` and `/locations/skin-clinic-maroochydore`, which read like a
+  multi-site group. **The contact page lists exactly ONE street address.** Those are SEO
+  service-area pages off a single Tewantin premises — the first of must-have 3's three look-alikes.
+  One decision-maker. Must-have 3 was never the problem here.
+- **AU/NZ must-have 6:** (a) the address above was read off the clinic's own contact page, not a
+  directory; (b) **no** "no unsolicited commercial email" notice and no anti-spam wording on the
+  page, and no privacy policy is linked to check. Both findings are recorded for completeness, but
+  they are moot — the clinic is disqualified on must-have 1 and has no mailbox either way.
+- **This resolves an open doubt in our own file.** The September entry for Nurse Laura
+  (`nurselaura.com.au`, same address) said her bio's "skin cancer nursing interests, dermoscopy and
+  benign lesion removal" put the cash-pay must-have in doubt. **That doubt was pointing at the right
+  thing, and it was the host clinic's business model rather than one nurse's interests.** Both
+  domains reach the same disqualified practice.
+- **Do not revisit. Not a browser-visit candidate** — the blocker is qualification, not tooling.
+
+---
+
+## 4. Dr Sarah Sparks — Hobart, TAS · `drsarahsparks.com.au`
+
+**Failing must-haves: must-have 5 (primary) and must-have 4.** Two must-haves fail, so this is not
+a C. **Email cannot reach this clinic at all** — the address is absent, not masked.
+
+- **Domain resolved:** `drsarahsparks.com.au`.
+- **Published address, printed in full as required:** **Suite 103, 83 Murray Street, Hobart, 7000**,
+  read off <https://drsarahsparks.com.au/contact/> on 2026-11-10. Phone 0438 883 581.
+  The page prints no state, but **Hobart plus postcode 7000 is Tasmania** and the homepage title is
+  "...Hobart Tasmania" — settled on the postcode, not on the title or an area code. (The homepage
+  itself gives only "Hobart Tasmania" with no street address, so the contact page is the only
+  source for the street address.)
+- **Email: NOT PUBLISHED ANYWHERE. Cannot reach them by email.** Two pages read on 2026-11-10 —
+  the homepage and `/contact/` — and **neither prints an email address in text or inside a
+  `mailto:` href.** No Cloudflare token, no CleanTalk mask, no `[email protected]` render, nothing
+  offered for decode. The contact page offers a "Join our mailing list" field and the line "Need to
+  make an appointment?" with no booking link at all; the homepage says "Phone 0438 883 581 for an
+  appointment". **No privacy policy exists to fall back on** — every link on the contact page points
+  at `#`, and the homepage links only to social profiles and the site theme's vendor.
+- **Must-have 4 also fails, independently:** no founding year, no "established" or "since" claim,
+  **no copyright year or range at all** (the footer credits only "A SiteOrigin Theme"), and no
+  review count. The only date anywhere is a metadata `modified_time` of 2024-06-09, which is a page
+  edit and not a trading artifact. No proxy of any kind — C level on the ladder on its own.
+  An image filename references "CPCA_MEMBER_LEVELS" and search shows Dr Sparks listed with the
+  Cosmetic Physicians College of Australasia; **college membership is not a dated or quantified
+  artifact** and I did not treat it as one.
+- **Must-haves that pass:** must-have 1 (anti-wrinkle injections and dermal fillers, named as the
+  practice's whole offer in the site title; frown lines, crow's feet and forehead lines as targets —
+  injectables-led with nothing else on the menu); must-have 2 (no Medicare, no insurance, no health
+  fund, no mole checks, no veins, no minor surgery, no therapeutic indication of any kind);
+  must-have 3 (one doctor, one Hobart suite).
+- **AU/NZ must-have 6, finding (a) — address provenance:** the street address above was read off the
+  clinic's **own** contact page, not a directory. **Finding (b) — consent screen:** **no** "no
+  unsolicited commercial email" notice and no anti-spam or refusal wording on either page read. The
+  only relevant wording is, verbatim, "Join our mailing list" and "Updates about our products" — an
+  invitation to receive, quoted rather than paraphrased, and **not a refusal**. There is no privacy
+  policy to check and I am saying so rather than implying one was read. Both findings recorded; both
+  are moot while no mailbox exists.
+- **Handling:** form-or-phone row, and a thin one — the site is barely maintained (dead `#` links
+  throughout, no practitioner profile, no booking). **Not a browser-visit candidate**: nothing is
+  obfuscated, so a browser renders the same absence. This is the single weakest of the six.
+
+---
+
+## 5. Hobart Facial Aesthetics — North Hobart, TAS · `hobartfacialaesthetics.com.au`
+
+**DISQUALIFIED. Failing must-haves: must-have 2 (primary, proven verbatim) and must-have 1.** More
+than one must-have fails, so this is a disqualification rather than a C. **Email CAN reach this
+business** — the address is published and seen — which makes the qualification failure the whole
+story.
+
+- **Domain resolved:** `hobartfacialaesthetics.com.au`.
+- **Published address, printed in full as required:** **3 Pitt Street, North Hobart, TAS 7000**,
+  read off <https://www.hobartfacialaesthetics.com.au/contact-us-2/> on 2026-11-10, printed there
+  twice. Phone (03) 6234 9322, fax (03) 6234 9355. **Hobart plus postcode 7000 is Tasmania**,
+  settled on the postal address rather than the page title.
+- **Email: PUBLISHED AND SEEN.** `reception@northhobartdental.com.au`, printed as plain text twice
+  on the contact page and twice again on the general-dentistry page, read 2026-11-10. The pages
+  shipped the real characters — no mask, no token, no decode offered or taken. **Domain mismatch,
+  recorded exactly as printed and not "corrected":** the site is `hobartfacialaesthetics.com.au`
+  and the mailbox is on `northhobartdental.com.au`. Under the "whose mailbox is it" test this is
+  **not** somebody else's address — the page says outright "Hobart Facial Aesthetics is our
+  cosmetic arm", so the dental practice and the aesthetics brand are one owner's two front doors,
+  which is the 9 Nov "a sibling is not a parent" case and leaves must-have 3 intact.
+- **MUST-HAVE 2 FAILS, PROVEN VERBATIM, AND IT IS THE CHEAPEST FAILURE IN THIS RUN.** The
+  general-dentistry page at <https://www.hobartfacialaesthetics.com.au/general-dentistry/> states,
+  quoted exactly as printed and not paraphrased: **"We work with ALL health funds and have Hicaps
+  available for on the spot claims."** A second passage says the practice "accept[s] and work[s]
+  with ALL health funds." That is a named third-party reimbursement mechanism on the practice's own
+  page — on-the-spot health-fund claiming, the Australian equivalent of the private
+  extended-health billing that failed seven Canadian rows on 4 Nov 2026, and the same shape as the
+  named-scheme-on-the-menu ruling of 9 Nov. The practice's revenue is not a list of people spending
+  their own money by choice. **Nothing was inferred here: the page says it.**
+- **MUST-HAVE 1 FAILS ON SUBSTANCE TOO, AND THE SEARCH TITLES SAID SO FOR FREE.** The
+  general-dentistry page lists fourteen service groups, and they are general and restorative
+  dentistry start to finish: regular check-ups, cleans and x-rays; white fillings; amalgam
+  removals; root canal treatment; crowns, bridges and veneers; dentures including
+  mini-implant-supported; extractions and wisdom teeth removal; implants; mouthguards, nightguards,
+  TMJ splints and anti-snoring devices; children's dentistry; **procedures under general
+  anaesthesia**; laser dentistry. Injectables are one line in that list ("dento-facial aesthetics,
+  including lip augmentation and muscle relaxants"), and the only named practitioner, **Dr Wilhelm
+  Koch**, is a dentist (Australian Academy of Dento-Facial Aesthetics, International Team of
+  Implantology). This is a general dental practice with a cosmetic arm, not an injectables-led
+  clinic or med spa — a disease-and-restorative caseload under general anaesthesia is substance,
+  not a word on a page.
+- **This one was decided by result titles before any fetch, exactly as the brief predicted.** The
+  batched domain search returned the title **"General Dentistry"** on this domain, and that single
+  title is what told me to read the dental menu rather than the aesthetics copy. It cost zero
+  fetches and it turned out to be the whole answer.
+- **AU/NZ must-have 6:** (a) the address was read off the business's own contact page, not a
+  directory; (b) **no** "no unsolicited commercial email" notice and no anti-spam wording on either
+  page read, and no privacy policy is linked to check. Both findings recorded; both are moot
+  against a must-have 2 failure proven in the clinic's own words.
+- **Must-have 4 would have passed**, for the record: the footer reads "Copyright 2014 North Hobart
+  Dental", and a bare copyright year at least three years old is a usable dated artifact under the
+  8 Nov 2026 rung — twelve years, which is also enough trading time on substance. The row fails on
+  what it sells and how it bills, not on its age.
+- **Do not revisit. Not a browser-visit candidate** — nothing is hidden; the mailbox is in hand and
+  the business is disqualified.
+
+---
+
+## What this recovery taught us
+
+**The six were correctly described as a block and wrongly described as untouched.** Every one of
+the six was dropped on the single-operator rule and nothing else — the premise held — but the
+September file had already half-opened one of them, and the recorded doubt it left turned out to be
+the right doubt. See the corrections below.
+
+**One in six was sendable, and the budget shape was the opposite of what was feared.** Searches
+were cheap and fetches were the binding cost: **3 searches, 11 fetches**, where the brief budgeted
+8 searches to 12 fetches. The batched `allowed_domains` guess resolved **four of six domains in a
+single call** and, more valuably, handed over three findings from result titles alone at zero fetch
+cost: DC Aesthetics is on the Gold Coast, Newcastle Cosmetic Doctor is Dr Bart Scanlon's and is in
+New South Wales, and **Hobart Facial Aesthetics has a "General Dentistry" page** — which is the
+fact that disqualified it. The title-reading technique decided a clinic outright for the second run
+in a row.
+
+**And the invisible-miss caveat fired, exactly as warned.** Two of my six guesses returned nothing:
+`drsarahsparks.com.au` was right and simply did not surface on that generic query, and
+`sapphireappearancemedicine.co.nz` was **wrong** — the real domain is **`sapphire.net.nz`**, which
+no amount of name-guessing would have produced. A short, non-descriptive domain on a clinic with a
+long descriptive name is the failure case for domain guessing, and the only cure was a name search.
+Both were recovered for one search each.
+
+**The AU/NZ consent screen cost almost nothing and refused nothing.** Six clinics, eleven pages
+read, **zero** "no unsolicited commercial email" notices, zero anti-spam statements and zero
+refusals of any kind. Not one site in this group even published a privacy policy to check — five of
+the six have none at all, which is a different finding from "the policy was clean" and is recorded
+that way on every entry. The two marketing phrases I did find — "Join our mailing list" and
+"Updates about our products" — are invitations to receive, and are quoted verbatim above precisely
+so nobody later reads them as the refusal they are not. The running tally in the ICP, now past
+eighty clinics, stands: **no AU, NZ or Canadian clinic has yet been found refusing unsolicited
+commercial email.** Budget must-have 6 as nearly free and expect it to pass.
+
+**Must-have 4 was the binding constraint again, and in an unexpected market.** Two of the six — DC
+Aesthetics and Dr Sarah Sparks — publish **no dated or quantified artifact whatsoever**, not even a
+copyright year. That is the fifth-or-later measurement of the ICP's affluent-referral-market
+pattern, and it arrived here from Australian coastal cities rather than from Britain or an American
+suburb. It is also a fourth distinct variety of the same blind spot: Britain's clinics are busy and
+do not print the number, New Jersey's print a broken one, and **these two print no footer at all** —
+small WordPress and SiteOrigin sites with no copyright line, which the ladder reads as "no trading
+history" when what it has actually read is a theme default.
+
+**The real surprise was neither search nor fetch budget: it was site health.** Two of six sites are
+materially broken or compromised. DC Aesthetics' homepage is **spam-injected** with casino keyword
+strings and mislabelled internal links, which under the brief's compromised-page rule makes its
+owner name and its Timely instance unrecordable from that page — the best grade-A signal in the
+run, unusable. Dr Sarah Sparks' site has every internal link pointing at `#`. Neither is a fetch
+failure, neither is on the browser-visit list, and neither is something the ladder or the must-haves
+have a rung for. **Expect to spend a fetch on a second page not to find more, but to corroborate
+what the first page said.**
+
+**Nothing from this run goes on the browser-visit list, and that is itself worth recording.** Not
+one of the six was Cloudflare-obfuscated, CleanTalk-masked or interstitial-blocked. Three publish a
+real plain-text mailbox and three publish none at all. **Where email fails in this group it fails
+because the clinic published nothing, which no browser fixes** — so the group generated two
+form-or-phone rows for a non-email channel and zero browser jobs.
+
+---
+
+## Corrections to the commission and to our own file
+
+**1. "They were never opened at all" is wrong for one of the six.** **Coastal Skin & Laser
+(Tewantin)** had already been partially opened. near-misses.md lines 2604-2616 carry an entry for
+**Nurse Laura** at `nurselaura.com.au`, working at the same address, which records the host clinic's
+street address ("4/84 Poinciana Avenue, Tewantin"), names Dr Andrew Spall, and flags that Laura's
+"skin cancer nursing interests, dermoscopy and benign lesion removal" put the cash-pay must-have in
+doubt. So one of the six had an address and a recorded must-have doubt in our files before this run
+— and **that doubt was correct**, which is the part worth keeping. It is also a partial exception to
+"none of the six has a domain recorded anywhere": `nurselaura.com.au` is an associated domain
+reaching the same practice, though not the clinic's own.
+
+**2. A seventh name sits in the same bullets and is not recoverable.** **Dr Terrence Scamp** is
+listed beside DC Aesthetics under the identical "single operators" heading. He is a Gold Coast
+plastic surgeon and is **disqualified** under ICP v2 (must-have 1 and the plastic-surgery
+disqualification), not recoverable. Our file already flags this and warns that the bullet "must not
+be re-read as one rule". Flagged again because the bullet still reads as one list.
+
+**3. Our file's own count differs from itself.** The 24 Sep NZ/regional-AU section says of its
+block "**these five** have never been opened", while the recovery-candidate section at line 13705
+says "**six** AU/NZ single operators, never opened". Both are right about different sets — DC
+Aesthetics is in the Australian section, the other five in the NZ/regional-AU one — but a reader
+grepping either number alone gets a different answer. Not an error, just a seam.
+
+**4. Nothing else in the premise was overstated.** Every one of the six was recorded as dropped on
+the single-operator rule, no entry claimed a published address without printing one, and no entry
+claimed an email that did not exist. The specific September failure mode the brief warned about —
+a heading asserting "real published emails" with no address, domain or URL written down anywhere —
+**does not appear in these six entries.** The brief's suspicion was reasonable and, this time, the
+file was honest.

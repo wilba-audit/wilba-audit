@@ -49,6 +49,39 @@ publication screen, and the UK and Irish company-identity screen.
 fetched page content, and put the URL and the date in `email_source`. `info@<their-domain>`
 that you did not actually read on a page is a fabrication even when it is probably right.
 
+**A FINDING AND A RECOMMENDATION ARE NOT THE SAME KIND OF CLAIM, AND I HAVE NOW CONFUSED THEM
+THREE TIMES IN THREE DAYS. Written 10 Nov 2026.** This is the most useful thing in this section
+because it is about how these files get written, not about clinics.
+
+**What keeps happening.** A worker finishes a run and reports two sorts of thing: **findings**,
+which are measurements of what it saw ("4 of 9 policies yielded an address", "the menu lists skin
+checks"), and **recommendations**, which are extrapolations from its own circumstances ("this needs
+a search-weighted budget, roughly 8 searches to 12 fetches"). I have been promoting both into the
+standing list and then into the next brief with equal confidence. **The findings have held up. The
+recommendations have not.**
+
+**The measured case, 10 Nov.** Yesterday's recovery worker abandoned a group of six AU/NZ clinics
+and recommended "its own run with a search-weighted budget, roughly 8 searches to 12 fetches". I
+wrote that into the standing list and then into today's brief as a specification. **The run
+actually took 3 searches and 11 fetches — a ratio of 1:3.7, the inverse of what I specified.**
+Searches were never the constraint; fetches were. One batched `allowed_domains` call resolved **4
+of the 6 domains at once** and handed over three findings from result titles for zero fetches.
+
+**Why the recommendation was wrong is the interesting part: the worker that made it had run out of
+searches because it had already spent them on four other groups first.** Its scarcity was an
+artefact of its own run order, not a property of the job. **A worker is the best possible witness
+to what it saw and a poor witness to what a different run would need**, because it cannot see its
+own budget as contingent.
+
+**So: carry a worker's findings forward; treat its recommendations as a hypothesis with its run
+conditions attached.** When a recommendation goes into a brief, say where it came from — "the last
+run that tried this ran out of searches, though it had spent them elsewhere first" — so the next
+worker can discount it. The same brief also told that worker those six clinics had "never been
+opened at all", which was **false for one of them**: our file already held an entry for a nurse at
+the same address, carrying a recorded doubt about the host clinic's business model that turned out
+to be exactly right. **That is three for three on claims of mine that a worker had to correct, and
+all three were claims I inherited rather than checked.**
+
 **AN ENTRY THAT CLAIMS AN ADDRESS MUST CONTAIN THE ADDRESS. Added 9 Nov 2026, and it is the
 rule with the largest measured cost behind it.** A September near-miss heading read "Three grade-C
 fallbacks with real published emails" and **no email, domain or URL for any of the three was ever
@@ -747,6 +780,17 @@ name — so do not record a detail that only that page attests to. It is also no
 to mention: the clinic has a security problem, we are a cold outreach list, and a first email
 pointing out that a stranger read their source code would be both alarming and off-offer. Note
 it on the row, prefer a second source for anything you keep, and move on.
+
+**THE RULE WAS APPLIED CORRECTLY FOR THE FIRST TIME ON 10 Nov 2026, AND THE WAY IT WAS APPLIED IS
+THE PART TO COPY.** DC Aesthetics' homepage is spam-injected — hidden "1Win", "chicken road
+casino" and "Flappy Bird" strings, and internal links whose targets do not match their labels. The
+worker correctly refused to record the owner's name or the **Timely** instance from that page, even
+though Timely was the best grade-A signal in its whole run and losing it cost the row a grade.
+**But it kept the address and the mailbox, because a SEPARATE contact page attested to both and the
+two pages agreed.** That is exactly what "prefer a second source" means in practice: the rule is
+not "discard the clinic", it is "discard what only the compromised page says". A clinic can stay in
+the file on the strength of its clean pages. The security problem was noted on the row and
+mentioned to nobody outside these files, as the rule requires.
 
 ## The shared budget
 

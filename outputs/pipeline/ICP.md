@@ -409,7 +409,18 @@ OHIP, so it passes a literal reading of "no Medicare billing", and it still fail
 2 is for: the practice has a non-discretionary, third-party-reimbursed revenue stream, so its
 patient list is not a list of people spending their own money by choice. Park it as a must-have 2
 failure and say which kind. **A NAMED INSURANCE SCHEME ON THE TREATMENT MENU IS THE
-CHEAPEST MUST-HAVE 2 FAILURE THERE IS — added 9 Nov 2026.** One Long Island clinic prints
+CHEAPEST MUST-HAVE 2 FAILURE THERE IS — added 9 Nov 2026.**
+
+**AND IN AUSTRALIA THE PHRASE TO LOOK FOR IS "HICAPS" OR "ALL HEALTH FUNDS" — added 10 Nov 2026,
+and it is the cheapest must-have 2 failure in that market.** One Hobart clinic says in its own
+words: *"We work with ALL health funds and have Hicaps available for on the spot claims"*. HICAPS
+is the Australian on-the-spot private-health claiming terminal, so naming it is a clinic telling
+you directly that a third party reimburses part of its revenue. **Zero policy fetches, decided off
+the page you were already reading.** This is the same ruling as NYSHIP on an American menu and as
+the Canadian private-extended-health failure, in the third market — so read it as the general
+shape: **a named claiming system, scheme or terminal beside a service line is a reimbursed revenue
+stream admitting itself.** Watch for it especially on AU dental, physiotherapy and podiatry arms,
+which almost all say it. One Long Island clinic prints
 "Medical Massage/**NYSHIP**" — the New York State Health Insurance Program — on its own service
 list. That is must-have 2 decided for **zero policy fetches**, off the page you were already
 reading. So when scanning a menu for must-have 1, read it for scheme acronyms too: a named
@@ -642,6 +653,26 @@ it.** Do not let a broken number beat a readable page.
 **And this sharpens the open question below rather than just adding to it.** The ladder is not only
 reading marketing effort; it is reading **whether a clinic's website works.** That is further still
 from trading history, and it is a worse thing to grade an owner-operated business on.
+
+**A FOURTH VARIETY, FROM AUSTRALIA, 10 Nov 2026 — AND IT IS THE PLAINEST OF THE FOUR. Some clinics
+print NO FOOTER AT ALL.** Two of the six AU/NZ clinics opened that day are small WordPress or
+SiteOrigin sites with **no copyright line anywhere**, which the ladder reads as "no trading
+history" when what it has actually read is **a theme default.** DC Aesthetics is a
+published-mailbox, clean-consent, single-site owner-injector running Timely and offering free
+consultations, **parked at C because its theme omits a copyright year.**
+
+**So the ladder now has four distinct failures it cannot tell apart:** no trading history (the
+honest C), history never printed (the affluent-suburb case), history printed into a broken widget
+(New Jersey), and **no publishing furniture in which to print it (a theme default).** Only the
+first is a reason not to write to someone. **The practical instruction is the same in all three
+non-honest cases: look for the trading history somewhere other than the footer** — an About page,
+a practitioner's stated tenure, a wall of dated reviews — before parking a row that clears
+everything else.
+
+**And this sharpens the open question below rather than just adding to it.** The ladder is not only
+reading marketing effort; it is reading **whether a clinic's website works** — and now, whether its
+WordPress theme happens to include a footer. That is further still from trading history, and it is
+a worse thing to grade an owner-operated business on.
 Flagged, not answered, and not changed unilaterally — it is a scoring change and it would
 re-grade the whole file.
 
