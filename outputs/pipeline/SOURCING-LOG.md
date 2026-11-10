@@ -41,6 +41,21 @@ varicose and spider veins"* and *"Reduce the APPEARANCE of spider and varicose v
 medical vein condition named anywhere, no surgery, and financing rather than insurance. **The word
 "varicose" is not itself disease language.**
 
+**THE DO-NOT-SEND LIST WAS USED FOR THE FIRST TIME THE SAME EVENING AND CAUGHT EXACTLY ONE ROW —
+THE ONE THAT MATTERED.** `DO-NOT-SEND.txt` was built last night after the drafting side disclosed
+that two of its edits had silently truncated its own skip list. Tonight it diffed its staged rows
+against the 377 ids and reported that **177 was the only row missing from its holds**; it is now
+held, and 179 correctly stays in. **So the artefact earned itself on its first use**, and the thing
+that made it work was the part that felt pedantic to build: it is regenerated from the CSV rather
+than hand-maintained, so the four rows that changed state today were in it without anyone
+remembering to add them.
+
+**Worth keeping in view, though: a diff that returns one row is not proof the list is complete.**
+It proves the two sides agree about 376 rows and disagreed about one. The list only ever carries
+grade, and a grade is a qualification verdict rather than a send clearance — row 181 is still held
+by hand, on a note in its own row, because the reason it cannot be sent has nothing to do with its
+grade.
+
 **And the fault was in my own wording, not the worker's reading.** The 8 Nov vein rule listed
 "varicose veins" in the same breath as "venous insufficiency", "phlebology" and "vein disease",
 which implies the word is disqualifying. **The list is now split in `ICP.md`: "varicose" and
