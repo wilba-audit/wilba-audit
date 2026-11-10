@@ -49,6 +49,44 @@ publication screen, and the UK and Irish company-identity screen.
 fetched page content, and put the URL and the date in `email_source`. `info@<their-domain>`
 that you did not actually read on a page is a fabrication even when it is probably right.
 
+**A TECHNIQUE THAT WORKED IN ONE MARKET IS NOT A TECHNIQUE YET — AND I PUSHED ONE INTO A BRIEF
+AGAINST THIS FILE'S OWN RECORD. 10 Nov 2026.** On Long Island every accepted row sat on a named
+village main street, so the "main-street query shape" went into the standing list and then into
+three briefs as a thing that "works in affluent suburbs". **For the Chicago North Shore that was
+already known to be false and the knowledge was in `near-misses.md`:** the 8 Nov Chicago section
+records that the district and main-street technique "did not work" there and that "no
+business-improvement-district or main-street association index surfaced at all". The worker spent
+two queries testing my claim anyway and got **zero in-market clinics** — a Pleasantville NY clinic,
+one in Oklahoma City, a Wisconsin hospital group, one in Grand Junction and a Greenwich dermatology
+practice. **North Shore clinics address themselves by TOWN, not by street.** What worked there, for
+the second time, was **four unquoted town names plus "owner" or "founder"** — three of six rows
+from one query.
+
+**So the rule for this file: a query shape is recorded with the market it worked in, not as a
+general technique, until it has worked in two unlike markets.** And before putting one in a brief,
+grep for the metro — the contradiction was already written down, which makes this worse than a
+guess. Main-street shape: **confirmed on Long Island and in Montgomery County** (one
+Wisconsin-Avenue query produced a row that "Bethesda med spa" never surfaced), **failed on the
+Chicago North Shore.** Town-name-plus-owner: works in both, and is the better default.
+
+**GREP `near-misses.md` FOR A MARKET BEFORE WRITING "THIS MARKET HAS NOT BEEN SWEPT" INTO A
+BRIEF. One command, and it would have caught the fourth of my four wrong claims this week.**
+On 10 Nov a brief told a worker "nothing in this market has been swept" about Montgomery County.
+`near-misses.md` line 394 is a whole section — **"Mid-Atlantic — DC, Northern Virginia, Maryland,
+Richmond (16 Oct 2026)"** — which had put **18 rows** in the pipeline and left 16 named near-misses,
+four of them inside Montgomery County and three in the northern Virginia ring I also assigned.
+**Two of the towns were already pipeline rows.** It cost nothing only because that worker grepped
+before fetching, as this brief tells it to; a worker that believed the brief would have re-fetched
+clinics we had already ruled out.
+
+**The claim came from the standing list, which said Montgomery County was "not yet opened".** So it
+is the same failure as the other three: a claim inherited and passed on rather than checked. **The
+fix is mechanical and cheap, so there is no excuse for skipping it: before naming a market in a
+brief, grep the near-misses file for the metro and the two or three biggest town names in it.**
+Say in the brief what prior coverage exists and which part is genuinely new — "the county below the
+Rockville line is unworked, the ring above it was swept on 16 Oct" is a far better instruction than
+"nothing has been swept", and it is thirty seconds of work.
+
 **A FINDING AND A RECOMMENDATION ARE NOT THE SAME KIND OF CLAIM, AND I HAVE NOW CONFUSED THEM
 THREE TIMES IN THREE DAYS. Written 10 Nov 2026.** This is the most useful thing in this section
 because it is about how these files get written, not about clinics.
@@ -311,7 +349,19 @@ because the standard may widen again and re-finding a clinic costs more than kee
    loyalty or gift-card links.
     Block its
    directory URLs, but read a `glowday.com/clinic/<name>` booking URL as a platform signal, exactly
-   as with Faces Consent. Also blocked from 8 Nov: `enhancinghealthandbeauty.com`,
+   as with Faces Consent. Blocked from 10 Nov 2026, all three Montgomery County suburb-page sets:
+   `impressionsmedispa.com`, `skyivclinic.com`, `neweramedicalaesthetics.com`.
+   **And from the Chicago North Shore, 10 Nov 2026, each with its measurement:**
+   `portraitcare.com` (**second** fetch burned on the identical vendor-logo-wall hazard; its
+   "Glencoe directory" lists zero Glencoe businesses), `skinovatio.com` (franchise, took 2 slots),
+   `reclaimmedspa.com/about/areas-we-serve/` (3 of 10 slots on one query),
+   `dermaluxeaesthetics.com/about-us/areas-served/`, `medspanear.me`, `medspascout.com`,
+   `whelth.com`, `glp1clinics.org`, `nobsmedspareviews.com`, `wheree.com`, `nextdoor.com`,
+   `mindbodyonline.com/explore`, `zoominfo.com`, `local.yahoo.com`.
+   **One to recognise rather than block: `injectwellness.com` (Montrose CO) is now the
+   most-refound out-of-market domain in the file** — it surfaced twice more on 10 Nov. Greps
+   caught it before any fetch, which is the system working.
+   Also blocked from 8 Nov: `enhancinghealthandbeauty.com`,
    `change-aesthetics.co.uk`, `airaesthetics.co.uk`, `clinictor.com`, `clinicsoftware.com`.
    **And a correction to the 5 Nov note on Beverley: it is WORKED OUT, not trapped.** The name
    being a common first name is real, but the town's only own-domain clinic is already a pipeline
@@ -414,7 +464,21 @@ because the standard may widen again and re-finding a clinic costs more than kee
    Northeast suburb should now be *high*, not zero.
 
    **AND NEW JERSEY WENT ZERO FROM FOUR THE SAME DAY — which is the stronger result, not a
-   contradiction.** Two Northeast suburbs measured hours apart, 44% and 0%, so **geography predicts
+   contradiction.**
+
+   **AND MONTGOMERY COUNTY SPENT IT ZERO TIMES, WHICH IS A THIRD KIND OF RESULT AND THE ONE THAT
+   FINALLY EXPLAINS THE RULE — 10 Nov 2026.** Its count is 0 from 0, not 0 from 4: **10 of 15
+   clinics published a plain mailbox on the first page read**, the most email-first market in the
+   file, so the rule's *precondition* — a silent homepage — barely occurred. Of the four silent
+   ones, three failed a second must-have independently.
+
+   **So the three results are not in conflict and the predictor was never geography.** It is
+   **publication habit**: how willing a market's clinics are to print a mailbox where a visitor can
+   see it. Where that is high the policy rule is redundant; where it is low the rule is the whole
+   route in. **Practical consequence: do not budget this rule by region at all. Read two or three
+   homepages first, and let the hit rate on those tell you whether policies are worth fetching in
+   this market.** That is one or two fetches to size a decision that has been guessed at for a
+   week. Two Northeast suburbs measured hours apart, 44% and 0%, so **geography predicts
    nothing at all** and should be dropped as a predictor rather than patched again. What held in
    both is the mechanism: all four New Jersey misses failed by a route the mechanism already names
    — one routes to `/contact`, one gives a postal address, one nominates no route, one is the hibu
@@ -675,7 +739,11 @@ because the standard may widen again and re-finding a clinic costs more than kee
    the street address caught it. The out-of-state cases (Clovis NM twice, Selma TX) were the
    easy ones — and note that both Clovis NM clinics published readable addresses, **which is
    exactly what makes them dangerous**: nothing about the row looks wrong. Check the town in
-   the postal address itself, every time, not just the area code. **And added 9 Nov 2026: "ROCKVILLE
+   the postal address itself, every time, not just the area code. **NORTHFIELD, added 10 Nov 2026: the
+   Minnesota town outranks the Illinois one.** And a **second meta-versus-postal mismatch in the
+   same metro** — one Glenview clinic's Open Graph description says "Northfield, IL" over a
+   Glenview postal address, which is the same shape as the Bothell/Bellevue case: **the postal
+   address wins over any meta tag, title or description, every time.** **And added 9 Nov 2026: "ROCKVILLE
    CENTRE" COLLAPSES INTO "ROCKVILLE, MARYLAND."** One Long Island query returned seven of ten
    results in Maryland — including **pipeline row 211, which is a Maryland clinic we already
    hold**, so the trap does not merely waste a query, it manufactures what looks like a duplicate

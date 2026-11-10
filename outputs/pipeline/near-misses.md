@@ -412,7 +412,7 @@ browser tab — several are better prospects than rows that did qualify:
 
 | Clinic | Where | Why it matters | Blocker |
 |---|---|---|---|
-| **Life Med Institute** | 6 sites across MD, DE and PA | The largest footprint in the sweep. AestheticsPro confirmed, a free rewards programme, gift cards, financing | No email on the homepage; the contact page was never reached before the budget ran out — **re-check this one first** |
+| **Life Med Institute** | 6 sites across MD, DE and PA | ~~The largest footprint in the sweep. AestheticsPro confirmed, a free rewards programme, gift cards, financing~~ | ~~No email on the homepage; the contact page was never reached before the budget ran out — **re-check this one first**~~ **[RETIRED 10 Nov 2026 — DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3. Six sites is outside v2's one-to-four band, so the address was never the blocker and the "re-check this one first" instruction was pointing the next worker at a clinic that cannot qualify. It was written on 16 Oct under the retired standard, where footprint was an asset rather than a disqualification. Do not spend a fetch on it.]** |
 | **The District Injector** | McLean, VA | Symplast confirmed, and a membership that banks units: $139/mo = 10 banked units, $249/mo = 20. Banked units are the ideal dormant asset | No email anywhere, no mailto |
 | **Javan Wellness** | Dupont Circle, U Street DC + Ballston | Three sites and eleven named clinical staff — the biggest independent in DC | No email, and every Book button is an on-page anchor so even the platform is hidden |
 | **Vitalify MedSpa** | Dupont Circle, DC | Zenoti *and* Practice Better, a "Vitalify Vault" loyalty programme, a botox membership, a $100 refer-a-friend credit | Cloudflare-obfuscated — one browser tab from qualifying |
@@ -15424,3 +15424,706 @@ claimed an email that did not exist. The specific September failure mode the bri
 a heading asserting "real published emails" with no address, domain or URL written down anywhere —
 **does not appear in these six entries.** The brief's suspicion was reasonable and, this time, the
 file was honest.
+
+---
+
+## 10 November 2026 — Montgomery County MD and the northern Virginia ring
+
+# Near-misses — Montgomery County, Maryland + the northern Virginia ring (10 Nov 2026)
+
+Region: **Montgomery County, MD** (Bethesda, Chevy Chase, Potomac, Rockville, North Bethesda,
+Kensington, Silver Spring, Gaithersburg, Germantown, Olney, Clarksburg, Wheaton, Burtonsville)
+and the **northern Virginia comparable ring** (McLean, Vienna, Great Falls, Arlington).
+
+Nine accepted rows are in `montgomery.json`. Everything below did not qualify.
+
+**Every entry that claims a published address PRINTS the address and the URL it was read from**,
+per the 9 Nov rule. Where no address was found, the entry says so in those words.
+
+---
+
+## 1. Email is MASKED — browser-visit candidate (a person's browser renders it)
+
+### beBold Aesthetics — Rockville, MD
+- **URL:** https://beboldaesthetics.com/
+- **Postal address, printed:** `6100 Executive Blvd Suite 620, Rockville, MD 20852`
+- **MUST-HAVE 5 — Cloudflare obfuscation.** The address appears in **three** places — the header
+  link, the footer contact line, and the footer line "beBold Aesthetics LLC | ... | " — and all
+  three render as a **`/cdn-cgi/l/email-protection` token**, with a hash fragment on the header
+  link. **The page did not ship the characters, so the address is NOT SEEN and nothing was
+  recorded.** It is not CleanTalk and not mode seven.
+- **The fetch helper did NOT volunteer a decode on this one** and no decode was taken or
+  attempted. Recorded explicitly, per the 4 Nov recording rule.
+- **Also fails must-have 4 on evidence:** no dated or quantified artifact — no copyright year at
+  all, no founding year, no review count, undated testimonials. The only dates are blog posts
+  from Oct 2026.
+- **Worth the browser tab anyway:** **Aesthetic Record** confirmed on a real tenant
+  (`beboldaesthetics.myaestheticrecord.com`), gift cards sold through that tenant, a `/financing/`
+  page and a "Refer A Friend" page. Chavi Orlofsky, MSN, FNP-C named on the main heading; Reina
+  Najera, FNP-C named in Instagram captions. Must-have 3 is intact: the "Areas We Serve" list
+  (Rockville, Silver Spring, Potomac, Washington DC, Bethesda, Gaithersburg, Frederick,
+  Hagerstown, Arlington, Northern Virginia) is **service areas, not locations** — one address.
+- **Recovering the address still leaves it a C on must-have 4.** Browser-visit candidate, not a
+  one-tab conversion to B.
+
+---
+
+## 2. Email cannot reach them at all — NO address published, not masked
+
+### Juve — Chevy Chase, MD
+- **URL:** https://juve.beauty/
+- **Postal address, printed:** `5423 Friendship Blvd, Chevy Chase, MD 20815`
+- **MUST-HAVE 5 — no email anywhere in the page content.** Nothing masked, nothing in an `sms:`
+  href, no `mailto:`, no Cloudflare token, no CleanTalk mask: **absent**. The address is simply not
+  published on the page read.
+- **ALSO fails must-have 4 on evidence:** copyright is a bare "COPYRIGHT © Juve 2026"; **ten**
+  testimonials, all undated; no review count; no founding year; no stated career length. No owner
+  is named either — reviewers name a "Rhonda" with "a medical background" and no credentials.
+- **Two routes NOT spent, and why:** the site links a privacy policy at
+  `https://juve.beauty/privacy-policy/` and a contact page at `https://juve.beauty/contact/`.
+  Under the unconditional policy rule the policy fetch was the next move, and I **deliberately did
+  not spend it** because must-have 4 fails independently, so an address would have produced a C
+  row rather than a sendable one, on a shared budget. **If anyone re-opens Juve, that is the fetch
+  — and bring a founding year back with it or the row stays parked.**
+- **Why it is here rather than binned:** **Mangomint** confirmed on a real tenant
+  (`booking.mangomint.com/313515`) and a named membership — **"Juve's Elite Glow Up Membership"**.
+  Mangomint plus a named membership is the grade-A dormant shape.
+- Caveat for whoever works it: the menu is a hybrid — Metabolic Health & Functional Testing and IV
+  hydration sit beside nails, brows and waxing, with neurotoxins and fillers in between, so it is
+  less injectables-led than the accepted rows. **"We now accept HSA and FSA for healthcare related
+  services"** is the patient's own pre-tax money, **not** insurance billing, so it is NOT a
+  must-have 2 failure — recorded because it reads like one at a glance.
+
+### Glow Aesthetics & Medical Center — Silver Spring, MD
+- **URL:** https://glowamc.com/
+- **Postal address, printed:** `2415 Musgrove Rd, Suite 308, Silver Spring, MD 20904`
+- **MUST-HAVE 5 — no email anywhere in the page content.** Nothing masked, no `mailto:`, no token:
+  **absent**. Phone only, `(202) 848-2372`, plus an on-page `#contact` form.
+- **MUST-HAVE 2 ALSO FAILS, and this is the real reason not to chase it.** **"Primary Care" is a
+  top-level menu heading** — blood pressure, thyroid, cholesterol and chronic pain — and the page
+  says **"If not covered by insurance"** beside its lab pricing. That is a non-discretionary,
+  third-party-reimbursed line admitted on the clinic's own page, which is the Canadian
+  extended-health failure mode arriving in American clothes. In a federal-employment-heavy region
+  this is the shape to expect.
+- **Must-have 4 also fails:** bare "© 2026", no founding year, no review count, no dated
+  testimonials. "Over 30 years of experience" belongs to an **unnamed** provider, so not even the
+  ladder's middle rung is reachable — nobody is named at all.
+- Vagaro confirmed (`vagaro.com/glowaestheticsandmedicalcenterllc1`). No membership, loyalty, gift
+  card or banked credit of any kind. The $50 consult is waived on same-day treatment.
+- **Three failing must-haves. Do not revisit.**
+
+### Luxe By Afsaneh / Luxe Burtonsville Med Spa — Burtonsville, MD
+- **URL:** https://luxeburtonsvillemedspa.com/
+- **NO POSTAL STREET ADDRESS IS PUBLISHED.** The page gives only the town — "a boutique medical
+  aesthetics clinic in **Burtonsville**" — and a service area. **No street, no suite, no ZIP.** So
+  it could never enter the pipeline, address invented or otherwise.
+- **MUST-HAVE 5 — no email anywhere in the page content.** Nothing masked: **absent**. Booking is
+  by phone, text or Instagram DM, and the "Book Consultation" button is a **`tel:` link**.
+- **Must-have 4 also fails:** "Copyright 2026" is the only date; no founding year, no review count,
+  no testimonials. Afsaneh Golban is called "founder" in a photo caption and is described as
+  currently practising as a **pulmonary and neurosurgical nurse practitioner** elsewhere, which
+  reads as a side practice rather than a full-time clinic — thin on must-have 4's substance as well
+  as its evidence.
+- No practice system named; a footer link to **Agile Telehealth**
+  (`agiletelehealth.com/luxe-by-afsaneh/`) with no booking function stated. No membership, loyalty,
+  gift card, banked credit or waitlist.
+- Note for the copy audit: the whole menu is priced in public ("from $…" against every line) and a
+  GLP-1 section says "FSA/HSA approved" — the patient's own pre-tax money, not insurance.
+- **Unreachable by email, no address, two further failures. Do not revisit.**
+
+---
+
+## 3. Disqualified on the merits
+
+### Capital Laser & Skin Care of Chevy Chase — Chevy Chase, MD
+- **URL:** https://capitalskinlaser.com/
+- **Postal address, printed:** `5471 C2 Wisconsin Avenue Suite 200, Chevy Chase, MD 20815`
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1.** And it fails **on substance, not on the
+  label**, which is the point worth recording: the page self-describes as a **"board-certified
+  dermatology practice"** (with "DC Dermatology" in the title), names **three board-certified
+  physicians** (Dr Tanzi, Dr Shah, Dr Peters), and lists **"Skin Cancer"** among the concerns it
+  treats, alongside **Spider Veins** and **Hyperhidrosis**, with a **Vbeam Perfecta vascular
+  laser** and **sclerotherapy** on the menu. A named skin-cancer caseload read by the practice's
+  own dermatologists is precisely the clinical risk and disease caseload the dermatology
+  disqualification exists for.
+- **ALSO fails must-have 5:** no email anywhere in the page content — absent, not masked. Privacy
+  policy at `/privacy-policy/` and contact at `/contact/` were not fetched, because must-have 1 is
+  already decided.
+- **This is the first clinic in the affluent-suburb series where the label test fired and the
+  clinic FAILED.** See "What this market taught me", point 3.
+
+---
+
+## 4. Screened off the search results without spending a fetch
+
+Named so nobody spends the fetches again. Each was decided from the result title, URL or snippet.
+
+| Business | Where | Why |
+|---|---|---|
+| **Jubilee Cosmetic Surgery** | Silver Spring, MD | Cosmetic surgery practice — **FAILS MUST-HAVE 1**. Owns the "Silver Spring injectables" result set; three of ten slots on one query |
+| **Anything Cosmetic** | Chevy Chase, MD + Washington DC | Titled "Cosmetic Surgeon in Chevy Chase" — **FAILS MUST-HAVE 1** |
+| **McLean Plastic Surgery** | McLean, VA | Plastic surgery, med spa arm under it — **FAILS MUST-HAVE 1** |
+| **Virginia Facial Plastic Surgery** | Chevy Chase + Bethesda | Facial plastic surgery, multi-site — **FAILS MUST-HAVE 1**. Appeared on two separate Bethesda/Chevy Chase queries |
+| **Chevy Chase Cosmetic & Dermatology Center** | Chevy Chase, MD | Dermatology centre; surfaced only as a Facebook page, so no own-site evidence either — **FAILS MUST-HAVE 1** |
+| **Tamjidi Skin Institute** | "Maryland and Virginia" | Self-titled "Dermatology Services In Maryland And Virginia", multi-state footprint — **FAILS MUST-HAVE 1** |
+| **AmeriWell Clinics** | Silver Spring + others | Multi-site chiropractic and wellness group with an aesthetics arm — insurance-billing profile, **FAILS MUST-HAVE 2**, and plural sites |
+| **J. Elite Esthetics** | Waldorf + Silver Spring, MD | Esthetics spa, not injectables-led — **FAILS MUST-HAVE 1** |
+| **Jenny Luu Skin Care** | Chevy Chase area | Skincare studio, not injectables-led — **FAILS MUST-HAVE 1** |
+| **Spa Chevy Chase** | Chevy Chase, MD | "Comprehensive Wellness and Beauty Services" — day-spa profile, not injectables-led |
+| **Sky IV Clinic** | Chevy Chase page of a suburb set | IV therapy, not injectables-led; and runs an `areas-served`-style town page set — **block the set** |
+| **SkinSpirit Georgetown** | Georgetown DC | National chain — already ruled out in the 16 Oct Mid-Atlantic sweep |
+| **Evexia Medspa** | McLean, VA | Already ruled out as a chain/institution in the 16 Oct Mid-Atlantic sweep; runs a `/location/virginia-usa/` page set |
+| **Impressions MediSpa** | Suburb page set | Runs an `areas-served/<town>/` set, including a page for a **"Potomac, VA"** that does not exist as a town — **block the set in the query** |
+| **CloseKnit** | North Bethesda, MD | Primary care — wrong business |
+| **Amerigroup Maryland HealthChoice provider directory** | PDF | A Medicaid provider directory; it ranked on a Montgomery County aesthetics query, which is itself a signal about this market |
+
+### Already in our files — not re-researched, listed so the market reads correctly
+- **New Era Medical Aesthetics**, Vienna VA — **already pipeline row 212.** Note for future
+  queries: it runs a suburb page set (`/med-spa-vienna-va/`, `/med-spa-great-falls-va/`) which took
+  three of ten slots on the McLean/Vienna/Great Falls query.
+- **Honey Skincare Studio**, Arlington VA — already pipeline row 205 (A).
+- **Bella Bliss Med Spa**, Rockville MD — **already pipeline row 211.** This is the Maryland clinic
+  the Long Island misfire surfaced. See point 1 below.
+- Carried over from the **16 Oct 2026 Mid-Atlantic sweep** and still unresolved, all in or adjacent
+  to this market: **Butterfly Medical Spa** (Rockville — Cloudflare-obfuscated on every page, so a
+  browser-visit candidate; it dominated my Rockville query, taking four of ten slots),
+  **Aesthetic Artistry Laser Centers** (North Bethesda + Annapolis + Arlington — no email on the
+  homepage, contact page or HIPAA notice), **NoBe Aesthetics** (North Bethesda — no email; Jane App,
+  two named NPs), **Life Med Institute** (six sites across MD, DE and PA — on a re-read that is now
+  also a **must-have 3 failure** at six locations, so the 16 Oct note to "re-check this one first"
+  should be retired).
+
+---
+
+## What this market taught me
+
+**1. THE BRIEF IS WRONG THAT "NOTHING IN THIS MARKET HAS BEEN SWEPT", and this is the most
+important correction in the run.** `near-misses.md` line 394 carries a whole section headed
+**"Mid-Atlantic — DC, Northern Virginia, Maryland, Richmond (16 Oct 2026)"**, which put **eighteen
+rows** into the pipeline and left sixteen named near-misses, four of them inside Montgomery County
+(Butterfly Medical Spa in Rockville, Aesthetic Artistry and NoBe in North Bethesda, Life Med
+Institute) and three more in the northern Virginia ring (The District Injector and Pure Med Spa in
+McLean, Purity Spa Med in Arlington). What was genuinely unswept is **Montgomery County proper
+below the Rockville/North Bethesda line** — Bethesda, Chevy Chase, Potomac, Olney, Gaithersburg,
+Silver Spring, Burtonsville all returned zero prior hits — and **Arlington and Vienna were already
+held as pipeline rows 205 and 212.** So the market was half-worked, not untouched, and the grep
+that would have shown it is `grep -n "Mid-Atlantic" near-misses.md`. **A "nothing has been swept"
+claim in a brief should be re-greped, not believed** — mine cost nothing because the grep came
+first, but a worker who trusted it would have re-fetched Butterfly and NoBe.
+
+**2. YES — A MARYLAND CLINIC WAS ALREADY IN THE FILE, EXACTLY AS WARNED, AND THE WARNING IS
+ACCURATE.** `bellablissmedspa.com` is pipeline row 211, "Bella Bliss Med Spa, Rockville, MD", grade
+B, added 16 Oct — so it was NOT put there by the Long Island misfire; the misfire merely rediscovered
+it. The misfire's own note names five further Rockville MD businesses it dragged in, and **I worked
+one of them: The Beauty Bay, which is now an accepted B row.** The other four are **ReNew You**,
+**Aesthetic & Dermatology Center**, **Faulkner Plastic Surgery** (plastic surgery, must-have 1) and
+**The Medical Skin Clinic** — the first and the last are unworked and are the cheapest outstanding
+leads in this market. I ran the same-name check in the direction the brief asked: every Rockville
+candidate was confirmed by its **postal ZIP (20850, 20852)** and **240/301 area codes**, which are
+Montgomery County, not Nassau County.
+
+**3. THE LABEL TEST FIRED ONCE AND THE CLINIC FAILED — the first time in the affluent-suburb
+series, and it does NOT overturn the Westchester finding.** The brief carried in the expectation
+that "dermatology" in a wealthy suburb is a hiring credential, cleared five of five in Westchester.
+Here it fired once, on **Capital Laser & Skin Care of Chevy Chase**, and the substance was there:
+three board-certified physicians, **"Skin Cancer" listed as a treated concern**, a vascular laser
+and hyperhidrosis. So the Westchester rule worked **exactly as designed** — it told me to read the
+menu instead of the noun, and the menu failed the clinic. **A test that reverses the default five
+times and confirms it the sixth is a working test, not a broken one.** Separately and in the same
+shape, **The Beauty Bay's medical director's title contains "Surgeon"** with no surgical procedure
+anywhere on the menu — hiring credential, cleared, row accepted. **Two label cases, opposite
+outcomes, both decided off the treatment menu.**
+
+**4. MUST-HAVE 4 ON EVIDENCE IS THE BINDING CONSTRAINT HERE TOO — A FIFTH MEASUREMENT, AND THE
+RATIO IS THE WORST YET. ONLY 3 OF THE 15 BUSINESSES WHOSE OWN PAGES I READ PUBLISHED A DATED OR
+QUANTIFIED ARTIFACT ABOUT THE BUSINESS — 1 IN 5.** Those three: MedRevive ("Founded in 2010"), Tiam Spa ("Based on 166 reviews")
+and The Beauty Bay ("90 verified reviews"). **Four of my five C rows are C on must-have 4 evidence
+alone** — Moksha, Aluna, Artmedica, and Defy Aesthetic (which is not in the near-misses because it
+has a published mailbox and sits in the JSON at C). Britain, Fairfield County, Long Island, northern
+New Jersey, and now the Washington DC affluent ring: **five markets, one shape.** This is a market
+type, not a nationality, and it was right to carry it in as an expectation rather than report it as
+a surprise. **I did not pad a single row to compensate.** **Market type: affluent, referral-driven,
+federal-professional suburb — the stingiest publishers measured so far, and nine sendable-or-parked
+rows out of 22 businesses is a good market behind a thin grade mix.**
+
+**5. THE "0 COUNTER BESIDE REAL TESTIMONIALS" CASE HAS A NEW COUSIN HERE, AND IT IS WORSE: THE
+COUNTER THAT CONTRADICTS ITSELF.** New Jersey's broken widgets printed "0" beside real reviews.
+**MedRevive prints three mutually inconsistent numbers** — "Founded in 2010", a "20 Year Of
+Experience" counter, "over 25 years of combined experience" — plus a "10 Happy Returning Clients"
+counter that is obviously a placeholder. The 9 Nov operational rule ("do not let a broken number
+beat a readable page") extends cleanly: **prefer the specific, checkable claim over the counter
+widget.** "Founded in 2010" is a date somebody typed on purpose; "20 Year Of Experience" is a theme
+demo nobody edited. That is the strongest must-have 4 evidence in this sweep and it was sitting
+beside two numbers that would have made a careless reader distrust it.
+
+**6. THE PRIVACY-POLICY ADDRESS ROUTE: I SPENT IT ZERO TIMES AND THE COUNT IS ZERO FROM ZERO — AND
+THAT IS A REAL DATA POINT, NOT AN OMISSION.** The brief asked me to spend it and record the count,
+and the honest answer is that **the rule never came up**, because the market did not produce its
+precondition. **Of the 15 businesses whose own page I read, 10 published a mailbox on that first
+page in plain characters** — Fresh Face, The Beauty Bay, MedRevive, Estar, Aluna, Moksha, Tiam,
+Angels, Artmedica, Defy. One more (beBold) published a masked one. The policy rule triggers on a
+*silent* homepage, and I met only **four** silent homepages (Juve, Glow AMC, Luxe, Capital Laser),
+**three of which failed a second must-have independently**, so spending a policy fetch on them would
+have bought a C row at best on a shared budget. The one where it would have been the right call is
+**Juve**, and I have named the URL above so the next person spends one fetch rather than a search
+plus a fetch. **The finding, which is about the geography line rather than the mechanism: this
+market is overwhelmingly EMAIL-FIRST** — 10 of 15 publishing in plain text on the first page read,
+the best rate in any market in the file that I can see — **which is exactly why the policy route had
+nothing to do.** The mechanism the file has
+confirmed five times says the rule's yield tracks how email-first a market is; an email-first market
+therefore produces a yield of *nothing needed*, not a yield of zero. **"Mountain West and South yes,
+coasts no" is dead, and this market shows why replacing it with any geography is a mistake: the
+predictor is publication habit, and here the habit made the rule redundant.**
+
+**7. THE MAIN-STREET QUERY SHAPE WORKS, AND THE BRIEF NAMED THE RIGHT STREETS.** One query on
+"Wisconsin Avenue Bethesda Row Old Georgetown Road Potomac Village" returned **Fresh Face Med Spa at
+8311 Wisconsin Avenue** — now an accepted B row with Jane, memberships and a loyalty programme —
+which the plain "Bethesda med spa" query had not surfaced. Three of my nine accepted rows sit on a
+named retail spine: **8311 Wisconsin Avenue** (Bethesda), **321 B Main Street, Kentlands**
+(Gaithersburg), **Cabin John Village** (Potomac). The equivalent for this county is **retail
+village + Main Street**, not downtown.
+
+**8. THE OUTER COUNTY IS EMPTY, AND I WOULD NOT SPEND ANOTHER QUERY ON IT.** A stacked query on
+**Germantown, Clarksburg, Kensington and Chevy Chase** returned **not one qualifying clinic domain
+in ten results** — four dermatology or cosmetic-surgery practices, a day spa, a skincare studio, a
+US News doctor directory and a **Medicaid provider directory PDF**. Wheaton returned nothing on any
+query. These are not under-searched; they are towns whose aesthetic demand is served from Bethesda,
+Rockville and Silver Spring. **Germantown, Clarksburg, Kensington, Wheaton and Chevy Chase proper:
+worked out, nothing to find.** Chevy Chase has exactly two aesthetic businesses with their own
+domains and both are above (Juve, no email; Capital Laser, disqualified).
+
+**9. THE FEHB / CAREFIRST / MEDICARE WARNING DID NOT FIRE ONCE IN THE WAY IT WAS EXPECTED TO — IT
+FIRED SIDEWAYS.** I read every menu specifically for scheme acronyms, per the NYSHIP case, in the
+most federal-employment-heavy metro in the country. **Not one clinic printed FEHB, CareFirst,
+Medicare or any federal-employee plan beside a service line — zero of 22.** What DID fail on
+must-have 2 was **Glow Aesthetics & Medical Center**, and it failed on a **Primary Care menu heading
+plus "If not covered by insurance" against lab pricing** — the same structural failure (a
+non-discretionary, third-party-reimbursed arm bolted to an aesthetics menu) arriving through a
+*service line* rather than a *scheme name*. **The expectation was right about the region and wrong
+about the tell.** In a government-professional market the reimbursed arm is a primary-care or
+hormone clinic, not a named insurance plan on a treatment list. Two clinics flagged **HSA/FSA
+acceptance** (Juve, Luxe) and that is the patient's own pre-tax money — **not** a must-have 2
+failure, and it is going to keep reading like one, so it is worth the sentence.
+
+**10. WHAT I RAN OUT OF: candidates, not budget.** 7 searches and 18 fetches against a shared pool
+of about 16 and 50. I stopped because the last two searches returned dermatology practices,
+directories and a Medicaid PDF rather than new independents — the county's independent aesthetic
+sector is roughly fifteen businesses deep and I opened most of it. **The cheapest remaining work in
+this market, in order:** (a) **ReNew You** and **The Medical Skin Clinic**, both Rockville MD, named
+by the Long Island misfire and never opened — one search each; (b) one fetch on
+**`https://juve.beauty/privacy-policy/`** for an address plus a founding year; (c) one fetch on
+**`https://www.alunaaesthetics.com/locations/bethesda-md`**, an SEO suburb page that per the 9 Nov
+rule carries the whole footer and bio, to try to release Aluna from C.
+
+---
+
+## 10 November 2026 — Chicago North Shore second pass (Burr Ridge, Deerfield, Northbrook)
+
+# Chicago North Shore and near-west affluent suburbs — second pass (10 Nov 2026)
+
+**Market as assigned:** Winnetka, Glencoe, Kenilworth, Wilmette, Highland Park, Northfield,
+Northbrook, Deerfield, Glenview, Evanston · Hinsdale, Clarendon Hills, Western Springs,
+La Grange, Oak Brook, Burr Ridge.
+
+**6 rows written** to `northshore.json` (0 A, 2 B, 4 C). Towns that produced a row:
+**Burr Ridge ×3** (Aesthoria, LAB Aesthetics, The Injection Vault), **Glenview** (Beauty with
+Bubbly), **Northbrook** (Renova Medspa), **Oakbrook Terrace serving Oak Brook** (Arabella).
+
+**Spent: 12 WebSearch, 27 WebFetch.** Every clinic name AND domain stem below was grepped against
+`outputs/pipeline/clinic-pipeline.csv` and `outputs/pipeline/near-misses.md` BEFORE any fetch. The
+grep stopped four wasted fetches outright (see "What the grep caught").
+
+---
+
+## FIRST, A CORRECTION TO MY OWN BRIEF, because it changes how this run should be read
+
+My commissioning brief said *"A Chicago pass on 8 Nov 2026 covered Lake Forest and some of the
+metro"* and that *"the towns above are where the unworked ground is."* **That is not what the file
+says.** The 8 Nov Chicago section states its market as assigned in its own first lines:
+
+> Winnetka, Wilmette, Glencoe, Kenilworth, Highland Park, Lake Forest, Northbrook, Glenview,
+> Evanston · Hinsdale, Oak Brook, Clarendon Hills, Western Springs, La Grange, Naperville,
+> Wheaton, Geneva.
+
+**That is thirteen of my sixteen assigned towns, not "Lake Forest and some of the metro."** It
+spent 16 searches and 46 fetches on them and produced pipeline rows 1046-1061. Only **three** towns
+on my list were genuinely outside it: **Deerfield, Northfield and Burr Ridge** — and Northfield had
+in fact been reached incidentally (Trio Med Spa is a Northfield near-miss in that file).
+
+So the real unworked ground was: **Burr Ridge** (where 3 of my 6 rows came from), **Deerfield**,
+and the four towns the 8 Nov worker itself flagged as unfinished — **Northbrook and Glencoe**
+("produced no independent of their own … worth one query each") and **Clarendon Hills and Western
+Springs** ("produced nothing at all"). I worked those, plus Evanston, which was in the 8 Nov market
+but yielded zero sendable rows. That is why this run's yield is six and not sixty: it is a
+second pass over largely-swept ground, by design once the file is read, and it should be judged
+against that rather than against a fresh metro.
+
+---
+
+## Cleared the ICP, publish no readable address
+
+### No address published at all — and no browser recovers these
+
+| Clinic | Where | Why it matters | What was read |
+|---|---|---|---|
+| **MedAndSpa** | **320 Burr Ridge Pkwy, Burr Ridge, IL 60527** — one site | **The best clinic I found in this market and it is unreachable by email.** Monika and Agnes, both Medical & Licensed Estheticians, named outright as having **"jointly open MedAndSpa in 2017"** — a stated founding year, which is the strongest must-have 4 evidence anywhere in this run and nine years of trading. Katrina is named as Aesthetic Nurse Master Injector. **Mangomint** (booking.mangomint.com/655027), on the grade-A platform list. Dormant structure is outstanding: **"VIP Saving Accounts"** (a banked-credit membership), the **Allē** and **ASPIRE** manufacturer reward programmes, a **Refer-A-Friend** programme, gift cards, a newsletter, and a quiz-plus-special lead magnet. Deep injectables menu. Must-haves 1, 2, 3 and 4 all clear. Would have been this run's only grade A. | **Two fetches: the team page and the combined TOS/privacy policy at `https://medandspa.com/terms-service-privacy-policy/`. NO email address on either, in visible text, in a `mailto:`, in a meta tag or anywhere else.** The policy **nominates no email route at all** — its only contact mechanism is `tel:630-635-6661`. Policy body last modified 2022-12-04 against a 2026 footer copyright, so it is unread boilerplate. Not Cloudflare, not CleanTalk, not client-side rendering, not an interstitial: **total silence**, which no browser fixes. Phone or direct message only. Medical Director **Robert Paresi, MD** is a double board-certified plastic surgeon, but the menu carries nothing surgical, so per "a label is not a finding" this is a credential and **not** the plastic-surgery disqualification. |
+| **Melamed Weight & Wellness** | **707 Lake Cook Rd # 295, Deerfield, IL 60015** — one site | **Deerfield's find, and Deerfield was genuinely unworked ground.** **Dr. Julia Melamed**, named as **"the founder of Melamed Weight & Wellness"**, triple board-certified in internal and metabolic medicine, "over 20 years". **"4.9 Stars from 113 Reviews"** — a rating WITH a count, so must-have 4 passes on evidence and on substance. **Boulevard** (blvd.app/@melamedweightandwellness/login), on the grade-A platform list. A Memberships page and payment plans. Injectables lead the menu (neuromodulators, fillers, collagen stimulators, fat-dissolving, threads). | **Two fetches: homepage and `https://melamedwellness.com/privacy-policy/`. No email on either.** This is **fetch-failure mode seven**: the policy nominates an email route and then omits the address — *"For any questions or concerns regarding your privacy, you may contact us using the following details:"* followed by the postal address and nothing else. **No browser recovers mode seven**, so this belongs here rather than on the browser-visit list. Policy effective and last updated 24 June 2025, metadata modified 2025-11-05 — and note for the record that **a recent-ish date again did not clear a policy of this fault**, which is the 9 Nov correction reproduced. Two must-have 2 caveats if she is ever reached by phone: a **Hormone Health / bioidentical hormone therapy** and functional-wellness arm sits beside the aesthetics (the Laccura question from 8 Nov, unresolved here too), and **"Laser Vein Treatment"** sits inside the Laser & Light device block with no venous-disease, insurance or Medicare language anywhere on the site — which per the 8 Nov settlement **passes**. |
+
+### Renders client-side · robots-refused · Cloudflare · CleanTalk
+
+| Clinic | Where | What happened |
+|---|---|---|
+| **Dermaluxe Aesthetics** (`dermaluxeaesthetics.com`) | Base town UNKNOWN. Runs an `about-us/areas-served/<town>/` page set covering at least **Evanston** and **Glencoe**, both in market. | One fetch to `https://www.dermaluxeaesthetics.com/about-us/areas-served/evanston/` was **refused: `robots_disallowed`**, and nothing of the page was retrieved. **A person opening it in a browser sees it normally**, so this is a browser-visit candidate — and a cheap one, because the 9 Nov rule says a single `areas-served` page carries the full site footer, so one human page-load would give the mailbox, the menu, the owner and the site count at once. **Zero business facts are known about it, so it is unscreened rather than near-missed** — it may be out of market, a chain, or the best clinic in Evanston. Worth noting this is **the first robots refusal recorded in affluent Chicago**; the 8 Nov sweep had zero in 46 fetches. Its page set also crowded two of my queries, so **block `dermaluxeaesthetics.com/about-us/areas-served/` in the query and read any single one you land on.** |
+
+**No Cloudflare-obfuscated and no CleanTalk-masked address was met in 27 fetches, and no challenge
+interstitial.** Nothing in this run offered a decode, so nothing was refused. The one clinic on the
+8 Nov Chicago browser list for Cloudflare (**Dermatique**, Geneva) and the two there for
+client-side rendering (**La BeauTe**, Lake Forest; **Blue Seas**, Naperville + Glen Ellyn) were
+**deliberately not re-fetched**, as instructed.
+
+---
+
+## Ruled out, with the failing must-have by number
+
+### Disqualified — franchise / chain / 5+ sites (must-have 3)
+
+- **Skinovatio Medical Spa** (`skinovatio.com`) — **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3.**
+  Surfaced twice, on a Deerfield query and as a Nextdoor listing for **Western Springs**, which made
+  it look like Western Springs' only independent. It is not independent: **Aleksandra Waibel, CEO and
+  Founder, "Founded in 2015"**, and the About page says she **"transitioned it into a franchise" in
+  2018**. Six location pages in the navigation — **Arlington Heights, Houston TX, Lincoln Park,
+  Parma OH, Ravenswood Manor, South Loop** — plus four more in the contact form's location dropdown
+  (**Barrington, Burr Ridge, Canton MI, Gold Coast**), and the page says it is growing "across the
+  United States". That is a franchise well past five sites, so head office decides marketing. It
+  publishes **no email address** either. **Add `skinovatio.com` to `blocked_domains`** — it took a
+  slot on two of my Illinois queries. No Western Springs site appears in its own navigation, so
+  Western Springs remains empty.
+- **VIO Med Spa Deerfield** / `viomedspa.com` — **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3.**
+  National franchise; already recorded in this file from an earlier market. Surfaced on both my
+  Deerfield and my Western Springs queries. Not opened.
+- **Reclaim MedSpa** (`reclaimmedspa.com`) — **Libertyville, IL**, which is Lake County and **out of
+  market**; it surfaced only because it runs an `about/areas-we-serve/<town>` page set that includes
+  Northbrook and Deerfield. One fetch to `/about`. **Fails must-have 5 as well: no email anywhere, no
+  street address, no phone, no owner named, no treatment menu, no founding year, no copyright.** The
+  page's own locality line is unfinished copy — *"Located in Libertyville and probably serving
+  Chicago Northwest suburbs!"* It also says the practice has "a board-certified facial plastic
+  surgeon" without naming one, which points at must-have 1 as well. **Block
+  `reclaimmedspa.com/about/areas-we-serve/`** — it took three of ten slots on one query.
+
+### Ruled out on must-have 2 (cash-pay) AND must-have 1 — two failures, so not parked as C
+
+- **Qua Wellness and Med Spa** (`quawellness.com`) — **430 Village Center Drive, Burr Ridge, IL
+  60527**, one site. It publishes a real address: **`info@quawellness.com`**, in visible footer text
+  AND as a `mailto:`, read on `https://www.quawellness.com/` on 2026-11-10. **Dr. Maha Abboud, MD**
+  is named as **"Founder · Endocrinology · Internal Medicine · Obesity Medicine"**, "Illinois license
+  since 1991". Phone (630) 561-0590. **FAILS MUST-HAVE 2** on the cheapest evidence there is — its
+  own FAQ asks *"Do I need a referral or insurance?"* and answers *"No referral,"* then adds
+  **"Ask the front desk about insurance for medical visits."** That is an insurance-billed revenue
+  stream admitting itself on the page. The reimbursable-indication count is far past the
+  four-indication threshold besides: thyroid disease, Hashimoto's, PCOS, insulin resistance,
+  osteoporosis, men's health/testosterone, sermorelin, plus a neuromodulator for excessive sweating
+  and one for TMJ. **ALSO FAILS MUST-HAVE 1**: this is a triple-board-certified endocrinologist's
+  medical weight-loss and hormone practice with an aesthetics arm — injectables are one of eight menu
+  blocks, not the lead. Two must-haves down, so it is ruled out rather than parked at C. **Worth
+  recording for a different reason:** its address, 430 Village Center Drive, is the same Burr Ridge
+  plaza the 8 Nov ClinicCompass index gave for the unresolved name **"The Aesthetic Solution —
+  Village Center, Burr Ridge IL"**. I could not establish whether one is a rebrand of the other, and
+  I am not guessing; a search for "The Aesthetic Solution" returned only MedAndSpa, The Injection
+  Vault and LAB Aesthetics, so **that name may simply no longer trade.** Treat it as closed unless
+  somebody finds a domain for it.
+- **Lifelong Health** (`lifelong-health.org`) — Clarendon Hills **and** Burr Ridge. Titled "Concierge
+  & Integrative Medicine". **Fails must-have 1** on the search snippet (a medicine practice, not an
+  aesthetics clinic) and almost certainly **must-have 2**. Not opened; no fetch spent.
+- **Cordial Medical Spa** (`cordialmedicalspa.com`) — **333 E. Illinois Route 83, Suite 105,
+  Mundelein, IL 60060**, one site, **out of market** (Lake County). Publishes
+  **`doctor@cordialmedicalspa.com`** in visible footer text AND as a `mailto:`, read 2026-11-10 on
+  the homepage; phone (847) 990-0510. Recording the address so nobody re-fetches it. It would fail
+  anyway: the footer says *"For medical services please visit"* **Cordial Medical Center**
+  (`cordialmed.com`) — a sibling medical practice, which is the 9 Nov footer-nav tell, and here the
+  sibling is a *medical* practice rather than a salon, so must-have 2 is in doubt. The menu carries
+  **"Facial & Legs Spider Veins"** (leg veins, so the venous-disease side of the 4 Nov narrowing),
+  **EVEXIAS hormone pellet therapy / BHRT**, and **LamProbe for "skin tags and skin imperfections"**
+  (cosmetic benign-lesion removal, which per the 8 Nov rule passes). **Fails must-have 2.**
+
+### Out of market — surfaced on in-market queries, do NOT count as coverage
+
+Each of these came back on a query naming only in-market towns. Recording the addresses because the
+9 Nov rule is that an entry claiming a published address must print it.
+
+- **Aesthetics Care Med Spa** (`aestheticscaremedspa.com`) — **5450 W Hillsboro Blvd Suite #8,
+  Coconut Creek, FL 33073.** Returned by a *Glencoe / Northfield / Hubbard Woods / Western Springs*
+  query. **Publishes no email at all** (contact form only), no owner named, no founding year, 2026
+  copyright, Vagaro booking. One fetch spent proving it is in Florida — the postal-address check
+  earning its keep for the third time in this run.
+- **Skin Clinix** (`skinclinix.com`) — **134 Marble Avenue, Pleasantville, NY 10570**, one site.
+  Returned by a *Green Bay Road / Sheridan Road / Wilmette / Kenilworth / Glencoe* query. Publishes
+  **`gina@skinclinix.com`** in visible text and as a `mailto:`, read 2026-11-10 on
+  `https://skinclinix.com/about-us/`. **Gina Vignogna Khan**, master injector; Medical Director Anne
+  West, FNP, L.Ac.; MyAestheticRecord booking (`aioqz.myaestheticrecord.com`); clean non-surgical
+  injectables menu; "over seven years" in aesthetics, 18-year nursing career; © 2024. **This is
+  WESTCHESTER COUNTY, which was swept on 9 Nov 2026** — it is not in `near-misses.md` or the
+  pipeline under either its name or its domain stem, so **it looks like a clinic that sweep missed,
+  and it is a sendable-looking row somebody else's market owns.** Flagging it rather than taking it.
+- **Skinlab Injectables** (`skinlabinjectables.com`) — **6424 N. Western Ave (Nichols Hills / OKC)
+  and 227 W. Main St #100 (Norman)**, Oklahoma; three location labels, two distinct addresses.
+  Returned by the same Wilmette/Glencoe query. Publishes **`info@skinlabinjectables.com`** as a
+  `mailto:` in the footer (not as visible text), read 2026-11-10 on `/our-team/`. **Sarah Noble, RN,
+  MSN (Owner)**; Dr Vytautas Ringus MD, Medical Director; Boulevard booking; gift cards; © 2026, no
+  founding year or review count. Oklahoma, so out of market — but a clean-looking two-site row for
+  whoever sweeps Oklahoma next.
+- **The Wellspring Medspa** (`wellspringmedicalspa.com`) — **735 N Galena Ave, Suite 110, Dixon, IL
+  61021**, one site. Illinois but Lee County, two hours west of Chicago, so out of market. **No email
+  anywhere** on the membership page. Worth recording for the structure alone, because it is the best
+  banked-credit scheme I saw in Illinois: **"Wellspring Loyalty VIP"** with Gold / Platinum /
+  Platinum Plus / Red Light / Double Platinum tiers, where the monthly payment is **credited to an
+  account** and *"if a treatment costs more than your balance, we will simply apply your banked
+  amount and you pay the difference"*; six-month minimum, freezable for six months, and *"No refunds,
+  credits, or cash given for 'unused memberships'"*. Booking resolves to
+  `book.mypatientnow.com/practice/dy8l8x` — **MyPatientNow**. Phone (815) 454-5444. No owner named,
+  no founding year, © 2026.
+- **Essence Medspa** (`essence-medspa.com`) — **6413 N Kinzua Ave, Chicago, IL 60646** (Edgebrook,
+  city of Chicago, not a North Shore suburb). Publishes **`keepcalm@essence-medspa.com`** in visible
+  text and as a `mailto:`, read 2026-11-10 on the homepage; phone (773) 763-1212. Vagaro
+  (`vagaro.com/essencemedspaandwellnesscenter`). No owner named ("physician-directed care"), **no
+  review count — a bare "4.9" rating, which is not a quantified artifact** — and no founding year or
+  copyright, so it would park on must-have 4 anyway. Menu runs injectables plus Swedish massage,
+  body scrub and a brow-and-lash bar, which weakens must-have 1. Free consultation offered. Recorded
+  in full so a Chicago-city run gets it for nothing.
+- **Viva La MedSpa** (`vivalamedspa.com`) — **1657 N Wells St, Chicago, IL 60614 (Old Town)** and
+  **1450 Busch Pkwy, Ste 107A, Buffalo Grove, IL 60089**. Two sites, neither in market. Publishes
+  **`info@vivalamedspa.com`** in visible text, as a `mailto:` AND in the meta description, read
+  2026-11-10 on `/contact-us/`. No owner named, **© 2021** (a five-year-old bare copyright, which
+  satisfies the three-year rule but reads as an unmaintained site). Memberships and financing pages
+  exist; no booking platform named. Nav carries "HSA & FSA", which is tax-advantaged patient money
+  rather than insurance claims, so it does not fail must-have 2 on its own.
+- **The Aesthetics Collective** (`theaestheticscollective.co`) — Lincolnshire + Chicago. Out of
+  market (Lincolnshire is Lake County). Not opened. The name is also the practitioner-collective
+  warning shape, so whoever opens it should check for separate practitioner brands and booking links.
+- **Elevate Aesthetics & Wellness** (`elevateaw.com`), **Skinfluencers Medspa**
+  (`skinfluencersmedspa.com`), **Aesthetic Centre** (`aestheticcentre.org`), **Aesthetics Medical
+  Spa** (`aestheticsmedicalspa.com`), **Rejuvenate Wellness** (`rejuvenatewellness.life`) — all
+  surfaced on in-market queries with **no town confirmed in the snippet**. Not opened, not screened.
+  One `allowed_domains` batch search over five of these returned nothing that named a town, so they
+  cost one call between them rather than five.
+- **Pinch Concierge Med Spa** (`bookpinch.com`) — a mobile/concierge injector network booking
+  individual providers, surfaced on an Evanston query. Not a single-site clinic; not opened.
+- **Northshore MedSpa** (`northshore-medspa.com`) — trades as "NorthShore MedSpa Aesthetics & **Star
+  Facial Plastic Surgery**". **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1** as a plastic-surgery
+  practice, on its own trading name. Not opened.
+- **North Shore Aesthetics** (`northshoreplasticsurgeon.com`, Chicago + Northbrook) and **MAE
+  Plastic Surgery** (`maeplasticsurgery.com`) — **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 1**,
+  plastic surgery. Not opened.
+- **Lux Med Spa** (`theluxmedspa.com`) — **Northfield and Owatonna, MINNESOTA**, returned top-five by
+  a query naming Northfield, Illinois. **Add Northfield to the same-name town list** beside Victoria,
+  Vaughan, Beverley, Prestbury, Madera/Corte Madera and Rockville Centre: there is a Northfield in
+  Minnesota and it outranks the Illinois one. The 8 Nov file's only other Northfield result was a
+  *Southern Minnesota* news story about "Northfield's 1st MedSpa", which is the same trap from the
+  other direction.
+- **DeKa Lash Western Springs** (`dekalash.com`) — lash-extension franchise. **Fails must-have 1 and
+  must-have 3.** Not opened.
+
+### Directory and vendor pages — one burned a fetch, and it is the second time for this domain
+
+- **Portrait Care "Glencoe directory"** (`portraitcare.com/directory/united-states/illinois/glencoe/`)
+  — **ONE FETCH SPENT, AND IT IS A VENDOR LOGO WALL, NOT A DIRECTORY.** The search snippet read
+  "Best Med Spas & Aesthetic Providers in Glencoe, IL", which is exactly a directory index's
+  signature. The page actually contains Portrait's own product pitch (supplies marketplace, practice
+  software, AI patient campaigns), **three member-practice testimonials** — Arabella Boutique Med Spa
+  (Oakbrook Terrace IL), Revitalessence Medical Office (Salinas CA), Dermistry Aesthetics (Sunnyvale
+  CA) — and **eleven supplier logos** (Allergan, Galderma, Revance, Evolus, Prollenium, Alastin,
+  CosmoFrance, McKesson, Medline, Hugel, ZO). **No Glencoe business is listed at all.** This is the
+  **second time `portraitcare.com` has burned a fetch** on the exact same hazard — the brief's 3 Nov
+  entry records a `portraitcare.com/.../sapulpa/` URL doing it. **It should be added to
+  `blocked_domains` outright rather than warned about a third time.** The one thing it did yield was
+  the name **Arabella Boutique Med Spa**, which one further search resolved to a domain and which is
+  now an accepted row — so the fetch was not a total loss, but it was a loss on its own terms.
+- **`medspanear.me`**, **`medspascout.com`**, **`whelth.com`**, **`glp1clinics.org`**,
+  **`nobsmedspareviews.com`**, **`atly.com`**, **`wheree.com`**, **`local.yahoo.com`**,
+  **`nextdoor.com`**, **`mindbodyonline.com/explore`**, **`zoominfo.com`** — directory and
+  aggregator farms that took slots on these queries. `atly.com` is already in the brief's block list;
+  **the other ten are not and should be.** `glp1clinics.org` was the only one that paid anything: its
+  snippet is where the name "The Injection Vault Med Spa & Aesthetics, Burr Ridge" first appeared.
+
+---
+
+## What the grep caught, before any fetch
+
+Four names greps resolved for free, each of which looked like a live in-market lead:
+
+- **`theinjectionnurse.com`** → **pipeline row 676**, The Injection Nurse Skin Clinic, **Winnipeg,
+  Manitoba**. Surfaced on a Green Bay Road / Wilmette query.
+- **`injectwellness.com`** → already in this file as **Montrose, Colorado**. Surfaced on *two* of my
+  queries, as it has on several previous sweeps — it is becoming the single most-refound
+  out-of-market domain in the file and arguably belongs in `blocked_domains` for that reason alone.
+- **`urbanmedical.com`** → **pipeline row 1002**, URBAN Medical, **Gilbert, AZ**.
+- **`refinebytulsi.com`** → **pipeline row 186**, Refine by Tulsi, Chicago (Lincoln Park + Logan
+  Square), ranking for an Evanston query via a `/med-spa-in-evanston-illinois/` SEO page.
+
+And three greps that **correctly did NOT fire** — name collisions that a looser match would have
+dropped as duplicates:
+
+- **`melamedwellness.com`** (Deerfield IL) is not row 902 **Mela Med Spa** (Pensacola FL).
+- **`labaesthetics.com`** (Burr Ridge IL) is neither row 483 **The LAB Aesthetics & Wellness**
+  (Spokane Valley WA) nor row 1144 **G Lab Aesthetics** (Westfield NJ).
+- **`skinovatio.com`** (franchise) is not **Skinovation Cosmetic Clinic** (Townsville, Queensland).
+- **`elevateaw.com`** is not row 224 **Elevate Aesthetics** (`elevatetpa.com`, Tampa FL).
+
+---
+
+## Town-by-town disposition, so nobody re-queries this ground
+
+| Town | Status after this run |
+|---|---|
+| **Burr Ridge** | **The find of the run — genuinely new, and the densest in-market town.** Five businesses opened, four are real independents: Aesthoria (B), LAB Aesthetics (C), The Injection Vault (C), MedAndSpa (near-miss, no email). Qua Wellness ruled out. "The Aesthetic Solution" and "Cheung Aesthetics (Willowbrook)" remain from the 8 Nov ClinicCompass list; the first may not trade any more, the second is in Willowbrook and off-brief. **Worked out.** |
+| **Deerfield** | **Genuinely new.** Melamed Weight & Wellness is Deerfield's independent and is unreachable by email (mode seven). Everything else returned was a franchise, an SEO page or out of market. **Thin but worked.** |
+| **Northbrook** | **Renova Medspa found — this corrects the 8 Nov note that Northbrook "produced no independent of their own".** One more query with a shopping-street name might find a second; I would not bet on it. |
+| **Oak Brook / Oakbrook Terrace** | Arabella added to the 8 Nov pass's TRUE and Oakbrook Advanced. **Worked out.** |
+| **Glenview** | Beauty with Bubbly added to the 8 Nov pass's Halo (row 1046, grade A). **Worked out.** |
+| **Northfield** | Trio Med Spa (8 Nov, no email) is the only independent. **Beware the Minnesota same-name trap** — it dominates the results. Effectively closed. |
+| **Evanston** | **THREE queries across two sweeps have now failed to surface a single independent injectables clinic with its own domain in Evanston** — a town of 78,000. What is actually there: LaserAway (chain), Suburban Eye Clinics' medspa page (optometry), Elite Chicago Spa (relaxation), Dawn Skin Studio (no injectables), and `areas-served/evanston` SEO pages belonging to clinics based elsewhere. **My read: Evanston is structurally served from outside rather than thin by accident** — it is a dense, younger, university town between two wealthy strips, and the independents sit in Wilmette, Glenview and Highland Park and buy its search traffic. Do not spend a fourth query on it. The one unexplored route is Dermaluxe's robots-refused Evanston page, which needs a browser. |
+| **Glencoe** | **Nothing. Three queries, one directory fetch, zero independents.** Appears only as other clinics' service area and as a Dermaluxe `areas-served` page. The Portrait Care "Glencoe" page is a logo wall. 2,500 households, no commercial strip to speak of — **I would take Glencoe off the target list**, on the Medina/Clyde Hill precedent from 8 Nov. |
+| **Clarendon Hills** | **Nothing but Lifelong Health (concierge/integrative medicine, fails must-have 1) and a MindBody "body treatments near 60514" aggregator page.** Two queries. **Take it off the list.** |
+| **Western Springs** | **Nothing.** The two things that surfaced were a lash franchise and Skinovatio's *franchise* listing, which has no Western Springs site in its own navigation. Two queries. **Take it off the list.** |
+| **Winnetka, Wilmette, Kenilworth, Highland Park, Lake Forest, Hinsdale, La Grange** | **Already worked on 8 Nov and I deliberately did not re-fetch them.** The outstanding items there belong to that file, not this one: Face Forward (Winnetka/Wilmette, no mailbox, phone only, the best profile in the market), Carla Thomas (La Grange, deliberate decision not to publish a mailbox), Laccura (Highland Park, no mailbox), La BeauTe (Lake Forest, browser), Dermatique (Geneva, browser/Cloudflare), Blue Seas (Naperville + Glen Ellyn, browser). |
+
+---
+
+## What this market taught me, and which conventions it moved
+
+**1. Must-have 4 on EVIDENCE is the binding constraint, confirmed for a FIFTH time and in the same
+shape.** **Four of my six rows are C, and all four are C on must-have 4 alone** — nothing else
+failed them. Of the nine in-market businesses I read in full, **only two published a dated or
+quantified artifact about the business**: Melamed's "113 Reviews" and MedAndSpa's "jointly open
+MedAndSpa in 2017" — and *both of those are near-misses with no email.* **The two strongest trading
+histories in the market belong to the two clinics we cannot reach.** Britain, Fairfield County,
+Long Island, northern New Jersey and now the Chicago suburbs: five markets, one shape. I carried the
+expectation in rather than discovering it, and that was the right thing to carry — it meant I parked
+the four without padding any of them and without spending a second fetch hunting for a review count
+that is not there.
+
+**2. The copyright-year rung did almost all the parking, and that is worth noticing.** Of my four C
+rows, three were parked by a **bare current-or-recent-year copyright**: © 2026 (Aesthoria, Arabella),
+© 2025 (LAB), and Renova has **no copyright year at all**. Not one of the four publishes a review
+count. So in this market the ladder is not sorting clinics by trading history at all — it is sorting
+them by **whether anyone bothered to print a number on the page**, which is the open question the
+ICP already flags. I am not proposing a change; I am adding the fifth measurement to it.
+
+**3. A new-ish wrinkle on must-have 4, offered because I had to decide it twice in one run and
+reached opposite answers.** Aesthoria and The Injection Vault are near-identical on the ladder — both
+publish only a practitioner's career length, both on Moxie, both single-site, both with a founder
+named. I graded Aesthoria **B** and The Injection Vault **C**, and the only thing separating them is
+that **The Injection Vault ships unreplaced builder placeholder text in two of its three
+testimonials** ("Maybe you want to launch a business"). **Proposed rung, in the spirit of the "broken
+widget" rung from New Jersey but pointing the other way: unreplaced template placeholder copy in the
+social-proof slot is positive evidence of a RECENT LAUNCH, and it should beat the career-length
+rung.** New Jersey's lesson was *do not let a broken number beat a readable page*; this is the
+converse — *do not let a career length stand in for a trading history when the page itself is still
+wearing its factory settings.* If that is wrong, the fix is to promote Injection Vault to B, and the
+row says so.
+
+**4. Platform concentration in Burr Ridge is MOXIE, which is a different answer from eleven miles
+away, and that is the per-market rule holding.** The 8 Nov sweep of the same metro counted
+**Aesthetic Record ×6** as the clear leader across the North Shore and western suburbs, with Moxie
+appearing exactly once (Face Forward was Mangomint). In the four Burr Ridge-area independents I
+opened, **Moxie appears three times** — Aesthoria, The Injection Vault and Renova (Northbrook) — with
+Zenoti once (LAB) and Mangomint once (MedAndSpa), and **no Aesthetic Record at all.** Two readings,
+and I think the second is right: either the two samples are too small, or **Moxie is the platform the
+newest cohort of single-nurse clinics is launching on**, which fits — it is a turnkey
+med-spa-in-a-box, and all three Moxie clinics are also the three with no trading-history evidence.
+**If that is right, seeing Moxie is a weak NEGATIVE signal on must-have 4 even though it is a
+positive signal on "a queryable patient list exists".** Worth watching rather than acting on.
+Platform concentration being a per-market fact is confirmed again; I would add that it may be a
+per-*cohort* fact inside a market.
+
+**5. THE MAIN-STREET QUERY SHAPE FAILED, AND MY BRIEF ASSERTED IT WOULD WORK.** I was told
+*"the main-street query shape works in affluent suburbs: here that means Green Bay Road, Central
+Street Evanston, Sheridan Road, Hubbard Woods, First Street Highland Park, Hinsdale Village, Oak
+Brook Center."* I spent two queries on it. `Green Bay Road Sheridan Road Wilmette Kenilworth Glencoe
+skin clinic injectables nurse founder` returned **zero in-market clinics** — it returned a
+Pleasantville NY clinic, an Oklahoma City clinic, a Wisconsin hospital group, a Grand Junction CO
+clinic and a Greenwich CT dermatology practice. `Central Street Evanston Dempster Davis Street`
+returned two job boards, a CVS MinuteClinic and three `areas-served` SEO pages. **And this is not
+new information: the 8 Nov Chicago sweep already recorded that the district-association and
+main-street technique "did not work" on the North Shore and that "no business-improvement-district or
+main-street association index surfaced at all."** So the brief asserted as a live technique something
+the file had already measured as failing in this exact market. **The North Shore's shopping streets
+have strong social identities and no indexed trade presence** — Tulsa's Brookside result does not
+transfer here, and the 8 Nov note that the neighbourhood technique "works on names locals trade
+under, not on names estate agents use" is the right diagnosis: North Shore clinics address
+themselves by *town*, not by street.
+
+**What DID work, for the third sweep running:** **four unquoted town names plus two modifiers, with
+"owner" or "founder" as one of them.** Five of my seven discovery queries in that shape returned real
+clinic domains, and `Glencoe Western Springs Clarendon Hills Burr Ridge aesthetics injectables clinic
+owner founder` alone produced three of my six rows.
+
+**6. The privacy-policy address rule went ONE FROM THREE here, and the one it found was the only
+mailbox that clinic publishes anywhere.** Renova Medspa publishes `info@renovamedspail.com` on its
+privacy policy and nowhere else — without that fetch, Northbrook has no independent in our files at
+all. The two misses were MedAndSpa (policy nominates **no** route, phone only, body last modified
+2022) and Melamed (**mode seven** — nominates an email route and omits the address). **Combined with
+8 Nov's two-from-four, Illinois now stands at 3 of 7, which is almost exactly the one-in-three the
+brief budgets for the Mountain West.** The mechanism held in all three misses, for the sixth
+consecutive confirmation: a phone number or a postal address satisfied the data-request duty. **And
+the geography line failed again, in the clinic's favour this time** — a Midwest industrial-suburb
+market publishing at Arizona rates. I agree with the brief that geography should be dropped as a
+predictor and the rule spent unconditionally; here it bought a row for one fetch.
+
+**7. The privacy-policy PROCESSOR-LIST technique paid nothing in three attempts, which is worth
+recording against the 8 Nov claim.** The 8 Nov sweep promoted it on one spectacular instance (DK
+Aesthetics naming seven processors including Resend and Google Sheets). I read three Illinois
+policies on this pass and **none of them named a single processor the marketing pages had not already
+given me.** MedAndSpa's listed only the vendors already visible in its own footer; Renova's names
+none at all, referring only to unnamed "third-party payment processors"; Melamed's names none. **It
+is a free look because you are reading the page anyway, so keep doing it — but it is a lottery, not a
+technique, and one DK Aesthetics does not make it a rule.**
+
+**8. The dermatology label test did NOT fire once in this market, which is itself a measurement.**
+The 9 Nov Westchester finding was that the word is a hiring credential in a wealthy suburb and the
+test cleared five of five clinics. In nine businesses read here, **not one used the word
+"dermatology" about itself.** What this market does instead is the *plastic-surgery* version:
+**MedAndSpa's medical director is a double board-certified plastic surgeon**, and I cleared it on
+substance (no surgical line on the menu, nothing insurance-billed) exactly as the label rule
+requires. The 8 Nov sweep ruled out nine dermatology and plastic-surgery practices by name in the
+same metro, so the specialty density is real — it just sits in *separate businesses* here rather than
+inside med spas' copy. **The operational version for this metro: screen the specialty of the
+business before its scale, and screen the medical director's specialty against the MENU rather than
+against his credentials.**
+
+**9. Two look-alikes and one near-trap worth adding to the running lists.**
+The look-alike that almost cost a row is the **gmail-on-own-site** case: Arabella publishes
+`arabellaboutiquemedspa@gmail.com` as a `mailto:` on its own contact page. That is the third and
+fourth Illinois instance after Radiant A and Oakbrook Advanced on 8 Nov, and **the 8 Nov worker's
+suggestion that this case be named explicitly in the ICP's seven-item list still has not been
+actioned.** It passes both of the ruling's tests — published on their own site, received by them —
+and it should stop being re-argued each sweep. The near-trap is **Beauty with Bubbly's Open Graph
+description saying "Northfield, IL" over a postal address that says Glenview** — the second instance
+of the meta-versus-postal mismatch in this metro after Mandala Aesthetics, inside one state both
+times. And the new same-name town is **Northfield**, which has a Minnesota twin that outranks the
+Illinois one.
+
+**10. One thing the brief got exactly right and I want on the record:** *"an individual suburb or
+`areas-served` SEO page carries the full site footer — block the page sets from crowding a query, read
+any single one you land on."* Both halves fired. Reclaim MedSpa's and Dermaluxe's page sets took five
+query slots between them, and the one `areas-served` page I tried to read was the only route to an
+otherwise invisible clinic. It failed on `robots_disallowed` rather than on the technique, which is
+why Dermaluxe is on the browser list rather than in the bin.
+
+---
+
+## Browser-visit candidates from this run
+
+Only one, and it is cheap:
+
+- **Dermaluxe Aesthetics** — `https://www.dermaluxeaesthetics.com/about-us/areas-served/evanston/`
+  (or the Glencoe equivalent). **`robots_disallowed`**, so a fetch is refused and a person's browser
+  sees it normally. One page-load would give the mailbox, the treatment menu, the owner, the base
+  town and the site count at once, because an `areas-served` page carries the whole site footer.
+  **It is the only untried route into Evanston**, which three queries have otherwise failed to open.
+  Nothing is known about this business yet — it is unscreened, not near-missed.
+
+**Nothing else from this run needs a browser.** The two best clinics in the market (MedAndSpa,
+Melamed) are **silence** and **mode seven** respectively, and no browser recovers either; they are
+phone or direct-message prospects. The three Chicago-area browser candidates already on the list from
+8 Nov — Dermatique (Cloudflare), La BeauTe (client-side), Blue Seas (client-side) — were deliberately
+not re-fetched, as instructed, and remain the highest-value items in this metro.

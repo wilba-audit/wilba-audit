@@ -311,6 +311,16 @@ strongest — and those are the clinics most likely to be worth writing to.
 
 **So the operational line: in a wealthy market, treat the word "dermatology" as evidence ABOUT
 STAFF until an insurance line, a surgical menu or a named diagnostic service says otherwise.**
+
+**AND ON 10 Nov 2026 THE TEST FAILED A CLINIC FOR THE FIRST TIME IN THIS SERIES, WHICH IS THE BEST
+THING THAT COULD HAVE HAPPENED TO IT.** After clearing the clinic five times out of five in
+Westchester and twice more in the recovery pass, the label test was starting to look like a rule
+that only ever says yes — and a test that always returns the same answer is not a test. In Chevy
+Chase it failed one: a self-described "board-certified dermatology practice" with three physicians
+and **"Skin Cancer" listed as a treated concern**. **That is the rule working, not breaking.** The
+rule never said "dermatology does not disqualify"; it said *read the menu*, and here the menu
+disqualified the clinic. The mirror fired in the same market and cleared a clinic whose medical
+director's title reads "Surgeon" with no surgical line anywhere on the site.
 Read the treatment menu and the billing language; the noun on its own tells you nothing about
 either. Fifth market this shape has been caught in, and the first where it was the dominant
 error rather than an edge case.
@@ -420,7 +430,28 @@ the page you were already reading.** This is the same ruling as NYSHIP on an Ame
 the Canadian private-extended-health failure, in the third market — so read it as the general
 shape: **a named claiming system, scheme or terminal beside a service line is a reimbursed revenue
 stream admitting itself.** Watch for it especially on AU dental, physiotherapy and podiatry arms,
-which almost all say it. One Long Island clinic prints
+which almost all say it.
+
+**AND THE OPPOSITE WARNING, ADDED 10 Nov 2026 BECAUSE IT WILL KEEP READING LIKE A FAILURE AND IS
+NOT ONE: HSA AND FSA ACCEPTANCE IS NOT A MUST-HAVE 2 FAILURE.** A Health Savings or Flexible
+Spending Account is **the patient's own money**, set aside pre-tax and spent at their discretion.
+A clinic accepting it has no third-party payer and no non-discretionary revenue stream — it is
+cash-pay with a tax wrapper. Two Montgomery County clinics advertise it and both pass. The word
+"insurance" does not appear and must not be inferred.
+
+**The test that separates these cleanly: does a third party decide whether the treatment is paid
+for?** HICAPS, NYSHIP, a named health fund, Medicare, "we bill your insurer" — yes, so must-have 2
+fails. HSA, FSA, CareCredit, Afterpay, a payment plan — no, the patient decides and merely pays
+differently, so it passes.
+
+**AND IN A GOVERNMENT-PROFESSIONAL MARKET THE TELL IS NOT A SCHEME NAME. Measured 10 Nov 2026 and
+it corrected my own expectation.** I briefed a worker to watch Montgomery County and northern
+Virginia for FEHB, CareFirst and Medicare, on the reasoning that a federal-employee region would
+print plan acronyms. **Zero of 22 clinics printed a scheme name of any kind.** The one must-have 2
+failure arrived instead as a **"Primary Care" menu heading plus the words "If not covered by
+insurance"**. So in these markets the reimbursed arm is usually **a primary-care or hormone clinic
+bolted onto the aesthetics business**, not an acronym in the footer. Read the menu's top-level
+categories for a clinical service line; do not go hunting for plan names. One Long Island clinic prints
 "Medical Massage/**NYSHIP**" — the New York State Health Insurance Program — on its own service
 list. That is must-have 2 decided for **zero policy fetches**, off the page you were already
 reading. So when scanning a menu for must-have 1, read it for scheme acronyms too: a named
@@ -447,6 +478,25 @@ probably live. **Must-haves 5, 6 and 7 rest on conspicuous publication, and a st
 cannot see was not published to people** — the same answer we gave Cloudflare obfuscation on
 2 Nov, for the same reason. Park the row with must-have 5 named, keep the address in it so the
 call is reversible, and do not send.
+
+None of the seven may be recorded as a published address. **AND ONE THING THAT IS EXPLICITLY NOT ON
+THIS LIST, STATED HERE BECAUSE IT HAS BEEN RE-ARGUED IN EVERY SWEEP SINCE 8 Nov AND TWO WORKERS
+HAVE NOW ASKED FOR IT IN WRITING: A CONSUMER MAILBOX PUBLISHED ON THE CLINIC'S OWN SITE IS A VALID
+PUBLISHED ADDRESS.** `arabellaboutiquemedspa@gmail.com` printed on `arabella...com` passes
+must-have 5 outright. It is the fourth Illinois instance alone, and workers keep stopping to
+reason it out from first principles because the answer was implied by the two tests above and
+never said.
+
+**Why it passes, from must-have 5's own words — "a published email address read off THEIR OWN
+site":** the two questions are *where was it published* (their own domain — yes) and *who receives
+mail sent to it* (the owner, who chose a gmail because a lot of small clinics do). A mismatched
+mailbox domain is already stated above to be normal and never "corrected". **A gmail is simply the
+far end of that rule, not an exception to it.** It is weaker evidence of a marketing operation, so
+it may bear on the grade through `crm_detected` and the dormant signals; it has nothing to do with
+whether the address is published. **The contrast that matters: the disqualifying cases above are
+somebody ELSE'S mailbox (an agency, a vendor) or a GENERIC INDUSTRY DOMAIN — a consumer mailbox
+on the clinic's own page is neither.** Record it, note the gmail in `notes`, and do not re-argue
+it.
 
 None of the seven may be recorded as a published address. The first four are not recoverable by
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
@@ -665,6 +715,35 @@ consultations, **parked at C because its theme omits a copyright year.**
 honest C), history never printed (the affluent-suburb case), history printed into a broken widget
 (New Jersey), and **no publishing furniture in which to print it (a theme default).** Only the
 first is a reason not to write to someone. **The practical instruction is the same in all three
+non-honest cases: look for the trading history somewhere other than the footer** — an About page,
+a practitioner's stated tenure, a wall of dated reviews — before parking a row that clears
+everything else.
+
+**A NEW LADDER RUNG, ADOPTED 10 Nov 2026 ON A WORKER'S PROPOSAL, AND IT CUTS AGAINST THE CLINIC
+RATHER THAN FOR IT: UNREPLACED TEMPLATE PLACEHOLDER COPY IN THE SOCIAL-PROOF SLOT IS POSITIVE
+EVIDENCE OF A RECENT LAUNCH, AND IT BEATS THE CAREER-LENGTH RUNG.** Two Burr Ridge clinics were
+otherwise identical on the ladder — career length only, same platform, single site, founder named —
+and the only separator was that one still ships builder demo text in two of its three testimonials
+("Maybe you want to launch a business"). **A clinic that has not replaced its demo testimonials
+does not yet have enough real ones to replace them with**, which is direct evidence against
+must-have 4's "established enough to have a lapsed list". So that one is C and the other is B.
+
+**It is the exact converse of New Jersey's broken-counter rung**, and worth holding as a pair: a
+broken counter is a site that *had* the evidence and failed to display it, so look past the widget;
+unreplaced placeholder copy is a site that *has no* evidence yet, so believe the absence. The
+practitioner's own career length does not rescue it, because must-have 4 is about the BUSINESS
+having a lapsed list, not about the injector's experience.
+
+**AND A FIFTH SHAPE, WHICH IS THE OPPOSITE PROBLEM — THE SELF-CONTRADICTING COUNTER, 10 Nov 2026.**
+Where New Jersey's sites print a broken zero, one Montgomery County clinic prints **too many
+numbers and they disagree**: "Founded in 2010" beside a "20 Year Of Experience" counter, beside
+"25 years combined", beside a "10 Happy Returning Clients" placeholder nobody replaced. **The rule:
+prefer the specific typed claim over the widget.** "Founded in 2010" is a sentence somebody wrote;
+"20 Year Of Experience" is a theme counter somebody half-configured. A clinic that publishes four
+mutually inconsistent durations has still told you it has been trading since 2010, and that is the
+one to record — with the disagreement noted on the row rather than tidied away.
+
+**The practical instruction is the same in all three
 non-honest cases: look for the trading history somewhere other than the footer** — an About page,
 a practitioner's stated tenure, a wall of dated reviews — before parking a row that clears
 everything else.

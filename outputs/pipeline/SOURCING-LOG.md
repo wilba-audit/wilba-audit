@@ -13,9 +13,39 @@ without the repo.
 
 ## 10 Nov 2026 — the September decode risk, measured instead of worried about
 
-**Four passes are out as this is written** (Main Line Philadelphia, Montgomery County MD, the
-Chicago North Shore beyond Lake Forest, and the six AU/NZ single operators yesterday's run left
-untouched). Rows and findings go in below when they land. What follows was done while they ran.
+**Rows: 16 appended so far — 1160 (AU/NZ recovery), 1161-1169 (Montgomery County MD and the
+northern Virginia ring, 9 rows: 5 B, 4 C) and 1170-1175 (Chicago North Shore second pass, 6 rows:
+2 B, 4 C).** Pipeline **1,175 rows, 803 ready to approach** — US 416, AU 169, CA 88, UK 85, NZ 43,
+IE 2. Browser-visit list **123 clinics**. Main Line Philadelphia was still running when this was
+written.
+
+**THE DAY'S REAL RESULT IS NOT THE ROWS. Four of my own claims were wrong and the workers caught
+all four**, which is worth stating plainly because the pattern is now legible: **every one was a
+claim I inherited from a previous run's report or from the standing list and passed on without
+checking.** Two shapes, and they want different fixes.
+
+**Shape one, inheritance — three instances.** (1) A budget figure: I specified "roughly 8 searches
+to 12 fetches, search-weighted" for the AU/NZ group, carried from yesterday's worker. The run took
+**3 searches and 11 fetches** — the inverse. The worker that recommended it had run out of searches
+only because it had spent them on four other groups first, so **its scarcity was an artefact of its
+run order, not a property of the job.** (2) "These six have never been opened" was false for one of
+them. (3) "Nothing in this market has been swept" was false for Montgomery County, where a 16 Oct
+sweep had already put 18 rows in the pipeline. **The fix is in the brief and it is mechanical:
+a worker's FINDINGS are measurements and have held up; its RECOMMENDATIONS are extrapolations from
+its own circumstances and have not. And grep `near-misses.md` for a metro before writing "unswept"
+about it** — thirty seconds that would have caught the third one.
+
+**Shape two is different and worse: generalisation against the file's own record.** I took the
+Long Island finding that every accepted row sat on a named village main street, promoted it to "the
+main-street query shape works in affluent suburbs", and put it in three briefs. **For the Chicago
+North Shore that was already known to be false and the knowledge was written down** — the 8 Nov
+Chicago section records the technique "did not work" there. The worker spent two queries testing my
+claim and got zero in-market clinics. **A query shape is now recorded with the market it worked in,
+not as a general technique, until it has worked in two unlike markets.** Main-street shape:
+confirmed on Long Island and in Montgomery County, failed on the Chicago North Shore.
+Town-name-plus-owner works in both and is the better default.
+
+
 
 **THE JOB YESTERDAY LEFT OPEN: how many rows share row 181's shape?** Row 181 holds an
 ordinary-looking `info@` address recorded on 24 Sep from a page that today ships no plaintext at
@@ -883,6 +913,36 @@ already had. Cheap, and only because the duplicate guard exists.
 Keep this current. It is the thing that stops a run spending its first searches deciding where
 to look, and `near-misses.md` is the record of everything already swept.
 
+**THE CHICAGO NORTH SHORE IS WORKED OUT AND THE RECORD NOW SAYS SO PROPERLY — corrected 10 Nov
+2026.** The standing list named "the North Shore of Chicago beyond Lake Forest" as unopened ground
+and I briefed a worker that the 8 Nov pass had covered "Lake Forest and some of the metro". **It
+had covered thirteen of the sixteen towns I then assigned** — Winnetka, Wilmette, Glencoe,
+Kenilworth, Highland Park, Lake Forest, Northbrook, Glenview, Evanston, Hinsdale, Oak Brook,
+Clarendon Hills, Western Springs, La Grange and more, on 16 searches and 46 fetches. **Only
+Deerfield, Northfield and Burr Ridge were genuinely outside it.** That is why a full pass returned
+six rows: it was a second sweep of swept ground, and the worker said so plainly rather than padding
+the result.
+
+**What the second pass was still worth, because it was not nothing.** Burr Ridge was genuinely
+unworked and is the densest in-market town found in the metro — four real independents. Northbrook
+produced one, which **corrects the 8 Nov note that Northbrook had no independent of its own**. And
+three towns are now closable on the Medina/Clyde Hill precedent — **Glencoe, Clarendon Hills and
+Western Springs**, nothing in two to three queries each.
+
+**Evanston is the interesting negative and worth the paragraph.** A town of 78,000, three queries
+across two sweeps, and **no independent injectables clinic with its own domain.** The worker's
+reading is that it is *served from outside* — Wilmette, Glenview and Highland Park clinics buying
+its search traffic through `areas-served` pages — rather than thin by accident. **Do not spend a
+fourth query.** The one untried route is a robots-refused `areas-served/evanston/` page now on the
+browser list, which would settle it in one page-load.
+
+**The two best clinics in the metro are unreachable by email and neither is browser-recoverable.**
+MedAndSpa (Burr Ridge — founded 2017 by two named owners, Mangomint, **"VIP Saving Accounts"**
+banked credit, Allē and ASPIRE) is **totally silent** across homepage, team page and policy: phone
+only. Melamed Weight & Wellness (Deerfield — named founder, Boulevard, 113 reviews) is
+**fetch-failure mode seven**, a policy that nominates an email route and omits the address. Both
+are phone or post, not a browser tab.
+
 **THE AFFLUENT-SUBURB SEAM IS THE BEST GROUND LEFT, AND 9 NOV PROVED IT TWICE.** Westchester,
 Fairfield County, Nassau and Suffolk gave 33 rows between them. The pattern to expect there is now
 known and should be carried in rather than rediscovered: **must-have 4 on evidence is the binding
@@ -902,8 +962,27 @@ next, in order, all handed over by the Long Island pass:
   kind of query shape worth reusing in any affluent suburb.
 - **The Hamptons are THIN, not unworked.** That query returned a dead domain, two paid listicles
   and a massage practice. Established at cost; do not re-spend it.
-- **Comparable suburbs not yet opened**, on the same reasoning: the North Shore of Chicago beyond
-  Lake Forest, Main Line Philadelphia, Montgomery County MD, Marin County.
+- ~~**Comparable suburbs not yet opened**: the North Shore of Chicago beyond Lake Forest, Main
+  Line Philadelphia, Montgomery County MD, Marin County.~~ **[UPDATED 10 Nov 2026. Montgomery
+  County MD is DONE (9 rows) — and it was never unopened: a 16 Oct Mid-Atlantic sweep had already
+  put 18 rows in the pipeline and left 16 near-misses, four inside the county. The Chicago North
+  Shore is DONE and WORKED OUT (6 rows, mostly a second pass; see above). Main Line Philadelphia
+  ran on 10 Nov. MARIN COUNTY IS ALSO NOT VIRGIN GROUND — `near-misses.md` records Hayes Valley
+  Medical & Esthetics (Larkspur, 3 sites) as "the only Marin presence found anywhere", and a
+  Central Valley query once collapsed "Madera" into "Corte Madera". Grep before briefing it.]**
+
+- **ONE NAMED LEAD THAT LOOKS LIKE A ROW THE WESTCHESTER SWEEP MISSED, and it is one fetch.**
+  **Skin Clinix**, 134 Marble Avenue, Pleasantville NY 10570 — the North Shore worker surfaced it
+  out of market and reports `gina@skinclinix.com` as visible text plus a matching `mailto:` on
+  `/about-us/`, read 10 Nov 2026, with Gina Vignogna Khan as master injector, MyAestheticRecord,
+  and a clean non-surgical menu. **It greps clean against both the pipeline and near-misses.**
+  Westchester was swept on 9 Nov, so this is either a miss or a clinic that sweep's queries never
+  surfaced. **It has NOT been graded against the must-haves** — whoever picks it up screens it
+  properly rather than trusting the summary above. Two more the same worker handed over, both out
+  of its market: **Skinlab Injectables** (OKC + Norman, `info@skinlabinjectables.com` in a footer
+  mailto, named RN owner, Boulevard) and **The Wellspring Medspa** (Dixon IL — no email published,
+  but the best banked-credit scheme seen in Illinois: a tiered loyalty plan whose monthly fee
+  credits to an account with shortfalls topped up, on MyPatientNow).
 
 **FIRST JOB, AND IT IS BIGGER THAN ANY MARKET: RE-READ WHAT A CHANGED STANDARD ALREADY DECIDED.**
 A rule change reaches the run that makes it and nothing behind it, which was proved twice on 8 Nov
