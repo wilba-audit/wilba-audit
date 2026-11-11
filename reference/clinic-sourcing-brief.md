@@ -223,6 +223,18 @@ other 32 are UNVERIFIED rather than suspect — do not park them.** What remains
 fetches, the highest-value re-verification left in the file because every one is a row we would
 otherwise send.
 
+**RECOUNTED 11 NOV, AND THE NUMBER MOVED — WHICH IS ITSELF THE FINDING.** The same query run again
+returned **47 rows, not 33**: 30 grade A and 17 grade B. Nothing changed in the file; the list of
+"guessable" local parts changed. The 9 Nov count used `info@`, `hello@` and `contact@`; adding
+`admin@`, `enquiries@`, `bookings@` and `support@` — every one of them just as guessable from a
+domain name — adds fourteen rows. **So "33 rows at risk" was never a quantity, it was a choice of
+prefix list, and any count of this set will be.** Two consequences worth keeping. First, do not
+treat a remaining-work figure here as a target to burn down; the honest description is "every
+September row whose `email_source` does not say where", and it is bounded by the grade instead:
+**work the grade-A rows first, because those are the rows first in the send queue.** Second, the
+same trap is waiting in any audit that filters on a hand-written list of patterns — the audit
+measures the list as much as the file, and it will always look complete.
+
 **So, for `email_source` from now on: say WHERE you saw it** — "visible footer text plus a matching
 mailto", "inside the privacy policy's data-request clause". "Read off their own page" cannot be
 audited six weeks later, and this is exactly the audit that wanted it.

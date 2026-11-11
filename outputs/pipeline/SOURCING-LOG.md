@@ -1251,10 +1251,11 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 9 Nov 2026: **1,159 rows, 795 ready to approach** — US 409, AU 169, CA 88, UK 85, NZ 42, IE 2. (It was 496 rows and 316 ready on
-20 Oct, 1,045 rows and 707 ready on 5 Nov, and 1,104 rows and 748 ready on 8 Nov.) A further
-**121 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
-page-open each.
+As of 10 Nov 2026: **1,185 rows, 800 ready to approach** — US 421, AU 169, CA 88, UK 85, NZ 43,
+IE 2. (808 rows are grade A or B and hold a published address; 8 of those have been emailed, which
+is the whole of the sending done to date.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
+on 5 Nov, 1,104 and 748 on 8 Nov, and 1,159 and 795 on 9 Nov. A further **127 clinics** that
+cleared the ICP on fit are parked in `browser-visit-list.md` for want of one page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
 existing ones. Twelve went B to C on the must-have 4 evidence ladder, which is a loss of twelve
@@ -1264,7 +1265,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 795 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 800 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 
