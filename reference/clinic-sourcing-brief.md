@@ -77,6 +77,47 @@ the same hazard. **So when using a district name, pair it with the state or read
 before recording anything** — and prefer a street name, which is rarer, over a centre name built
 from words like "suburban", "square" and "village".
 
+**AND THE SAME-NAME TRAP FIRED INSIDE A SINGLE METRO, 11 NOV 2026 — WHICH IS WORSE THAN ACROSS A
+BORDER.** The coastal Orange County brief warned about Newport Rhode Island, Newport Oregon,
+Newport in Wales and San Clemente abroad. **None of those fired. "Corona, CA" (92879, Riverside
+County) against "Corona del Mar" (92625, Orange County) did** — the same state, the same area-code
+region, and a shorter name that is a strict prefix of the longer one, so a grep for one matches the
+other. California Cosmetics happens to have a site in each, which is how it was caught. **Add it
+beside Madera / Corte Madera: the dangerous collisions are the ones inside the market you are
+sweeping, because nothing about the result looks foreign.** Three collisions fired in that one
+metro — the other two were "House of Aesthetics" (Cary NC) and "Belladerm" (Shawnee OK), both
+caught by grepping the near-misses file per clinic name before recording. **So grep per NAME as
+well as per town; a clinic name made of common words collides nationally.**
+
+**A QUERY SHAPE THAT IS NOW 4 FOR 4 IN UNLIKE MARKETS, AND IS THE DEFAULT: four unquoted town
+names plus "owner" or "founder".** Long Island, Montgomery County, the Main Line and coastal Orange
+County — and in Orange County it produced **every single accepted row**. It has cleared the bar
+this brief sets (two unlike markets) twice over, so it is a general technique rather than a
+market-local one, and it is the shape to open a new metro with.
+
+**AND A DEAD SHAPE, RECORDED SO NOBODY BUYS IT AGAIN: "our story / established / single location".**
+Eight results, two in-market; the rest were national chains and clinics in Ponte Vedra Florida,
+Point Loma and San Diego. It reads like it should find exactly our ICP and it finds the phrase
+instead. **The Orange County worker stopped there, which was the right call** — a shape returning
+six out-of-market results in eight is not improved by a second attempt.
+
+**A THIRD REASON A TOWN READS THIN, 11 NOV 2026 — AND IT IS THE ONE THAT LOOKS MOST LIKE THE
+OTHER TWO.** The two known reasons were "genuinely thin" and "occupied by a dead business's SEO
+pages". Laguna Beach is neither: it is occupied by **live clinics that publish no email at all**.
+The fetches worked, the businesses are trading, and must-have 5 simply fails across the town. **So
+before writing a town off, say which of the three it is**, because they want different responses —
+a thin town gets dropped, a town held by a dead domain gets the domain blocked and re-queried, and
+a town of silent live clinics is a browser-visit list rather than a dead end.
+
+**AND A TENANCY THAT INVERTS THE PRACTITIONER-COLLECTIVE PROBLEM.** Nicole Leiann Aesthetics
+(Aliso Viejo) books through `alumamedicalaesthetics.myaestheticrecord.com` and its footer reads
+"Powered by Aluma". **So an independent injector's diary and list sit inside another business's
+Aesthetic Record tenant.** `alumamedicalaesthetics.com` was already on the blocked list as a
+collective; the new fact is that the tenancy runs the other way round too, and it matters for this
+offer specifically: **the clinic does not own the list we would be reactivating.** Treat a
+`<someone-else>.myaestheticrecord.com` or equivalent booking subdomain as a must-have 3 question,
+not just a platform detection.
+
 **ONE DEAD BUSINESS WAS HOLDING FOUR BRIEFED TOWNS HOSTAGE, which is a hazard worth naming.**
 `a360medspa.com` has **permanently closed** and its live SEO page set still ranks for Berwyn, Devon,
 Gladwyne, Narberth, Rosemont and Paoli — six towns that produced no own-domain clinic at all, and
@@ -98,6 +139,28 @@ clinics we had already ruled out.
 is the same failure as the other three: a claim inherited and passed on rather than checked. **The
 fix is mechanical and cheap, so there is no excuse for skipping it: before naming a market in a
 brief, grep the near-misses file for the metro and the two or three biggest town names in it.**
+
+**AND THE SAME CHECK, DONE ON THE PIPELINE, STILL UNDERCOUNTED BY HALF — 11 NOV 2026.** The
+coastal Orange County brief was written only after grepping, and it did state prior coverage
+instead of claiming the market was virgin. It said **three** pipeline rows touch the metro. **There
+are six.** The worker found the other three and two of them are grade A: **153 The Med Lounge**
+("Orange County + North County San Diego, 3 sites", Ladera Ranch), **864 Liquid Beauty** (Temecula
+with a second site in **Huntington Beach**, one of the twelve towns briefed) and **160 Deluxe Med
+Spa** ("Los Angeles + Orange County, 5 sites").
+
+**The mechanism is worth more than the correction, because it will recur on every multi-site metro:
+I grepped the pipeline for town names and read the `city` field.** A clinic headquartered in
+Temecula whose second site is in Huntington Beach has "Huntington Beach" in its `notes` or
+`scale_signals` and never in `city`, so it is invisible to a column read. **So grep the WHOLE ROW
+TEXT, not the city column** — `grep -i '<town>' clinic-pipeline.csv` over the raw file, which is
+one character cheaper than the thing that got it wrong. Nothing was wasted this time only because
+the worker grepped per name itself and reported the gap.
+
+**Two instances in two days of the same lesson in different clothes: the check that finds the
+problem where it usually lives will miss it where it survives.** On 9 Nov a copy audit read one
+column and reported zero breaches while seventy sat in another. Here a coverage grep read one
+column and reported three rows while six existed. **When adding or running a check, ask what state
+a row has to be in to escape it.**
 Say in the brief what prior coverage exists and which part is genuinely new — "the county below the
 Rockville line is unworked, the ring above it was swept on 16 Oct" is a far better instruction than
 "nothing has been swept", and it is thirty seconds of work.
@@ -235,6 +298,56 @@ September row whose `email_source` does not say where", and it is bounded by the
 same trap is waiting in any audit that filters on a hand-written list of patterns — the audit
 measures the list as much as the file, and it will always look complete.
 
+**THE 11 NOV RUN FINISHED THE GRADE-A HALF OF THIS JOB, AND THE ADDRESSES WERE NOT THE PROBLEM.**
+All 30 grade-A rows were re-fetched: **27 CLEAN, 0 masked, 0 changed, 3 publishing no email address
+at all.** With the 10 Nov three, 33 of the 47 have been checked and **row 181 is still the only
+decoded-token shape in the cohort** — so the thing that was worried about is an exception, not a
+pattern. The 17 grade-B rows remain unverified and are the job's remainder.
+
+**But a bigger defect turned up next to it, 3 to 0: "recorded a plausible `info@` for a site that
+publishes none".** Rows 83, 110 and 168 publish no email anywhere — phone, form and WhatsApp only.
+**Row 83 is the clinching case: its recorded address was `info@bodyvie.co.uk` while the website
+field reads `bodyvie.com`.** The domain itself was wrong, which no page read could have produced.
+All three are graded C with the address kept in the row so the call stays reversible. **So if the
+September pass has a weakness, it is construction from a domain name rather than a decoded token.**
+
+**AND THE REPORTED DISQUALIFICATIONS ARE WHERE THE REAL COST WAS — 4 CONFIRMED, 3 OVERTURNED.**
+Seven must-have failures were reported against grade-A rows and every one was re-fetched before
+anything was struck. Confirmed: 130 (a vein practice selling endovenous ablation, plus Medicare
+rebates), 107 (its own words: "a Dermatologist and Plastic Surgeon-led clinic"), 152 (founder
+billed "Board Certified Plastic Surgeon", nav pointing at his surgical practice), 83 (a "Cosmetic
+Surgeon" on staff selling blepharoplasty). Overturned: 178 and 89 and the must-have 1 half of 110.
+**Across 10 and 11 Nov that is 9 reported failures on grade-A rows, 5 confirmed and 4 overturned** —
+near enough a coin toss, which settles the policy: **a worker's must-have failure against a grade-A
+row is a lead, never a verdict. Re-fetch it.** Workers should keep reporting them, and 89 and 168
+show the best form — flag it, quote it, and leave the call upstream.
+
+**The overturns had one shape, and it is now a rule in `ICP.md`: the word list screens what a
+clinic SELLS.** Row 178's disease vein language sat inside a block headed "Sometimes the right
+treatment isn't one we offer" — a referral-out policy, which by construction contains the
+vocabulary of every business the clinic is not. 89 and 110 were "Dermatology" as one nav item on an
+injectables-led menu, with no dermatologist on staff. **Selling it fails; declining it passes.**
+
+**THREE THINGS THE RUN ESTABLISHED ABOUT OUR OWN TOOLING, WHICH ARE WORTH MORE THAN THE ROWS.**
+Strictly, a WebFetch read can never rule out that something decoded an obfuscated original on the
+way, so none of the 27 is unqualified proof. Three observations narrow that a long way:
+1. **Tokens do survive conversion — row 181 is the proof**, having reached a reader as
+   `[email protected]` rather than being silently decoded. So zero tokens across 36 fetches is
+   better explained by these pages not obfuscating than by the helper hiding it 36 times.
+2. **Raw href warts pass through**: row 132's `http://bianca@...` instead of `mailto:`, row 179's
+   `mailto:%20info@...`, row 125's emergency address whose href points at the general mailbox. A
+   layer that synthesised addresses would have tidied those.
+3. **Two shapes beat the baseline and can be recorded without the caveat.** The address appearing
+   in the page's own `meta description` or `og:description` (rows 86, 111) — Cloudflare's email
+   obfuscation does not rewrite meta tags, so those characters were shipped by the page. And bare
+   visible characters with **no** `mailto:` href at all (row 178) — a token normally arrives with
+   its `/cdn-cgi/l/email-protection` href, so no href is the shape least consistent with a decode.
+
+**One caveat to carry, and it is the right one: every CLEAN here means "this address is published
+today", not "the September reading was sound."** A page that was protected in September and is
+plaintext now reads clean. Published-today is what matters for sending, so this is not a problem —
+but it is a different claim from the one the audit set out to make.
+
 **So, for `email_source` from now on: say WHERE you saw it** — "visible footer text plus a matching
 mailto", "inside the privacy policy's data-request clause". "Read off their own page" cannot be
 audited six weeks later, and this is exactly the audit that wanted it.
@@ -365,7 +478,18 @@ because the standard may widen again and re-finding a clinic costs more than kee
    site has. The two uses do not conflict; the old wording just never separated them. Two remote-prescribing services —
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
-   it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.****A SISTER BUSINESS IN THE FOOTER'S "MAIN PAGE" OR "SHOP" SLOT — added 9 Nov 2026, and it is now
+   it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.**
+   **Blocked from 11 Nov 2026, after the coastal Orange County run:** `getthetreatment.com` (which
+   took two of that run's six query slots and is already pipeline row 872), `dermacaresandiego.com`
+   (San Diego SEO pages holding two briefed towns), `skinspirit.com`, `alchemy43.com`,
+   `zoskincentre.com`, `lagunabeachrejuvenation.com`, `ljcmedspa.com`, `med-glo.com`,
+   `inmodemd.com`, `alle.com`, `superpages.com`, `lagunabeachchamber.org`, and
+   **`beyondnewport.com`, which is a different case: it is spam-injected**, carrying a
+   styled-invisible block of Norwegian casino promotion with a dofollow link inside its own About
+   menu. Nothing on that page is trustworthy as a single source, and its one published mailbox
+   turns out to belong to a different business a team member founded — the look-alike-mailbox trap
+   in plain sight, now seen five times. **A page carrying injected content is not a source you
+   corroborate from; it is a page you record nothing from.****A SISTER BUSINESS IN THE FOOTER'S "MAIN PAGE" OR "SHOP" SLOT — added 9 Nov 2026, and it is now
    the commoner tell of the two.** Across 15 New Jersey rows the Vos-style parent-group loyalty
    footer **never fired once**, and this fired twice instead: a footer nav whose "Main Page" or
    "Shop" link leaves for a **different business the same owner runs** — in both cases a salon

@@ -16509,3 +16509,357 @@ two of my accepted rows.
    row, Lancaster Avenue produced two), but a shopping-centre name built from common words pulled a
    Georgia clinic with a perfectly readable address into a Main Line query. Read the state in the
    postal address.
+
+# ==============================================================
+# Coastal and south Orange County, CA — sourced 11 Nov 2026
+# ==============================================================
+
+# Coastal and south Orange County, California — near misses, 11 Nov 2026
+
+Region: Newport Beach, Corona del Mar, Laguna Beach, Laguna Niguel, Laguna Hills, Dana Point,
+San Juan Capistrano, San Clemente, Mission Viejo, Aliso Viejo, Costa Mesa, Huntington Beach.
+
+21 businesses were opened or attempted. **10 accepted** (2 A, 4 B, 4 C) into
+`orangecounty.json`. The 11 below did not qualify. Every clinic name was grepped against
+`outputs/pipeline/clinic-pipeline.csv` and `outputs/pipeline/near-misses.md` before any fetch.
+
+---
+
+## 1. Cleared the ICP on substance, publish no email address at all — no browser recovers these
+
+These are **total silence** in the brief's sense: the site reads fine, the address is published,
+and no mailbox exists anywhere I looked. A browser does not help. Phone or direct message only.
+
+### soul&beautyMEDx — Mission Viejo, CA · `soulandbeautymedx.com`
+**Published address: 27529 Puerta Real, Mission Viejo, CA 92691**, read as visible footer text on
+`https://soulandbeautymedx.com/about/about-us/` and again on `https://soulandbeautymedx.com/contact-us/`,
+and a third time in the privacy policy's "Contacting Us" section at
+`https://soulandbeautymedx.com/privacy-policy/`.
+**Fails must-have 5. No email published, not masked — genuinely absent.** Three pages read
+(about, contact, privacy policy); every one gives only `tel:` (949) 481-8881 and a form.
+Everything else about this clinic is strong, which is what makes it the most annoying row here:
+Linda Rank PA-C with "over 20 years" in aesthetics, Dr Christian Rank M.D., Lauren Beideman RN;
+**"4.9 from 200+ Reviews"** in the footer, so must-have 4 passes on a quantified artifact;
+**MOXIE Memberships**, and Moxie is on the ICP's named-system list; one site, called "Our Flagship
+Location". Must-have 2 checked twice over — the privacy policy collects no insurance carrier,
+policy or member ID, and the only money language is a Financing nav link. Must-have 2 therapeutic
+count: "Excessive Sweating" and "TMJ & Jaw Pain" listed as concerns, plus "Hormone Replacement
+Therapy"/"BioTE" under Wellness — **two reimbursable indications, under the four-indication
+threshold, so it passes with the caveat recorded.** The footer "Medical Spa Marketing" link goes to
+influxmarketing.com, the site vendor named in the meta generator, not a parent group.
+**A phone or LinkedIn prospect, not an email one.**
+
+### Gravity Medical Spa — San Juan Capistrano, CA · `gravitymedspa.com`
+**Published address: 27352 Calle Arroyo, San Juan Capistrano, CA 92675**, read in the "Visit Us"
+section of `https://gravitymedspa.com/`.
+**Fails must-have 5 — no email anywhere, not masked.** Also **unresolved on must-have 3**, and
+this is the interesting part: Dr Tonya Boudreaux is published as "Clinical Director" and **no
+owner or founder is named at all**, while the footer carries bare links to **Dr Paul Chugay and
+Dr Nikolas Chugay** with no explanation of the relationship. That is the footer-nav tell the ICP's
+9 Nov rule says to read before deciding — but with no mailbox the row cannot be sendable either
+way, so I did not spend a fetch resolving whether those are a surgical parent or a referral
+relationship. **If the thread ever wants this clinic, that is the question to settle first.**
+One site; Laguna Niguel, Rancho Mission Viejo, Dana Point and San Clemente are named as a service
+area. Gravity Membership and Monthly Specials published. Footer copyright "© 2026", no founding
+year, no review count.
+
+### Laguna Beach Aesthetics — Laguna Beach, CA · `lagunabeachaesthetics.com`
+**Published address: 610 N Coast Hwy, Suite 208, Laguna Beach, CA 92651**, read in the Location
+section and the footer of `https://www.lagunabeachaesthetics.com/contents/aboutus`.
+**Fails must-have 5 — no email, no mailto, nothing masked.** A real loss: **Dr Adrienne O'Connell,
+DO**, published as founder; **"(47 reviews)" with a 5/5 star rating**, so must-have 4 passes on a
+quantified artifact; **Aspire** loyalty (manufacturer scheme, a grade-A signal); one site; no
+insurance, hormone, vein, screening or surgical line anywhere. Dr O'Connell is also founder of
+**SKINformed Skincare** with co-founder Kimberly Sanchez — per the ICP's 9 Nov ruling that is **an
+owner with two businesses, a sibling and not a parent**, so must-have 3 is intact. The footer runs
+on Tebra ("Medical website powered by Tebra", "© Copyright 2026 Tebra Inc."), which is why the
+copyright year belongs to the vendor rather than the clinic.
+
+### Laguna Aesthetics — Laguna Beach, CA · `lagunaaesthetics.com`
+**Published address: 1100 S Coast Hwy #212, Laguna Beach, CA 92651**, read in the footer Contact
+section of `https://lagunaaesthetics.com/about/`.
+**Fails must-have 5 — no email, nothing masked.** **ShienLin Pryor, MSPAS, PA-C** published as
+Founder and Medical Director (the page spells it "Pryor" in body text and "Prior" in the team
+heading — do not tidy that). Amanda Miyawaki RN as Lead Aesthetic Nurse, Liz Phillips PA-C. One
+site. No founding year, no review count, footer "©2026 LAGUNA AESTHETICS".
+**Must-have 2 needed the vein rule and PASSES.** The services menu carries **"Vein Treatment"** as
+a category, which under the pre-10-Nov reading would have read as a failure. It does not: the copy
+says "bothersome spider veins" and "sclerotherapy services", "spider" is an appearance word and
+explicitly neutral, and **none** of the disease vocabulary appears anywhere — no vein disease, no
+venous insufficiency, no phlebology, no duplex, no reflux, and it is a "Vein Treatment" line inside
+a cosmetic menu rather than a named **Vein Center**. There is no insurance or Medicare language on
+the site either. This is row 179's shape, not row 177's. **Prominence is not the test and I did not
+treat a category heading as one.**
+
+### Beyond Med Spa & Wellness Center — Newport Beach, CA · `beyondnewport.com`
+**No street address published on the page read** — `https://beyondnewport.com/about-us/` gives only
+"Newport Beach, CA" in body text, with no street, suite or ZIP. **So this one does not even get an
+address printed here, and under the absolute rule it could never enter the pipeline.**
+**Fails must-have 5 twice over.** The only email on the page is
+**`annaliese@beyondoxygen.com`** — visible body text plus a matching mailto inside Annaliese
+Train's bio — and it belongs to **Beyond Oxygen Consulting, a separate business she founded**.
+That is look-alike #5: somebody else's working mailbox in plain sight. The domain is the test, and
+the domain is not the clinic's. **Not recorded as a published address for this clinic.**
+**AND THE PAGE IS SPAM-INJECTED.** It carries a hidden, styled-invisible block inside the "About"
+menu item containing Norwegian-language casino promotion with a dofollow link to `lizaro-no.net`.
+Per the brief I have **recorded nothing that only this page attests to** — not Dr Allyson Berkey's
+founder status, not the BHRT line, not the team list. The clinic has a security problem; it is not
+ours to fix or to mention to them. Separately, must-have 2 would need checking on Bioidentical
+Hormone Replacement Therapy, which is a top-level Wellness line, and must-have 4 has no artifact
+(footer "©2024", a two-year-old single year, which under the three-year rung evidences nothing).
+**Do not re-fetch this domain without a second clean source.**
+
+### Nicole Leiann Aesthetics — Aliso Viejo, CA · `nicoleleiannaesthetics.com`
+**Published address: 95 Enterprise Drive, Unit 150 Suite 7, Aliso Viejo, CA 92656**, read in the
+footer of `https://nicoleleiannaesthetics.com/`, printed under the line "Inside Sola Salons".
+**Fails must-have 5 — no email, no mailto, nothing masked; the footer has only a sign-up field.**
+**And it has a must-have 3 problem worth recording even though must-have 5 already ends it.**
+Nicole Leiann RN BSN rents a room inside Sola Salons, which the ICP says is must-have 3 INTACT —
+one person still decides marketing. But her booking resolves to
+**`alumamedicalaesthetics.myaestheticrecord.com`** and her footer reads **"Powered by Aluma"**,
+linking to `alumamedicalaesthetics.com`. So the diary sits in **Aluma's** Aesthetic Record tenant,
+not hers: the lapsed list we would be selling to her is in a platform operator's account. That is
+the practitioner-collective concern running the other way round, and it is a reason to be careful
+even if an address turns up. `alumamedicalaesthetics.com` is already on the brief's blocked list;
+what the brief does not say is that Aluma puts independent injectors on its own tenant.
+Supervising physician Dr Michael Lafkas. Career claims conflict — body text "over 17 years",
+meta description "Over 16 years". No founding year, no review count, no footer copyright at all.
+
+---
+
+## 2. Browser-visit candidates — the characters are in the page, or the page needs a browser
+
+### Iconique Medical Aesthetics — Costa Mesa, CA · `iconiquemedspa.com` — **the best clinic in this sweep that I could not write to**
+**Published address: 1503 South Coast Dr. #111, Costa Mesa, California 92626**, read as the footer
+Google-Maps link text on `https://iconiquemedspa.com/`; the meta tags also carry ZIP 92626.
+**Fails must-have 5 because the address is MASKED, not absent.** The only email on the site sits in
+the SMS consent pop-up and renders as **`[email protected]`**, wired to a
+`/cdn-cgi/l/email-protection` URL. **That is Cloudflare email obfuscation: the page did NOT ship
+the characters, so it is NOT SEEN.** The helper offered no decode and **I did not take one and did
+not attempt to recover it** — by choice, per the ICP, because a clinic running obfuscation has
+acted to stop automated collection and must-have 5 rests on conspicuous publication.
+**A browser renders this address normally, so Jess can read it in seconds. This is the row to
+spend that minute on.** Everything else is grade-A shaped: **Marissa Maniaci, RN — "Founder & Lead
+Injector"**; **"5.0 from 75+ Reviews"** in the footer, so must-have 4 passes on a quantified
+artifact; one site; **memberships, promos, gift cards and payment plans** all sold through
+`shop.iconiquemedspa.com`, which is four dormant mechanisms; five menu categories, nothing
+reimbursed, no insurance word anywhere. The one therapeutic mention is TMJ inside Facial Balancing
+copy — **one indication, far under the four-indication threshold, so must-have 2 passes.** No
+practice system is nameable (booking is an on-page anchor). The footer "Medspa Marketing" link goes
+to influxmarketing.com, the vendor in the meta generator, not a parent.
+**Add to `outputs/pipeline/browser-visit-list.md`.**
+
+### Seaside Skin Care — San Clemente, CA · `seasideskincare.com` — **second-best browser candidate, and a two-mode fetch failure**
+**Published address: 1401 N. El Camino Real, Ste 200, San Clemente, CA 92672**, read in the
+"Visit Us" section of `https://seasideskincare.com/our-team/` and again on
+`https://seasideskincare.com/privacy-policy/`.
+**Fails must-have 5 — no email found on either page that loaded, and nothing masked.** But **two
+of the brief's fetch-failure modes fired on this one domain**, so it is not settled:
+`https://seasideskincare.com/contact/` returned a **site-side client error** and no content at all,
+and the privacy policy page **renders client-side** — it shows only "Please wait while the policy
+is loaded" with a link to an external viewer, so the policy's own text was never retrieved. **A
+browser reads both.** Worth the visit on the merits: **Dr Scot Jones, MD — "Owner & Medical
+Director"**, an ER physician of over 30 years; **the business was founded in 2010**, stated twice
+in staff bios ("since the company was founded in 2010", "since it opened in 2010"), so must-have 4
+passes on the ladder's top rung; **Zenoti** at `seasideskincare.zenoti.com/webstoreNew/services`,
+a named practice system; **a Membership page, "Shop Gift Cards" and a Referral Program**, three
+dormant mechanisms; Shopify shop; Cherry financing (which passes must-have 2). One site, no
+insurance, hormone, vein, screening or surgical line. **Add to the browser-visit list.**
+
+### Amazing Skin Aesthetics — Huntington Beach, CA · `amazingskinaesthetics.com`
+**`robots_disallowed`** — the fetch was refused outright and nothing was retrieved, so **no
+address and no email are known and the clinic is entirely unscreened.** Per the brief, a person
+opening this in a browser sees it normally, and robots-refused sites are often the best clinic in
+their town. **Add to the browser-visit list as unscreened.**
+
+### Face & Body Rx — Laguna Niguel, CA · `faceandbodyrx.com`
+**Client-side rendering.** The fetch returned 200 and only the metadata header — no body, no
+footer, no links — which is the brief's third failure mode and spends the fetch before you know the
+page is empty. **No address and no email are known; entirely unscreened.** What the meta tags give:
+"Laguna Niguel, California", and keywords "med spa, japanese head spa, medical aesthetics,
+skincare, botox, microneedling, hydrafacial". **A browser reads these fine. Add to the
+browser-visit list as unscreened.**
+
+---
+
+## 3. Disqualified outright — two or more failures, or on the Disqualify list
+
+### Refined Radiance Aesthetics — Laguna Hills, CA · `refined-radiance-aesthetics.com`
+**Published address: 25292 McIntyre St, Suite O 112, Laguna Hills, CA, 92653**, read in the footer
+"MAIN OFFICE" block of `https://www.refined-radiance-aesthetics.com/`.
+**DISQUALIFIED ON MUST-HAVE 1 ON SUBSTANCE, NOT ON A LABEL, and it also fails must-have 5.**
+The menu links a **full plastic-surgery list**: Facelift, Facial Fat Grafting, Neck Lift, Brow
+Lift, Eyelid Lift, Rhinoplasty, Breast Augmentation, Breast Lift, Breast Implant Removal, Breast
+Reduction, Tummy Tuck, Liposuction, Mommy Makeover, Thigh Lift, Arm Lift, Post-Massive Weight Loss.
+**Duc Nguyen, MD** is published as "Founder and Medical Director". This is row 201's shape exactly
+— a row that would read as a single-operator med spa off its injectables menu and turns out to
+carry a surgical practice. Also no email anywhere (no mailto, no footer address, nothing masked),
+and Testosterone Replacement Therapy under Wellness. Booking on **app.joinmoxie.com** (Moxie), a
+named system, which is what makes this a well-equipped clinic in the wrong business for us.
+**Not recoverable.**
+
+### ZO Skin Centre Laguna Beach — `zoskincentre.com` / `lagunabeach.zoskincentre.com`
+**Not opened; disqualified on profile without spending a fetch.** A multi-site branded skin-centre
+chain run under the ZO Skin Health name and marketed as a **dermatologist** practice ("Laguna
+Beach, CA Dermatologist" is its own page title). Chain plus dermatology-practice self-description
+is two Disqualify-list entries, and the `/location/laguna-beach-ca/` URL shape is a location set.
+**Note for the grep file: "ZO Skin" matches 14 pipeline rows and 3 near-miss lines, all of them
+the ZO Skin Health PRODUCT LINE that independents retail. Those are not this company.** Do not let
+a product-line grep hit read as prior coverage of this chain.
+
+### Laguna Beach Rejuvenation — Laguna Beach, CA · `lagunabeachrejuvenation.com`
+**Not opened; disqualified on profile.** Its own practice-news headline is "OC Plastic Surgeon
+Offers Non-Surgical Treatments at His Inclusive Medical Spa" — a plastic surgeon's med-spa arm,
+which is the structure the Disqualify list names and the one the 1 Nov inland-California worker met
+repeatedly. The name is the disclosure.
+
+### Dr. Robinson / `drface.com` — Aliso Viejo, CA
+**Not opened; disqualified on profile.** Surfaced on the San Clemente / Mission Viejo / Aliso Viejo
+query as "Botox Injections - Aliso Viejo - Dr. Robinson" on a facial-plastic-surgery domain. A
+surgeon's practice with an injectables page, not an owner-operated med spa. One judgement, no
+fetch spent.
+
+---
+
+## 4. Already ours — caught by grep before any fetch
+
+### The Treatment Skin Boutique · `getthetreatment.com` — **pipeline row 872**
+Took a slot on **two** of my six queries (its `/med-spa-newport-beach/` and
+`/med-spa-san-clemente/` pages), exactly as the brief predicted. Already graded C as a Henderson NV
+business with Claremont, Newport Beach, Redlands and San Clemente sites. **Blocked by hand after
+the second sighting.** This domain should go on the brief's blocked list for any future OC run.
+
+---
+
+## 5. Out of market or not a clinic — surfaced on in-market queries, do NOT count as coverage
+
+- **`dermacaresandiego.com`** — ranked twice on a Mission Viejo / Aliso Viejo query with
+  `/dermal-fillers-in-mission-viejo-ca/` and `/dermal-fillers-in-aliso-viejo-ca/` SEO town pages.
+  **A San Diego business holding two of my briefed towns.** Blocked.
+- **SkinSpirit** (`skinspirit.com/locations/newport-beach`, `/long-beach`) — a national chain,
+  location-page set. Five-plus sites, so a rejection and not a C.
+- **Alchemy 43** (`alchemy43.com/newport-beach-corona-del-mar-plaza/`, plus "Med Spa in LA, NYC,
+  Dallas & Houston") — a multi-metro chain. **Its Newport Beach page is named after a shopping
+  centre, Corona del Mar Plaza**, which is the main-street-shape hazard in its franchise form.
+- **`ljcmedspa.com`** — San Diego / Carlsbad / Temecula / Chula Vista, surfaced on a Dana Point
+  query via a town-list page.
+- **`beautyenergyexchange.com`** (Point Loma, San Diego), **`bluewaterwellnesscenter.com`**
+  (Ponte Vedra, **FLORIDA**), **`holdentimelessbeauty.com`** (San Diego) — all three returned by
+  one "our story / established" query against three OC town names. **Two of the eight results from
+  that query were in-market.**
+- **`medspabyalana.com`** / **`skincarebyalana.com`** — a Shopify gift-card product page and a
+  "Day Spa in Dana Point" page. A day spa and a skincare retailer, not an injectables clinic.
+- **`inmodemd.com`**, **`alle.com/discover/...`**, **`superpages.com`**, **`med-glo.com`**
+  ("Best Med Spa in Mission Viejo: A Practical Guide" — a content farm),
+  **`lagunabeachchamber.org`**, **`indeed.com`** — directory, vendor-locator and job-board pages.
+  No fetch spent on any of them.
+
+---
+
+## 6. Domains worth adding to the brief's blocked list after this run
+
+`getthetreatment.com` (two slots, already pipeline row 872) · `dermacaresandiego.com` (two briefed
+towns held by SEO pages) · `skinspirit.com` · `alchemy43.com` · `zoskincentre.com` ·
+`lagunabeachrejuvenation.com` · `med-glo.com` · `superpages.com` · `alle.com` · `inmodemd.com` ·
+`lagunabeachchamber.org` · `ljcmedspa.com` · `beyondnewport.com` (spam-injected, nothing on it is
+trustworthy as a single source).
+
+---
+
+## What this market taught me
+
+**The brief's hypothesis was right and the ratio is large.** It said must-have 4 on evidence is the
+binding constraint in affluent referral-driven suburbs, hypothesised that coastal California might
+differ because it is dense, competitive and marketing-heavy, and asked me to measure it rather than
+assume. **Measured: 8 of 19 businesses whose own pages I read published a dated or quantified
+artifact about the BUSINESS** — a founding year, a trading span, or a review count with a number.
+That is **42%**, against Westchester's 3 of 28 (11%), Long Island's 2 of 24 (8%) and Montgomery
+County's 3 of 15 (20%). **Four to five times the affluent-suburb rate.** Three clinics published an
+outright founding year (California Cosmetics 2011, Seaside 2010, Nika 2014), two published trading
+spans (Contours "over 25 years", Beauty Boost "seven years" as founder), and four published review
+counts with numbers (Nika 300+, soul&beauty 200+, Iconique 75+, Laguna Beach Aesthetics 47).
+**So must-have 4 was NOT the binding constraint here.** Only 3 of my 10 accepted rows are parked on
+it. Coastal OC clinics compete on visibility and print the numbers, exactly as the 9 Nov
+market-type rule predicts of a mid-market-style competitive metro — which means the rule is a rule
+about market type and not about wealth, because this is not a poor market.
+
+**MUST-HAVE 5 WAS THE BINDING CONSTRAINT INSTEAD, and it was brutal: 9 of 19 businesses publish no
+usable email.** Eight are total silence and one is Cloudflare-masked. **Address yield on the
+clinic's own homepage or contact page was 9 of 19 (47%)**, which sits just above Long Island's 44%
+and nowhere near New Jersey's 0% — so the brief is right that geography predicts nothing, and right
+to tell me to measure before deciding about policies. **Adding Avesta, whose mailbox exists only
+in its privacy policy, the total with a usable published address is 10 of 19 (53%).**
+
+**The privacy policy paid for itself, 1 in 3, and it bought the run's hardest address.** I fetched
+three policies. soul&beauty's and Seaside's gave nothing (Seaside's would not even render).
+**Avesta's was the ONLY route to `info@avestamedspa.com`** — its homepage and its contact page both
+publish no mailbox at all, and the policy prints one in visible body text with a matching mailto.
+That is the Moncton case repeating, and in a market where half the clinics are silent it is the
+single highest-yield extra fetch available. **Fetch the policy before giving up on a strong row
+here.**
+
+**Query shapes.** "Four unquoted town names plus owner/founder/injector" worked three times out of
+three and produced **every accepted row in this file** — a fourth unlike market for that shape, and
+it remains the right default. I did not need the main-street shape at all, so I cannot add a market
+to its record either way. **One shape died and should be recorded as dead: "our story / established
+/ single location"** returned 8 results of which 2 were in-market, the rest being national chains
+(SkinSpirit, Alchemy 43) and out-of-state clinics in Ponte Vedra FL, Point Loma and San Diego.
+Yield fell off sharply on that sixth query and that is where I stopped searching, not on budget.
+
+**Laguna Beach is OCCUPIED, not empty — and occupied by live clinics rather than dead SEO.** The
+brief warned that a town returning nothing may be held by a closed clinic's surviving pages. Laguna
+Beach's problem is the opposite: both own-domain clinics there are real, single-site, founder-led
+and well evidenced (Dr Adrienne O'Connell DO with 47 reviews; ShienLin Pryor PA-C as founder and
+medical director), **and neither publishes an email address.** So the town reads thin in the
+pipeline while being perfectly healthy. That is a third reason a town can look empty, beside "thin"
+and "held by a dead domain": **reachable by phone only.**
+
+**A same-name trap fired INSIDE the market, which the brief did not anticipate.** The brief warned
+me about Newport in Rhode Island, Oregon and Wales, and San Clemente abroad — all sensible, none of
+which fired. What fired was intra-state: **California Cosmetics has one site in Newport Beach
+(92660, Orange County) and one in CORONA (92879, Riverside County), which is not Corona del Mar.**
+I read both ZIPs. This is the Madera / Corte Madera shape at a 40-mile range, and "Corona" vs
+"Corona del Mar" belongs on the hazard list beside them. Separately, two name collisions were
+caught by grep before any fetch and both were real: **"House of Aesthetics"** is also a Cary +
+Wilmington, NORTH CAROLINA business already in near-misses at line 7461, and **"Belladerm"** is
+also `belladermaok.com` in Shawnee, OKLAHOMA at line 7917. Three same-name hazards in one metro.
+
+**A seventh thing must-have 4's ladder cannot see, and this one also miscounts LOCATIONS: demo data
+in the locations slot.** `michelmedspa.com` lists four addresses under "All Locations" — two real
+California ones (Dana Point, Corona del Mar) and **two in MINNESOTA (Apple Valley MN 55124, White
+Bear Lake MN 55110)**, which are CMSMasters "bella-beauty" WordPress theme demo addresses. Several
+of its own nav links still point at the theme's demo host, `bella-beauty.cmsmasters.net`, and a
+homepage counter reads "3" beside "Convenient locations across the city". **A worker counting
+addresses would have recorded four sites in two states; a worker reading the counter would have
+recorded three.** This sits beside New Jersey's broken counter, Australia's missing footer and
+Montgomery County's self-contradicting counter — but it is worse than those, because the other
+three only mis-grade must-have 4 while this one mis-counts must-have 3. **Proposed rung: unreplaced
+theme demo content in the LOCATIONS block is not a location, and a site shipping demo nav links has
+published no reliable trading history either.** I graded that row C on that basis and said in the
+row that I was extending the 10 Nov placeholder rung beyond the social-proof slot, which is a
+judgement the thread may want to take back.
+
+**Aluma is a tenancy, not just a domain to block.** `alumamedicalaesthetics.com` is on the brief's
+blocked list as a crowder-out. What the brief does not say is what it does: Nicole Leiann
+Aesthetics books through `alumamedicalaesthetics.myaestheticrecord.com` and its footer reads
+"Powered by Aluma", so an independent injector's diary sits in **Aluma's** Aesthetic Record tenant.
+That is the practitioner-collective concern inverted — the list is not hers to sell — and it is
+worth recognising on sight rather than only blocking.
+
+**The spam-injection rule fired for the third time in the file's record, and I applied it the 10
+Nov way.** `beyondnewport.com/about-us/` carries hidden styled-invisible Norwegian casino promotion
+with a dofollow outbound link. I recorded **nothing** that only that page attests to — not the
+founder, not the hormone line, not the team — and said so rather than quietly using it. The clinic
+also fails must-have 5 on its own merits (its only mailbox belongs to a different business a team
+member founded, which is look-alike #5 in plain sight), so nothing was lost by refusing it.
+
+**The "label is not a finding" test fired three times and cleared the clinic twice.** Beauty Boost's
+founder "assisted in facelifts at UCI Plastic Surgery" and BellaDerm's founder has "experience in
+both aesthetics and plastic surgery" — both are hiring credentials with no surgical line on either
+menu, and both clinics are cleared, which is the Westchester reading in a sixth market. It **failed**
+a clinic once, correctly: Newport Beach MedSpa's co-owner holds a plastic surgery fellowship **and**
+its menu lists "Liposuction with Smartlipo", so the credential and the menu agree. That is substance.
+It also disqualified Refined Radiance outright on a sixteen-item surgical list. **In this market
+the word that needed reading was not "dermatology" at all — not one clinic in nineteen used it.
+It was "plastic surgery", and it appeared as a training credential twice as often as as a business
+model.**

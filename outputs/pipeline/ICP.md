@@ -409,6 +409,42 @@ spider and varicose veins"*, it names no medical vein condition anywhere, and it
   vein clinic or centre are DISEASE language, and any one of them fails must-have 2.** These
   describe managing a condition rather than improving an appearance.
 
+**A THIRD RUNG, FOUND 11 NOV, AND IT INVERTS THE TEST: DISEASE LANGUAGE USED TO REFER A PATIENT
+OUT IS EVIDENCE THE ROW PASSES.** Row 178 (PhillyMedClub) was reported as failing must-have 1 on
+copy reading *"visible leg veins are frequently a surface sign of venous disease"* and *"needs a
+duplex ultrasound and a vein specialist before anyone treats the appearance"*, plus referrals to a
+plastic surgeon and to *"the oculoplastic service at Penn"*. **Every quote was accurate and the
+conclusion was backwards.** A direct fetch shows all of them sitting inside a block the clinic
+headed **"Sometimes the right treatment isn't one we offer"** — its own referral-out policy, which
+also declines liquid rhinoplasty and PRP into hips, and which names Wills Eye Institute and Penn as
+where to go instead.
+
+**A referral-out block necessarily contains the vocabulary of every business the clinic is NOT.**
+That is what the block is for. So the word list cannot be run over a page as a flat grep; it
+screens for **what the clinic SELLS**. Before failing a row on disease language, read whether the
+sentence is selling the treatment or declining it:
+
+- **Selling it fails.** Row 130 (The R Clinic, struck 11 Nov) lists "Venous Ulcer", "Venous Eczema"
+  and "DVT" as conditions it treats, sells "Endovenous Thermal Ablation" and "Ultrasound Guided
+  Sclerotherapy", employs a sonographer to map leg veins, and publishes a dedicated `vein@` mailbox.
+- **Declining it passes, and passes well.** Row 178 tells the reader to see a vein specialist.
+
+**The two pages share most of their vocabulary and are opposite businesses.** And the honest
+reading of row 178 is better than neutral: a clinic that publishes what it will not treat is
+unusually straight with patients, which is a good prospect rather than a borderline one.
+
+**The same rung applies to "dermatology", which is where two of the 11 Nov claims went wrong.**
+Rows 89 (Skin to Love) and 110 (MediZen) were both reported as dermatology-positioned on the
+strength of a "Dermatology" nav item. Both sell private consultations for lumps, bumps, warts,
+moles and cysts as **one line on an injectables-led menu**, neither bills a practitioner as a
+dermatologist, and 89's own title tag reads "Non Surgical Skin Treatments" while 110's meta
+description reads "doctor-led, CQC-registered aesthetic clinic". **A service line is not a
+positioning.** Contrast row 107 (Lumiere, struck 11 Nov), whose own welcome sentence reads
+*"a Dermatologist and Plastic Surgeon-led clinic"* and whose menu sells Blepharoplasty, Breast
+Enlargement and VASER Liposuction: there the clinic says what it is, in its own words, and sells the
+thing. **The test for must-have 1 is the clinic's own self-description plus what is on the menu, not
+the presence of a word in the nav.**
+
 **The same row pair settled it in one day, which is why it is written as a rule.** Row 179 passes
 on cosmetic framing with no condition named; **row 177 was disqualified the same hour** for running
 a "VEIN CENTER" with "Varicose Vein Treatment" and "Vein Disease Treatments" as named services —
@@ -710,6 +746,25 @@ history almost certainly exists and simply was never printed on the page you rea
 **The open question, for whoever has a day to spend on it rather than a run to finish:
 is a ladder that measures marketing effort the right ladder for must-have 4 at all?**
 
+**THE MARKET-TYPE EFFECT WAS TESTED ON A MARKET PREDICTED TO BREAK IT, AND IT BROKE EXACTLY AS
+PREDICTED — COASTAL ORANGE COUNTY, 11 NOV 2026.** Every measurement until now came from a quiet,
+referral-driven market, which is the kind of agreement that can mean a real effect or can mean
+nobody has looked anywhere else. So the coastal Orange County brief carried the opposite
+prediction in writing, labelled a hypothesis rather than a finding: a dense, competitive,
+marketing-heavy market should publish far MORE about itself. **It did, and the gap is not
+marginal: 8 of 19 clinics, 42%, published a dated or quantified artifact about the business,
+against Montgomery County 20%, Westchester 11% and Long Island 8%.** Three outright founding
+years, two trading spans, four numbered review counts.
+
+**So must-have 4 was not the binding constraint there — must-have 5 was, and that is the useful
+half of the result.** Nine of nineteen clinics publish no usable email at all (eight silent, one
+Cloudflare-masked). **The constraint moves with the market type and it moves in the opposite
+direction**: where clinics compete on visibility they prove their establishment readily and guard
+their inbox, and where they fill chairs on word of mouth they print a mailbox and prove nothing.
+A run's thin grade mix therefore says which market type it swept, not how good the clinics were —
+and the single highest-yield extra fetch differs by market: a quantified artifact in the quiet
+suburbs, a privacy policy in the marketing-heavy metro.
+
 **A FOURTH MEASUREMENT, AND IT IS A DIFFERENT FAILURE WEARING THE SAME CLOTHES. Northern New
 Jersey, 9 Nov 2026.** Five of its six C rows fail on must-have 4, so the pattern holds a fourth
 time — but **the reason is new and it matters more than the count.** Britain's clinics are busy and
@@ -739,7 +794,20 @@ consultations, **parked at C because its theme omits a copyright year.**
 **So the ladder now has four distinct failures it cannot tell apart:** no trading history (the
 honest C), history never printed (the affluent-suburb case), history printed into a broken widget
 (New Jersey), and **no publishing furniture in which to print it (a theme default).** Only the
-first is a reason not to write to someone. **The practical instruction is the same in all three
+first is a reason not to write to someone. **A SEVENTH VARIETY, 11 NOV 2026, AND IT IS THE ONLY ONE THAT ALSO MIS-COUNTS MUST-HAVE 3: DEMO
+DATA SITTING IN THE LOCATIONS SLOT.** `michelmedspa.com` lists four addresses — two real
+Californian ones and two in **Minnesota** — which are CMSMasters "bella-beauty" theme demo
+content; the nav still links the demo host and a counter reads "3". **A worker counting addresses
+reads four sites in two states and either parks the row on must-have 3 or, worse, accepts the
+count.** The placeholder rung was written for the social-proof slot ("10 Happy Returning
+Clients"); the Orange County worker extended it to the locations slot on its own reading, graded
+the row C, and said in the row that it had done so **so the call could be taken back here**. That
+was right on both counts and the extension stands: **unreplaced theme demo content is placeholder
+copy wherever it sits, and a site still carrying it has not told you its site count any more than
+it has told you its trading history.** The tell is a city that has no business being there — and
+it is cheap, because demo addresses cluster in whichever state the theme author lives in.
+
+**The practical instruction is the same in all three
 non-honest cases: look for the trading history somewhere other than the footer** — an About page,
 a practitioner's stated tenure, a wall of dated reviews — before parking a row that clears
 everything else.
