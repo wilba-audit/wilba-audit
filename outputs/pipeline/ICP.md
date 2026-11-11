@@ -574,6 +574,18 @@ so the call is reversible, do not send. **The general form, worth more than the 
 a visitor could DO with the string, not whether the string is in the page.** A grep over markup
 cannot tell these apart, which is why must-have 5 is a reading task and not a search task.
 
+**AND A CONSUMER *ISP* MAILBOX IS THE SAME ANIMAL AS A GMAIL — SETTLED 11 NOV 2026, AND SETTLED BY
+THE WORKER RATHER THAN ASKED, WHICH WAS RIGHT.** Skin IQ Medspa publishes `skinIQ@att.net` on its
+own page. That is neither of the two disqualifying kinds: it is not somebody else's mailbox, and
+`att.net` is not a generic *industry* domain in the `medspas.info` sense — it is a consumer ISP,
+which means the clinic's own owner reads it. So it passes must-have 5 on exactly the reasoning that
+settled the gmail case: **published conspicuously on the clinic's own site, and received by the
+owner.** Record it, and note the weakness in the grade, which is the same weakness a gmail carries
+— a consumer mailbox is more likely to be read by one person and less likely to survive a staffing
+change than a mailbox on the clinic's domain. **The test that decides all of these cases in one
+line: whose inbox does mail to this string land in?** Own domain, gmail and ISP all answer "the
+owner's"; a generic industry domain and somebody else's mailbox do not.
+
 **A GENERIC INDUSTRY DOMAIN IS NOT THE CLINIC'S OWN. Settled 5 Nov 2026, and settled here
 rather than asked of Jess, because it is a qualification question and she should never have to
 answer one.**
@@ -764,6 +776,38 @@ their inbox, and where they fill chairs on word of mouth they print a mailbox an
 A run's thin grade mix therefore says which market type it swept, not how good the clinics were —
 and the single highest-yield extra fetch differs by market: a quantified artifact in the quiet
 suburbs, a privacy policy in the marketing-heavy metro.
+
+**AND THE SAME NIGHT, A SIXTH MARKET BROKE THE OTHER HALF OF THE RULE — NORTH ATLANTA, 11 NOV
+2026. THE ABOVE IS NOT WRONG, BUT IT IS NOT THE RULE EITHER.** Buckhead, Alpharetta, Roswell and
+Dunwoody are affluent suburbs on any reading — the market type the rule predicts will publish
+nothing. **They published the most of anywhere measured: 11 of 19 clinics, 58%, carried a dated or
+quantified artifact**, higher even than coastal Orange County. "EST. 2011" with 149 reviews,
+"since 2005" with 393+, a named founding month in 2006 with a four-year award run, "since opening
+our doors in 2014" with 75 reviews. **So "affluent suburb means must-have 4 binds" is 5 markets of
+6, not a law, and the exception is not a borderline case — it is the largest measurement in the
+set.**
+
+**WHAT BOTH 11 NOV MARKETS AGREE ON IS BETTER THAN WHAT THE OLD RULE CLAIMED, AND IT CAME FROM A
+WORKER RATHER THAN FROM ME: WHAT VARIES BY MARKET IS *WHICH* MUST-HAVE BINDS, NOT HOW STINGY THE
+MARKET IS.** In Atlanta 10 of 12 parked rows failed on must-have 5 — nine in total silence, one
+masked — while founding years and review counts were printed freely. In coastal Orange County the
+same thing happened independently: must-have 4 easy, must-have 5 binding on 9 of 19. Two unlike
+markets, measured the same night by workers who never spoke, reaching the same structural finding.
+**A clinic publishes what its market makes it publish, and the two things it chooses between are
+not "evidence" and "nothing" but evidence and a mailbox.**
+
+**So the operational instruction changes shape. Do not predict the constraint from the market's
+wealth. Measure which must-have is binding in the first five or six clinics and spend the rest of
+the budget on that one** — a quantified artifact where must-have 4 is binding, a contact page or a
+privacy policy where must-have 5 is. Atlanta's own first-page hit rate says the same thing from the
+other end: 7 of 18 clinics gave up the address on the first page read, so **in a must-have-5 market
+the second page of a clinic you have already found beats a new clinic**, and that is where a run's
+last fetches belong.
+
+**The honest status of the original market-type rule: it survives as a tendency with one large
+counter-example, and it should no longer be put in a brief as a prediction.** What goes in a brief
+is the question — which must-have is binding here? — and the instruction to answer it early and
+say so.
 
 **A FOURTH MEASUREMENT, AND IT IS A DIFFERENT FAILURE WEARING THE SAME CLOTHES. Northern New
 Jersey, 9 Nov 2026.** Five of its six C rows fail on must-have 4, so the pattern holds a fourth

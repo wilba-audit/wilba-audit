@@ -646,12 +646,26 @@ Dermatology** (10 NC sites, 25 MDs — the biggest practice in the Carolinas and
 wrong offer shape), **Beck Aesthetic Surgery** (and note `surface-medspa.com` redirects to
 their domain, itself a disqualifier), **The MedSpa Raleigh** (publishes an address but
 booking is a homepage anchor, so grade C, with payment plans as the only scheme).
-Single-site or single-operator, several with perfectly good published addresses — they fail
-on size, so do not re-source them: 704 Aesthetics, Aesthetica Med Spa, Charlotte Medical
-Aesthetics, Mirama, The Skin Atelier, Prestige Medical Spa, NuDerma Health, Ella Ora,
-Ageless Remedies, Voci MedSpa, Evolve Medical Associates, Femme Medspa (*"this is a TEXTING
-line only"*), Cameo Facial Aesthetics, Med Spa CLT, Infinite Allure, Nu Body Solutions,
-Radiant Medical Aesthetics. Chains: Elase, VIO, SkinSpirit, Skin Pharm, **Smiley Aesthetics**
+**[STRUCK 11 NOV 2026 — THIS PARAGRAPH WAS A v1 JUDGEMENT LEFT STANDING AFTER ICP v2 AND IT WAS
+TELLING FUTURE WORKERS TO AVOID EXACTLY THE PROFILE WE NOW WANT.** The original text read:
+*"Single-site or single-operator, several with perfectly good published addresses — they fail on
+size, so do not re-source them."* **Under ICP v2 (16 Oct 2026) single-site and owner-operated are
+must-have 3 itself — a virtue, not a failure.** This was written on 2 Nov, two weeks after the
+standard changed, because the ruling was inherited from the v1 sweep and nobody re-read it. It was
+found on 11 Nov by an Atlanta worker grepping this file for an unrelated clinic name, which is the
+second time this week that grep-before-fetch caught a stale judgement rather than a duplicate.
+**So these seventeen are NOT ruled out and several published an address: 704 Aesthetics, Aesthetica
+Med Spa, Charlotte Medical Aesthetics, Mirama, The Skin Atelier, Prestige Medical Spa, NuDerma
+Health, Ella Ora, Ageless Remedies, Voci MedSpa, Evolve Medical Associates, Femme Medspa
+(*"this is a TEXTING line only"* — that one does fail must-have 5), Cameo Facial Aesthetics, Med
+Spa CLT, Infinite Allure, Nu Body Solutions, Radiant Medical Aesthetics. They are UNSCREENED under
+the current standard, not disqualified, and they are the cheapest named leads left in the
+Carolinas** — each one already has a clinic name and most have a published address, so the work is
+a single fetch per clinic to grade it. **The general lesson, and it applies to every "ruled out"
+list older than 16 Oct in this file: a disqualification is only as current as the standard it was
+made under, and the ICP has changed under it.** Note separately that "Ageless Remedies" appears
+here as a Carolinas lead and **Ageless Remedies of Roswell is now pipeline row 1197, graded A** —
+the same brand name in a different state, so check which before spending a fetch.] Chains: Elase, VIO, SkinSpirit, Skin Pharm, **Smiley Aesthetics**
 (14 Knoxville-area sites), Ideal Image, **Genesis Lifestyle Medicine** (22 TN sites),
 Allure Medical, **Skin Clique** (15 SC sites, a nurse-network model), The Aesthetics Lounge
 & Spa (self-describes as a chain).
@@ -16863,3 +16877,482 @@ It also disqualified Refined Radiance outright on a sixteen-item surgical list. 
 the word that needed reading was not "dermatology" at all — not one clinic in nineteen used it.
 It was "plastic surgery", and it appeared as a training credential twice as often as as a business
 model.**
+
+# ==============================================================
+# North Atlanta suburbs, GA — sourced 11 Nov 2026
+# ==============================================================
+
+# Near-misses — affluent north-side Atlanta metro (11 Nov 2026)
+
+**Region swept:** Buckhead, Sandy Springs, Dunwoody, Brookhaven, Piedmont Heights, Roswell,
+Alpharetta, Milton, Johns Creek, Vinings, Marietta / East Cobb, Smyrna, Kennesaw, Decatur,
+Peachtree Corners. **Not reached:** Virginia-Highland and Chamblee returned nothing of their own
+(see the market note at the end), and Duluth / Cumming / Woodstock were only ever touched as
+somebody else's SEO suburb pages.
+
+**Budget consumed:** 7 WebSearch, 26 WebFetch. **Fetches were the constraint, not searches** —
+I stopped on judgement with searches to spare.
+
+Everything below either fails a must-have or could not be read. Each entry names the failing
+must-have **by number**, and the two unreachable kinds are kept apart because Jess handles them
+differently: **no address published at all** needs a phone call or a DM, while **masked** needs
+one browser tab.
+
+---
+
+## 1. Fails ONLY must-have 4 — email works, so this is the cheapest recovery in the file
+
+### Wellspring Skincare — Roswell, GA · `wellspringskincare.com`
+- **Grade C on must-have 4, and nothing else fails.** This is the best row I did not take.
+- **Published address, printed so it is checkable: `frontdesk@wellspringskincare.com`**, read in
+  **visible footer text and in a matching `mailto:` href in that same footer** (a second `mailto:`
+  with the same address sits in the social-links block) on
+  **`https://www.wellspringskincare.com/about`**, 2026-11-11. **Not masked. Email reaches them.**
+- **Street address: `597 W Crossville Rd #200, Roswell, GA 30075`**, read in visible footer text
+  and a Google Maps link on the same URL. Phone 770-883-1012. **One site.**
+- **Owner: Ashley Corey, DO — "Owner, Injector & Medical Director", board certified in family
+  medicine, and the page publishes her GA Medical License #88191 and NPI #1710542725.** An
+  owner-injector who publishes her licence number is as clean a must-have 3 pass as exists.
+- Must-have 1 passes (Aesthetic treatments / Skin treatments / Health & wellness / Beauty; she is
+  described as the injector). Must-have 2 passes — insurance, Medicare, health plans, HSA and FSA
+  appear nowhere, and "board certified in family medicine" is a **hiring credential**, the same
+  shape as the dermatology-label case: no primary-care heading, no scheme name, nothing billed.
+- **Why it fails must-have 4: no proxy of any kind.** No founding year, no "since YYYY", no review
+  count, no dated award, no dated testimonials, no stated career length for Dr Corey, and the
+  footer is a bare `© 2026`. I spent the About-page fetch specifically on this, which ICP says is
+  the highest-yield fetch left on such a row, and it came back empty. Per the ladder's bottom rung
+  — no proxy at all — this is a C.
+- **crm_detected, recorded as an inference and not as a finding:** booking resolves to
+  `book.wellspringskincare.com/webstoreNew/`. `/webstoreNew/` is **Zenoti's own booking path**, so
+  Zenoti is very likely, but **no vendor is named anywhere on the page** and I am not grading on it.
+- Dormant signals present: a complimentary consultation offered twice ("a complimentary
+  consultation where you get an exact quote"), a "Get on the list" email signup promising
+  "occasional emails with offers, new treatments and skin tips", and a text-chat signup. No
+  membership, no gift cards, no banked credit.
+- **What would recover it:** one artifact with a date or a number on it. A Google Business profile
+  review count, a local-press mention, or an Instagram founding post would do it. Everything else
+  about this clinic is grade-A shaped.
+
+---
+
+## 2. Fails must-have 5 — **masked**. One browser tab each.
+
+### Total Rejuvenation Medspa — Roswell / Alpharetta, GA · `totalrejuvenationmedspa.com`
+- **Grade C on must-have 5, MASKED — and otherwise a strong row.** Everything else passes.
+- **Street address, printed: `600 Houze Way Suite B6, Roswell, GA 30076`**, read in visible footer
+  text and a Google Maps link on **`https://totalrejuvenationmedspa.com/`**, 2026-11-11. The
+  contact page gives a **second, different** location — "We are in the Solera Salon Suites in Suite
+  270 located in Alpharetta GA", with a Maps link to `1655 Mansell Rd Ste 270, Alpharetta, GA
+  30009` — read on **`https://totalrejuvenationmedspa.com/contact/`**, 2026-11-11. The site markets
+  itself as Alpharetta throughout while the footer address is Roswell. **A room inside a
+  salon-suites host is ICP's third must-have 3 look-alike and still ONE decision-maker**, so this
+  is not two sites in any sense that matters.
+- Phone (678) 548-6003. **Owner: Cunard Bienvenu-Sumpter, PA — "Owner & Aesthetic Specialist",
+  board-certified physician assistant and an Allergan Master Injector. Dr Aaron Fletcher,
+  Medical Director.**
+- Must-have 1 passes ("Botox & Fillers" and "Injectables" are the first two nav items).
+  Must-have 2 passes (no insurance, Medicare, health-plan, HSA or FSA language; financing only).
+  **Must-have 4 passes on the quantified rung** — "5.0 from 165+ Reviews" in the footer and
+  "based on 169 MindBody reviews" at the testimonials heading (the two counts disagree; recorded,
+  not tidied). crm_detected: **MindBody**, `clients.mindbodyonline.com`, plus "Growthstack by
+  Influx". Dormant signals: a VIP Membership nav item and a "Join Our Beauty Community" section,
+  plus an ALLE points blog headline.
+- **Why must-have 5 fails, and exactly what the page shipped.** On
+  `https://totalrejuvenationmedspa.com/contact/` the **visible link text under the "E-Mail Address"
+  heading renders as `[email protected]`** — masked. The helper **volunteered, unasked**, that the
+  underlying href reads `https://mailto:services@totalrejuvmedspa.com`. **I did not take that
+  decode and have not recorded it as a seen address.** Two separate reasons, each sufficient:
+  (a) the characters a visitor sees are the mask, not the address, which is the Cloudflare answer
+  and has not changed; and (b) **that href is malformed** — `https://mailto:...` is not a working
+  `mailto:` link, so clicking it opens no mail composer. Per the 9 Nov `sms:` ruling the test is
+  **what a visitor could DO with the string**, and the answer here is nothing. (Note also that the
+  embedded domain, `totalrejuvmedspa.com`, differs from the site's — a mismatch ICP says is normal
+  and must never be "corrected", but which makes guessing doubly wrong.)
+- **→ BROWSER-VISIT LIST. Highest priority of the two.** Jess opens the contact page, the
+  protection script decodes for her, and this becomes a grade-B-or-better row on the spot: named
+  owner-injector, MindBody, 165+ reviews, a VIP membership.
+
+### Bellissimo Aesthetics · `bellissimoaesthetics.com`
+- **Fetch refused: `robots_disallowed`.** Nothing of the page was retrieved, so **no must-have is
+  screened** — this is unread, not failed, and I am not asserting otherwise.
+- **Its market is UNVERIFIED.** It surfaced on a Decatur / Chamblee / Brookhaven query, so it is
+  probably metro Atlanta, but I never read a postal address and the "Bellissimo" name is common.
+  **Read the state before recording anything**, per the Peachtree-Corners same-name lesson.
+- **→ BROWSER-VISIT LIST, second priority.** A person opening a robots-disallowed site sees it
+  normally, and ICP notes these are often the best clinic in their town. One tab answers both the
+  market question and the address question.
+
+---
+
+## 3. Fails must-have 5 — **no address published at all**. Phone or DM only; no browser helps.
+
+Ordered best prospect first. The top three are better businesses than two of my accepted rows.
+
+### Conqr Aesthetics and Wellness — Buckhead, Atlanta, GA · `conqraesthetics.com`
+- **Grade C on must-have 5 — total silence.** No email in visible text, no footer address, no
+  `mailto:` anywhere.
+- **Street address, printed: `371 E. Paces Ferry Rd. Suite 551, Atlanta, GA 30305`**, read in the
+  footer Location section and a Google Maps link on **`https://www.conqraesthetics.com/`**,
+  2026-11-11. Phone (404) 446-9566. **One site.**
+- **Owner: Brandi Milton, NP-C — "Master Injector & Founder", board-certified nurse practitioner
+  and the practice's own medical director**; a testimonial calls her "the owner, Brandi".
+- Must-have 1 passes and strongly: Injectables is the first menu group. Must-have 2 passes — no
+  insurance, Medicare, health-plan, HSA or FSA language; a Payment Plans page only. Must-have 3
+  passes. **Must-have 4 is ALSO unresolved** — no founding year, no review count (six testimonials,
+  no total), bare `©2026`. So even with an address this would be a C.
+- crm_detected: **Podium** (`booking.podium.com`) — which ICP deliberately keeps OFF the
+  named-system list, so seeing it is not seeing a practice system. Growth99 credited as developer.
+- Dormant signals: a free consultation ("Schedule your free consultation today!") and a membership
+  programme the page says is **"Coming Soon"** — not live, so not yet an asset.
+- **Only the homepage was read.** A contact page or privacy policy might carry a mailbox; I ran out
+  of fetch budget before testing it. Worth one fetch next run.
+
+### Ageless Remedies' neighbour in the same market — see §1; not repeated here.
+
+### Balanced Aesthetics + Wellness — Brookhaven, Atlanta, GA · `balancedaestheticsmedspa.com`
+- **Grade C on must-have 5 — total silence.** No email in visible text, no footer, no `mailto:`,
+  no meta tag.
+- **Street address, printed: `1350 Dresden Dr NE #1006, Atlanta, GA 30319`**, read in the FAQ body
+  text, again in the footer, and in a Google Maps embed on
+  **`https://balancedaestheticsmedspa.com/`**, 2026-11-11. Phone (470) 226-2390. **One clinic in
+  Brookhaven**, stated in the footer, plus telehealth.
+- **Co-founders Anthony Didato and Richelle Bonacia**, named in body text and image alt text, with
+  **no credentials given for either** and no medical director named — the meta description says
+  "physician-supervised" but names nobody. Reviews name "Justin" as an injector.
+- **Must-have 2 PASSES and the clinic says so in its own words: "We currently do not accept
+  insurance or HSA."** That is the cleanest must-have 2 answer I read all run. Financing is Cherry
+  and in-house payment plans.
+- **Must-have 1 is DOUBTFUL and I am not resolving it from a label.** The nav leads with
+  Aesthetics → Injectables, but the mega-menu is a hormone / peptide / TRT / longevity operation at
+  least as large: twelve "Problem Areas" including Cognition, Metabolism, Pain Relief, Immunity and
+  Digestive Health, plus men's TRT and women's HRT. The FAQ calls the business "a concierge
+  medicine facility". That is a wellness clinic with an aesthetics arm as much as the reverse. It
+  does **not** fail must-have 2 (no third party decides whether anything is paid for) but it may
+  well fail must-have 1's requirement that the recallable list sit on a three-to-four-month
+  aesthetic cycle. **Unscreened rather than failed** — somebody should read the injectables page
+  before writing to them.
+- Must-have 4 also unresolved: no founding year, no review count, bare `© 2026`.
+- crm_detected: **Zenoti** (`balanced.zenoti.com` for booking and gift cards). Refill forms sit on
+  `go.balancedaestheticsmedspa.com/widget/form/…`, a path shape that **looks like**
+  GoHighLevel/LeadConnector but the page never names it — recorded as an inference, not a finding.
+- Dormant signals, and they are good: five priced monthly memberships across aesthetics,
+  regenerative and wellness, gift cards, two consultation routes, and two quiz lead magnets
+  (Wellness Quiz, Skincare Quiz).
+
+### The Aesthetic Company — Milton, GA · `theaesthetic.company`
+- **Grade C on BOTH must-have 5 (total silence) and must-have 4.**
+- **Street address, printed: `12655 Birmingham Hwy, Suite 303, Milton, GA 30004`** ("3rd floor,
+  directly above Starbucks"), read on **`https://www.theaesthetic.company/`**, 2026-11-11 —
+  **but only inside embedded Instagram post captions**, not in the site's own body text or footer.
+  Phone (404) 495-5591, likewise from captions, with a `tel:` link in the header. **One site.**
+- **Jennifer "Jenny" Adams, PA-C, founder**, named in visible "OUR STORY" body text.
+  **Dr Laura Purdy, MD, MBA, Medical Director.**
+- Must-have 1 passes cleanly — the whole service grid is injectables, fillers, threads, skin
+  tightening and resurfacing. Must-have 2 passes — no insurance, Medicare, health-plan, HSA or FSA
+  language anywhere.
+- **Must-have 4 fails on substance.** A caption celebrates a **"2nd Anniversary"** on 1 October,
+  so the business opened around 2024 — roughly two years. The only other duration is "Over 14 Years
+  of Industry Expertise", which is **the founder's career, not the business's age**, and the ladder
+  says a career length alone caps a row at B rather than carrying it. Two years is below the row 720
+  line: not enough trading time for roughly 300+ lapsed patients. No founding year, no copyright
+  year, no review count.
+- crm_detected: **Mangomint** (`booking.mangomint.com/theaestheticcompany`). Site on Wix.
+- Dormant signals, which are genuinely strong for a two-year-old: a "MEMBERS ONLY" early-access
+  tier, complimentary consultations offered on several services, gift cards, and a newsletter
+  signup. **Worth re-sourcing in 2027** — in a year the trading history will clear.
+
+### SHINE Medical Aesthetics — Avalon, Alpharetta, GA · `shinemedstudios.com`
+- **Grade C on must-have 5 (total silence), must-have 4, and with a must-have 3 concern.** Three
+  reasons, so this one is not close.
+- **NO STREET ADDRESS IS PUBLISHED ANYWHERE** on the page — the location is named only as "Visit
+  our Avalon location". **So it could not enter the pipeline even with an email**, per the rule that
+  a clinic with no published address never goes in with an invented one. Phones (470) 470-9986 in
+  the nav and `tel:404-996-6530` on a second button, unexplained. Read on
+  **`https://shinemedstudios.com/`**, 2026-11-11. No email, no `mailto:`; contact runs through a
+  form on `link.shinemedstudios.com`.
+- **Must-have 4 fails on substance: "co-founded Shine Medical Aesthetics in early 2024"**, stated
+  in Dennis Kelly's own bio — about two years. Footer `© 2025`, no review count (one testimonial).
+- **Must-have 3 concern, recorded as a concern and not a finding:** the business is led by
+  **Dennis Kelly, "Co-Founder & CEO"** (an RT.R with a business-administration degree, previously
+  in patient financing at GreenSky) and **Gerry Benjamin, co-founder** — neither an injector — with
+  a **"Chief Clinical Officer for Aesthetics"** and a "Clinical Director" beneath them. That is a
+  non-clinician CEO plus a C-suite clinical layer, which is the management shape must-have 3 warns
+  about even at one site.
+- Not a practitioner collective: eight clinicians are named (Anna Carlisle MSN APRN FNP-C, Lauren
+  Edeker PA-C, Katelyn Fuller MSN APRN NP-C, Kimberly Yerby RN, Anne Cease RN, Rachel Shah LE ACLP,
+  Krista Walker LME) and **none has a separate business name, booking link or email** — all booking
+  is shared. crm_detected: **Zenoti** (`shine.zenoti.com`), PatientFi financing, and a
+  `link.shinemedstudios.com/widget/form/` consultation form whose vendor is unnamed.
+- Site defects worth knowing: the services grid **swaps its own links** (the card labelled
+  "Injectables" goes to `/wellness-weight-loss/` and vice versa), and several buttons are dead `#`
+  links.
+
+### Keller Aesthetics (Keller Aesthetic Specialists) — Sandy Springs / Atlanta, GA · `kelleraesthetics.com`
+- **Grade C on must-have 5 (total silence), with must-have 1 doubtful.**
+- **Street address, printed: `5555 Peachtree Dunwoody Rd Suite 135 Atlanta, GA 30342`**, read in
+  visible footer text and a Google Maps link on **`https://www.kelleraesthetics.com/`**,
+  2026-11-11. Phone (404) 493-3916. **One address**; the copy says it serves "Atlanta, Brookhaven,
+  and Sandy Springs". No email, no `mailto:` — the only route is a contact form.
+- **Travis Keller, "founder", is a board-certified medical esthetician and cosmetic laser
+  practitioner — not an injector.** The About dropdown also lists **Dr Ramie A. Tritt, FRCSC**
+  with **no role stated anywhere on the page**.
+- **Must-have 1 is doubtful on substance.** The three menu headings are **Skin & Face, Laser,
+  Body** — there is **no injectables heading at all** — and the named offers are CoolSculpting
+  Elite and a PDRN skin treatment. An esthetician-and-laser practice is aesthetics-adjacent but its
+  recallable cycle is not the three-to-four-month injectables cycle must-have 1 is built around.
+  **Unscreened rather than failed** — but combined with an FRCSC surgeon named with no stated role,
+  somebody should read the menu and the About page before treating this as a med spa.
+- Must-have 4 would pass only at the **career-length rung**: "20+ Years in Aesthetics" and "over
+  20 years of experience" are about Travis Keller, not the business. Copyright line carries **no
+  year at all**. No review count.
+- crm_detected: **none named** — the "Schedule a Consult" buttons name no vendor. NitroPack,
+  iubenda, Google Tag Manager and "DLM" as web designer are all that is identifiable.
+- Dormant signals: an **Allē Rewards** page (a manufacturer scheme, which ICP says is a grade-A
+  signal and **not** a parent-group tell), a complimentary consultation, a virtual-consultation
+  route, and two running promotions.
+
+### Vibe Aesthetics — Marietta, GA · `vibeaesthetics.com`
+- **Grade C on must-have 5 — total silence, and NO STREET ADDRESS EITHER.** No email, no
+  `mailto:`; the page says only "Located in the heart of Marietta, Georgia" and "in-office (in
+  Marietta)". Phone 770-733-6585 for call or text. Read on **`https://vibeaesthetics.com/`**,
+  2026-11-11. **Cannot enter the pipeline on any route** until an address is published.
+- **Jessica Radcliffe**, board-certified nurse practitioner, **"practicing since 2016"**, Instagram
+  handle **@themariettainjector**. The page says she "leads" the practice but **never calls her the
+  owner**.
+- Must-have 1 passes (Face Treatments: wrinkle relaxers, fillers, a biostimulator, Kybella,
+  SkinPen, Morpheus8; Body: RF, weight loss, vitamins). Must-have 2 passes — no insurance,
+  Medicare, health-plan, HSA or FSA language anywhere. Must-have 4 would sit at the **career-length
+  rung (B)**: "since 2016" is her career, not the business, and there is **no copyright line and no
+  review count** at all.
+- crm_detected: **Jane App** (a `janeapp.com` subdomain). Site on Squarespace.
+- Dormant signals: thin — a "Never miss a special" newsletter signup and a `/cart` with an
+  e-commerce element. No membership, no gift cards, no stated free consult.
+- **Site defect, and a useful tell about how closely this site is watched:** the newsletter block
+  prints **unreplaced Squarespace editor instructions as visible body text** — "This newsletter
+  signup form needs a storage option. Edit the block and enter a storage location via the Storage
+  tab." **So the signup form has been collecting nothing.** That is not the 10 Nov social-proof
+  placeholder rung (it is not in the social-proof slot), but it is direct evidence that nobody is
+  working the list — which is the condition the offer exists for.
+
+### Radiance Medspa — Vinings, GA · `radiancemedspaatlanta.com`
+- **Grade C on must-have 5 — total silence, and NO STREET ADDRESS EITHER.** No email, no
+  `mailto:`; the only contact is phone 770-435-7700 and two email-capture forms. The page says
+  "Radiance Medspa is located in Vinings, serving Smyrna, Marietta, and the greater Atlanta area"
+  and **never names a street or even the state**. Read on
+  **`https://radiancemedspaatlanta.com/specials/`**, 2026-11-11. **Cannot enter the pipeline.**
+- **No owner, founder or medical director named anywhere.** The only staff named are estheticians
+  "Kelly or Sydney" inside an offer description.
+- Must-have 1 passes (Services: Injectables, Skin, Wellness, Combo Treatments, Massage, Consults
+  and Screenings — note "Screenings", which somebody should read before relying on must-have 2).
+  Must-have 2: no insurance, Medicare, health-plan, HSA or FSA language seen. Must-have 4
+  unresolved — no founding year, **no copyright year**, no review count (one testimonial).
+- crm_detected: **envisiongo** (`na02.envisiongo.com`) for booking and **salonvision** for gift
+  certificates — neither on ICP's named-system list; recorded, not graded on.
+- **Dormant signals are the best of any unreachable clinic in this sweep**, which is why it is
+  worth a phone call: a skincare membership paying "a monthly service credit toward facials,
+  microneedling…" — **banked credit** — and a named loyalty scheme, **"Radiance Rewards"**, whose
+  fine print says "members can use points towards this special pricing". Plus gift certificates,
+  complimentary consultations, and a seasonal-offers list whose copy says "our list hears first".
+  A points ledger and a service-credit pool with nobody publishing an address to write to.
+
+### Chin Up! Aesthetics — Kennesaw + Decatur + Smyrna/Vinings, GA · `chinupaesthetics.com`
+- **Grade C on must-have 5 — no email on the homepage.** No `mailto:`, no visible address; the
+  contact routes are phone links, a consultation form and a Privacy Policy link. **The privacy
+  policy was NOT fetched** — I ran out of budget, and ICP notes a policy is where one Moncton clinic
+  published the only address it had. **That is the single cheapest test left in this market.**
+- **Three published street addresses, printed** — read in visible body text and the footer on
+  **`https://chinupaesthetics.com/`**, 2026-11-11:
+  - `2914 Cherokee St NW, Suite 1A, Kennesaw, GA 30144` — 678-369-4268
+  - `2786 North Decatur Road, Suite 260, Decatur, GA 30033` — 770-766-5310
+  - `2255 Cumberland Parkway Southeast, Building 1200, Suite 110, Atlanta, GA 30339` — 770-274-4220
+- **Three sites, so must-have 3 is INSIDE the 1-to-4 range** — but **no owner, founder or medical
+  director is named anywhere**, only "licensed aestheticians, nurse practitioners, and physician
+  assistants" generically, plus an injector called "Afsha" in a testimonial. Three sites with no
+  named buyer is the half of must-have 3 that worries me more than the count.
+- Must-have 1 passes (Injectables is the second nav item, ahead of Laser, Skin, Spa and Wellness).
+  Must-have 2 passes — no insurance, Medicare, health-plan, HSA or FSA language; financing is
+  PatientFi, Cherry and CareCredit, all of which ICP rules is the patient's own money.
+- **Must-have 4 passes on the quantified rung, with a contradiction recorded rather than tidied:**
+  the body says "Over 700 5 Star Reviews" while the "Why choose our med spa?" section says "with
+  over 200 five-star reviews". The two disagree; either number is a real counted review history,
+  and per the self-contradicting-counter rule I would take neither widget over a typed claim — here
+  both are typed, so record both. Copyright `© 2026`, no founding year.
+- crm_detected: **none named for booking**; "Powered by Spalytics" in the footer, Eventbrite for an
+  event RSVP, Netlify-hosted consultation and quote tools, Google Tag Manager GTM-P6ZGKP5.
+- Dormant signals: a Memberships nav item and a "Monthly Membership" page at `/members/`, a free
+  consultation offered repeatedly, a "Get a Free Quote Instantly" lead magnet, a virtual
+  consultation, a "Sip & Save" event and a "Join the club" specials list.
+
+---
+
+## 4. Fails must-have 1 — read the menu, not the name
+
+### Regenerative MedSpa of Buckhead — Atlanta, GA · `regenmedspabuckhead.com`
+- **Grade C on must-have 1, and separately on must-have 5 (total silence).** The name says med
+  spa; the menu says something else, and ICP's rule is to extract the substance.
+- **Street address, printed: `2061 Peachtree Rd NE Suite 250 Atlanta, GA 30309`**, read in the
+  "Visit Us" section and the "Contact Us" footer, plus Google Maps links, on
+  **`https://regenmedspabuckhead.com/`**, 2026-11-11. Phone (404) 816-8557, plus an
+  `sms:4046062430` "Text Us" link on a different number. No email, no `mailto:`. **One site.**
+- **Beata Grochowska, MD** (co-founder and medical director) and **Karolina Pelt, DMD**
+  (co-founder) — described as "a mother-daughter duo". Neither has a separate business name,
+  booking link or email, so not a collective.
+- **Why must-have 1 fails on substance.** The services list is **Hormone Health, Hair Restoration,
+  IV Therapy, Ketamine Infusions, Injectables, Medical Weight Loss, Sexual Wellness, Medical
+  Cannabis, Body Contouring, Joint Injections**, plus PRP, exosomes, O-shot and P-shot.
+  **Injectables is fifth of ten**, and the list around it — ketamine infusions, medical cannabis,
+  joint injections, hormone health — is a **regenerative and functional-medicine practice**, not an
+  injectables-led med spa. The lapsed list here is not people whose cosmetic treatment wore off on
+  a three-to-four-month cycle.
+- **Must-have 2 is a second, independent concern** and would need settling if anyone revisited:
+  ketamine infusion, joint injections, medical cannabis and hormone therapy are four service lines
+  under medical headings that private plans reimburse in various forms. I am **not** parking it on
+  must-have 2, because no insurance, Medicare, health-plan or scheme name appears on the page and
+  the "Financial Information" page went unread — so on the billing test it is **unresolved**.
+  must-have 1 decides it on its own.
+- crm_detected: **none named** — booking is the site's own `/appointments/` and `/online-forms/`.
+  WP Rocket, an "mts_schema" theme, and "Website by DOCTOR Multimedia". No membership, no loyalty,
+  no gift cards, no stated free consult.
+
+---
+
+## 5. Disqualified on size or segment — do not re-source these
+
+**Five or more sites or an outright chain (must-have 3):**
+- **SkinSpirit** — Buckhead location page surfaced. Already a named chain in `near-misses.md`
+  (3 prior mentions). **Blocked in my queries from the second search onward.**
+- **Ideal Image, Marietta (East Cobb)** — 8 prior mentions in `near-misses.md` as a chain.
+- **VIO Med Spa, Dunwoody** — named as a chain in `near-misses.md` line 654.
+- **Skin Pharm** — named as a chain in `near-misses.md` line 654; Atlanta presence.
+- **dermani MEDSPA** — already on ICP's blocked-domain list from 8 Nov. **It took FOUR of ten slots
+  on the one query where I forgot to block it** (`/botox-roswell-ga/`, `/roswell-ga/hydrafacial/`,
+  `/roswell-ga/laser-hair-removal-membership/`, `/dunwoody-ga/botox-membership/`). The block is
+  correct and this metro is exactly where it bites. **Keep it blocked.**
+- **Natural Body Day Spa + Med Spa** — multi-site Georgia spa group (Buckhead and Smyrna pages
+  both surfaced).
+- **Truffles Aesthetics** — Atlanta metro ×5. Already disqualified in `near-misses.md` on
+  must-have 3 (re-read 9 Nov 2026). **Confirmed still five sites; nothing changed.**
+- **Spa Sydell** — Atlanta ×3, Zenoti, eight membership tiers. Already in `near-misses.md` as
+  unreachable. **Three sites is INSIDE must-have 3**, and eight membership tiers is a serious
+  dormant asset — see the finding in my report, because its prior entry gives no address reason.
+- **AYA Skin / Avalon MedSpa, Alpharetta** (`ayaskin.com/pages/avalon-medspa`) — **caught by grep
+  before any fetch was spent.** `near-misses.md` line 486 records that AYA Skin is **"a multi-state
+  network"** that another clinic "has joined", and line 285 lists "Tribeca MedSpa / AYA Skin" at
+  2 NYC sites with an "AYA Beauty Bank" loyalty scheme. A multi-state network running a
+  cross-clinic loyalty programme is the roll-up shape must-have 3 disqualifies. **The grep saved a
+  fetch; this is the system working.**
+
+**Plastic surgery or a surgical practice (must-have 1, a named disqualification):**
+- **Kalos Plastic Surgery** (`kalos-plasticsurgery.com/atlanta-medical-skin-spa/`) — a plastic
+  surgery practice's med-spa page.
+- **The Swan Center for Plastic Surgery** (`swancenteratlanta.com/non-surgical/`) — same shape.
+- **Georgia Plastic & Reconstructive Surgery** — **already pipeline row 142**, parked C, must-have
+  1, marked NOT RECOVERABLE. Encountered and not re-fetched.
+
+**Not a medical aesthetics business (must-have 1):**
+- **The K Spa** (`thekspa.com/nonmedical-spa-services/`) — its own URL says "nonmedical".
+- **VidaFlo Buckhead** (`govidaflo.com/buckhead/`) — IV therapy.
+
+---
+
+## 6. Already ours — caught by grep, nothing re-fetched
+
+Four Atlanta-metro rows exist in `clinic-pipeline.csv`. I encountered three of them in search
+results and grepped every candidate name before fetching, as instructed.
+
+- **Row 142 — Georgia Plastic & Reconstructive Surgery**, Atlanta + Marietta. C, must-have 1,
+  recorded as not recoverable. Correct under current rules.
+- **Row 143 — NYAH Med Spa**, Alpharetta / Atlanta / Suwanee / Braselton. B. **Blocked in my
+  queries** so it would not crowd the Alpharetta search. **Four towns named in the city field — if
+  those are four real addresses it is at the very top of must-have 3's range, and if they are SEO
+  suburb pages it is one site.** Worth somebody confirming which, since the grade turns on it.
+- **Row 150 — SLM Medspa**, Atlanta (Howell Mill Rd). B. Never surfaced in my queries; Howell Mill
+  is west-side rather than north-side.
+- **Row 151 — Skin Social Med Spa**, Sandy Springs. B. Never surfaced in my queries.
+
+None re-added. See my report for the one thing that looks worth a second look.
+
+---
+
+## 7. Surfaced and NOT opened — the next worker's shortest path
+
+All seven grepped clean against both `clinic-pipeline.csv` and `near-misses.md`. **Nothing below
+is verified: no address read, no menu read, no must-have screened.** I stopped on judgement with
+fetch budget shared across two sibling workers, and these are where I would start.
+
+| Clinic | Where | Why it is worth the fetch |
+|---|---|---|
+| **MAJ Spa** (`majspa.io`) | Marietta, GA | A `.io` domain on a med spa suggests a recent, deliberate build; unopened |
+| **Enhanced Aesthetics and Wellness** (`enhancedaestheticsandwellness.com`) | Marietta, GA | Named itself "MedSpa in Marietta, GA"; unopened |
+| **Seamless Aesthetics & Wellness** (`seamlessaestheticswellness.com`) | Atlanta metro | Surfaced on the Decatur/Chamblee query; unopened |
+| **CULT Aesthetics** (`cultaesthetics.com/atlanta/team/`) | Atlanta + others | **Check the site count first** — a `/atlanta/` path implies other cities, so this may be a must-have 3 fail |
+| **OMNI MedSpa** (`theomnispa.com/location-marietta-ga`) | Marietta + others | **Check the site count first** — a `location-<town>` path set implies several |
+| **East Cobb Rejuvenation MedSpa** | East Cobb, Marietta, GA | Only surfaced via a third-party blog (`eastcobbsnobs.net`); its own domain was never found |
+| **Skinship** | Buckhead, Atlanta | A 2024 flagship opening per `roughdraftatlanta.com` — so **must-have 4 will probably fail on substance**; two years. Low priority |
+| **LumiVita Buckhead** | Buckhead, Atlanta | Covered as "Atlanta's new wellspa" in `modernluxury.com` — "new" again means must-have 4 risk, and "wellspa" means must-have 1 risk |
+
+---
+
+## What this market taught me
+
+**It is lightly picked over, not fresh and not finished — exactly as briefed, and the brief was
+right.** Four pipeline rows and three `near-misses.md` mentions existed for the whole metro, all
+from a September pass that took the obvious multi-site names (Spa Sydell ×3, Truffles ×5, Georgia
+Plastic) and left the single-site owner-operators untouched. **Every one of my eight accepted rows
+is a clinic the September pass walked past**, and six of the eight are single-site.
+
+**Must-have 4 was NOT the binding constraint here, and that is the finding I least expected.**
+ICP predicted it would be, on five prior measurements in affluent referral-driven suburbs
+(Westchester 3 of 28, Long Island 2 of 24, Montgomery County 3 of 15, Main Line 3 of 4, Chicago
+North Shore 4 of 6). **North Atlanta behaved differently: 11 of the 19 businesses I opened
+published a dated or quantified artifact about the BUSINESS** — "EST. 2011" plus 149 reviews,
+"since 2005" plus 393+ reviews, "founded in January 2023", "since opening our doors in 2014" plus
+75 reviews, "founded Skin IQ in August of 2006" plus a four-year award run, "75 reviewers",
+"165+ Reviews", "over 200 five-star reviews", a 2023-and-2026 award run, "co-founded… in early
+2024", a "2nd Anniversary". That is a **58% publication rate against roughly 11% across the five
+prior affluent-suburb sweeps.** Only **five** of the nineteen published no proxy of any kind
+(Wellspring, Conqr, Balanced Aesthetics, Regenerative MedSpa, Radiance), and two more (Keller,
+Vibe) sat at the ladder's career-length rung.
+
+**What bound instead was must-have 5 — by a distance. TEN of my twelve C rows fail on must-have
+5: nine of them publish nothing at all, and exactly one is masked.** Atlanta clinics print
+their street address, their phone, their founding year and their review count, and then **do not
+print a mailbox.** That is ICP's "total silence" mode, the one no browser fixes.
+
+**The first-page hit rate on addresses was 7 of 18 — 39%.** Of the eighteen clinic sites whose
+first page returned content, seven published a mailbox on that page (Churchwell, Sculpted
+Contours, Sur Med Spa, Alé, Bella, Skin IQ, Suburban); eleven did not. ICP says to read two or
+three homepages and let the rate decide whether policies are worth fetching. At 39% they are, and **the one
+non-homepage fetch I spent on a contact page paid for itself immediately**: `arroswell.com`'s
+homepage has no email and `arroswell.com/contact/` has one printed twice, which converted my
+strongest grade-A row. **Three of my C rows (Conqr, Chin Up!, Balanced) were read on the homepage
+only and may well convert the same way.** If somebody picks this metro up with fetch budget, spend
+it on contact pages and privacy policies rather than on new clinics — the clinics are found.
+
+**A possible pattern worth one more measurement:** both Influx-built sites I met
+(`arroswell.com` and `totalrejuvenationmedspa.com`, both carrying "Growthstack by Influx") keep
+the mailbox off the homepage and on `/contact/`. One converted; the other turned out masked. Two
+sites is not a pattern yet, but "Influx build → try `/contact/`" is cheap to test and Influx is a
+med-spa-specific marketing vendor, so it will recur.
+
+**The district query shape WORKS in Atlanta.** "Peachtree Road Buckhead Village medical spa
+injectables owner founded" returned four in-market own-domain clinics in one query (Regenerative
+MedSpa of Buckhead, Skin IQ, Bella Medspa, plus LumiVita) and three of my eight accepted rows trace
+to it. **That is the second market it has worked in after Long Island and Montgomery County, and
+the first since the Chicago North Shore failure** — so it is no longer a one-market technique. Note
+the warning it also confirmed: the same query returned **Suburban Med Spa in Peachtree Corners**,
+which the Main Line worker had already met via "Suburban Square Ardmore". Here it happened to be in
+market, but the lesson stands — read the postal address, not the district name.
+
+**Four unquoted town names plus "owner"/"founder" worked too**, in all four of my attempts, which
+is consistent with everything in the file. It is still the better default: it never returned an
+out-of-market clinic, where the district shape did.
+
+**A town that returns nothing may be occupied, and here it was — twice over.** **Chamblee and
+Virginia-Highland produced no own-domain clinic at all.** The Decatur/Chamblee/Virginia-Highland
+query returned Atlanta-wide and out-of-state businesses instead, and the Roswell/Decatur/Dunwoody
+query was eaten by `dermani MEDSPA`'s suburb-page set taking four of ten slots. **Decatur turned
+out to be occupied by Chin Up! Aesthetics' second site**, which ranks for the town without being
+headquartered in it. So: **neither town is established as thin** — they were crowded out, and a
+worker with a clean query and `dermani` blocked from slot one should try them again before anybody
+writes them off.

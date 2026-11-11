@@ -11,6 +11,188 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 11 Nov 2026 — two markets overturned the must-have 4 rule on the same night, and four grade-A rows were struck
+
+**Rows: 18 appended — 1186-1195 (coastal and south Orange County: 2 A, 4 B, 4 C) and 1196-1203
+(north Atlanta suburbs: 2 A, 6 B, no C).** Pipeline **1,203 rows, 808 ready to approach** — US 433,
+AU 168, CA 88, UK 82, NZ 43, IE 2. Browser-visit list **133 clinics**. Six rows came OFF the
+sendable list, which is why 18 new rows moved the ready count by only 8.
+
+**THE DAY'S REAL RESULT: THE MARKET-TYPE RULE FOR MUST-HAVE 4, WHICH THIS FILE HAS BEEN BUILDING
+SINCE 8 NOV AND CONFIRMED FIVE TIMES, WAS BROKEN BY ONE OF TONIGHT'S TWO MARKETS — AND THE THING
+BOTH OF THEM AGREE ON IS BETTER THAN THE RULE WAS.**
+
+The rule said: the richer and more referral-driven the market, the less its clinics publish about
+themselves, so must-have 4's evidence ladder binds hardest in exactly the affluent markets this
+offer wants. Measured at 11% (Westchester), 8% (Long Island), 20% (Montgomery County) and twice
+more.
+
+**Coastal Orange County was briefed with the opposite prediction, written down as a hypothesis
+rather than a finding, and it confirmed the rule by inversion: 42% published a dated or quantified
+artifact** — a dense, competitive, marketing-heavy market publishing roughly four times what the
+quiet suburbs do. That was the sixth test and the first in a market type predicted to break the
+pattern.
+
+**And then north Atlanta broke the other half, in the same hours. Buckhead, Alpharetta, Roswell and
+Dunwoody are affluent suburbs on any reading, and they published the MOST of anywhere measured:
+11 of 19 clinics, 58%.** "EST. 2011" with 149 reviews, "since 2005" with 393+, a named founding
+month in 2006 with a four-year award run. So "affluent suburb means must-have 4 binds" is five
+markets of six, and the exception is the largest measurement in the set rather than a borderline
+case.
+
+**WHAT BOTH MARKETS AGREE ON CAME FROM A WORKER, NOT FROM ME, AND IT REPLACES THE RULE: WHAT
+VARIES BY MARKET IS *WHICH* MUST-HAVE BINDS, NOT HOW STINGY THE MARKET IS.** In Atlanta 10 of 12
+parked rows failed on must-have 5 — nine in total silence, one masked — while founding years and
+review counts were printed freely. In Orange County, independently, must-have 4 was easy and
+must-have 5 bound on 9 of 19. **Two unlike markets, swept the same night by workers who never
+spoke, reached the same structural finding.** A clinic chooses between publishing evidence and
+publishing a mailbox, and which one it withholds is a property of its market.
+
+**So the instruction changes shape, and it is cheaper than the old one: do not predict the
+constraint from the market's wealth. Measure which must-have binds in the first five or six clinics
+and spend the rest of the budget on that one.** Atlanta says the same from the other end — 7 of 18
+clinics gave up the address on the first page read, so in a must-have-5 market **the second page of
+a clinic you have already found beats a new clinic**, and that is where a run's last fetches belong.
+The old rule survives as a tendency with one large counter-example and should no longer go into a
+brief as a prediction. What goes into a brief is the question.
+
+**THE SEPTEMBER RE-VERIFICATION FINISHED ITS GRADE-A HALF, AND THE ADDRESSES WERE NOT THE PROBLEM.**
+All 30 grade-A rows whose `email_source` said only "read off their own page - verified" were
+re-fetched: **27 publish the address today, 0 masked, 0 changed, 3 publish no email at all.** With
+the 10 Nov three, 33 of the 47 are checked and **row 181 is still the only decoded-token shape in
+the cohort** — so the thing that was worried about is an exception, not a pattern, and parking 33
+sendable rows on it would have been the expensive mistake. Every one of the 27 now records WHERE
+the address was seen.
+
+**THE RECOUNT ITSELF WAS THE FIRST FINDING, THOUGH: the same query returned 47 rows, not the 33
+counted on 10 Nov.** Nothing changed in the file. The list of "guessable" local parts changed —
+adding `admin@`, `enquiries@`, `bookings@` and `support@`, every one as guessable from a domain name
+as `info@`, adds fourteen rows. **So "33 rows at risk" was never a quantity, it was a choice of
+prefix list.** The same trap waits in any audit that filters on a hand-written list of patterns:
+it measures the list as much as the file, and it will always look complete.
+
+**AND A BIGGER DEFECT TURNED UP NEXT TO THE ONE BEING HUNTED, 3 TO 0: "recorded a plausible `info@`
+for a site that publishes none".** Rows 83, 110 and 168 publish no email anywhere — phone, form and
+WhatsApp only. **Row 83 clinches it: the recorded address was `info@bodyvie.co.uk` while the
+website field reads `bodyvie.com`. The domain itself was wrong, which no page read could have
+produced.** All three are graded C with the address kept in the row so the call stays reversible.
+If the September pass has a weakness, it is construction from a domain name rather than a decoded
+token — which is the opposite of what row 181 made us look for.
+
+**FOUR GRADE-A ROWS WERE STRUCK, AND SEVEN WERE CHECKED TO FIND THEM.** Every reported must-have
+failure against a grade-A row was re-fetched before anything moved, because a grade-A row is the
+most expensive thing in the file to be wrong about. **Confirmed: 83** (a "Cosmetic Surgeon" on
+staff selling blepharoplasty and canthopexy), **107** (its own welcome sentence: "a Dermatologist
+and Plastic Surgeon-led clinic", selling breast enlargement and VASER liposuction), **130** (a vein
+practice listing Venous Ulcer, Venous Eczema and DVT as conditions it treats, selling endovenous
+thermal ablation, with Medicare rebates), **152** (founder billed "Board Certified Plastic Surgeon",
+nav pointing at his separate surgical practice). **Overturned: 178, 89, and the must-have 1 half of
+110.**
+
+**Across 10 and 11 Nov that is nine reported failures against grade-A rows: five confirmed, four
+overturned.** Near enough a coin toss, which settles the policy rather than leaving it to
+judgement: **a worker's must-have failure on a grade-A row is a lead, never a verdict.** Workers
+should keep reporting them — 89 and 168 show the best form, flagging and quoting and leaving the
+call upstream — and this thread should keep re-fetching them.
+
+**THE OVERTURNS HAD ONE SHAPE AND IT IS NOW A RULE: THE WORD LIST SCREENS WHAT A CLINIC SELLS.**
+Row 178's disease vein language — "visible leg veins are frequently a surface sign of venous
+disease", "needs a duplex ultrasound and a vein specialist" — plus referrals to a plastic surgeon
+and to "the oculoplastic service at Penn", is all accurate quotation. **Every word of it sits
+inside a block the clinic headed "Sometimes the right treatment isn't one we offer".** It is their
+own referral-out policy, which also declines liquid rhinoplasty and PRP into hips and names Wills
+Eye Institute as where to go instead. **A referral-out block necessarily contains the vocabulary of
+every business the clinic is NOT** — that is what the block is for. So the copy is evidence row 178
+PASSES must-have 1, and a clinic candid enough to publish what it will not treat is a better
+prospect than a borderline one, not a worse one. **Selling it fails; declining it passes.** The same
+rung settled 89 and 110: "Dermatology" as one nav item on an injectables-led menu, no dermatologist
+on staff, against row 107 where the clinic says what it is in its own words and sells the thing.
+
+**MY OWN WRONG CLAIMS TONIGHT: TWO COVERAGE NUMBERS, WRONG IN OPPOSITE DIRECTIONS, IN BRIEFS
+WRITTEN WITHIN MINUTES OF EACH OTHER.** The Orange County brief said three pipeline rows touch that
+metro; there are six, and two of the three missed are grade A. The Atlanta brief said fifteen; there
+are four in the metro and six in the state. **Both workers caught their own, which is now the
+established pattern — nine of my claims have been corrected by workers in four days and not one
+has got past them.**
+
+**The two mechanisms are different and both are mechanical.** Orange County: I grepped the pipeline
+for town names and read the **`city` column**, so a clinic headquartered in Temecula with a second
+site in Huntington Beach was invisible — its briefed town lives in `notes` and `scale_signals`.
+**Grep the whole row text, not a column.** Atlanta: the fifteen was inherited from the size of the
+24 Sep batch, which was ninety rows across the whole US.
+
+**And the fix that covers both is one line: put the ROW IDS in a brief, not a count.** "Rows 142,
+143, 150, 151 touch this metro" is checkable in one grep and was corrected in one line. "15 rows
+already exist" is checkable by nobody, so it survived being wrong. **Any number in a brief that a
+worker cannot check against the file will eventually be wrong without anyone noticing.**
+
+**A THIRD INSTANCE THE SAME NIGHT OF THE LESSON THAT WILL NOT STOP RECURRING.** An Atlanta worker
+flagged row 143 (NYAH) as possibly mis-graded because its `city` field lists four towns and the
+grade turns on whether those are four addresses or four SEO pages. **The answer was already in the
+row, one column across:** `scale_signals` reads "Four Georgia locations, each with its own Mindbody
+studio ID". Separate studio IDs are not SEO pages, so must-have 3 passes at its ceiling and B was
+correct — answered for zero fetches. With the one-column copy audit on 9 Nov and the one-column
+coverage grep tonight, that is three in three days. **When a row looks under-evidenced, read the
+whole row before buying a fetch; when adding a check, ask what state a row has to be in to escape
+it.**
+
+**THE BEST THING A WORKER FOUND TONIGHT WAS NOT IN ITS OWN MARKET.** While grepping `near-misses.md`
+for an unrelated clinic name, the Atlanta worker read the Carolinas section from 2 Nov and found a
+paragraph ruling out seventeen clinics with *"single-site or single-operator … they fail on size, so
+do not re-source them"*. **Under ICP v2, adopted 16 Oct, single-site and owner-operated ARE
+must-have 3** — the profile this offer most wants. The ruling was inherited from the v1 sweep and
+nobody re-read it after the standard changed, so for nine days this file has been telling future
+workers to avoid exactly the clinics we are looking for. **Struck in situ with the seventeen names
+preserved; several already have a published address, so they are now the cheapest named leads left
+in the Carolinas at one fetch each.** The general form, and it is worth auditing for: **a
+disqualification is only as current as the standard it was made under, and this ICP has changed
+under them.**
+
+**Smaller findings, each recorded where it will be read:**
+- **A seventh thing the must-have 4 ladder cannot see, and the only one that also mis-counts
+  must-have 3: theme demo data in the LOCATIONS slot.** `michelmedspa.com` lists four addresses, two
+  of them in **Minnesota**, which are CMSMasters demo content. A worker counting addresses reads
+  four sites in two states. The Orange County worker extended the 10 Nov placeholder rung past the
+  social-proof slot on its own reading, graded C, and said in the row that it had done so **so the
+  call could be taken back here**. It stands.
+- **A consumer ISP mailbox is the same animal as a gmail.** `skinIQ@att.net`, published on the
+  clinic's own page, passes must-have 5 — the owner reads it. The one-line test for every mailbox
+  case: **whose inbox does mail to this string land in?**
+- **The same-name trap fired INSIDE a metro, which is worse than across a border.** The brief warned
+  about Newport Rhode Island, Newport Oregon and Newport in Wales; none fired. **"Corona, CA"
+  (Riverside) against "Corona del Mar" (Orange County) did** — same state, same area code, and one
+  name a strict prefix of the other.
+- **A third reason a town reads thin: occupied by LIVE clinics that publish no email.** Laguna Beach
+  is neither genuinely thin nor held by a dead domain. Say which of the three, because each wants a
+  different response.
+- **The district / main-street query shape is now a technique**: Long Island, Montgomery County and
+  Atlanta, where it produced three of eight rows in one query; failed on the Chicago North Shore.
+  Four unquoted town names plus owner/founder is 4 for 4 and stays the default.
+- **A dead query shape, so nobody buys it twice:** "our story / established / single location" —
+  eight results, two in-market, the rest national chains and clinics in three other states.
+- **A tenancy that inverts the practitioner-collective problem:** an independent injector booking
+  through `alumamedicalaesthetics.myaestheticrecord.com`, so **the clinic does not own the list we
+  would be reactivating.** That is a must-have 3 question, not a platform detection.
+- **`beyondnewport.com` is spam-injected** — hidden Norwegian casino links inside its own About
+  menu, and its one published mailbox belongs to a different business a team member founded. A page
+  carrying injected content is not a source to corroborate from; it is a page to record nothing
+  from.
+- **Our fetch helper, established rather than assumed:** tokens DO survive conversion (row 181 is
+  the proof), and raw href warts pass through untidied (`http://bianca@…`, `mailto:%20info@…`), so
+  zero tokens across 36 fetches is better explained by these pages not obfuscating than by the
+  helper hiding it 36 times. Two shapes beat a plain fetch and need no caveat: the address in the
+  page's own `meta description` (Cloudflare does not rewrite meta tags), and bare visible characters
+  with **no** `mailto:` href at all.
+- **One caveat carried deliberately:** every CLEAN here means "this address is published today", not
+  "the September reading was sound". Published-today is what matters for sending, but it is a
+  different claim from the one the audit set out to make.
+
+**Two decodes were offered and neither was taken.** Total Rejuvenation Medspa (Atlanta) and Iconique
+Medical Aesthetics (Orange County) are both on the browser-visit list, both ranked by their own
+worker as the best clinic it could not write to. The Atlanta worker gave two independent reasons for
+refusing: the characters a visitor sees are the mask, and the href the decode sat in was malformed,
+so by the 9 Nov `sms:` test a visitor could do nothing with it either way.
+
 ## 10 Nov 2026 — the September decode risk, measured instead of worried about
 
 **Rows: 26 appended — 1160 (AU/NZ recovery), 1161-1169 (Montgomery County MD and the northern
@@ -1251,11 +1433,12 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 10 Nov 2026: **1,185 rows, 800 ready to approach** — US 421, AU 169, CA 88, UK 85, NZ 43,
-IE 2. (808 rows are grade A or B and hold a published address; 8 of those have been emailed, which
+As of 11 Nov 2026: **1,203 rows, 808 ready to approach** — US 433, AU 168, CA 88, UK 82, NZ 43,
+IE 2. (816 rows are grade A or B and hold a published address; 8 of those have been emailed, which
 is the whole of the sending done to date.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
-on 5 Nov, 1,104 and 748 on 8 Nov, and 1,159 and 795 on 9 Nov. A further **127 clinics** that
-cleared the ICP on fit are parked in `browser-visit-list.md` for want of one page-open each.
+on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, and 1,185 and 800 on 10 Nov. A further
+**133 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
 existing ones. Twelve went B to C on the must-have 4 evidence ladder, which is a loss of twelve
@@ -1265,7 +1448,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 800 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 808 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 

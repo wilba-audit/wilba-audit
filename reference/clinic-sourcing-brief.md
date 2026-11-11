@@ -89,11 +89,29 @@ metro — the other two were "House of Aesthetics" (Cary NC) and "Belladerm" (Sh
 caught by grepping the near-misses file per clinic name before recording. **So grep per NAME as
 well as per town; a clinic name made of common words collides nationally.**
 
+**THE DISTRICT / MAIN-STREET SHAPE IS NOW A TECHNIQUE TOO, 11 NOV 2026 — AND IT IS THE RULE'S OWN
+BAR BEING MET, NOT A SOFTENING OF IT.** "Peachtree Road Buckhead Village medical spa injectables
+owner founded" returned four in-market own-domain clinics in a single query and produced three of
+north Atlanta's eight accepted rows. **Scoreboard: works on Long Island, in Montgomery County and
+in Atlanta; failed on the Chicago North Shore.** Three unlike markets is past the two-market bar
+this brief sets, so use it — with the Chicago failure recorded beside it, because a technique that
+works in three markets and fails in a fourth is a technique with a known blind spot rather than a
+law. **And the trap it carries fired again in Atlanta**: the same query returned Peachtree Corners,
+the Georgia clinic the Main Line worker first met through "Suburban Square Ardmore". A district
+name made of common words collides nationally, every time.
+
 **A QUERY SHAPE THAT IS NOW 4 FOR 4 IN UNLIKE MARKETS, AND IS THE DEFAULT: four unquoted town
 names plus "owner" or "founder".** Long Island, Montgomery County, the Main Line and coastal Orange
 County — and in Orange County it produced **every single accepted row**. It has cleared the bar
 this brief sets (two unlike markets) twice over, so it is a general technique rather than a
 market-local one, and it is the shape to open a new metro with.
+
+**`dermani MEDSPA` MUST STAY IN THE BLOCK LIST FOR ANY ATLANTA QUERY, AND THE 11 NOV RUN PROVED IT
+BY DROPPING IT.** The Atlanta worker left it out of one query's block list and the brand took **four
+of ten result slots**, which is what the 8 Nov block was written to prevent. The worker said so
+plainly in its own report rather than quietly absorbing the loss, which is how a block list stays
+accurate. **A franchise block is market-specific: the brands that crowd a metro are the ones
+headquartered in it, so carry the block list forward rather than rebuilding it per run.**
 
 **AND A DEAD SHAPE, RECORDED SO NOBODY BUYS IT AGAIN: "our story / established / single location".**
 Eight results, two in-market; the rest were national chains and clinics in Ponte Vedra Florida,
@@ -155,6 +173,22 @@ Temecula whose second site is in Huntington Beach has "Huntington Beach" in its 
 TEXT, not the city column** — `grep -i '<town>' clinic-pipeline.csv` over the raw file, which is
 one character cheaper than the thing that got it wrong. Nothing was wasted this time only because
 the worker grepped per name itself and reported the gap.
+
+**AND THE OTHER BRIEF WRITTEN THE SAME NIGHT GOT ITS COVERAGE NUMBER WRONG IN THE OPPOSITE
+DIRECTION, WHICH IS THE USEFUL PART.** The north Atlanta brief said **15** pipeline rows already
+existed in that metro. **There are 4** — rows 142, 143, 150 and 151, with 896 and 897 in Savannah
+making six in the whole state. The figure was inherited from the size of the 24 Sep batch, which
+was about ninety rows across the entire US. **So in one night I understated coverage by half in
+one market and overstated it nearly fourfold in another.** The conclusion drawn from the wrong
+number happened to be right in both cases — a September pass took the obvious multi-site names and
+left the metro unworked — which is exactly why it went unnoticed.
+
+**The fix is one character and it makes the claim checkable: put the ROW IDS in the brief, not a
+count.** "Rows 142, 143, 150, 151 touch this metro" is a claim a worker can verify in one grep and
+correct in one line, and both of tonight's workers did correct it. "15 rows already exist" is a
+claim nobody can check, so it survives being wrong. **Any number in a brief that a worker cannot
+check against the file is a number that will eventually be wrong without anybody noticing — so
+state the evidence, not the tally.**
 
 **Two instances in two days of the same lesson in different clothes: the check that finds the
 problem where it usually lives will miss it where it survives.** On 9 Nov a copy audit read one
