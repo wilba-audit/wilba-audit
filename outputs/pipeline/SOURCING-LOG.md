@@ -187,6 +187,24 @@ under them.**
   "the September reading was sound". Published-today is what matters for sending, but it is a
   different claim from the one the audit set out to make.
 
+**AND THE HANDOFF CAME BACK WITHIN THE HOUR WITH THE NUMBER THAT MAKES TONIGHT'S VERIFICATION WORK
+PAY FOR ITSELF: FIVE OF THE SIX STRUCK ROWS WERE ALREADY STAGED TO SEND.** The drafting channel
+reports 83, 110, 130, 152 and 168 all staged and now held, with 107 already held, and nothing else
+missing after a re-diff against the 387 ids. **So five drafts were queued to go to clinics that are
+surgical or vein practices, or that publish no address at all** — four of them on a grade the file
+itself gave them in September.
+
+**That is the second use of `DO-NOT-SEND.txt` and the second time it has earned itself.** On 10 Nov
+it caught exactly one row and that row was 177; tonight it caught five. **The thing that makes it
+work remains the part that felt pedantic to build: it is regenerated from the CSV rather than
+hand-maintained**, so the six rows that changed state tonight were in it without anyone remembering
+to add them, and `refresh_do_not_send.py` is standalone precisely because tonight's changes were
+grade edits rather than appends.
+
+**The honest reading of the night, then: the 30 fetches spent re-reading rows we already had were
+worth more than the 18 rows added.** New rows sit in a file waiting on a postal address. The
+re-verification stopped five emails that were ready to go.
+
 **Two decodes were offered and neither was taken.** Total Rejuvenation Medspa (Atlanta) and Iconique
 Medical Aesthetics (Orange County) are both on the browser-visit list, both ranked by their own
 worker as the best clinic it could not write to. The Atlanta worker gave two independent reasons for
