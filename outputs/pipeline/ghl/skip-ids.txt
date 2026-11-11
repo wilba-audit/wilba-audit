@@ -87,3 +87,8 @@
 721  # regraded C 8 Nov: no trading evidence (must-have 4)
 181  # Forte Faces: pipeline grade C on 9 Nov re-derive
 177  # La Chele Medical Aesthetics & Wellness: on sourcing DO-NOT-SEND.txt 10 Nov
+110  # MediZen Aesthetics: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 110)
+130  # The R Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 130)
+152  # MDSkin Lounge: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 152)
+168  # Glamoi Med Spa: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 168)
+83  # Bodyvie Medi-Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 83)
