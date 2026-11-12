@@ -382,6 +382,23 @@ today", not "the September reading was sound."** A page that was protected in Se
 plaintext now reads clean. Published-today is what matters for sending, so this is not a problem —
 but it is a different claim from the one the audit set out to make.
 
+**AND THE PREFIX-LIST TRAP HAS A CLEAN FIX, FOUND 12 NOV WHEN THE SET WAS BUILT A THIRD TIME:
+DEFINE THE WORK BY WHAT HAS BEEN DONE, NOT BY A PATTERN OF WHAT LOOKS RISKY.** The 9 Nov count
+asked "which rows have a guessable local part and no WHERE in `email_source`" and got 33. The 11
+Nov recount asked the same question with four more prefixes and got 47. The 12 Nov build asked a
+different question — **"which September rows have NOT been re-verified yet"**, testing for the
+`re-verified` or `ADDRESS UNSUPPORTED` stamp the verification itself writes — and got 20, which is
+a number that goes down by exactly one every time a row is checked and cannot be moved by changing
+a regex.
+
+**It also caught two rows the risk-shaped queries had missed, and both were grade A** (25 Rejuva
+London, 78 Medicine of Cosmetics), plus a Canadian row — rows whose `email_source` happened to
+contain a word my WHERE pattern read as evidence of a location when it was not. **So the
+risk-shaped filter was not merely unstable, it was leaky in the direction that matters.** The
+general form: **a backlog defined by a predicate over the WORK is auditable and converges; a
+backlog defined by a predicate over the RISK measures your own guess about the risk.** Where a
+task writes a stamp when it is done, filter on the stamp.
+
 **So, for `email_source` from now on: say WHERE you saw it** — "visible footer text plus a matching
 mailto", "inside the privacy policy's data-request clause". "Read off their own page" cannot be
 audited six weeks later, and this is exactly the audit that wanted it.

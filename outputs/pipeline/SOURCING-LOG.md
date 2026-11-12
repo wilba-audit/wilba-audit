@@ -1235,6 +1235,22 @@ next, in order, all handed over by the Long Island pass:
   Medical & Esthetics (Larkspur, 3 sites) as "the only Marin presence found anywhere", and a
   Central Valley query once collapsed "Madera" into "Corte Madera". Grep before briefing it.]**
 
+- **SEVENTEEN NAMED CAROLINAS CLINICS ARE NOW UNSCREENED RATHER THAN RULED OUT — added 11 Nov 2026,
+  and this is the largest block of cheap leads on the list.** A 2 Nov entry in `near-misses.md`
+  ruled them out with *"single-site or single-operator … they fail on size, so do not re-source
+  them"*, which was a v1 judgement left standing after ICP v2 made single-site and owner-operated
+  into must-have 3 itself. Struck in situ with all seventeen names preserved: **704 Aesthetics,
+  Aesthetica Med Spa, Charlotte Medical Aesthetics, Mirama, The Skin Atelier, Prestige Medical Spa,
+  NuDerma Health, Ella Ora, Ageless Remedies, Voci MedSpa, Evolve Medical Associates, Femme Medspa,
+  Cameo Facial Aesthetics, Med Spa CLT, Infinite Allure, Nu Body Solutions, Radiant Medical
+  Aesthetics.** Several already have a published address recorded, so the work is one fetch per
+  clinic to grade it, with no searching at all. **Two cautions: Femme Medspa's own page says "this
+  is a TEXTING line only", so that one does fail must-have 5; and "Ageless Remedies" here is the
+  Carolinas business, while Ageless Remedies of Roswell is pipeline row 1197 and graded A — same
+  brand name, different state, so check which before spending the fetch.** The general job this
+  implies and nobody has done: **every "ruled out, don't revisit" list in `near-misses.md` dated
+  before 16 Oct was written under v1 and may be warning workers off the current profile.**
+
 - **ONE NAMED LEAD THAT LOOKS LIKE A ROW THE WESTCHESTER SWEEP MISSED, and it is one fetch.**
   **Skin Clinix**, 134 Marble Avenue, Pleasantville NY 10570 — the North Shore worker surfaced it
   out of market and reports `gina@skinclinix.com` as visible text plus a matching `mailto:` on
