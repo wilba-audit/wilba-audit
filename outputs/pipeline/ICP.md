@@ -51,6 +51,31 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    selling is not hers to sell. That fails this must-have. The tell is a team page where
    each practitioner has a separate business name, a separate booking link or a separate
    email address. Found at a Hamilton clinic on 21 Oct 2026.
+
+   **The travelling-nurse case holds at a much larger scale than it was written for —
+   tested 12 Nov 2026 on row 78.** Medicine of Cosmetics runs **three fixed Adelaide
+   clinics and advertises "30+ Mobile Locations"** across two states, and styles itself
+   "ADELAIDE LUXURY COSMETIC GROUP" in its own header. A worker flagged it as exactly the
+   scale this screen exists to catch and left the call upstream, which was right. **The
+   ruling, which is the existing rule rather than a new one: a mobile or outreach venue is
+   not a SITE.** Count fixed premises with their own staff. The thirty-plus are "approved
+   mobile locations" the clinic travels to, with booking and records running through the
+   three clinics, so there is one lapsed list and it belongs to the founder, Registered
+   Nurse Hayley Batson. Three sites, so this passes with one to spare. **What a big mobile
+   footprint does change is the COPY, not the grade** — an opener written for a one-room
+   practice reads wrong to a business serving two states, so the mobile network belongs in
+   `scale_signals` where whoever writes the email will see it.
+
+   **And the newest converse, found in coastal Orange County on 11 Nov: a tenancy running
+   the other way.** An independent injector books through
+   `alumamedicalaesthetics.myaestheticrecord.com` and her footer reads "Powered by Aluma",
+   so her diary and her list sit inside **another business's** practice-management tenant.
+   The room-renting case qualifies because one person still decides marketing AND owns the
+   list; this one fails, because she decides her marketing and does not own the list. **So
+   the question behind this must-have is not how many addresses there are but whether the
+   person we would be writing to can sell us the list we would be reactivating.** A
+   `<someone-else>.<platform>.com` booking subdomain is a must-have 3 question, not just a
+   platform detection.
 4. **Established.** A real review history, and enough trading time to have accumulated
    roughly 300+ lapsed patients. A brand-new clinic has no list.
    **A BARE COPYRIGHT YEAR COUNTS ONLY IF IT IS AT LEAST THREE YEARS OLD. Added 8 Nov 2026**,
@@ -445,6 +470,40 @@ Enlargement and VASER Liposuction: there the clinic says what it is, in its own 
 thing. **The test for must-have 1 is the clinic's own self-description plus what is on the menu, not
 the presence of a word in the nav.**
 
+**AND THE SERVICE-LINE RULE GOT ITS OTHER EDGE THE VERY NEXT DAY, BY PRODUCING AN UNDER-CALL —
+12 NOV 2026.** The rule above was written from one direction: two rows had been wrongly reported as
+dermatology-positioned on the strength of one nav item, so the rule says a service line is not a
+positioning. A re-verification worker applied it correctly to row 100 (The Skin Clinicians,
+Brisbane) and cleared the row. **A direct fetch disqualified it.** What is there is not a nav item:
+a top-level nav category **"MEDICAL"** whose own service pages are `/medical/skin-checks/` and
+`/medical/mole-removal/`; a homepage section headed **"Dermatology and Skin Cancer"** listing *"Skin
+cancer screenings and treatments"* and *"Surgical excisions"*; a hero heading reading *"Aesthetic
+Treatments, Mole Checks & more"*; a medical practitioner holding *"the Certificate of Skin Cancer
+Medicine and the Certificate of Dermatoscopy"* who *"excises suspicious lesions and moles, treats
+skin cancers"*; and a principal clinician credentialed MNP(Neurology and Dermatology). The clinic
+calls itself *"a trusted medical clinic"* and *"Medically led"*.
+
+**So the rule has two edges and needs both stated, because each one alone produces an error:**
+
+- **A WORD is not a positioning.** "Dermatology" in the nav, or in a founder's bio describing her
+  own past experience, with no dermatologist on staff and an injectables-led menu — rows 89, 110
+  and 25 all cleared on this.
+- **A NAMED CLINICAL DIVISION is.** Its own nav category, its own service pages, a credentialed
+  practitioner, and procedures it performs — row 100 fails on this, as do rows 107 and 83, whose
+  surgery is on the menu rather than in a bio.
+
+**The test that distinguishes them in one question: is the clinic SELLING this as a line of
+business, or mentioning it?** A service page with a URL is selling. A sentence in a bio is
+mentioning. **And note what did NOT decide row 100: must-have 2 is clean there** — *"No referral is
+required for these services"*, no Medicare, no HICAPS. It fails on what kind of business it is, not
+on how it is paid, which is the distinction must-have 1 exists to make.
+
+**Worth holding onto about the process rather than the rule: the under-call and the two over-calls
+came from the same sentence being written from one direction.** A rule derived from errors in one
+direction will produce errors in the other until somebody hits them. So when a rule is written off
+a correction, ask what the opposite mistake looks like and write that edge too, before a worker
+finds it for you.
+
 **The same row pair settled it in one day, which is why it is written as a rule.** Row 179 passes
 on cosmetic framing with no condition named; **row 177 was disqualified the same hour** for running
 a "VEIN CENTER" with "Varicose Vein Treatment" and "Vein Disease Treatments" as named services —
@@ -562,6 +621,14 @@ it.
 None of the seven may be recorded as a published address. The first four are not recoverable by
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
 whether the clinic published anything.
+
+And, added 12 Nov 2026, an **eighth: an unreplaced theme placeholder address on the demo vendor's
+own domain.** Row 163's page carries two extra blocks printing `sanfrancisco@message.com` and
+`losangeles@message.com` beside Latin filler copy. `message.com` is the theme's demo domain, so
+neither address belongs to the clinic and neither block is evidence of two more sites — **it is the
+`filler@godaddy.com` case with a city name glued on, which makes it read far more like a real
+branch mailbox.** The tell is the same one that caught the demo addresses in a locations slot: a
+city that has no business being there. Do not record them and do not count them toward must-have 3.
 
 And, added 9 Nov 2026 from Westchester, a **seventh: a gmail published only inside an `sms:`
 href.** The page's "text us" button carries `sms:+1...&body=...` and the clinic's gmail appears

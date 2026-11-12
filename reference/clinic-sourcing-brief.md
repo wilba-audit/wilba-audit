@@ -399,6 +399,34 @@ general form: **a backlog defined by a predicate over the WORK is auditable and 
 backlog defined by a predicate over the RISK measures your own guess about the risk.** Where a
 task writes a stamp when it is done, filter on the stamp.
 
+**THE SEPTEMBER COHORT IS NOW FINISHED — 50 ROWS CHECKED, AND THE RESULT IS A CLEAN RANKING WITH A
+SOFT RATE.** Half B (20 rows, 12 Nov): **19 CLEAN, 1 NO ADDRESS, 0 masked, 0 changed, 0 gone.**
+Across the whole cohort: **4 NO ADDRESS of 50 (8%), and zero masks, zero changes, one decoded-token
+shape (row 181).** The worker's own reading of its numbers is the right one and worth copying:
+**what replicated is the RANKING, not the rate** — silent sites beat masks and changes 4 to 0 — and
+at n=50 the honest range on the rate is a few percent to low double digits. So treat "roughly one
+row in ten was recorded for a site that publishes nothing" as a real defect of known shape and
+unknown size, and do not quote 8% as if it were measured.
+
+**Three checks were run that cost nothing and are worth keeping:**
+1. **Domain mismatch between `contact_email` and `website`: zero of 20**, after row 83 was one of
+   30. So row 83 looks isolated rather than a habit. **Keep the check anyway — it is free, and it
+   is the only one that catches a defect no page read can.**
+2. **By country: no signal.** UK 4/4 clean, AU 3/3, NZ 2/2, US 9/10, CA 1/1. The one failure sits
+   in the largest group, so 1-of-10 against 0-of-10 is noise.
+3. **What DID split by market was fetchability, not addresses.** All six `/contact` failures were
+   non-UK, zero UK; and the two rows where the helper returned bare rendered text with no HTML
+   attributes were both AU/NZ. **Carry-forward for any Australian sweep: budget the homepage retry
+   up front rather than treating it as an overrun, and expect thinner tooling output.**
+
+**AND A DISTINCTION THAT CHANGES WHAT A "NO ADDRESS" VERDICT MEANS — row 149, 12 Nov.** Rows 83,
+110 and 168 loaded fine and published nothing: those are settled. Row 149's homepage publishes
+nothing **and its `/contact` is `robots_disallowed`**, so the verdict rests on *"nothing we are
+permitted to read publishes it"* rather than *"nothing publishes it"* — and a person's browser opens
+that page normally. **So a NO ADDRESS verdict is only as strong as the pages you were allowed to
+read.** Row 149 is graded C and on the browser-visit list rather than treated as decided, which is
+one page-open away from restoring a sendable row. Say which kind of silence you found.
+
 **So, for `email_source` from now on: say WHERE you saw it** — "visible footer text plus a matching
 mailto", "inside the privacy policy's data-request clause". "Read off their own page" cannot be
 audited six weeks later, and this is exactly the audit that wanted it.
