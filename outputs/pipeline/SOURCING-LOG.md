@@ -216,6 +216,20 @@ a common personal name is its own species.**
   near-misses, and offered to have them rejected in one line. **They stay: the towns were a search
   frame, not a boundary, and the ICP does not care about my town list.**
 
+**AND THE HANDOFF CAME BACK INSIDE THE HOUR: BOTH ROWS PULLED TONIGHT WERE ALREADY STAGED TO SEND.**
+The drafting channel reports 100 and 149 both staged and now held, with nothing else missing after a
+re-diff against the 403 ids. **So across two nights the re-verification work has stopped SEVEN
+drafts that were queued to go** — five on 11 Nov (rows 83, 110, 130, 152, 168) and two tonight — to
+clinics that are the wrong kind of business or publish no address at all.
+
+**That number is the argument for how this run's budget should be split from now on, and it points
+away from new rows.** Tonight added 25 rows that cannot be sent to at all until Jess supplies a
+postal address, and spent about 26 fetches re-reading rows we already held, which stopped two
+emails. **Over two nights: 43 new rows, none of them sendable yet, against seven sends stopped.** A
+new row is worth something later; a stopped send is worth something now, and a wrong send cannot be
+recalled. **So when the two compete for budget, re-verification wins** — and the file has a named
+backlog for it, defined by the stamp the verification writes rather than by a guess at the risk.
+
 **The standing item for Jess is now ten days old and tonight is the evidence that settles it: the
 sourcing trigger says "Australia first" and the file's own record says that is the wrong order.**
 Three Australian metros, 26 fetches each, produced **eleven B rows and no A**. The 2 Nov verdict
