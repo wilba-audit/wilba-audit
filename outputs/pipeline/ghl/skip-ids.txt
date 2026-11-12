@@ -92,3 +92,5 @@
 152  # MDSkin Lounge: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 152)
 168  # Glamoi Med Spa: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 168)
 83  # Bodyvie Medi-Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 83)
+100  # The Skin Clinicians: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 100)
+149  # Aesthetica MD Med Spa: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 149)
