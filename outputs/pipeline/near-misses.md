@@ -17356,3 +17356,392 @@ out to be occupied by Chin Up! Aesthetics' second site**, which ranks for the to
 headquartered in it. So: **neither town is established as thin** — they were crowded out, and a
 worker with a clean query and `dermani` blocked from slot one should try them again before anybody
 writes them off.
+
+# ==============================================================
+# Perth western and riverside suburbs, WA — sourced 12 Nov 2026
+# ==============================================================
+
+# Near misses — western and riverside Perth, WA (12 Nov 2026)
+
+Towns briefed: Cottesloe, Claremont, Nedlands, Dalkeith, Peppermint Grove, Mount Lawley,
+South Perth, Applecross, Floreat, Subiaco.
+
+Spent: **6 WebSearch, 26 WebFetch.** 11 businesses examined. 3 rows written
+(`perth-west.json`): 1 B, 2 C. **Zero grade A.**
+
+**Every entry below prints the address it claims, or says plainly that there is none** — per the
+9 Nov rule. Where I report an address as not seen, I say which of the failure modes it was.
+
+---
+
+## Cloudflare-hidden address — a browser would read these in seconds
+
+### Ultimate Aesthetics — 51 Hulme Court, Myaree WA 6154, plus a second clinic in Subiaco
+- **The best clinic I found in this sweep, and the only thing wrong with it is the address.**
+- **Why it looks right, item by item:** founder named and credentialed — **Dr Carolyn Choy,
+  "Medical Director and Founder, Ultimate Aesthetics Clinics"**, with "over 15 years of experience
+  in aesthetic injectables"; the clinic is **"established in 2011"** in her own bio, which is a
+  stated founding year and the cleanest must-have 4 evidence in the whole run; **two sites**
+  (Myaree and Subiaco — Subiaco is a briefed town), so inside the 1-4 band; legal identity printed
+  outright, **"Ultimate Aesthetics Pty Ltd", "ABN 47 158 292 687"**; **Timely** in place
+  (`bookings.gettimely.com/ultimateaestheticsptyltd/bb/book`); a deep injectables-led menu
+  (volumising, masseter reduction for bruxism, skin hydrators, mesotherapy, bio-stimulator,
+  bio-remodelling, chin sculpting, platelet-rich plasma, Rejuran, PDO tightening threads, thread
+  lift, medical skin needling, Vivace, exosomes) plus BBL, Fraxel, RevLite, HIFU; six practitioners
+  with named tenures; **a Refer-a-Friend reward and gift vouchers** as the dormant signal. On
+  everything except must-have 5 this is a grade A.
+- **Email status: NOT SEEN — Cloudflare obfuscation. FAILS MUST-HAVE 5.** The privacy policy at
+  https://ultimateaesthetics.com.au/privacy-policy/ carries **two** addresses, both rendering as
+  `[email protected]`, both wired as visible link text pointing at a
+  `/cdn-cgi/l/email-protection` URL rather than a `mailto:`. They sit in the policy's Complaints
+  section and its Consent to Clinical Photography section. **The page did not ship the characters,
+  so the address is not seen, and I did not decode the token.** The fetch helper did not volunteer
+  a decode on this one, so there was nothing offered to refuse — but the token was reported
+  explicitly, which under the 10 Nov asymmetry rule is near-conclusive. Nothing recorded.
+- **Also not seen on the pages I read:** the team page at
+  https://ultimateaesthetics.com.au/meet-our-team/ publishes no address at all, only a "Your E-mail"
+  subscription field.
+- **Consent screen, already done, so Jess does not have to redo it:** no "no unsolicited commercial
+  email" notice and no anti-spam statement on the team page or the privacy policy. HICAPS, health
+  funds, Medicare, bulk billing, insurers, claims and rebates appear on neither.
+- **One thing to read before sending, and it is not a question I am leaving open — it is a flag
+  with the quote attached.** The menu carries **"Skin tags / skin lesion removal"** and
+  **"Cosmetic mole removal"** under a *Skin health* heading, and **"Sclerotherapy"** under *Body*.
+  On the ICP as written all three pass: cosmetic removal of a benign blemish passes regardless of
+  label, and a bare sclerotherapy line with no disease vocabulary anywhere on the site passes under
+  the 8 Nov absence-of-disease-language rule (varicose, spider, venous insufficiency, phlebology,
+  duplex and reflux appear nowhere). **The one that gave me pause is a staff bio: Dr Priscilla Tan's
+  bio says she treats "skin conditions including skin cancer excisions".** That is the clinic
+  describing a practitioner's clinical experience, not a line on its own treatment menu — there is
+  no skin-check, mole-mapping or excision service anywhere in the menu — so on the "extract the
+  substance, not the word" rule it is evidence about staff and not a service the clinic sells.
+  **My call: must-have 2 passes.** Recorded here rather than buried, because if the clinic turns
+  out to run a skin-cancer arm it is a must-have 2 failure and this is where the quote lives.
+- **Recommendation: top of the browser-visit list.** One page in a browser converts a stated 2011
+  founding year, a named owner-doctor, an ABN, Timely, two sites and a refer-a-friend scheme into a
+  grade A row.
+
+---
+
+## No readable address anywhere — live, trading, publishing nothing
+
+This is the third-reason case the brief names: these fetches **worked**, the businesses are
+**trading**, and must-have 5 simply fails. Four of them. That is a browser-visit list, not a dead
+market.
+
+### Arrie Aesthetics — Suite 34/184 Rokeby Road, Subiaco WA 6008
+- **Why it looked right:** a clean injectables-only menu ("wrinkle relaxers, dermal fillers,
+  biostimulators & bio-remodelling", per the page's own meta description), a single Subiaco address
+  on one of the three briefed shopping streets, **Timely** in place
+  (`bookings.gettimely.com/arrieaesthetics`). This was one of only two new in-market names the
+  street-name query shape produced.
+- **Email status: NONE PUBLISHED.** https://arrieaesthetics.com.au/ has a contact form with a
+  Message field and no mailto anywhere. No `[email protected]`, so this is not a recovery case —
+  there is nothing on the page to recover. **Fails must-have 5.**
+- **It probably fails must-have 4 as well, and may fail must-have 3:** no founding year, no review
+  count, no copyright year reported, no owner named — the practitioner refers to herself only in
+  the first person. **And the page says "my books are currently closed"**, offering a waitlist
+  instead. A solo injector with closed books still has a lapsed list, so that is not a
+  disqualification, but it is worth Jess knowing before she spends a browser visit: the clinic is
+  not currently taking new patients.
+- **Odd detail worth recording:** the embedded map URL uses postcode **6014** while the printed
+  address says **6008**. 6008 is Subiaco; 6014 is Floreat/Wembley. The printed address is the one
+  to trust.
+
+### Fleur Skin & Wellness Studio — Mount Lawley (no street address published)
+- **Why it looked right:** founder named outright — **"Founded by Naomi Henderson"**, "Dermal
+  Therapist & Skin Expert" — and the only candidate I surfaced in Mount Lawley with a named owner.
+  Placed in Mount Lawley by the perthisok.com listicle, **not by the clinic**, which publishes no
+  address of its own at all.
+- **Email status: NONE PUBLISHED** on https://fleurrejuvenation.com.au/. No mailto, no
+  `[email protected]`, no visible address. **Fails must-have 5.**
+- **And `https://fleurrejuvenation.com.au/contact` returns ROBOTS_DISALLOWED**, so the obvious
+  second page cannot be read by a fetch at all. That is a crawler directive, not obfuscation — Jess
+  opening it in a browser would see whatever is there. Both halves of this clinic therefore need a
+  browser: the address and the suburb.
+- **Would likely fail must-have 1 and must-have 4 too, on what is published:** the homepage names
+  **no treatments at all** ("bespoke treatments", "medical grade treatments with a holistic
+  approach"), no founding year, no review count, and the only place name on it is **"Byron Bay"**,
+  used to describe the decor. A clinic that will not name a treatment cannot be screened for
+  injectables. **Worth one browser visit, but behind Ultimate Aesthetics by a long way.**
+
+### CULT Cosmetica — "Located on Beaufort street", Mount Lawley (no street number published)
+- **Why it looked right:** **"from 77 reviews"** printed on its own page, which is a numbered
+  review count and therefore a clean must-have 4 pass — the only one of its kind in this sweep
+  besides Ultimate Aesthetics' founding year. **Phorest** in place
+  (`phorest.com/salon/cultcosmetica/book/`) on a Shopify storefront, a **MEMBERSHIPS** subscriptions
+  page and **Gift Vouchers** — a genuine dormant-list mechanism. An image filename contains
+  "nine-years", which is not visible copy and which I have not counted as evidence.
+- **Email status: NONE PUBLISHED** on https://cultcosmetica.com.au/. No visible address, no mailto,
+  no `[email protected]`. **Fails must-have 5.**
+- **AND IT FAILS MUST-HAVE 1 INDEPENDENTLY, WHICH IS WHY I SPENT NOTHING MORE ON IT.** The whole
+  menu is CULT Skin (facials, peels, skin needling, HydraFacial, LED), CULT Brows & Lashes (brow
+  lamination, lash lifts, shaping, tinting, facial waxing) and CULT Makeup (event and wedding
+  application, one-on-one lessons). **No injectable of any kind, and brows, lashes and makeup
+  lessons on the top-level menu** — that is a beauty studio with a skin arm, not an injectables-led
+  med spa. Two must-have failures, so not a pipeline row and not a browser visit.
+- No owner named. Staff first names (Vicky, Georgie, Robyn, Summer) appear only inside customer
+  reviews. No HICAPS, health-fund, Medicare or bulk-billing language.
+
+### Youth Lab — Claremont, West Perth, Applecross, Joondalup and Dunsborough WA
+- **DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3 (five or more sites).** Counted off the clinic's
+  own homepage: **five locations** — Joondalup, Claremont, West Perth, Applecross, Dunsborough —
+  **plus a sister clinic, "Shade Skin Cancer Medicine", in West Perth.** Five is the line, and the
+  skin-cancer sibling means there is a clinical arm beside the aesthetics business as well. Two of
+  the five sites sit in briefed towns (Claremont, Applecross), so **this brand will surface on
+  almost every query in this market** — it took a slot on two of my six searches and it is the
+  biggest single crowder-out here.
+- **Founded by Dr. Kate Jameson**, named on the homepage. Injectables-led menu (volume and contour,
+  fine lines and wrinkles, under-chin contouring, lip enhancement) plus Hydrafacial, peels,
+  needling, BBL, Halo, ClearSilk, RF microneedling, and Treatment Series packages. Gift
+  certificates and "exclusive member prices" on the shop.
+- **Email status: NONE PUBLISHED** either — no visible address, no mailto, no `[email protected]`;
+  the site routes everything to a chatbot, an online booking system
+  (`bookings.youthlab.com.au/webstoreNew/services`) and a "Get in touch" link whose href is `#`.
+  No street address published for any of the five sites. So it fails must-have 5 as well.
+- **Recommendation: add `youthlab.com.au` to `blocked_domains` for every Perth query.** It is
+  resolved, it is disqualified twice over, and it ranks on the briefed towns.
+
+---
+
+## Fetch-blocked — nothing verified, so nothing concluded
+
+Three domains in this market cannot be read by a fetch at all. **I am not calling any of them a
+near-miss on the merits, because I never saw a page.**
+
+### Skin Resus — "Medical Aesthetic Clinic Perth" / "Cosmetic Clinic Perth" (suburb unverified)
+- **`skinresus.com.au` returns CLIENT_ERROR on every path tried: `/about/`, `/privacy-policy/` and
+  `/contact/` — three fetches, three failures.** Nothing of the site was retrieved, so no address,
+  no suburb, no owner and no menu is verified. The domain surfaced on **two separate queries** and
+  was the top result on one, so search can see it even though a fetch cannot.
+- **What the result titles alone give up, for free:** it runs a **"VIP Program"**
+  (`skinresus.com.au/vip-program/`), which is a dormant-list signal, and it publishes a real content
+  library (pages on chemical peels, rosacea, dermal-filler complications, ULTRAcel Q+ prices and a
+  product shop), which reads as an established marketing operation rather than a one-room studio.
+  **This is the strongest of the three blocked domains and the one most likely to convert.**
+- **Recommendation: browser-visit it, second after Ultimate Aesthetics.** Do not re-queue it for a
+  worker — three fetch attempts on three different paths is enough to call the domain unreadable.
+
+### Siren Cosmetic Clinic — South Perth (unconfirmed)
+- **Already in `near-misses.md` twice**, from the 18 Oct Perth sweep and again from a Karratha
+  query, where a third-party listing placed **Siren Cosmetic Clinic in South Perth with 37 Google
+  reviews**. The earlier entries recorded a client error and asked for a retry.
+- **RETRIED 12 Nov 2026: `https://www.sirencosmeticclinic.com.au/` returns CLIENT_ERROR again.**
+  That is now **three** failed attempts across three runs, two of them on the `.com.au` and one on
+  the `gettimely.com` subdomain route. The suburb is still unconfirmed, the 37 reviews are still
+  third-party data, and no address is seen.
+- **Recommendation: stop retrying it. Move it off the sourcing queue and onto the browser-visit
+  list.** It surfaced on one of my six queries, so it will keep appearing; a fourth worker spending
+  a fourth fetch on it is the pattern the brief warns about. If the 37 reviews are real it is a
+  must-have 4 pass waiting behind one browser page.
+
+### Cosmetic NP
+- **`cosmeticnp.com.au/about/` returns ROBOTS_DISALLOWED.** Surfaced twice on my Nedlands /
+  Dalkeith / Peppermint Grove / Floreat query. Nothing verified — no suburb, no owner, no menu, no
+  address. A browser would read it; a worker cannot. Not assessed.
+
+---
+
+## Same-name and out-of-market traps that fired
+
+### Cosmetic Skin Clinic — 46-48 North Street, **HADFIELD VIC 3046** (not Perth)
+- **The trap the brief predicted, in the costume it predicted it in.** `cosmeticskinclinic.com.au`
+  surfaced on my **first** query — four unquoted briefed town names plus owner/founder — with the
+  result title "TEAM" and nothing about it looking foreign. **It is in Victoria.** I read the postal
+  address before recording anything, which is the only reason it is in this section rather than in
+  the JSON.
+- It also carries **two** of the seven look-alike-address hazards at once, which makes it worth
+  keeping as a specimen: the visible text reads **`csclinics@outlook.com`** while the `mailto:` href
+  on the same element points at **`mailto:hello@sskinaus.com`** — a third domain belonging to
+  neither the clinic's website nor the visible mailbox. Under the "whose domain is it" test neither
+  is safely the clinic's own. Nothing recorded.
+- Two founders named (Katelyn Isho, "Founder & CEO of Cosmetic Skin Clinic"; Chantelle Isho,
+  "Founder & CEO **Skin & Laser Avenue**"), i.e. two business names at one address — worth noting
+  as a possible practitioner-collective shape if it is ever re-met in market. Copyright 2018.
+- **Recommendation: add `cosmeticskinclinic.com.au` to `blocked_domains` for Perth queries.** The
+  name is made entirely of common words, exactly the collision class the 11 Nov rule describes.
+
+### Absolute Cosmetic / absolutemakeover.com.au
+- Surfaced on two of my six queries. **Already DISQUALIFIED UNDER ICP v2 - FAILS MUST-HAVE 3** in
+  our own files (multi-site WA group: Mandurah, Bunbury, Geraldton, Karratha and more). Caught by
+  grep before any fetch, for zero cost. **Note it runs two domains** — `absolutecosmetic.com.au` and
+  `absolutemakeover.com.au` — and only the first appears in our notes. **Block both.**
+
+### The Aesthetics Lab — in the JSON, but NOT in a briefed town
+- Recorded as a grade B row, flagged in its own `notes`. **North Perth adjoins Mount Lawley but is
+  not Mount Lawley**, and the second site is Mandurah, 70km south. I am naming it here too so the
+  row is not later read as evidence that a briefed town produced something.
+
+---
+
+## Clinics surfaced and left alone, with the reason
+
+Named here so the next worker does not re-find them and so nobody reads this run as having
+examined them. All from the perthisok.com listicle except where noted.
+
+- **Santé Skin** — 307 South Terrace, South Fremantle (`santeskin.au`). Out of briefed towns.
+- **OLA Aesthetics** — West Perth (`olaaestheticsperth.com.au`). Out of briefed towns.
+- **SURSKIN** — West Leederville (`surskin.com.au`). Out of briefed towns.
+- **La Belle Peau** — North Perth (`labellepeau.com.au`). Out of briefed towns.
+- **The Skin Fairy** — **Claremont** and Mount Hawthorn. **A briefed town, and the listicle printed
+  no domain**, so resolving it costs a search. **This is the single best remaining lead in the
+  briefed towns and I ran out of search budget before it.** Next worker: one search, one fetch.
+- **Barbara Cavalli** — suburb not printed (`barbaracavalli.com`). Unresolved.
+- **Bodhi Spa** — "Various Locations" (`bodhispa.com`). Multi-site, and spa-branded.
+- **Eric Street Medical** — Eric Street is in Cottesloe, a briefed town, but the name and the
+  result title ("Our Team") read as a general medical practice, which in Australia means bulk
+  billing and a must-have 2 failure. Not fetched. **Low priority, but it is the only Cottesloe
+  candidate besides the pipeline's own row 367.**
+- **Skin Rejuvenate** (`skinrejuvenate.com.au`) and **Cosmetique Subiaco** — surfaced once each,
+  not fetched, not assessed. Cosmetique appeared only via a `wheree.com` directory page.
+- **Olive & July Subiaco** — a lash-lift salon per its own result title. Not aesthetics-led.
+
+---
+
+## Coverage check — I was asked to verify the brief's two claims, and ONE OF THEM IS WRONG
+
+### Claim 1, on the pipeline: right on every row id it names, and incomplete.
+
+I ran `grep -i '<town>' clinic-pipeline.csv` over the whole row text, as instructed. **All eight
+row ids in the brief check out exactly, grades included:** 53 (The Claremont Clinic, `off`), 73
+(SKYN, Subiaco, C), 104 (Bramis, C), 105 (MedAesthetics, C), 106 (Skindeep, **A**), 363 (Begone,
+Booragoon, B), 366 (Skinave Co, Subiaco, B), 367 (BLANC, Cottesloe, B). The town mentions are where
+the brief says they are: **105's `scale_signals` names Applecross** ("Seven Perth clinics - Subiaco
+head office, DermAesthetics Subiaco, Applecross, Rockingham, Duncraig, Westfield Whitford City,
+Butler Central"), **106's names Floreat** ("Four Perth locations - Mullaloo, Floreat, Perth CBD,
+Swan Valley") and carries a `floreat@` mailbox in its notes, and **363 matched "South Perth" in its
+notes**, not its city field ("serving the Perth metro from South Perth through to Fremantle").
+
+**What the brief leaves out is the rest of the Perth metro, and it matters for dedupe rather than
+for grading.** Nine further Perth rows exist that touch no briefed town but would absolutely have
+surfaced on my queries, and three of them did: **362 Face and Body Inc (East Perth / South
+Fremantle, A)**, **364 Perth Aesthetics (Innaloo, B)**, **365 Eterna Aesthetics (Leederville, B —
+surfaced on my fourth query)**, **368 Attentive Aesthetics (Wembley / Leederville, B — surfaced on
+my fourth query)**, **75 Everything Skin by Dr Salon (Perth, B)**, **856 Luum Aesthetics (West
+Perth, B)**, **857 Mira Clinic (West Perth and Joondalup, B)**, **795 Skintique (Joondalup, B)**,
+**859 CosMedical (Joondalup, C)**, plus **317 Beneath The Skin (Albert Park VIC with WA sites, C —
+surfaced on two of my queries)** and the `off` rows 45, 48, 50, 54, 55. **That is roughly 22 Perth
+rows in the file, not 8.** I wasted nothing, because I grepped per name before fetching and caught
+Eterna, Attentive and Beneath The Skin for zero fetches — but a worker who trusted "these towns"
+as "this metro" would have re-fetched three clinics we already hold.
+**Suggested wording next time: "eight rows touch the briefed towns; about twenty-two touch the
+metro, so grep per clinic name as well as per town."**
+
+### Claim 2, on `near-misses.md`: **WRONG. There IS a Perth sweep section.**
+
+The brief says "`near-misses.md` has no Perth sweep section and only three passing mentions of
+Subiaco." The Subiaco count is right (three). **The first half is not.** Line ~1180 of
+`near-misses.md` is a section heading reading **"## Near misses — Perth / Adelaide / Tasmania /
+Canberra sweep, 18 Oct 2026"**, and it contains two named Perth entries:
+
+- **Academy Face & Body — Suite 1a, Arcadia Chambers, 1 Roydhouse Street, Subiaco WA** — a
+  Cloudflare-hidden address at https://academyfaceandbody.com.au/contact/, with a standing warning
+  that **Dr Jason Oates works in facial surgery** and the menu must be read before the address is
+  unmasked. **That is a named near-miss in a briefed town**, carrying exactly the disposition my
+  Ultimate Aesthetics entry above carries.
+- **Siren Cosmetic Clinic — Perth** — surfaced on a search for "the Mount Lawley / Leederville /
+  Fremantle / South Perth corridor", i.e. **three of my ten briefed towns had already been swept
+  once**, which the brief's wording would not lead a worker to expect.
+
+Elsewhere in the same file: a **South Perth** mention for Siren with 37 reviews, two **Applecross**
+mentions attached to multi-site groups already ruled out on must-have 3 (MedAesthetics' seven WA
+sites; **Renaissance Cosmetic Clinics' "11 LOCATIONS & COUNTING"**, which includes Applecross and is
+already blocked), and a **Skin Hub Perth** entry failing must-have 2 on dermatoscope skin checks,
+cryotherapy and excision with biopsy. **Nedlands, Dalkeith, Peppermint Grove, Floreat and Cottesloe
+return nothing in `near-misses.md`** — that part is right.
+
+**And the thing the brief does not mention at all, which changes how this run should be read:**
+`SOURCING-LOG.md` carries a verdict from 2 Nov 2026 — **"Australia is finished. Stop assigning
+it."** — with the reasoning that seven passes have covered both big metros and their outer suburbs,
+and that "Perth's remaining corridors failed structurally". My run is partial evidence for and
+against that: the affluent inner-west ring briefed here is **not** structurally failed the way
+Wanneroo and Canning Vale were (nothing here failed on skin checks or excision; must-have 2 failed
+**zero** times in eleven businesses), but it is very thin, and what thinness there is comes from
+publication habit rather than from the clinics being wrong for the offer.
+
+---
+
+## What this market taught me
+
+**MUST-HAVE 5 IS THE BINDING CONSTRAINT, AND THE NUMBER IS 8 OF 11.** Eleven businesses examined;
+**three published a readable address** (Skin Collective, LoveBeauty, The Aesthetics Lab) and eight
+did not. Breaking the eight down matters, because they are not one failure mode:
+
+- **4 are live sites that simply publish no mailbox** — Fleur, CULT Cosmetica, Arrie, Youth Lab.
+  Fetches worked, businesses trading, no address, no `[email protected]`, nothing to recover but a
+  browser visit.
+- **1 is Cloudflare-obfuscated** — Ultimate Aesthetics, two tokens in its privacy policy.
+- **3 are fetch-blocked** — Skin Resus (client_error on three paths), Siren (client_error, third
+  attempt across three runs), Cosmetic NP (robots_disallowed).
+
+**And the homepage hit rate was zero.** The ICP's 10 Nov instruction is to read two or three
+homepages and let the hit rate size the policy decision: **five homepages, zero mailboxes.** So I
+went to policies, and **the privacy-policy rule paid 2 of 4** — LoveBeauty's policy gave the only
+route to its address, and Ultimate Aesthetics' policy was where the Cloudflare tokens were found
+(which is a finding, not an address). Skin Resus' policy was unfetchable and Skin Collective's was
+on a different path. **A contact page paid separately: 2 of 3** (Skin Collective and LoveBeauty
+yielded; Skin Resus errored). **So in this market the mailbox lives on the contact page and the
+privacy policy and never on the homepage**, which is the opposite of Montgomery County and the same
+shape as Oklahoma.
+
+**Must-have 4 was the runner-up and it bound differently from north Atlanta.** Of the three
+businesses that cleared must-have 5, **one failed must-have 4** (Skin Collective, copyright 2024 —
+under the three-year bar) and **one only cleared it on the ladder's middle rung** (The Aesthetics
+Lab, a practitioner caseload claim rather than a dated business artifact). Across all eleven
+businesses, **4 of 11 (36%) published a dated or quantified artifact**: Ultimate Aesthetics
+("established in 2011"), CULT Cosmetica ("from 77 reviews"), LoveBeauty (a 2021 copyright), Siren
+(37 reviews, but third-party). That sits between coastal Orange County's 42% and Montgomery
+County's 20% — **so an affluent, referral-driven, isolated metro published MORE about itself than
+the market-type effect predicts**, and the brief was right to tell me not to predict from wealth.
+
+**MUST-HAVE 2 FAILED ZERO TIMES IN ELEVEN BUSINESSES, AND I LOOKED HARD FOR IT.** Not one clinic
+printed HICAPS, "all health funds", a health-fund rebate, Medicare or bulk billing — on a menu, in
+a footer, or in any of the four privacy policies I read in full. The Australian detector the brief
+handed me is real but it did not fire here. **What came closest was not a scheme name at all**: it
+was Ultimate Aesthetics' staff bio naming "skin cancer excisions", and Youth Lab's sister clinic
+"Shade Skin Cancer Medicine". **So in affluent Perth the reimbursed arm, where it exists, arrives as
+a skin-cancer clinic bolted onto the aesthetics business — a sibling or a practitioner credential,
+not an acronym.** That is the same shape the 10 Nov Montgomery County measurement found for
+government-professional America ("a primary-care or hormone clinic bolted on, not an acronym in the
+footer"), reproduced in a third market type.
+
+**THE LISTICLE WAS THE WHOLE RUN. One fetch, thirteen clinic names, ten of them with their domains
+printed.** `perthisok.com/lifestyle/perth-skin-clinics/` is the domain-printing kind the 4 Nov rule
+says to budget at nearly zero searches, and it delivered: **every single one of my three pipeline
+rows traces to it**, as do four of my five browser-visit candidates. The town-name query shapes
+found it; it found the clinics. **For a small isolated metro, find the local listicle first and
+spend the search budget on nothing else.**
+
+**Query shapes, measured:**
+- **Four unquoted town names plus "owner" or "founder" — worked, 5 for 5 now.** Both of my runs of
+  it returned in-market own-domain clinics, and the first one surfaced the listicle that carried the
+  run. It also surfaced the Hadfield VIC same-name trap, so read the postal address.
+- **The district / street-name shape UNDERPERFORMED here, and this is its second failure.** "Bay
+  View Terrace Claremont Napoleon Street South Perth Rokeby Road Subiaco medical spa injectables
+  owner founded" returned nine results, of which **two were new in-market names** (Arrie Aesthetics,
+  Cosmetique) and the rest were a pipeline row, Youth Lab, two `wheree.com` directory pages, a
+  Wikipedia article, a pharmacy and a lash salon. Arrie was a genuine find on a briefed street, so
+  this is weaker-than-advertised rather than dead. **Scoreboard: works on Long Island, in Montgomery
+  County and in Atlanta; failed on the Chicago North Shore; weak in Perth.** Two failures in five
+  markets.
+- **I did not buy the dead "our story / established / single location" shape.**
+
+**The briefed towns, town by town, so the next worker knows which of the three reasons applies:**
+Cottesloe (one pipeline row, one unfetched medical practice — **thin**), Claremont (Youth Lab
+disqualified, The Skin Fairy unresolved — **occupied by a 5-site brand**), **Nedlands, Dalkeith,
+Peppermint Grove — produced no own-domain clinic across two queries; genuinely thin**, Floreat
+(nothing of its own; the only mention in our files is Skindeep's second site — **thin**), Mount
+Lawley (Fleur and CULT Cosmetica, **both silent live clinics**), South Perth (LoveBeauty — row;
+Siren — unfetchable), Applecross (Skin Collective — row; Youth Lab disqualified), Subiaco (Arrie
+silent, Ultimate Aesthetics Cloudflare, Academy Face & Body already a Cloudflare near-miss, two
+pipeline rows — **the densest briefed town and every one of its good clinics is behind must-have
+5**).
+
+**Domains worth blocking on Perth queries:** `youthlab.com.au` (5 sites + a skin-cancer sibling,
+disqualified, took slots on 2 of 6 queries), `cosmeticskinclinic.com.au` (Hadfield VIC, common-word
+name collision), `absolutemakeover.com.au` (the second domain of the already-disqualified Absolute
+Cosmetic group), `wheree.com` and `localbusinessguide.com.au` (directory farms — `wheree.com` is
+already named in the brief's Chicago list but I failed to carry it into my own block list and it
+took two slots; that is my error, recorded so the list gets carried forward rather than rebuilt),
+`pressadvantage.com` (press-release farm), `beauticate.com` (an editorial clinic directory — though
+it names owner-injectors, so read one on purpose rather than never).

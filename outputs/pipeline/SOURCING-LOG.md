@@ -2178,6 +2178,38 @@ against 138 US. It is 173 against 294 today, but the reason to stop is not the r
 there is nothing left to find. Jess should be told before a future run spends another four hours
 proving it a third time.
 
+**[QUALIFIED 12 NOV 2026, AFTER A PERTH RUN THAT IS EVIDENCE BOTH WAYS. The verdict stands on
+volume and is WRONG ON MECHANISM for the affluent inner metro, which matters because the mechanism
+is what tells you whether to come back.** A sweep of Cottesloe, Claremont, Nedlands, Dalkeith,
+Peppermint Grove, Mount Lawley, South Perth, Applecross, Floreat and Subiaco examined 11 businesses
+and produced **3 rows — 1 B and 2 C, no A.** So the volume verdict is confirmed: Australia is thin
+and 26 fetches for one sendable row is a poor rate.
+
+**But the 2 Nov proof was that Perth's corridors fail STRUCTURALLY, on must-have 2 — "skin checks
+and excision-with-biopsy". In the affluent inner west, must-have 2 failed ZERO times in eleven
+businesses, with four privacy policies read in full.** No HICAPS, no health funds, no Medicare, no
+bulk billing anywhere. **What binds there is must-have 5: 8 of 11, and in three different shapes —
+four live sites publishing no mailbox at all, one Cloudflare mask, three fetch-blocked domains.**
+
+**That is a completely different diagnosis and it has a different consequence.** A market that
+fails on must-have 2 is unsuitable and never worth revisiting. A market that fails on must-have 5
+is full of clinics we would be glad to write to and cannot reach by fetch — **which is a
+browser-visit list, not a dead end.** Five Perth clinics went onto that list tonight, one of them
+(Ultimate Aesthetics: Dr Carolyn Choy, established 2011, Timely, two sites, deep injectables menu,
+AU consent screen already clear) **a grade A if one page is opened in a browser.**
+
+**And the 2 Nov worker had already seen tonight's skin-cancer pattern without naming it** — "skin
+checks and excision-with-biopsy" in Wanneroo and Canning Vale is the same thing row 100 was
+disqualified for in Brisbane tonight. It now has a name and a distinction in `ICP.md`: in Australia
+the reimbursed arm arrives as a skin-cancer clinic bolted on rather than as an acronym, and whether
+it fails the clinic depends on whether that work is on the menu or in a bio.
+
+**The open item this leaves for Jess, unchanged since 2 Nov and now ten days old: the sourcing
+trigger still says "Australia first" and the file's own evidence says that is the wrong order.**
+Only she can change the trigger prompt. The honest recommendation after tonight is not "stop
+assigning Australia" but **"stop assigning it FIRST"** — it is worth one metro occasionally, and
+what it mostly produces is browser-visit candidates rather than sendable rows.]**
+
 **Oklahoma out-published Arkansas, 12 rows to 5**, which inverts yesterday's conclusion that
 northwest Arkansas was the best US ground we had found. Yesterday's six-opened-five-published came
 from Bentonville and Rogers, and that was **the top of the seam rather than the average**:

@@ -113,6 +113,22 @@ plainly in its own report rather than quietly absorbing the loss, which is how a
 accurate. **A franchise block is market-specific: the brands that crowd a metro are the ones
 headquartered in it, so carry the block list forward rather than rebuilding it per run.**
 
+**IN A SMALL ISOLATED METRO, FIND THE LOCAL CONSUMER LISTICLE FIRST — PERTH, 12 NOV 2026.** One
+fetch of `perthisok.com/lifestyle/perth-skin-clinics/` returned **13 clinic names with 10 domains
+printed**, and **all three accepted rows plus four of five browser-visit candidates trace to it.**
+That is one fetch outperforming five searches. **Stated as a measurement rather than a rule,
+because the worker was explicit that it found the listicle by luck on query one and its own search
+scarcity was therefore never tested** — which is exactly the shape of the inherited-recommendation
+error this brief warns about. The transferable part is narrow and safe: **a metro small enough to
+have one authoritative local lifestyle site is a metro where a listicle is worth one early fetch**,
+and a general directory farm is not the same thing and stays blocked.
+
+**THE DISTRICT / STREET SHAPE'S SCOREBOARD, UPDATED: works on Long Island, in Montgomery County and
+in Atlanta; FAILED on the Chicago North Shore; WEAK in Perth** (2 new in-market names from 9
+results, though one of them — Arrie Aesthetics on Rokeby Road — was a genuine find). **Two misses
+in five markets, so it stays a technique with a known blind spot rather than a default.**
+Town-name-plus-owner/founder is now **5 for 5** and remains the opener.
+
 **AND A DEAD SHAPE, RECORDED SO NOBODY BUYS IT AGAIN: "our story / established / single location".**
 Eight results, two in-market; the rest were national chains and clinics in Ponte Vedra Florida,
 Point Loma and San Diego. It reads like it should find exactly our ICP and it finds the phrase
@@ -189,6 +205,31 @@ correct in one line, and both of tonight's workers did correct it. "15 rows alre
 claim nobody can check, so it survives being wrong. **Any number in a brief that a worker cannot
 check against the file is a number that will eventually be wrong without anybody noticing — so
 state the evidence, not the tally.**
+
+**A THIRD COVERAGE CLAIM WENT WRONG ON 12 NOV, AND IT WAS THE NEAR-MISSES GREP THIS TIME, WHICH IS
+THE ONE THIS BRIEF SPECIFICALLY TELLS PEOPLE TO RUN.** The Perth brief said `near-misses.md` has no
+Perth sweep section. **It has one at line 1180 — "Near misses — Perth / Adelaide / Tasmania /
+Canberra sweep, 18 Oct 2026"** — holding Academy Face & Body in Subiaco and Siren Cosmetic Clinic
+in South Perth, found on a search of "the Mount Lawley / Leederville / Fremantle / South Perth
+corridor". **Three of the ten briefed towns had already been swept once.**
+
+**The mechanism, and it is embarrassingly simple: I grepped TOWN names and never grepped the METRO
+name.** A sweep section is titled by its metro, so "Perth" would have found it in one command while
+"Cottesloe" and "Dalkeith" never could. I had grepped a sample of towns and generalised to the
+market — the same shape as every other instance of this failure, the check not covering the state
+the problem was in.
+
+**So the coverage check is now three commands, not one, and all three are cheap:**
+1. `grep -i '<metro name>' outputs/pipeline/near-misses.md` — finds the sweep SECTION.
+2. `grep -i '<town>' outputs/pipeline/near-misses.md` for each briefed town — finds named clinics.
+3. `grep -i '<town>' outputs/pipeline/clinic-pipeline.csv` over the RAW FILE, not the city column —
+   finds multi-site rows whose briefed town lives in `notes` or `scale_signals`.
+
+**And a fourth thing to state honestly in the brief rather than guess at: how much of the metro is
+already in the file, as distinct from how much of the briefed towns are.** The Perth worker's own
+suggested wording is better than anything I wrote: **"eight rows touch the briefed towns; about
+twenty-two touch the metro."** All eight row ids and grades I gave it were right; the figure was
+right about the wrong question.
 
 **Two instances in two days of the same lesson in different clothes: the check that finds the
 problem where it usually lives will miss it where it survives.** On 9 Nov a copy audit read one
@@ -558,6 +599,16 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
    it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.**
+   **Blocked from 12 Nov 2026, after the Perth run:** `youthlab.com.au` (**disqualified — fails
+   must-have 3**: five sites plus a "Shade Skin Cancer Medicine" sibling, and it took slots on 2 of
+   6 queries, two of its sites being briefed towns), `cosmeticskinclinic.com.au` (a **Hadfield,
+   Victoria** business — the common-word same-name trap, fired on query one),
+   `absolutemakeover.com.au` (the second domain of the already-disqualified Absolute Cosmetic;
+   only `absolutecosmetic.com.au` was in our notes, so **block both**), `pressadvantage.com` and
+   `localbusinessguide.com.au`. **And a lesson in carrying the list forward rather than rebuilding
+   it: `wheree.com` was already on the Chicago block list, the worker did not carry it into its own
+   query block, and it took two slots.** Same failure as `dermani MEDSPA` in Atlanta the night
+   before. **The block list is cumulative; start from it, do not reconstruct it.**
    **Blocked from 11 Nov 2026, after the coastal Orange County run:** `getthetreatment.com` (which
    took two of that run's six query slots and is already pipeline row 872), `dermacaresandiego.com`
    (San Diego SEO pages holding two briefed towns), `skinspirit.com`, `alchemy43.com`,

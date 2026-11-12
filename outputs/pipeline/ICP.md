@@ -483,6 +483,31 @@ Medicine and the Certificate of Dermatoscopy"* who *"excises suspicious lesions 
 skin cancers"*; and a principal clinician credentialed MNP(Neurology and Dermatology). The clinic
 calls itself *"a trusted medical clinic"* and *"Medically led"*.
 
+**AND THE AUSTRALIAN FORM OF THIS FAILURE HAS A NAME NOW, FROM THREE INDEPENDENT SIGHTINGS IN ONE
+NIGHT: IN AUSTRALIA THE REIMBURSED ARM ARRIVES AS A SKIN-CANCER CLINIC BOLTED ON, NOT AS AN
+ACRONYM.** The US tell was a "Primary Care" heading beside "if not covered by insurance"; the
+Canadian tell was private extended health; Australia's is skin checks, mole mapping and lesion
+excision sitting next to the injectables. Three sightings on 12 Nov, in two metros, by two workers
+who never spoke:
+
+- **Row 100 (The Skin Clinicians, Brisbane) — disqualified on it.** A "MEDICAL" nav category whose
+  service pages are skin checks and mole removal, a homepage section headed "Dermatology and Skin
+  Cancer" listing surgical excisions, a practitioner holding the Certificate of Skin Cancer
+  Medicine and the Certificate of Dermatoscopy.
+- **Youth Lab (Perth) — blocked.** Five sites AND a separately branded "Shade Skin Cancer Medicine"
+  sibling.
+- **Ultimate Aesthetics (Perth) — still our best Perth prospect**, with "skin cancer excisions"
+  named in a staff bio and nothing else pointing that way.
+
+**Why this matters more in Australia than the American version does in America: skin checks are
+routinely Medicare-rebated here, so a skin-cancer line is a live must-have 2 risk as well as a
+must-have 1 question** — even when, as in all three cases tonight, the page names no Medicare at
+all. **But the three outcomes differ, and the difference is the rule above, not the words.** A
+separately branded sibling clinic and a named clinical division with its own service pages are
+businesses; a sentence in one practitioner's biography is a credential. **So read where the
+skin-cancer work lives: on the menu and in the nav, or in a bio.** Ultimate Aesthetics stays a
+prospect precisely because it is the latter.
+
 **So the rule has two edges and needs both stated, because each one alone produces an error:**
 
 - **A WORD is not a positioning.** "Dermatology" in the nav, or in a founder's bio describing her
@@ -870,6 +895,25 @@ privacy policy where must-have 5 is. Atlanta's own first-page hit rate says the 
 other end: 7 of 18 clinics gave up the address on the first page read, so **in a must-have-5 market
 the second page of a clinic you have already found beats a new clinic**, and that is where a run's
 last fetches belong.
+
+**A THIRD MEASUREMENT THE SAME WEEK, FROM A MARKET TYPE NOBODY HAD MEASURED: PERTH, 12 NOV 2026 —
+36%.** Perth's western suburbs are affluent, referral-driven and in the most geographically
+isolated major metro in the world, which is the strongest possible version of the conditions the
+old rule says produce silence. **They published a dated or quantified artifact on 4 of 11 clinics,
+above Montgomery County's 20% and below coastal Orange County's 42%.** So the sequence now reads
+8%, 11%, 20%, 36%, 42%, 58% across six markets, and the two highest are an affluent American
+suburb and an isolated Australian one. **The old rule's predictor does not order the data.**
+
+**Perth's binding constraint was must-have 5 again, on 8 of 11** — and in three distinct shapes
+worth keeping apart: four live sites publishing no mailbox at all, one Cloudflare mask, three
+fetch-blocked domains. **That is the third market in two nights where must-have 5 bound**, which
+makes it the question to ask first rather than must-have 4. Perth also measured where the mailbox
+actually lives: **homepage 0 of 5, privacy policy 2 of 4, contact page 2 of 3.** Nothing on a
+homepage, twice.
+
+**And must-have 2 failed ZERO times in eleven Perth businesses, with four privacy policies read in
+full** — no HICAPS, no "all health funds", no Medicare, no bulk billing anywhere. For a market that
+a 2 Nov entry had written off, that is the opposite of a structural failure.
 
 **The honest status of the original market-type rule: it survives as a tendency with one large
 counter-example, and it should no longer be put in a brief as a prediction.** What goes in a brief
