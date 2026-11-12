@@ -77,6 +77,35 @@ the same hazard. **So when using a district name, pair it with the state or read
 before recording anything** — and prefer a street name, which is rarer, over a centre name built
 from words like "suburban", "square" and "village".
 
+**FIVE COLLISIONS FIRED IN ONE BRISBANE SWEEP AND THREE MORE IN SYDNEY, ALL CAUGHT BY GREP FOR ZERO
+FETCHES — AND THE ONES I WARNED ABOUT WERE NOT THE ONES THAT FIRED.** Worth reading as a list,
+because each is a different mechanism:
+
+- **"Camp Hill" fired, but not as Philadelphia.** The ranking page was
+  `aestheticsbyboss.com.au/locations/camp-hill-...` and the clinic is at Racecourse Road, Hamilton
+  QLD — **a Brisbane page about a suburb the clinic is not in**, which it says itself. The predicted
+  international collision never appeared; the local one did.
+- **"Beauty Boost" is pipeline row 1186, Newport Beach CA, grade A** — appended by another worker
+  the night before. Two clinics of the same name on two continents, one night apart.
+- **"Sol Skin"**: `solskinclinics.com.au`, one Brisbane site, against **`solskinspa.com`, already on
+  our blocked list as a 12-site Toronto chain.** A blocked chain's name nearly got attached to a
+  clean row.
+- **"The Aesthetic Company"**: ours is Milton **Georgia**; Brisbane's is Milton **QLD** — *both in a
+  place called Milton*, so a grep for the town matches both and the town is no help.
+- **"Skinthetics"**: ours is Leamington Spa (host premises for row 1030); Brisbane's is Stones
+  Corner.
+- **In Sydney, "Mosman" collided with "Mosman Park", Perth** — and it did so **on my own coverage
+  grep**, returning a hit that made the town look already covered when it was not. **That is the
+  worst direction for a collision to fire**, because it suppresses work rather than wasting it. Add
+  it beside Corona / Corona del Mar: same country, shorter name a strict prefix of the longer.
+- **"Rose Bay" returned three people**: Aly Rose (a person, in Double Bay), Rosederm, and an
+  American nurse "Rose Streeter RN". **A town name that is also a common personal name is its own
+  species** — three collisions in ten results, and the postal address caught all three.
+
+**The pattern across all nine: grep catches them for free, postal addresses settle them, and the
+collisions you predict are not the ones that fire.** So predict anyway — it costs a sentence — but
+spend the real defence on reading the address.
+
 **AND THE SAME-NAME TRAP FIRED INSIDE A SINGLE METRO, 11 NOV 2026 — WHICH IS WORSE THAN ACROSS A
 BORDER.** The coastal Orange County brief warned about Newport Rhode Island, Newport Oregon,
 Newport in Wales and San Clemente abroad. **None of those fired. "Corona, CA" (92879, Riverside
@@ -123,6 +152,24 @@ error this brief warns about. The transferable part is narrow and safe: **a metr
 have one authoritative local lifestyle site is a metro where a listicle is worth one early fetch**,
 and a general directory farm is not the same thing and stays blocked.
 
+**THE DISTRICT / STREET SHAPE HAS AN AUSTRALIAN FAILURE MODE OF ITS OWN, AND IT IS NOT A
+COLLISION — 12 NOV 2026. IN AUSTRALIA A HIGH-STREET MEDICAL ADDRESS IS A GP PRACTICE.** "Oxford
+Street Bulimba" and "Racecourse Road Ascot" returned the right streets and the wrong business TYPE:
+bulk-billing general practice, which fails must-have 2 before you have spent a fetch. **So pair any
+Australian street query with "cosmetic" or "injectables" and expect to block a GP practice by name**
+(`oxfordstmedical.com.au` and `jamesstmedical.com.au` are now on the list for exactly this). And the
+feared national collision on "Racecourse Road" did not fire — **it collided locally, with a
+racecourse-adjacent shopping village**, which is the same lesson as Corona / Corona del Mar: the
+dangerous collisions are inside the market.
+
+**A NEW SPECIES FOR THE BLOCK LIST, AND THERE WILL BE ONE PER STRIP: A HIGH-STREET PRECINCT'S OWN
+PROMOTIONAL SITE WITH A BUSINESS DIRECTORY.** `oxfordstreetbulimba.com.au` took three of ten slots
+on one query. Expect `jamesstreetnewstead`-shaped equivalents and block them by name as you meet
+them. **Do NOT block `stylemagazines.com.au`** — it gave 15 clinic names with 14 domains in one
+fetch and free-confirmed six existing pipeline rows, which puts it in the same bracket as
+`perthisok.com` and `mosmanliving.com.au`: a local consumer publication, not a directory farm. **The
+distinction that separates the two is whether a human editor chose the list.**
+
 **THE DISTRICT / STREET SHAPE'S SCOREBOARD, UPDATED: works on Long Island, in Montgomery County and
 in Atlanta; FAILED on the Chicago North Shore; WEAK in Perth** (2 new in-market names from 9
 results, though one of them — Arrie Aesthetics on Rokeby Road — was a genuine find). **Two misses
@@ -134,6 +181,24 @@ Eight results, two in-market; the rest were national chains and clinics in Ponte
 Point Loma and San Diego. It reads like it should find exactly our ICP and it finds the phrase
 instead. **The Orange County worker stopped there, which was the right call** — a shape returning
 six out-of-market results in eight is not improved by a second attempt.
+
+**A FOURTH REASON A TOWN READS THIN, 12 NOV 2026, AND IT IS THE ONLY ONE THAT IS NOT ABOUT REACH AT
+ALL: THE TOWN'S CLINICS ARE REAL, READABLE, AND SELL THE WRONG THING.** Ascot and Hawthorne in
+Brisbane fetched fine and published addresses; what they fail is must-have 1. Ascot's single
+strongest find has **452 published reviews and no injectables.** **So the taxonomy is now four, and
+each wants a different response:** genuinely thin → drop it; held by a dead domain's SEO pages →
+block the domain and re-query; live clinics publishing no email → a browser-visit list; **live
+clinics selling the wrong thing → the town is worked out and the answer will not change, so record
+it as closed rather than leaving it to be re-swept.** A brief should say which of the four it is,
+because three of them are invitations to come back and one is not.
+
+**And the Brisbane worker added the move that follows from it: don't re-sweep the thin towns, sweep
+the STRIPS.** Albion, Wilston and Camp Hill are small residential suburbs with no retail strip and
+are genuinely thin — but the aesthetics layer sits one suburb over, on Racecourse Road, Sandgate
+Road and Oxford Street. **In a metro of small adjacent suburbs, the unit of sourcing is the shopping
+strip, not the suburb.** (Offered there as a one-market hypothesis; it coheres with the district
+shape working in four markets, so treat it as the better frame for a dense inner metro and measure
+it again.)
 
 **A THIRD REASON A TOWN READS THIN, 11 NOV 2026 — AND IT IS THE ONE THAT LOOKS MOST LIKE THE
 OTHER TWO.** The two known reasons were "genuinely thin" and "occupied by a dead business's SEO
@@ -219,11 +284,47 @@ name.** A sweep section is titled by its metro, so "Perth" would have found it i
 market — the same shape as every other instance of this failure, the check not covering the state
 the problem was in.
 
+**AND THE "GREP THE METRO NAME" FIX I WROTE EARLIER THE SAME NIGHT IS ITSELF TOO WEAK — a Brisbane
+worker found the better command.** `grep -i brisbane outputs/pipeline/near-misses.md` returns about
+25 lines of noise and the section header is one of them, so the fix fails exactly where it is
+needed. **Grep the HEADINGS instead:**
+
+```
+grep -n "^## " outputs/pipeline/near-misses.md | grep -iE "<metro>|<state>|<country>"
+```
+
+One command, nothing to lose in noise, and it would have caught all of this week's misses. **The
+Brisbane brief said `near-misses.md` has no Brisbane sweep section; line 1084 is
+`## Queensland near-misses — 18 Oct 2026`, about ninety lines, already holding four of the ten
+briefed suburbs** — New Farm, Bulimba, Hawthorne and Milton. Believing the brief would have cost
+four re-fetches of clinics already ruled out. **That is the fifth coverage claim I got wrong in two
+nights and the third in one night**, which is the argument for a command rather than a habit: the
+section was found by grepping the state name, not the metro name, so even the right instinct needs
+the heading filter to work.
+
 **So the coverage check is now three commands, not one, and all three are cheap:**
-1. `grep -i '<metro name>' outputs/pipeline/near-misses.md` — finds the sweep SECTION.
+1. `grep -n "^## " outputs/pipeline/near-misses.md | grep -iE "<metro>|<state>"` — finds the sweep
+   SECTION, and cannot be drowned in noise the way a bare metro grep is.
 2. `grep -i '<town>' outputs/pipeline/near-misses.md` for each briefed town — finds named clinics.
 3. `grep -i '<town>' outputs/pipeline/clinic-pipeline.csv` over the RAW FILE, not the city column —
    finds multi-site rows whose briefed town lives in `notes` or `scale_signals`.
+
+**AND A WHOLE-ROW GREP STILL MISSES A CLINIC IF YOU ONLY GREP THE TOWNS YOU WERE GIVEN — two
+instances, 12 Nov.** The Brisbane brief named five pipeline rows and missed a sixth: **row 339,
+Soluxe Skin House, Nundah, "formerly Hamilton Skin Clinic".** Its `city` says Nundah, so a
+ten-town grep could never find it; a grep for *Hamilton* did. **And Hamilton was the one name I had
+explicitly told that worker to avoid because of the NZ/Ontario/Berkshire collision.** So: **a clinic
+can be in your market under the one name you were told to steer clear of.** Grep the names you are
+avoiding as well as the ones you are using — it costs one command and the avoid-list is the part of
+the market nobody else has grepped either.
+
+The second instance is subtler and marks the whole-row grep's ceiling: **row 346 Pellis Medispa
+ranks for Double Bay through `pellismedispa.com.au/medispa-in-double-bay/`, and "Double Bay" is
+nowhere in its row text.** No grep can find a catchment a row never recorded. (A fetch settled it:
+Pellis is one site in Randwick and the page says so in its own words, so the grade was fine — but a
+Double Bay sweep will surface it and spend a fetch on a row we already hold.) **The honest statement
+for a brief is therefore about ranking, not about rows: "these towns may surface clinics we already
+hold under a different suburb; check the domain against the pipeline before fetching."**
 
 **And a fourth thing to state honestly in the brief rather than guess at: how much of the metro is
 already in the file, as distinct from how much of the briefed towns are.** The Perth worker's own
@@ -599,6 +700,19 @@ because the standard may widen again and re-finding a clinic costs more than kee
    `nurseleeprescribing.co.uk` and `ashleyhouseaesthetics.co.uk` — are the same species and are
    **attracted specifically by the "nurse prescriber" modifier**, so block them whenever you use
    it. **GLOWDAY NEEDS THE SAME TREATMENT AS FACES CONSENT — added 8 Nov 2026.**
+   **Blocked from 12 Nov 2026, after the Brisbane and Sydney runs:** `bclinic.com.au` (six sites,
+   fails must-have 3, and it took slots on 3 of 10 Brisbane queries), `australianskinclinics.com.au`,
+   `wesfarmershealth.com.au`, `laserclinics.com.au`, `ausskinclinics.com.au` (skin cancer, and it
+   runs an `/ascc/qld-<suburb>/` page set), `brisbaneskincancer.com.au`, `oxfordstmedical.com.au`
+   and `jamesstmedical.com.au` (GP practices that rank on every street query in their suburb),
+   `oxfordstreetbulimba.com.au` (the precinct-site species above), `dlook.com.au`, `findglocal.com`,
+   `firmania.biz`, `qnews.com.au`, `jora.com`, `markets.financialcontent.com`,
+   `deviceconsulting.com.au/clinic-locator` (the `portraitcare.com` vendor-logo-wall hazard in an
+   Australian costume), `silklaser.com.au` (an already-ruled-out chain holding slot 1 for "Skin
+   Clinics Double Bay"), `theurbanlist.com`, `patch.com`, `yumpu.com`, `localbusinessguide.com.au`
+   (auto-generated for every NSW suburb; it took 2 of 9 slots on one Sydney query and also fired in
+   Perth), and **`yelp.com.au` — blocking `yelp.com` does NOT cover it**, which is the kind of thing
+   a block list only learns by being wrong once.
    **Blocked from 12 Nov 2026, after the Perth run:** `youthlab.com.au` (**disqualified — fails
    must-have 3**: five sites plus a "Shade Skin Cancer Medicine" sibling, and it took slots on 2 of
    6 queries, two of its sites being briefed towns), `cosmeticskinclinic.com.au` (a **Hadfield,

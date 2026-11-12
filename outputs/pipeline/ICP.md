@@ -570,7 +570,35 @@ CHEAPEST MUST-HAVE 2 FAILURE THERE IS — added 9 Nov 2026.**
 and it is the cheapest must-have 2 failure in that market.** One Hobart clinic says in its own
 words: *"We work with ALL health funds and have Hicaps available for on the spot claims"*. HICAPS
 is the Australian on-the-spot private-health claiming terminal, so naming it is a clinic telling
-you directly that a third party reimburses part of its revenue. **Zero policy fetches, decided off
+you directly that a third party reimburses part of its revenue.
+
+**BUT HICAPS WAS THE WRONG THING TO TELL WORKERS TO LOOK FOR, MEASURED 12 NOV 2026, AND THAT
+INSTRUCTION WAS IN ALL THREE AUSTRALIAN BRIEFS THAT NIGHT.** A Brisbane sweep of 19 clinics found
+**zero** printing HICAPS anywhere; a Perth sweep of 11 found zero; a Sydney sweep of 15 found zero.
+**Forty-five Australian clinics, not one HICAPS.** The Hobart row above is real and the word still
+fails a clinic on sight — it is simply rare, so an instruction built around it finds nothing.
+
+**THE AUSTRALIAN TELL IS "MEDICARE REBATES" AND "DEPARTMENT OF VETERANS' AFFAIRS", AND IT LIVES IN
+THE PRIVACY POLICY RATHER THAN ON THE MENU.** Brisbane's policy fetches flipped 2 of 5 clinics that
+had looked clean:
+
+- **Vara Aesthetics:** *"We cannot provide Medicare rebates or access to Veterans affairs
+  entitlements without properly identifying you."*
+- **Skinthetics:** *"Medicare number (where available) for identification and claiming purposes"*,
+  *"health fund details"*, and disclosure to *"your health fund, Medicare, or the Department of
+  Veterans' Affairs"*.
+
+**Neither says anything about billing on its public pages.** Sydney produced a third the same night:
+**drJ Clinics**, whose homepage carries zero insurance language and whose policy reads *"To
+Medicare, the Department of Veterans' Affairs, or private health insurers, in connection with
+billing."* **That row would have shipped as a sendable B.**
+
+**So this is the Montgomery County finding in an Australian accent, and it is now the strongest
+single-fetch screen we have: a market that does not advertise its billing still has to name the
+scheme in its policy, because the policy is a legal document and the menu is marketing.** The
+corollary for a brief: in Australia the privacy policy is not the last resort for an address, it is
+a must-have 2 screen worth running on any clinic you are about to grade B — three sendable rows in
+one night were caught by it and none by a menu. **Zero policy fetches, decided off
 the page you were already reading.** This is the same ruling as NYSHIP on an American menu and as
 the Canadian private-extended-health failure, in the third market — so read it as the general
 shape: **a named claiming system, scheme or terminal beside a service line is a reimbursed revenue
@@ -647,6 +675,41 @@ None of the seven may be recorded as a published address. The first four are not
 opening the page in a browser; the sixth is not a recovery problem at all, but a question about
 whether the clinic published anything.
 
+**AND THE SHARPEST ADDRESS FINDING OF THE WEEK IS NOT A LOOK-ALIKE AT ALL — IT IS TWO REAL
+ADDRESSES THAT DISAGREE. 12 Nov 2026, THREE INSTANCES IN ONE BRISBANE SWEEP, EACH ONE CHARACTER
+APART:**
+
+- **Vara Aesthetics:** `enquire@` and `enquires@` in the privacy policy; `enquiries@` in the footer.
+- **Vissi Aesthetics:** **`hell0@` — with a zero** — in the policy; `hello@` in the footer.
+- **Skinthetics:** `info@skintheticclinic.com.au` in the policy; `info@skintheticsclinic.com.au` in
+  the footer.
+
+**All three footer forms are `mailto:`-wired. All three policy forms are the owner's typo.** A
+policy is pasted together once by somebody who is not checking, and nobody ever clicks an address
+inside it; a footer address is wired, clicked daily, and fixed the first time a patient complains.
+**Recording the policy's version would have produced three silent bounces that read to us as
+disinterest, and every row would have looked completely normal** — which is what makes this worse
+than a mask. A mask announces itself.
+
+**THE RULE: where a page publishes the same mailbox twice and the two disagree, the disagreement is
+the evidence and the FOOTER wins.** This is the other half of "never correct a mailbox" rather than
+an exception to it: we are not correcting anything, we are choosing between two things the clinic
+published, on the ground that one of them is wired and one is not.
+
+**And the test that generalises, settled on row 694 the same night: a domain mismatch is a typo risk
+only when the published appearances disagree with EACH OTHER.** Row 694 publishes
+`contact@the-aestheticlab.com` (one hyphen) on a site at `the-aesthetic-lab.com` (two) — flagged by
+a typo audit as the most suspicious address in the file, and cleared by one fetch, because the
+visible text and the wired `mailto:` href agree exactly and no other address exists. **Visible text
+agreeing with its own `mailto:` is the strongest attestation available, whatever the domain looks
+like.**
+
+**The audit that produced that row also produced a reassurance worth recording: the defect is NOT
+already in our file.** Across all sendable rows, no local part is one edit from a standard form
+except five legitimate `booking@` mailboxes, and the domain mismatches are brand and country-TLD
+variants recorded verbatim rather than typos. **So this rule is a guard against a future error, not
+a cleanup of a past one — which is the cheapest moment to write one down.**
+
 And, added 12 Nov 2026, an **eighth: an unreplaced theme placeholder address on the demo vendor's
 own domain.** Row 163's page carries two extra blocks printing `sanfrancisco@message.com` and
 `losangeles@message.com` beside Latin filler copy. `message.com` is the theme's demo domain, so
@@ -654,6 +717,21 @@ neither address belongs to the clinic and neither block is evidence of two more 
 `filler@godaddy.com` case with a city name glued on, which makes it read far more like a real
 branch mailbox.** The tell is the same one that caught the demo addresses in a locations slot: a
 city that has no business being there. Do not record them and do not count them toward must-have 3.
+**And `filler@godaddy.com` itself turned up in the wild on 12 Nov — Sol Skin Clinics prints it as
+visible text BESIDE a genuine published gmail.** The keeper is not the placeholder, which is
+obvious; it is that a page can carry one valid address and one worthless one at the same time, so
+**"I found an address on this page" is not enough — read the domain of EACH address, including when
+one of them is obviously fine.**
+
+**A NINTH, 12 NOV 2026, AND IT IS NOT AN ADDRESS BUT IT FAILS THE SAME WAY: A PLACE NAME IN A META
+TAG IS NOT A LOCATION.** Three of nineteen Brisbane clinics name a suburb in their meta description
+that they are not in — Vissi says "Albion" and is in Nundah, Enhance says "Hawthorne" and is in
+East Brisbane, Harmony says "Sunshine Coast" and is in Newstead, three hours away. The mechanism is
+that inner Brisbane's suburbs are small and adjacent, so a clinic SEO-targets the better-known
+neighbour one street over. **We already had the rule that an ADDRESS in a meta tag is not published;
+this is its other half, and it bites on coverage rather than on contact** — a worker querying
+exactly the right town gets a clinic in the wrong one, and the row's `city` field then carries a
+suburb the clinic does not trade in. **Reading the postal address first catches all of them.**
 
 And, added 9 Nov 2026 from Westchester, a **seventh: a gmail published only inside an `sms:`
 href.** The page's "text us" button carries `sms:+1...&body=...` and the clinic's gmail appears
@@ -915,10 +993,58 @@ homepage, twice.
 full** — no HICAPS, no "all health funds", no Medicare, no bulk billing anywhere. For a market that
 a 2 Nov entry had written off, that is the opposite of a structural failure.
 
-**The honest status of the original market-type rule: it survives as a tendency with one large
-counter-example, and it should no longer be put in a brief as a prediction.** What goes in a brief
-is the question — which must-have is binding here? — and the instruction to answer it early and
-say so.
+**THE PREDICTOR IS RETIRED, 12 NOV 2026. Not qualified, not "a tendency with a counter-example" —
+retired.** Sentences above kept weakening it one measurement at a time, which is how a dead rule
+survives. **A fourth measurement the same week finished it: Sydney's harbourside and eastern
+suburbs, as affluent and referral-driven a market as exists anywhere, published a dated or
+quantified artifact on 9 of 15 clinics — 60%, the highest rate in the file.** Founding years of
+1999, 2001, 2002, 2004, 2018, 2019 and 2022, "Established over 32 years ago", "Since 2007", and a
+count of 380 reviews.
+
+**The six-market sequence, lowest to highest: Long Island 8%, Westchester 11%, Montgomery County
+20%, Perth 36%, coastal Orange County 42%, Sydney east 60%.** The old rule predicts that the
+affluent referral markets sit at the bottom. **Three of the top four ARE affluent referral markets.**
+The predictor does not order the data, and a rule that does not order the data is not a weak rule,
+it is the wrong variable.
+
+**What stays is the measurements, which are real and useful, and the instruction they support:
+measure which must-have is binding in your first five or six clinics and spend the rest of the
+budget on that one.** That instruction has now been tested in four markets and returned three
+different answers, which is the point of it: **must-have 5 bound in north Atlanta (10 of 12 parked
+rows), coastal Orange County (9 of 19) and Perth (8 of 11); must-have 1 bound in Sydney east (6 of
+15), where for the first time in the file it was the ICP's own disqualifications — plastic-surgeon-led
+practices, a self-described dermatology clinic, aesthetics clinics with no injectables — rather than
+the evidence ladder or a silent contact page that removed the clinics.** Must-have 4 bound in
+exactly one of the four, at 1 of 15.
+
+**AND THE BRISBANE SWEEP THE SAME NIGHT EXPLAINED WHY EVERY ONE OF THESE MARKETS KEEPS PRODUCING
+NEAR-MISSES RATHER THAN GRADE A ROWS, WHICH IS A BETTER QUESTION THAN WHICH MARKET PUBLISHES MOST.**
+Nineteen clinics, zero grade A — and **every near-A was missing a DIFFERENT leg**:
+
+- Future Face: named owner-injector, Phorest, real multi-tier memberships — **no email**.
+- The Facial Hub: 452 published reviews, a seven-year copyright range — **no injectables**.
+- Eleventh Heaven: a CPCA vice-president on staff — **no date of any kind**.
+- Bare Beauty: named owner, Dapple, gift vouchers — **no review count**.
+
+**That is the third market where this exact shape recurs, and the worker's reading of it is the
+right one: it is not that one leg is scarce in rich markets, it is that the legs are independently
+distributed and almost never co-occur.** Four roughly independent conditions at maybe 50-70% each
+will co-occur in a small minority of clinics however good the market is, which means **a sweep
+producing many strong B rows and no A is the expected outcome, not a sign the market or the worker
+underperformed.** Brisbane's own rates show it: a mailbox on the first page read 13 of 19 (68%), a
+dated or quantified artifact 10 of 19 (53%), a named practice system 17 of 19 (89%) — **and a
+published review count only 4 of 19.**
+
+**The review count is the leg that keeps going missing, now in a third market type** — the same
+hole found in Britain and in Westchester. So of the four, that is the one to stop treating as
+ordinary evidence and the one a run should not wait for.
+
+**And a better hypothesis to test rather than assume, offered by the Sydney worker and labelled by
+it as a recommendation: what predicts a published founding year is the clinic's AGE, not its
+market's wealth.** Sydney east's clinics are old — a 1999, a 2001, a 2002, a "32 years" — and an old
+business has a number worth printing. That is testable on a young affluent market, and **nobody
+should put it in a brief as a prediction until somebody has measured it**, which is the mistake the
+retired rule was.
 
 **A FOURTH MEASUREMENT, AND IT IS A DIFFERENT FAILURE WEARING THE SAME CLOTHES. Northern New
 Jersey, 9 Nov 2026.** Five of its six C rows fail on must-have 4, so the pattern holds a fourth

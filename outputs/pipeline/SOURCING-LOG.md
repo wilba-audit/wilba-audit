@@ -11,6 +11,222 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 12 Nov 2026 — Australia first, and three Australian metros retired a rule this file had confirmed five times
+
+**Rows: 25 appended — 1204-1206 (Perth western and riverside suburbs: 1 B, 2 C), 1207-1216 (Sydney
+harbourside and eastern suburbs: 5 B, 5 C) and 1217-1228 (Brisbane inner north and east: 5 B, 7 C).
+Eleven B, fourteen C, and NO GRADE A in three metros.** Pipeline **1,228 rows, 817 ready to
+approach** — US 432, AU 178, CA 88, UK 82, NZ 43, IE 2. Browser-visit list **169 entries**.
+
+**THE MARKET-TYPE PREDICTOR FOR MUST-HAVE 4 IS RETIRED, NOT QUALIFIED.** The rule said the richer
+and more referral-driven a market, the less its clinics publish about themselves. It had five
+confirmations and I spent two nights weakening it one measurement at a time, which is how a dead
+rule survives. **Tonight's three markets finished it.** The six-market sequence, lowest to highest:
+**Long Island 8%, Westchester 11%, Montgomery County 20%, Perth 36%, coastal Orange County 42%,
+Sydney east 60%** — and Brisbane at 53% sits fifth. **Three of the top four are affluent
+referral-driven markets, including the most isolated major metro on earth and the most expensive
+harbour suburbs in Australia.** A rule that fails to order the data is not weak; it has the wrong
+variable.
+
+**WHAT REPLACES IT IS BETTER AND WAS ALREADY WORKING: measure which must-have binds in your first
+five or six clinics, and spend the rest of the budget on that one.** Four markets, three different
+answers. **Must-have 5 bound in Perth (8 of 11, in three distinct shapes: four silent live sites,
+one Cloudflare mask, three fetch-blocked domains) and in Brisbane (5 sole failures of 19).
+Must-have 1 bound in Sydney east — 6 of 15, and for the first time in this file it was the ICP's own
+disqualifications that removed the clinics** rather than the evidence ladder or a silent contact
+page: two plastic-surgeon-led practices, a self-described dermatology clinic, two aesthetics clinics
+with no injectables. Must-have 4 bound in exactly one of the four, at 1 of 15.
+
+**AND BRISBANE EXPLAINED THE THING THAT MATTERS MORE THAN WHICH MARKET PUBLISHES MOST: WHY THESE
+SWEEPS KEEP PRODUCING STRONG B ROWS AND NO A.** Nineteen clinics, zero A, and **every near-A was
+missing a different leg** — Future Face had the owner, Phorest and real memberships and no email;
+The Facial Hub had 452 reviews and no injectables; Eleventh Heaven had a CPCA vice-president and no
+date of any kind; Bare Beauty had the owner, Dapple and vouchers and no review count. **The legs are
+independently distributed and almost never co-occur.** Four conditions at 50-70% each produce an A
+in a small minority of clinics however good the market is. **So a sweep of strong Bs with no A is
+the expected outcome, not an underperforming market or worker** — and the leg that keeps going
+missing is the **published review count, 4 of 19 in Brisbane**, the same hole found in Britain and
+Westchester. Stop waiting for it.
+
+**MY OWN GUIDANCE WAS WRONG ABOUT AUSTRALIA'S BILLING TELL, AND IT WAS IN ALL THREE BRIEFS.** Every
+brief told its worker to look for **HICAPS**. **Forty-five Australian clinics across three metros:
+not one printed it.** The word is real and still fails a clinic on sight — the Hobart row proves
+that — but it is rare, so an instruction built on it finds nothing.
+
+**THE ACTUAL AUSTRALIAN TELL IS "MEDICARE REBATES" AND "DEPARTMENT OF VETERANS' AFFAIRS", AND IT
+LIVES IN THE PRIVACY POLICY RATHER THAN ON THE MENU — three rows caught in one night, every one of
+which would have shipped.** Brisbane's policy fetches flipped **Vara** (*"We cannot provide Medicare
+rebates or access to Veterans affairs entitlements without properly identifying you"*) and
+**Skinthetics** (*"disclosure to your health fund, Medicare, or the Department of Veterans'
+Affairs"*). Sydney's flipped **drJ Clinics**, whose homepage carries zero insurance language and
+whose policy reads *"To Medicare, the Department of Veterans' Affairs, or private health insurers,
+in connection with billing."* **That row would have been a sendable B.** This is the 10 Nov
+Montgomery County technique in an Australian accent, and it reproduces at roughly 40%: **a market
+that does not advertise its billing still has to name the scheme in its policy, because the policy
+is a legal document and the menu is marketing.** In Australia the privacy policy is no longer the
+last resort for an address; it is a must-have 2 screen to run on any clinic about to be graded B.
+
+**AND THE SHARPEST FINDING OF THE WEEK IS ABOUT ADDRESSES WE WOULD HAVE RECORDED HAPPILY: A POLICY
+PAGE IS WHERE THE OWNER'S TYPOS LIVE, AND THE FOOTER IS WHERE THE WORKING MAILBOX LIVES.** Three
+instances in one Brisbane sweep, each one character apart. **Vara:** `enquire@` and `enquires@` in
+the policy against `enquiries@` in the footer. **Vissi:** **`hell0@` with a zero** in the policy
+against `hello@` in the footer. **Skinthetics:** `info@skintheticclinic.com.au` in the policy
+against `info@skintheticsclinic.com.au` in the footer. **All three footer forms are `mailto:`-wired
+and all three policy forms are the owner's typo.** A policy is pasted together once by somebody not
+checking and nobody ever clicks an address inside it; a footer address is wired, clicked daily, and
+fixed the first time a patient complains.
+
+**Recording the policy's version would have produced three silent bounces that read to us as
+disinterest, and every row would have looked completely normal — which makes this worse than a
+mask, because a mask announces itself.** The rule: **where a page publishes the same mailbox twice
+and the two disagree, the disagreement is the evidence and the FOOTER wins.** That is the other half
+of "never correct a mailbox" rather than an exception to it — we are choosing between two things the
+clinic published, on the ground that one is wired and one is not.
+
+**SO THE WHOLE SENDABLE SET WAS AUDITED FOR IT TONIGHT, AND THE DEFECT IS NOT ALREADY IN THE FILE.**
+No local part among the sendable rows is one edit from a standard form except five legitimate
+`booking@` mailboxes, and the 67 domain mismatches are brand and country-TLD variants recorded
+verbatim. **One row was flagged as the most typo-shaped address we hold and settled by a single
+fetch: row 694 publishes `contact@the-aestheticlab.com` (one hyphen) on a site at
+`the-aesthetic-lab.com` (two).** The clinic publishes the one-hyphen form as visible text AND as a
+wired `mailto:` target, identically, and publishes nothing else — so it is theirs, not our slip.
+**The test that generalises: a domain mismatch is a typo risk only when the published appearances
+disagree with EACH OTHER. Visible text agreeing with its own `mailto:` is the strongest attestation
+available, whatever the domain looks like.** So tonight's rule is a guard against a future error
+rather than a cleanup of a past one, which is the cheapest moment to write one down.
+
+**FOUR ROWS WERE RE-GRADED OR SETTLED BY DIRECT FETCH RATHER THAN ON REPORT, AND THE POLICY HELD.**
+**Row 100 (The Skin Clinicians) is DISQUALIFIED on must-have 1 — and it is the MIRROR of last
+night's two overturns, which is why it matters more than the row.** A worker applied the 11 Nov rule
+that a service line is not a positioning, applied it correctly, and reached the wrong answer. What
+is there is not a nav item: a top-level **"MEDICAL"** category whose service pages are
+`/medical/skin-checks/` and `/medical/mole-removal/`, a homepage section headed **"Dermatology and
+Skin Cancer"** listing *"Surgical excisions"*, and a practitioner holding *"the Certificate of Skin
+Cancer Medicine and the Certificate of Dermatoscopy"*. **The rule now carries both edges: a WORD is
+not a positioning; a NAMED CLINICAL DIVISION is. A service page with a URL is selling; a sentence in
+a bio is mentioning.** And the process lesson travels further than the rule: **a rule derived from
+errors in one direction will produce errors in the other until somebody hits them** — so when
+writing a rule off a correction, write the opposite edge too.
+
+**Rows 25 and 78 were flagged and both cleared.** Row 25 (Rejuva London) is a doctor-led aesthetic
+clinic on one Harley Street site with no surgery on the menu and nobody billed as a dermatologist —
+the word appears once, in the founder's own bio, describing her past experience. **Row 78 (Medicine
+of Cosmetics) produced a counting rule: a mobile or outreach venue is NOT a site.** Three fixed
+Adelaide clinics plus "30+ Mobile Locations" across two states; the thirty-plus are venues the
+clinic travels to, with booking and records running through the three clinics, so there is one
+lapsed list and it belongs to the founder. **Must-have 3 passes — but the mobile footprint went into
+`scale_signals`, because an opener written for a one-room practice reads wrong to a business serving
+two states.** Row 1212 (All Saint Clinic) stays C: its "Mayfair" sibling is described on its own
+homepage as *"our Mayfair London clinic"*, so four Sydney sites plus London is five, and it fails
+the owner-operated half independently — four doctors under a Medical Director is a management layer.
+
+**THE SEPTEMBER COHORT IS FINISHED: 50 ROWS, AND THE RESULT IS A CLEAN RANKING WITH A SOFT RATE.**
+Half B tonight was **19 CLEAN, 1 NO ADDRESS, 0 masked, 0 changed.** Cohort totals: **4 silent sites
+of 50, zero masks, zero changes, one decoded-token shape (row 181, still the only one).** The
+worker's own reading is the right one and worth copying: **what replicated is the RANKING — silent
+sites beat masks and changes 4 to 0 — not the rate, which at n=50 is anywhere from a few percent to
+low double digits.** So the defect is real, of known shape, and of unknown size; do not quote 8% as
+though it were measured. The free checks came back clean too: zero domain mismatches in 20 after row
+83 was one of 30, and no signal by country. **What did split by market was fetchability: all six
+`/contact` failures were non-UK, and the two rows with the thinnest tooling output were both AU/NZ.**
+
+**And row 149 is a weaker strike than the other three, which is recorded rather than smoothed.** Its
+homepage publishes nothing **and its `/contact` is `robots_disallowed`**, so the verdict rests on
+*"nothing we are permitted to read publishes it"* rather than *"nothing publishes it"* — and a
+browser opens that page normally. Graded C and put on the browser list, one page-open from restoring
+a sendable row. **A NO ADDRESS verdict is only as strong as the pages you were allowed to read.**
+
+**THE BACKLOG DEFINITION WAS FIXED ALONG THE WAY, AND THE FIX GENERALISES.** The September set was
+counted at 33 on 9 Nov and 47 on 11 Nov, on an unchanged file, because the list of "guessable" local
+parts changed. Tonight it was rebuilt by asking **which rows have NOT been re-verified** — testing
+for the stamp the verification itself writes — and came out at 20, a number that goes down by one
+per row checked and cannot be moved by editing a regex. **It also caught two grade-A rows the
+risk-shaped filter had missed, so that filter was leaky in the direction that matters.** The general
+form: **a backlog defined by a predicate over the WORK converges and is auditable; one defined by a
+predicate over the RISK measures your own guess about the risk.**
+
+**MY COVERAGE CLAIMS WERE WRONG AGAIN — THREE TIMES IN ONE NIGHT, FIVE TIMES IN TWO — AND A WORKER
+FOUND THE COMMAND THAT ACTUALLY FIXES IT.** All three briefs claimed `near-misses.md` had no sweep
+section for their market. **All three were wrong**: Perth at line 1180, Sydney at 863 and 39,
+Brisbane at 1084 (*"Queensland near-misses — 18 Oct 2026"*, ninety lines, already holding four of
+the ten briefed suburbs). **Believing the Brisbane brief would have cost four re-fetches of clinics
+already ruled out.** Every row id and grade I gave was right; it was the near-misses half that
+failed, every time.
+
+**And the "grep the metro name" fix I wrote earlier the same night is itself too weak, which the
+Brisbane worker diagnosed exactly: `grep -i brisbane near-misses.md` returns 25 lines of noise and
+the section header is one of them.** The command that works is
+`grep -n "^## " outputs/pipeline/near-misses.md | grep -iE "<metro>|<state>"` — one command, nothing
+to lose in noise, and it would have caught all five misses. **The section was found by grepping the
+STATE, not the metro, so even the right instinct needs the heading filter.**
+
+**Two more holes in the coverage check, both found tonight.** A whole-row grep still misses a clinic
+if you only grep the towns you were given: **row 339 (Soluxe Skin House, Nundah, "formerly Hamilton
+Skin Clinic") was found by grepping "Hamilton" — the one name I had told that worker to avoid.** So
+grep the names you are avoiding as well as the ones you are using. And the grep's ceiling: **row 346
+ranks for Double Bay through an `/medispa-in-double-bay/` page while "Double Bay" appears nowhere in
+its row** — a fetch settled it (one site, in Randwick, and the page says so), but no grep could have.
+**The honest brief sentence is about ranking rather than rows: "these towns may surface clinics we
+already hold under a different suburb; check the domain against the pipeline before fetching."**
+
+**NINE SAME-NAME COLLISIONS FIRED, ALL CAUGHT BY GREP FOR ZERO FETCHES, AND THE ONES I WARNED ABOUT
+WERE NOT THE ONES THAT FIRED.** "Camp Hill" fired as a **Brisbane** page about a suburb its clinic is
+not in, not as Philadelphia. **"Beauty Boost" collided with row 1186, Newport Beach CA, grade A,
+appended by another worker the night before.** "Sol Skin" nearly attached a clean row to
+`solskinspa.com`, already blocked as a 12-site Toronto chain. "The Aesthetic Company" exists in
+Milton **Georgia** and Milton **QLD** — *both in a place called Milton*, so the town is no help.
+**And in Sydney "Mosman" collided with "Mosman Park", Perth, on my own coverage grep — returning a
+hit that made the town look already covered when it was not, which is the worst direction for a
+collision to fire, because it suppresses work instead of wasting it.** "Rose Bay" returned three
+people, Aly Rose and Rosederm and an American nurse called Rose Streeter: **a town name that is also
+a common personal name is its own species.**
+
+**Smaller findings, each recorded where it will be read:**
+- **A place name in a meta tag is not a location** — 3 of 19 Brisbane clinics name a suburb they are
+  not in, because inner Brisbane's suburbs are small and adjacent so clinics SEO-target the
+  better-known neighbour. We had the rule that an ADDRESS in a meta tag is not published; this is
+  its other half, and it bites on coverage rather than contact.
+- **`filler@godaddy.com` exists in the wild, printed beside a genuine gmail on the same page.** So
+  "I found an address on this page" is not enough — read the domain of EACH address, including when
+  one of them is obviously fine.
+- **A fourth reason a town reads thin, and the only one that is not about reach: the clinics are
+  real, readable, and sell the wrong thing.** Ascot's strongest find has 452 reviews and no
+  injectables. Three of the four reasons invite a return visit and this one does not, so a brief
+  should say which it is.
+- **In a metro of small adjacent suburbs, the unit of sourcing is the shopping strip, not the
+  suburb** — Racecourse Road, Oxford Street, James Street, Sandgate Road. Albion, Wilston and Camp
+  Hill are genuinely thin because the aesthetics layer sits one suburb over.
+- **In Australia a high-street medical address is a GP practice**, so a street query in a shopping
+  strip surfaces bulk-billing medicine that fails must-have 2 before a fetch is spent.
+- **One local consumer listicle produced an entire run.** `perthisok.com` gave 13 clinic names with
+  10 domains in one fetch and every Perth row traces to it; `stylemagazines.com.au` gave 15 names
+  with 14 domains and free-confirmed six existing rows. **Both stay OFF the block list**, and the
+  line that separates them from a directory farm is whether a human editor chose the list.
+- **A new block-list species, one per shopping strip: a high-street precinct's own promotional site
+  with a business directory.** `oxfordstreetbulimba.com.au` took three of ten slots on one query.
+- **`yelp.com.au` is not covered by blocking `yelp.com`** — the kind of thing a block list only
+  learns by being wrong once. Twenty-six domains blocked tonight in total.
+- **Query shapes: four unquoted town names plus owner/founder is now 5 for 5** and produced every
+  row in two of tonight's three markets. The district/street shape worked in a fourth unlike market
+  (Sydney) and was weak in Perth, so it stands at four working, one failed, one weak.
+- **Zero Cloudflare tokens and zero CleanTalk masks across 45 Australian clinics**, which reproduces
+  "Australia's problem is silence, not obfuscation" for a fourth time.
+- **Four of Brisbane's five B rows sit outside the ten briefed towns and were kept.** The worker
+  wrote them up in full with an explicit out-of-brief flag rather than burying verified work in
+  near-misses, and offered to have them rejected in one line. **They stay: the towns were a search
+  frame, not a boundary, and the ICP does not care about my town list.**
+
+**The standing item for Jess is now ten days old and tonight is the evidence that settles it: the
+sourcing trigger says "Australia first" and the file's own record says that is the wrong order.**
+Three Australian metros, 26 fetches each, produced **eleven B rows and no A**. The 2 Nov verdict
+"Australia is finished" is confirmed on volume and **wrong on mechanism** for the affluent inner
+metro, which is the half that matters: that verdict rested on structural failure of must-have 2, and
+**must-have 2 failed zero times in eleven Perth businesses with four policies read in full.** What
+binds is must-have 5 — clinics we would be glad to write to that cannot be reached by fetch, which
+is a browser-visit list rather than a dead end, and eleven Australian entries went onto that list
+tonight. **So the recommendation is not "stop assigning Australia" but "stop assigning it FIRST".**
+Only Jess can change the trigger prompt.
+
 ## 11 Nov 2026 — two markets overturned the must-have 4 rule on the same night, and four grade-A rows were struck
 
 **Rows: 18 appended — 1186-1195 (coastal and south Orange County: 2 A, 4 B, 4 C) and 1196-1203
@@ -1235,6 +1451,18 @@ next, in order, all handed over by the Long Island pass:
   Medical & Esthetics (Larkspur, 3 sites) as "the only Marin presence found anywhere", and a
   Central Valley query once collapsed "Madera" into "Corte Madera". Grep before briefing it.]**
 
+- **FIVE ONE-FETCH SETTLEMENTS NAMED BY THE 12 NOV BRISBANE AND SYDNEY WORKERS, each of which moves
+  a specific parked row.** **About Face Brisbane** — one fetch of its payment/fees page settles
+  must-have 2, and it is otherwise the best-evidenced clinic in that whole sweep (**established
+  2006, 136 reviews**); the worker flagged rather than concluded, correctly. **Byron Eve** — one
+  fetch of its Cosmetic Services menu settles must-have 1. **Eleventh Heaven, The Aesthetic Company
+  and Aesthetics By Boss** — each needs only a founding year or a review count to clear must-have 4,
+  and all three are otherwise clean. **Ascot Dermatology** (`ascotdermatology.com.au`) is recorded as
+  **unscreened, not failed** — the name suggests a disqualification but nobody has read it, and under
+  the label rule an unscreened row is not a parked one. **Parlour Dala** (Mosman) and **Dr Cosmetist**
+  (Crows Nest) each need one policy fetch rather than a browser visit, so they should go to a worker
+  before they go to Jess.
+
 - **TWO NAMED PERTH LEADS THE 12 NOV RUN RAN OUT OF SEARCH BUDGET BEFORE REACHING.** **The Skin
   Fairy** (Claremont + Mount Hawthorn) — printed in the `perthisok.com` listicle that produced that
   whole run, but with no domain given, so it costs one search plus one fetch. **Eric Street Medical**
@@ -1475,11 +1703,11 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 11 Nov 2026: **1,203 rows, 808 ready to approach** — US 433, AU 168, CA 88, UK 82, NZ 43,
-IE 2. (816 rows are grade A or B and hold a published address; 8 of those have been emailed, which
+As of 12 Nov 2026: **1,228 rows, 817 ready to approach** — US 432, AU 178, CA 88, UK 82, NZ 43,
+IE 2. (825 rows are grade A or B and hold a published address; 8 of those have been emailed, which
 is the whole of the sending done to date.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
 on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, and 1,185 and 800 on 10 Nov. A further
-**133 clinics** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+**169 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
 page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20
@@ -1490,7 +1718,7 @@ gets emailed. Eight went C to B on rulings rather than on new research (423, 469
 parked rows are named on the standing list as parked on nothing at all**, with the published
 address already read and dated, which makes them the cheapest qualified rows left in the file.
 
-**Every one of those 808 rows is unsendable until Jess supplies a postal address** — see the entry
+**Every one of those 817 rows is unsendable until Jess supplies a postal address** — see the entry
 below. Rows have not been the constraint for some time; now they are not even the second
 constraint.
 
