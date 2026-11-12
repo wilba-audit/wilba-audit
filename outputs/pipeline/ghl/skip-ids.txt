@@ -1,0 +1,96 @@
+# Clinics listed here get no more outreach emails (one pipeline_id per line).
+# Added 18 Oct: these fail ICP v2 (Griffin briefing). Remove a line to resume that clinic.
+77  # Advanced Cosmetic Medicine
+87  # Epsom Skin Clinics
+90  # Woodford Medical
+92  # Dr Ellie Sateei
+96  # Cityskin Cosmetic Clinic
+99  # The Skin Lab
+101  # The Coastal Clinic
+105  # MedAesthetics
+108  # The Academy Clinic
+109  # Kat & Co
+115  # McKeown Medical
+117  # The Mayfield Clinic
+119  # Manchester Private Hospital
+120  # UK Aesthetic
+121  # Victoria House Clinic
+122  # Yorkshire Skin Centre
+123  # The Kelly Clinic
+133  # Aesthete Sunshine Coast
+134  # Geelong Veins, Skin & Laser
+135  # Hobart Plastic Surgery
+137  # Cool Springs Plastic Surgery
+140  # Sanctuary Medical Aesthetic Center
+142  # Georgia Plastic & Reconstructive Surgery
+144  # Total Med Solutions
+145  # Fort Worth Plastic Surgery & MedSpa
+156  # Rejuvent Medical Spa & Surgery
+158  # Newvue Medical
+164  # Beverly Hills Plastic Surgery Group
+165  # Guerra Plastic Surgery Center
+169  # UPKEEP Med Spa
+170  # SKINNEY Medspa
+171  # BeautyFix MedSpa
+183  # SpaDerma
+184  # PURE Medical Spa
+189  # Jiva Med Spa
+195  # Aurora MediSpa & Plastic Surgery
+209  # Reston Dermatology + Cosmetic Center
+232  # Velo Med Spa
+244  # Confident Med Spa
+258  # Radiant Med Spa
+259  # Epi Center MedSpa
+260  # Nob Hill Aesthetics
+268  # Totality Medispa
+279  # Jack Zamora MD Cosmetic Surgery and Aesthetics
+136  # Fitzgerald Private Clinic (IE): no company identity found (PECR/UK-IE screen, 19 Oct)
+107  # Lumiere Clinic (UK): company identity unverified, address match only (19 Oct)
+160  # Deluxe Med Spa (US): five sites, fails ICP v2 chain rule (20 Oct)
+76  # InLine Clinics: opener says one doctor at Deakin and names Dr Jung (inferred, never printed) + brand names; it is 2 sites. Redraft under v2 before sending (1 Nov)
+103  # consent basis fails: address only in meta tags (graded C 3 Nov)
+104  # consent basis fails: address now Cloudflare-hidden (graded C 3 Nov)
+116  # Luxe Skin: address now obfuscated on site, graded C (3 Nov)
+78  # Medicine of Cosmetics: site erroring on every host 3 Nov; retry re-read before sending
+308  # wave: address gone on re-read 3 Nov (graded C)
+352  # wave: address gone on re-read 3 Nov (graded C)
+742  # wave: address gone on re-read 3 Nov (graded C)
+382  # wave: address gone on re-read 3 Nov (graded C)
+412  # wave: address gone on re-read 3 Nov (graded C)
+636  # wave: address gone on re-read 3 Nov (graded C)
+310  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+347  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+366  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+386  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+421  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+429  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+433  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+503  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+587  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+610  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+632  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+660  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+730  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+350  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
+582  # wave: Respectable Aesthetics now lists 5 locations; pending a look
+458  # regraded C 8 Nov: no trading evidence (must-have 4)
+490  # regraded C 8 Nov: no trading evidence (must-have 4)
+492  # regraded C 8 Nov: no trading evidence (must-have 4)
+493  # regraded C 8 Nov: no trading evidence (must-have 4)
+700  # regraded C 8 Nov: no trading evidence (must-have 4)
+703  # regraded C 8 Nov: no trading evidence (must-have 4)
+707  # regraded C 8 Nov: no trading evidence (must-have 4)
+709  # regraded C 8 Nov: no trading evidence (must-have 4)
+713  # regraded C 8 Nov: no trading evidence (must-have 4)
+715  # regraded C 8 Nov: no trading evidence (must-have 4)
+720  # regraded C 8 Nov: no trading evidence (must-have 4)
+721  # regraded C 8 Nov: no trading evidence (must-have 4)
+181  # Forte Faces: pipeline grade C on 9 Nov re-derive
+177  # La Chele Medical Aesthetics & Wellness: on sourcing DO-NOT-SEND.txt 10 Nov
+110  # MediZen Aesthetics: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 110)
+130  # The R Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 130)
+152  # MDSkin Lounge: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 152)
+168  # Glamoi Med Spa: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 168)
+83  # Bodyvie Medi-Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 83)
+100  # The Skin Clinicians: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 100)
+149  # Aesthetica MD Med Spa: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 149)
