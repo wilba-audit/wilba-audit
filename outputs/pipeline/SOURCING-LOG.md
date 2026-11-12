@@ -1235,6 +1235,14 @@ next, in order, all handed over by the Long Island pass:
   Medical & Esthetics (Larkspur, 3 sites) as "the only Marin presence found anywhere", and a
   Central Valley query once collapsed "Madera" into "Corte Madera". Grep before briefing it.]**
 
+- **TWO NAMED PERTH LEADS THE 12 NOV RUN RAN OUT OF SEARCH BUDGET BEFORE REACHING.** **The Skin
+  Fairy** (Claremont + Mount Hawthorn) — printed in the `perthisok.com` listicle that produced that
+  whole run, but with no domain given, so it costs one search plus one fetch. **Eric Street Medical**
+  (Eric Street is in Cottesloe) — same cost, with the caveat that the name reads like a bulk-billing
+  general practice, which would fail must-have 2. Both are in briefed towns that otherwise produced
+  nothing, so they are also a test of whether Nedlands, Dalkeith, Peppermint Grove and Floreat are
+  genuinely thin or merely under-queried.
+
 - **SEVENTEEN NAMED CAROLINAS CLINICS ARE NOW UNSCREENED RATHER THAN RULED OUT — added 11 Nov 2026,
   and this is the largest block of cheap leads on the list.** A 2 Nov entry in `near-misses.md`
   ruled them out with *"single-site or single-operator … they fail on size, so do not re-source
