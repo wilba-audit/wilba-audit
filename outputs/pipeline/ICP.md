@@ -109,6 +109,22 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    parks it at C.** That ladder is what separates a grade A from a grade B on otherwise identical
    rows, and it was set by the worker who could not reproduce the 4 Nov claim that must-have 4 is
    not binding in affluent Ontario.
+**"DEPARTMENT OF VETERANS' AFFAIRS" IS THE WRONG GREP, AND "HEALTH CARE CARD" IS A NEW TELL —
+correcting my own 12 Nov rule on 15 Nov 2026, three days after writing it.** A Melbourne clinic's
+privacy policy says only **"Veterans"**, inside the phrase *"(Health Care Card, Veterans, Private
+Health fund etc)"*. The long form would have missed it. **Health Care Card is the better find of the
+two: it is a Commonwealth concession card, and no cash-pay cosmetic clinic has any reason to record
+one.** So the Australian must-have 2 vocabulary is **Medicare, Medicare rebate, bulk billing,
+MyMedicare, HICAPS, Veterans (in any form), Department of Veterans' Affairs, DVA, Health Care Card,
+concession card, health fund, private health insurer and claiming** — and HICAPS, the word the first
+version of this rule was built on, now stands at **0 of 61 clinics across four metros.**
+
+**THE LESSON IS NOT ABOUT AUSTRALIA. A SCREEN WRITTEN FROM ONE OBSERVED PHRASE WILL MISS THE SAME
+SCHEME UNDER ANY OTHER PHRASING.** Twice in one week an Australian billing instruction of mine was
+too specific — first HICAPS, then the long form of the department's name. **Screen for the SCHEME and
+list several of its names**, and when writing a screen off a single page, ask what else the same fact
+could be called.
+
 **THE AUSTRALIAN POLICY SCREEN HAS A PRECONDITION THAT FAILS OFTEN, AND IT MUST BE REPORTED AS ONE
 OF THREE OUTCOMES RATHER THAN TWO — measured 15 Nov 2026.** The 12 Nov rule says to read the privacy
 policy for "Medicare rebates" and "Department of Veterans' Affairs" on any Australian clinic about to

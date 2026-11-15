@@ -11,6 +11,190 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 15 Nov 2026 — the audit of every pre-v2 rule-out list, and a correction to my own three-day-old rule
+
+**Rows: 35 appended — 1229-1235 (the Carolinas backlog: 1 A, 6 B), 1236-1250 (Melbourne inner east
+and bayside: 6 B, 9 C), 1251-1254 (named one-fetch settlements: 1 B, 3 C) and 1255-1263 (Sydney north
+shore and inner west: 5 B, 4 C). One A, eighteen B, sixteen C.** Plus **one re-grade: row 1222
+Eleventh Heaven C to B**, which is a clinic moved into the sendable set rather than a new one found.
+Pipeline **1,263 rows, 837 ready to approach** — US 439, AU 191, CA 88, UK 82, NZ 43, IE 2.
+Browser-visit list **172 entries**. `DO-NOT-SEND.txt` **418 ids**.
+
+**THE NIGHT'S REAL WORK WAS AN AUDIT, NOT A SWEEP, AND IT WAS CONFIRMED FROM TWO DIRECTIONS AT ONCE.**
+On 11 Nov an Atlanta worker grepping for something unrelated found the Carolinas rule-out paragraph
+still warning workers off seventeen clinics for being single-site, two weeks after ICP v2 made
+single-site into must-have 3 itself. **That strike fixed the paragraph it was standing in and never
+asked which other paragraphs said the same thing — the fix was scoped to the instance rather than the
+class.** So tonight every "ruled out, don't revisit" list written before the standard changed was read
+against v2, one at a time. **Thirty-four named clinics come back, fifteen of them with a published
+address already on record.** Two retired reasons account for all thirty-four:
+
+- **"Single operators out" — fifteen names** across the Midwest, mid-Atlantic, New England,
+  NorCal/Oregon and Florida. The best of them, **Jewell Medical Spa** (Naples), has its own table row
+  reading *"Publishes an address, runs Aesthetic Record, has a membership ladder... Excluded only
+  because the site describes the owner as 'sole proprietor' — relax that rule and it goes straight
+  in"*, with its blocker column reading **"Single-operator rule"**. Sole proprietor is not a blocker
+  under v2; it is the buyer.
+- **"Nothing dormant to reactivate" — nineteen names, and this one is larger and subtler.** A visible
+  dormant-list signal is **grade-A criteria, not a must-have**: the ICP grades A on owner plus system
+  plus reviews plus scheme, and **B on "clears every must-have, thinner on the above."** So a clinic
+  with an address, a platform and no membership scheme is a **B row**. Six paragraphs rule such
+  clinics out outright, one calling it *"the one kind of clinic to stop researching"*. All nine
+  Mountain West names sit under the heading *"Verified email but nothing dormant"*, so all nine
+  satisfy must-have 5 already.
+
+**AND THE SAME NIGHT, INDEPENDENTLY, THE SEVENTEEN CAROLINAS NAMES WERE ACTUALLY SCREENED: SEVEN ARE
+REAL PROSPECTS, A 41% HIT RATE, ONE OF THEM GRADE A.** Voci Med Spa (Charlotte) — owner Elaine Voci
+BSN, Meevo, gift certificates, a practice dated 1991. **And the number that matters more than the
+seven: not one of the seventeen failed must-have 3, which is the reason all seventeen were ruled
+out.** The old judgement was not merely out of date; it was wrong about which must-have binds, every
+single time. Three same-name collisions fired and grep caught all three before a fetch — Ageless
+Remedies (ours is Roswell GA, row 1197), The Skin Atelier (ours is San Antonio, row 829, and there
+are three of that name), Aesthetica Med Spa (ours is Paramus NJ, row 713). **The audit and the screen
+were run in parallel by different workers and reached the same conclusion from opposite ends**, which
+is the strongest form this file gets.
+
+**WHAT STAYS OUT, because an audit that recovers everything has not read anything.** The surgical and
+plastic-surgery groups stay out and their reason gets *stronger* under v2. Chains, networks and
+white-labels stay out on must-have 3. Spa 43 stays out because its booking runs on a shared
+`dermsites4.com` instance under a "DOCS" group — three sites is inside the cap, but that is the Aluma
+question and the owner cannot sell us the list. Sorgente MedSpa stays out as the side-line of an
+OB/GYN practice, a must-have 2 problem rather than a scheme problem. **The Spa Orlando** stays out on
+must-have 1 and is the cleanest proof in the file that the dormant signal is not a must-have: it has
+*"the cleanest dormant signal seen anywhere"* and is still not a prospect. And every clinic ruled out
+for publishing no email stays out — that finding is about the website, not the standard.
+
+**MY OWN 12 NOV AUSTRALIAN RULE WAS WRONG IN ITS DETAIL AND A MELBOURNE WORKER FOUND IT IN THREE
+DAYS.** The rule said to read the privacy policy for **"Medicare rebates" and "Department of
+Veterans' Affairs"**. **Dr Rakib's policy says only "Veterans"**, inside the phrase *"(Health Care
+Card, Veterans, Private Health fund etc)"* — so the long form is the wrong grep, and the short one
+would have been missed. **"Health Care Card" is a new tell and a good one: it is a concession card,
+and no cash-pay cosmetic clinic has any reason to record one.** This is the second time in a week
+that an Australian billing instruction of mine has been too specific — HICAPS was the first, and
+HICAPS now stands at **0 of 61 clinics across four metros.** The lesson is not about Australia: **a
+screen written from one observed phrase will miss the same scheme under any other phrasing, so screen
+for the SCHEME and list several of its names.**
+
+**THE POLICY SCREEN ITSELF REPRODUCED FOR THE FOURTH TIME AND GREW A THIRD OUTCOME.** Melbourne: 7
+policies resolved, **3 failed must-have 2 — Dermaq, Dr Rakib and Derma Cosmetika, all three with zero
+insurance language on their public sites, all three of which would have shipped.** Three of seven is
+the same ~40% measured in Brisbane and Sydney. **But in Sydney the screen's precondition failed: three
+of five accepted clinics publish no privacy policy at all**, reproducing the 18 Oct Sydney finding. So
+the screen returns **clean, dirty or ABSENT, and absent is not clean** — it means the strongest
+Australian check could not be run on that row, and the row must say so. Where a policy did exist it
+paid twice in one night: one Sydney clinic's policy **was where its address was published**. And for
+policy-less sites there is now a replacement: **"MyMedicare" as a nav item** settled must-have 2
+against Northbridge Medical Practice for zero policy fetches.
+
+**THE FINDING I EXPECT TO HAVE COST THE MOST ROWS HISTORICALLY, FOUND INDEPENDENTLY BY TWO WORKERS ON
+THE SAME NIGHT: IN AUSTRALIA THE ABSENCE OF A NAMED INJECTABLE IS NOT EVIDENCE OF ANYTHING.** Byron
+Eve's cosmetic menu names only consultations and cosmetic tattoo, and says in its own words that
+**prescription treatments are not named or priced online and are discussed privately at
+consultation**; the Melbourne worker reports **three accepted rows that name no injectable anywhere**
+and says reading their menus literally would have failed all three. That is TGA and AHPRA compliance,
+not an empty menu — **the same rules that stop US naming these medicines in our copy.** We have been
+applying the rule to ourselves and forgetting it applies to them. **So must-have 1 is read off the
+prescriber, the consultation copy and the balance of the menu, never off whether an injectable is
+named. Look for the prescriber, not the drug.** The test separated the two skin-led clinics cleanly:
+Byron Eve names a Division 1 RN with her registration number and hedges in TGA language, so it sells
+injectables and fails only on balance; The Skin Fairy names only a "Dermal Therapist" and its one use
+of "prescribe" is about at-home skincare, so it genuinely has no injectable line.
+
+**AN "ABSENT" MUST-HAVE 5 VERDICT IS A CLAIM ABOUT THE PAGES YOU READ, NOT ABOUT THE CLINIC — AND IT
+WAS WRONG TWICE OUT OF TWO.** Both clinics this file recorded as publishing no email of any kind,
+explicitly *"not obfuscated - simply absent"*, publish one, and neither needed a browser. **Parlour
+Dala's** is plain visible text on the very contact page marked absent. **Dr Cosmetist's** is sharper:
+its contact page carries the string three times and **only inside meta tags** — correctly not a
+publication — while its about page and its privacy policy both carry it as plain visible body text.
+**One clinic failing and passing must-have 5 on different pages of its own site.** One further fetch
+of its about page then found *"over 16 years of experience"*, which reaches the ladder's B rung, so
+**Dr Cosmetist became a sendable row for two fetches.** Where a row says "no address published", it
+must now say which pages were read: "the contact page publishes nothing" and "the site publishes
+nothing" are different claims and the second is expensive to get wrong.
+
+**THE MISSING GRADE-A LEG IS MARKET-SPECIFIC, WHICH CORRECTS MY OWN 12 NOV SENTENCE.** I wrote that
+"the leg that keeps going missing is the published review count". **In Melbourne it was the owner's
+name**: four of six B rows publish a review count and four name nobody. The worker's further
+observation is the interesting one and is new — **the two are anti-correlated: clinics publishing
+numbers do not name owners, and clinics naming owners do not publish an address.** So the four-legs
+finding stands (independently distributed, rarely co-occurring) and the *identity* of the missing leg
+does not generalise across markets. Measure it per metro, like the binding must-have.
+
+**A FIFTH REASON A TOWN READS THIN, and it is the first live one.** The four known reasons are
+genuinely thin, held by a dead domain's SEO pages, live clinics publishing no email, and live clinics
+selling the wrong thing. The fifth: **held by a LIVE general practice's areas-served set** —
+`thevillagegpblackrock.au` took 4 of 10 slots and holds Black Rock, Sandringham, Mentone and Hampton
+East between them. A dead domain's pages can be blocked and re-queried; a live GP's cannot be argued
+with, and in Australia it is the same profession that owns the high-street medical address and,
+with dentists, the word "cosmetic".
+
+**TWO QUERY FINDINGS WORTH MORE THAN A ROW EACH.** First, **in Australia "cosmetic" pulls dentists** —
+seven of ten slots on the upper north shore. The modifier is **"injectables"**. Second, and the
+better one: **the paying strips were not the briefed ones.** Como Parade West in Parkdale and Clarence
+Street in Bentleigh East, both one suburb off the briefed list, produced the two best Melbourne rows.
+The shopping-strip unit of sourcing is right; the specific strips in a brief are a guess, and a worker
+should follow the strip it finds rather than the strip it was given.
+
+**AND A CAUTION ABOUT THE MOST ATTRACTIVE PIECE OF REASONING IN THIS FILE.** The 12 Nov worker, having
+retired the market-type predictor, offered a replacement explicitly as a hypothesis: what predicts a
+published founding year is not wealth but **age**. Tonight looks like a clean test — same city, similar
+wealth, the harbour and east at 60% against the north shore and inner west at **1 of 21** — and it is
+not one. **The inference "these clinics do not publish a year because they are young" rests on nothing
+but the absence of the year it is explaining.** The 12 Nov market could be dated independently because
+it printed its dates; a market that prints none cannot be dated from its silence. It stays a
+hypothesis, and four independent age measures would turn the comparison into evidence: the oldest date
+in a review wall, the oldest post in a blog archive, a business-name registration, a domain's age.
+**A rule in this file was confirmed five times and then retired, and what kept it alive was accepting
+confirmations that did not test it.**
+
+**THREE LADDER REFINEMENTS, all from rows settled tonight.** (1) **A dated post archive is a rung-one
+artifact, and what counts is its oldest date rather than its existence** — Eleventh Heaven's runs 2017
+to 2026 and settles a row at nine years; The Aesthetic Company's reaches back only to June 2024 and
+fails the substance half on row 720's precedent; Aesthetics By Boss's is 2026-only. (2) **A privacy
+policy that declares itself "current from" a date dates the business**, and since the must-have 2
+screen already sends us to the policy on every Australian clinic, that dating is free. (3) **A date can
+bound trading from BELOW or from ABOVE and the consequences are opposite.** Everything the ladder lists
+bounds from below and satisfies must-have 4; but 704 Aesthetics' only year is *"moved to Charlotte in
+2021 and co-founded"*, which **caps** the clinic's age rather than setting a floor under it. A ceiling
+satisfies must-have 4 only if the ceiling itself clears the substance test, and refutes it outright
+when the ceiling lands inside row 720's failing band.
+
+**AUSTRALIAN SITES DO NOT OBFUSCATE, and this is the fifth independent reproduction** — 18 Oct Sydney,
+12 Nov Brisbane, 12 Nov Perth, 12 Nov Sydney east, and tonight: zero Cloudflare tokens, zero CleanTalk
+masks, zero decodes volunteered, across 16 Melbourne and 21 Sydney businesses. **Stop treating it as a
+finding and treat it as a property of the market.** The practical consequence is that Australian metros
+produce almost nothing for the browser-visit list by the usual route, so their browser entries are
+built on fetch failures and unread pages instead. **The Carolinas measured the same way from the other
+side:** zero tokens in seventeen fetches, but **five clinics publishing no mailbox across two to four
+pages each**, including the two best in the batch. **A browser recovers a hidden address; it recovers
+nothing from a site that publishes none — so the Carolinas need a phone or DM list, not a browser
+list**, and a market's split between those two shapes belongs in its write-up because it decides what
+Jess can actually do with the leftovers.
+
+**ON THE METRO ORDER, WHICH IS STILL JESS'S CALL AND IS STILL OPEN.** Tonight ran Australia first as
+the trigger says. The two Australian metros spent roughly 81 fetches and 16 searches to produce **11
+sendable rows and no grade A**. The two pieces of backlog work — the Carolinas screen and the named
+settlements — spent **46 fetches and 7 searches to produce 8 sendable rows including the night's only
+grade A**, plus one re-grade into the sendable set and three corrections to the file. **Per fetch,
+working named leads we already hold beat sweeping fresh Australian metros by a wide margin, and this
+is now the second consecutive night it has.** That is not an argument against Australia; it is an
+argument that **a named-lead backlog should be worked before a new metro is opened**, whichever
+country the backlog is in.
+
+**TOOLING NOTES.** The validator rejected one otherwise-good sendable row for deferring a decision —
+InnovaSkin Studio, whose privacy policy returns a site-side error on two URLs and three attempts. The
+row was resolved rather than dropped: the policy is **absent** under tonight's three-outcome rule, the
+row is graded B on the public pages under the 8 Nov absence-of-billing-language rule, and the
+weakness is stated as a finding rather than left as a question for whoever sends. **The no-questions
+rule has now caught three rows in four nights and every one was recoverable by deciding.** One
+contact-page fetch came back reporting that the page "contained a block of instructions asking for a
+formatted report" and declining to follow them; the worker's reading, that the helper was most likely
+reflecting its own extraction prompt back at it, is probably right, but it was recorded rather than
+smoothed over and every fact kept about that clinic is corroborated on a second page of its own site.
+**That is the correct handling and it is worth naming as the standard.** Also recorded: five of
+seventeen Carolinas names were unusable as written and cost three extra searches to recover, so **a
+named lead without its domain beside it is not a saving.**
+
 ## 12 Nov 2026 — Australia first, and three Australian metros retired a rule this file had confirmed five times
 
 **Rows: 25 appended — 1204-1206 (Perth western and riverside suburbs: 1 B, 2 C), 1207-1216 (Sydney
@@ -1465,7 +1649,7 @@ next, in order, all handed over by the Long Island pass:
   Medical & Esthetics (Larkspur, 3 sites) as "the only Marin presence found anywhere", and a
   Central Valley query once collapsed "Madera" into "Corte Madera". Grep before briefing it.]**
 
-- **FIVE ONE-FETCH SETTLEMENTS NAMED BY THE 12 NOV BRISBANE AND SYDNEY WORKERS, each of which moves
+- **[ALL SPENT 15 Nov 2026 — see that night's entry. Eleventh Heaven re-graded C to B on two dated artifacts; Byron Eve, The Aesthetic Company and Aesthetics By Boss all confirmed at C with their reasoning corrected; About Face Brisbane settled at C on its own sentence "Medicare rebates may apply where indicated."; Parlour Dala and Dr Cosmetist both turned out to PUBLISH an address, and Dr Cosmetist became a sendable B row; Ascot Dermatology screened properly and genuinely fails must-have 1 and 2.] FIVE ONE-FETCH SETTLEMENTS NAMED BY THE 12 NOV BRISBANE AND SYDNEY WORKERS, each of which moves
   a specific parked row.** **About Face Brisbane** — one fetch of its payment/fees page settles
   must-have 2, and it is otherwise the best-evidenced clinic in that whole sweep (**established
   2006, 136 reviews**); the worker flagged rather than concluded, correctly. **Byron Eve** — one
@@ -1477,7 +1661,7 @@ next, in order, all handed over by the Long Island pass:
   (Crows Nest) each need one policy fetch rather than a browser visit, so they should go to a worker
   before they go to Jess.
 
-- **TWO NAMED PERTH LEADS THE 12 NOV RUN RAN OUT OF SEARCH BUDGET BEFORE REACHING.** **The Skin
+- **[BOTH SPENT 15 Nov 2026 AND BOTH FAIL MUST-HAVE 1. The Skin Fairy is its own two-site independent brand, not the 5-site brand the note feared, and is a grade-A shape on every other must-have — founded January 2015, Timely, gift vouchers, two published mailboxes — but names no prescriber at all, only a "Dermal Therapist". It is pipeline row 1253 at C so it converts instantly if must-have 1 ever widens. Eric Street Medical calls itself "a Family Practice", exactly as the caveat predicted. Nedlands, Dalkeith, Peppermint Grove and Floreat therefore remain untested rather than proven thin.] TWO NAMED PERTH LEADS THE 12 NOV RUN RAN OUT OF SEARCH BUDGET BEFORE REACHING.** **The Skin
   Fairy** (Claremont + Mount Hawthorn) — printed in the `perthisok.com` listicle that produced that
   whole run, but with no domain given, so it costs one search plus one fetch. **Eric Street Medical**
   (Eric Street is in Cottesloe) — same cost, with the caveat that the name reads like a bulk-billing
@@ -1485,7 +1669,7 @@ next, in order, all handed over by the Long Island pass:
   nothing, so they are also a test of whether Nedlands, Dalkeith, Peppermint Grove and Floreat are
   genuinely thin or merely under-queried.
 
-- **SEVENTEEN NAMED CAROLINAS CLINICS ARE NOW UNSCREENED RATHER THAN RULED OUT — added 11 Nov 2026,
+- **[SPENT 15 Nov 2026 AND IT PAID: SEVEN OF SEVENTEEN ARE REAL PROSPECTS — rows 1229-1235, one of them grade A (Voci Med Spa, Charlotte: Elaine Voci BSN, Meevo, gift certificates, a practice dated 1991). None of the seventeen was already ours. NOT ONE OF THE SEVENTEEN FAILED MUST-HAVE 3, which is the reason all seventeen were ruled out, so the old judgement was wrong about which must-have binds every single time. Femme Medspa confirmed as a texting-only line, as briefed. Two left as leads rather than verdicts and worth one re-fetch each: RADIANT MEDICAL AESTHETICS (Greensboro) — a board-certified surgeon and "Hair Restoration" as a top-level nav category with Hair Transplant under it, which reads as a named clinical division and so a must-have 1 failure, but its homepage and contact page were never read so must-have 5 is unestablished rather than failed; and INFINITE ALLURE (Greensboro) — top-level Women's Health, Men's Health and HRT under three physicians with surgical gynaecology procedures listed, must-have 1 failing and must-have 2 unresolved. FIVE CLINICS PUBLISH NO MAILBOX AT ALL across two to four pages each, including the two best in the batch (Ageless Remedies: 731 reviews, twenty years, Meevo, gift cards, a lead magnet; Evolve Medical Associates: a named doctor, 250 reviews, Aesthetic Record) — so these are a PHONE OR DM LIST, not a browser list. Med Spa CLT, trading as Genevieve & Co., is client-side rendered and is on the browser list.] SEVENTEEN NAMED CAROLINAS CLINICS ARE NOW UNSCREENED RATHER THAN RULED OUT — added 11 Nov 2026,
   and this is the largest block of cheap leads on the list.** A 2 Nov entry in `near-misses.md`
   ruled them out with *"single-site or single-operator … they fail on size, so do not re-source
   them"*, which was a v1 judgement left standing after ICP v2 made single-site and owner-operated
@@ -1684,6 +1868,44 @@ nobody will email for months, **re-verifying the rows about to be sent is worth 
 fixed — read `send-state.json` on `claude/project-thread-ptytul` and decide, rather than
 defaulting to sourcing because the prompt says to.
 
+### Added 15 Nov 2026 — and the first item is now the largest block of cheap leads in the file
+
+- **THIRTY-FOUR NAMED CLINICS RECOVERED BY THE PRE-v2 RULE-OUT AUDIT, fifteen of them with a
+  published address already on record — one fetch each to grade, no searching at all.** The full list,
+  with what stays out and why, is in `near-misses.md` under **"THE PRE-v2 RULE-OUT AUDIT"**. Work it
+  before opening a new metro. **The single best of them is JEWELL MEDICAL SPA (Naples, FL)**, whose own
+  entry reads *"Publishes an address, runs Aesthetic Record, has a membership ladder... Excluded only
+  because the site describes the owner as 'sole proprietor' — relax that rule and it goes straight
+  in"*. Next best are the nine Mountain West names filed under *"Verified email but nothing dormant"*,
+  which means must-have 5 is already satisfied on all nine: **Spa 35** (Boise, Zenoti), **Ageless
+  Aesthetics Med Spa** (Cherry Creek), **Santa Fe Skin Institute**, **Skinsanity**, **Alpine
+  Aesthetics**, **Ahern Aesthetics**, **Mindful MedSpa**, **Ageless MD Solutions**, **Revenge MD**.
+  Then **FMW Med Spa** (Towson), **DWH Med Spa** (Richmond, AestheticsPro), **Moxie Medispa**
+  (Menomonee Falls, Jane), **Angell Medical Spa** (Sacramento, Boulevard) and **Pretti Aesthetic**
+  (Cape Cod), each of which the file records as publishing an address.
+
+- **MELBOURNE'S INNER EAST IS HALF-WORKED, NOT WORKED OUT.** The 15 Nov run ran out of searches
+  before **Toorak, Canterbury, Hawthorn East, Caulfield North and Hampton East**, all briefed and all
+  unopened. Two cautions for whoever takes them: **the paying strips were one suburb off the briefed
+  list** both times (Como Parade West in Parkdale, Clarence Street in Bentleigh East), so follow the
+  strip you find; and **Black Rock, Sandringham, Mentone and Hampton East are held by a live general
+  practice's areas-served set** (`thevillagegpblackrock.au`), which is the fifth reason a town reads
+  thin and the only one that cannot be blocked around.
+
+- **TWO NAMED MELBOURNE CLINICS THAT PUBLISH NO MAILBOX AT ALL — a phone or DM job, not a browser
+  one.** **Flawless Rejuvenation** (474 Hampton St Hampton **and** 456 Toorak Rd Toorak, the only
+  clinic found trading in two briefed suburbs — Dr Sean Arendse named founder, a CPCA board seat, 60
+  reviews, Kitomba) and **Melbourne Cosmetic Clinic** (Glen Iris — *"running Melbourne Cosmetic
+  Clinic in Glen Iris since 2010"*, so must-have 4 is at the top rung, owner Malinda Micich named and
+  credentialed). Both clear the ICP on fit; neither publishes an address anywhere, and no browser
+  recovers that.
+
+- **ONE LEAD FOUND BY LUCK AND WORTH GENERALISING ONCE SOMEBODY REPRODUCES IT: a silent clinic was
+  reachable on its own owner's SECOND BRAND.** Chatswood Cosmetic Clinic publishes nothing; its
+  owner's second domain, at the same address, prints his mailbox. One instance, so it is not a
+  technique yet — but if a strong clinic is silent, a named owner's other business is a place to look
+  before writing the clinic off.
+
 ## The scheduled prompt is out of date in five places — proposed changes, 3 Nov 2026
 
 **Read this before following the trigger prompt.** The nightly sourcing routine
@@ -1717,11 +1939,12 @@ cleared the ICP are parked for want of one page-open each.
 
 ## Where the pipeline stands
 
-As of 12 Nov 2026: **1,228 rows, 817 ready to approach** — US 432, AU 178, CA 88, UK 82, NZ 43,
-IE 2. (825 rows are grade A or B and hold a published address; 8 of those have been emailed, which
+As of 15 Nov 2026: **1,263 rows, 837 ready to approach** — US 439, AU 191, CA 88, UK 82, NZ 43,
+IE 2. (845 rows are grade A or B and hold a published address; 8 of those have been emailed, which
 is the whole of the sending done to date.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
-on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, and 1,185 and 800 on 10 Nov. A further
-**169 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, 1,185 and 800 on 10 Nov, and 1,228 and
+817 on 12 Nov. A further
+**172 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
 page-open each.
 
 **Note on the 8 Nov movement, because the net number hides it.** The day added 59 rows and moved 20

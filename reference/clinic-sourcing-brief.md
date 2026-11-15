@@ -182,6 +182,26 @@ Point Loma and San Diego. It reads like it should find exactly our ICP and it fi
 instead. **The Orange County worker stopped there, which was the right call** — a shape returning
 six out-of-market results in eight is not improved by a second attempt.
 
+**A FIFTH REASON A TOWN READS THIN, 15 NOV 2026, AND IT IS THE FIRST LIVE ONE: THE TOWN IS HELD BY A
+LIVE GENERAL PRACTICE'S AREAS-SERVED SET.** `thevillagegpblackrock.au` took **4 of 10 slots** on one
+Melbourne bayside query and holds Black Rock, Sandringham, Mentone and Hampton East between them.
+**This is the dead-domain SEO case with the one feature that made that case fixable removed:** a dead
+business's suburb pages can be blocked and the query re-run, because nothing is behind them. A live
+GP's cannot be argued with — it ranks because it is a real practice really serving those suburbs, and
+it will rank again next week. **The response is therefore the STRIP move rather than a block:** query
+the retail strip by name instead of the suburb, or accept the town as unreadable by search and reach
+it another way. In Australia this is the same profession that owns the high-street medical address
+and, with dentists, the word "cosmetic" — three separate findings that are all one fact about who
+owns Australian search.
+
+**AND THE STRIP MOVE GAINED ITS SHARPEST FORM THE SAME NIGHT: FOLLOW THE STRIP YOU FIND, NOT THE
+STRIP YOU WERE GIVEN.** The Melbourne brief named High Street Armadale, Glenferrie Road Hawthorn,
+Burke Road Camberwell, Church Street Brighton, Bay Street Port Melbourne and Centre Road Bentleigh.
+**The two best rows of the run came off Como Parade West in Parkdale and Clarence Street in Bentleigh
+East — both one suburb off the briefed list.** The unit of sourcing being the strip is right; the
+specific strips in any brief are a guess made by somebody who has not looked at the metro, so a
+worker should treat them as a starting point and chase the strip the results actually show.
+
 **A FOURTH REASON A TOWN READS THIN, 12 NOV 2026, AND IT IS THE ONLY ONE THAT IS NOT ABOUT REACH AT
 ALL: THE TOWN'S CLINICS ARE REAL, READABLE, AND SELL THE WRONG THING.** Ascot and Hawthorne in
 Brisbane fetched fine and published addresses; what they fail is must-have 1. Ascot's single
@@ -713,6 +733,51 @@ because the standard may widen again and re-finding a clinic costs more than kee
    (auto-generated for every NSW suburb; it took 2 of 9 slots on one Sydney query and also fired in
    Perth), and **`yelp.com.au` — blocking `yelp.com` does NOT cover it**, which is the kind of thing
    a block list only learns by being wrong once.
+   **Blocked from 15 Nov 2026, after Melbourne's inner east and Sydney's north shore and inner west —
+   and the Australian noise problem has a shape worth naming: two other professions own the word
+   "cosmetic".** On the upper north shore **dental and GP practices took seven of ten slots on one
+   query**, and `drlindayoon.com.au` is a cosmetic DENTIST running a suburb page set
+   (`/cosmetic-dentist-rozelle/`, `/cosmetic-dentist-burwood/`, `/cosmetic-dentist-dulwich-hill/`)
+   which took a slot on two of three inner-west queries. **Pair any Australian query with
+   "injectables", never "cosmetic".** Dental: `drlindayoon.com.au`, `whitedentalclinic.com.au`,
+   `killaradental.com.au`, `gordondental.com.au`, `northerndental.net.au`,
+   `gordonfamilydental.com.au`, `dentistsatpymble.com.au`, `artarmondentists.com`,
+   `artarmonfinedental.com.au`, `midwaydentalclinic.com.au`, `truesmilesdental.com.au`,
+   `rozelledental.com.au`, `painfreedentistsydney.com.au`, `studiosmiles.com.au`,
+   `jacobsondental.com.au`, `bcdental.com.au`, `cldc.com.au`, `dentalandskin.com.au`.
+   GP practices: **`thevillagegpblackrock.au`** above all (an `areas-served` set across four briefed
+   suburbs, four of ten slots on one query — the fifth thin-town reason), `glenirisgp.com.au`,
+   `toorongamedical.com.au`, `hmwh.com.au`, `armstrongstreetmedicalcentre.com.au`,
+   `northbrightonmedical.com.au`, `stivesmedicalcentre.com.au`, `northbridgemp.com.au` (a resolved
+   must-have 2 disqualification, so block it by name). Skin cancer and dermatology:
+   `ozskinscan.com`, `southern-dermatology.com.au`. Chains and already-disqualified groups:
+   `australianlaser.com.au`, `viclaser.com.au`, `mycosmeticclinic.net` (on the 18 Oct do-not-source
+   list and still holding a Chatswood slot, so block it by name rather than relying on the grep),
+   `cosmeticdoctorsskinandhairclinics.com.au`, `xaraskinclinic.com.au` (a suburb page set over one
+   Lane Cove address, ranking for Crows Nest, Petersham and Castle Hill). Directories and noise:
+   **`localsearch.com.au`** (two of ten slots on one query, town pages generated for every NSW
+   suburb and postcode — **the same species as `localbusinessguide.com.au`, and blocking that one
+   does not cover this one**), `yellowpages.com.au` (**not** covered by blocking `yelp.com.au`),
+   `naturaltherapypages.com.au`, `mapquest.com`, `independentvet.com`, `easternhealth.org.au`,
+   `visitportmelbourne.com`, `sandringham-laser-clinic.com` (the Sandringham **Norfolk** collision),
+   `aestheticcreationsnz.com` and `aestheticcreations.co.nz` (New Zealand, on an Australian query),
+   `thecosmeticclinic.ca` (Canadian, on a Chatswood query), and `rejuvenatehairandskin.com.au` — a
+   clinic's own "Top 10 Best Skin Clinics in Melbourne" SEO listicle, which is **not** the
+   `perthisok.com` / `stylemagazines.com.au` species: no human editor chose that list, a competitor
+   wrote it to rank.
+   **AND A NEW ENTRY IN THE DEAD-QUERY-SHAPE FAMILY: `nurse.org` returned an article titled "I'm an
+   Aesthetic Nurse Practitioner and This is How I Opened a Cosmetic Clinic"** — the exact phrase an
+   owner-founder query is built to find, and not a clinic. **A query for founder language finds
+   articles ABOUT founding**, which is the cousin of the dead "our story / established" shape.
+   **One to block in the query and READ when you land on one: `regenerer.com.au`.** Its
+   `cosmetic-medical-treatments-<suburb>` and `skin-treatments-<suburb>` pages took three of ten
+   slots on a bayside query, **and reading one of them produced an accepted B row** — the footer
+   handed over the mailbox, the whole menu, the premises count and the founding year in one fetch.
+   Both halves of the 9 Nov rule hold and they do not conflict.
+   **The grep-before-fetch rule returned EIGHT free skips in the Sydney run, the most in this file:**
+   `conceptcosmeticmedicine.com.au`, `contourclinics.com.au`, `rejuvaustralia.com.au` (row 94),
+   `artofaesthetics.com.au` (row 347), `theinjectionlab.com.au` (row 361),
+   `glowbymoniquesavill.com` (row 356), `cosmeticinjectablessydney.com.au` and `marah.au`.
    **Blocked from 12 Nov 2026, after the Perth run:** `youthlab.com.au` (**disqualified — fails
    must-have 3**: five sites plus a "Shade Skin Cancer Medicine" sibling, and it took slots on 2 of
    6 queries, two of its sites being briefed towns), `cosmeticskinclinic.com.au` (a **Hadfield,
