@@ -377,6 +377,7 @@ and failed only on contactability.
 | **SKN BAR Rx** | Milwaukee / Shorewood / Pewaukee WI | Zenoti confirmed, "Elevated Monthly Memberships", Zenoti gift cards, four named providers | No email; /contact/ errors |
 | **Wise Aesthetics** | Carmel, IN | Aesthetic Care Plans, a W/A Rewards programme, gift cards, Cherry split payments, and a $50 account credit to both sides of every referral | No email |
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT" BELOW: the names in this paragraph ruled out for being single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains and no-email findings stand.]**
 **Ruled out, don't revisit.** Rejected on dormant signal despite real scale: Giancarlo
 Zuliani MD (Bloomfield Hills), Illuum Cosmetic Surgery (Novi), Ponsky Facial Plastic
 Surgery (Beachwood, Symplast), Donaldson Plastic Surgery (Columbus, three surgeons),
@@ -435,6 +436,7 @@ Excluded only because one person is named on the site. **The Aesthetic Era** (Ri
 publishes an address, runs on Prospyr and has both memberships and gift cards; again one
 named practitioner.
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT" BELOW: the names in this paragraph ruled out for being single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains and no-email findings stand.]**
 **Ruled out, don't revisit.** Real scale or a published email but nothing dormant:
 **FMW Med Spa** (Towson — publishes an address, board-certified NPs, no scheme at all),
 **DWH Med Spa** (Richmond — publishes an address and runs AestheticsPro, but no scheme),
@@ -478,6 +480,7 @@ Twenty-one rows went into the pipeline. The near-misses here are unusually stron
 | **BlueWater Wellness & Med Spa** | Ponte Vedra | Podium, six providers including three NPs, a $35/mo membership with a free first month, CareCredit | No email |
 | **Jewell Medical Spa** | Naples | **Publishes an address**, runs Aesthetic Record, has a membership ladder from $99/mo and CareCredit. Excluded only because the site describes the owner as "sole proprietor" — relax that rule and it goes straight in | Single-operator rule |
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT": names here ruled out as single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains, wrong-segment and no-email findings stand.]**
 **Ruled out, don't revisit.** Chains and franchises: **Look Lab** (eight sites across four
 states with a corporate office and an 833 number — the best membership on paper, with
 credit that "rolls over and never expires", but head office runs it), **Couture Med Spa**
@@ -540,6 +543,7 @@ Other near-misses worth a browser tab:
 | **Thrive Med Spa** | Portsmouth, NH | Two named naturopathic doctors, a membership page, Boulevard gift cards | No email. Segment flag: naturopathic-led rather than medical-aesthetic |
 | **Penobscot Medical Aesthetics** | Hampden (Bangor), ME | Three named staff, a membership page, Square gift cards, AdvanceCare financing with 6–14 month interest-free periods | No email, no platform |
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT" BELOW: the names in this paragraph ruled out for being single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains and no-email findings stand.]**
 **Ruled out, don't revisit.** Rejected on dormant signal: Sean Doherty MD, Boston Plastic
 Surgery Specialists, Longwood Plastic Surgery (confirming the earlier verdict),
 **Pretti Aesthetic** (Cape Cod — publishes a good address but runs no scheme at all,
@@ -591,6 +595,7 @@ UK and Australia sweeps.
 Bank), Berman Skin Institute (10 sites, already running RepeatMD *and* HubSpot) and
 Hayes Valley (3 sites, 15 staff, four dormant schemes, the only Marin foothold).
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT": names here ruled out as single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains, wrong-segment and no-email findings stand.]**
 **Ruled out, don't revisit.** Chains: NakedMD (40+ locations), LaserAway, Restore Hyper
 Wellness (269 locations), SkinSpirit, Ideal Image. Health systems: Sutter, Kaiser, El Camino,
 The Oregon Clinic, UCSF. Scale but no dormant scheme: **Angell Medical Spa** (Sacramento —
@@ -761,6 +766,7 @@ strongest first:**
     a $50-off first-visit form), **BB Medical Esthetics** (Boise and Meridian, Vagaro,
     a VIP signup through Podium).
 
+  **[AUDITED 15 Nov 2026 — SEE "THE PRE-v2 RULE-OUT AUDIT" BELOW: the names in this paragraph ruled out for being single operators, or for running no dormant scheme, are RECOVERABLE under ICP v2. The surgical groups, chains and no-email findings stand.]**
 **Ruled out, don't revisit.** Verified email but nothing dormant to reactivate — the
 category to stop researching: **Spa 35** (Boise — has both the address and Zenoti, but no
 membership, loyalty or lead magnet; the only scheme is that financing "may" be available),
@@ -814,6 +820,88 @@ So read the sweeps above with that reversal in mind:
   Midwest, mid-Atlantic and Mountain West sweeps are worth a second look.
 - **Australia is now the priority market** and barely appears above. Sydney, Melbourne,
   Brisbane, Gold Coast and Perth are where the next sweeps belong.
+
+### THE PRE-v2 RULE-OUT AUDIT — done 15 Nov 2026, and it is the largest block of cheap leads in this file
+
+**The bullet above has sat here since 16 Oct saying boutique one-site clinics "are worth a second
+look" and naming no clinic.** On 11 Nov an Atlanta worker grepping for something else found the
+Carolinas rule-out paragraph still telling workers to avoid seventeen clinics for being
+single-site, and striking it recovered seventeen named leads. **That was not a one-off: the same
+stale reasoning is in six more sweeps above, and nobody had read them.** So every "ruled out,
+don't revisit" paragraph dated before the standard changed has now been read against v2, one at a
+time. **Thirty-four named clinics come back, fifteen of them with a published address already on
+record — one fetch each to grade.** No searching, no market selection, no budget spent finding
+them. Two retired reasons account for all thirty-four.
+
+**RETIRED REASON 1 — "single operators out". Fifteen names.** Under 22 Sep a single operator with
+no support staff was a disqualification; under v2 **owner-operated is must-have 3 itself.** This is
+the Carolinas error in six more places:
+- *Midwest:* **Glo Aesthetics** (Carmel IN — and it runs a "Glo Bank" holding gift-card value all
+  year, which is a dormant-list scheme the paragraph noticed and ruled out anyway),
+  **Reflection Theory**, **Revive Medical Aesthetics**, **Cool Blue Image**,
+  **East Town Salon & MedSpa**, **Mind & Body Aesthetic Center**, **Renova Aesthetics**
+- *Mid-Atlantic:* **Muse Medical Spa**, **Clear Aesthetics & Wellness**
+- *New England:* **Bel Viso Medical Spa**
+- *Northern California and Oregon:* **Osho Aesthetics**, **La Vie MD**, **True You**, **Seven:Thirty**
+- *Florida:* **Jewell Medical Spa** (Naples) — **the single best lead recovered by this audit, and
+  the file says so in its own words.** Its table row reads: *"Publishes an address, runs Aesthetic
+  Record, has a membership ladder from $99/mo and CareCredit. Excluded only because the site
+  describes the owner as 'sole proprietor' — relax that rule and it goes straight in"*, with the
+  blocker column reading **"Single-operator rule"**. A published address, a named practice system,
+  a membership ladder and patient-side financing, held out of the pipeline by the one rule that
+  reversed. **Sole proprietor is not a blocker under v2; it is the buyer.**
+
+**RETIRED REASON 2 — "nothing dormant to reactivate". Nineteen names, and this one is subtler and
+larger.** A visible dormant-list signal is **grade-A criteria, not a must-have** — `ICP.md` grades
+A on owner named plus a nameable system plus real reviews plus a scheme, and **B on "clears every
+must-have, thinner on the above."** So a clinic with an address, a platform and no membership
+scheme is a **B row**, not a rule-out. Six paragraphs above rule such clinics out outright, one of
+them calling it *"the one kind of clinic to stop researching"*:
+- *Mountain West, all nine under the heading "Verified email but nothing dormant" — so all nine
+  satisfy must-have 5 already:* **Spa 35** (Boise, Zenoti), **Santa Fe Skin Institute**,
+  **Ageless Aesthetics Med Spa** (Cherry Creek — its injector is top-1% nationally by Allergan's
+  count), **Skinsanity**, **Alpine Aesthetics**, **Ahern Aesthetics** (Park City),
+  **Mindful MedSpa**, **Ageless MD Solutions**, **Revenge MD** (Reno/Las Vegas/Henderson — three
+  sites, inside the cap; check whether eleven named staff is a practitioner collective before
+  grading)
+- *Mid-Atlantic:* **FMW Med Spa** (Towson — publishes an address, board-certified NPs),
+  **DWH Med Spa** (Richmond — publishes an address, runs AestheticsPro), **WeDo Aesthetics**
+- *Midwest:* **Moxie Medispa** (Menomonee Falls — *"publishes a perfectly good address and books on
+  Jane"*), **Between the Lines Aesthetics** (Birmingham MI)
+- *Northern California:* **Angell Medical Spa** (Sacramento — two published addresses, Boulevard)
+- *New England:* **Pretti Aesthetic** (Cape Cod — *"publishes a good address"*), **Newton Beauty**,
+  **Level Up Med Spa**
+
+**WHAT STAYS OUT, because an audit that recovers everything has not read anything.** The surgical
+and plastic-surgery groups stay out and their reason gets *stronger* under v2, not weaker
+(must-have 1 plus the plastic-surgery disqualification): Plastic Surgery Group New Jersey, Boston
+Center for Plastic Surgery, Longwood, NYBG, Sean Doherty MD, Giancarlo Zuliani MD, Illuum, Ponsky,
+Donaldson, Hass, Kent V. Hasen MD, Truglo, Arsenault, Movassaghi, Centre for Plastic Surgery,
+Roseville Facial Plastic, Cleveland Plastic Surgery Institute and the rest. Chains, networks and
+white-labels stay out on must-have 3: Medspa of Cleveland / Indianapolis / Baltimore
+(MedspaCircle), Look Lab, CARE Esthetics Jupiter, Windermere (AYA Skin), Aurora, RenewMD, NakedMD,
+LaserAway, Restore Hyper Wellness, SkinSpirit, Ideal Image, OVME, 4Ever Young. **Spa 43** stays out
+— three sites is inside the cap, but its booking runs on a shared `dermsites4.com` instance under a
+"DOCS" group, which is a roll-up and the Aluma question: the owner cannot sell us the list.
+**Sorgente MedSpa** stays out because the med spa is a side-line of an OB/GYN practice, which is a
+must-have 2 problem rather than a scheme problem. **The Spa Orlando** stays out on must-have 1 — a
+day spa with no injectables, whatever its scheme — and it is the cleanest example in the file of
+why the dormant signal is not a must-have: it has *"the cleanest dormant signal seen anywhere"* and
+is still not a prospect. And **every clinic ruled out above for publishing no email stays ruled
+out**: that finding is about the website, not the standard, exactly as the bullet above says.
+
+**THE PROCESS FINDING, WHICH IS WHY THIS IS WRITTEN OUT AT LENGTH RATHER THAN JUST FIXED.** A
+general note ("worth a second look") sat here for a month and moved nothing. A **named list** moved
+seventeen clinics the moment one was written. The difference is that a named list can be worked by
+somebody who has not read this file, and a general note cannot. **It is also the ninth or tenth
+instance of the project's recurring failure: a check scoped to where the problem usually is will
+not see it where it survives.** The 11 Nov Carolinas strike fixed the paragraph it was standing in
+and did not ask which other paragraphs said the same thing — the fix was scoped to the instance
+rather than the class. **When a standard reverses, the backwards re-read is not done until every
+rule-out list written under the old one has been read, and the reading has to be enumerated.** The
+23-24 September lists were re-read on 9 Nov; the 16 October US sweeps were not, because they are
+dated the same day the standard changed and so read as current. **A sweep dated the day of a
+reversal is a sweep from before it.**
 
 The other v2 change that affects sourcing: an opener may not name a product or a price.
 Several US rows above carry membership and tier prices in their opening angle. Those
