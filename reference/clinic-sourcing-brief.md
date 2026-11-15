@@ -1274,6 +1274,30 @@ not "discard the clinic", it is "discard what only the compromised page says". A
 the file on the strength of its clean pages. The security problem was noted on the row and
 mentioned to nobody outside these files, as the rule requires.
 
+## The age hypothesis cannot be tested by the thing it explains — 15 Nov 2026
+
+**A caution about the most attractive piece of reasoning in this file.** On 12 Nov, after the
+market-type predictor for must-have 4 was retired, the worker who retired it offered a replacement
+**explicitly as a hypothesis and not a finding**: what predicts a published founding year is not a
+market's wealth but its **age**, and that market's clinics were demonstrably old — three trading
+since 2004 or earlier, one since 1999.
+
+**Tonight's Sydney run looks like a clean test of it and is not one.** Same city, roughly the same
+wealth: the harbourside and eastern suburbs published a founding year at 60%, the north shore and
+inner west at **1 of 21 businesses**. A twelvefold gap with wealth held near-constant, which is the
+best-controlled comparison the file has. **But the inference "these clinics do not publish a year
+because they are young" is supported by nothing except the absence of the year**, which is the very
+thing being explained. The 12 Nov market could be shown to be old independently, because it printed
+its dates; a market that prints no dates cannot be dated from its silence.
+
+**So the result is CONSISTENT with the age hypothesis and does not confirm it, and the hypothesis
+stays a hypothesis.** To actually test it you need an age measure that does not depend on the clinic
+advertising its age — the oldest date in a review wall, the oldest post in a blog archive (now a
+rung-one artifact in its own right), a company or business-name registration, a domain's own age.
+**Any one of those would turn the comparison into evidence.** Worth remembering why this matters: a
+rule in this file was confirmed five times and then retired, and the thing that kept it alive was
+accepting confirmations that did not test it.
+
 ## Record the DOMAIN beside the name, every time — 15 Nov 2026
 
 **Five of seventeen named Carolinas leads were unusable as written and cost three extra searches to

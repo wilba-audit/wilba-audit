@@ -109,6 +109,28 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    parks it at C.** That ladder is what separates a grade A from a grade B on otherwise identical
    rows, and it was set by the worker who could not reproduce the 4 Nov claim that must-have 4 is
    not binding in affluent Ontario.
+**THE AUSTRALIAN POLICY SCREEN HAS A PRECONDITION THAT FAILS OFTEN, AND IT MUST BE REPORTED AS ONE
+OF THREE OUTCOMES RATHER THAN TWO — measured 15 Nov 2026.** The 12 Nov rule says to read the privacy
+policy for "Medicare rebates" and "Department of Veterans' Affairs" on any Australian clinic about to
+be graded B or A. **Three of five accepted Sydney clinics have no privacy policy at all**, which
+reproduces the same finding from the 18 Oct Sydney sweep. So the screen returns **clean, dirty, or
+absent**, and "absent" is not "clean" — it means the strongest single check available in Australia
+could not be run on that row, and the row should say so. Where a policy did exist it paid twice in
+one night: one clinic's policy **was where its address was published.**
+
+**AND THE REPLACEMENT SCREEN FOR A POLICY-LESS AUSTRALIAN SITE: A SCHEME NAME IN THE NAVIGATION.**
+Northbridge Medical Practice carries **"MyMedicare"** as a nav item — the Commonwealth patient
+registration scheme — which settles must-have 2 against it for zero policy fetches, and is the first
+Australian row decided that way. Add it to the Australian billing vocabulary alongside "Medicare
+rebates", "Department of Veterans' Affairs", "bulk billing" and HICAPS: **MyMedicare on the menu is
+the reimbursed arm announcing itself.**
+
+**A QUERY FINDING THAT COST SEVEN OF TEN RESULT SLOTS: IN AUSTRALIA THE WORD "COSMETIC" PULLS
+DENTISTS.** On the upper north shore, "cosmetic <towns>" returned cosmetic dentistry for seven of ten
+slots. **Use "injectables" as the modifier in Australian queries**, not "cosmetic" — which also sits
+alongside the standing Australian finding that a high-street *medical* address is usually a general
+practice. The country's search vocabulary is owned by two other professions.
+
 **IN AUSTRALIA THE ABSENCE OF A NAMED INJECTABLE IS NOT EVIDENCE OF ANYTHING, AND READING IT AS
 EVIDENCE HAS QUIETLY COST ROWS — found 15 Nov 2026 on row 1224.** Byron Eve's Cosmetic Services page
 names exactly two services, "Cosmetic Consultations" and "Cosmetic Tattoo", and then says in its own
