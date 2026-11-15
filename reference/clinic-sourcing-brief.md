@@ -1274,6 +1274,25 @@ not "discard the clinic", it is "discard what only the compromised page says". A
 the file on the strength of its clean pages. The security problem was noted on the row and
 mentioned to nobody outside these files, as the rule requires.
 
+## Record the DOMAIN beside the name, every time — 15 Nov 2026
+
+**Five of seventeen named Carolinas leads were unusable as written and cost three extra searches to
+recover.** "Mirama" is Miramae Medical Skin Care Studio; "Med Spa CLT" is `medspaclt.com`, trading as
+Genevieve & Co. A worker handed a clean list of seventeen clinic names still had to go searching,
+which is exactly the cost the named-lead list exists to avoid. **A near-miss entry, a standing-list
+lead and a carried-forward name all record the domain next to the name, or they are not a saving.**
+The one genuinely unreachable name in that batch, Med Spa CLT, is client-side rendered and belongs
+on the browser-visit list.
+
+**AND A MEASUREMENT ABOUT WHICH LIST A MARKET NEEDS.** Seventeen fetches in the Carolinas produced
+**zero Cloudflare tokens** and **five clinics publishing no mailbox across two to four pages each** —
+including the two best in the batch, Ageless Remedies (731 reviews, twenty years, Meevo, gift cards,
+a lead magnet) and Evolve Medical Associates (a named doctor, 250 reviews, Aesthetic Record). A
+browser recovers an obfuscated address; it recovers nothing from a site that publishes none. **So the
+Carolinas need a phone or DM list, not a browser list**, and a market's split between those two
+shapes is worth stating in its write-up, because it decides what Jess can actually do with the
+leftovers.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at

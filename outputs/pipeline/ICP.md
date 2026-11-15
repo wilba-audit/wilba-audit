@@ -109,6 +109,52 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    parks it at C.** That ladder is what separates a grade A from a grade B on otherwise identical
    rows, and it was set by the worker who could not reproduce the 4 Nov claim that must-have 4 is
    not binding in affluent Ontario.
+**IN AUSTRALIA THE ABSENCE OF A NAMED INJECTABLE IS NOT EVIDENCE OF ANYTHING, AND READING IT AS
+EVIDENCE HAS QUIETLY COST ROWS — found 15 Nov 2026 on row 1224.** Byron Eve's Cosmetic Services page
+names exactly two services, "Cosmetic Consultations" and "Cosmetic Tattoo", and then says in its own
+words that **prescription treatments are not named or priced online and are discussed privately at
+consultation.** That is the TGA-mandated way an Australian clinic sells prescription injectables, not
+an empty menu — a clinic two suburbs away publishes a post titled *"Updated Terms for Cosmetic
+Services for TGA Regulations"* for the same reason, and the same rules are why **our own copy** may
+not name these medicines. We have been applying the rule to ourselves and forgetting it applies to
+them.
+
+**SO IN AUSTRALIA MUST-HAVE 1 IS READ OFF THE PRESCRIBER, THE CONSULTATION COPY AND THE BALANCE OF
+THE MENU — never off whether an injectable is named.** The test separated two skin-led clinics on one
+night. **Byron Eve** names a Division 1 Registered Nurse in its footer with her registration number,
+runs a dedicated `/cosmetic-injectables-clinic-brisbane/` landing page, and hedges in TGA language —
+so it does sell injectables, and it fails only on the balance of what it predominantly sells, which
+is a different and weaker finding. **The Skin Fairy** (Perth, two sites, founded January 2015,
+Timely, gift vouchers — a grade-A shape on every other must-have) names no nurse, no doctor and no
+prescriber at all, bills its practitioners as "Dermal Therapist", and uses the word "prescribe" only
+about at-home skincare. That one genuinely has no injectable line. **Look for the prescriber, not the
+drug.** A clinic with no prescriber named anywhere cannot be selling prescription medicines; a clinic
+with one and a TGA-shaped hedge almost certainly is.
+
+**AND A FREE DATING ARTIFACT THAT ARRIVES WITH THE AUSTRALIAN POLICY FETCH YOU ARE ALREADY SPENDING
+— added 15 Nov 2026.** A privacy policy that declares itself **"current from 28th August 2018"**
+attests the business existed in August 2018. That is a dated artifact on the ladder's plainest
+reading, and because the must-have 2 screen already sends you to the policy on every Australian
+clinic about to be graded B or A, **the dating comes free on every clinic we screen.** It settled row
+1222 alongside a dated post archive.
+
+**A DATED POST ARCHIVE IS A RUNG-ONE ARTIFACT, AND WHAT COUNTS IS ITS OLDEST DATE RATHER THAN ITS
+EXISTENCE — three instances in one batch, 15 Nov 2026.** Eleventh Heaven's journal runs 18 September
+2017 to 2026 and settles a parked row at nine years; The Aesthetic Company's reaches back only to
+June 2024, which is a floor of about 2.4 years and fails the substance half on row 720's precedent;
+Aesthetics By Boss's is 2026-only and evidences nothing. A blog is not an artifact. **Its oldest
+date is.**
+
+**AND THE REFINEMENT THAT MATTERS MOST HERE: A DATE CAN BOUND TRADING FROM BELOW OR FROM ABOVE, AND
+THE TWO HAVE OPPOSITE CONSEQUENCES.** Everything the ladder lists bounds from **below** — an oldest
+post, a review count, a "since", a copyright range all prove the business is *at least* so old, and
+that is what satisfies must-have 4. But a founding statement bounds from **above**: 704 Aesthetics'
+only year is *"moved to Charlotte in 2021 and co-founded"*, which caps the clinic's age at about
+five years rather than establishing a floor under it. **A ceiling satisfies must-have 4 only if the
+ceiling itself clears the substance test**, and it *refutes* must-have 4 outright when the ceiling
+falls inside row 720's failing band of two to three years. Say which direction the date you found
+bounds in, because the ladder as written reads as though every date were a floor.
+
 5. **A published email address, read off their own page.** Never constructed, never
    inferred. Record the URL and the date it was read. A Cloudflare-obfuscated address that
    renders as `[email protected]` counts as not seen — **that has not changed and will not.**
@@ -120,6 +166,22 @@ monthly is the real business; reactivation is the way in. Do not pitch it yet.
    obfuscation has acted to stop automated collection, and must-haves 6 and 7 both rest on an
    address being conspicuously published. The reasoning, and the decision that is Jess's to make,
    are in that file.
+   **AN "ABSENT" MUST-HAVE 5 VERDICT IS A CLAIM ABOUT THE PAGES YOU READ, NOT ABOUT THE CLINIC —
+   and it was wrong twice in the same direction on 15 Nov 2026.** Two clinics this file recorded as
+   publishing no email address of any kind, explicitly *"not obfuscated - simply absent"*, both
+   publish one, and neither needed a browser. **Parlour Dala's** is plain visible text under the
+   label "Email:" on the very contact page the file had marked absent. **Dr Cosmetist's** is the
+   sharper case: its contact page carries `info@drcosmetist.com` three times and **only inside meta
+   tags** — which is the sixth look-alike below and correctly not a publication — while its about
+   page and its privacy policy both carry the identical string as plain visible body text, which is.
+   **One clinic failing and passing must-have 5 on different pages of its own site.** Had the worker
+   stopped at the contact page the row would have been parked on must-have 5 and the park would have
+   been wrong; the instruction to spend the policy fetch is what caught it. **So where a row or a
+   near-miss says "no address published", it must say WHICH PAGES WERE READ** — "the contact page
+   publishes nothing" and "the site publishes nothing" are different claims, and the second one is
+   expensive to get wrong. This is the same shape as the row 149 `robots_disallowed` finding arriving
+   through page coverage instead of permissions.
+
 6. **For AU and NZ, also:** no "no unsolicited commercial email" notice anywhere on the
    site, and the address must be published on the clinic's own site (not a directory).
    Record both findings in `notes`.
