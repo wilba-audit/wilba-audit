@@ -229,6 +229,45 @@ bounds in, because the ladder as written reads as though every date were a floor
    publishes nothing" and "the site publishes nothing" are different claims, and the second one is
    expensive to get wrong. This is the same shape as the row 149 `robots_disallowed` finding arriving
    through page coverage instead of permissions.
+   **IT FIRED THREE MORE TIMES ON 16 NOV 2026, AND THE THIRD ONE BREAKS A MARKET-WIDE CLAIM. The
+   rule has outgrown must-have 5: it is about every ABSENT finding, and about claims at every scale.**
+   - **Third instance, same must-have, and it was MY OWN claim.** The 15 Nov standing list records
+     of **Flawless Rejuvenation** (Toorak) that it "publishes no address anywhere, and no browser
+     recovers that". Its **privacy policy** publishes `reception@flawlessrejuvenation.com.au` in
+     plain text with a matching mailto. It is now row 1264 and **the only grade A of the Melbourne
+     pass**. I wrote the "say which pages you read" rule the same night I published that claim about
+     a clinic whose policy I had not read. Writing a rule down does not apply it to the sentence in
+     the next paragraph.
+   - **Fourth instance, and it is NOT must-have 5 — which is how we know the rule generalises.**
+     **Panacea Skin Clinics** (row 1281) was recorded as naming "NO owner, founder or director
+     anywhere", and that absence was given as one of two reasons the row is not a grade A. The
+     homepage and the privacy policy do not name an owner. The **About page says "Panacea was
+     founded by Dr. Kippen"**. So the missing grade-A leg was never missing; the pages holding it
+     were never opened. **Four firings, three different findings (must-have 5 ×3, the owner-name
+     leg ×1): the rule is not about addresses. ANY "absent" verdict — no owner, no review count, no
+     founding year, no loyalty scheme, no billing language — is a claim about pages, and must name
+     them.** The three-outcome policy screen already works this way; this is the same move applied
+     to every field.
+   - **Fifth instance, and it is the expensive one: A MARKET-WIDE CLAIM WAS A CLAIM ABOUT PAGE
+     COVERAGE.** This file asserted, on **five independent reproductions**, that **Australian clinic
+     sites do not obfuscate** — that Australia's problem is silence, not masking, and that a browser
+     list is therefore worth less in AU than in the US. On 16 Nov **Cronulla Cosmetic**'s privacy
+     policy shipped a `/cdn-cgi/l/email-protection#` token and rendered `[email protected]`. The
+     helper volunteered the decode and the worker declined it, correctly. **The token was on the
+     POLICY. Both of that clinic's contact pages publish nothing.** Five sweeps looked for
+     obfuscation where obfuscation is usually found — contact pages — and the thing survived one
+     page over. **A claim reproduced five times is still only a claim about the procedure that
+     reproduced it.** What is *not* overturned: Australia's dominant failure is still silence, 6 of
+     13 published a mailbox in this sweep. What IS overturned is "a browser recovers nothing in
+     Australia" — it recovers this. (Cronulla Cosmetic is disqualified anyway, on must-have 2: its
+     policy says "to Medicare, insurance companies in relation to claims." The finding stands
+     independently of the row.)
+   **THE COMMON SHAPE, STATED ONCE because it is this project's most-repeated failure and it now has
+   an instance at every scale — one field, one row, one market:** a negative finding is evidence
+   about the procedure that produced it, never about the world. The fix is never "look harder"; it is
+   to **state the procedure alongside the finding**, so the next reader can see what it could not
+   have seen. "The contact page publishes nothing" is checkable and survives. "The site publishes
+   nothing" is a guess wearing a finding's clothes.
 
 6. **For AU and NZ, also:** no "no unsolicited commercial email" notice anywhere on the
    site, and the address must be published on the clinic's own site (not a directory).
@@ -632,6 +671,34 @@ business, or mentioning it?** A service page with a URL is selling. A sentence i
 mentioning. **And note what did NOT decide row 100: must-have 2 is clean there** — *"No referral is
 required for these services"*, no Medicare, no HICAPS. It fails on what kind of business it is, not
 on how it is paid, which is the distinction must-have 1 exists to make.
+
+**FOURTH EDGE, 16 Nov 2026, and it is the cleanest instance the rule has: THE SURGERY IS REAL, IT IS
+PERFORMED, AND THE ROW STILL PASSES — because it is performed somewhere else.** **Panacea Skin
+Clinics** (row 1281) describes itself in its own words as *"Led by Dr John Kippen, Specialist Plastic
+& Reconstructive Surgeon"*, which is this file's own named disqualification, and its About page
+contains the sentence *"breast, abdominal and facial surgery where medically indicated"*. The
+sourcing worker, who had not read that page, cleared the row on the Chevy Chase precedent and wrote
+that there is *"NO surgical procedure named anywhere - no breast work"*. **That claim was false and
+the verdict was right**, and the gap between those two facts is the rule:
+- The sentence sits in **Dr Kippen's biography**, describing the practice he runs at Sydney
+  Adventist Hospital, Macquarie University Hospital and Pittwater Day Surgery.
+- It is **not a bookable service, has no service page, no price, no nav entry, and is not at either
+  Panacea address**. Panacea's whole menu is skin and *"Wrinkle & Volumising Treatments"*, injected
+  by two Registered Nurses.
+- **Had that sentence hyperlinked to a procedure page, the row would be disqualified.** It does not.
+**So the discriminator is not whether surgery is NAMED, nor whether it is PERFORMED, nor even
+whether the owner performs it — it is whether THIS BUSINESS SELLS IT.** A surgeon's non-surgical
+clinic is a med spa whose medical director happens to operate elsewhere; that is a different animal
+from a surgical practice with a skin room attached, and the thing that tells them apart is the menu,
+every time.
+**The process lesson, which matters more than the row: a worker's VERDICT and a worker's EVIDENCE
+can come apart, and checking the verdict is not checking the evidence.** The decision survived the
+fetch; one of the four sentences supporting it did not. Had the next reader relied on *"no surgical
+procedure named anywhere"* for a different clinic sharing that shape, the inherited sentence would
+have done the damage, not the grade. **When a row names the one check that would overturn it, spend
+the fetch — and read what it says about the row's REASONING, not just its answer.** That fetch also
+recovered the owner's name this row was marked as lacking, so one fetch corrected a false supporting
+claim, closed a grade-A gap, and confirmed the verdict.
 
 **Worth holding onto about the process rather than the rule: the under-call and the two over-calls
 came from the same sentence being written from one direction.** A rule derived from errors in one
@@ -1127,6 +1194,37 @@ practices, a self-described dermatology clinic, aesthetics clinics with no injec
 the evidence ladder or a silent contact page that removed the clinics.** Must-have 4 bound in
 exactly one of the four, at 1 of 15.
 
+**TWO MORE MARKETS ON 16 NOV 2026, AND THEY TAKE THE TALLY TO SIX MARKETS AND FOUR DIFFERENT
+BINDING MUST-HAVES — SO THE INSTRUCTION TO MEASURE IT IS NOW SETTLED, NOT PROVISIONAL.**
+- **Sydney's northern beaches and Sutherland Shire: must-have 5 bound, 7 of 13.** Only 6 of 13
+  businesses published a mailbox (46%) — **the third reproduction of the Sydney corridor's split**,
+  and it reproduced on the towns the 18 Oct sweep predicted would be worst, which is the first time
+  a prediction in this file about an Australian market has come true. Must-have 1 co-bound at 4 of
+  13, three of those being the ICP's own named disqualifications.
+- **Melbourne's inner east, second pass: must-have 4 bound** — and **I PREDICTED THE WRONG LEG IN
+  THE BRIEF I WROTE FOR THAT RUN.** On 15 Nov I measured Melbourne's missing grade-A leg as the
+  owner's NAME and told the 16 Nov worker so. It was must-have 4. **Which leg goes missing is
+  market-specific AND run-specific, and a measurement from last night is not a prediction for
+  tonight.** The brief should tell a worker to MEASURE the binding constraint in its first five
+  clinics — which this file already says — and should stop naming which one it expects to be.
+**MELBOURNE'S DATING IS BIMODAL, AND THAT IS A FINDING ABOUT THE LADDER RATHER THAN THE MARKET.**
+Across 14 inner-east businesses a clinic either published a review COUNT and cleared must-have 4
+outright, or published nothing datable at all. **No middle case — no copyright ranges, no "since"
+sentences, no dated post archives, in 14 businesses.** Everywhere else the ladder's middle rungs do
+real work; here they were empty, so the ladder collapsed to pass-or-park. **Where dating is bimodal
+the must-have 4 fetch is cheap** (one page tells you), and where it is graded the fetch is
+expensive — worth knowing before budgeting a run.
+
+**AND THE RECOVERY WORK PUT A NUMBER ON SOMETHING THE SWEEPS CANNOT: WHAT MAKES AN OLD RULE-OUT
+WORTH RE-TESTING.** Three lists of clinics ruled out under retired rules were re-tested across 15
+and 16 Nov, and the hit rates fall cleanly — **41%, 33%, 14%** — with one discriminator: **whether
+our own file already recorded a published address.** 14 of 15 recorded addresses were still live
+three to four weeks on, so must-have 5 is not what expires. **What binds a recovery is must-have 4**
+(7 of 15 on one list, 4 of 14 on another, and the separate 22-row seam found in the CSV the same
+night). **So the cheapest recoverable row is one parked on a RULE WE RETIRED while holding an
+address we already read** — and the ones parked for want of a date need the two new ladder rungs
+spent on them, not a re-source.
+
 **AND THE BRISBANE SWEEP THE SAME NIGHT EXPLAINED WHY EVERY ONE OF THESE MARKETS KEEPS PRODUCING
 NEAR-MISSES RATHER THAN GRADE A ROWS, WHICH IS A BETTER QUESTION THAN WHICH MARKET PUBLISHES MOST.**
 Nineteen clinics, zero grade A — and **every near-A was missing a DIFFERENT leg**:
@@ -1407,6 +1505,36 @@ rule above applied to copy that already existed.
 usually is will not see it where it actually survives.** The whole-file sweep, the parked-row
 deferred-decision audit, and now the promotion case are all the same lesson. **When adding a check,
 ask what state a row has to be in to escape it.**
+
+**TWO MORE INSTANCES ON 16 NOV 2026, BOTH IN OUR OWN VALIDATOR, AND THE FIRST ONE IS THE MOST
+POINTED THIS PROJECT HAS PRODUCED: I MADE THIS EXACT MISTAKE FOUR HOURS AFTER WRITING THE COROLLARY
+AGAINST IT.**
+1. **The deferral predicate existed in three places and I fixed one.** Earlier that night the
+   validator's no-deferred-decisions check fired on a NEGATION — it rejected two rows for saying
+   *"no further check is required before sending"*, which is the opposite of a deferral. I added a
+   `NEGATED_DEFERRAL` strip and verified it against five cases. It worked. Then the append ran and
+   **the whole-file audit reported the same two rows** — because the regex was called in three
+   paragraphs and the fix went into one. On 15 Nov I wrote down, about the 11 Nov Carolinas strike,
+   that it *"fixed the paragraph it stood in and never asked which other paragraphs said the same
+   thing - the fix was scoped to the instance rather than the class."* **Writing the corollary down
+   did not stop me doing the thing the corollary describes, the next day, in the next file.**
+   **The fix is structural, not attentional:** there is now one `defers()` function and one call
+   site per paragraph, because three copies of a predicate is three places for it to be wrong.
+   Knowing a lesson and having a structure that enforces it are different states, and only the
+   second one survives a tired night.
+2. **The price_point audit had been reporting a quarter of the problem for weeks.** It counted
+   `sendable` rows and reported 27, which read as a small legacy tail. Counting **every** row gives
+   **102** — and the 75 it never showed were parked and off-ICP rows, which is exactly where the
+   hazard lasts longest, because a C row is parked rather than dropped and carries all its columns
+   into the sendable set when it is re-graded. Widened to all rows; all 102 cleared, each value
+   preserved in `notes` so the call is reversible. **An audit scoped to where a problem does the
+   most DAMAGE will not show you where it lasts the LONGEST, and those are different places.**
+**What generalises past the validator:** every one of these — plus the page-coverage findings under
+must-have 5 and the five-times-reproduced Australian obfuscation claim — is one shape. **A procedure
+tells you about the region it covers and says nothing about the rest, and the most dangerous
+procedures are the ones that have succeeded often enough to stop being questioned.** The counter is
+not vigilance. It is to **write the procedure's boundary down next to its result**, so the boundary
+is visible to whoever inherits the result.
 
 ## What we record
 

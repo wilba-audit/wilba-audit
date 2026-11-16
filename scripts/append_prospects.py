@@ -112,6 +112,28 @@ DEFERS = re.compile(r'someone should (decide|check|verify|confirm|look)'
                     r'|awaiting a (decision|ruling)'
                     r'|leaving this (open|undecided) for', re.I)
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
+
+def defers(notes):
+    """Does this row's notes hand a qualification decision to a person who will never see it?
+
+    One definition, three call sites. It was two definitions for about four hours on 16 Nov
+    2026, and that is the whole reason this function exists. The negation fix above was written
+    into the per-row gate alone, so Revenge MD and Pretti Aesthetics passed the gate that had
+    rejected them and then appeared in the whole-file audit as deferring - the same two rows,
+    the same sentence, one check fixed and the other not.
+
+    That is this project's most-repeated failure mode, recorded about a dozen times in ICP.md
+    and the sourcing brief: A CHECK SCOPED TO WHERE THE PROBLEM USUALLY IS WILL NOT SEE IT WHERE
+    IT SURVIVES. The corollary adopted on 15 Nov - that the 11 Nov strike "fixed the paragraph
+    it stood in and never asked which other paragraphs said the same thing" - describes this
+    exact slip, written down the night before I made it. The lesson is not "be careful"; it is
+    that three copies of a predicate is three places for it to be wrong, so there is now one.
+    """
+    notes = notes or ''
+    return bool(DEFERS.search(NEGATED_DEFERRAL.sub(' ', notes))) \
+        and not RESOLVED.search(notes)
+
+
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
 COUNTRY_MAP = {'United States': 'US', 'USA': 'US', 'Australia': 'AU', 'Canada': 'CA',
                'New Zealand': 'NZ', 'United Kingdom': 'UK', 'Great Britain': 'UK',
@@ -184,8 +206,7 @@ def main():
             elif PRICE.search(angle):
                 why = 'opening angle contains a price or percentage'
             elif (r.get('icp_fit') or '').strip().lower() in ('a', 'b') \
-                    and DEFERS.search(NEGATED_DEFERRAL.sub(' ', r.get('notes') or '')) \
-                    and not RESOLVED.search(r.get('notes') or ''):
+                    and defers(r.get('notes')):
                 why = ('sendable row defers a qualification decision to a person who will never '
                        'see it - resolve the question or grade on it, per the 4 Nov rule')
             elif (r.get('icp_fit') or '').strip().lower() not in ('a', 'b') \
@@ -324,8 +345,14 @@ def main():
           % (len(feeder), (' ' + str(feeder)) if len(feeder) <= 20 else ''))
 
     # price_point has been under a standing "leave it empty" instruction for weeks.
-    priced = [r['id'] for r in sendable if (r['price_point'] or '').strip()]
-    print('sendable rows with anything in price_point (should be empty): %d%s'
+    # Widened from `sendable` to EVERY row on 16 Nov 2026. The narrow version had been reporting
+    # 27 for weeks and was read as 27 legacy rows to get round to; the true figure was 102, and
+    # the 75 it did not count were parked and off-ICP rows - which is where the hazard SURVIVES,
+    # because a C row is parked rather than dropped and carries its columns with it when it is
+    # re-graded to B. Same lesson as the deferral predicate above, found the same night: an audit
+    # scoped to where the problem does the most damage will not show you where it lasts longest.
+    priced = [r['id'] for r in after if (r['price_point'] or '').strip()]
+    print('rows with anything in price_point, any grade (should be empty): %d%s'
           % (len(priced), (' ' + str(priced)) if len(priced) <= 20 else ''))
 
     # Keep DO-NOT-SEND.txt in step with the CSV. The real work lives in
@@ -394,8 +421,7 @@ def main():
     # the notes column. A non-zero count here is a list of rows nobody will ever send.
     defr = [r['id'] for r in after
             if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
-            and DEFERS.search(r.get('notes') or '')
-            and not RESOLVED.search(r.get('notes') or '')]
+            and defers(r.get('notes'))]
     print('sendable rows that defer a decision to a person: %d%s'
           % (len(defr), (' ' + str(defr)) if defr else ''))
 
@@ -406,8 +432,7 @@ def main():
     # a C row is still a question nobody answers.
     pdefr = [r['id'] for r in after
              if (r.get('icp_fit') or '').strip().lower() not in ('a', 'b')
-             and DEFERS.search(r.get('notes') or '')
-             and not RESOLVED.search(r.get('notes') or '')]
+             and defers(r.get('notes'))]
     print('parked rows that defer a decision to a person: %d%s'
           % (len(pdefr), (' ' + str(pdefr)) if pdefr else ''))
 

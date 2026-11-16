@@ -129,8 +129,9 @@ law. **And the trap it carries fired again in Atlanta**: the same query returned
 the Georgia clinic the Main Line worker first met through "Suburban Square Ardmore". A district
 name made of common words collides nationally, every time.
 
-**A QUERY SHAPE THAT IS NOW 4 FOR 4 IN UNLIKE MARKETS, AND IS THE DEFAULT: four unquoted town
-names plus "owner" or "founder".** Long Island, Montgomery County, the Main Line and coastal Orange
+**A QUERY SHAPE THAT IS 5 OF 9 ACROSS UNLIKE MARKETS — STRONG IN US METROS, 0 FOR 4 IN MELBOURNE
+(see the corrected scoreboard below, 16 Nov 2026): four unquoted town names plus "owner" or
+"founder".** Long Island, Montgomery County, the Main Line and coastal Orange
 County — and in Orange County it produced **every single accepted row**. It has cleared the bar
 this brief sets (two unlike markets) twice over, so it is a general technique rather than a
 market-local one, and it is the shape to open a new metro with.
@@ -162,6 +163,21 @@ feared national collision on "Racecourse Road" did not fire — **it collided lo
 racecourse-adjacent shopping village**, which is the same lesson as Corona / Corona del Mar: the
 dangerous collisions are inside the market.
 
+**THE PRECINCT SPECIES HAS A SECOND FACE, AND IT IS AN ASSET — MELBOURNE, 16 NOV 2026. FIND IT
+FIRST.** One fetch of `toorakvillage.com.au`, a 146-trader precinct directory, returned **8
+in-market clinic names WITH their domains** — out-performing all eight of that run's searches put
+together. **This directly contradicts the 15 Nov Melbourne note that "no precinct species fired
+here"**, which was a claim about one night's queries, not about the city.
+**So the precinct site is BOTH the block-list species above AND the Perth-listicle move**, and which
+one it is depends on a single question — **the same question that separates `stylemagazines.com.au`
+from a directory farm: did a human curate it, and does it print domains?** `toorakvillage.com.au`
+prints domains for a defined set of traders on one strip. A national directory farm prints a scraped
+list with no domains. **Block it when it crowds a SEARCH; fetch it when you have LANDED on it** —
+which is the same block-in-query / read-when-landed treatment already recorded for
+`regenerer.com.au`. **In a metro of small adjacent suburbs, look for the precinct site before
+spending the search budget**, because Australian high-street strips very often have one and it is
+the cheapest list of in-market domains available.
+
 **A NEW SPECIES FOR THE BLOCK LIST, AND THERE WILL BE ONE PER STRIP: A HIGH-STREET PRECINCT'S OWN
 PROMOTIONAL SITE WITH A BUSINESS DIRECTORY.** `oxfordstreetbulimba.com.au` took three of ten slots
 on one query. Expect `jamesstreetnewstead`-shaped equivalents and block them by name as you meet
@@ -174,7 +190,24 @@ distinction that separates the two is whether a human editor chose the list.**
 in Atlanta; FAILED on the Chicago North Shore; WEAK in Perth** (2 new in-market names from 9
 results, though one of them — Arrie Aesthetics on Rokeby Road — was a genuine find). **Two misses
 in five markets, so it stays a technique with a known blind spot rather than a default.**
-Town-name-plus-owner/founder is now **5 for 5** and remains the opener.
+**Town-name-plus-owner/founder WAS "5 for 5" HERE AND THE CLAIM WAS WRONG — CORRECTED 16 NOV
+2026.** In Melbourne it has now gone **0 for 2 on 16 Nov and 0 for 2 on 15 Nov** — four attempts,
+no in-market names, and the 15 Nov pair was never recorded, which is how the "5 for 5" survived to
+be copied into two more briefs. **Honest scoreboard: 5 of 9, with all four failures in one metro.**
+It stays a reasonable opener in US metros and it is **not** the opener in Melbourne.
+**What actually worked in Melbourne: town + POSTCODE + "cosmetic injectables" + "nurse".** The
+postcode is doing the work the town name cannot (see the sixth thin-town reason below), "injectables"
+displaces the dentists that "cosmetic" alone pulls, and "nurse" finds the owner-injector the shape
+was reaching for by asking for "owner".
+**THE PROCESS FAILURE IS THE POINT, AND IT IS THIS BRIEF'S OWN NAMED FAILURE MODE EATING THIS BRIEF.**
+A shape went 4 for 4, was promoted to "the default", collected a fifth confirmation, and was then
+written into every new brief as settled — so its failures arrived in markets where nobody was
+counting, and the 15 Nov pair went unrecorded precisely BECAUSE the shape was no longer on trial.
+**A technique promoted to a default stops generating evidence about itself.** Every query-shape claim
+in this brief now carries its denominator, and any shape quoted into a worker brief as "N for N"
+must be re-stated with its failures or not quoted at all. This is the same error as the market-type
+predictor that survived five confirmations, and the same error as the five Australian sweeps that
+"proved" AU sites do not obfuscate.
 
 **AND A DEAD SHAPE, RECORDED SO NOBODY BUYS IT AGAIN: "our story / established / single location".**
 Eight results, two in-market; the rest were national chains and clinics in Ponte Vedra Florida,
@@ -193,6 +226,36 @@ the retail strip by name instead of the suburb, or accept the town as unreadable
 it another way. In Australia this is the same profession that owns the high-street medical address
 and, with dentists, the word "cosmetic" — three separate findings that are all one fact about who
 owns Australian search.
+
+**AND THE AUSTRALIAN NOISE LIST GAINED ITS SECOND WORD, 16 NOV 2026: "clinic" PULLS PHARMACIES.**
+Four of ten slots on one Melbourne query went to chemists and pharmacy-attached health clinics.
+**So both of the obvious generic words are spoken for in Australia — "cosmetic" goes to dentists (7
+of 10), "clinic" goes to pharmacies (4 of 10) — and the word that survives both is "injectables".**
+Pair it with everything. The pattern is the same one the GP and dentist findings point at: Australian
+search for anything health-adjacent is owned by the primary-care and retail-health trades, who are
+larger, older and more linked than any med spa, so **the query has to name the thing only a med spa
+sells.**
+
+**A SIXTH REASON A TOWN READS THIN, 16 NOV 2026, AND IT IS THE ONLY ONE THAT IS NOT ABOUT THE
+MARKET AT ALL: THE TOWN'S NAME LOSES ITS OWN QUERY.** Three independent instances, two countries,
+one night:
+- **Canterbury, VIC** returned Canterbury, **Kent** — 10 of 10 slots.
+- **Surrey Hills, VIC** returned Surrey, **England**.
+- **Newport, NSW** returned four wrong-market Newports and zero in-market clinics.
+**A bigger, older, more-linked place with the same name takes every slot, and no block list helps**
+— you cannot block England. This is categorically unlike the other five reasons: thin-because-thin,
+dead-domain SEO, no-published-email, wrong-segment and live-GP-areas-served are all facts about the
+town's businesses, and four of the five have a response. **This one is a fact about the STRING**, and
+it is knowable before a single search is spent.
+**THE RESPONSE, AND IT IS CHEAP: add the POSTCODE, or add the state, or query the retail strip
+instead of the suburb.** `Canterbury 3126 cosmetic injectables` does not go to Kent. Postcodes are
+free, Australian suburbs all have one, and a postcode is a disambiguator that no amount of foreign
+link equity can outrank. **Check the name before you budget the searches:** any Australian suburb
+named after a British county, city or cathedral town — Canterbury, Surrey Hills, Richmond, Brighton,
+Kew, Chelsea, Windsor, Essendon, Preston, Newport, Camberwell, Hawthorn, Sunbury, Yarraville's
+neighbours — is a candidate, and Melbourne's inner-east street map is very nearly a list of them.
+**This also explains a thin result this project has already recorded without diagnosing it**, which
+is the usual way a sixth reason turns up: it was never a new phenomenon, only a newly separated one.
 
 **AND THE STRIP MOVE GAINED ITS SHARPEST FORM THE SAME NIGHT: FOLLOW THE STRIP YOU FIND, NOT THE
 STRIP YOU WERE GIVEN.** The Melbourne brief named High Street Armadale, Glenferrie Road Hawthorn,
@@ -765,6 +828,24 @@ because the standard may widen again and re-finding a clinic costs more than kee
    clinic's own "Top 10 Best Skin Clinics in Melbourne" SEO listicle, which is **not** the
    `perthisok.com` / `stylemagazines.com.au` species: no human editor chose that list, a competitor
    wrote it to rank.
+   **Blocked from 16 Nov 2026, after Melbourne's inner east (second pass) and Sydney's northern
+   beaches / Sutherland Shire.** Pharmacies, which is the Australian noise list's **second** owned
+   word — "clinic" took four of ten slots for chemists on one Melbourne query: `bhpharmacy.com.au`,
+   `malingroadpharmacy.com.au`. Resolved disqualifications, blocked by name so no future run spends
+   a fetch re-deciding them: `cronullacosmetic.com.au` (must-have 2 — its policy says *"to Medicare,
+   insurance companies in relation to claims"* — **and separately the first Australian clinic in
+   this file to serve a Cloudflare-obfuscated address, on its POLICY page**, see ICP.md must-have 5),
+   `bcmedical.com.au`, `qualitashealth.com.au`, `injectwellness.com`, `thenarraclinic.com`.
+   **DO NOT BLOCK `shirescout.com.au` OR `mosmanliving.com.au`** — both are the
+   `perthisok.com` / `stylemagazines.com.au` / `toorakvillage.com.au` species, a human-edited local
+   publication. **`shirescout.com.au` carries roughly eleven in-market Sutherland Shire names and is
+   worth an early fetch on any Shire run — but it prints NO domains**, so every name it gives costs
+   a search to resolve, and the Sydney worker ran out of searches rather than fetches because of it.
+   **That is the trade-off to plan for: a curated list without domains converts search budget, not
+   fetch budget**, and a run that opens with one needs its search allowance weighted accordingly —
+   which is the opposite of how `toorakvillage.com.au` and `perthisok.com` behave, because those
+   print domains and therefore save searches. **Ask of any listicle: does it print domains? That one
+   question decides which budget it spends.**
    **AND A NEW ENTRY IN THE DEAD-QUERY-SHAPE FAMILY: `nurse.org` returned an article titled "I'm an
    Aesthetic Nurse Practitioner and This is How I Opened a Cosmetic Clinic"** — the exact phrase an
    owner-founder query is built to find, and not a clinic. **A query for founder language finds
