@@ -1363,6 +1363,29 @@ rung-one artifact in its own right), a company or business-name registration, a 
 rule in this file was confirmed five times and then retired, and the thing that kept it alive was
 accepting confirmations that did not test it.
 
+## The no-questions check cannot read negation — fixed 16 Nov 2026
+
+**The validator rejects a sendable row whose notes defer a qualification decision to somebody who will
+never see it. On 16 Nov it rejected two good rows out of five, both on the same sentence: "no further
+check is required before sending."** That is the exact sentence a worker writes when it *has* decided,
+and the regex read it as a deferral because it matches "check … before sending" and cannot see the
+negation in front of it.
+
+**Two things follow, and you need the first one more than the second.**
+
+1. **When you have settled a question, write the literal phrase `QUESTION RESOLVED` (or
+   `QUESTION WITHDRAWN`) in the row's notes.** Nothing else counts — that marker is the sanctioned
+   override and it exists precisely because the check is deliberately crude. Do not try to rephrase
+   your way past the regex; say what you decided and mark it resolved.
+2. The check itself now strips an explicit "no further / no additional / nothing further … before
+   sending" form before testing, which was kept narrow on purpose. **Widening it would start letting
+   real deferrals through, and this check failing safe is the whole point** — it has caught three real
+   deferrals in five nights and every one was recoverable by deciding.
+
+**The general shape is worth keeping in view: a crude check plus an explicit override beats a clever
+check.** The override is auditable (grep the marker) and the crudeness is visible (it rejects loudly).
+A regex smart enough to read negation would fail silently in the direction that ships a bad row.
+
 ## Record the DOMAIN beside the name, every time — 15 Nov 2026
 
 **Five of seventeen named Carolinas leads were unusable as written and cost three extra searches to

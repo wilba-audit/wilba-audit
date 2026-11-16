@@ -90,6 +90,18 @@ SCREENED = re.compile(r'must[- ]have 6 screened', re.I)
 # the literal phrase "QUESTION RESOLVED" or "QUESTION WITHDRAWN" in its notes. Nothing else counts,
 # and that convention is stated in the worker brief so it is not folklore.
 RESOLVED = re.compile(r'QUESTION RESOLVED|QUESTION WITHDRAWN', re.I)
+
+# 16 Nov 2026: the DEFERS check cannot read negation, and it fired on two of five rows in one
+# batch - both on the sentence a worker writes when it HAS decided: "no further check is
+# required before sending". That is the opposite of a deferral, so the phrase is removed from
+# the text before DEFERS is tested. Kept deliberately narrow: only an explicit "no further /
+# no additional / nothing further ... before sending" form is exempted, because widening it
+# would start letting real deferrals through, and this check failing safe is the whole point.
+NEGATED_DEFERRAL = re.compile(
+    r'(?:and\s+)?(?:no (?:further|additional)|nothing (?:further|more))\s+'
+    r'(?:check|checks|verification|confirmation|work)?\s*'
+    r'(?:is|are)?\s*(?:required|needed|necessary|outstanding)?\s*'
+    r'before (?:sending|pitching|any approach)', re.I)
 DEFERS = re.compile(r'someone should (decide|check|verify|confirm|look)'
                     r'|somebody should (decide|check|verify|confirm|look)'
                     r'|should be (decided|checked|verified|confirmed) before sending'
@@ -172,7 +184,7 @@ def main():
             elif PRICE.search(angle):
                 why = 'opening angle contains a price or percentage'
             elif (r.get('icp_fit') or '').strip().lower() in ('a', 'b') \
-                    and DEFERS.search(r.get('notes') or '') \
+                    and DEFERS.search(NEGATED_DEFERRAL.sub(' ', r.get('notes') or '')) \
                     and not RESOLVED.search(r.get('notes') or ''):
                 why = ('sendable row defers a qualification decision to a person who will never '
                        'see it - resolve the question or grade on it, per the 4 Nov rule')
