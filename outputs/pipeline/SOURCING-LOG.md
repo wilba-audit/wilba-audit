@@ -1868,6 +1868,41 @@ nobody will email for months, **re-verifying the rows about to be sent is worth 
 fixed — read `send-state.json` on `claude/project-thread-ptytul` and decide, rather than
 defaulting to sourcing because the prompt says to.
 
+### Added 16 Nov 2026 — a 22-row recovery seam the two new ladder rungs opened overnight
+
+**TWENTY-TWO PIPELINE ROWS ARE PARKED SOLELY ON MUST-HAVE 4 AND EACH ALREADY HOLDS A PUBLISHED
+ADDRESS.** They are rows **399, 400, 404, 422, 458, 490, 493, 545, 573, 676, 700, 703, 707, 709, 713,
+715, 720, 721, 787, 821, 1115, 1194** — US 14, NZ 3, CA 3, AU 1, UK 1. Every one of them clears
+injectables, cash-pay, site count and a verified mailbox, and is held back only because nothing on the
+page dated the business.
+
+**Why they are worth re-reading NOW rather than whenever: the evidence ladder grew two rungs on 15 Nov
+and none of these rows was tested against either.** (1) **A dated post archive is a rung-one artifact,
+and what counts is its oldest date** — that alone moved row 1222 out of C. (2) **A privacy policy that
+declares itself "current from" a date attests the business existed then.** So the work is one or two
+cheap fetches per row — the blog or news index, and the policy — and a row that clears becomes a
+sendable B the same night. **Defined as a predicate over the work rather than over the risk** (cited
+failure is must-have 4 and nothing else, and `contact_email` is non-empty), which is the September
+lesson about backlogs that converge and can be audited.
+
+**Two cautions.** **Row 720 Renew MedSpa is the row that established the substance test** — it
+publishes an award run for 2025 and 2026, so its age is *known* and is two to three years, which is
+not enough. It fails on substance, not on evidence, and no new rung will recover it; do not spend a
+fetch. And the ladder's newest refinement applies throughout: **a date can bound trading from below or
+from above**, so read which direction the date you find bounds in before grading on it.
+
+**AND THE NEGATIVE RESULT THAT BOUNDS THIS WHOLE EXERCISE, measured 16 Nov.** After the pre-v2 audit
+recovered 34 names from `near-misses.md`, the obvious next question was whether the same stale
+reasoning had parked rows in the **pipeline** as well. It has not. Sixty-one C rows mention a
+retired non-must-have — "no dormant scheme", "no identifiable booking system", "single operator" —
+and **every one of them also cites a numbered must-have, and on inspection the numbered must-have is
+the operative park while the retired phrase is an incidental observation** in `notes` or
+`dormant_lead_signal`. Three spot-checks confirmed it: rows 399, 573 and 676 all read "everything
+clears except trading history". **So the stale v1 reasoning survived in the near-misses FILE and not
+in the CSV**, which is what you would expect — the CSV is validated on every append and the prose file
+is not. **The recovery opportunity in the pipeline is the must-have 4 seam above, and it is 22 rows
+rather than hundreds.**
+
 ### Added 15 Nov 2026 — and the first item is now the largest block of cheap leads in the file
 
 - **THIRTY-FOUR NAMED CLINICS RECOVERED BY THE PRE-v2 RULE-OUT AUDIT, fifteen of them with a
