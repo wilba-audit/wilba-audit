@@ -872,6 +872,38 @@ them calling it *"the one kind of clinic to stop researching"*:
 - *New England:* **Pretti Aesthetic** (Cape Cod — *"publishes a good address"*), **Newton Beauty**,
   **Level Up Med Spa**
 
+**MEASURED THE NEXT NIGHT, 16 Nov 2026, ACROSS THREE INDEPENDENT BATCHES: FORTY-SIX CLINICS WERE RULED
+OUT FOR FAILING MUST-HAVE 3, AND NOT ONE OF THEM FAILS MUST-HAVE 3.** Seventeen Carolinas names, 17 for
+17. Fifteen names with an address on record, 15 for 15. Fourteen "single operators out" names, 14 for
+14. **Three different workers, three different lists, the same result every time.** So the retired
+reason was not merely out of date — **it was never a description of these clinics.**
+
+**TWO OF THEM RAN THE OPPOSITE WAY, WHICH IS THE PART THAT SHOULD CHANGE HOW WE READ ANY v1 LABEL.**
+**Renova Aesthetics**, listed as a single operator, has a managing partner, a CFO and four MD directors
+over sixteen staff. **La Vie MD**, same list, has four sites and a CEO. Those are not solo injectors
+who were wrongly excluded; they are corporate structures that were wrongly *described*. **A v1
+"single operator" label tells you nothing about the clinic in either direction** — so screen the
+clinic, never the label, and that is the "a label is not a finding" rule arriving from the one
+direction this file had not seen it from.
+
+**AND THE HIT RATES, WHICH PREDICT CLEANLY AND ARE WORTH USING TO PLAN.** Carolinas 7 of 17 (41%),
+addresses-on-record 5 of 15 (33%), no-address-on-record 2 of 14 (14%). **The discriminator is whether
+our own file already recorded a published address** — and the middle batch confirmed why that holds:
+**fourteen of its fifteen recorded addresses were still live three to four weeks on**, several better
+published than the note claimed, so the note is trustworthy and the address was never the constraint.
+**What binds instead is must-have 4.** Seven of fifteen and four of fourteen parked for want of one
+founding year or one review count, which is the same bottleneck as the 22 pipeline rows parked solely
+on must-have 4. **Work the dating rungs, not the address.**
+
+**Three further cautions from that night.** **Three of the fourteen are unidentifiable** — no domain
+resolves for Revive Medical Aesthetics, Mind & Body Aesthetic Center or Seven:Thirty — which is the
+second measurement of why a named lead needs its domain beside it. **This half is a phone or DM list,
+not a browser list**: three publish no address at all against two Cloudflare-hidden, and only Glo
+Aesthetics is worth a browser tab. And **La Vie MD, although the best-evidenced parked lead in the
+file on paper — two published mailboxes, an owner-doctor and four real addresses — carries a CEO
+alongside four sites**, which is the structure this ICP excludes when marketing is somebody else's
+decision. Read the decision-maker before celebrating it.
+
 **WHAT STAYS OUT, because an audit that recovers everything has not read anything.** The surgical
 and plastic-surgery groups stay out and their reason gets *stronger* under v2, not weaker
 (must-have 1 plus the plastic-surgery disqualification): Plastic Surgery Group New Jersey, Boston

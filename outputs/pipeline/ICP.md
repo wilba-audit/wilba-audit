@@ -147,6 +147,16 @@ slots. **Use "injectables" as the modifier in Australian queries**, not "cosmeti
 alongside the standing Australian finding that a high-street *medical* address is usually a general
 practice. The country's search vocabulary is owned by two other professions.
 
+**AND THE GENERAL FORM OF THAT RULE, WHICH IS NOT ABOUT AUSTRALIA AT ALL: AN ABSENT NAV CATEGORY IS
+NOT AN ABSENT SERVICE — found 16 Nov 2026 in the US Midwest.** Cool Blue Image's navigation shows no
+injectables anywhere; **one fetch of the site found them.** No advertising rule forces that — it is
+simply how small clinic sites get built, with a short nav and the detail a page deeper. So the
+Australian TGA finding is the strong case of a weaker rule that holds everywhere: **a menu is evidence
+of what a clinic chose to put in its menu.** Where must-have 1 turns on a service being absent, spend
+one more fetch before recording the absence, and say which pages you read. The mirror image is already
+in this file as the two-edge rule — **a service page with a URL is selling, a sentence in a bio is
+mentioning** — and this is its third edge: **nothing in the nav is not nothing on the site.**
+
 **IN AUSTRALIA THE ABSENCE OF A NAMED INJECTABLE IS NOT EVIDENCE OF ANYTHING, AND READING IT AS
 EVIDENCE HAS QUIETLY COST ROWS — found 15 Nov 2026 on row 1224.** Byron Eve's Cosmetic Services page
 names exactly two services, "Cosmetic Consultations" and "Cosmetic Tattoo", and then says in its own
