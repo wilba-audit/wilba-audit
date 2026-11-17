@@ -6,8 +6,11 @@ them.** Every clinic here already cleared the ICP on fit. The single thing stand
 and the pipeline is that the address did not survive an automated fetch. None of them has been
 contacted, and none is in the sendable list.
 
-There are **110** of them: 53 whose address is on the page but encoded, 56 whose site refuses
-automated reading or will not render, and one special case (row 352) described at the end.
+There are **152** of them as at 17 Nov 2026 — the original count of **110** below is kept because the
+breakdown that follows it describes that cohort: 53 whose address is on the page but encoded, 56 whose
+site refuses automated reading or will not render, and one special case (row 352) described at the end.
+**See "OPEN THESE TEN FIRST" below before reading any further into this file**: 152 unordered entries
+is why nobody works through it, and the ten at the top are each one page-open from a sendable row.
 **Ten more were added on 8 November**, in their own section at the end, along with one clinic that
 is a browser job for a different reason — its address is readable, but it is already advertising a
 prize draw to "current, past, or prospective clients", which is a person's job and not a script's.
@@ -20,6 +23,60 @@ those was queued to receive WILBA's first cold email.** They are listed in their
 the end of this file rather than merged into the tables above, because they are a different kind
 of entry: not clinics we never reached, but clinics we had already verified and staged. **The two groups need different things, and that distinction is the
 whole point of this file.**
+
+---
+
+## OPEN THESE TEN FIRST — ranked 17 November 2026
+
+**Why this section exists.** This file had grown to **152 clinics** with no ordering of any kind, so
+the only way to use it was to read all of it, which means nobody ever did. Every entry below is a
+clinic that **already cleared the ICP on fit** — the single thing between it and a sendable row is
+one page-open by a person. **The first six need nothing but the address.** Ranked by what our own
+entries already record, not by guesswork: the four grade-A legs (owner named, a nameable practice
+system, a published review count, a visible dormant-list signal), with clinics carrying an unsettled
+second question ranked below ones that carry none.
+
+**The six at the top are each one browser minute from being a grade A or strong B row.**
+
+| # | Clinic | Where | What it needs | Why it is this high |
+| --- | --- | --- | --- | --- |
+| 1 | **Applied Aesthetic** | Garden City, NY | The address only | *"The best row Long Island has, and it is not close"* — 301+ published reviews, a **"Beauty Bank"** banked-credit membership, which is the exact mechanism this offer is built for, and a named FNP owner. Cloudflare on both the homepage and the privacy policy, which is why no route reached it |
+| 2 | **Total Rejuvenation Medspa** | Roswell / Alpharetta, GA | The address only | All four grade-A legs on record: owner-injector named (Allergan Master Injector), MindBody, "165+ Reviews", a VIP membership. Its worker's highest priority of the run |
+| 3 | **Iconique Medical Aesthetics** | Costa Mesa, CA | The address only | Ranked the best clinic in its sweep. Founder & Lead Injector named, "5.0 from 75+ Reviews", one site, **four** dormant mechanisms through its own shop subdomain |
+| 4 | **Ultimate Aesthetics** | Myaree + Subiaco, WA | The address only | *"The best clinic in the Perth sweep and the only thing wrong is the address."* Dr Carolyn Choy named Founder, **"established in 2011"**, Timely, two sites, vouchers. **The Australian consent screen is already done, so one page makes this a grade A** |
+| 5 | **Urban Injections** | Syracuse, Davis County, UT | The address only | The strongest parked profile in Utah. Stacie Colby RN BSN published as Owner, "8+ Years", Jane App, and **two memberships that both include monthly credits** — banked credit again |
+| 6 | **Future Face Clinics** | Birkdale, Brisbane, QLD | The address only | *"The one grade-A-shaped clinic in the sweep"* — named owner-injector, Phorest, a real multi-tier Skin Memberships scheme |
+| 7 | **Menon Medispa** | Millburn, NJ | Address **+ two checks in the same visit** | A founding year ("since 2019"), a review count ("100+ 5 Star"), an owner-doctor and a **rolling-credit monthly membership** all on one page. The two checks: the menu's "Vascular Treatments" needs the whole-site read, and the footer links to a separate entity (`menonregen.com`) so the site count needs confirming |
+| 8 | **No.6 Clinic** | Tunbridge Wells, Kent | Address **+ the company identity**, same sitting | *"The best thing the recovery run found"*, and the strongest instance in the file of a label not being a finding — it was dropped for being "beauty-led" because its trading name is "NO.6 BEAUTY CLINIC", while injectables are first and largest and there is no waxing, lashes, nails or tanning anywhere. 20 years trading, Dr Natasha Gilani. **Must-have 8 is also open**: read the footer and `/privacy-cookie-policy/` and both gaps close at once |
+| 9 | **Liberty Belle Skin Centre** | Toorak, VIC | Address **+ one disqualifying question** | **The biggest prize and the biggest risk.** Owners named, and **"300,000+ Cosmetic Skin Appointments"** published on its own homepage — the deepest patient pool in the file. But Dr Chris Moss is known outside the site as a plastic surgeon, and if this is a surgical practice's skin arm then must-have 1 kills it. **The site's own pages do not support that reading** (no surgeon named, no surgical procedure sold, "Dermal Clinicians" the only practitioner category). **Look for a "The Founder" page: if it bills him as a surgeon the row is dead, and if it does not, this is the row to send first** |
+| 10 | **Dermatique Laser and Skin** | Geneva, IL | Address **+ the decision-maker** | *"The highest-value tab on this whole page"*, per its worker, for the dormant structure alone: Zenoti throughout, a Skin Membership, "Bloom Loyalty Rewards", an Insider programme and gift cards. Held back because must-have 3 is unresolved — no owner is named and the staff list is bigger than one decision-maker implies. Settle that in the same visit |
+
+**One more worth knowing about, kept out of the ten deliberately: Preserve Aesthetics (Avalon Beach,
+NSW).** It is `robots_disallowed` on every page, so **nothing at all is known about it** — no owner,
+no menu, no review count. It is the highest *variance* entry in the file rather than the highest
+value: it could be the best clinic in northern Sydney or it could fail a must-have on sight. Open it
+eleventh, when the ten above are done.
+
+**A note on the two different kinds of entry in this file, because it decides what a visit is worth.**
+Most entries are clinics we **never reached**. But two sections — "Encoded since we read them" and
+"Site would not serve or would not render" — hold **existing pipeline rows that already have verified
+addresses** and whose sites merely could not be re-read during a send-verification pass. Those need no
+browser minute to become rows; they are already rows. **Do not spend a visit from this list on one of
+them.** That distinction was stated in this file's header from the start and it is the thing to read
+before acting on any entry.
+
+**Audited 17 November 2026.** Cross-checking every entry's domain against the pipeline found nineteen
+that are already sendable rows — but **fifteen of those are the second kind of entry above and are
+correct by design**, so the crude check had a 79% false-positive rate, and it had it because I ran it
+before reading this file's own header. Of the four real findings: **two struck** (Skin Social, whose
+entry is defective in both cells; and the `dvashaesthetics.com` entry, solved on 29 Oct after it was
+written), **one re-filed** (RejuvenationMD, which is a clinic that installed obfuscation *after* we
+read it, not one we never reached — so its verified address is a perishable fact and the row wants
+re-verifying before a send), and **one false positive created by an entry's own warning** about
+`maesthetics.co.uk` being confusable with `hdmaesthetics.co.uk` — the entry was right to warn, and my
+script fell into exactly the confusion it warned about. Also noted: **`deviceconsulting.com.au` is not
+a clinic at all** but a vendor clinic-locator already on the block list, and should come off this file
+the next time it is touched.
 
 ---
 
@@ -38,7 +95,7 @@ One page-open each. If an address is published, the clinic becomes a normal row.
 | Azure Aesthetics | `azureaesthetics.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | Bespoke Clinic | `bespokeclinic.com.au` | AU — Near misses — Australian outer-metro suburbs (1  |
 | Beyond Beauty Injectables | `beyondbeautyinjectables.org` | AU — Coastal and inland Queensland near-misses and ru |
-| Skin Social | `cosmetichqbydanielleryan.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
+| ~~Skin Social~~ **STRUCK 17 Nov 2026 — THIS ENTRY IS DEFECTIVE IN BOTH CELLS.** The domain `cosmetichqbydanielleryan.com.au` is **row 423, Cosmetic HQ by Danielle Ryan**, a sendable grade B whose address was read verbatim on 19 Oct 2026 — so the domain needs no browser. And the NAME does not match the domain: "Skin Social" is a different business, and whatever its own domain was, it was never recorded here. **Nothing is openable from this row**, which is the `near-misses` "record the domain beside the name" lesson reproduced inside this file. If Skin Social matters, it has to be re-found by name. | — | — |
 | CQ Skin | `cqskin.com.au` | AU — Coastal and inland Queensland near-misses and ru |
 | (name not captured) | `defineclinic.com.au` | AU — Australia, second pass — 18 Oct 2026, under ICP  |
 | (name not captured) | `deviceconsulting.com.au` | AU — Near misses — Australia's last unswept corners,  |
@@ -100,7 +157,7 @@ are listed exactly like Group A: one page-open each.
 | An "Email Us" link with no address printed | `theluxeskinclinic.co.uk` | UK — UK near-misses and rule-outs — 29 October 2026 |
 | Chic la Vie Med Spa — Las Vegas (Sahara Ave, Summerlin side), NV | `chiclavie.com` | US — Nevada + California-gap near-misses and rule-out |
 | Dahlia by WHA | `dahliabywha.com` | US — Near misses — northwest Arkansas, San Antonio su |
-| gmail | `dvashaesthetics.com` | US — US under-swept Texas, Memphis, Little Rock and J |
+| ~~gmail~~ **STRUCK 17 Nov 2026 — SOLVED, AND THE NAME CELL WAS MALFORMED.** `dvashaesthetics.com` is **row 777, Dvash Aesthetics**, a sendable grade B whose address was read on **29 Oct 2026 — after this entry was written** — so the browser visit was overtaken and nobody struck it. The name cell reading "gmail" is a table-parsing casualty of the address itself. | ~~US — US under-swept Texas, Memphis, Little Rock and J |
 | Face & Beyond Aesthetic Lounge — Turlock, CA | `faceandbeyondaestheticlounge.com` | US — California Central Valley and inland south — nea |
 | Two fetches spent | `firmmedicalspa.com` | US — Northwest Arkansas, then eastern Oklahoma — near |
 | Franco Aesthetics — Norman, OK | `francoaesthetics.com` | US — Northwest Arkansas, then eastern Oklahoma — near |
@@ -452,7 +509,7 @@ read.
 | --- | --- | --- | --- |
 | **Dermatique Laser and Skin** | `dermatique.com` (Geneva IL, 407 S Third St Suite 240) | Chicago, 8 Nov | **The highest-value tab on this whole page, and the worker said so unprompted.** Cloudflare: the privacy policy renders `[email protected]` and the page carries two `cdn-cgi/l/email-protection` tokens, so NOT SEEN. **The best dormant-list structure found in that market and the only enterprise system in it** — Zenoti throughout (booking, patient portal and gift cards all resolve to `dermatique.zenoti.com`), a Skin Membership, a "Bloom Loyalty Rewards" programme, an "Insider" programme with early access, Zenoti gift cards and Allergan Data Labs financing. Postal address and phone (630-262-2515) are readable. Note the helper offered no decode this time, so nothing was offered and nothing refused. Must-have 3 is unresolved: no owner named, and "full-time physicians, Nurse Practitioners, Aestheticians, and Laser Technicians" is a bigger staff than one decision-maker implies — worth settling in the same visit |
 | **Kucumber Skin Lounge** | `kucumberskinlounge.com` (Bellevue WA) | Seattle, 8 Nov | Cloudflare. **A would-be grade A: 380+ reviews and trading since 2010**, so must-have 4 is already evidenced twice over. One tab from being one of the strongest US rows in the file. Note its `areas-served/<town>` page set is blocked from sourcing queries, which is a separate matter from reading its address |
-| **RejuvenationMD** | `rejuvenationmdaesthetics.com` / `rejuvenationmdmedspa.com` (Seattle eastside) | Seattle, 8 Nov | Cloudflare — **and the one where the rule was tested and held**: the fetch helper volunteered the decoded plaintext unasked and the worker discarded it, as recorded in the file. The address exists on the page and a person reading it in a browser is the only route we will take to it |
+| **RejuvenationMD** | `rejuvenationmdaesthetics.com` / `rejuvenationmdmedspa.com` (Seattle eastside) | Seattle, 8 Nov | Cloudflare — **and the one where the rule was tested and held**: the fetch helper volunteered the decoded plaintext unasked and the worker discarded it, as recorded in the file. The address exists on the page and a person reading it in a browser is the only route we will take to it. **RE-FILED 17 Nov 2026, AND IT BELONGS IN THE "ENCODED SINCE WE READ THEM" SECTION ABOVE, NOT HERE.** This is **row 276, a sendable grade B**, whose address `info@rejuvenationmdaesthetics.com` was *"read off their own page - verified 16 Oct 2026"* — three weeks BEFORE the 8 Nov fetch found the page obfuscated. **So this is not a clinic we never reached; it is a clinic that installed obfuscation after we read it**, which is the one category this file already tracks separately and the reason that category exists. **Two consequences, and the second is the one that matters:** the browser visit is optional, because we hold a verified address; but **that address is now a perishable fact** and the clinic has signalled it does not want automated collection, so it is the kind of row to re-verify before a send rather than to send on confidently. No browser minute needs to be spent on it ahead of a clinic we cannot reach at all. |
 | **Skin Essentials Med Spa** | `skinessentialstn.com` (Brentwood TN) | Nashville, 8 Nov | Cloudflare-encoded; the helper offered no decode and none was attempted. Reached only via the Downtown Franklin association listing, which was the best fetch of that run |
 | **Nolo MedSpa** | `nolomedspa.com` (Nolensville TN) | Nashville, 8 Nov | Robots-refused. Runs **Jane App** and is **owner-CRNA**, so it clears on platform and on must-have 3 before anyone opens it. The close-out search proved the domain is live, which is the one thing that search is actually good for |
 | **La BeauTe Medical Spa & Laser Hair Removal** | `labeautemedspa.com` (Lake Forest IL) | Chicago, 8 Nov | Client-side render. Two fetches, homepage and contact page, both returned nothing but front matter and a single `meta-viewport` tag, so the ICP could not even be screened. **One of only two Lake Forest independents found** |

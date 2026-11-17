@@ -128,6 +128,16 @@ works in three markets and fails in a fourth is a technique with a known blind s
 law. **And the trap it carries fired again in Atlanta**: the same query returned Peachtree Corners,
 the Georgia clinic the Main Line worker first met through "Suburban Square Ardmore". A district
 name made of common words collides nationally, every time.
+**AND THIS IS THE SAME FACT AS THE SIXTH THIN-TOWN REASON BELOW, WHICH WAS WRITTEN UP SEPARATELY ON
+16 NOV BEFORE ANYONE NOTICED THEY WERE ONE THING — so read them together, because only the other one
+carries the FIX.** This paragraph has warned about name collisions since 11 Nov and offers no remedy;
+the thin-town entry supplies it: **add the POSTCODE, or the state, or query the retail strip instead.**
+The collision is not special to *district* names made of common words — **a plain suburb name does it
+too, and harder** (Canterbury VIC loses 10 of 10 slots to Canterbury, Kent). **One phenomenon, one
+remedy, two paragraphs.** That is this brief's own most-repeated failure mode showing up as
+duplication rather than as a missed case: a rule written twice from two directions, where the second
+copy knows something the first does not. **When you meet a claim here that reads familiar, grep for
+its other copy before trusting either.**
 
 **A QUERY SHAPE THAT IS 5 OF 9 ACROSS UNLIKE MARKETS — STRONG IN US METROS, 0 FOR 4 IN MELBOURNE
 (see the corrected scoreboard below, 16 Nov 2026): four unquoted town names plus "owner" or

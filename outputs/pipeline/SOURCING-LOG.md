@@ -2130,23 +2130,55 @@ rather than hundreds.**
   technique yet — but if a strong clinic is silent, a named owner's other business is a place to look
   before writing the clinic off.
 
-## The scheduled prompt is out of date in five places — proposed changes, 3 Nov 2026
+## The scheduled prompt is out of date — proposed changes, 3 Nov 2026, REVISED 17 Nov 2026
 
 **Read this before following the trigger prompt.** The nightly sourcing routine
-(`trig_01TwXxobGdpa5M6VH7HuBz28`) was last edited on 16 Oct and five of its instructions have
+(`trig_01TwXxobGdpa5M6VH7HuBz28`) was last edited on 16 Oct and several of its instructions have
 since been overtaken by measurement. It is Jess's routine, so it has not been changed — these are
-proposals for her, and in the meantime the prompt loses to this file on all five.
+proposals for her, and in the meantime the prompt loses to this file.
 
-1. **"Metro order: Australia first — Sydney, Melbourne, Brisbane, Gold Coast, Perth."** Australia
-   is finished. Seven passes, and on 2 Nov two Adelaide suburb directories returned the same
-   thirty listings with no injectables mentioned, while five of eight rows came from outside the
-   assigned corners. On 3 Nov Australia went *down* by two. Sourcing Australia first now means
-   spending the first and best fetches of a run on worked-out ground.
+**REVISED 17 NOV, AND THE FIRST THING TO SAY IS THAT ITEM 1 BELOW WAS WRONG.** This section
+declared on 3 Nov that **"Australia is finished"**, on the strength of seven passes. **Six more
+Australian sweeps have run since and every one of them produced rows** — Perth western/riverside,
+Sydney harbourside/east, Brisbane inner north/east, Melbourne inner east and bayside, Sydney
+north shore/inner west, Sydney northern beaches/Sutherland Shire — taking sendable AU rows to 199,
+and the 16 Nov Sydney pass produced a grade A on towns that had **zero** prior mentions in any file.
+**"Australia is finished" was a claim about the districts somebody had swept, stated as a claim
+about the country** — which is, at national scale, the identical error this file has now recorded
+five times at the scale of a page ("the site publishes no address"), once at the scale of a market
+("Australian sites do not obfuscate"), and twice in my own standing-list entries. **It is the same
+sentence every time: a procedure's boundary reported as a fact about the world.**
+**The honest version, which is what tonight's run is built on: Australia's UNSWEPT districts still
+pay, and its swept ones do not.** Four Sydney districts, two Melbourne halves, one Brisbane corner
+and one Perth corner are worked. The Gold Coast and Melbourne's north and west had never been
+touched until tonight; Brisbane south and west, Adelaide, Newcastle and Wollongong still have not
+been. **So the fix to the prompt's metro order is not "stop doing Australia" — it is "name
+DISTRICTS, not countries", for every market.**
+
+1. **"Metro order: Australia first — Sydney, Melbourne, Brisbane, Gold Coast, Perth."**
+   ~~Australia is finished.~~ **RETRACTED 17 Nov — see the revision note above; six Australian
+   sweeps since have all produced rows.** What survives of the original observation is narrower and
+   still useful: **sourcing a METRO that has already been swept means spending the best fetches of a
+   run on worked-out ground**, and on 2 Nov two Adelaide directories returned the same thirty
+   listings while five of eight rows came from outside the assigned corners. **The real change the
+   prompt needs is to name districts rather than countries**, and to say that a run should check
+   coverage before choosing — a one-command grep that this file's standing list now supports.
+   **And the ordering question the prompt cannot answer, which is Jess's to settle:** measured over
+   two nights, **working named leads we already hold beats sweeping fresh metros per fetch** (15 Nov:
+   46 fetches for 8 sendable rows including the only A, against 81 fetches for 11 rows in two
+   Australian metros). The prompt says Australia first; the measurement says backlog first. **In the
+   meantime I split the run** — half the workers on the named-lead backlog, half on genuinely
+   unswept Australian districts — and said so in the thread.
 2. **"Target at least 60 new qualified rows a run."** That number came from Jess asking for scale
    on 16 Oct, when the easy markets were untouched. It is now the wrong target twice over: the
-   remaining markets yield 20-25 a run at this quality, and the list is already far ahead of the
-   sending channel, which has 235 rows staged and 10 ever sent. Chasing 60 buys rows nobody will
-   email for months, at the cost of the verification work that turns out to matter more.
+   remaining markets yield 15-35 a run at this quality, and the list is already far ahead of the
+   sending channel. **Updated 17 Nov, and the gap has widened rather than closed: 852 rows are ready
+   to approach, 10 have ever been sent, all ten on 15 Oct, and `wilba_outreach.py status` now reports
+   170 days of runway at the current send cap.** Chasing 60 buys rows nobody will email for months,
+   at the cost of the verification work that turns out to matter more. **The binding constraint on
+   this pipeline is not row count and has not been for weeks — it is that no cold email can go out
+   without WILBA's postal address in the footer, and that address does not exist anywhere in this
+   workspace.** Asked of Jess on 15, 16 and 17 Nov.
 3. **"Fetch `/contact/` directly, then the careers and privacy pages."** Reversed for the US on
    2 Nov and refined again on 3 Nov. In the US `/contact` is a wasted second fetch; the privacy
    policy is the right next page when the homepage is silent. The careers-page tip still stands.
@@ -2158,14 +2190,20 @@ proposals for her, and in the meantime the prompt loses to this file on all five
    sourcing as the whole job.
 
 **What is missing entirely:** the browser-visit list. The prompt says a Cloudflare-obfuscated
-address "counts as not seen", which is right, but implies the clinic is dropped. 57 clinics that
-cleared the ICP are parked for want of one page-open each.
+address "counts as not seen", which is right, but implies the clinic is dropped. **176 clinics**
+that cleared the ICP are parked for want of one page-open each — it was 57 when this was written,
+so the list has tripled while the prompt has stayed silent about it. **A second omission, added
+17 Nov: the prompt has no notion of the NAMED-LEAD BACKLOG either**, and that backlog is now the
+most productive thing in the file per fetch. Both are cases of the prompt describing a sourcing run
+as "sweep a metro" when two cheaper kinds of work exist.
 
 ## Where the pipeline stands
 
 As of 16 Nov 2026: **1,281 rows, 852 ready to approach** — US 446, AU 199, CA 88, UK 82, NZ 43,
-IE 2. (860 rows are grade A or B and hold a published address; 8 of those have been emailed, which
-is the whole of the sending done to date.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
+IE 2. (860 rows are grade A or B and hold a published address; **10 of those have been emailed —
+corrected 17 Nov, I had been repeating 8** — and all ten went out on **15 Oct 2026**, a month ago and
+before v2, which is the whole of the sending done to date. **Nothing has been sent since, and the
+address gate is the reason.** Rows 85-89 UK and 93-98 AU, if anyone needs to see them.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
 on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, 1,185 and 800 on 10 Nov, 1,228 and
 817 on 12 Nov, and 1,263 and 837 on 15 Nov. A further
 **176 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
