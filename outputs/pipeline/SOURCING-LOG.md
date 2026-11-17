@@ -2046,9 +2046,27 @@ rather than hundreds.**
   best-evidenced of them and has FOUR SITES AND A CEO.** It is inside the one-to-four band, so it is
   not disqualified, but **read the decision-maker before writing to it** — a CEO above four sites is
   not the owner-injector this offer is addressed to, and the opener would have to change.
-- **JEWELL MEDICAL SPA (Naples, FL) is still the single best name in this whole file and still
-  unworked.** One published founding year releases it. It has carried over two nights now; whoever
-  opens the next run should open it first.
+- **~~JEWELL MEDICAL SPA (Naples, FL)~~ — SETTLED 17 Nov 2026 AS A GRADE C, AND IT IS A VERDICT
+  RATHER THAN A PARK. STOP CARRYING IT.** It was the single best name in this file for three nights,
+  on the strength of its own near-miss entry (*"relax that rule and it goes straight in"*). The rule
+  was relaxed, the clinic was worked, and **it fails must-have 4 on the clinic's own About page.**
+  Both new rungs were tested and **neither artifact exists**: the complete header and footer href set
+  was enumerated and there is no blog, news, press or reviews page on the site at all, so the archive
+  rung is *unavailable* rather than unexamined. The only dated artifact anywhere is the policy's
+  `Effective Date: 01/05/2025` — a floor of about 22 months, **inside row 720's failing band**.
+  **WHAT MAKES IT A VERDICT IS A NEW WRINKLE ON THE BOUNDS-DIRECTION RULE, AND IT IS WORTH MORE THAN
+  THE ROW: THE SITE'S ONLY TRADING-LIFE SENTENCE IS ABOUT A DIFFERENT BUSINESS.** Chris Jewell's own
+  words are *"I was fortunate to... establish one of the top medical spas in Naples in just three
+  short years"* — **about his FIRST spa** — and, stated twice, that he is *"currently the sole
+  proprietor of his **second** medical spa."* So this clinic is **the newer of two**, and the
+  impressive sentence belongs to the one he left. His "30 years of Naples residency" is residency and
+  his "13 years in skin cancer care" is a prior career elsewhere; neither reaches even the B rung.
+  All three primary social accounts point at the second brand, `mrinjectable`.
+  **THE TRANSFERABLE RULE: when reading a date or a trading claim, check WHOSE BUSINESS it is
+  about.** The ladder already asks which direction a date bounds in; this adds that it must also ask
+  *what it bounds*. An owner's previous venture, an owner's career and an owner's residency all
+  produce confident-sounding year numbers that say nothing about the business we would be writing to,
+  and a second-brand owner is exactly the shape that generates them.
 - **GLO AESTHETICS (Carmel, IN) is the best browser visit available** — see `browser-visit-list.md`.
   It is the only one of 14 re-tested clinics our file records a dormant scheme for ("Glo Bank" stored
   credit plus committed memberships), everything but the address is already read and passes, and the
@@ -2094,10 +2112,14 @@ rather than hundreds.**
 - **THIRTY-FOUR NAMED CLINICS RECOVERED BY THE PRE-v2 RULE-OUT AUDIT, fifteen of them with a
   published address already on record — one fetch each to grade, no searching at all.** The full list,
   with what stays out and why, is in `near-misses.md` under **"THE PRE-v2 RULE-OUT AUDIT"**. Work it
-  before opening a new metro. **The single best of them is JEWELL MEDICAL SPA (Naples, FL)**, whose own
-  entry reads *"Publishes an address, runs Aesthetic Record, has a membership ladder... Excluded only
+  before opening a new metro. **~~The single best of them is JEWELL MEDICAL SPA (Naples, FL)~~**, whose own
+  entry read *"Publishes an address, runs Aesthetic Record, has a membership ladder... Excluded only
   because the site describes the owner as 'sole proprietor' — relax that rule and it goes straight
-  in"*. Next best are the nine Mountain West names filed under *"Verified email but nothing dormant"*,
+  in"*. **THAT PREDICTION WAS WRONG AND IT IS INSTRUCTIVE: the rule was relaxed, the clinic was
+  worked on 17 Nov, and it failed a DIFFERENT must-have (4) that its entry had never examined.** The
+  entry was accurate about the rule that had excluded it and silent about everything that rule had
+  been hiding. **A near-miss entry tells you why a clinic was dropped, not whether it qualifies** —
+  so "relax that rule and it goes straight in" is a hypothesis about one must-have, never a grade. Next best are the nine Mountain West names filed under *"Verified email but nothing dormant"*,
   which means must-have 5 is already satisfied on all nine. **WORKED 16 NOV 2026 ACROSS TWO RUNS —
   7 of 29 re-tested names became rows, and the outcomes are recorded here so nobody pays for them
   twice:**
@@ -2112,8 +2134,9 @@ rather than hundreds.**
     Spa" in a name is not a segment. ~~DWH Med Spa~~ (Richmond) — the mailbox's own domain disclosed
     the parent, `spa@dominionwomenshealth.com`, an OB/GYN side-line. ~~Santa Fe Skin Institute~~ —
     see the 16 Nov near-miss write-ups.
-  - **~~JEWELL MEDICAL SPA~~ IS STILL UNWORKED AND STILL THE BEST NAME HERE** — it has now carried
-    two nights. One published founding year releases it. Open it first.
+  - **~~JEWELL MEDICAL SPA~~ — WORKED AND SETTLED AS A GRADE C ON 17 Nov 2026.** Fails must-have 4;
+    the full verdict and the "whose business is this date about?" rule it produced are in the 16 Nov
+    second block above. Do not carry it again.
 
 - **MELBOURNE'S INNER EAST IS NOW NEARLY WORKED OUT — UPDATED 16 NOV 2026, ONE TOWN LEFT.** The 15
   Nov run ran out of searches before **Toorak, Canterbury, Hawthorn East, Caulfield North and Hampton

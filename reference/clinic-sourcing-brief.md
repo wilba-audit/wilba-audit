@@ -865,6 +865,22 @@ because the standard may widen again and re-finding a clinic costs more than kee
    slots on a bayside query, **and reading one of them produced an accepted B row** — the footer
    handed over the mailbox, the whole menu, the premises count and the founding year in one fetch.
    Both halves of the 9 Nov rule hold and they do not conflict.
+   **THE GREP-BEFORE-FETCH RULE HAS A FALSE-POSITIVE DIRECTION, FOUND 17 NOV 2026, AND IT COSTS YOU
+   ROWS RATHER THAN FETCHES — WHICH IS THE EXPENSIVE DIRECTION.** Grepping a clinic's name against
+   the pipeline to see whether we already hold it will also hit **that name appearing inside another
+   row's PROSE**. On 17 Nov "Ahern" and "Alpine" each returned exactly one hit, and in both cases
+   the hit was **row 1276's own correction note naming them as leads to work** — so a worker trusting
+   the grep would have concluded both were already held and skipped them. **They became two sendable
+   grade B rows.** A near-identical trap caught "La Vie", which hit row 697 *La Vie Med Spa* in
+   Troy/Clawson MI — a genuinely different business with a different owner — so the same grep
+   produces both a false "already held" and a false "already held, and look, here is the row".
+   **The discipline: a grep hit is not a row until you have looked at WHICH FIELD it landed in.** A
+   hit in `clinic_name` or `website` is a row. A hit in `notes`, `email_source` or
+   `dormant_lead_signal` is prose, and prose that names a clinic is as likely to be a note saying
+   *go and work this one* as a record saying we have it. **Check the field, and check the city.**
+   This is the mirror image of the rule's usual value: the rule is written to save fetches, and its
+   failure mode spends rows.
+
    **The grep-before-fetch rule returned EIGHT free skips in the Sydney run, the most in this file:**
    `conceptcosmeticmedicine.com.au`, `contourclinics.com.au`, `rejuvaustralia.com.au` (row 94),
    `artofaesthetics.com.au` (row 347), `theinjectionlab.com.au` (row 361),
@@ -1355,9 +1371,37 @@ different direction: **a town name is one query, and the names locals use are se
 WebFetch refuses a URL that has not appeared in a WebSearch result, so search before you
 fetch. `curl` is blocked.
 
-## Seven ways a site defeats a fetch, and which ones a browser fixes
+## Eight ways a site defeats a fetch, and which ones a browser fixes
 
 Knowing which is which decides whether a clinic is worth a human's time or should be dropped.
+
+**NUMBER EIGHT, FOUND 17 NOV 2026, AND IT IS THE ONLY ONE ON THIS LIST THAT IS OUR FAULT RATHER THAN
+THE SITE'S: THE URL WAS NEVER REAL.** A constructed path that 404s is **indistinguishable in the
+result from a broken site** — you get a hard client error and zero bytes either way, and the honest
+report "site-side client error" is then read by the next person as "that page does not work", when
+the truth is "that page does not exist at the address we invented".
+**It parked two clinics in one recovery list, and between them they were holding a twelve-year
+founding floor, a clean must-have 2 answer and two tokenised mailboxes:**
+- **East Town Salon & MedSpa** was recorded as must-have 5 **UNREAD** because `/privacy-policy.html`
+  errored. Its policy is at **`/privacy.html`**.
+- **True You** was recorded as **failing must-have 4** because `/hipaa-privacy-policy` errored. Its
+  policy is at **`/privacy-policy/`**, behind a footer link labelled "HIPAA Privacy Policy".
+**Both existed. Both loaded first time at the real URL.** The 16 Nov worker's error reports were
+accurate; the inference drawn from them was wrong, and that is the whole failure mode: **a true
+statement about a fetch, read as a statement about a site.**
+**THE FIX, AND IT IS NOW A RULE RATHER THAN A TIP: ENUMERATE THE HEADER AND FOOTER HREFS BEFORE
+FETCHING ANY SECONDARY PAGE. NEVER GUESS A LEGAL OR ARCHIVE PATH.** One homepage fetch buys the real
+policy, archive and reviews URLs; then one targeted fetch each. **The measured stakes are large: a
+worker that guessed paths had 20 of 30 fetches return zero bytes (`/privacy-policy` missed 11 of 19,
+`/privacy` 4 of 4, `/blog` 4 of 7) and recovered one row of 21; a worker that enumerated first
+recovered four of six on the same kind of list and produced two grade A rows.** Same rules, same
+night, opposite results, and the only difference was guessing versus reading.
+**AND EXPECT THE ARCHIVE NOT TO BE AT `/blog`.** The two post archives that paid on 17 Nov were
+labelled **"Videos & Articles"** and **"Resources"**. A clinic's blog is as often called something
+else as not.
+**How to tell this mode from a real site-side error:** you cannot, from the result — which is why the
+rule is to never be in the position. If you already are, **say "the path I tried returned nothing"
+rather than "the page errors", so the next reader knows a path was invented.**
 
 - **Cloudflare obfuscation** — the address renders as `[email protected]`. **Still NOT SEEN, so
   never record it — but do NOT drop the clinic. CORRECTED 2 Nov 2026: this entry used to say "a

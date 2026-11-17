@@ -119,6 +119,37 @@ MyMedicare, HICAPS, Veterans (in any form), Department of Veterans' Affairs, DVA
 concession card, health fund, private health insurer and claiming** — and HICAPS, the word the first
 version of this rule was built on, now stands at **0 of 61 clinics across four metros.**
 
+**THE UNITED STATES HAS ITS OWN VERSION OF THIS SCREEN AND IT IS THE HIPAA NOTICE OF PRIVACY
+PRACTICES — found 17 Nov 2026, with a discriminator precise enough to be worth the fetch, and one
+caution of mine attached.** The Australian lesson is that the billing admission hides in the legal
+document rather than on the menu. The American equivalent is the NPP, and two clinics from the same
+template family split on **one sentence**:
+- **La Vie MD's NPP says: *"we will submit protected health information about you to your insurance
+  company in order to receive payment."*** Graded **C on must-have 2** — despite must-haves 3 and 4
+  both passing and despite the founder-owner being exactly our buyer.
+- **Angell Medical Spa's NPP does NOT say it.** Its only payer sentence is the **statutory self-pay
+  restriction right** — the patient's right to stop a disclosure when they pay out of pocket — and it
+  never mentions submitting anything to an insurer. **Passed, and its 16 Nov must-have 2 flag is
+  closed.**
+**So the test inside the document is: does the clinic say it SUBMITS to a payer, or only that a
+patient MAY RESTRICT a disclosure if they self-pay?** The first is a third party deciding whether
+treatment is paid for, which is what must-have 2 exists to exclude. The second is a statutory right
+that every covered entity must recite and that a pure cash-pay practice recites too. **One sentence
+apart, opposite answers.**
+
+**MY CAUTION, WHICH THE NEXT TWO OR THREE US RUNS SHOULD SETTLE: payment language in an NPP is
+substantially boilerplate, because the notice's job is to enumerate HIPAA's permitted disclosures and
+"Payment" is one of them.** A template will often carry the submission sentence whether or not the
+practice bills anyone. **What makes the rule worth keeping anyway is the Angell case: within one
+template family, some practices delete that sentence and some keep it, so keeping it carries some
+information.** But the rule is on probation, and the test is cheap and self-executing: **read the NPP
+on the next several US clinics and count how many carry the submission sentence. If it is nearly all
+of them, the sentence is uninformative and this screen dies** — and a row parked on it should then be
+re-read rather than inherited. **Record the count whenever you read one.** The worker that found this
+graded La Vie C rather than clearing a must-have on the argument that a clinic's own legal notice does
+not mean what it says, and wrote the evidence both ways into the row; that was the right call under
+uncertainty, and it is cheap to reverse if the count comes back near-universal.
+
 **THE LESSON IS NOT ABOUT AUSTRALIA. A SCREEN WRITTEN FROM ONE OBSERVED PHRASE WILL MISS THE SAME
 SCHEME UNDER ANY OTHER PHRASING.** Twice in one week an Australian billing instruction of mine was
 too specific — first HICAPS, then the long form of the department's name. **Screen for the SCHEME and
@@ -186,8 +217,34 @@ reading, and because the must-have 2 screen already sends you to the policy on e
 clinic about to be graded B or A, **the dating comes free on every clinic we screen.** It settled row
 1222 alongside a dated post archive.
 
-**BOTH OF THESE RUNGS WERE TESTED ON 21 ROWS ON 17 NOV 2026 AND BOTH RETURNED NOTHING. 0 CLEARS EACH.
-READ THIS BEFORE BUILDING ANOTHER BACKLOG ON THEM — I BUILT ONE AND IT DID NOT PAY.**
+**BOTH RUNGS WERE TESTED TWICE ON 17 NOV 2026, BY TWO WORKERS WHO DID NOT KNOW OF EACH OTHER, AND
+THEY RETURNED OPPOSITE VERDICTS. THE DISAGREEMENT RESOLVES CLEANLY AND IT SPLITS THE TWO RUNGS APART
+— ONE OF THEM WORKS AND THE OTHER IS NEARLY WORTHLESS. READ BOTH HALVES.**
+
+**THE SUMMARY, UP FRONT, BECAUSE THE DETAIL BELOW WAS WRITTEN IN TWO SITTINGS AND THE FIRST SITTING
+WAS WRONG:**
+- **THE POST-ARCHIVE RUNG WORKS.** Worker two fired it twice and both firings were decisive, both
+  producing a **grade A** (Ageless MD Solutions, oldest post 9 Jul 2018, a floor of 8.4 years;
+  Mindful Med Spa, 28 May 2019, 7.5 years). **Keep it and spend its fetch FIRST.**
+- **THE POLICY-DATE RUNG IS NEARLY WORTHLESS AS A FLOOR.** Across both workers it fired nine times
+  and was decisive once. Worker two's six floors: 22 months, 18 months, 22 months, 6 weeks, 8
+  months, and one good one. Worker one's three: all 2024, all inside or below row 720's failing
+  band. **Do not park or clear a row on a policy date, and do not spend a fetch on one for dating
+  alone** — fetch the policy for the must-have 2 screen, which is what it is actually good for, and
+  take any date on it as a bonus.
+- **WHY THE TWO WORKERS DISAGREED ABOUT THE POST-ARCHIVE RUNG: ONE GUESSED `/blog` AND THE OTHER
+  ENUMERATED THE FOOTER.** Worker one guessed paths and 4 of its 7 blog fetches returned zero bytes.
+  Worker two read the header and footer href sets first, and **both of its archives were behind
+  unexpected nav labels — "Videos & Articles" and "Resources".** Neither was at `/blog`. **So the
+  rung's measured failure in the first cohort was a measurement of path guessing, not of the rung**,
+  and the method fix at the bottom of this section is not a refinement, it is the whole thing.
+
+**WHAT FOLLOWS IS THE FIRST SITTING'S WRITE-UP, KEPT BECAUSE ITS REASONING ABOUT THE POLICY RUNG AND
+ABOUT MY OWN OVER-GENERALISATION STILL HOLDS.** Where it says "both rungs returned nothing", read
+"the policy rung returned nothing and the archive rung was never reached".
+
+**THE FIRST COHORT: 21 ROWS, 0 CLEARS FROM EITHER RUNG.
+I BUILT A BACKLOG ON THESE TWO RUNGS AND THAT COHORT DID NOT PAY.**
 
 On 15 Nov I wrote these two rungs up and inferred from them that 22 pipeline rows parked solely on
 must-have 4 were cheap recoveries. One of the 21 worked rows cleared, **and it cleared on the
@@ -241,6 +298,46 @@ rather than 1.5**, and it converts the 67% hard-error rate into near zero. The w
 the right one: **the rungs were not what failed, the path guessing was** — but even with perfect paths
 the measured clear rate on this cohort would have been low, because the dates that did load were too
 young. **The seam is not 22 cheap recoveries. It is a thin seam that needs better aim.**
+
+**THE SECOND COHORT, AND THE TWO THINGS IT ADDS BEYOND SPLITTING THE RUNGS.**
+
+**1. A POLICY DATE IS UNRELIABLE IN BOTH DIRECTIONS, WHICH IS A STRONGER CONCLUSION THAN EITHER
+WORKER REACHED ALONE — AND IT RETIRES MY "BOUGHT TEMPLATE" HYPOTHESIS BY SUBSUMING IT.** Two
+mechanisms are now evidenced and they push opposite ways:
+- **Policies get REWRITTEN, so the date drifts toward today and reads as a floor far younger than
+  the business.** That is worker two's explanation and it fits every one of its five bad floors
+  (6 weeks to 22 months). It is the dominant failure.
+- **Policies are also INHERITED BOILERPLATE, so the date can PREDATE the business entirely.** The
+  proof is sharp: **La Vie MD's HIPAA notice declares itself "Effective August 1, 2005" — twelve
+  years before the company was founded in 2017**, refuted by the clinic's own founding statement.
+  **A date that predates the business is not a floor at all**, and the ladder as written would have
+  read it as a 21-year one.
+**So a policy date can be years too young OR years too old, and nothing on the page tells you
+which.** Treat it as corroboration for a date you already have, never as the load-bearing evidence.
+(My 15 Nov hypothesis that the date tracks when the template was bought is the second mechanism and
+is now evidenced; the test I proposed for it is no longer needed, because the La Vie case is that
+test and it came back positive.)
+
+**2. A NEW RUNG, AND IT IS A GOOD ONE: A REVIEW THAT CARRIES THE REVIEWER'S OWN "CUSTOMER SINCE"
+YEAR.** East Town Salon & MedSpa publishes eleven reviews each stamped with a **"Customer since"**
+year, running **2006 to 2019** — a floor of about twenty years, **drawn from the clinic's own booking
+records rather than from its marketing copy**, which makes it better evidence than a "since" sentence
+a clinic wrote about itself. **Where a review widget stamps tenure, read the oldest stamp.** It
+bounds from below, and it simultaneously evidences the one thing must-have 4 actually cares about —
+that a long patient history exists — rather than merely that a business is old.
+
+**3. THE MIDDLE RUNG DID THE QUIET WORK, AND IT DID IT BY BEING ON A PAGE NOBODY HAD OPENED.** Ahern
+Aesthetics and Alpine Aesthetics were both parked with "no proxy of any kind", which is the C
+condition — and both publish a practitioner's career length ("Over a 20-year career", "more than ten
+years") on an About or Team page the previous pass never read. **Two more grade-B releases, and two
+more firings of the page-coverage rule on must-have 4 rather than must-have 5.**
+
+**THE METHOD, RESTATED AS THE RULE RATHER THAN AS A FIX, BECAUSE IT IS NOW THE DIFFERENCE BETWEEN THE
+RUNG WORKING AND NOT WORKING: ENUMERATE THE HEADER AND FOOTER HREFS BEFORE FETCHING ANY SECONDARY
+PAGE. NEVER GUESS A PATH.** One homepage fetch buys the real policy, archive and reviews URLs; then
+spend one targeted fetch each, archive first. That is about two fetches a row instead of 1.5, and it
+is the entire margin between 0 clears and two grade As. **Expect the archive NOT to be at `/blog`** —
+neither of the two that paid was, and the labels were "Videos & Articles" and "Resources".
 
 **AND THE PAGE-COVERAGE RULE FIRED FOR THE SIXTH TIME IN FOUR NIGHTS, IN ITS SHARPEST FORM YET.** Row
 700's notes recorded two absences — *"the header reads 'EST' with no year"* and *"no review count is

@@ -9,8 +9,8 @@ contacted, and none is in the sendable list.
 There are **152** of them as at 17 Nov 2026 — the original count of **110** below is kept because the
 breakdown that follows it describes that cohort: 53 whose address is on the page but encoded, 56 whose
 site refuses automated reading or will not render, and one special case (row 352) described at the end.
-**See "OPEN THESE TEN FIRST" below before reading any further into this file**: 152 unordered entries
-is why nobody works through it, and the ten at the top are each one page-open from a sendable row.
+**See "OPEN THESE ELEVEN FIRST" below before reading any further into this file**: 152 unordered entries
+is why nobody works through it, and the eleven at the top are each one page-open from a sendable row.
 **Ten more were added on 8 November**, in their own section at the end, along with one clinic that
 is a browser job for a different reason — its address is readable, but it is already advertising a
 prize draw to "current, past, or prospective clients", which is a person's job and not a script's.
@@ -26,36 +26,52 @@ whole point of this file.**
 
 ---
 
-## OPEN THESE TEN FIRST — ranked 17 November 2026
+## OPEN THESE ELEVEN FIRST — ranked 17 November 2026
 
 **Why this section exists.** This file had grown to **152 clinics** with no ordering of any kind, so
 the only way to use it was to read all of it, which means nobody ever did. Every entry below is a
 clinic that **already cleared the ICP on fit** — the single thing between it and a sendable row is
-one page-open by a person. **The first six need nothing but the address.** Ranked by what our own
+one page-open by a person. **The first seven need nothing but the address.** Ranked by what our own
 entries already record, not by guesswork: the four grade-A legs (owner named, a nameable practice
 system, a published review count, a visible dormant-list signal), with clinics carrying an unsettled
 second question ranked below ones that carry none.
 
-**The six at the top are each one browser minute from being a grade A or strong B row.**
+**The seven at the top are each one browser minute from being a grade A or strong B row.**
+
+**UPDATED THE SAME DAY, 17 Nov, AFTER A NAMED-LEAD RUN RE-READ TWO OF THESE CLINICS.** One new
+entry goes straight in at the top and one moves up from the footnote; both changed because a
+**legal page we had recorded as broken turned out to be at a different URL** (see the eighth
+fetch-failure mode in `clinic-sourcing-brief.md` — the path had been invented, not the page broken).
 
 | # | Clinic | Where | What it needs | Why it is this high |
 | --- | --- | --- | --- | --- |
-| 1 | **Applied Aesthetic** | Garden City, NY | The address only | *"The best row Long Island has, and it is not close"* — 301+ published reviews, a **"Beauty Bank"** banked-credit membership, which is the exact mechanism this offer is built for, and a named FNP owner. Cloudflare on both the homepage and the privacy policy, which is why no route reached it |
-| 2 | **Total Rejuvenation Medspa** | Roswell / Alpharetta, GA | The address only | All four grade-A legs on record: owner-injector named (Allergan Master Injector), MindBody, "165+ Reviews", a VIP membership. Its worker's highest priority of the run |
-| 3 | **Iconique Medical Aesthetics** | Costa Mesa, CA | The address only | Ranked the best clinic in its sweep. Founder & Lead Injector named, "5.0 from 75+ Reviews", one site, **four** dormant mechanisms through its own shop subdomain |
-| 4 | **Ultimate Aesthetics** | Myaree + Subiaco, WA | The address only | *"The best clinic in the Perth sweep and the only thing wrong is the address."* Dr Carolyn Choy named Founder, **"established in 2011"**, Timely, two sites, vouchers. **The Australian consent screen is already done, so one page makes this a grade A** |
-| 5 | **Urban Injections** | Syracuse, Davis County, UT | The address only | The strongest parked profile in Utah. Stacie Colby RN BSN published as Owner, "8+ Years", Jane App, and **two memberships that both include monthly credits** — banked credit again |
-| 6 | **Future Face Clinics** | Birkdale, Brisbane, QLD | The address only | *"The one grade-A-shaped clinic in the sweep"* — named owner-injector, Phorest, a real multi-tier Skin Memberships scheme |
-| 7 | **Menon Medispa** | Millburn, NJ | Address **+ two checks in the same visit** | A founding year ("since 2019"), a review count ("100+ 5 Star"), an owner-doctor and a **rolling-credit monthly membership** all on one page. The two checks: the menu's "Vascular Treatments" needs the whole-site read, and the footer links to a separate entity (`menonregen.com`) so the site count needs confirming |
-| 8 | **No.6 Clinic** | Tunbridge Wells, Kent | Address **+ the company identity**, same sitting | *"The best thing the recovery run found"*, and the strongest instance in the file of a label not being a finding — it was dropped for being "beauty-led" because its trading name is "NO.6 BEAUTY CLINIC", while injectables are first and largest and there is no waxing, lashes, nails or tanning anywhere. 20 years trading, Dr Natasha Gilani. **Must-have 8 is also open**: read the footer and `/privacy-cookie-policy/` and both gaps close at once |
-| 9 | **Liberty Belle Skin Centre** | Toorak, VIC | Address **+ one disqualifying question** | **The biggest prize and the biggest risk.** Owners named, and **"300,000+ Cosmetic Skin Appointments"** published on its own homepage — the deepest patient pool in the file. But Dr Chris Moss is known outside the site as a plastic surgeon, and if this is a surgical practice's skin arm then must-have 1 kills it. **The site's own pages do not support that reading** (no surgeon named, no surgical procedure sold, "Dermal Clinicians" the only practitioner category). **Look for a "The Founder" page: if it bills him as a surgeon the row is dead, and if it does not, this is the row to send first** |
-| 10 | **Dermatique Laser and Skin** | Geneva, IL | Address **+ the decision-maker** | *"The highest-value tab on this whole page"*, per its worker, for the dormant structure alone: Zenoti throughout, a Skin Membership, "Bloom Loyalty Rewards", an Insider programme and gift cards. Held back because must-have 3 is unresolved — no owner is named and the staff list is bigger than one decision-maker implies. Settle that in the same visit |
+| **1** | **East Town Salon & MedSpa** | Milwaukee, WI | The address only | **NEW, AND IT DISPLACES EVERYTHING — including Glo Aesthetics, on the one question Glo leaves open.** `/reviews.html` publishes eleven reviews each stamped with the reviewer's own **"Customer since"** year, running **2006 to 2019** — a floor of about **twenty years, drawn from the clinic's own booking records** rather than its marketing copy, so must-have 4 is resolved outright and better than by any "since" sentence. It runs **its own Booker tenant**, so the lapsed list is unambiguously theirs — which is exactly the question left hanging over Glo's unidentifiable booking slug. Memberships, gift certificates **and** prepaid series. Two tokenised mailboxes on `/privacy.html` (the page we had recorded as broken at `/privacy-policy.html`), NOT SEEN, no decode offered or taken. **One caveat to carry into the copy, not a reason to rank it lower:** the medspa is one of three divisions beside 19 salon and 11 spa pages, so a twenty-year lapsed list **skews hard to hair and nails** — the opener must not assume an injectables list |
+| 2 | **Applied Aesthetic** | Garden City, NY | The address only | *"The best row Long Island has, and it is not close"* — 301+ published reviews, a **"Beauty Bank"** banked-credit membership, which is the exact mechanism this offer is built for, and a named FNP owner. Cloudflare on both the homepage and the privacy policy, which is why no route reached it |
+| 3 | **Total Rejuvenation Medspa** | Roswell / Alpharetta, GA | The address only | All four grade-A legs on record: owner-injector named (Allergan Master Injector), MindBody, "165+ Reviews", a VIP membership. Its worker's highest priority of the run |
+| 4 | **Iconique Medical Aesthetics** | Costa Mesa, CA | The address only | Ranked the best clinic in its sweep. Founder & Lead Injector named, "5.0 from 75+ Reviews", one site, **four** dormant mechanisms through its own shop subdomain |
+| 5 | **Ultimate Aesthetics** | Myaree + Subiaco, WA | The address only | *"The best clinic in the Perth sweep and the only thing wrong is the address."* Dr Carolyn Choy named Founder, **"established in 2011"**, Timely, two sites, vouchers. **The Australian consent screen is already done, so one page makes this a grade A** |
+| 6 | **Urban Injections** | Syracuse, Davis County, UT | The address only | The strongest parked profile in Utah. Stacie Colby RN BSN published as Owner, "8+ Years", Jane App, and **two memberships that both include monthly credits** — banked credit again |
+| 7 | **Future Face Clinics** | Birkdale, Brisbane, QLD | The address only | *"The one grade-A-shaped clinic in the sweep"* — named owner-injector, Phorest, a real multi-tier Skin Memberships scheme |
+| 8 | **Menon Medispa** | Millburn, NJ | Address **+ two checks in the same visit** | A founding year ("since 2019"), a review count ("100+ 5 Star"), an owner-doctor and a **rolling-credit monthly membership** all on one page. The two checks: the menu's "Vascular Treatments" needs the whole-site read, and the footer links to a separate entity (`menonregen.com`) so the site count needs confirming |
+| 9 | **No.6 Clinic** | Tunbridge Wells, Kent | Address **+ the company identity**, same sitting | *"The best thing the recovery run found"*, and the strongest instance in the file of a label not being a finding — it was dropped for being "beauty-led" because its trading name is "NO.6 BEAUTY CLINIC", while injectables are first and largest and there is no waxing, lashes, nails or tanning anywhere. 20 years trading, Dr Natasha Gilani. **Must-have 8 is also open**: read the footer and `/privacy-cookie-policy/` and both gaps close at once |
+| 10 | **Liberty Belle Skin Centre** | Toorak, VIC | Address **+ one disqualifying question** | **The biggest prize and the biggest risk.** Owners named, and **"300,000+ Cosmetic Skin Appointments"** published on its own homepage — the deepest patient pool in the file. But Dr Chris Moss is known outside the site as a plastic surgeon, and if this is a surgical practice's skin arm then must-have 1 kills it. **The site's own pages do not support that reading** (no surgeon named, no surgical procedure sold, "Dermal Clinicians" the only practitioner category). **Look for a "The Founder" page: if it bills him as a surgeon the row is dead, and if it does not, this is the row to send first** |
+| 11 | **Dermatique Laser and Skin** | Geneva, IL | Address **+ the decision-maker** | *"The highest-value tab on this whole page"*, per its worker, for the dormant structure alone: Zenoti throughout, a Skin Membership, "Bloom Loyalty Rewards", an Insider programme and gift cards. Held back because must-have 3 is unresolved — no owner is named and the staff list is bigger than one decision-maker implies. Settle that in the same visit |
 
-**One more worth knowing about, kept out of the ten deliberately: Preserve Aesthetics (Avalon Beach,
+**TRUE YOU (San Jose, CA) MOVES UP FROM LOW PRIORITY TO HIGH, 17 Nov — it was down as "the address
+is the cheapest of its three problems" and it now has one problem left.** The policy we had recorded
+as erroring is at `/privacy-policy/`, it declares itself **"Effective: December 1, 2014"** — a
+twelve-year floor, corroborated by its own patient-tenure testimonials, so **must-have 4 is resolved**
+— and **the same page settles the primary-care / hormone must-have 2 caveat clean.** Three problems
+down to one, and the one left is the Cloudflare address, which is the kind a browser fixes in a
+minute. **Open it right after the eleven above.** Note that the figure which had kept it at C, "5.0
+stars based on 6 reviews", is unchanged and still thin — but the policy date is now the load-bearing
+must-have 4 evidence and it does not need the review count.
+
+**One more worth knowing about, kept out of the ranking deliberately: Preserve Aesthetics (Avalon Beach,
 NSW).** It is `robots_disallowed` on every page, so **nothing at all is known about it** — no owner,
 no menu, no review count. It is the highest *variance* entry in the file rather than the highest
 value: it could be the best clinic in northern Sydney or it could fail a must-have on sight. Open it
-eleventh, when the ten above are done.
+last, when the eleven above and True You are done.
 
 **A note on the two different kinds of entry in this file, because it decides what a visit is worth.**
 Most entries are clinics we **never reached**. But two sections — "Encoded since we read them" and
