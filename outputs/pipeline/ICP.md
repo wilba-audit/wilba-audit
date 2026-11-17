@@ -186,6 +186,72 @@ reading, and because the must-have 2 screen already sends you to the policy on e
 clinic about to be graded B or A, **the dating comes free on every clinic we screen.** It settled row
 1222 alongside a dated post archive.
 
+**BOTH OF THESE RUNGS WERE TESTED ON 21 ROWS ON 17 NOV 2026 AND BOTH RETURNED NOTHING. 0 CLEARS EACH.
+READ THIS BEFORE BUILDING ANOTHER BACKLOG ON THEM — I BUILT ONE AND IT DID NOT PAY.**
+
+On 15 Nov I wrote these two rungs up and inferred from them that 22 pipeline rows parked solely on
+must-have 4 were cheap recoveries. One of the 21 worked rows cleared, **and it cleared on the
+ladder's ORIGINAL rung one — a stated founding year — found by accident on a page requested as a
+policy.** Neither new rung produced a single clear. The measurements:
+- **Rung 2, the policy's self-declared date.** Attempted on 19 rows. **A policy document loaded on
+  6 (32%)**; of those 6, **3 carried a usable date (50%)**; of those 3, **0 cleared**. Every one
+  landed in 2024 — floors of 2.0 to 2.9 years, inside or below row 720's failing band.
+- **Rung 1, the archive's oldest date.** Attempted on 7 rows. **A blog loaded on 3**; none reached
+  back before 2024. **0 clears.**
+
+**THE THREE REASONS, AND EACH ONE IS A CORRECTION TO SOMETHING I WROTE RATHER THAN A SURPRISE ABOUT
+CLINICS.**
+
+**1. "The dating comes free on every clinic we screen" is true in AUSTRALIA and I generalised it off
+the end of its own sentence.** Re-read the paragraph above: it earns "free" from the fact that *the
+Australian must-have 2 screen has already located the policy*. Outside Australia nothing has located
+it, so the fetch is a guess at a URL — and **20 of the worker's 30 fetches returned a hard client
+error with zero bytes retrieved**: `/privacy-policy` missed 11 of 19, `/privacy` 4 of 4, `/blog` 4 of
+7. Not even a 404 page's footer came back. **The rung is not free anywhere the policy's location is
+unknown, and that is everywhere except an Australian row mid-screen.** This is the fourth time in a
+week that a claim of mine, true of the procedure that produced it, was restated as a fact about the
+world — after "the site publishes no address", "Australian sites do not obfuscate" and "Australia is
+finished". **The tell is the same every time: a sentence that names its own scope and a next sentence
+that drops it.**
+
+**2. Rung 2 may be measuring the WEBSITE's age, not the BUSINESS's — a hypothesis worth testing
+rather than a finding, offered at n=3 and with one piece of direct corroboration.** All three dates
+found landed in 2024, which is suspiciously tight for three unrelated clinics. And row 422's policy
+reads **"Effective Date: [Insert Date]"** — an unfilled template placeholder, which is direct
+evidence that these policies are bought compliance packs rather than documents the business wrote.
+**If a policy date tracks when the clinic bought its template, rung 2 is a weak floor BY
+CONSTRUCTION**: it would reliably under-state the age of exactly the old, established clinics the
+must-have is trying to find. **Test: find a clinic independently known to be old — a stated founding
+year or a long review history — and read its policy date. If the policy is years younger than the
+business, demote this rung.** Until then treat a policy date as a floor that may be far too low, and
+never park a row on it.
+
+**3. Rung 1 is structurally broken at one fetch, and the break is in the rung's own wording.** It
+asks for the archive's **oldest** date; one fetch of `/blog` returns the **newest** page. Row 676 is
+the proof — its oldest visible date is May 2026 with everything older behind an "Older Posts" link.
+**So the rung works in a single fetch only on sites whose entire archive fits one page, which are
+precisely the young sites where it pays least.** Stated as a rule: **a blog's first page is a CEILING
+on nothing and a FLOOR only if you can see that there is no pagination.** Check for the pagination
+control before recording an oldest date, and if there is one, either spend the fetch to reach the end
+or record the rung as unreached rather than empty.
+
+**THE METHOD FIX, IF THIS JOB IS REPEATED: stop guessing paths.** One fetch of the homepage for the
+footer's real policy and blog hrefs, then one targeted fetch. That is about **two fetches per row
+rather than 1.5**, and it converts the 67% hard-error rate into near zero. The worker's own verdict is
+the right one: **the rungs were not what failed, the path guessing was** — but even with perfect paths
+the measured clear rate on this cohort would have been low, because the dates that did load were too
+young. **The seam is not 22 cheap recoveries. It is a thin seam that needs better aim.**
+
+**AND THE PAGE-COVERAGE RULE FIRED FOR THE SIXTH TIME IN FOUR NIGHTS, IN ITS SHARPEST FORM YET.** Row
+700's notes recorded two absences — *"the header reads 'EST' with no year"* and *"no review count is
+published"* — and both are false of the clinic: its own page carries **"EST · 2018"**, *"Since 2018"*,
+**"8yrs"** and **"90+ 5-star reviews"**. Both were true of the pages the 28 Oct worker read
+(`/memberships/` and the homepage header). **What makes this the sharpest instance: the row had
+written its own recovery condition — "worth recovering if a founding year ever surfaces" — and the
+founding year was already there, one page over, on the day the condition was written.** A row that
+names what would release it, and is released by the thing it already had, is the whole rule in one
+line.
+
 **A DATED POST ARCHIVE IS A RUNG-ONE ARTIFACT, AND WHAT COUNTS IS ITS OLDEST DATE RATHER THAN ITS
 EXISTENCE — three instances in one batch, 15 Nov 2026.** Eleventh Heaven's journal runs 18 September
 2017 to 2026 and settles a parked row at nine years; The Aesthetic Company's reaches back only to

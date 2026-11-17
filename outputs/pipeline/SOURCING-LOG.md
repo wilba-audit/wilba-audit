@@ -1991,6 +1991,31 @@ sendable B the same night. **Defined as a predicate over the work rather than ov
 failure is must-have 4 and nothing else, and `contact_email` is non-empty), which is the September
 lesson about backlogs that converge and can be audited.
 
+**WORKED 17 NOV 2026, AND THE SEAM IS NOT WHAT I SAID IT WAS. 1 of 21 cleared, and not on either new
+rung.** Row **700 Uesthetics Indy** went C to B on a stated founding year (`EST · 2018`, `8yrs`,
+`90+ 5-star reviews`) found by accident on a page requested as a privacy policy. **Rung 2 (policy
+date): 0 of 21. Rung 1 (oldest post): 0 of 21.** The full measurement and the three reasons are
+written up under must-have 4 in `ICP.md`; the short version is that **"the dating comes free" was
+true of Australian rows mid-screen and I restated it as a general fact**, so outside Australia the
+rung is a guess at a URL and **20 of 30 fetches returned zero bytes**. Plus a hypothesis worth
+testing: all three policy dates found landed in 2024 and one policy still reads *"Effective Date:
+[Insert Date]"*, so **a policy date may track when the clinic bought its template rather than when it
+began trading** — which would make rung 2 a weak floor by construction.
+**A SECOND ROW MOVED, AND IT IS A CORRECTION TO OUR OWN REASONING RATHER THAN NEW EVIDENCE.** Row
+**404 Refine Nurse** C to B: it was parked partly on *"the '13 years' figure is her nursing career,
+not the business"*, but the 5 Nov ladder says in terms that **a practitioner's career length alone
+keeps a row at B**. The row applied a stricter test than the standard it cited. **This is row 802's
+precedent handled correctly for once:** the worker decided it belonged at B, said so, and kept it out
+of its regrade file so as not to corrupt the rate it was measuring — then handed the decision up,
+which is where softening a must-have belongs. Recorded as the weakest B in its market (a solo home
+clinic, so the open question is the list's SIZE, not its existence) so it can be deprioritised rather
+than discovered late.
+**WHAT THE SEAM IS WORTH NOW: thinner than advertised, and it needs better aim rather than more
+fetches.** Nineteen rows remain parked on must-have 4. Repeating the job means **one homepage fetch
+for the footer's real policy and blog hrefs, then one targeted fetch** — about two fetches a row
+instead of 1.5 — which removes the hard-error rate but does not change the fact that the dates which
+did load were too young. **Do not brief this as cheap recoveries again.**
+
 **Two cautions.** **Row 720 Renew MedSpa is the row that established the substance test** — it
 publishes an award run for 2025 and 2026, so its age is *known* and is two to three years, which is
 not enough. It fails on substance, not on evidence, and no new rung will recover it; do not spend a
