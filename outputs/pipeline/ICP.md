@@ -450,6 +450,22 @@ has is worse than no opener at all.
      Australia" — it recovers this. (Cronulla Cosmetic is disqualified anyway, on must-have 2: its
      policy says "to Medicare, insurance companies in relation to claims." The finding stands
      independently of the row.)
+     **CORRECTED AGAIN ON 17 NOV 2026, AND MY EXPLANATION IS THE PART THAT WAS WRONG.** Three more
+     Australian Cloudflare clinics turned up in one night — **Face Fit** (Southport, Gold Coast),
+     **Appearance Clinic Australia** and **SkinMetics** (Melbourne) — taking the count to **four in
+     two nights**, so the claim is reversed rather than merely falsified. But look where Face Fit's
+     token was: **on its CONTACT page** — the obvious page, the page all five earlier sweeps were
+     already reading. **So "the earlier sweeps were looking at the wrong pages" does not survive.**
+     The procedure was fine. **The rate is simply low: roughly 2 in 75 clinics across six Australian
+     metros, against about a third in some US markets.**
+     **THE EPISTEMIC LESSON IS THE DURABLE PART AND IT IS SHARPER THAN THE ONE I DREW: A LOW RATE AND
+     A BLIND SPOT LOOK IDENTICAL AT n=5.** Five sweeps finding no obfuscation is the *expected*
+     outcome of a 3% rate. I read that run of zeroes first as a property of the market, and then,
+     when it broke, as a flaw in our procedure — **two different stories, both of them attempts to
+     explain away a number that was simply small.** Before concluding a market *never* does
+     something, ask what n you would need to see it once at a plausible low rate: at 3%, five sweeps
+     of fifteen clinics is close to a coin-flip. **The right response to a run of zeroes is a
+     confidence interval, not a property.**
    **THE COMMON SHAPE, STATED ONCE because it is this project's most-repeated failure and it now has
    an instance at every scale — one field, one row, one market:** a negative finding is evidence
    about the procedure that produced it, never about the world. The fix is never "look harder"; it is
@@ -1151,6 +1167,21 @@ third-party page, park it on must-have 5.** Clara is parked.
 address looks like. It is *where it was published* and *who receives mail sent to it*. Every
 member of the seven-item look-alike list below is really one of those two questions.
 
+**AN EIGHTH LOOK-ALIKE, 17 NOV 2026, AND IT IS THE BEST ARGUMENT YET FOR THAT GENERAL FORM: A
+MAILBOX ON THE HOSTING PROVIDER'S OWN SERVER HOSTNAME.** Lotus (Brunswick, VIC) publishes an address
+whose domain is a **cPanel server hostname** ending `...supercp.com`. **It passes every item on the
+seven-item list** — it is not a web designer's address, not a vendor's, not a placeholder, not a
+meta-tag-only appearance, not a directory's, and it sits in plain text on the clinic's own page. It
+fails only the general form: **that domain is the hosting company's shared infrastructure, not
+anything the clinic controls, so who receives mail sent there is genuinely unclear.**
+**This is why the general form outranks the list.** The list is seven observed shapes; the shapes
+will keep coming (a cPanel hostname today, something else next month), and each new one passes the
+previous seven by construction. **Ask the two questions — where was it published, and who receives
+mail sent to it — and the list is a worked-examples appendix rather than the test.**
+**It is grep-able, which is the practical part:** `supercp.com`, and more generally a mailbox whose
+domain looks like server infrastructure — `cpanel`, `srv`, `host`, `box`, a digit-suffixed hostname —
+rather than a business. Park such a row on must-have 5 unless a second, controlled address exists.
+
 **A privacy promise about what the clinic SENDS is not a refusal to RECEIVE. Found 4 Nov 2026,
 and it nearly cost the best row in a sweep.** Bradford Skin Clinic prints, on its homepage and its
 policy, "We use what you send here only to contact you about this. **No marketing lists.**" and
@@ -1382,6 +1413,22 @@ practices, a self-described dermatology clinic, aesthetics clinics with no injec
 the evidence ladder or a silent contact page that removed the clinics.** Must-have 4 bound in
 exactly one of the four, at 1 of 15.
 
+**AND A REFINEMENT WORTH MORE THAN THE INSTRUCTION ITSELF, FROM TWO RUNS ON 17 NOV 2026: "WHICH
+MUST-HAVE BINDS" AND "WHICH MUST-HAVE IS COSTING YOU" ARE DIFFERENT QUESTIONS, AND THE SECOND ONE IS
+THE USEFUL ONE.** Both runs that night reported must-have 5 as the binding constraint by first-fail
+count — Melbourne's inner north and west 5 of 20, the Gold Coast 5 of 22 — and **in both runs the
+must-have that actually determined the result was 4**:
+- **On the Gold Coast, must-have 4 capped all nine accepted rows.** Four of the nine pass only at the
+  ladder's career-length rung; only three carry a stated founding year. **Nine grade B rows, no A.**
+- **In Melbourne's north and west, must-have 4 capped all six**, and is the whole reason there is no
+  grade A there either.
+**So must-have 5 stops you REACHING a clinic and must-have 4 stops it being GOOD.** A first-fail
+tally counts the clinics you lost and says nothing about the ceiling on the ones you kept. **Measure
+both: which must-have removes clinics (spend your fetch budget against that one) and which must-have
+caps the grade of the ones that survive (that is what decides whether a run can produce an A at
+all).** A worker that reports "must-have 5 bound" after producing nine B rows and no A has measured
+the less important of the two numbers.
+
 **TWO MORE MARKETS ON 16 NOV 2026, AND THEY TAKE THE TALLY TO SIX MARKETS AND FOUR DIFFERENT
 BINDING MUST-HAVES — SO THE INSTRUCTION TO MEASURE IT IS NOW SETTLED, NOT PROVISIONAL.**
 - **Sydney's northern beaches and Sutherland Shire: must-have 5 bound, 7 of 13.** Only 6 of 13
@@ -1395,7 +1442,24 @@ BINDING MUST-HAVES — SO THE INSTRUCTION TO MEASURE IT IS NOW SETTLED, NOT PROV
   market-specific AND run-specific, and a measurement from last night is not a prediction for
   tonight.** The brief should tell a worker to MEASURE the binding constraint in its first five
   clinics — which this file already says — and should stop naming which one it expects to be.
-**MELBOURNE'S DATING IS BIMODAL, AND THAT IS A FINDING ABOUT THE LADDER RATHER THAN THE MARKET.**
+**~~MELBOURNE'S DATING IS BIMODAL~~ — RETRACTED 17 NOV 2026, THE NIGHT AFTER I WROTE IT, BY A SWEEP
+OF THE OTHER HALF OF THE SAME CITY.** Across 19 businesses in Melbourne's inner north and west the
+distribution is **three-way, not two**: 3 published a review count, 2 a founding year, **4 published
+only a practitioner's career length — the ladder's middle rung, which I had just written off in this
+city** — and 10 published nothing. **The west advertises the practitioner's years where Toorak
+advertises its review count.** So the middle rung does real work here and the ladder does not
+collapse to pass-or-park. **I measured 14 businesses in ONE DISTRICT and wrote it up as a property of
+MELBOURNE** — the same move as "Australian sites do not obfuscate" and "Australia is finished", at
+the scale of a city this time, and the third instance of it in four days. **One district is not a
+city.** What survives is narrower and still worth knowing: inner-east Melbourne's dating was bimodal
+in the fourteen businesses measured there.
+**A result that does hold across both halves: the two new ladder rungs fired ZERO times in those 19
+businesses** — not one site renders a post date, and none of the three policies that exist declares
+itself "current from" anything (two say "last updated", a month and a week old, which bounds
+nothing). **Budget the policy rung at zero in Melbourne.**
+
+**WHAT THE 16 NOV NOTE CLAIMED, KEPT BECAUSE THE MEASUREMENT ITSELF WAS SOUND AND ONLY ITS SCOPE WAS
+WRONG:**
 Across 14 inner-east businesses a clinic either published a review COUNT and cleared must-have 4
 outright, or published nothing datable at all. **No middle case — no copyright ranges, no "since"
 sentences, no dated post archives, in 14 businesses.** Everywhere else the ladder's middle rungs do

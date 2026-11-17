@@ -11,6 +11,117 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
 
+## 17 Nov 2026 — four runs, and six claims of mine retracted in one night
+
+**Rows: 24 appended — 1282-1290 (named leads: 2 A, 2 B, 5 C), 1291-1299 (Gold Coast: 9 B) and
+1300-1305 (Melbourne inner north and west: 6 B).** Plus **two re-grades**, rows 700 and 404, C to B.
+Pipeline **1,305 rows, 881 sendable, 873 ready to approach**.
+
+**THE RUN'S REAL OUTPUT IS NOT THE ROWS. Six things this file asserted turned out to be wrong, and
+five of the six were written by me within the last four days.** They are listed here together
+because the pattern across them is worth more than any one of them.
+
+**1. The two dating rungs I wrote up on 15 Nov: one works, one is nearly worthless — and two workers
+reached OPPOSITE verdicts on the same rung before the disagreement resolved.** Worker one guessed
+`/blog` and got 0 clears from 7 attempts; worker two enumerated the footer hrefs first and got **two
+grade A rows**, both archives sitting behind labels reading "Videos & Articles" and "Resources".
+**The rung was never the variable; the path guessing was.** Meanwhile the policy-date rung fired nine
+times across both runs and was decisive once, and a third run found it fires **zero** times in 19
+Melbourne businesses. A policy date is unreliable in **both** directions: policies get rewritten
+(dates drift toward today — five floors from six weeks to 22 months) and policies are inherited
+boilerplate (La Vie MD's notice declares itself effective **2005, twelve years before the company
+existed**). Corroboration only, never load-bearing.
+
+**2. "The dating comes free on every clinic we screen" was true of AUSTRALIAN rows mid-screen and I
+restated it as a general fact.** Outside Australia nothing has located the policy, so the fetch is a
+guess, and **20 of 30 fetches returned zero bytes.**
+
+**3. "Australian clinic sites do not obfuscate" is reversed — four instances in two nights — AND MY
+EXPLANATION FOR WHY WE MISSED THEM WAS ALSO WRONG.** On 16 Nov I concluded the five earlier sweeps
+had been reading the wrong pages, because Cronulla's token was on its privacy policy. Then **Face
+Fit's token turned up on its CONTACT page** — the obvious page, the one all five sweeps were already
+reading. **The procedure was fine. The rate is simply low: about 2 in 75 clinics across six metros.**
+**A LOW RATE AND A BLIND SPOT LOOK IDENTICAL AT n=5**, and I told two stories to explain away a
+number that was just small. The right response to a run of zeroes is a confidence interval, not a
+property.
+
+**4. "Melbourne's dating is bimodal" — retracted the night after I wrote it, by the other half of the
+same city.** Melbourne's inner north and west gives a **three-way** distribution across 19
+businesses, including **4 that publish only a practitioner's career length — the middle rung I had
+just written off in this city.** The west advertises the practitioner's years where Toorak advertises
+its review count. **I measured 14 businesses in one district and published it as a property of
+Melbourne.**
+
+**5. "Does it print domains?" was the right question and the wrong test — corrected from three
+directions.** A list can print every domain and hold none of our segment
+(`visitwilliamstown.com.au`); a list can print none at the index and all of them at the leaf
+(`mooneeponds3039.com.au`); and a curated list can pass every test and still be **shorter than our
+existing coverage** (Style Magazines' Gold Coast list: 5 names, zero new, from the same publisher
+whose Brisbane list gave 15). **Printing domains predicts what a list COSTS, not what it YIELDS.** I
+turned one happy result into a test, and the test was a description of that one page.
+
+**6. I told a worker the Gold Coast had never been swept. It had been swept twice and we held eleven
+rows there. The same coverage grep ALSO reported Preston, VIC as five-times covered when our coverage
+there is zero** — all five "Preston" rows are Preston, Lancashire and Preston Street, Ottawa.
+**One procedure, two opposite failures, one night.** Causes: my heading pattern was `^# ` and every
+older sweep uses `##`; I piped the result through `tail -25`, truncating the output of a check whose
+only purpose was completeness; and **my own row count printed "10 Gold Coast" in the same breath and
+I wrote "no dedicated sweep on record" anyway.** The third cause is the one no regex fixes.
+**AND THE TWO FAILURES ARE ONE FAILURE, which nobody had said: the name collision that loses a query
+also poisons the audit of the query.** A collision-prone town reads as covered when it is not —
+precisely the direction that stops you working it. **The coverage grep is now a fixed four-part
+command in the brief, and part three prints the country on purpose.**
+
+**WHAT THE TWO METROS TAUGHT, BEYOND THE RETRACTIONS.**
+- **Both runs produced B rows and no A, and both reported must-have 5 as "binding" while must-have 4
+  was what actually decided the result** — it capped all nine Gold Coast rows and all six Melbourne
+  rows. **So "which must-have binds" and "which must-have is COSTING you" are different questions**:
+  must-have 5 stops you reaching a clinic, must-have 4 stops it being good. A first-fail tally counts
+  the clinics you lost and says nothing about the ceiling on the ones you kept. Measure both.
+- **The affluent market published WORSE than inner Brisbane on every line** — mailbox on first page
+  50% vs 68%, review count 9% vs 21%, a policy existing at all only 23%. That kills any
+  wealth-predicts-publication intuition and supports the standing hypothesis that what predicts a
+  published founding year is the clinic's AGE.
+- **A manufacturer's stockist locator is a new and good name source that does NOT pre-filter business
+  type.** `exomide.com.au` gave **24 in-market names across 16 of 19 towns in one fetch** against 4
+  from eight searches — but 2 of 5 stockists fetched fail must-have 1, one being a general practice.
+  **The filter is only as specific as the product**, and a microneedling serum sells to anyone with a
+  treatment room. Hunt for one early, as with a precinct site.
+- **Query denominators, recorded rather than asserted:** town + postcode + "cosmetic injectables" +
+  "nurse" went **5 of 6** on the Gold Coast and **5 of 6** in Melbourne. The one total failure used
+  **"nurse injector"** — an American term that four Australian postcodes could not outweigh. **Use
+  "nurse".** And **"gift vouchers" is not a dead modifier in Australia**: added to the stack it gave
+  the Gold Coast's best query, 6 new names.
+- **My collision predictions were no better than chance.** I warned the Melbourne worker about ten
+  colliding town names; **nine did not fire, including Kensington, which I called the worst**, and
+  **three I never mentioned did** — Brunswick (to Maine *and* Georgia), Thornbury (to Bradford) and
+  Preston. The phenomenon is real; my ability to predict which names it hits is not.
+- **Three new block species:** an **AI-generated ranking page shaped to imitate a curated local list**
+  (`injectables-gc.alwaysmentioned.com.au` — the first of its kind here, and the curation test cannot
+  see it from a search result); **state-health and clinical directories**
+  (`qfinder2.health.qld.gov.au` and four others); and the fourth instance of the block list **leaking
+  on a TLD or subdomain variant** (`artisanclinics.com` against our `.com.au`, `au.seek.com` against
+  our `seek.com.au`), which makes it a property of the list rather than an accident. **Add variants in
+  the same breath as the domain.**
+- **An eighth look-alike address, and the best argument yet for the general form:** a mailbox on the
+  **hosting provider's cPanel server hostname** (`...supercp.com`). It passes all seven items on the
+  look-alike list and fails only the two questions behind them — where was it published, and who
+  receives mail sent there.
+- **An eighth fetch-failure mode, and it is ours rather than the site's: the URL was never real.** A
+  constructed path that 404s is indistinguishable from a broken page, and two clinics sat parked on
+  it while holding a twelve-year founding floor, a clean billing answer and two tokenised mailboxes.
+  **Never guess a legal or archive path; enumerate the footer first.**
+- **The best rows lost were both lost to the policy screen, which keeps earning its fetch:**
+  **Rejuven8 Cosmetix** (the Gold Coast's strongest candidate — since 2010, named owner-doctor, gift
+  certificates — whose policy says "Medicare number" while every marketing page is clean) and
+  **Charlie Ralph Clinic** (RN founder, named prescriber, Zenoti; its policy collects "Medicare and
+  health insurance details"). **Fifth and sixth reproductions of the clean-site/dirty-policy shape.**
+
+**TOWNS CLOSED: Caulfield North** (genuinely thin — its retail weight is in Caulfield proper and
+Elsternwick, both already ours), Williamstown, Ivanhoe, and the Gold Coast towns listed in that
+run's write-up. **COBURG is the one to return to** — zero prior coverage, one own-domain business
+found, robots-blocked, so it is a browser job and it is on that list.
+
 ## 16 Nov 2026 — four parallel runs, two reversals of claims this file had stopped questioning
 
 **Rows: 18 appended — 1264-1270 (Melbourne inner east, second pass: 1 A, 3 B, 3 C), 1271-1275
@@ -2034,6 +2145,45 @@ in the CSV**, which is what you would expect — the CSV is validated on every a
 is not. **The recovery opportunity in the pipeline is the must-have 4 seam above, and it is 22 rows
 rather than hundreds.**
 
+### Added 17 Nov 2026 — what is left, with the spent items struck
+
+**The named-lead list is now mostly worked, which is the point of it.** Struck tonight, with
+outcomes: ~~Jewell Medical Spa~~ (settled C — see above), ~~Ageless MD Solutions~~ **row 1288 grade
+A**, ~~Mindful Med Spa~~ **grade A**, ~~Ahern Aesthetics~~ **row 1284 B**, ~~Alpine Aesthetics~~
+**B**, ~~Ageless Aesthetics Cherry Creek~~ (C, must-have 4), ~~Angell Medical Spa~~ (C, must-have 4,
+and its must-have 2 flag is now **resolved clean** on its HIPAA notice), ~~Cool Blue Image~~ (C,
+must-have 4), ~~La Vie MD~~ (**C on must-have 2** — its founder-owner question resolved in its
+favour, she founded and owns it, but its HIPAA notice says it submits PHI to insurers), ~~Glo
+Aesthetics~~ (on the browser list, ranked), ~~Radiant Medical Aesthetics~~ (settled), ~~Melbourne
+Cosmetic Clinic~~ (confirmed silent over three pages — phone or DM), ~~Caulfield North~~ (closed,
+genuinely thin), ~~Laser Therapeutics~~ and ~~Harcourt Beauty~~ (both handled in row notes).
+
+**WHAT REMAINS, cheapest first:**
+- **NINETEEN PIPELINE ROWS still parked on must-have 4 only**, each already holding a verified
+  address. **But brief it honestly this time: it is not a cheap seam.** The measured clear rate was
+  1 of 21, the method is **one homepage fetch for the footer's real hrefs, then the ARCHIVE first and
+  the policy second** (~2 fetches a row), and the policy rung should be budgeted at zero. Row 720
+  stays excluded by name.
+- **THREE GOLD COAST ONE-FETCH UPGRADES — Filtered Faces, LuxLab, Aura Medi.** All three already
+  publish a readable mailbox and are blocked solely on a dating artifact. These are the single
+  cheapest rows available anywhere in the file right now.
+- **THE BROWSER LIST'S RANKED TWELVE**, which is Jess's to spend, not a worker's. The first eight
+  need nothing but an address. **East Town Salon & MedSpa** (Milwaukee — a ~20-year floor off
+  "Customer since" stamps in its own reviews, its own Booker tenant) and **Face Fit** (Southport — the
+  Gold Coast's only possible grade A) lead it.
+- **TWELVE UNRESOLVED EXOMIDE NAMES** from the Melbourne locator fetch, and **six 18 Oct Fresha names
+  on the Gold Coast** — all without domains, so each costs a **search**, not a fetch. Weight a run's
+  search allowance for them deliberately or drop them.
+- **COBURG, VIC** — zero prior coverage, robots-blocked, on the browser list.
+- **AUSTRALIAN DISTRICTS GENUINELY UNSWEPT** (checked with the fixed four-part grep, not the broken
+  one): **Brisbane south and west, Adelaide, Newcastle, Wollongong.** Sydney has four districts
+  worked, Melbourne both halves, Brisbane one corner, Perth one corner, the Gold Coast now three
+  passes.
+- **THE US NPP SCREEN IS ON PROBATION and the test is self-executing:** read the HIPAA notice on the
+  next several US clinics and **count how many carry the "we submit to your insurance company"
+  sentence.** If it is nearly all of them the sentence is uninformative and the screen dies, and La
+  Vie MD should be re-read. Record the count whenever you read one.
+
 ### Added 16 Nov 2026, second block — named leads out of the four runs
 
 **ORDERED BY COST, CHEAPEST FIRST, because that is the only ordering this list has ever rewarded.**
@@ -2247,15 +2397,17 @@ as "sweep a metro" when two cheaper kinds of work exist.
 
 ## Where the pipeline stands
 
-As of 16 Nov 2026: **1,281 rows, 852 ready to approach** — US 446, AU 199, CA 88, UK 82, NZ 43,
-IE 2. (860 rows are grade A or B and hold a published address; **10 of those have been emailed —
+As of 17 Nov 2026: **1,305 rows, 873 ready to approach** — US 451, AU 214, CA 88, UK 82, NZ 44,
+IE 2. (881 rows are grade A or B and hold a published address; **10 of those have been emailed —
 corrected 17 Nov, I had been repeating 8** — and all ten went out on **15 Oct 2026**, a month ago and
 before v2, which is the whole of the sending done to date. **Nothing has been sent since, and the
 address gate is the reason.** Rows 85-89 UK and 93-98 AU, if anyone needs to see them.) It was 496 rows and 316 ready on 20 Oct, 1,045 and 707
 on 5 Nov, 1,104 and 748 on 8 Nov, 1,159 and 795 on 9 Nov, 1,185 and 800 on 10 Nov, 1,228 and
-817 on 12 Nov, and 1,263 and 837 on 15 Nov. A further
-**176 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
-page-open each.
+817 on 12 Nov, 1,263 and 837 on 15 Nov, and 1,281 and 852 on 16 Nov. A further
+**165 entries** that cleared the ICP on fit are parked in `browser-visit-list.md` for want of one
+page-open each — **and that file now opens with a ranked TWELVE, the first eight of which need
+nothing but the address.** It was an unordered wall of 152 until 17 Nov, which is why nobody had
+ever worked it.
 
 **ALL 852 REMAIN UNSENDABLE ON ONE MISSING INPUT, AND IT IS NOT A SOURCING PROBLEM.** Every cold
 email needs a postal address in its footer, in every market we hold rows in. **Jess has not yet given

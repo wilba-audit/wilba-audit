@@ -188,6 +188,42 @@ which is the same block-in-query / read-when-landed treatment already recorded f
 spending the search budget**, because Australian high-street strips very often have one and it is
 the cheapest list of in-market domains available.
 
+**"DOES IT PRINT DOMAINS?" WAS THE RIGHT QUESTION AND THE WRONG TEST — CORRECTED FROM THREE
+DIRECTIONS ON 17 NOV 2026, THE DAY AFTER I WROTE IT. THE HONEST VERSION: PRINTING DOMAINS PREDICTS
+WHAT A LIST COSTS, NOT WHAT IT YIELDS.**
+1. **A list can print every domain and hold none of your clinics.** `visitwilliamstown.com.au`
+   prints a domain for every trader across two category pages and contains **zero** aesthetics
+   clinics. Meanwhile `mooneeponds3039.com.au` prints **no** domains on its index and gave **five**
+   clinic names. **The directory that printed domains was not the one with the clinics.**
+2. **There is a third answer to the question, not two: no at the index, yes at the leaf.**
+   `mooneeponds3039.com.au` prints no domain on its index or category pages and **does** print one
+   on each individual listing. So "prints domains" is a property of a PAGE, not of a site, and the
+   cost is one extra fetch per name rather than one search per name — in between the two cases I
+   described.
+3. **A list can pass the curation test and still be worthless because it is SHORTER THAN WHAT WE
+   ALREADY HOLD.** Style Magazines' Gold Coast list — the same human-edited publisher whose Brisbane
+   list gave 15 names and 14 domains — gave **5 names and zero new ones**; every one was already in
+   our files. **So the second question is not about domains at all: is this list longer than our
+   existing coverage of this metro?** A curated list is a snapshot of a market's best-known clinics,
+   which is exactly the set a previous sweep already found.
+**THE REPLACEMENT RULE, in the order the questions are worth asking: (a) is it longer than our
+coverage, (b) does it hold our segment at all, (c) does it print domains at the index, the leaf, or
+nowhere — which tells you whether each name costs a fetch or a search.** And the meta-lesson, which
+is the same one this brief keeps recording about itself: **I turned one night's happy result
+(`toorakvillage.com.au`, 8 names with domains in one fetch) into a test, and the test was a
+description of that one page.**
+
+**AND A MANUFACTURER'S OR BRAND'S STOCKIST LOCATOR IS A FOURTH SPECIES, WORTH KNOWING BECAUSE IT WAS
+THE BEST SINGLE FETCH OF A 45-FETCH RUN AND STILL NEEDS GUARDING.** `exomide.com.au`'s stockist list
+returned **24 in-market names across 16 of 19 briefed towns in one fetch**, against 4 own-domain
+clinics from eight searches. **But it does NOT pre-filter business type: of 5 stockists fetched, 2
+fail must-have 1** — one is a **general practice** (Principal GP, four doctors, a Fees &
+Consultation page) and one sells no injectables at all. **The filter is only as specific as the
+product**, and a microneedling serum is sold to anyone with a treatment room. **It prints no domains,
+so it converts search budget**, and it was found on fetch 22 with 2 searches left, which is the wrong
+order — **hunt for a locator early, the way you hunt for a precinct site.** Do NOT block
+`exomide.com.au`.
+
 **A NEW SPECIES FOR THE BLOCK LIST, AND THERE WILL BE ONE PER STRIP: A HIGH-STREET PRECINCT'S OWN
 PROMOTIONAL SITE WITH A BUSINESS DIRECTORY.** `oxfordstreetbulimba.com.au` took three of ten slots
 on one query. Expect `jamesstreetnewstead`-shaped equivalents and block them by name as you meet
@@ -331,6 +367,50 @@ clinics we had already ruled out.
 is the same failure as the other three: a claim inherited and passed on rather than checked. **The
 fix is mechanical and cheap, so there is no excuse for skipping it: before naming a market in a
 brief, grep the near-misses file for the metro and the two or three biggest town names in it.**
+
+**THAT FIX IS NOT SUFFICIENT AND I PROVED IT TWICE IN ONE NIGHT, IN OPPOSITE DIRECTIONS — 17 NOV
+2026. THE COVERAGE GREP IS NOW A FIXED COMMAND, BELOW, BECAUSE WRITING IT FRESH EACH TIME IS WHERE
+BOTH FAILURES CAME FROM.**
+
+**FALSE NEGATIVE — I told a worker the Gold Coast "has never been swept". It had been swept twice
+and we held eleven rows there.** A 24 Sep sweep names it in its heading, the 18 Oct Queensland
+section carries a ten-clinic Gold Coast block list, and rows 52, 101, 102, 103, 324, 332-A, 333,
+334, 336, 337 and 342 are Gold Coast rows. Three compounding causes, and the third is the one that
+matters:
+1. **My heading pattern was `^# ` — one hash.** Every older sweep heading uses `##`. `grep -c "^# .*Gold Coast"` returns **0**; the sweep is on line 39 as `## Found 24 Sep 2026 (Australia sweep — Sydney, Melbourne, Brisbane, Gold Coast, Perth)`.
+2. **I piped the result through `tail -25`** — I truncated the output of the very check whose only purpose was completeness.
+3. **My own row-count query printed "10 Gold Coast" in the same breath and I wrote "no dedicated sweep on record" anyway.** The contradicting evidence was on my screen and I narrated over it. No regex fixes that.
+
+**FALSE POSITIVE — the same grep reported Preston, VIC as five-times covered when our coverage there
+is zero.** All five "Preston" pipeline rows are foreign: Preston, Lancashire and Preston Street,
+Ottawa. **So a substring match on a town name counts another country's clinics as coverage.**
+
+**AND THE TWO FAILURES ARE ONE FAILURE: THE NAME COLLISION THAT LOSES A QUERY ALSO POISONS THE AUDIT
+OF THE QUERY.** The sixth thin-town reason says a town whose name belongs to a bigger place elsewhere
+cannot be searched without a postcode. It follows — and nobody had said it — that **the same town
+cannot be coverage-checked by name either.** A collision-prone town will read as covered when it is
+not, which is exactly the direction that stops you working it.
+
+**THE COMMAND. Run all four parts; do not rewrite them from memory.**
+```sh
+cd /home/claude/wilba-audit
+M='Gold Coast'; S='QLD'          # the metro, and its state or region abbreviation
+# 1. sweep headings, ANY heading level, metro AND state
+grep -nE "^#+ .*($M|$S)" outputs/pipeline/near-misses.md
+# 2. any mention at all, counted, no tail/head
+grep -ciE "$M" outputs/pipeline/near-misses.md reference/clinic-sourcing-brief.md outputs/pipeline/SOURCING-LOG.md
+# 3. rows we already hold, BY CITY FIELD, printed so the country is visible
+python3 -c "
+import csv; csv.field_size_limit(10**7)
+rs=[r for r in csv.DictReader(open('outputs/pipeline/clinic-pipeline.csv'))
+    if '$M'.lower() in r['city'].lower()]
+print(len(rs),'rows'); [print(' ',r['id'],r['country'],r['city'][:44],r['clinic_name'][:28]) for r in rs]"
+# 4. per town, and READ THE COUNTRY COLUMN - a bare count lies on a collision-prone name
+```
+**Part 3 prints the country on purpose.** A count alone produced both of this night's errors: "10"
+read as *not swept*, and "5" read as *swept*. **A coverage number you have not looked inside is not
+evidence.** And a non-zero row count is prior coverage until you have read the rows and found
+otherwise — not a curiosity to explain away, which is what I did.
 
 **AND THE SAME CHECK, DONE ON THE PIPELINE, STILL UNDERCOUNTED BY HALF — 11 NOV 2026.** The
 coastal Orange County brief was written only after grepping, and it did state prior coverage
@@ -838,6 +918,34 @@ because the standard may widen again and re-finding a clinic costs more than kee
    clinic's own "Top 10 Best Skin Clinics in Melbourne" SEO listicle, which is **not** the
    `perthisok.com` / `stylemagazines.com.au` species: no human editor chose that list, a competitor
    wrote it to rank.
+   **Blocked from 17 Nov 2026, after the Gold Coast and Melbourne's inner north and west.** Resolved
+   disqualifications, blocked by name so no future run re-decides them: **`rejuven8cosmetix.com.au`**
+   (must-have 2 — "Medicare number" in its privacy policy and **invisible on every marketing page**;
+   it was that run's strongest candidate on every other must-have, with a since-2010 date, a named
+   owner-doctor and gift certificates, and an FRACGP principal), **`oolalacosmetics.com.au`**
+   (skin-cancer detection and treatment, mole removal and "Varicose Veins Treatment" as named
+   services), **`cosmetique.au`** (23 clinics), **`charlieralph.com.au`** (must-have 2 — its policy
+   collects "Medicare and health insurance details" and processes "insurance claims"; it was the best
+   row the Melbourne run lost, with an RN founder, a named prescriber and Zenoti) and
+   **`theclinicaltona.com.au`**. Suburb page sets: **`drsaber.com.au`**, which took **5 of 10 slots**
+   on one query. Plus Australian GP and medical-centre domains from both runs.
+   **A NEW BLOCK SPECIES, AND IT IS THE FIRST OF ITS KIND IN THIS FILE: AN AI-GENERATED RANKING PAGE
+   SHAPED TO IMITATE THE GOOD SPECIES.** `injectables-gc.alwaysmentioned.com.au` presents as exactly
+   the human-curated local list this brief tells you to fetch early. **It is machine-generated, and
+   the curation test above cannot see the difference from the search result alone.** Expect more of
+   these, because the shape is cheap to produce and ranks well. **The tell is the domain**: a
+   subdomain of a service-sounding parent (`alwaysmentioned.com.au`) rather than a publication, a
+   council, a trader association or a precinct. **Block the parent, not just the subdomain.**
+   **AND A GOVERNMENT / CLINICAL DIRECTORY SPECIES:** `qfinder2.health.qld.gov.au` plus four other
+   state-health and clinical directories. These rank on health queries, hold only GPs and public
+   services, and are never our segment.
+   **THE BLOCK LIST LEAKS ON TLD AND SUBDOMAIN VARIANTS, AND THIS IS THE FOURTH INSTANCE — SO IT IS A
+   PROPERTY OF THE LIST, NOT AN ACCIDENT.** On 17 Nov two blocked domains got through as variants:
+   **`artisanclinics.com`** (we carry `.com.au`) and **`au.seek.com`** (we carry `seek.com.au`).
+   Earlier instances: **`yelp.com.au`** not covered by `yelp.com`, and `wheree.com`. **So when you add
+   a domain, add its variants in the same breath: the other TLD (`.com` / `.com.au` / `.au`), the
+   country subdomain (`au.`, `uk.`), and `www.`-stripped forms.** A block list of exact strings will
+   keep leaking at exactly the rate that brands keep owning more than one name.
    **Blocked from 16 Nov 2026, after Melbourne's inner east (second pass) and Sydney's northern
    beaches / Sutherland Shire.** Pharmacies, which is the Australian noise list's **second** owned
    word — "clinic" took four of ten slots for chemists on one Melbourne query: `bhpharmacy.com.au`,
