@@ -366,6 +366,31 @@ ceiling itself clears the substance test**, and it *refutes* must-have 4 outrigh
 falls inside row 720's failing band of two to three years. Say which direction the date you found
 bounds in, because the ladder as written reads as though every date were a floor.
 
+**AND ITS SIBLING, WHICH IS THE SAME QUESTION ASKED OF THE SUBJECT RATHER THAN THE DIRECTION: WHOSE
+BUSINESS IS THIS NUMBER ABOUT? Three independent instances in one night, 17 Nov 2026, across three
+different must-haves — which is what promotes it from a coincidence to a rule.**
+- **Must-have 4.** **Jewell Medical Spa**'s only trading-life sentence is *"establish one of the top
+  medical spas in Naples in just three short years"* — **about the owner's FIRST spa**, which he
+  left; this clinic is *"his second medical spa"*. Three nights carried as the best name in the file,
+  settled as a C.
+- **Must-have 3.** **Ahern Aesthetics** is one site in Park City, and its page says its founder
+  *"grew the franchise to over 10 locations"* — **her CV, not this clinic's footprint.** Our own
+  site-count audit flagged the row on that sentence; the row had already flagged it as a trap for
+  whoever writes the email, and was right.
+- **Neither must-have, but the same shape: our own records.** A grep of the pipeline for "Ahern" and
+  "Alpine" returned one hit each, and both hits were **inside another row's prose** — a note naming
+  them as leads to work — which would have read as "already held" and skipped two grade B rows.
+**So the ladder's rungs all need a subject as well as a direction.** An owner's previous venture, an
+owner's career length, an owner's residency, a franchise they used to run, and a sibling brand all
+produce confident, specific, verifiable numbers that are **true of something other than the business
+we would be writing to**. The clinic is not lying; we are reading a CV as a balance sheet.
+**The practical test is one question asked of every figure before it is used: is this number about
+THIS premises, THIS trading entity, THIS patient list?** A founding year that belongs to a prior
+business bounds nothing. A site count that belongs to a former employer disqualifies nobody. And the
+expensive direction is not the one that over-states a clinic — it is the one that **writes to a
+stranger's achievements**, because an opener congratulating an owner on ten locations she no longer
+has is worse than no opener at all.
+
 5. **A published email address, read off their own page.** Never constructed, never
    inferred. Record the URL and the date it was read. A Cloudflare-obfuscated address that
    renders as `[email protected]` counts as not seen — **that has not changed and will not.**

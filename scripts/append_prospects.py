@@ -367,14 +367,39 @@ def main():
         print('WARNING: could not regenerate DO-NOT-SEND.txt (%s)' % exc)
 
     # A site count the row itself admits to, above the one-to-four must-have.
+    #
+    # 17 Nov 2026: this now PRINTS THE SENTENCE IT MATCHED, and the reason is a false positive it
+    # produced the same day. Row 1284 (Ahern Aesthetics) is one site in Park City, and the match
+    # was on its founder's CV - "grew the franchise to over 10 locations" - which the row had
+    # flagged itself, in terms, as a trap for whoever writes the email. The id alone sent me to
+    # open the row and read the field; the sentence would have answered it in the audit output.
+    #
+    # The regex is deliberately NOT narrowed. It exists to catch a real chain and it should fail
+    # safe, which means over-flagging; what was wrong was that a flag cost a lookup to interpret.
+    # A crude check whose evidence is visible beats a clever check whose verdict you must trust -
+    # the same principle as the QUESTION RESOLVED marker above.
+    #
+    # And the false positive is an instance of something worth naming, because three independent
+    # cases turned up in one night: A NUMBER ON A CLINIC'S PAGE MAY BELONG TO A DIFFERENT BUSINESS
+    # THAN THE ONE YOU ARE GRADING. Jewell Medical Spa's only trading-life sentence is about the
+    # owner's PREVIOUS spa; Ahern's site count is its founder's former franchise; and a
+    # grep-before-fetch hit on "Ahern" landed inside another row's prose rather than on a row.
+    # Owner CVs, prior ventures and franchise histories all generate confident figures - site
+    # counts, founding years, career lengths - about the wrong entity. Always ask whose business
+    # the number is about.
     chain = re.compile(r'\b(\d+)\s*(?:sites|locations|clinics)\b', re.I)
     many = []
     for r in sendable:
         blob = ' '.join([r['city'], r['scale_signals'], r['notes']])
-        if any(int(m.group(1)) >= 5 for m in chain.finditer(blob)):
-            many.append(r['id'])
-    print('sendable rows admitting to five or more sites: %d%s'
-          % (len(many), (' ' + str(many)) if many else ''))
+        for m in chain.finditer(blob):
+            if int(m.group(1)) >= 5:
+                lo = max(0, m.start() - 90)
+                snippet = ' '.join(blob[lo:m.end() + 60].split())
+                many.append((r['id'], snippet))
+                break
+    print('sendable rows admitting to five or more sites: %d' % len(many))
+    for rid, snippet in many:
+        print('    %s: ...%s...' % (rid, snippet))
 
     # Provenance is the guarantee the whole list rests on, so check it over the whole
     # file: the page may be named in email_source or in notes, but it must be somewhere.
