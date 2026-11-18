@@ -575,10 +575,37 @@ def main():
                           r'(?:entirely\s+|completely\s+|wholly\s+)?'
                           r'(?:NOT VERIFIED|not verified|unverified|not established|inferred)',
                           re.I)
-    ladder = re.compile(r'\b\d{2,4}\s*\+?\s*(?:google\s*)?reviews?\b|review count|based on \d+ review'
-                        r'|founded (?:in )?(?:19|20)\d\d|established (?:in )?(?:19|20)\d\d'
-                        r'|since (?:19|20)\d\d|opened (?:in )?(?:19|20)\d\d'
-                        r'|(?:19|20)\d\d\s*[-–]\s*20\d\d', re.I)
+    # THE FIRST VERSION OF THIS LADDER PATTERN WAS WRONG IN THREE WAYS AND I SHIPPED IT ABOUT AN
+    # HOUR AFTER WRITING THE LESSON ABOUT TWO OF THEM INTO THE BRIEF. Caught on its first live run,
+    # on tonight's two Adelaide grade-A rows, both of which it "passed" on the phrase "No review
+    # count" - the exact negation-reading defect that broke DEFERS on 16 Nov. The rows were fine;
+    # the audit got the right answer for the wrong reason, which is the worst outcome available,
+    # because an audit that passes a row on a negated phrase is worse than no audit at all.
+    #   1. IT READ NEGATION. "No review count is published" matched "review count".
+    #   2. IT MISSED A STATED FOUNDING YEAR WITH WORDS IN THE MIDDLE: "Established in Adelaide in
+    #      2018" - the city sits between "in" and the year, so `established (?:in )?\d{4}` fails on
+    #      the plainest rung-one artifact there is. The same literal-gap mistake as the DEFERS
+    #      space bug, two hours apart.
+    #   3. IT ASSUMED THE COPYRIGHT GLYPH. Workers write "(c) 2018" as often as the symbol.
+    # The negated forms are now STRIPPED BEFORE TESTING, the same shape as NEGATED_DEFERRAL above.
+    # That is three scrub-before-test pairs in this file now, which is the fourth instance this
+    # week of the same disease; if a fifth appears, factor them into one helper rather than writing
+    # a fourth by hand. The lesson is not "be careful with regexes" - I was careful, and had just
+    # written the warning - it is that a pattern tested only on text you expect to MATCH is untested.
+    # Test every screen against text that must NOT match.
+    negated_ladder = re.compile(
+        r'(?:no|not|without|never|nor|lacks?|lacking|zero|absent)\s+'
+        r'(?:a\s+|any\s+|the\s+|its\s+)?(?:published\s+|stated\s+|total\s+|numeric\s+)?'
+        r'(?:review count|reviews?|founding year|founding date|copyright (?:year|range)?|'
+        r'"since" statement|since statement|dated artifact|award years?)', re.I)
+    # The quote-mark gap is deliberate: a worker quoting a clinic's own badge writes
+    # "Over 280+' Google reviews", and the stray apostrophe broke the first version of this branch.
+    ladder = re.compile(r'\b\d{2,4}\s*\+?[\'"‘’]?\s*(?:google\s*|published\s*|total\s*)?reviews?\b'
+                        r'|review count|based on \d+ review'
+                        r'|(?:founded|established|opened|trading|operating)\b[^.;|]{0,40}?\b(?:19|20)\d\d'
+                        r'|since (?:19|20)\d\d'
+                        r'|(?:19|20)\d\d\s*[-–]\s*20\d\d'
+                        r'|(?:©|\(c\)|copyright)\s*(?:19|20)\d\d', re.I)
     weak_a = []
     for r in after:
         if (r.get('icp_fit') or '').strip().lower() != 'a':
@@ -589,7 +616,7 @@ def main():
         m = inferred.search(notes)
         if not m:
             continue
-        rung = ladder.search(notes)
+        rung = ladder.search(negated_ladder.sub(' ', notes))
         lo = max(0, m.start() - 70)
         weak_a.append((r['id'], bool(rung),
                        ' '.join(notes[lo:m.end() + 90].split())))

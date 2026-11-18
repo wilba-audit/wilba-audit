@@ -4,12 +4,129 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
+**As of 18 Nov 2026: 1,343 rows, 903 ready to approach** — US 451, AU 244, CA 88, UK 82, NZ 44, IE 2.
+**166 entries on the browser-visit list**, whose top twelve are ranked and each one browser-minute from
+a sendable row. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
+since — because every market requires WILBA's postal address in the footer and we do not have it.
+**Sourcing has not been the constraint for a fortnight.**
+
 **Why it is in the repo.** This was kept in the session's team-memory directory under `/tmp`
 until 20 Oct 2026, when that directory was wiped along with the scratchpad, losing four days
 of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files`, and this file is mirrored to
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
+
+## 18 Nov 2026 — 38 rows, a new government register, and a check of mine that was reporting zero
+
+**As of 18 Nov 2026: 1,343 rows, 911 sendable, 903 ready to approach** — US 451, **AU 244** (up from
+214), CA 88, UK 82, NZ 44, IE 2. Runway **180.6 days** at today's cap. Rows appended tonight:
+**1306-1343 (5 A, 25 B, 8 C)**, plus **row 423 settled** and **Harrogate Aesthetics recovered** to the
+browser list. Four Australian jobs: Brisbane south/west (7), Adelaide east and the Hills (12),
+Newcastle/Hunter + Wollongong/Illawarra (6), and 21 named leads (11). All four workers finished
+without being cut off.
+
+**THE RUN'S BEST FIND IS A GOVERNMENT WEBSITE WE HAD NEVER USED.** `abr.business.gov.au/ABN/View?id=`
+— the Australian Business Register. One fetch returns the legal entity, **"Active from <date>"**, the
+GST date, the main business location **by postcode**, and **every registered trading name with its own
+date**. It is to Australia what the Companies House search is to Britain, Australia is our first metro
+priority, and the brief had nothing on it. It is **immune to name collisions, because you look up a
+number**, and its date is a floor that nothing drifts — unlike a privacy policy's. It upgraded one row
+B to A on the spot and settled a contradiction that had sat in row 423 since 24 September. **The catch
+is that only 2 of 15 clinics publish an ABN**, so it is cheap and rare: check every Australian footer,
+never spend searches hunting for one. Full write-up in the brief.
+
+**AND THE RUN'S REAL LESSON IS ABOUT MY OWN CODE, TWICE IN ONE NIGHT, FROM THE SAME DISEASE.**
+
+**1. A validator check of mine was reporting 0 where the true figure was 57.** The deferral predicate
+— the one that rejects a sendable row whose notes hand a qualification decision to a person who will
+never see it — reported **zero deferrals across 1,305 rows**. A plain-language audit of the same file
+found **57 of 881 sendable rows** asking a human to check something before a send. Three independent
+defects in one pattern: a **literal-space off-by-one** that made the bare form "check before sending"
+unmatchable by the branch written for it; a **verb set missing the file's single commonest phrasing**
+("EYEBALL THE REVIEW HISTORY BEFORE SENDING", about 15 of the 57), plus *read*, *resolve* and
+*sanity-check*; and a **trailing-phrase set** missing "before a send", "before any send" and the whole
+"do not send … without X" shape. Rebuilt as a verb set and a phrase set crossed, so adding a word is
+one edit and no branch can drift from its neighbours. **It caught two real deferrals on its first live
+run** (SWN Clinic and Skin Rejuvenation Clinic) and both were resolved rather than parked — the second
+by spending one fetch, since all four workers had finished and the budget was free.
+
+**2. Then I shipped the same negation bug again, within the hour, in the new audit I wrote because of
+the first one.** The grade-A ladder audit "passed" tonight's two Adelaide grade-A rows on the phrase
+**"No review count"** — crediting rows with the exact artifact their notes say they lack. The rows were
+genuinely clean, which made it worse: **the audit got the right answer for the wrong reason.** It also
+missed *"Established in Adelaide in 2018"* (the city sits between "in" and the year — the same literal-gap
+mistake as the space bug, two hours apart) and assumed the `©` glyph over `(c)`. Re-measured with it
+fixed, the finding is **25 rows, not 23, and row 894 — which I had published as a "known false positive"
+— is not on the list at all**, because the fixed pattern reads its "Founded Feb 2021" correctly. **Both
+of my errors had cancelled.**
+
+**The lesson is not "be careful with regexes". I was careful, and I had written the warning into the
+brief that same evening. It is that a screen tested only against text you expect to MATCH is untested.**
+The ladder pattern now ships with 18 controls, half of which must *not* match.
+
+**THREE FILING FINDINGS, WHICH ARE THE SAME FINDING IN THREE HABITATS.**
+
+- **`near-misses.md` is for clinics email cannot reach; the pipeline at C is for clinics we can reach
+  that fail a must-have — and five fully-researched clinics with verified mailboxes were in the wrong
+  file.** DC Aesthetics' own write-up says verbatim *"Grade C … parked and recoverable, not dropped"*
+  and it had never been appended. **Filing is chosen by reachability, the grade by the must-haves, and
+  they are two independent questions.** Two recovered tonight as rows 1306-1307; three went to a worker
+  and all three came back as **Bs**.
+- **A re-grade pass after a rule change has to read BOTH files.** The 4 Nov vein narrowing had four
+  named casualties. **Three were rescued within days — because they were pipeline rows.** The fourth,
+  **Harrogate Aesthetics**, sat abandoned for a fortnight under an entry telling every reader to *"stop
+  spending anything on this clinic"*, purely because its Cloudflare-hidden address made it a near-miss
+  instead of a row. This file had noted the mistake **three separate times in later sections** and never
+  once gone back to the entry where the decision lived. **A retraction written where the lesson was
+  learned changes no decision.**
+- **And the obvious audit for the first finding does not work**, which is worth as much as the finding.
+  Grepping `near-misses.md` for addresses returned 100 blocks and almost all were noise — **because the
+  file's whole job is to record the addresses we refused**: Cloudflare placeholders quoted in order to be
+  declined, vendor mailboxes already on the look-alike list, `mail@example.com` template leftovers. One
+  clinic was flagged on an address its own entry refuses in bold. **Audit the verdict, not the artifact.**
+
+**A HONEST LEDGER OF TONIGHT'S FOUR SCANS, because two of them were mostly noise and saying so is the
+point.** Real: the mis-filing (5 clinics), the deferral backlog (57 + 12), the grade-A ladder gap (25).
+Noise: the address grep (100 hits, ~95 structural noise) and the "notes say C but the grade is B" scan
+(30 hits, **29 of which were properly documented re-grade history** and exactly one — row 423 — a genuine
+unreconciled disagreement, now settled). A scan that is 97% history is not a finding.
+
+**WHAT THE FOUR MARKETS TAUGHT, in one line each — all four contradicted something this file asserts.**
+
+- **Brisbane south/west: must-have 4 binds here (7 of 27 sole failures), where must-have 5 binds in the
+  inner ring four nights earlier. Same city, two rings, two constraints** — and the middle ring publishes
+  *better* (67% mailbox on first page, the best of six markets). "Which must-have binds" is not even a
+  property of a city. It also found the **third inverted-tenancy species**: a clinic booking through its
+  **host general practices' own** `automedsystems.com.au` paths. Three clinics in host rooms, two passed,
+  one failed, purely on whose tenant holds the diary.
+- **Adelaide east: my 17 Nov postcode remedy FAILED — and the failure reconciles with Brisbane's success.**
+  A postcode rescues **one** contested name; it cannot disambiguate four at once, and Adelaide's east is
+  almost entirely British place names. **Review counts: 0 of 20 clinics.** And a **new use for the policy
+  fetch** — ACLC's policy names *"Adelaide Skin cancer Centre"* as a covered entity while its nav is pure
+  aesthetics, so the policy revealed the **corporate group**, not a billing word.
+- **Newcastle/Illawarra: the policy screen saved two sends**, one of them (Thrive Skin Clinic) grade A on
+  every other leg until its policy said *"to claim Medicare rebates"*. **Fetches were the constraint, not
+  searches** (63 of 70 against 22 of 45), which inverts the standing budget advice for market sweeps. And
+  the Illawarra publishes mailboxes *more* readily than Newcastle (64% vs 45%) — it is not reticent, it
+  simply has fewer injectables clinics.
+- **Named leads: all three Gold Coast one-fetch upgrades cleared**, each on an About or Team page the
+  17 Nov pass never opened — **the seventh instance of "an absent finding is a claim about the pages you
+  read"**, and one of them had spent a second fetch specifically looking. **9 of 12 lost Melbourne domains
+  resolved**, four of the misses being a wrong TLD or a hyphen, and **"Skin Bottega NOT FOUND" had been
+  recorded after guessing the correct domain** — the inverse of the eighth fetch-failure mode: a real URL
+  written off as never-real. **Ruling delivered on the booking-tenant question: a tenant's review count is
+  not a rung** (see `ICP.md`).
+
+**Measured, for the method: enumerating header and footer hrefs returns 3 zero-byte fetches in 48, none
+of them a guessed path.** The path-guessing worker that produced the rule had 20 of 30 return zero bytes
+and recovered 1 row from 21. That argument is over.
+
+**WHAT HAS NOT MOVED, AND IT IS STILL THE ONLY THING THAT MATTERS COMMERCIALLY.** 903 rows are ready to
+approach. **Ten have ever been emailed, all on 15 Oct 2026.** Every cold email in every one of our markets
+needs a working unsubscribe and **WILBA's postal address**, and that address does not exist anywhere in
+this workspace. It has been asked of Jess on 15, 16, 17 and 18 Nov. Sourcing is not the constraint and has
+not been for a fortnight.
 
 ## 17 Nov 2026 — four runs, and six claims of mine retracted in one night
 
@@ -1802,6 +1919,81 @@ Grep that first, and only then read the near-misses write-up for the texture.
 
 Cost today: one worker briefed with a false premise, and two fetches spent re-finding rows we
 already had. Cheap, and only because the duplicate guard exists.
+
+## Where to go next — refreshed 18 Nov 2026 (read this block before the 9 Nov one below)
+
+**Ordered by cost, cheapest first. Everything above the line is named work with no searching.**
+
+**1. OURS TO DO, NO BROWSER AND NO SEARCH — two lookups on one clinic.** **Harrogate Aesthetics**
+(12 Princes Square, Harrogate HG1 1LX): Companies House on **`06184603`** (a 2007-series number —
+settles **must-have 8 and must-have 4 together** and would make it the longest trading history in its
+sweep; confirm the registered name matches, because one read of the footer showed two numbers and the
+other showed one, the second being the placeholder `12345678`), then fetch the **About page** for
+**Anthea Whiteley, Aesthetic Nurse Practitioner RGN, Director**, which is currently a search-result
+claim and not a reading. Do both before spending Jess's browser minute. Full note on the browser list.
+
+**2. THE 25 GRADE-A ROWS THAT NAME NO RUNG OF THE LADDER** (`ICP.md`, 18 Nov). **Work them by sweep,
+not by row** — 985-989 are five consecutive Utah rows and 861-863 three Nevada ones, so this is
+sweep-level habit and re-reading a sweep together is far cheaper. These sit at the **front** of the
+send queue (`batch` takes A before B) holding the weakest age evidence in the file. For each: name the
+rung it actually has, or move it to B. Ids: **348, 351, 408, 498, 500, 512, 535, 540, 548, 558, 563,
+567, 690, 793, 861, 862, 863, 886, 887, 897, 985, 986, 987, 988, 989.**
+
+**3. THE 57 SENDABLE ROWS THAT DEFER A DECISION** (printed by `append_prospects.py` on every run).
+Most say *"the oldest Google review needs eyeballing before sending"*, which is must-have 4 unverified
+on a row already in the queue — so this overlaps job 2 and should be worked with it. **Do not treat the
+count as 57 problems**: read them, and expect a good share to resolve by naming the proxy already in
+the notes. 12 parked rows carry the same shape.
+
+**4. SPEND THE ABN WHEREVER IT IS PUBLISHED.** New tool as of tonight (see the brief). Any Australian
+row parked on must-have 4, or carrying a mailbox on a domain that is not its website's, is a one-fetch
+decision **if its footer publishes an ABN**. Only about 2 in 15 do, so this is a check to run while
+reading rather than a backlog to work.
+
+**5. NAMED LEADS HANDED OVER TONIGHT, each one or two fetches:**
+- **Curate Aesthetic Clinic** (Graceville, Brisbane) — *"two fetches from a decision"*, per its worker.
+- **Angel Aesthetics** (`angelaestheticsclinic.com.au`, Brisbane + Gold Coast + Perth, 3 sites) —
+  Sylvia Crouch **Nurse Practitioner**, *"Founded by Nurse Practitioner Sylvia Crouch in 2018"*, ~16
+  RNs, a "Join Halo" app scheme, gift cards, Pty Ltd. **Fails must-have 5 as it stands: the footer's
+  only mailto is `email@domain.com`, a placeholder.** Surfaced out of market on an Illawarra query;
+  recorded so a future Brisbane or Perth pass does not re-source it from scratch.
+- **`gorjessaesthetics.com.au`** (`/about` client error on a path from a live search result) and
+  **`faceclinic.au`** (`/about-us` robots_disallowed) — carried forward **unscreened, not failed**;
+  location never established for either.
+- **Elevate Aesthetics Illawarra** — surfaced twice, only ever as `elevateaestheticsillawarra.gettimely.com`,
+  a bare Timely subdomain with no own domain found. Unscreened.
+- **'Cosmetic Injectables and Skin', Corrimal** — very probably a **third registered trading name of
+  row 423's company** (MALEX FACIAL AESTHETICS PTY LTD, registered 28 May 2020), not an independent
+  clinic. **Check the ABN before sourcing it as a row.**
+
+**6. PHONE OR DM, NOT A BROWSER** (a browser recovers nothing from a site that publishes nothing):
+**Smooth Profile Aesthetics** (Woolloongabba) — passes must-haves 1 to 4 including a **stated 2020
+founding and a clean policy**, and publishes no address across three pages. The best clinic left behind
+in Brisbane's south and west. Also **Mimi Lane Cosmetic** and **Stevie J. Aesthetics** (Gold Coast),
+which have **no website at all** — Fresha presences only.
+
+**7. NEW BROWSER-LIST ENTRIES from tonight** (robots_disallowed, so a person's browser opens them
+normally): **You Do You Cosmetic Clinic, Sherwood** (Brisbane) and two others from that sweep;
+**New Leaf Cosmetic Clinic**, Nelson Bay — refused the fetch entirely, but search titles give two free
+facts that make the visit cheap: a `/index.php/treatments/cosmetic-injectables` page (so must-have 1 is
+very likely to pass) and a **Port Stephens Examiner** story at `story/6792073`, a story-ID range dating
+to 2020, which is a dated third-party corroborator for must-have 4.
+
+**8. AUSTRALIAN GROUND STILL GENUINELY UNSWEPT.** Checked with the fixed four-part coverage grep, and
+**read the country column on every hit** — tonight the Illawarra turned out to hold **three** prior
+mentions where my grep of "Wollongong" found two, because the third is filed under **Minnamurra**
+(`near-misses.md:1594`). **A regional market's entries are filed under town names, so grep the towns,
+not the metro.** Open: **Adelaide's north-east (Modbury, Golden Grove, Tea Tree Gully) and coastal west
+(Henley Beach, Grange, West Lakes, Semaphore)** — briefed tonight and not reached; **Brisbane's far
+north** beyond North Lakes; **Geelong**; **Canberra** beyond the 18 Oct pass; **Darwin**;
+**Cairns/Townsville**; **Hobart** beyond the named leads already spent.
+
+**9. THE US HIPAA NOTICE PROBATION DID NOT ADVANCE AND COULD NOT HAVE.** The screen (does the NPP say
+the clinic SUBMITS to a payer, or only that a patient MAY RESTRICT a disclosure when self-paying?) needs
+US clinics, and tonight was Australia-only on the standing prompt's metro order. **The test is still
+open and still cheap: read the NPP on the next several US clinics and COUNT how many carry the
+submission sentence.** If it is nearly all of them the sentence is uninformative, the screen dies, and
+La Vie MD should be re-read rather than inherited at C. Record the count whenever you read one.
 
 ## Where to go next — standing list, refreshed 9 Nov 2026
 

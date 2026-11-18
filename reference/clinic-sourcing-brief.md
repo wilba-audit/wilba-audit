@@ -1684,6 +1684,125 @@ party who can answer, while "eyeball the review history" is addressed to us and 
 — but it is labelled in the code as untested against the corpus, so nobody later mistakes it for a
 path that has ever run.
 
+## The postcode remedy, reconciled — and it holds for ONE name, not for a list. 18 Nov 2026
+
+**Two workers reported opposite verdicts on the postcode remedy on the same night, and the
+reconciliation is worth more than either report.**
+
+On 17 Nov this file recorded a sixth reason a town comes up thin — **the town's name loses the
+query** — and prescribed adding the postcode, on the reasoning that a postcode is "a token no link
+equity can outrank". That was measured on **one** name plus one postcode.
+
+- **Adelaide says it FAILED.** `"Kensington … SA 5068"` lost **10 of 10** result slots to Kensington,
+  London; Bridgewater and Littlehampton went to Manchester and West Sussex. Adelaide's eastern
+  suburbs are almost **entirely** British place names, so the worker OR-ed four of them into one
+  query with one postcode — and the postcode could not hold four contested names at once.
+- **Brisbane says USE IT.** `"Cleveland Road"` lost **4 of 10** slots to the Cleveland Clinic, Ohio.
+  Old Cleveland Road is the southside's main spine and cannot be queried by name; the worker's
+  remedy was the postcode, on a single name, and it worked.
+
+**So: a postcode rescues ONE collision-prone name. It does not survive being asked to disambiguate
+several at once** — each extra contested name gives the engine another reading of the query, and the
+foreign cities win on link equity while the postcode's weight is divided. **One contested name per
+query, with its postcode. Never OR two.** Where a whole district is contested, as Adelaide's east
+is, that means more queries rather than cleverer ones, and the budget should be planned for it.
+
+**And a third extension of the same rule, from Brisbane: the collision applies to STREETS, not just
+towns.** "Cleveland Road" is not a town and still lost 40% of its slots to an American hospital
+group. Any proper noun in a query can be contested, which also explains why the main-street query
+shape works in some markets and not others.
+
+## Query and block-list additions, 18 Nov 2026
+
+- **`healthdirect.gov.au` — block it always.** It took **6 of 9 slots** on one Illawarra query. A
+  government health directory outranks every independent clinic and contains none of our segment.
+- **`bclinic.com` leaked past our `bclinic.com.au` block — the fifth TLD leak.** The block list has
+  to carry the bare name or every TLD, not one spelling.
+- **`injectables-bris.alwaysmentioned.com.au`** — the AI-generated ranking-page species, confirmed to
+  be **one subdomain per city**, exactly as predicted when the species was first recorded. Block the
+  apex domain, not the subdomain.
+- **"Injectables" as the Australian modifier is better than "cosmetic" but NOT clean**: it still
+  pulled a cosmetic dentist (`evolutiondentalcare.com.au`). The dental professions own enough of the
+  Australian vocabulary that no single modifier escapes them — expect to discard one slot in ten.
+- **The strip/main-street move FAILED on Crown Street, Wollongong**, which is now the second market
+  where it has failed (after the Chicago North Shore) against two where it worked. It remains a
+  market-specific shape and not a technique.
+- **Grep per name BEFORE fetching, not before recording.** One worker fetched two clinics (Skin
+  Health Solutions, The Manor Clinic) that were already ruled out, because it batched its coverage
+  grep until write-up time. The grep is free and the fetch is the scarce thing.
+
+## The Exomide stockist locator pays repeatedly — and its SUBURBS ARE WRONG. 18 Nov 2026
+
+Three separate workers have now had this locator pay for a single fetch: **24 in-market names**
+(Melbourne), **31 names across 19 of 25 briefed suburbs** (Brisbane south/west), and **8 names**
+(Adelaide east). It is the best single name source found in Australia.
+
+**But it files clinics under the wrong suburb.** It listed Adoré under **Mount Gravatt**; the clinic
+is in **Auchenflower**, on the other side of the city. **Read the postal address on the clinic's own
+site before believing the locator's suburb** — and never report a suburb as covered on the strength
+of a locator entry, or you will record coverage of a town the clinic is not in.
+
+**Its type-blindness reproduced exactly, for the third time:** a manufacturer's stockist locator does
+not pre-filter business type, because the filter is only as specific as the product. Exomide is a
+microneedling exosome serum, which a GP's skin room buys as readily as a med spa. Tonight it again
+produced a general practice and, in Melbourne, **MySkin Clinics — twelve clinics, disqualified on
+must-have 3.** Screen every name properly; the locator is a name source, never a qualification.
+
+## Enumerating hrefs, measured: a 6% zero-byte rate. 18 Nov 2026
+
+The 17 Nov method fix — fetch the homepage, enumerate the real header and footer hrefs, then fetch
+only paths that exist — now has a number against it. **3 zero-byte returns in 48 fetches, and not one
+of them was a guessed path.** Compare the path-guessing worker that produced the rule: **20 of 30
+fetches returned zero bytes and it recovered 1 row from 21.** The method is settled; stop guessing
+paths.
+
+**And a budget correction that goes the other way from the standing advice.** The Newcastle/Illawarra
+worker **ran out of fetches, not searches: 63 of ~70 fetched against 22 of 45 searched**, because
+verification cost **2 to 4 fetches per clinic**. Enumerating hrefs makes each clinic dearer in
+fetches and cheaper in waste, so a brief that assumes searches are the constraint will mis-budget.
+**Searches are the constraint only on a named-lead job, where the clinics are already chosen;
+market sweeps are fetch-bound.**
+
+## THE AUSTRALIAN BUSINESS REGISTER — the single best dating artifact in Australia, added 18 Nov 2026
+
+**`https://abr.business.gov.au/ABN/View?id=<abn digits, no spaces>` — one fetch, government-dated,
+and immune to name collisions, because you look up a NUMBER rather than a name.** The brief had
+nothing on it, which is strange, because this is to Australia exactly what the Companies House
+search is to Britain and Australia is our first metro priority.
+
+**What one fetch returns:** the legal entity name, its type, **"Active from <date>"**, the GST
+registration date, the main business location by **postcode**, and — this is the part that has no
+British equivalent — **every registered business (trading) name with its own registration date.**
+
+**Why it is worth more than anything else on the ladder.** It is a government record, it is dated,
+and it is a *floor* in the only direction that matters: a company active from 12 Jan 2017 was
+trading in 2017, and no rewrite drifts that date toward today the way a privacy policy's does. It
+also settles must-have 8's Australian analogue — whether there is a real company behind the brand —
+in the same fetch.
+
+**It paid twice the night it was found:**
+- **Evolve Skin Aesthetics (Balgownie) went B to A** on ANYA JONES PTY LIMITED, active 04 Jun 2013.
+- **It settled pipeline row 423**, which had been carrying a contradiction since 24 September.
+  Cosmetic HQ by Danielle Ryan publishes `info@malexinjectables.com` — a mailbox on a *different
+  domain* — and the row's notes said "do not send without Jess eyeballing the site first". The ABR
+  shows **MALEX FACIAL AESTHETICS PTY LTD**, active 12 Jan 2017, main location **NSW 2518 (Corrimal's
+  own postcode, which confirms the entity rather than a name match)**, carrying **both** "Malex
+  Injectables" (27 May 2020) and "COSMETIC HQ BY DANIELLE RYAN" (23 Mar 2024) as live registered
+  business names. **Two trading names, one company.** The "whose domain is this" objection — which is
+  what that row was actually worried about — is answered, and the register dates the rebrand to the
+  month.
+
+**So the ABR is the tool for the whole look-alike-address family in Australia.** When a clinic's
+published mailbox sits on a domain that is not its website's, the question is never "does the string
+look right"; it is **whose mailbox is it**. An ABN answers that directly where guessing cannot.
+
+**THE CATCH, MEASURED THE SAME NIGHT: only 2 of 15 clinics published an ABN at all.** So it is cheap
+but rare. **Check the footer for an ABN on every Australian clinic** — they are commonly linked
+straight to `abr.business.gov.au`, so the number and the lookup arrive together — and spend the
+fetch whenever one is there, especially on a row that would otherwise park on must-have 4 or on a
+mismatched mailbox. Do **not** spend searches hunting for an ABN that is not published; there is a
+name-search form, but a name search reintroduces exactly the collision problem the number avoids.
+
 ## A re-grade pass after a rule change has to read BOTH files — 18 Nov 2026
 
 **When a must-have is narrowed, the rows it wrongly decided do not all live in the pipeline. The
