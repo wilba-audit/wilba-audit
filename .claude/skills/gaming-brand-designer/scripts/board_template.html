@@ -1,0 +1,20 @@
+<!-- Concept board template: copy, swap the img srcs (data URIs or file paths) and headline, then render:
+     node scripts/render.js board.html board.png 1600 900 -->
+<html><head><style>
+body{margin:0;width:1600px;background:#0B0710;color:#F7F1FA;font-family:Inter,system-ui,sans-serif}
+.t{font:900 34px Inter,sans-serif;padding:28px 40px 0}.t span{color:#FF2E88}.s{font:500 18px Inter;color:#B3A6C2;padding:6px 40px 0}
+.row{display:flex;gap:28px;padding:28px 40px 40px;align-items:center}.light{background:#EDE9E4}
+.circle{border-radius:50%;overflow:hidden;flex:none}
+.cover{width:270px;height:480px;position:relative;overflow:hidden;border-radius:14px;background:linear-gradient(180deg,#2A0E4A,#0B0710 55%)}
+.cover .shot{position:absolute;left:18px;right:18px;top:70px;height:190px;border-radius:10px;background:#1c1230;display:flex;align-items:center;justify-content:center;font:700 11px monospace;color:#B3A6C2}
+.cover .h{position:absolute;left:18px;right:12px;bottom:70px;font:56px/0.92 Impact,Anton,sans-serif;text-transform:uppercase}.cover .h em{font-style:normal;color:#FF2E88}
+</style></head><body>
+<div class="t">A · <span>CONCEPT NAME</span></div><div class="s">One-line rationale tied to the positioning.</div>
+<div class="row">
+  <img src="logo.svg" style="width:620px">
+  <img src="avatar.svg" class="circle" style="width:250px">
+  <img src="avatar.svg" class="circle" style="width:44px">
+  <div class="cover"><div class="shot">YOUR GAMEPLAY CLIP</div><div class="h">REAL OR<br><em>FAKE?</em></div></div>
+</div>
+<div class="row light"><img src="logo-light.svg" style="width:620px"></div>
+</body></html>
