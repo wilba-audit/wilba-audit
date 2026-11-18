@@ -254,6 +254,8 @@ sets Confirmed, Expired or Unavailable and approves every publish. Don't use GTA
 - **Files:** `outputs/gta6-codes/brand/final/` (SVG and PNG) and `outputs/gta6-codes/brand/guide/` (brand guide source).
 - **Live brand guide:** https://claude.ai/artifact/UnyTeues1RJtdUteTtyLNo
 - **Generators:** `scripts/gta6_brand_final.py` (logos and stamps), `scripts/gta6_thumbnails.js` (older palette; update it to the brand).
+- **Mascot:** "The Decoder", a faceless hoodie figure whose visor shows the verdict (arrows, ✓, ✗ or ?). Built by `scripts/gta6_decoder.py` into `brand/decoder/`.
+- **Instagram:** profile setup, highlight covers, stories and carousels are in `outputs/gta6-codes/instagram/`. Edit `content.json`, then run `node scripts/gta6_ig_render.js`.
 - **Skill:** `gaming-brand-designer`, for logos and brand kits for gaming clients.
 
 **Status:** Plan, skills, ledger template and brand kit done. Needs: domain and handles, a tester with a console and the game,

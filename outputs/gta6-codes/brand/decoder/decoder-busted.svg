@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="The Decoder (busted)"><title>The Decoder (busted)</title><defs><linearGradient id="hoodbusted" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A1C8C"/><stop offset="1" stop-color="#22093E"/></linearGradient>
+<linearGradient id="bodybusted" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A1470"/><stop offset="1" stop-color="#1A0833"/></linearGradient>
+<filter id="glowbusted" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="14" result="b"/><feFlood flood-color="#FF2E88" flood-opacity=".9"/><feComposite in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<radialGradient id="faceglowbusted" cx="50%" cy="55%" r="50%"><stop offset="0" stop-color="#FF2E88" stop-opacity=".22"/><stop offset="1" stop-color="#FF2E88" stop-opacity="0"/></radialGradient></defs><g transform="translate(22 22)" fill="#7B2FF2"><path d="M60 1000 C 70 830 210 745 350 725 L 650 725 C 790 745 930 830 940 1000 Z"/><path d="M500 120 C 715 120 815 290 815 470 C 815 610 760 705 690 760 L 310 760 C 240 705 185 610 185 470 C 185 290 285 120 500 120 Z"/></g>
+<path d="M60 1000 C 70 830 210 745 350 725 L 650 725 C 790 745 930 830 940 1000 Z" fill="url(#bodybusted)" stroke="#0B0710" stroke-width="16" stroke-linejoin="round"/>
+<path d="M150 1000 C 160 870 250 800 350 780" fill="none" stroke="#FF2E88" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+<path d="M500 120 C 715 120 815 290 815 470 C 815 610 760 705 690 760 L 310 760 C 240 705 185 610 185 470 C 185 290 285 120 500 120 Z" fill="url(#hoodbusted)" stroke="#0B0710" stroke-width="16" stroke-linejoin="round"/>
+<path d="M232 600 C 205 520 205 360 300 250 C 345 200 410 165 480 155" fill="none" stroke="#FF2E88" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+<path d="M500 240 C 640 240 695 360 695 475 C 695 590 630 675 500 675 C 370 675 305 590 305 475 C 305 360 360 240 500 240 Z" fill="#05030A" stroke="#0B0710" stroke-width="12"/>
+<path d="M500 240 C 640 240 695 360 695 475 C 695 590 630 675 500 675 C 370 675 305 590 305 475 C 305 360 360 240 500 240 Z" fill="url(#faceglowbusted)"/>
+<rect x="335" y="418" width="330" height="120" rx="60" fill="#120A22" stroke="#FF2E88" stroke-width="8" filter="url(#glowbusted)"/>
+<path d="M458 438 L542 518 M542 438 L458 518" stroke="#FF2E88" stroke-width="24" stroke-linecap="square"/>
+<path d="M445 740 C 440 790 432 840 428 880" fill="none" stroke="#F7F1FA" stroke-width="12" stroke-linecap="round"/>
+<path d="M555 740 C 560 790 568 840 572 880" fill="none" stroke="#F7F1FA" stroke-width="12" stroke-linecap="round"/>
+<rect x="414" y="874" width="28" height="44" rx="6" fill="#FF2E88" stroke="#0B0710" stroke-width="6"/>
+<rect x="558" y="874" width="28" height="44" rx="6" fill="#FF2E88" stroke="#0B0710" stroke-width="6"/>
+<rect x="680" y="840" width="74" height="74" rx="14" fill="#FF2E88" stroke="#0B0710" stroke-width="8"/>
+<path transform="translate(717 877)" d="M0 -22 L20 2 H8 V22 H-8 V2 H-20 Z" fill="#0B0710"/></svg>

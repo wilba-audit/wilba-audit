@@ -2,26 +2,247 @@
  "_note": "Edit text here and run: node scripts/gta6_ig_render.js  — *word* = pink highlight, | = line break. Update 'last_checked' before posting status frames.",
  "last_checked": "19 NOV 2026",
  "frames": [
-  {"id":"story-01-start-here","size":"story","theme":"night","layout":"cover","eyebrow":"START HERE","head":"THIS IS|GTA *DECODED.*","sub":"No-BS GTA 6 codes, routes & guides. We test it. You know."},
-  {"id":"story-02-start-here","size":"story","theme":"night","layout":"list","eyebrow":"HOW WE TEST","head":"WE DON'T|*GUESS.*","items":["We find the claim on TikTok, Reddit & YouTube","We test it on our own console, on camera","We stamp the verdict","We date it, and update it if a patch changes it"]},
-  {"id":"story-03-start-here","size":"story","theme":"night","layout":"stamps","eyebrow":"THE VERDICTS","head":"FOUR|*STAMPS.*"},
-  {"id":"story-04-start-here","size":"story","theme":"night","layout":"cta","eyebrow":"DON'T MISS ONE","head":"TURN ON|*NOTIFICATIONS.*","sub":"New verdicts daily. Code alerts → link in bio."},
-  {"id":"story-05-real-or-busted-poll","size":"story","theme":"night","layout":"poll","eyebrow":"REAL OR BUSTED? #01","head":"THE VIRAL|*MONEY CODE.*","sub":"Everyone's sharing it. Is it real?","slot":"ADD A POLL STICKER HERE: REAL / BUSTED"},
-  {"id":"story-06-real-or-busted-reveal","size":"story","theme":"night","layout":"reveal","eyebrow":"REAL OR BUSTED? #01","head":"THE|*VERDICT.*","sub":"Full test on camera → link in bio","stamp":"busted","slot":"YOUR TEST SCREENSHOT"},
-  {"id":"story-07-codes-status","size":"story","theme":"night","layout":"status","eyebrow":"CODES · LAST CHECKED {last_checked}","head":"GTA 6 CHEATS:|*THE STATUS.*","items":["Rockstar hasn't confirmed any cheats yet","Most 'GTA 6 cheat' lists are GTA V codes","We're testing every viral claim on PS5","Confirmed codes land here first"]},
-  {"id":"story-08-routes","size":"story","theme":"night","layout":"cover","eyebrow":"ROUTES","head":"ROUTES|*LOADING.*","sub":"We only post routes we've driven ourselves. First drops after launch week."},
-  {"id":"story-09-scam-watch","size":"story","theme":"night","layout":"list","eyebrow":"SCAM WATCH","head":"DON'T GET|*PLAYED.*","items":["No website can give you free GTA$","Real support never asks for your password","'Early access' for sale = scam","Fake 'PC download' or APK = malware risk"]},
-  {"id":"story-10-scam-watch","size":"story","theme":"night","layout":"cta","eyebrow":"SCAM WATCH","head":"FREE GTA$?|*IT'S A SCAM.*","sub":"Send this to the friend who'd fall for it."},
-  {"id":"post-A1","size":"post","theme":"night","layout":"cover","counter":"1/5","eyebrow":"START HERE","head":"WE TEST EVERY|GTA 6 CODE.|*SO YOU DON'T|HAVE TO.*","sub":"Swipe →"},
-  {"id":"post-A2","size":"post","theme":"paper","layout":"cover","counter":"2/5","eyebrow":"THE PROBLEM","head":"MOST 'GTA 6|CHEATS' ARE|*OLD CODES.*","sub":"Lists online recycle GTA V inputs with a new thumbnail. Typing them wastes your night."},
-  {"id":"post-A3","size":"post","theme":"night","layout":"list","counter":"3/5","eyebrow":"HOW WE TEST","head":"WE DON'T|*GUESS.*","items":["Find the claim, credit the source","Test it on our own console, on camera","Stamp the verdict","Date it, and update it after patches"]},
-  {"id":"post-A4","size":"post","theme":"night","layout":"stamps","counter":"4/5","eyebrow":"THE VERDICTS","head":"FOUR|*STAMPS.*"},
-  {"id":"post-A5","size":"post","theme":"paper","layout":"cta","counter":"5/5","eyebrow":"YOUR MOVE","head":"FOLLOW FOR|DAILY|*VERDICTS.*","sub":"Save this · Turn on notifications · Code alerts → link in bio"},
-  {"id":"post-B1","size":"post","theme":"night","layout":"reveal","counter":"1/6","eyebrow":"GUIDE · CONFIRMED OFFER","head":"PRE-ORDERED?|YOU'VE GOT FREE|*GTA+.*","stamp":"confirmed-official","slot":"YOUR SCREENSHOT: CONFIRMATION EMAIL (BLUR YOUR DETAILS)"},
-  {"id":"post-B2","size":"post","theme":"paper","layout":"list","counter":"2/6","eyebrow":"WHO GETS IT","head":"WHO GETS|*THE MONTH.*","items":["Digital pre-orders of GTA VI on PlayStation Store","Standard or Ultimate edition","Physical copies: not included","Xbox & Rockstar Store terms differ, so check yours"]},
-  {"id":"post-B3","size":"post","theme":"night","layout":"list","counter":"3/6","eyebrow":"HOW TO CLAIM","head":"THREE|*STEPS.*","items":["Find your purchase confirmation email","Follow the GTA+ redemption instructions in it","Claim on the same account you bought with"]},
-  {"id":"post-B4","size":"post","theme":"paper","layout":"cover","counter":"4/6","eyebrow":"THE DEADLINE","head":"CLAIM BY|*31 MAR 2027.*","sub":"That's PlayStation's deadline. It renews until you cancel, so set a reminder."},
-  {"id":"post-B5","size":"post","theme":"night","layout":"list","counter":"5/6","eyebrow":"SCAM WATCH","head":"NOBODY WILL|*DM YOU A CODE.*","items":["Only use links from your official email","No 'free GTA+ code' giveaways","Never share your password"]},
-  {"id":"post-B6","size":"post","theme":"paper","layout":"cta","counter":"6/6","eyebrow":"YOUR MOVE","head":"SAVE THIS|*FOR LATER.*","sub":"Send it to the friend who pre-ordered · Follow for daily verdicts"}
+  {
+   "id": "story-01-start-here",
+   "size": "story",
+   "theme": "night",
+   "layout": "cover",
+   "eyebrow": "START HERE",
+   "head": "THIS IS|GTA *DECODED.*",
+   "sub": "No-BS GTA 6 codes, routes & guides. We test it. You know.",
+   "decoder": "default"
+  },
+  {
+   "id": "story-02-start-here",
+   "size": "story",
+   "theme": "night",
+   "layout": "list",
+   "eyebrow": "HOW WE TEST",
+   "head": "WE DON'T|*GUESS.*",
+   "items": [
+    "We find the claim on TikTok, Reddit & YouTube",
+    "We test it on our own console, on camera",
+    "We stamp the verdict",
+    "We date it, and update it if a patch changes it"
+   ]
+  },
+  {
+   "id": "story-03-start-here",
+   "size": "story",
+   "theme": "night",
+   "layout": "stamps",
+   "eyebrow": "THE VERDICTS",
+   "head": "FOUR|*STAMPS.*"
+  },
+  {
+   "id": "story-04-start-here",
+   "size": "story",
+   "theme": "night",
+   "layout": "cta",
+   "eyebrow": "DON'T MISS ONE",
+   "head": "TURN ON|*NOTIFICATIONS.*",
+   "sub": "New verdicts daily. Code alerts → link in bio.",
+   "decoder": "default"
+  },
+  {
+   "id": "story-05-real-or-busted-poll",
+   "size": "story",
+   "theme": "night",
+   "layout": "poll",
+   "eyebrow": "REAL OR BUSTED? #01",
+   "head": "THE VIRAL|*MONEY CODE.*",
+   "sub": "Everyone's sharing it. Is it real?",
+   "slot": "ADD A POLL STICKER HERE: REAL / BUSTED"
+  },
+  {
+   "id": "story-06-real-or-busted-reveal",
+   "size": "story",
+   "theme": "night",
+   "layout": "reveal",
+   "eyebrow": "REAL OR BUSTED? #01",
+   "head": "THE|*VERDICT.*",
+   "sub": "Full test on camera → link in bio",
+   "stamp": "busted",
+   "slot": "YOUR TEST SCREENSHOT"
+  },
+  {
+   "id": "story-07-codes-status",
+   "size": "story",
+   "theme": "night",
+   "layout": "status",
+   "eyebrow": "CODES · LAST CHECKED {last_checked}",
+   "head": "GTA 6 CHEATS:|*THE STATUS.*",
+   "items": [
+    "Rockstar hasn't confirmed any cheats yet",
+    "Most 'GTA 6 cheat' lists are GTA V codes",
+    "We're testing every viral claim on PS5",
+    "Confirmed codes land here first"
+   ]
+  },
+  {
+   "id": "story-08-routes",
+   "size": "story",
+   "theme": "night",
+   "layout": "cover",
+   "eyebrow": "ROUTES",
+   "head": "ROUTES|*LOADING.*",
+   "sub": "We only post routes we've driven ourselves. First drops after launch week.",
+   "decoder": "default"
+  },
+  {
+   "id": "story-09-scam-watch",
+   "size": "story",
+   "theme": "night",
+   "layout": "list",
+   "eyebrow": "SCAM WATCH",
+   "head": "DON'T GET|*PLAYED.*",
+   "items": [
+    "No website can give you free GTA$",
+    "Real support never asks for your password",
+    "'Early access' for sale = scam",
+    "Fake 'PC download' or APK = malware risk"
+   ]
+  },
+  {
+   "id": "story-10-scam-watch",
+   "size": "story",
+   "theme": "night",
+   "layout": "cta",
+   "eyebrow": "SCAM WATCH",
+   "head": "FREE GTA$?|*IT'S A SCAM.*",
+   "sub": "Send this to the friend who'd fall for it."
+  },
+  {
+   "id": "post-A1",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "1/5",
+   "eyebrow": "START HERE",
+   "head": "WE TEST EVERY|GTA 6 CODE.|*SO YOU DON'T|HAVE TO.*",
+   "sub": "Swipe →",
+   "decoder": "default"
+  },
+  {
+   "id": "post-A2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cover",
+   "counter": "2/5",
+   "eyebrow": "THE PROBLEM",
+   "head": "MOST 'GTA 6|CHEATS' ARE|*OLD CODES.*",
+   "sub": "Lists online recycle GTA V inputs with a new thumbnail. Typing them wastes your night."
+  },
+  {
+   "id": "post-A3",
+   "size": "post",
+   "theme": "night",
+   "layout": "list",
+   "counter": "3/5",
+   "eyebrow": "HOW WE TEST",
+   "head": "WE DON'T|*GUESS.*",
+   "items": [
+    "Find the claim, credit the source",
+    "Test it on our own console, on camera",
+    "Stamp the verdict",
+    "Date it, and update it after patches"
+   ]
+  },
+  {
+   "id": "post-A4",
+   "size": "post",
+   "theme": "night",
+   "layout": "stamps",
+   "counter": "4/5",
+   "eyebrow": "THE VERDICTS",
+   "head": "FOUR|*STAMPS.*"
+  },
+  {
+   "id": "post-A5",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cta",
+   "counter": "5/5",
+   "eyebrow": "YOUR MOVE",
+   "head": "FOLLOW FOR|DAILY|*VERDICTS.*",
+   "sub": "Save this · Turn on notifications · Code alerts → link in bio",
+   "decoder": "confirmed"
+  },
+  {
+   "id": "post-B1",
+   "size": "post",
+   "theme": "night",
+   "layout": "reveal",
+   "counter": "1/6",
+   "eyebrow": "GUIDE · CONFIRMED OFFER",
+   "head": "PRE-ORDERED?|YOU'VE GOT FREE|*GTA+.*",
+   "stamp": "confirmed-official",
+   "slot": "YOUR SCREENSHOT: CONFIRMATION EMAIL (BLUR YOUR DETAILS)"
+  },
+  {
+   "id": "post-B2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "2/6",
+   "eyebrow": "WHO GETS IT",
+   "head": "WHO GETS|*THE MONTH.*",
+   "items": [
+    "Digital pre-orders of GTA VI on PlayStation Store",
+    "Standard or Ultimate edition",
+    "Physical copies: not included",
+    "Xbox & Rockstar Store terms differ, so check yours"
+   ]
+  },
+  {
+   "id": "post-B3",
+   "size": "post",
+   "theme": "night",
+   "layout": "list",
+   "counter": "3/6",
+   "eyebrow": "HOW TO CLAIM",
+   "head": "THREE|*STEPS.*",
+   "items": [
+    "Find your purchase confirmation email",
+    "Follow the GTA+ redemption instructions in it",
+    "Claim on the same account you bought with"
+   ]
+  },
+  {
+   "id": "post-B4",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cover",
+   "counter": "4/6",
+   "eyebrow": "THE DEADLINE",
+   "head": "CLAIM BY|*31 MAR 2027.*",
+   "sub": "That's PlayStation's deadline. It renews until you cancel, so set a reminder.",
+   "decoder": "confirmed"
+  },
+  {
+   "id": "post-B5",
+   "size": "post",
+   "theme": "night",
+   "layout": "list",
+   "counter": "5/6",
+   "eyebrow": "SCAM WATCH",
+   "head": "NOBODY WILL|*DM YOU A CODE.*",
+   "items": [
+    "Only use links from your official email",
+    "No 'free GTA+ code' giveaways",
+    "Never share your password"
+   ]
+  },
+  {
+   "id": "post-B6",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cta",
+   "counter": "6/6",
+   "eyebrow": "YOUR MOVE",
+   "head": "SAVE THIS|*FOR LATER.*",
+   "sub": "Send it to the friend who pre-ordered · Follow for daily verdicts",
+   "decoder": "default"
+  }
  ]
 }
