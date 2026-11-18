@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: rejects-viral-money-code
+expected_outcome: |
+  The claim is logged as Unverified (not Confirmed), the response notes it resembles a past-game/GTA V-style input with no official source, and a test card for a human tester is produced.

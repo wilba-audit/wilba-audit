@@ -228,6 +228,30 @@ only; (5) Meta/Google API tokens not set as secrets yet (only GHL is wired).
 
 ---
 
+### GTA 6 Codes Venture: Verified Fan Site + YouTube (Jess's own venture, Nov 2026)
+
+A fan-run, **not-affiliated** site and YouTube channel (working brand "Cheat Ledger", not final) that tracks
+GTA 6 cheat codes and legitimate promo codes and offers with a public, dated, evidence-backed ledger. Long-form
+"we tested it" episodes are repurposed into Shorts, Reels and TikToks. GTA VI launched on consoles 19 Nov 2026.
+
+**Core rule:** never invent codes or sources. AI agents only *propose* statuses. Jess (Editor-in-Chief)
+sets Confirmed, Expired or Unavailable and approves every publish. Don't use GTA or Rockstar marks in the brand, domain or logo.
+
+**Files:** `outputs/gta6-codes/` holds:
+- `OPERATING-PLAN.md`: strategy, trust system, SEO, video, team, automations, KPIs
+- `ROADMAP.md`
+- `STEP-1-CHECKLIST.md`
+- `TEAM-SOPS.md`
+- `KPI-DASHBOARD.md`
+- `code-ledger-template.csv`: the single source of truth
+
+**Skills (drafts):** `gta6-code-verifier` · `gta6-seo-brief` · `gta6-longform-script` · `gta6-clip-repurposer` · `gta6-publish-gate` · `gta6-analytics-review`
+
+**Status:** Plan, skills and ledger template done. Needs: brand name and domain, a tester with console and game,
+Take-Two monetisation email, Astro site scaffold (Roadmap 1.1).
+
+---
+
 ## Context Summary
 
 **Business:** WILBA (wilba.ai) — AI automation and content generation agency. Two services: Content Generation Machine (Perplexity → Script → ElevenLabs → HeyGen → CreatorMate) and AI Automation Audits. Developer partner handles technical fulfillment.
