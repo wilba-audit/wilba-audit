@@ -1,0 +1,157 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-18T13:22:05Z"
+ },
+ "title": "GTA Decoded",
+ "namespace": "GTADecoded",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logos",
+  "Stamps"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "gtad-logo-horizontal-dark.svg",
+    "gtad-logo-horizontal-light.svg",
+    "gtad-logo-stacked-dark.svg",
+    "gtad-logo-stacked-light.svg",
+    "gtad-wordmark-dark.svg",
+    "gtad-wordmark-light.svg",
+    "gtad-avatar.svg",
+    "gtad-avatar-1080.png"
+   ],
+   "files": {
+    "gtad-logo-horizontal-dark.svg": {
+     "name": "gtad-logo-horizontal-dark.svg",
+     "blob": "1c2d5adb332e894261a55886a52fd7af",
+     "size": 27628,
+     "type": "image/svg+xml"
+    },
+    "gtad-logo-horizontal-light.svg": {
+     "name": "gtad-logo-horizontal-light.svg",
+     "blob": "c42bf8bb8a1adfc921685f446c0bc115",
+     "size": 27634,
+     "type": "image/svg+xml"
+    },
+    "gtad-logo-stacked-dark.svg": {
+     "name": "gtad-logo-stacked-dark.svg",
+     "blob": "e75f1c01fe3208a299b07c1e4aaa5ee3",
+     "size": 29256,
+     "type": "image/svg+xml"
+    },
+    "gtad-logo-stacked-light.svg": {
+     "name": "gtad-logo-stacked-light.svg",
+     "blob": "d9b0ac7177f3fb7a5956e5c176d008a2",
+     "size": 29262,
+     "type": "image/svg+xml"
+    },
+    "gtad-wordmark-dark.svg": {
+     "name": "gtad-wordmark-dark.svg",
+     "blob": "17131e5345709fe912da2a521c760203",
+     "size": 11553,
+     "type": "image/svg+xml"
+    },
+    "gtad-wordmark-light.svg": {
+     "name": "gtad-wordmark-light.svg",
+     "blob": "1cb7adc11556da65624ead57b9529d5a",
+     "size": 11558,
+     "type": "image/svg+xml"
+    },
+    "gtad-avatar.svg": {
+     "name": "gtad-avatar.svg",
+     "blob": "300476d3416bd5f3fa9006a13fbbedb9",
+     "size": 2718,
+     "type": "image/svg+xml"
+    },
+    "gtad-avatar-1080.png": {
+     "name": "gtad-avatar-1080.png",
+     "blob": "6f1f94b1c3c53dca233a447d9ff4586f",
+     "size": 503770,
+     "type": "image/png"
+    }
+   }
+  },
+  "Stamps": {
+   "name": "Stamps",
+   "tile": "m",
+   "order": [
+    "stamp-confirmed-dark.svg",
+    "stamp-confirmed-paper.svg",
+    "stamp-unverified-dark.svg",
+    "stamp-unverified-paper.svg",
+    "stamp-busted-dark.svg",
+    "stamp-busted-paper.svg",
+    "stamp-expired-dark.svg",
+    "stamp-expired-paper.svg"
+   ],
+   "files": {
+    "stamp-confirmed-dark.svg": {
+     "name": "stamp-confirmed-dark.svg",
+     "blob": "fe7209f1cd946f9667cd8247836f883d",
+     "size": 21569,
+     "type": "image/svg+xml"
+    },
+    "stamp-confirmed-paper.svg": {
+     "name": "stamp-confirmed-paper.svg",
+     "blob": "f12b0f70020409d0af509d30ec0d812d",
+     "size": 21571,
+     "type": "image/svg+xml"
+    },
+    "stamp-unverified-dark.svg": {
+     "name": "stamp-unverified-dark.svg",
+     "blob": "3f280ccb97a4f076c10f10d394f184e3",
+     "size": 20095,
+     "type": "image/svg+xml"
+    },
+    "stamp-unverified-paper.svg": {
+     "name": "stamp-unverified-paper.svg",
+     "blob": "d134e108b44861bd3298fde85946818a",
+     "size": 20097,
+     "type": "image/svg+xml"
+    },
+    "stamp-busted-dark.svg": {
+     "name": "stamp-busted-dark.svg",
+     "blob": "0f5d328b5e524df1e1cd7227281d33f5",
+     "size": 19603,
+     "type": "image/svg+xml"
+    },
+    "stamp-busted-paper.svg": {
+     "name": "stamp-busted-paper.svg",
+     "blob": "9f452bf139f97d6d898d7789f0b336b9",
+     "size": 19605,
+     "type": "image/svg+xml"
+    },
+    "stamp-expired-dark.svg": {
+     "name": "stamp-expired-dark.svg",
+     "blob": "e84d467a915eee4a0b3a7611c3b2b4ab",
+     "size": 18409,
+     "type": "image/svg+xml"
+    },
+    "stamp-expired-paper.svg": {
+     "name": "stamp-expired-paper.svg",
+     "blob": "3f6ea9c6db86d513c745e0eaaaed9607",
+     "size": 18411,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Jess Morrell",
+  "at": "2026-11-18T13:22:05Z",
+  "via": "Claude Code",
+  "note": "First version: four-key logo, verdict stamps, Night/Paper palette, type, Instagram system."
+ }
+}

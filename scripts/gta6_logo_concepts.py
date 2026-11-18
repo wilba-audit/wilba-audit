@@ -132,18 +132,22 @@ def input_word(u, ink=K['white'], dark=True):
 def input_avatar(u):
     return 1000, 1000, f'<rect width="1000" height="1000" fill="{K["black"]}"/>' + input_icon(500, 500, 230, 40), ''
 
-files = {}
-W, H, b, d = stamp_rect('a1', K['pink'], 'TESTED ON CAMERA', 'GTA DECODED', 'NO-BS GTA 6 GUIDES & CODES'); files['A-stamp-wordmark.svg'] = svg(W, H, b, 'GTA Decoded stamp', d)
-W, H, b, d = stamp_round('a2', K['pink']); files['A-stamp-round.svg'] = svg(W, H, b, 'GTA Decoded round stamp', d)
-W, H, b, d = stamp_rect('a3', K['pink'], 'GTA DECODED VERDICT', 'BUSTED', 'TESTED ON PS5 · 19 NOV 2026', rot=-8); files['A-verdict-busted.svg'] = svg(W, H, b, 'Busted stamp', d)
-W, H, b, d = stamp_rect('a4', K['mint'], 'GTA DECODED VERDICT', 'CONFIRMED', 'TESTED ON PS5 · 19 NOV 2026', rot=4); files['A-verdict-confirmed.svg'] = svg(W, H, b, 'Confirmed stamp', d)
-W, H, b, d = glitch_word('b1'); files['B-glitch-wordmark.svg'] = svg(W, H, b, 'GTA Decoded glitch wordmark', d)
-W, H, b, d = glitch_avatar('b2'); files['B-glitch-avatar.svg'] = svg(W, H, b, 'GTA Decoded glitch avatar', d)
-W, H, b, d = input_word('c1'); files['C-input-wordmark.svg'] = svg(W, H, b, 'GTA Decoded input wordmark', d)
-W, H, b, d = input_word('c3', ink=K['white'], dark=False); files['C-input-wordmark-light.svg'] = svg(W, H, b, 'GTA Decoded input wordmark light', d)
-W, H, b, d = input_avatar('c2'); files['C-input-avatar.svg'] = svg(W, H, b, 'GTA Decoded input avatar', d)
-W, H, b, d = stamp_rect('a5', '#B80E62', 'GTA DECODED VERDICT', 'BUSTED', 'TESTED ON PS5 · 19 NOV 2026', rot=-8); files['A-verdict-busted-paper.svg'] = svg(W, H, b, 'Busted stamp', d)
-W, H, b, d = stamp_rect('a6', '#0A6E4C', 'GTA DECODED VERDICT', 'CONFIRMED', 'TESTED ON PS5 · 19 NOV 2026', rot=4); files['A-verdict-confirmed-paper.svg'] = svg(W, H, b, 'Confirmed stamp', d)
-W, H, b, d = stamp_rect('a7', '#B80E62', 'TESTED ON CAMERA', 'GTA DECODED', 'NO-BS GTA 6 GUIDES & CODES'); files['A-stamp-wordmark-paper.svg'] = svg(W, H, b, 'GTA Decoded stamp', d)
-for n, s in files.items(): open(os.path.join(OUT, n), 'w').write(s)
-print('\n'.join(files))
+def build_concepts():
+    files = {}
+    W, H, b, d = stamp_rect('a1', K['pink'], 'TESTED ON CAMERA', 'GTA DECODED', 'NO-BS GTA 6 GUIDES & CODES'); files['A-stamp-wordmark.svg'] = svg(W, H, b, 'GTA Decoded stamp', d)
+    W, H, b, d = stamp_round('a2', K['pink']); files['A-stamp-round.svg'] = svg(W, H, b, 'GTA Decoded round stamp', d)
+    W, H, b, d = stamp_rect('a3', K['pink'], 'GTA DECODED VERDICT', 'BUSTED', 'TESTED ON PS5 · 19 NOV 2026', rot=-8); files['A-verdict-busted.svg'] = svg(W, H, b, 'Busted stamp', d)
+    W, H, b, d = stamp_rect('a4', K['mint'], 'GTA DECODED VERDICT', 'CONFIRMED', 'TESTED ON PS5 · 19 NOV 2026', rot=4); files['A-verdict-confirmed.svg'] = svg(W, H, b, 'Confirmed stamp', d)
+    W, H, b, d = glitch_word('b1'); files['B-glitch-wordmark.svg'] = svg(W, H, b, 'GTA Decoded glitch wordmark', d)
+    W, H, b, d = glitch_avatar('b2'); files['B-glitch-avatar.svg'] = svg(W, H, b, 'GTA Decoded glitch avatar', d)
+    W, H, b, d = input_word('c1'); files['C-input-wordmark.svg'] = svg(W, H, b, 'GTA Decoded input wordmark', d)
+    W, H, b, d = input_word('c3', ink=K['white'], dark=False); files['C-input-wordmark-light.svg'] = svg(W, H, b, 'GTA Decoded input wordmark light', d)
+    W, H, b, d = input_avatar('c2'); files['C-input-avatar.svg'] = svg(W, H, b, 'GTA Decoded input avatar', d)
+    W, H, b, d = stamp_rect('a5', '#B80E62', 'GTA DECODED VERDICT', 'BUSTED', 'TESTED ON PS5 · 19 NOV 2026', rot=-8); files['A-verdict-busted-paper.svg'] = svg(W, H, b, 'Busted stamp', d)
+    W, H, b, d = stamp_rect('a6', '#0A6E4C', 'GTA DECODED VERDICT', 'CONFIRMED', 'TESTED ON PS5 · 19 NOV 2026', rot=4); files['A-verdict-confirmed-paper.svg'] = svg(W, H, b, 'Confirmed stamp', d)
+    W, H, b, d = stamp_rect('a7', '#B80E62', 'TESTED ON CAMERA', 'GTA DECODED', 'NO-BS GTA 6 GUIDES & CODES'); files['A-stamp-wordmark-paper.svg'] = svg(W, H, b, 'GTA Decoded stamp', d)
+    for n, s in files.items(): open(os.path.join(OUT, n), 'w').write(s)
+    print('\n'.join(files))
+
+if __name__ == '__main__':
+    build_concepts()

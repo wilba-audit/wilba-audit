@@ -247,8 +247,17 @@ sets Confirmed, Expired or Unavailable and approves every publish. Don't use GTA
 
 **Skills (drafts):** `gta6-code-verifier` · `gta6-seo-brief` · `gta6-longform-script` · `gta6-clip-repurposer` · `gta6-publish-gate` · `gta6-analytics-review`
 
-**Status:** Plan, skills and ledger template done. Needs: brand name and domain, a tester with console and game,
-Take-Two monetisation email, Astro site scaffold (Roadmap 1.1).
+**Brand (Nov 2026):** name **GTA Decoded**, positioning "the no-BS GTA 6 account", Instagram-first with a "Real or Busted?" series.
+- **Logo:** four arrow keys with a pink "pressed" up key, plus slanted outlined Anton "GTA DECODED".
+- **Verdict stamps:** CONFIRMED, UNVERIFIED, BUSTED, EXPIRED.
+- **Palette:** pink, purple and black, in two themes: Night and Paper.
+- **Files:** `outputs/gta6-codes/brand/final/` (SVG and PNG) and `outputs/gta6-codes/brand/guide/` (brand guide source).
+- **Live brand guide:** https://claude.ai/artifact/UnyTeues1RJtdUteTtyLNo
+- **Generators:** `scripts/gta6_brand_final.py` (logos and stamps), `scripts/gta6_thumbnails.js` (older palette; update it to the brand).
+- **Skill:** `gaming-brand-designer`, for logos and brand kits for gaming clients.
+
+**Status:** Plan, skills, ledger template and brand kit done. Needs: domain and handles, a tester with a console and the game,
+the Take-Two monetisation email, and the Astro site scaffold (Roadmap 1.1).
 
 ---
 
