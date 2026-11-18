@@ -1606,7 +1606,7 @@ rung-one artifact in its own right), a company or business-name registration, a 
 rule in this file was confirmed five times and then retired, and the thing that kept it alive was
 accepting confirmations that did not test it.
 
-## The no-questions check cannot read negation — fixed 16 Nov 2026
+## The no-questions check: it could not read negation (16 Nov), then it could not read the file's own vocabulary (18 Nov)
 
 **The validator rejects a sendable row whose notes defer a qualification decision to somebody who will
 never see it. On 16 Nov it rejected two good rows out of five, both on the same sentence: "no further
@@ -1628,6 +1628,94 @@ negation in front of it.
 **The general shape is worth keeping in view: a crude check plus an explicit override beats a clever
 check.** The override is auditable (grep the marker) and the crudeness is visible (it rejects loudly).
 A regex smart enough to read negation would fail silently in the direction that ships a bad row.
+
+**AND ON 18 NOV THE SAME CHECK TURNED OUT TO BE REPORTING ZERO WHEN THE TRUE FIGURE WAS 57, FOR
+THREE REASONS AT ONCE. IF YOU READ ONE PARAGRAPH IN THIS SECTION, READ THIS ONE: THE DEFECT WAS
+NEVER IN HOW MANY COPIES OF THE PREDICATE THERE WERE. IT WAS IN THE ONE COPY'S VOCABULARY.**
+
+The 16 Nov fix collapsed three copies of the predicate into one function, which was right and which
+prevented a real class of bug. It also made the check feel finished. On 18 Nov the whole pipeline
+was measured against it in plain language for the first time, and **57 of 881 sendable rows ask a
+human to check something before a send, while the predicate reported 0.** It was not wrong about
+those rows. It could not see them.
+
+- **A LITERAL-SPACE OFF-BY-ONE.** `(check) .{0,40} before (sending)` reads as verb, space, 0-40
+  characters, **space**, "before" — so the bare form **"check before sending" is unmatchable by the
+  branch written for it**, because it needs two spaces to satisfy the pattern. The commonest
+  construction in the file could not match the rule aimed at it.
+- **THE VERB SET WAS WHATEVER WAS IN FRONT OF ME WHEN I WROTE IT.** The file's single commonest
+  phrasing is **"EYEBALL THE REVIEW HISTORY BEFORE SENDING"** — roughly 15 of the 57 — and
+  *eyeball* appeared in no branch. Neither did *read*, *resolve* or *sanity-check*; and
+  `worth a (glance|look|check) before sending` cannot match **"worth a sanity check before
+  sending"**, because a word sits between.
+- **THE TRAILING PHRASE SET LIKEWISE:** "before a send", "before any send", "before anything is
+  sent", "before it is ever sent", and the entire **"do not send … without X"** shape, which is a
+  hold-back rather than a question and was invisible.
+
+**This is a rule already in `ICP.md`, turned on our own code: A SCREEN WRITTEN FROM ONE OBSERVED
+PHRASE WILL MISS THE SAME SCHEME UNDER ANY OTHER PHRASING — screen for the scheme and list several
+of its names.** That rule was learned twice in one week on Australian billing vocabulary, first
+HICAPS and then the long form of the Department of Veterans' Affairs. It is the same error, in
+Python instead of prose, and the lesson is not "be more careful with regexes": it is that **the
+phrasings you have seen are a sample, and a check built from a sample inherits the sample's
+blind spots.**
+
+**The fix, and the shape is the transferable part: the pattern is now a VERB SET and a PHRASE SET
+crossed together, not hand-written alternatives.** Adding a verb or a phrasing is one edit in one
+list, and no branch can carry a space bug its neighbours do not, because there are no hand-written
+branches left to drift apart. Where 16 Nov removed duplicate *definitions*, this removes duplicate
+*constructions* — the same disease one level down.
+
+**What it now finds: 57 sendable rows and 12 parked ones.** Both print on every append, with ids.
+They are a backlog, not tonight's rejects, and they are not all equal — most are
+*"the oldest Google review needs eyeballing before sending"*, which is must-have 4 unverified on a
+row already in the send queue. Read them before deciding anything; see the grade-A ruling in
+`ICP.md`.
+
+**ONE MORE THING, RECORDED BECAUSE IT IS THE SAME MISTAKE AS THE SIX RETRACTED ON 17 NOV.** While
+widening the pattern I predicted it would false-positive on the cash-pay discovery question that
+`ICP.md` explicitly tells you to leave open, named row 369 as the instance, and wrote an exemption
+for it. **The exemption fires on 0 of 1,305 rows and row 369 is not an instance** — it says
+*"sclerotherapy is cash-pay in Australia, but check before pitching"*, which assigns the check to
+nobody and is a genuine deferral. A predicted boundary got written down as an observed fact. The
+exemption is kept, because the distinction it encodes is real — **the discriminator is who is
+supposed to ANSWER the question**; "ask the clinic on the first call" has scheduled it with the one
+party who can answer, while "eyeball the review history" is addressed to us and assigned to nobody
+— but it is labelled in the code as untested against the corpus, so nobody later mistakes it for a
+path that has ever run.
+
+## A re-grade pass after a rule change has to read BOTH files — 18 Nov 2026
+
+**When a must-have is narrowed, the rows it wrongly decided do not all live in the pipeline. The
+ones that do get rescued; the ones in `near-misses.md` do not, because a rescue pass reads rows.**
+
+The 4 Nov narrowing of the vein clause (must-have 2 tests the billing model, not a word on a menu —
+cosmetic thread- and spider-vein work is cash-pay and passes; only venous disease fails) had four
+named casualties recorded in one place by the worker who proposed it: Sharp Fix Aesthetics, Sci-U
+Clinic, NJH Aesthetics and Harrogate Aesthetics. **Three of the four were handled correctly within
+days** — Sharp Fix is a pipeline B exactly as predicted, and Sci-U and NJH are correctly still at C
+because both list undescribed *sclerotherapy*, which the narrowing makes unresolved rather than
+passed. **The fourth sat abandoned for a fortnight**, under an entry that told every reader to
+*"stop spending anything on this clinic"*.
+
+**The only difference between the three rescued and the one lost is which file it was in.** Harrogate
+had a Cloudflare-hidden address, so it was a near-miss rather than a row — and a pass that iterates
+over pipeline rows cannot see it. The file even recorded the mistake three separate times in later
+sections, as a lesson, without ever going back to the entry where the decision lived.
+
+**So, two things to do when a rule changes under you:**
+1. **Grep both files for the rule's vocabulary, not just the standard's own section.** A retraction
+   written where the lesson was learned changes no decision. The damage is wherever the verdicts are.
+2. **Strike the obsolete clause in situ and say what replaced it** — the way this file already
+   handles struck standing items. An entry left carrying a dead reason is worse than a missing
+   entry, because it actively spends the next worker's judgement against the current standard.
+
+**This is the project's most-repeated failure mode, and this is its purest instance: a check scoped
+to where the problem usually is will not see it where it survives.** Same night, the same shape
+turned up twice more — in `append_prospects.py`, where a deferral predicate built from observed
+phrasings reported 0 where the true figure was 57, and in the filing rule now in `ICP.md`, where
+five fully-researched clinics with verified mailboxes sat in the unreachable file. **The habitat
+changes; the disease does not.**
 
 ## Record the DOMAIN beside the name, every time — 15 Nov 2026
 

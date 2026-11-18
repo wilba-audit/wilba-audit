@@ -102,15 +102,93 @@ NEGATED_DEFERRAL = re.compile(
     r'(?:check|checks|verification|confirmation|work)?\s*'
     r'(?:is|are)?\s*(?:required|needed|necessary|outstanding)?\s*'
     r'before (?:sending|pitching|any approach)', re.I)
-DEFERS = re.compile(r'someone should (decide|check|verify|confirm|look)'
-                    r'|somebody should (decide|check|verify|confirm|look)'
-                    r'|should be (decided|checked|verified|confirmed) before sending'
-                    r'|worth a (glance|look|check) before sending'
-                    r'|(verify|confirm|check) .{0,40} before (sending|pitching|any approach)'
-                    r'|if Jess (narrows|decides|disagrees|agrees|widens)'
-                    r'|needs a (decision|ruling) from'
-                    r'|awaiting a (decision|ruling)'
-                    r'|leaving this (open|undecided) for', re.I)
+
+# 18 Nov 2026, and it is the second thing removed from the text before DEFERS is tested.
+#
+# THE DISCRIMINATOR IS WHO IS SUPPOSED TO ANSWER THE QUESTION, and it is a real distinction
+# rather than a hedge. The disease this predicate exists to catch is a row that hands a
+# QUALIFICATION decision to a person who will never see it: "eyeball the review history before
+# sending" is addressed to us, and nobody is assigned, so it is never done. But ICP.md
+# explicitly sanctions ONE question being left open and even supplies its wording - the
+# must-have 2 cash-pay question, "Do you bill any insurance or Medicare electronically?" -
+# because that one is addressed to THE CLINIC, on a call that is part of the offer, and the
+# clinic certainly will see it. A row that says "ask the cash-pay question on the first call"
+# has not deferred anything; it has scheduled it with the one party who can answer.
+#
+# So the exemption is narrow and keyed to the asking, not to the topic: an instruction to ASK
+# or RAISE something ON A CALL / WITH THEM / AT DISCOVERY. Widening it past that would start
+# excusing real deferrals, and this check failing safe is the whole point. Anything a worker
+# wants exempted beyond this gets the explicit RESOLVED stamp, per the 4 Nov rule that a guess
+# at how a note would be worded does not match the note actually written.
+#
+# MEASURED THE SAME NIGHT, AND IT IS UNEXERCISED CODE: THIS EXEMPTION FIRES ON 0 OF 1,305 ROWS.
+# I wrote it because I predicted the widened DEFERS would false-positive on the sanctioned
+# cash-pay discovery question, and named row 369 as the instance. It is not an instance. Row
+# 369 says "sclerotherapy is cash-pay in Australia, but check before pitching" - which assigns
+# the check to nobody and is a genuine deferral, so DEFERS is right about it and I was wrong.
+# That is the same shape as the six claims retracted on 17 Nov: a predicted boundary reported
+# as an observed fact. The exemption is kept because the distinction it encodes is correct and
+# because ICP.md tells workers to write exactly the sentence it exempts, so new rows may well
+# carry it - but it has never matched a real row, so do not treat it as a tested path, and
+# re-measure it before trusting it.
+DISCOVERY_QUESTION = re.compile(
+    r'(?:ask|raise|put|confirm|clarify)\b[^.;|]{0,80}?'
+    r'(?:on the (?:first )?call|on a call|at discovery|in discovery|on the discovery call|'
+    r'with (?:them|the clinic|the owner)|of (?:them|the clinic|the owner))'
+    r'|(?:discovery|first-call|first call) question'
+    r'|but ask\b|, ask\b|ask the cash-pay question', re.I)
+# 18 Nov 2026: REBUILT AS A CROSS-PRODUCT, because the hand-written alternation had THREE
+# independent defects and every one of them was invisible until the whole file was measured.
+#
+# The old pattern reported 0 deferrals across 1,305 rows. A plain-language audit of the same
+# file found 36 sendable rows whose notes ask a human to check something before a send. The
+# pattern was not wrong about those rows; it could not see them.
+#
+#   1. A LITERAL-SPACE OFF-BY-ONE. `(check) .{0,40} before (sending)` is verb, space, 0-40
+#      chars, SPACE, "before" - so it cannot match the bare form "check before sending",
+#      which needs two spaces to satisfy it. The commonest construction in the file was
+#      unmatchable by the branch written for it.
+#   2. THE VERB SET WAS WHAT I HAD IN FRONT OF ME. The file's single commonest phrasing is
+#      "EYEBALL THE REVIEW HISTORY BEFORE SENDING" - about 15 of the 36 - and "eyeball" was
+#      in no branch. Nor were read, resolve, or "sanity check" ("worth a (glance|look|check)"
+#      cannot match "worth a sanity check", because the words sit between).
+#   3. THE TRAILING PHRASE SET LIKEWISE: "before a send", "before any send", "before anything
+#      is sent", "before it is ever sent", and the whole "do not send ... without X" shape.
+#
+# This is ICP.md's own rule about the Australian billing screen, turned on my own code:
+# A SCREEN WRITTEN FROM ONE OBSERVED PHRASE WILL MISS THE SAME SCHEME UNDER ANY OTHER
+# PHRASING - screen for the SCHEME and list several of its names. It is also the project's
+# most-repeated failure mode (a check scoped to where the problem usually is will not see it
+# where it survives) firing in this file for the third night running, and the 16 Nov fix
+# above - one predicate, three call sites - did nothing to prevent it, because the defect was
+# never in HOW MANY copies there were. It was in the ONE copy's vocabulary.
+#
+# So the fix is structural in a different direction: a VERB set and a PHRASE set, crossed.
+# Adding a verb or a phrasing is one edit in one list; no branch can carry a space bug that
+# its neighbours do not, because there are no hand-written branches left to drift apart.
+_DEFER_VERB = (r'(?:eyeball(?:ed|ing|s)?|check(?:ed|ing|s)?|verif(?:y|ied|ying)|confirm(?:ed|ing|s)?'
+               r'|resolv(?:e|ed|ing)|read|re-read|look(?:ed|ing)?(?:\s+at)?|decid(?:e|ed)'
+               r'|establish(?:ed)?|sanity[-\s]check(?:ed|ing)?)')
+_DEFER_WHEN = (r'before\s+(?:any\s+|a\s+|the\s+|it\s+is\s+ever\s+|anything\s+is\s+)?'
+               r'(?:send|sends|sending|sent|pitch|pitching|approach|approaching|contact|'
+               r'contacting|anything\s+goes)')
+DEFERS = re.compile(
+    # "someone / somebody / a human / Jess should <verb>"
+    r'(?:someone|somebody|a human|anyone|Jess)\s+(?:really\s+)?(?:should|must|needs to|has to)\s+' + _DEFER_VERB
+    # "<verb> ... before sending" - the gap is \s*.{0,60}\s* so the bare form matches too
+    + r'|' + _DEFER_VERB + r'\s*.{0,60}?\s*' + _DEFER_WHEN
+    # "before sending ... <verb>" - the same sentence written the other way round
+    + r'|' + _DEFER_WHEN + r'\s*.{0,60}?\s*' + _DEFER_VERB
+    # "should be checked / resolved / read before a send"
+    + r'|should\s+(?:be\s+)?(?:\w+\s+){0,3}?' + _DEFER_WHEN
+    # "do not send ... without <someone looking>" - a hold-back, not a question
+    + r"|(?:do not|don't|never)\s+(?:send|email|pitch|approach)\b.{0,80}?\bwithout\b"
+    # explicit hand-offs upward
+    + r'|if Jess (?:narrows|decides|disagrees|agrees|widens)'
+    + r'|needs a (?:decision|ruling) from'
+    + r'|awaiting a (?:decision|ruling)'
+    + r'|leaving this (?:open|undecided) for',
+    re.I)
 OWN_SITE = re.compile(r"(their|its|her|his|the clinic's|clinic's) own|own (site|page|website|homepage|domain)", re.I)
 
 def defers(notes):
@@ -128,10 +206,15 @@ def defers(notes):
     it stood in and never asked which other paragraphs said the same thing" - describes this
     exact slip, written down the night before I made it. The lesson is not "be careful"; it is
     that three copies of a predicate is three places for it to be wrong, so there is now one.
+
+    Both exemptions are applied by DELETING the exempt sentence from the text before DEFERS is
+    tested, rather than by testing the whole notes field for an exempt phrase anywhere in it.
+    That matters: a row may carry a sanctioned discovery question AND a real deferral in two
+    different sentences, and a whole-field test would let the first excuse the second.
     """
     notes = notes or ''
-    return bool(DEFERS.search(NEGATED_DEFERRAL.sub(' ', notes))) \
-        and not RESOLVED.search(notes)
+    scrubbed = DISCOVERY_QUESTION.sub(' ', NEGATED_DEFERRAL.sub(' ', notes))
+    return bool(DEFERS.search(scrubbed)) and not RESOLVED.search(notes)
 
 
 COUNTRY_OK = {'AU', 'NZ', 'US', 'CA', 'UK', 'IE'}
@@ -460,6 +543,61 @@ def main():
              and defers(r.get('notes'))]
     print('parked rows that defer a decision to a person: %d%s'
           % (len(pdefr), (' ' + str(pdefr)) if pdefr else ''))
+
+    # GRADE A ROWS WHOSE OWN NOTES SAY MUST-HAVE 4 IS INFERRED RATHER THAN READ.
+    # Added 18 Nov 2026 after measuring the whole file for the first time.
+    #
+    # The 5 Nov evidence ladder says in terms that it "is what separates a grade A from a grade B
+    # on otherwise identical rows": a dated or quantified artifact on the clinic's own site
+    # satisfies must-have 4; a practitioner's career length alone KEEPS THE ROW AT B; no proxy of
+    # any kind parks it at C. The ladder has three rungs and none of them is "the operation looks
+    # busy". But 33 of 202 grade-A rows carry a note saying established is inferred or not
+    # verified, and about 23 of those name no rung at all - they reached A on team size, a device
+    # fleet, a membership programme, a shopfront fit-out or a count of booking locations.
+    #
+    # This matters operationally and not just tidily: `wilba_outreach.py batch` selects A before
+    # B, so these rows sit at the FRONT of the send queue holding the weakest age evidence in the
+    # file - and must-have 4 is the one must-have whose failure means the offer has nothing to
+    # work, because a clinic with no lapsed list cannot have its lapsed list reactivated.
+    #
+    # Almost all of them predate the ladder, so this is one more instance of the standing job that
+    # is bigger than any market: A RULE CHANGE REACHES THE RUN THAT MAKES IT AND NOTHING BEHIND IT.
+    #
+    # IT PRINTS THE MATCHING SENTENCE, NOT JUST THE ID, and that is deliberate - the same choice
+    # made for the site-count audit on 17 Nov after it false-positived on a founder's CV. A flag
+    # that costs a lookup to interpret gets ignored; one that shows its evidence gets judged. The
+    # regex is NOT narrowed to cut its false positives, because it should fail safe: row 894 is a
+    # known false positive (it publishes "Founded Feb 2021" and the word "inferred" in its notes
+    # refers to the patient count, not the date), and printing the sentence is what makes that
+    # obvious in one glance instead of one fetch.
+    inferred = re.compile(r'(?:established|must[- ]have\s*4|trading (?:history|length)|age)\s*'
+                          r'(?:is|was|remains)?\s*'
+                          r'(?:entirely\s+|completely\s+|wholly\s+)?'
+                          r'(?:NOT VERIFIED|not verified|unverified|not established|inferred)',
+                          re.I)
+    ladder = re.compile(r'\b\d{2,4}\s*\+?\s*(?:google\s*)?reviews?\b|review count|based on \d+ review'
+                        r'|founded (?:in )?(?:19|20)\d\d|established (?:in )?(?:19|20)\d\d'
+                        r'|since (?:19|20)\d\d|opened (?:in )?(?:19|20)\d\d'
+                        r'|(?:19|20)\d\d\s*[-–]\s*20\d\d', re.I)
+    weak_a = []
+    for r in after:
+        if (r.get('icp_fit') or '').strip().lower() != 'a':
+            continue
+        notes = r.get('notes') or ''
+        if not notes.strip() or RESOLVED.search(notes):
+            continue
+        m = inferred.search(notes)
+        if not m:
+            continue
+        rung = ladder.search(notes)
+        lo = max(0, m.start() - 70)
+        weak_a.append((r['id'], bool(rung),
+                       ' '.join(notes[lo:m.end() + 90].split())))
+    norung = [w for w in weak_a if not w[1]]
+    print('grade A rows whose notes call must-have 4 inferred or unverified: %d '
+          '(of which %d name no ladder artifact anywhere)' % (len(weak_a), len(norung)))
+    for rid, rung, snippet in norung:
+        print('    %s: ...%s...' % (rid, snippet))
 
 
 if __name__ == '__main__':

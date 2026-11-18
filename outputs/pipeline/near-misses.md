@@ -1786,7 +1786,14 @@ numbers**, one of which is the literal placeholder `12345678` and the other `061
 is accompanied by a "Ltd" or "Limited" name. So even once the email is readable, the sole-trader
 screen is unresolved — the real company number needs confirming. No owner is named on the site
 either (only "Sharon" and "Anthea" in testimonials), and no membership or voucher scheme is
-published. On current evidence it would come in as a C even with the address.
+published. ~~On current evidence it would come in as a C even with the address.~~ **[UPDATED 18
+Nov 2026 — read the fuller entry further down this file (search "12 Princes Square"), which records
+a second, later pass. That pass wrongly failed this clinic on must-have 2 for vein work, which the
+4 Nov narrowing exempts; the failure is retracted and the clinic is a live lead on the
+browser-visit list. It also found an About page for **Anthea Whiteley, Aesthetic Nurse Practitioner
+RGN, Director**, which closes the "no owner named" gap recorded above, and confirmed `06184603` as
+a 2007-series number. One Companies House lookup on that number settles must-have 8 and must-have 4
+together, so this is likely better than a C.]**
 
 ### Sheffield Aesthetics & Laser Clinic (SAL Clinic) — Sheffield
 `https://salclinic.co.uk/` · 0114 327 5855 · 742 Ecclesall Road, Sheffield S11 8TB
@@ -3489,9 +3496,15 @@ there.
   **Double fail. This is why the Kapiti Coast has no B row.**
 - **Korrene Robinson Skincare** (192 Fitzherbert Ave, Palmerston North) — a deep salon offering with
   **AGLOW skin subscriptions**, facial memberships and gift vouchers, and a Registered Nurse on site
-  for injectables, all on **Timely**. Excellent dormant signals. But it lists **"Red Vein Removal"
-  by electrology**, which is vein work, and publishes **no email address** on the homepage.
-  Salon-led rather than aesthetics-led as well. **Double fail.**
+  for injectables, all on **Timely**. Excellent dormant signals. ~~But it lists **"Red Vein Removal"
+  by electrology**, which is vein work~~ **[THE VEIN REASON IS STRUCK, 18 Nov 2026. The 4 Nov 2026
+  narrowing says must-have 2 is a test of the BILLING MODEL, not of a word on a menu: cosmetic
+  thread- and spider-vein treatment is cash-pay everywhere we sell and does not fail must-have 2,
+  and electrology on red veins is exactly that. Only venous DISEASE fails. Leaving the clause
+  standing would teach the next worker a rule the standard no longer holds.]** It still fails, on
+  the reasons that survive: it publishes **no email address** on the homepage (must-have 5), and it
+  is salon-led rather than aesthetics-led (must-have 1). **Still out, on two must-haves instead of
+  three.**
 - **Invercargill Skin Centre** (81a Don Street plus a second room at Arena HealthCare, Invercargill)
   — publishes `info@invercargillskincentre.co.nz` in plain text, so reachable, but it is a **skin
   cancer diagnosis and treatment plus acne clinic** run by "Dr Sophie". Two sites and "plans to
@@ -6793,11 +6806,54 @@ Two, the same low rate as 22 and 29 October.
 - **Site:** https://harrogateaesthetics.co.uk/ · 01423 567567
 - **ALREADY RECORDED in `near-misses.md` (line ~1535) from an earlier pass. Repeated only because
   this run found the thing that settles it, and the existing entry does not have it.**
-- **New and decisive: it FAILS must-have 2.** The treatment menu carries **Cosmetic
+- ~~**New and decisive: it FAILS must-have 2.** The treatment menu carries **Cosmetic
   Microsclerotherapy** and **Thread Vein Removal**, on both the women's and the men's pages. Vein
   work is an outright cash-pay fail in the brief. So reading the hidden address in a browser buys a
   row only if Jess decides to accept the vein work — otherwise **stop spending anything on this
-  clinic**, including the two minutes.
+  clinic**, including the two minutes.~~
+- **RETRACTED 18 Nov 2026. MUST-HAVE 2 DOES NOT FAIL, AND THIS ENTRY HAS BEEN TELLING WORKERS TO
+  ABANDON THE CLINIC FOR A FORTNIGHT ON A RULE THAT WAS NARROWED THREE DAYS AFTER IT WAS WRITTEN.**
+  The 4 Nov 2026 narrowing says must-have 2 tests the BILLING MODEL, not a word on a menu:
+  **cosmetic thread- and spider-vein treatment is cash-pay everywhere we sell and does not fail
+  must-have 2**; only venous *disease* does — varicose veins, venous ulcers, anything a public
+  system or an insurer would fund. This clinic's own service names are **"Cosmetic
+  Microsclerotherapy"** and **"Thread Vein Removal"**, with the word *cosmetic* printed in the first
+  one. Nothing on the menu is venous disease. **Must-have 2 passes.**
+- **AND THE WORST PART IS THAT THIS FILE ALREADY KNEW.** Three later sections say so in terms —
+  *"the 1 Nov sweep lost Harrogate Aesthetics to the un-narrowed clause"*, *"I applied the rule as
+  written rather than…"*, and *"Do not park this one on veins the way 1 Nov parked Harrogate
+  Aesthetics"*. The retraction was written three times **where the lesson was learned and never once
+  where the decision lives**, so the only paragraph a worker actually reads before spending a fetch
+  still carried the obsolete verdict and an instruction to stop. **When a rule is narrowed, grep for
+  the rows it decided and fix THOSE — a rule's own section is not where its damage sits.** This is
+  the 11 Nov corollary again: fixing the paragraph it stood in and never asking which other
+  paragraphs said the same thing.
+- **AND THE PRECISE MECHANISM, WHICH IS WORTH MORE THAN THE CLINIC — CHECKED RATHER THAN ASSUMED,
+  BECAUSE MY FIRST READING OF THIS WAS TOO BIG.** The 5 Nov UK worker named **four** casualties of
+  the un-narrowed clause: Sharp Fix Aesthetics, Sci-U Clinic, NJH Aesthetics and this clinic. I
+  assumed all four were still lost. **Three were in fact handled correctly, and the rescue worked:**
+  **Sharp Fix is pipeline row 981 at grade B** with its address published, exactly as that worker
+  predicted (*"Sharp Fix becomes a B the moment that is decided, with no further research"*), and
+  **Sci-U (982) and NJH (983) are correctly at C**, because both list **sclerotherapy** with no
+  description, which the narrowing makes *unresolved* rather than passed.
+  **Harrogate Aesthetics is the only one that was lost, and the reason is the mechanism: it was not
+  a pipeline row.** It was a near-miss, because its address is Cloudflare-hidden. So the re-grade
+  pass that correctly rescued the three pipeline rows **could not see the one casualty that lived in
+  this file**. That is this project's most-repeated failure mode in its purest form — **a check
+  scoped to where the problem usually is will not see it where it survives** — and the surviving
+  habitat here is `near-misses.md` itself. **A re-grade pass after a rule change has to read BOTH
+  files**, and the same is already written into `append_prospects.py` about sendable versus parked
+  rows, one level in.
+- **SO IT IS NOW A LIVE LEAD AND IT IS ON THE BROWSER-VISIT LIST.** What stands: injectables and
+  energy devices, separate women's and men's treatment pages, **one** clinic in central Harrogate,
+  "award winning medically led clinic". Address is **Cloudflare-hidden, not absent** — two minutes in
+  a browser, which no fetch recovers. Two legs are resolvable without a browser at all: search
+  results show an About page for **Anthea Whiteley, Aesthetic Nurse Practitioner RGN, Director**,
+  which names the owner-injector and the director together (that page has still never been fetched);
+  and **`06184603` is a 2007-series number**, so one Companies House lookup would settle **must-have
+  8 and must-have 4 at once** and would make this the longest trading history found in that whole
+  run. Do the register lookup before spending Jess's two minutes, since it is ours to do and hers is
+  the scarcer resource.
 - Second new detail, and it partly contradicts the earlier entry: this run's fetch found **one**
   company number in the footer, `06184603`, with no "Ltd" or "Limited" beside it. The earlier entry
   records **two** numbers, the second being the literal placeholder `12345678`. Either the page

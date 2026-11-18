@@ -58,6 +58,37 @@ fetch-failure mode in `clinic-sourcing-brief.md` — the path had been invented,
 | 11 | **Liberty Belle Skin Centre** | Toorak, VIC | Address **+ one disqualifying question** | **The biggest prize and the biggest risk.** Owners named, and **"300,000+ Cosmetic Skin Appointments"** published on its own homepage — the deepest patient pool in the file. But Dr Chris Moss is known outside the site as a plastic surgeon, and if this is a surgical practice's skin arm then must-have 1 kills it. **The site's own pages do not support that reading** (no surgeon named, no surgical procedure sold, "Dermal Clinicians" the only practitioner category). **Look for a "The Founder" page: if it bills him as a surgeon the row is dead, and if it does not, this is the row to send first** |
 | 12 | **Dermatique Laser and Skin** | Geneva, IL | Address **+ the decision-maker** | *"The highest-value tab on this whole page"*, per its worker, for the dormant structure alone: Zenoti throughout, a Skin Membership, "Bloom Loyalty Rewards", an Insider programme and gift cards. Held back because must-have 3 is unresolved — no owner is named and the staff list is bigger than one decision-maker implies. Settle that in the same visit |
 
+**HARROGATE AESTHETICS (12 Princes Square, Harrogate HG1 1LX) IS ADDED 18 Nov 2026, AND IT IS
+DELIBERATELY NOT IN THE TABLE ABOVE.** That table's premise is that one page-open by a person is the
+only thing left, and this clinic does not meet it yet — **one Companies House lookup is ours to do
+first, and it should happen before Jess spends a minute on this.**
+
+It was never on this list because the 1 Nov sweep **failed it on must-have 2 for "Cosmetic
+Microsclerotherapy" and "Thread Vein Removal"**, and told the reader to *"stop spending anything on
+this clinic, including the two minutes"*. The **4 Nov narrowing exempts exactly that**: must-have 2
+tests the billing model, not a word on a menu, and cosmetic thread- and spider-vein work is cash-pay
+everywhere we sell. Only venous *disease* fails. **The verdict is retracted and must-have 2 passes.**
+`near-misses.md` had already noticed this in three separate later sections and never went back to
+the entry, which is why the clinic sat abandoned for a fortnight.
+
+**What it has:** one clinic in central Harrogate, injectables and energy devices, separate women's
+and men's treatment pages, "award winning medically led clinic". Address is **Cloudflare-hidden, not
+absent** — a browser reads it in seconds and no fetch ever will.
+
+**The two things to do first, in this order, because both are ours and neither needs a browser:**
+1. **Companies House on `06184603`.** It is a 2007-series number, so confirming it settles
+   **must-have 8 and must-have 4 together** and would make this the longest trading history found in
+   its entire sweep. Caution carried from the entry: the footer prints **two** numbers on one read
+   and **one** on another, and the second is the literal placeholder `12345678` — so confirm the
+   name on the register matches the clinic rather than assuming the number is theirs.
+2. **Fetch the About page.** Search results show **Anthea Whiteley, Aesthetic Nurse Practitioner
+   RGN, Director**, which would close the "no owner named" gap both entries record. That page has
+   never actually been fetched, so the name is a search-result claim and not yet a reading — and an
+   absent finding is a claim about the pages you read.
+
+**If both come back clean this is a strong B and arguably an A, and then it belongs in the table
+above rather than down here.** Until then it is a two-step job, not a browser minute.
+
 **TRUE YOU (San Jose, CA) MOVES UP FROM LOW PRIORITY TO HIGH, 17 Nov — it was down as "the address
 is the cheapest of its three problems" and it now has one problem left.** The policy we had recorded
 as erroring is at `/privacy-policy/`, it declares itself **"Effective: December 1, 2014"** — a

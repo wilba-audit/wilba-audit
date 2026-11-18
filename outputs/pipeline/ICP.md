@@ -1788,6 +1788,94 @@ procedures are the ones that have succeeded often enough to stop being questione
 not vigilance. It is to **write the procedure's boundary down next to its result**, so the boundary
 is visible to whoever inherits the result.
 
+## Filing: which file a researched clinic belongs in — ruled 18 Nov 2026
+
+**`near-misses.md` is for clinics EMAIL CANNOT REACH. The pipeline at grade C is for clinics we
+can reach that fail a must-have. A clinic with a verified published address and one failed
+must-have belongs in the pipeline, and five have been written to the wrong file.**
+
+Both the daily skill and the standing sourcing prompt say the same thing in the same words — *"a
+clinic that is close but fails one must-have is graded C and parked with a note saying why, not
+dropped"* — and the 16 Oct changeover did exactly that, parking 49 rows at C rather than deleting
+them. What has drifted since is narrower and easy to miss: a worker that has **read a published
+mailbox off a clinic's own page** and then finds must-have 4 unevidenced writes the whole thing
+up in `near-misses.md`, because that is the file it was told to write its rule-outs into. The
+write-ups are excellent and complete. They are simply in the file nothing reads.
+
+**Why the file matters more than it sounds.** A C row in the pipeline is visible to
+`wilba_outreach.py`, is re-read whenever the standard moves, and carries its verified address and
+its date forward in a column. An entry in a 24,000-line prose file is none of those things: the
+expensive half of sourcing — finding the clinic and reading an address off its own page — has
+already been paid for and is then parked somewhere it cannot be found by anything except a grep
+somebody has to think to run.
+
+**The five, with what happened to each:**
+- **DC Aesthetics** (Ashmore, Gold Coast) — its own write-up says verbatim *"Grade C. Failing
+  must-have: must-have 4. Exactly one must-have fails, so this is parked and recoverable, not
+  dropped"*, and records `info@dcaesthetics.com.au` read off its contact page on 10 Nov with both
+  AU/NZ findings clear. **Appended 18 Nov.**
+- **Skinly Aesthetics** (Upper East Side, New York) — `info@skinlyaesthetics.com` read verbatim as
+  text and as a `mailto:` on 9 Nov. **Appended 18 Nov.**
+- **Filtered Faces Aesthetics**, **LuxLab** and **Aura Medi Clinic** (all Gold Coast) — all three
+  publish a mailbox already verified on 17 Nov; handed to a worker on 18 Nov to resolve must-have
+  4, and **to be appended either way**, B if it clears and C if it does not.
+
+**The rule, so this does not need rediscovering: the file is chosen by REACHABILITY, the grade is
+chosen by the must-haves, and they are two independent questions.** Unreachable goes in
+near-misses whatever its grade. Reachable goes in the pipeline whatever its grade. A clinic that
+is both reachable and failing may usefully be written up in near-misses *as well*, for the market
+knowledge — but the row is what makes it findable, so the row comes first.
+
+**AND THE METHOD NOTE, BECAUSE THE OBVIOUS AUDIT FOR THIS DOES NOT WORK.** Grepping
+`near-misses.md` for email addresses to find mis-filed rows returns mostly noise, and the noise is
+structural rather than accidental: **the file's whole job is to record the addresses we refused.**
+A scan of 1,237 entries returned 100 blocks holding an address absent from the pipeline, and the
+bulk of them were Cloudflare `[email protected]` placeholders quoted in order to be declined,
+vendor and web-designer mailboxes already on the look-alike list, `mail@example.com` template
+leftovers, and addresses a worker named precisely to explain why it would not record them. Enhance
+Cosmetics and Wellness was flagged by the scan on the strength of an address its own entry refuses
+in bold. **Audit the VERDICT, not the artifact** — and at this n, read the entries.
+
+## A grade A needs a rung on the ladder, and 23 of them do not have one — measured 18 Nov 2026
+
+**33 of 202 grade-A rows carry a note saying must-have 4 is "inferred" or "NOT VERIFIED", and
+about 23 of those name no rung of the evidence ladder anywhere in their notes.** They reached A on
+team size, a device fleet, a membership programme, a count of booking locations, a fitted-out
+shopfront, or the business "looking busy".
+
+**This contradicts the ladder in terms.** The 5 Nov ruling above says it "is what separates a
+grade A from a grade B on otherwise identical rows": a dated or quantified artifact on the
+clinic's own site satisfies must-have 4; a practitioner's career length alone **keeps the row at
+B**; no proxy of any kind parks it at C. **The ladder has three rungs and none of them is "the
+operation looks busy."** A device fleet is a capital-expenditure signal, not a dated one — it says
+somebody spent money, not when.
+
+**The workers were not sloppy and that is the point.** Every one of the 23 says so out loud, and
+two say it better than this file does: *"this A is one evidence short and I would rather say so
+than upgrade on a feeling"* (Lou Lou Med Spa), and *"I graded A on the strength of the
+owner-injector plus system plus scheme stack, which is the strongest in this whole sweep, and I am
+naming the gap rather than hiding it"* (Tru Beauty By Trevor). The notes are honest; the grade is
+what disagrees with them.
+
+**Why it is worth acting on rather than noting.** `wilba_outreach.py batch` selects **A before B**,
+so these rows sit at the **front of the send queue holding the weakest age evidence in the file** —
+and must-have 4 is the one must-have whose failure empties the offer, because a clinic with no
+lapsed list has nothing for a lapsed-patient campaign to reactivate. Every other must-have failure
+sends a good offer to the wrong buyer. This one sends it to a buyer with nothing to sell back.
+
+**Almost all 23 predate the 5 Nov ladder**, which makes this one more instance of the standing job
+that is bigger than any market: **a rule change reaches the run that makes it and nothing behind
+it.** The ladder was applied forward and never backward.
+
+**NOT DOWNGRADED ON THE STRENGTH OF THE SCAN, deliberately.** The regex has at least one known
+false positive — **row 894, The Injectory**, publishes *"Founded Feb 2021"* and the word "inferred"
+in its notes refers to the **patient count**, not the date, so must-have 4 is evidenced and the row
+is a correct A. One known false positive in a sample this size is exactly the reason five claims
+got retracted on 17 Nov, so the count above is a count of **rows to read**, not of rows to re-grade.
+The audit now runs inside `scripts/append_prospects.py` on every append and **prints the matching
+sentence rather than the id alone**, so each one can be judged in a glance instead of a fetch.
+Whoever works them re-reads the row and either names the rung it actually has or moves it to B.
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from
