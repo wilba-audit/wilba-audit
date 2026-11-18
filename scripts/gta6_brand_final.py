@@ -45,5 +45,8 @@ for name, col_d, col_l, rot in [('confirmed', K['mint'], '#0A6E4C', 4), ('unveri
     for theme, col in [('dark', col_d), ('paper', col_l)]:
         W, H, b, d = stamp_rect(f'st{name}{theme}', col, 'GTA DECODED VERDICT', name.upper(), 'TESTED ON CAMERA', rot=rot)
         files[f'stamp-{name}-{theme}.svg'] = svg(W, H, b, f'{name.title()} verdict stamp', d)
+for theme, col in [('dark', K['mint']), ('paper', '#0A6E4C')]:
+    W, H, b, d = stamp_rect(f'stoff{theme}', col, 'GTA DECODED VERDICT', 'CONFIRMED', 'OFFICIAL SOURCE', rot=4)
+    files[f'stamp-confirmed-official-{theme}.svg'] = svg(W, H, b, 'Confirmed (official source) verdict stamp', d)
 for n, v in files.items(): open(os.path.join(OUT, n), 'w').write(v)
 print('\n'.join(files))
