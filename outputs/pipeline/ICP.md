@@ -2023,6 +2023,103 @@ The audit now runs inside `scripts/append_prospects.py` on every append and **pr
 sentence rather than the id alone**, so each one can be judged in a glance instead of a fetch.
 Whoever works them re-reads the row and either names the rung it actually has or moves it to B.
 
+## The ladder's middle rung, named at last — and 24 of the 25 grade-A rows went onto it. 19 Nov 2026
+
+The 18 Nov list of 25 grade-A rows resting on no rung of the must-have 4 ladder has been worked, all
+25, by reading each row's notes rather than by fetching anything. **22 moved to B, 2 moved to C, and
+1 kept its A.** That one, row 408, kept it on the weakest artifact the ladder admits: a site
+copyright reading 2022, four years old when read, which clears the three-year floor and was the only
+rung the row had.
+
+**What the pass found is that the ladder's middle rung was described too narrowly.** The 5 Nov
+version named exactly one kind of middle evidence — *a practitioner's career length* — and said
+anything less parks the row at C. Reading 25 rows turned up a fourth kind the ladder never named,
+and it was doing most of the work in practice:
+
+- **An operational proxy.** A payment-plan integration on a 52-week term. A stocked retail
+  storefront. A branded, named membership programme. A gift-card shop. A twelve- or twenty-person
+  named team. A second or third published street address. A roster of manufacturer trainers.
+  A fitted-out shopping-centre tenancy.
+
+**Why these are not nothing, and why they are still not enough.** Each one is evidence the clinic is
+*past its first setup* — nobody integrates a 52-week payment plan or names a membership tier in
+month one. But **none of them says how long**, and must-have 4 is a question about duration. So they
+sit exactly where career length sits: **B**. Nothing at all still parks a row at C.
+
+Stated as a rule: **a non-dated, non-quantified operational proxy holds a row at B. It never lifts
+one to A, and it never leaves one at C.**
+
+Two independent routes reached that rule the same night, which is some evidence it is real rather
+than convenient. The re-grade pass reached it by reading 25 rows; **row 1204's own worker had
+reached it alone, weeks earlier**, writing *"I have applied the evidence ladder's MIDDLE rung: a
+practitioner-level claim keeps the row at B rather than parking it at C, because 'thousands of
+patients' is the thing must-have 4 actually asks about"* — and then explicitly inviting this thread
+to overrule it. It was right and has been confirmed in the row.
+
+**What the pass says about grade A itself, which is the more uncomfortable finding.** Several of
+those 25 rows said in terms that they were short: *"this A is one evidence short of the standard"*,
+*"three legs of four"*, *"I would rather say so than upgrade on a feeling"*. The graders were honest
+and the notes were accurate. **The grade still said A, and `batch` takes A before B — so a gap
+everybody had documented was putting the weakest age evidence at the front of the send queue
+anyway.** The defect was never dishonest grading. It was a grading scheme in which a documented gap
+changed the prose and not the sort order. Writing the caveat is not the same as acting on it.
+
+## And the identical defect was sitting in grade B, found by a check built for something else. 19 Nov 2026
+
+The audit that found the grade-A problem was **scoped to grade A**, on the reasoning that grade A is
+where a weak row does the most damage. That scoping was this project's most repeated mistake, now
+at nineteen instances: **a check scoped to where the problem usually is will not see it where it
+survives.**
+
+It surfaced by accident. The **deferral predicate** — a different check, built for a different
+purpose — flagged twelve grade-B rows whose notes tell a person to go and date a clinic from its
+Google review history. Reading those twelve found **six C rows wearing a B**. Nothing about grade A
+had anything to do with finding them, and the grade-A audit could not have found them in principle.
+
+The audit now covers **A and B**. Grade B prints as a count and ids only, with no snippets: there
+are hundreds of B rows and a snippet each would bury the grade-A lines, which are the urgent ones.
+First measurement: **88 grade-B rows name no rung and have never been ruled on.** That is a backlog,
+not a to-do list — the middle rung is wide and plenty of those rows hold B legitimately without
+using the ladder's vocabulary. **Read them before moving them.**
+
+**And the widened audit was wrong on its first run, in a way worth keeping.** It immediately flagged
+the 22 rows that had just been moved A-to-B on an explicit middle-rung ruling as "candidates for C" —
+because their notes *do* say must-have 4 is inferred and the ladder regex *does* find no artifact in
+them. Both facts true, conclusion wrong: **a row that has been read and ruled is not a candidate for
+anything.** A recorded ladder ruling now suppresses the flag, the same way `QUESTION RESOLVED`
+suppresses the deferral flag. That is not the audit being made lenient; it is the audit learning the
+difference between a row nobody has looked at and a row somebody looked at and decided.
+
+## "Eyeball the Google review history before sending" is not a deferral. 19 Nov 2026
+
+Twelve rows carried some form of that instruction. It reads like diligence and functions as a leak,
+because **nobody was ever going to do it**: our tooling cannot fetch Google review dates, and nobody
+is going to spend Jess's attention opening twelve Google Business profiles to date clinics she has
+not decided to contact. An instruction addressed to nobody is not a deferral — **it is an unresolved
+must-have wearing a task's clothes**, and it had been sitting in the send queue for weeks looking
+like it was handled.
+
+All twelve were ruled on with what was actually known. Six held at B with the rung named; six moved
+to C. Three of the rulings are worth keeping as precedent:
+
+- **A published review COUNT satisfies the ladder; it does not date the clinic.** Row 765 named
+  *"the published count of 72 five-star reviews"* and then asked for the review dates on top. The
+  count is a quantified artifact and ICP.md lists it as a rung. What the worker wanted was the
+  dating, and that is the distinction this file already carries: **the ladder tells you whether you
+  KNOW the age; the must-have asks whether the age is ENOUGH.** The count clears the ladder. Nothing
+  published settles the dating, and no further check is required before sending.
+- **Two street addresses are a rung. Two town names in a meta description are not.** Rows 696 and
+  698 came out of the same sweep and resolved differently for exactly that reason — 696 publishes
+  two full addresses under one named co-owner (B), 698 has two towns in a meta tag, no explicit
+  count, no published addresses, and a homepage its own grader called close to a placeholder (C).
+- **An existing marketing list is not a proxy for a lapsed list. It is one.** Row 782's notes said
+  *"NO membership or loyalty scheme is published anywhere"* in the same breath as its
+  `dormant_lead_signal` field recorded a live SMS list offering *"special discounts and text-only
+  deals"*. The field was right and the sentence was wrong. **When a row contradicts itself across
+  two fields, the structured field is likelier to be right than the prose** — prose gets written
+  once and copied forward, and this is the second time this month that a row's own notes have
+  denied something the row's own data recorded.
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from

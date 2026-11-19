@@ -1855,6 +1855,48 @@ Carolinas need a phone or DM list, not a browser list**, and a market's split be
 shapes is worth stating in its write-up, because it decides what Jess can actually do with the
 leftovers.
 
+## The whole-file audits could not be run without appending rows — fixed 19 Nov 2026
+
+`scripts/append_prospects.py` carries about a dozen whole-file audits: the copy-rule scan, the
+price_point scan, the consent-finding scans, the deferral predicate, the must-have 4 ladder scan.
+They read nothing but the committed CSV. **They ran only on the success path of an append**, so
+anything that edited the CSV some other way could not use them — and a re-grade pass that moved 25
+rows tonight could not check its own work with the file's own checks.
+
+Run them on their own now:
+
+```
+python3 scripts/append_prospects.py --audit-only
+```
+
+That is the right first command for any pass that edits grades or notes rather than adding rows, and
+the right last command before a commit. There was never a reason to gate them on an append; the
+gate was just where they happened to be written. **Same disease as every other scoping bug in this
+project: a check reachable only from where the problem usually arrives will not see it where it
+actually survives.**
+
+## Fixing one branch of a pattern is not fixing the pattern — 19 Nov 2026
+
+The fourth instance of the literal-gap bug, and it survived *inside the fix for the third one*.
+
+On 18 Nov the ladder regex missed *"Established in Adelaide in 2018"*, because the city sits between
+"in" and the year. The fix let words sit between the verb and the year — **but only on the
+`founded|established|opened|trading` branch.** The copyright branch kept its tight `\s*`. So
+*"Site copyright reads 2022"* still did not match, and row 408 was the one row still printing as
+"names no ladder artifact anywhere" an hour after a human had read that very sentence and ruled on
+it.
+
+**The bug was never in a branch. It was in a habit of writing, so it was in every branch written
+that way.** When a pattern fails on a gap, widen every branch that could carry the same gap, then
+test the ones you did not think were broken.
+
+The second half of the same fix: moving `\b` to the wrong side of an alternation silently broke the
+glyph forms. `(?:©|\(c\)|copyright)\b` cannot match `© 2019` or `(c) 2018`, because the character
+before the boundary is punctuation. It belongs **inside the alternation, on the one branch that is
+word-shaped**: `(?:©|\(c\)|copyright\b)`. That was caught only because the controls included the
+glyph forms — **36 controls, 20 of which must NOT match.** Two of the positives failed, and both
+failures were in the fix rather than in the original defect.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at

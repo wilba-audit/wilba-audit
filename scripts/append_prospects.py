@@ -91,6 +91,16 @@ SCREENED = re.compile(r'must[- ]have 6 screened', re.I)
 # and that convention is stated in the worker brief so it is not folklore.
 RESOLVED = re.compile(r'QUESTION RESOLVED|QUESTION WITHDRAWN', re.I)
 
+# 19 Nov 2026. The ladder audit was widened to grade B the same night a pass moved 22 rows
+# from A to B on an explicit middle-rung ruling - and it promptly flagged those 22 as
+# "candidates for C", because their notes do say must-have 4 is inferred and the ladder
+# regex does find no artifact in them. Both facts are true and the conclusion was wrong:
+# a row that has been READ and RULED is not a candidate for anything. So a recorded ladder
+# ruling suppresses the flag, exactly as QUESTION RESOLVED suppresses the deferral flag.
+# This is not the audit being made lenient. It is the audit learning the difference between
+# a row nobody has looked at and a row somebody looked at and decided.
+LADDER_RULED = re.compile(r'RE-GRADE \d+ \w+ \d{4}|middle rung|ladder\'s middle rung', re.I)
+
 # 16 Nov 2026: the DEFERS check cannot read negation, and it fired on two of five rows in one
 # batch - both on the sentence a worker writes when it HAS decided: "no further check is
 # required before sending". That is the opposite of a deferral, so the phrase is removed from
@@ -228,10 +238,25 @@ PLACEHOLDER = re.compile(r'(filler@godaddy|contact@wix|example\.com|yourdomain|'
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('files', nargs='+')
-    ap.add_argument('--date', required=True, help='date_added, e.g. 2026-10-20')
+    # --audit-only exists because of a defect found on 19 Nov 2026. The two whole-file
+    # audits at the bottom of this function - the deferral scan and the grade-A ladder
+    # scan - ran only on the success path of an append. So the file's own checks on the
+    # file's own filing could not be run by anything that edited the CSV some OTHER way.
+    # A re-grade pass that moved 25 rows could not check its own work with them, which is
+    # exactly the recurring failure in this project: a check reachable only from where the
+    # problem usually arrives will not see it where it actually survives. The audits read
+    # nothing but the committed CSV, so there was never a reason to gate them on an append.
+    ap.add_argument('files', nargs='*')
+    ap.add_argument('--date', help='date_added, e.g. 2026-10-20; required unless --audit-only')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--audit-only', action='store_true',
+                    help='run the whole-file audits against the committed CSV and exit')
     args = ap.parse_args()
+    if not args.audit_only:
+        if not args.files:
+            ap.error('give at least one input file, or pass --audit-only')
+        if not args.date:
+            ap.error('--date is required unless --audit-only')
 
     with open(PIPELINE, newline='') as f:
         fields = next(csv.reader(f))
@@ -258,6 +283,17 @@ def main():
             print('BAD JSON %s: %s' % (path, e)); continue
         print('%s: %d rows' % (os.path.basename(path), len(data)))
         for r in data:
+            # FLATTEN EMBEDDED NEWLINES, added 19 Nov 2026. Four rows of 1,343 (1278-1281,
+            # all from one Sydney sweep) carried 14 newlines each inside `notes`. The CSV
+            # module quotes them correctly and the file parses, so nothing was corrupt -
+            # but every line-based consumer of this file reads those four rows wrong, and
+            # this file gets grepped, counted with wc -l and skimmed with sed constantly.
+            # One worker writing multi-line notes should not change how the file can be
+            # read. Flattened on the way in, so the invariant is "one row, one line" rather
+            # than "one row, one line unless a worker pressed Enter".
+            for _k, _v in list(r.items()):
+                if isinstance(_v, str) and ('\n' in _v or '\r' in _v):
+                    r[_k] = ' '.join(_v.split())
             cn = (r.get('clinic_name') or '').strip()
             em = (r.get('contact_email') or '').strip()
             src = (r.get('email_source') or '').strip()
@@ -378,16 +414,18 @@ def main():
     if not accepted or args.dry_run:
         if args.dry_run:
             print('\n(dry run, nothing written)')
-        return
+        if not args.audit_only:
+            return
 
-    with open(PIPELINE, 'a', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=fields)
-        for r in accepted:
-            r['id'] = next_id; next_id += 1
-            w.writerow({k: (r.get(k) or '') for k in fields})
-    print('\nwrote ids %s-%s' % (accepted[0]['id'], accepted[-1]['id']))
-    print('grades: ' + ', '.join('%s=%d' % (g, sum(1 for a in accepted if a['icp_fit'] == g))
-                                 for g in ('A', 'B', 'C')))
+    if not args.audit_only:
+        with open(PIPELINE, 'a', newline='') as f:
+            w = csv.DictWriter(f, fieldnames=fields)
+            for r in accepted:
+                r['id'] = next_id; next_id += 1
+                w.writerow({k: (r.get(k) or '') for k in fields})
+        print('\nwrote ids %s-%s' % (accepted[0]['id'], accepted[-1]['id']))
+        print('grades: ' + ', '.join('%s=%d' % (g, sum(1 for a in accepted if a['icp_fit'] == g))
+                                     for g in ('A', 'B', 'C')))
 
     # re-read, because a write that never reached disk once produced a commit
     # message claiming a change the commit did not contain
@@ -587,6 +625,13 @@ def main():
     #      the plainest rung-one artifact there is. The same literal-gap mistake as the DEFERS
     #      space bug, two hours apart.
     #   3. IT ASSUMED THE COPYRIGHT GLYPH. Workers write "(c) 2018" as often as the symbol.
+    #   4. AND THE LITERAL-GAP MISTAKE SURVIVED THE FIX FOR IT, found 19 Nov 2026. Defect 2 was
+    #      fixed by letting words sit between the verb and the year - but only for the
+    #      founded/established/opened branch. The copyright branch kept the tight `\s*`, so
+    #      "Site copyright reads 2022" did not match, and row 408 was the single row still
+    #      printing as "names no ladder artifact anywhere" an hour after a human had read that
+    #      very sentence and ruled on it. Fixing one branch of a pattern is not fixing the
+    #      pattern: the bug was in a habit of writing, so it was in every branch written that way.
     # The negated forms are now STRIPPED BEFORE TESTING, the same shape as NEGATED_DEFERRAL above.
     # That is three scrub-before-test pairs in this file now, which is the fourth instance this
     # week of the same disease; if a fifth appears, factor them into one helper rather than writing
@@ -605,26 +650,54 @@ def main():
                         r'|(?:founded|established|opened|trading|operating)\b[^.;|]{0,40}?\b(?:19|20)\d\d'
                         r'|since (?:19|20)\d\d'
                         r'|(?:19|20)\d\d\s*[-–]\s*20\d\d'
-                        r'|(?:©|\(c\)|copyright)\s*(?:19|20)\d\d', re.I)
-    weak_a = []
+                        r'|(?:©|\(c\)|copyright\b)[^.;|]{0,30}?\b(?:19|20)\d\d', re.I)
+    # WIDENED TO GRADE B ON 19 Nov 2026, and the reason is the finding, not the fix.
+    # This audit was written on 18 Nov because 25 grade-A rows turned out to rest on no
+    # rung of the evidence ladder at all. It looked at grade A only - because grade A is
+    # where a weak row does the most damage, since `batch` sends A before B. That scoping
+    # was the same mistake this file has now recorded nineteen times: A CHECK SCOPED TO
+    # WHERE THE PROBLEM USUALLY IS WILL NOT SEE IT WHERE IT SURVIVES. The identical defect
+    # was sitting in grade B the whole time, and the only reason it surfaced is that the
+    # deferral predicate - a different check, built for a different purpose - happened to
+    # flag twelve B rows telling a human to go and date a clinic from its Google reviews.
+    # Six of those twelve were C rows wearing a B. Nothing about grade A had anything to
+    # do with finding them.
+    #   Grade B is printed as a COUNT AND IDS ONLY, with no snippets. There are hundreds of
+    # B rows and a snippet each would bury the grade-A lines, which are the urgent ones.
+    # A B row with no rung is a candidate for C, not a row that must move: the middle rung
+    # is wide (career length, a team, a second site, a branded membership, a live marketing
+    # list) and plenty of B rows hold it legitimately without using the ladder's vocabulary.
+    # Read them before moving them.
+    weak = {'a': [], 'b': []}
     for r in after:
-        if (r.get('icp_fit') or '').strip().lower() != 'a':
+        g = (r.get('icp_fit') or '').strip().lower()
+        if g not in weak:
             continue
         notes = r.get('notes') or ''
-        if not notes.strip() or RESOLVED.search(notes):
+        if not notes.strip() or RESOLVED.search(notes) or LADDER_RULED.search(notes):
             continue
         m = inferred.search(notes)
         if not m:
             continue
         rung = ladder.search(negated_ladder.sub(' ', notes))
         lo = max(0, m.start() - 70)
-        weak_a.append((r['id'], bool(rung),
-                       ' '.join(notes[lo:m.end() + 90].split())))
-    norung = [w for w in weak_a if not w[1]]
+        weak[g].append((r['id'], bool(rung),
+                        ' '.join(notes[lo:m.end() + 90].split())))
+    ruled = sum(1 for r in after
+                if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
+                and LADDER_RULED.search(r.get('notes') or ''))
+    print('grade A/B rows carrying a recorded must-have 4 ladder ruling (excluded below): %d' % ruled)
+    norung_a = [w for w in weak['a'] if not w[1]]
     print('grade A rows whose notes call must-have 4 inferred or unverified: %d '
-          '(of which %d name no ladder artifact anywhere)' % (len(weak_a), len(norung)))
-    for rid, rung, snippet in norung:
+          '(of which %d name no ladder artifact anywhere)' % (len(weak['a']), len(norung_a)))
+    for rid, rung, snippet in norung_a:
         print('    %s: ...%s...' % (rid, snippet))
+    norung_b = [w for w in weak['b'] if not w[1]]
+    print('grade B rows whose notes call must-have 4 inferred or unverified: %d '
+          '(of which %d name no ladder artifact anywhere - candidates for C, read before moving)'
+          % (len(weak['b']), len(norung_b)))
+    if norung_b:
+        print('    ' + ' '.join(rid for rid, _, _ in norung_b))
 
 
 if __name__ == '__main__':
