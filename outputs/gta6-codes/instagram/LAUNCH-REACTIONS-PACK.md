@@ -92,3 +92,33 @@ Inspired by [ADD CREATOR HANDLE]. Fan-made · not affiliated with Rockstar.
 
 #GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #GTA6News
 ```
+
+---
+
+## Reels (built Nov 2026): `outputs/gta6-codes/reels/`
+- **Format:** silent 1080×1920 MP4s, about 16 s each. Add a trending sound in the Instagram app.
+- **Structure:**
+  - 0–8 s: Artlist Decoder shot (Kling 3.0) with Noto Sans captions
+  - 8–13 s: claim card with an UNVERIFIED stamp slam
+  - 13–16 s: logo end card
+- **Rebuild:** `python3 scripts/gta6_reel_build.py <reel-id> <shot.mp4>`
+- **Before posting:** turn on Instagram's **"AI info" label** (Advanced settings), because the visuals are AI-generated.
+
+### Reel 1: `reel-1-30fps.mp4`
+```
+13 years… for 30 FPS? 😬 Streamers say GTA 6 is capped at 30, even on PS5 Pro. We're testing it. Verdict incoming. 👀
+Fan-made · not affiliated with Rockstar
+#GTA6 #GTAVI #PS5Pro #GTA6News #Gaming
+```
+### Reel 2: `reel-2-score.mp4`
+```
+It scored a 100… and the review says "not a perfect game." Both can be true. Read the review, not the number. 🧠
+Fan-made · not affiliated with Rockstar
+#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News
+```
+### Reel 3: `reel-3-glitch.mp4`
+```
+15 minutes in. First glitch. 🫠 One-off or every time? Send us your GTA 6 bug clips and we'll test them.
+Fan-made · not affiliated with Rockstar
+#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #Gaming
+```

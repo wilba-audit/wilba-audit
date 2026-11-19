@@ -43,7 +43,8 @@ av = ('<rect width="1000" height="1000" fill="#0B0710"/><circle cx="500" cy="500
 files['gtad-avatar.svg'] = svg(1000, 1000, av, 'GTA Decoded profile picture', GRAD.format(u='av', b=18) + '<radialGradient id="avbg" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3A1470"/><stop offset="1" stop-color="#0B0710"/></radialGradient>')
 for name, col_d, col_l, rot in [('confirmed', K['mint'], '#0A6E4C', 4), ('unverified', '#FFC547', '#7A4F00', -3), ('busted', K['pink'], '#B80E62', -8), ('expired', '#9A8FA8', '#625770', 3)]:
     for theme, col in [('dark', col_d), ('paper', col_l)]:
-        W, H, b, d = stamp_rect(f'st{name}{theme}', col, 'GTA DECODED VERDICT', name.upper(), 'TESTED ON CAMERA', rot=rot)
+        sub = {'confirmed': 'TESTED ON CAMERA', 'unverified': 'STILL TESTING', 'busted': 'TESTED ON CAMERA', 'expired': 'NO LONGER WORKS'}[name]
+        W, H, b, d = stamp_rect(f'st{name}{theme}', col, 'GTA DECODED VERDICT', name.upper(), sub, rot=rot)
         files[f'stamp-{name}-{theme}.svg'] = svg(W, H, b, f'{name.title()} verdict stamp', d)
 for theme, col in [('dark', K['mint']), ('paper', '#0A6E4C')]:
     W, H, b, d = stamp_rect(f'stoff{theme}', col, 'GTA DECODED VERDICT', 'CONFIRMED', 'OFFICIAL SOURCE', rot=4)
