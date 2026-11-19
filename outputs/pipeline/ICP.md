@@ -2120,19 +2120,31 @@ to C. Three of the rulings are worth keeping as precedent:
   once and copied forward, and this is the second time this month that a row's own notes have
   denied something the row's own data recorded.
 
-## The Australian policy screen: seven markets measured, and it is now ABSENT more often than not. 19 Nov 2026
+## The Australian policy screen: how often it is ABSENT is a property of the RING, not a trend. 19 Nov 2026 (corrected the same night)
 
-The rule as written says the Australian must-have 2 screen *lives in the privacy policy*. Seven
-markets of measurement say that is the wrong word. The absent rate, run by run:
+The rule as written says the Australian must-have 2 screen *lives in the privacy policy*. Measurement
+says that is the wrong word — but **the first version of this section, written two hours earlier the
+same night, drew the wrong conclusion from the right numbers, and the mistake is instructive enough
+to keep.** It listed four markets in date order, saw 57 → 63 → 67 → 85, and called the absent rate
+"now the majority case", as though it were rising over time. Then Perth's western and river rings came
+in at **19%**, and the trend evaporated.
 
 | Market | Date | Policy absent |
 | --- | --- | --- |
+| **Perth west / river / coast** | **19 Nov** | **19%** |
 | Brisbane south and west | 18 Nov | 57% |
 | Adelaide east / Hills | 18 Nov | 63% and 57% |
 | Canberra and Queanbeyan | 19 Nov | **67%** |
 | Moreton Bay + Sunshine Coast | 19 Nov | **85%** |
 
-**Keep running it anyway, and here is the arithmetic that says so.** In Canberra six policies were
+**19% and 85% were measured on the same night.** So the absent rate is not a trend and there is no
+drift to track: **it is a property of the ring, like the mailbox rate and like which must-have binds.**
+Four data points in date order made a story out of a variable that is geographic, and putting a date
+column next to a rate was what made the story look real. Do not budget a fetch count for this screen
+from the last market you swept; budget it from nothing, and measure it per ring.
+
+**Keep running it in every ring, whatever the last ring measured, and here is the arithmetic that says
+so.** In Canberra six policies were
 readable, four clean and two dirty — and **the two dirty ones were the two best-looking rows in the
 sweep.** Aesthetics & Wellness Collective (two co-founding RNs, four nurses, a membership, gift
 vouchers, Timely, two published mailboxes — the only full grade-A dormant stack in the city) collects
@@ -2141,6 +2153,11 @@ collects a Medicare number *"for identification and claiming purposes"*, health 
 discloses to the Department of Veterans' Affairs. **Both would have shipped as sendable Bs.** Two
 sends saved under WILBA's name for two fetches is the entire argument for a screen whose precondition
 fails two-thirds of the time.
+
+Perth adds a third save on the same night, from a ring where the policy was nearly always *present*:
+**Dermedica read as a clean grade B until its policy admitted Medicare rebates.** So the screen pays
+in a 19%-absent ring and in a 67%-absent ring alike — the absent rate changes how many fetches it
+costs, not whether it is worth them.
 
 **But when it is absent, the screen does not vanish — it moves.** Moreton Bay read about twenty
 policies, could read three, and **not one came back dirty** — while two clinics failed must-have 2 in
@@ -2233,6 +2250,25 @@ domain, seven published a mailbox, which is a fine rate; **the denominator is th
 whole run.** Which must-have binds is a property of a ring, not a city — already recorded on 18 Nov,
 and this is the sharpest instance yet. Note what the worker said about its own brief: *"mine did not
 say either way"*, which is the right thing for a brief to do when nobody has measured the ring.
+
+## Perth's western ring: must-have 1 bound harder than must-have 5, which is new. 19 Nov 2026
+
+Every Australian ring measured until now was limited by **reachability** — must-have 5, the published
+mailbox. Perth's western and river suburbs inverted it: **84% published a mailbox**, and what cost the
+rows was **must-have 1**. Four of nineteen businesses opened are **dermal-therapist-led with no
+prescriber named anywhere.**
+
+That is a real clinic type rather than a documentation gap, and it is the type the TGA/AHPRA rule makes
+hardest to read: because no Australian clinic may name an injectable publicly, a dermal-therapy clinic
+and an injectables clinic can publish almost identical menus. **The prescriber is the only tell, and
+where there is no prescriber there is no injectables list to reactivate.** So in a high-reachability
+Australian ring, budget the fetches for the team and About pages rather than for the contact page.
+
+**And the ring finding fired for a third time in one night, in a third city.** Perth west: 84%
+published a mailbox. The same city a week earlier (12 Nov, the Cottesloe/Claremont/Nedlands sweep):
+3 of 11. Adelaide east 85% against Adelaide north-east ~30%, eight days apart. **Three independent
+reproductions, two of them intra-city, of the rule that a mailbox rate is a property of a ring and
+never of a city.**
 
 ## What we record
 

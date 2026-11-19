@@ -4,17 +4,18 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 19 Nov 2026: 1,394 rows, 916 ready to approach** — US 443, AU 265, CA 88, UK 82, NZ 44, IE 2.
+**As of 19 Nov 2026: 1,409 rows, 926 ready to approach** — US 443, AU 275, CA 88, UK 82, NZ 44, IE 2.
 **166 entries on the browser-visit list**, whose top twelve are ranked and each one browser-minute from
 a sendable row. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
 since — because every market requires WILBA's postal address in the footer and we do not have it.
-**Sourcing has not been the constraint for three weeks.** The US count fell by eight tonight, which
+**Sourcing has not been the constraint for three weeks**, and tonight's 66 rows cleared the standing
+prompt's 60-row target. The US count fell by eight tonight, which
 is not a loss: eight US rows moved to C in a pass that read the age evidence they had rather than the
 grade they wore.
 
 **The largest unworked thing in this file is no longer a market. It is 88 grade-B rows that name no
 rung of the must-have 4 ladder and have never been read** (printed by `python3 scripts/append_prospects.py
---audit-only`). The second largest is a DM list: between tonight's four markets, roughly thirty live
+--audit-only`). The second largest is a DM list: between tonight's five markets, roughly thirty-five live
 aesthetics businesses were found that publish no email anywhere, most of them with no website at all.
 **Neither of those is fixed by another sweep.**
 
@@ -1928,12 +1929,13 @@ Grep that first, and only then read the near-misses write-up for the texture.
 Cost today: one worker briefed with a false premise, and two fetches spent re-finding rows we
 already had. Cheap, and only because the duplicate guard exists.
 
-## 19 November 2026 — five markets, 51 rows, and two workers told me my own brief was wrong
+## 19 November 2026 — five markets, 66 rows, and THREE workers told me my own brief was wrong
 
-**Ids 1344-1394. 51 rows: 4 A, 17 B, 30 C.** Adelaide north-east and coastal west 1344-1350,
-Canberra and Queanbeyan 1351-1365, Moreton Bay and the southern Sunshine Coast 1366-1380, Geelong /
-Surf Coast / Ballarat 1381-1394. A fifth market, Perth's western and southern rings, was commissioned
-mid-run once the first three returned, and is filed separately below if it landed.
+**Ids 1344-1409. 66 rows: 5 A, 26 B, 35 C**, which clears the standing prompt's 60-row target.
+Adelaide north-east and coastal west 1344-1350, Canberra and Queanbeyan 1351-1365, Moreton Bay and the
+southern Sunshine Coast 1366-1380, Geelong / Surf Coast / Ballarat 1381-1394, and Perth's western,
+river and coastal ring 1395-1409 — the fifth market commissioned mid-run once the first three
+returned, and the best grade distribution of the night by a wide margin (1 A, 9 B, 5 C).
 
 ### The run's own biggest mistake was mine, it happened before any worker started, and two of them caught it independently
 
@@ -1950,11 +1952,30 @@ mid-run once the first three returned, and is filed separately below if it lande
   `SOURCING-LOG.md:1988` — no dedicated sweep, but real incidental coverage — and took three free
   skips off grepping per name.
 
+- **Perth.** `near-misses.md:17537` is headed `# Perth western and riverside suburbs, WA — sourced
+  12 Nov 2026` — **seven days before I briefed that ring** — covering Cottesloe, Claremont, Nedlands,
+  Dalkeith, Peppermint Grove, Mount Lawley, South Perth, Applecross, Floreat and Subiaco, six of them
+  in my brief. Its worker found that heading **for free, before any fetch.**
+
 **The uncomfortable part is that I had the measurement and did not read it.** Before choosing
 markets I ran the four-part coverage grep across twenty-four candidate markets, and it printed
 `Geelong near-misses:15 csv:6`. I briefed Geelong as never swept anyway. **I treated a low count as
 evidence of absence when it was evidence of coverage** — fifteen mentions and six rows is not
 "nobody has been here".
+
+**And the grep itself was the wrong instrument, which is the transferable part.** A mention count
+cannot tell "one dedicated sweep concluded this ring is finished" from "the name appears in other
+rows' notes". The right command is a **sweep-level heading grep**, which the Perth worker named:
+
+```
+grep -nE "^#{1,2} .*(<city>|<region>)" outputs/pipeline/near-misses.md
+```
+
+**Measured afterwards: that one command would have shown four of tonight's five markets**, with their
+dates, before a single fetch was spent. Two limitations, both precise: a sweep whose heading names no
+place is invisible to it (the 2 Nov Adelaide section is headed *"Australia's last unswept corners"* —
+one such heading in 28,000 lines, so put the place in new headings), and the bare state code `WA`
+collides with Washington state. Full write-up with the measurement in the brief.
 
 **And for Adelaide I did not grep the suburbs at all.** I inherited the claim from my own standing
 list, written the night before, which said those rings were *"briefed tonight and not reached"*.
@@ -1962,7 +1983,14 @@ That is a true statement about a brief and it is not a measurement of coverage. 
 did not get to something is not a finding that nobody has.**
 
 Two errors, one shape: *I had the number and ignored it, then I trusted a sentence instead of a
-number.* The fix is to the standing list's format, applied below: **coverage goes in as a
+number.* **And there is one piece of evidence that the fix works, from this same run.** The Perth
+brief was written after the first two workers reported the problem. It named the six already-swept
+suburbs explicitly and told its worker to grep per suburb and per name rather than telling it the
+ring was new. That worker redirected to the unworked river and coast, **took 13 of its 15 rows from
+there**, resolved four leads the 12 Nov Perth run had run out of budget on, and confirmed one suburb
+that run could not — all without re-reading swept ground. **Passing the measurement along, rather
+than the conclusion, is the whole of the fix.** The other half is to the standing list's format,
+applied below: **coverage goes in as a
 measurement with its citation, never as a sentence.** Not "Adelaide's coastal west — not reached",
 but "Adelaide's coastal west — `near-misses.md:7411`, 2 Nov, verdict *empty*, 0 pipeline rows, and
 that verdict rests on two Yellow Pages indexes."
@@ -1974,9 +2002,12 @@ the same in two markets: **must-have 4.** Moreton Bay capped **11 of its 15** ro
 **8 of 15**. Both workers described the same thing — a market of nurse-led businesses founded
 2021-2024, with copyright-2026-only footers, no founding year, no review count and no dated archive.
 
-That generalises into a strategic fact worth stating plainly: **Australia's metro cores are worked
-out, and the rings we have left are structurally younger and less reachable than the ones we swept
-first.** Expect C-heavy runs from here. Do not read them as underperformance, and do not let a
+**Perth is the counterexample that keeps this honest: 9 B of 15, with the policy absent on only 19%
+and 84% publishing a mailbox.** So the generalisation is not "Australia is exhausted" — it is
+**ring-shaped, like everything else measured tonight: Australia's metro cores are worked out, and
+SOME of the rings left are structurally younger and less reachable, while others are as good as
+anything we have swept.** The way to tell is to sweep one and measure it; there is no reading it off
+the city. Expect C-heavy runs to be common from here. Do not read them as underperformance, and do not let a
 worker pad B to avoid them — a C row with honest notes is worth more than a B that wishes.
 
 ### The grade-A 'busy and well reviewed' leg is becoming unmeetable in Australia
@@ -2004,6 +2035,9 @@ counts are absent, **the award-year and archive rungs are what grade A has left.
 | ABR decisive 4 times out of 4, twice moving a grade DOWN | Canberra, Geelong |
 | Fresha suburb landing page: 115 businesses with addresses for 2 fetches | Adelaide |
 | Exomide locator paid out for a 4th and 5th time; 2 of 19 filed under the wrong suburb | Canberra, Moreton |
+| Policy screen absent on only 19% — breaking the "absent rate is rising" reading | Perth west |
+| 84% published a mailbox, and must-have 1 bound harder than must-have 5 | Perth west |
+| Fresha landing pages: 6 fetches covered 18 of 24 suburbs — the slug is a centroid, not a filter | Perth west |
 
 The durable rules those produced are written up in `ICP.md` (the policy screen's locus, the fourth
 species of inverted tenancy, the Canberra tenancy and DVA findings, the review-count finding, the
@@ -2159,9 +2193,10 @@ must-haves 1 and 2 are resolved first.
   `near-misses.md:4043` first, which says *"outside Hobart and Launceston, and the whole of WA outside
   Perth are close to exhausted"*, and Hobart's own best lead (The Skin Care Clinic, a full points
   loyalty ledger and six named staff) is a **browser** job, not a sourcing one.
-- **Perth** — the northern and south-eastern corridors were swept 2 Nov (`near-misses.md`, that run's
-  section); the western and southern rings were commissioned tonight and are filed below if they
-  landed.
+- **Perth — now largely closed.** The northern and south-eastern corridors were swept 2 Nov; the
+  western and riverside suburbs on **12 Nov** (`near-misses.md:17537`); and the river, coast and
+  Fremantle ring tonight (1395-1409). **Still open and named by tonight's worker: Skin Rejuvenate and
+  Cosmetique Subiaco**, two leads the 12 Nov run ran out of budget on and tonight did not reach.
 
 **10. THE US HIPAA NOTICE PROBATION HAS NOW FAILED TO ADVANCE FOR THREE CONSECUTIVE NIGHTS, FOR THE
 SAME REASON EACH TIME: the standing prompt's metro order says Australia first.** The screen (does the
@@ -2172,7 +2207,7 @@ submission sentence; if it is nearly all of them the sentence is uninformative, 
 La Vie MD should be re-read rather than inherited at C. **If a night ever runs out of Australian
 ground — and item 9 says that night is close — this is what to spend it on.**
 
-**11. AND THE ONE THING NONE OF THIS FIXES.** 916 rows are ready to approach. **Ten clinics have ever
+**11. AND THE ONE THING NONE OF THIS FIXES.** 926 rows are ready to approach. **Ten clinics have ever
 been emailed, all on 15 Oct 2026.** Every market requires WILBA's postal address in the email footer;
 there is no postal address anywhere in this workspace; it has been asked of Jess on 15, 16, 17, 18 and
 19 November. **Until she answers, every number at the top of this file is inventory, not pipeline.**

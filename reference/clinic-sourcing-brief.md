@@ -1944,6 +1944,58 @@ word-shaped**: `(?:©|\(c\)|copyright\b)`. That was caught only because the cont
 glyph forms — **36 controls, 20 of which must NOT match.** Two of the positives failed, and both
 failures were in the fix rather than in the original defect.
 
+## CHECK COVERAGE WITH A HEADING GREP, NOT A WORD-COUNT GREP. Measured 19 Nov 2026, after it cost three workers real calls
+
+**Three of five workers on 19 Nov reported that their brief's coverage claim was wrong.** The cause
+was not laziness — a coverage grep *was* run across twenty-four candidate markets before any brief
+was written. It was the wrong grep. It counted **mentions of a place name** across the whole file,
+and a mention count cannot distinguish "one dedicated sweep concluded this ring is finished" from
+"the name appears in other rows' notes". Fifteen Geelong mentions and six pipeline rows got read as
+"nobody has been here".
+
+**Run this instead, before choosing a market:**
+
+```
+grep -nE "^#{1,2} .*(<city>|<region>)" outputs/pipeline/near-misses.md
+```
+
+Sweep-level headings only — `#` and `##`, **never `###`**, because `###` is the per-clinic entry
+level and returns dozens of individual rows. `near-misses.md` is organised as dated sweep sections,
+so a heading is a record that *somebody was assigned this ground*, with the date attached. That is
+the thing you actually want to know.
+
+**Measured against the five markets chosen on 19 Nov, this one command would have shown four of
+them**, before a single fetch was spent:
+
+- `## Melbourne near-misses — inner & middle suburbs, Geelong, Ballarat` → Geelong, swept.
+- `## Near misses — Perth / Adelaide / Tasmania / Canberra sweep, 18 Oct 2026` → Canberra, Adelaide
+  and Perth in one line.
+- `# Perth western and riverside suburbs, WA — sourced 12 Nov 2026` → **the exact Perth ring briefed
+  seven days later.**
+
+**Two limitations, both worth knowing precisely.**
+
+1. **A sweep whose heading names no place is invisible to it.** The 2 Nov 2026 Adelaide coastal sweep
+   is headed *"Near misses — Australia's last unswept corners, 2 November 2026"*, and the suburbs
+   appear only in an `Assigned:` line beneath it. There is exactly **one** such heading in 28,000
+   lines, and exactly **one** `Assigned:` line, so there is no convention to grep — but when writing
+   a new section heading, **put the place in it**, because this is the cost of not having.
+2. **`WA` collides with Washington state.** A heading grep for `WA` returns Spokane, Olympia, Gig
+   Harbor, Seattle and Bellingham. Use `Perth` or `Western Australia`, never the bare state code.
+
+**And the backstop that actually works, regardless: grep per clinic NAME before each fetch, in its
+own turn.** The Perth worker caught fourteen existing pipeline rows that way before spending anything,
+and four more candidates whose grep hits turned out to be in *other rows' notes* (Adelaide, Tampa,
+Dublin, LA) — which it would have wrongly skipped on a count alone. Geelong took three free skips the
+same way. A heading grep tells you whether to go; a name grep tells you whether to fetch.
+
+**One positive control from the same night, worth recording because it is the only evidence the fix
+works.** The Perth brief, written after the first two workers reported the problem, named the six
+already-swept suburbs explicitly and told its worker to grep per suburb and per name. That worker
+**redirected to the genuinely unworked river and coast ring and took 13 of its 15 rows from there** —
+and settled four leads the 12 Nov run had run out of budget on, plus one suburb that run could not
+confirm. Passing the measurement along, rather than the conclusion, is what made the difference.
+
 ## THE FRESHA SUBURB LANDING PAGE — the best name source yet found for a market of websiteless clinics. 19 Nov 2026
 
 ```
@@ -1955,13 +2007,24 @@ beat every search run in that market — including every one of the ten unreacha
 near-misses that night, and three of the seven accepted rows. For comparison, **the same run's first
 five market-opening searches returned ZERO in-market names it did not already hold.**
 
+**Reproduced in a second market the same night, and decisively: Perth's western and river ring took
+6 fetches to about 250 addressed rows, yielding ~35 in-market names across 18 of 24 briefed
+suburbs.** Thirteen of that run's fifteen accepted rows came out of it.
+
+**THE SLUG IS A CENTROID, NOT A FILTER — the single most useful operational detail about this tool.**
+A suburb slug returns businesses *around* that point rather than only in it, so **three or four slugs
+cover a whole ring** and there is no need to fetch one per briefed suburb. Six fetches covering
+eighteen suburbs is the measurement.
+
 This is a fourth confirmation of the brief's own rule: **block the directory in the query, then fetch
 one on purpose.** Three properties to plan around:
 
 - **It prints addresses and postcodes but NO domains.** So it converts fetch budget into search
-  budget — one search per promising name to find a website, and in Adelaide **five of nine such
-  searches returned no domain at all**, which is the finding (the business has no site) rather than a
-  wasted call.
+  budget — one search per promising name to find a website. **How well that conversion goes is itself
+  a measurement of the ring:** in Adelaide's north-east, five of nine such searches returned no domain
+  at all (the finding, not a wasted call — those businesses have no site); in Perth's west, **eight
+  searches resolved eight names on the first try.** A low resolution rate is telling you the ring is
+  websiteless, not that the technique failed.
 - **It is longer than our own coverage of those suburbs by an order of magnitude**, which is the
   first of the three questions the 17 Nov replacement rule says to ask of any index.
 - **It does not pre-filter business type at all** — roughly two thirds of each "aesthetics" index is
@@ -1979,6 +2042,20 @@ country.
 It looks like the cheapest possible way into a market full of platform-only businesses and it is the
 most expensive. **The Fresha suburb landing page works for exactly the reason this fails: the suburb
 is in the URL.** Measured and dead; do not buy it again.
+
+## A new placeholder-adjacent shape: an address published with spaces around the @. 19 Nov 2026
+
+SkinBox (Perth) publishes its mailbox as **`hello @ domain`** — spaces around the at-sign. Its worker
+**left it and did not normalise it**, which is the right call and worth stating as a rule, because the
+temptation here is strong and quiet:
+
+**Removing the spaces would be constructing an address.** It would almost certainly produce the
+working mailbox, and that is exactly why it is forbidden — the absolute rule is not "do not record
+addresses that are probably wrong", it is "only ever record one seen verbatim". A human-readable
+spaced form is an anti-scraping measure, which means the clinic has deliberately published something
+a machine should not take. **Record it in near-misses as published, spaces and all, and leave it for
+Jess**, who can read and retype it in her own browser in seconds. Same treatment as a Cloudflare
+render: a person can resolve it, we may not.
 
 ## Stockist locators, measured per manufacturer and per state. 19 Nov 2026
 
