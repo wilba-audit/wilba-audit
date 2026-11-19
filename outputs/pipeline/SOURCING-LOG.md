@@ -4,11 +4,19 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 18 Nov 2026: 1,343 rows, 903 ready to approach** — US 451, AU 244, CA 88, UK 82, NZ 44, IE 2.
+**As of 19 Nov 2026: 1,394 rows, 916 ready to approach** — US 443, AU 265, CA 88, UK 82, NZ 44, IE 2.
 **166 entries on the browser-visit list**, whose top twelve are ranked and each one browser-minute from
 a sendable row. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
 since — because every market requires WILBA's postal address in the footer and we do not have it.
-**Sourcing has not been the constraint for a fortnight.**
+**Sourcing has not been the constraint for three weeks.** The US count fell by eight tonight, which
+is not a loss: eight US rows moved to C in a pass that read the age evidence they had rather than the
+grade they wore.
+
+**The largest unworked thing in this file is no longer a market. It is 88 grade-B rows that name no
+rung of the must-have 4 ladder and have never been read** (printed by `python3 scripts/append_prospects.py
+--audit-only`). The second largest is a DM list: between tonight's four markets, roughly thirty live
+aesthetics businesses were found that publish no email anywhere, most of them with no website at all.
+**Neither of those is fixed by another sweep.**
 
 **Why it is in the repo.** This was kept in the session's team-memory directory under `/tmp`
 until 20 Oct 2026, when that directory was wiped along with the scratchpad, losing four days
@@ -1919,6 +1927,255 @@ Grep that first, and only then read the near-misses write-up for the texture.
 
 Cost today: one worker briefed with a false premise, and two fetches spent re-finding rows we
 already had. Cheap, and only because the duplicate guard exists.
+
+## 19 November 2026 — five markets, 51 rows, and two workers told me my own brief was wrong
+
+**Ids 1344-1394. 51 rows: 4 A, 17 B, 30 C.** Adelaide north-east and coastal west 1344-1350,
+Canberra and Queanbeyan 1351-1365, Moreton Bay and the southern Sunshine Coast 1366-1380, Geelong /
+Surf Coast / Ballarat 1381-1394. A fifth market, Perth's western and southern rings, was commissioned
+mid-run once the first three returned, and is filed separately below if it landed.
+
+### The run's own biggest mistake was mine, it happened before any worker started, and two of them caught it independently
+
+**Two of five workers reported that their brief's "never swept" premise was false.**
+
+- **Adelaide.** `near-misses.md:7411` is a **2 Nov 2026** sweep of "Port Adelaide, Semaphore, Henley
+  Beach, Glenelg's surrounds" that concluded *"the corner is empty, not unswept"* — and the 18 Nov
+  east run had already named 7 of my 16 briefed suburbs as its own fallbacks, closing Modbury and
+  Golden Grove. Nine of sixteen suburbs were genuinely new. That ring returned **7 rows, not 15**,
+  and its first five market-opening searches returned **zero** in-market names it did not already
+  hold.
+- **Geelong.** `near-misses.md:1039` is an **18 Oct 2026** Geelong/Ballarat section, and the pipeline
+  already held **6 Geelong and 3 Ballarat rows**. Its worker reconciled this honestly against
+  `SOURCING-LOG.md:1988` — no dedicated sweep, but real incidental coverage — and took three free
+  skips off grepping per name.
+
+**The uncomfortable part is that I had the measurement and did not read it.** Before choosing
+markets I ran the four-part coverage grep across twenty-four candidate markets, and it printed
+`Geelong near-misses:15 csv:6`. I briefed Geelong as never swept anyway. **I treated a low count as
+evidence of absence when it was evidence of coverage** — fifteen mentions and six rows is not
+"nobody has been here".
+
+**And for Adelaide I did not grep the suburbs at all.** I inherited the claim from my own standing
+list, written the night before, which said those rings were *"briefed tonight and not reached"*.
+That is a true statement about a brief and it is not a measurement of coverage. **A note saying we
+did not get to something is not a finding that nobody has.**
+
+Two errors, one shape: *I had the number and ignored it, then I trusted a sentence instead of a
+number.* The fix is to the standing list's format, applied below: **coverage goes in as a
+measurement with its citation, never as a sentence.** Not "Adelaide's coastal west — not reached",
+but "Adelaide's coastal west — `near-misses.md:7411`, 2 Nov, verdict *empty*, 0 pipeline rows, and
+that verdict rests on two Yellow Pages indexes."
+
+### 30 of 51 rows are C, and that is information about the ground rather than about the workers
+
+Previous nights ran much richer in B. Tonight's distribution inverted, and the cause is specific and
+the same in two markets: **must-have 4.** Moreton Bay capped **11 of its 15** rows at C, Canberra
+**8 of 15**. Both workers described the same thing — a market of nurse-led businesses founded
+2021-2024, with copyright-2026-only footers, no founding year, no review count and no dated archive.
+
+That generalises into a strategic fact worth stating plainly: **Australia's metro cores are worked
+out, and the rings we have left are structurally younger and less reachable than the ones we swept
+first.** Expect C-heavy runs from here. Do not read them as underperformance, and do not let a
+worker pad B to avoid them — a C row with honest notes is worth more than a B that wishes.
+
+### The grade-A 'busy and well reviewed' leg is becoming unmeetable in Australia
+
+**Canberra published a review count 0 times in 24 businesses.** Not scarce — absent. Fifteen
+accepted rows out of a city of 460,000, a better yield per clinic opened than the recent Melbourne
+and Adelaide rings, and **no grade A at all**, because the four A legs never co-occurred.
+
+Of tonight's four A rows, **only one rests on a review count** (Bonny Skin Studio, 500+). The others
+are an **award run** (1346 Afterglow — *"Voted #4 Best Cosmetic Nurse in South Australia"* 2023 and
+2025, the 2023 award putting a three-year floor under the business), a **stated founding date** (1366
+Envy, August 2019), and a **dated archive** (Tx Bar, running back to 2016). Two consequences: a
+market can be good ground and yield no A, so yield and grade distribution are independent; and where
+counts are absent, **the award-year and archive rungs are what grade A has left.**
+
+### What the five markets measured, in one place
+
+| Finding | Where |
+| --- | --- |
+| Policy screen absent 85% — the highest recorded | Moreton Bay |
+| Policy screen absent 67%, but the 2 readable dirty ones were the 2 best rows in the sweep | Canberra |
+| 8 of 11 aesthetics businesses have NO WEBSITE — ~30% mailbox rate against 85% in the same city 8 days earlier | Adelaide NE / coastal west |
+| 9 of 15 rows are rooms in someone else's building; reading tenancy cleared 8 of 9 | Canberra |
+| 0 of 24 published a review count | Canberra |
+| ABR decisive 4 times out of 4, twice moving a grade DOWN | Canberra, Geelong |
+| Fresha suburb landing page: 115 businesses with addresses for 2 fetches | Adelaide |
+| Exomide locator paid out for a 4th and 5th time; 2 of 19 filed under the wrong suburb | Canberra, Moreton |
+
+The durable rules those produced are written up in `ICP.md` (the policy screen's locus, the fourth
+species of inverted tenancy, the Canberra tenancy and DVA findings, the review-count finding, the
+ring measurement) and in `reference/clinic-sourcing-brief.md` (the Fresha landing page, the dead
+Timely-by-city shape, per-manufacturer locator measurements, the grep-batching mechanism, the
+one-directory-verdict rule, query shapes, the ABR update, the ninth fetch-failure mode and the
+corrected address-disagreement procedure).
+
+### Three things I got wrong tonight besides the market selection, all corrected in place
+
+1. **I wrote that when a visible address and its own `mailto:` href disagree, neither is published.**
+   A row appended two hours later disproved it: Keys To Rejuvenation's href is the known placeholder
+   `mailto:email@example.com` and its readable footer address is fine, so the 18 Nov rule already
+   covered the case — *prefer the wired form unless the wired form is the implausible one.* The brief
+   now carries a four-step procedure and keeps the wrong version, because the wrong version is the
+   tempting one.
+2. **I wrote "do not spend brief space predicting collisions."** Too strong. Tonight measured
+   predictions in both directions for the first time: Griffith, Barton, Manuka, Deakin, Redcliffe and
+   Scarborough were predicted and did not fire; **Kingston and Torquay were predicted and fired three
+   times each**, and Torquay was caught every time by reading the postal address. A prediction that
+   fires saves real calls. The rule is now *a prediction is a warning, never a filter.*
+3. **The ladder audit I widened to grade B flagged the 22 rows I had just ruled on** as candidates for
+   C — their notes do say must-have 4 is inferred and the regex does find no artifact. Both true,
+   conclusion wrong. A recorded ruling now suppresses the flag.
+
+### The validator earned its keep twice and the second time is the better story
+
+It rejected two Geelong rows for deferring a qualification decision. **Neither was parked by reflex.**
+Vitality Laser & Skin's worker had left the must-have 2 screen unrun on a policy path it had *read
+off the site rather than guessed* — so one fetch settled it: 20,900 characters of readable policy,
+**zero** payer vocabulary, and a bonus corroboration of the row's mailbox on a second page of the
+clinic's own site. Resolved, graded B.
+
+**Keys To Rejuvenation could not be settled and that failure is the ninth fetch-failure mode.** Its
+policy URL returns **HTTP 200, content-type `application/x-httpd-ea-php73`, and a thirteen-byte
+body** — the server handing back its PHP handler instead of executing it. Three properties make it
+worth its own entry: it **presents as success**, so a careless reader records "policy read, nothing
+found", which would be a fabricated absence on a page never read; it is **not retryable**; and it is
+**the first mode on that list a person's browser does not fix**, because a browser gets the same
+thirteen bytes. So it does not go on the browser list. Parked at C with the two fetches that would
+release it named precisely — and it is worth them, because its must-have 4 is already met twice over
+(a 200+ review count on its own page, and a 2022 copyright four years clear of the floor).
+
+The general lesson, which applies to every absence finding this project records: **a content-type
+that is not HTML is not a page. Check you received HTML before reporting what is or is not in it.**
+
+## Where to go next — refreshed 19 Nov 2026 (read THIS block first; the 18 Nov one below is superseded on items 2, 3 and 8)
+
+**Ordered by cost, cheapest first. Everything above the line is named work with no searching.**
+**New format, and it is the fix for tonight's own mistake: coverage is recorded as a MEASUREMENT WITH
+ITS CITATION, never as a sentence.** A line that says "not reached" tells you about a brief. A line
+that says "`near-misses.md:7411`, 2 Nov, verdict *empty*, 0 rows, verdict rests on two Yellow Pages
+indexes" tells you about the ground. Tonight two workers had to spend real calls discovering that
+three of my sentences were not measurements.
+
+**1. THE 88 GRADE-B ROWS THAT NAME NO RUNG OF THE LADDER — the largest unworked thing in this file,
+and it is not a market.** Printed on every run by `python3 scripts/append_prospects.py --audit-only`.
+These are grade-B rows whose notes say must-have 4 is inferred or unverified and which name no ladder
+artifact anywhere, and which **no pass has ever read**. The 22 rows moved A-to-B tonight are excluded
+automatically, as is anything carrying a recorded ruling. **This is a backlog, not a to-do list:** the
+middle rung is wide (career length, a team, a second published street address, a branded membership,
+a live marketing list) and plenty of these hold B legitimately without using the ladder's vocabulary.
+**Read them before moving them, and work them by sweep rather than by row** — consecutive ids are one
+worker's habit, and re-reading a sweep together is far cheaper than re-reading a row.
+
+**2. THE 37 SENDABLE ROWS THAT DEFER A DECISION** (was 57 on 18 Nov; 18 were ruled on tonight and two
+more moved to C). Printed by the same command, with 14 more on parked rows. Tonight's precedents
+resolve several of the remaining shapes cheaply — a mailbox on a vendor or off-site domain stands as
+recorded (rows 512, 924, 577); a quoted line that the note then rules on is discharged in place (935);
+a career length is the middle rung and needs no further check (773). **The twelve "eyeball the Google
+review history" rows are gone** — that instruction was addressed to nobody and has been retired as a
+category.
+
+**3. OURS TO DO, NO BROWSER AND NO SEARCH — carried from 18 Nov, still undone, still cheapest on the
+list. Harrogate Aesthetics** (12 Princes Square, Harrogate HG1 1LX): Companies House on **`06184603`**
+(a 2007-series number — settles must-have 8 and must-have 4 together; confirm the registered name,
+because one read of the footer showed two numbers, the second being the placeholder `12345678`), then
+the **About page** for Anthea Whiteley, Aesthetic Nurse Practitioner RGN, Director, which is currently
+a search-result claim and not a reading. Full note on the browser list.
+
+**4. TWO NAMED ONE-TO-TWO-FETCH DECISIONS FROM TONIGHT.**
+- **Row 1393, Keys To Rejuvenation** (East Geelong) — parked at C only because its policy URL is the
+  ninth fetch-failure mode (a 13-byte PHP handler on a 200). **Fetch the homepage, enumerate its nav
+  hrefs — do not guess, the "Our Team" page exists but its path is not known — then read the treatment
+  and About pages.** Two fetches and it is a B, and it is worth them: must-have 4 is already met twice
+  over, on a 200+ review count on its own page and a 2022 copyright four years clear of the floor.
+- **Row 1314, Aesthetic Avenue SA** — the Adelaide north-west sweep reports an unrecorded second site
+  at Level 1, Suite 4/9 Charles St, West Lakes. **Recorded as a FLAG, not a fact; this thread has not
+  read it.** Grade is unaffected either way (one site and two both sit inside the 1-4 band) but the
+  opening angle currently reads as a single-clinic story, and an opener that says "your clinic" to a
+  two-site owner lands wrong. One fetch of the clinic's own locations page settles it. Note the
+  collision risk: "Aesthetic Avenue" is generic.
+
+**5. SPEND THE ABN WHEREVER IT IS PUBLISHED — the tool is now 4 for 4 decisive and twice it moved a
+grade DOWN.** It failed Cosmetic RN (sole trader, active 25 Dec 2023, ~1.9 years), failed Platinum
+Cosmetic Skin Clinic (Platinum Ko Pty Ltd, active 17 Nov 2025 — which **exposed an apparent change of
+control behind a brand our own file had flagged as a top conversion candidate**, the most valuable
+single thing this tool has done), failed Glo Aesthetics (sole trader, active 5 Jul 2023, 2.4 years),
+and passed Ellyse (active 20 Mar 2019). **Only 2 of 15 clinics publish an ABN where the rule says to
+look**, so this stays a check to run while reading, not a backlog. Source ranking now: a footer ABN is
+strongest; one on the clinic's own privacy policy page is just as good and that page is one you are
+already fetching; one that surfaces unbidden as an `abr.business.gov.au` search result is **one notch
+weaker and must be flagged on the row.** Never go searching for one.
+
+**6. THE DM LIST IS NOW THE SECOND-LARGEST CATEGORY IN THIS FILE, AND A BROWSER FIXES NONE OF IT.**
+Roughly thirty live aesthetics businesses were found tonight that publish no email anywhere, most with
+no website at all — Fresha, Facebook or Instagram tenants only. **Zero Cloudflare tokens in ~140
+fetches across four markets**, so the browser list gained almost nothing. Start with the two the
+Adelaide worker ranked: **The Soul Serene** (Gulfview Heights, 90 Fresha reviews) and **Mrs K Cosmetic
+Injectables** (Mawson Lakes, 35 reviews, and it out-ranked every other business in that market across
+five searches). Moreton Bay's twelve and Canberra's list follow. **This wants a phone or an Instagram
+DM, and it is a decision for Jess about channel, not a sourcing problem.**
+
+**7. NAMED LEADS HANDED OVER TONIGHT.**
+- **Aesthetic Harmony** (Unit 37, Atelier Building, 46 Honeysett View, Kingston ACT 2604) — *"the best
+  unreachable prospect in Canberra, and the one worth a phone call first"*: two named doctors (Dr
+  Bernard Leung, Dr Jennifer Leung) with their own profile pages, a top-level INJECTABLES section, a
+  substantial laser fleet and a cosmetic shop. No email published; only `/contact-us/` was read, so
+  that absence is one page wide.
+- **Coastal Aesthetic Injections** (`coastalai.com.au`, Maroochydore + Mornington VIC) — Jasmine
+  Leggatt RN, copyright 2021, two sites, no mailbox on `/about/` or `/contact/`. A two-site nurse-led
+  business of that vintage is a good fit if a mailbox exists.
+- Still open from 18 Nov and NOT re-sourced tonight: **Curate Aesthetic Clinic** (Graceville), **Angel
+  Aesthetics** (fails must-have 5 — its footer's only mailto is the placeholder `email@domain.com`),
+  **`gorjessaesthetics.com.au`**, **`faceclinic.au`**, **Elevate Aesthetics Illawarra**, and
+  **'Cosmetic Injectables and Skin', Corrimal** (probably a third trading name of row 423's company —
+  check the ABN before sourcing it as a row).
+
+**8. BROWSER-LIST ADDITIONS FROM TONIGHT** — small, because the obfuscation rate was zero.
+**Envie Skin** (`envieskin.com.au`, Canberra, robots_disallowed — nothing known beyond the name and
+domain, and note the asymmetry honestly: that is not a claim that it publishes no address),
+**`medicalcosmeticcentre.com.au`** (robots_disallowed; a person could settle its site count in a
+minute), **FIRST Skin and Body** (client-side shell hiding its own suburb), **Amber Lynn**
+(`amberlynn.com.au`, Mooloolaba, robots_disallowed), **Image of Aesthetics** (robots_disallowed).
+**Queen of The Skin** (`queenoftheskin.com.au`, Queanbeyan) is Cloudflare-obfuscated on both its
+mailboxes — but **warn Jess before she spends a minute on it, because it probably fails anyway on two
+legs**: its second site is "operated with Bella Plastic Surgery", which is the plastic-surgery
+disqualification arriving through a partnership, and its menu carries **actinic keratosis** removal, a
+pre-cancerous lesion, with About text citing training in "Skin Cancer Medicine". Unmask only if
+must-haves 1 and 2 are resolved first.
+
+**9. AUSTRALIAN GROUND — MEASURED, with citations, because this is the item that went wrong tonight.**
+- **Closed tonight, genuinely:** Adelaide's north-east and coastal west (worked 19 Nov, ids 1344-1350;
+  Findon, Tea Tree Gully, Grange, Semaphore and Henley Beach each hold real readable businesses
+  selling the wrong thing, and Para Hills, Greenwith, Gilles Plains, Woodville and Glenelg North are
+  thin enough to drop — Glenelg itself already carries rows 78, 370, 371, 860). Canberra and
+  Queanbeyan (1351-1365, queried to exhaustion). Moreton Bay's far north and the southern Sunshine
+  Coast (1366-1380). Geelong, the Bellarine, every Surf Coast town and Ballarat (1381-1394, and *"the
+  Surf Coast is thin, not occupied — its aesthetics layer sits inland in Geelong"*).
+- **Still open, and this is what is left:** **Darwin** — 23 `near-misses.md` mentions, **0 pipeline
+  rows**, never a dedicated sweep; a small market, so expect few rows. **Cairns and Townsville** —
+  11 and 18 mentions, 9 and 2 rows, incidental coverage only. **Hobart and Launceston** — but read
+  `near-misses.md:4043` first, which says *"outside Hobart and Launceston, and the whole of WA outside
+  Perth are close to exhausted"*, and Hobart's own best lead (The Skin Care Clinic, a full points
+  loyalty ledger and six named staff) is a **browser** job, not a sourcing one.
+- **Perth** — the northern and south-eastern corridors were swept 2 Nov (`near-misses.md`, that run's
+  section); the western and southern rings were commissioned tonight and are filed below if they
+  landed.
+
+**10. THE US HIPAA NOTICE PROBATION HAS NOW FAILED TO ADVANCE FOR THREE CONSECUTIVE NIGHTS, FOR THE
+SAME REASON EACH TIME: the standing prompt's metro order says Australia first.** The screen (does the
+NPP say the clinic SUBMITS to a payer, or only that a patient MAY RESTRICT a disclosure when
+self-paying?) needs US clinics. **It is still open, still cheap, and it is now the oldest unadvanced
+item in this file.** Read the NPP on the next several US clinics and COUNT how many carry the
+submission sentence; if it is nearly all of them the sentence is uninformative, the screen dies, and
+La Vie MD should be re-read rather than inherited at C. **If a night ever runs out of Australian
+ground — and item 9 says that night is close — this is what to spend it on.**
+
+**11. AND THE ONE THING NONE OF THIS FIXES.** 916 rows are ready to approach. **Ten clinics have ever
+been emailed, all on 15 Oct 2026.** Every market requires WILBA's postal address in the email footer;
+there is no postal address anywhere in this workspace; it has been asked of Jess on 15, 16, 17, 18 and
+19 November. **Until she answers, every number at the top of this file is inventory, not pipeline.**
 
 ## Where to go next — refreshed 18 Nov 2026 (read this block before the 9 Nov one below)
 

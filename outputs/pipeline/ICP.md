@@ -2120,6 +2120,120 @@ to C. Three of the rulings are worth keeping as precedent:
   once and copied forward, and this is the second time this month that a row's own notes have
   denied something the row's own data recorded.
 
+## The Australian policy screen: seven markets measured, and it is now ABSENT more often than not. 19 Nov 2026
+
+The rule as written says the Australian must-have 2 screen *lives in the privacy policy*. Seven
+markets of measurement say that is the wrong word. The absent rate, run by run:
+
+| Market | Date | Policy absent |
+| --- | --- | --- |
+| Brisbane south and west | 18 Nov | 57% |
+| Adelaide east / Hills | 18 Nov | 63% and 57% |
+| Canberra and Queanbeyan | 19 Nov | **67%** |
+| Moreton Bay + Sunshine Coast | 19 Nov | **85%** |
+
+**Keep running it anyway, and here is the arithmetic that says so.** In Canberra six policies were
+readable, four clean and two dirty — and **the two dirty ones were the two best-looking rows in the
+sweep.** Aesthetics & Wellness Collective (two co-founding RNs, four nurses, a membership, gift
+vouchers, Timely, two published mailboxes — the only full grade-A dormant stack in the city) collects
+a *"Medicare number"* in its policy, and nothing on any marketing page says so. Ren Cosmedical
+collects a Medicare number *"for identification and claiming purposes"*, health fund details, and
+discloses to the Department of Veterans' Affairs. **Both would have shipped as sendable Bs.** Two
+sends saved under WILBA's name for two fetches is the entire argument for a screen whose precondition
+fails two-thirds of the time.
+
+**But when it is absent, the screen does not vanish — it moves.** Moreton Bay read about twenty
+policies, could read three, and **not one came back dirty** — while two clinics failed must-have 2 in
+plain sight on their marketing pages: Jevani's *"privately charged… Medicare rebate is not
+processed"* and Plaza Central describing itself as *"a general practice clinic"*. So the honest
+statement of the rule is:
+
+**The privacy policy is where to look FIRST. It is not where the screen lives. When it is absent or
+silent — now the majority case — the billing screen is decided on the treatment and About pages.**
+
+The absences have shapes worth knowing, because each one looks like a fetch failure and is not:
+policy links that are `href="#"` placeholders; a page that reads *"Privacy Policy coming soon"*; a
+policy outsourced to `termsfeed.com`, i.e. no clinic-side policy to screen at all.
+
+And it pays a third way that has nothing to do with billing: **Platinum Cosmetic Skin Clinic's policy
+page was the only page on either of its two domains that publishes an email at all** — the Flawless
+Rejuvenation precedent, now with a second instance.
+
+## The fourth species of inverted tenancy, and this one has nobody to sell to. 19 Nov 2026
+
+The three species already recorded all ask the same question of a clinic renting a room: a clinic
+inside a GP practice, a clinic booking through a host's own system, a clinic sharing the host's
+brand — **whose tenant holds the diary.** Row 1353 (Authentix, Canberra) is the **inverse**, and it
+breaks the offer rather than the grade:
+
+**The host business is the one publishing the address and the one we would write to, and its
+injectables are delivered by an independent registered nurse who rents the room.** The injectables
+list therefore is not the host's to reactivate. There is no lapsed list behind the address. Stated as
+a rule: **when the room-renter is the injector and the host is the business publishing the mailbox,
+the host does not own the list.**
+
+## Canberra: reading tenancy instead of ruling on it saved eight rows out of nine. 19 Nov 2026
+
+Canberra is built out of professional suites, and **nine of the fifteen accepted rows are rooms inside
+somebody else's building** — Erindale Chambers, two Brindabella buildings, the Kingsborough complex, a
+suite inside House of Define, a room inside Skin Society, a Thursday room inside a Braddon barber and
+spa, a room entered through a hair salon, a room inside a general practice.
+
+**Rule 8's question resolved eight of those nine in the clinic's favour**, because each runs its own
+Timely, Phorest or Aesthetic Record tenant and therefore owns the list we would reactivate. **The one
+that failed is the one inside the GP practice** — Enrich Medical Aesthetics, publishing the host's own
+phone number and naming no booking system of its own.
+
+Two things follow. **An office-park or professional-chambers address is not a tenancy problem at all;
+it is just how some cities are built.** And **the Australian general-practice costume is the species
+to watch** — it is the one that actually fails. Had tenancy been ruled on by reflex, that sweep would
+have lost eight good rows out of fifteen.
+
+## A prediction this file made about Canberra was wrong, and what replaced it is better. 19 Nov 2026
+
+The brief predicted that a Commonwealth city with a large Defence and public-service population would
+print Commonwealth schemes, so DVA and Veterans language would be commoner here than elsewhere.
+**Across six privacy policies read in full, "Veterans" and "DVA" appeared exactly once.** Nothing
+printed a scheme acronym on a marketing page. That reproduces the Montgomery County finding in an
+Australian accent for the second time: **the reimbursed arm does not advertise itself by acronym.**
+
+What the government-town effect actually produced is **medical-practice crossover**. Both must-have 2
+failures run on general-practice software stacks — Ren Cosmedical names HotDoc, MediRecords, eTP and
+My Health Record in its own policy, and its principal holds a RACGP fellowship — and the biggest
+rule-out of the run, Her Health & Aesthetics, is a women's-health medical practice with an aesthetics
+arm. **In Canberra the reimbursed arm arrives as a doctor's practice with a skin room, not as an
+acronym.** Screen the software stack and the principal's fellowships, not the vocabulary.
+
+## 0 of 24: the review count is the grade-A leg that goes missing, and in Canberra it went missing absolutely. 19 Nov 2026
+
+Fifteen accepted rows came out of a city of 460,000 — a higher yield per clinic opened than the recent
+Melbourne and Adelaide rings — and **zero grade A.** The reason is not the market and not the rows:
+**not one Canberra clinic in the sweep published a review count, 0 of 24.** The four grade-A legs did
+not co-occur once.
+
+That is the third market type in which the review count is the leg that fails, and the first where it
+was absolute rather than scarce. Two consequences. **A market can be good ground and still yield no
+A** — yield per clinic opened and grade distribution are independent, and a run reporting zero A is
+not thereby a failed run. And **where a market publishes no counts at all, the award-year rung is
+what is left**: row 1346 (Afterglow, Adelaide) is tonight's demonstration, graded A on a dated award
+run — *"Voted #4 Best Cosmetic Nurse in South Australia"* in 2023 and again in 2025 — with the 2023
+award putting a three-year floor under the business and no review count published anywhere.
+
+## "State the ring, not the city", in its sharpest measured form: 85% against 30%, same metro, eight days apart. 19 Nov 2026
+
+Adelaide's EAST, measured 18 Nov: **a mailbox on the first page read 17 of 20 times, 85%** — recorded
+at the time as far above every other Australian market.
+
+Adelaide's NORTH-EAST and coastal west, measured 19 Nov: **eleven aesthetics businesses found and
+EIGHT of them have no website at all** — Fresha or Facebook tenants only. Of the nine that do own a
+domain, seven published a mailbox, which is a fine rate; **the denominator is the finding.** Roughly
+30% against 85%, nine kilometres apart, eight days apart.
+
+**A brief that carried one ring's measurement into the next ring of the same city would mis-aim the
+whole run.** Which must-have binds is a property of a ring, not a city — already recorded on 18 Nov,
+and this is the sharpest instance yet. Note what the worker said about its own brief: *"mine did not
+say either way"*, which is the right thing for a brief to do when nobody has measured the ring.
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from
