@@ -243,6 +243,157 @@
    "head": "SAVE THIS|*FOR LATER.*",
    "sub": "Send it to the friend who pre-ordered · Follow for daily verdicts",
    "decoder": "default"
+  },
+  {
+   "id": "post-C1",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "1/5",
+   "eyebrow": "REAL OR BUSTED? · LAUNCH WEEK",
+   "head": "13 YEARS.|*FOR 30 FPS?*",
+   "sub": "Streamers are raging about frame rate. Here's what's actually known.",
+   "decoder": "unverified"
+  },
+  {
+   "id": "post-C2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "2/5",
+   "eyebrow": "WHAT STREAMERS SAID",
+   "head": "THE|*CLAIMS.*",
+   "items": [
+    "“It's capped at 30 FPS on PS5”",
+    "“Even the PS5 Pro runs at 30”",
+    "“Base PS5 drops below 30 in chaos”"
+   ]
+  },
+  {
+   "id": "post-C3",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "3/5",
+   "eyebrow": "WHY IT MATTERS",
+   "head": "30 FPS ISN'T|*BROKEN.*",
+   "sub": "It's a target plenty of big console games choose. The real question: does it hold steady?"
+  },
+  {
+   "id": "post-C4",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "4/5",
+   "eyebrow": "OUR TEST",
+   "head": "WHAT WE'RE|*CHECKING.*",
+   "items": [
+    "Base PS5 vs PS5 Pro frame rate",
+    "Any performance mode in settings",
+    "Drops in busy scenes",
+    "Whether a patch changes it"
+   ]
+  },
+  {
+   "id": "post-C5",
+   "size": "post",
+   "theme": "night",
+   "layout": "cta",
+   "counter": "5/5",
+   "eyebrow": "VERDICT",
+   "head": "VERDICT|*INCOMING.*",
+   "sub": "Follow so you see the result first · Save this",
+   "decoder": "unverified"
+  },
+  {
+   "id": "post-D1",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "1/4",
+   "eyebrow": "REVIEW ROUNDUP",
+   "head": "IT SCORED A 100.|*'NOT A PERFECT|GAME.'*",
+   "sub": "Both can be true. Swipe →",
+   "decoder": "default"
+  },
+  {
+   "id": "post-D2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cover",
+   "counter": "2/4",
+   "eyebrow": "THE CLAIM",
+   "head": "PERFECT SCORES|*ALL AROUND?*",
+   "sub": "We're checking the review aggregators before we stamp this one."
+  },
+  {
+   "id": "post-D3",
+   "size": "post",
+   "theme": "night",
+   "layout": "list",
+   "counter": "3/4",
+   "eyebrow": "WHAT A 100 MEANS",
+   "head": "A 100 ISN'T|*'NO FLAWS.'*",
+   "items": [
+    "It means 'best in its class'",
+    "Reviewers still list problems",
+    "Frame rate & bugs live in the text, not the number"
+   ]
+  },
+  {
+   "id": "post-D4",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cta",
+   "counter": "4/4",
+   "eyebrow": "YOUR MOVE",
+   "head": "READ THE REVIEW.|*NOT THE NUMBER.*",
+   "sub": "Save this for the comment wars · Follow for verdicts"
+  },
+  {
+   "id": "post-E1",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "1/4",
+   "eyebrow": "BUG WATCH · LAUNCH WEEK",
+   "head": "15 MINUTES IN.|*FIRST GLITCH.*",
+   "sub": "Launch streams are full of bugs. Which ones are real?",
+   "decoder": "unverified"
+  },
+  {
+   "id": "post-E2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "2/4",
+   "eyebrow": "REPORTED ON STREAM",
+   "head": "THE|*CLIPS.*",
+   "items": [
+    "Plane jump loses physics & clips through objects",
+    "A strange radar marker on a blimp",
+    "Outfits switching on their own"
+   ]
+  },
+  {
+   "id": "post-E3",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "3/4",
+   "eyebrow": "HOW WE TEST",
+   "head": "ONE-OFF OR|*EVERY TIME?*",
+   "sub": "We try to repeat each bug on our own console. Every time = real. Once = fluke."
+  },
+  {
+   "id": "post-E4",
+   "size": "post",
+   "theme": "paper",
+   "layout": "cta",
+   "counter": "4/4",
+   "eyebrow": "YOUR MOVE",
+   "head": "SEEN A BUG?|*SEND IT.*",
+   "sub": "DM us the clip · We test it · You get the credit"
   }
  ]
 }
