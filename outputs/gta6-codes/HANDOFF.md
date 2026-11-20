@@ -49,9 +49,9 @@ Work branch: `claude/gta6-content-business-ai-hmfjqn`. Cloud environment: **wilb
 ## Next steps (in order)
 1. ~~Handle~~ Done: all assets re-rendered with `@gta.de.coded`.
 2. ~~Slack channel~~ Done: `#gtad-approvals` (id `C0CKLCULPQU`).
-3. **Public media hosting for Windsor:** pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
+3. **Public media hosting for Windsor:** repo `wilba-audit/gta-decoded-media` (public) attached, but pushes are refused (403) until the Claude GitHub App covers it, or GitHub is re-linked at https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1. Then pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
 4. **Allow research sites** in the wilba-audit environment (Reddit, YouTube, Rockstar Newswire, PlayStation Blog, Xbox Wire), and build automatic YouTube transcripts.
-5. **Decoder shot library:** about 25 reusable shots (about 20,000 credits). Show Jess the plan and cost first.
+5. **Decoder shot library:** approved. 3 poses done; batch 1 (20 shots, 13,600 credits) queued 20 Nov. See `brand/decoder/LIBRARY.md` for ids. Batch 2 (4 openers, about 2,000) is still to do. Voice: "Shadow".
 6. **`gta6-daily` skill:** research → plan → write → render → build Reels → publish-gate check → Slack approval → publish via Windsor → log.
 7. **Scheduled task:** run the daily routine at about 6am AEST in a fresh session.
 8. **Weekly scorecard + "what works" playbook** (`outputs/gta6-codes/PLAYBOOK.md`), fed by Windsor Instagram insights.
