@@ -4,6 +4,56 @@
  "instagram_account": "17841454480305652",
  "posts": [
   {
+   "id": "2026-11-22-reel-1-30fps",
+   "date": "2026-11-20",
+   "slot": "15:40",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-1-30fps/01-reel-1-30fps.mp4"
+   ],
+   "caption": "13 years… for 30 FPS? 😬 Streamers say GTA 6 is capped at 30, even on PS5 Pro. We're testing it. Verdict incoming. 👀\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #PS5Pro #GTA6News #Gaming",
+   "status": "publishing",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS",
+   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\"",
+   "note": "Sent 20 Nov ~16:35 (call timed out; verify before retry)"
+  },
+  {
+   "id": "2026-11-22-d-score",
+   "date": "2026-11-20",
+   "slot": "18:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/01-post-D1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/02-post-D2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/03-post-D3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/04-post-D4.jpg"
+   ],
+   "alt": "Four slides explaining why a 100 review score doesn't mean a game has zero flaws.",
+   "caption": "It got a 100… and the review says it's \"not a perfect game.\" Both can be true. 👇\n\nA 100 means best in its class, not zero flaws. Frame rate, bugs and pacing live in the review text, not the number.\n\nWe're checking the review aggregators before we stamp \"perfect scores all around\".\n\nSave this for the comment wars.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
+   "status": "approved",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS",
+   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
+  },
+  {
+   "id": "2026-11-21-reel-3-glitch",
+   "date": "2026-11-20",
+   "slot": "20:23",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-3-glitch/01-reel-3-glitch.mp4"
+   ],
+   "caption": "15 minutes in. First glitch. 🫠 One-off or every time? Send us your GTA 6 bug clips and we'll test them.\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #Gaming",
+   "status": "approved",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS",
+   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
+  },
+  {
    "id": "2026-11-21-a-start-here",
    "date": "2026-11-21",
    "slot": "08:23",
@@ -26,14 +76,18 @@
    "note": "Duplicate of Jess manual post 17982821490134818 (18 Nov)"
   },
   {
-   "id": "2026-11-22-reel-1-30fps",
+   "id": "2026-11-22-e-glitch",
    "date": "2026-11-21",
    "slot": "08:23",
-   "type": "reel",
+   "type": "carousel",
    "media": [
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-1-30fps/01-reel-1-30fps.mp4"
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/01-post-E1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/02-post-E2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/03-post-E3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/04-post-E4.jpg"
    ],
-   "caption": "13 years… for 30 FPS? 😬 Streamers say GTA 6 is capped at 30, even on PS5 Pro. We're testing it. Verdict incoming. 👀\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #PS5Pro #GTA6News #Gaming",
+   "alt": "Four slides listing glitches reported on GTA 6 launch streams, marked Unverified until tested.",
+   "caption": "15 minutes into GTA 6 and the glitch clips are already flying. 🫠\n\nReported on launch streams:\n→ plane jump loses physics and clips through objects\n→ a strange radar marker on a blimp\n→ outfits switching on their own\n\nIs it a one-off or does it happen every time? We're testing each one on our own console.\n\nSeen a bug? DM us the clip. We'll test it and credit you.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #GTA6News",
    "status": "approved",
    "slack_ts": "1795148307.331809",
    "ig_media_id": null,
@@ -41,18 +95,14 @@
    "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
   },
   {
-   "id": "2026-11-22-d-score",
+   "id": "2026-11-21-reel-2-score",
    "date": "2026-11-21",
    "slot": "10:23",
-   "type": "carousel",
+   "type": "reel",
    "media": [
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/01-post-D1.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/02-post-D2.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/03-post-D3.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/04-post-D4.jpg"
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-2-score/01-reel-2-score.mp4"
    ],
-   "alt": "Four slides explaining why a 100 review score doesn't mean a game has zero flaws.",
-   "caption": "It got a 100… and the review says it's \"not a perfect game.\" Both can be true. 👇\n\nA 100 means best in its class, not zero flaws. Frame rate, bugs and pacing live in the review text, not the number.\n\nWe're checking the review aggregators before we stamp \"perfect scores all around\".\n\nSave this for the comment wars.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
+   "caption": "It scored a 100… and the review says \"not a perfect game.\" Both can be true. Read the review, not the number. 🧠\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
    "status": "approved",
    "slack_ts": "1795148307.331809",
    "ig_media_id": null,
@@ -78,55 +128,6 @@
    "ig_media_id": null,
    "gate": "PASS",
    "note": "Already posted manually by Jess 19 Nov (18022095641953759)"
-  },
-  {
-   "id": "2026-11-21-reel-3-glitch",
-   "date": "2026-11-21",
-   "slot": "12:23",
-   "type": "reel",
-   "media": [
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-3-glitch/01-reel-3-glitch.mp4"
-   ],
-   "caption": "15 minutes in. First glitch. 🫠 One-off or every time? Send us your GTA 6 bug clips and we'll test them.\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #Gaming",
-   "status": "approved",
-   "slack_ts": "1795148307.331809",
-   "ig_media_id": null,
-   "gate": "PASS",
-   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
-  },
-  {
-   "id": "2026-11-22-e-glitch",
-   "date": "2026-11-22",
-   "slot": "08:23",
-   "type": "carousel",
-   "media": [
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/01-post-E1.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/02-post-E2.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/03-post-E3.jpg",
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/04-post-E4.jpg"
-   ],
-   "alt": "Four slides listing glitches reported on GTA 6 launch streams, marked Unverified until tested.",
-   "caption": "15 minutes into GTA 6 and the glitch clips are already flying. 🫠\n\nReported on launch streams:\n→ plane jump loses physics and clips through objects\n→ a strange radar marker on a blimp\n→ outfits switching on their own\n\nIs it a one-off or does it happen every time? We're testing each one on our own console.\n\nSeen a bug? DM us the clip. We'll test it and credit you.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #GTA6News",
-   "status": "approved",
-   "slack_ts": "1795148307.331809",
-   "ig_media_id": null,
-   "gate": "PASS",
-   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
-  },
-  {
-   "id": "2026-11-21-reel-2-score",
-   "date": "2026-11-22",
-   "slot": "10:23",
-   "type": "reel",
-   "media": [
-    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-2-score/01-reel-2-score.mp4"
-   ],
-   "caption": "It scored a 100… and the review says \"not a perfect game.\" Both can be true. Read the review, not the number. 🧠\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
-   "status": "approved",
-   "slack_ts": "1795148307.331809",
-   "ig_media_id": null,
-   "gate": "PASS",
-   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
   }
  ]
 }
