@@ -19,7 +19,7 @@ Times are **Australia/Melbourne**. The posting slots (08:23, 10:23, 12:23, 14:23
 the US evening, which is when most of the audience is online.
 
 ## Never break
-- **Nothing is published without Jess's ✅** on that day's Slack approval message. No ✅ means no post, and nothing is "assumed approved".
+- **Nothing is published without Jess's approval.** Approval is either her ✅ on that day's Slack approval message, or her own written approval in this chat session (for example "approve all", "approve 1, 3" or "skip 2"). Record which one in the queue (`approved_via`). Silence is not approval, and nothing is "assumed approved".
 - Never invent codes, claims or sources. Untested claims are **UNVERIFIED** ("still testing"). Only Jess's own test, or an official Rockstar, PlayStation or Xbox source, can make something CONFIRMED.
 - Other creators' videos are leads only: paraphrase, no footage or audio, and credit them when they're named.
 - No Rockstar logos, fonts or key art, and no AI-generated GTA characters. Use the Decoder mascot.
@@ -75,7 +75,7 @@ the US evening, which is when most of the audience is online.
 6. **Gate:** run the `gta6-publish-gate` checklist on every post and store PASS or FAIL in the queue (`gate`). Posts that FAIL don't go in the approval message.
 7. **Upload:** `python3 scripts/gta6_media_push.py <post-id> <files in order>`, then check every URL returns 200.
 8. **Queue:** add each post with `date` tomorrow, `slot`, `type`, `media`, `caption`, `alt`, `status` "awaiting_approval" and `gate`.
-9. **Ask for approval:** send ONE Slack message to `C0CKLCULPQU` and save its `ts` on each of tomorrow's posts. The format:
+9. **Ask for approval:** post the same summary as your reply in this chat session (Jess can't always get into Slack), and also send ONE Slack message to `C0CKLCULPQU` and save its `ts` on each of tomorrow's posts. The format:
    ```
    **GTA Decoded · posts for <weekday date>** (react ✅ to approve all · ❌ to skip the day · reply "skip 2" to drop one)
    1) 08:23 · Carousel · <title> — <preview link to slide 1>
