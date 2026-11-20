@@ -37,6 +37,7 @@ the US evening, which is when most of the audience is online.
 3. Disk space is limited. Delete temporary videos once they're uploaded.
 
 ## Mode PUBLISH (runs at each slot)
+0. Before publishing, check with Windsor get_data (media_caption, last 3 days) that the post isn't already live. If a publish call times out, run the same check before you ever retry.
 1. Load the queue. Find posts with `date` = today, `status` "awaiting_approval" or "approved", and `slot` at or before now.
 2. For each post still "awaiting_approval", check approval: read the reactions (`slack_get_reactions`) on that day's approval message (`slack_ts`) in channel `C0CKLCULPQU`.
    - ✅ / `white_check_mark` / `heavy_check_mark` approves every post that day, except any she replied to in the thread with "skip N" or "no N". Read the thread with `slack_read_thread`.
@@ -58,7 +59,7 @@ the US evening, which is when most of the audience is online.
    - what's trending
 
    Save notes with source links to `outputs/gta6-codes/research/<date>.md`. Run anything that is a claim about a code through the `gta6-code-verifier` rules and log it in `code-ledger-template.csv` (proposals only).
-3. **Plan tomorrow:** if the queue already has posts for tomorrow (for example the launch posts), don't make more: do research only, then add one post for the next empty day if there's time. Otherwise plan 2–4 posts, alternating carousel → Reel, starting with whichever type the last published post wasn't.
+3. **Plan tomorrow:** top tomorrow up to 3 posts (never more than 4), keeping the carousel → Reel alternation with what's already queued. First check what's already live on Instagram (Windsor get_data, fields media_id, media_caption and timestamp, last 14 days) so nothing is posted twice. Plan, alternating carousel → Reel, starting with whichever type the last published post wasn't.
    - Mix: one "Real or Busted?" claim, one useful guide or tip from an official source, one news reaction, and one scam warning or community post.
    - Check the "what works" notes in `outputs/gta6-codes/PLAYBOOK.md` if it exists.
 4. **Make carousels:**
