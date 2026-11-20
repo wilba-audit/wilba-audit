@@ -5,3 +5,6 @@ __pycache__/
 outputs/audit/leads.csv
 .DS_Store
 credentials/
+
+# GTA Decoded heavy media lives in the public repo wilba-audit/gta-decoded-media
+outputs/gta6-codes/reels/library/*.mp4

@@ -35,9 +35,9 @@ def shots(pages):
          'const jobs=JSON.parse(fs.readFileSync(process.argv[2],"utf8"));for(const [h,o,t] of jobs){await p.setContent(h);await p.waitForTimeout(120);await p.screenshot({path:o,omitBackground:t});}await b.close();})();'
     d = tempfile.mkdtemp(); jf = f'{d}/jobs.json'; open(jf, 'w').write(json.dumps(pages)); sf = f'{d}/s.js'; open(sf, 'w').write(js)
     subprocess.run(['node', sf, jf], check=True, cwd=ROOT)
-def build(rid, shot):
+def build(rid, shot, audio=None):
     R = REELS[rid]; t = tempfile.mkdtemp()
-    stamp = b64(f'{B}/final/stamp-{R["stamp"]}-dark.svg', 'image/svg+xml'); dec = b64(f'{B}/decoder/decoder-{R["stamp"]}.svg', 'image/svg+xml')
+    stamp = b64(f'{B}/final/stamp-{R["stamp"]}-dark.svg', 'image/svg+xml'); dec = b64(f'{B}/decoder/decoder-{R["stamp"] if R["stamp"] in ("confirmed","busted","unverified") else "default"}.svg', 'image/svg+xml')
     logo = b64(f'{B}/final/gtad-logo-horizontal-dark.svg', 'image/svg+xml')
     head = f'<html><head><style>{CSS}</style></head><body>'
     pages = [(head + f'<div class="cap">{hl(c)}</div></body></html>', f'{t}/cap{i}.png', True) for i, (_, _, c) in enumerate(R['caps'])]
@@ -66,7 +66,21 @@ def build(rid, shot):
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', seg2], check=True)
     out = f'{OUT}/{rid}.mp4'
     open(f'{t}/all.txt', 'w').write(f"file '{seg1}'\nfile '{seg2}'\n")
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{t}/all.txt', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', out], check=True)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{t}/all.txt', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', out if not audio else f'{t}/silent.mp4'], check=True)
+    if audio:  # voiceover: padded with silence to the video length
+        dur = lambda f: float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], capture_output=True, text=True).stdout)
+        extra = max(0.0, dur(audio) + 0.6 - dur(f'{t}/silent.mp4'))  # hold the end card if the voice runs long
+        total = dur(f'{t}/silent.mp4') + extra
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{t}/silent.mp4', '-i', audio, '-filter_complex',
+                        f'[0:v]tpad=stop_mode=clone:stop_duration={extra:.2f}[v];[1:a]apad=whole_dur={total:.2f}[a]', '-map', '[v]', '-map', '[a]', '-t', f'{total:.2f}',
+                        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', out], check=True)
     shutil.rmtree(t); print(out)
 if __name__ == '__main__':
-    build(sys.argv[1], sys.argv[2])
+    # python3 scripts/gta6_reel_build.py <reel-id> <shot.mp4> [voiceover.mp3]
+    # python3 scripts/gta6_reel_build.py spec.json   (keys: id, shot, caps, eyebrow, lines, q, stamp, end, optional audio)
+    if sys.argv[1].endswith('.json'):
+        import json
+        spec = json.load(open(sys.argv[1])); spec['caps'] = [tuple(c) for c in spec['caps']]
+        REELS[spec['id']] = spec; build(spec['id'], spec['shot'], spec.get('audio'))
+    else:
+        build(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)

@@ -1,0 +1,124 @@
+{
+ "timezone": "Australia/Melbourne",
+ "slack_channel": "C0CKLCULPQU",
+ "instagram_account": "17841454480305652",
+ "posts": [
+  {
+   "id": "2026-11-21-a-start-here",
+   "date": "2026-11-21",
+   "slot": "08:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-a-start-here/01-post-A1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-a-start-here/02-post-A2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-a-start-here/03-post-A3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-a-start-here/04-post-A4.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-a-start-here/05-post-A5.jpg"
+   ],
+   "pin": true,
+   "alt": "Five slides explaining that GTA Decoded tests GTA 6 codes on camera and stamps each one Confirmed, Unverified, Busted or Expired.",
+   "caption": "We test viral GTA 6 codes so you don't waste your night typing GTA V cheats into a brand new game. 🎮\n\nHere's how GTA Decoded works:\n→ we find the claim (and credit who posted it)\n→ we test it on our own console, on camera\n→ we stamp the verdict: CONFIRMED · UNVERIFIED · BUSTED · EXPIRED\n→ we date it, and update it when patches change things\n\nSave this. Turn on notifications. Verdicts drop daily.\n\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Cheats #GTA6Tips #GTA6News",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-21-reel-2-score",
+   "date": "2026-11-21",
+   "slot": "10:23",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-2-score/01-reel-2-score.mp4"
+   ],
+   "caption": "It scored a 100… and the review says \"not a perfect game.\" Both can be true. Read the review, not the number. 🧠\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-21-c-30fps",
+   "date": "2026-11-21",
+   "slot": "12:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-c-30fps/01-post-C1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-c-30fps/02-post-C2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-c-30fps/03-post-C3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-c-30fps/04-post-C4.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-c-30fps/05-post-C5.jpg"
+   ],
+   "alt": "Five slides on launch-day claims that GTA 6 runs at 30 FPS on PS5 and PS5 Pro, marked Unverified while we test it.",
+   "caption": "13 years of waiting… for 30 FPS? 😬\n\nLaunch-day streamers are loud about frame rate:\n→ \"capped at 30 on PS5\"\n→ \"even the PS5 Pro runs at 30\"\n→ \"base PS5 drops below 30 in chaos\"\n\nWe haven't stamped this yet. We're testing base PS5 vs PS5 Pro, settings and busy scenes, then we'll post the verdict.\n\nFollow so you see it first. Inspired by launch-day reaction roundups on YouTube.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Performance #PS5Pro #GTA6News",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-21-reel-3-glitch",
+   "date": "2026-11-21",
+   "slot": "14:23",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-3-glitch/01-reel-3-glitch.mp4"
+   ],
+   "caption": "15 minutes in. First glitch. 🫠 One-off or every time? Send us your GTA 6 bug clips and we'll test them.\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #Gaming",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-22-d-score",
+   "date": "2026-11-22",
+   "slot": "08:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/01-post-D1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/02-post-D2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/03-post-D3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-d-score/04-post-D4.jpg"
+   ],
+   "alt": "Four slides explaining why a 100 review score doesn't mean a game has zero flaws.",
+   "caption": "It got a 100… and the review says it's \"not a perfect game.\" Both can be true. 👇\n\nA 100 means best in its class, not zero flaws. Frame rate, bugs and pacing live in the review text, not the number.\n\nWe're checking the review aggregators before we stamp \"perfect scores all around\".\n\nSave this for the comment wars.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-22-reel-1-30fps",
+   "date": "2026-11-22",
+   "slot": "10:23",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-1-30fps/01-reel-1-30fps.mp4"
+   ],
+   "caption": "13 years… for 30 FPS? 😬 Streamers say GTA 6 is capped at 30, even on PS5 Pro. We're testing it. Verdict incoming. 👀\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #PS5Pro #GTA6News #Gaming",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  },
+  {
+   "id": "2026-11-22-e-glitch",
+   "date": "2026-11-22",
+   "slot": "12:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/01-post-E1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/02-post-E2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/03-post-E3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/carousel-e-glitch/04-post-E4.jpg"
+   ],
+   "alt": "Four slides listing glitches reported on GTA 6 launch streams, marked Unverified until tested.",
+   "caption": "15 minutes into GTA 6 and the glitch clips are already flying. 🫠\n\nReported on launch streams:\n→ plane jump loses physics and clips through objects\n→ a strange radar marker on a blimp\n→ outfits switching on their own\n\nIs it a one-off or does it happen every time? We're testing each one on our own console.\n\nSeen a bug? DM us the clip. We'll test it and credit you.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #GTA6News",
+   "status": "awaiting_approval",
+   "slack_ts": "1795148307.331809",
+   "ig_media_id": null,
+   "gate": "PASS"
+  }
+ ]
+}
