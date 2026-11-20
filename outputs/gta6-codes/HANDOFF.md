@@ -31,7 +31,7 @@ Work branch: `claude/gta6-content-business-ai-hmfjqn`. Cloud environment: **wilb
     - 4:5 scene `982f63f6-44af-4693-b6d0-d73644972e00`
     - transparent Decoder `6a4428d1-e0e7-4fac-9589-66daf438b8ff`
   - Best value model: Kling v3 Pro 1080p, 8 s = 800 credits (the aspect ratio comes from the start frame)
-- **Slack:** connected; approvals go to a private channel (`#gtad-approvals`, to create)
+- **Slack:** private channel **#gtad-approvals** created (id `C0CKLCULPQU`). The daily approval message goes here.
 - **Google Drive, Gmail, GitHub:** connected
 
 ## Rules that never change
@@ -48,7 +48,7 @@ Work branch: `claude/gta6-content-business-ai-hmfjqn`. Cloud environment: **wilb
 
 ## Next steps (in order)
 1. ~~Handle~~ Done: all assets re-rendered with `@gta.de.coded`.
-2. **Create `#gtad-approvals`** in Slack (Jess said yes to Slack).
+2. ~~Slack channel~~ Done: `#gtad-approvals` (id `C0CKLCULPQU`).
 3. **Public media hosting for Windsor:** pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
 4. **Allow research sites** in the wilba-audit environment (Reddit, YouTube, Rockstar Newswire, PlayStation Blog, Xbox Wire), and build automatic YouTube transcripts.
 5. **Decoder shot library:** about 25 reusable shots (about 20,000 credits). Show Jess the plan and cost first.
