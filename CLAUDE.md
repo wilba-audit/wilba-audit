@@ -258,8 +258,12 @@ sets Confirmed, Expired or Unavailable and approves every publish. Don't use GTA
 - **Instagram:** profile setup, highlight covers, stories and carousels are in `outputs/gta6-codes/instagram/`. Edit `content.json`, then run `node scripts/gta6_ig_render.js`.
 - **Skill:** `gaming-brand-designer`, for logos and brand kits for gaming clients.
 
-**Status:** Plan, skills, ledger template and brand kit done. Needs: domain and handles, a tester with a console and the game,
-the Take-Two monetisation email, and the Astro site scaffold (Roadmap 1.1).
+**Automation (Nov 2026):** Instagram is connected via the **Windsor.ai** connector (account `gta.de.coded`; can publish carousels, Reels and Stories).
+Artlist generates the Decoder video shots. Reels are built by `scripts/gta6_reel_build.py`. Approvals go in Slack, one tap a day.
+**Start any new session by reading `outputs/gta6-codes/HANDOFF.md`**, which has the current state, IDs and the next-steps queue.
+
+**Status:** Plan, skills, ledger template, brand kit, launch carousels (A–E), stories and 3 Reels done. Next: see HANDOFF.md
+(handle fix, Slack channel, public media hosting, research sites, Decoder shot library, daily routine and scheduled task).
 
 ---
 
