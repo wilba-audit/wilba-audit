@@ -58,7 +58,7 @@ the US evening, which is when most of the audience is online.
    - what's trending
 
    Save notes with source links to `outputs/gta6-codes/research/<date>.md`. Run anything that is a claim about a code through the `gta6-code-verifier` rules and log it in `code-ledger-template.csv` (proposals only).
-3. **Plan tomorrow:** 2–4 posts, alternating carousel → Reel, starting with whichever type the last published post wasn't.
+3. **Plan tomorrow:** if the queue already has posts for tomorrow (for example the launch posts), don't make more: do research only, then add one post for the next empty day if there's time. Otherwise plan 2–4 posts, alternating carousel → Reel, starting with whichever type the last published post wasn't.
    - Mix: one "Real or Busted?" claim, one useful guide or tip from an official source, one news reaction, and one scam warning or community post.
    - Check the "what works" notes in `outputs/gta6-codes/PLAYBOOK.md` if it exists.
 4. **Make carousels:**

@@ -44,16 +44,29 @@ Work branch: `claude/gta6-content-business-ai-hmfjqn`. Cloud environment: **wilb
 ## Decisions made
 - Rhythm: 2–4 posts a day, alternating carousel → Reel
 - Approvals in Slack, one tap a day
-- Voice: captions only for now (Jess may add her own voice later)
+- Voice: "Shadow" AI voiceover on every Reel (Jess may swap in her own voice later)
+- Posting slots: Melbourne 08:23, 10:23, 12:23 and 14:23 (US evening); prep and approval at 19:17
+
+## LIVE automation (rolled out 20 Nov 2026)
+- **Routine:** skill `.claude/skills/gta6-daily/` (Mode PREP and Mode PUBLISH). Queue: `outputs/gta6-codes/queue/queue.json`.
+- **Scheduled tasks** (fire into session `session_01Wd7pQYXzXDoxHjksEjStbx`, which holds the Slack, Windsor and Artlist connectors):
+  - `trig_014S9vG2KRCRF3TFQkxwrQH8`: publish slots at 08:23, 10:23, 12:23 and 14:23 Melbourne (US evening)
+  - `trig_016aK9bteuz3a6PV8hQZ3oTh`: evening prep and Slack approval at 19:17 Melbourne
+  - Fresh-session tasks get **no connectors**. To move off this session, recreate them in the claude.ai routines UI with Slack, Windsor and Artlist attached.
+- **Media host:** public repo `wilba-audit/gta-decoded-media` (branch `main`). Push with `python3 scripts/gta6_media_push.py <slug> <files>`, which converts PNGs to JPEG and prints the raw URLs.
+  - The shot library is at `library/` in that repo. It is not committed here because of its size (166 MB).
+- **Reels:** have the "Shadow" voiceover (`reels/vo/`). Build from a spec with `python3 scripts/gta6_reel_build.py specs/<id>.json`. The end card holds when the voice runs long.
+- **First approval:** 7 launch posts for Sat 21 and Sun 22 Nov, sent to Slack (ts `1795148307.331809`). They publish only after Jess's ✅.
+- **Instagram limits through the API:** no in-app music and no AI-info toggle, so captions say "Visuals are AI-generated".
 
 ## Next steps (in order)
 1. ~~Handle~~ Done: all assets re-rendered with `@gta.de.coded`.
 2. ~~Slack channel~~ Done: `#gtad-approvals` (id `C0CKLCULPQU`).
-3. **Public media hosting for Windsor:** repo `wilba-audit/gta-decoded-media` (public) attached, but pushes are refused (403) until the Claude GitHub App covers it, or GitHub is re-linked at https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1. Then pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
+3. ~~Public media hosting~~ Done (see LIVE automation). Old note: repo `wilba-audit/gta-decoded-media` (public) attached, but pushes are refused (403) until the Claude GitHub App covers it, or GitHub is re-linked at https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1. Then pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
 4. **Allow research sites** in the wilba-audit environment (Reddit, YouTube, Rockstar Newswire, PlayStation Blog, Xbox Wire), and build automatic YouTube transcripts.
-5. **Decoder shot library:** approved. 3 poses done; batch 1 (20 shots, 13,600 credits) queued 20 Nov. See `brand/decoder/LIBRARY.md` for ids. Batch 2 (4 openers, about 2,000) is still to do. Voice: "Shadow".
-6. **`gta6-daily` skill:** research → plan → write → render → build Reels → publish-gate check → Slack approval → publish via Windsor → log.
-7. **Scheduled task:** run the daily routine at about 6am AEST in a fresh session.
+5. **Decoder shot library:** batch 1 (20 shots) done, checked and in the media repo. See `brand/decoder/LIBRARY.md` for ids. Batch 2 (4 openers, about 2,000) is still to do. Voice: "Shadow".
+6. ~~`gta6-daily` skill~~ Done: research → plan → write → render → build Reels → publish-gate check → Slack approval → publish via Windsor → log.
+7. ~~Scheduled task~~ Done (two tasks, see above): run the daily routine at about 6am AEST in a fresh session.
 8. **Weekly scorecard + "what works" playbook** (`outputs/gta6-codes/PLAYBOOK.md`), fed by Windsor Instagram insights.
 9. Post the launch content already made: carousels A–E, Reels 1–3, stories (see POSTING-PACK.md).
 

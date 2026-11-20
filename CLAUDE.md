@@ -262,7 +262,9 @@ sets Confirmed, Expired or Unavailable and approves every publish. Don't use GTA
 Artlist generates the Decoder video shots. Reels are built by `scripts/gta6_reel_build.py`. Approvals go in Slack, one tap a day.
 **Start any new session by reading `outputs/gta6-codes/HANDOFF.md`**, which has the current state, IDs and the next-steps queue.
 
-**Status:** Plan, skills, ledger template, brand kit, launch carousels (A–E), stories and 3 Reels done. Next: see HANDOFF.md
+**Live (20 Nov 2026):** daily routine skill `gta6-daily`, queue `outputs/gta6-codes/queue/queue.json`, media host repo `wilba-audit/gta-decoded-media` (`scripts/gta6_media_push.py`), and two scheduled tasks (evening prep + Slack approval at 19:17, posting slots 08:23/10:23/12:23/14:23 Melbourne). Nothing posts without Jess's ✅ in Slack.
+
+**Status:** Plan, skills, ledger template, brand kit, launch carousels (A–E), stories, 3 voiced Reels and a 20-shot Decoder library done. Next: see HANDOFF.md
 (handle fix, Slack channel, public media hosting, research sites, Decoder shot library, daily routine and scheduled task).
 
 ---
