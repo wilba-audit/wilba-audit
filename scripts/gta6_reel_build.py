@@ -46,7 +46,7 @@ def build(rid, shot):
     for i, s in enumerate(scales):
         st = '' if s is None else f'<img class="stamp" src="{stamp}" style="transform:rotate(-6deg) scale({s});opacity:{min(1, 0.4 + (2.2 - s))}">'
         pages.append((card + st + '</body></html>', f'{t}/card{i}.png', False))
-    pages.append((head + f'<div class="card"></div><img class="logo" src="{logo}"><h1>{hl(R["end"])}</h1><div class="handle">FOLLOW @GTADECODED</div><div class="legal">Fan-made · not affiliated with Rockstar<br>AI-generated visuals</div></body></html>', f'{t}/end.png', False))
+    pages.append((head + f'<div class="card"></div><img class="logo" src="{logo}"><h1>{hl(R["end"])}</h1><div class="handle">FOLLOW @GTA.DE.CODED</div><div class="legal">Fan-made · not affiliated with Rockstar<br>AI-generated visuals</div></body></html>', f'{t}/end.png', False))
     shots(pages)
     # 1) shot segment: 8s, crop/scale to 1080x1920, captions timed
     seg1 = f'{t}/seg1.mp4'

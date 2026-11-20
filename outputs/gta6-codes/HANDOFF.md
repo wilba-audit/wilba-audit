@@ -47,7 +47,7 @@ Work branch: `claude/gta6-content-business-ai-hmfjqn`. Cloud environment: **wilb
 - Voice: captions only for now (Jess may add her own voice later)
 
 ## Next steps (in order)
-1. **Handle:** Jess renames to `gtadecoded`, or re-render all assets with `@gta.de.coded`.
+1. ~~Handle~~ Done: all assets re-rendered with `@gta.de.coded`.
 2. **Create `#gtad-approvals`** in Slack (Jess said yes to Slack).
 3. **Public media hosting for Windsor:** pick and set up one (options: a public GitHub repo or Pages for media, Cloudflare R2, or Google Drive public links), then **convert carousel PNGs to JPEG**.
 4. **Allow research sites** in the wilba-audit environment (Reddit, YouTube, Rockstar Newswire, PlayStation Blog, Xbox Wire), and build automatic YouTube transcripts.

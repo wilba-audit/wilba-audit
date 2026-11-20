@@ -43,8 +43,8 @@ li b{font:800 ${story ? 40 : 34}px 'JetBrains Mono',monospace;color:${t.pink};mi
 <div class="top"><img src="${svg(t.word)}"><span class="ctr">${f.counter || ''}</span></div>
 <div class="main"><div class="eb">${fmt(f.eyebrow)}</div><h1>${head(f.head)}</h1>
 ${f.sub && f.layout !== 'cta' ? `<p class="sub">${f.sub}</p>` : ''}${mid}
-${f.layout === 'cta' ? `<p class="sub">${f.sub}</p><div class="cta">@GTADECODED</div>` : ''}
-</div></div>${f.decoder ? `<img class="dec" src="${dec(f.decoder)}">` : ''}<script>const h=document.querySelector('h1');let fs=parseFloat(getComputedStyle(h).fontSize);while(h.scrollWidth>h.clientWidth&&fs>60){fs-=4;h.style.fontSize=fs+'px';}</script><div class="foot"><span>FAN-MADE · NOT AFFILIATED WITH ROCKSTAR</span><span>${story || f.decoder ? '' : '@GTADECODED'}</span></div></body></html>`;
+${f.layout === 'cta' ? `<p class="sub">${f.sub}</p><div class="cta">@GTA.DE.CODED</div>` : ''}
+</div></div>${f.decoder ? `<img class="dec" src="${dec(f.decoder)}">` : ''}<script>const h=document.querySelector('h1');let fs=parseFloat(getComputedStyle(h).fontSize);while(h.scrollWidth>h.clientWidth&&fs>60){fs-=4;h.style.fontSize=fs+'px';}</script><div class="foot"><span>FAN-MADE · NOT AFFILIATED WITH ROCKSTAR</span><span>${story || f.decoder ? '' : '@GTA.DE.CODED'}</span></div></body></html>`;
 }
 (async () => {
   const filt = process.argv[2] || ''; const b = await chromium.launch();

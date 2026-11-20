@@ -4,7 +4,7 @@
 | Field | What to enter | Why |
 |---|---|---|
 | Account type | **Creator** (Settings → Account type and tools) | Creator accounts get Instagram's full music library for Reels and creator insights. Business accounts get a restricted music library. |
-| Username | **@gtadecoded**. Backups: @gta.decoded, @gtadecoded_, @decodedgta | Short and matches the brand. Check availability, and grab the same handle on TikTok and YouTube. |
+| Username | **@gta.de.coded** (live). Use the same handle on TikTok and YouTube where possible | Matches the brand. Grab the same handle on TikTok and YouTube. |
 | Name field (searchable, max 30) | **GTA 6 Codes & Guides \| Decoded** (30/30) | Instagram search reads the Name field. "GTA 6 codes" is what people type. |
 | Profile picture | `outputs/gta6-codes/brand/final/gtad-avatar-combo-1080.png` | Already fitted to the circle |
 | Category | **Gaming Video Creator** (show category on profile: on) | Tells visitors what the account is at a glance |
