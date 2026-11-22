@@ -2235,6 +2235,16 @@ reading "Mole Check" can tell which side it falls on. The vein rule REVERSED A P
 briefs still quoted verbatim ("the brief names vein work outright as a cash-pay fail"), and a
 worker holding that sentence has no way to know it has been withdrawn.
 
+**The indication rule propagated too, which makes it two refinements against one withdrawal.** Six
+parked rows name a therapeutic indication in their must-have 2 reason (625, 693, 759, 871, 952,
+1085) and all six are decided correctly — 1085's *"FIVE reimbursable indications"* against the
+four-or-more threshold is exactly the rule being applied as written. Two of them (693, 759) do
+quote a vein line that no longer fails, but both have an independent and decisive fail beside it: a
+private medical practice carrying blood testing, nerve blocks, vaginismus treatment and pilonidal
+abscess management. **Both now carry a note saying the vein point is void and changes nothing**, so
+that the next vein sweep does not "recover" them on it. A recovery sweep can be wrong in the
+generous direction too.
+
 **A rule that refines a prohibition reaches the rows. A rule that withdraws one does not.** When
 the standard withdraws a prohibition, the old sentence has to be hunted down in the brief AND the
 parked rows swept the same day — the narrowing's own text already said as much ("applying the old
