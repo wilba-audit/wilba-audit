@@ -2169,6 +2169,23 @@ fifty characters either side.** Reading 88 short spans took one pass and resolve
 the 22 the spans could not settle were read in full. A sweep that reports *which rows to read* is
 sound. The same sweep reporting *what the rows say* is not.
 
+### When NOT to suppress a flag — I was one edit from getting this wrong
+
+Having added a suppressor for the ladder check, I went looking for the next audit line printing a
+known false positive and found one: *"sendable rows admitting to five or more sites: 2"*, which has
+flagged rows 1284 and 1308 on every run for a week. Both are genuine false positives. Row 1284's
+"over 10 locations" is its founder's **previous franchise**, stated as such on the row.
+
+I was about to give it the same suppressor, and `append_prospects.py` says in its own comments why
+that would be wrong: *"A crude check whose evidence is visible beats a clever check whose verdict
+you must trust."* The check prints the matched snippet, so dismissing it costs one second of
+reading. The ladder flag was different: it printed 88 bare ids, so dismissing it cost re-reading 88
+rows, and a row already ruled on was indistinguishable from a row nobody had opened.
+
+**The principle: suppress a flag only when the flag hides the evidence needed to dismiss it.** An
+over-flag that shows its work is not noise, it is a cheap second opinion — and the urge to make an
+audit print zero is not the same thing as the audit being right. Nothing changed in the checker.
+
 ### A side-effect worth keeping: 11 rows disagreed with themselves
 
 While applying the rulings I found **11 rows already graded C in `icp_fit` whose `priority` column
