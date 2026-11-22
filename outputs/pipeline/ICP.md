@@ -2090,6 +2090,92 @@ anything.** A recorded ladder ruling now suppresses the flag, the same way `QUES
 suppresses the deferral flag. That is not the audit being made lenient; it is the audit learning the
 difference between a row nobody has looked at and a row somebody looked at and decided.
 
+## The 88-row backlog worked: 79 held, 9 moved to C — and the middle rung turns out to be a principle, not a list. 22 Nov 2026
+
+The 88 grade-B rows that named no rung and had never been ruled on have all been read, with no
+fetches spent. **79 hold at B, 9 move to C.** The audit's count of unruled B rows is now **0**.
+Pipeline: 925 on-ICP, 917 ready to approach.
+
+**The nine that failed, and the shape they share.** 358, 477, 686, 732, 778, 783, 844, 881, 941.
+Every one of them says so in its own notes — *"no trading proxy whatsoever"*, *"Established is
+INFERRED and the proxy is absent"*, *"my proxy is the breadth of the build-out, which is weak"*.
+Not one needed a judgement call I had to invent; the graders had already written the finding and
+the grade had not followed it. That is the same defect the 19 Nov pass found in grade A: **a
+documented gap changed the prose and not the sort order.** Two of the nine fail a second must-have
+as well — 477 on the inverted tenancy (the Jane App diary sits under another practitioner's
+account, so she is the room-renter and owns no list) and 844 on must-have 3 (nobody named anywhere).
+
+### The middle rung is a test, and the 19 Nov list was examples of it
+
+Three rows would not fit the 19 Nov list and all three were obviously right to hold:
+
+- **1020** rests on *"a mature multi-platform device stack (InMode FaceTite/AccuTite, Alma,
+  Morpheus8, 3D HIFU, ProCell) which takes years and capital to assemble"*. A device stack is not
+  on the list.
+- **791** and **795** rest on *"18+ Years Combined Exp."* and *"more than 70 years collective
+  experience"* — a team's career length, not a practitioner's.
+- **449** rests on an *"Events & VIP Perks"* app whose platform the page never names: loyalty
+  furniture that exists but cannot be identified.
+
+So state the rung as the test it always was: **the middle rung is evidence of ACCUMULATION — capital
+or commitments that cannot be assembled in a clinic's first months.** A stocked storefront, a
+52-week payment plan, a membership roll, a gift-card float, a named team, a second street address, a
+trainer roster, a mailing list, a multi-platform device stack, a career: every one of these is
+something that had to be built up. **What is NOT a rung is anything that can be bought in a month** —
+and that is the sharp edge the old list was missing. Row 881's proxy was *the breadth of its menu*,
+and a wide menu is a purchase order, not an accumulation. That is why 881 moved and 1020 did not.
+
+The rule as it now stands: **an accumulation with no date on it holds a row at B. It never lifts one
+to A, and it never leaves one at C. Nothing at all parks it at C.**
+
+### Three rows were already on the TOP rung, in prose the regex cannot parse
+
+The audit prints "names no ladder artifact anywhere". That is true of the **regex**, and I read it as
+true of the **row**. Three of the 88 carried a top-rung artifact in prose:
+
+- **588**: *"Almost 4 years of Specialist Facial Aesthetics"* in an on-page caption. That dates the
+  practice to about 2022, which is enough. Must-have 4 on that row is **satisfied, not inferred**.
+- **839**: *"Voted Best in Health & Wellness - RC Chamber 2025"* — a dated award on their own site.
+- **1022**: *"a blog with multiple dated posts under a consistent byline"* — a dated archive.
+
+**So the audit's count is a count of what the regex can see, and the regex reads a narrow dialect.**
+It wants `since 2018` or `© 2019` or `47 reviews`. It cannot read "almost four years of" or "the RC
+Chamber 2025 award" or "multiple dated posts". Widening it further is the wrong move — the fourth
+literal-gap bug on 19 Nov came from widening this very pattern. The right move is the one that
+worked here: **the regex nominates, a person reads.**
+
+### 839 is the cleanest statement yet of the artifact/age distinction
+
+Its dated award is a genuine top rung: the clinic's age is now **known**. What is known is that it
+existed in 2025 — about a year. So the row has the best kind of evidence and still fails to reach A.
+
+**A top rung does not imply A.** The ladder answers *do you know how old this clinic is*; must-have 4
+asks *is that old enough*. Row 1346 (Afterglow) reached A on two dated awards, 2023 and 2025, because
+two dates **bracket** three years of trading. One recent date brackets nothing.
+
+### What nearly went wrong, and the method that caught it
+
+With 88 rows to read I first swept them with a keyword regex for the rung vocabulary — membership,
+gift card, retail, payment plan, named team, trainer, mailing list. **85 of 88 "hit".** Had I ruled
+from that sweep, 85 rows would have been confirmed as B on evidence that mostly did not exist,
+because the overwhelming majority of the hits were **negations**: *"No membership, loyalty or voucher
+scheme"*, *"None published"*, *"no gift cards, no banked credit"*. Row 421's `membership` hit was the
+clinic's own trading name, **The Cosmetic Club**.
+
+This is the disease already recorded in the validator's `DENIAL` comment — *a keyword regex cannot
+tell a finding from a denial that one was ever made* — and it bit again on the first new check I
+wrote. **The two-line fix is the whole lesson: do not print the match, print the matched span with
+fifty characters either side.** Reading 88 short spans took one pass and resolved 66 of them outright;
+the 22 the spans could not settle were read in full. A sweep that reports *which rows to read* is
+sound. The same sweep reporting *what the rows say* is not.
+
+### A side-effect worth keeping: 11 rows disagreed with themselves
+
+While applying the rulings I found **11 rows already graded C in `icp_fit` whose `priority` column
+still read A or B.** `priority` is cosmetic — sendability is computed from `icp_fit` — so nothing
+had leaked. But the 19 Nov finding stands: **when a row contradicts itself across two fields,
+somebody eventually reads the wrong one.** All 11 corrected, each with a note saying why.
+
 ## "Eyeball the Google review history before sending" is not a deferral. 19 Nov 2026
 
 Twelve rows carried some form of that instruction. It reads like diligence and functions as a leak,

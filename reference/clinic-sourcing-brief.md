@@ -1983,6 +1983,32 @@ them**, before a single fetch was spent:
 2. **`WA` collides with Washington state.** A heading grep for `WA` returns Spokane, Olympia, Gig
    Harbor, Seattle and Bellingham. Use `Perth` or `Western Australia`, never the bare state code.
 
+3. **A market swept INSIDE a multi-market pass is invisible to it, and this one cost a whole market
+   choice on 22 Nov 2026.** My own 19 Nov standing list named Darwin as the best remaining
+   Australian ground, on the evidence *"23 mentions, 0 pipeline rows, never a dedicated sweep"*.
+   The heading grep agrees: **no heading in 28,000 lines names Darwin.** Both readings are wrong.
+   Darwin has been swept **twice** — it appears in the `Markets swept:` line of the 19 Oct pass and
+   again on 2 Nov — and the file's verdict is explicit: *"two sweeps now say Darwin is not a market,
+   it is a single operator plus noise"*, because one group (Cosmetic Nurses Australia) owns its
+   whole search surface. **Zero rows was the result of the sweeps, not the absence of them**, which
+   is the identical misreading as the Geelong mention count, made by me, in the list I wrote to
+   stop it happening. A low count and a high count fail the same way: **neither is a measurement
+   of coverage.**
+
+   So add a third grep, and run it before the heading grep because it is the one that indexes
+   multi-market passes:
+
+   ```
+   grep -nE "Markets swept" outputs/pipeline/near-misses.md
+   ```
+
+   It returned 16 lines on 22 Nov and settled Darwin, coastal Queensland (swept 28 Oct, and the
+   28 Oct section's own closing advice to run a coastal-Queensland pass next had **already been
+   taken**), Cairns, Townsville, Toowoomba and the regional Queensland towns in one read. Not every
+   section uses the phrase, so it is an index and not a census — but between the three greps
+   (`Markets swept`, then headings, then per-name) nothing that cost a market choice this month
+   would have survived.
+
 **And the backstop that actually works, regardless: grep per clinic NAME before each fetch, in its
 own turn.** The Perth worker caught fourteen existing pipeline rows that way before spending anything,
 and four more candidates whose grep hits turned out to be in *other rows' notes* (Adelaide, Tampa,
