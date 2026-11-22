@@ -94,3 +94,5 @@
 83  # Bodyvie Medi-Clinic: on sourcing DO-NOT-SEND.txt 11 Nov (pipeline id 83)
 100  # The Skin Clinicians: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 100)
 149  # Aesthetica MD Med Spa: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 149)
+358  # 22 Nov sourcing: parked, no trading-age evidence
+732  # 22 Nov sourcing: parked, no trading-age evidence
