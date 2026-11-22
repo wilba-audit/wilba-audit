@@ -28572,3 +28572,1835 @@ Cottesloe one. **Five hits, five different businesses, zero actual duplicates** 
 the counts, Base Aesthetic Clinic (a sendable B) and Elevate Aesthetics would both have been skipped
 as "already held". **Check the field and check the country, every time; the rule is written to save
 fetches and its failure mode spends rows.**
+
+
+# 22 November 2026 — Sydney's western, Hills, south-western and southern rings; Melbourne's outer west, north, east, south-east and the Mornington Peninsula
+
+Four markets swept under ICP v2, all four chosen because Sydney's and Melbourne's OUTER rings were
+unswept while their inner rings had been worked five times over in November. **54 rows appended,
+ids 1410-1463: 8 grade A, 21 grade B, 25 grade C.** Pipeline 1,463 rows, 947 ready to approach,
+Australian sendable 275 to 302.
+
+Markets swept: **Melbourne outer west, north and east** (Eltham, Croydon, Doncaster East,
+Greensborough, Bundoora, South Morang, Ringwood East, Sunbury, Hoppers Crossing) · **Melbourne
+south-east and the Mornington Peninsula** (Seaford, Berwick, Frankston, Mornington, Hastings, Mt
+Martha, Cranbourne West, Mount Eliza, Drouin) · **Sydney south-west and south** (Bankstown,
+Moorebank/Liverpool, Rockdale, Kingsgrove, Hurstville, Gledswood Hills, Burwood, Chester Hill,
+Gregory Hills, Abbotsbury) · **Sydney west and the Hills** (Bella Vista/Norwest, Windsor, Penrith,
+Parramatta, Rooty Hill, Riverstone, Emu Plains, St Marys, Marsden Park, Granville).
+
+| Worker | Ids | Grades |
+|---|---|---|
+| Melbourne outer west / north / east | 1410-1422 | 2 A, 7 B, 4 C |
+| Melbourne south-east + Mornington Peninsula | 1423-1437 | 2 A, 5 B, 8 C |
+| Sydney south-west and south | 1438-1449 | 0 A, 6 B, 6 C |
+| Sydney west and the Hills | 1450-1463 | 4 A, 4 B, 6 C |
+
+Note the second row of that table differs by one from its worker's own count: **SANA Skin Clinic
+(1425) was handed back as a grade A and was parked at C on arrival**, because its notes asked a
+reader to confirm the injectables line was real before sending, and must-have 1 is not a detail to
+leave open on an A row. **Peninsula Aesthetic & Laser (1428) was handed back as a B and parked for
+the same class of reason** — its booking portal's tenant was never determined, so the
+inverted-tenancy question is open. Both are one fetch from release and both say which fetch.
+
+**Target was 60 rows and 54 landed, so this run came up six short.** Every worker stopped with
+budget in hand rather than running it out, and three of the four said the ring itself was the
+limit.
+
+
+
+# Sydney west and the Hills — near misses and rule-outs (rows 1450-1463)
+
+# Sydney's western and Hills ring, NSW — sourced 22 Nov 2026
+
+Suburbs briefed: Parramatta, Castle Hill, Baulkham Hills, Bella Vista / Norwest, Rouse Hill,
+Kellyville, Blacktown, Penrith. Worked in practice as the whole ring, because the briefed suburb
+names are mostly residential and the aesthetics layer sits one suburb over — see "What this market
+taught me", point 1.
+
+**Budget spent: 17 searches, 42 fetches.** 14 rows produced (4 A, 4 B, 6 C).
+
+**Prior coverage, stated as row ids so it is checkable:** pipeline rows **347** (Art of Aesthetics,
+Five Dock / Greystanes / Parramatta, A), **351** (Natalie Everett Aesthetics, Castle Hill, A),
+**789** (Pure Cosmedic Clinic, Penrith, B), **796** (The Project, Parramatta, C), **797** (Biba
+Cosmetics, Parramatta, B) and **1212** (All Saint Clinic, incl. North Parramatta, C) already touch
+this ring. All six ranked during the run and all six were skipped on the grep for zero fetches.
+Row **826** (VOXY Aesthetics, Rogers AR) matches a whole-row grep for "Bella Vista" and is
+**Bella Vista, ARKANSAS** — the collision is in our own file, so read the country column.
+
+---
+
+## The two named leads I was told to pick up — both were already answered, for zero fetches
+
+**1. Hills Aesthetics, Castle Hill — DO NOT RETRY. My brief was out of date and the retry had
+already been spent.** The brief told me to retry `/contact/` because an 18 Oct note called it "the
+best near-miss of the batch… worth one retry later". `near-misses.md` **line 6202** records that a
+later worker already spent exactly that retry and resolved it: *"`/aboutus/` prints no address at
+all, and `/contact/` prints a Cloudflare-obfuscated one… Stop re-fetching this one — two workers
+have now spent fetches on it."* Founded 2021 (stated), Danielle RN, Timely, gift vouchers, one site,
+phone 0430 871 926. It is a **browser-visit or phone prospect, fails must-have 5**, and I spent no
+fetch on it.
+Two things I did learn about it for free, from search result titles and URLs:
+- it operates **inside Castle Hill Family Doctors** and is bookable through **HotDoc under that GP
+  practice's own listing** (`hotdoc.com.au/medical-centres/castle-hill-NSW-2154/castle-hill-family-doctors/doctors/hills-aesthetics-cosmetic-skin-treatments`), which raises the ICP's **host-GP
+  tenancy question on must-haves 2 and 3** that nobody had recorded against it;
+- it also runs its own Timely tenant at `hillsinjectables.gettimely.com`, so the diary may well be
+  its own. Worth noting before anyone phones it.
+
+**2. The seven "unscreened rather than rejected" names from 18 Oct — THREE were already resolved,
+and the grep found all three before I spent anything.**
+- **MD Cosmedical Solutions** — resolved and **DISQUALIFIED** at `near-misses.md` line 27647: three
+  sites (Barton ACT, Sydney CBD, Wahroonga), a surgical menu (blepharoplasty, liposuction, tummy
+  tuck, BBL, mini facelift, rhinoplasty) and **"Varicose Veins Sclerotherapy"** — fails must-haves
+  1 and 2. `mdcosmedicalsolutions.com.au` and `mdcosmedical.com.au` are blocked. Its
+  `mdcosmedical.com.au/skin-clinic-castle-hill/` catchment page ranked on my Castle Hill query
+  anyway, which is the argument for blocking by name rather than relying on a grep.
+- **DrCosmetist** — now **pipeline row 1251** (Crows Nest, grade B, Dr Sadaf Salehi,
+  `info@drcosmetist.com`). Done.
+- **Ozderm / Medical Cosmetic Clinic** — resolved and **DISQUALIFIED** at line 22343, Manly, in its
+  own words *"a family and General Practice"* — fails must-have 1. Blocked by name.
+- **Still genuinely unscreened, and none of them has a suburb recorded anywhere in our files:**
+  **Bespoke Cosmetics Institute**, **The Beauty Collective**, **Beauty and Laser Clinic**,
+  **Face to Face by Marjan**. None surfaced in any of my 17 queries, which after three Sydney
+  sweeps and this one is itself weak evidence that they are not in the Sydney rings we have worked.
+  I did not spend a search resolving a bare name with no suburb; **a name with no suburb is a
+  domain search, not a clinic**, and the honest next step is one `allowed_domains`-style batch
+  search for all four at once rather than four separate runs.
+
+---
+
+## Qualifies on fit but publishes no readable email — the near-miss list
+
+### Lilly Cosmetic & Beauty Clinic — 3/320 High Street, Penrith NSW 2750 · `lillycosmetic.com.au`
+**Fails must-have 5, CLOUDFLARE-OBFUSCATED, and this is the best near-miss of my batch by a long
+way.** The contact section and the footer both ship `/cdn-cgi/l/email-protection` tokens and the
+page renders `[email protected]` where the address should be. Per the rule that is **NOT SEEN**; I
+did not decode it, and **the fetch helper did not volunteer a decode either** — it reported the
+token and stopped, which is the behaviour we want and is worth recording because the helper has
+volunteered decodes unasked on other sweeps.
+Everything else is grade-A shaped: **Lauren, Senior Registered Nurse and Dermal Therapist, named as
+founder with 14+ years**; a **"10 Years, Caring for Penrith"** badge; **dated awards** — Local
+Business Awards "Winner 2020 & 2021" and Brides Choice 2020, 2021 and 2022, which is a top-rung
+dated artifact putting trading back to 2020 at the latest; **doctor oversight mentioned** (so a
+prescriber exists, though unnamed); **its own Timely tenant** (`lillycosmeticclinic.gettimely.com`);
+**gift vouchers**; a **referral programme**; a **mailing list signup**; a **blog**; injectables
+named outright. No "no unsolicited commercial email" notice anywhere. Copyright 2026.
+**→ Browser-visit list.** Jess opens the page in her own browser and the address is there.
+**And it corrects an entry in our own file.** `near-misses.md` line 3828 lists
+**"Lilly Cosmetic & Beauty Pty Ltd — `lillycosmeticclinic.gettimely.com` (Mildura and Tamworth
+queries both)"** under the heading *"No website at all, only a Timely booking subdomain… these can
+never satisfy must-have 5 because there is no page for anyone to open."* **There is a website**, at
+`lillycosmetic.com.au`, and it is a substantial one. Either that entry mis-attributed a
+regional-query result to a business that does have a site, or two businesses share the name. Either
+way the general claim behind that heading — Timely-subdomain-only means no page — deserves one spot
+check per sweep, because a clinic ranking only by its booking subdomain on one query can still have
+a site that another query finds.
+
+### Dr Furella Aesthetics — 146 Pennant Street, Parramatta NSW 2151 (+ 15 Bourke Street, Maitland NSW 2320) · `drfurellaaesthetics.com.au`
+**Fails must-have 5 (Cloudflare-obfuscated), and must-have 2 is unresolved.** The visible text reads
+`[email protected]` and the mailto is a `/cdn-cgi/l/email-protection#…` token. Not decoded.
+Dr Furyal Moughal (MED0002075534), Medical Practitioner, General Registration, named as Medical
+Director. Two sites, inside the cap. No founding year, no review count, no copyright year — so
+must-have 4 is also unevidenced.
+**Why must-have 2 is unresolved rather than clean:** the "Medical" menu lists **Sclerotherapy** with
+no description, which per the 4 Nov narrowing is unresolved rather than failed; alongside it sit
+**Suture Otoplasty, Earlobe Repair & Reconstruction, Ingrown Toenail Correction** and a
+"Non-Surgical Spiral Facelift" — a minor-procedure list of the kind that usually comes with a
+rebate. It also runs a **training academy** (Introduction to and Advanced Cosmetic Injectables, PDO
+threads, IV vitamin therapy), which is a different business model from the one we sell to.
+Our file already had this domain at line 26022 as *"Parramatta + Maitland — one site in market,
+deprioritised as a Sydney brand"*. It is now screened: **grade C, fails must-have 5, must-have 2
+unresolved.** Also on the browser-visit list, since a browser recovers the token.
+
+### Priscille Vrljic Aesthetics — My Health Collective, Unit 104, 8 Century Circuit, Bella Vista NSW 2153 · `priscillevrljicaesthetics.com.au`
+**Fails must-have 5 — and this one CORRECTS OUR OWN FILE in the expensive direction.**
+`near-misses.md` line 28051 records that *"the room-renting RN (Priscille Vrljic) publishes **her
+own** `info@priscillevrljicaesthetics.com.au` beside the collective's house address, which is the
+inverted-tenancy test passing."* That address was read on **`myhealthcollective.co`, the HOST's
+site**. Must-have 6 requires the address to be published **on the clinic's own site**, and it is
+not: I read **three pages of her own site — the homepage, `/pages/contacts` and
+`/pages/privacy-policy` — and none of them publishes an email address of any kind.** No visible
+text, no mailto, no Cloudflare token. So the row is not sendable from her own site, and the existing
+entry asserts a publication it did not have.
+**Everything else about her is strong and should be kept:** Registered Nurse, **AHPRA
+NMW0001898645**, **ABN 85 655 676 609 published on her own privacy policy**, copyright **© 2021**
+(a five-year-old copyright line, top rung), **her own Timely tenant**
+(`bookings.gettimely.com/priscillevrljicaesthetics`) which is the inverted-tenancy test genuinely
+passing on the diary, a **gift-voucher line**, Shopify. One open question: must-have 1 is
+unresolved — her nav shows only "Skin Treatments" and "Anti-ageing Treatments" and no injectable or
+prescriber is named on any of the three pages read.
+**I deliberately did NOT spend the ABR lookup on her ABN**, because the row fails must-have 5 and
+the ABN would only have dated a clinic we cannot write to. It is published in her footer, so it is
+the strong case and it is there whenever must-have 5 is solved by a browser or a phone call.
+
+### A9 Skin & Hair Wellness Clinic — Shop 19/24-26 Railway Pde, Westmead NSW 2145 · `a9clinic.com.au`
+**Fails must-have 5, absent rather than masked, and I can say which pages:** I read the **homepage**
+and **`/contact-us`** in full, including the complete header and footer href sets. Neither publishes
+an email address as visible text or in a mailto, and neither ships a Cloudflare token. Phone
+0410 955 299 only.
+Fit is decent: one Westmead clinic, **its own Fresha tenant**
+(`fresha.com/a/a9-skin-and-hair-wellness-clinic-westmead-…`), gift vouchers, a "Buy in Bulk and
+Save" course-package offer, and a cosmetic line (wrinkle reduction, volume restoration, lip
+enhancement, biostimulator) delivered after a free consultation with **an unnamed registered
+nurse**. No owner named, no founding year, no review count, no copyright year, so must-have 4 is
+unevidenced too. **Phone or DM prospect.**
+
+### The One Skin Lab — Chatswood, Sydney CBD and Parramatta (suburbs only, no street addresses) · `theoneskinlab.com.au`
+**Fails must-have 5**, absent on the homepage (the page I read, including the full nav and the
+closest thing it has to a footer). Three sites, inside the cap. Gift cards and gift-card T&Cs.
+**Its own Fresha tenant.** Must-have 1 is unresolved: the aesthetics page describes "nurse-led
+procedures to skin boosters and IV therapy" and names no injectable and no individual practitioner.
+Nobody named as owner or founder. No founding year, no review count, no copyright. Chatswood was
+swept 15 Nov, so only its Parramatta arm is new ground.
+
+### Cosmetic Rx — Shop 2, 51 York Road, Jamisontown (Penrith) NSW 2750 · `cosmeticrx.com.au`
+**Not screened on must-have 5 — client-side rendering.** The fetch of `/about` returned **only the
+page's meta tags**: no body, no header or footer hrefs, no visible text. That is the brief's third
+fetch-failure mode and **a browser fixes it**, so this is not an absence finding and must not be
+recorded as one.
+What the metadata alone gave up is still useful: the street address **"Shop 2, 51 York Road,
+JAMISONTON. NSW. 2750"** (the misspelling of Jamisontown is theirs, published as shown), the phone
+**0403 804 084**, the self-description **"PENRITH BASED COSMETIC & SKIN NURSE"**, services
+"cosmetic injectables, face and body treatments", and **"Over 25 years of experience"** — which is a
+career figure, not a founding date. No practitioner is named even in the metadata.
+On fit this is a one-nurse Penrith injectables room, which is squarely the ICP. → **browser-visit
+list**, and the first page to open is `/about`.
+
+### Beauty Bar at Hills — Rouse Hill NSW · `beautybar-at-hills.com`
+**Not screened — client-side rendering.** HTTP 200, and the body contained only an empty
+front-matter block and a viewport meta tag. This is the brief's third fetch-failure mode and
+**a browser fixes it.** Nothing about the clinic is known yet. → browser-visit list.
+
+### Skinology and Strands — the Hills (suburb unconfirmed) · `skinologyandstrands.com.au`
+**Not screened — `ROBOTS_UNREACHABLE`.** The site's robots.txt could not be read, so nothing was
+fetched. Per the standing rule I did **not** point a headless browser at it. → browser-visit list.
+
+### Ensi Clinical Cosmetics / Ensi Cosmetic Injectables — Castle Hill NSW · `ensiclinicalcosmetic.com.au` and `ensicosmeticinjectables.com.au`
+**Not screened — both domains defeated the fetch, by two different modes.**
+`ensiclinicalcosmetic.com.au/contacts-us/` returned a **site-side SERVER_ERROR** (a real URL from a
+search result, not a path I invented). `ensicosmeticinjectables.com.au/` returned
+**`ROBOTS_UNREACHABLE`**. Two live domains for one Castle Hill injectables clinic, with service
+pages for anti-wrinkle injections and PRP skin rejuvenation on both. It is the only genuinely new
+Castle Hill injectables name the run surfaced, so it is worth a browser visit.
+**An ABN surfaced unbidden** in the search results for it — an `abr.business.gov.au/AbnHistory/View?id=57616216874` result. I did **not** chase it, per the standing rule that an ABN you went looking
+for is a notch weaker; recording the number here so that whoever opens the site in a browser can
+check whether the clinic publishes it itself, which would make it the strong case.
+
+---
+
+## Out of market — reached, read, and set aside so nobody re-fetches them
+
+Each of these cost me a fetch and the postal address settled it. **Four of the seven are same-name
+or wrong-country collisions, and not one of the collisions I would have predicted fired.**
+
+- **CHEEK Medispa — 42 High Street, Kings Langley, Hertfordshire WD4 9HT, UNITED KINGDOM** ·
+  `cheekmedispa.com`. Surfaced on a **Blacktown / Kings Langley NSW** query. There is a Kings
+  Langley in the Blacktown LGA and a Kings Langley in Hertfordshire, and the UK one is older and
+  better linked. The clinic is a genuinely good UK prospect and a free row for a Home Counties
+  sweep: **`info@cheekmedispa.com`** read as visible text and in a mailto on
+  `cheekmedispa.com/aesthetics/` on 2026-11-22; **Louise Evans, RGN, INP, Senior Band 8 Nurse
+  Prescriber, 20+ years**, the only practitioner named; **"More than 350 5* Google Reviews"**;
+  Phorest with a shop and gift cards; a **CHEEK Treatcard** loyalty scheme. Caveats for whoever
+  takes it: the menu carries **Map My Mole** (white-label, so it passes on the ICP's who-reads-the-
+  images test) and **Vein Sclerotherapy** with no description (unresolved on must-have 2), and the
+  UK company-identity screen (must-have 8) has not been run.
+- **Rocaderm Clinic — Ottawa, ONTARIO, CANADA** · `rocadermclinic.com`. Ranked on a
+  Rouse Hill / Kellyville / Norwest query. RN Rose Caddy Nwaha, founder, 15+ years; dated awards
+  2024 and 2025; Jane booking. Publishes **no email at all** on the About page. Also sells
+  **semaglutide GLP-1** and spider-vein laser. Not ours.
+- **Cosmetic Nurse Ash — 47 Worsley Street, 2nd Floor, Barrie, ONTARIO, CANADA** ·
+  `cosmeticnurseash.com`. Ranked on a Blacktown query. Publishes
+  `cosmeticnurseashb@gmail.com` as visible text and in a mailto. Nothing else is dated or named.
+- **Cosmetic Assembly — 8/21 McIntosh Street, Airport West VIC 3042 (MELBOURNE)** ·
+  `cosmeticassembly.com.au`. Ranked on a Baulkham Hills / Winston Hills query. Rebecca G
+  ("Nurse Bec"), founder, RN and nutritionist; "300+ Happy clients | 1700+ cosmetic treatments
+  performed"; own Timely tenant. **Publishes no email** — the page says "Please feel free to contact
+  me by email" and the footer Mail link is `#`, which is a near-miss of its own kind. Melbourne.
+- **Nova Cosmetic Clinic — SE 20 / 650 George St, Sydney NSW 2000 (SYDNEY CBD)** ·
+  `novacosmetic.clinic`. Outside the briefed ring but **not covered by any of the three completed
+  Sydney sweeps**, so recording it in full as a free row for a CBD run:
+  **`contact@novacosmetic.clinic`** read as plain visible text on `https://novacosmetic.clinic/` on
+  2026-11-22 (no mailto, no Cloudflare token); **no "no unsolicited commercial email" notice**;
+  operator **Muse Aesthetics Pty Ltd**, copyright © 2026; founder styled "Aesthetics By Jackie", a
+  cosmetic nurse, not formally credentialed on the page; injectables named outright across a very
+  deep service-page set; **own Timely tenant** (`bookings.gettimely.com/novaclinics`); Shopify shop;
+  a `/policies/privacy-policy` exists and was not read. Must-have 4 is the open leg — the only
+  "since" on the page is **a patient's** sentence ("Since 2019 Nova Cosmetic Clinic has taken care
+  of me"), which is somebody else's dating of the business rather than the clinic's own, and there
+  is no review count. A `help.novaclinics.com.au` subdomain hints at a larger "Nova Clinics" group,
+  which is a must-have 3 question.
+- **Box Hill, VICTORIA, not Box Hill NSW** — `skinandlight.net/cosmetic-injectables-box-hill/`,
+  `rejuveclinic.au` ("Box Hill & Keysborough") and `luxelips.com.au/cosmetic-clinic-box-hill/` all
+  ranked on a Kellyville / Rouse Hill / **Box Hill NSW** query. Box Hill is a growth suburb in The
+  Hills Shire and a large established suburb of Melbourne, and Melbourne wins the query. A
+  same-name trap **inside Australia**, which is the dangerous direction.
+- **Malinda Micich / Melbourne Cosmetic Clinic**, Glen Iris VIC — ranked on a Penrith query and was
+  skipped on the grep for zero fetches (already in `near-misses.md` at lines 18866 and 20675).
+
+---
+
+## Ruled out on the must-haves, with the reason
+
+**Disqualified without a fetch, from the name or the search snippet alone:**
+- **SkinSense Clinic**, 47 Showground Road, Castle Hill NSW 2154 · `skinsenseclinic.com.au` — its
+  own search listings read "Skin Cancer Clinic, Castle Hill" and it is listed on `healthdirect.gov.au`.
+  **Fails must-have 2** (skin-cancer work is Medicare-funded) and must-have 1. Its public site also
+  reads "Coming Soon", so the business may be in transition. **Block on Castle Hill queries** — it
+  took three of ten slots on one.
+- **Norwest Skin Cancer Clinic / Skin Cancer Centre Norwest & Mosman**, Suite A2/24 Lexington Dr,
+  Bella Vista NSW 2153 — **fails must-have 2.** It and its directory listings took **six of ten
+  slots** on my Norwest street query, which is the single worst crowd-out of the run. Note the
+  address: it is the **same building** as the accepted row Ageless Aesthetica (Suite A27, 24
+  Lexington Drive). A shared address is not a shared business.
+- **Blacktown Dermatology** · `blacktowndermatology.com` — self-described dermatology practice.
+  Recorded as **unresolved rather than failed** per the label rule, but not worth a fetch when the
+  business name is the business model.
+- **North West Dermatology** · `northwestderm.com.au` — same treatment, same reasoning:
+  **unresolved, unscreened**, not worth a fetch.
+- **Cosmetic Culture** (Penrith + Pyrmont + Lane Cove) · `cosmeticculture.com.au` — already a
+  resolved disqualification at line 6227 (plastic-surgery-led plus microsclerotherapy, fails
+  must-haves 1 and 2). It still ranks on Penrith queries. Blocked by name throughout.
+- **Chains and franchises that ranked and were blocked or skipped:** `laserclinics.com.au`,
+  `australianskinclinics.com.au`, `resultslaserclinic.com.au`, `bodysculptingclinics.com.au`
+  (Westfield Parramatta), `contourclinics.com.au` (Castle Hill), `thecosmeticlounge.com.au`,
+  `sdlaustralia.com.au`, `eternitylaser.com.au`, `hairandskinscience.com.au`,
+  `skinprojectclinics.com.au`, `privee.com.au`, `evolution laser clinic` (Rouse Hill Town Centre and
+  Westpoint Blacktown).
+- **GP, dental, pharmacy and allied-health practices that ranked on injectables queries in this
+  ring:** `mcroundcorner.com.au` (Medical Centre at Round Corner, Dural), `barwellmedicalcentre.com.au`
+  (Castle Hill), `rousehillmedicalcentre.com.au` ("100% Bulk Billing GP Consults" in its own page
+  title), `winstonhillsmedicalcentre` via `doctors.com.au`, `stmarysskincancerclinic.com.au`,
+  `bestcaremedical.com.au` (Blacktown, already on the list), `thegrovedental.com.au` (Rouse Hill
+  dentist with an anti-wrinkle page), `blacktowndentalgroup.com.au`, `pacificsmilesdental.com.au`,
+  `keyhealth.com.au` (Castle Hill), `norwestprivatehospital.com.au`. **All fail must-have 2 before a
+  fetch.**
+
+**Already ours or already ruled out, ranked anyway, skipped on the grep for zero fetches — ten free
+skips, which is the most this rule has paid in one run bar the 15 Nov Sydney sweep's eight:**
+`artofaesthetics.com.au` (row 347), `neainjectables.com` (row 351), `purecosmedics.com.au`
+(row 789), `theprojectparramatta.com.au` (row 796), `bibacosmetics.com.au` (row 797),
+`allsaintclinic.com` (row 1212), `lookfresh.com.au` (row 1279 — ranked top-ten on my **first
+Parramatta** query and is a **Jannali/Hurstville** row, which is the "may surface clinics we already
+hold under a different suburb" case firing), `cosmeticrn.com.au` (row 1352, Canberra),
+`drcosmetist.com` (row 1251), `enhanced-aesthetics.com.au` (a WA near-miss),
+`deluxeinjectables.com.au` (a Melbourne near-miss), `hausofcosmetics.com.au` and
+`flawlessaesthetics.com.au` (both 18 Oct Sydney near-misses, total silence),
+`cosmeticnursevee.com.au` (Rouse Hill, an 18 Oct near-miss, publishes no email),
+`bespokeclinic.com.au` and `injectcosmetics.com.au` (both already on the browser-visit list as
+`robots_disallowed`, and **I did not re-fetch either**), `malindamicich.com` (Glen Iris VIC).
+
+**One free resolution of an existing near-miss, for zero fetches.** The 18 Oct Sydney section records
+**Skin Social** as *"Sydney (memberships page)… robots-disallowed to WebFetch, so I could verify
+nothing — not the suburb, not the owner, not an address."* A search for a different clinic returned
+mapping results titled **"Skin Social (formerly Face Mediskin), 33 Lexington Dr, Bella Vista"** —
+so **Skin Social is in Bella Vista NSW 2153, at 33 Lexington Drive, and was formerly trading as
+Face Mediskin**. Still `robots_disallowed`, so still a browser-visit row, but it now has a suburb, a
+street address and a previous trading name. (Do not confuse it with **pipeline row 151, Skin Social
+Med Spa, Sandy Springs GA** — another same-name collision, caught on the grep.)
+
+---
+
+## Domains worth blocking on the next Sydney query
+
+Carried forward cumulatively from the 12, 15 and 16 Nov lists. **The list is cumulative — start from
+it, do not reconstruct it.** New this run:
+
+**Directory farms and listing sites that cost me slots:**
+- **`whereis.com`** — took **four of ten slots** on one Norwest street query with generated
+  suburb and category pages ("30 Best Local Medical Centres in Bella Vista, NSW 2153"). Worst single
+  crowder-out of the run and not covered by any existing block.
+- **`nearfinderau.com`**, **`reingar.com.au`**, **`auravenu.com`**, **`bizspot.com.au`**,
+  **`cylex-australia.com`**, **`old.australia247.info`**, **`aussiestoresonline.com`** (subdomained
+  per suburb, e.g. `castle-hill-nsw.aussiestoresonline.com`), **`trustytradies.com.au`** — the same
+  species as `localsearch.com.au` and `localbusinessguide.com.au`, each generating a page per NSW
+  suburb. Blocking the two already on the list does not cover any of these.
+- **`bestwellness.com.au`**, **`bookwell.com.au`**, **`pro.makeup`**, **`reviews.birdeye.com`**,
+  **`aestheticsaustralia.com.au`** (`/clinics/<name>-<hash>`), **`cosmeticsurgeryclinics.com.au`**,
+  **`glow.com.au`** (already listed, re-confirmed on a Castle Hill query) — review and booking farms.
+- **`waze.com`** — mapping results in place of clinics. Harmless, but it took all three slots on one
+  narrow name query. (It is also what resolved Skin Social's address, so **block it in a query and
+  read it if you land on it**, the same treatment as `regenerer.com.au`.)
+- **`healthdirect.gov.au`**, **`hotdoc.com.au`**, **`doctors.com.au`**, **`playsafe.health.nsw.gov.au`**,
+  **`healthcarelink.com.au`**, **`wentwest.com.au`** — government and GP-booking registries. They
+  pulled four of ten slots on my St Marys query. Useful once (HotDoc told me Hills Aesthetics sits
+  inside a GP practice) and noise every other time.
+- **`au.seek.com` / `seek.com.au`, `au.indeed.com`, `au.jora.com`** — **job boards took four of ten
+  slots on one query** ("Cosmetic Nurse Injector Jobs in All Sydney NSW"). This is the `nurse.org`
+  finding generalised: **a query containing "nurse injector" finds people HIRING nurse injectors.**
+  Pair "nurse" with a suburb and a postcode, never with "injector" alone.
+- **`aestheticmedicalpractitioner.com.au`**, **`medicalrepublic.com.au`**, **`leadsnow.ai`** — trade
+  press and a competitor's lead-gen landing page, pulled in by "cosmetic injectables" plus
+  owner/founder language. Same species as `nurse.org`: articles **about** the industry.
+- **`westfield.com.au`**, **`westpoint.com.au`**, **`rhtc.com.au`** — **shopping-centre tenant
+  directories.** A new species for this ring, and the predictable one: western Sydney's retail is
+  organised around Westfield Parramatta, Westpoint Blacktown and Rouse Hill Town Centre, so the
+  centre's own store directory ranks for every suburb query. They list only the national chains that
+  can afford a centre tenancy, so they are the **anti-`toorakvillage.com.au`** — a precinct
+  directory with none of our segment in it.
+
+**Clinic domains to block by name (resolved disqualifications or multi-suburb page sets):**
+- **`skinsenseclinic.com.au`** — resolved must-have 2 disqualification (skin cancer), Castle Hill.
+- **`blacktowndermatology.com`**, **`northwestderm.com.au`** — dermatology, Blacktown and the Hills.
+- **`mdcosmedical.com.au`** and **`mdcosmedicalsolutions.com.au`** — already disqualified, and the
+  first one's `/skin-clinic-castle-hill/` catchment page still ranks. Block both.
+- **`theaesthetik.com.au`** — a **`/locations/<suburb>/` plus `/areas-we-service/<suburb>/` page
+  set** holding Bella Vista and Kellyville Ridge. I spent a fetch on `/locations/` to count its
+  sites and got a **site-side client error**, so the site count is unresolved and it may well be a
+  5+ disqualification. Block the set on queries; read a single page if you land on one.
+- **`eternitylaser.com.au`** (`/locations/baulkham-hills.html`), **`sdlaustralia.com.au`**
+  (`/clinics/rouse-hill/`), **`hairandskinscience.com.au`** (`/locations/parramatta/`) — chain
+  catchment page sets.
+- **`rousehillmedicalcentre.com.au`**, **`barwellmedicalcentre.com.au`**, **`mcroundcorner.com.au`**,
+  **`stmarysskincancerclinic.com.au`**, **`thegrovedental.com.au`**, **`keyhealth.com.au`** — GP,
+  skin-cancer and dental practices that rank on suburb-plus-injectables queries here.
+- **`skinandlight.net`**, **`rejuveclinic.au`**, **`luxelips.com.au`** — Box Hill **VICTORIA**, block
+  on any Box Hill NSW query.
+- **`injectionqueen.co.uk`**, **`le-aesthetics.co.uk`**, **`clinic23.co.nz`**,
+  **`barebeautybrisbane.com`**, **`dermhaus.com.au`**, **`nursifyaesthetics.com`**,
+  **`theskinclinichtx.com`**, **`thebeautygroup.ca`**, **`cheekmedispa.com`** — out-of-market noise
+  that ranked on this ring's queries.
+
+**Do NOT block, recognise instead:** **`fresha.com`**. Its suburb landing pages
+(`/lp/en/bt/aesthetics/in/au-sydney/<suburb>` and `/lp/en/tt/<treatment>/in/au-sydney/<suburb>`)
+took **five of ten slots on my Blacktown query and three on my Penrith query**, which is enough to
+look like a farm. It is the index the brief recommends. See the measurement below — I did not spend
+a fetch on it and I think that was a mistake.
+
+---
+
+## What this market taught me
+
+**1. THE BRIEFED SUBURBS ARE THE WRONG UNIT HERE, AND THE RING SPLITS CLEANLY IN TWO. Of 14 rows, 13
+are in the ring and only FOUR are in a briefed suburb.** The rows landed at Bella Vista ×3,
+Parramatta ×2, Penrith ×2, and then at **Riverstone, Rooty Hill, Marsden Park, Emu Plains, St Marys,
+Granville and Windsor** — every one of those an unbriefed suburb one step off the briefed name. The
+two halves behave quite differently:
+- **The Hills / Norwest half is a BUSINESS PARK, not a high street.** All three Bella Vista rows and
+  the best Bella Vista near-miss sit in **Norwest office buildings** — 24 Lexington Drive, 8 Century
+  Circuit, 8 Elizabeth Macarthur Drive (the Bond Building), 33 Lexington Drive, 105 Bella Vista
+  Drive. Two of them are in the **same building** as each other and one is in the same building as a
+  skin-cancer clinic. This is the first market in the file where the strip move's Australian failure
+  mode does **not** apply: the brief's standing finding is that an Australian high-street *medical*
+  address is a GP practice, and the reason that did not bite in Norwest is that **the aesthetics
+  layer here is not on a high street at all — it is in suites, upstairs, in a commercial park.** So
+  the query that works is the **street-plus-building-park name**, not the retail strip.
+  Castle Hill, Baulkham Hills, Kellyville and Rouse Hill produced **no own-domain row at all**, and
+  on the ICP's four-reason taxonomy they are **"live clinics publishing no email" plus "held by
+  other professions"**: Castle Hill's three real injectables names are Hills Aesthetics (Cloudflare),
+  Natalie Everett (already row 351) and Ensi (two domains, both defeating the fetch), while the
+  remaining slots went to a skin-cancer clinic, a GP, a dentist and three chains.
+- **The western half — Penrith, Blacktown, Parramatta — is the opposite, and it is where the EMAIL
+  IS.** Penrith gave three (Chontelle, Cosmetic Sister, Skin Essentials) plus the best near-miss;
+  Blacktown LGA gave three (Cosmetic Clinic & Co at Rooty Hill, Glam Up Clinique at Riverstone,
+  Castle Cosmetic at Marsden Park); Parramatta LGA gave three. These are **arcade shops, shopfronts
+  and single rooms on named high streets** — 461 High Street Penrith inside Elizabeth Arcade,
+  178-186 Queen Street St Marys inside Star Arcade, 91 Great Western Highway Emu Plains, 28 Cowper
+  Street Granville, 29 Campbell Street Parramatta. **The arcade is the western-Sydney equivalent of
+  the Melbourne strip**, and it is where the owner-injector band actually trades.
+
+**2. THE BINDING MUST-HAVE IS 4, AND IT IS NOT CLOSE — WHICH CONTRADICTS WHAT THE THREE EARLIER
+SYDNEY SWEEPS FOUND AND IS THE MOST VALUABLE THING I MEASURED.** Of **23 in-ring businesses I
+opened** (excluding MT Aesthetics, which is out of ring):
+- **must-have 4 failed or went unevidenced on 9 (39%)** — Cosmetic Sister, The Sydney Aesthetics,
+  BioMed Spa, Castle Cosmetic, Diamond Aesthetics, Instincts Skin, Cosmetic Clinic & Co (dated, but
+  only to 2024), A9 and The One Skin Lab. The single largest cause of a C or a B.
+- **must-have 5 failed on 5 confirmed (22%)** — Lilly, Dr Furella, Priscille, A9, The One Skin Lab.
+  A further **5 are unscreened on it because the fetch was defeated** (Cosmetic Rx, Beauty Bar,
+  Skinology, Ensi ×2 domains, ywax), so the true must-have 5 rate could reach 43% if every one of
+  those turns out silent. **Stated honestly: the ranking between the two must-haves is firm on
+  confirmed failures and could invert on the unscreened five.**
+- must-have 1 failed on 2, must-have 2 was unresolved on 2, must-have 3 on 0.
+
+**Set that against the record.** The 12 Nov harbourside sweep measured **9 of 15 (60%)** publishing a
+dated or quantified artifact, called it *"the highest rate measured anywhere"*, and concluded
+must-have 4 **was not binding** in Sydney. The 18 Oct suburban sweep and the 15 Nov north-shore
+sweep both named **must-have 5** as the binding one. **Here must-have 4 beats must-have 5, 43% to
+33%** — the first Sydney corridor where it does.
+**And the harbourside worker's own hypothesis for why predicts this exactly.** It wrote: *"what
+predicts a published founding year is not wealth but AGE… this market's clinics are old."* The
+western and Hills ring is the youngest part of Sydney: Marsden Park's Elara estate, Riverstone, Box
+Hill and Rouse Hill are land releases of the last ten years, and Norwest is a business park. The
+clinics here are correspondingly young — **the two dated artifacts I found that failed the SUBSTANCE
+test both dated to 2024** (Cosmetic Clinic & Co's award finalist placing; BioMed Spa's copyright), and
+three more rows published **no year of any kind**. So the age hypothesis is now **reproduced from the
+other direction in the same city**, which is a stronger test than another affluent-market confirmation
+would have been. **Carry a corridor-level rate in Sydney, never a city one — and expect must-have 4 to
+bind in a growth corridor and must-have 5 to bind in an old one.**
+
+**3. THE AUSTRALIAN CLOUDFLARE RATE IS HIGHER THAN THE FILE'S CURRENT ESTIMATE, AND BOTH OF TONIGHT'S
+TOKENS WERE ON PAGES THE FILE SAYS TO EXPECT THEM ON.** The ICP's 17 Nov correction puts the rate at
+*"roughly 2 in 75 clinics across six Australian metros"* — about 3%. I found **2 in 21 in-market
+businesses, which is 9.5%**, and both were plainly obfuscated: Lilly Cosmetic's on its **homepage**
+contact section and footer, Dr Furella's on its **homepage** footer. Neither needed a second page.
+At n=21 that is not a refutation of 3% — the confidence interval is wide and the ICP's own lesson is
+that a small number explains a run of zeroes — but it is the **third correction in this direction in
+a week**, and the direction has been consistent every time. **The honest statement is that the AU
+rate is somewhere in the low-to-high single digits and has been revised upward on every occasion
+anyone has measured it; stop treating "Australia barely obfuscates" as settled.** Operationally this
+also means the **browser-visit list is worth more in AU than the file currently says**: two of my
+seven must-have 5 failures are browser-recoverable, which is a much better ratio than
+"Australia's problem is silence".
+**One procedural note worth keeping: the fetch helper did not volunteer a decode on either token.**
+It reported the `/cdn-cgi/l/email-protection` href verbatim and stopped. I declined to decode either
+one. That is two clean firings of the decode rule with no temptation offered, against the three-of-
+three volunteering recorded on one Canadian sweep — so the helper's behaviour may differ by site
+rather than being a constant, and a worker should not assume it will be offered.
+
+**4. THE FRESHA SUBURB INDEX FIRED ON ITS OWN AND I DIDN'T SPEND THE FETCH — I THINK THAT WAS A
+MISTAKE, AND THE MEASUREMENT IS WORTH MORE THAN MY EXCUSE.** The brief recommends
+`fresha.com/lp/en/bt/aesthetics/in/au-sydney/<suburb>` as a slug-centroid index. I never fetched one.
+But Fresha **surfaced unbidden in the results of three of my queries**, taking **five of ten slots on
+my Blacktown query** alone, across more slugs than the brief names: `/bt/aesthetics/`,
+`/bt/beauty-salons/`, `/tt/anti-wrinkle-injections/`, `/tt/dermal-fillers/`, `/tt/facials/`, and for
+suburbs the brief doesn't list (Seven Hills, Kings Langley, South Penrith, Glenmore Park). **The
+treatment-specific slug `/tt/anti-wrinkle-injections/` is new and should pre-filter out the massage,
+nails and hair noise the brief says is two thirds of each aesthetics index** — which, if it holds,
+converts the index's main cost into nothing. My reason for skipping it was that it prints no domains
+and I was fetch-rich and search-poor by the time Blacktown came up, and **that is exactly the shape
+of reasoning the brief warns about: a worker is a poor witness to what a different run would need.**
+**Recommendation with its conditions attached: the next western/southwest Sydney run should spend
+fetch one or two on `/tt/anti-wrinkle-injections/in/au-sydney/blacktown` and
+`…/penrith`, before any search**, because Blacktown is the suburb where search failed hardest here
+and Fresha is visibly the thing that ranks there instead.
+
+**5. A FIFTH SPECIES OF FETCH FAILURE THAT PRESENTS AS SUCCESS: THE BOT-CHECK INTERSTITIAL.**
+`ywax.com.au` returned HTTP 200 with a body containing only `<title>One moment, please...</title>`
+and the text *"Please wait while your request is being verified..."*. This is **not** the brief's
+third mode (client-side rendering, where the site returns a document head and the real page renders
+in a browser) and **not** the ninth (a non-HTML content-type). It is HTML, it is a complete page, and
+it is a **challenge page served instead of the site**. It matters because it is the second mode after
+the ninth that **a careless reader records as "page read, nothing found"** — and unlike the ninth, a
+browser very probably does fix it, because passing the challenge is what browsers are for. **So it
+goes ON the browser-visit list, where the ninth mode does not.** Tell it from mode three by the
+words: mode three gives you an empty body, this one gives you a sentence telling you it is verifying
+you.
+
+**6. WHAT ACTUALLY WORKED AS A QUERY SHAPE, WITH ITS DENOMINATOR.**
+- **Suburb + postcode + "cosmetic injectables" + "nurse" or "injector": 4 of 5 queries returned at
+  least one new in-market own-domain clinic.** The best was `Penrith 2750 NSW cosmetic injectables
+  clinic nurse injector Jamisontown Glenmore Park`, which gave four new names in one query. The
+  postcode did real work: **Penrith NSW against Penrith, Cumbria** is the sixth thin-town reason
+  waiting to happen, and it never fired once in five Penrith queries because the postcode was always
+  there.
+- **Four unquoted town names plus "owner" or "founder": 1 of 3, and the two failures were ugly.** The
+  Rouse Hill / Kellyville / Norwest attempt returned a New Zealand clinic, a Brisbane clinic and two
+  US clinics in ten slots. The Baulkham Hills attempt returned a Melbourne clinic, a Brisbane clinic
+  and a US clinic. **That takes the shape's standing scoreboard from 5 of 9 to 6 of 12, with the
+  failures now spread across two metros rather than concentrated in Melbourne** — so the claim that
+  all its failures were one metro's does not survive. In Australia it is not the opener.
+- **The street / precinct shape: 1 of 2, and the one that worked was a BUILDING PARK.** The Norwest
+  street query (`Lexington Drive Century Circuit Celebration Drive`) surfaced Face Mediskin / Skin
+  Social and confirmed the Bella Vista cluster, but lost six of ten slots to one skin-cancer clinic's
+  listings. The Castle Hill retail-strip query (`Old Northern Road… Showground Road`) produced no new
+  own-domain clinic. **In a business-park suburb, query the DRIVE and the building; in an older
+  retail suburb here, query the ARCADE** — Elizabeth Arcade and Star Arcade are both in my accepted
+  rows and neither would be found by a main-street query.
+- **Dead here, do not retry:** adding `"established in 20"` or `"since 20"` as a quoted phrase. Two
+  attempts, and both returned the clinics I already had plus trade press and a competitor's
+  lead-generation landing page. It is the dead "our story / established" shape in a new costume — it
+  finds the phrase, not the practice.
+
+**7. THE GREP-BEFORE-FETCH RULE PAID TEN TIMES AND CAUGHT ONE COLLISION THE POSTAL ADDRESS WOULD HAVE
+MISSED.** Ten domains were skipped for zero fetches (listed above). The one worth singling out is
+**`lookfresh.com.au`, pipeline row 1279** — it ranked **eighth on my very first Parramatta query**
+and it is a **Jannali and Hurstville** clinic. No postal address check would have saved that fetch,
+because the clinic is real and Australian and in Sydney; only the grep did. That is the brief's
+"these towns may surface clinics we already hold under a different suburb" case firing on query one.
+**And the collision I predicted did not fire, again:** I expected trouble from "Castle Hill" against
+Castle Hill in Townsville QLD and from "Bella Vista" against Bella Vista CA. Neither appeared.
+What fired instead was **Kings Langley NSW against Kings Langley, Hertfordshire** — a suburb name I
+had not even flagged, in a country the brief does not warn about for this ring — plus **Box Hill NSW
+against Box Hill VIC**, which is the inside-Australia direction the brief says is the dangerous one.
+Five sweeps of this file now say the same thing: **predict anyway, it costs a sentence, but spend the
+real defence on reading the postal address.**
+
+
+# Sydney south-west and south — near misses and rule-outs (rows 1438-1449)
+
+# Sydney's south-western and southern ring, NSW — sourced 22 Nov 2026
+
+**Market:** Liverpool, Campbelltown and the Macarthur district, Bankstown, Fairfield, Hurstville,
+Kogarah, Burwood, Strathfield — plus the adjacent ring the results actually produced (Moorebank,
+Casula, Chipping Norton, Cabramatta, Chester Hill, Abbotsbury, Gregory Hills, Gledswood Hills,
+Narellan, Camden, Bradbury, Kingsgrove, Rockdale, Monterey, North Strathfield).
+
+**Spend:** 24 WebSearch, 45 WebFetch (2 of those returned nothing — see "Fetch failures"). About 32
+businesses researched; **12 written as rows (0 grade A, 6 grade B, 6 grade C)**.
+
+**Every entry below prints the address and the URL it was read from, or says plainly that no address
+exists and WHICH PAGES were read** — per the 9 Nov rule that an entry claiming an address must
+contain the address, and the 15/16 Nov rule that an "absent" verdict is a claim about pages.
+
+---
+
+## Prior coverage this sweep inherited, and what the grep paid
+
+The coverage grep paid **nine free skips** in this ring, which I think is the most it has returned
+outside the 15 Nov run. Everything below was caught before a fetch was spent:
+
+- **Row 803 — Aesthetica HQ, Gregory Hills NSW 2557** (`aestheticahq.com.au`), grade C, founded
+  2025. It ranked again on my R Cosmetics query. Blocked by name.
+- **Row 1279 — LookFresh Cosmetic Medical Clinic, Jannali and Hurstville** (`lookfresh.com.au`).
+  Ranked top-three on my Hurstville query. Already held.
+- **Row 346-adjacent / 15 Nov near-miss — Medical Aesthetics 360, Chatswood + Hurstville**
+  (`ma360.com.au`). Ranked on two of my Hurstville queries and is the first entry on the Fresha
+  Hurstville index. Already screened 15 Nov (three addresses against a two-location menu).
+- **MD Cosmedical Solutions** (`mdcosmedical.com.au`, `mdcosmedicalsolutions.com.au`) — ranked slot
+  five on my Strathfield query via `/cosmetic-clinic-strathfield/`. **Already disqualified outright
+  on must-haves 1 and 2** (blepharoplasty, liposuction, BBL, rhinoplasty, plus varicose-vein
+  sclerotherapy). This is the clinic listed for weeks as "unscreened" in the Sydney file; it is
+  resolved and both domains are blocked.
+- **The Manse Clinic** (`themanseclinic.com.au`) — already a pipeline row; ranked on my Ingleburn
+  query.
+- **CosMedic Collective** (`cosmediccollective.com.au`) — already a pipeline row; ranked on my
+  Campbelltown query.
+- **Skin Appeal Clinic** (`skinappealclinic.net`) — titled "Medical Aesthetics & Skin Care Clinic
+  **Liverpool**" and it is **Liverpool, MERSEYSIDE**, already a near-miss at `near-misses.md` line
+  1912 publishing `aestheticsliverpool@gmail.com`. **The exact collision the brief warned me about,
+  and the grep caught it for zero fetches.**
+- **`cosmeticculture.com.au`** (Penrith/Pyrmont/Lane Cove) and **`contourclinics.com.au`** — both
+  already disqualified; blocked in query lists from the start.
+- **Noble Skin Laser Clinic** and **Haus of Cosmetics** and **Symetry Aesthetics** — all three
+  already in the file as Sydney-south-west near-misses from 1 Nov and 15 Nov (see below for what I
+  added).
+
+---
+
+## Qualifies on fit but publishes NO readable email
+
+### The Grove Cosmetic & Skin Clinic — Forestgrove Drive, Harrington Grove, Camden NSW 2567 · `grovecosmeticclinic.com.au` · **fails must-have 5**
+**Two pages read in full — the homepage (`/`) and `/contact-us` — and NEITHER publishes an email
+address.** Not obfuscated: no Cloudflare token, no `[email protected]`. The only contact channel
+anywhere is `tel:02 4647 4501`. The published address has **no street number**: "Forestgrove Drive,
+Harrington Grove 2567" and "Camden, New South Wales Australia 2567".
+**This is the row I most want back from the sweep.** Everything else passes: **Registered Nurse
+Anna**, in her own quoted words *"Operating my own practice for over 25 years has been very
+rewarding"* (a 25-year career length — the middle rung); a `© 2023` copyright, which read in 2026 is
+a three-year floor; a gift-voucher shop at `/gift-card`; a real injectables menu (wrinkle-reducing
+treatments, dermal fillers, lip enhancement, skin boosters, mono PDO threads, threadlift). Must-have
+2 is **clean on both pages read** — no Medicare, no bulk billing, no HICAPS, no Veterans, no health
+fund, nothing; and its sclerotherapy is explicitly for "Thread Veins Face" and "Thread Veins Legs",
+which per the 4 Nov narrowing is cosmetic and does **not** fail must-have 2. **Worth a browser visit
+or a phone call, nothing else** — and note its Privacy Policy footer link points at the same URL as
+its Terms & Conditions, so there is no separate policy to recover an address from.
+
+### R Cosmetics — Cape York Street, Gregory Hills NSW (plus a room at 67 Jacaranda Avenue, Bradbury) · `rcosmetics.com.au` · **fails must-have 5**
+Homepage read in full including a fully enumerated header and footer: **no email anywhere**, not
+obfuscated, the only contact being `tel:0411645289`. Publishes **AHPRA registration NMW0002868088**
+for "a Registered Nurse and Dermal Therapist" but never prints her name in text (image paths say
+"Ivana"). **Branded named membership — "R Collective Memberships" with its own policies page — plus a
+retail shop at `/shop`,** which is two middle-rung operational proxies. Own Fresha tenant
+(`r-cosmetics-n344qy8y`). Menu: wrinkle reduction, volume and contour, bio-remodelling, Sunekos,
+Rejuran, skin boosters, microneedling, peels, plus medically guided weight loss in partnership with
+Moshy. No copyright year at all. Must-have 2 clean on the page read. **Second-best browser-visit
+candidate in this ring.** Note the second premises: Fresha lists "R Cosmetics at NobleSkin Laser,
+67 Jacaranda Avenue, Bradbury" — the same address as Noble Skin Laser Clinic below, so this is an
+injector with her own Gregory Hills clinic *and* a room in a host clinic. Her own Fresha tenant means
+she owns the list.
+
+### Noble Skin Laser Clinic — Unit 1/67 Jacaranda Avenue, Bradbury NSW 2560 · `nobleskinlaserclinic.com.au` · **fails must-have 5, and must-have 4 — CLOSE THIS ONE**
+The 1 Nov sweep recorded "No address on the page read (`/cosmetic-injectables`). I did not spend a
+fetch on its contact page." **I spent it and it resolved negative.** `/contact` returned a hard
+client error with nothing retrieved; the **homepage including its fully enumerated footer publishes
+no email at all** — not obfuscated, phone only (`tel:0246101000`) plus a FAQ form. Also fails
+must-have 4 independently: copyright `© 2025` (one year), no named practitioner anywhere (the 1 Nov
+caveat about Nikki being called both a nurse and an aesthetician is moot — nobody is named now), and
+"We have spent years working across a wide range of beauty services" with no number. Kitomba own
+tenant (`apps.kitomba.com/bookings/nobleskin`). It runs a **31-suburb SEO page set** (`/liverpool`,
+`/narellan`, `/camden`, `/ingleburn`, `/minto`, `/gregory-hills`, `/leppington` and 24 more) against
+one address — one buyer, not 31 sites. **Two workers have now failed to get an email off this site.
+Record it as closed rather than leaving it to be re-swept a third time.**
+
+### Derma Regen Clinic — Suite 5, Level 1, 5 George Street, North Strathfield NSW 2137 (inside the WOTSO building) · `dermaregenclinic.com.au` · **fails must-have 5**
+`/about.html` read in full with a fully enumerated header and footer: **no email, not obfuscated.**
+Phone only (`tel:+61485010543`). "Led by a registered nurse with over six years of experience" —
+never named, though a closure notice refers to "Sunny" being overseas. Copyright `© 2026`, "Last
+updated July 2026", no review count. Serves Concord, Rhodes, Burwood and Strathfield. Booking runs
+through `api.convayro.com/booking/derma-regen-clinic` — its own instance. Must-have 2 clean on the
+page read. Must-have 1 is injectables-adjacent at best: wrinkle, facial volume, face and body
+contouring and skin hydration **consultations**, with the substance of the menu being PRP/PRF, Rejuran,
+exosomes, peels and microneedling. A serviced-office address plus a six-year nurse makes must-have 4
+thin too. **Low-value browser visit.**
+
+### Sydney Cosmetic Studio — Shop 3/20 Ernest Avenue, Chipping Norton NSW 2170 (plus 256-258 Victoria Road, Gladesville NSW 2111, "Located inside Beauty Inc.") · `sydneycosmeticstudio.com.au` · **fails must-have 5**
+Homepage read in full: **no email anywhere**, not obfuscated. Two locations, one of them inside a
+host beauty business. "© Sydney Cosmetic Studio **Pty Ltd**" with **no year at all**. No practitioner
+named — an "About Me" link exists but the team page was not fetched. Must-have 2 clean on the page
+read. Banner reads "STAY TUNED FOR OUR NEW WEBSITE REVAMP! COMING SOON!", so an address may appear
+later. Oddity worth noting: its "Open in maps" link points at **391 Sutter St, San Francisco**, which
+matches neither Sydney address — a template left unedited.
+
+### Soma Aesthetica — location NOT established · `somaaesthetica.com` · **fails must-have 5, and the market was never confirmed**
+`/pages/cosmetic-injectables` read in full: **no email, no street address, no suburb, no state.**
+Not obfuscated. Meta description says "Soma Westfield Cosmetic Clinic", which is a name and not an
+address. Copyright "© 2026 Soma Aesthetica Co." Shopify with an empty product catalogue. The
+injectables page is real (wrinkle relaxing by area, fillers by area, lip enhancement, skin boosters)
+but the nav also carries cosmetic tattoo, eyelash extensions and lash/brow, so must-have 1 would need
+the balance test. **A name without a confirmed market is not a saving** — whoever picks this up needs
+a location before anything else.
+
+---
+
+## Ruled out, with the reason
+
+### Disqualified outright — do not re-source, block by name
+
+- **GMC Cosmedical** — 16A Somerset Avenue, Narellan NSW 2567 **and** Medical Suite, Ground Floor,
+  Phar-Lap Gardens, 34-52 Alison Road, Randwick NSW 2031 · `gmccosmedical.com` · **MULTI-SPECIALTY,
+  fails must-have 1, and must-have 2 is at high risk.** It publishes `info@gmccosmedical.com` as
+  plain visible footer text and in a mailto, so the address is real — which is why this needs
+  recording. The practice is cosmetic **plus surgical podiatry plus naturopathy**: Dr George Calfas
+  (founder), **Dr Maree Marks, "Specialist Surgical Podiatrist"**, and Nurse Madeline Calfas, with
+  registration numbers for each, and a "Feet" service category covering heel and arch pain, bunions,
+  ingrown toenails, corns and calluses and children's foot problems. Both premises are called
+  "Surgery". Podiatry in Australia is health-fund claimable, so the billing model is mixed by
+  construction. "More than 35 years" / "Over 30 Years' Experience". **The row must never be built.**
+- **Zen Medispa** — Level 1/116 Burwood Rd, Burwood NSW 2134 · `zenmedispa.com.au` · **COSMETIC
+  SURGERY, fails must-have 1.** Publishes `info@zenmedispa.com.au` as plain visible footer text, so
+  again the address is real and the clinic is disqualified. Its own menu sells **breast augmentation,
+  gynaecomastia, labiaplasty, gluteal fat grafting, Vaser high-definition lipo and Vaser lipo**,
+  under a page called "Cosmetic Surgery for Asians", with a "Risks and Recovery" page. Two MBBS
+  doctors (MED0001187041, MED0001603203) and three registered nurses. Surgery sold as a line of
+  business, not mentioned in a bio. **Block it on Burwood queries — it took slot six on my
+  Burwood/Strathfield query.**
+- **Sydney Face Aesthetics** — **FIVE premises**, fails must-have 3 and must-have 1 ·
+  `sydneyfaceaesthetics.com` (and `cosmeticnursespecialists.com.au`, which **302-redirects to it** —
+  one free resolution). Bondi Junction, Lane Cove, Pyrmont, **14 Kensington Street Kogarah NSW 2217**
+  and Miranda. It describes itself as operating "**in the rooms of Board Certified Plastic Surgeons**
+  since 1991" and names **Prof Tim Papadopoulos** — the same plastic surgeon behind the already
+  disqualified Cosmetic Culture — plus Dr Benjamin Norris and Dr Darrell Perkins. Ginelle Kelly RN is
+  the injector. Five sites, plastic-surgeon-hosted, and it publishes **no email anywhere**. Block
+  both domains.
+- **Modernized Injectables Australia** — **SIX locations**, fails must-have 3 ·
+  `modernizedinjectables.com`. Level 1, Room 10, 1205 Canterbury Road, Wiley Park 2196 (inside
+  "Roselands Medical Hub"), plus Roselands, Merrylands, **Campbelltown**, Caringbah, Corrimal and
+  "Sydney CBD Dymocks Building Level 5". "Highly trained specialist registered doctor & nurses", none
+  named. **A WHOSE-DOMAIN-IS-IT CASE WORTH RECORDING:** the only address it publishes is
+  `info@modernizedcosmetico.com` — a **different domain from the site it is printed on**. Even if the
+  row were otherwise viable, that address would need the domain question asked. Six premises inside a
+  medical hub = head office. Block.
+- **The Skin Wellness Hub** — Suite 14, Level 1, SOMA Wellness, 7 Gregory Hills Drive, Gledswood
+  Hills NSW 2557 · `theskinwellnesshub.com` · **SKIN CANCER PRACTICE, fails must-have 1.** Dr Pedro
+  Valente, MED0001201428, **FRACGP**, "registered since 2007". It sells skin-cancer **diagnosis**
+  (melanoma, BCC, SCC, actinic keratoses) and **management (biopsies, excisions, curettage,
+  cryotherapy, topical antimetabolite creams)** alongside an aesthetic menu. Skin-cancer checks are an
+  explicit ICP fail and excisions in Australia are Medicare-item work whatever the site says. It
+  publishes **no email** either. Note it shares the SOMA Wellness building with Silians Clinic
+  (accepted, grade B) — **different businesses at one address**; do not conflate them.
+- **Narellan Medical + Skin** — 37 Elyard St, Narellan NSW 2567 · `narellanmedicalskin.com.au` ·
+  **fails must-have 2, decisively and in its own words.** This is the single most useful rule-out of
+  the sweep because it confirms the brief's prediction with a quotation: *"Narellan Medical + Skin is
+  a **private billing clinic**"*, *"any applicable **Medicare rebates** are promptly processed on your
+  behalf"*, *"**bulk billing** for children under the age of 16 (excluding skin checks and Saturday
+  appointments)"*. Dr Anna Pham, "Specialist GP | Founder"; Dr Sam Ghamrawi, "GP Specialist,
+  Proceduralist & **Accredited Skin Cancer Doctor**"; a "General Practice" service heading with
+  "Routine GP consultations". It publishes `reception@narellanmedicalskin.com.au` in plain visible
+  text with a matching mailto — a real address on a disqualified clinic, so the row must never be
+  built. **Block it on Narellan and Camden queries; it held slot one on my Campbelltown query.**
+- **Skin and Light** — **OUT OF MARKET: this is Burwood, VICTORIA, not Burwood NSW** ·
+  `skinandlight.net`. Its page `/cosmetic-injectables-burwood/` is titled and optimised entirely
+  around "Burwood" and the only addresses it publishes are **1 Hamilton Walk, Mt. Waverley VIC 3149**
+  and **2/386 Station St, Box Hill South VIC 3149**, with the copy describing "Melbourne's eastern
+  suburbs". **THE 15 NOV WORKER PREDICTED THIS COLLISION (Burwood NSW against Burwood VIC) AND
+  RECORDED THAT IT STAYED SILENT. TONIGHT IT FIRED.** For whoever sweeps Melbourne's east: it
+  publishes `info@skinandlight.net` in plain visible text with a matching mailto, **132 Google
+  reviews at 4.9** (a real quantified artifact), Gina Park named as the guiding expert, two VIC
+  addresses, a separate retail brand at `kbeautycell.com.au`, professional courses and client
+  workshops — i.e. it looks like a grade-B Melbourne row, except its injectables are NCTF, exosome
+  and hydration boosters rather than neuromodulators, and its staff are "Professional Dermal
+  Therapists" with no prescriber named.
+- **KAT Laser Salon / "KAT Cosmetic Clinic"** — **OUT OF MARKET: Shop 4/863-871 Bourke Street,
+  Waterloo NSW 2017**, not Cabramatta · `katlaser.com.au`. Fresha and its own Facebook page list a
+  "KAT Cosmetic Clinic" at 98 John St, Cabramatta, but the website's only address is Waterloo, "on
+  the edge of" Surry Hills, and it says it "begins its first year in Waterloo". Dr Tran Thi Anh Tu,
+  MD, PhD, founder, "nearly 20 years of experience" with laser and energy-based devices. **No
+  injectables mentioned at all** (Picosure, Thermage, laser and nail services only) and **no email**.
+  Fails must-have 1 and must-have 5.
+
+### Ruled out from the Fresha and search indexes without spending a fetch
+
+Each of these is an ICP disqualification readable off the name and the published address, so no fetch
+was spent:
+- **Dermatology and skin cancer, Kogarah/Liverpool cluster:** `SouthDerm` (47 Regent St, Kogarah
+  2217), **Southeastern Dermatology and Skin Cancer Centre** (Kirk Place, Ste 8 Level 2/15 Kensington
+  St, Kogarah 2217), **St George Skin Cancer Centre** (20 King St, Rockdale 2216), **Sydney Psoriasis
+  Skin Clinics** (Unit 4/202 Princes Hwy, Sylvania 2224), **SkinDoc / Dr Jennifer Yip** (21
+  Castlereagh St, Liverpool 2170), **Liverpool Dermatology Centre** (45 Goulburn St, Liverpool 2170),
+  **South West Sydney Dermatology** (1/7 Secant St, Liverpool 2170).
+- **Inside a hospital:** **Fresh Skin Clinics Kogarah** — "St George Private Hospital, Level 5,
+  Suite/7a South St, Kogarah NSW 2217".
+- **General practice with a cosmetic arm (must-have 2 before a fetch):** `doctorsatliverpool.com.au`
+  (`/cosmetics-injections/`), **Hammondville Medical Centre** (192-194 Heathcote Rd, Hammondville
+  2170), **Omega Healthcare** (Ste 1, Level 2/54 Smart St, Fairfield 2165), `myhealthnetwork.com.au`
+  ("Revesby Cosmetic Clinic" sitting inside a health network), **Good Samaritan Medical & Dental**
+  (Sylvania), **Landmark Medical & Dental Centre / Rockdale Family Medical**.
+- **Dental with a skin arm (multi-specialty):** **LV Dental and Skin** (2/225 Cabramatta Rd West,
+  Cabramatta 2166), **White & Bright Family Dental** (Moorebank), **Align Dentistry and Orthodontics**
+  (Chipping Norton), **Primary Dental Bankstown**.
+- **Chains and franchises already on the block list, which took slots anyway:** Laser Clinics
+  Australia (Westfield Liverpool, Macarthur Square), SILK Laser (Liverpool, Hurstville), Australian
+  Skin Clinics (Bankstown, Macarthur), Results Laser Clinic (Liverpool, Burwood), Clear Skincare
+  (Hurstville, Bass Hill), Evolution Laser (Fairfield, Liverpool, Campbelltown, Bankstown), Elite Body
+  Contouring (Hurstville, Bankstown), Body Catalyst (Camden), Hair and Skin Science (Burwood, 1300
+  number), **ICCM / `iccm.com.au`** ("Best Cosmetic **Surgery** Clinic Sydney CBD & Campbelltown").
+- **Verve Cosmetic Clinic** (`vervecosmeticclinic.com.au`) ranked again on my Hurstville query; the
+  12 Nov sweep already flagged it as self-titled "Cosmetic Surgery and Skin Clinic", i.e. a probable
+  must-have 1 disqualification. Still unfetched, still not worth a fetch.
+
+---
+
+## Fetch failures — what defeated a fetch in this ring
+
+Four modes fired, and **two of them are the same mode on two different sites**, which is the finding:
+
+1. **`ROBOTS_UNREACHABLE` — the site's robots.txt could not be read, so nothing was fetched.** Twice:
+   `zoskinhealth.com.au/stockists.php/1000?country=australia` and `sydneynurseinjectors.com`. Not
+   retryable here; not the same as `robots_disallowed`.
+2. **The "One moment, please... your request is being verified" bot-check interstitial, returned with
+   a 200.** Twice: `urbanskinclinic.net.au/contact-us/` (Bankstown — so that clinic is unscreened, not
+   ruled out) and `biocellcosmeticclinic.com.au/privacy-policy-biocell`. **The BioCell case is the
+   instructive one: `/contact/` on the same domain fetched perfectly minutes earlier, so the
+   interstitial is per-request, not per-site.** It presents as success exactly like the 19 Nov
+   `application/x-httpd-ea-php73` mode, and the only tell is that the body is an interstitial rather
+   than a page. Treat a 200 whose body is a verification notice as a failed fetch, and do not conclude
+   anything about the page behind it.
+3. **Hard client error with zero bytes.** Once: `nobleskinlaserclinic.com.au/contact`.
+4. **A JavaScript store locator that renders nothing to a fetch.** `inmode.com.au/pages/find-a-provider`
+   returned only InMode's own head office in Baulkham Hills. **Recorded as a dead shape: the InMode
+   Australia provider locator is not fetchable.** By contrast `sqtaustralia.com.au/certified-clinics`
+   is server-rendered and worked (see below).
+
+---
+
+## Domains worth blocking on the next Sydney query
+
+Carried forward cumulatively from the 12, 15 and 16 Nov lists. **The list is cumulative — start from
+it, do not reconstruct it.** New this run:
+
+**The dominant crowder-out in this ring is a new species, and it is not a directory farm — it is
+`fresha.com` itself, and it should be blocked on SEARCHES while being FETCHED on purpose.**
+- **`fresha.com`** took **13 of 20 result slots across my Bankstown, Fairfield, Hurstville/Kogarah
+  and Burwood/Strathfield queries**, in the form `/lp/en/tt/<treatment>/in/au-sydney/<suburb>` — a
+  per-treatment-per-suburb page set generated for every suburb in Sydney. On the Fairfield query it
+  took **ten of ten**. This is the worst single crowd-out measured in any Sydney sweep. **And it is
+  simultaneously the highest-yield fetch target of the run** (see "What this market taught me"), so
+  it is the `regenerer.com.au` / `toorakvillage.com.au` treatment taken to its extreme: **block it in
+  every query, fetch it deliberately, four slugs at a time.**
+- **`whatclinic.com`** and **`bookwell.com.au`** — booking aggregators that took a slot each on my
+  Campbelltown and Hurstville queries. Neither is covered by any existing block.
+- **`localskintherapies.com.au`** (`/listing/<name>-<suburb>/`) — a practitioner-listing farm; it
+  returned "Injectable Institute Australia **Hurstville**" and "Injectable Institute Australia
+  **Campbelltown**" on two separate queries, which is the only trace of that business I ever found.
+- **`auravenu.com`** (`/au/listings/<name>-<suburb>/`) — same species, held a Hurstville slot.
+- **`beautihost.com`** / `nsw.beautihost.com` / `aus.beautihost.com` — auto-generated "13 Beauty
+  Salons Open Mondays in Kogarah" pages; prints no domains.
+- **`compareskinspecialists.com.au`** (`/cosmetic-injectables-<suburb>/`) — a generated
+  suburb-per-treatment comparison farm; fired on two queries.
+- **`wheree.com`** — already on the list and **fired on three result slots of one Chester Hill query**
+  (Innerme Clinic Auburn, Primary Dental Bankstown, Elite Body Contouring Bankstown). Confirming the
+  12 Nov lesson again: carry the list forward.
+- **`infoisinfo-au.com`**, **`localitybiz.com`**, **`top4.online`**, **`health4you.com.au`**,
+  **`getbirdeye.com.au`**, **`provenexpert.com`**, **`australiacheck.com`**, **`cylex-australia.com`**,
+  **`whereis.com`**, **`spafinder.com.au`**, **`salonist.io`**, **`prsync.com`**, **`practo.com`**,
+  **`wanderboat.ai`** — directory, review-farm and press-release noise, one slot each.
+- **`indeed.com`** / **`au.indeed.com`**, **`jora.com`** / **`au.jora.com`**, **`seek.com.au`** /
+  **`au.seek.com`**, **`talent.com`** — **JOB BOARDS, and they are the "nurse.org" problem at scale.**
+  Adding the word "nurse" to an Australian injectables query pulls cosmetic-nurse VACANCIES: they
+  took **five slots across three queries**, including three of ten on my Sydney Cosmetic Studio
+  query. The 15 Nov list blocked `nurse.org` for finding an article about founding a clinic; this is
+  the same failure in bulk. **Block all four whenever "nurse" is in the query.**
+- **`nationalhealthexperts.com.au`** and **`ablis.business.gov.au`** and **`pabau.com`** — regulatory
+  and vendor content about the new NSW cosmetic-injectables rules (effective 5 Nov 2026), which now
+  ranks on every "cosmetic injectables NSW" query. New noise, specific to this month.
+- **GP, dental and medical practices that ranked on suburb-plus-injectables queries in this ring:**
+  `doctorsatliverpool.com.au`, `narellanmedicalskin.com.au` (a resolved must-have 2
+  disqualification — block by name), `myhealthnetwork.com.au`, `andrewbaderskidental.com.au`
+  (`/cosmetic-dentistry-ingleburn/`, `/cosmetic-dentistry-macquarie-fields/`), `dentalartclinic.com.au`,
+  `dentalfocus.com.au`, `hotdoc.com.au`, `skincancercentres.com.au`, `doctify.com`.
+  **`drlindayoon.com.au`** — already blocked from 15 Nov, and it **took the top TWO slots of my
+  Ingleburn/Minto/Glenfield/Macquarie Fields query** with `/cosmetic-dentist-ingleburn/` and
+  `/cosmetic-dentist-macquarie-fields/`. It is the single most effective suburb page set against us
+  in Sydney.
+- **Resolved disqualifications to block by name:** `gmccosmedical.com`, `zenmedispa.com.au`,
+  `sydneyfaceaesthetics.com`, `cosmeticnursespecialists.com.au` (redirects to it),
+  `modernizedinjectables.com`, `theskinwellnesshub.com`, `iccm.com.au`, `katlaser.com.au`,
+  `skinandlight.net` (Burwood **VIC**), `mdcosmedical.com.au`, `mdcosmedicalsolutions.com.au`.
+- **Recognise rather than block, because they are already ours and ranked anyway:**
+  `lookfresh.com.au` (row 1279), `aestheticahq.com.au` (row 803), `themanseclinic.com.au`,
+  `cosmediccollective.com.au`, `ma360.com.au` (15 Nov near-miss), `plushlaserclinic.com.au` (15 Nov
+  near-miss, and the HOST of accepted row ME:IN Clinic), `skinappealclinic.net` (Liverpool **UK**
+  near-miss), `aestheticstoryclinic.com.au` (now a row).
+- **Do NOT block, read on purpose:** **`sqtaustralia.com.au/certified-clinics`** — a
+  manufacturer/trainer certification roster, server-rendered, which returned **over 100 NSW clinic
+  names with suburbs and phone numbers in one fetch**, including 30-odd inside this ring. It prints
+  only ONE domain for the whole list. **`exomide.com.au/find-a-clinic/`** — same species, already
+  named in the brief, surfaced again here and still not blocked.
+
+---
+
+## Unscreened names I ran out of budget on
+
+**With a domain in hand, unfinished — these are fetch-bound and therefore cheap:**
+- **Urban Skin Clinic, Bankstown** (`urbanskinclinic.net.au`) — the only thing between this and a
+  verdict is the bot-check interstitial. **Retry `/contact-us/` first; it is the best-value unfinished
+  clinic in the ring.**
+- **`visageaesthetics.com.au/injectables`** — one fetch converts accepted row Visage Aesthetics from
+  C to B if that line is substantial.
+- **`snatchedaesthetics.com.au/privacy-policy/`** — one fetch turns a must-have 2 "absent" into a
+  verdict on an accepted grade-B row.
+- **`lookcosmetic.com.au`** — the strongest Hurstville row and its must-have 2 is unconfirmed; the
+  homepage fetch returned nav LABELS with no hrefs, so a policy or fees URL has to be found by search
+  rather than guessed.
+- **`biocellcosmeticclinic.com.au/privacy-policy-biocell`** — retry past the interstitial.
+- **Cosmeticxco** — any dated artifact at all (`/blog` has a URL) flips it from C to B.
+
+**From the Fresha suburb indexes, in briefed towns, with a street address but NO domain found — each
+costs a search, which is why they are unfinished:**
+Chérie Cosmetic Clinic (A10/53 Park Rd, Cabramatta 2166) · Andrea's Aesthetics (2/21-25 Dell St,
+Woodpark 2164) · Careceuticals Cosmetic & Laser Clinic, Dr Truong (1/47 Canley Vale Rd, Canley Vale
+2166) · CBC Cosmetics & Laser Clinic (Shop 11/40 Park Rd, Cabramatta 2166) · Dr Sarvjit Sohal (89
+Sackville St, Fairfield 2165) · Skin Cosmedical Beauty (95 Camden St, Fairfield Heights 2165) ·
+Cosmopolitan Beauty Lounge (Unit 2/370-374 Forest Rd, Bexley 2207 — Facebook only, no domain found) ·
+Leila's Beauty Clinic (406 Stoney Creek Rd, Kingsgrove 2208) · The Luxe Nurse (170 President Ave,
+Brighton-Le-Sands 2217) · Dr Ilias Kotronakis (507/15 Kensington St, Kogarah 2217) · Health & Beauty
+Clinic Hurstville (312 Forest Rd, Hurstville 2220) · SkinSmooth Laser Clinic (2/104-106 Wollongong
+Rd, Arncliffe 2205) · Natural Beauty Clinic (443 Hume Hwy, Casula 2170) · Skn Aesthetics Studio
+(Shop 3/9 Lando Way, Currans Hill 2567) · Roxana Pourali (4a/11 Patrick St, Campbelltown 2560).
+
+**From the Fresha indexes with NO street address printed (suburb only), so a search cannot even be
+anchored:** Amelie Cosmetic Clinic, Cosmo Medispa and Aqua Laser Clinic (all Hurstville) · KAT
+Cosmetic Clinic (Cabramatta — `katlaser.com.au` resolved to Waterloo, so the Cabramatta premises is
+unexplained) · Tone N Sculpt (Liverpool) · Skin Hub Clinics (Merrylands) · Vale Beauty Room
+(Woodpark) · KT Beauty (Cabramatta West) · Facial Skin Specialist (Wakeley) · Precision Electrolysis
+Syd (Lurnea).
+
+**From the SQT certified-clinic roster, in or beside briefed towns, name and phone only — no domain
+printed and none searched:** Beau-Tee Clinics and Exclusively Beauty (Liverpool) · Urban Skin Clinic
+(Bankstown, above) · The Wellnest Skin Studio (Fairfield) · In A Body Beauty (Strathfield) · Unique
+Spa & Clinic (Revesby) · Her Studio (Bexley) · The Glow Clinic (Prestons) · Nurse Ayda (Villawood) ·
+Cosmetique Artistry (Georges Hall) · Adorn Laser Clinic (Leppington) · Refine Laser Clinic (East
+Hills) · Bare Bliss Laser Clinic and Bare Beauty and Laser (Moorebank) · Faye LSAR Skin and Laser
+Clinic (Yagoona) · Skin Haus Aesthetic, Bodyscult Sydney, Unique Skincare & Laser Clinic, Anna
+Cosmetics and Fatos Celik Aesthetics (Bass Hill) · Haus of Laser Sydney, LMAR Beauty Clinic and The
+Look by Ibby (Greenacre) · Illuminate Skin and Body and Beauty by Rayan (Sefton) · Beauty by Ruaa
+(Cabramatta West) · Lavish Beauty by Rania (Auburn).
+**CAUTION, the exomide lesson exactly: an SQT microneedling certification does NOT pre-filter
+business type.** Most of these names say "Laser Clinic" or "Beauty", and on the two I did reach
+(Flawless Features by Renée, and Visage Aesthetics via another route) **both fail or nearly fail
+must-have 1**. Expect a high must-have 1 casualty rate before spending searches on them.
+
+**Towns I could not reach at all for want of budget:** **Strathfield proper** got one query, which
+returned a dentist, a blocked chain and a disqualified surgical practice; **Kogarah proper** was only
+ever reached through Hurstville and Fresha; **Campbelltown town centre** was reached and is genuinely
+thin (see below). **Padstow, Revesby, Riverwood, Beverly Hills, Oatley, Mortdale and Carlton were
+never searched in their own right.**
+
+---
+
+## Which reason each thin town is thin
+
+ICP's taxonomy: (1) genuinely thin, (2) held by a dead domain's SEO pages, (3) live clinics
+publishing no email, (4) live clinics selling the wrong thing, (5) held by a live general practice's
+areas-served set, (6) the town's name loses its own query. **Five of the six fired; the second did
+not.**
+
+- **Liverpool — REASON 6, and it is the worst instance in the file.** My first Liverpool query
+  returned **Liverpool, Merseyside in four of ten slots** — including `theaestheticstable.co.uk`,
+  which is **our own pipeline row 429** — plus a Treatwell UK page and a Thérapie Clinic job ad in
+  Liverpool UK. A second query with three neighbouring suburbs added (Casula, Prestons, Moorebank)
+  still returned a UK job ad and `skinappealclinic.net`, the Liverpool **UK** near-miss. **Adding the
+  postcode 2170 did NOT fix it**, which is new: the brief says a postcode is a disambiguator no
+  foreign link equity can outrank, and here it was outranked. **What DID fix Liverpool was abandoning
+  search entirely and fetching the Fresha suburb index**, which produced three of the ring's
+  candidates (The Aesthetic Edit, Sydney Cosmetic Studio, Natural Beauty Clinic) in one fetch. For
+  the next worker: **do not search Sydney's Liverpool by name at all. Fetch its Fresha index.**
+- **Campbelltown town centre — REASON 1, GENUINELY THIN, and now measured.** The Fresha aesthetics
+  index for Campbelltown lists **32 businesses and exactly three are aesthetics or skin clinics**
+  (Skn Aesthetics Studio in Currans Hill, and R Cosmetics at two addresses). The rest is 11 massage
+  rooms, 8 nail bars, 3 hair salons, a day spa, a swim centre and a physiotherapist. **The Macarthur
+  aesthetics layer is not in Campbelltown — it is 8km north-west in the Gregory Hills / Gledswood
+  Hills / Narellan / Camden growth corridor**, which produced four of my twelve rows (Silians,
+  Cosmeticxco, plus Grove and R Cosmetics as near-misses) and already held row 803. **This is the
+  Brisbane "sweep the strips, not the suburbs" finding in a greenfield-suburb costume: in an outer
+  Australian growth corridor the unit of sourcing is the new town centre, not the old one.** Record
+  Campbelltown/Bradbury/Minto/Ingleburn as worked out; record Gregory Hills, Gledswood Hills, Oran
+  Park, Harrington Park and Narellan as the live seam.
+- **Ingleburn, Minto, Glenfield, Macquarie Fields — REASON 4 plus REASON 6's cousin: the query is
+  owned by cosmetic DENTISTS.** One query, zero in-market aesthetics clinics, and **the top five
+  slots were cosmetic dentistry suburb pages** (`drlindayoon.com.au` ×2, `andrewbaderskidental.com.au`
+  ×2, `dentalartclinic.com.au`). I had already followed the brief and used "cosmetic **injectables**"
+  rather than "cosmetic" — and it did not help, because the dentists' page sets are titled "Cosmetic
+  Dentist <suburb>" and outrank everything on the suburb token alone. **In outer south-western Sydney
+  the suburb name is worth more to the ranking than the modifier**, so the modifier cannot save you.
+  Closed.
+- **Hurstville and Kogarah — REASON 4, and the wrong thing is DERMATOLOGY AND SKIN CANCER.** The town
+  is not thin: the Fresha Hurstville index lists 52 businesses with addresses and a dozen plausible
+  skin clinics. But **seven of them are dermatology, skin-cancer or psoriasis practices**, and an
+  eighth sits inside St George Private Hospital. Kogarah in particular is a medical precinct —
+  Kensington Street and Regent Street are specialist consulting addresses. **This is the Australian
+  high-street-medical finding with a different profession in it: in southern Sydney the address that
+  looks like an aesthetics clinic is a dermatology or skin-cancer practice.** Two real rows came out
+  of it anyway (The Look Cosmetic Group in Hurstville, Snatched Aesthetics in Rockdale).
+- **Burwood and Strathfield — REASON 3 and REASON 6 together.** Burwood produced two live clinics and
+  one email: ME:IN Clinic publishes a gmail but is a room inside Plush Laser Clinic (so must-have 3
+  fails), Plush itself is a 15 Nov near-miss, Zen Medispa publishes an address and sells surgery, and
+  Derma Regen in North Strathfield publishes nothing. **And "Burwood" lost its own query to Burwood,
+  VICTORIA** — `skinandlight.net`, a Mt Waverley clinic whose entire page is optimised for "Cosmetic
+  Injectables Burwood". Strathfield's one query returned a dentist, a blocked chain, a resolved
+  surgical disqualification and nothing else. **Both towns need the Fresha-index treatment rather than
+  another search.**
+- **Fairfield, Cabramatta and Canley Vale — REASON 3, with a twist worth naming.** The Fresha
+  Fairfield index lists **62 businesses with full street addresses**, of which nine are genuine
+  aesthetics or cosmetic clinics — a healthy layer. **But not one of the nine prints a domain
+  anywhere, and only one of them (Aesthetic Story Clinic, Abbotsbury, reached by another route) turned
+  out to have a website with a published mailbox.** This is a real aesthetics market that is
+  Fresha-first and web-absent: the booking platform IS the web presence. A browser-visit list will not
+  help, because there is no site to visit. **The reachable channel here is Fresha's own message
+  function or the phone, not email** — which is a finding about the OFFER, not about sourcing, and
+  Jess should know it before anyone budgets another sweep of this district.
+
+---
+
+## For the browser-visit list
+
+**One clinic, and it is the clearest obfuscation case of the run:**
+
+### Artistic Aesthetics — Shop 1/26 Chuter Avenue, MONTEREY, NSW 2217 · `artisticaesthetics.com.au`
+**CLOUDFLARE-HIDDEN, and I declined the decode.** `/about-us/` renders the footer address as the
+placeholder **`[[email protected]]`**, linked to
+`https://artisticaesthetics.com.au/cdn-cgi/l/email-protection`. **The page shipped the token, so the
+address is NOT SEEN** whatever any tooling might hand back — and in this case the helper did not
+volunteer a decode at all, it reported plainly that the real address could not be recovered from the
+content. Recorded per the 4 Nov rule: **the helper offered no decode and none was taken.**
+Everything else about this clinic is good: **Rachel McDowall, Registered Nurse, named as founder**;
+one site; a genuine injectables and regenerative menu (Rejuran, Exomide, PRP, "Volume and
+Contouring", "Anti-Aging Solutions", "Hydration Boosting", LED, infrared sauna, facials); must-have 2
+clean on the page read with none of the Australian billing vocabulary present. Must-have 4 is its
+other weakness — **"Rated 4.8 out of 5" and "4.8 Stars on Google Maps" with NO review count**, which
+per the 8 Nov rule is not a quantified artifact, and no copyright year at all — so even with the
+address recovered this is a grade C until something dates it.
+**THIS IS THE FIFTH AUSTRALIAN CLOUDFLARE CLINIC IN THE FILE** (after Cronulla Cosmetic, Face Fit
+Southport, Appearance Clinic Australia and SkinMetics), and the second in NSW. The ICP's current
+estimate is "roughly 2 in 75 clinics across six Australian metros"; this run found **1 in about 32
+businesses researched**, i.e. the rate is holding, not rising.
+
+
+# Melbourne south-east and the Mornington Peninsula — near misses and rule-outs (rows 1423-1437)
+
+# Near misses — Melbourne's south-eastern ring and the Mornington Peninsula, VIC (22 Nov 2026)
+
+**Briefed suburbs:** Dandenong, Narre Warren, Berwick, Cranbourne, Pakenham, Frankston, Mornington,
+Mount Eliza, Hastings.
+**Spent:** 18 WebSearch, 39 WebFetch (cap ~25 / ~45). Stopped with budget in hand, as instructed.
+**Output:** 15 rows — 3 A, 5 B, 7 C.
+
+---
+
+## 0. PRIOR COVERAGE THE BRIEF DID NOT MENTION — READ THIS FIRST
+
+**My brief listed four sweeps not to repeat (inner east and bayside 15 Nov, inner east second half
+16 Nov, inner north and west 17 Nov, Geelong and the Surf Coast 19 Nov) and named Camberwell, Glen
+Iris and Glen Waverley as worked. It did not mention the one sweep that actually overlaps my
+market.**
+
+`near-misses.md` line **6184**, `## Near misses — Australian outer-metro suburbs (1 Nov 2026)`,
+swept exactly this corridor. Its own closing paragraph (line 6239) says:
+
+> "the Melbourne south-east corridor (Berwick–Pakenham–Frankston–Mornington) is the single densest
+> patch of qualifying independents I found — six accepted rows out of nine clinics read"
+
+**Pipeline rows already in my briefed suburbs, found by a whole-row grep before any fetch:**
+
+| Row | Clinic | Where |
+|---|---|---|
+| 320 | True Aesthetics | Berwick, Frankston **and** Mornington, VIC |
+| 790 | RDC & Spa (Remedial Dermal Clinic) | Berwick, VIC |
+| 791 | Beyond Skin Medi Clinic | Berwick, VIC |
+| 799 | Face Medicine (Dr Fiona Milne) | Frankston, VIC |
+| 800 | Kiss and Glow | Balnarring, VIC (Mornington Peninsula) |
+| 802 | Expert Cosmetic Solutions | Pakenham and Warragul, VIC |
+| 804 | Pose Aesthetics | Frankston, VIC |
+| 71 | The Skin Boutique | Melbourne + Geelong, 6 sites — has a **Mount Eliza** site |
+| 97 | Skintech Medical Cosmetic Clinic | Melbourne — ranks for **Dandenong** |
+| 1247 | Core Aesthetics | Oakleigh — ranks for **Dandenong** on a catchment page |
+| 306 | Cloud Aesthetics | Fitzroy + Port Hedland WA — ranked on my **Hastings** query |
+
+**Eleven rows touch the briefed suburbs; the 1 Nov sweep is the one to tell the next worker about.**
+Four of those eleven cost me nothing only because the per-name grep caught them (Skintech, Core
+Aesthetics, The Skin Boutique, Cloud Aesthetics all surfaced in my search results and all were
+already held). **The honest statement for the next brief: "Berwick, Pakenham, Frankston and
+Mornington were swept on 1 Nov 2026 and hold seven rows; Dandenong, Narre Warren, Cranbourne, Mount
+Eliza and Hastings were not."** That turned out to be true — all three of my grade A rows and four of
+my five grade Bs are in the five suburbs the 1 Nov sweep did *not* reach, or in Seaford, which no
+sweep has claimed.
+
+---
+
+## 1. Qualifies on fit but publishes NO readable email address
+
+| Clinic | Where | Why it qualifies | Why email cannot reach it |
+|---|---|---|---|
+| **Finessed Faces Aesthetics** (`finessedfacesaesthetics.com`) | Berwick (body text) / Gembrook (meta description) — no street address published | Fiona, Registered Nurse, also a "Trainer and Assessor"; a cosmetic-injectables clinic by its own description (anti-wrinkle, dermal fillers, PRP, fat dissolving); Splose booking on her own tenant (`finessed-faces-aesthetics.splose.com`); gift cards | **Total silence** on the homepage — no visible address, no `mailto:`, no meta-tag address, no Cloudflare token. Pages read: homepage only; `/contact/` was NOT fetched and is the obvious next look. **Also fails must-have 4** at the bottom rung: the only date is a bare "© 2026", no founding year, no review count, no years-of-experience claim |
+| **Em's Skin Boutique** (`emsskinboutique.au`) | Seaford VIC 3198 (12 McCulloch Ave, from the Fresha Frankston landing page — i.e. directory-sourced, not published on their own site) | Timely on her own tenant, gift cards, a **Payment Plans** page and Afterpay, a Dermaviduals "Clinic of the Month" write-up, a logo file dating to 2018 in the WordPress uploads path, naturopathy and senior therapists | **Total silence** — no visible address, no `mailto:`, no meta-tag address, no token. Pages read: homepage; `/contact/` and `/privacy-policy/` were NOT fetched. **Also fails must-have 1**: cosmetic injectables are not mentioned anywhere and no nurse or prescriber is named — the menu is DMK enzyme therapy, Cosmelan, Excel V and Pico Genesis laser, peels and needling. Worth one look at `/our-story/` but probably the wrong segment |
+| **Vera-Rose Aesthetics** (`veraroseaesthetics.com.au`) | Mornington VIC 3931 — "Located within: SKIN Peninsula 60/1140 Nepean Hwy" | RN Maddie Mullins named with her AHPRA number (per the 19 Oct entry), Timely, gift vouchers, a consultation fee credited toward treatment. A room rental, which per the ICP is still one decision-maker | **THIS ENTRY IS A CORRECTION — SEE §5.** The 19 Oct sweep recorded "Email status: none published". **`hello@veraroseaesthetics.com.au` IS published, as plain visible text with a matching `mailto:`, on the HOST clinic's page**: `https://www.skinpeninsula.com.au/services/cosmetic-registered-nurse/`, read 22 Nov 2026. It is **not** on her own domain, and must-have 6 requires the address to be on the clinic's own site, so I have **not** put her in the pipeline. **This is a judgement call for Jess, not a sourcing one:** a host clinic publishing its in-house injector's mailbox is not a directory scrape, but it is not her own site either |
+| **Dermal Aesthetics** (`dermalaesthetics.com.au`) | Mornington VIC (Main Street) | Angela Hodgkiss named as owner | Already recorded at `near-misses.md:6215` — no address published, and **fails must-have 3** because the injectables at that address are delivered by a separate business (Hanna Aesthetics). Not re-fetched. Note `haclinicaus` (Hannah Aesthetics) surfaced on my Mornington query, confirming the arrangement is still live |
+| **Juvenil Essence** | Frankston VIC (1 Chevalier Place) | Dapple CRM *and* Timely, Shopify, Morpheus8 and Lumecca fleet, a training academy | Already at `near-misses.md:6211` — total silence, "EMAIL SUBSCRIBE" field only. Not re-fetched |
+| **Peninsula Aesthetics** (`peninsulaaesthetics.com.au`) | Mount Eliza + Mount Martha VIC | Nurse Alysha, Founder, RN; two Peninsula addresses; gift vouchers; a Spend & Save scheme | Already at `near-misses.md:6203` — **Cloudflare-hidden in both header and footer.** Not re-fetched, per the standing instruction. Belongs on the browser-visit list |
+| **ab cosmetic nurse** (`abcosmeticnurse.com.au`) | Beaconsfield VIC (between Berwick and Pakenham) | Founder/Director RN Abby, AHPRA NMW0002339484 | Already at `near-misses.md:7490` as "no address published at all; Instagram link-in-bio only". **In this market, not out of it** — the 19 Nov worker correctly scoped it out as a Melbourne clinic, so it is flagged here for the next south-east run rather than re-fetched |
+
+**No Cloudflare decode was offered to me on any page this run, and I declined nothing** — all 39
+fetches came back either clean plaintext or with no address at all. Zero tokens in 39 fetches, which
+is consistent with the ICP's current estimate of roughly 2 in 75 Australian clinics obfuscating.
+
+---
+
+## 2. Could not be read at all — fetch failures
+
+| Clinic | Where | Failure |
+|---|---|---|
+| **Dermal Cosmetica** (`dermalcosmetica.com`) | Mount Eliza (title: "Mount Eliza Beauty") | **`ROBOTS_UNREACHABLE`** — robots.txt could not be read, so nothing was fetched. Browser-visit list |
+| **White East Skin Therapy** (`whiteeastskintherapy.com.au`) | Berwick VIC 3806 (48 High Street, from the Fresha Narre Warren landing page) | **`ROBOTS_UNREACHABLE`, twice** — I retried it deliberately to test retryability and got the identical error. **NOT retryable.** Browser-visit list |
+| **Madelaine Taylor Aesthetics** (`madelainetaylor.com.au`) | Mornington VIC 3931 (Shop D7/1128 Nepean Hwy) | **`ROBOTS_UNREACHABLE`** on `/treatments`. Browser-visit list |
+| Fresha `tt/anti-wrinkle-injections` slugs for **mornington**, **dandenong**, **pakenham**; `tt/dermal-fillers` for **mornington** | — | `client_error`. The slug set is not complete across suburbs (see §6) |
+
+**A NOTE ON `ROBOTS_UNREACHABLE` THAT MAY MATTER MORE THAN THE THREE CLINICS.** The brief lists nine
+ways a site defeats a fetch, and this error is not among them as a named mode — it is distinct from
+`robots_disallowed`, where a site's rules are read and say no. Here the rules file could not be read
+at all. **It fired three times in 39 fetches (7.7%), all three on small boutique `.com.au` or `.com`
+sites, two of them on consecutive calls in the same batch**, and the one I retried reproduced
+exactly. I cannot tell from inside a single run whether that rate is a property of small Australian
+hosting or a transient on our side, and saying so is the honest answer — but **it is worth one
+deliberate measurement on the next Australian run**, because at 7.7% it is costing more rows than
+Cloudflare is.
+
+---
+
+## 3. Ruled out on the must-haves — do not spend fetches again
+
+- **Berwick Skin Cancer Centre**, 48 Van Der Haar Ave, Berwick VIC 3806 — skin-cancer practice.
+  **Fails must-have 2 and must-have 1** before a fetch. Surfaced on the Fresha Narre Warren
+  anti-wrinkle page, which does **not** pre-filter business type.
+- **Victorian Cosmetic Institute / Berwick Skin & Laser Clinic** (`victoriancosmetic.com.au`,
+  `victoriancosmeticinstitute.com.au`) — Level 1, 18/24 Clyde Rd, Berwick, plus Lower Templestowe and
+  others. Multi-site cosmetic-medicine group. **Fails must-have 3.** It owns the "skin clinic Berwick"
+  result set — **block it on every Berwick query.**
+- **`springvalesouthmedical.com.au`** — a general practice with a "COSMETIC INJECTABLES" page. The
+  Australian high-street-medical pattern exactly. **Fails must-have 2.** Block on Dandenong queries.
+- **Dandenong Superclinic** (`dandenongsuperclinic.com.au`), **Qualitas Medical Practice Dandenong**,
+  **Noble Medical Clinic** (`noblemedicalclinic.com.au`), **Greens Medical Group**
+  (`greensmedicalgroup.com.au`), **Sonic Health Plus Dandenong**, **First Health Medical Centre**
+  (`firsthealth.net.au`), **Elite Medical Centre** (`elitemedicalcentre.com.au`, Mornington
+  Peninsula), **Narre Warren Clinic** (`narrewarrenclinic.com.au`), **Hastings Medical Clinic** — all
+  general practices or superclinics with a cosmetic line. **All fail must-have 2.** `qualitashealth.com.au`
+  is already on our block list at `near-misses.md:20921`.
+- **`advancedskincancer.com.au`** — owns the "Clyde North" skin result. Already blocked at
+  `near-misses.md:6228`-adjacent lists; confirmed still ranking.
+- **`cosmetique.au` (Cosmetique Clyde North)**, **`resultslaserclinic.com.au` (Fountain Gate)**,
+  **Laser Clinics Australia (Cranbourne Park, Frankston Bayside)**, **Australian Skin Clinics
+  (Frankston, Karingal, Fountain Gate)**, **Hair and Skin Science Berwick**, **MySkin Clinics
+  Mornington Central** — national chains and franchises. **Fail must-have 3.** All already blocked;
+  re-confirmed in this ring.
+- **My Body Vibes Frankston Bayside** (`mybodyvibes.com.au`) — six locations, already blocked at
+  `near-misses.md:6228`. Still holds the Frankston Fresha slot. Block stands.
+- **`botoxmelbourne.com`** — a Melbourne doctor group ranking on a Mornington query; a domain built
+  on a prescription brand name, which is itself a TGA problem. Not fetched. Block on Peninsula queries.
+- **Eclipse Massage & Beauty**, **Looks Hair & Beauty by Neeta**, **Duff Street Medical Clinic**,
+  **Mt Eliza Family Chiropractic**, **LoCou Haircare**, **Kneading Hands**, **Charming Traditional
+  Thai Massage**, **Peninsula Colon Health**, **Eliza's Nails and Beauty**, **endota spa Moorooduc**,
+  **Revive Massage and Myotherapy**, **Mornington Peninsula Myotherapy**, **The Lash and Beauty
+  Collective**, **Wellbeing Sanctuary**, **Mt Eliza Natural Therapies**, **SUNSET SPA**, **Peninsula
+  Endermologie**, **Flourish Wellness Studio** — Fresha listing noise. **Fail must-have 1.** Listed in
+  full so nobody resolves a domain for any of them.
+
+---
+
+## 4. Domains worth blocking next time
+
+**New this run:**
+- **`melbournebeautymap.com`** — **the clearest directory-farm instance I have seen.** Its
+  per-clinic pages print **no clinic website, no street address and no owner name** — its
+  "Bayside Aesthetics Frankston Review" page says only "Central Frankston position, easy to find"
+  and "Contact clinic directly" with no contact details at all. It passes neither the curation test
+  nor the prints-domains test. **Block it.**
+- **`melb.guide`** and **`baysidelocal.net.au`** — the same scraped-listing species, both ranking on
+  "Cosmetic Aesthetics Victoria". Block.
+- **`wheree.com`**, **`firmania.biz`**, **`gobeauty.au`**, **`oceaniabiz.com`**,
+  **`findglocal.com`**, **`cylex-australia.com`**, **`australia247.info`**,
+  **`australia.chamberofcommerce.com`**, **`provenexpert.com`**, **`reviews.birdeye.com`**,
+  **`consentz.com`**, **`consultingroom.com`**, **`treatwell.co.uk`** — directory and review farms
+  that crowded these queries. Block.
+- **`victoriancosmetic.com.au`** / **`victoriancosmeticinstitute.com.au`** — see §3. The single
+  biggest search-crowder in Berwick.
+- **`cosmetictattoosbyrach.com.au`** — publishes a "Top 30 Laser Skin Clinics in Mt Eliza,
+  Mornington" listicle from a competing clinic's own blog. **Block in a SEARCH** (it took a slot on
+  my best Peninsula query); it might be worth one fetch if you ever land on it, but the brief's
+  measured verdict on editorial listicles is that they are a dead shape and I did not spend the fetch.
+
+**Already blocked, re-confirmed as still ranking in this ring:** `mybodyvibes.com.au`,
+`qualitashealth.com.au`, `advancedskincancer.com.au`, `laserclinics.com.au`,
+`australianskinclinics.com.au`, `silklaser.com.au`, `cosmetique.au`, `resultslaserclinic.com.au`,
+`myskinclinics.com`, `skinsociete.com.au`, `ausskinclinics.com.au`, `thecosmeticlounge.com.au`,
+`contourclinics.com.au`.
+
+**Do NOT block:** `fresha.com` — see §6; it was the single most productive fetch target of the run,
+and the right treatment is block-in-query, fetch-when-landed.
+
+---
+
+## 5. THE CORRECTION THIS RUN MAKES — AN "ABSENT ADDRESS" VERDICT CROSSED A DOMAIN BOUNDARY
+
+**The ICP's page-coverage rule has fired six times that I can count, always within one clinic's own
+site. This is the seventh and it is the first to fire ACROSS SITES.**
+
+`near-misses.md:7471` records of **Vera-Rose Aesthetics**, Mornington:
+
+> "**Email status: none published** — enquiry form and mobile only."
+
+That is true of `veraroseaesthetics.com.au`. It is false of the internet.
+`hello@veraroseaesthetics.com.au` is published as **plain visible text with a matching `mailto:`** on
+`https://www.skinpeninsula.com.au/services/cosmetic-registered-nurse/` — **her host clinic's own
+page**, read 22 Nov 2026, alongside `info@skinpeninsula.com.au` on the same page.
+
+**Why this is a new shape rather than another instance of the old one.** Every prior firing was
+"which pages of the clinic's site did you read" — the contact page versus the About page versus the
+privacy policy. The fix for those is page coverage. **There is no page of her own site that would
+have found this**, because the publication is on somebody else's domain. For a room-renting
+practitioner the host's site is a page of the business in every commercial sense and in no technical
+sense at all.
+
+**The operational consequence, stated as a check rather than a lesson: when a clinic is "located
+within" a host, read the HOST'S page for that service before recording must-have 5 as absent.** It
+costs one fetch, it is predictable from the words "located within", and in this market it paid on the
+first attempt. The same fetch also settled must-have 3 for the host (SKIN Peninsula, now a C row) —
+so one fetch resolved two businesses, which is the best value anything returned tonight.
+
+**What I have NOT done:** I have not put Vera-Rose in the pipeline, because must-have 6 says the
+address must be on the clinic's own site and this one is not. That is a call for Jess. The exact
+string, the exact URL and the date are above so the claim is checkable, which is what the brief's
+"an entry that claims an address must contain the address" rule requires.
+
+---
+
+## 6. WHAT THIS MARKET TAUGHT — AND THREE THINGS THAT CONTRADICT THE BRIEF
+
+### CONTRADICTION 1 — The Fresha slug is far better than the brief says, because the brief names the wrong slug
+
+My brief gave `https://www.fresha.com/lp/en/bt/aesthetics/in/au-melbourne/<suburb>` and warned that
+"roughly two thirds of each index is massage, nails and hair noise". **Both halves of that are right
+about `bt/aesthetics` and wrong about the slug that actually works.** Measured, same run, same city:
+
+| Slug | Suburb | Listings | In-segment | Noise rate |
+|---|---|---|---|---|
+| `bt/aesthetics` | mount-eliza | 21 | 4 | **81%** |
+| `tt/anti-wrinkle-injections` | cranbourne | 7 | 5 | **29%** |
+| `tt/anti-wrinkle-injections` | narre-warren | 13 | 11 | **15%** |
+| `tt/anti-wrinkle-injections` | frankston | 9 | 7 | **22%** |
+
+**`tt/anti-wrinkle-injections` is pre-filtered by TREATMENT and `bt/aesthetics` is filtered by
+BUSINESS TYPE, and in Australia "aesthetics" is a business type that includes lash bars and
+myotherapists.** The treatment slug cut the noise rate from 81% to about 22% across three suburbs.
+**Use `tt/anti-wrinkle-injections` and `tt/dermal-fillers`, not `bt/aesthetics`.** Worth saying
+plainly: this is the same finding as the standing Australian noise rule — "cosmetic" goes to
+dentists, "clinic" goes to pharmacies, "aesthetics" goes to beauty — **and the word that survives is
+still the one only a med spa sells.** It holds for directory slugs exactly as it holds for queries.
+
+**The centroid behaviour the brief describes is confirmed and is stronger than stated:** the
+`narre-warren` slug returned **ten of its thirteen listings in Berwick**, a different suburb, and the
+`frankston` slug returned two in Seaford. **Three slugs covered six suburbs.**
+
+**But the slug set is incomplete, which the brief does not say.** `mornington`, `dandenong` and
+`pakenham` all returned `client_error` on `tt/anti-wrinkle-injections`, and `mornington` also failed
+on `tt/dermal-fillers` while a `tt/mesotherapy-treatments/.../mornington` slug exists. **A slug exists
+only where Fresha has a venue offering that treatment in that catchment**, so a `client_error` is a
+measurement of Fresha's coverage, not a fetch failure — and it is free information: Mornington,
+Dandenong and Pakenham have thin Fresha penetration.
+
+**My brief said the Peninsula "may resolve badly against a Melbourne slug" and told me to stop after
+two attempts.** It resolved **well** where a slug existed — `mount-eliza` returned 21 genuine
+Mount Eliza, Moorooduc, Frankston South and Mornington businesses, zero city clinics. The failure
+mode was a missing slug, not a wrong-centroid one.
+
+### CONTRADICTION 2 — The Fresha route's real cost is not search budget, it is that these clinics have no websites
+
+The brief says Fresha "prints street addresses but no domains, so it converts fetch budget into
+search budget". True, and I budgeted for it. **What I did not expect: for most of these names there
+is no domain to find.** Of the Fresha-sourced names I spent searches resolving:
+
+- **Resolved to an own domain:** Finessed Faces, Lilium Skin Clinic, SANA Skin Clinic, MLAS Skin &
+  Body, White East, La Pelle, DRV Skin, Em's Skin Boutique, Peninsula Aesthetic & Laser, The Skin
+  Nook, Madelaine Taylor, Your Aesthetic — 12.
+- **No website at all, Facebook or a booking subdomain only:** Natural Radiance Casey Central
+  (Facebook only), Skinhaven AUS Narre Warren South (Nextdoor only), Cosmeticology Berwick (none),
+  VC Dermal Clinics (none), Healthy Glow Beauty Clinic (none), Stephanie & Co (none), Luup
+  (none), Cosmetic Nurse Claire (a bare `cosmeticnurseclaire.gettimely.com`), Nurse Ella (Facebook
+  only), Viva Cosmetic Clinic (Facebook only), Clarity Cosmetic Mornington (Facebook only) — **11.**
+
+**So in this ring roughly 48% of the Fresha-listed aesthetics businesses publish no website**, which
+means must-have 5 cannot be satisfied for them by any amount of fetching and they are a DM list, not
+a sourcing list. **That is the single most useful number I measured**, and it reframes what the Fresha
+route is for: it is excellent at telling you a business exists and terrible at making it reachable.
+
+### CONTRADICTION 3 — Melbourne's dating is NOT bimodal here, and it is not the inner north's pattern either
+
+My brief told me the 15 Nov sweep found Melbourne's clinic dating **bimodal** (explicitly dated or
+completely undated) and that the 17 Nov inner-north sweep **did not reproduce it**, with the middle
+rungs doing the real work — and told me to go in with no expectation. **I found a third pattern, and
+it is neither.**
+
+Of the 15 clinics whose own pages I read well enough to judge:
+
+- **Top rung, a genuine dated or quantified artifact: 5** — Cosmetic Aesthetics Victoria (founded
+  2016, 10,000+ people, a 2023-dated award), Your Aesthetic ("established in 2020"), SANA Skin Clinic
+  ("Est. 2015", "10+ years in practice", a Silver 2025 badge), All Aesthetics By Megan ("80+ five-star
+  reviews"), Esse Aesthetics ("opening … in 2025" — a dated artifact that *disqualifies* the clinic).
+- **Middle rung only: 6** — Lift Aesthetics, Simply Aesthetics, Peninsula Aesthetic & Laser, Lilium
+  Skin Clinic, La Pelle, DRV Skin.
+- **Bottom rung, nothing at all: 4** — MLAS Skin & Body (**no copyright line even**), The Skin Nook,
+  SKIN Peninsula, Finessed Faces.
+
+**So 33% top rung, 40% middle, 27% nothing — a flat distribution, not a bimodal one.** The inner
+east's "either dated or silent" split did not reproduce, and neither did the inner north's
+middle-rung dominance. **Three Melbourne rings, three different distributions, measured by three
+workers who did not know each other's results.** The useful reading is not "which ring is which" but
+that **"how a city dates its clinics" is not a property of the city** — it is the same finding the
+Brisbane 18 Nov sweep reached about which must-have binds, and it argues against carrying any dating
+expectation into a Melbourne brief at all.
+
+**One sub-finding worth keeping: review counts are rare and vague here.** Exactly one clinic of 15
+published a count on its own page, and it published "80+ five-star reviews" rather than a number
+("80+" still clears the ladder, where "rated 5.0" would not). Compare Adelaide east at **0 of 20**.
+**Do not budget fetches expecting Australian review counts.**
+
+### Which must-have binds in this ring: must-have 4, and it is not close
+
+| Sole or first failure | Count |
+|---|---|
+| must-have 4 (established) | 3 (Esse, MLAS, Finessed Faces) |
+| must-have 1 (segment) | 4 (La Pelle, The Skin Nook, Em's Skin Boutique, SKIN Peninsula) |
+| must-have 2 (cash-pay) | 2 (Astra Laser, DRV Skin) |
+| must-have 3 (owner-operated) | 1 structural (SKIN Peninsula), plus ~8 chains and GPs blocked before a fetch |
+| must-have 5 (published email) | 3 of the clinics I read (Finessed Faces, Em's, Your Aesthetic's homepage) |
+
+**Must-have 5 is NOT the binding constraint in the outer south-east, which reproduces the 1 Nov
+finding for this same corridor** ("the outer suburbs publish addresses far more readily than the
+inner metros"). **Of the 14 clinic sites I read that were in-segment, 11 published a mailbox
+somewhere — 79%**, against 45% in Newcastle and 64% in the Illawarra. The outer ring talks.
+
+### The mailbox is on the homepage less often than the brief expects — and twice it was on the policy
+
+The 1 Nov sweep found the homepage carried the address "in 13 of 14 cases". **Mine was 8 of 11.** The
+three exceptions are the interesting ones:
+
+- **All Aesthetics By Megan** — homepage publishes **nothing** (contact form only); the address is on
+  **`/privacy-policy`**. Had I stopped at the homepage this would have been a wrong must-have 5 park,
+  and it is the only Hastings clinic in the market.
+- **Your Aesthetic** — homepage publishes nothing; the address is on `/pages/contact-us` **as plain
+  visible text with no `mailto:` at all**, and again on the privacy policy.
+- **Vera-Rose** — on the host's site (§5).
+
+**So the Australian instruction to spend the privacy-policy fetch paid twice tonight, once for
+must-have 5 and once for must-have 2** (Your Aesthetic's policy is the only *policy-screened* clean
+billing verdict among my three grade As). **The policy fetch is the best single fetch available on an
+Australian row and it should be spent before any other secondary page.**
+
+### Hastings lost its own query, exactly as the sixth thin-town reason predicts
+
+`Hastings Somerville Mount Martha Rosebud Dromana cosmetic injectables skin clinic nurse` returned
+**La Cara Aesthetics (Hastings, East Sussex)**, **Anna's Amazing Aesthetics (UK)**, **HSC Clinic
+(hscclinic.co.uk)**, **Treatwell Hastings UK**, **The Skin Suite (Napier/Hastings NZ — our own row
+390)** and **Golden Rule Skin Clinic (US)**. **Zero in-market clinics.** The remedy worked on the
+first try: `Hastings Victoria 3915 Western Port cosmetic injectables skin clinic nurse` returned
+**All Aesthetics By Megan** at position one, which became the only Hastings row in the file.
+**Hastings VIC belongs on the list of Australian suburbs that cannot be searched without a postcode,
+beside Canterbury, Surrey Hills and Newport** — and note it is not a British *county* name, it is a
+British *town* name, so the heuristic "named after a British county or cathedral town" is too narrow.
+
+**A new member of the same species, and it is not a place name:** **"Somerville"** in the same query
+returned **Kate Somerville Skin Clinic** (a global skincare brand) and a Rouse Hill NSW job board.
+**A suburb whose name is also a consumer BRAND loses its query the same way a suburb named after a
+bigger town does** — and no postcode helps, because the brand outranks the postcode too. Mornington
+Peninsula has at least two of these (Somerville, and "Rosebud" is a flower and a film).
+
+### Dandenong is CLOSED, and it is the fourth kind of thin, not the first
+
+Dandenong and its neighbours produced **zero** own-domain aesthetics clinics across two searches.
+What ranks is **dentists** (`dandenongdentalcare.com.au`, `dentalatkeys.com.au`,
+`voguesmilesmelbourne.com.au`), **general practices and superclinics** (Dandenong Superclinic,
+Qualitas, Noble Medical, Greens Medical Group, Sonic Health Plus), **a veterinarian**
+(`keysivet.com.au`), and **two clinics we already hold ranking on catchment pages** (Skintech row 97,
+Core Aesthetics row 1247 — whose Dandenong page is an SEO catchment page for an Oakleigh clinic that
+states in its own words it has no second branch).
+
+**This is the brief's FOURTH reason a town reads thin — real, readable businesses selling the wrong
+thing — and per the taxonomy that means the town is worked out and the answer will not change.**
+**Record Dandenong, Noble Park, Keysborough and Springvale as CLOSED, not as thin.** Do not re-sweep
+them. The aesthetics layer in Melbourne's south-east sits one ring further out, in Berwick and
+Narre Warren, exactly as the Brisbane "sweep the strips, not the suburbs" move predicts.
+
+### Three same-name collisions fired, all caught by grep for zero fetches
+
+- **"Lift Aesthetics"** (Berwick VIC) against **row 613 Lift Aesthetics, Wellington NZ** and **row 672
+  Uplift Aesthetics, Winnipeg**. The shorter-name-as-prefix shape.
+- **"DRV Skin"** (Frankston VIC) against **row 118 DRVICTORIA Skin Clinic, Edinburgh**, plus
+  `drvanpark.com.au` at `near-misses.md:18125`.
+- **"Clarity Cosmetic"** (Mornington VIC) against **row 1330 Clarity Cosmetic Laser Clinic, Bundall
+  QLD** — **same country, two states**, which is the dangerous direction. Had I not read the state I
+  would have recorded Mornington as covered when our coverage there is zero.
+- Plus **"La Pelle"** (Cranbourne West VIC) against **La Pelle Skin Clinic, New Zealand**
+  (`lapelle.nz`), and **"Skinhaven"** (Narre Warren South) against **Skinhaven Whitsundays QLD** at
+  `near-misses.md:4394`.
+
+**Five collisions, five caught by the per-name grep, zero fetches spent, and in every single case it
+was the postal address or the state that settled it — never the name.** The brief's prediction holds:
+the collisions you predict are not the ones that fire. I predicted the Hastings/Sussex one and it did
+fire, but the expensive one would have been Clarity Cosmetic, which I did not predict at all.
+
+### Dead shapes, measured, so nobody buys them again
+
+- **Searching a Fresha-listed business NAME to find its own domain: 2 attempts, 0 own domains.**
+  `"VC Dermal Clinics" OR "Cosmeticology" Berwick` and `"Finessed Faces" OR "MLAS Skin" OR "Lilium
+  Skin Clinic" Berwick 3806` returned **18 of 20 slots as more Fresha and whatclinic pages** — the
+  index knows these businesses only through their booking tenant. **The fix that worked, and it is
+  cheap: block the directory domains in the query.** Every one of those names resolved on a later
+  search with `fresha.com`, `whatclinic.com`, `yellowpages.com.au`, `bookwell.com.au` and friends in
+  `blocked_domains`. **Block the tenants and the own domain surfaces; don't block them and you get
+  the tenant back.** That single change is what produced 12 of the 15 rows.
+- **Searching a town name without a postcode or a state in this ring: 1 attempt, 0 in-market
+  results** (the Hastings query above).
+- **The "district + main street" strip move**: I did not spend a query on it, per the brief's record
+  of three consecutive Australian failures. Nothing in this ring suggests otherwise — Berwick's
+  clinics address themselves by SUBURB and by shopping-centre name (Casey Central, Fountain Gate,
+  Blackburne Square, Fairholme Boulevard), not by high street.
+
+### Unscreened names I ran out of budget on — the next worker's starting list
+
+Ranked by how likely each is to become a sendable row:
+
+1. **`your-aesthetic.com.au/pages/about-us`** — one fetch to name the owner of a grade A row. Highest
+   value per fetch in this file.
+2. **`sana-skinclinic.com.au/cosmeticnurse`** and **`/our-policies`** — confirms must-have 1 and runs
+   the policy screen on the other grade A.
+3. **`cosmeticaestheticsvictoria.au/privacy-policy/`** — the only unrun check on the best row.
+4. **`finessedfacesaesthetics.com/contact/`** — a nurse-owned Berwick injectables clinic one fetch
+   from the pipeline if an address is there.
+5. **`liliumskinclinic.com.au/about-us`** — would lift a grade B to A if a founding year is on it.
+6. **`drvskin.com.au/skin-treatments/micro-sclerotherapy/`** — settles must-have 2 on a doctor-led
+   Frankston row, in either direction.
+7. **`mlasclinic.com.au/our-team`** — settles must-have 4 *and* must-have 1 on one page, and the
+   `melbournelaser.com.au` mailbox domain needs confirming before anything is sent.
+8. **`allaestheticsbymegan.com/about-us`** — a founding year would settle whether the only Hastings
+   row is a B or an A.
+9. **`emsskinboutique.au/contact/`** and **`/our-story/`** — probably wrong segment, but a 2018 logo
+   upload path suggests real trading history.
+10. **`lapelleskinhealthclinic.com.au/copy-of-dermscreen`** (their skin-consults page) — settles
+    must-have 1 on a four-clinician Cranbourne West clinic.
+11. **Browser-visit list:** `dermalcosmetica.com` (Mount Eliza), `whiteeastskintherapy.com.au`
+    (Berwick), `madelainetaylor.com.au` (Mornington) — all three `ROBOTS_UNREACHABLE`;
+    `peninsulaskinco.com.au` (`robots_disallowed`, from the 19 Oct sweep, still unread);
+    `peninsulaaesthetics.com.au` (Cloudflare, Mount Eliza + Mount Martha, two addresses — the best
+    browser candidate in this ring).
+12. **DM list, no website at all:** Natural Radiance Casey Central, Skinhaven AUS Narre Warren South,
+    Cosmeticology Berwick, VC Dermal Clinics Berwick, Healthy Glow Beauty Clinic Narre Warren,
+    Stephanie & Co Frankston, Luup Mornington, Viva Cosmetic Clinic Mornington, Nurse Ella,
+    Clarity Cosmetic Mornington, Cosmetic Nurse Claire (Dandenong area).
+13. **Never reached at all:** Langwarrin and Seaford have their own Fresha `tt/` slugs that I never
+    fetched; `morningtonpeninsulamagazine.com.au` surfaced once and is a candidate for the
+    local-consumer-publication species (the Perth `perthisok.com` move) — **one fetch, and I would
+    spend it first on a Peninsula re-run.**
+
+
+# Melbourne outer west, north and east — near misses and rule-outs (rows 1410-1422)
+
+# Near misses — Melbourne outer west, outer north and outer east, VIC — sourced 22 Nov 2026
+
+13 rows accepted: **2 grade A, 7 grade B, 4 grade C.** Budget spent: **25 searches, 34 fetches.**
+
+**Sub-rings chosen, and why.** The briefed thirteen suburbs were cut to three clusters on the
+evidence of the first six searches and three Fresha indexes:
+
+1. **East — Doncaster / Doncaster East / Box Hill / Croydon / Ringwood East.** By far the densest.
+   One Fresha index returned 35 aesthetics businesses; six accepted rows came from it.
+2. **North — Greensborough / Eltham / Bundoora**, pushed one suburb out to South Morang and
+   Mill Park when the Fresha and Exomide indexes showed the aesthetics layer sitting there.
+   Four accepted rows.
+3. **West — Werribee / Point Cook / Hoppers Crossing.** Thinnest of the three, one accepted row,
+   and the one cluster where the finding is mostly negative.
+
+**Two briefed suburbs were already done and should not have been assigned: Williamstown and
+Yarraville.** `near-misses.md:23990` states the 17 Nov inner-west sweep covered "Footscray,
+**Yarraville, Williamstown**, Altona". Williamstown already holds pipeline rows 304 (SkinFirm),
+312 (H&H Aesthetic Medicine), 1305 (Tiara Cosmetics) and 1337; Yarraville holds 1305 and the
+ruled-out Hands-On Laser. Zero fetches were spent on either.
+
+---
+
+## Coverage found before spending anything (the grep paid four times)
+
+| Briefed suburb | Prior coverage | Action |
+|---|---|---|
+| Williamstown | rows 304, 312, 1305, 1337; 17 Nov sweep | skipped |
+| Yarraville | row 1305; Hands-On ruled out 17 Nov | skipped |
+| Werribee | row 798 RR Aesthetix (B, Werribee/Cairnlea) | skipped that clinic |
+| Doncaster | row 309 Loving Glow Aesthetics (B) | skipped |
+| Bundoora | rows 316 Melbourne Cosmetic Specialists, 321 Cosmic Skin Clinic (C) | skipped both |
+| Box Hill | rows 97 Skintech (A), 319 EST Clinic (C, plastic surgeon) | skipped both |
+| Point Cook / Hoppers Crossing / Taylors Lakes / Keilor / Caroline Springs / Craigieburn / Sunbury / Greensborough / Eltham / Lilydale / Croydon / Ringwood | **none** | worked |
+
+**The false-positive trap fired exactly as the brief predicted, twice.** `grep -ci Sunshine`
+returned **34 near-miss and 21 pipeline hits** — every single one is **Sunshine Coast, QLD**.
+Coverage of Sunshine VIC is zero. And **all five "Ringwood" hits are Ringwood, DORSET** (pipeline
+row 980 is Wimborne; the others are Bournemouth/Poole nurse clinics), while **all "Croydon" hits
+are Croydon, LONDON**. A bare count would have suppressed three suburbs.
+
+**Collisions caught by grep for zero fetches:**
+- **Skinlab Injectables** — surfaced on a Ringwood/Croydon/Lilydale query; `skinlabinjectables.com`
+  is **6424 N. Western Ave, Nichols Hills, OKLAHOMA CITY**, already in `near-misses.md:16057`.
+- **Dr Saber** (`drsaber.com.au`) — top result on the Werribee query, already recorded as
+  "one practice spraying near-identical suburb landing pages across Melbourne" and the biggest
+  single crowder-out of the 17 Nov run. **Block it on every Melbourne query.**
+- **Victorian Laser & Skin Clinic** (`viclaser.com.au`) — surfaced on Croydon and Sunbury queries;
+  already **disqualified, five or more sites**.
+- **Lume Skin Aesthetics** (Diamond Creek) against **pipeline row 516 LUME Skin Clinic, Bendigo
+  VIC** — the same-state, same-name collision the brief warns is the dangerous direction. Settled
+  by address: 150km apart, different businesses.
+- Allure / Flawless / Serenity / Renew Skin / Forever Young / Panache / Meraki / Aesthetics by
+  Laura / Avita all matched existing rows in other countries or states. All settled on the
+  postal address, none cost a fetch.
+
+---
+
+## Qualifies on fit but publishes no readable email
+
+### Lori & Co. Clinical Aesthetics — Tambo Court, Werribee VIC 3030 · `loriand.co` · **robots_disallowed**
+Surfaced on the Fresha Werribee index (name and suburb printed, address from the review block);
+domain resolved by search. The fetch was **refused at the site with `robots_disallowed`** — nothing
+of the page was retrieved, so must-haves 1, 2, 4 and 5 are all unscreened. **Do not point a
+headless browser at it.** Needs a human visit or nothing.
+
+### Lume Skin Aesthetics — 6 Walter Withers Court, Diamond Creek VIC 3089 · `lumeskinaesthetics.com.au` · **fails must-have 5, total silence**
+Homepage read in full. A GoDaddy website-builder page with **no address, no email, no treatment
+list, no owner and no nav links at all** — the only footer href is GoDaddy's own builder advert.
+Copyright "© 2025 Lume Skin Aesthetics". **Not obfuscated — simply absent**, and that claim is
+about the homepage, which is the only page the site appears to have. No Cloudflare token.
+The Fresha index gives the street address; the site gives nothing. Nothing a browser recovers.
+
+### Inly Skin Care — 30 Hollywood Avenue / Stockland Point Cook VIC 3030 · `inlyskincare.com.au` · **fails must-have 5 AND must-have 1**
+Homepage read in full, including the full header href set. **No email anywhere** — visible text,
+mailto or otherwise; the contact form has a "Your email" field and no address. No Cloudflare token.
+It also **fails must-have 1**: no nurse, doctor or prescriber is named anywhere, the About section
+describes staff only as "certified beauty therapist", and the menu is Alma laser devices, Sorex
+ISOV facials, Ultraceuticals peels, needling and microdermabrasion with no injectables line. There
+is no privacy policy, about or blog link in the nav — the whole site is one page plus service
+pages. The three "Dr." names on the page (Dr. Kevin Perry, Dr. Jennifer Lee, Dr. AAA) are
+**template placeholder testimonials**, not staff — worth recording, because they read as clinical
+staffing at a glance. Booking runs on the clinic's own Fresha tenant.
+
+### Mirra Skin & Aesthetic Clinic — Werribee VIC 3030 (Fresha URL suggests 19 Synnot Street, unconfirmed) · `mirraskinaestheticclinic.com` · **STILL unresolved, second attempt**
+Already in `near-misses.md:6222` as "homepage returned a **client error**; nothing read, market
+unconfirmed." It appeared again on the Fresha Werribee index, which **confirms the market is
+Werribee** — that is the one new fact. The domain was not re-fetched; the earlier client error
+stands and no budget was spent reproducing it.
+
+---
+
+## Rule-outs, with reasons
+
+### Fails must-have 1 — real, readable, selling the wrong thing
+- **Forever Young Werribee** — 7a Glen St, Werribee VIC 3030 · `foreveryoungwerribee.com.au`.
+  Menu is waxing, tinting, tanning, massage, facials and HIFU. No prescriber. **Also fails
+  must-have 5** — no email anywhere, no privacy policy link. Carries the best dating artifact of
+  the whole run and cannot use it: the owner "established the first Beauty Salon in Werribee in the
+  mid 80s". Named in alt text only as **Mary Sfameni**. Gift vouchers, Afterpay and Zip. Copyright
+  reads **"© 2035 By Rairay"** — a template artifact, recorded because a future copyright year is a
+  new look-alike for a dating artifact and evidences nothing.
+- **Soraya Skin Clinic**, **My Face Place** and **Luxe Wellness Skin Clinic** all fail must-have 1
+  on the prescriber test and are **accepted as grade C rows** rather than dropped — see the JSON.
+- **Tracy's Skin & Body Centre** — 34 Synnot St, Werribee VIC 3030 · two domains,
+  `tracysskinandbodycentre.com.au` and `tracysskin.com.au`. Not fetched. Self-described across its
+  own page titles as "Beauty Salon Werribee … IPL, Waxing, Facials, Day Spa" with no injectables
+  wording on any title. **Unscreened, judged on titles only** — recorded honestly as such.
+
+### Disqualified outright
+- **Western Dermatology** (253 Heaths Rd, Werribee) and **DR Jack Green** at the same address —
+  dermatology, and `westerndermatology.com.au` is already in `near-misses.md:6231`.
+- **Renaissance Dermatology** (Doncaster), **Melbourne Eastside Dermatology** (Blackburn South),
+  **Canterbury Dermatology & Laser Clinic**, **St Albans Dermatology – Dr Mignon Moyle** —
+  dermatology.
+- **North Ringwood Skin Cancer Clinic**, **MoleSpot Skin Cancer Clinic** (Ringwood East),
+  **Molescope Skin Cancer Clinic** (Mooroolbark), **Australian Skin Cancer Clinics Blackburn**,
+  **The Skin Doctor Melbourne** / `theskindoctor.melbourne` (Diamond Creek) — owned skin-cancer
+  screening, fails must-have 1 and the dermatology disqualification.
+- **Medical Centre 291** (291 Princes Hwy, Werribee), **Q1 Medical Hoppers Crossing**,
+  **Craigieburn Medical and Cosmetic Centre** (33 Craigieburn Rd), **Lilydale Medical Clinic**,
+  **Myhealth Eastland** — Australian general practice, fails must-have 2.
+- **EST Clinic** (Box Hill North) — already pipeline row 319, C, specialist plastic surgeon.
+- **Victorian Laser & Skin Clinic** — already disqualified, five or more sites, and a press release
+  in the results announces a **fifth location in Croydon**, which confirms it.
+- **My Body Vibes** — already blocked, six locations, owns the Doncaster result.
+- Chains and franchises met in the indexes, all fails on must-have 3: **Laser Clinics Australia**
+  (Werribee, Watergardens, Craigieburn, Greensborough, Doncaster, Pacific Werribee), **Australian
+  Skin Clinics** (Werribee, Doncaster, Greensborough, Ringwood North, Altona Gate, Highpoint),
+  **Results Laser Clinic** (Werribee, Eastland), **Clear Skincare Clinic** (Doncaster, Forest
+  Hill), **MySkin Clinics** (Craigieburn, South Morang, Plenty Valley, Heathmont, Forest Hill —
+  already in `near-misses.md:26641`), **RATIONALE**, **Hair and Skin Science**,
+  **Ultra Clinics Australia**, **endota spa**.
+- **Dentists selling facial injectables** — see the query finding below: `evercaredental.com.au`
+  (Eltham & Bulleen), `newagedental.com.au` (Bundoora), `lotussmilesdental.com.au` (Sunbury),
+  `brentforddental.com.au` (Lilydale), **Smiles of Plenty**, **Doncaster Hill Dental**,
+  **D'Vine Smiles**. Fails must-have 1.
+
+---
+
+## Domains worth blocking on the next Melbourne query
+
+**Carry these forward rather than rebuilding the list.**
+
+- `drsaber.com.au` — suburb-page sprayer, already the biggest crowder-out of the 17 Nov run.
+- `viclaser.com.au`, `laserclinics.com.au`, `australianskinclinics.com.au`,
+  `resultslaserclinic.com.au`, `clearskincareclinics.com.au`, `myskinclinics.com` — chains.
+- `mybodyvibes.com.au` — six sites, owns the Doncaster result.
+- **Job boards — the new Australian noise species, see below:** `seek.com.au`, `au.jora.com`,
+  `au.indeed.com`.
+- **Dentists bolting injectables onto a dental menu:** `evercaredental.com.au`,
+  `newagedental.com.au`, `lotussmilesdental.com.au`, `brentforddental.com.au`.
+- `cosmeticsurgeryclinics.com.au` — **new, and a measured waste of one fetch.** Its page advertises
+  "📍 Cosmetic Injectables VIC: 111 AHPRA-Listed Clinics" and ranks for it; the page itself prints
+  **zero clinic names, zero addresses and zero domains**, only a link to a /find/ section. A
+  directory farm with a headline count and no list.
+- `ultraceuticals.com.au/pages/locations` — **new, and the opposite of the Exomide finding.** A
+  manufacturer stockist locator that is a **JavaScript store locator**: it says "Find your nearest
+  clinic below" and ships no clinic data at all to a fetch. Not retryable without a browser.
+- `consultingroom.com` — UK clinic directory; it owns "dermal fillers in Sunbury" because of
+  Sunbury-on-Thames.
+- `whatclinic.com`, `wheree.com`, `zoominfo.com`, `mapquest.com`, `localbusinessguide.com.au`,
+  `whereis.com`, `bookwell.com.au`, `gobeauty.au`, `birdeye.com`, `firmania.biz`, `yellowsite.net`,
+  `acompio.com`, `rocketreach.co`, `finditnowdirectory.com.au`, `chamberofcommerce.com`,
+  `top-rated.online`, `ourcommunitydirectory.com.au` — directory farms, no domains printed.
+- **Do NOT block** `exomide.com.au` (best single fetch of the run, below) or
+  `fresha.com/lp/...` suburb landing pages (fetch them directly; block them only in search).
+
+---
+
+## Unscreened names I ran out of budget on
+
+**In my own ring, with a domain in hand, never fetched:**
+- **`luxcosmetics.com.au`** — "Cosmetic and Skin Clinic in Mill Park, Melbourne". **Fetched and
+  defeated**: the response was a bot-check interstitial, body text "One moment, please… Please
+  wait while your request is being verified", HTTP success with no page content. **Presents as a
+  successful fetch.** Not retryable; needs a browser. Worth one, given the name and the market.
+- **`merakibeautyandwellness.com.au`** — surfaced on the Mill Park query; relation to the Exomide
+  stockist "Meraki Rejuvenation Hub, 3/20 The Link, Mill Park" is unconfirmed.
+- **`cosmetinjectablesvictoria.com.au`** ("Cosmetic Injectables Victoria") — surfaced on the east
+  query, suburb never established. Grep-cleared against `cosmeticaestheticsvictoria.au` (Seaford).
+- **`totalblissbeauty.com.au`** — Total Bliss Beauty Therapy, 5/86-92 Grimshaw St, Greensborough
+  3088. Has a "Cosmetic injections" service page. Probably a beauty salon with an injector day.
+- **`avitaskinclinics.com.au`** — Avita Skin Clinics, 59-65 Maroondah Hwy, Ringwood 3134. **Fetch
+  returned `ROBOTS_UNREACHABLE`** (robots.txt could not be read — a site/transport error, not a
+  disallow). Possibly retryable. Also runs `avitaclinics.wordpress.com`.
+- **`freshaesthetics.au`** — Fresh Aesthetics Pty Ltd, a `/cosmetic-injectables-...-clinic-lilydale/`
+  landing page; **the only own-domain injectables business found in Lilydale.** Fetch returned
+  `ROBOTS_UNREACHABLE`. Possibly retryable, and the suburb-page URL shape means the site may be a
+  multi-suburb sprayer — check must-have 3 first.
+- **`skinsecrets.com.au`** — "Skin Secrets Aesthetics and Injectables", a Fresha Ringwood top
+  listing with suburb only. Domain resolved, never fetched.
+- **`croydoncosmeticclinic.com`** — distinct from the accepted Croydon Laser and Skin Clinic.
+  **Check the country first**: `croydoncosmeticclinic.co.uk` also exists and the two may be one
+  business in London. Unresolved.
+
+**Exomide stockists in briefed suburbs with no domain yet — these are the cheapest remaining
+leads, in zero-coverage suburbs that search cannot reach:**
+- **The Beauty Circle** — Shop 3, Watergardens Town Centre, Taylors Lakes VIC 3038
+- **Panache Medical Aesthetics** — 1042 Western Highway, Caroline Springs VIC 3023
+- **Meraki Rejuvenation Hub** — 3/20 The Link, Mill Park VIC 3082
+- **Aesthetics by Laura** — 1 Petal Court, South Morang VIC 3752
+- **Skin Cam** — Unit 5, 7 Development Boulevard, Mill Park VIC 3082
+
+**Fresha names in briefed suburbs with no domain yet:**
+- Box Hill: **Top Trend Beauty Clinic** (2/975 Whitehorse Rd), **Apollo Beauty Clinic**
+  (545 Station St), **VC View Medical Beauty** (761 Station St, Box Hill North)
+- Doncaster East: **Queen Brows and Skin**, **Shima Tehrani** (a person — check must-have 3)
+- Croydon/east outer: **Jacqueline's Beauty Therapy** (41 Taylors Rd), **My Skin Studio**
+  (17 Bretby Way, Montrose), **Your Very Best** (137 Canterbury Rd, Heathmont),
+  **Vanish Laser & Skin** (Burwood)
+- Greensborough/Eltham/north: **JC Skin Therapy** (40 Commercial Place, Eltham — a search for it
+  returned nothing own-domain), **Jas Sandhu (Registered Cosmetic Nurse)** (Greensborough — may be
+  the same Jas as Renew Skin Clinics' director; **check before treating as a second buyer**),
+  **Nuovo Skin and Health** (16/855 Plenty Rd, South Morang), **Lucy L'Ren Skin** (504 Plenty Rd,
+  Mill Park), **The Arch Room**, **Elite House of Beauty**, **Allawah Beauty Therapy**
+- Werribee/west: **PampaVu** (1/275 Heaths Rd), **'Elite S & B** (61 William Wright Wynd, Hoppers
+  Crossing), **Serènity Aesthetics** and **Angelique Aesthetics** (both Avondale Heights),
+  **The Good Skin Clinic** (11 Gatehouse Pl, Maribyrnong), **NUE SKINN STUDIO** (Cairnlea),
+  **Abela Beauty & Laser Therapy** (Sunshine), **Routine Contour Clinic** (Highpoint)
+
+**NEW NAMES IN ALREADY-SWEPT SUBURBS — not mine to work, and worth passing upstream because the
+prior sweeps did not find them.** The Fresha Box Hill index surfaced these own-premises clinics in
+Surrey Hills, Balwyn and Balwyn North, all three swept by search on 15 and 16 Nov, and **none of
+the five appears anywhere in `near-misses.md` or the pipeline**:
+**AB's Cosmetic Clinic** (607 Whitehorse Rd, Surrey Hills), **Sky Skin Laser Clinic** (207 Elgar
+Rd, Surrey Hills), **La Luna Skin Clinic** (Surrey Hills), **Above All Aesthetic Clinic**
+(Level 1/235 Whitehorse Rd, Balwyn), **Premier Skin Aesthetic Clinic** (Balwyn North).
+That is five missed clinics in three suburbs that two prior passes declared worked.
+
+---
+
+## Towns closed, with which of the six thin-town reasons applies
+
+Three of the six reasons invite a return visit and three do not. Stating which, per the brief.
+
+- **Craigieburn 3064 — CLOSED, reason four (real, readable, selling the wrong thing) compounded by
+  reason one.** The Fresha Craigieburn index returned fourteen businesses and **the aesthetics
+  layer is home-based beauty studios**: Thoresby Circuit, Classic Place, 10 Mackillop Street,
+  6 Almands Avenue, 68 Mackellar Drive, 44 Xenolith Drive, 18 Saltbush Crescent, 19 Montreal
+  Circuit, 13 Thorngrove Avenue, 432 Brookfield Boulevard — residential streets, not retail
+  addresses. The only shopfronts are Laser Clinics Australia and MySkin Clinics (both chains) and a
+  general practice. Exomide confirms it: three Craigieburn stockists, two chains and one GP.
+  **Do not re-sweep. There is no strip.**
+- **Sunshine 3020, Keilor, Taylors Lakes, Caroline Springs — CLOSED on the Fresha index, reason
+  four.** The Fresha "sunshine" centroid returned thirteen businesses across Avondale Heights,
+  Maribyrnong, Keilor East, St Albans, Cairnlea and Yarraville, of which **exactly one is in
+  Sunshine itself** (Abela Beauty & Laser Therapy) and the rest are beauty-therapy and brow
+  businesses, one dermatologist and the already-ruled-out Hands-On Laser. The Exomide locator
+  returns **nothing at all** for Sunshine, Point Cook, Keilor, Box Hill, Doncaster East, Croydon,
+  Lilydale, Mooroolbark, Montrose, Eltham, Bundoora or Diamond Creek. Taylors Lakes and Caroline
+  Springs each have **one** usable name, both listed above.
+- **Sunbury 3429 — reason six, the town's name losing its own query**, and worse than the brief
+  describes. See the contradiction below.
+- **Croydon 3136 — reason six as well, and it did NOT stop the suburb working.** The search was
+  almost entirely lost to Croydon, London, and the Fresha index still produced two accepted rows.
+  **Reason six is a fact about the search string, not about the town — so the response is to change
+  instrument, not to write the town off.**
+- **Lilydale 3140 — reason three (live clinics publishing nothing readable), unproven.** The only
+  own-domain injectables business found is `freshaesthetics.au`, and the fetch was defeated by
+  `ROBOTS_UNREACHABLE` rather than by silence. **Unresolved, not closed** — one retry settles it.
+- **Point Cook 3030 — reason four.** Its one own-domain clinic, Inly Skin Care, is readable,
+  trading, and sells no injectables.
+
+---
+
+## What the market taught me, and three things that contradict the brief
+
+### 1. CONTRADICTION: "injectables" does NOT survive Australian search in the outer ring. It goes to dentists.
+The brief's strongest query finding is that **"cosmetic" goes to dentists (7 of 10) and "clinic"
+goes to pharmacies (4 of 10), and the word that survives both is "injectables" — pair it with
+everything.** In Melbourne's outer ring that is false. One query, `"injectables" clinic
+Greensborough Eltham Bundoora Sunbury Victoria established owner`, returned **four dental
+practices in ten slots** — `evercaredental.com.au` ("Cosmetic Injectables Eltham & Bulleen",
+twice), `newagedental.com.au` ("Facial Injectables Bundoora"), `lotussmilesdental.com.au`
+("Facial Injectables in Sunbury") — plus `brentforddental.com.au` on the eastern query.
+**The mechanism is not that the word failed; it is that the market changed under it.** Outer-ring
+dental practices have bolted a "facial injectables" page onto a dental site, so the one word that
+named a thing only a med spa sold now names a thing dentists sell too. Inner-ring dentists had not
+done this when the rule was written on 16 Nov. **The word that actually survived here is
+"anti-wrinkle" plus "dermal filler" together** — it was the only query shape that returned
+own-domain injectables clinics in a suburb nobody had worked.
+
+### 2. CONTRADICTION: "add the POSTCODE, or add the state" — the STATE half is actively harmful in Victoria.
+The brief's remedy for reason six is "add the POSTCODE, or add the state, or query the retail
+strip". **Adding the state name "Victoria" to an Australian query makes the collision worse, not
+better**, because Victoria is itself a bigger, older, more-linked place elsewhere. The Sunbury
+query `Sunbury 3429 Victoria cosmetic injectables...` returned, in ten slots: **Sunbury-on-Thames**
+(two `consultingroom.com` pages, `practicebeautyclinic.co.uk`), **Victoria, British Columbia**
+(`aesthevaclinic.ca`, "Victoria Skin Care Clinic"), a Romsey clinic, a dentist, and a disqualified
+chain — **zero in-market own-domain clinics, with the postcode present.** The postcode did not
+save it because the state name undid it.
+**So the remedy is narrower than written: add the POSTCODE, and do NOT add the state name in
+Victoria.** The three worst Australian state-name disambiguators are all place names elsewhere —
+Victoria (BC, TX, Seychelles), Western Australia, and arguably NSW's "Wales". **"VIC" as an
+abbreviation is safe; "Victoria" spelled out is not.** This is reason six firing on the
+*disambiguator* rather than on the suburb, which nobody had recorded.
+
+### 3. CONTRADICTION: a new Australian noise species the brief does not list — JOB BOARDS, and the brief's own recommended Melbourne shape summons them.
+The brief says what worked in Melbourne is **town + POSTCODE + "cosmetic injectables" + "nurse"**,
+and that "nurse" finds the owner-injector the shape was reaching for. In the outer ring that exact
+shape hands the query to recruitment sites. `Werribee 3030 Point Cook Hoppers Crossing 3029
+cosmetic injectables nurse` returned **six of ten slots to `seek.com.au` and one to `au.jora.com`**
+("Cosmetic Nurse Jobs in Werribee VIC 3030", "246 Cosmetic Nurse jobs in Werribee VIC"); the
+Ringwood equivalent lost slots to `au.seek.com` and `healthdirect.gov.au`; the Craigieburn one to
+`au.indeed.com`. **"Nurse" plus a postcode is a recruitment query**, and postcodes make it worse
+because that is exactly how Seek structures its URLs. The noise list is now **four** words:
+"cosmetic" → dentists, "clinic" → pharmacies, "injectables" → dentists (outer ring),
+**"nurse" + postcode → job boards.** Block `seek.com.au`, `au.jora.com` and `au.indeed.com` on
+every Australian query.
+
+### 4. The Fresha suburb landing page is the best instrument for this metro, and it is BETTER than the brief claims — it beats a search-based sweep of the same suburbs.
+The brief rates it as a budget converter: prints addresses, no domains. Measured here across five
+slugs (**ringwood, werribee, greensborough, box-hill, craigieburn, sunshine** — six fetches):
+**roughly 100 business names with street addresses, of which about 35 are in-segment**, and
+**eleven of the thirteen accepted rows trace to a Fresha index.** Against that, the eleven searches
+I spent on direct own-domain discovery produced **four** usable in-market domains.
+The centroid behaviour held: "box-hill" reached Doncaster, Surrey Hills, Balwyn, Blackburn,
+Camberwell, Forest Hill and Canterbury; "sunshine" reached Avondale Heights, Maribyrnong, Keilor
+East, St Albans and Cairnlea. **Three slugs really do cover a ring.** Noise was **lower** than the
+brief's "roughly two thirds massage, nails and hair" — nearer a third once brow and lash listings
+are excluded, probably because the `/bt/aesthetics/` path pre-filters.
+**The stronger claim, which is a finding about our own prior coverage rather than about Fresha:**
+the Box Hill index surfaced **five own-premises clinics in Surrey Hills, Balwyn and Balwyn North
+that two search-based sweeps of those exact suburbs (15 and 16 Nov) did not find**, and that are
+in neither file. A search-based sweep of a Melbourne suburb systematically under-covers it,
+because the clinics that rank are the ones with SEO budgets and the clinics on Fresha are the ones
+with diaries. **Fetch the Fresha slug before spending the search budget**, the way the brief says
+to hunt for a precinct site.
+
+### 5. Exomide confirmed, with its known limitation reproduced exactly — and a sibling locator that is worthless.
+`exomide.com.au/find-a-clinic/` returned **19 clinics across 11 of my 24 queried suburbs in one
+fetch**, printing full street addresses and **no domains**, exactly as recorded. It reached
+**Hoppers Crossing, Taylors Lakes and Caroline Springs — three zero-coverage suburbs that no query
+of mine could reach** — and produced one accepted row (Estetik Clinic) plus five of my best
+remaining leads. Its documented failure to pre-filter business type reproduced: of the 19,
+**nine are chains and one is a general practice**, so **ten of nineteen fail a must-have before
+anything is spent**. Still the second-best fetch of the run.
+**But the species does not generalise from one instance.** `ultraceuticals.com.au/pages/locations`
+is the same kind of page from a bigger Australian brand and is a **JavaScript store locator** —
+"Find your nearest clinic below" with no clinic data in the response at all. One wasted fetch.
+**So: hunt for a locator early, and expect roughly half of them to be client-side and
+unfetchable.** Exomide prints server-side; Ultraceuticals does not.
+
+### 6. The four-outcome billing screen, measured: policies are present in Melbourne's outer ring more often than in Sydney, and every one of them was clean.
+Of nine accepted clinics screened on must-have 2, **a privacy policy existed and was read on four**
+(Eltham Cosmetic, Allure Aesthetic, Fine Skin, Beauty First — plus Croydon Laser's embedded privacy
+section, making five), and **all five were CLEAN**: zero occurrences of Medicare, Medicare rebate,
+bulk billing, MyMedicare, HICAPS, Veterans, DVA, Health Care Card, concession card, health fund,
+private health insurer, claiming or rebate, across five documents. **Four were ABSENT** (Renew Skin,
+Flawless Beauty, Estetik, Luxe Wellness — no policy link anywhere in the nav), and **one exists but
+went unread for budget** (Cosmetic Aesthetics By Hannah). So the policy-present rate here is about
+**5 of 10, against three-of-five-absent in Sydney** — the middle of the brief's stated 19%-to-85%
+band, and the dirty rate is **0 of 5**. HICAPS stays at zero. **The clean reading is the useful
+part: in the outer ring the billing screen is cheap and almost never the thing that kills a row.
+Must-have 1 and must-have 4 are.**
+
+### 7. What actually killed rows: must-have 4 and must-have 1, in that order, and neither for the reason I expected.
+Across every clinic whose own pages I read (14 businesses):
+- **Must-have 2 failed 0 times** on an accepted row. The only billing failures were general
+  practices rejected before a fetch.
+- **Must-have 1 failed 6 times** — and every single one on the **prescriber test, not on an absent
+  drug name.** Soraya ("every therapist on the floor is a qualified dermal therapist"), My Face
+  Place ("a degree-qualified dermal clinician"), Luxe Wellness ("a qualified healthcare
+  professional"), Inly Skin ("certified beauty therapist"), Forever Young, and the dentists.
+  **The outer ring's aesthetics layer is dermal-therapist-led, not nurse-led** — which is the real
+  structural difference between this ring and the inner east, and it is why a thirteen-suburb sweep
+  yields fewer injectables clinics than a four-suburb inner sweep would.
+- **Must-have 4 held 7 rows at B and 1 at C**, and in every case the reason was the same: the only
+  evidence was a **practitioner's career length** (19 years, over a decade, 30 years, 13 years, 20
+  years) — the middle rung, which is the owner's CV and not the clinic's lapsed list. **Only three
+  businesses in fourteen published a top-rung artifact**: Eltham Cosmetic (a founding year, 2017),
+  Allure Aesthetic (335 Google reviews, 600 clients in 2025) and Soraya (500+ reviews, and it fails
+  must-have 1). **Outer-ring Melbourne clinics publish their nurse's CV and not their own history.**
+- The **page-coverage rule** is the biggest known gap in this run and I am naming it rather than
+  hiding it: **seven rows have an unread /blog, /about or /our-terms page**, and on this standard's
+  own measurement the post archive is the rung that pays. Nazpari is the sharpest case — it is a C
+  purely for want of a dating artifact, and it has an unread `/about-us/` and an unread
+  `/submit-review/` page. **Roughly three of my seven B rows are probably A rows behind one fetch
+  each.** That is the cheapest work left in this ring.
+
+### 8. Two fetch-failure modes, one new to the list.
+- **`ROBOTS_UNREACHABLE`** — robots.txt could not be read, so nothing was fetched. Hit twice
+  (`avitaskinclinics.com.au`, `freshaesthetics.au`). **Distinct from `robots_disallowed`**: it is a
+  transport or site error rather than a refusal, so it is probably retryable, and it does not carry
+  the no-browser instruction that a disallow does.
+- **`robots_disallowed`** — once (`loriand.co`). Not retryable, and **no headless browser.**
+- **A bot-check interstitial that presents as success** — `luxcosmetics.com.au` returned HTTP
+  success with a plausible HTML body reading "One moment, please… Please wait while your request is
+  being verified". **This is the ninth mode's sibling and it is more dangerous**, because the
+  content-type IS html and the body is not 13 bytes — a careless reader would record "no email
+  published" from it. **The test is not the content-type here; it is whether the body contains the
+  business.** Not retryable.

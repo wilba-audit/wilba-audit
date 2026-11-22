@@ -2499,6 +2499,99 @@ published a mailbox. The same city a week earlier (12 Nov, the Cottesloe/Claremo
 reproductions, two of them intra-city, of the rule that a mailbox rate is a property of a ring and
 never of a city.**
 
+## Four outer rings, 22 Nov 2026 — the site an address sits on is a fact, and a prediction of mine measured false
+
+Four workers swept Melbourne's outer north/east, Melbourne's south-east (Frankston to the
+Peninsula), Sydney's south-west (Camden/Campbelltown/Liverpool) and Sydney's west
+(Penrith/Blacktown/Parramatta/Hills). 54 rows accepted: 8 A, 21 B, 25 C. Four findings worth
+keeping, one of them a correction to this file's own records.
+
+### An address is not "absent" or "published" — it is published ON A SITE, and which site decides the row
+
+Two rows failed the same boundary tonight in **opposite directions**, which is how I know it is a
+boundary and not a slip.
+
+**Vera-Rose Aesthetics, Mornington.** Recorded on 19 Oct 2026 at `near-misses.md:7471` as "Email
+status: none published", reachable only by enquiry form and mobile. That was true of
+`veraroseaesthetics.com.au` and false of the internet: `hello@veraroseaesthetics.com.au` is
+published as plain visible text with a matching `mailto:` on the **host clinic's** page,
+`skinpeninsula.com.au/services/cosmetic-registered-nurse/`, read 22 Nov 2026. A month of her sitting
+in the near-miss file as unreachable was a reading of one domain mistaken for a reading of her
+reachability.
+
+**Priscille Vrljic, Bella Vista.** Recorded tonight at `near-misses.md:28051` as the inverted-tenancy
+test *passing*, because she publishes her own `info@priscillevrljicaesthetics.com.au` beside the
+collective's house address. She does — on `myhealthcollective.co`, the host's site, not her own. The
+tenancy reading is right. **Must-have 6 still fails**, because the Australian consent screen asks
+that the address be read off the clinic's own site, and a host is somebody else.
+
+So the rule, which costs nothing to follow:
+
+- **Record the site the address was read on**, not just that one was read. `email_source` already has
+  the field for it; what was missing was treating the host case as its own answer.
+- **Before recording must-have 5 absent, read the HOST's page** whenever a clinic's site says
+  "located within" or names a premises it does not own. The address is often there.
+- **A host-published address does not satisfy must-have 6.** It is not a directory scrape and it is
+  not their own site either. That is a judgement for Jess about channel, not a sourcing verdict —
+  park the row and say why.
+
+### I predicted south-west Sydney would be dirty on must-have 2. It was 1 in 13
+
+The prediction was that Camden/Campbelltown/Liverpool, being bulk-billing GP country, would fail the
+cash-pay screen repeatedly. **Measured across 12 accepted rows and 20 rule-outs: exactly one
+business produced dirty billing vocabulary.** Right about where the aesthetics rooms are, wrong about
+how it shows up — the GP-adjacent businesses in that ring fail **must-have 1** on a surgical,
+podiatric or skin-cancer line and print no billing word at all. The screen that bound was never the
+one I briefed for.
+
+That is my second false market prediction in four nights (the Canberra one, 19 Nov, is above). Both
+had the same shape: I reasoned from what a suburb's *medicine* looks like to what its *clinic
+marketing* says. The link does not hold. **Brief the screens; do not predict which one will bind.**
+
+### "How a city dates its clinics" is not a property of the city
+
+Three Melbourne rings, three different dating profiles:
+
+| Ring | Date | Profile |
+|---|---|---|
+| Inner east | 15 Nov | Bimodal — either a founding year or nothing at all |
+| Inner west | 17 Nov | Middle-rung heavy — accumulation evidence, few explicit dates |
+| Outer north/east | 22 Nov | Flat: roughly 33% top rung, 40% middle, 27% none |
+
+The mechanism has now been reproduced from both directions, Sydney harbourside (60% dated) against
+Sydney west (39% failing): **what predicts a published founding year is the clinic's AGE, not the
+suburb's wealth.** An older ring dates itself because it has something to date. This is the same
+shape as the mailbox-rate finding — a property of the ring, never of the city — and it means the
+ladder's three rungs are not a fixed distribution to expect, but a measurement to take per ring.
+
+### A market closed by SEARCH is not closed
+
+The Fresha Box Hill index surfaced **five own-premises clinics in Surrey Hills, Balwyn and Balwyn
+North** — AB's Cosmetic Clinic, Sky Skin Laser Clinic, La Luna Skin Clinic, Above All Aesthetic
+Clinic, Premier Skin Aesthetic Clinic — **none of which appears anywhere in `near-misses.md` or the
+pipeline.** All three suburbs were swept by search on 15 and 16 Nov and declared worked.
+
+A search sweep finds clinics with SEO budgets. A directory index finds clinics with diaries. They are
+different populations, and the second one is the one with lapsed patients and no marketing function.
+**Every market this file records as closed is closed against search only.** One directory-index pass
+over the search-closed inner metros is now the cheapest unspent row-generator we have.
+
+### The four write-ups came back in four different shapes, and that is a brief defect
+
+Each worker recorded its rule-outs differently: one put the failing must-have in the heading, one in
+the body, one in a table, one in prose. The result is that I **cannot** build a comparable
+per-ring table of which must-have bound hardest without re-reading all four files, which is exactly
+the cost the structured fields exist to avoid. Not a worker failure — the brief never asked for a
+shape. **Next brief: the failing must-have goes in the rule-out heading, with the digit adjacent, the
+same convention the row validator already enforces on `notes`.**
+
+### Still a channel question, not a sourcing one
+
+The DM-only list is now about 55 clinics: real, owner-operated, on-ICP, with no published mailbox and
+an Instagram link-in-bio instead. They are not near-misses in any useful sense — they are a different
+channel. That decision is Jess's and it has not been put to her yet.
+
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from

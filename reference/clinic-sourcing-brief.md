@@ -1479,7 +1479,7 @@ different direction: **a town name is one query, and the names locals use are se
 WebFetch refuses a URL that has not appeared in a WebSearch result, so search before you
 fetch. `curl` is blocked.
 
-## Nine ways a site defeats a fetch, and which ones a browser fixes
+## ELEVEN ways a site defeats a fetch, and which ones a browser fixes
 
 Knowing which is which decides whether a clinic is worth a human's time or should be dropped.
 
@@ -1547,6 +1547,42 @@ rather than "the page errors", so the next reader knows a path was invented.**
 `bellafache.com.au`, `skinlabwprs.com.au`, `americanlasermedspa.com` (regional, West Texas),
 `botox-clinics.co.uk`, `injectablesbooking.co.uk`, `dermalfillertreatment.co.uk`,
 `safetyinbeauty.com`, `saveface.co.uk`, `consentz.com`, `marketplace.infouncle.com`.
+
+### The TENTH mode, found 22 Nov 2026: a bot-check interstitial that presents as success WITH a plausible HTML body — and it breaks the rule the ninth mode taught
+
+The ninth mode produced a 200 with a 13-byte body and a content-type of
+`application/x-httpd-ea-php73`, and the general rule drawn from it was: **a content-type that is not
+HTML is not a page.** That rule is sound and it does not catch this one.
+
+The tenth mode returns **200, content-type `text/html`, and a well-formed HTML document** whose
+visible text is *"One moment, please… verifying"*. Every structural test passes. It is more dangerous
+than the ninth precisely because nothing about the envelope is wrong — a worker that trusts the
+status code and the content-type will read the interstitial as the clinic's homepage and conclude
+the clinic publishes no email, no founding year and no address.
+
+**So the test cannot be about the envelope at all. THE TEST IS WHETHER THE BODY CONTAINS THE
+BUSINESS.** Before reading anything off a fetch, confirm the clinic's own name, or its address, or
+its treatment vocabulary is somewhere in the body. If the body does not mention the business, the
+fetch failed no matter what it returned.
+
+### And `ROBOTS_UNREACHABLE` is NOT `robots_disallowed` — the eleventh mode, and NOT retryable. 22 Nov 2026
+
+Sites failed with `ROBOTS_UNREACHABLE` — the robots file itself could not be retrieved — which is a
+different thing from a robots file that retrieved fine and said no. A disallow is a decision, and the
+standing rule is to respect it and never point a browser at it.
+
+**I first wrote here that an unreachable robots file is an infrastructure hiccup and "probably
+retryable". That was wrong within the hour, and it is worth keeping the correction visible.** Two
+workers met this mode on the same night and only one of them tested it: *"the one I deliberately
+retried reproduced exactly. Not retryable."* The other reported it as *"probably retryable"* — a
+guess, honestly labelled as one — and I wrote the guess into the brief because it arrived first.
+**A measurement beats a plausible report, and the order they arrive in is not evidence.**
+
+**Rate: 3 of 39 fetches, 7.7%, all three on small boutique Australian sites.** At that rate it costs
+more rows than Cloudflare obfuscation does (~2 in 75). Neither worker could tell from inside one run
+whether the cause is Australian hosting or something transient, and neither guessed, which was
+right. **One deliberate measurement on the next Australian run would settle it**: collect the failing
+hosts and see whether they share a host or a CDN.
 
 ### The ninth mode, found 19 Nov 2026: a 200 response serving the server's own PHP handler
 
@@ -1980,10 +2016,65 @@ them**, before a single fetch was spent:
    appear only in an `Assigned:` line beneath it. There is exactly **one** such heading in 28,000
    lines, and exactly **one** `Assigned:` line, so there is no convention to grep — but when writing
    a new section heading, **put the place in it**, because this is the cost of not having.
+
+   **SECOND INSTANCE, 22 Nov 2026, and it cost a brief again.** `near-misses.md:6184` is
+   `## Near misses — Australian outer-metro suburbs (1 Nov 2026)`, whose own closing line calls
+   *"the Melbourne south-east corridor (Berwick-Pakenham-Frankston-Mornington)"* the densest patch it
+   found. A heading grep for `Melbourne` cannot see it, and **eleven pipeline rows touch the suburbs
+   I briefed** (320, 790, 791, 799, 800, 802, 804, plus 71, 97, 1247 and 306 ranking in). So this is
+   not a one-off, and the fix is not only "put the place in the heading" — **also grep for the
+   ADJECTIVES this file reaches for when a sweep had no single place**: `outer-metro`, `regional`,
+   `last unswept corners`, `corners`.
+
+   **What correct coverage data was worth, measured.** The worker rewrote the claim as it should
+   have read: *"Berwick, Pakenham, Frankston and Mornington were swept 1 Nov 2026 and hold seven
+   rows; Dandenong, Narre Warren, Cranbourne, Mount Eliza and Hastings were not."* **All three of
+   its grade-A rows came from the five suburbs that sweep had not reached.** A coverage error does
+   not only waste fetches — it spends them on the half of the market that is already worked.
 2. **`WA` collides with Washington state.** A heading grep for `WA` returns Spokane, Olympia, Gig
    Harbor, Seattle and Bellingham. Use `Perth` or `Western Australia`, never the bare state code.
 
-3. **A market swept INSIDE a multi-market pass is invisible to it, and this one cost a whole market
+3. **A NAMED LEAD IN A BRIEF NEEDS THE LATEST ENTRY, NOT THE ONE YOU FOUND. Mine, 22 Nov 2026.**
+   I briefed a worker to retry **Hills Aesthetics**' contact page, quoting an 18 Oct note calling it
+   "the best near-miss of the batch" and "worth one retry later". `near-misses.md:6202` records that
+   a later worker **already spent that retry**: `/aboutus/` has no address, `/contact/` is
+   Cloudflare-obfuscated, and the note says in terms *"Stop re-fetching this one — two workers have
+   now spent fetches on it."* **I briefed a third attempt at a clinic the file explicitly says to
+   stop fetching.** The coverage greps above are about markets; this is about a single clinic, and
+   the mechanism is different: I read the oldest record of it and briefed from that. **When a brief
+   names a specific lead, grep the name and read the LAST entry, not the first one you hit.** It
+   cost nothing only because the worker grepped before fetching.
+
+   It also paid, free, from result titles alone: Hills Aesthetics trades **inside Castle Hill Family
+   Doctors** and is bookable **through that GP practice's own HotDoc listing**, which raises a
+   host-GP question on must-haves 2 and 3 that nobody had recorded in five weeks of carrying it as
+   the best near-miss in the file.
+
+4. **GREP THE SUBURBS YOU WRITE, NOT THE ONES YOU CONSIDERED — a new mechanism, mine, 22 Nov
+   2026.** I ran a coverage grep across 22 Melbourne suburbs, chose the outer rings from the
+   result, and then wrote a brief listing **thirteen** suburbs, adding Williamstown and Yarraville
+   to round out the west. Neither of the two additions had ever been grepped, and both are covered:
+   `near-misses.md:23986` says the 17 Nov inner-west sweep took "Footscray, **Yarraville,
+   Williamstown**, Altona", and Williamstown already holds rows 304, 312, 1305 and 1337. The
+   coverage check was sound and the brief was written from a longer list than the check covered.
+   **A coverage measurement is about the names in it and no others.** Cost zero fetches only
+   because the worker grepped per name, which is the backstop below.
+
+5. **Three more collisions measured in one market, all three of which would have read as COVERED.**
+   The `WA`/Washington collision generalises further than the state codes:
+
+   | Grepped | What the hits actually were |
+   |---|---|
+   | Sunshine (Melbourne west) | all 34 near-miss and 21 pipeline hits are **Sunshine Coast, QLD** |
+   | Ringwood (Melbourne east) | all hits are **Ringwood, Dorset** |
+   | Croydon (Melbourne east) | all hits are **Croydon, London** |
+
+   This is the mirror image of limitation 6 below: there, zero hits hid a swept market; here, dozens of
+   hits hid an unswept one. **A grep count is not a coverage measurement in either direction** —
+   only reading what the hits are about is. The same backstop caught Skinlab Injectables (Oklahoma
+   City), a Lume/Bendigo same-state collision, Dr Saber and Victorian Laser for zero fetches.
+
+6. **A market swept INSIDE a multi-market pass is invisible to it, and this one cost a whole market
    choice on 22 Nov 2026.** My own 19 Nov standing list named Darwin as the best remaining
    Australian ground, on the evidence *"23 mentions, 0 pipeline rows, never a dedicated sweep"*.
    The heading grep agrees: **no heading in 28,000 lines names Darwin.** Both readings are wrong.
@@ -2129,6 +2220,300 @@ The honest restatement: *Adelaide's coastal west holds perhaps a dozen independe
 businesses, almost none of which publishes an email, and two of which clear must-have 1.* **That is
 the third reason a town reads thin — live clinics publishing no address — and it wants a DM list, not
 a re-sweep.** Before writing "this market is empty", name the instrument that could not see it.
+
+## Melbourne's outer rings, 22 Nov 2026 — and the single most important address finding yet
+
+### AN "ABSENT ADDRESS" VERDICT IS A CLAIM ABOUT THE SITES YOU READ, NOT JUST THE PAGES
+
+Ten times this file has recorded that an absent verdict is a claim about the PAGES you read. Tonight
+it crossed a boundary nobody had noticed: **`near-misses.md:7471` records Vera-Rose Aesthetics
+(Mornington) as "Email status: none published". The address IS published** — plain visible text with
+a matching `mailto:` — **on her HOST CLINIC's page**,
+`https://www.skinpeninsula.com.au/services/cosmetic-registered-nurse/`.
+
+**No page of her own site would ever have found it.** Every prior firing of the page-coverage rule
+was "which pages of *this* site did you read"; this one is "which *sites*".
+
+**THE NEW CHECK, and it is one fetch and entirely predictable from the words on the page: when a
+clinic says it is "located within" or "inside" a host business, read the HOST's page for that
+service before recording must-have 5 as absent.** It paid twice in one fetch here — it also settled
+must-have 3 against SKIN Peninsula as the fourth inverted-tenancy species, because the host
+publishes the address while the room-renter is the injector, so the host owns no injectables list.
+
+Note what the worker then did NOT do, and was right not to: **it did not pipeline Vera-Rose**,
+because must-have 6 wants the address read off the clinic's OWN site and this is her landlord's. The
+exact string, URL and date are in the write-up for Jess to decide. **Finding an address is not the
+same as the address qualifying.**
+
+### Fresha: the brief named the WRONG SLUG, and one argument turns names into domains
+
+Two corrections, both measured, and together they produced 12 of one worker's 15 rows.
+
+**1. Use `tt/anti-wrinkle-injections`, not `bt/aesthetics`.** Measured in one run in one city:
+
+| Slug | Result |
+|---|---|
+| `bt/aesthetics` / mount-eliza | 21 listings, 4 in-segment — **81% noise** |
+| `tt/anti-wrinkle-injections` / cranbourne | 7 / 5 |
+| `tt/anti-wrinkle-injections` / narre-warren | 13 / 11 |
+| `tt/anti-wrinkle-injections` / frankston | 9 / 7 — **15-29% noise** |
+
+`tt/` filters by TREATMENT; `bt/aesthetics` filters by BUSINESS TYPE, and in Australia "aesthetics"
+as a business type includes lash bars and myotherapists. **This is the standing Australian noise rule
+— the query has to name the thing only a med spa sells — holding for DIRECTORY SLUGS and not just
+for queries.** The other worker measured `bt/aesthetics` at about a third noise the same night, so
+the business-type path is also suburb-dependent; the treatment path was never worse than 29%.
+
+The slug set is **incomplete**: mornington, dandenong and pakenham return `client_error`. That is
+**free information about Fresha's penetration of a suburb, not a fetch failure.** Centroid behaviour
+is stronger than previously stated — the narre-warren slug returned 10 of 13 listings in Berwick.
+And contra the earlier warning, **the Mornington Peninsula resolved fine wherever a slug existed.**
+
+**2. Searching a Fresha-listed business NAME for its domain is dead — unless you block the
+directories.** It went 0 for 2, with 18 of 20 slots returning more Fresha and whatclinic pages,
+because the index knows these businesses only through their booking tenant. **The fix is one
+argument: put the directory domains in `blocked_domains` on that query.** Every name then resolved.
+
+**3. Roughly half of Fresha-listed businesses have no website at all.** 12 of 23 resolved to an own
+domain; 11 had only Facebook, Nextdoor or a bare `gettimely.com` subdomain. Must-have 5 cannot be
+satisfied for those by any amount of fetching — **they are DM candidates, and this is now the
+largest single source feeding that list.**
+
+### Spend the privacy-policy fetch FIRST on an Australian row — it answers two screens
+
+Must-have 5 held up (11 of 14 in-segment sites published a mailbox, **79%**, against 45% in
+Newcastle and 64% in the Illawarra) **but the homepage carried it only 8 of 11.** Twice the address
+was on the PRIVACY POLICY and nowhere else, including the only clinic in Hastings — which would have
+been a wrong must-have 5 park. The policy page is already where the must-have 2 billing screen is
+looked for first. **So one fetch answers both screens, and it should be the first fetch on an
+Australian row rather than a fallback.**
+
+### Query shapes: four more Australian measurements
+
+- **"Injectables" no longer beats the dentists in the outer ring.** The 18 Nov note put the dental
+  leak at about one slot in ten. One northern query returned **four dental practices in ten slots**
+  (evercaredental, newagedental, lotussmilesdental, brentforddental), each with a "facial
+  injectables" page. The word did not fail — **the market moved under it**: outer-ring dental
+  practices have bolted injectables onto dental sites in a way inner-ring ones had not when the rule
+  was written six days earlier. Budget four in ten outside the ring road.
+- **Do NOT spell out the state name in Victoria.** The standing remedy for a town that loses its own
+  query is "add the postcode, or add the state". The second half is wrong here:
+  `Sunbury 3429 Victoria cosmetic injectables` returned Sunbury-on-Thames three times and
+  **Victoria, British Columbia** — zero in-market clinics *with the postcode already present*. The
+  state name undid what the postcode fixed. **"VIC" is safe; "Victoria" spelled out is the thin-town
+  problem firing on the disambiguator itself.**
+- **"nurse" + a postcode is a RECRUITMENT query.** Town + postcode + "cosmetic injectables" +
+  "nurse" gave **6 of 10 slots to seek.com.au** in the west, plus jora and indeed elsewhere.
+  Postcodes make it worse, because that is how Seek builds its URLs. **The Australian noise list is
+  now four words, not two: add seek.com.au, jora, indeed to the block list whenever "nurse" is in
+  the query.**
+- **A suburb whose name is a consumer BRAND is a new species of the thin-town problem, and no
+  postcode fixes it.** "Somerville" returned **Kate Somerville Skin Clinic**. Relatedly, Hastings
+  lost its own query to Hastings, East Sussex — which is a British *town*, not a county, so the
+  existing "county or cathedral town" heuristic is too narrow.
+
+### Collisions, and the one that was dangerous
+
+Five same-name collisions, every one caught by a per-name grep for zero fetches and every one
+settled by the postal address or the state, never by the name: Lift Aesthetics (vs row 613
+Wellington NZ and row 672 Winnipeg), DRV Skin (vs row 118 Edinburgh), La Pelle (vs La Pelle NZ),
+Skinhaven (vs Skinhaven Whitsundays QLD) — **and the dangerous one: Clarity Cosmetic, Mornington VIC
+against row 1330 Clarity Cosmetic Laser Clinic, Bundall QLD. Same country, two states.** Hastings
+was predicted and fired; Clarity was not predicted and is the one that would have suppressed real
+work. Sixth instance of the standing rule: **a prediction is a warning, never a filter.**
+
+### Towns closed, and a fourth kind of thin
+
+- **Dandenong is CLOSED, not thin, and it is the fourth kind**: real, readable businesses selling the
+  wrong thing. Two searches, zero own-domain aesthetics clinics; the ranking set is dentists, GP
+  superclinics, a vet and two clinics we already hold ranking on catchment pages. **The aesthetics
+  layer sits one ring out, in Berwick and Narre Warren.** Do not re-sweep it.
+- **Craigieburn closed** — its aesthetics layer is home studios on residential streets, so no strip
+  exists to sweep. **Sunshine, Keilor, Taylors Lakes, Caroline Springs and Point Cook closed** at one
+  usable name each.
+- **Lilydale is UNRESOLVED, not closed** — its one own-domain injectables business was defeated by a
+  retryable fetch error.
+
+### Block-list additions, 22 Nov 2026
+
+`melbournebeautymap.com` heads the list and is the clearest directory farm recorded: its per-clinic
+pages print **no website, no street address and no owner**, just "Contact clinic directly" with no
+contact details. Also `cosmeticsurgeryclinics.com.au` (ranks for "111 AHPRA-Listed Clinics" and
+prints zero names), `melb.guide`, `baysidelocal.net.au`, `victoriancosmetic.com.au` (the biggest
+Berwick crowder), `cosmetictattoosbyrach.com.au`, and `seek.com.au`, `jora`, `indeed` whenever
+"nurse" appears in the query.
+
+### Exomide, reconfirmed — and the species does NOT generalise
+
+The Exomide locator paid again: **19 clinics across 11 of 24 suburbs in one fetch**, reaching Hoppers
+Crossing, Taylors Lakes and Caroline Springs, which no query could reach. But **10 of the 19 fail a
+must-have** (9 chains, 1 GP), so it is a name source and not a qualified list. And the manufacturer-
+locator *species* does not generalise: `ultraceuticals.com.au/pages/locations` is a client-side JS
+locator shipping no data in its HTML. **Expect about half of manufacturer locators to be unfetchable.**
+
+## Sydney's outer rings, 22 Nov 2026
+
+### THE POSTCODE DISAMBIGUATOR FAILED — the first failure of it recorded in this file
+
+This file says a postcode is the remedy for a town that loses its own query, and that it is one
+**"no amount of foreign link equity can outrank"**. Measured tonight:
+`Liverpool NSW 2170 cosmetic injectables clinic registered nurse founder` returned **Liverpool,
+Merseyside in four of ten slots — including our own pipeline row 429, `theaestheticstable.co.uk`.**
+A second query adding three neighbouring suburbs still pulled a UK job ad plus the Liverpool UK
+near-miss `skinappealclinic.net`.
+
+**Merseyside outranked the postcode.** The remedy is not universal: it holds against a small foreign
+town and loses to a large foreign city with decades of link equity on the bare name. **Do not search
+Sydney's Liverpool by name at all** — the Fresha suburb index is what opened that market, and it
+needs no query.
+
+### Fresha is the worst crowder-out AND the best fetch target in Sydney at the same time
+
+- It took **13 of 20 result slots** across four suburb queries in the south-west, **ten of ten on
+  Fairfield**, and **5 of 10 on Blacktown** in the western ring — the suburb where search failed
+  hardest in each case.
+- It is also where **six of twelve rows** in one ring traced from. Four suburb-index fetches
+  returned **62 Fairfield, 52 Hurstville, 63 Liverpool and 32 Campbelltown businesses with full
+  street addresses.**
+
+**Block it in every query; fetch it on purpose.** And the in-segment share varies enormously by
+town, so the index is itself a measurement of the ring: 9 of 62 Fairfield, ~12 of 52 Hurstville,
+**3 of 32 Campbelltown.**
+
+**The `tt/anti-wrinkle-injections` slug was found independently by three of four workers tonight**,
+in two cities, one of which never spent the fetch and recommended it anyway. That is as strong as
+evidence for a technique gets in this file.
+
+### The briefed suburb is the wrong unit in Sydney's west, and the ring splits in two
+
+Only **4 of 14 rows** came from a briefed suburb. Castle Hill, Baulkham Hills, Kellyville and Rouse
+Hill produced **no own-domain row at all**. What the ring actually contains is two different
+settlement patterns:
+
+- **The Hills and Norwest half is a BUSINESS PARK, not a high street.** All three Bella Vista rows
+  are in Norwest office suites — 24 Lexington Drive, 8 Century Circuit, the Bond Building — and two
+  of them are in the same building as each other. **This is the first market where "an Australian
+  high-street medical address is a GP practice" does not bite, because the aesthetics layer is not
+  on a high street at all.**
+- **The western half (Penrith, Blacktown, Parramatta) is where the email is**, and its unit is the
+  **retail arcade** — Elizabeth Arcade Penrith, Star Arcade St Marys — **which no main-street query
+  finds.**
+
+And one ring further out: **in an Australian greenfield growth corridor the unit is the NEW town
+centre.** Campbelltown is genuinely thin (3 aesthetics businesses in a 32-business Fresha index) and
+the Macarthur seam sits 8km away in the **Gregory Hills / Gledswood Hills / Narellan / Camden**
+corridor, where four rows and existing row 803 all are. This is the "sweep the strips, not the
+suburbs" finding in greenfield clothing.
+
+### "Injectables" does not displace the dentists in EITHER outer ring — two cities, same night
+
+The Melbourne measurement above (four dental practices in ten slots) reproduced independently in
+outer south-western Sydney: an Ingleburn/Minto/Glenfield/Macquarie Fields query lost its **top five
+slots** to cosmetic-dentistry suburb pages despite using "injectables". The worker's diagnosis is
+sharper than mine: **the suburb token outranks the modifier out there, so the modifier cannot save
+you.** Two independent reproductions in one night, in two metros, makes this a property of outer
+rings rather than of one market.
+
+### The bot-check interstitial: three sightings, and together they pin it down
+
+All four workers met the mode the section above records as the tenth. Taking the three reports
+together:
+
+- It returns **200 with real HTML**, so every structural test passes.
+- **It is PER-REQUEST, not per-site.** BioCell's `/contact/` fetched perfectly and
+  `/privacy-policy-biocell` on the same domain returned the interstitial minutes later.
+- **A browser probably DOES fix it**, unlike the ninth mode. So a clinic lost to it belongs on the
+  browser-visit list, not in the unreachable pile.
+- The test remains: **does the body mention the business?**
+
+### Cloudflare: the third upward revision in a week, and the direction has been consistent every time
+
+One ring measured **2 in 21, and both tokens were on HOMEPAGES** rather than contact pages; another
+measured 1 in 32. Tonight's combined rate is about **3 in 53 (5.7%)** against the file's standing
+estimate of 2 in 75 (2.7%). n is small each time and the direction has not once gone the other way.
+
+**Every decode was declined and the helper volunteered none in any of the four runs** — it printed
+the `/cdn-cgi/l/email-protection` href and stopped. Two new clinics for the browser-visit list:
+**Artistic Aesthetics, Monterey NSW** (Rachel McDowall RN, named founder, one site, clean must-have
+2) and **Lilly Cosmetic, Penrith** and **Dr Furella, Parramatta**.
+
+### Query shapes, with denominators
+
+- Suburb + postcode + "cosmetic injectables" + "nurse": **4 of 5.**
+- Four town names + owner/founder: **1 of 3**, taking its standing scoreboard to **6 of 12 — and
+  the failures are now in two metros, not one, so the earlier "all four failures were Melbourne"
+  claim does not survive.**
+- **Dead: quoting `"established in 20"` or `"since 20"` — 0 of 2.** It is the dead "our story" shape
+  in a new costume.
+- **The ABR move is 8 for 8.** Define by Jill's footer ABN returned DEFINEBYJILL PTY LTD, active
+  from 10 Jul 2017, which carried the row to grade A.
+
+### A fourth-species locator that works, and its ceiling
+
+`sqtaustralia.com.au/certified-clinics` returns **100+ NSW clinic names with suburbs and phones in
+one fetch**, about 30 inside one ring. But **it prints ONE domain for the whole list**, so it
+converts fetch budget into search budget at 1:1 — worse than Fresha, which at least prints street
+addresses. And the Exomide caution held exactly: of the two SQT names reached, **both fail or nearly
+fail must-have 1**, because a microneedling certification does not filter business type. Also dead:
+`inmode.com.au/pages/find-a-provider`, a JS locator returning only InMode's own head office.
+
+### Block-list additions: a new species, the SHOPPING-CENTRE TENANT DIRECTORY
+
+`westfield.com.au`, `westpoint.com.au`, `rhtc.com.au`. Western Sydney retail organises around three
+malls, so the centre's store directory ranks for every suburb query — **and it lists only chains
+that can afford a mall tenancy, which makes it the anti-`toorakvillage.com.au`: a precinct directory
+with none of our segment in it.** The precinct-directory technique therefore has a precondition:
+the precinct must be one independents can afford.
+
+Also new: `whereis.com` (4 of 10 slots on one query), seven more AU directory farms, and the job
+boards — **`seek.com.au`, `indeed`, `jora`, `talent.com`, which three of four workers independently
+found taking 4 to 6 of 10 slots whenever "nurse" was in the query.** Pair "nurse" with a suburb AND
+a postcode, never with "injector" alone.
+
+### Three corrections to this file's own records, all found free
+
+1. **`near-misses.md:28051` credits Priscille Vrljic with publishing her own `info@` address. She
+   does not** — that address was read on `myhealthcollective.co`, **the host's site.** Three pages
+   of her own site publish no email of any kind. See the paired finding in the Melbourne section
+   above; the two together are the real lesson.
+2. **`near-misses.md:3828` lists Lilly Cosmetic under "no website at all, only a Timely booking
+   subdomain… can never satisfy must-have 5 because there is no page for anyone to open."** There is
+   a substantial site at `lillycosmetic.com.au`.
+3. **18 Oct's "Skin Social — Sydney, suburb not stated, robots-disallowed" is 33 Lexington Drive,
+   Bella Vista NSW 2153, formerly trading as Face Mediskin.** Still robots-disallowed, but it now
+   has an address.
+
+### The seven "unscreened" Sydney names from 18 October are now four
+
+Resolved free by grep, two of them by two workers independently: **MD Cosmedical Solutions is
+DISQUALIFIED** (three sites, surgical menu, varicose-vein sclerotherapy), **DrCosmetist is pipeline
+row 1251**, **Ozderm is DISQUALIFIED** (a self-described General Practice). Only Bespoke Cosmetics
+Institute, The Beauty Collective, Beauty and Laser Clinic and Face to Face by Marjan remain — **and
+none of the four has a suburb recorded anywhere, and none surfaced in 17 queries.** They are
+probably not findable by search; stop carrying them as a to-do and let them go unless a directory
+index turns one up.
+
+### Collisions: the predicted ones stayed silent and the unpredicted ones cost the fetches
+
+Predicted and silent: Castle Hill QLD, Bella Vista CA. **Fired unpredicted: Kings Langley NSW →
+Kings Langley, Hertfordshire** (cost one fetch, and CHEEK Medispa is written up as a free UK row
+with its email and source URL) and **Box Hill NSW → Box Hill VIC**, the inside-Australia direction.
+A predicted collision that a previous run recorded as *silent* then fired: the 15 Nov worker
+predicted Burwood NSW against Burwood VIC and wrote down that it stayed quiet; tonight
+`skinandlight.net` (Mt Waverley and Box Hill South VIC) ranked on a Burwood/Strathfield query with
+a page titled entirely around "Cosmetic Injectables Burwood", and looks like a grade-B Melbourne row
+(132 Google reviews at 4.9, published mailbox, two addresses).
+
+**And one collision is inside our own file: pipeline row 826 matches a whole-row grep for "Bella
+Vista" and is in ARKANSAS.** Seventh instance of the standing rule, now overwhelming: **a prediction
+is a warning, never a filter.**
+
+### A procedural note that has now cost two appends: QUESTION RESOLVED IS A LITERAL STRING
+
+The validator suppresses a deferral flag on `QUESTION RESOLVED` or `QUESTION WITHDRAWN` and on
+nothing else. On 19 Nov a resolution written without the literal marker was rejected a second time;
+tonight I wrote "QUESTION REFRAMED" and the row was rejected again. **It is a marker, not a
+description of what you did.** Write the words.
 
 ## Query shapes: three more measurements. 19 Nov 2026
 
