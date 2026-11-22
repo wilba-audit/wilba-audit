@@ -2213,6 +2213,51 @@ was written: the mole screening-versus-removal split, the therapeutic-indication
 inverted-tenancy species, and the must-have 4 ladder itself. **Each of those narrowings has a
 cohort of rows parked under its predecessor, and none of them has been swept.**
 
+### The mole sweep came back almost clean — and the difference between the two rules is the useful part
+
+Having written that procedure, I ran it again on the next narrowing: the 5 Nov mole split
+(screening fails, cosmetic removal passes). Fifteen parked rows name moles or lesions in their
+must-have 2 reason. **Thirteen were decided correctly**, and two had already been re-decided on
+8 Nov. Only one row had been missed:
+
+**Row 762, Evolve Skin Clinic, Bolton.** Every item in its parking reason now passes — Lynton
+thread and leg vein laser work is the cosmetic case, "ABR covers MOLE REMOVAL" is removal and not
+screening, and the co-located CQC-registered minor skin surgery service is not a must-have 2
+question at all, because benign lesion removal is cosmetic and the CQC is a regulator rather than
+an insurer. Its must-have 4 is published three times over: **"Est.1999"**, "Established for over
+30 years", "30+ years' experience". It stays C on must-have 8 — and only because a Bolton
+Companies House search returned 77 results of which 20 were readable, so it is a **pagination gap,
+not an absence.**
+
+**So one rule propagated and the other did not, and the reason is worth knowing.** The mole rule
+drew a DISTINCTION — screening versus removal — and a distinction is self-applying: a worker
+reading "Mole Check" can tell which side it falls on. The vein rule REVERSED A PROHIBITION the
+briefs still quoted verbatim ("the brief names vein work outright as a cash-pay fail"), and a
+worker holding that sentence has no way to know it has been withdrawn.
+
+**A rule that refines a prohibition reaches the rows. A rule that withdraws one does not.** When
+the standard withdraws a prohibition, the old sentence has to be hunted down in the brief AND the
+parked rows swept the same day — the narrowing's own text already said as much ("applying the old
+rule as written cost three UK clinics in a single sweep") and then it happened six more times in
+the hours after it was written.
+
+### Four UK rows are blocked on one Companies House call each
+
+A by-product of both sweeps, and the cheapest concrete work in the file. Every one of these has
+must-have 4 satisfied and sits at C on must-have 8 alone:
+
+- **983 NJH Aesthetics**, Bracebridge Heath, Lincoln — "Established by Nikkita Hancock in 2019",
+  owner-injector named, three-tier membership club.
+- **762 Evolve Skin Clinic**, Bolton — "Est.1999"; the register search was a pagination gap, so
+  try Bolton pages 2 to 4.
+- **982 Sci-U Clinic** — no register call was ever spent on it.
+- **Harrogate Aesthetics** (in `near-misses.md`, not yet a row) — company number **06184603** is
+  already known, so this one is a lookup rather than a search.
+
+That is four rows for roughly four fetches, against a sourcing run that spends forty-five per
+market. **It has been item 3 on the standing list for four nights as "Harrogate, cheapest on the
+list" and never done, because one row was never worth a worker. Four is.**
+
 ### When NOT to suppress a flag — I was one edit from getting this wrong
 
 Having added a suppressor for the ladder check, I went looking for the next audit line printing a
