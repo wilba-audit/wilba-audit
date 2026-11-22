@@ -2169,6 +2169,50 @@ fifty characters either side.** Reading 88 short spans took one pass and resolve
 the 22 the spans could not settle were read in full. A sweep that reports *which rows to read* is
 sound. The same sweep reporting *what the rows say* is not.
 
+### A rule change does not reach the rows already decided under the old rule. 22 Nov 2026
+
+**This is a new failure class, separate from the scoping one, and it cost eight rows for eighteen
+days.** Looking for parked rows whose reason no longer matches the standard, I searched the 418 C
+rows for a parking reason of must-have 2 with vein language beside it. Fifteen came back. Eight of
+them were parked against a version of the vein rule that no longer exists:
+
+- **Six were parked on 4 November** — rows 949, 952, 953, 955, 982, 983 — **the same day the vein
+  rule was narrowed.** Every one of them says some version of *"the brief names vein work outright
+  as a cash-pay fail"*, which is the pre-4-Nov wording. The narrowing was written and the workers
+  already running kept the old brief.
+- **Two were parked on 22 October** (625, 656), three weeks before the 10 Nov appearance/disease
+  split existed.
+
+**Row 949 is the one that stings.** Its own notes say: *"If the standard ever widens on cosmetic
+sclerotherapy, this is the first row in this batch to revisit, because everything else about it is a
+B or better."* The standard changed that day in exactly the direction the row anticipated. The row
+left a forwarding address and nobody came. It is now **B and sendable** — Ontario, two sites, a
+monthly-billed Skin Membership, gift cards and a complimentary first-consult.
+
+**Row 983 is the bigger prize and is not released yet.** It reasoned *"sclerotherapy is the firm
+form of the fail, so a relaxed IPL-only vein rule would not rescue this row"* — but the 4 Nov rule
+is not IPL-only; it names **ThermaVein** explicitly, which is this clinic's own wording
+(*"ThermaVein thread vein removal"*). With must-have 4 satisfied at the **top** rung (*"Established
+by Nikkita Hancock in 2019"*), the owner-injector named and a three-tier membership club, it now
+sits at C on must-have 8 alone — unresolved for want of **one Companies House call**. Pair it with
+the Harrogate Aesthetics lookup, which is the same single call.
+
+The other five move from *failed* to **unresolved**, which is the difference between a dead row and
+a row one fetch from alive.
+
+**Why neither existing check could catch this.** The audit asks whether a row's reason is
+*well-formed* — is a must-have named, with its digit adjacent — never whether the reason is *still
+true*. A parked row is, by construction, the part of the file nobody reads again. So the standard
+drifts forward and 418 C rows stay frozen at the moment each was written.
+
+**THE PROCEDURE, AND IT IS CHEAP: WHEN A RULE CHANGES, GREP THE PARKED ROWS FOR THE OLD RULE'S
+VOCABULARY BEFORE DOING ANYTHING ELSE.** The whole of tonight's recovery was one query — parking
+reason plus a keyword, with the matched span printed, which is the same two-line method that saved
+the ladder pass. The same sweep is now owed to every other rule that has moved since a parked row
+was written: the mole screening-versus-removal split, the therapeutic-indication threshold, the
+inverted-tenancy species, and the must-have 4 ladder itself. **Each of those narrowings has a
+cohort of rows parked under its predecessor, and none of them has been swept.**
+
 ### When NOT to suppress a flag — I was one edit from getting this wrong
 
 Having added a suppressor for the ladder check, I went looking for the next audit line printing a
