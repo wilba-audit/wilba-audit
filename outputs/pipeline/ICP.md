@@ -2251,6 +2251,33 @@ parked rows swept the same day — the narrowing's own text already said as much
 rule as written cost three UK clinics in a single sweep") and then it happened six more times in
 the hours after it was written.
 
+### The tenancy sweep, fourth and last: it propagated best of all
+
+43 sendable rows describe a host tenancy. Reading the span on each, the discriminator added on
+11 Nov — **whose tenant holds the diary** — has been applied almost everywhere, and usually in the
+row's own words: *"booking runs on her OWN subdomain, not a host's tenant, so she owns the list"*,
+*"each holds its own diary"*, *"it is NOT the inverted Aluma tenancy"*. This is what a propagated
+rule looks like, and it is the one rule of the four that was written as a **question** rather than
+as a prohibition or a distinction. A question travels because a worker has to answer it to finish
+the row.
+
+One row looked like the fourth species and is not. **1384 Aesthetics Geelong** describes itself as
+the host of two other brands at Shop 2/111 Pakington Street, which is the shape of row 1353's
+inverted case — except the host runs **four Div 1 RNs with published AHPRA numbers**, its own gift
+vouchers and its own shop. **A host with its own four injectors is a clinic, not a landlord.** The
+fourth species needs the host to have no injector of its own.
+
+Two rows had left the diary question open rather than answered (309 Loving Glow, inside Devine
+Aesthetics; 617 Juve, with an "in-salon cosmetic nurse"). Both are now decided the way everything
+else was decided tonight: the question is one only the clinic can answer, so it is the sanctioned
+first-call discovery question with the withdrawal condition stated, not a hold.
+
+**Scoreboard on the four sweeps my own procedure named.** The withdrawal (vein) did not propagate
+and cost eight rows. The distinction (mole) propagated, missing one. The threshold (indication)
+propagated completely. The question (tenancy) propagated best. **Write a rule change as a question
+if you can, as a distinction if you cannot, and never leave it as a withdrawal without going to
+find the old sentence yourself.**
+
 ### Four UK rows are blocked on one Companies House call each
 
 A by-product of both sweeps, and the cheapest concrete work in the file. Every one of these has
