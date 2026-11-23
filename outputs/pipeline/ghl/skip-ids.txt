@@ -96,3 +96,4 @@
 149  # Aesthetica MD Med Spa: on sourcing DO-NOT-SEND.txt 12 Nov (pipeline id 149)
 358  # 22 Nov sourcing: parked, no trading-age evidence
 732  # 22 Nov sourcing: parked, no trading-age evidence
+588  # 23 Nov sourcing: notes say hold (unverified since 3 Nov or sender caution); re-fetch before any send
