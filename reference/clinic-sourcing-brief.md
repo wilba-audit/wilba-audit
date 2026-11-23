@@ -2579,6 +2579,212 @@ form unless the wired form is the implausible one.** Stated as a procedure:
 **New placeholder for the look-alike list, found tonight:** `filler@godaddy.com` on
 `surfcoastci.com.au` — a GoDaddy builder default, correctly rejected by its worker.
 
+## The duplicate-check grep: grep the DOMAIN, and collapse whitespace in the name. 23 Nov 2026
+
+The directory-index worker grepped every name it found against both `near-misses.md` and
+`clinic-pipeline.csv` before spending a fetch, and reported 11 of 11 fetched names as new. The row
+validator then rejected one as a duplicate: **`luxelips.com.au` is already pipeline row 301.**
+
+The mechanism is worth knowing exactly, because it will recur. The directory listed the business as
+**"Luxe Lips"**. Row 301 records it as **"LuxeLips"**, one word. **A grep for "Luxe Lips" does not
+match "LuxeLips".** The worker's procedure was right and its execution was right; the string was not.
+
+So the duplicate check has two legs, and the name is the weaker one:
+
+1. **Grep the DOMAIN first**, as soon as a search resolves one. A domain is a single canonical
+   string and it is what the validator itself checks. This is the leg that would have saved the fetch.
+2. **When grepping a name, collapse whitespace and try both forms** — `grep -i "luxe *lips"`, or
+   grep the distinctive half of the name alone. Trading names get spaced, hyphenated and camel-cased
+   differently by the business, by directories, and by whoever wrote our row.
+
+Row 301 also shows why this matters beyond a wasted fetch: it already records **three sites**
+(Brighton, Camberwell, Moonee Ponds). The index found the Camberwell one and read it as a new
+single-site clinic. A duplicate row would not merely have been redundant — it would have recorded a
+three-site business as a one-site business, which is a must-have 3 answer in the wrong direction.
+
+## A third-party listing does not overturn a row's own fetched evidence. 23 Nov 2026
+
+The same worker reported that **two existing rows have understated site counts**, because Cosmetic
+Nurse Co. and VC Dermal both appear in the Camberwell index while our records hold them at Newport
+and Berwick. Checked, and it resolves into two different things, neither of them a re-grade:
+
+- **VC Dermal is not a pipeline row at all.** It appears three times in `near-misses.md`, from the
+  22 Nov Melbourne south-east DM list. There is nothing to understate.
+- **Cosmetic Nurse Co. is row 1300**, and the row's own evidence is stronger than the listing's.
+  Its About page was read directly and says the clinic operates **"from one clinic"** in Newport,
+  with a single Timely tenant (`cosmeticnurseco1`) and therefore a single lapsed list — which is the
+  whole point of must-have 3.
+
+**A directory listing and a clinic's own About page are not equal evidence.** A listing can be stale,
+can be a room the practitioner rents one day a week, or can be a suburb centroid rather than an
+address. So a listing that disagrees with a fetched page is **a question worth one fetch**, recorded
+as such, and never a correction applied on the listing's authority. Row 1300 keeps its grade and
+gains the question.
+
+This is the third time in two nights that the rule has paid: **read the row's history before the
+row's facts.** It stopped a verified must-have 3 ruling being overridden on row 78, it stopped a
+grade A being awarded on row 1425, and here it stopped a single-site finding being overturned by a
+directory.
+
+
+## The coverage index failed me four ways in one brief, and the mechanism is grep's own output. 23 Nov 2026
+
+I briefed a worker that Perth's hills, south-east and south-coast rings had never been swept in their
+own right, and that **Tasmania had never had a sweep of its own** — only a touch inside the 18 Oct
+multi-market pass. The worker checked before spending, and came back with four corrections. I have
+verified all four against the cited lines; **it is right and I was wrong.**
+
+1. **Perth's south-east and hills corridors were swept on 2 Nov 2026** as an explicitly briefed
+   market — `near-misses.md:7414`: *"Perth's northern and south-eastern corridors (Wanneroo, Canning
+   Vale, Ellenbrook, Midland's surrounds, Armadale)"*. Five clinics opened, all five ruled out.
+2. **Mandurah and Launceston were both swept on 21 Oct 2026** (`near-misses.md:2661`).
+3. **Devonport and Burnie were swept too** (`near-misses.md:3666`) — Burnie a dry hole, Devonport
+   unresolved.
+4. **Hobart has had two passes**, 18 Oct plus a dedicated 9-10 Nov named-lead run, and **Tasmania
+   already holds 7 pipeline rows** (135, 373-376, 502, 596).
+
+### The mechanism, which is the part worth keeping, and it is not carelessness
+
+I ran `grep -nE "Markets swept"` as the index, exactly as this brief instructs, before writing a
+line. Two of the four missed markets were **in my grep output and I could not see them**, because:
+
+**`grep -n "Markets swept"` prints only the FIRST LINE of a multi-line swept list.** Those lists wrap.
+My output held `2661: Markets swept: Toowoomba, Cairns, Townsville, Darwin, the Sunshine Coast
+outside` — and **Launceston is on the next line**. It held `3664: **Markets swept:** Rockhampton (and
+Yeppoon), Mackay, Bundaberg and Hervey Bay QLD; Shepparton,` — and **Devonport and Burnie are two
+lines further down**. The places were in the file, under the right heading, and grep cut them off.
+
+The other two were invisible for a different reason: **`near-misses.md:7414` names its markets under
+`Assigned:`, not `Markets swept:`.** A heading-based index cannot see a market recorded under a
+different noun.
+
+### So the coverage check has three legs now, and the first one alone is not enough
+
+1. **`grep -A4 -nE "Markets swept|^Assigned:|^\*\*Assigned"`** — the `-A4` is not optional and
+   neither is the second alternative. Without the context lines the index silently under-reports;
+   without `Assigned:` it misses whole briefed runs.
+2. **Grep the specific place name**, every time, for every place you are about to write into a brief.
+   This is the only leg that is robust to how the sweep was filed, and it is cheap.
+3. **Read the hit in context before believing it**, because a mention is not coverage and zero rows
+   can be the *result* of a sweep rather than the absence of one (Darwin, twice).
+
+### And the worker's sharpening of limitation 6, which is better than my version
+
+I had recorded limitation 6 as *"a market swept inside a multi-market pass is invisible to the next
+coverage check."* The worker's correction: **it is not the multi-market pass that hides a market, it
+is the LENGTH of the line.** *"A line naming four places is an index; a line naming fourteen is a
+paragraph."* The 21 Oct line names ten places across four states; the 22 Oct line names seventeen.
+A reader scanning for the metro they care about does not parse those as lists.
+
+**The remedy is at writing time, not reading time: keep a `Markets swept:` line to the places one
+worker actually worked, and give a multi-market run one line per market.** Tonight's four write-ups
+are filed that way.
+
+### The ground was not exhausted anyway, which is the other half of the lesson
+
+Despite four prior passes, the worker found **8 rows including 2 grade A** in the genuinely unswept
+layer — Joondalup's satellites (Currambine, Beldon, Burns Beach), Guildford, Mindarie, Baldivis, and
+**Hobart's and Launceston's NON-CBD layer** (Bellerive, Rosny Park, Moonah, Sandy Bay, South
+Launceston). Sharkra Medi Spa in Hobart is a grade A with 22 register-verified years that **four
+earlier passes and every search had missed.**
+
+So a market having been swept is not the same as a market being finished, and the suburb layer below
+the CBD is where the misses live. But both of this run's Tasmanian cities should now close: Hobart's
+consumer listicle names twelve businesses of which **exactly one** offers injectables, and Fresha's
+Launceston index returns **four businesses in total**. **Perth's south-east corridor is empty rather
+than unswept** — Fresha returns `client_error` on `canning-vale`, `armadale` and `rockingham` while
+returning 14 for Joondalup and 22 for Hobart, and two searches there returned zero in-market
+businesses. Close it; do not re-sweep it.
+
+
+## Perth's outer rings and Tasmania, 23 Nov 2026 — measurements
+
+**The mailbox rate, fourth reproduction and second intra-Perth, and it now has a SHAPE rather than a
+spread.** Same city, three rings, one month: **river and coast 84% · outer rings 75% (6 of 8) ·
+Cottesloe/Claremont/Nedlands 27%.** Per ring tonight: outer north 3 of 4, hills/east 1 of 1,
+south coast 2 of 3, Hobart 1 of 3, Launceston 1 of 1.
+
+The rule was "a mailbox rate is a property of the ring, never of the city". The shape underneath it:
+**the silent ring is the affluent referral crescent, not the outer ring.** Outer-ring and small
+regional clinics are *easier* to reach, not harder — affluence and referral flow predict silence,
+and distance from the CBD does not. That inverts the intuition the briefs were carrying.
+
+**Three-rung split: top 4 / middle 4 / none 0, of 8.** No row failed for want of a rung. Applied as a
+test rather than a list, the worker **rejected a 29-item treatment menu as a rung** on every row,
+which is the middle rung being used correctly. New middle rungs observed: a State Trainer credential;
+a membership club plus a six-platform device stack; an RN director with an AHPRA-registered nursing
+*team*; and **gift cards with a balance-lookup page — a ledger rather than a product, which is a
+stronger rung than vouchers alone.** Thinnest top rung on record: a bare `© 2023`.
+
+**Which must-have bound hardest, and my brief's prediction measured false again.** The brief predicted
+must-have 4 would bind hardest in outer and regional rings. Rule-outs: **must-have 1 five, must-have 5
+three, must-have 2 one, must-have 4 one, must-have 3 zero.** Must-have 4 cost one row of eight.
+**Must-have 1 bound hardest, reproducing the 19 Nov Perth-west finding in a different ring of the same
+city**, by the same mechanism: dermal-therapist- and beauty-therapist-led businesses with no
+prescriber named. **That is the third false market prediction in five nights** — Canberra, south-west
+Sydney's cash-pay screen, and now this. The standing instruction holds and should be read as a rule:
+**brief the screens; never predict which one will bind.**
+
+**The must-have 1 discriminator went 5 for 5 with no ambiguous case: look for the PRESCRIBER, not the
+drug.** None of the eight graded clinics names an injectable product anywhere — Australian TGA
+compliance forbids it — and all eight publish a doctor, an RN, a nursing qualification or a mandated
+doctor consultation. All five must-have 1 rule-outs name no prescriber of any kind. **Searching for a
+product name is searching for what the law forbids them to print.**
+
+### Corrections to technique this run forced
+
+- **The Fresha `tt/` slug is NOT a reliable must-have 1 filter**, which is a harder correction than
+  the noise-rate one. Two businesses listed on anti-wrinkle *treatment* pages sell no injectables and
+  name no prescriber. **Treat a `tt/` listing as corroboration, never as evidence.**
+- **`tt/` noise is itself a property of the ring: 43-64% out here against the 15-29% on record.** Still
+  worth it — 57 addressed rows for 8 fetches, and 6 of the 8 accepted rows trace to it against 2 names
+  from 13 searches.
+- **The centroid is wider than recorded.** One slug reached five or six suburbs, so **one slug per
+  metro quadrant is enough**; more is duplicate reading.
+- **A Fresha slug returning `client_error` is free information**, not a failure: it came back on
+  `canning-vale`, `armadale` and `rockingham` while returning 14 rows for Joondalup. Platform
+  penetration is a market signal.
+- **New query hazard, reproduced twice in one night at exactly 5 of 10 slots: "nurse" plus an
+  Australian SUBURB is a CARE-AGENCY query** (home-care and nursing-agency sites plus government
+  health pages). This sharpens the existing finding that "nurse" plus a postcode is a recruitment
+  query. **Drop "nurse" from Australian suburb queries entirely; "injectables" is the modifier that
+  works.**
+- **The local listicle is an INNER-RING instrument, and city size is the variable.** `perthisok.com`
+  named thirteen clinics of which **exactly one** touched any briefed outer ring — and that one was
+  already ruled out. But `sitchu.com.au`'s Hobart list produced **Sharkra, the best row of the
+  night**, which four passes and every search had missed. **A listicle covers the catchment its
+  editor writes for: in a small city that is the whole city, in a big one it is the fashionable
+  quarter.**
+- **The policy fetch produced all three outcomes in one night** — clean 2, dirty 1, **absent 5 of 8
+  (63%), recorded as absent-not-clean each time.** It paid for **the mailbox twice in four fetches**
+  and produced two accepted rows that publish no email on their homepage. It paid for **the date 0 of
+  4**, exactly as the 17 Nov ruling predicts. HICAPS clean on all thirteen; the standing count is now
+  about 97 consecutive Australian clinics.
+- **ABN route 9 for 9**, and a new place to look: **Sharkra published its ABN in its PRIVACY POLICY,
+  not its footer** (1 of 13). One ABR fetch did three jobs — corroborated 22 years independently of
+  marketing copy, named the entity and sole director, and surfaced a 2006 trading name suggesting a
+  second site, which changes the copy and not the grade.
+- **A block-list correction that would have cost a row: `theskinedit.com.au` is NOT `theskinedit.au`.**
+  The latter is a resolved five-site WA disqualification; the former is one Tasmanian clinic with its
+  own owner. **Do not let a domain-stem match retire a business.**
+
+### Two traps declined, both worth naming
+
+- **Bramis** (4 WA sites, a named doctor, a 2017 state award — grade-A shape) ships Cloudflare tokens
+  on both its homepage and its contact page. The decode was declined and the row is not in the
+  pipeline.
+- **The most tempting trap of the run:** `info@bramis.com.au` appears in **plain text inside the meta
+  description only** on its contact page. Under the Dr Cosmetist precedent a meta-tag string is not a
+  publication, so it was **not recorded as the contact address** — it went into the near-misses as
+  evidence for a browser visit. **The string is almost certainly correct, which is exactly why it is
+  not a seen mailbox.** That is the rule working at its hardest point.
+
+Also recorded as printed rather than "corrected": a mailbox on a different domain from the site
+(`admin@smirkinjectables.com` against `smirkaestheticclinics.com.au`, with the page tying the two
+names together), and a gmail address on an accepted row. An ACN was published without an ABN and
+**no ABN was constructed from it.**
+
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at

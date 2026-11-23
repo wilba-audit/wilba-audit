@@ -4,26 +4,31 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 22 Nov 2026: 1,463 rows, 947 ready to approach** — US 439, **AU 302** (up from 275), CA 86,
+**As of 23 Nov 2026: 1,485 rows, 963 ready to approach** — US 439, **AU 318** (up from 302), CA 86,
 UK 82, NZ 44, IE 2. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone
-out since — because every market requires WILBA's postal address in the footer and we do not have it.
-**Sourcing has not been the constraint for four weeks.** Tonight's run appended **54 rows, six short
-of the 60-row target**, and that is the honest number. The cause is measurable: **three of the four
-workers finished with a section headed "unscreened names I ran out of budget on"** — the shortfall was
-the shared WebSearch/WebFetch budget, not thin markets and not workers stopping early. Those three
-lists are the cheapest rows available next run, because the names are already found.
+out since, because every market requires WILBA's postal address in the footer and we do not have it.
+**Sourcing has not been the constraint for four weeks**, and the 23 Nov run is the clearest proof: it
+added 22 rows against a 60-row target and was still the most valuable night in a week, because the
+value was in rows that already existed and in a defect in the sending path.
 
-**Two things are now worse than a missing market.** First, the 10 sends on 15 Oct went out through
-`scripts/wilba_ghl_sequence.py html_email` carrying **no postal address and only a "reply 'no'" line
-rather than a working unsubscribe** — confirmed with the GHL thread on 22 Nov. That sender now
-hard-stops while `sender-address.txt` is empty, so nothing more can go wrong, but the gap on the ten
-already sent is real and five weeks old. Second, the **DM list is about 55 clinics** and growing:
-on-ICP, owner-operated, no published mailbox, Instagram link-in-bio only. Neither is fixed by another
-sweep, and both need Jess.
+**THE BIGGEST THING IN THIS FILE IS NO LONGER A MARKET OR A BACKLOG. IT IS THAT THE DRAFTING PATH WAS
+HIDING ITS OWN WARNINGS.** `wilba_outreach.py batch` — the output whoever writes the emails reads —
+never printed `notes`, which is where every caveat lands. **29 sendable rows carry a caution written
+specifically for whoever sends**, four of them grade A and therefore at the front of the oldest-first
+queue; 15 say `COULD NOT BE RE-VERIFIED 3 Nov 2026` with an explicit hold recommendation. Fixed
+23 Nov, and the sending thread confirmed **one row (588) was staged to send and is now held**.
 
-**The grade-B ladder backlog is cleared.** The 88 grade-B rows that named no rung of the must-have 4
-ladder and had never been read are at **0** — 79 held at B, 9 moved to C, no fetches spent. The
-36 deferring rows are down to 18, and 38 self-contradicting `priority` fields are aligned.
+**Two things still need Jess and neither is a sweep.** The postal address, asked for on six
+consecutive runs. And the fact that the 10 sends on 15 Oct carried **no postal address and only a
+"reply 'no'" line rather than a working unsubscribe** — the sender now hard-stops while
+`sender-address.txt` is empty, so it cannot recur, but the gap on those ten is five weeks old.
+
+**The DM list is about 55 clinics and growing**: on-ICP, owner-operated, no published mailbox,
+Instagram link-in-bio only. A channel decision, never put to her.
+
+**Backlogs are clear.** The 88 unruled grade-B ladder rows are at 0 (79 held, 9 moved to C). The
+36 deferring rows are at 18 sendable plus 18 parked. 38 self-contradicting `priority` fields are
+aligned.
 
 **Why it is in the repo.** This was kept in the session's team-memory directory under `/tmp`
 until 20 Oct 2026, when that directory was wiped along with the scratchpad, losing four days
@@ -31,6 +36,132 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files`, and this file is mirrored to
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
+
+## 23 Nov 2026 — 22 rows, 15 existing rows settled, a hypothesis confirmed, and my own coverage brief wrong four ways
+
+**1,485 rows, 971 on-ICP, 963 ready to approach** — US 439, **AU 318** (up from 302), CA 86, UK 82,
+NZ 44, IE 2. Rows appended **1464-1485 (3 A, 12 B, 7 C)**. Four workers, all four finished.
+
+| Ids | Worker | Ground |
+|---|---|---|
+| 1464-1467 | `mel-leads` | Melbourne's named leads — **18 fetches, 0 searches** |
+| 1468-1470 | `syd-leads` | Sydney's named leads + the seven never-searched St George / Canterbury-Bankstown towns |
+| 1471-1477 | `mel-index` | Directory-index pass over **search-closed** Melbourne inner east and bayside |
+| 1478-1485 | `perth-tas` | Perth's northern, hills, south-east and south-coast rings; Hobart and Launceston |
+
+**22 rows is a third of target, and the night was still the best in a week.** Two of the four workers
+were pointed at named leads rather than markets, and they **settled or upgraded fifteen rows that
+already existed** — worth more per fetch than a new row, because a settled row can be sent. Two C
+rows became B (1436 DRV Skin, 1446 Visage Aesthetics). **The lesson for the standing prompt: a
+60-row target measures the wrong thing on a night when the list is already 963 deep and nothing can
+be sent.**
+
+### The run's four findings, all written up in `ICP.md` and the brief
+
+1. **"A market closed by SEARCH is not closed" — tested properly and CONFIRMED, with two limits.**
+   Over fifteen suburbs two sweeps had closed: **28 of 53 listings, 28 of 46 non-chain names, appear
+   nowhere in our files**; **Hawthorn 7 of 7 new**; Toorak, which the record calls the best-paying
+   suburb in the metro, 1 of 5 new. 81% resolved to their own domain, refuting the standing
+   "about half have no website" figure for this ring. The population differs in KIND — **4 of 11
+   nurse-owner-operated with AHPRA numbers, 1 of 11 running any SEO, 0 of 11 chains** — and is **not**
+   younger (45/36/18 against the outer rings' 33/40/27). Limits: an index samples rather than
+   enumerates (one previously-indexed clinic did not reappear), and two of fifteen suburbs are thin on
+   both instruments.
+2. **Answering the question a row asks is not the same as clearing the row** — fired twice in nine
+   settled rows. **Row 1425 would have gone out as a grade A**: must-have 1 passed and the same page
+   failed must-have 3, because the injectables diary sits in another business's Timely tenant. Row
+   1430's "founding year" belonged to the owner's prior dental brand. **So a release condition is
+   written "if X then RE-GRADE", never "if X then grade A".**
+3. **The must-have 1 discriminator is the PRESCRIBER, not the drug — 5 for 5, no ambiguous case.**
+   None of eight graded Australian clinics names an injectable product anywhere, because the law
+   forbids printing it; all eight publish a doctor, an RN, a nursing qualification or a mandated
+   doctor consultation. All five rule-outs name no prescriber at all.
+4. **The mailbox rate now has a shape, not just a spread.** Same city, three rings, one month: Perth
+   river and coast 84%, outer rings 75%, Cottesloe/Claremont/Nedlands 27%. **The silent ring is the
+   affluent referral crescent, not the outer ring** — affluence and referral flow predict silence, and
+   distance from the CBD does not.
+
+### MY COVERAGE BRIEF WAS WRONG FOUR WAYS, AND THE MECHANISM IS GREP'S OWN OUTPUT
+
+I briefed a worker that Perth's hills and south-east had never been swept in their own right and that
+**Tasmania had never had a sweep of its own**. The worker checked before spending and corrected all
+four; I verified each against the cited lines and it is right.
+
+Perth's south-east and hills were swept **2 Nov** (`near-misses.md:7414`). Mandurah and Launceston
+were swept **21 Oct** (`:2661`). Devonport and Burnie were swept (`:3666`). Hobart has had **two**
+passes, and **Tasmania already holds 7 pipeline rows**.
+
+**Two of the four were in my grep output and I could not see them**, because `grep -n "Markets swept"`
+prints **only the first line of a multi-line swept list** — Launceston is on line 2 of its entry,
+Devonport on line 3, and grep cut them off. The other two are filed under **`Assigned:`**, not
+`Markets swept:`, so a heading index cannot see them at all.
+
+So the coverage check now has three legs: **`grep -A4 -nE "Markets swept|^Assigned:"`** (the `-A4` is
+not optional), **grep every specific place name you are about to write into a brief**, and **read the
+hit in context**. And the worker's sharpening of limitation 6 is better than mine: it is not the
+multi-market pass that hides a market, **it is the length of the line — "a line naming four places is
+an index; a line naming fourteen is a paragraph."** The remedy is at writing time: one line per
+market.
+
+**And the ground was not exhausted anyway.** Despite four prior passes the worker found 8 rows
+including 2 grade A in the layer below the CBD — Joondalup's satellites, Guildford, Mindarie,
+Baldivis, and **Hobart's and Launceston's non-CBD suburbs**. Sharkra Medi Spa, Hobart, is a grade A
+with 22 register-verified years that four passes and every search had missed. **A market having been
+swept is not the same as a market being finished, and the suburb layer below the CBD is where the
+misses live.**
+
+### Ground closed for good
+
+- **Hobart and Launceston** — a market, not an operator (8 qualifying reachable operators across
+  three cities, 2 of them A, found by five passes in five suburbs; categorically not Darwin). But
+  harvested: Hobart's listicle names 12 businesses of which **exactly one** offers injectables, and
+  Fresha's Launceston index returns **4 businesses in total**.
+- **Perth's south-east corridor is EMPTY, not unswept**, on two independent instruments: Fresha
+  returns `client_error` on `canning-vale`, `armadale` and `rockingham` while returning 14 for
+  Joondalup, and two searches returned zero in-market businesses.
+- **Sydney's south has no unsearched ground left.** Of the seven never-searched towns: Padstow,
+  Beverly Hills and Bankstown are real; Revesby, Riverwood, Oatley/Mortdale and Carlton 2218 are
+  thin, each with its reason named. Strathfield and Kogarah settled as thin too.
+- A **seventh thin-town reason**, new to the taxonomy: `healthdirect.gov.au` and `health.nsw.gov.au`
+  took **8 of 20 slots across two queries**. Government service finders win precisely where a suburb
+  has no commercial clinic, so **a high government-slot count is a cheap thinness diagnostic**, not
+  merely an obstacle.
+
+### Smaller corrections, each from counting rather than assuming
+
+- **The duplicate check must grep the DOMAIN.** A worker grepped all 11 fetched names against both
+  files and reported 11 of 11 new; the validator then rejected one as a duplicate. The directory
+  listed **"Luxe Lips"** and our row 301 records **"LuxeLips"** — and a grep for one does not match
+  the other. Row 301 already records three sites, so a duplicate would have recorded a three-site
+  business as single-site.
+- **A third-party listing does not overturn a row's own fetched evidence.** Reported as two rows with
+  understated site counts; checked, it is one (VC Dermal has no pipeline row at all), and that one —
+  row 1300 — was read directly on 17 Nov and says it operates "from one clinic" with a single Timely
+  tenant. Grade unchanged, question recorded.
+- **The five-or-more-sites detector stays crude.** Widening it to allow an intervening adjective adds
+  two rows, one a false positive. It over-flagged row 1474 tonight on a *quotation* of ICP.md's own
+  example, and the printed evidence dismissed it in one read — which is the design working.
+- **The HIPAA NPP probation is demoted, not advanced.** Only 5 of 579 US rows have had an NPP read,
+  only 1 carries the submission sentence, and **only one row in the pipeline is parked on the rule**.
+  Its whole stake is one grade. Five nights of carrying it as "the oldest unadvanced item" was an
+  error that a free count would have settled at any point.
+- **A tenant token can make must-have 3 unanswerable.** 15 of 16 booking links named their tenant;
+  **Zanda Health** uses an opaque five-character token, and it landed on the one row (1428) whose
+  recorded recovery route was "answerable from outside". That route is void; the row is now a
+  first-call question alongside 309 and 617.
+- **`theskinedit.com.au` is NOT `theskinedit.au`** — the latter a resolved five-site WA
+  disqualification, the former one Tasmanian clinic. A domain-stem match must not retire a business.
+- **Two more look-alike dating artifacts**: a theme vendor's copyright ("© 2026 by ThemeREX",
+  "© 2021 Smallbiz") and a `meta-article:published_time`. Both describe the website, not the business.
+
+### Two traps declined, and both deserve naming
+
+**Bramis** (4 WA sites, a named doctor, a 2017 state award — grade-A shape) ships Cloudflare tokens on
+both homepage and contact page; the decode was declined and the row is not in the pipeline. And the
+hardest case on record: `info@bramis.com.au` appears in **plain text inside the meta description
+only**. Under the Dr Cosmetist precedent that is not a publication, so it was **not recorded** — and
+the string is almost certainly correct, which is exactly why it is not a seen mailbox.
+
 
 ## 22 Nov 2026 — four outer rings, 54 rows, and three standing backlogs cleared with no fetch budget at all
 
@@ -2178,7 +2309,87 @@ release it named precisely — and it is worth them, because its must-have 4 is 
 The general lesson, which applies to every absence finding this project records: **a content-type
 that is not HTML is not a page. Check you received HTML before reporting what is or is not in it.**
 
-## Where to go next — refreshed 22 Nov 2026 (read THIS block first; the 19 Nov one below is superseded on items 1, 2, 4 and 6)
+## Where to go next — refreshed 23 Nov 2026 (read THIS block first; the 22 Nov one below is superseded throughout)
+
+**1. Two things that need Jess, and nothing else on this list unblocks revenue.**
+   - **WILBA's postal address.** Asked on six consecutive runs; on a card in the GHL thread
+     (`cmsg_012oLYqsS7poHiPWekHd63vNYDvfe4t1uj5vinPMNZViep`). Every market requires it in the footer.
+     963 rows are ready; 10 have ever been emailed.
+   - **The 10 sends of 15 Oct carried no postal address and only a "reply 'no'" line, not a working
+     unsubscribe.** The sender hard-stops now while `sender-address.txt` is empty, so it cannot recur.
+
+**2. The 15 addresses last verified on 3 Nov.** `COULD NOT BE RE-VERIFIED`, each with a recorded
+   hold recommendation, now visible in the batch printer: **78, 310, 347, 350, 366, 386, 421, 429,
+   433, 503, 587, 588, 610, 632, 1220.** One fetch each. The sending thread has the list and will
+   re-fetch any staged row before a wave, but these sit at the front of the queue and four are
+   grade A. **This is the highest-value fetch work in the file**, because each one releases a row
+   that is otherwise finished.
+
+**3. A directory-index pass over the remaining search-closed metros — confirmed as the cheapest row
+   generator.** 28 of 53 listings new over fifteen suburbs two sweeps had closed. Next: Melbourne
+   inner north and inner west, then Sydney's north shore, inner west and eastern suburbs, then
+   Brisbane. **One `tt/anti-wrinkle-injections` slug per metro quadrant** — the centroid reaches five
+   or six suburbs, so more is duplicate reading. Put the directory domains in `blocked_domains` when
+   searching a listed name for its domain. Treat a `tt/` listing as **corroboration** of must-have 1,
+   never evidence: two listed businesses sold no injectables and named no prescriber.
+   - **19 named leads with street addresses** are in the 23 Nov `mel-index` write-up, ordered by
+     promise; **the best five are all on Glenferrie Road, Hawthorn.** Two carry findings: Aesthetique
+     Skin & Body appears to operate inside a general practice (an inverted-tenancy *and* a must-have 2
+     question, needs a browser), and Sky Skin Laser has 95 directory reviews and no site at all.
+   - **`glenferrie.com.au` is the cheapest unspent buy in Melbourne** — a genuine village-strip trader
+     directory on the road that produced 7 of the 28 new names, surfaced free in two searches and
+     never fetched. Also `greythorncentral.com.au`. Both belong **off** the block list.
+
+**4. Rows that convert on one fetch each.**
+   - **Four UK rows on one Companies House call each**: 983 NJH Aesthetics, 762 Evolve Skin Clinic
+     Bolton ("Est.1999", a register pagination gap — try Bolton pages 2-4), 982 Sci-U Clinic, and
+     Harrogate Aesthetics (number **06184603** already known).
+   - **18 sendable rows still deferring**: 323, 333, 369, 408, 447, 448, 469, 478, 485, 769, 775,
+     781, 784, 826, 943, 967, 969, 1021.
+   - **Named leads left by tonight's four workers**, every URL already in hand: `skinsecrets.com.au`
+     about pages (must-have 1 already passes, only must-have 5 missing — the best single lead in the
+     file); Empire Cosmetic Clinic Mandurah's `/blogs/` (its oldest post settles must-have 4 on the
+     top rung); `skinagents.com.au/about/` and `cosmedicaskin` About (each lifts an accepted row
+     toward A); `finessedfacesaesthetics.com/treatments`; Glowing Gracefully's team pages plus a
+     register lookup on **ACN 608 956 716**; `lamourskinclinic.com.au/privacy-policy/`.
+   - **Row 1300's site-count question**: one fetch of its own locations page. Even the adverse answer
+     keeps it inside the one-to-four band.
+
+**5. The browser-visit list.** New tonight: **Bramis** (4 WA sites, named doctor, 2017 state award —
+   grade-A shape, Cloudflare on two pages, and its mailbox is in a meta description only, which is
+   not a publication); The Skin Edit / Bloom at 11 Percy St Bellerive (two business names at one
+   address, plus "General Practitioner" in the owner's title is an open must-have 2 question);
+   Devonport's two `robots_disallowed` sites; Aesthetique Skin & Body, Hawthorn. **Not** Skin Secrets
+   or Total Bliss Beauty — neither ships a token, so a browser recovers nothing.
+
+**6. The DM list, about 55 clinics and growing.** On-ICP, owner-operated, no published mailbox,
+   Instagram link-in-bio only. **A channel decision for Jess, never put to her.** Another sweep makes
+   it bigger, not smaller.
+
+**7. Unresolved rather than closed.** `morningtonpeninsulamagazine.com.au` (the
+   local-consumer-publication species — and note the 23 Nov finding that a listicle is an inner-ring
+   instrument whose reach depends on city size); Devonport (unresolved from 22 Oct);
+   **Priscille Vrljic stays out** — her mailbox is published only on `myhealthcollective.co`, and a
+   host-published address does not satisfy must-have 6.
+
+**8. The US HIPAA NPP probation — a standing instruction, not a backlog.** Whenever a US clinic's
+   legal pages are read for any reason, record whether the NPP carries the submission sentence. At
+   fifteen or twenty the rule lives or dies. Only one pipeline row rides on it today.
+
+**Before commissioning anything above, in this order:**
+`grep -A4 -nE "Markets swept|^Assigned:"` — **the `-A4` is not optional** and neither is the second
+alternative; grep printed only the first line of each swept list and that cost me four false "never
+swept" claims in one brief. Then **grep every specific place name you are about to write into the
+brief**, not the ones you considered. Then **read each hit in context**: a mention is not coverage,
+zero rows can be the result of a sweep rather than its absence, and when a brief names a lead, read
+the **last** entry about it.
+
+**And at writing time:** keep each `Markets swept:` line to the places one worker actually worked, and
+give a multi-market run one line per market. A line naming four places is an index; a line naming
+fourteen is a paragraph.
+
+
+## Where to go next — refreshed 22 Nov 2026 (SUPERSEDED THROUGHOUT by the 23 Nov block above; kept for its reasoning only)
 
 Every item carries what was measured and where to check it, so the next run does not re-derive it.
 

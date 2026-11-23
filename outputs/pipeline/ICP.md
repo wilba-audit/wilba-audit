@@ -2697,6 +2697,140 @@ row's history before the row's facts.** A grade that looks wrong on the summary 
 grade somebody already defended on evidence.
 
 
+## Answering the question a row asks is not the same as clearing the row. 23 Nov 2026
+
+The best generalisation of the night, and it fired **twice in nine settled rows** — both times on
+rows that were on a release path, which is exactly where it does damage.
+
+**Row 1425, SANA Skin Clinic.** Parked at C with must-have 1 unresolved and handed back as *"a grade
+A row if must-have 1 passes"*. Must-have 1 **passes**: `/cosmeticnurse` is a real injectables service
+page with its own URL, naming the treatments in the TGA-compliant Australian way and naming a
+registered nurse. **And the same page fails must-have 3.** It states that the cosmetic nurse's
+appointments cannot be booked through the SANA system, and her booking link resolves to
+`bookings.gettimely.com/bluecosmeticclinic/book` — **another business's Timely tenant.** SANA's own
+bookings run through its own Phorest account. So the diary holding the SKIN clients is SANA's and the
+diary holding the INJECTABLES clients is not, and the injectables list is the only one that lapses on
+the three-to-four-month cycle this offer is built on. **Had the worker answered only the question
+asked, this would have gone out as a grade A row.**
+
+**Row 1430, All Aesthetics By Megan.** The release condition was a founding year. A year was found —
+**2018, belonging to All Smiles by Megan, the owner's prior dental brand.** The whose-business-is-this-
+number rule caught it. The clinic still has no founding year.
+
+This file already holds both halves separately: the **mirror rule** (a row whose parked reason has
+been checked and dismissed is UNSCREENED, not thereby passed) and **whose-business-is-this-number**.
+What is new is that **they fire on the same fetch as the answer**, because that fetch is the first
+time anyone has read the page. The release condition and the trap arrive together.
+
+**So a release condition must be written "if X then RE-GRADE", never "if X then grade A".** The
+phrasing is not pedantry — the second phrasing is an instruction to skip the other seven must-haves on
+a page nobody has read before.
+
+Three supporting findings from the same run:
+
+- **A registration number was published beside the practitioner in 4 of 5 must-have 1 passes.** Far
+  more available than an ABN (about 2 in 15) and self-verifying. **Check for an AHPRA number wherever
+  a practitioner is named.**
+- **The must-have 1 discriminator is the PRESCRIBER, not the drug, and it went 5 for 5 with no
+  ambiguous case** in a separate run the same night. None of eight graded Australian clinics names an
+  injectable product anywhere — the law forbids printing it — and all eight publish a doctor, an RN, a
+  nursing qualification or a mandated doctor consultation. All five rule-outs name no prescriber of
+  any kind. **Searching for a product name is searching for what they are forbidden to print.**
+- **Two look-alike dating artifacts that must not be counted as rungs:** a **theme vendor's
+  copyright** ("© 2026 by ThemeREX", "© 2021 Smallbiz") and a **`meta-article:published_time`**. Both
+  are about the website, not the business. A third, already covered by whose-business-is-this-number
+  but worth restating because it keeps appearing: a practitioner's **career** length ("Since 2015 I
+  have been dedicated to nursing", "23 years nursing / 11,500+ procedures").
+
+## A platform whose tenant identifier is an opaque token makes must-have 3 unanswerable from outside. 23 Nov 2026
+
+Must-have 3's working discriminator is **whose booking tenant holds the diary** — a named slug in a
+booking URL tells you which business owns the list. **15 of 16 booking links read in one run named
+their tenant.** The exception was **Zanda Health**, whose portal URL is
+`clientportal.zandahealth.com/clientportal/zuzzn/appointment-booking` — an opaque five-character
+token, not a name.
+
+It landed on the one row that needed it. **Row 1428, Peninsula Aesthetic & Laser**, was parked with
+must-have 3 unresolved and a recorded recovery route of "answerable from outside". **That route is
+void**: the token cannot be resolved by reading. The row joins 309 and 617 as a first-call question —
+something to ask a human, not to fetch.
+
+The general point: **this project's tenancy discriminator is a property of the booking platform's URL
+design, not of the clinic.** A platform that tokenises its tenants removes our ability to answer
+must-have 3 remotely, however cooperative the clinic's own site is. Record the platform by name when
+it happens, so the pattern is visible if it spreads.
+
+
+## "A market closed by SEARCH is not closed" — tested properly, and confirmed with two limits. 23 Nov 2026
+
+The hypothesis, formed on 22 Nov from a single accident: a search sweep finds clinics with SEO
+budgets, a directory index finds clinics with diaries, and those are different populations. The
+second population — a clinic with a booking system and no marketing function — is precisely the
+clinic with a lapsed patient list and nobody working it.
+
+A worker was sent to test it over **fifteen Melbourne inner-east and bayside suburbs that two
+November search sweeps had worked and declared closed**, with instructions that a clean falsification
+was worth as much as a confirmation. Four index fetches, twelve site fetches, seventeen searches.
+
+**The numbers, with denominators, and every name grepped against both files before a fetch was spent:**
+
+- **53 in-ground listings, 46 distinct non-chain names. 28 of 53 listings — 28 of 46 non-chain names —
+  appear nowhere in `near-misses.md` or `clinic-pipeline.csv`.** 18 already held, 7 chains.
+- **Hawthorn: 7 of 7 new.** A briefed suburb that two sweeps closed had **nothing whatever** on our
+  record.
+- **Toorak: 1 of 5 new** — and that is the sharpest single instance, because the 16 Nov record calls
+  Toorak *"paid best in the whole metro"*. The index still found a two-site branded clinic with a
+  Zenoti tenant that we did not have.
+- **13 of 16 names searched (81%) resolved to their own domain**, which **refutes the standing
+  "about half have no website" figure for this ring.** 8 of 11 sites fetched (73%) published a
+  plain-text mailbox, well above the 6-in-13 Australian norm.
+- **6 of 53 became sendable rows** (1 A, 5 B), 4 of them brand-new names.
+
+**And the population differs in KIND, on an axis that is better for us than age:**
+
+| | Search found | Index found |
+|---|---|---|
+| Lead clinician | Doctor-led, with a practice manager | **4 of 11 nurse-owner-operated, AHPRA numbers published** |
+| SEO | What ranks: founding years, "300,000+ appointments" | **1 of 11 running any** |
+| Sites | Mixed, chains present | **8 of 11 single-site, 0 of 11 chains** |
+| Inverted tenancy | — | **0 of 11 failing must-have 3 on one** |
+
+**The nurse-owner is a better buyer for this offer than a doctor with a practice manager**, because
+the person we write to is the person who decides.
+
+**The worry that the directory population would be systematically YOUNGER does not reproduce.** Three
+rungs: **5 top / 4 middle / 2 none = 45/36/18**, better dated than the outer rings' 33/40/27. Only 1
+of 11 failed must-have 4, and on absent evidence rather than demonstrated youth.
+
+### The two limits, which carry as much weight as the confirmation
+
+1. **An index is not a census.** One of the five clinics the 22 Nov accident had named —
+   Sky Skin Laser — **appeared in neither index this run**, despite having come from the 22 Nov Box
+   Hill index. **One fetch samples a suburb; it does not enumerate it.**
+2. **Two of fifteen suburbs are genuinely thin on BOTH instruments.** Canterbury 3126 and
+   Sandringham 3191 returned **0 listings across all four indexes.** Canterbury is the clean test,
+   because it had been closed for a *search-string* reason (it loses to Canterbury, Kent, 10 of 10) —
+   so the directory pass was the only way to know whether anything hid behind the collision. Nothing
+   did.
+
+**The worker's own caveat, recorded because it is the right one: n=11 of 28, and it chose the 11 by
+which names read most promising.** That selection inflates both the prescriber count and the
+top-rung count. The 28-of-53 newness figure does not depend on it; the kind-of-population figures do.
+
+### What this changes
+
+**Every market this file records as closed is closed against search only.** A directory-index pass
+over the search-closed inner metros is now the cheapest row generator available, and it should run
+before any new metro. It is not a replacement for search — it samples rather than enumerates, and it
+needs a search per name to find the domain — but it reaches a population search cannot.
+
+**The standing practice:** use the **`tt/anti-wrinkle-injections`** slug, one per metro quadrant (the
+centroid reaches five or six suburbs, so more is duplicate reading); put the directory domains in
+`blocked_domains` when searching a listed name for its domain; and **treat a `tt/` listing as
+corroboration of must-have 1, never as evidence of it** — two businesses listed on anti-wrinkle
+treatment pages sold no injectables and named no prescriber.
+
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from
