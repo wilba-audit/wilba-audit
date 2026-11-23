@@ -2193,6 +2193,13 @@ Every item carries what was measured and where to check it, so the next run does
    unverifiable addresses were last checked on 3 Nov and need one fetch each before they go out.**
    The full id list is in the audit output.
 
+   **CONFIRMED WORTH IT, same night.** The sending thread checked the 15 against what it had staged:
+   13 were already held, **row 588 was staged to send and is now held** (their commit `04b4a16`), and
+   6 of the ids are in neither of its staged files. So the concealed warning had reached a live staged
+   row exactly once, and once was enough to justify the fix. They will re-fetch any staged row last
+   verified on 3 Nov before it goes into a wave. **The lesson is not that the number was small — it is
+   that nobody could have known the number at all while the field was invisible.**
+
 **1. Two things that need Jess, not a sweep.** Nothing else on this list unblocks revenue.
    - **WILBA's postal address.** Asked on five consecutive runs; on a card in the GHL thread
      (`cmsg_012oLYqsS7poHiPWekHd63vNYDvfe4t1uj5vinPMNZViep`). Every market requires it in the footer.
