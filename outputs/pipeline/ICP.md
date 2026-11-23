@@ -2592,6 +2592,111 @@ an Instagram link-in-bio instead. They are not near-misses in any useful sense �
 channel. That decision is Jess's and it has not been put to her yet.
 
 
+## The NPP probation, counted instead of carried: its whole stake is ONE row. 23 Nov 2026
+
+The HIPAA Notice of Privacy Practices screen above has sat on my standing list for five consecutive
+nights as "the oldest unadvanced item", on the assumption that advancing it needed US fetch budget
+that Australia-first keeps spending elsewhere. **I counted it instead, with no fetches, and my
+framing of it was wrong.**
+
+Measured over all 579 US rows:
+
+- **5 rows have had an NPP read at all** (1056 Cadella, 1171 Beauty with Bubbly, 1288 Angell, 1290
+  La Vie MD, 1307 Skinly).
+- **Exactly 1 of those 5 carries the submission sentence** — La Vie MD. The probation asks whether the
+  sentence is near-universal boilerplate; 1 of 5 neither confirms nor kills it, and five is not a
+  denominator.
+- **Exactly 1 row in the entire pipeline is parked on this rule** — row 1290, La Vie MD, graded C on
+  must-have 2. Angell (1288) is parked on **must-have 4**, not must-have 2; its NPP question was
+  resolved in the clinic's favour and the row's grade does not depend on this screen. Skinly (1307) is
+  likewise must-have 4. The other two pass.
+
+**So the rule's entire stake is one row's grade.** That changes what kind of item it is. It is not a
+backlog and it is not a reproach; it is a cheap test (one fetch per US clinic, taken in passing while
+reading a US clinic's legal pages anyway) whose resolution currently decides nothing. **It goes to the
+bottom of the standing list and travels as a standing instruction instead: whenever a US clinic's NPP
+is read for any reason, record whether the submission sentence is present, and the denominator grows
+for free.** When it reaches fifteen or twenty, the rule lives or dies on the count.
+
+**The general lesson is about my own list, not about HIPAA.** An item can sit on a standing list for
+five nights looking like neglected work when what it actually needs is to be *counted* — and the count
+cost nothing, because the evidence was already in the file. **Before carrying an item forward a fifth
+time, measure what rides on it.** An item whose stake is one row and an item whose stake is ninety
+belong in different places on the list, and nothing but a count tells you which you have.
+
+
+## 29 rows carried a caution for whoever sends, and the sender could not see any of them. 23 Nov 2026
+
+Found with no fetch budget, while waiting on workers, and it is the most consequential thing this
+file has recorded in a week.
+
+`wilba_outreach.py batch` is what the drafting channel reads. It printed `to`, `who`, `where`, `crm`,
+`scale`, `dormant` and `angle`. **It did not print `notes`** — and `notes` is where every
+qualification finding, every caveat and every recommendation lands. So:
+
+- **29 sendable rows carry a caution written specifically for whoever sends.** Four are grade A, which
+  means the oldest-first sort puts them at the FRONT of the queue.
+- 15 of them say **`COULD NOT BE RE-VERIFIED 3 Nov 2026`** with an explicit recommendation to hold the
+  row out of the first live send, because a site erroring on every host may be a site that is going
+  away and a mailbox on a dying domain is the one case where a bounce teaches nothing.
+- Row **423** is blunter still: *"Do not send to it without Jess eyeballing the site first."*
+- Row **1361** records that **the clinic itself says its email is not monitored.**
+- Eleven more carry a named warning for whoever writes: a different domain spelling in the footer
+  (252), a name collision with another pipeline row (1357), a men's sexual-health line sitting in the
+  menu (685), a training academy that changes who the buyer is (1107).
+
+Every one of those was recorded correctly, by a worker doing exactly the right thing, in the field the
+standard tells them to use. And none of it reached the person about to draft.
+
+**The defect class, which is the part worth keeping: a caution recorded in the right place for the
+AUDIT is invisible at the moment of the DECISION.** The audit is read once a night by whoever runs it.
+The batch printer is read at the instant somebody decides to write to a clinic. Those are different
+readers, and a warning only works if it sits where the decision is made.
+
+This is the second instance of the identical defect found in one hour. The first: the copy rules ban
+prescription-medicine names and prices, `dormant_lead_signal` legitimately CONTAINS them because it is
+a true record of the clinic, the audit counts those rows at the whole-file level — and the batch
+printer printed the material raw, unmarked, as the single most quotable line in the row. **In the next
+twenty rows at the front of the queue there are 14 such lines.**
+
+**Both are fixed the same way**: `cmd_batch` now prints, beside the row, the sentences somebody meant
+the sender to read, and marks a true-but-unquotable field with what the email may not repeat. The
+patterns are deliberately narrow — they match phrasings workers have actually used — and the printer
+shows **the sentence, not a verdict**, so a phrasing nobody has used yet fails visibly rather than
+silently. `append_prospects.py --audit-only` now also counts the held rows so the number is tracked
+and somebody notices it growing.
+
+**The general rule: when you record a caution, name the reader, then check that reader's own output
+actually shows it.** A field is not a channel.
+
+## A crude detector nominated a row, and the row's own history already had the answer. 23 Nov 2026
+
+The five-or-more-sites check is deliberately crude (its own comment: *"A crude check whose evidence is
+visible beats a clever check whose verdict you must trust"*). It missed row 78, Medicine of Cosmetics,
+whose notes say **"30+ Mobile Locations"** — the pattern needs the number adjacent to the noun and an
+intervening adjective defeats it.
+
+I measured the widening before making it, which was right: allowing one or two intervening words adds
+**exactly two rows, and one of them is a false positive** — row 1221's "2022 Sol Skin Clinics" is a
+year followed by a business name. A 1:1 true-to-false ratio is not an improvement, and widening a
+regex is precisely what produced the 19 Nov literal-gap bug. **So the detector stays crude.**
+
+Then I nearly made a worse mistake than the detector did. Row 78 reads like a group — three fixed
+clinics, 30+ mobile locations across three states, 17 staff, a header styling it "ADELAIDE LUXURY
+COSMETIC GROUP" — and I was composing a park at C on must-have 3 when I read the row's own history.
+**The question had been raised and answered on 12 Nov, by direct fetch, verified specifically because
+the row is grade A:** a mobile or outreach venue is not a site; booking and records run through the
+three Adelaide clinics; the lapsed list is one list; the founder is named (RN Hayley Batson). Three
+sites, must-have 3 passes with one to spare.
+
+I would have overridden a fetch-verified ruling with armchair reasoning, and I had no budget to
+re-gather the evidence I was about to discard. **Third instance tonight of the same shape — the answer
+was already in the file.** (The others: the NPP item, whose stake a count settled in minutes, and
+Darwin last night, swept twice.) So, as a working rule: **when a detector nominates a row, read the
+row's history before the row's facts.** A grade that looks wrong on the summary fields is often a
+grade somebody already defended on evidence.
+
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from

@@ -15,7 +15,7 @@ half (sourcing, qualifying, writing) is done by the session that calls this.
 Pipeline lives in outputs/pipeline/clinic-pipeline.csv.
 Send history lives in outputs/pipeline/send-log.json.
 """
-import argparse, csv, io, json, os, sys
+import argparse, csv, io, json, os, re, sys
 from datetime import date, datetime, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -212,6 +212,80 @@ def cmd_ramp(args):
                       'ledger': '%s:%s' % (log.get('_ref'), LEDGER_PATH)}))
 
 
+# The copy rules ban prescription-medicine brand and category names and ban prices
+# outright, including a clinic's own published prices quoted back at it. But
+# scale_signals, dormant_lead_signal and services are TRUE RECORDS of the clinic and
+# are supposed to contain that material - a membership scheme is a real dormant-lead
+# signal and it is usually named after a product. append_prospects.py --audit-only
+# counts those rows at the whole-file level. The gap this closes: the drafter does not
+# read the audit, the drafter reads THIS output, and until now the material printed with
+# no marker beside it. The warning has to sit where the writing happens.
+# These two patterns are deliberately the same as append_prospects.py's, and must stay
+# the same - if one is widened, widen both, or the audit and the drafter disagree about
+# what is safe.
+UNSAFE_WORDS = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|fillers|'
+                          r'anti-?wrinkle|wrinkle[- ]relax|tox|toxin|rejuran|profhilo|sculptra|'
+                          r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
+UNSAFE_PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|\u00a3|\d+\s*%|\bper cent\b)', re.I)
+
+
+def unsafe_to_quote(text):
+    """What in this field the email may NOT repeat. Empty when the field is safe."""
+    text = text or ''
+    hits = []
+    if UNSAFE_WORDS.search(text):
+        hits.append('medicine name')
+    if UNSAFE_PRICE.search(text):
+        hits.append('price')
+    return hits
+
+
+def print_field(label, text, flag=True):
+    """Print one fact for the drafter, marked if the email may not repeat it."""
+    text = text or ''
+    hits = unsafe_to_quote(text) if flag else []
+    print(f'   {label:<9} {text}')
+    if hits:
+        print(f'   {"":<9} ^^ DO NOT QUOTE: contains a {" and a ".join(hits)}. '
+              f'The fact is true and the record is right; the EMAIL may not name it. '
+              f'Build the opener from the practice, not from this line.')
+
+
+# A caution recorded for the sender is worthless if the sender never reads it. notes is
+# where every qualification finding lands, and notes is the one field this printer did not
+# show - so on 23 Nov 2026 a count found 19 sendable rows carrying an explicit "hold out of
+# the first live send" recommendation, four of them grade A and therefore at the front of
+# the oldest-first queue, plus 11 more carrying a named caution for whoever writes or sends.
+# None of it reached the drafter. These patterns lift those sentences out and print them
+# beside the row. They are deliberately narrow: they match the phrasings workers have
+# actually used, and a phrasing nobody has used yet will be missed, which is why the
+# sentence printed is the evidence rather than a verdict.
+HOLD_PATTERNS = (
+    re.compile(r'[^.|]*\b(?:hold (?:it |this |them )?(?:out|back)|hold out of|'
+               r'do not send|do not draft)\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\bCOULD NOT BE RE-?VERIFIED\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\b(?:CAUTION|NOTE|WARNING|COPY WARNING) FOR WHOEVER\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\bnot monitored\b[^.|]*[.]?', re.I),
+)
+
+
+def sender_cautions(notes, limit=3):
+    """The sentences in notes that someone meant the sender to read, deduplicated."""
+    notes = notes or ''
+    out = []
+    for rx in HOLD_PATTERNS:
+        for m in rx.finditer(notes):
+            t = ' '.join(m.group(0).split()).strip(' .|')
+            if len(t) < 12:
+                continue
+            if any(t[:60] == o[:60] for o in out):
+                continue
+            out.append(t if len(t) <= 300 else t[:297] + '...')
+            if len(out) >= limit:
+                return out
+    return out
+
+
 def cmd_batch(args):
     rows = load_rows()
     log = load_log()
@@ -236,9 +310,21 @@ def cmd_batch(args):
         print(f'   who:      {r.get("lead_doctor") or "not named"}')
         print(f'   where:    {r.get("city","")}, {r.get("country","")}')
         print(f'   crm:      {r.get("crm_detected") or "UNKNOWN - grade C, do not draft"}')
-        print(f'   scale:    {r.get("scale_signals","")}')
-        print(f'   dormant:  {r.get("dormant_lead_signal","")}')
-        print(f'   angle:    {r.get("opening_angle","")}')
+        cautions = sender_cautions(r.get('notes', ''))
+        if cautions:
+            print(f'   {"HOLD?":<9} {len(cautions)} caution(s) recorded against this row '
+                  f'- read before drafting, and do not mark it Draft ready if one says hold:')
+            for c in cautions:
+                print(f'   {"":<9}  - {c}')
+        print_field('scale:', r.get('scale_signals', ''))
+        print_field('dormant:', r.get('dormant_lead_signal', ''))
+        # opening_angle is the drafted line itself, not a record of the clinic, so
+        # anything unsafe in it is a breach rather than a fact to avoid quoting.
+        angle_hits = unsafe_to_quote(r.get('opening_angle', ''))
+        print(f'   {"angle:":<9} {r.get("opening_angle","")}')
+        if angle_hits:
+            print(f'   {"":<9} ^^ COPY-RULE BREACH, not a caution: the opening angle itself '
+                  f'names a {" and a ".join(angle_hits)}. Rewrite it before drafting.')
         print()
     print(f'IDS: {",".join(r["id"] for r in batch)}')
 

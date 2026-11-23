@@ -2182,6 +2182,17 @@ that is not HTML is not a page. Check you received HTML before reporting what is
 
 Every item carries what was measured and where to check it, so the next run does not re-derive it.
 
+**0. THE DRAFTING PATH WAS HIDING ITS OWN WARNINGS — fixed 23 Nov, and the 29 rows need a decision.**
+   `wilba_outreach.py batch` never printed `notes`, so **29 sendable rows carrying a caution written
+   for whoever sends were invisible at the moment of drafting** — four of them grade A and therefore
+   at the front of the oldest-first queue. 15 say "COULD NOT BE RE-VERIFIED 3 Nov 2026" with an
+   explicit recommendation to hold out of the first live send; row 423 says do not send without Jess
+   eyeballing the site; row 1361 records that the clinic says its email is not monitored. The printer
+   now surfaces those sentences beside the row and marks copy-unsafe material in `dormant_lead_signal`
+   (14 such lines in the next twenty rows alone). **The remaining decision is not technical: those 15
+   unverifiable addresses were last checked on 3 Nov and need one fetch each before they go out.**
+   The full id list is in the audit output.
+
 **1. Two things that need Jess, not a sweep.** Nothing else on this list unblocks revenue.
    - **WILBA's postal address.** Asked on five consecutive runs; on a card in the GHL thread
      (`cmsg_012oLYqsS7poHiPWekHd63vNYDvfe4t1uj5vinPMNZViep`). Every market requires it in the footer.
@@ -2226,8 +2237,14 @@ Every item carries what was measured and where to check it, so the next run does
    Instagram link-in-bio only. **This is a channel decision for Jess and it has never been put to
    her.** It is not a sourcing problem and another sweep makes it bigger, not smaller.
 
-**7. The US HIPAA NPP probation — now five consecutive nights unadvanced, the oldest unadvanced item
-   in this file.**
+**7. The US HIPAA NPP probation — DEMOTED 23 Nov, after counting what rides on it.** Only 5 of 579
+   US rows have had an NPP read, only 1 of those 5 carries the submission sentence, and **only one row
+   in the pipeline is parked on the rule** (1290, La Vie MD). Angell (1288) and Skinly (1307) are
+   parked on must-have 4, not on this screen. So it is not a backlog: it is a standing instruction.
+   **Whenever a US clinic's legal pages are read for any reason, record whether the NPP carries the
+   submission sentence**, and the denominator grows for free. At fifteen or twenty the rule lives or
+   dies. Carrying it as "the oldest unadvanced item" for five nights was my error — the count that
+   settled what it was worth cost nothing and was available the whole time.
 
 **8. Unresolved rather than closed.** Lilydale (one retryable fetch error);
    `morningtonpeninsulamagazine.com.au` (the local-consumer-publication species, never tested);

@@ -465,6 +465,24 @@ def main():
           '(a true record, NOT to be quoted): %d%s'
           % (len(feeder), (' ' + str(feeder)) if len(feeder) <= 20 else ''))
 
+    # Added 23 Nov 2026, and it is the same defect class as the check above rather than a new
+    # one: a caution recorded in the right place for the audit, invisible at the moment of the
+    # decision. notes is where every qualification finding lands and it is the one field the
+    # drafter's own output did not print, so a count found 19 sendable rows carrying an explicit
+    # "hold out of the first live send" recommendation - four of them grade A, therefore at the
+    # FRONT of the oldest-first queue - and none of it reached whoever drafts. The printer in
+    # wilba_outreach.py cmd_batch now lifts these sentences out beside the row; this line exists
+    # so the total is tracked over time and somebody notices when it grows. The patterns are
+    # deliberately narrow and match phrasings workers have actually used: a new phrasing will be
+    # missed, which is why the batch printer shows the SENTENCE rather than a verdict.
+    HOLDS = re.compile(r"\bhold (?:it |this |them )?(?:out|back)\b|\bhold out of\b|"
+                       r"\bdo not (?:send|draft)\b|\bCOULD NOT BE RE-?VERIFIED\b|"
+                       r"\b(?:CAUTION|NOTE|WARNING|COPY WARNING) FOR WHOEVER\b|"
+                       r"\bnot monitored\b", re.I)
+    held = [r['id'] for r in sendable if HOLDS.search(r['notes'] or '')]
+    print('sendable rows carrying a caution meant for whoever sends: %d%s'
+          % (len(held), (' ' + str(held)) if len(held) <= 40 else ''))
+
     # price_point has been under a standing "leave it empty" instruction for weeks.
     # Widened from `sendable` to EVERY row on 16 Nov 2026. The narrow version had been reporting
     # 27 for weeks and was read as 27 legacy rows to get round to; the true figure was 102, and
