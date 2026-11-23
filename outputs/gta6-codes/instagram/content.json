@@ -394,6 +394,67 @@
    "eyebrow": "YOUR MOVE",
    "head": "SEEN A BUG?|*SEND IT.*",
    "sub": "DM us the clip · We test it · You get the credit"
+  },
+  {
+   "id": "post-F1",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "1/5",
+   "eyebrow": "REAL OR BUSTED? · CHEATS",
+   "head": "GTA 6 CHEATS|*LOCKED?*",
+   "sub": "A launch review says Rockstar wants you to finish the story first. Here's what's actually known.",
+   "decoder": "unverified"
+  },
+  {
+   "id": "post-F2",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "2/5",
+   "eyebrow": "THE CLAIM",
+   "head": "WHAT'S BEING|*SAID.*",
+   "items": [
+    "Cheats unlock only after the story",
+    "No official cheat list from Rockstar yet",
+    "Viral “GTA 6 cheat” lists recycle GTA V inputs"
+   ]
+  },
+  {
+   "id": "post-F3",
+   "size": "post",
+   "theme": "night",
+   "layout": "cover",
+   "counter": "3/5",
+   "eyebrow": "WHAT WE KNOW",
+   "head": "NO OFFICIAL|*LIST. YET.*",
+   "sub": "Until Rockstar or our own console says otherwise, every GTA 6 cheat you see is unverified."
+  },
+  {
+   "id": "post-F4",
+   "size": "post",
+   "theme": "paper",
+   "layout": "list",
+   "counter": "4/5",
+   "eyebrow": "OUR TEST",
+   "head": "WHAT WE'RE|*CHECKING.*",
+   "items": [
+    "Phone and button inputs mid-story",
+    "Inputs again after the final mission",
+    "Whether a patch changes it",
+    "Every viral list, line by line"
+   ]
+  },
+  {
+   "id": "post-F5",
+   "size": "post",
+   "theme": "night",
+   "layout": "cta",
+   "counter": "5/5",
+   "eyebrow": "VERDICT",
+   "head": "VERDICT|*INCOMING.*",
+   "sub": "Follow so you see it first · Save this",
+   "decoder": "unverified"
   }
  ]
 }

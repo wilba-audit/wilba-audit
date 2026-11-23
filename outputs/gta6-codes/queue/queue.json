@@ -130,6 +130,39 @@
    "ig_media_id": null,
    "gate": "PASS",
    "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
+  },
+  {
+   "id": "2026-11-25-f-cheats-locked",
+   "date": "2026-11-25",
+   "slot": "08:23",
+   "type": "carousel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/carousel-f-cheats-locked/01-post-F1.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/carousel-f-cheats-locked/02-post-F2.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/carousel-f-cheats-locked/03-post-F3.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/carousel-f-cheats-locked/04-post-F4.jpg",
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/carousel-f-cheats-locked/05-post-F5.jpg"
+   ],
+   "alt": "Five slides on the claim that GTA 6 cheats unlock only after the story, marked Unverified while we test it.",
+   "caption": "GTA 6 cheats… locked until you beat the story? 🔒\n\nA launch review says Rockstar wants you to finish the campaign before you start messing around with cheats. There's no official cheat list yet, and most viral \"GTA 6 cheat\" lists are just recycled GTA V inputs.\n\nWe haven't stamped this. We're testing inputs mid-story and again after the final mission.\n\nSave this. Follow for the verdict.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Cheats #GTA6Tips #GTA6News",
+   "status": "awaiting_approval",
+   "gate": "PASS",
+   "slack_ts": null,
+   "ig_media_id": null
+  },
+  {
+   "id": "2026-11-25-reel-4-pc",
+   "date": "2026-11-25",
+   "slot": "10:23",
+   "type": "reel",
+   "media": [
+    "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-23/reel-4-pc/01-reel-4-pc.mp4"
+   ],
+   "caption": "GTA 6 on PC… early 2027? 👀 That's what insiders are saying. Rockstar hasn't confirmed anything, so it's UNVERIFIED until they do.\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6PC #PCGaming #GTA6News",
+   "status": "awaiting_approval",
+   "gate": "PASS",
+   "slack_ts": null,
+   "ig_media_id": null
   }
  ]
 }
