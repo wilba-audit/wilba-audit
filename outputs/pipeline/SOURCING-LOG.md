@@ -34,6 +34,18 @@ same mailbox name on two different domains**, three of those are template placeh
 themselves, and **ten carry a live coin-flip on their mailbox with no hold on them.** Now a
 standing audit line.
 
+**CONFIRMED THE SAME NIGHT, which is the part that makes the measurement worth something.** The
+sending thread checked the audit against what it had already staged and held six more rows: **72,
+332, 435 and 856 — four two-domain pairs that were staged to send** — plus 323 and 408 off the
+sender-caution list, and 369, which `DO-NOT-SEND.txt` caught after it went B→C. It released 429
+(the must-have 8 question answered from the row's own history) and kept 587 held, noting its staged
+copy still carries the old gmail and needs the icloud swap first. So in two nights the two
+detectors have stopped **one** row (588) and then **four** more from going out to a mailbox we had
+a 50% chance of getting wrong, and all five were already staged. The lesson is not that the
+audits are clever; it is that **a check is worth what it catches in the channel that acts, and
+neither of these would have caught anything had it only printed into a file nobody reads at the
+moment of sending.**
+
 **Also: `robots_disallowed` is a tool outcome, not a site property.** Of the 13 rows ever carrying
 that label, **8 are now recorded as mislabelled** — five served a byte-identical stock Wix
 `robots.txt` reading `Allow: /` and blocking only PetalBot. Those rows were held for a month for
