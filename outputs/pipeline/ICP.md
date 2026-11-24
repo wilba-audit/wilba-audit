@@ -2831,6 +2831,49 @@ corroboration of must-have 1, never as evidence of it** — two businesses liste
 treatment pages sold no injectables and named no prescriber.
 
 
+## The "about 55 clinics" DM list, counted at last — and it is not one population. 24 Nov 2026
+
+I have quoted "about 55 clinics" for the DM list on five consecutive nights and put that number in
+front of Jess as a decision, without ever having counted it. Counted now, with no fetch budget: **the
+figure survives as a lower bound on distinctly named businesses — roughly 56 across Australia, the
+US and the UK.** So the number was honest. What was not honest was treating it as one thing.
+
+The named entries fall into **three groups that need different answers**, and only one of them is
+actually a DM list:
+
+1. **Websiteless micro-clinics — no own domain exists at all.** Their entire web presence is a
+   `*.gettimely.com` booking subdomain, a Fresha local-venue page, a Linktree, a Facebook page or
+   nothing indexed. Measured clusters: 13 across the 21/22/28 Oct regional sweeps, about 11 in
+   Adelaide's north-east, 11 in Melbourne's south-east, and the two from the 23 Nov inner-east index
+   (Above All Aesthetic, Sky Skin Laser). **Must-have 5 can never be satisfied for these by any
+   amount of fetching, because there is no page for anyone to open.** This is the genuine DM-or-phone
+   population.
+2. **Clinics with a real site that publishes no address.** These are a *silence* case, not a masking
+   one — a browser recovers nothing from a site that publishes nothing — but a phone call or a DM
+   would reach a business that has a website, a named practitioner and often a booking platform.
+   Several are better businesses than rows we have accepted: Ageless Remedies (731 reviews, 20 years,
+   a gift-card float and a lead magnet), Bel Viso, Westmed Cosmetic Medicine (a 50-year career).
+3. **Businesses that fail must-have 1 anyway**, which is where the count overstates the opportunity.
+   Mimi Lane Cosmetic's own Instagram headline reads "COSMETIC TATTOO GOLD COAST". The 23 Nov Perth
+   run measured that **a directory listing on an anti-wrinkle treatment page is corroboration of
+   must-have 1 and never evidence of it** — two such businesses sold no injectables and named no
+   prescriber. **A websiteless business is also the hardest kind to screen**, because the screen needs
+   a page.
+
+**So the real DM-only, on-ICP, owner-operated population is smaller than 56, and nobody has measured
+how much smaller — because screening it requires the page it does not have.** That is the honest state
+of it, and it strengthens rather than weakens the recommendation already given to Jess: do not open a
+second channel before the first has sent a single compliant message. A channel whose population
+cannot be screened by the method this project uses is a channel that needs a different method, not
+more names.
+
+**The general lesson, and it is the third instance in two nights:** a number carried forward in a
+standing list is not a measurement. The NPP probation's stake turned out to be one row. Darwin's
+"23 mentions, 0 rows" turned out to be the result of two sweeps rather than the absence of them. And
+"about 55" turned out to be right in magnitude and wrong in kind. **Counting is cheap; carrying is
+what costs.**
+
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from
