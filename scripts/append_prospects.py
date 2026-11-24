@@ -435,6 +435,55 @@ def main():
     bad = [r['id'] for r in sendable if not r['contact_email'].strip()]
     print('sendable rows with no email address: %d%s' % (len(bad), (' ' + str(bad)) if bad else ''))
 
+    # Added 24 Nov 2026. 'Has an address' and 'has an address that can be sent' are two
+    # different questions, and until tonight only the first was asked. A worker published
+    # a clinic whose mailbox the clinic itself prints as `info @ domain`, spaces either
+    # side of the @, correctly recorded as published and correctly not closed up. That row
+    # is grade B and would have gone into the sendable pool looking perfectly ordinary.
+    # Reported separately from the no-address count because the row is not a sourcing
+    # failure - the fault is in the published string, and only a person at the clinic's
+    # own page may decide what it means. Never auto-correct one of these.
+    unsendable_str = re.compile(r'^[^\s@,;:<>()\[\]]+@[^\s@,;:<>()\[\]]+\.[^\s@,;:<>()\[\]]+$')
+    malformed = [r['id'] for r in sendable
+                 if (r['contact_email'] or '').strip()
+                 and not unsendable_str.match((r['contact_email'] or '').strip())]
+    print('sendable rows whose address cannot be sent as written (never auto-correct): %d%s'
+          % (len(malformed), (' ' + str(malformed)) if malformed else ''))
+
+    # Added 24 Nov 2026, and this one came out of a measurement rather than an incident.
+    # The 15-row re-verification sweep was built on a hold policy that assumed a failed
+    # fetch might mean a dead address. It did not: of the 13 rows settled, 0 addresses were
+    # gone. One had CHANGED, and the sweep's other real bounce risks were rows where the
+    # page publishes TWO addresses and we recorded one of them - which is only visible when
+    # the fetch SUCCEEDS. So fetch failure was the wrong variable to sort on.
+    #
+    # This is the right one. It compares contact_email against every address named anywhere
+    # in the row's own notes and reports the narrow case that actually predicts a bounce:
+    # the SAME mailbox name on a DIFFERENT domain (info@x.com.au beside info@x.com). A
+    # different local part is usually a real alternate - a branch, bookings@, a second
+    # practitioner - and is not reported. A same-name pair means one of the two strings is
+    # wrong and we have a 50% chance of holding the wrong one.
+    #
+    # It needs no fetch and no phrasing: both strings are already in the row.
+    addr = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
+    twodomain = []
+    for r in sendable:
+        rec = (r['contact_email'] or '').strip().lower()
+        if '@' not in rec:
+            continue
+        rl, rd = rec.split('@', 1)
+        seen = {e.lower() for e in addr.findall((r['notes'] or '') + ' ' + (r['email_source'] or ''))}
+        for other in sorted(seen - {rec}):
+            ol, od = other.split('@', 1)
+            # %20 is a leading space inside a mailto href, which every mail client trims.
+            # That is whitespace OUTSIDE the address and is not this check's business;
+            # spaces either side of the @ are whitespace INSIDE it, caught above.
+            if ol.replace('%20', '') == rl and od != rd:
+                twodomain.append('%s(%s|%s)' % (r['id'], rd, od))
+                break
+    print('sendable rows publishing one mailbox name on two domains (one of them is wrong): %d%s'
+          % (len(twodomain), (' ' + str(twodomain)) if twodomain else ''))
+
     # The copy rules apply to every sendable row, not just the ones added today.
     # Fifty rows written before this validator existed carried a price or a
     # medicine name into opening_angle, the field the opener is built from, and

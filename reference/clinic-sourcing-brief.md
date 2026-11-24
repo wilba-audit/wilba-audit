@@ -2785,6 +2785,134 @@ names together), and a gmail address on an accepted row. An ACN was published wi
 **no ABN was constructed from it.**
 
 
+## The Sydney header-count diagnostic is dead, and I briefed it as established. 24 Nov 2026
+
+Last night one Sydney slug collapsed to metro-wide results and I wrote up the diagnostic: **three
+figures in the header venue count means the slug has collapsed.** It came from a single observation
+("118 venues" across 33 suburbs, 0 of 42 in the briefed suburb), and tonight I handed it to a worker
+as a technique. The worker tested it across five slugs and killed it:
+
+| slug | header count | featured cards in that suburb | Call-to-book rows | locality-correct? |
+|---|---|---|---|---|
+| mosman | "7 venues" | 1 of 7 | 32 | yes |
+| chatswood | "13 venues" | 6 of 13 | 22 | yes |
+| double-bay | "29 venues" | 2 of 29 | 43 | yes |
+| balmain | "27 venues" | **0 of 27** | 77 | yes |
+| manly | "4 venues" | **0 of 4** | 20 | yes |
+
+**Not one slug produced a three-figure count, and two collapsed completely anyway — at 27 and at 4.**
+The header count describes only the featured cards, not the page: Manly says "4" and carries 24
+businesses; Balmain says "27" and carries 104. So the number I built the diagnostic on was never
+measuring what I thought, and collapse is the Sydney featured list's normal state rather than a
+detectable failure.
+
+**The replacement is better than the thing it replaces.** The census lives in the "Call to book"
+section, which was **suburb-anchored and locality-correct on 5 of 5** — the half last night's worker
+counted as noise. One Balmain fetch returned a 77-row addressed inner-west census *plus* 27
+metro-wide venues. So: **read Call-to-book as the census and the featured cards as a free metro
+list.** Stop reading the header count for anything.
+
+Two things to carry beyond this one diagnostic:
+
+1. **One observation is a hypothesis, and briefing it as a technique passes my error to someone with
+   a fetch budget.** This is the second time in two nights (the coverage index was the first, and
+   that one cost nothing only because the worker checked before spending). The 23 Nov write-up should
+   have said "one slug behaved this way, test it" and did not.
+2. **A metro-wide number beside a suburb-anchored number is not noise plus signal — it is two
+   instruments.** The failure was treating the page as one list with contamination, when it is two
+   lists with different scopes, one of which is exactly what we wanted.
+
+### Fresha prints no website domain in Sydney at all, and that is a template fact
+
+**0 of 274 listing-slots across five Sydney slugs printed a website domain**, identical to southern
+Sydney's 0 of 14 last night. Against Melbourne's inner east, where 81% did. That is now large enough
+to state as a property of the AU template as Fresha renders it for these pages, not of a ring, a
+city or an affluence band — so **budget a search per name in Sydney and expect to resolve ~75% to an
+own domain** (9 of 12 tonight, against Melbourne's 81%: indistinguishable at this n). Affluence
+changed neither number.
+
+### A twelfth fetch-failure mode: the live maintenance placeholder
+
+`labskinclinic.com.au/contact-us/` returned HTTP 200 and real HTML reading *"Site will be available
+soon"* with `(c) Maintenance 2026`, on a trading clinic. It presents as a successful fetch, like the
+bot-check interstitial — but it carries no "verifying" language, and unlike the interstitial it is
+**not per-request, so the sanctioned one retry is wasted on it.** Treat a maintenance placeholder as
+per-site and move on; the clinic is alive, the page is not, and a browser visit next week is the
+cheap route.
+
+## The directory index is non-redundant with search, and one-shot with itself. 24 Nov 2026
+
+The 23 Nov claim was "a market closed by SEARCH is not closed", measured at 28 of 53 new across
+fifteen search-closed Melbourne suburbs. Tonight's worker ran the twenty-eight *adjacent* suburbs
+and the rate went UP, not down: **48 of 71 in-ground listings new (68%), 48 of 61 non-chain (79%)**,
+against last night's 53% and 61%. So last night's result was a property of the technique rather than
+of the inner east.
+
+**The more useful half is where it collapses, and the boundary is absolute:**
+
+- **0 of 12 new** in the three suburbs that had already had an **index** pass (Doncaster, Forest Hill,
+  Doncaster East, all indexed 22 Nov).
+- **39 of 44 new (89%)** in ground that only *search* had seen.
+
+The index finds what search cannot, and finds nothing the index already found. That gives the
+instrument a clean scheduling rule: **index each suburb once, and never index it twice.**
+
+### The coverage check needs a fourth leg, because grepping the suburb does not reveal a prior index pass
+
+Three of the twenty-eight suburbs I briefed as unworked had been index-passed on 22 Nov
+(`near-misses.md:30220-30221`). The three-leg check from 23 Nov did not catch it and could not:
+**grepping `Doncaster` returns 18 hits that read like ordinary search coverage**, because an index
+pass records the NAMES it returned rather than announcing itself as an index pass. The difference is
+only visible after the fetch is spent.
+
+**Fourth leg, cheap:** grep the previous index worker's own handover list — the
+`"Fresha names in briefed suburbs with no domain yet"` section — before briefing any suburb for an
+index pass. That list names the suburbs an index has already enumerated.
+
+### Index order versus selected order: last night's age figures were a selection artifact
+
+Tonight's worker sampled in **index order**, opening a longevity studio and an acupuncture clinic
+rather than skipping them, and the age picture inverted:
+
+| | 23 Nov, selected (n=11) | 24 Nov, index order (n=9) |
+|---|---|---|
+| ladder top / middle / none | 45 / 36 / 18 | **33 / 22 / 44** |
+| fails must-have 4 | 1 of 11 | **3 of 9** |
+| fails must-have 1 | 1 of 11 | **4 of 9** |
+| publishes own registration number | 4 of 11 | **1 of 9** |
+
+**44% with no rung at all is worse than the outer rings' 27%**, and the brief's original worry about
+this technique reproduces. Last night's "the population is not younger" was measured on eleven rows
+chosen for promise and should not have been stated as a property of the population. What survives
+both nights: own-domain resolution **10 of 11 (91%)** and a mailbox rate of **7 of 9 (78%)** — still
+the richest AU email ground measured.
+
+## Grep our own near-misses for addresses we never wrote down. 24 Nov 2026, and it is free
+
+A worker reported one clinic sitting in `near-misses.md` with a verbatim-read address, an explicit
+*"Not in the pipeline"*, and a month of dust on it. That prompted a scan, which costs no fetches:
+extract every address in `near-misses.md`, drop the ones whose address or domain appears anywhere in
+the pipeline, and read what is left in context.
+
+**173 addresses sit on domains absent from the pipeline. Three of them are recorded as qualified and
+simply never written up** — all from one 22 Oct block headed *"Qualified clinics found outside the
+assigned markets (free rows, already checked)"*, where a worker correctly noted them, correctly said
+they were not in the pipeline, and moved on because they were outside its towns. They became rows
+1493 (Bloom Aesthetic Clinic, Hobart), 1494 (Deluxe, Melbourne) and 1495 (Aesthetica, South Yarra),
+all at C with one named gap each.
+
+Two lessons, and the second is the one that matters:
+
+1. **The other 170 are mostly real rule-outs** and the filter that separates them is whether the
+   surrounding context states a must-have failure. Prose near-misses are not a queue.
+2. **A worker who finds a good clinic outside its assigned ground has nowhere to put it.** It writes
+   a careful paragraph, flags that nobody holds the row, and the paragraph is the end of the matter —
+   because the deliverable is a rows file for its own markets. Three qualified clinics with published
+   addresses were lost that way for a month in a 32,000-line log. **Fix for future briefs: a worker
+   that finds a qualified clinic outside its ground should put it in its rows file anyway**, graded on
+   what it saw, rather than describing it in prose. A C row with a named gap is findable; a paragraph
+   is not.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at

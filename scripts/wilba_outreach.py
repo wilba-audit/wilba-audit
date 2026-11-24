@@ -269,6 +269,74 @@ HOLD_PATTERNS = (
 )
 
 
+# A SECOND DETECTOR, ADDED 24 Nov 2026, AND IT KEYS ON THE ADDRESS INSTEAD OF ON PROSE.
+# The patterns above have a limitation their own comment admits: they match phrasings
+# workers have actually used. On 24 Nov a worker published a row whose mailbox is printed
+# by the clinic as `info @ cosmedikate.com.au`, spaces either side of the @, and wrote the
+# warning as "THE MAILBOX IS PUBLISHED WITH SPACES AROUND THE @ AND MUST NOT BE NORMALISED."
+# That sentence is exactly right and matches NONE of the patterns above, so a grade-B row
+# whose address cannot be sent as written would have reached the drafter with no flag at all.
+# The danger is specific and worse than a bounce: the likeliest "fix" at the keyboard is to
+# close the spaces up, which is the one thing the standing rule forbids, done by whoever is
+# least likely to know the rule.
+#
+# So this check derives the fault from contact_email itself. A warning written as prose
+# depends on someone choosing the words; a warning derived from the data depends on nothing.
+# It is not a grade and not a hold on the clinic - the row is well qualified and the address
+# is honestly recorded. It is a stop on SENDING THIS STRING, which is a different claim.
+SENDABLE_ADDRESS = re.compile(r'^[^\s@,;:<>()\[\]]+@[^\s@,;:<>()\[\]]+\.[^\s@,;:<>()\[\]]+$')
+
+
+def address_fault(email):
+    """Why this string cannot go in a To: header as it stands, or None if it can.
+
+    Deliberately says only what is wrong. It never proposes the corrected address,
+    because the correction is the construction the sourcing rules forbid: an address
+    is recorded as published, and only a person reading the clinic's own page may
+    decide what the clinic actually meant.
+    """
+    e = (email or '').strip()
+    if not e:
+        return 'no address recorded'
+    if SENDABLE_ADDRESS.match(e):
+        return None
+    # Order matters: the comma test runs first, because a two-address field also contains
+    # whitespace and 'more than one address' is the diagnosis the reader can act on.
+    if ',' in e or ';' in e:
+        return 'looks like more than one address in one field'
+    if e.count('@') != 1:
+        return 'does not contain exactly one @'
+    if re.search(r'\s', e):
+        return ('published with whitespace inside the address, and recorded as published - '
+                'DO NOT close it up yourself, that is constructing an address nobody published')
+    return 'not a single plain address'
+
+
+def print_address(r):
+    """The To: line, plus why it cannot be used if that is the case.
+
+    Used by both readers that print an address. `due` needs it as much as `batch`:
+    a follow-up is a send too, and until 24 Nov it printed neither this stop nor the
+    cautions in notes.
+    """
+    print(f'   to:       {r["contact_email"]}')
+    fault = address_fault(r.get('contact_email', ''))
+    if fault:
+        print(f'   {"STOP":<9} THIS ADDRESS CANNOT BE SENT AS WRITTEN: {fault}.')
+        print(f'   {"":<9} Do not draft from it. Jess settles it by opening the page:')
+        print(f'   {"":<9} {r.get("email_source", "") or "no source recorded"}')
+
+
+def print_cautions(r):
+    """The sentences someone meant the sender to read, if any."""
+    cautions = sender_cautions(r.get('notes', ''))
+    if cautions:
+        print(f'   {"HOLD?":<9} {len(cautions)} caution(s) recorded against this row '
+              f'- read before drafting, and do not mark it Draft ready if one says hold:')
+        for c in cautions:
+            print(f'   {"":<9}  - {c}')
+
+
 def sender_cautions(notes, limit=3):
     """The sentences in notes that someone meant the sender to read, deduplicated."""
     notes = notes or ''
@@ -306,16 +374,11 @@ def cmd_batch(args):
     print()
     for r in batch:
         print(f'## {r["id"]} | {r["clinic_name"]} ({r.get("icp_fit","?").upper()})')
-        print(f'   to:       {r["contact_email"]}')
+        print_address(r)
         print(f'   who:      {r.get("lead_doctor") or "not named"}')
         print(f'   where:    {r.get("city","")}, {r.get("country","")}')
         print(f'   crm:      {r.get("crm_detected") or "UNKNOWN - grade C, do not draft"}')
-        cautions = sender_cautions(r.get('notes', ''))
-        if cautions:
-            print(f'   {"HOLD?":<9} {len(cautions)} caution(s) recorded against this row '
-                  f'- read before drafting, and do not mark it Draft ready if one says hold:')
-            for c in cautions:
-                print(f'   {"":<9}  - {c}')
+        print_cautions(r)
         print_field('scale:', r.get('scale_signals', ''))
         print_field('dormant:', r.get('dormant_lead_signal', ''))
         # opening_angle is the drafted line itself, not a record of the clinic, so
@@ -373,9 +436,10 @@ def cmd_due(args):
             print(f'## {r["id"]} | {r["clinic_name"]} -> retire as Lost (sequence complete, no reply)')
             continue
         print(f'## {r["id"]} | {r["clinic_name"]} -> {nxt}')
-        print(f'   to:       {r["contact_email"]}')
+        print_address(r)
         print(f'   who:      {r.get("lead_doctor") or "not named"}')
         print(f'   last sent:{r.get("date_last_contact")} ({gap}+ days ago)')
+        print_cautions(r)
         print(f'   angle:    {r.get("opening_angle","")}')
         print()
     print(f'IDS: {",".join(r["id"] for r, n, g in due if n != SEQUENCE_END)}')

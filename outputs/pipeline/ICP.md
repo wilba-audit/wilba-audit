@@ -2120,7 +2120,8 @@ Three rows would not fit the 19 Nov list and all three were obviously right to h
 So state the rung as the test it always was: **the middle rung is evidence of ACCUMULATION — capital
 or commitments that cannot be assembled in a clinic's first months.** A stocked storefront, a
 52-week payment plan, a membership roll, a gift-card float, a named team, a second street address, a
-trainer roster, a mailing list, a multi-platform device stack, a career: every one of these is
+trainer roster, a mailing list, a multi-platform device stack, and a career THAT PASSES THE SUBJECT TEST BELOW
+(see 24 Nov 2026): every one of these is
 something that had to be built up. **What is NOT a rung is anything that can be bought in a month** —
 and that is the sharp edge the old list was missing. Row 881's proxy was *the breadth of its menu*,
 and a wide menu is a purchase order, not an accumulation. That is why 881 moved and 1020 did not.
@@ -2873,6 +2874,185 @@ standing list is not a measurement. The NPP probation's stake turned out to be o
 "about 55" turned out to be right in magnitude and wrong in kind. **Counting is cheap; carrying is
 what costs.**
 
+
+## The hold policy was aimed at the wrong variable, and the right one needed no fetches at all. 24 Nov 2026
+
+Fifteen rows had been held since 3 Nov because a re-verification fetch failed and the note
+said, correctly, that **a failed fetch is not evidence the address is gone.** Tonight all
+fifteen were re-fetched. The result settles what the hold was worth:
+
+| outcome | rows |
+|---|---|
+| address confirmed, unchanged | 12 |
+| address CHANGED (recorded one not published) | 1 (587) |
+| address gone, domain dead, clinic closed | **0** |
+| still unreachable, nothing learned | 2 (310, 503) |
+
+**Zero of thirteen.** The hold was built on the worry that the mailbox had died, and in
+thirteen settled cases that happened not once. One address had changed, which is a different
+failure and the hold did catch it — row 587 would have bounced, and that single row justifies
+the sweep. But the policy was sorting on the wrong variable, and the sweep's own findings say
+what the right one is.
+
+**The real bounce risks are visible only when the fetch SUCCEEDS.** Three of the fifteen
+turned out to have a page publishing TWO addresses: 433 (aesthetics vs beauty domain), 588
+(`.com` in visible text, `.com.au` in the mailto href), 386 (a second address in an href).
+Twenty per cent of the cohort. Not one of those was detectable from a failed fetch — a page
+that will not load cannot tell you it publishes two mailboxes. The hold policy could never
+have found them, and three of its fifteen rows had one.
+
+So the question changed from *did the fetch work* to *does the page publish one address or
+two*, and that question turned out to be answerable with no fetch budget whatsoever, because
+both strings are already written in the rows. The measurement across all 972 sendable rows:
+
+- **101 sendable rows name an address in their notes different from the one in `contact_email`.**
+  Most are benign and must NOT be flagged: a branch (`cork@` beside `dublin@`), a department
+  (`bookings@`, `feedback@`, `emergency@`), a second practitioner. A different local part is
+  usually a real alternate, not a competing claim about the same mailbox.
+- **15 sendable rows publish the SAME mailbox name on a DIFFERENT domain.** That is the narrow
+  case where one of the two strings must be wrong: `info@m1-beauty.com.au` beside
+  `info@m1-beauty.com`; `info@luumaesthetics.com` beside `info@luumaesthetics.com.au`;
+  `info@theskinfirm.net` beside `info@theskinfirm.co.uk`.
+- **Three of those 15 are self-answering** and cost nothing to clear, because the second
+  domain is a template placeholder the clinic never owned: `info@website.com` (741),
+  `info@mysite.com` (1338), `info@uhh.ybs.mybluehost.me` (991). The recorded address is the
+  real one on all three. This is why the check prints the domain PAIR rather than a verdict —
+  a reader sees `mysite.com` and is done in a second.
+- That leaves **twelve rows of genuine ambiguity, of which only two (433, 588) are held.**
+  **Ten sendable rows carry a coin-flip on their mailbox with nothing stopping them.**
+
+It is now a standing audit line in `append_prospects.py`. The general lesson is the one worth
+carrying: a hold costs nothing to impose and feels like diligence, so it is worth asking what
+variable it sorts on and whether that variable predicts the harm. This one sorted on *our
+tooling's success* when the harm lived in *the clinic's own publishing*. Those are unrelated,
+and a month of holds on eight rows bought nothing.
+
+### The same distinction, one layer down: whitespace outside an address is not whitespace inside it
+
+Four sendable rows (179, 1031, 1095, 1273) record a `%20` at the front of an address found in
+a mailto href — `mailto:%20info@kpaesthetics.com`. That is a space the page author left
+*outside* the address, inside the href attribute, and every mail client trims it. It is not a
+defect and those four rows are fine.
+
+It must not be confused with the CosmediKate case found the same night, where the clinic's own
+visible text reads `info @ cosmedikate.com.au`, spaces either side of the @. That whitespace is
+*inside* the address, and closing it would be constructing a string nobody published. One is
+trimmable and invisible; the other is the standing rule's hardest case. The audit distinguishes
+them explicitly, so the %20 rows never generate a flag.
+
+## A flag must be put to the row's own history before it is put to the sender. 24 Nov 2026
+
+The re-verification worker raised must-have 8 on rows 429 and 433: no company identity appeared
+on the pages it read, both rows are graded B, and per ICP that is a C unless settled elsewhere.
+It phrased it exactly right — *"either must-have 8 was settled off another page or register call
+earlier in the row's history, or it is unresolved and the B is unsupported"* — a condition, not
+a verdict, which is the form this file has asked for since 23 Nov.
+
+Both conditions resolve, and both resolve in the rows themselves:
+
+- **429** recorded on 19 Oct that the site prints *"Leanne Rea Medical Aesthetics Ltd, 449
+  Liverpool Rd, Widnes WA8 7XR"* as its business identity. A company NAME with no number is a
+  pass on its own — the same ruling this very cohort's row 632 was passed on tonight. Today's
+  fetch read the footer, where the only identity line is a bare copyright. The two readings do
+  not conflict; they read different parts of one page.
+- **433** sat at C on exactly this finding, then was RESCUED on 20 Oct by register call: BLEND
+  SKIN & BEAUTY CLINIC LTD 12565821, active, the CQC-registered entity for that address. That
+  is this file's own "unless settled elsewhere".
+
+So no row moved. What the episode costs is worth naming: the worker's conditional landed in
+`next_action`, which is the SENDER's field, so the sender would have inherited a question the
+CSV already answers — and would have had to re-derive it, or more likely just held the row.
+**A conditional flag belongs in `notes`. `next_action` is for what the sender should DO.** If
+the condition can be tested without a fetch, test it before writing `next_action`; on 429 that
+test was one grep of the row's own notes.
+
+This is the third instance of one pattern in three nights. Row 78: I composed a park at C on
+must-have 3 and the row's history already held a direct-fetch answer from 12 Nov. Row 1300: a
+directory listing seemed to contradict a site count and the row's own About page, fetched 17
+Nov, had settled it. Now 429 and 433. Each time the check read the current page and not the
+row, and each time the row had the answer. **A row is an accumulating record, not a cache of
+the last fetch** — and the cheapest instrument in this pipeline is still a grep of what we
+already wrote down.
+
+### And it cut the other way on 433, which is the useful half
+
+The worker's finding and the register match corroborate each other. The 20 Oct call found the
+legal entity on the BEAUTY name while the clinic trades as AESTHETICS, recorded then as a
+discrepancy counted as a pass. Tonight the contact page links `info@blendskinandbeauty.co.uk`
+from its own "CONTACT US AT" heading, three times against the recorded address's two. Two
+independent readings five weeks apart both point at the beauty name: the register says the
+beauty entity is the legal person, the page says the beauty domain is the mailbox it reads.
+
+That is evidence about which of two published mailboxes is live, and it favours the one NOT
+recorded in the row. It is not licence to switch — both strings were published verbatim and
+the pick is a send decision for Jess — but whoever settles it should know the register agrees
+with the beauty domain.
+
+## A career is not a rung until it passes the subject test, and that test comes first. 24 Nov 2026
+
+Two workers hit this independently tonight, on different cohorts, and a third thing in this file
+had to be wrong for both of them to be right. The Sydney worker escalated it rather than deciding:
+
+> ICP's middle rung lists "a career" as accumulation and says a middle rung holds at B, never
+> parks at C. But row 1430 says a year belonging to the owner's prior brand must be rejected, and
+> must-have 4 asks whether *the clinic* has traded long enough for ~300+ lapsed patients, which a
+> career cannot answer. The two rules point opposite ways at the same sentence.
+
+It was right to escalate and right to grade conservatively. The resolution is that **those are two
+different questions and this file had stopped asking them in order.**
+
+**The subject test comes first, and it is already written at line 400 of this file:** *is this
+number about THIS premises, THIS trading entity, THIS patient list?* A figure that fails it is not
+a weak rung or a low rung — **it is not evidence at all**, and the row has no rung from it. Only a
+figure that passes gets asked how high it reaches.
+
+So the middle-rung list's bare entry "a career" was a drafting error when the rung was restated as
+a principle, because it put a height on something before anything had asked about its subject. The
+entry now reads with its condition attached:
+
+- **A career passes the subject test** only where the practitioner IS the trading entity and the
+  years are stated as time in THIS practice. A solo nurse-owner's "nine years injecting here" is
+  about this patient list. Then it is a MIDDLE rung: B, never A, because it is undated accumulation.
+- **A career fails the subject test** where the years are time in the profession, time at former
+  employers, or time that cannot be attached to this entity at all. Then it is a CV being read as a
+  balance sheet, it is not a rung of any height, and a row with nothing else is C.
+
+Mojo Cosmetic Clinic, graded C tonight, is the clean test case: *"has been practicing medicine since
+1994 in Australia"* is thirty-two years of a doctor's career in the profession, and *"25 years of
+clinical experience"* names nobody at all — on a site that calls the business four different names
+across its own pages with no stated relationship between them. You cannot tell which entity the
+career attaches to, so the subject test fails before the rung question is reached. **C, and the
+recorded reason is that the artifact belongs to a different entity, not that no artifact exists.**
+
+Nothing needs re-grading on this: career has never been a TOP rung in this file (line 123, set 5 Nov,
+says a practitioner's career length alone keeps the row at B *"because that person's twenty years are
+not this clinic's lapsed list"*). The five A→B moves tonight are the ladder being applied correctly
+to rows graded before it existed, not a rule change.
+
+### Which exposes something larger, and it is unmeasured rather than measured
+
+The conversions worker read seven pre-November grade A rows while settling other questions and
+**four of the seven failed the ladder** — all four the same way, with every tenure figure on the page
+being a person's career and no top rung anywhere. It recommended a dedicated audit. The count says
+why:
+
+- **196 grade A rows. 144 of them were added before 5 November, when the ladder did not exist.**
+- **138 of those 144 never mention the ladder in their notes at all.**
+- A zero-fetch screen of my own finds only 6 resting visibly on a career with no dated artifact
+  nearby (78, 385, 387, 407, 445, 447) — but that screen is weak, because most notes mention some
+  year somewhere and the regex cannot tell whose year it is. **That is exactly the subject test, and
+  it cannot be automated.**
+
+So the honest statement is that the exposure is unknown, and the only hands-on sample of it — seven
+rows, chosen for other reasons, not drawn at random — failed four. **This matters more than it looks,
+because grade A is not just a label: `batch` sorts A before B, so an over-graded A row jumps the send
+queue.** If a third of 144 rows do not deserve their A, Jess's first live sends go to weaker prospects
+than the grade promises, in grade order, with nothing visibly wrong.
+
+**Standing item, and it should outrank more sourcing on the next run:** audit the 144 pre-ladder A
+rows against the ladder, reading each row's own notes rather than fetching, and move what fails. No
+fetch budget is needed for most of them — the evidence is already written down, and the question is
+only whose it is.
 
 ## What we record
 

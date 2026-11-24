@@ -4,30 +4,63 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 23 Nov 2026: 1,485 rows, 963 ready to approach** — US 439, **AU 318** (up from 302), CA 86,
-UK 82, NZ 44, IE 2. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone
-out since, because every market requires WILBA's postal address in the footer and we do not have it.
-**Sourcing has not been the constraint for four weeks**, and the 23 Nov run is the clearest proof: it
-added 22 rows against a 60-row target and was still the most valuable night in a week, because the
-value was in rows that already existed and in a defect in the sending path.
+**As of 24 Nov 2026: 1,500 rows, 974 ready to approach** — US 439, **AU 321**, CA 86, UK 82,
+NZ 44, IE 2. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
+since, because every market requires WILBA's postal address in the footer and we do not have it.
+**Sourcing has not been the constraint for five weeks.** The 24 Nov run makes the point plainly:
+15 new rows against a 60-row target, and it was still a good night, because three of the four
+workers spent their budget on rows that already existed.
 
-**THE BIGGEST THING IN THIS FILE IS NO LONGER A MARKET OR A BACKLOG. IT IS THAT THE DRAFTING PATH WAS
-HIDING ITS OWN WARNINGS.** `wilba_outreach.py batch` — the output whoever writes the emails reads —
-never printed `notes`, which is where every caveat lands. **29 sendable rows carry a caution written
-specifically for whoever sends**, four of them grade A and therefore at the front of the oldest-first
-queue; 15 say `COULD NOT BE RE-VERIFIED 3 Nov 2026` with an explicit hold recommendation. Fixed
-23 Nov, and the sending thread confirmed **one row (588) was staged to send and is now held**.
+**THE BIGGEST THING IN THIS FILE IS STILL THE SENDING PATH, AND IT HAS A SECOND DEFECT OF THE SAME
+SHAPE.** The 23 Nov fix made `batch` print the cautions in `notes`, which it had been hiding from
+whoever writes the emails — 29 sendable rows carry one, and the sending thread confirmed one row
+(588) was staged and is now held. Tonight a worker published a clinic whose mailbox the clinic
+itself prints as `info @ cosmedikate.com.au`, spaces either side of the @, correctly recorded
+unclosed — **and the warning it wrote matched none of the hold patterns**, so a grade-B row whose
+address cannot be sent as written would have reached the drafter looking ordinary. The likeliest
+"fix" at the keyboard is to close the spaces, which is the one thing the rules forbid, done by
+whoever is least likely to know. **Both detectors are now derived from the address itself rather
+than from prose about it**, and one of them caught the row on arrival (1498). The general rule:
+a warning written as a sentence depends on someone choosing the words; a warning derived from the
+data depends on nothing.
 
-**Two things still need Jess and neither is a sweep.** The postal address, asked for on six
+**THE HOLD POLICY WAS AIMED AT THE WRONG VARIABLE, and the right one cost no fetches.** Fifteen
+rows had been held since 3 Nov because a re-verification fetch failed. All fifteen were re-fetched
+tonight: **12 confirmed, 1 changed, 0 gone, 2 still unreachable.** Zero of thirteen dead. The one
+change (587 Shoal Aesthetics) would have bounced and justifies the sweep on its own — but the real
+bounce risks turned out to be visible only when a fetch SUCCEEDS: three of the fifteen publish two
+addresses. Measured across all 974 sendable rows with no fetching at all: **15 rows publish the
+same mailbox name on two different domains**, three of those are template placeholders that answer
+themselves, and **ten carry a live coin-flip on their mailbox with no hold on them.** Now a
+standing audit line.
+
+**Also: `robots_disallowed` is a tool outcome, not a site property.** Of the 13 rows ever carrying
+that label, **8 are now recorded as mislabelled** — five served a byte-identical stock Wix
+`robots.txt` reading `Allow: /` and blocking only PetalBot. Those rows were held for a month for
+nothing. Reading `robots.txt` first is always permitted and costs one fetch.
+
+**GRADE A MAY BE OVERCOUNTED, AND THIS SHOULD OUTRANK SOURCING NEXT RUN.** 196 rows are graded A;
+**144 were graded before the must-have 4 ladder existed on 5 Nov**, and 138 of those never mention
+it. A worker read seven of them while settling other business and **four of the seven failed the
+ladder**, all the same way: every tenure figure on the page was a person's career, not the
+business's age. The sample is seven rows chosen for other reasons, so the exposure is unknown
+rather than measured — but `batch` sorts A before B, so an over-graded A row jumps the send queue.
+Auditing those 144 needs almost no fetching: the evidence is already written down and the only
+question is whose it is.
+
+**Two things still need Jess and neither is a sweep.** The postal address, asked for on seven
 consecutive runs. And the fact that the 10 sends on 15 Oct carried **no postal address and only a
 "reply 'no'" line rather than a working unsubscribe** — the sender now hard-stops while
 `sender-address.txt` is empty, so it cannot recur, but the gap on those ten is five weeks old.
 
-**The DM list is about 55 clinics and growing**: on-ICP, owner-operated, no published mailbox,
-Instagram link-in-bio only. A channel decision, never put to her.
+**The DM list is about 56 distinctly named clinics, and it is three populations rather than one**
+(counted 23 Nov): on-ICP owner-operated with no published mailbox is the smallest of the three and
+is still unmeasured. A channel decision, never put to her.
 
 **Backlogs are clear.** The 88 unruled grade-B ladder rows are at 0 (79 held, 9 moved to C). The
-36 deferring rows are at 18 sendable plus 18 parked. 38 self-contradicting `priority` fields are
+36 deferring rows are at **1 sendable** (478, which needs a phone call) plus 19 parked —
+seventeen were settled by fetch on 24 Nov, and that backlog turned out to be work rather than a
+queue of questions only Jess could answer. 38 self-contradicting `priority` fields are
 aligned.
 
 **Why it is in the repo.** This was kept in the session's team-memory directory under `/tmp`
@@ -36,6 +69,55 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files`, and this file is mirrored to
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
+
+## 24 Nov 2026 — 15 rows, fifteen holds settled, a backlog cleared, and two of my own write-ups falsified
+
+Four workers, three of them pointed at rows we already had. **1,485 → 1,500 rows; 974 sendable.**
+New rows: mel-index2 **1486-1492**, free-rows **1493-1495**, conversions **1496**, syd-index
+**1497-1500**. Spend was roughly 90 fetches and 37 searches across the four.
+
+**The re-verification sweep (15 rows held since 3 Nov): 12 confirmed, 1 changed, 0 gone, 2 still
+unreachable.** Zero dead addresses in thirteen settled cases, so the hold was sorting on our
+tooling's success when the harm lives in the clinic's publishing. **587 Shoal Aesthetics had
+genuinely changed** — the recorded `ivvwarrnambool@gmail.com` is not on the page and
+`shoalaesthetics@icloud.com` is, read verbatim; swapped, with the superseded reading kept, and held
+one cycle. That one row justifies the sweep. See ICP.md for the two-domain measurement it led to.
+
+**The deferring backlog turned out to be work, not questions for Jess: 17 of 18 settled by fetch.**
+Only 478 (Toronto Medical Aesthetics) needs a human — every liveness test its static site could
+answer came back stale and it publishes no social links, so a phone call precedes any send. Five of
+the settled rows still carry a residual first-call question no page will answer.
+
+**Grade movement: 2 B→A (333, 969), 5 A→B (323, 408, 448, 485, 826), 1 B→C (369).** All five A→B
+went the same way and it is the finding of the night: must-have 4 had no top rung, because every
+tenure figure on those pages was a person's **career**. 408 is the sharpest — it passed its
+staleness check and then failed must-have 3 on the same fetch, with two directors of two brands at
+one address and our mailbox belonging to only one of them. It was a grade A.
+
+**Two of my own write-ups were falsified by the workers I handed them to.**
+
+1. **The Sydney header-count collapse diagnostic is dead.** I wrote it up from a single observation
+   on 23 Nov and briefed it tonight as a technique. Five slugs: not one produced the three-figure
+   count it predicts, and two collapsed anyway at counts of 27 and 4. The census is the
+   "Call to book" section, locality-correct on 5 of 5 — the half last night's worker called noise.
+2. **The 45/36/18 ladder spread was a selection artifact.** Sampling in index order instead of
+   choosing promising names gives **33/22/44** on the same ground in the same week. 44% with no rung
+   is worse than the outer rings' 27%.
+
+**The directory index replicated harder in Sydney (66 of 98 new, 67%) than Melbourne (53%)**, and
+the Melbourne adjacent ring went up to 68%. **The index is non-redundant with search and one-shot
+with itself:** 0 of 12 new in suburbs already index-passed, 39 of 44 (89%) in search-only ground.
+Index each suburb once, never twice.
+
+**Three free rows came out of our own near-misses file with no fetching** (1493-1495), written up on
+22 Oct with verbatim addresses and an explicit "not in the pipeline", then lost for a month in a
+32,000-line log. 173 addresses in that file sit on domains absent from the pipeline; most are real
+rule-outs, and the filter is whether the context states a must-have failure.
+
+**A rule conflict in ICP.md, escalated rather than decided by the worker who found it, now
+resolved:** the subject test comes before the rung height. A figure that is not about this trading
+entity is not a low rung, it is not evidence. A career counts only where the practitioner IS the
+business and the years are time in THIS practice.
 
 ## 23 Nov 2026 — 22 rows, 15 existing rows settled, a hypothesis confirmed, and my own coverage brief wrong four ways
 
@@ -2309,7 +2391,41 @@ release it named precisely — and it is worth them, because its must-have 4 is 
 The general lesson, which applies to every absence finding this project records: **a content-type
 that is not HTML is not a page. Check you received HTML before reporting what is or is not in it.**
 
-## Where to go next — refreshed 23 Nov 2026 (read THIS block first; the 22 Nov one below is superseded throughout)
+## Where to go next — refreshed 24 Nov 2026 (read THIS block first; everything below it is superseded)
+
+**1. Audit the 144 pre-ladder grade A rows. This outranks sourcing.** 196 rows are graded A and 144
+were graded before the must-have 4 ladder existed; 138 never mention it. The only hands-on sample,
+seven rows, failed four. `batch` sends A before B, so these jump the queue. Almost no fetching
+needed — read each row's own notes and ask whose number it is.
+
+**2. Settle the ten two-domain mailboxes.** `append_prospects.py --audit` names them with the
+domain pair. Three answer themselves (741 `website.com`, 1338 `mysite.com`, 991 a BlueHost default).
+The other twelve are a coin flip and only 433 and 588 are held. Each is one fetch, or one glance in
+a browser for Jess.
+
+**3. The index pass over remaining search-closed metros, one suburb once.** Sydney's unspent
+ground: Mona Vale and Avalon were never fetched. Melbourne: `glenferrieroadmalvern.com.au`
+(`/trader-category/beauty/`), `highstreetarmadale.com.au`, `greythorncentral.com.au`, and
+`glenferrie.com.au/directory/category/hair-beauty/` — not its alphabetical root, which prints no
+websites. Read Call-to-book as the census, not the header count.
+
+**4. The cheap single-fetch wins, in order.** The ACN 608 956 716 lookup for Glowing Gracefully
+(1483) lifts B→A outright. Then `finessedfacesaesthetics.com/treatments`; four blog archives (775,
+826, 967, 1021) each one paginated fetch from A; Regina Skin & Beauty (domain already resolved); Eva
+Karpati Skin Clinic (published ABN, "opened her clinic in Double Bay in 1990", needs a mailbox);
+Vitality Beauty Bar, Glen Iris. Row 1497 Mojo's next fetch is `mojoklinik.com.au/about-us/` for
+must-have 2 and 3 — not another age hunt.
+
+**5. Rows with a named gap, not a sweep.** 1493/1494/1495 need one fetch each for the AU consent
+leg. 310 and 503 are live domains that failed on site-side errors — retry, do not park. 478 needs
+Jess or Griffin to dial 905-947-1221 before anything is sent.
+
+**6. Still outstanding with Jess, unchanged and not sourcing's to solve.** The postal address
+(seven runs). The unsubscribe gap on the ten sends of 15 Oct. The DM-list channel decision. The
+browser-visit list (Harrogate Aesthetics 06184603 is settled on the register but still blocked on a
+Cloudflare-hidden address; 429, 433, 588 are cheap for her to settle in a browser).
+
+
 
 **1. Two things that need Jess, and nothing else on this list unblocks revenue.**
    - **WILBA's postal address.** Asked on six consecutive runs; on a card in the GHL thread
