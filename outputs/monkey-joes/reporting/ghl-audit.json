@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T23:16:46+00:00",
+  "generated_at": "2026-11-24T01:35:03+00:00",
   "locations": {
     "POL": {
       "location_id": "xlzFHtujfHhegk3xc9q2",
       "connection": "ok",
-      "total_contacts": 13501,
+      "total_contacts": 13503,
       "tag_counts": {
         "reactivate-wk1-mon": 500,
         "reactivate-wk1-thu": 500,
@@ -24,9 +24,9 @@
         "nudge-sms-may2026": 100,
         "nudge-email-may2026": 54,
         "bogo-pol-lead": 41,
-        "inbound-call-po": 39,
-        "voice-agent-sms": 39,
-        "topic-party": 38,
+        "inbound-call-po": 40,
+        "voice-agent-sms": 40,
+        "topic-party": 39,
         "half-redeemed": 32,
         "redeemed-half": 32,
         "no sms": 27,
@@ -76,85 +76,85 @@
       },
       "attribution_samples": [
         {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": "https://www.google.com"
-        },
-        {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
-          "campaign": "Halfprice-pol",
-          "referrer": "https://www.google.com"
-        },
-        {
-          "utmSource": "google",
-          "utmMedium": "paid_search",
-          "campaign": "Bogo-pol",
-          "referrer": "https://www.google.com"
+          "referrer": "http://m.facebook.com"
         },
         {
           "utmSource": "facebook",
           "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": "https://instagram.com"
+          "referrer": null
         },
         {
           "utmSource": "facebook",
           "utmMedium": "paid_social",
           "campaign": "Halfprice-pol",
-          "referrer": "https://instagram.com"
+          "referrer": "https://facebook.com"
+        },
+        {
+          "utmSource": "google",
+          "utmMedium": "paid_search",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://www.google.com"
         },
         {
           "utmSource": null,
           "utmMedium": null,
           "campaign": null,
           "referrer": null
+        },
+        {
+          "utmSource": "facebook",
+          "utmMedium": "paid_social",
+          "campaign": "Halfprice-pol",
+          "referrer": "https://facebook.com"
         }
       ],
       "weekly_leads": [
         {
-          "week_start": "2026-08-31",
-          "new_leads": 6
-        },
-        {
-          "week_start": "2026-09-07",
+          "week_start": "2026-09-08",
           "new_leads": 11
         },
         {
-          "week_start": "2026-09-14",
+          "week_start": "2026-09-15",
           "new_leads": 21
         },
         {
-          "week_start": "2026-09-21",
+          "week_start": "2026-09-22",
           "new_leads": 0
         },
         {
-          "week_start": "2026-09-28",
+          "week_start": "2026-09-29",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-05",
+          "week_start": "2026-10-06",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-12",
+          "week_start": "2026-10-13",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-19",
+          "week_start": "2026-10-20",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-26",
+          "week_start": "2026-10-27",
           "new_leads": 0
         },
         {
-          "week_start": "2026-11-02",
+          "week_start": "2026-11-03",
           "new_leads": 1
         },
         {
-          "week_start": "2026-11-09",
+          "week_start": "2026-11-10",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-11-17",
           "new_leads": 0
         }
       ],
@@ -180,9 +180,9 @@
       },
       "voice_inbound": {
         "birthday-inquiry": 2,
-        "inbound-call-po": 39,
-        "topic-party": 38,
-        "voice-agent-sms": 39
+        "inbound-call-po": 40,
+        "topic-party": 39,
+        "voice-agent-sms": 40
       },
       "metrics": {
         "voucher_delivered": 111,
@@ -261,7 +261,8 @@
       "redemptions_by_channel": {
         "other/referral": 53,
         "facebook": 23,
-        "google": 12
+        "google": 11,
+        "direct/unknown": 1
       },
       "attribution_samples": [
         {
@@ -274,76 +275,76 @@
           "utmSource": null,
           "utmMedium": null,
           "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
+          "referrer": null
+        },
+        {
+          "utmSource": null,
+          "utmMedium": null,
+          "campaign": null,
           "referrer": "https://www.google.com"
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
-        },
-        {
-          "utmSource": null,
-          "utmMedium": null,
-          "campaign": null,
-          "referrer": null
         }
       ],
       "weekly_leads": [
         {
-          "week_start": "2026-08-31",
+          "week_start": "2026-09-08",
           "new_leads": 1
         },
         {
-          "week_start": "2026-09-07",
-          "new_leads": 1
-        },
-        {
-          "week_start": "2026-09-14",
+          "week_start": "2026-09-15",
           "new_leads": 3
         },
         {
-          "week_start": "2026-09-21",
+          "week_start": "2026-09-22",
           "new_leads": 0
         },
         {
-          "week_start": "2026-09-28",
+          "week_start": "2026-09-29",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-05",
+          "week_start": "2026-10-06",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-12",
+          "week_start": "2026-10-13",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-19",
+          "week_start": "2026-10-20",
           "new_leads": 0
         },
         {
-          "week_start": "2026-10-26",
+          "week_start": "2026-10-27",
           "new_leads": 0
         },
         {
-          "week_start": "2026-11-02",
+          "week_start": "2026-11-03",
           "new_leads": 0
         },
         {
-          "week_start": "2026-11-09",
+          "week_start": "2026-11-10",
+          "new_leads": 0
+        },
+        {
+          "week_start": "2026-11-17",
           "new_leads": 0
         }
       ],
