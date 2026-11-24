@@ -63,7 +63,6 @@
 366  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
 386  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
 421  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
-429  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
 433  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
 503  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
 587  # wave: site unreadable on re-read 3 Nov; hold until a read succeeds
@@ -97,3 +96,10 @@
 358  # 22 Nov sourcing: parked, no trading-age evidence
 732  # 22 Nov sourcing: parked, no trading-age evidence
 588  # 23 Nov sourcing: notes say hold (unverified since 3 Nov or sender caution); re-fetch before any send
+369  # 24 Nov: regraded C (on DO-NOT-SEND 24 Nov)
+72  # 24 Nov: publishes mailbox on two domains; Jess picks
+332  # 24 Nov: publishes mailbox on two domains; Jess picks
+435  # 24 Nov: publishes mailbox on two domains; Jess picks
+856  # 24 Nov: publishes mailbox on two domains; Jess picks
+323  # 24 Nov: notes carry a caution for the sender; read before releasing
+408  # 24 Nov: notes carry a caution for the sender; read before releasing
