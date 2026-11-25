@@ -266,6 +266,11 @@ HOLD_PATTERNS = (
     re.compile(r'[^.|]*\bCOULD NOT BE RE-?VERIFIED\b[^.|]*[.]?', re.I),
     re.compile(r'[^.|]*\b(?:CAUTION|NOTE|WARNING|COPY WARNING) FOR WHOEVER\b[^.|]*[.]?', re.I),
     re.compile(r'[^.|]*\bnot monitored\b[^.|]*[.]?', re.I),
+    # Added 25 Nov 2026. A worker wrote "BUT READ THIS BEFORE SENDING, because it is the nearest
+    # thing to one I met all night" about a clinic advertising its own anti-spam stance - a
+    # caution addressed to the sender in as many words, matching none of the patterns above. The
+    # row's qualification was clean, so nothing else would have flagged it either.
+    re.compile(r'[^.|]*\bread (?:this )?before (?:send|writ|draft)\w*\b[^.|]*[.]?', re.I),
 )
 
 

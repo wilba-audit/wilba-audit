@@ -3087,6 +3087,128 @@ worker is re-ruling, prioritising the 17 C moves, since C is what makes a row no
 direction of the error was at least the safe one — rows are wrongly held, not wrongly released, so
 nothing was sent that should not have been. That is luck, not design.
 
+## The coverage check has now failed four nights running, and the label is the reason. Grep NAMES. 25 Nov 2026
+
+Tonight was the third consecutive night a worker opened its report by correcting my coverage claim,
+and the fourth separate mechanism:
+
+| night | how the check failed |
+|---|---|
+| 23 Nov | `grep -n` prints only the FIRST line of a multi-line swept list |
+| 23 Nov | some runs file coverage under `Assigned:` rather than `Markets swept:` |
+| 25 Nov | **a dedicated sweep records coverage as `**Market:**`, which no pattern greps** |
+| 25 Nov | my `held-<metro>.txt` export filtered on the `city` field (below) |
+
+The Gold Coast worker diagnosed the third one and it is the worst, because it hides whole sweeps
+rather than part of a list. `grep -cE "^\*\*Market:"` returns **4**, and two of those four are
+Brisbane — the 12 Nov inner-north-and-east sweep (19 businesses researched, 12 rows written) and the
+18 Nov south-and-west sweep. I had briefed tonight's Brisbane worker that coverage was "thin" and
+named four quadrant centroids; **three of the four sit inside one of those two sweeps.** The Gold
+Coast was the same: a full `# GOLD COAST, QLD - 17 Nov 2026` sweep covering 16 of the suburbs I
+called open.
+
+**So the five-part grep is now:**
+
+```
+grep -A4 -nE "Markets swept|^Assigned:|^\*\*Market:|^## .*(metro name)|^# .*(metro name)"
+```
+
+**But do not rely on it, because the real lesson is that the check depends on a convention nobody
+enforces.** Four labels have been used for the same thing across 34,000 lines, and a fifth will
+appear the next time a worker invents a write-up shape. A pattern-based coverage check can only ever
+find the shapes already known to it.
+
+**Grep the clinic NAMES instead.** That works whatever the write-up looks like, because a name is a
+name. The Gold Coast worker put it exactly right: *"a name grep found all three sections in one
+command when the coverage grep found none."* So the order is:
+
+1. Grep the metro and suburb names as a cheap orientation, with the five-part command above.
+2. **Then grep every candidate name against both files before fetching it** — which is required
+   anyway by the duplicate rule, and which is the check that actually holds.
+
+The label grep tells you where to read. The name grep tells you the truth.
+
+### And my held-row export was filtered on the wrong field
+
+I gave each metro worker a `held-<metro>.txt` built with `if metro.lower() in row['city'].lower()`.
+The `city` field holds the suburb: "Burleigh Heads QLD (19 Park Avenue, 4220)", "Labrador QLD",
+"Bundall QLD". So the Gold Coast export found **24 rows where a whole-row match finds 40** — sixteen
+missing, including two the worker then met in its own census and would have re-sourced had it
+trusted my file. It grepped the CSV instead and caught them.
+
+This is the second time in one night that I handed a worker a filtered view of the data and the
+filter was the error (the grade audit's missing `scale_signals` was the first). **One lesson, stated
+once: when preparing input for a worker, do not project and do not filter. Hand over the whole
+record and let the worker select.** The projection is the judgement being delegated, and I keep
+making it silently on the way out the door.
+
+## An index pass binds on must-have 1 where a search pass binds on must-have 5. 25 Nov 2026
+
+The single most useful method finding of the night, and it changes how to budget an index run.
+
+| sole or primary failure | Fresha index pass (24 clinics) | 17 Nov search pass (22 clinics) |
+|---|---|---|
+| **must-have 1** (injectables-led, prescriber) | **10 of 24 — 42%** | **0 of 22** |
+| must-have 5 (published mailbox) | 25% | 23% — unchanged |
+
+**The mechanism is obvious once stated: a search query carries the word "injectables" and
+pre-filters business type before you ever see a result. A Fresha treatment slug does not** — it is a
+centroid, so it returns the nail bar and the acupuncture clinic alongside the injector, and you pay
+a fetch to find out which.
+
+So the two instruments fail in different places and the right move is to use both:
+
+- **Budget an index run at about 2 fetches per accepted row, not 1.**
+- **Run the index to FIND businesses and a search to QUALIFY them** before spending a page fetch.
+
+That also explains the 48% no-rung and 44% no-rung figures from index-order sampling: a chunk of
+what the index returns is not an aesthetics business at all.
+
+### Gold Coast measurements
+
+- **133 in-ground listing slots → 100 unique businesses → 72 new to both files (72%).** Fourth city,
+  at the top of the 53-68% range. The worker's own caveat is right and worth keeping: a newness rate
+  measures **the overlap between two instruments on a given market**, not the index's power, and the
+  Gold Coast's prior coverage was thin in absolute terms. Brisbane's is thick, which is why its
+  redundancy rate is now the more interesting number.
+- **Fresha printed a website domain on 0 of 133 slots. With Sydney's 0 of 274 that is 0 of 407** —
+  settled as a property of the AU template, not of any city or ring.
+- **Call-to-book was the census on 6 of 6; the header count was useless on 6 of 6.** Last night's
+  correction holds on a second city.
+- **Slug redundancy 33 of 133 (25%), and `robina` was 80% redundant — skip it.** The covering set is
+  broadbeach / burleigh-heads / southport / coolangatta / helensvale.
+- **Listing-level disqualification 27 of 100 (27%), LOWER than Sydney's ~30%, so my chain-density
+  prediction for this metro was wrong.** Chains are the biggest single category (13), so the density
+  is real; what the Gold Coast actually has more of is **the medical arm — 11 of 100 sell skin-cancer
+  or dermatology services, and 5 of those 11 were invisible from the listing text.** That falls on
+  must-haves 1 and 2 and it is where the budget goes.
+- **Ladder in index order: 26% top / 26% middle / 48% none** — a third measurement close to the
+  33/22/44 of index order and far from the 45/36/18 of promise order.
+- **0 of 24 clinics published a numeric review count.** Zero, not low.
+- **Mailbox rate 63% somewhere, 58% on the first page read.**
+
+### Two findings that reach past this metro
+
+**Cloudflare obfuscation has a per-metro rate, not a national one.** 3 of 24 on the Gold Coast
+(12.5%) against the project's standing ~2 in 75 (2.7%) — about 4.6x — all three with the token on an
+obvious page, so no page-coverage story is needed to explain it. With two earlier rows the Gold Coast
+holds 5 of the project's AU Cloudflare clinics. **Record the rate per metro from now on**; a national
+average has been hiding a cluster.
+
+**Read the street address first on a resolved domain, and nothing else until it matches.** Two of 36
+searches (5.6%) resolved silently to the wrong business, both with a real address, platform and
+review count that would have passed every other check: "Aesthetics by Grace Luce" (Coolangatta)
+resolved to a licensed esthetician in **Omaha, Nebraska**, and "VM Cosmetic Clinic" (Southport) to a
+clinic in **Orange, NSW**. Nothing about either page announces the error. The address is the only
+field that catches it, so read it before anything else.
+
+### A hole this run states plainly, and it is the right way to leave one
+
+**Zero privacy policies were fetched**, so all 24 must-have 2 verdicts read "clean on the pages read,
+policy not read". That matters because the 17 Nov Gold Coast sweep lost **both** its best candidates
+to a dirty policy over a clean site. So each of the five grade B rows carries a live policy risk and
+its privacy policy is the highest-value next fetch on it. A flagged hole beats a settled-looking B.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at
