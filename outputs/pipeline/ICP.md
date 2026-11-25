@@ -3255,7 +3255,26 @@ means is how a breach reaches a draft**, which is how "GBP 25" sat in two staged
 currencies were in one file's regex and not the other's.
 
 **And the follow-up queue had no guard at all.** `cmd_due` printed `opening_angle` bare — no copy
-warning, and until 23 Nov no caution block either. The ten contacted clinics are in that queue and
-no other. Both paths now print through one `print_angle()`, for the same structural reason the
-`defers()` predicate was reduced to one copy on 24 Nov: **a fix applied to the path you happened to
-be looking at does not hold, because nobody re-asks which other paths say the same thing.**
+warning, and until 23 Nov no caution block either. Both paths now print through one
+`print_angle()`, for the same structural reason the `defers()` predicate was reduced to one copy on
+24 Nov: **a fix applied to the path you happened to be looking at does not hold, because nobody
+re-asks which other paths say the same thing.**
+
+**CORRECTION, same night, and it sharpens the rule rather than cancelling it.** I claimed the
+follow-up queue was the path the ten contacted clinics send through. The sending thread, which owns
+that code, says otherwise: its v2 sender reads a rewritten opener out of `openers-v2.json`, never
+the pipeline's `opening_angle`, and follow-ups carry no opener at all. It scanned the opener and
+subject that would actually go out for all 332 unsent unheld rows — clean on currencies, ISO codes,
+percentages, discounts and freebies.
+
+**The breach was in the fallback.** Four rows had no v2 opener, so the v1 opener — this pipeline's
+field, the one the guard reads — would have gone out quoting a price. **147, 166, 167 and 182 are
+now held.** So the audit paid through a path I did not know existed, and the real rule is:
+
+> **An audit of a field is worth nothing until you know which field the sending path actually
+> reads.** The hazard is neither the guarded field nor the unguarded one. It is the silent fallback
+> between them, because a row that drops out of the new path lands in the old one with nothing
+> watching.
+
+The standing question that follows, for whoever owns the sender: **how many sendable rows have no
+v2 opener?** Each one sends from a field written for a different purpose.

@@ -145,9 +145,12 @@ confidently and wrongly.**
 - The hold detector was crying wolf on 11 of 29 rows, holding on a failed 3 Nov re-verification that
   a later line in the same field had already answered. It now prints the later line beside the
   caution without deciding; 20 of 34 cautions now show one.
-- `cmd_due` printed the opening angle with no copy warning at all, so the follow-up queue — the only
-  queue the ten contacted clinics are in — was the one path with no guard. Both paths now print
-  through one function.
+- `cmd_due` printed the opening angle with no copy warning at all. **I claimed this was the path
+  the ten contacted clinics send through and that was wrong in mechanism** — the sending thread,
+  which owns that code, says its v2 sender reads a rewritten opener out of `openers-v2.json` and
+  that follow-ups carry no opener at all. The guard is still right to have, because `due` output is
+  read by a person who may draft from it, but it was not one send away from a breach. Both paths
+  now print through one function.
 - The copy guard knew only currency symbols and nothing about discounts. "GBP 25" sat unflagged in
   two drafted openers.
 - Row 346's `scale_signals` read "owner trading in the area since 2002" while its notes correctly
@@ -159,6 +162,22 @@ something rather than clever: it held 15 more rows against the corrected grade l
 it had been holding wrongly, and caught 310 and 587 before either bounced. 310 is the sharpest —
 `info@thelouveskinclinic.com.au` is **no longer published** and only `Admin@` with a capital A is,
 and that row was staged to send.
+
+**AND IT CORRECTED THE COPY AUDIT IN A WAY THAT MATTERS MORE THAN THE AUDIT DID: I was auditing the
+wrong field, and the breach was in the fallback.** The v2 sender does not read the pipeline's
+`opening_angle` at all; it sends a rewritten opener from `openers-v2.json`, and a scan of the opener
+and subject that would actually go out for all 332 unsent unheld rows came back clean on currency,
+ISO codes, percentages, discounts and freebies. **But four rows had no v2 opener**, so the v1
+opener — the pipeline field, the one my guard reads — would have gone out carrying a quoted price.
+**147, 166, 167 and 182 are now held.** 85's "GBP 25" was only ever in its v1 opener and 85 was
+emailed on 15 Oct, so nothing was staged behind it.
+
+So the audit paid, through a path I did not know existed, and the lesson is the sharper version of
+the one this file keeps relearning: **an audit of a field is worth nothing until you know which
+field the sending path actually reads.** The hazard is not the guarded field or the unguarded one,
+it is **the silent fallback between them**. A standing question for whoever owns the sender, which
+this thread cannot answer from its own branch: **how many sendable rows have no v2 opener?** Every
+one of them is a row that sends from a field written for a different purpose.
 
 **A ruling I am naming rather than hiding in a grade: a staff-tenure-at-this-clinic date is a top
 rung.** Row 375 Sanctum publishes "Dani commenced her career with Sanctum Medical as a Dermal
