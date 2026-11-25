@@ -3054,6 +3054,115 @@ rows against the ladder, reading each row's own notes rather than fetching, and 
 fetch budget is needed for most of them — the evidence is already written down, and the question is
 only whose it is.
 
+## The pre-ladder grade A audit: 105 of 144 did not support their grade. 25 Nov 2026
+
+Last night's count said 144 of the 196 grade A rows were graded before the must-have 4 ladder
+existed on 5 November, and that the only hands-on sample of them — seven rows, chosen for other
+reasons — had failed four. The whole 144 were audited tonight against the ladder and the subject
+test, from the rows' own notes rather than by fetching.
+
+**105 of 144 do not support their grade: 72.9%.** 88 moved to B, 17 to C, **39 held A.**
+**Grade A across the pipeline falls from 196 to 91**, and sendable from 974 to 957.
+
+That is worse than I guessed, and the seven-row sample was right in magnitude and slightly kind.
+
+### The variance is not in the rows. It is in the sweeps.
+
+| sweep | failed | rate |
+|---|---|---|
+| 23-24 Sep | 35 of 35 | **100%** |
+| 16 Oct | 28 of 29 | **97%** |
+| 3 Nov | 5 of 5 | 100% |
+| 21 Oct | 1 of 9 | **11%** |
+| 4 Nov | 1 of 6 | 17% |
+
+**Three days of sourcing account for 61% of the entire problem.** The country cut is mostly noise
+by comparison (US 78%, AU 74%, UK 71%, and Canada's good 33% turns out to be two careful sweeps
+rather than a market effect).
+
+**So the unit of quality variance is the SWEEP — the brief a worker was given — not the row, and
+not the market.** That changes how an audit like this should be run: re-read sweeps, not rows. A
+bad night produces thirty-five bad rows that all fail the same way, and finding one of them tells
+you where the other thirty-four are. It also means the cheapest quality control available is the
+brief itself, which is the thing I write.
+
+**Why those two big sweeps fail, specifically:**
+
+- **23-24 Sep rows are an address plus a regional consent screen and nothing else.** Six rows in
+  the file are a single sentence. All six moved.
+- **16 Oct rows are an address plus a BOOKING-PLATFORM DETECTION.** That was the 22 September
+  standard's qualification — and ICP v2, which landed on 16 Oct, demoted a platform to a discovery
+  question the same day. A platform is bought, not accumulated, so it is no rung. Row 220's own
+  notes said this about its own cohort on 8 November and the grade never moved for seventeen days.
+
+### The dangerous row is the silent one, not the self-doubting one
+
+All six single-sentence rows moved. But **22 of the 55 rows whose notes openly admit a gap
+correctly held A** — a row that says "established is inferred" often turns out to have a real rung
+recorded two sentences later. So a keyword screen for self-doubt would have moved the wrong rows in
+both directions, which is why this had to be read.
+
+Seven rows keep their A on evidence the notes themselves mislabel: 465 (an "11th anniversary offer"
+in alt text, called inferred), 896 (a 2023/24/25 award run), 934 ("Copyright 2020 - 2023"), 894
+("Founded Feb 2021" in a row whose prose says must-have 4 is inferred), plus 78, 362, 963.
+
+### A boundary this audit sharpened: WHERE a review count is published decides it, not where it came from
+
+- **332** (669 reviews) and **338** (505) read their counts off Fresha **directory** pages. Not a
+  rung. Both moved to B.
+- **963** embeds *"From 535 verified client reviews on Fresha"* on **its own homepage**, and **838**
+  prints *"Rated 5.0 from 122 Google reviews"* on **its own homepage**. Top rung. Both hold A.
+
+This is the 18 Nov ruling's own carve-out, but it needs saying plainly because "535 reviews **on
+Fresha**" reads at a glance like the thing the rule forbids and is the exact opposite of it. **The
+clinic choosing to publish the number on its own page is the evidence.** The counting was always
+someone else's.
+
+Also settled by fetch: row **78**'s tenure figure, which the standing screen had flagged as a
+career, is *"Trusted by Clients for Over 25 Years"* — subject is the clinic. Holds A. And **963**'s
+hero *"8+ years"* sits in a row of credential badges naming no subject, so it must never be quoted
+as the clinic's age, even though the row holds A on the review count.
+
+### Rulings applied uniformly, listed so any of them can be reversed cheaply
+
+A booking or CRM tenant is not a rung (13 rows, 5 of them C because it was all they had). A lender
+integration is not a rung — note that this does NOT retire the 52-week payment plan, which is the
+clinic's own commitment ledger; Afterpay at a checkout is a bought integration. **Manufacturer
+loyalty programmes (Alle, Aspire) are not the clinic's accumulation** — they are Allergan's and
+Galderma's lists, which is the subject test. A newsletter box or an unsubscribe line is furniture,
+not a mailing list. **An identifier with no retrieved date is not a dated artifact**: reading a year
+out of a company number's vintage is reconstructing a figure nobody published, which is the
+never-construct rule applied to dates.
+
+### Eleven rows are one call from an A, with the number already in hand
+
+Six need one register call: 85 (CH 08682402), 425 (08428329), 628 (12191223), 114 (11712310), 124
+(CRO 706856), and 125 (CRO 643852 — already dated 18 Feb 2019, so what is missing is only the
+entity tie off the clinic's own page). Five need one page fetch: 483 (get the figure behind
+"hundreds of 5-star reviews"), 575 (read the ABN digits then the ABR "Active from", 8 for 8), 179
+and 154 (fetch the very page the address came off), 396 (a "customer since" line on the review
+wall).
+
+## Six of the ten clinics we have ever emailed are now off profile. 25 Nov 2026
+
+All ten sends went out on **15 October 2026 — the day before ICP v2 landed.** Tonight's audit
+regrades six of them to C: 85 Elite Aesthetics, 86 rtwskin, 87 Epsom Skin Clinics, 88 Health &
+Aesthetics, 89 The Skin to Love Clinic, 96 Cityskin Cosmetic Clinic.
+
+So **the only outreach WILBA has ever done went mostly to clinics the current standard
+disqualifies.** Nothing needs undoing — they were qualified under the standard in force that day,
+and the sends are five weeks old. It matters for two reasons. The four still on profile (93, 94,
+97, 98) are the only live threads we have. And it is the cleanest possible illustration of why the
+16 Oct sweep failed at 97%: the standard changed under a sourcing run that was already in flight.
+
+**And the follow-up queue had been silently hiding all ten for 41 days.** `wilba_outreach.py due`
+matched the status `Emailed` and the sequence names `Follow-up 1/2/3`; the CSV records these rows
+as `Emailed 1`, which matched neither, so they fell through an unreported `else: continue`. The
+queue printed "Nothing due today" every day since 18 Oct, which reads as all-clear. Fixed tonight,
+and the fix has three parts: accept the `Emailed <n>` form, **report an unmatched status loudly**
+instead of dropping the row, and **name the contacted rows that are now off profile rather than
+chasing them** — six of which this audit just created.
+
 ## What we record
 
 Every prospect gets `crm_detected`, `scale_signals` and `dormant_lead_signal` filled from

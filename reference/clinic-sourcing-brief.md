@@ -2913,6 +2913,114 @@ Two lessons, and the second is the one that matters:
    what it saw, rather than describing it in prose. A C row with a named gap is findable; a paragraph
    is not.
 
+## The blog archive is a 2-of-7 rung. Stop writing it into rows as the cheap route to an A. 25 Nov 2026
+
+Four rows carried a recorded recovery route of the form "one paginated fetch of the blog archive
+lifts this B to an A". All four were spent tonight and **none paid:**
+
+| row | what the archive held |
+|---|---|
+| 775 | oldest post 2 Dec 2025 — about one year, fails must-have 4 on substance |
+| 826 | four posts in total, oldest 12 Aug 2026 |
+| 1021 | archive **empty**, "Coming Soon" |
+| 967 | **has no blog at all** — the row's recovery route was mis-tasked |
+
+And the failure was not the usual one. **Every URL was properly sourced from an enumerated href,
+every fetch returned real content, and no archive had pagination.** So this is not a technique
+executed badly; it is a rung that does not bear weight. Pooled with the two earlier successes the
+ladder records, **a blog archive has dated a business 2 times in 7.**
+
+**The reason is structural and should have been obvious: a blog dates the MARKETING PUSH, not the
+business.** A clinic that traded for nine years and started posting last spring has an archive
+eleven months deep. That is the subject test again — the archive's subject is the content
+programme, and the content programme is usually younger than the practice, sometimes by a decade.
+
+**So: stop writing "the blog archive is one fetch from an A" into a row's recovery route.** It has
+now written four promissory notes that all came back empty, and each one cost a later worker a
+fetch it could have spent on a prescriber or a mailbox. If an archive is already open in front of
+you, read its oldest date and use it — as a FLOOR on the business's age and never as its age. Do
+not go looking for one.
+
+One caution that survives, from row 720: where the two oldest posts are "meet our new owner" in
+shape, the archive dates the **current ownership** rather than the business.
+
+## GST registration status is free on every ABR call, and it reaches something the ladder cannot. 25 Nov 2026
+
+The ABR lookup has been used for one thing: a registration date, to satisfy must-have 4's age half.
+It returns a second field at no extra cost and nobody had read it. **Australian GST registration is
+compulsory above AUD $75,000 of turnover**, so the line "Not currently registered for GST" on an
+active company bounds that company's turnover **below $75k**.
+
+That matters because must-have 4 has two halves — old enough, and busy enough to have accumulated
+a lapsed list worth reactivating — and **every rung on the ladder measures only the first.** A
+five-year-old clinic turning over under $75k does not have 300 lapsed patients. The evidence ladder
+cannot see that and this field can.
+
+Row 1483 is the worked example, and the lookup did NOT do what I predicted. I briefed it as "an
+incorporation date lifts B→A in one lookup." The date came back — GLOWING GRACEFULLY PTY LTD, ABN
+20 608 956 716, active from 02 Sep 2021, a 5.2-year floor, a genuine top rung — **and the row
+stayed at B**, because the same page said not registered for GST. Either turnover is tiny, which
+cuts against the substance half, or the Pty Ltd is not the trading entity, which is the subject test
+unresolved. Both readings keep it off A.
+
+**Read the GST line on every ABR call from now on**, and record it either way: it is as informative
+when it says registered as when it does not.
+
+### And an ACN alone now resolves, 1 for 1
+
+Previously the ABR route needed an 11-digit ABN. A 9-digit ACN resolves through the search endpoint:
+`https://abr.business.gov.au/Search/ResultsActive?SearchText=<9-digit ACN>`. Row 856 is the next
+candidate holding a bare ACN.
+
+## ROBOTS_UNREACHABLE is retryable, and it is a fetcher-side failure rather than a site restriction. 25 Nov 2026
+
+This brief recorded `ROBOTS_UNREACHABLE` as **NOT retryable**, measured at 3 of 39, on the strength
+of one worker that deliberately retried and reproduced it exactly. **Row 310 is the counter-example
+and it is decisive.** That row was labelled `robots_disallowed` on 3 Nov and `ROBOTS_UNREACHABLE` on
+24 Nov. Tonight its `robots.txt` **served cleanly on the first attempt** and reads, in full,
+`User-agent: *` and a sitemap line — **no Disallow directive of any kind.** The site has never
+restricted anything. Both labels described our fetcher, not the site.
+
+Row 503 shows the mechanism: it served its `robots.txt` to a direct fetch, and then returned
+`ROBOTS_UNREACHABLE` on `/` minutes later from the same origin. A preflight that fails while the
+same file is demonstrably servable is a failure in the fetch, not a fact about the host.
+
+**The revised rule:** do not loop on it, but **one retry on a later run is worth a single fetch**.
+And the cheap diagnostic first: **fetch `/robots.txt` directly** — always permitted, one fetch — and
+if it serves, a later `ROBOTS_UNREACHABLE` means "could not fetch" and never "restricted". That
+test also settles the `robots_disallowed` label, which has now been wrong on 9 of the 13 rows that
+ever carried it.
+
+## Read every row in the batch before spending a fetch on any of them. 25 Nov 2026
+
+Third night running that this has paid, and tonight it was measurable. A worker given thirteen rows
+to settle read all thirteen notes first and found **eleven already answered in the rows themselves.**
+It spent one fetch, on the twelfth. I had predicted three would be self-answering.
+
+The same shape, three nights: row 78 (a must-have 3 answer sat in a 12 Nov fetch), rows 429 and 433
+(two must-have 8 flags both already settled, one on the page and one by register call), and now
+eleven of thirteen. **A row is an accumulating record, not a cache of the last fetch.** Reading the
+batch costs nothing, happens before any budget is committed, and has never once failed to pay.
+
+### Two smaller rules from the same worker
+
+**A wiring conflict on ONE sighting is not the page's answer.** Row 332 was nominated because its
+address appeared wired to a different domain. The page publishes the address **twice**: once wired
+to a former brand and once wired to itself. Count every sighting on the page before concluding that
+a recorded address is wrong.
+
+**Declining to decode is not only for Cloudflare tokens.** Two volunteered decodes were declined
+tonight and the declining recorded: asset-path hashes and upload-path timestamps. A machine
+timestamp inside an asset path is not a publication, and its subject is the **website build** — so
+it fails the subject test even if you could read it. Treat it as the Cloudflare rule's sibling.
+
+### An environment limit worth knowing
+
+**MX lookups are the right instrument for the two-domain question and are not available here.**
+DNS-over-HTTPS is refused by the proxy (403 on dns.google and cloudflare-dns.com) and there is no
+`dig`, `host` or `nslookup`. Several two-domain rows would close decisively with one MX query. Do
+not try to work around the proxy; note it and settle the row another way or hold it.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at

@@ -446,6 +446,8 @@ def cmd_due(args):
     rows = load_rows()
     today = date.today()
     due = []
+    unmatched = []
+    off_profile = []
     for r in rows:
         status = r.get('status', '').strip()
         if status in STOPPED or status in OPEN_STATUSES or not status:
@@ -458,8 +460,19 @@ def cmd_due(args):
         except ValueError:
             continue
         # Which touch comes next after the current status?
+        #
+        # THE `else: continue` HERE USED TO BE SILENT, AND IT SWALLOWED EVERY ROW WE HAVE EVER
+        # EMAILED. Found 25 Nov 2026. The ten sends of 15 Oct 2026 are recorded with status
+        # 'Emailed 1'; this branch tested for 'Emailed' and for the SEQUENCE names
+        # ('Follow-up 1/2/3'), so 'Emailed 1' matched neither and fell through. `due` has
+        # printed "Nothing due today" every day since 18 Oct - a false negative for 41 days,
+        # reading as all-clear when the truth was that ten rows matched no branch.
+        #
+        # So: accept the 'Emailed <n>' form, and make an unmatched status LOUD. A queue that
+        # drops a row without saying so is the same defect as a caution that never printed, and
+        # the next unanticipated status string would have vanished exactly as this one did.
         names = [n for n, _ in SEQUENCE]
-        if status == 'Emailed':
+        if status == 'Emailed' or re.match(r'^Emailed\s+\d+$', status):
             nxt, gap = SEQUENCE[0]
         elif status in names:
             i = names.index(status)
@@ -470,12 +483,37 @@ def cmd_due(args):
                 continue
             nxt, gap = SEQUENCE[i + 1]
         else:
+            unmatched.append((r['id'], status))
             continue
+
+        # A row we contacted and have since taken off profile must not be chased. This is not
+        # hypothetical: of the ten clinics emailed on 15 Oct 2026, SIX were regraded to C on
+        # 25 Nov when the must-have 4 ladder was applied to rows graded before it existed. They
+        # were contacted the day before ICP v2 landed, under the retired 22 Sep standard. They
+        # are reported rather than hidden, because "we emailed someone who does not fit" is
+        # something the operator needs to know and cannot see anywhere else.
+        if not on_profile(r):
+            off_profile.append((r['id'], r.get('clinic_name', ''), r.get('icp_fit', '')))
+            continue
+
         if (today - sent_on).days >= gap:
             due.append((r, nxt, gap))
 
+    def report_skips():
+        if off_profile:
+            print(f'{len(off_profile)} contacted row(s) are NO LONGER ON PROFILE and will not be '
+                  f'chased - they were emailed under an earlier standard:')
+            for rid, name, grade in off_profile:
+                print(f'   {rid} | {name} | now grade {grade.upper()}')
+        if unmatched:
+            print(f'{len(unmatched)} row(s) have a status this queue does not understand, so no '
+                  f'follow-up can be worked out for them. Fix the status or the sequence:')
+            for rid, status in unmatched:
+                print(f'   {rid} | status {status!r}')
+
     if not due:
         print('Nothing due today.')
+        report_skips()
         return
 
     print(f'# Follow-ups due {today.isoformat()}')
@@ -491,6 +529,7 @@ def cmd_due(args):
         print_cautions(r)
         print(f'   angle:    {r.get("opening_angle","")}')
         print()
+    report_skips()
     print(f'IDS: {",".join(r["id"] for r, n, g in due if n != SEQUENCE_END)}')
     retire = [r["id"] for r, n, g in due if n == SEQUENCE_END]
     if retire:
