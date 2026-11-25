@@ -99,3 +99,18 @@
 369  # 24 Nov: regraded C (on DO-NOT-SEND 24 Nov)
 323  # 24 Nov: notes carry a caution for the sender; read before releasing
 408  # 24 Nov: notes carry a caution for the sender; read before releasing
+69  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+84  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+85  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND) - emailed 15 Oct, no follow-ups
+86  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND) - emailed 15 Oct, no follow-ups
+88  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND) - emailed 15 Oct, no follow-ups
+89  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND) - emailed 15 Oct, no follow-ups
+111  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+154  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+179  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+193  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+222  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+234  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+345  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+396  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
+575  # 25 Nov: graded C in the must-have 4 audit (DO-NOT-SEND)
