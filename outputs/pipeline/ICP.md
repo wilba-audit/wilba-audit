@@ -3276,5 +3276,8 @@ now held.** So the audit paid through a path I did not know existed, and the rea
 > between them, because a row that drops out of the new path lands in the old one with nothing
 > watching.
 
-The standing question that follows, for whoever owns the sender: **how many sendable rows have no
-v2 opener?** Each one sends from a field written for a different purpose.
+The standing question that followed, for whoever owns the sender — **how many sendable rows have no
+v2 opener?** — was answered and closed the same night: **4 of 336**, all held, and the sender now
+**refuses to start a clinic missing from `openers-v2.json`** rather than falling back to v1. The
+right fix for a silent fallback is to make it loud, not to keep a list of the rows currently inside
+it.

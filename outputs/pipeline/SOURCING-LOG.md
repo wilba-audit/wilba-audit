@@ -179,6 +179,13 @@ it is **the silent fallback between them**. A standing question for whoever owns
 this thread cannot answer from its own branch: **how many sendable rows have no v2 opener?** Every
 one of them is a row that sends from a field written for a different purpose.
 
+**ANSWERED AND CLOSED THE SAME NIGHT.** The fallback surface was **4 rows of 336** loaded unsent
+(147, 166, 167, 182), all held. The sending thread then closed the hole structurally rather than by
+list: under v2 its sender now **refuses to start any clinic missing from `openers-v2.json`**,
+logging "no v2 opener, not started", and never falls back to v1. So the silent fallback is gone and
+a row that drops out of the new path now fails loudly, which is the outcome a hold list only
+approximates. Wave rows get their openers added to that file when they are loaded.
+
 **A ruling I am naming rather than hiding in a grade: a staff-tenure-at-this-clinic date is a top
 rung.** Row 375 Sanctum publishes "Dani commenced her career with Sanctum Medical as a Dermal
 Therapist in 2014" and two more like it, bracketing 2014-2017. A date that can only be true if THIS
