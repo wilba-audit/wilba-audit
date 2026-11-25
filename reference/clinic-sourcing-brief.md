@@ -3021,6 +3021,72 @@ DNS-over-HTTPS is refused by the proxy (403 on dns.google and cloudflare-dns.com
 `dig`, `host` or `nslookup`. Several two-domain rows would close decisively with one MX query. Do
 not try to work around the proxy; note it and settle the row another way or hold it.
 
+## I handed a worker a partial row and got 105 confident verdicts on it. 25 Nov 2026
+
+This is the worst mistake I have made in this pipeline and it is worth writing out in full,
+because I spent the three nights before it fixing the same defect in other people's work.
+
+I commissioned an audit of the 144 grade A rows that predate the must-have 4 ladder. To brief it I
+exported `pre-ladder-A.json` with seven fields: `id`, `clinic_name`, `country`, `city`,
+`date_added`, `website` and `notes`. **I omitted `scale_signals` and `dormant_lead_signal`.**
+
+Those two fields are where this pipeline's accumulation evidence lives. Not incidentally — by
+design. The sourcing standard requires every row to record them, and the opening line is built from
+them. A named team, a membership roll, a gift-card scheme, retail stock, a payment plan, a device
+stack, a trading length: all of it routinely lands in `scale_signals`, and the lapsed-list evidence
+lands in `dormant_lead_signal`. **I removed the ladder's own evidence from a ladder audit.**
+
+The worker did good work on what I gave it. It returned 105 moves with every quote verified against
+the text it had, and the measurement:
+
+- **101 of the 105 moved rows carry ladder-relevant material in the two fields it never saw.**
+- **16 of its 17 C moves have a named team, a membership roll, a gift-card float, retail stock or a
+  payment plan in them** — every one an explicit middle rung, which holds a row at B and never
+  leaves it at C.
+
+Row 69 is the row to remember. Its ruling reads *"no membership roll, gift-card float, named team,
+second premises, device stack, payment plan or retail stock"* — and its `scale_signals` field reads
+*"MEETS - 3 doctors + 4 nurse injectors, open 7 days, 9 years trading, separate e-commerce
+store"*, with `dormant_lead_signal` adding *"a newsletter list and a 9-year Zenoti database"*. Nine
+years trading is a quantified figure about that business. A top rung. The row may hold A.
+
+### Why my own verification did not catch it, which is the part that generalises
+
+I did verify before applying. I spot-checked seven moves chosen at random, read each row's notes
+beside the worker's ruling, and found all seven sound — including a subtle one I was pleased to
+have understood. **Every one of those checks was right, and the exercise was worthless, because I
+checked the ruling against the same partial view the ruling was made on.**
+
+**A check that reads the same input as the work cannot find a defect in the input.** It can only
+find reasoning errors. This is the structural limit of reviewing a conclusion rather than
+reproducing it, and it is why "I verified a sample" is a weaker claim than it feels like.
+
+What actually caught it was an accident of a second channel. The sending thread messaged me a list
+of rows it had newly held, row 69 among them, and I happened to have seen 69 printed at the front
+of the drafting queue an hour earlier with "9 years trading" in its scale line. The error surfaced
+because **two outputs of the same row disagreed in front of me** — not because anyone checked.
+
+### The rules this produces
+
+1. **When you hand a worker a row to rule on, hand it the whole row.** Every column. Not the
+   columns you believe are relevant: that belief is the judgement you are delegating. There is no
+   token saving worth a wrong verdict, and here the omission was not even deliberate — I built the
+   export by listing the fields I happened to be thinking about.
+2. **Verify against a different view than the one the work used.** Reading the same text back is
+   proofreading, not verification. For a row that means the CSV's other columns, or the batch
+   output, or the near-miss write-up that first recorded it.
+3. **When a downstream channel reports something surprising about a row, check it against what you
+   know, immediately.** The sending thread's hold list was not addressed to me as a question. It is
+   the only reason this was found tonight rather than discovered by a bounce or never.
+4. **Say which view a ruling was made on.** The re-rule is instructed to record that the first
+   verdict was made on a partial row, rather than quietly overwriting it, so the record shows the
+   mistake was mine and not the worker's.
+
+The correction is in flight: the 105 rows have been re-exported with all 27 columns and the same
+worker is re-ruling, prioritising the 17 C moves, since C is what makes a row non-sendable. The
+direction of the error was at least the safe one — rows are wrongly held, not wrongly released, so
+nothing was sent that should not have been. That is luck, not design.
+
 ## The shared budget
 
 WebSearch (200 calls) and WebFetch (400/hour) are **shared across every worker running at
