@@ -125,11 +125,16 @@ def main() -> None:
         skip = {ln.split("#")[0].strip() for ln in SKIP_PATH.read_text().splitlines()} - {""}
     rows = {r["pipeline_id"]: r for r in csv.DictReader(CSV_PATH.open(encoding="utf-8"))}
     v2 = copy_version() == "v2"
+    no_v2_opener: set = set()
     if v2:
         # v2 openers drop prices and medicine names; grade C clinics no longer qualify
+        have = set()
         for o in json.loads(OPENERS_V2_PATH.read_text()):
             if o["pipeline_id"] in rows:
                 rows[o["pipeline_id"]].update(cold_subject=o["cold_subject"], cold_opener=o["cold_opener"])
+                have.add(o["pipeline_id"])
+        # Never fall back to a v1 opener: those quote prices. No v2 opener, no first email.
+        no_v2_opener = set(rows) - have
         if mode == "live" and not sender_address():
             # The ICP's copy rules require WILBA's business address in every cold email.
             sys.exit("v2 copy needs WILBA's business address in sender-address.txt before a live send.")
@@ -187,7 +192,9 @@ def main() -> None:
     # 2. new clinics on email 1
     cap = daily_cap(len(state["send_days"]))
     fresh = [r for r in rows.values() if r["pipeline_id"] not in state["clinics"] and r["pipeline_id"] not in skip
-             and not (v2 and r["icp_grade"] == "C")]
+             and not (v2 and r["icp_grade"] == "C") and r["pipeline_id"] not in no_v2_opener]
+    for pid in sorted(no_v2_opener - skip - set(state["clinics"]), key=int):
+        log.append(f"- {rows[pid]['company_name']}: no v2 opener in openers-v2.json, not started")
     fresh.sort(key=lambda r: (GRADE_ORDER.get(r["icp_grade"], 9), int(r["pipeline_id"])))
     started = 0
     for row in fresh[:cap]:
