@@ -3061,10 +3061,32 @@ existed on 5 November, and that the only hands-on sample of them — seven rows,
 reasons — had failed four. The whole 144 were audited tonight against the ladder and the subject
 test, from the rows' own notes rather than by fetching.
 
-**105 of 144 do not support their grade: 72.9%.** 88 moved to B, 17 to C, **39 held A.**
-**Grade A across the pipeline falls from 196 to 91**, and sendable from 974 to 957.
+**97 of 144 do not support their grade: 67.4%.** 96 moved to B, **1** to C, **47 held A.**
+**Grade A across the pipeline falls from 196 to 99.**
 
-That is worse than I guessed, and the seven-row sample was right in magnitude and slightly kind.
+Those are the figures after a correction, and the correction matters more than the result. **The
+first pass of this audit ran on a seven-column extract I built, which omitted `scale_signals`,
+`dormant_lead_signal`, `opening_angle`, `fit_flag` and `services`** — five fields, several of which
+routinely carry exactly the evidence being ruled on. It returned 105 moves including 17 parks at C.
+Re-ruled on all 27 columns: **16 of those 17 C moves were wrong**, and so were 4 of the 88 B moves.
+The full account of my error is in the sourcing brief; what follows is the corrected audit.
+
+Four rows went from C straight to **A** on evidence that was never in front of the first pass: 69
+CSD (*"9 years trading"*, plus a *"9-year Zenoti database"*), 345 The Clinic Bondi (*"since 1999"*
+and *"Celebrating 27 Years"*, both in `opening_angle`), 111 Dermoperfection (*"claiming 50,000+
+treatments"*) and 154 Coastal (*"10,000+ treatments"* across four locations). **Only one park
+survived:** 932 Tehila, where the full row confirms the absence rather than rescuing it, because
+its `dormant_lead_signal` ends *"No in-house membership"* and what remains is Alle/Aspire
+manufacturer rewards and a lender integration — neither the clinic's own accumulation.
+
+### The rule the worker drew from my mistake, which is the best thing to come out of it
+
+> **A C ruling asserts an absence, and an absence can only be asserted over the whole record. A B
+> ruling asserts a presence and degrades gracefully.**
+
+Its C notes listed what was missing *in the exact vocabulary of the fields it had not been given*.
+So: **if an audit ever runs on an extract, let it downgrade, but hold every park back for a
+full-record check.** That one rule would have caught all sixteen.
 
 ### The variance is not in the rows. It is in the sweeps.
 
@@ -3076,9 +3098,14 @@ That is worse than I guessed, and the seven-row sample was right in magnitude an
 | 21 Oct | 1 of 9 | **11%** |
 | 4 Nov | 1 of 6 | 17% |
 
-**Three days of sourcing account for 61% of the entire problem.** The country cut is mostly noise
-by comparison (US 78%, AU 74%, UK 71%, and Canada's good 33% turns out to be two careful sweeps
-rather than a market effect).
+**Three days of sourcing account for 63% of the entire problem — 61 of the 97 moves.**
+
+And the country cut, which the first pass read as noise (US 78%, AU 74%), is **not** noise on the
+full record: **US 76% against AU 59%.** The worker retracted its own claim and explained it, and the
+explanation is the same finding one layer down: **the Australian sweeps put founding years and
+schemes in `scale_signals`, while the 16 Oct US sweep put a booking-platform name there. The country
+gap is a sweep-method gap showing through.** Canada's good 33% is likewise two careful sweeps rather
+than a market effect.
 
 **So the unit of quality variance is the SWEEP — the brief a worker was given — not the row, and
 not the market.** That changes how an audit like this should be run: re-read sweeps, not rows. A

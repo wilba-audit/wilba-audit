@@ -37,7 +37,17 @@ PIPELINE = os.path.join(REPO, 'outputs/pipeline/clinic-pipeline.csv')
 BANNED = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|fillers|'
                     r'anti-?wrinkle|wrinkle[- ]relax|tox|toxin|rejuran|profhilo|sculptra|'
                     r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
-PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|£|\d+\s*%|\bper cent\b)', re.I)
+PRICE = re.compile(r'(\$|\u00a3|\u20ac|AUD\s*\d|NZ\$|CAD\s*\d|\bGBP\s*\d|\bEUR\s*\d|\bUSD\s*\d|\d+\s*%|\bper cent\b)', re.I)
+# GBP/EUR/USD spelled out were missing until 25 Nov 2026, when a worker found row 85's
+# opening_angle reading 'pays both sides GBP 25' - a money amount in the drafted line itself,
+# passing a guard that only knew the symbols and the AUD/CAD/NZ forms. The copy rule bans
+# prices outright, in any notation.
+
+# The copy rule bans PRICES AND DISCOUNTS, and until 25 Nov nothing here had any concept of a
+# discount. These are reported rather than rejected: a money amount is unambiguous, but
+# 'complimentary' can be a true description of a consult funnel rather than an offer being
+# quoted back at the clinic. The drafter sees the line and decides.
+DISCOUNT = re.compile(r'\b(discount\w*|complimentary|free (?:treatment|consult\w*|session|add-?on)|half[- ]price|bogo|two for one|special offer|promo(?:tion)?\w*|sale)\b', re.I)
 MUSTHAVE = re.compile(r'must[- ]have\s*\d', re.I)
 
 
@@ -507,6 +517,13 @@ def main():
              if BANNED.search(r['opening_angle'] or '') or PRICE.search(r['opening_angle'] or '')]
     print('sendable rows whose opening_angle breaks the copy rules: %d%s'
           % (len(dirty), (' ' + str(dirty)) if dirty else ''))
+
+    # Added 25 Nov 2026 alongside the DISCOUNT pattern. Reported, not rejected: the copy rule bans
+    # discounts, but 'complimentary consult' is often a true description of the funnel rather than
+    # an offer quoted back at the clinic. The drafter reads the line and decides.
+    disc = [r['id'] for r in sendable if DISCOUNT.search(r.get('opening_angle') or '')]
+    print('sendable rows whose opening_angle names a discount or freebie (read before sending): '
+          '%d%s' % (len(disc), (' ' + str(disc)) if disc else ''))
 
     # The same check over the OTHER field a drafter builds copy from, added 9 Nov 2026.
     # The audit above has printed zero every night for days and was telling the truth about

@@ -226,7 +226,16 @@ def cmd_ramp(args):
 UNSAFE_WORDS = re.compile(r'\b(botox|dysport|xeomin|jeuveau|bocouture|azzalure|filler|fillers|'
                           r'anti-?wrinkle|wrinkle[- ]relax|tox|toxin|rejuran|profhilo|sculptra|'
                           r'kybella|glp-?1|semaglutide|ozempic)\b', re.I)
-UNSAFE_PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|\u00a3|\d+\s*%|\bper cent\b)', re.I)
+UNSAFE_PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|\u00a3|\u20ac|\bGBP\s*\d|\bEUR\s*\d|\bUSD\s*\d|\d+\s*%|\bper cent\b)', re.I)
+# GBP/EUR/USD spelled out were missing until 25 Nov 2026. Two sendable rows had a money
+# amount in opening_angle - the drafted line itself - reading 'pays both sides GBP 25' and
+# 'a GBP 25 deposit', and neither tripped a guard that knew only the symbols.
+
+# The copy rule bans prices AND DISCOUNTS. Nothing here knew about discounts until 25 Nov,
+# when 63 sendable rows turned out to name one in the drafted line. Too many to reject and
+# most are true descriptions of a funnel rather than an offer quoted back, so this prints a
+# warning and the person writing the email decides.
+UNSAFE_DISCOUNT = re.compile(r'\b(discount\w*|complimentary|free (?:treatment|consult\w*|session|add-?on)|half[- ]price|bogo|two for one|special offer|promo(?:tion)?\w*|sale)\b', re.I)
 
 
 def unsafe_to_quote(text):
@@ -437,8 +446,13 @@ def cmd_batch(args):
         print_field('dormant:', r.get('dormant_lead_signal', ''))
         # opening_angle is the drafted line itself, not a record of the clinic, so
         # anything unsafe in it is a breach rather than a fact to avoid quoting.
+        angle_disc = UNSAFE_DISCOUNT.search(r.get('opening_angle', '') or '')
         angle_hits = unsafe_to_quote(r.get('opening_angle', ''))
         print(f'   {"angle:":<9} {r.get("opening_angle","")}')
+        if angle_disc:
+            print(f'   {"":<9} ^^ NAMES A DISCOUNT OR FREEBIE ("{angle_disc.group(0)}"). The copy '
+                  f'rule bans discounts as well as prices. If this is the clinic\'s own offer, do '
+                  f'not quote it; rebuild the opener from the practice.')
         if angle_hits:
             print(f'   {"":<9} ^^ COPY-RULE BREACH, not a caution: the opening angle itself '
                   f'names a {" and a ".join(angle_hits)}. Rewrite it before drafting.')
