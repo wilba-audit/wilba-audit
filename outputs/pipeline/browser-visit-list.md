@@ -629,3 +629,25 @@ market, and it has now been established at cost so nobody re-queries it.
 | **Coburg Aesthetics lead (robots-blocked)** | Coburg, VIC | Melbourne north/west, 17 Nov | **The one Melbourne town worth returning to, and the only route in is a browser.** Coburg had **zero prior coverage in any file**, one own-domain business was found there, and it is `robots_disallowed` — so, per the row 149 distinction, Coburg's silence is "nothing we are permitted to read publishes it" rather than "nothing publishes it". A headless browser we drive is the wrong instrument (robots.txt addresses automated agents); a person's browser is the right one. Everything else in Melbourne's inner north and west is now worked or closed |
 | **Filtered Faces · LuxLab · Aura Medi** | Gold Coast QLD | Gold Coast, 17 Nov | **NOT browser jobs — one-FETCH jobs, listed here only so they are not lost.** All three **already publish a readable mailbox** and are blocked solely on a dating artifact for must-have 4. They need one targeted fetch each, not a person's minute: **enumerate the footer hrefs and read the archive first, the policy second** (per the eighth fetch-failure mode — do not guess `/blog` or `/privacy-policy`). Put them in the next backlog run rather than on a browser list |
 | **Six 18 Oct Fresha names, Gold Coast** | Gold Coast QLD | Gold Coast, 17 Nov | **Each costs a SEARCH, not a fetch, because no domain was ever recorded for them** — the "record the domain beside the name" lesson, still being paid for a month later. Named in the 18 Oct Queensland section of `near-misses.md`. Weight a future Gold Coast run's search allowance for them, or drop them |
+---
+
+## Added 25 November 2026 — six from the Gold Coast and Brisbane index passes
+
+Each of these is one page-open from a decision, and all six were reached through the Fresha
+directory index, so the street address is already known from the listing. **Do not point a headless
+browser at the two Cloudflare cases** — the rule bites at the recording step and the test is whether
+the page shipped the token, which it did.
+
+| Clinic | Where | Domain | Why a person is needed |
+| --- | --- | --- | --- |
+| **Pearl Medispa (SkinRevision)** | 686 Gympie Rd, Chermside QLD 4032 | — | **The first listing on the only unworked Brisbane centroid.** Nothing is known about its must-haves; the index gave the address and the fetch did not land. Best candidate of the six. |
+| **Ray Aesthetics** | 159 Maygar St, Windsor QLD 4030 | — | A Cloudflare email-protection token. A decode was volunteered during the run and **declined**. Co-addresses with row 1525 Brisbane Skin & Aesthetics, which is a host/tenant pattern worth a look while the page is open. |
+| **Evolve Cosmetics** | Brisbane QLD | — | Publishes its mailboxes **in meta tags only**, which this pipeline does not treat as published. Also carries the cleanest cash-pay sentence seen in any market: *"No Medicare or private health rebates available."* |
+| **The Skin & Beauty Suite** | Brisbane QLD | — | Fetch did not land; address known from the index. |
+| **Cosmetic Nurse Angie** | Brisbane QLD | — | Fetch did not land; address known from the index. |
+| **You Do You Cosmetic Clinic** | Sherwood, Brisbane QLD | `youdoyoucosmeticclinic.com` | Refused the fetch as `robots_disallowed`, zero bytes, on 18 Nov. **That label has now been wrong on 10 of the 14 rows that ever carried it**, so this is very likely readable in a browser. |
+
+**Worth knowing before opening any of them:** index addresses are not trustworthy. Two wrong
+postcodes turned up in one night, and the listing *names* are not reliably attached to the right
+premises — "Bobbie Charles West End" prints at a Lutwyche address. Read the address off the
+clinic's own page, not off the row.
