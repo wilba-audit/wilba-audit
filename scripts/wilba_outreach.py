@@ -327,14 +327,63 @@ def print_address(r):
         print(f'   {"":<9} {r.get("email_source", "") or "no source recorded"}')
 
 
+# THE MIRROR OF THE CONCEALED-WARNING DEFECT, FOUND 25 Nov 2026: THE DETECTOR CRIED WOLF.
+# `notes` is a chronological record joined with " | ", and sender_cautions lifts a sentence out
+# of that order. So a row held on 3 Nov for "COULD NOT BE RE-VERIFIED" still printed that hold
+# after the 24 Nov sweep re-verified it and confirmed the address - on ELEVEN of the twenty-nine
+# flagged rows. The sender had no way to see the resolution, because the extractor showed the
+# worry and not the answer.
+#
+# A warning that is wrong a third of the time is worse than no warning: it teaches the one
+# reader who acts to skim past the other two thirds. But SUPPRESSING a caution risks hiding a
+# real hold, which is the original defect again in the other direction. So this prints both and
+# lets the reader resolve it in one glance: the caution, then the later sentence that bears on
+# it, labelled as possibly superseding rather than asserted to supersede.
+SUPERSEDE_PATTERNS = (
+    re.compile(r'[^.|]*\bRE-?VERIFIED\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\bQUESTION (?:RESOLVED|WITHDRAWN)\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\bMISDIAGNOSIS\b[^.|]*[.]?', re.I),
+    re.compile(r'[^.|]*\bRESCUED\b[^.|]*[.]?', re.I),
+)
+
+
+def later_bearing_on(notes, cautions, limit=2):
+    """Sentences that may answer a caution already printed, newest-looking last.
+
+    Deliberately does not decide. It cannot: "re-verified" in a row's history may refer to a
+    different question than the one the caution raises. Naming the sentence is enough, because
+    the person reading has the whole row in front of them and a second to spend.
+    """
+    notes = notes or ''
+    seen = {c[:60] for c in cautions}
+    out = []
+    for rx in SUPERSEDE_PATTERNS:
+        for m in rx.finditer(notes):
+            t = ' '.join(m.group(0).split()).strip(' .|')
+            if len(t) < 12 or t[:60] in seen:
+                continue
+            seen.add(t[:60])
+            out.append(t if len(t) <= 240 else t[:237] + '...')
+            if len(out) >= limit:
+                return out
+    return out
+
+
 def print_cautions(r):
     """The sentences someone meant the sender to read, if any."""
-    cautions = sender_cautions(r.get('notes', ''))
+    notes = r.get('notes', '')
+    cautions = sender_cautions(notes)
     if cautions:
         print(f'   {"HOLD?":<9} {len(cautions)} caution(s) recorded against this row '
               f'- read before drafting, and do not mark it Draft ready if one says hold:')
         for c in cautions:
             print(f'   {"":<9}  - {c}')
+        later = later_bearing_on(notes, cautions)
+        if later:
+            print(f'   {"":<9} BUT the row says this LATER - check whether it answers the above '
+                  f'before you hold:')
+            for t in later:
+                print(f'   {"":<9}  + {t}')
 
 
 def sender_cautions(notes, limit=3):
