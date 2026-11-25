@@ -4,12 +4,13 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 24 Nov 2026: 1,500 rows, 974 ready to approach** — US 439, **AU 321**, CA 86, UK 82,
+**As of 25 Nov 2026: 1,536 rows, 981 ready to approach** — US 438, **AU 329**, CA 86, UK 82,
 NZ 44, IE 2. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
 since, because every market requires WILBA's postal address in the footer and we do not have it.
-**Sourcing has not been the constraint for five weeks.** The 24 Nov run makes the point plainly:
-15 new rows against a 60-row target, and it was still a good night, because three of the four
-workers spent their budget on rows that already existed.
+**Sourcing has not been the constraint for six weeks.** The last two runs make the point plainly:
+36 new rows across two nights against a 60-a-night target, and both were still good nights,
+because the value came out of the sending path instead. **Six of the ten clinics ever emailed are
+now off profile**, so the one real send WILBA has made is decaying while it waits.
 
 **THE BIGGEST THING IN THIS FILE IS STILL THE SENDING PATH, AND IT HAS A SECOND DEFECT OF THE SAME
 SHAPE.** The 23 Nov fix made `batch` print the cautions in `notes`, which it had been hiding from
@@ -51,14 +52,24 @@ that label, **8 are now recorded as mislabelled** — five served a byte-identic
 `robots.txt` reading `Allow: /` and blocking only PetalBot. Those rows were held for a month for
 nothing. Reading `robots.txt` first is always permitted and costs one fetch.
 
-**GRADE A MAY BE OVERCOUNTED, AND THIS SHOULD OUTRANK SOURCING NEXT RUN.** 196 rows are graded A;
-**144 were graded before the must-have 4 ladder existed on 5 Nov**, and 138 of those never mention
-it. A worker read seven of them while settling other business and **four of the seven failed the
-ladder**, all the same way: every tenure figure on the page was a person's career, not the
-business's age. The sample is seven rows chosen for other reasons, so the exposure is unknown
-rather than measured — but `batch` sorts A before B, so an over-graded A row jumps the send queue.
-Auditing those 144 needs almost no fetching: the evidence is already written down and the only
-question is whose it is.
+**GRADE A WAS OVERCOUNTED BY HALF, AND IT IS NOW MEASURED RATHER THAN SUSPECTED.** All 144 rows
+graded A before the must-have 4 ladder existed were audited on 25 Nov: **97 of 144 did not support
+their grade, 67.4%.** 96 moved to B, 1 to C, 47 held. **Grade A across the pipeline falls from 196
+to 99.** The seven-row sample that raised the alarm had predicted 57% and was close. Almost every
+failure was the same: the page's tenure figure was a person's **career**, not the business's age,
+and `batch` sorts A before B, so each one had been jumping the send queue. Almost no fetching was
+needed — the evidence was already written down and the only question was whose figure it was.
+
+**The audit also produced the rule that governs audits.** My export to the auditor carried 7 of the
+27 columns, so 105 verdicts were made on a partial row, and **16 of the 17 C moves were wrong**:
+the evidence was sitting in `scale_signals` and `dormant_lead_signal`, the two fields this pipeline
+requires to be filled from the clinic's own site. My own verification missed it because I checked
+each ruling against the same partial view the ruling was made on. **A check that reads the same
+input as the work cannot find a defect in the input.** Hence: **a C ruling asserts an absence, and
+an absence can only be asserted over the whole record; a B ruling asserts a presence and degrades
+gracefully.** An audit on an extract may downgrade, but every park must be held back for a
+full-record check. And when preparing input for a worker, **do not project and do not filter — the
+projection is the judgement being delegated.**
 
 **Two things still need Jess and neither is a sweep.** The postal address, asked for on seven
 consecutive runs. And the fact that the 10 sends on 15 Oct carried **no postal address and only a
@@ -75,12 +86,121 @@ seventeen were settled by fetch on 24 Nov, and that backlog turned out to be wor
 queue of questions only Jess could answer. 38 self-contradicting `priority` fields are
 aligned.
 
+**The copy guard knew only dollar signs and nothing at all about discounts.** Fixed 25 Nov. Two
+sendable rows had a money amount in `opening_angle` — the drafted line itself — reading "GBP 25",
+and neither tripped a guard that knew only the symbols. 51 sendable rows name a discount or a
+freebie in that line and now print a warning; 19 name a free **consultation**, which is a different
+thing and is allowed: a free consult is the mechanism that produces the dormant list this whole
+offer is about, not a price quoted back. **And `cmd_due` printed the opening angle bare**, with no
+copy warning and, until 23 Nov, no caution block either — so the follow-up queue, which is the only
+queue the ten contacted clinics are in, was the one path with no guard on it. Both paths now print
+through one function.
+
 **Why it is in the repo.** This was kept in the session's team-memory directory under `/tmp`
 until 20 Oct 2026, when that directory was wiped along with the scratchpad, losing four days
 of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files`, and this file is mirrored to
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
+
+## 25 Nov 2026 — 36 rows, grade A halved, and four defects found in the path that sends
+
+Three workers: a grade-A audit over 144 rows, a Gold Coast index pass, a Brisbane index pass.
+**1,500 → 1,536 rows; 981 sendable.** New rows: Gold Coast **1501-1514** (5 B, 9 C), Brisbane
+**1515-1536** (3 B, 19 C). Two of the three workers spent most of their budget on rows we already
+had, and that was the right call again.
+
+**Grade A fell from 196 to 99**, and the audit's own defect produced a better rule than its result.
+Both are in the header above; the short version is that 97 of 144 pre-ladder A rows did not support
+their grade, and that my seven-column export to the auditor made 105 verdicts on a partial row,
+**16 of 17 C moves wrong**. The fix is a rule, not a patch: do not project and do not filter when
+preparing a worker's input, because the projection is the judgement being delegated.
+
+**THE INDEX DOES NOT COLLAPSE OVER SEARCH-SWEPT GROUND, which is the method question these two
+runs existed to answer.** Brisbane returned **~53-54% new** over ground two dedicated search sweeps
+had already worked, against Gold Coast 72% over thin coverage, Sydney 67%, Melbourne 53% then 68%.
+**Thick prior search coverage costs the index about 19 points of newness, not its usefulness.** The
+denominator is auditable: 135 listing-slots across four slugs, 108 distinct names, 40 excluded at
+sight, 68 candidates greped, 31 already in our files. Two of the 22 accepted rows are promotions
+*out of* that redundant set, so the index's second job is re-surfacing clinics we had already
+half-written and parked.
+
+**An index pass binds on must-have 1 where a search pass binds on must-have 5.** Sole must-have 1
+failures ran 10 of 24 on the Fresha index against 0 of 22 on a search pass, while must-have 5 was
+unchanged. A search query carries the word "injectables" and pre-filters business type; a treatment
+slug is a centroid and does not. So **index to FIND and search to QUALIFY**, and budget about two
+fetches per accepted row.
+
+**THE COVERAGE CHECK FAILED A FOURTH CONSECUTIVE NIGHT, and it is now fixed at the source rather
+than in the brief.** Three of the four Brisbane centroids I briefed sat inside the 12 Nov and 18 Nov
+sweeps, because those sweeps record their ground on a `**Market:**` line that no coverage grep
+matches. Four nights of writing better grep patterns did not work; **all four dedicated sweeps now
+carry a plain `Markets swept:` alias line**, so the orientation grep returns 25 blocks instead of
+21 and Brisbane's two sweeps are visible for the first time. The worker lost no fetch — it had found
+both sections independently before fetching anything. The general lesson: when a check keeps
+failing on the shape of the data, change the data's shape, not the check.
+
+**Four defects in the sending path, all of one family: a reader given a partial or stale view acts
+confidently and wrongly.**
+- The hold detector was crying wolf on 11 of 29 rows, holding on a failed 3 Nov re-verification that
+  a later line in the same field had already answered. It now prints the later line beside the
+  caution without deciding; 20 of 34 cautions now show one.
+- `cmd_due` printed the opening angle with no copy warning at all, so the follow-up queue — the only
+  queue the ten contacted clinics are in — was the one path with no guard. Both paths now print
+  through one function.
+- The copy guard knew only currency symbols and nothing about discounts. "GBP 25" sat unflagged in
+  two drafted openers.
+- Row 346's `scale_signals` read "owner trading in the area since 2002" while its notes correctly
+  attribute 2002 to the owner's earlier salon — the row-1430 trap sitting in the field a drafter
+  reads first. The field now says what the notes say.
+
+**The sending thread confirmed all of it the same night**, which is what makes the audits worth
+something rather than clever: it held 15 more rows against the corrected grade list, released four
+it had been holding wrongly, and caught 310 and 587 before either bounced. 310 is the sharpest —
+`info@thelouveskinclinic.com.au` is **no longer published** and only `Admin@` with a capital A is,
+and that row was staged to send.
+
+**A ruling I am naming rather than hiding in a grade: a staff-tenure-at-this-clinic date is a top
+rung.** Row 375 Sanctum publishes "Dani commenced her career with Sanctum Medical as a Dermal
+Therapist in 2014" and two more like it, bracketing 2014-2017. A date that can only be true if THIS
+named entity was trading and employing in that year is a dated artifact about the entity, the way a
+dated award is — and it passes the subject test where the same page's "over 30 years of doctor led
+experience" fails it, being attributed to nobody and nearest to Dr Asha Ram's own 25-year career.
+**Accepted, with two narrowings:** the sentence must name the trading entity, not "here" or "with
+us", and it bounds trading from that year only — no copy may say the business is thirty years old.
+If the ruling is ever rejected, 375's floor is B, so only sort order turns on it.
+
+**Two cheap new must-have 2 tells**, both free off a page already being read: **HotDoc booking on a
+cosmetic clinic**, and **Halaxy plus a published "Provider Number"**. And the cleanest affirmative
+cash-pay sentence seen in any market, worth grepping for directly: *"No Medicare or private health
+rebates available."*
+
+**Index addresses are not trustworthy.** Two wrong postcodes in one night, and the listing names are
+not reliably attached to the right premises — "Bobbie Charles West End" prints at a Lutwyche address
+while "Bobbie Charles Skin & Beauty Clinic" prints at West End. Trust the address over the label and
+verify both on the clinic's own page; never carry an index postcode onto a row.
+
+**Nine shared-premises findings fell out of the index for free**, none of them findable by a name
+grep, and four touch held rows. The one that matters for sending: **rows 329 and 1220 are two
+different clinics in one Nundah building** and must not be emailed in the same week. Bloom Skin and
+Laser (new row 1535) co-addresses with row 1322 Your Face Nurse, which *corroborates* that row's
+room-renting must-have 3 pass rather than threatening it.
+
+**The Manor Clinic has now been discovered three times** against a standing "don't revisit"
+rule-out whose email half is wrong. `info@themanorclinic.com.au` IS published as plain text; the
+rule-out stands on must-have 4 alone. The verbatim mailbox is now written onto the rule-out line
+so the fourth discovery does not happen. The rule-out is where that reading belongs, not a grade C
+row that says the same thing at the cost of an id.
+
+**Settled, stop re-testing: Fresha printed a website domain on 0 of 409 AU listing-slots** across
+two cities. The header venue count was useless a sixth time; "Call to book" locality anchoring held
+4 of 4. **Budget by listings, not by slugs** — new-farm returned 54 listings and carindale 14, same
+technique, same city.
+
+**A Cloudflare decode was volunteered and declined, correctly.** The rule bites at the recording
+step and the test is whether the page shipped the token. Ray Aesthetics shipped one; Evolve
+Cosmetics publishes its mailboxes in meta tags only. Both are unreachable, not unqualified, and
+both are on the browser-visit list rather than in the pipeline.
 
 ## 24 Nov 2026 — 15 rows, fifteen holds settled, a backlog cleared, and two of my own write-ups falsified
 
@@ -2403,7 +2523,63 @@ release it named precisely — and it is worth them, because its must-have 4 is 
 The general lesson, which applies to every absence finding this project records: **a content-type
 that is not HTML is not a page. Check you received HTML before reporting what is or is not in it.**
 
-## Where to go next — refreshed 24 Nov 2026 (read THIS block first; everything below it is superseded)
+## Where to go next — refreshed 25 Nov 2026 (read THIS block first; everything below it is superseded)
+
+**1. The cheapest grade lifts in the file, in order, and the first one is a single register call.**
+Row **575 CQ Aesthetics** prints **ABN 22 626 758 969** in its own `scale_signals` — one
+`https://abr.business.gov.au/ABN/View?id=22626758969` lookup, 9 for 9 so far, and GST status arrives
+free on every ABR call and bounds turnover (registration is compulsory above AUD $75,000, so "not
+currently registered" bounds it below that and reaches must-have 4's *substance*, which no rung
+measures). Then five register lookups with the number already in hand: **85** CH 08682402, **628**
+12191223, **114** 11712310, **124** CRO 706856, **125** CRO 643852 (125 needs only the entity tie
+off the clinic's own page). Then **483, 575, 179, 154, 396** — one page fetch each. An ACN alone
+resolves via `https://abr.business.gov.au/Search/ResultsActive?SearchText=<9-digit ACN>`.
+
+**2. The 55 grade-B rows whose notes call must-have 4 inferred or unverified.** The append audit
+names them. None names no ladder artifact anywhere, so these are reads rather than fetches, and
+after tonight they are the largest remaining grade question in the file. **Read them under the rule
+tonight established:** a C ruling asserts an absence and needs the whole record; a B ruling asserts
+a presence and degrades gracefully. So a park here must be checked against all 27 columns, never an
+extract.
+
+**3. The index pass has two cities left and a known yield.** Brisbane settled the method question —
+**~53% new over search-swept ground, ~72% over thin ground** — so the remaining ground is worth
+working at about two fetches per accepted row. **Perth has never had an index pass** and is the one
+AU metro in the standing order with no coverage at all. Sydney's unspent search ground: Mona Vale
+and Avalon. Melbourne's precinct directories that print domains:
+`glenferrieroadmalvern.com.au/trader-category/beauty/`, `highstreetarmadale.com.au`,
+`greythorncentral.com.au`, `glenferrie.com.au/directory/category/hair-beauty/`. **Index each suburb
+once, never twice** (0 of 12 new in re-indexed suburbs), **budget by listings and not by slugs**,
+read Call-to-book as the census and ignore the header count, and **never carry an index postcode or
+an index name onto a row** — both were wrong tonight.
+
+**4. Four rule-outs are now worth re-reading, not re-fetching.** `robots_disallowed` has been wrong
+on **10 of the 14** rows that ever carried it, the newest being Define Clinic, which turned out to
+be trading on a second live domain (now row 1517). The standing rule: fetch `/robots.txt` directly
+first, which is always permitted, and a later `ROBOTS_UNREACHABLE` then means "could not fetch",
+never "restricted". It IS retryable.
+
+**5. Rows with a named gap, not a sweep.** 478 needs Jess or Griffin to dial 905-947-1221 before
+anything is sent. 310 needs the `Admin@` decision (capital A, and the old `info@` is gone). 375's
+staff-tenure ruling is accepted above but the thread may reject it, in which case its floor is B.
+The five Gold Coast grade B rows each carry a live must-have 2 policy risk — zero privacy policies
+were fetched on that run. **Do not email rows 329 and 1220 in the same week**: two different
+clinics, one Nundah building.
+
+**6. Outstanding flags reported but not acted on.** 278 Luxe Room reads as 5+ sites (must-have 3
+ceiling). 157 Plastics Medspa — is the med spa inside a plastic surgery practice? 203/207/221 book
+through personal-entity or third-party tenants. Dr Shane Upasena covers both YANG and row 1298, so
+do not email both in one week.
+
+**7. Still outstanding with Jess, unchanged and not sourcing's to solve.** The postal address,
+asked on **eight** consecutive runs — nothing can be sent without it in any market. The unsubscribe
+gap on the ten sends of 15 Oct, six of which are now off profile anyway. The DM-list channel
+decision, never put to her. The browser-visit list, which Gold Coast and Brisbane both grew:
+Harrogate Aesthetics, You Do You Cosmetic Clinic (Sherwood), Pearl Medispa (SkinRevision, the first
+listing on the only unworked Brisbane centroid), Ray Aesthetics, The Skin & Beauty Suite, Cosmetic
+Nurse Angie — plus 429, 433 and 588, which are cheap for her to settle in a browser.
+
+## Where to go next — refreshed 24 Nov 2026 (SUPERSEDED by the 25 Nov block above on items 1, 2 and 3; items 4, 5 and 6 are carried forward there)
 
 **1. Audit the 144 pre-ladder grade A rows. This outranks sourcing.** 196 rows are graded A and 144
 were graded before the must-have 4 ladder existed; 138 never mention it. The only hands-on sample,

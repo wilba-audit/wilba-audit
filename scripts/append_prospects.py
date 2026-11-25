@@ -47,7 +47,17 @@ PRICE = re.compile(r'(\$|\u00a3|\u20ac|AUD\s*\d|NZ\$|CAD\s*\d|\bGBP\s*\d|\bEUR\s
 # discount. These are reported rather than rejected: a money amount is unambiguous, but
 # 'complimentary' can be a true description of a consult funnel rather than an offer being
 # quoted back at the clinic. The drafter sees the line and decides.
-DISCOUNT = re.compile(r'\b(discount\w*|complimentary|free (?:treatment|consult\w*|session|add-?on)|half[- ]price|bogo|two for one|special offer|promo(?:tion)?\w*|sale)\b', re.I)
+DISCOUNT = re.compile(
+    r'\b(discount\w*|complimentary|half[- ]price|bogo|two for one|special offer'
+    r'|promo(?:tion)?\w*|sale'
+    r'|free\b(?:\s+\w+){0,3}\s+(?:treatment|session|add-?on|product|gift|sample|device)s?'
+    r')\b', re.I)
+# A free CONSULTATION is on the other side of that line, settled 25 Nov 2026: it is the
+# mechanism that produces the dormant list, not a price quoted back, and 18 of the 20 rows
+# that mentioned something free meant exactly that. Reported separately and softly. Kept in
+# step with UNSAFE_DISCOUNT and FREE_CONSULT in wilba_outreach.py - the validator and the
+# sender disagreeing about what the copy rule means is how a breach reaches a draft.
+FREE_CONSULT = re.compile(r'\bfree\b(?:\s+\w+){0,3}\s+consult\w*', re.I)
 MUSTHAVE = re.compile(r'must[- ]have\s*\d', re.I)
 
 
@@ -524,6 +534,11 @@ def main():
     disc = [r['id'] for r in sendable if DISCOUNT.search(r.get('opening_angle') or '')]
     print('sendable rows whose opening_angle names a discount or freebie (read before sending): '
           '%d%s' % (len(disc), (' ' + str(disc)) if disc else ''))
+    consult = [r['id'] for r in sendable
+               if not DISCOUNT.search(r.get('opening_angle') or '')
+               and FREE_CONSULT.search(r.get('opening_angle') or '')]
+    print('sendable rows whose opening_angle names a free consultation (allowed, but do not '
+          'lead with it): %d%s' % (len(consult), (' ' + str(consult)) if consult else ''))
 
     # The same check over the OTHER field a drafter builds copy from, added 9 Nov 2026.
     # The audit above has printed zero every night for days and was telling the truth about

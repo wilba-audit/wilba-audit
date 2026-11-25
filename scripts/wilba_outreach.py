@@ -235,7 +235,19 @@ UNSAFE_PRICE = re.compile(r'(\$|AUD\s*\d|NZ\$|CAD\s*\d|\u00a3|\u20ac|\bGBP\s*\d|
 # when 63 sendable rows turned out to name one in the drafted line. Too many to reject and
 # most are true descriptions of a funnel rather than an offer quoted back, so this prints a
 # warning and the person writing the email decides.
-UNSAFE_DISCOUNT = re.compile(r'\b(discount\w*|complimentary|free (?:treatment|consult\w*|session|add-?on)|half[- ]price|bogo|two for one|special offer|promo(?:tion)?\w*|sale)\b', re.I)
+UNSAFE_DISCOUNT = re.compile(
+    r'\b(discount\w*|complimentary|half[- ]price|bogo|two for one|special offer'
+    r'|promo(?:tion)?\w*|sale'
+    r'|free\b(?:\s+\w+){0,3}\s+(?:treatment|session|add-?on|product|gift|sample|device)s?'
+    r')\b', re.I)
+
+# A free CONSULTATION is not a discount, and 25 Nov 2026 settled why. Eighteen of the
+# twenty rows whose opener mentioned something free meant a free consult, and a free
+# consult is a funnel mechanism - it is the thing that produces the dormant list this
+# whole offer is about - not a price quoted back at the clinic. A free or discounted
+# TREATMENT is the other side of that line and stays a breach. So consultations get a
+# softer note: say it describes the funnel, do not build the opener out of the offer.
+FREE_CONSULT = re.compile(r'\bfree\b(?:\s+\w+){0,3}\s+consult\w*', re.I)
 
 
 def unsafe_to_quote(text):
@@ -383,6 +395,32 @@ def later_bearing_on(notes, cautions, limit=2):
     return out
 
 
+def print_angle(r):
+    """Print the drafted opening line, with any copy-rule breach under it.
+
+    opening_angle is the drafted line itself, not a record of the clinic, so
+    anything unsafe in it is a breach rather than a fact to avoid quoting.
+    Both the first-touch batch and the follow-up queue draft from this line,
+    so both must print the same warnings: cmd_due printed the angle bare for
+    41 days, which is how "GBP 25" reached two staged openers unflagged.
+    """
+    angle = r.get('opening_angle', '') or ''
+    print(f'   {"angle:":<9} {angle}')
+    disc = UNSAFE_DISCOUNT.search(angle)
+    if disc:
+        print(f'   {"":<9} ^^ NAMES A DISCOUNT OR FREEBIE ("{disc.group(0)}"). The copy '
+              f'rule bans discounts as well as prices. If this is the clinic\'s own offer, do '
+              f'not quote it; rebuild the opener from the practice.')
+    hits = unsafe_to_quote(angle)
+    if hits:
+        print(f'   {"":<9} ^^ COPY-RULE BREACH, not a caution: the opening angle itself '
+              f'names a {" and a ".join(hits)}. Rewrite it before drafting.')
+    if not disc and FREE_CONSULT.search(angle):
+        print(f'   {"":<9} ^^ names a free consultation. That is a funnel fact, not a '
+              f'discount, so it is allowed - but the opener must be about the practice, '
+              f'so lead with what the consult list IS, not with the word free.')
+
+
 def print_cautions(r):
     """The sentences someone meant the sender to read, if any."""
     notes = r.get('notes', '')
@@ -444,18 +482,7 @@ def cmd_batch(args):
         print_cautions(r)
         print_field('scale:', r.get('scale_signals', ''))
         print_field('dormant:', r.get('dormant_lead_signal', ''))
-        # opening_angle is the drafted line itself, not a record of the clinic, so
-        # anything unsafe in it is a breach rather than a fact to avoid quoting.
-        angle_disc = UNSAFE_DISCOUNT.search(r.get('opening_angle', '') or '')
-        angle_hits = unsafe_to_quote(r.get('opening_angle', ''))
-        print(f'   {"angle:":<9} {r.get("opening_angle","")}')
-        if angle_disc:
-            print(f'   {"":<9} ^^ NAMES A DISCOUNT OR FREEBIE ("{angle_disc.group(0)}"). The copy '
-                  f'rule bans discounts as well as prices. If this is the clinic\'s own offer, do '
-                  f'not quote it; rebuild the opener from the practice.')
-        if angle_hits:
-            print(f'   {"":<9} ^^ COPY-RULE BREACH, not a caution: the opening angle itself '
-                  f'names a {" and a ".join(angle_hits)}. Rewrite it before drafting.')
+        print_angle(r)
         print()
     print(f'IDS: {",".join(r["id"] for r in batch)}')
 
@@ -546,7 +573,7 @@ def cmd_due(args):
         print(f'   who:      {r.get("lead_doctor") or "not named"}')
         print(f'   last sent:{r.get("date_last_contact")} ({gap}+ days ago)')
         print_cautions(r)
-        print(f'   angle:    {r.get("opening_angle","")}')
+        print_angle(r)
         print()
     report_skips()
     print(f'IDS: {",".join(r["id"] for r, n, g in due if n != SEQUENCE_END)}')

@@ -3197,3 +3197,65 @@ their own site, and `email_source` saying where the address was read and on what
 Those are what the opening line is built from. An opening line that could be sent to any
 clinic is not an opening line — but it also cannot name a product or a price, so build it
 from the clinic's own story: who owns it, how long it has traded, what scheme it runs.
+
+---
+
+## A staff-tenure-at-this-clinic date is a TOP rung. 25 Nov 2026
+
+Settled on row 375 Sanctum Medical & Aesthetics, and named here rather than buried in a grade
+because it is a genuine extension of the must-have 4 ladder.
+
+Sanctum's own About page carries three sentences of this shape: *"Dani commenced her career with
+Sanctum Medical as a Dermal Therapist in 2014"*, *"Katie-Jo... began her career at Sanctum Medical
+Aesthetics in 2015"*, *"Georga began her career at Sanctum Medical Aesthetics in 2017"*.
+
+**Ruling: that is a dated artifact about the trading entity, so it is a top rung.** A date that can
+only be true if THIS named entity was trading and employing in that year says something about the
+entity, in the way a dated award does. Three of them bracket 2014 to 2017 and corroborate each
+other. It clears the **subject test** — *is this number about THIS premises, THIS trading entity,
+THIS patient list?* — because the entity is the employer in the sentence.
+
+**Two narrowings, both load-bearing:**
+1. **The sentence must name the trading entity**, not "here", "with us" or "the clinic". "Began her
+   career with us in 2015" is unattributable and is no rung at all; it could be any predecessor
+   business at the address.
+2. **It bounds trading FROM that year and no further.** It is a floor, not an age. No copy may
+   round it up, and none may reach past it.
+
+**The same page shows exactly what this rule is NOT.** *"Sanctum Medical Aesthetics is an aesthetic
+medical practice combining state of the art technology with over 30 years of doctor led
+experience"* is attributed to nobody, and the nearest attributable figure is Dr Asha Ram's own
+*"over 25 years"*. That is a **career**, it fails the subject test, and **no copy may say this
+business is thirty years old.** The page offers both kinds of sentence within a few lines of each
+other, which is why the subject test has to run before the rung question every time.
+
+If this ruling is ever rejected, row 375's floor is **B** on its twenty-strong named team, three
+premises and voucher scheme — never C — so only sort order turns on it.
+
+---
+
+## A free CONSULTATION is not a discount. 25 Nov 2026
+
+The copy rule bans prices and discounts, and a guard built on that rule flagged 63 sendable
+`opening_angle` lines. Reading them split the set cleanly:
+
+- **Eighteen of the twenty rows that mentioned something "free" meant a free consultation.** A free
+  consult is the *mechanism that produces the dormant list this whole offer is about*. Naming it is
+  a statement about the clinic's funnel, not a price quoted back at them. **Allowed** — but the
+  opener still has to be about the practice, so lead with what the consult list IS, not with the
+  word free.
+- **A free or discounted TREATMENT is the other side of that line and stays a breach**, along with
+  promotional events, percentages off, complimentary add-ons and anything with a currency figure in
+  it. Row 208's opener was *"They are running a Fall Skin Event discounting select skin treatment
+  packages"* — the opening fact is a promotion, which the rule forbids outright.
+
+The guard now prints two different warnings, and `append_prospects.py` and `wilba_outreach.py`
+carry the same pair of patterns. **The validator and the sender disagreeing about what the copy rule
+means is how a breach reaches a draft**, which is how "GBP 25" sat in two staged openers: the
+currencies were in one file's regex and not the other's.
+
+**And the follow-up queue had no guard at all.** `cmd_due` printed `opening_angle` bare — no copy
+warning, and until 23 Nov no caution block either. The ten contacted clinics are in that queue and
+no other. Both paths now print through one `print_angle()`, for the same structural reason the
+`defers()` predicate was reduced to one copy on 24 Nov: **a fix applied to the path you happened to
+be looking at does not hold, because nobody re-asks which other paths say the same thing.**

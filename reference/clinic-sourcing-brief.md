@@ -3246,3 +3246,82 @@ own browser in seconds. End it with a short paragraph on what the market taught 
 
 Then report back in under 300 words: how many rows, how many A, the file paths, what you ran
 out of, and anything that surprised you.
+
+---
+
+## The index over search-swept ground, measured — and four sourcing facts now settled. 25 Nov 2026
+
+**The method question is answered: the index does NOT collapse over ground a search sweep has
+already worked.** Brisbane, which had two full dedicated search sweeps (12 and 18 Nov), returned
+**~53-54% new** from a directory-index pass. Four cities now:
+
+| Market | new | prior coverage |
+| --- | --- | --- |
+| Gold Coast | 72% | thin |
+| Melbourne | 53%, then 68% | mixed |
+| Sydney | 67% | moderate |
+| **Brisbane** | **53-54%** | **two full search sweeps** |
+
+**Thick prior search coverage costs the index about 19 points of newness, not its usefulness.**
+Brisbane's denominator is auditable and worth copying: 135 listing-slots across four slugs → 108
+distinct names → 40 excluded at sight (chains, skin-cancer/derm/surgical, brow-only rooms, a
+pharmacy, a skincare brand) → 68 candidates greped → 31 already in our files → 22 rows. **Two of
+the 22 were promotions out of the redundant set**, so the index's second job is re-surfacing
+clinics we had already half-written and parked.
+
+**Budget by LISTINGS, not by slugs.** Same technique, same city, same night: `new-farm` returned 54
+listings, `carindale` 14. A slug count tells you nothing about what a slug will cost or yield.
+
+**NEVER carry an index postcode or an index name onto a row.** Two wrong postcodes in one night
+(Clinique Matrice printed as Toowong 4306, actually 4066; The Aesthetics Bar as Milton 4068,
+actually 4064). Worse, the listing *names* are not reliably attached to the right premises:
+**"Bobbie Charles West End" prints at a Lutwyche address while "Bobbie Charles Skin & Beauty Clinic"
+prints at West End.** Trust the address over the label, and verify both on the clinic's own page.
+This does not weaken the Call-to-book census — locality anchoring held 4 of 4 slugs again — it
+means the census tells you WHERE TO LOOK and the clinic's own page tells you what is true.
+
+**Stop re-testing these two. Both are settled:**
+- **Fresha prints a website domain on 0 of 409 AU listing-slots**, across two cities and six slugs.
+  It is an AU-template property, not a per-page accident.
+- **The header venue count is meaningless**, now 6 of 6. One page said "4 venues" and carried 24
+  businesses; another said "27" and carried 104. The census is the "Call to book" section.
+
+**Shared premises fall out of the index for free, and a name grep cannot find them.** Nine
+co-address findings in one Brisbane pass, four touching held rows. Two uses:
+- **Must-have 3**: a clinic renting a room inside another business passes if its own diary and list
+  sit in its own tenant. Bloom Skin and Laser (row 1535) co-addressing with row 1322 Your Face
+  Nurse **corroborated** that row's existing pass.
+- **Sending**: two different clinics in one building must not be emailed in the same week. Rows 329
+  and 1220 share 130 Ryans Road, Nundah. Two cold emails at one street address in one week read as
+  a mail merge and cost both.
+
+**Two new must-have 2 tells, free off a page already being read:** **HotDoc booking on a cosmetic
+clinic**, and **Halaxy plus a published "Provider Number"**. Both point at Medicare billing. And the
+cleanest affirmative cash-pay sentence seen in any market, worth grepping for directly:
+**"No Medicare or private health rebates available."**
+
+---
+
+## The coverage check: fixed in the FILE, after failing four nights running. 25 Nov 2026
+
+Four consecutive nights I briefed suburbs that prior sweeps had already worked, and four
+consecutive nights I responded by writing a better grep pattern. The fifth response is the right
+one: **the data's shape was the problem, so the data changed.**
+
+Four dedicated sweeps recorded their ground on a `**Market:**` line — a format no coverage grep
+matched, and two of the four were Brisbane, covering three of the four centroids I briefed on
+25 Nov. **Every one of those four sections now carries a plain `Markets swept:` alias line above
+its prose**, so the orientation grep returns 25 blocks instead of 21.
+
+```
+grep -nE "^Markets swept:" outputs/pipeline/near-misses.md          # every sweep, one line each
+grep -nE "^Markets swept:.*<metro>" outputs/pipeline/near-misses.md # does this metro have coverage
+```
+
+**The label grep tells you where to read; the NAME grep tells you the truth.** Before a fetch,
+grep each candidate's name AND its domain AND its name with whitespace collapsed, and read every
+hit in context. The 25 Nov Brisbane worker did exactly that — it found both `**Market:**` sections
+independently, greped all 68 candidates before fetching anything, and wasted no budget on my error.
+
+**When a check keeps failing on the shape of the data, change the shape, not the check.** Four
+nights of better patterns did not work. One five-minute edit did.
