@@ -110,11 +110,12 @@
    ],
    "alt": "Four slides listing glitches reported on GTA 6 launch streams, marked Unverified until tested.",
    "caption": "15 minutes into GTA 6 and the glitch clips are already flying. 🫠\n\nReported on launch streams:\n→ plane jump loses physics and clips through objects\n→ a strange radar marker on a blimp\n→ outfits switching on their own\n\nIs it a one-off or does it happen every time? We're testing each one on our own console.\n\nSeen a bug? DM us the clip. We'll test it and credit you.\nFan-made · not affiliated with Rockstar Games or Take-Two.\n\n#GTA6 #GTAVI #GTA6Glitch #GTA6Bugs #GTA6News",
-   "status": "approved",
+   "status": "published",
    "slack_ts": "1795148307.331809",
-   "ig_media_id": null,
+   "ig_media_id": "18118926272160242",
    "gate": "PASS",
-   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
+   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\"",
+   "published_at": "2026-11-25T12:40+11:00"
   },
   {
    "id": "2026-11-21-reel-2-score",
@@ -125,15 +126,16 @@
     "https://raw.githubusercontent.com/wilba-audit/gta-decoded-media/main/posts/2026-11-20/reel-2-score/01-reel-2-score.mp4"
    ],
    "caption": "It scored a 100… and the review says \"not a perfect game.\" Both can be true. Read the review, not the number. 🧠\n\nFan-made · not affiliated with Rockstar Games or Take-Two. Visuals are AI-generated.\n#GTA6 #GTAVI #GTA6Review #Gaming #GTA6News",
-   "status": "approved",
+   "status": "published",
    "slack_ts": "1795148307.331809",
-   "ig_media_id": null,
+   "ig_media_id": "17881135944565732",
    "gate": "PASS",
-   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\""
+   "approved_via": "Jess in chat, 20 Nov: \"I approve all i can't login to slack\"",
+   "published_at": "2026-11-25T12:42+11:00"
   },
   {
    "id": "2026-11-25-f-cheats-locked",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "slot": "08:23",
    "type": "carousel",
    "media": [
@@ -152,7 +154,7 @@
   },
   {
    "id": "2026-11-25-reel-4-pc",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "slot": "10:23",
    "type": "reel",
    "media": [
