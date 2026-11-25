@@ -472,17 +472,32 @@ def main():
         if '@' not in rec:
             continue
         rl, rd = rec.split('@', 1)
-        seen = {e.lower() for e in addr.findall((r['notes'] or '') + ' ' + (r['email_source'] or ''))}
+        text = (r['notes'] or '') + ' | ' + (r['email_source'] or '')
+        seen = {e.lower() for e in addr.findall(text)}
         for other in sorted(seen - {rec}):
             ol, od = other.split('@', 1)
             # %20 is a leading space inside a mailto href, which every mail client trims.
             # That is whitespace OUTSIDE the address and is not this check's business;
             # spaces either side of the @ are whitespace INSIDE it, caught above.
             if ol.replace('%20', '') == rl and od != rd:
-                twodomain.append('%s(%s|%s)' % (r['id'], rd, od))
+                # Print the row's own sentence about the other address, not just the pair.
+                # Row 435 is why: the detector nominated info@theskinfirm.co.uk against a
+                # recorded info@theskinfirm.NET, and the notes name the .co.uk string ONLY in
+                # order to forbid it - "do not assume info@theskinfirm.co.uk exists". A regex
+                # cannot read the polarity of a sentence, and it should not try. The worker that
+                # found this proposed excluding the row's own website domain instead; that would
+                # have worked here and would hide a genuine case (a clinic whose site is x.com
+                # publishing both info@x.com and info@x.com.au, where the recorded one is the
+                # .com.au). Showing the sentence costs a line and loses nothing.
+                m = re.search(r'[^.|]*' + re.escape(other) + r'[^.|]*', text, re.I)
+                ctx = ' '.join(m.group(0).split())[:150] if m else ''
+                twodomain.append('%s  %s  vs  %s%s' % (r['id'], rd, od,
+                                                       '\n        the row says: ' + ctx if ctx else ''))
                 break
-    print('sendable rows publishing one mailbox name on two domains (one of them is wrong): %d%s'
-          % (len(twodomain), (' ' + str(twodomain)) if twodomain else ''))
+    print('sendable rows publishing one mailbox name on two domains (one of them is wrong): %d'
+          % len(twodomain))
+    for line in twodomain:
+        print('    ' + line)
 
     # The copy rules apply to every sendable row, not just the ones added today.
     # Fifty rows written before this validator existed carried a price or a
