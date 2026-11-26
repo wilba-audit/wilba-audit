@@ -3325,3 +3325,43 @@ independently, greped all 68 candidates before fetching anything, and wasted no 
 
 **When a check keeps failing on the shape of the data, change the shape, not the check.** Four
 nights of better patterns did not work. One five-minute edit did.
+
+---
+
+## THE CHEAPEST GRADE EVIDENCE IN THE FILE: a number already written in the row. 26 Nov 2026
+
+Measured on a ten-row batch: **register lookups BY NUMBER went 5 for 5, against 2 of 4 for page
+fetches on the same batch.** All five grade lifts came from a number, and **four of the five
+numbers had been sitting in their rows for five weeks or more**, unused, because nobody had ever
+grepped the file for them.
+
+Running totals, now worth trusting:
+- **ABR by ABN: 10 for 10** — `https://abr.business.gov.au/ABN/View?id=<11 digits, no spaces>`
+- **ABR by ACN: 1 for 1** — `https://abr.business.gov.au/Search/ResultsActive?SearchText=<9 digits>`
+- **Companies House by number: 3 for 3**
+- **OpenCorporates PAYWALLS the Irish incorporation date** ("Please log in") but serves the
+  registered address free. For IE use `core.cro.ie` with the CRO number.
+
+**An incorporation or registration date is a dated artifact about the trading entity, so it is a
+TOP rung.** One fetch, and no judgement call about whose number it is.
+
+**The registered office comes back free and is a SECOND subject test.** Three of four register calls
+returned an office address matching a premises already on the row, which ties the dated entity to
+*this clinic* rather than to a company whose name merely resembles it. That is the whole subject
+test, answered for nothing, on a call made for a different reason.
+
+**There is now a standing audit line for this.** `python3 scripts/append_prospects.py --audit-only`
+prints every grade B or C row already carrying a register number, with the number and the right
+register for that row's country:
+
+```
+grade B/C rows already carrying a register number, one fetch from a top rung: 49
+```
+
+**Forty-nine rows, one fetch each, at a measured hit rate near 100%.** That is the best-value work
+available in this pipeline and it beats any metro sweep per fetch. Work it in country blocks so one
+register's page shape is learned once: 24 UK, 19 AU ABN, 5 AU ACN, 3 IE.
+
+**And when a clinic publishes no number, look for one anyway before fetching a page for age.** A UK
+or IE clinic is required to publish company identity; an AU clinic usually prints an ABN in its
+footer, terms or privacy policy. The number is cheaper than the age.

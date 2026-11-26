@@ -801,6 +801,48 @@ def main():
                 if (r.get('icp_fit') or '').strip().lower() in ('a', 'b')
                 and LADDER_RULED.search(r.get('notes') or ''))
     print('grade A/B rows carrying a recorded must-have 4 ladder ruling (excluded below): %d' % ruled)
+    # THE CHEAPEST GRADE EVIDENCE IN THIS FILE, and it was invisible until 26 Nov 2026 because
+    # nobody had grepped for it. A company or business number already written into a row resolves
+    # to a dated incorporation record - a TOP rung on must-have 4 - for one fetch. Measured on
+    # 26 Nov: register lookups BY NUMBER went 5 for 5, against 2 of 4 for page fetches on the same
+    # batch, and four of the five numbers had been sitting in their rows for five weeks or more.
+    # Running totals: ABR by ABN 10 for 10, Companies House by number 3 for 3, ABR by ACN 1 for 1.
+    #   The registered office comes back free and is a SECOND subject test: 3 of 4 calls returned
+    # an office matching a premises already on the row, which ties the dated entity to the clinic
+    # rather than to a name that merely looks like it.
+    REGISTER_NUMS = (
+        ('ABN', re.compile(r'\bABN[:\s]*((?:\d[\s]?){11})', re.I)),
+        ('ACN', re.compile(r'\bACN[:\s]*((?:\d[\s]?){9})', re.I)),
+        ('CH', re.compile(r'\b(?:company (?:no|number)|registered in england(?: and wales)? '
+                          r'(?:no|number)|CH)\.?[:\s#]*((?:SC|NI|OC)?\d{6,8})', re.I)),
+        ('CRO', re.compile(r'\bCRO[:\s#]*(\d{5,7})', re.I)),
+        ('NZBN', re.compile(r'\bNZBN[:\s]*((?:\d[\s]?){13})', re.I)),
+    )
+    REGISTER_FIELDS = ('notes', 'scale_signals', 'dormant_lead_signal', 'segment', 'fit_flag',
+                       'lead_doctor', 'services')
+    unlifted = []
+    for r in after:
+        if (r.get('icp_fit') or '').strip()[:1].upper() not in ('B', 'C'):
+            continue
+        blob = ' '.join(r.get(f) or '' for f in REGISTER_FIELDS)
+        found = [(label, m.group(1).strip())
+                 for label, pat in REGISTER_NUMS
+                 for m in [pat.search(blob)] if m]
+        if not found:
+            continue
+        # Prefer the register that matches the row's own country. Without this the CH pattern
+        # matched an Irish row's CRO number first and labelled it CH, which would send whoever
+        # worked the list to the wrong register.
+        prefer = {'AU': ('ABN', 'ACN'), 'UK': ('CH',), 'IE': ('CRO',), 'NZ': ('NZBN',)}.get(
+            (r.get('country') or '').strip().upper(), ())
+        found.sort(key=lambda lv: (lv[0] not in prefer,))
+        unlifted.append('%s:%s %s' % (r['id'], found[0][0], found[0][1]))
+    print('grade B/C rows already carrying a register number, one fetch from a top rung: %d'
+          % len(unlifted))
+    if unlifted:
+        for i in range(0, len(unlifted), 6):
+            print('    ' + '   '.join(unlifted[i:i + 6]))
+
     norung_a = [w for w in weak['a'] if not w[1]]
     print('grade A rows whose notes call must-have 4 inferred or unverified: %d '
           '(of which %d name no ladder artifact anywhere)' % (len(weak['a']), len(norung_a)))

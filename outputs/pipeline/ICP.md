@@ -3281,3 +3281,52 @@ v2 opener?** — was answered and closed the same night: **4 of 336**, all held,
 **refuses to start a clinic missing from `openers-v2.json`** rather than falling back to v1. The
 right fix for a silent fallback is to make it loud, not to keep a list of the rows currently inside
 it.
+
+---
+
+## A floor is evidence of a MINIMUM and never of a maximum. 26 Nov 2026
+
+Settled on row 396 Cashmore Clinic, where a worker found dated testimonials whose oldest is
+**May 2024** and flagged the question rather than grading on it. Two rules come out of it.
+
+**First: a clinic's own dated review wall IS a top rung in kind.** It is published by the clinic on
+its own site, it carries dates, and it passes the subject test because the reviews are of this
+practice. The obvious objection — the clinic chooses what to show — cuts one way only: a clinic
+curates for its *best* and its *most recent*, never to look younger than it is. So the oldest dated
+item on a wall the clinic controls is a genuine floor.
+
+**Second, and this is the rule: a floor says "trading at least since X". It never says "trading
+only since X".** Row 396's floor of May 2024 is 2y7m. That does not establish must-have 4 — but it
+does not fail it either, because a clinic can trade for a decade and start collecting reviews last
+year. The honest reading is **age unknown above the floor**, which is must-have 4 *unestablished*.
+B is correct, and the row must not be written up as "too young".
+
+**How this differs from row 720, where the evidence DID bound the age.** The distinction is what
+kind of artifact it is:
+
+- **Artifacts that start when the BUSINESS starts** bound the age from above as well as below: a
+  blog archive on a site built at launch, a copyright range, an incorporation date. If the oldest
+  post on a clinic's only site is 2024, the site is 2024 and the trading name probably is too.
+- **Artifacts that start when the business CHOSE to begin collecting** only ever floor: a review
+  wall, a testimonials page, an awards list, a staff roster. Their start date is a marketing
+  decision, not a founding date.
+
+So **the blog archive bounds and the review wall floors**, and that is why the archive is still only
+a 2-of-7 rung while a floor from a review wall is honest evidence as far as it reaches. Ask of any
+dated artifact: *could this have started later than the business did?* If yes, it floors and nothing
+more.
+
+---
+
+## The GST rule is asymmetric, and I wrote it in one direction only. 26 Nov 2026
+
+Corrected by a worker on row 575. The rule as I wrote it on 25 Nov — *"GST status arrives free on
+every ABR call and bounds turnover"* — is true downwards and false upwards:
+
+- **"Not currently registered for GST" bounds turnover BELOW AUD $75,000**, because registration is
+  compulsory above that. This is a real signal and it is usually bad news for must-have 4's
+  substance: a clinic under $75k has no lapsed list worth reactivating.
+- **Being registered proves nothing**, because voluntary registration below the threshold is
+  permitted and common. "Registered for GST" is consistency, not evidence.
+
+Record the line either way, and never treat registration as a turnover floor.
