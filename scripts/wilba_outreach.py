@@ -281,6 +281,18 @@ def print_field(label, text, flag=True):
 # beside the row. They are deliberately narrow: they match the phrasings workers have
 # actually used, and a phrasing nobody has used yet will be missed, which is why the
 # sentence printed is the evidence rather than a verdict.
+# Two fragments the last two HOLD_PATTERNS are built from. Kept separate and named because the
+# verb list is the part that keeps being wrong: every night a worker reaches for a different word
+# for "getting in touch", and the pattern that only knew "send" missed every one of them.
+BEFORE_CONTACT = (r'before (?:any |a |the |it |you |we |whoever |anything |re-?)?'
+                  r'(?:send\w*|writ\w*|draft\w*|approach\w*|contact\w*|email\w*|'
+                  r'reach\w* out|pitch\w*|first (?:touch|email|contact)|going out|'
+                  r'anything (?:goes|is sent))')
+ACT_ON_READER = (r'(?:re-?verify|verify|re-?read|read|re-?check|check|confirm|count|call|dial|'
+                 r'ask|open|sanity[- ]check|needs? (?:a human|checking|confirming)|must be|'
+                 r'has to be|have to be|should be|worth a|worth \w+ing|do not|don\'t|never)')
+
+
 HOLD_PATTERNS = (
     re.compile(r'[^.|]*\b(?:hold (?:it |this |them )?(?:out|back)|hold out of|'
                r'do not send|do not draft)\b[^.|]*[.]?', re.I),
@@ -292,6 +304,25 @@ HOLD_PATTERNS = (
     # caution addressed to the sender in as many words, matching none of the patterns above. The
     # row's qualification was clean, so nothing else would have flagged it either.
     re.compile(r'[^.|]*\bread (?:this )?before (?:send|writ|draft)\w*\b[^.|]*[.]?', re.I),
+    # GENERALISED 26 Nov 2026, after a fifth night of a worker inventing a phrasing this missed.
+    # Row 154's note read "the count has to be re-read on the clinic's own site before any
+    # approach" - an instruction to the sender in as many words, on a grade A row sitting sixth
+    # in the first-touch batch with an open must-have 3 question, and nothing flagged it. Rather
+    # than add a sixth literal phrasing, key on the SHAPE: an instruction to the reader in the
+    # same sentence as a "before <contacting verb>" clause, in either order.
+    #   The verb list is what matters - approach, contact, email, reach out and pitch were all
+    # missing, and "send" alone was never going to be how everyone writes it. Requiring the
+    # instruction word is what keeps this honest: without it the pattern also matched narrative
+    # about our own process ("the reason the screen now runs before a send rather than after
+    # one", on four rows), which is not a caution and would have been pure noise.
+    #   This takes the sendable rows carrying a caution from 40 to about 130. That is a tenth of
+    # the list and it is the real number: most are one glance each - check the privacy policy,
+    # count the locations again, verify the tenure - and a one-line instruction a reader can see
+    # is worth more than a hundred they cannot.
+    re.compile(r'[^.|]*\b' + ACT_ON_READER + r'\b[^.|]*\b' + BEFORE_CONTACT + r'\b[^.|]*[.]?',
+               re.I),
+    re.compile(r'[^.|]*\b' + BEFORE_CONTACT + r'\b[^.|]*\b' + ACT_ON_READER + r'\b[^.|]*[.]?',
+               re.I),
 )
 
 

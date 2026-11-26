@@ -256,6 +256,38 @@ PLACEHOLDER = re.compile(r'(filler@godaddy|contact@wix|example\.com|yourdomain|'
                          r'\[email\s*protected\])', re.I)
 
 
+def sender_hold_patterns():
+    """The sender's own HOLD_PATTERNS, loaded from wilba_outreach.py rather than copied.
+
+    Imported lazily and by path so this script keeps working if it is run from elsewhere, and
+    so a syntax error in the sender cannot stop a row from being validated: on any failure this
+    falls back to the narrow literal set, says so on stderr, and carries on. A fallback that is
+    silent would be worse than the duplicate it replaces.
+    """
+    global _HOLD_CACHE
+    try:
+        return _HOLD_CACHE
+    except NameError:
+        pass
+    import importlib.util
+    import os
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'wilba_outreach.py')
+    try:
+        spec = importlib.util.spec_from_file_location('_wo_holds', path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        _HOLD_CACHE = tuple(mod.HOLD_PATTERNS)
+    except Exception as exc:  # noqa: BLE001 - any failure must degrade, not abort
+        sys.stderr.write('WARNING: could not read HOLD_PATTERNS from %s (%s); falling back to '
+                         'the narrow literal set, so the caution count below UNDERSTATES.\n'
+                         % (path, exc))
+        _HOLD_CACHE = (re.compile(r"\bhold (?:it |this |them )?(?:out|back)\b|\bhold out of\b|"
+                                  r"\bdo not (?:send|draft)\b|\bCOULD NOT BE RE-?VERIFIED\b|"
+                                  r"\b(?:CAUTION|NOTE|WARNING|COPY WARNING) FOR WHOEVER\b|"
+                                  r"\bnot monitored\b", re.I),)
+    return _HOLD_CACHE
+
+
 def main():
     ap = argparse.ArgumentParser()
     # --audit-only exists because of a defect found on 19 Nov 2026. The two whole-file
@@ -571,11 +603,16 @@ def main():
     # so the total is tracked over time and somebody notices when it grows. The patterns are
     # deliberately narrow and match phrasings workers have actually used: a new phrasing will be
     # missed, which is why the batch printer shows the SENTENCE rather than a verdict.
-    HOLDS = re.compile(r"\bhold (?:it |this |them )?(?:out|back)\b|\bhold out of\b|"
-                       r"\bdo not (?:send|draft)\b|\bCOULD NOT BE RE-?VERIFIED\b|"
-                       r"\b(?:CAUTION|NOTE|WARNING|COPY WARNING) FOR WHOEVER\b|"
-                       r"\bnot monitored\b", re.I)
-    held = [r['id'] for r in sendable if HOLDS.search(r['notes'] or '')]
+    # ONE DEFINITION, 26 Nov 2026. This was a second, narrower copy of the sender's patterns, and
+    # the comment above admitted it would miss a new phrasing. It did, five nights running, most
+    # recently on row 154 - a grade A row sixth in the first-touch batch whose note said the
+    # location count "has to be re-read on the clinic's own site before any approach", matching
+    # neither copy. Two detectors for one rule drift apart, exactly as the deferral predicate did
+    # in three paragraphs on 24 Nov, and the validator disagreeing with the sender about what a
+    # caution IS is how a caution reaches nobody. So the sender owns the patterns and this reads
+    # them: there is one list, in wilba_outreach.py, and it is the one the drafter sees.
+    held = [r['id'] for r in sendable
+            if any(rx.search(r['notes'] or '') for rx in sender_hold_patterns())]
     print('sendable rows carrying a caution meant for whoever sends: %d%s'
           % (len(held), (' ' + str(held)) if len(held) <= 40 else ''))
 
