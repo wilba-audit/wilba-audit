@@ -1,0 +1,3 @@
+live
+
+Load 15 Mountain West clinics (ids 278-293, minus 291) as contacts, 16 Oct. No sending.

@@ -1,0 +1,67 @@
+{
+ "send_days": [
+  "2026-10-15"
+ ],
+ "clinics": {
+  "85": {
+   "contact_id": "xUwqHIpeljOl90VxtpMO",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "86": {
+   "contact_id": "wi8AVYpVBAAFWbX7NO3I",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "87": {
+   "contact_id": "OzrZsEu8FzgYbsqWFqgR",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "88": {
+   "contact_id": "sEXLCZGcAzBV9ilUkSmK",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "89": {
+   "contact_id": "XIReeqRjJTbeHRAt3zxB",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "93": {
+   "contact_id": "gdQ08Q29zzx3ShVVvB8N",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "94": {
+   "contact_id": "eEhUVWqvRFJrI0wo1KHL",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "96": {
+   "contact_id": "nNwQ7j67LdbR0GReFZE1",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "97": {
+   "contact_id": "EwGZ9RL9OBzuZ80L4LmF",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  },
+  "98": {
+   "contact_id": "XMaqvJjTAmrC4Yxq83Pt",
+   "step": 1,
+   "started": "2026-10-15",
+   "next_date": "2026-10-17"
+  }
+ }
+}
