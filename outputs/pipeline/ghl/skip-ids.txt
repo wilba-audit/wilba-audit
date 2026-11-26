@@ -103,11 +103,7 @@
 166  # 25 Nov: no v2 opener; the v1 opener would go out and it quotes prices
 167  # 25 Nov: no v2 opener; the v1 opener would go out and it quotes prices
 182  # 25 Nov: no v2 opener; the v1 opener would go out and it quotes prices
-207  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
-311  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
-315  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
-316  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
-403  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
+316  # 26 Nov: regraded C by sourcing
+403  # 26 Nov: regraded C by sourcing
 584  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
-618  # 26 Nov: notes ask for a check before sending (newly printed caution); do the check at go time, then release
 429  # 26 Nov: notes recommend holding it out of the first live send (new sending domain)
