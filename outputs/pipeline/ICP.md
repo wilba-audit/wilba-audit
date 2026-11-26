@@ -3330,3 +3330,45 @@ every ABR call and bounds turnover"* — is true downwards and false upwards:
   permitted and common. "Registered for GST" is consistency, not evidence.
 
 Record the line either way, and never treat registration as a turnover floor.
+
+---
+
+## "On the clinic's own site" never meant "not a public register". 26 Nov 2026
+
+A worker ruled a Fair Work Ombudsman penalty media release (row 1559) out as a must-have 4 rung
+because *"it is a third-party page, not the clinic's own site"*. That reading is consistent with how
+the rule has been written, and it is wrong — and the same night's register work shows why.
+
+**Five rows lifted B→A tonight on Companies House and ABR records. Those are third-party pages
+too.** If "not the clinic's own site" disqualified an artifact, the cheapest and most reliable
+evidence in this whole pipeline would be inadmissible.
+
+**The condition was always about a different distinction.** "Published on the clinic's own site"
+exists to separate **a clinic's own representations** from **a directory's claims about it**. A
+review count on a Fresha listing page is Fresha's number; the same count embedded on the clinic's
+homepage is the clinic standing behind it. That is a question about *who is asserting it*, and it
+only arises for artifacts somebody chose to publish as marketing.
+
+**It does not arise for an official record.** A company register, a public enforcement record, a
+regulator's register, a court listing — these are not assertions by anyone with an interest. They
+are better evidence than self-publication, which is exactly why a register lookup is the
+highest-value rung available.
+
+So the rule, stated properly:
+
+> **A dated artifact is a TOP rung if it is either (a) published by the clinic on its own site, or
+> (b) a record of an official body. A directory's or an aggregator's claim is neither.** What the
+> "own site" condition excludes is a third party *marketing* the clinic, not a third party
+> *registering* it.
+
+**The subject test still runs first, and on row 1559 it is what actually decides.** The media
+release names **"RL Medispa"**. The clinic trades as **Rachael Louise Medispa**. That is a name
+resemblance, not an entity tie — the same shape as row 125, where a CRO number and a trading name
+matched but nothing on the clinic's page named the entity. So 1559 does not get the rung, not
+because the page belongs to the Fair Work Ombudsman, but because **nobody has shown the penalised
+entity is this clinic.** One ABN or ACN would settle it, and that is the cheap next action.
+
+**And note what the rung would be worth if the tie held:** a penalty for underpaying staff in or
+before 2022 evidences trading *and employing*, which is the §13 staff-tenure shape in its strongest
+form. It is also, separately, a reputational fact Jess should know before any cold email, and the
+row says so.

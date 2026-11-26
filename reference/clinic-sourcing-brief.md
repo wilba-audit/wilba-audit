@@ -3365,3 +3365,118 @@ register's page shape is learned once: 24 UK, 19 AU ABN, 5 AU ACN, 3 IE.
 **And when a clinic publishes no number, look for one anyway before fetching a page for age.** A UK
 or IE clinic is required to publish company identity; an AU clinic usually prints an ABN in its
 footer, terms or privacy policy. The number is cheaper than the age.
+
+---
+
+## 26 Nov 2026 — the census can collapse, a search can only rule out a CLASSIFICATION, and an address on their own page may not be theirs
+
+### THE CALL-TO-BOOK LOCALITY CENSUS HAS ITS FIRST MEASURED FAILURE, AND IT WAS TOTAL
+
+**0 of 99 listings on `au-sydney/narrabeen` carried a Narrabeen or Collaroy address.** Prior record
+was 5 of 5, 4 of 4, 6 of 6 and 4 of 4 — which is why it was briefed as reliable, and it is not.
+
+**The mechanism is inventory, not page structure.** `au-sydney/avalon-beach` does not exist as a
+page at all; where Fresha has no inventory for a locality it serves a slug anyway and fills it from
+wherever it likes. So the census holds where the suburb has businesses on the platform and collapses
+silently where it does not.
+
+**Free replacement diagnostic, costing nothing on a page you have already fetched:** count the
+Call-to-book rows carrying an address in the slug's own suburb. **Zero means the slug collapsed** —
+treat every name on it as unlocated and verify each address on the clinic's own page, or drop the
+slug. The header venue count remains meaningless, now 11 of 11: `claremont` said "One venue" and
+listed fifteen.
+
+### A SEARCH MAY RULE OUT MUST-HAVE 1 ON A CLASSIFICATION, NEVER ON A SAMPLE OF TREATMENT PAGES
+
+A worker ruled BDJ Skin & Body out on must-have 1 from search-result titles; the page reversed it
+outright — 14 years, a named owner-nurse, injectables on the menu. **1 wrong in 4 attempts.**
+
+The distinction that holds: a search can tell you a business is a *dentist*, a *pharmacy*, a
+*plastic surgery practice* — a business-type classification, which the result titles genuinely
+carry. It cannot tell you a clinic does not offer injectables, because what surfaces is whichever
+treatment pages rank, and a clinic's injectable line is often its least SEO'd page. **Rule out a
+type from a search; rule out a service only from the clinic's own menu.**
+
+### "READ IT OFF THEIR OWN PAGE" IS NOT SUFFICIENT — READ THE PRINTED ADDRESS
+
+Body Wisdom's own page embeds a review widget that displays **a neighbouring business's street
+number**. A worker reading "the address on their own site" would have taken it.
+
+**So the rule is the printed address, in the page's own text or footer, not a number rendered by an
+embedded third-party widget** — a review badge, a map embed, a booking iframe. Each of those is
+another party's data served inside the clinic's page.
+
+Related, and now measured three ways: **index addresses and names are unreliable at a high rate.**
+Sydney disputed 3 of 7 cross-checkable cases (43%), Perth 3 of 4, Brisbane produced two wrong
+postcodes and two names attached to the wrong premises. **Report both strings on the row and
+adjudicate neither** unless the clinic's own printed text settles it.
+
+### VISIBLE TEXT AND THE MAILTO TARGET ARE TWO SEPARATE READINGS, AND THEY DISAGREE
+
+**3 of 20 Perth pages disagreed between the two; 5 of 20 rows carry a mailbox anomaly.** Cosmetic
+Images publishes two different mailboxes on one page, one of them misspelled `receiption@`;
+BodySculpt's mailto target is misspelled against its visible text; LuxeGlo's displayed and mailto
+addresses differ. Sydney found Rachael Louise Medispa publishing `info@rachaellouisemedispa.com.au`
+in body text **and** a second mailto reading `info@rachaellousiemedispa.com.au` — a transposition.
+
+**Record both verbatim and normalise neither.** A typo in a mailto is still what the page shipped,
+and picking the "obviously right" one is constructing an address. This is the same rule as the
+spaces around the @ on row 1498, and the same reason: the person who closes the gap is the person
+least likely to know.
+
+### THREE NEW MUST-HAVE 2 TELLS, NONE OF THEM IN THE PAGE COPY
+
+Zero billing words across 20 Perth pages (HICAPS is now past 80 clean), and **three must-have 2
+flags still fired — all from the booking platform and the credential letters:**
+
+- **MyHealth1st booking** — a new member of the HotDoc family of tells.
+- **Halaxy with no published provider number** — half the established tell; Halaxy *plus* a
+  published "Provider Number" is the whole of it.
+- **A co-located dental practice sharing an admin mailbox** — the dental side bills, and the shared
+  mailbox is the tell.
+
+**A run that only greps billing vocabulary misses all three.** Read the booking platform and the
+practitioner credentials, not just the words.
+
+### TWO SMALLER THINGS WORTH THE LINE
+
+- **A future-dated copyright crediting a stranger is no rung and is itself a tell.** Oraya
+  Collective's footer reads "© 2035 by P. Mendes" — a template never edited, which says the site is
+  unattended rather than that the business is from 2035.
+- **The room-renting tenancy discriminator split two clinics on one night, a third independent
+  confirmation.** The Preventative Collective passes must-have 3 (its own Fresha tenant inside a
+  host's premises); Oraya Collective **fails** it (both Book links resolve into the host's tenant).
+  The list we would reactivate has to be theirs to sell.
+
+### SPEND, AND THE LISTICLE TEST INVERTED
+
+- **Over search-closed ground, budget 4 calls per accepted row, not 2.** Sydney spent 3.9, and the
+  cause is measured rather than technique: the clinics that publish a mailbox are already taken, so
+  what is left is the must-have 5 tail — **9 of 17 clinics opened (53%) published no readable
+  mailbox**, reproducing 54% on the same beaches a third time. Over fresh ground 2 still holds:
+  Perth spent 1.9.
+- **Ask of a listicle "is it TYPE-FILTERED?", not "does it print domains?"** `sydney10.com` printed
+  0 of 16 domains and gave 16 addressed injectables-first names, 9 of them new; the Sydney directory
+  that *did* print domains held only surgeons and chains. A search resolves a known name to its
+  domain cheaply; nothing rescues a list of the wrong businesses.
+- **"Cosmetic" pulls dentists, measured: 6 of 10 slots**, 1 of 10 usable. Lead with "injectables".
+- **The Newport collision fired as predicted — 3 of 10 slots in Newport Beach, California, with the
+  postcode in the query.** Worse, **"Rejuvaderm" returned 9 of 10 wrong-market**, and no postcode
+  fixes a brand string other countries own. Check the clinic's NAME for foreign owners before
+  searching it.
+- **`robots_disallowed` was correct for once**: Preserve Aesthetics' own `/robots.txt` also returned
+  `robots_disallowed`. That is 5 of 15 cases where the park was right and 10 of 15 where it was
+  wrong. On `avalonskin.com.au` the robots.txt retry reproduced the same error, which distinguishes
+  a dead host from a fetcher problem — informative, not wasted.
+
+### WHERE NOT TO GO, AND WHAT TO READ FIRST
+
+- **Do not brief Nedlands, Dalkeith or Peppermint Grove again.** Nedlands is 0 for 4 across three
+  runs. **City Beach and North Fremantle produced not one listing on any slug** and remain
+  index-fresh and file-empty.
+- **Read the previous run's named-leads handover before building a new candidate list.** Six of the
+  19 Nov Perth handover names became rows or conclusive rule-outs in one night, and four of the
+  five best rows of the Perth run came out of that list rather than out of the index.
+- **56% of Perth businesses name no human owner** (14 of 25), which is now the dominant quality
+  problem in that ring, ahead of must-have 5. Ladder spread there was **28% top / 20% middle / 52%
+  no rung** — the worst recorded, against the Gold Coast's 44% and Melbourne's 18%.
