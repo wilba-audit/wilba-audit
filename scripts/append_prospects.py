@@ -811,7 +811,15 @@ def main():
           '(of which %d name no ladder artifact anywhere - candidates for C, read before moving)'
           % (len(weak['b']), len(norung_b)))
     if norung_b:
-        print('    ' + ' '.join(rid for rid, _, _ in norung_b))
+        print('    no artifact, read before moving to C: '
+              + ' '.join(rid for rid, _, _ in norung_b))
+    # Print the whole B list too, not only the no-artifact subset. Until 26 Nov this printed
+    # nothing at all whenever norung_b was empty, which is the usual case - so the 55 ids were
+    # unreachable from the audit and the standing list described them wrongly as C candidates.
+    # A row here names a MIDDLE rung and is a candidate to lift to A, not to fall to C.
+    if weak['b']:
+        print('    all of them, candidates to LIFT to A once the top rung is found: '
+              + ' '.join(rid for rid, _, _ in weak['b']))
 
 
 if __name__ == '__main__':

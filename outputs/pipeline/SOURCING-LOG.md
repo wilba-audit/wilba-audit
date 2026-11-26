@@ -2561,12 +2561,22 @@ measures). Then five register lookups with the number already in hand: **85** CH
 off the clinic's own page). Then **483, 575, 179, 154, 396** — one page fetch each. An ACN alone
 resolves via `https://abr.business.gov.au/Search/ResultsActive?SearchText=<9-digit ACN>`.
 
-**2. The 55 grade-B rows whose notes call must-have 4 inferred or unverified.** The append audit
-names them. None names no ladder artifact anywhere, so these are reads rather than fetches, and
-after tonight they are the largest remaining grade question in the file. **Read them under the rule
-tonight established:** a C ruling asserts an absence and needs the whole record; a B ruling asserts
-a presence and degrades gracefully. So a park here must be checked against all 27 columns, never an
-extract.
+**2. The 55 grade-B rows whose notes call must-have 4 inferred or unverified — and I had this
+backwards.** **CORRECTED 26 Nov.** I wrote that they were the largest remaining grade question and
+implied they were C candidates. The audit says **0 of the 55 name no ladder artifact**, so every one
+of them holds a legitimate MIDDLE rung and none is a candidate for C. They are candidates to **lift
+to A**, which is a smaller and better job. Their ids were also unreachable: the audit printed the
+no-artifact subset and, that subset being empty, printed nothing. It now prints all 55:
+
+```
+414 415 505 510 511 519 521 522 526 528 529 531 532 534 536 549 554 556 561 562 587 674 675 677
+678 679 682 683 685 688 689 692 697 718 774 790 797 845 851 884 888 936 938 939 940 944 946 947
+956 957 965 1018 1024 1025 1258
+```
+
+**An audit that hides its list whenever the alarming subset is empty cannot be acted on at all** —
+the same defect shape as the price audit that counted only sendable rows, and as `cmd_due` hiding
+ten rows behind an unreported `else: continue`.
 
 **3. The index pass has two cities left and a known yield.** Brisbane settled the method question —
 **~53% new over search-swept ground, ~72% over thin ground** — so the remaining ground is worth
