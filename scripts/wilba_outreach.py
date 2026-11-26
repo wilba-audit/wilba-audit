@@ -455,10 +455,11 @@ def print_angle(r):
 def print_cautions(r):
     """The sentences someone meant the sender to read, if any."""
     notes = r.get('notes', '')
-    cautions = sender_cautions(notes)
+    cautions, settled = split_cautions(notes)
     if cautions:
-        print(f'   {"HOLD?":<9} {len(cautions)} caution(s) recorded against this row '
-              f'- read before drafting, and do not mark it Draft ready if one says hold:')
+        print(f'   {"HOLD?":<9} {len(cautions)} LIVE caution(s) against this row, written after '
+              f'the last recorded resolution - read before drafting, and do not mark it Draft '
+              f'ready if one says hold:')
         for c in cautions:
             print(f'   {"":<9}  - {c}')
         later = later_bearing_on(notes, cautions)
@@ -467,23 +468,77 @@ def print_cautions(r):
                   f'before you hold:')
             for t in later:
                 print(f'   {"":<9}  + {t}')
+    if settled:
+        print(f'   {"(settled)":<9} {len(settled)} earlier caution(s) sit BEHIND a later '
+              f'"QUESTION RESOLVED" or "RE-VERIFIED" line in this row and are not holds. '
+              f'First: {settled[0][:90]}...')
 
 
 def sender_cautions(notes, limit=3):
     """The sentences in notes that someone meant the sender to read, deduplicated."""
+    return split_cautions(notes, limit)[0]
+
+
+def split_cautions(notes, limit=3):
+    """Cautions split into (live, settled), by POSITION in the chronological record.
+
+    WHY THIS IS NOW A SPLIT AND NOT A LIST. On 24 Nov the extractor was showing the worry and
+    not the answer, so it printed a hold on 11 of 29 rows that a later sweep had already
+    settled. The fix then was to print the later sentence BESIDE the caution and let the reader
+    resolve it, deliberately deciding nothing - on the grounds that suppressing a caution risks
+    hiding a real hold.
+      That fix put the answer next to the alarm and left the alarm ringing, and on 26 Nov the
+    sending thread acted on the alarm: it held 27 of the 28 rows it had staged. Reading those 27
+    in full, TWENTY had a later line explicitly marked QUESTION RESOLVED. Seven were live. So
+    the generalised detector that took visible cautions from 40 rows to 136 had, without the
+    split, turned into a 96% hold rate on the staged queue - which is the original defect in its
+    worst form: an alarm that fires on settled questions teaches the one reader who acts to skim
+    past the live ones.
+      THE SPLIT IS POSITIONAL, WHICH IS THE ONLY HONEST RULE AVAILABLE. `notes` is a
+    chronological record joined with " | ", so a caution written before the LAST resolution
+    marker may have been answered, and a caution written after it cannot have been. Nothing here
+    claims a particular resolution answers a particular caution - that needs a reader - but a
+    sentence from 3 Nov sitting behind a 22 Nov "QUESTION RESOLVED" is not what should stop a
+    send on 26 Nov. Live cautions print as the hold block; settled ones print as one quiet line
+    saying how many there are and where the resolution is, so nothing is hidden.
+    """
     notes = notes or ''
-    out = []
-    for rx in HOLD_PATTERNS:
-        for m in rx.finditer(notes):
-            t = ' '.join(m.group(0).split()).strip(' .|')
-            if len(t) < 12:
-                continue
-            if any(t[:60] == o[:60] for o in out):
-                continue
-            out.append(t if len(t) <= 300 else t[:297] + '...')
-            if len(out) >= limit:
-                return out
-    return out
+    # Split by SEGMENT, not by character offset. `notes` is one entry per " | ", and a worker
+    # recording a resolution routinely QUOTES the caution it is answering - "QUESTION RESOLVED
+    # 5 Nov 2026. The note said 'Verify tenure before sending'..." - so the quotation sits at a
+    # later character offset than the resolution marker and a positional test reads it as a new
+    # live caution. That mistake put 14 rows in the live bucket where 7 belonged. A caution
+    # inside the same segment as a resolution marker is part of that resolution's own prose.
+    segments = notes.split(' | ')
+    last_resolved = -1
+    resolved_segs = set()
+    for idx, seg in enumerate(segments):
+        if any(rx.search(seg) for rx in SUPERSEDE_PATTERNS):
+            resolved_segs.add(idx)
+            last_resolved = idx
+    live, settled = [], []
+    seen = []
+    for idx, seg in enumerate(segments):
+        stale = idx in resolved_segs or idx < last_resolved
+        for rx in HOLD_PATTERNS:
+            for m in rx.finditer(seg):
+                t = ' '.join(m.group(0).split()).strip(' .|')
+                if len(t) < 12:
+                    continue
+                if any(t[:60] == o[:60] for o in seen):
+                    continue
+                seen.append(t)
+                t = t if len(t) <= 300 else t[:297] + '...'
+                (settled if stale else live).append(t)
+    # A hard hold is never settled by position. "do not send" and an unmonitored mailbox are
+    # instructions rather than questions, so no later sentence retires them implicitly.
+    hard = re.compile(r'\bdo not (?:send|draft)\b|\bhold (?:it |this |them )?(?:out|back)\b'
+                      r'|\bhold out of\b|\bnot monitored\b', re.I)
+    promoted = [t for t in settled if hard.search(t)]
+    if promoted:
+        live = promoted + live
+        settled = [t for t in settled if t not in promoted]
+    return live[:limit], settled[:limit]
 
 
 def cmd_batch(args):
