@@ -244,6 +244,23 @@ def defers(notes):
     """
     notes = notes or ''
     scrubbed = DISCOVERY_QUESTION.sub(' ', NEGATED_DEFERRAL.sub(' ', notes))
+    # THIRD EXEMPTION, 26 Nov 2026, and it closes the loop between the two detectors.
+    #   This function's whole premise is in its first line: a decision handed to "a person who
+    # will never see it". Until tonight that premise was true of every deferring sentence,
+    # because the sender printed the opening angle and little else. It is no longer true. The
+    # sender's HOLD_PATTERNS now lift any sentence instructing the reader to do something before
+    # contacting the clinic and print it beside the row, so 135 sendable rows carry a visible
+    # caution where 40 did.
+    #   A sentence the sender WILL print is not a deferral; it is a caution, and a verification
+    # caution is not a deferred qualification decision. Two rows established the distinction on
+    # one night - 154's four-site re-count and Vital Effect's eight-year-old live promotion -
+    # and both had said so in their own words while the gate rejected them anyway.
+    #   Exempted the same way as the other two: by deleting the sentence that will be printed,
+    # never by letting a printed sentence anywhere in the field excuse a silent deferral
+    # elsewhere in it. The escape hatch this might look like is closed by construction - the
+    # only way to earn the exemption is to write a sentence the drafter reads.
+    for rx in sender_hold_patterns():
+        scrubbed = rx.sub(' ', scrubbed)
     return bool(DEFERS.search(scrubbed)) and not RESOLVED.search(notes)
 
 

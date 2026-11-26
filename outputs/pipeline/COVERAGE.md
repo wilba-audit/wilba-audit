@@ -96,8 +96,71 @@ suburb without naming it, and name a suburb without working it.
 | 34996 | — | 1. Markets swept | Chermside, Aspley, Nundah, Clayfield, Windsor, Northgate (Fresha slug `au-brisbane/chermside`, 16 "Call to book" listings + 4 featured cards) |
 | 34998 | — | 1. Markets swept | Grange, Lutwyche, Albion, Wavell Heights (reached on the `au-brisbane/chermside` slug) |
 | 35000 | — | 1. Markets swept | Mount Gravatt East, Upper Mount Gravatt, Woolloongabba, East Brisbane, Morningside, Bulimba, Ascot, Brisbane City (reached as spillover on the four slugs above, not centroids of their own) |
+| 35422 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Subiaco WA 6008 · Shenton Park 6008 · West Perth 6005 · Perth CBD 6000 · Highgate 6000** (Fresha index, `tt/anti-wrinkle-injections` centroid `subiaco`, 39 Call-to-book listings + 8 featured cards) |
+| 35424 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Mount Lawley WA 6050 · Inglewood 6052 · Maylands 6051 · North Perth 6006 · Leederville 6007 · Mount Hawthorn 6016** (Fresha index, centroid `mount-lawley`, 38 Call-to-book listings + 6 featured cards) |
+| 35426 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Claremont WA 6010 · Cottesloe 6011 · Mosman Park 6012 · Nedlands 6009 · Floreat 6014** (Fresha index, centroid `claremont` — the thinnest slug of the five, 15 Call-to-book listings + 2 featured cards, and 11 of the 15 were repeats from `subiaco`) |
+| 35428 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **South Perth WA 6151 · Como 6152 · East Perth 6004 · Burswood 6100 · Victoria Park 6100 · Carlisle 6101** (Fresha index, centroid `south-perth`, 27 Call-to-book listings + 1 featured card) |
+| 35430 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Victoria Park WA 6100 · East Victoria Park 6101 · Cloverdale 6105 · Rivervale 6104** (Fresha index, centroid `victoria-park`, 23 Call-to-book listings + 6 featured cards — near-exhausted, 22 of 23 were repeats, and I stopped the slug sequence here) |
+| 35432 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Osborne Park WA 6017 · Tuart Hill 6060** (reached as spillover on the `subiaco` and `mount-lawley` centroids plus domain-resolution searches, not centroids of their own) |
+| 35434 | 26 November 2026 | Near misses and rule-outs — Perth's inner and affluent core, the first | **Fremantle WA 6160 · East Fremantle 6158 · Kalamunda 6076 · Joondalup 6027 · Bunbury 6230** (reached only by resolving named leads handed over by the 19 November run and by search spillover — NOT indexed, and not my ground) |
+| 35723 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Mona Vale NSW 2103 · Avalon Beach NSW 2107 · Newport NSW 2106 · Warriewood NSW 2102** (Fresha index, `tt/anti-wrinkle-injections` centroid `mona-vale` — index-fresh, never slugged before) Markets swept: **Narrabeen NSW 2101 · Collaroy NSW 2097** (Fresha index, centroid `narrabeen` — **the slug … |
+| 35724 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Narrabeen NSW 2101 · Collaroy NSW 2097** (Fresha index, centroid `narrabeen` — **the slug collapsed completely, see the census finding**; plus a dedicated search, which returned nothing) Markets swept: **Marrickville NSW 2204 · Enmore · Stanmore NSW 2048 · Petersham · Dulwich Hill** (Fresha ind… |
+| 35725 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Marrickville NSW 2204 · Enmore · Stanmore NSW 2048 · Petersham · Dulwich Hill** (Fresha index, centroid `marrickville`, plus a dedicated inner-west search — index-fresh, outside the 24 Nov inner-west index pass) Markets swept: **Allambie Heights NSW 2100 · Balgowlah NSW 2093 · Dee Why NSW 2099 … |
+| 35726 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Allambie Heights NSW 2100 · Balgowlah NSW 2093 · Dee Why NSW 2099 · Freshwater · Brookvale NSW 2100** (worked the 24 Nov harvested named leads, not re-indexed) Markets swept: **Manly Vale NSW 2093 · Seaforth NSW 2092 · Belrose NSW 2085 · Frenchs Forest · Forestville** (dedicated searches — Belr… |
+| 35727 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Manly Vale NSW 2093 · Seaforth NSW 2092 · Belrose NSW 2085 · Frenchs Forest · Forestville** (dedicated searches — Belrose produced one clinic, the rest nothing) Markets swept: **Annandale NSW 2038 · Glebe NSW 2037 · Leichhardt NSW 2040 · Drummoyne NSW 2047 · Rozelle · Rodd Point · Haberfield NS… |
+| 35728 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Annandale NSW 2038 · Glebe NSW 2037 · Leichhardt NSW 2040 · Drummoyne NSW 2047 · Rozelle · Rodd Point · Haberfield NSW 2045** (worked the 24 Nov harvested inner-west named leads) Markets swept: **Rosebery NSW 2018 · Zetland · Waterloo · Alexandria · Mascot** (Sydney inner south, dedicated searc… |
+| 35729 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Rosebery NSW 2018 · Zetland · Waterloo · Alexandria · Mascot** (Sydney inner south, dedicated search — reached as the inner-west fallback, genuinely virgin ground) Markets swept: **Bellevue Hill NSW 2023 · Sydney CBD NSW 2000 · West Pennant Hills NSW 2125 · Maroubra NSW 2035** (reached through … |
+| 35730 | 26 Nov 2026 | Worker B — SYDNEY, 26 Nov 2026. The assigned ground was already spent, | **Bellevue Hill NSW 2023 · Sydney CBD NSW 2000 · West Pennant Hills NSW 2125 · Maroubra NSW 2035** (reached through a Sydney injector listicle; out-of-ground rows filed per the 26 Nov rule) |
+| 35984 | 26 Nov 2026 | MELBOURNE — the precinct trader directories, worked as a species. 26 N | Malvern VIC 3144 · Armadale VIC 3143 · Hawthorn VIC 3122 · Toorak VIC 3142 · Glenferrie Road Malvern precinct · High Street Armadale precinct |
+| 35986 | 26 Nov 2026 | MELBOURNE — the precinct trader directories, worked as a species. 26 N | Richmond VIC 3121 · Bridge Road Richmond precinct · Swan Street Richmond · South Yarra VIC 3141 · Windsor VIC 3181 |
+| 35988 | 26 Nov 2026 | MELBOURNE — the precinct trader directories, worked as a species. 26 N | Camberwell VIC 3124 · Hawthorn East VIC 3123 · Greythorn (Balwyn North) VIC 3103 · Ashburton VIC 3147 · Bentleigh VIC 3204 · Glen Iris VIC 3146 |
+| 35990 | 26 Nov 2026 | MELBOURNE — the precinct trader directories, worked as a species. 26 N | South Melbourne VIC 3205 · Middle Park VIC 3206 · Prahran VIC 3181 · Malvern East VIC 3145 · Ormond VIC 3204 |
 
-**81 coverage lines.**
+**100 coverage lines.**
+
+## Sources already worked — a SOURCE is coverable ground too
+
+A precinct directory re-opened on 26 Nov returned 5 of 5 leaves already in the pipeline,
+and a Fresha suburb slug re-indexed on 25 Nov returned 0 of 12 new names. Nine fetches,
+a tenth of that run's budget, for nothing — and both were avoidable from the record,
+which until then tracked only places. **Both species are ONE-SHOT with themselves.**
+Check this table before fetching an index, a slug or a trader directory.
+
+| times seen | source | first recorded under |
+| --- | --- | --- |
+| 3 | `glenferrie.com.au/directory/category/hair-beauty/` | line 33100, `glenferrie.com.au` — PAID, but brief the CATEGORY URL, not  |
+| 2 | `bridgerd.com.au/directory/hair-beauty/` | line 36044, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 2 | `bridgerd.com.au/directory/skincare/` | line 36041, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 2 | `consentz.com/directory` | line 6090, Ruled out on the standard — do not re-source |
+| 2 | `glenferrieroadmalvern.com.au/trader-category/beauty/` | line 36042, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 2 | `glenferrieroadmalvern.com.au/trader/` | line 36564, 10. INDEX POSTCODES AND INDEX NAMES WERE WRONG AGAIN — 3 of  |
+| 2 | `highstreetarmadale.com.au/directory/` | line 33127, TWO NEW village-strip directories, same species, both KEEP O |
+| 2 | `mainstreetaustralia.org.au/our-members/` | line 35398, 26 November 2026 — Perth, Sydney and Melbourne, and the cove |
+| 1 | `bridgerd.com.au/trader/` | line 36633, (b) Address in hand from a precinct leaf, DOMAIN NOT RESOLVE |
+| 1 | `camberwellshopping.com.au/trader-category/beauty/` | line 36050, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 1 | `consentz.com/directory/clinics/` | line 11168, Directory farms and crowders to add to `blocked_domains` |
+| 1 | `explorekirkland.com/directory/` | line 12131, Surfaced but not reached — the cheapest start for the next w |
+| 1 | `filteredfacesaesthetics.com/memberships/` | line 23909, Named leads carried forward, each with its domain |
+| 1 | `fresha.com/lp/en/bt/aesthetics/in/au-adelaide` | line 27365, What this market taught me |
+| 1 | `fresha.com/lp/en/bt/aesthetics/in/au-melbourne` | line 29803, CONTRADICTION 1 — The Fresha slug is far better than the bri |
+| 1 | `fresha.com/lp/en/bt/aesthetics/in/au-perth` | line 28461, What this market taught me |
+| 1 | `fresha.com/lp/en/bt/aesthetics/in/au-sydney` | line 29064, What this market taught me |
+| 1 | `fresha.com/lp/en/tt/anti-wrinkle-injections/in/au-gold-coast` | line 34694, Domains worth blocking next time |
+| 1 | `fresha.com/lp/en/tt/anti-wrinkle-injections/in/au-sydney` | line 31526, Domains worth blocking on the next Sydney query |
+| 1 | `fresha.com/lp/en/tt/anti-wrinkle-injections/in/au-sydney/avalon-beach` | line 35902, 5. Fetch failures, by mode |
+| 1 | `fresha.com/lp/en/tt/anti-wrinkle-injections/in/au-sydney/beverly-hills` | line 31425, Technique: the Fresha suburb slug has a failure boundary, an |
+| 1 | `fresha.com/lp/en/tt/anti-wrinkle-injections/in/au-sydney/revesby` | line 31424, Technique: the Fresha suburb slug has a failure boundary, an |
+| 1 | `glenferrie.com.au/directory/` | line 36629, (b) Address in hand from a precinct leaf, DOMAIN NOT RESOLVE |
+| 1 | `glenferrieroadmalvern.com.au/trader-category/health-and-wellbeing/` | line 36047, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 1 | `glenferrieroadmalvern.com.au/trader/the-one-skin-and-wellness/` | line 36464, 7. THE DECODE I DECLINED, AND THE ROW IT PRODUCED ANYWAY — t |
+| 1 | `kingwilliamroad.com.au/stores` | line 25704, What this market taught me |
+| 1 | `montclaircenter.com/directory-bid` | line 14749, Noise, and what to block |
+| 1 | `portraitcare.com/directory/` | line 8169, Group 3 — Defeated the fetch |
+| 1 | `portraitcare.com/directory/united-states/illinois/glencoe/` | line 16124, Directory and vendor pages — one burned a fetch, and it is t |
+| 1 | `toorakvillage.com.au/category/health/` | line 36048, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+| 1 | `toorakvillage.com.au/directory/` | line 36046, 0. THE TRIPLE THE COORDINATOR ASKED FOR — names / in-market  |
+
+**31 distinct sources.**
 
 ## Coverage-shaped lines this script could NOT classify
 

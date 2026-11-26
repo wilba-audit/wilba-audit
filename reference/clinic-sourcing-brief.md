@@ -3480,3 +3480,130 @@ practitioner credentials, not just the words.
 - **56% of Perth businesses name no human owner** (14 of 25), which is now the dominant quality
   problem in that ring, ahead of must-have 5. Ladder spread there was **28% top / 20% middle / 52%
   no rung** — the worst recorded, against the Gold Coast's 44% and Melbourne's 18%.
+
+---
+
+## The precinct-directory species, measured properly — and my decision rule would have killed the run
+
+### THE DOMAIN QUESTION IS A PROPERTY OF THE PAGE TYPE, NOT THE SITE
+
+This is the finding of the 26 Nov Melbourne run and it reverses two briefs of mine.
+
+| page type | fetches | printed the business's own domain |
+| --- | --- | --- |
+| **trader LEAF** (one business per page) | 30 | **29 (97%)** |
+| index or category listing | 22 | **1 (4.5%)** |
+
+**All four briefed directories print zero domains at the index.** My rule — "ask whether it prints
+domains; if not, abandon it and say so" — would have produced one line instead of 21 rows. "No at
+the index, yes at the leaf" held 3 of 3 on first test and 29 of 30 overall.
+
+**So lead with the precinct LEAF.** One leaf fetch returns the domain, the street address and the
+phone — strictly more than a search returns, cheaper, and it never resolves to the wrong business
+because you arrive from an address rather than from a name. The directory route cost **3.7 fetches
+and zero searches per row**; the search route cost 17 searches plus ~24 fetches for 7 rows.
+
+### WORSE: PRINTING DOMAINS AT THE INDEX IS A PROXY FOR BEING A CHAIN DIRECTORY
+
+`camberwellshopping.com.au` is the only Melbourne directory that prints domains at the index — 19 of
+148, 13% — and **the only one of the ten with zero qualifiable names.** The domains belong to 2XU,
+Adairs, Bonds, Country Road, Chemist Warehouse.
+
+**The mechanism: a chain has a website field filled in and an independent does not.** So the two
+questions are mildly *anti-correlated*, and the right question is the one Sydney arrived at from the
+opposite end on the same night — **"is it TYPE-FILTERED?", not "does it print domains?"** Two
+independent measurements, not a swap.
+
+### CATEGORY DEPTH IS WORTH 47 POINTS, AND ALMOST NOBODY OFFERS IT
+
+Same site, same night: `bridgerd.com.au/directory/hair-beauty/` was **11 of 39 in market (28%)**;
+`bridgerd.com.au/directory/skincare/` was **6 of 8 (75%)**. Bridge Road's Skincare leaf gave 3 rows
+from 3 fetches, the best ratio of the night.
+
+**The bad news is structural: 5 of 6 Melbourne sites sub-categorise only the trades we do not want**
+— Barber, Nails, Brows — **and leave skin in the undifferentiated parent.** Check for a skin or
+beauty-medical sub-category first; where there is none, expect the parent's ~28%.
+
+### THE SPECIES IS ENUMERABLE, AND ONE FETCH BUYS THE LIST
+
+**`mainstreetaustralia.org.au/our-members/` returns 31 trader associations with their domains, 25 of
+them Victorian** — the species' own membership roll, and the single best buy of the night. About
+three URL schemes across the family, so leaf URLs are printed for you. **19 Victorian strips remain
+unworked with domains already in hand.**
+
+**It is a floor, not a census:** 2 of the 4 briefed directories, between them the source of 9 of 21
+rows, are **not members**. So work the roll and keep looking outside it.
+
+### A PRECINCT DIRECTORY IS ONE-SHOT WITH ITSELF
+
+Toorak Village was re-opened and **5 of 5 leaves were already pipeline rows**; its `/category/health/`
+gave 0 new in-market names. Six fetches, no rows. With Camberwell that is nine fetches — 10% of the
+run's budget — for nothing, **and both were avoidable from the coverage record.**
+
+This is the same one-shot property the Fresha suburb index has (0 of 12 new in a re-indexed suburb),
+and it means **coverage is not only about places. A SOURCE is coverable ground too.**
+`outputs/pipeline/COVERAGE.md` now carries a sources table for exactly this.
+
+### MUST-HAVE 5 BELONGS TO THE GROUND, NOT THE METRO
+
+Melbourne's trader-association ground published a mailbox on **21 of 27 (78%)**. Sydney's
+search-closed northern beaches published one on **8 of 17 (47%)**, the third reproduction of ~53% on
+that ground. The standing AU figure is 46%.
+
+**Attach the number to the ground.** Search-closed ground has a must-have 5 tail because the clinics
+that publish a mailbox were taken by the earlier sweep; a trader association has no tail, because
+dues select for a maintained site. Budget **4 calls per row on search-closed ground, 2 on a fresh
+precinct run** — Melbourne came to 3.7 on the directory route and 5.9 on the named-lead route.
+
+### MUST-HAVE 1 BINDS HARDEST ON ANY INDEX, NOW ON TWO SPECIES
+
+**10 of 21 Melbourne rows (48%) failed must-have 1** — a precinct strip is a beauty-and-skin strip,
+not an injectables strip. Same mechanism as the Gold Coast Fresha finding (sole must-have 1 failures
+10 of 24 on an index against 0 of 22 on a search pass), now reproduced on a different index species.
+**Index to FIND, search to QUALIFY** holds for trader directories exactly as for Fresha.
+
+### TWO SMALLER CORRECTIONS
+
+- **A Halaxy or HotDoc DIRECTORY PROFILE is not Halaxy or HotDoc on the clinic's site.** Fire those
+  must-have 2 tells only off the clinic's own page; one clinic would have been wrongly condemned on
+  a directory profile. The one real must-have 2 failure of the run (HEMAC) was caught by
+  **structure** — a GP arm on a HotDoc medical-centres path — on a page with not one billing word.
+  HICAPS is now 0 of 82.
+- **Timely dominates this ring, 5 of 11 (45%).** One inverted tenancy in eleven. The run's single
+  room-renter **passes** must-have 3: her diary is her own Timely account, not the host's.
+
+---
+
+## RETRACTED: `ROBOTS_UNREACHABLE` is NOT retryable, and `/robots.txt` is NOT always permitted
+
+**Both halves of what I wrote on 25 Nov are wrong, and three independent observations killed them in
+one night.**
+
+What I wrote: *"`ROBOTS_UNREACHABLE` IS retryable and is a fetcher-side preflight failure, not a
+site restriction. Cheap diagnostic: fetch `/robots.txt` directly first — always permitted."*
+
+What happened:
+1. **Melbourne retried an identical URL deliberately and it reproduced exactly.** Two deliberate
+   retries, two exact reproductions. **It behaves per-SITE, not per-URL** — so retrying another page
+   on the same host buys nothing either.
+2. **Sydney retried `avalonskin.com.au`'s robots.txt and reproduced the same error.** The worker
+   read that correctly as informative rather than wasted: a reproduction distinguishes **a dead host
+   from a fetcher problem**, which is the one thing a retry is still good for.
+3. **`/robots.txt` is not always permitted.** It returned `robots_disallowed` for itself on
+   `youthfulskinco.com.au` (Melbourne) and on Preserve Aesthetics (Sydney). **Do not spend that
+   fetch expecting it to be free.**
+
+**What survives, stated carefully, because the two labels are different things:**
+
+- **`robots_disallowed` on a clinic's page has frequently been wrong about the business** — 10 of 15
+  such rows later served, several on a second live domain, five on a byte-identical stock Wix file
+  blocking only PetalBot. So **the row is worth re-reaching**, usually by looking for another
+  domain, not by hammering the same URL.
+- **`ROBOTS_UNREACHABLE` reproduces and is per-site.** Spend at most one retry, and read a
+  reproduction as a finding: the host is dead or is refusing this fetcher wholesale, and the clinic
+  belongs on the browser-visit list rather than in a retry loop.
+- **A `/robots.txt` fetch is a cheap diagnostic and not a free one.** When it serves and allows, a
+  later failure on a page means "could not fetch". When it fails for itself, you have learned the
+  site refuses this fetcher — which is also worth knowing, at the same price.
+
+**Do not point anything at `youthfulskinco.com.au`.**

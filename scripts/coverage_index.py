@@ -55,6 +55,18 @@ SUSPECT = re.compile(
     r'|[A-Z][\w\- ]{0,30}(?:swept|sweep|briefed|worked|covered|coverage|ground|metros?'
     r'|markets?|territor|suburbs?|towns?|cities)[\w\- ]{0,20}:)', re.I)
 
+# A SOURCE is coverable ground too, and this was learned the expensive way: a precinct directory
+# re-opened on 26 Nov returned 5 of 5 leaves already in the pipeline, and a Fresha suburb slug
+# re-indexed on 25 Nov returned 0 of 12 new. Nine fetches, 10% of a run's budget, for nothing -
+# and both were avoidable from the coverage record, which until now only recorded PLACES.
+SOURCE_URL = re.compile(
+    r'(?:https?://)?(?:www\.)?('
+    r'fresha\.com/lp/[a-z]{2}/[bt]t/[a-z0-9-]+/in/[a-z]{2}-[a-z0-9-]+(?:/[a-z0-9-]+)?'
+    r'|[a-z0-9][a-z0-9-]{3,40}\.(?:com\.au|org\.au|co\.nz|co\.uk|ie|ca|com|org)'
+    r'/(?:directory|trader|traders|our-members|members|category|trader-category|businesses|'
+    r'business-directory|shop|stores)[a-z0-9/_-]*'
+    r')', re.I)
+
 DATE = re.compile(r'\b(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+20\d\d'
                   r'|\d{4}-\d{2}-\d{2})', re.I)
 HEADING = re.compile(r'^#{1,3}\s+(.*)')
@@ -66,7 +78,7 @@ def read_blocks(path):
     hdr_line = 0
     with open(path, encoding='utf-8') as fh:
         lines = fh.read().splitlines()
-    found, suspects = [], []
+    found, suspects, sources = [], [], {}
     for i, line in enumerate(lines, 1):
         h = HEADING.match(line)
         if h:
@@ -93,7 +105,9 @@ def read_blocks(path):
             found.append((i, heading, hdr_line, ' '.join([hit] + tail)))
         elif SUSPECT.match(line):
             suspects.append((i, heading, line.strip()[:160]))
-    return found, suspects
+        for sm in SOURCE_URL.finditer(line):
+            sources.setdefault(sm.group(1).rstrip('.,;)').lower(), []).append((i, heading))
+    return found, suspects, sources
 
 
 def main():
@@ -106,7 +120,7 @@ def main():
     src = os.path.join(root, SRC)
     if not os.path.exists(src):
         sys.exit('not found: %s' % src)
-    found, suspects = read_blocks(src)
+    found, suspects, sources = read_blocks(src)
 
     # A suspect line that IS one of the found lines is not a suspect.
     found_lines = {ln for ln, _, _, _ in found}
@@ -147,6 +161,24 @@ def main():
                       (head[:70] or '(no heading)').replace('|', '\\|'),
                       text.replace('|', '\\|')))
     out += ['', '**%d coverage lines.**' % len(found), '']
+    out += [
+        '## Sources already worked — a SOURCE is coverable ground too',
+        '',
+        'A precinct directory re-opened on 26 Nov returned 5 of 5 leaves already in the pipeline,',
+        'and a Fresha suburb slug re-indexed on 25 Nov returned 0 of 12 new names. Nine fetches,',
+        'a tenth of that run\'s budget, for nothing — and both were avoidable from the record,',
+        'which until then tracked only places. **Both species are ONE-SHOT with themselves.**',
+        'Check this table before fetching an index, a slug or a trader directory.',
+        '',
+        '| times seen | source | first recorded under |',
+        '| --- | --- | --- |',
+    ]
+    for src_url, seen in sorted(sources.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        line0, head0 = seen[0]
+        out.append('| %d | `%s` | line %d, %s |'
+                   % (len(seen), src_url, line0,
+                      (head0[:60] or '(no heading)').replace('|', '\\|')))
+    out += ['', '**%d distinct sources.**' % len(sources), '']
     if suspects:
         out += [
             '## Coverage-shaped lines this script could NOT classify',
@@ -164,7 +196,8 @@ def main():
     dest = os.path.join(root, OUT)
     with open(dest, 'w', encoding='utf-8') as fh:
         fh.write('\n'.join(out))
-    print('%s: %d coverage lines, %d unclassified' % (OUT, len(found), len(suspects)))
+    print('%s: %d coverage lines, %d sources, %d unclassified'
+          % (OUT, len(found), len(sources), len(suspects)))
 
 
 if __name__ == '__main__':

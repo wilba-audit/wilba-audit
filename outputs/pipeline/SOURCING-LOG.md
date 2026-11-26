@@ -4,7 +4,7 @@
 `reference/clinic-sourcing-brief.md`.** It is the operational knowledge behind the pipeline:
 what works, what has gone wrong, and what not to repeat.
 
-**As of 25 Nov 2026: 1,536 rows, 981 ready to approach** — US 438, **AU 329**, CA 86, UK 82,
+**As of 26 Nov 2026: 1587 rows, 992 ready to approach** — US 438, **AU 340**, CA 86, UK 82,
 NZ 44, IE 2. **Ten clinics have ever been emailed, all on 15 Oct 2026**, and nothing has gone out
 since, because every market requires WILBA's postal address in the footer and we do not have it.
 **Sourcing has not been the constraint for six weeks.** The last two runs make the point plainly:
@@ -102,6 +102,134 @@ of notes. Memory under `/tmp` does not survive. Durable places are this repo and
 `/mnt/project-files`, and this file is mirrored to
 `/mnt/project-files/prospects/SOURCING-LOG.md` so Claudes in other threads can read it
 without the repo.
+
+## 26 Nov 2026 — 51 rows, and the cheapest evidence in the file turned out to be already written down
+
+Four workers: Perth, Sydney, Melbourne and ten grade lifts. **1,536 → 1,587 rows; 992 sendable.**
+New rows: Perth **1537-1556**, Sydney **1557-1566**, Melbourne **1567-1587**. Five rows lifted
+B→A. Spend was roughly 155 fetches and 58 searches.
+
+**THE FINDING OF THE NIGHT IS THAT WE HAD BEEN SITTING ON IT.** All five grade lifts came off a
+**company or business number already recorded in the row**, four of them for five weeks or more,
+because nobody had ever grepped the file for numbers. **Register lookups by number went 5 for 5
+against 2 of 4 for page fetches on the same batch.** Running totals: ABR by ABN **10 for 10**,
+Companies House by number **3 for 3**, ABR by ACN 1 for 1. An incorporation date is a dated
+artifact about the trading entity, so it is a top rung for one fetch and no judgement about whose
+number it is — and **the registered office comes back free and answers the subject test**, matching
+a premises already on the row in 3 of 4 calls.
+
+**There is now a standing audit line, and it reports 51 more rows one register call from a top
+rung** (24 UK, 19 AU ABN, 5 AU ACN, 3 IE). At the measured hit rate that is the best-value work in
+this pipeline and it beats a metro sweep per fetch. Work it in country blocks so a register's page
+shape is learned once.
+
+**THE COVERAGE CHECK FAILED TWICE, IN TWO DIFFERENT WAYS, AND IS NO LONGER A GREP.** Last night's
+fix back-filled aliases for the two label shapes then in view — which cannot find a shape out of
+view, and that was the whole problem. Sydney's briefed ground was a full dedicated Northern Beaches
+sweep from 16 Nov recorded under `**Towns briefed.**`, a **fifth** shape; 16 of its 20 briefed
+suburbs were already covered. Perth has had **five** passes, not three, two dedicated to exactly my
+briefed core, **and it had already had an index pass** my brief asserted did not exist. Six shapes
+are in use.
+
+`scripts/coverage_index.py` now derives `outputs/pipeline/COVERAGE.md` from `near-misses.md` every
+run: **100 coverage lines against the 25 my best grep found**, each with its date and section, and
+it prints every coverage-shaped line it could not classify so a seventh shape announces itself
+rather than waiting to be paid for. It also tracks **31 sources** — Fresha slugs, trader
+directories — because **a source is coverable ground too**: a re-opened precinct directory returned
+5 of 5 leaves already in the pipeline and a re-indexed suburb slug 0 of 12 new, nine fetches for
+nothing, both avoidable from the record. **Neither worker wasted a fetch on my error, because both
+ran the name grep before spending.** The general lesson, fifth night on this: when a check keeps
+failing on the shape of the data, change the shape — and when the fix enumerates the instances in
+view, it has not been fixed.
+
+**THE PRECINCT LEAF IS THE BEST BUY IN AUSTRALIAN SOURCING SO FAR, and my decision rule would have
+killed the run.** 29 of 30 trader-leaf fetches printed the business's own domain against **1 of 22**
+index pages, and all four briefed directories print zero at the index — so obeying my "abandon it if
+it prints no domains" would have produced one line instead of 21 rows. **The domain question is a
+property of the PAGE TYPE, not the site.** Worse, printing domains at the index is a **proxy for
+being a chain directory**: the only Melbourne site that does was the only one with zero qualifiable
+names, its domains belonging to 2XU, Adairs and Bonds. Sydney reached the same conclusion from the
+opposite end the same night — ask whether a directory is **type-filtered**, not whether it prints
+domains — so this is two independent measurements rather than a swap. One leaf returns domain,
+street address and phone, costs 3.7 fetches and **zero searches** per row, and never resolves to the
+wrong business because you arrive from an address.
+
+**And the species is enumerable: `mainstreetaustralia.org.au/our-members/` returns 31 trader
+associations with their domains for one fetch**, 25 Victorian, 19 unworked. It is a floor and not a
+census — 2 of the 4 briefed directories, the source of 9 of 21 rows, are not members. Category depth
+is worth 47 points (`/skincare/` 75% in-market against `/hair-beauty/` 28%), but 5 of 6 sites
+sub-categorise only barber, nails and brows and leave skin in the parent.
+
+**MUST-HAVE 5 BELONGS TO THE GROUND, NOT THE METRO.** Melbourne's trader-association ground
+published a mailbox on 78% of pages opened; Sydney's search-closed beaches on 47%, the third
+reproduction of ~53% on that ground. Search-closed ground has a tail because the clinics that
+publish a mailbox were taken by the earlier sweep; a trader association has none, because dues
+select for a maintained site. **Budget 4 calls per row on search-closed ground and 2 on fresh
+ground** — Perth spent 1.9, Sydney 3.9, Melbourne 3.7 on the directory route and 5.9 on named
+leads.
+
+**Perth beat Brisbane on newness over harder ground: 35% redundant, 65% new**, across two dedicated
+search sweeps plus a six-slug `bt/` pass, probably because it ran `tt/` slugs. Five cities: Perth
+65%, Gold Coast 72%, Sydney 71%, Melbourne 53% then 68%, Brisbane 53-54%.
+
+**THE CALL-TO-BOOK LOCALITY CENSUS HAS ITS FIRST MEASURED FAILURE AND IT WAS TOTAL: 0 of 99
+listings** on `au-sydney/narrabeen` carried a Narrabeen or Collaroy address, against a prior record
+of 5/5, 4/4, 6/6 and 4/4. The mechanism is inventory, not page structure — `au-sydney/avalon-beach`
+does not exist as a page — so the census holds where the platform has businesses and collapses
+silently where it does not. Free diagnostic on a page already fetched: count the Call-to-book rows
+with an address in the slug's own suburb; zero means it collapsed.
+
+**RETRACTED, and three independent observations killed both halves in one night.** On 25 Nov I
+wrote that `ROBOTS_UNREACHABLE` is retryable and that fetching `/robots.txt` first is "always
+permitted". Melbourne retried an identical URL deliberately and it reproduced exactly, twice — **it
+is per-SITE, not per-URL.** Sydney reproduced the same error on another host's robots.txt. And
+**`/robots.txt` itself returned `robots_disallowed`** on two different domains. What survives is
+narrower and worth keeping separate: `robots_disallowed` **on a page** has been wrong about the
+business 10 of 15 times, so the row is worth re-reaching — usually via another domain, not by
+hammering the URL; `ROBOTS_UNREACHABLE` reproduces, so spend one retry at most and read a
+reproduction as a finding that the host is dead or refusing this fetcher wholesale.
+
+**FOUR RULES SETTLED, THREE OF THEM BECAUSE A WORKER FLAGGED RATHER THAN GRADED.**
+- **An official register is a TOP rung, and "published on their own site" never excluded one.** A
+  worker ruled a Fair Work Ombudsman penalty release out as third-party; the same night's five
+  lifts came off Companies House and ABR, which are third-party too. The condition was always about
+  *who is asserting the fact* — a directory's review count against the clinic's own — and that
+  question does not arise for an official record. Row 1559 still fails, for the right reason: the
+  release names "RL Medispa" and the clinic trades as Rachael Louise Medispa, which is a name
+  resemblance and not an entity tie.
+- **A floor is evidence of a MINIMUM and never of a maximum.** A clinic's own dated review wall is a
+  top rung in kind, but its oldest item says "trading at least since X", never "only since X". The
+  test for any dated artifact: *could it have started later than the business did?* A blog archive
+  on a site built at launch bounds the age; a review wall only floors it.
+- **The GST rule is asymmetric.** Not being registered bounds AU turnover below $75,000; being
+  registered proves nothing, because voluntary registration is permitted.
+- **A search may rule out must-have 1 on a business-type CLASSIFICATION, never on a sample of
+  treatment pages.** A worker ruled a clinic out from search titles and its page reversed it — 14
+  years, named owner-nurse, injectables. 1 wrong in 4 attempts.
+
+**TWO MORE DEFECTS IN THE READING PATH, AND BOTH WERE THE SAME DEFECT AS LAST NIGHT'S.**
+- **The caution detector missed a fifth phrasing**, this time on a grade A row sitting sixth in the
+  first-touch batch: "the count has to be re-read on the clinic's own site **before any approach**".
+  Approach, contact, email, reach out and pitch were all missing from a pattern that only knew
+  "send". Generalised to the shape — an instruction to the reader in the same sentence as a
+  "before <contacting verb>" clause — and **sendable rows carrying a visible caution went from 40 to
+  136**, 11 of them grade A. The validator held a second, narrower copy whose own comment admitted
+  it would miss a new phrasing; there is now **one list**, owned by the sender and read by the
+  validator.
+- **The two detectors then contradicted each other, and resolving it removed a rule.** The deferral
+  gate rejects a sendable row that "defers a qualification decision to a person who will never see
+  it" — but a sentence the caution detector now prints **does** reach that person. So a printed
+  caution is exempted, by the same sentence-deletion mechanism as the other two exemptions, and
+  **sendable deferrals went from 1 to 0 and parked ones from 19 to 8** without a single row being
+  graded down. The distinction two rows established on one night: **a verification caution is not a
+  deferred decision, and only the second is a reason to downgrade.**
+
+**Three Cloudflare decodes were volunteered across the three runs and all three declined.** Nine of
+twelve Malvern trader leaves shipped tokens, which is the *directory* obfuscating its members and
+would not satisfy must-have 6 anyway.
+
+**What still needs Jess, unchanged: the postal address, now asked on eight consecutive runs.**
+Nothing can be sent in any market without it.
 
 ## 25 Nov 2026 — 36 rows, grade A halved, and four defects found in the path that sends
 
