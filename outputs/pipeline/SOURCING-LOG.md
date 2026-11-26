@@ -2677,7 +2677,63 @@ release it named precisely — and it is worth them, because its must-have 4 is 
 The general lesson, which applies to every absence finding this project records: **a content-type
 that is not HTML is not a page. Check you received HTML before reporting what is or is not in it.**
 
-## Where to go next — refreshed 25 Nov 2026 (read THIS block first; everything below it is superseded)
+## Where to go next — refreshed 26 Nov 2026 (read THIS block first; everything below it is superseded)
+
+**0. Run `python3 scripts/coverage_index.py` BEFORE briefing anything, and read the table it
+writes.** One grep of `outputs/pipeline/COVERAGE.md` answers both questions that cost two workers
+most of their budget on 26 Nov. It lists 100 recorded sweeps with dates, **31 sources already
+worked** (Fresha slugs and trader directories, both one-shot with themselves), and every
+coverage-shaped line it could not classify. It is an orientation tool and not a clearance — the
+check that tells the truth is still grepping each candidate's name, domain and
+whitespace-collapsed name and reading every hit in context.
+
+**1. The 51 register numbers. This is the best-value work in the file and it outranks sourcing.**
+`append_prospects.py --audit-only` prints every grade B or C row already carrying a company or
+business number, with the right register for that row's country. Measured 5 for 5; ABR 10 for 10,
+Companies House by number 3 for 3. One fetch each, an incorporation date is a top rung, and the
+registered office comes back free and answers the subject test. **Work it in country blocks** so a
+register's page shape is learned once: 24 UK, 19 AU ABN, 5 AU ACN, 3 IE. Three Melbourne rows are
+also one ABR lookup from an upgrade (Vis à Vis `METAB PTY LTD`, Élevé Cosmetics, ENESIMA), and row
+1559 needs one ABN to settle whether the "RL Medispa" Fair Work penalty is its entity.
+
+**2. `mainstreetaustralia.org.au/our-members/` and the 19 unworked Victorian strips.** One fetch
+already bought the list with domains attached. **Lead with the trader LEAF, never the index** —
+29 of 30 leaves printed the business's own domain against 1 of 22 index pages, and the leaf also
+gives the street address and phone for the same fetch, with no search at all. Check for a skin or
+beauty-medical **sub-category** first: `/skincare/` ran 75% in-market against `/hair-beauty/`'s 28%.
+Do not re-open Toorak Village or Camberwell; both are in the sources table.
+
+**3. The 55 grade-B rows whose must-have 4 is called inferred or unverified — to LIFT, not to
+park.** 0 of the 55 name no ladder artifact, so every one holds a legitimate middle rung. The audit
+prints all 55 ids every run. Many will be answered by item 1.
+
+**4. A browser session, not a fetch run.** Perth alone offers four Cloudflare domains and probably
+two or three A/B rows from four page loads: **The Lime Tree Clinic** (MBBS director and RN both
+named with AHPRA numbers), **Ultimate Aesthetics**, **Clinic 55**, **Academy Face and Body**. Plus
+Melbourne's Aesthetic Nurse Lorna, Miss Morpho, Lumé, Calma Spa, Restore Skin, Skin to Heart;
+Sydney's Akaliko (resolve must-have 1 first) and Soliman Aesthetics; and Brisbane's Pearl Medispa.
+**Do not point anything at `youthfulskinco.com.au`.** One phone call also stands: Glow Aesthetics
+Perth, founded by a Nurse Practitioner, publishes no address and no mailbox.
+
+**5. Named gaps, not sweeps.** 478 needs a phone call to 905-947-1221 before any send. 310 needs
+the `Admin@` decision. **Do not email rows 329 and 1220 in the same week** (one Nundah building),
+nor 1505 with 1298 (both Dr Shane Upasena), nor Perth's Beaufort Street cluster in one week (three
+of tonight's rows), nor tonight's two Bellevue Road rows. **Chantallè Aesthetics' unread
+`/privacy-policy/`** is the highest-value unread page in Melbourne; **Shine Skin and Body** needs
+one treatment-page fetch for must-have 1; **Cosmetic Images'** treatment menu turns a C into a
+strong B.
+
+**6. Where not to go.** **Nedlands, Dalkeith and Peppermint Grove** — Nedlands is 0 for 4 across
+three runs. **City Beach and North Fremantle** produced not one listing on any slug and remain
+index-fresh and file-empty. Over search-closed ground budget **4 calls per accepted row**, not 2,
+because what is left there is the must-have 5 tail.
+
+**7. Still outstanding with Jess, and not sourcing's to solve.** The postal address, asked on
+**eight** consecutive runs — nothing can be sent in any market without it. The unsubscribe gap on
+the ten sends of 15 Oct, six of which are now off profile. The DM-list channel decision, never put
+to her.
+
+## Where to go next — refreshed 25 Nov 2026 (SUPERSEDED by the 26 Nov block above on items 1, 2, 3 and 4; items 5, 6 and 7 are carried forward there)
 
 **1. The cheapest grade lifts in the file, in order, and the first one is a single register call.**
 Row **575 CQ Aesthetics** prints **ABN 22 626 758 969** in its own `scale_signals` — one
